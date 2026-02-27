@@ -109,7 +109,6 @@ export class SoftballDataService {
     const scheduleUrl = this.getUrl(`sports/softball/schedule/${year}`);
     console.log('[SoftballDataService] Fetching schedule page with axios:', scheduleUrl);
     console.log('[SoftballDataService] isDevelopment:', this.isLocal);
-    console.log('[SoftballDataService] baseUrl:', this.baseUrl);
 
     return from(
       axios.get(scheduleUrl, {
