@@ -21,7 +21,7 @@
             "input": "public"
           }
         ],
-        "styles": ["./src/styles.scss"]
+        "styles": ["./src/styles.scss", "./src/tailwind.generated.css"]
       },
       "configurations": {
         "production": {
@@ -58,6 +58,9 @@
           "buildTarget": "wellesley:build:development"
         }
       },
+      "dependsOn": [
+        "tailwind:serve"
+      ],
       "defaultConfiguration": "development"
     },
     "lint": {
@@ -81,6 +84,25 @@
         "buildTarget": "wellesley:build",
         "staticFilePath": "dist/wellesley/browser",
         "spa": true
+      }
+    },
+    "tailwind:serve": {
+      "continuous": true,
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tailwindcss -i ./src/tailwind.css -o ./src/tailwind.generated.css --watch",
+          "node ./scripts/watch-scss-for-tailwind.js"
+        ],
+        "parallel": true,
+        "cwd": "."
+      }
+    },
+    "tailwind:build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind.generated.css",
+        "cwd": "."
       }
     }
   }

@@ -1,0 +1,744 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #0018a8;
+  --color-brand-light: #1a3fd4;
+  --color-brand-lighter: #5b7ae6;
+  --color-brand-text: #8ba4f0;
+  --color-brand-bg: rgba(0, 24, 168, 0.25);
+  --color-brand-bg-subtle: rgba(0, 24, 168, 0.1);
+  --color-brand-glow: rgba(0, 24, 168, 0.35);
+  --color-brand-glow-strong: rgba(0, 24, 168, 0.5);
+
+  --color-surface: #0f1117;
+  --color-surface-card: rgba(255, 255, 255, 0.04);
+  --color-surface-elevated: rgba(255, 255, 255, 0.06);
+  --color-surface-sunken: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.04);
+  --color-surface-overlay: rgba(0, 0, 0, 0.2);
+  --color-surface-sticky: #16181f;
+  --color-surface-sticky-header: #1a1c24;
+  --color-surface-option: #1e2028;
+
+  --color-content: #e1e4ea;
+  --color-content-secondary: #d1d5db;
+  --color-content-muted: #9ca3af;
+  --color-content-dim: #6b7280;
+  --color-content-bright: #e5e7eb;
+  --color-content-heading: #f3f4f6;
+  --color-content-empty: #374151;
+
+  --color-line: rgba(255, 255, 255, 0.06);
+  --color-line-hover: rgba(255, 255, 255, 0.08);
+  --color-line-medium: rgba(255, 255, 255, 0.1);
+  --color-line-strong: rgba(255, 255, 255, 0.12);
+
+  --color-link: #5b7ae6;
+  --color-link-hover: #7b96e8;
+
+  --color-tier-excellent-bg: rgba(34, 197, 94, 0.2);
+  --color-tier-excellent: #4ade80;
+  --color-tier-great-bg: rgba(34, 197, 94, 0.1);
+  --color-tier-great: #86efac;
+  --color-tier-above-avg-bg: rgba(250, 204, 21, 0.12);
+  --color-tier-above-avg: #fde047;
+  --color-tier-average-bg: rgba(251, 146, 60, 0.15);
+  --color-tier-average: #fdba74;
+  --color-tier-below-avg-bg: rgba(239, 68, 68, 0.18);
+  --color-tier-below-avg: #fca5a5;
+
+  --color-error-bg: rgba(239, 68, 68, 0.12);
+  --color-error: #fca5a5;
+  --color-error-border: rgba(239, 68, 68, 0.2);
+  --color-danger-bg-hover: rgba(239, 68, 68, 0.15);
+  --color-danger-border-hover: rgba(239, 68, 68, 0.3);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--color-surface);
+    color: var(--color-content);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h2 {
+    color: var(--color-content-heading);
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    color: var(--color-content-heading);
+    margin: 0 0 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  /* ── Shared Card ── */
+  .stats-section {
+    background: var(--color-surface-card);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--color-line-hover);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  /* ── Select input ── */
+  .year-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-line-strong);
+    border-radius: 8px;
+    font-size: 1.05rem;
+    background: var(--color-surface-elevated);
+    color: var(--color-content);
+    cursor: pointer;
+    min-width: 100px;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-brand);
+      box-shadow: 0 0 0 3px var(--color-brand-glow);
+    }
+
+    option {
+      background: var(--color-surface-option);
+      color: var(--color-content);
+    }
+  }
+
+  /* ── Buttons ── */
+  .load-button {
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s;
+    background: linear-gradient(135deg, var(--color-brand-light), var(--color-brand));
+    color: white;
+    box-shadow: 0 2px 8px var(--color-brand-glow);
+
+    &:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px var(--color-brand-glow-strong);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  .clear-cache-button {
+    border: 1px solid var(--color-line-medium);
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+    background: var(--color-surface-elevated);
+    color: var(--color-content-muted);
+
+    &:hover:not(:disabled) {
+      transform: translateY(-1px);
+      background: var(--color-danger-bg-hover);
+      color: var(--color-error);
+      border-color: var(--color-danger-border-hover);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  /* ── Data Table ── */
+  .stats-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 1.5rem;
+    background: var(--color-surface-sunken);
+    border: 1px solid var(--color-line);
+    border-radius: 12px;
+    overflow: hidden;
+
+    thead {
+      background: var(--color-surface-elevated);
+
+      th {
+        color: var(--color-content-muted);
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--color-line);
+      }
+    }
+
+    td {
+      padding: 0.625rem 1rem;
+      font-size: 1rem;
+      color: var(--color-content-secondary);
+      border-bottom: 1px solid var(--color-surface-hover);
+    }
+
+    tbody tr {
+      transition: background 0.15s;
+
+      &:hover {
+        background: var(--color-surface-hover);
+      }
+
+      &:last-child td {
+        border-bottom: none;
+      }
+    }
+
+    td:first-child {
+      font-weight: 500;
+      color: var(--color-content-bright);
+    }
+  }
+
+  .game-table {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+
+    th, td {
+      padding: 0.45rem 0.75rem;
+      font-size: 0.95rem;
+    }
+  }
+
+  /* ── Tabs ── */
+  .tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+    background: var(--color-surface-card);
+    border-radius: 10px;
+    padding: 3px;
+    width: fit-content;
+  }
+
+  .tab {
+    padding: 0.45rem 1.25rem;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--color-content-dim);
+    transition: color 0.2s, background 0.2s;
+
+    &:hover {
+      color: var(--color-content-secondary);
+      background: var(--color-surface-card);
+    }
+
+    &.active {
+      background: var(--color-brand-bg);
+      color: var(--color-brand-text);
+    }
+  }
+
+  /* ── Game accordion ── */
+  .game-card {
+    margin-bottom: 0.5rem;
+  }
+
+  .game-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.65rem 1rem;
+    background: var(--color-surface-sunken);
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+    text-align: left;
+    color: var(--color-content-secondary);
+    transition: background 0.15s, border-color 0.15s;
+
+    &:hover {
+      background: var(--color-surface-elevated);
+      border-color: var(--color-line-medium);
+    }
+  }
+
+  .game-link {
+    color: var(--color-link);
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-link-hover);
+      text-decoration: underline;
+    }
+  }
+
+  /* ── Nav link ── */
+  .nav-link {
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-content-muted);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s, background 0.2s;
+
+    &:hover {
+      color: var(--color-content-bright);
+      background: var(--color-surface-elevated);
+    }
+
+    &.active {
+      background: var(--color-brand-bg);
+      color: var(--color-brand-text);
+    }
+  }
+
+  /* ── Base-runner table ── */
+  .base-runner-table {
+    white-space: nowrap;
+
+    th, td {
+      padding: 0.35rem 0.5rem;
+      font-size: 0.95rem;
+      text-align: center;
+      min-width: 2.25rem;
+    }
+
+    .sticky-col {
+      position: sticky;
+      left: 0;
+      background: var(--color-surface-sticky);
+      z-index: 1;
+      font-weight: 600;
+      text-align: center;
+      border-right: 1px solid var(--color-line-hover);
+    }
+
+    thead .sticky-col {
+      background: var(--color-surface-sticky-header);
+      z-index: 2;
+    }
+
+    .situation-header {
+      border-bottom: none;
+      padding-bottom: 0.2rem;
+      font-weight: 600;
+      border-left: 1px solid var(--color-line);
+    }
+
+    .out-header {
+      font-weight: 500;
+      color: var(--color-content-dim);
+      font-size: 0.85rem;
+    }
+
+    .last-in-group {
+      border-right: 1px solid var(--color-line);
+    }
+  }
+
+  /* ── Woba ── */
+  .woba-cell {
+    font-weight: 600;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    font-size: 1rem;
+  }
+
+  .tier-excellent {
+    background: var(--color-tier-excellent-bg);
+    color: var(--color-tier-excellent);
+  }
+
+  .tier-great {
+    background: var(--color-tier-great-bg);
+    color: var(--color-tier-great);
+  }
+
+  .tier-above_average {
+    background: var(--color-tier-above-avg-bg);
+    color: var(--color-tier-above-avg);
+  }
+
+  .tier-average {
+    background: var(--color-tier-average-bg);
+    color: var(--color-tier-average);
+  }
+
+  .tier-below_average {
+    background: var(--color-tier-below-avg-bg);
+    color: var(--color-tier-below-avg);
+  }
+
+  .woba-table .player-row {
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-brand-bg-subtle) !important;
+    }
+  }
+
+  .woba-table .player-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .woba-table .expand-arrow {
+    font-size: 0.65rem;
+    color: var(--color-content-dim);
+    width: 1rem;
+    flex-shrink: 0;
+    transition: color 0.15s;
+  }
+
+  .woba-table .player-row:hover .expand-arrow {
+    color: var(--color-link-hover);
+  }
+
+  .cumulative-row > td {
+    padding: 0 !important;
+    background: var(--color-surface-overlay);
+  }
+
+  .game-progression-table {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background: transparent !important;
+
+    thead {
+      background: var(--color-surface-card) !important;
+
+      th {
+        color: var(--color-content-dim) !important;
+        font-size: 0.85rem !important;
+      }
+    }
+
+    td {
+      padding: 0.45rem 0.75rem !important;
+      font-size: 0.95rem;
+    }
+  }
+
+  /* ── Team grid ── */
+  .team-grid-table {
+    white-space: nowrap;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+
+    th, td {
+      padding: 0.5rem 0.6rem;
+      font-size: 0.95rem;
+      text-align: center;
+      min-width: 4.5rem;
+    }
+
+    .sticky-col {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: var(--color-surface-sticky);
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid var(--color-line-hover);
+      min-width: 8rem;
+    }
+
+    thead .sticky-col {
+      background: var(--color-surface-sticky-header);
+      z-index: 2;
+    }
+
+    .game-col-header {
+      vertical-align: bottom;
+      padding: 0.3rem 0.4rem;
+      line-height: 1.2;
+    }
+
+    .game-col-opponent {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-content-secondary);
+    }
+
+    .game-col-date {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--color-content-dim);
+    }
+
+    .sticky-end {
+      position: sticky;
+      right: 0;
+      z-index: 1;
+      background: var(--color-surface-sticky);
+      border-left: 1px solid var(--color-line-hover);
+    }
+
+    .season-col-header {
+      font-weight: 700;
+      position: sticky;
+      right: 0;
+      z-index: 2;
+      background: var(--color-surface-sticky-header);
+      border-left: 1px solid var(--color-line-hover);
+    }
+
+    .player-name-cell {
+      font-weight: 500;
+      color: var(--color-content-bright);
+    }
+
+    .dual-cell {
+      padding: 0.25rem 0.2rem;
+      vertical-align: middle;
+
+      .cell-inner {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0.3rem;
+      }
+    }
+
+    .cell-cumulative {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .cell-game {
+      font-size: 0.75rem;
+      font-weight: 500;
+      opacity: 0.6;
+    }
+
+    .empty-cell {
+      color: var(--color-content-empty);
+      background: transparent;
+    }
+
+    .sortable-header {
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        color: var(--color-content-bright);
+      }
+    }
+
+    .sort-arrow {
+      font-size: 0.6rem;
+      margin-left: 0.25rem;
+      vertical-align: middle;
+    }
+  }
+
+  /* ── Scoring ── */
+  .bunt-highlight {
+    background: rgba(250, 204, 21, 0.08) !important;
+    border-left: 3px solid rgba(250, 204, 21, 0.5);
+  }
+
+  .bunt-chip {
+    background: rgba(250, 204, 21, 0.15) !important;
+    color: #fde047 !important;
+    border-color: rgba(250, 204, 21, 0.3) !important;
+  }
+
+  .scoring-table {
+    td:last-child {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    td:nth-child(2) {
+      text-align: center;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  .game-plays-table {
+    margin-top: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  /* ── Game viewer ── */
+  .filter-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    border: 1px solid var(--color-line-strong);
+    border-radius: 6px;
+    background: var(--color-surface-card);
+    color: var(--color-content-secondary);
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+      background: var(--color-brand-bg);
+      border-color: var(--color-brand);
+    }
+
+    &.active {
+      background: var(--color-brand);
+      color: #fff;
+      border-color: var(--color-brand);
+    }
+  }
+
+  .control-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+
+  .play-btn {
+    border: 1px solid var(--color-brand);
+    background: var(--color-brand);
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background: var(--color-brand-light);
+      border-color: var(--color-brand-light);
+    }
+  }
+
+  .rewind-btn {
+    border: 1px solid var(--color-line-strong);
+    background: var(--color-surface-elevated);
+    color: var(--color-content-muted);
+
+    &:hover:not(:disabled) {
+      background: var(--color-brand-bg);
+      border-color: var(--color-brand);
+      color: var(--color-brand-text);
+    }
+  }
+
+  .inning-header {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-brand-text);
+    background: var(--color-surface-sticky-header);
+    border-bottom: 1px solid var(--color-line);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .play-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-content-secondary);
+    border-bottom: 1px solid var(--color-line);
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.1s;
+
+    &:hover {
+      background: var(--color-surface-hover);
+    }
+
+    &.active {
+      background: var(--color-brand-bg);
+      border-left-color: var(--color-brand);
+    }
+
+    &.non-pa {
+      color: var(--color-content-dim);
+      font-style: italic;
+    }
+  }
+
+  .slot-chip {
+    display: inline-block;
+    background: var(--color-brand);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .nav-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    border: 1px solid var(--color-line-strong);
+    border-radius: 6px;
+    background: var(--color-surface-card);
+    color: var(--color-content-secondary);
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      background: var(--color-brand-bg);
+      border-color: var(--color-brand);
+      color: var(--color-brand-text);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}
