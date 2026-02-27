@@ -1,0 +1,11 @@
+{
+  "/wellesleyblue": {
+    "target": "https://wellesleyblue.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/wellesleyblue": ""
+    }
+  }
+}

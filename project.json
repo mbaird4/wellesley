@@ -21,7 +21,7 @@
             "input": "public"
           }
         ],
-        "styles": ["./src/styles.scss", "./src/tailwind.generated.css"]
+        "styles": ["./src/tailwind.generated.css"]
       },
       "configurations": {
         "production": {
@@ -50,6 +50,9 @@
     "serve": {
       "continuous": true,
       "executor": "@angular/build:dev-server",
+      "options": {
+        "proxyConfig": "proxy.conf.json"
+      },
       "configurations": {
         "production": {
           "buildTarget": "wellesley:build:production"

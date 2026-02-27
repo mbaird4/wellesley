@@ -1,0 +1,73 @@
+<div class="flex justify-center items-center">
+  <svg viewBox="0 0 300 220" class="diamond-svg">
+    <!-- Diamond outline + field -->
+    <path
+      d="M150,40 L220,100 L150,170 L80,100 Z"
+      class="diamond-field"
+    />
+
+    <!-- 2B -->
+    <rect
+      [attr.x]="142" [attr.y]="32"
+      width="16" height="16"
+      transform="rotate(45 150 40)"
+      [class.occupied]="secondOccupied()"
+      class="base"
+    />
+    @if (bases().second) {
+      <text x="150" y="25" text-anchor="middle" class="runner-label">{{ bases().second }}</text>
+    }
+
+    <!-- 3B -->
+    <rect
+      [attr.x]="72" [attr.y]="92"
+      width="16" height="16"
+      transform="rotate(45 80 100)"
+      [class.occupied]="thirdOccupied()"
+      class="base"
+    />
+    @if (bases().third) {
+      <text x="65" y="88" text-anchor="end" class="runner-label">{{ bases().third }}</text>
+    }
+
+    <!-- 1B -->
+    <rect
+      [attr.x]="212" [attr.y]="92"
+      width="16" height="16"
+      transform="rotate(45 220 100)"
+      [class.occupied]="firstOccupied()"
+      class="base"
+    />
+    @if (bases().first) {
+      <text x="235" y="88" text-anchor="start" class="runner-label">{{ bases().first }}</text>
+    }
+
+    <!-- Home plate (pentagon: flat top, pointed bottom) -->
+    <polygon
+      points="142,163 142,170 150,178 158,170 158,163"
+      class="home-plate"
+    />
+
+    <!-- Out indicators -->
+    @for (filled of outDots(); track $index) {
+      <circle
+        [attr.cx]="135 + $index * 15"
+        cy="195"
+        r="5"
+        [class.out-filled]="filled"
+        [class.out-empty]="!filled"
+        class="out-dot"
+      />
+    }
+
+    <!-- Batter info -->
+    @if (batterName()) {
+      <text x="150" y="215" text-anchor="middle" class="batter-label">
+        @if (lineupSlot()) {
+          <tspan class="slot-badge">#{{ lineupSlot() }}</tspan>
+        }
+        {{ batterName() }}
+      </text>
+    }
+  </svg>
+</div>

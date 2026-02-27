@@ -1,0 +1,62 @@
+.diamond-svg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  overflow: visible;
+}
+
+.diamond-field {
+  fill: rgba(255, 255, 255, 0.03);
+  stroke: var(--color-line-medium);
+  stroke-width: 1.5;
+}
+
+.base {
+  fill: var(--color-surface-elevated);
+  stroke: var(--color-line-strong);
+  stroke-width: 1.5;
+  transition: fill 0.15s ease;
+
+  &.occupied {
+    fill: var(--color-brand);
+    stroke: var(--color-brand-light);
+  }
+}
+
+.runner-label {
+  font-size: 7px;
+  fill: var(--color-content);
+  font-family: system-ui, sans-serif;
+}
+
+.home-plate {
+  fill: var(--color-content-dim);
+  stroke: var(--color-line-strong);
+  stroke-width: 1.5;
+}
+
+.out-dot {
+  stroke: var(--color-line-strong);
+  stroke-width: 1;
+  transition: fill 0.15s ease;
+
+  &.out-filled {
+    fill: #ef4444;
+    stroke: #dc2626;
+  }
+
+  &.out-empty {
+    fill: var(--color-surface-elevated);
+  }
+}
+
+.batter-label {
+  font-size: 8px;
+  fill: var(--color-content-secondary);
+  font-family: system-ui, sans-serif;
+}
+
+.slot-badge {
+  font-weight: 700;
+  fill: var(--color-brand-text);
+}

@@ -1,0 +1,165 @@
+<div class="stats-section">
+  <div class="flex items-center gap-3 mb-6 flex-wrap">
+    <label for="woba-year-select" class="font-medium text-content-muted text-base uppercase tracking-[0.05em]">Season:</label>
+    <select
+      id="woba-year-select"
+      [(ngModel)]="selectedYear"
+      (ngModelChange)="loadData()"
+      [disabled]="loading"
+      class="year-select"
+    >
+      @for (year of availableYears; track year) {
+        <option [value]="year">{{ year }}</option>
+      }
+    </select>
+    <button (click)="reload()" [disabled]="loading" class="clear-cache-button">
+      {{ loading ? 'Loading...' : 'Reload' }}
+    </button>
+  </div>
+
+  @if (error) {
+    <div class="bg-error-bg text-error py-3.5 px-4 rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
+  }
+
+  @if (loading) {
+    <div class="py-6 px-4 text-content-muted text-[1.05rem]">Loading wOBA data...</div>
+  }
+
+  @if (playerWobas.length > 0 && !loading) {
+    <div class="mt-6">
+      <div class="tabs">
+        <button class="tab" [class.active]="activeTab === 'players'" (click)="activeTab = 'players'">Players</button>
+        <button class="tab" [class.active]="activeTab === 'team'" (click)="activeTab = 'team'">Team</button>
+      </div>
+
+      @if (activeTab === 'players') {
+        <h2>Player wOBA — {{ selectedYear }}</h2>
+        <table class="stats-table woba-table">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>PA</th>
+              <th>1B</th>
+              <th>2B</th>
+              <th>3B</th>
+              <th>HR</th>
+              <th>BB</th>
+              <th>HBP</th>
+              <th>wOBA</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (player of playerWobas; track player.name) {
+              <tr class="player-row" (click)="togglePlayer(player.name)">
+                <td class="player-name">
+                  <span class="expand-arrow">{{ expandedPlayer === player.name ? '&#9660;' : '&#9654;' }}</span>
+                  {{ player.name }}
+                </td>
+                <td>{{ player.pa }}</td>
+                <td>{{ player.singles }}</td>
+                <td>{{ player.doubles }}</td>
+                <td>{{ player.triples }}</td>
+                <td>{{ player.hr }}</td>
+                <td>{{ player.bb }}</td>
+                <td>{{ player.hbp }}</td>
+                <td class="woba-cell" [class]="tierClass(player.tier)">
+                  {{ formatWoba(player.woba) }}
+                </td>
+              </tr>
+              @if (expandedPlayer === player.name) {
+                <tr class="cumulative-row">
+                  <td colspan="9">
+                    @if (getCumulativeForPlayer(player.name); as cumData) {
+                      <table class="stats-table game-progression-table">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Opponent</th>
+                            <th>Game wOBA</th>
+                            <th>Cumulative wOBA</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @for (game of cumData.games; track $index) {
+                            <tr>
+                              <td>{{ game.date }}</td>
+                              <td>{{ game.opponent }}</td>
+                              <td class="woba-cell" [class]="tierClass(getWobaTier(game.gameWoba))">
+                                {{ formatWoba(game.gameWoba) }}
+                              </td>
+                              <td class="woba-cell" [class]="tierClass(game.tier)">
+                                {{ formatWoba(game.cumulativeWoba) }}
+                              </td>
+                            </tr>
+                          }
+                        </tbody>
+                      </table>
+                    } @else {
+                      <div class="py-5 text-content-dim text-center">No per-game data available for this player.</div>
+                    }
+                  </td>
+                </tr>
+              }
+            }
+          </tbody>
+        </table>
+      }
+
+      @if (activeTab === 'team') {
+        <h2>Team wOBA Grid — {{ selectedYear }}</h2>
+        <div class="overflow-x-auto rounded-xl border border-line">
+          <table class="stats-table team-grid-table">
+            <thead>
+              <tr>
+                <th class="sticky-col sortable-header" (click)="sortTeamGrid('name')">
+                  Player
+                  @if (teamSortKey === 'name') {
+                    <span class="sort-arrow">{{ teamSortDir === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+                  }
+                </th>
+                @for (col of teamGameColumns; track $index) {
+                  <th class="game-col-header">
+                    <div class="game-col-opponent">{{ col.opponent }}</div>
+                    <div class="game-col-date">{{ col.date }}</div>
+                  </th>
+                }
+                <th class="season-col-header sortable-header" (click)="sortTeamGrid('season')">
+                  Season
+                  @if (teamSortKey === 'season') {
+                    <span class="sort-arrow">{{ teamSortDir === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+                  }
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of teamPlayerRows; track row.name) {
+                <tr>
+                  <td class="sticky-col player-name-cell">{{ row.name }}</td>
+                  @for (cell of row.games; track $index) {
+                    @if (cell !== null) {
+                      <td class="woba-cell dual-cell" [class]="tierClass(getWobaTier(cell.cumulativeWoba))">
+                        <div class="cell-inner">
+                          <span class="cell-cumulative">{{ formatWoba(cell.cumulativeWoba) }}</span>
+                          <span class="cell-game" [class]="tierClass(getWobaTier(cell.gameWoba))">{{ formatWoba(cell.gameWoba) }}</span>
+                        </div>
+                      </td>
+                    } @else {
+                      <td class="woba-cell empty-cell">—</td>
+                    }
+                  }
+                  <td class="woba-cell sticky-end" [class]="tierClass(row.seasonTier)">
+                    {{ formatWoba(row.seasonWoba) }}
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+    </div>
+  }
+
+  @if (playerWobas.length === 0 && !loading && !error) {
+    <div class="py-12 px-4 text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
+  }
+</div>

@@ -1,2 +1,13 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<div class="max-w-[2400px] mx-auto px-8 py-6">
+
+  <header class="flex items-center justify-between mb-6 pb-4 border-b border-line">
+    <h1 class="m-0 text-[1.75rem] font-bold bg-linear-to-br from-brand-lighter to-brand bg-clip-text text-transparent tracking-tight">{{ title }}</h1>
+    <nav class="flex gap-1 bg-surface-card rounded-[10px] p-[3px]">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Lineup Stats</a>
+      <a routerLink="/woba" routerLinkActive="active" class="nav-link">wOBA</a>
+      <a routerLink="/scoring" routerLinkActive="active" class="nav-link">Scoring Plays</a>
+    </nav>
+  </header>
+
+  <router-outlet></router-outlet>
+</div>
