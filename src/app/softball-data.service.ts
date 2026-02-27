@@ -20,10 +20,6 @@ export interface PlayByPlayInning {
 })
 export class SoftballDataService {
   private readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
-  // In local dev, route through the Vite proxy; deployed, use a CORS proxy
-  private readonly baseUrl = this.isLocal
-    ? '/wellesleyblue'
-    : 'https://corsproxy.io/?url=https://wellesleyblue.com';
 
   /**
    * Returns cached GameData[] for a year, or fetches + caches if not present.
@@ -88,12 +84,22 @@ export class SoftballDataService {
   }
 
   /**
-   * Gets the full URL for a given path
+   * Converts a wellesleyblue.com path or absolute URL to a proxied URL
    */
-  private getUrl(path: string): string {
-    // Remove leading slash if present to avoid double slashes
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return `${this.baseUrl}/${cleanPath}`;
+  private getUrl(pathOrUrl: string): string {
+    if (this.isLocal) {
+      if (pathOrUrl.startsWith('http')) {
+        return pathOrUrl.replace('https://wellesleyblue.com', '/wellesleyblue');
+      }
+      const cleanPath = pathOrUrl.startsWith('/') ? pathOrUrl.slice(1) : pathOrUrl;
+      return `/wellesleyblue/${cleanPath}`;
+    }
+    // Production: wrap full URL with allorigins CORS proxy
+    if (pathOrUrl.startsWith('http')) {
+      return `https://api.allorigins.win/raw?url=${encodeURIComponent(pathOrUrl)}`;
+    }
+    const cleanPath = pathOrUrl.startsWith('/') ? pathOrUrl.slice(1) : pathOrUrl;
+    return `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://wellesleyblue.com/${cleanPath}`)}`;
   }
 
   /**
@@ -109,8 +115,7 @@ export class SoftballDataService {
       axios.get(scheduleUrl, {
         responseType: 'text',
         headers: {
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
         }
       })
     ).pipe(
@@ -170,20 +175,7 @@ export class SoftballDataService {
       console.log(`[SoftballDataService] Link ${index + 1}: href="${href}", text="${linkText}"`);
       
       if (href) {
-        // Handle both relative and absolute URLs
-        let fullUrl: string;
-        if (href.startsWith('http')) {
-          // Absolute URL - convert to proxy path in development
-          if (this.isLocal && href.includes('wellesleyblue.com')) {
-            fullUrl = href.replace('https://wellesleyblue.com', this.baseUrl);
-          } else {
-            fullUrl = href;
-          }
-        } else {
-          // Relative URL - use proxy path
-          const cleanPath = href.startsWith('/') ? href.slice(1) : href;
-          fullUrl = this.getUrl(cleanPath);
-        }
+        const fullUrl = this.getUrl(href);
         console.log(`[SoftballDataService] Resolved URL ${index + 1}:`, fullUrl);
         urls.push(fullUrl);
       } else {
