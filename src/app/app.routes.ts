@@ -20,5 +20,12 @@ export const appRoutes: Route[] = [
         (m) => m.ScoringPlaysComponent
       ),
   },
+  {
+    path: 'opponents',
+    loadComponent: () =>
+      import('./opponents/opponents.component').then(
+        (m) => m.OpponentsComponent
+      ),
+  },
   { path: '**', redirectTo: '' },
 ];

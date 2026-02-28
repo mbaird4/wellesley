@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "prefetch": "ts-node --project tsconfig.scripts.json scripts/prefetch-data.ts"
+    "prefetch": "ts-node --project tsconfig.scripts.json scripts/prefetch-data.ts",
+    "scrape-opponents": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts"
   },
   "private": true,
   "dependencies": {

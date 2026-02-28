@@ -1,0 +1,197 @@
+<div class="flex gap-6">
+  <!-- Sidebar -->
+  <nav class="flex flex-col gap-0.5 shrink-0 w-40">
+    @for (team of teams; track team.slug) {
+      <button
+        (click)="selectTeam(team.slug)"
+        class="py-2 px-3 rounded-lg text-left text-sm font-medium transition-colors cursor-pointer border-none"
+        [class]="team.slug === selectedSlug ? 'bg-brand-bg text-brand-text' : 'bg-transparent text-content-muted hover:text-content-bright hover:bg-surface-hover'"
+      >
+        {{ team.name }}
+      </button>
+    }
+  </nav>
+
+  <!-- Main content -->
+  <div class="flex-1 min-w-0">
+    <h2>{{ selectedTeamName }} — Historical wOBA</h2>
+
+    @if (error) {
+      <div class="bg-error-bg text-error py-3.5 px-4 rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
+    }
+
+    @if (loading) {
+      <div class="py-6 px-4 text-content-muted text-[1.05rem]">Loading...</div>
+    }
+
+    @if (displayRows.length > 0 && !loading) {
+      <table class="stats-table woba-table">
+        <thead>
+          <tr>
+            <th class="cursor-pointer select-none hover:text-content-bright" (click)="sort('name')">
+              Player
+              @if (sortKey === 'name') {
+                <span class="text-[0.6rem] ml-1 align-middle">{{ sortDir === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+              }
+            </th>
+            <th>#</th>
+            <th>Yr</th>
+            @for (year of allYears; track year) {
+              <th class="text-center cursor-pointer select-none hover:text-content-bright" (click)="sortByYear(year)">
+                '{{ ('' + year).slice(2) }}
+              </th>
+            }
+            <th class="text-center cursor-pointer select-none hover:text-content-bright" (click)="sort('career')">
+              Career
+              @if (sortKey === 'career') {
+                <span class="text-[0.6rem] ml-1 align-middle">{{ sortDir === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+              }
+            </th>
+            <th class="text-center">PA</th>
+            <th class="text-center">GP</th>
+            <th class="text-center">SB</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of displayRows; track row.name) {
+            <tr class="player-row" (click)="togglePlayer(row.name)">
+              <td class="flex items-center gap-2">
+                <span class="text-[0.65rem] text-content-dim w-4 shrink-0 transition-colors expand-arrow">{{ expandedPlayer === row.name ? '&#9660;' : '&#9654;' }}</span>
+                {{ row.name }}
+              </td>
+              <td class="text-content-dim tabular-nums">{{ row.jerseyNumber ?? '—' }}</td>
+              <td class="text-content-dim">{{ abbreviateClassYear(row.classYear) }}</td>
+              @for (year of allYears; track year) {
+                @if (getCumulativeForYear(row, year); as cum) {
+                  <td class="font-semibold text-center tabular-nums dual-cell" [class]="tierClass(getWobaTier(cum.woba))">
+                    <div class="flex items-baseline justify-center gap-1">
+                      <span class="text-[0.95rem] font-semibold">{{ formatWoba(cum.woba) }}</span>
+                      <span class="text-[0.7rem] font-semibold opacity-60" [class]="tierClass(getWobaTier(getSeasonForYear(row, year)?.woba ?? 0))">{{ formatWoba(getSeasonForYear(row, year)?.woba ?? 0) }} <span class="text-[0.6rem] opacity-80">{{ getSeasonForYear(row, year)?.pa }}</span></span>
+                    </div>
+                  </td>
+                } @else {
+                  <td class="text-center text-content-empty">—</td>
+                }
+              }
+              <td class="font-bold text-center tabular-nums text-[1.05rem]">
+                <span [ngStyle]="wobaGradientStyle(row.career.woba)">{{ formatWoba(row.career.woba) }}</span>
+              </td>
+              <td class="text-center tabular-nums text-content-secondary">{{ row.career.pa }}</td>
+              <td class="text-center tabular-nums text-content-secondary">{{ row.career.gp }}</td>
+              <td class="text-center tabular-nums text-content-secondary">
+                @if (row.career.sbAtt > 0) {
+                  {{ row.career.sb }}/{{ row.career.sbAtt }}
+                } @else {
+                  —
+                }
+              </td>
+            </tr>
+            @if (expandedPlayer === row.name) {
+              <tr class="cumulative-row">
+                <td [attr.colspan]="4 + allYears.length + 4">
+                  <div class="p-4 flex gap-6 flex-wrap">
+                    <!-- Per-season detail -->
+                    <div>
+                      <h3 class="text-sm font-semibold text-content-muted uppercase tracking-wide mb-2">Season Breakdown</h3>
+                      <div class="overflow-x-auto">
+                        <table class="stats-table game-progression-table">
+                          <thead>
+                            <tr>
+                              <th>Year</th>
+                              <th>GP</th>
+                              <th>PA</th>
+                              <th>AB</th>
+                              <th>R</th>
+                              <th>H</th>
+                              <th>2B</th>
+                              <th>3B</th>
+                              <th>HR</th>
+                              <th>RBI</th>
+                              <th>BB</th>
+                              <th>SO</th>
+                              <th>HBP</th>
+                              <th>SB</th>
+                              <th>AVG</th>
+                              <th>OBP</th>
+                              <th>SLG</th>
+                              <th>OPS</th>
+                              <th>wOBA</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for (season of row.seasons; track season.year) {
+                              <tr>
+                                <td class="font-medium text-content-bright">{{ season.year }}</td>
+                                <td>{{ season.gp }}</td>
+                                <td>{{ season.pa }}</td>
+                                <td>{{ season.ab }}</td>
+                                <td>{{ season.r }}</td>
+                                <td>{{ season.h }}</td>
+                                <td>{{ season.doubles }}</td>
+                                <td>{{ season.triples }}</td>
+                                <td>{{ season.hr }}</td>
+                                <td>{{ season.rbi }}</td>
+                                <td>{{ season.bb }}</td>
+                                <td>{{ season.so }}</td>
+                                <td>{{ season.hbp }}</td>
+                                <td>
+                                  @if (season.sbAtt > 0) {
+                                    {{ season.sb }}/{{ season.sbAtt }}
+                                  } @else {
+                                    —
+                                  }
+                                </td>
+                                <td class="tabular-nums">{{ formatWoba(season.avg) }}</td>
+                                <td class="tabular-nums">{{ formatWoba(season.obp) }}</td>
+                                <td class="tabular-nums">{{ formatWoba(season.slg) }}</td>
+                                <td class="tabular-nums">{{ formatWoba(season.ops) }}</td>
+                                <td class="font-semibold text-center tabular-nums" [class]="tierClass(getWobaTier(season.woba))">
+                                  {{ formatWoba(season.woba) }}
+                                </td>
+                              </tr>
+                            }
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- Cumulative progression -->
+                    @if (row.cumulativeByYear.length > 1) {
+                      <div>
+                        <h3 class="text-sm font-semibold text-content-muted uppercase tracking-wide mb-2">Cumulative Progression</h3>
+                        <table class="stats-table game-progression-table">
+                          <thead>
+                            <tr>
+                              <th>Through</th>
+                              <th>PA</th>
+                              <th>wOBA</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @for (cum of row.cumulativeByYear; track cum.year) {
+                              <tr>
+                                <td class="font-medium text-content-bright">{{ getCumulativeLabel(row, cum.year) }}</td>
+                                <td>{{ cum.pa }}</td>
+                                <td class="font-semibold text-center tabular-nums" [class]="tierClass(getWobaTier(cum.woba))">
+                                  {{ formatWoba(cum.woba) }}
+                                </td>
+                              </tr>
+                            }
+                          </tbody>
+                        </table>
+                      </div>
+                    }
+                  </div>
+                </td>
+              </tr>
+            }
+          }
+        </tbody>
+      </table>
+    }
+
+    @if (displayRows.length === 0 && !loading && !error) {
+      <div class="py-12 px-4 text-center text-content-dim text-[1.05rem]">No data available for this team.</div>
+    }
+  </div>
+</div>

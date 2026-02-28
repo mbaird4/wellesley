@@ -11,7 +11,7 @@ npx nx test               # Jest unit tests
 npx nx lint               # ESLint
 ```
 
-Dev server proxies `/wellesleyblue/*` → `https://wellesleyblue.com` for CORS bypass (see `proxy.conf.json`). In production, `corsproxy.io` is used instead.
+Dev server proxies `/wellesleyblue/*` → `https://wellesleyblue.com` for CORS bypass (see `proxy.conf.json`). In production, the app reads from pre-generated static JSON files (`public/data/`), refreshed by a daily cron job during season.
 
 ## Architecture
 
@@ -47,6 +47,7 @@ Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley Col
 - `/` — Lineup stats (PA by slot and out count)
 - `/woba` — wOBA player rankings
 - `/scoring` — Scoring play analysis
+- `/opponents` — Opponent scouting (historical batting stats)
 
 ## Deployment
 
