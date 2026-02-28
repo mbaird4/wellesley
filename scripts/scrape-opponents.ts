@@ -383,25 +383,51 @@ async function scrapeTeam(
   }
 
   // 4. Match roster players to stats and compute wOBA
+  // Two-pass matching: exact first, then surname fallback against unclaimed entries
+  const rosterWithKeys = roster.map((rp) => ({
+    rp,
+    rosterKey: toNormalizedKey(rp.firstName, rp.lastName),
+  }));
+
+  // Pass 1: exact matches
+  const matchResults = new Map<
+    (typeof roster)[number],
+    Map<number, BattingStats>
+  >();
+  const claimedStatsKeys = new Set<string>();
+  for (const { rp, rosterKey } of rosterWithKeys) {
+    const exact = statsLookup.get(rosterKey);
+    if (exact) {
+      matchResults.set(rp, exact);
+      claimedStatsKeys.add(rosterKey);
+    }
+  }
+
+  // Pass 2: surname fallback for unmatched — only if exactly one unclaimed entry shares the surname
+  for (const { rp, rosterKey } of rosterWithKeys) {
+    if (matchResults.has(rp)) continue;
+    const rosterLastName = lastNameOnly(rosterKey);
+    const unclaimed: { key: string; yearMap: Map<number, BattingStats> }[] = [];
+    for (const [statsKey, yearMap] of statsLookup) {
+      if (
+        !claimedStatsKeys.has(statsKey) &&
+        lastNameOnly(statsKey) === rosterLastName
+      ) {
+        unclaimed.push({ key: statsKey, yearMap });
+      }
+    }
+    if (unclaimed.length === 1) {
+      matchResults.set(rp, unclaimed[0].yearMap);
+      claimedStatsKeys.add(unclaimed[0].key);
+    }
+  }
+
   const players: PlayerOutput[] = [];
   let matched = 0;
   let unmatched = 0;
 
-  for (const rp of roster) {
-    const rosterKey = toNormalizedKey(rp.firstName, rp.lastName);
-    const rosterLastName = lastNameOnly(rosterKey);
-
-    // Try exact match first, then last-name-only fallback
-    let playerStats = statsLookup.get(rosterKey);
-    if (!playerStats) {
-      // Fallback: find a stats entry whose last name matches
-      for (const [statsKey, yearMap] of statsLookup) {
-        if (lastNameOnly(statsKey) === rosterLastName) {
-          playerStats = yearMap;
-          break;
-        }
-      }
-    }
+  for (const { rp } of rosterWithKeys) {
+    const playerStats = matchResults.get(rp);
 
     if (!playerStats || playerStats.size === 0) {
       unmatched++;
