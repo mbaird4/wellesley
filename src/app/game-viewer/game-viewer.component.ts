@@ -5,7 +5,7 @@ import { DiamondComponent } from '../diamond/diamond.component';
 import { PlaySnapshot, BaseRunners } from '../../lib/types';
 
 @Component({
-  selector: 'app-game-viewer',
+  selector: 'ws-game-viewer',
   standalone: true,
   imports: [CommonModule, FormsModule, DiamondComponent],
   templateUrl: './game-viewer.component.html',

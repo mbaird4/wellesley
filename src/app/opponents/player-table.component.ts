@@ -8,7 +8,7 @@ import { PlayerDetailComponent } from './player-detail.component';
 import { SortKey, SortDir } from './opponents.component';
 
 @Component({
-  selector: 'app-player-table',
+  selector: 'ws-player-table',
   standalone: true,
   imports: [NgStyle, WobaBadgeComponent, PlayerDetailComponent],
   host: { class: 'block' },
@@ -52,7 +52,7 @@ import { SortKey, SortDir } from './opponents.component';
             @for (year of allYears(); track year) {
               @if (row.yearData.get(year); as yd) {
                 <td class="font-semibold text-center tabular-nums dual-cell" [class]="getTierClass(yd.cumulative.woba)">
-                  <app-woba-badge
+                  <ws-woba-badge
                     [cumulativeWoba]="yd.cumulative.woba"
                     [seasonWoba]="yd.season.woba"
                     [seasonPa]="yd.season.pa"
@@ -78,7 +78,7 @@ import { SortKey, SortDir } from './opponents.component';
           @if (expandedPlayer() === row.name) {
             <tr class="cumulative-row">
               <td [attr.colspan]="4 + allYears().length + 4">
-                <app-player-detail [row]="row" />
+                <ws-player-detail [row]="row" />
               </td>
             </tr>
           }

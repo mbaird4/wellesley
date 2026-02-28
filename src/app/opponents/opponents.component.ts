@@ -17,7 +17,7 @@ export type SortKey = 'name' | 'career';
 export type SortDir = 'asc' | 'desc';
 
 @Component({
-  selector: 'app-opponents',
+  selector: 'ws-opponents',
   standalone: true,
   imports: [NgTemplateOutlet, TeamSelectorComponent, PlayerTableComponent, PlayerCardListComponent],
   host: { class: 'block stats-section' },

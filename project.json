@@ -3,7 +3,7 @@
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "includedScripts": [],
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "ws",
   "sourceRoot": "./src",
   "tags": [],
   "targets": {

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BaseRunners } from '../../lib/types';
 
 @Component({
-  selector: 'app-diamond',
+  selector: 'ws-diamond',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './diamond.component.html',

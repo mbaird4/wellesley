@@ -6,7 +6,7 @@ import { PlayerDetailComponent } from './player-detail.component';
 import { SortKey, SortDir } from './opponents.component';
 
 @Component({
-  selector: 'app-player-card-list',
+  selector: 'ws-player-card-list',
   standalone: true,
   imports: [NgStyle, PlayerDetailComponent],
   host: { class: 'block' },
@@ -68,7 +68,7 @@ import { SortKey, SortDir } from './opponents.component';
           <!-- Expanded detail -->
           @if (expandedPlayer() === row.name) {
             <div class="border-t border-line bg-surface-overlay">
-              <app-player-detail [row]="row" />
+              <ws-player-detail [row]="row" />
             </div>
           }
         </div>

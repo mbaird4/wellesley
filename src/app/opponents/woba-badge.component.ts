@@ -3,7 +3,7 @@ import { getWobaTier } from '../../lib/woba';
 import { formatWoba, tierClass } from '../../lib/woba-display';
 
 @Component({
-  selector: 'app-woba-badge',
+  selector: 'ws-woba-badge',
   standalone: true,
   host: { class: 'flex items-baseline justify-center gap-1' },
   template: `

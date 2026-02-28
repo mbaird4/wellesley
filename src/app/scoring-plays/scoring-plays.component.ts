@@ -13,7 +13,7 @@ interface PlayerScoringBreakdown {
 }
 
 @Component({
-  selector: 'app-scoring-plays',
+  selector: 'ws-scoring-plays',
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './scoring-plays.component.html',

@@ -7,7 +7,7 @@ const PASSWORD_HASH =
 
 @Component({
   imports: [RouterModule, FormsModule],
-  selector: 'app-root',
+  selector: 'ws-root',
   templateUrl: './app.html',
 })
 export class App {

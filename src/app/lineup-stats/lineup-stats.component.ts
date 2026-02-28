@@ -5,7 +5,7 @@ import { SoftballStatsService, ResultRow, GameWithSnapshots, BaseRunnerRow, Base
 import { GameViewerComponent } from '../game-viewer/game-viewer.component';
 
 @Component({
-  selector: 'app-lineup-stats',
+  selector: 'ws-lineup-stats',
   standalone: true,
   imports: [CommonModule, FormsModule, GameViewerComponent],
   templateUrl: './lineup-stats.component.html',

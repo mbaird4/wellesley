@@ -2,7 +2,7 @@ import { Component, input, output } from '@angular/core';
 import { TeamEntry } from './opponents.component';
 
 @Component({
-  selector: 'app-team-selector',
+  selector: 'ws-team-selector',
   standalone: true,
   host: { class: 'block' },
   template: `

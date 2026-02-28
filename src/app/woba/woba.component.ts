@@ -31,7 +31,7 @@ export interface TeamPlayerRow {
 }
 
 @Component({
-  selector: 'app-woba',
+  selector: 'ws-woba',
   standalone: true,
   imports: [CommonModule, FormsModule],
   host: {

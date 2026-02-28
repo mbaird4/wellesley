@@ -4,7 +4,7 @@ import { getWobaTier } from '../../lib/woba';
 import { formatWoba, tierClass } from '../../lib/woba-display';
 
 @Component({
-  selector: 'app-player-detail',
+  selector: 'ws-player-detail',
   standalone: true,
   host: { class: 'block' },
   template: `

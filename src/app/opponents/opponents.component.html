@@ -1,7 +1,7 @@
 @if (bp.gtSm()) {
   <!-- Desktop: sidebar + table -->
   <div class="flex gap-6">
-    <app-team-selector
+    <ws-team-selector
       layout="vertical"
       [teams]="teams"
       [selectedSlug]="selectedSlug()"
@@ -14,7 +14,7 @@
       <ng-container *ngTemplateOutlet="statusTpl" />
 
       @if (displayRows().length > 0 && !loading()) {
-        <app-player-table
+        <ws-player-table
           [rows]="displayRows()"
           [allYears]="allYears()"
           [expandedPlayer]="expandedPlayer()"
@@ -29,7 +29,7 @@
   </div>
 } @else {
   <!-- Mobile: stacked layout -->
-  <app-team-selector
+  <ws-team-selector
     layout="horizontal"
     [teams]="teams"
     [selectedSlug]="selectedSlug()"
@@ -41,7 +41,7 @@
   <ng-container *ngTemplateOutlet="statusTpl" />
 
   @if (displayRows().length > 0 && !loading()) {
-    <app-player-card-list
+    <ws-player-card-list
       [rows]="displayRows()"
       [expandedPlayer]="expandedPlayer()"
       [sortKey]="sortKey()"
