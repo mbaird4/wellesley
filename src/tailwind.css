@@ -78,10 +78,28 @@
   }
 }
 
+/* ── Responsive spacing utilities ──
+   Three tiers that scale down on small screens:
+   section: outer page wrapper  (p-4 → md:p-8)
+   card:    inner panels        (p-3 → md:p-5)
+   cell:    tight table content (p-2 → md:p-3)
+*/
+@utility p-section { @apply p-4 md:p-8; }
+@utility px-section { @apply px-4 md:px-8; }
+@utility py-section { @apply py-4 md:py-8; }
+
+@utility p-card { @apply p-3 md:p-5; }
+@utility px-card { @apply px-3 md:px-5; }
+@utility py-card { @apply py-3 md:py-5; }
+
+@utility p-cell { @apply p-2 md:p-3; }
+@utility px-cell { @apply px-2 md:px-3; }
+@utility py-cell { @apply py-2 md:py-3; }
+
 @layer components {
   /* ── Shared Card ── */
   .stats-section {
-    @apply bg-surface-card border border-line-hover rounded-2xl p-8;
+    @apply bg-surface-card border border-line-hover rounded-2xl p-section;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
   }

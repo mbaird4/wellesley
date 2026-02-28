@@ -14,11 +14,11 @@
 </div>
 
 @if (error) {
-  <div class="bg-error-bg text-error py-3.5 px-4 rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
+  <div class="bg-error-bg text-error py-cell px-card rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
 }
 
 @if (loading) {
-  <div class="py-6 px-4 text-content-muted text-[1.05rem]">Loading wOBA data...</div>
+  <div class="py-card px-card text-content-muted text-[1.05rem]">Loading wOBA data...</div>
 }
 
 @if (playerWobas.length > 0 && !loading) {
@@ -91,7 +91,7 @@
                       </tbody>
                     </table>
                   } @else {
-                    <div class="py-5 text-content-dim text-center">No per-game data available for this player.</div>
+                    <div class="py-card text-content-dim text-center">No per-game data available for this player.</div>
                   }
                 </td>
               </tr>
@@ -183,5 +183,5 @@
 }
 
 @if (playerWobas.length === 0 && !loading && !error) {
-  <div class="py-12 px-4 text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
+  <div class="py-section px-card text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
 }

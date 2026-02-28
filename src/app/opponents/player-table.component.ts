@@ -1,0 +1,108 @@
+import { Component, input, output } from '@angular/core';
+import { NgStyle } from '@angular/common';
+import { OpponentDisplayRow } from './opponent-types';
+import { getWobaTier } from '../../lib/woba';
+import { formatWoba, tierClass, wobaGradientStyle, abbreviateClassYear } from '../../lib/woba-display';
+import { WobaBadgeComponent } from './woba-badge.component';
+import { PlayerDetailComponent } from './player-detail.component';
+import { SortKey, SortDir } from './opponents.component';
+
+@Component({
+  selector: 'app-player-table',
+  standalone: true,
+  imports: [NgStyle, WobaBadgeComponent, PlayerDetailComponent],
+  host: { class: 'block' },
+  template: `
+    <table class="stats-table woba-table">
+      <thead>
+        <tr>
+          <th class="cursor-pointer select-none hover:text-content-bright" (click)="sortChanged.emit('name')">
+            Player
+            @if (sortKey() === 'name') {
+              <span class="text-[0.6rem] ml-1 align-middle">{{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+            }
+          </th>
+          <th>#</th>
+          <th>Yr</th>
+          @for (year of allYears(); track year) {
+            <th class="text-center cursor-pointer select-none hover:text-content-bright" (click)="yearSortChanged.emit(year)">
+              '{{ ('' + year).slice(2) }}
+            </th>
+          }
+          <th class="text-center cursor-pointer select-none hover:text-content-bright" (click)="sortChanged.emit('career')">
+            Career
+            @if (sortKey() === 'career') {
+              <span class="text-[0.6rem] ml-1 align-middle">{{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}</span>
+            }
+          </th>
+          <th class="text-center">PA</th>
+          <th class="text-center">GP</th>
+          <th class="text-center">SB</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of rows(); track row.name) {
+          <tr class="player-row" (click)="playerToggled.emit(row.name)">
+            <td class="flex items-center gap-2">
+              <span class="text-[0.65rem] text-content-dim w-4 shrink-0 transition-colors expand-arrow">{{ expandedPlayer() === row.name ? '&#9660;' : '&#9654;' }}</span>
+              {{ row.name }}
+            </td>
+            <td class="text-content-dim tabular-nums">{{ row.jerseyNumber ?? '—' }}</td>
+            <td class="text-content-dim">{{ abbrevClassYear(row.classYear) }}</td>
+            @for (year of allYears(); track year) {
+              @if (row.yearData.get(year); as yd) {
+                <td class="font-semibold text-center tabular-nums dual-cell" [class]="getTierClass(yd.cumulative.woba)">
+                  <app-woba-badge
+                    [cumulativeWoba]="yd.cumulative.woba"
+                    [seasonWoba]="yd.season.woba"
+                    [seasonPa]="yd.season.pa"
+                  />
+                </td>
+              } @else {
+                <td class="text-center text-content-empty">—</td>
+              }
+            }
+            <td class="font-bold text-center tabular-nums text-[1.05rem]">
+              <span [ngStyle]="gradientStyle(row.career.woba)">{{ fmtWoba(row.career.woba) }}</span>
+            </td>
+            <td class="text-center tabular-nums text-content-secondary">{{ row.career.pa }}</td>
+            <td class="text-center tabular-nums text-content-secondary">{{ row.career.gp }}</td>
+            <td class="text-center tabular-nums text-content-secondary">
+              @if (row.career.sbAtt > 0) {
+                {{ row.career.sb }}/{{ row.career.sbAtt }}
+              } @else {
+                —
+              }
+            </td>
+          </tr>
+          @if (expandedPlayer() === row.name) {
+            <tr class="cumulative-row">
+              <td [attr.colspan]="4 + allYears().length + 4">
+                <app-player-detail [row]="row" />
+              </td>
+            </tr>
+          }
+        }
+      </tbody>
+    </table>
+  `,
+})
+export class PlayerTableComponent {
+  readonly rows = input.required<OpponentDisplayRow[]>();
+  readonly allYears = input.required<number[]>();
+  readonly expandedPlayer = input.required<string | null>();
+  readonly sortKey = input.required<SortKey>();
+  readonly sortDir = input.required<SortDir>();
+
+  readonly playerToggled = output<string>();
+  readonly sortChanged = output<SortKey>();
+  readonly yearSortChanged = output<number>();
+
+  readonly fmtWoba = formatWoba;
+  readonly gradientStyle = wobaGradientStyle;
+  readonly abbrevClassYear = abbreviateClassYear;
+
+  getTierClass(woba: number): string {
+    return tierClass(getWobaTier(woba));
+  }
+}

@@ -38,9 +38,21 @@ Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley Col
 - Semicolons separate sub-events within a play: batter action first, then runner sub-events (e.g., `"K. Player singled to cf; M. Runner scored."`).
 - `isPlateAppearance` on snapshots is critical — downstream consumers filter on it. Non-PA events (substitutions, tiebreakers, wild pitches) must NOT increment `batterIndex`.
 
+## Component Guidelines
+
+- **Small, focused components** — Favor many small components over fewer large ones. Extract sub-sections into their own components early.
+- **Signals over functions in templates** — Use Angular signals (`computed`, `signal`, `input`, `output`) for reactive state. Avoid calling functions directly in templates; derive values via `computed()` signals instead.
+- **Reusable presentational wrappers** — Build shared layout/presentational components (cards, panels, stat blocks) that accept content via projection or inputs. Keep them stateless and reusable across routes.
+- **Mobile-first mindset** — Design components and layouts with mobile responsiveness in mind. Use Tailwind responsive utilities (`sm:`, `md:`, `lg:`) and avoid fixed-width layouts.
+- **Components over repeated CSS** — Use Angular components for presentational patterns (badges, stat cells, cards) instead of repeating inline markup. Keep components stateless with inputs/outputs.
+- **Nx libraries** — As the app grows, extract cohesive feature areas or shared UI into Nx libraries (e.g., `libs/ui`, `libs/stats-core`) to enforce boundaries and improve build times.
+
 ## Code Style
 
 - Apply layout/styling classes via the component's `host` metadata (e.g., `host: { class: 'flex justify-center items-center' }`) instead of adding wrapper `<div>` elements in templates. Avoid extra markup just for styling.
+- Prefer using tailwind classes over custom css. If scoping needed, create a _partial.scss in `src/styles/` and `@forward` it into `src/_index.scss`, via a core mixin
+- **Responsive branching** — Use `bp.gtSm()` (greater-than) as the primary `@if` check for desktop, with mobile as the `@else`. Think "is it desktop?" not "is it mobile?". Prefer `gt*` signals over `lt*`.
+- **Responsive spacing utilities** — Use `p-section`, `p-card`, `p-cell` (and `px-`/`py-` variants) instead of writing manual responsive padding (`p-4 md:p-8`). These are defined in `tailwind.css` and scale automatically across breakpoints.
 
 ## Routes
 

@@ -14,11 +14,11 @@
 </div>
 
 @if (error) {
-  <div class="bg-error-bg text-error py-3.5 px-4 rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
+  <div class="bg-error-bg text-error py-cell px-card rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
 }
 
 @if (loading) {
-  <div class="py-6 px-4 text-content-muted text-[1.05rem]">Loading statistics...</div>
+  <div class="py-card px-card text-content-muted text-[1.05rem]">Loading statistics...</div>
 }
 
 @if (results.length > 0 && !loading) {
@@ -46,7 +46,7 @@
         }
       </tbody>
     </table>
-    <div class="py-3.5 px-4 bg-brand-bg-subtle rounded-[10px] border-l-[3px] border-l-brand text-[1.1rem] text-brand-text mb-6">
+    <div class="py-cell px-card bg-brand-bg-subtle rounded-[10px] border-l-[3px] border-l-brand text-[1.1rem] text-brand-text mb-6">
       <strong>Total plate appearances: {{ totalPlateAppearances }}</strong>
     </div>
 
@@ -158,5 +158,5 @@
 }
 
 @if (results.length === 0 && !loading && !error) {
-  <div class="py-12 px-4 text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
+  <div class="py-section px-card text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
 }

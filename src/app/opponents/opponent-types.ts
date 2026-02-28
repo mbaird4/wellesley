@@ -69,11 +69,24 @@ export interface OpponentCareerStats {
   pa: number;
 }
 
+export interface CumulativeEntry {
+  year: number;
+  woba: number;
+  pa: number;
+}
+
+export interface YearData {
+  season: OpponentSeasonStats;
+  cumulative: { woba: number; pa: number };
+  cumulativeLabel: string;
+}
+
 export interface OpponentDisplayRow {
   name: string;
   jerseyNumber: number | null;
   classYear: string;
   seasons: OpponentSeasonStats[];
-  cumulativeByYear: { year: number; woba: number; pa: number }[];
+  cumulativeByYear: CumulativeEntry[];
+  yearData: Map<number, YearData>;
   career: OpponentCareerStats;
 }
