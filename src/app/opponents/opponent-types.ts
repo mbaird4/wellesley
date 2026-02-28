@@ -1,3 +1,11 @@
+export interface TeamEntry {
+  slug: string;
+  name: string;
+}
+
+export type SortKey = 'name' | 'career';
+export type SortDir = 'asc' | 'desc';
+
 export interface OpponentTeam {
   slug: string;
   domain: string;

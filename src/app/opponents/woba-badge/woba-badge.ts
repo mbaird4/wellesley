@@ -1,6 +1,6 @@
 import { Component, computed, input } from '@angular/core';
-import { getWobaTier } from '../../lib/woba';
-import { formatWoba, tierClass } from '../../lib/woba-display';
+import { getWobaTier } from '../../../lib/woba';
+import { formatWoba, tierClass } from '../../../lib/woba-display';
 
 @Component({
   selector: 'ws-woba-badge',
