@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable, of, from, map, mergeMap, switchMap, catchError, throwError, toArray, tap } from 'rxjs';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -23,6 +23,7 @@ export class SoftballDataService {
 
   /**
    * Returns cached GameData[] for a year, or fetches + caches if not present.
+   * Priority: localStorage cache → static JSON (pre-fetched at build time) → live fetch.
    */
   getGameData(year: number): Observable<GameData[]> {
     const cached = this.loadFromCache(year);
@@ -30,10 +31,32 @@ export class SoftballDataService {
       console.log(`[SoftballDataService] Cache hit for ${year}`);
       return of(cached);
     }
-    return this.fetchGameData(year).pipe(
-      toArray(),
+    return from(this.fetchStaticJson(year)).pipe(
+      catchError(() => {
+        console.log(`[SoftballDataService] Static JSON not available for ${year}, falling back to live fetch`);
+        return this.fetchGameData(year).pipe(toArray());
+      }),
       tap(games => this.saveToCache(year, games))
     );
+  }
+
+  private async fetchStaticJson(year: number): Promise<GameData[]> {
+    const base = document.querySelector('base')?.getAttribute('href') || '/';
+    const url = `${base}data/gamedata-${year}.json`;
+    console.log(`[SoftballDataService] Trying static JSON: ${url}`);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const parsed = await response.json() as Array<{
+      url?: string;
+      opponent?: string;
+      lineup: [number, string[]][];
+      playByPlay: PlayByPlayInning[];
+    }>;
+    console.log(`[SoftballDataService] Loaded ${parsed.length} games from static JSON for ${year}`);
+    return parsed.map(g => ({
+      ...g,
+      lineup: new Map(g.lineup),
+    }));
   }
 
   clearCache(year?: number): void {
@@ -84,7 +107,9 @@ export class SoftballDataService {
   }
 
   /**
-   * Converts a wellesleyblue.com path or absolute URL to a proxied URL
+   * Converts a wellesleyblue.com path or absolute URL to a fetchable URL.
+   * In dev, uses the Vite proxy. In production, live fetch is only a fallback
+   * (static JSON is the primary source), so we use the direct URL.
    */
   private getUrl(pathOrUrl: string): string {
     if (this.isLocal) {
@@ -94,12 +119,10 @@ export class SoftballDataService {
       const cleanPath = pathOrUrl.startsWith('/') ? pathOrUrl.slice(1) : pathOrUrl;
       return `/wellesleyblue/${cleanPath}`;
     }
-    // Production: wrap full URL with allorigins CORS proxy
-    if (pathOrUrl.startsWith('http')) {
-      return `https://api.allorigins.win/raw?url=${encodeURIComponent(pathOrUrl)}`;
-    }
+    // Production: direct URL (live fetch is a last resort; static JSON is preferred)
+    if (pathOrUrl.startsWith('http')) return pathOrUrl;
     const cleanPath = pathOrUrl.startsWith('/') ? pathOrUrl.slice(1) : pathOrUrl;
-    return `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://wellesleyblue.com/${cleanPath}`)}`;
+    return `https://wellesleyblue.com/${cleanPath}`;
   }
 
   /**

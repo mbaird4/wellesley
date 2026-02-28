@@ -12,9 +12,11 @@
         <option [value]="year">{{ year }}</option>
       }
     </select>
-    <button (click)="reload()" [disabled]="loading" class="clear-cache-button">
-      {{ loading ? 'Loading...' : 'Reload' }}
-    </button>
+    @if (isLocal) {
+      <button (click)="reload()" [disabled]="loading" class="clear-cache-button">
+        {{ loading ? 'Loading...' : 'Reload' }}
+      </button>
+    }
   </div>
 
   @if (error) {

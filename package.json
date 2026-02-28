@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "prefetch": "ts-node --project tsconfig.scripts.json scripts/prefetch-data.ts"
   },
   "private": true,
   "dependencies": {

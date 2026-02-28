@@ -16,9 +16,13 @@ import {
 export class WobaDataService {
   private readonly dataService = inject(SoftballDataService);
 
-  private readonly isDevelopment = !window.location.hostname.includes('wellesleyblue.com');
-  private readonly baseUrl = this.isDevelopment ? '/wellesleyblue' : 'https://wellesleyblue.com';
+  private readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  private readonly baseUrl = this.isLocal ? '/wellesleyblue' : 'https://wellesleyblue.com';
 
+  /**
+   * Returns wOBA season data for a year.
+   * Priority: localStorage cache → static JSON (pre-fetched at build time) → live fetch.
+   */
   getSeasonData(year: number): Observable<WobaSeasonData> {
     const cached = this.loadFromCache(year);
     if (cached) {
@@ -26,14 +30,30 @@ export class WobaDataService {
       return of(cached);
     }
 
-    return this.fetchStatsPage(year).pipe(
-      switchMap((seasonStats) =>
-        this.fetchBoxscoreStats(year).pipe(
-          map((boxscores) => ({ seasonStats, boxscores }))
-        )
-      ),
+    return from(this.fetchStaticJson(year)).pipe(
+      catchError(() => {
+        console.log(`[WobaDataService] Static JSON not available for ${year}, falling back to live fetch`);
+        return this.fetchStatsPage(year).pipe(
+          switchMap((seasonStats) =>
+            this.fetchBoxscoreStats(year).pipe(
+              map((boxscores) => ({ seasonStats, boxscores }))
+            )
+          ),
+        );
+      }),
       tap((data) => this.saveToCache(year, data))
     );
+  }
+
+  private async fetchStaticJson(year: number): Promise<WobaSeasonData> {
+    const base = document.querySelector('base')?.getAttribute('href') || '/';
+    const url = `${base}data/wobadata-${year}.json`;
+    console.log(`[WobaDataService] Trying static JSON: ${url}`);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json() as WobaSeasonData;
+    console.log(`[WobaDataService] Loaded wOBA data from static JSON for ${year}`);
+    return data;
   }
 
   clearCache(year?: number): void {

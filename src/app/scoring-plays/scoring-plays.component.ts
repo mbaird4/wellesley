@@ -21,6 +21,7 @@ interface PlayerScoringBreakdown {
 export class ScoringPlaysComponent {
   private statsService = inject(SoftballStatsService);
   private cdr = inject(ChangeDetectorRef);
+  readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
   loading = false;
   error: string | null = null;

@@ -39,6 +39,7 @@ export interface TeamPlayerRow {
 export class WobaComponent {
   private wobaData = inject(WobaDataService);
   private cdr = inject(ChangeDetectorRef);
+  readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
   loading = false;
   error: string | null = null;
