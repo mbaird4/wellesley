@@ -175,7 +175,7 @@ export function extractScoringPlays(
   return plays;
 }
 
-function mapBatterResultToScoringType(
+export function mapBatterResultToScoringType(
   batterResult: string,
   runnerSubEvent: string,
   batterSubEvent?: string,

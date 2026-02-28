@@ -30,6 +30,12 @@ export function classifyPlay(text: string): PlayType {
     return 'no_play';
   }
 
+  // True no-play events (no state change)
+  if (lower.startsWith('/ ')) return 'no_play'; // "/ for PLAYER." substitution artifact
+  if (lower.includes('foul ball')) return 'no_play';
+  if (lower.includes('runner left early')) return 'no_play';
+  if (lower.includes('did not advance') && !lower.includes(';')) return 'no_play';
+
   if (lower.includes('pinch hit for') || lower.includes('pinch ran for')) {
     return 'substitution';
   }
@@ -50,22 +56,51 @@ export function classifyPlay(text: string): PlayType {
       !lower.includes('fouled') &&
       !lower.includes('reached') &&
       !lower.includes('hit by pitch') &&
-      !lower.includes('stole')
+      !lower.includes('stole') &&
+      !lower.includes('out at') &&
+      !lower.includes('infield fly')
     ) {
       return 'defensive_change';
     }
   }
 
-  if (/\bstole\s+(second|third|home|2nd|3rd)\b/i.test(lower)) {
-    return 'stolen_base';
+  // Stolen base / caught stealing — but not if a PA verb is present
+  if (/\bstole\s+(second|third|home|2nd|3rd)\b/i.test(lower) ||
+      lower.includes('caught stealing')) {
+    if (!lower.includes('walked') && !lower.includes('struck out') &&
+        !lower.includes('singled') && !lower.includes('doubled') &&
+        !lower.includes('tripled') && !lower.includes('homered') &&
+        !lower.includes('grounded') && !lower.includes('flied') &&
+        !lower.includes('lined') && !lower.includes('popped') &&
+        !lower.includes('reached') && !lower.includes('hit by pitch')) {
+      return 'stolen_base';
+    }
   }
 
+  // Wild pitch / passed ball — but not if a PA verb is present
   if (lower.includes('wild pitch') || lower.includes('passed ball')) {
-    return 'wild_pitch';
+    if (!lower.includes('walked') && !lower.includes('struck out') &&
+        !lower.includes('singled') && !lower.includes('doubled') &&
+        !lower.includes('tripled') && !lower.includes('homered') &&
+        !lower.includes('grounded') && !lower.includes('flied') &&
+        !lower.includes('lined') && !lower.includes('popped') &&
+        !lower.includes('reached') && !lower.includes('hit by pitch')) {
+      return 'wild_pitch';
+    }
   }
 
   if (lower.includes('placed on second') || lower.includes('placed on 2nd')) {
     return 'tiebreaker';
+  }
+
+  // Standalone runner events — no PA, but need runner movement processing
+  // (defensive indifference, errors, etc.) Route through wild_pitch handler.
+  if (/^[A-Z](?:\.|[a-zA-Z]+)\s+\S+\s+(advanced|scored)\b/.test(text) &&
+      !lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') &&
+      !lower.includes('homered') && !lower.includes('walked') && !lower.includes('struck out') &&
+      !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') &&
+      !lower.includes('popped') && !lower.includes('reached') && !lower.includes('hit by pitch')) {
+    return 'wild_pitch';
   }
 
   return 'plate_appearance';
@@ -101,10 +136,23 @@ export function parseBatterAction(subEvent: string): {
   if (/\bsac\b/.test(lower) && /\bbunt\b/.test(lower)) return { result: 'sac_bunt' };
   if (/\bsac\b/.test(lower) && (/flied out|popped/.test(lower))) return { result: 'sac_fly' };
 
+  // SAC without explicit bunt/fly — infer from fielder position
+  if (/\bsac\b/i.test(lower) && !lower.includes('sac fly') && !lower.includes('sacrifice fly')) {
+    if (/\b(lf|cf|rf)\b/.test(lower)) return { result: 'sac_fly' };
+    return { result: 'sac_bunt' }; // infield default
+  }
+
   // Outs
-  if (lower.includes('struck out')) return { result: 'out' };
+  if (lower.includes('struck out')) {
+    // Dropped third strike — batter reaches first
+    if (lower.includes('reached first')) return { result: 'reached' };
+    return { result: 'out' };
+  }
+  if (lower.includes('infield fly')) return { result: 'out' };
+  if (/\b(lined|popped|flied) into double play\b/.test(lower)) return { result: 'out' };
   if (lower.includes('grounded into double play'))
     return { result: 'double_play' };
+  if (lower.includes('out at first')) return { result: 'out' };
   if (lower.includes('grounded out')) return { result: 'out' };
   if (lower.includes('flied out')) return { result: 'out' };
   if (lower.includes('lined out')) return { result: 'out' };
@@ -180,6 +228,16 @@ export function parseRunnerSubEvent(subEvent: string): RunnerSubEventResult {
   );
   if (advMatch) {
     const base = normalizeBase(advMatch[1]);
+    return { playerName, isOut: false, scored: false, advancedTo: base };
+  }
+
+  // Stolen bases as runner sub-events (e.g. "B. Runner stole second")
+  if (lower.includes('stole home')) {
+    return { playerName, isOut: false, scored: true };
+  }
+  const stoleMatch = lower.match(/\bstole\s+(second|third|2nd|3rd)\b/);
+  if (stoleMatch) {
+    const base = normalizeBase(stoleMatch[1]);
     return { playerName, isOut: false, scored: false, advancedTo: base };
   }
 
