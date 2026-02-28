@@ -103,7 +103,7 @@ import { formatWoba, tierClass } from '../../lib/woba-display';
     </div>
   `,
 })
-export class PlayerDetailComponent {
+export class PlayerDetail {
   readonly row = input.required<OpponentDisplayRow>();
 
   readonly fmtWoba = formatWoba;

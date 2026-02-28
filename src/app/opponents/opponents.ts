@@ -4,9 +4,9 @@ import { HttpClient } from '@angular/common/http';
 import { OpponentTeam, OpponentDisplayRow, YearData } from './opponent-types';
 import { calculateWoba } from '../../lib/woba';
 import { BreakpointService } from '../shared/breakpoint.service';
-import { TeamSelectorComponent } from './team-selector.component';
-import { PlayerTableComponent } from './player-table.component';
-import { PlayerCardListComponent } from './player-card-list.component';
+import { TeamSelector } from './team-selector';
+import { PlayerTable } from './player-table';
+import { PlayerCardList } from './player-card-list';
 
 export interface TeamEntry {
   slug: string;
@@ -19,11 +19,11 @@ export type SortDir = 'asc' | 'desc';
 @Component({
   selector: 'ws-opponents',
   standalone: true,
-  imports: [NgTemplateOutlet, TeamSelectorComponent, PlayerTableComponent, PlayerCardListComponent],
+  imports: [NgTemplateOutlet, TeamSelector, PlayerTable, PlayerCardList],
   host: { class: 'block stats-section' },
-  templateUrl: './opponents.component.html',
+  templateUrl: './opponents.html',
 })
-export class OpponentsComponent {
+export class Opponents {
   private http = inject(HttpClient);
   readonly bp = inject(BreakpointService);
 

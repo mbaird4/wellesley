@@ -3,14 +3,14 @@ import { NgStyle } from '@angular/common';
 import { OpponentDisplayRow } from './opponent-types';
 import { getWobaTier } from '../../lib/woba';
 import { formatWoba, tierClass, wobaGradientStyle, abbreviateClassYear } from '../../lib/woba-display';
-import { WobaBadgeComponent } from './woba-badge.component';
-import { PlayerDetailComponent } from './player-detail.component';
-import { SortKey, SortDir } from './opponents.component';
+import { WobaBadge } from './woba-badge';
+import { PlayerDetail } from './player-detail';
+import { SortKey, SortDir } from './opponents';
 
 @Component({
   selector: 'ws-player-table',
   standalone: true,
-  imports: [NgStyle, WobaBadgeComponent, PlayerDetailComponent],
+  imports: [NgStyle, WobaBadge, PlayerDetail],
   host: { class: 'block' },
   template: `
     <table class="stats-table woba-table">
@@ -87,7 +87,7 @@ import { SortKey, SortDir } from './opponents.component';
     </table>
   `,
 })
-export class PlayerTableComponent {
+export class PlayerTable {
   readonly rows = input.required<OpponentDisplayRow[]>();
   readonly allYears = input.required<number[]>();
   readonly expandedPlayer = input.required<string | null>();

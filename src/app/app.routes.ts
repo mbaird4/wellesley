@@ -4,27 +4,27 @@ export const appRoutes: Route[] = [
   {
     path: '',
     loadComponent: () =>
-      import('./lineup-stats/lineup-stats.component').then(
-        (m) => m.LineupStatsComponent
+      import('./lineup-stats/lineup-stats').then(
+        (m) => m.LineupStats
       ),
   },
   {
     path: 'woba',
     loadComponent: () =>
-      import('./woba/woba.component').then((m) => m.WobaComponent),
+      import('./woba/woba').then((m) => m.Woba),
   },
   {
     path: 'scoring',
     loadComponent: () =>
-      import('./scoring-plays/scoring-plays.component').then(
-        (m) => m.ScoringPlaysComponent
+      import('./scoring-plays/scoring-plays').then(
+        (m) => m.ScoringPlays
       ),
   },
   {
     path: 'opponents',
     loadComponent: () =>
-      import('./opponents/opponents.component').then(
-        (m) => m.OpponentsComponent
+      import('./opponents/opponents').then(
+        (m) => m.Opponents
       ),
   },
   { path: '**', redirectTo: '' },

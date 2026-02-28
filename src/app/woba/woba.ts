@@ -37,9 +37,9 @@ export interface TeamPlayerRow {
   host: {
     class: 'block stats-section'
   },
-  templateUrl: './woba.component.html',
+  templateUrl: './woba.html',
 })
-export class WobaComponent {
+export class Woba {
   private wobaData = inject(WobaDataService);
   private cdr = inject(ChangeDetectorRef);
 

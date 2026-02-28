@@ -1,16 +1,16 @@
 import { Component, input, signal, computed, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DiamondComponent } from '../diamond/diamond.component';
+import { Diamond } from '../diamond/diamond';
 import { PlaySnapshot, BaseRunners } from '../../lib/types';
 
 @Component({
   selector: 'ws-game-viewer',
   standalone: true,
-  imports: [CommonModule, FormsModule, DiamondComponent],
-  templateUrl: './game-viewer.component.html',
+  imports: [CommonModule, FormsModule, Diamond],
+  templateUrl: './game-viewer.html',
 })
-export class GameViewerComponent {
+export class GameViewer {
   snapshots = input.required<PlaySnapshot[]>();
 
   currentIndex = signal(0);

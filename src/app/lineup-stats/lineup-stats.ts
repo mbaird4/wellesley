@@ -2,16 +2,16 @@ import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService, ResultRow, GameWithSnapshots, BaseRunnerRow, BaseSituation } from '../softball-stats.service';
-import { GameViewerComponent } from '../game-viewer/game-viewer.component';
+import { GameViewer } from '../game-viewer/game-viewer';
 
 @Component({
   selector: 'ws-lineup-stats',
   standalone: true,
-  imports: [CommonModule, FormsModule, GameViewerComponent],
-  templateUrl: './lineup-stats.component.html',
+  imports: [CommonModule, FormsModule, GameViewer],
+  templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
 })
-export class LineupStatsComponent {
+export class LineupStats {
   private statsService = inject(SoftballStatsService);
   private cdr = inject(ChangeDetectorRef);
 

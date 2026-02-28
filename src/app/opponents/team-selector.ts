@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { TeamEntry } from './opponents.component';
+import { TeamEntry } from './opponents';
 
 @Component({
   selector: 'ws-team-selector',
@@ -33,7 +33,7 @@ import { TeamEntry } from './opponents.component';
     }
   `,
 })
-export class TeamSelectorComponent {
+export class TeamSelector {
   readonly teams = input.required<TeamEntry[]>();
   readonly selectedSlug = input.required<string>();
   readonly layout = input<'horizontal' | 'vertical'>('vertical');

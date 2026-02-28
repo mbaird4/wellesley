@@ -6,10 +6,10 @@ import { BaseRunners } from '../../lib/types';
   selector: 'ws-diamond',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './diamond.component.html',
-  styleUrl: './diamond.component.scss',
+  templateUrl: './diamond.html',
+  styleUrl: './diamond.scss',
 })
-export class DiamondComponent {
+export class Diamond {
   bases = input.required<BaseRunners>();
   outs = input<number>(0);
   batterName = input<string | null>(null);

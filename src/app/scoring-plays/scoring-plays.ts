@@ -16,10 +16,10 @@ interface PlayerScoringBreakdown {
   selector: 'ws-scoring-plays',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './scoring-plays.component.html',
+  templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
 })
-export class ScoringPlaysComponent {
+export class ScoringPlays {
   private statsService = inject(SoftballStatsService);
   private cdr = inject(ChangeDetectorRef);
 

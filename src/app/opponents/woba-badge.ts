@@ -14,7 +14,7 @@ import { formatWoba, tierClass } from '../../lib/woba-display';
     </span>
   `,
 })
-export class WobaBadgeComponent {
+export class WobaBadge {
   readonly cumulativeWoba = input.required<number>();
   readonly seasonWoba = input.required<number>();
   readonly seasonPa = input.required<number>();

@@ -2,13 +2,13 @@ import { Component, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
 import { OpponentDisplayRow } from './opponent-types';
 import { formatWoba, wobaGradientStyle, abbreviateClassYear } from '../../lib/woba-display';
-import { PlayerDetailComponent } from './player-detail.component';
-import { SortKey, SortDir } from './opponents.component';
+import { PlayerDetail } from './player-detail';
+import { SortKey, SortDir } from './opponents';
 
 @Component({
   selector: 'ws-player-card-list',
   standalone: true,
-  imports: [NgStyle, PlayerDetailComponent],
+  imports: [NgStyle, PlayerDetail],
   host: { class: 'block' },
   template: `
     <!-- Sort controls -->
@@ -76,7 +76,7 @@ import { SortKey, SortDir } from './opponents.component';
     </div>
   `,
 })
-export class PlayerCardListComponent {
+export class PlayerCardList {
   readonly rows = input.required<OpponentDisplayRow[]>();
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();
