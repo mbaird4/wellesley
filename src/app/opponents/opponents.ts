@@ -7,7 +7,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import {
+import type {
   OpponentDisplayRow,
   OpponentTeam,
   PlayerTier,
@@ -26,7 +26,12 @@ import { TeamSelector } from './team-selector/team-selector';
 @Component({
   selector: 'ws-opponents',
   standalone: true,
-  imports: [NgTemplateOutlet, TeamSelector, PlayerTable, PlayerCardList],
+  imports: [
+    NgTemplateOutlet,
+    TeamSelector,
+    PlayerTable,
+    PlayerCardList,
+  ],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -63,20 +68,26 @@ export class Opponents {
 
   readonly allYears = computed(() => {
     const data = this.teamData();
-    if (!data) return [];
+    if (!data) {
+      return [];
+    }
+
     const yearSet = new Set<number>();
     for (const player of data.players) {
       for (const season of player.seasons) {
         yearSet.add(season.year);
       }
     }
+
     return Array.from(yearSet).sort((a, b) => a - b);
   });
 
   /** Build display rows from raw data, then sort — single computed derivation */
   readonly displayRows = computed(() => {
     const data = this.teamData();
-    if (!data) return [];
+    if (!data) {
+      return [];
+    }
 
     const key = this.sortKey();
     const dir = this.sortDir();
@@ -109,6 +120,7 @@ export class Opponents {
         accum.sf += s.sf;
         accum.sh += s.sh;
         const pa = accum.ab + accum.bb + accum.sf + accum.sh + accum.hbp;
+
         return { year: s.year, woba: calculateWoba({ ...accum }), pa };
       });
 
@@ -155,11 +167,14 @@ export class Opponents {
     rows.sort((a, b) => {
       const aEmpty = a.seasons.length === 0 ? 1 : 0;
       const bEmpty = b.seasons.length === 0 ? 1 : 0;
-      if (aEmpty !== bEmpty) return aEmpty - bEmpty;
+      if (aEmpty !== bEmpty) {
+        return aEmpty - bEmpty;
+      }
 
       if (yearSort !== null) {
         const aWoba = a.yearData.get(yearSort)?.season.woba ?? -1;
         const bWoba = b.yearData.get(yearSort)?.season.woba ?? -1;
+
         return mult * (aWoba - bWoba);
       } else if (key === 'name') {
         return mult * a.name.localeCompare(b.name);
@@ -192,7 +207,10 @@ export class Opponents {
   }
 
   selectTeam(slug: string): void {
-    if (slug === this.selectedSlug()) return;
+    if (slug === this.selectedSlug()) {
+      return;
+    }
+
     this.selectedSlug.set(slug);
     this.loadTeam(slug);
   }

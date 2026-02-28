@@ -1,4 +1,5 @@
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import type { BreakpointState } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 import {
   computed,
   DestroyRef,
@@ -16,7 +17,9 @@ interface Breakpoint {
 
 const LABELS = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'] as const;
 
-@Injectable({ providedIn: 'root' })
+@Injectable({
+  providedIn: 'root',
+})
 export class BreakpointService {
   private observer = inject(BreakpointObserver);
   private destroyRef = inject(DestroyRef);
@@ -82,7 +85,10 @@ export class BreakpointService {
 
   is(label: string): boolean {
     const active = this.activeBreakpoint();
-    if (!active) return false;
+    if (!active) {
+      return false;
+    }
+
     return (
       LABELS.indexOf(active as (typeof LABELS)[number]) >=
       LABELS.indexOf(label as (typeof LABELS)[number])
@@ -91,12 +97,16 @@ export class BreakpointService {
 
   gt(label: string): boolean {
     const idx = LABELS.indexOf(label as (typeof LABELS)[number]);
+
     return idx + 1 < LABELS.length && this.is(LABELS[idx + 1]);
   }
 
   lt(label: string): boolean {
     const active = this.activeBreakpoint();
-    if (!active) return true;
+    if (!active) {
+      return true;
+    }
+
     return (
       LABELS.indexOf(active as (typeof LABELS)[number]) <
       LABELS.indexOf(label as (typeof LABELS)[number])

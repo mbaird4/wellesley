@@ -1,5 +1,5 @@
 import { extractScoringPlays } from './scoring-plays';
-import { BaseRunners, ScoringPlay } from './types';
+import type { BaseRunners, ScoringPlay } from './types';
 
 // --- Helpers ---
 

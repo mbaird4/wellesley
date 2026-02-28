@@ -1,4 +1,4 @@
-import {
+import type {
   BaseRunnerRow,
   BaseRunners,
   BaseSituation,
@@ -22,6 +22,7 @@ function emptyRow(slot: number): BaseRunnerRow {
   for (const s of ALL_SITUATIONS) {
     situations[s] = [0, 0, 0];
   }
+
   return { lineupSlot: slot, situations };
 }
 
@@ -30,13 +31,34 @@ export function classifyBaseSituation(bases: BaseRunners): BaseSituation {
   const s = bases.second !== null;
   const t = bases.third !== null;
 
-  if (!f && !s && !t) return 'empty';
-  if (f && !s && !t) return 'first';
-  if (!f && s && !t) return 'second';
-  if (!f && !s && t) return 'third';
-  if (f && s && !t) return 'first_second';
-  if (f && !s && t) return 'first_third';
-  if (!f && s && t) return 'second_third';
+  if (!f && !s && !t) {
+    return 'empty';
+  }
+
+  if (f && !s && !t) {
+    return 'first';
+  }
+
+  if (!f && s && !t) {
+    return 'second';
+  }
+
+  if (!f && !s && t) {
+    return 'third';
+  }
+
+  if (f && s && !t) {
+    return 'first_second';
+  }
+
+  if (f && !s && t) {
+    return 'first_third';
+  }
+
+  if (!f && s && t) {
+    return 'second_third';
+  }
+
   return 'loaded';
 }
 
@@ -46,10 +68,14 @@ export function computeBaseRunnerStats(
   const rows = new Map<number, BaseRunnerRow>();
 
   for (const snap of snapshots) {
-    if (!snap.isPlateAppearance || snap.lineupSlot === null) continue;
+    if (!snap.isPlateAppearance || snap.lineupSlot === null) {
+      continue;
+    }
 
     const slot = snap.lineupSlot;
-    if (!rows.has(slot)) rows.set(slot, emptyRow(slot));
+    if (!rows.has(slot)) {
+      rows.set(slot, emptyRow(slot));
+    }
 
     const row = rows.get(slot)!;
     const situation = classifyBaseSituation(snap.basesBefore);
@@ -59,7 +85,9 @@ export function computeBaseRunnerStats(
 
   // Ensure all 9 slots exist
   for (let s = 1; s <= 9; s++) {
-    if (!rows.has(s)) rows.set(s, emptyRow(s));
+    if (!rows.has(s)) {
+      rows.set(s, emptyRow(s));
+    }
   }
 
   return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
@@ -86,6 +114,7 @@ export function mergeBaseRunnerStats(
     if (!map.has(row.lineupSlot)) {
       map.set(row.lineupSlot, emptyRow(row.lineupSlot));
     }
+
     const target = map.get(row.lineupSlot)!;
     for (const s of ALL_SITUATIONS) {
       target.situations[s][0] += row.situations[s][0];
@@ -96,7 +125,9 @@ export function mergeBaseRunnerStats(
 
   // Ensure all 9 slots
   for (let s = 1; s <= 9; s++) {
-    if (!map.has(s)) map.set(s, emptyRow(s));
+    if (!map.has(s)) {
+      map.set(s, emptyRow(s));
+    }
   }
 
   return Array.from(map.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);

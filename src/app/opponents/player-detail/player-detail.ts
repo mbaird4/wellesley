@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { OpponentDisplayRow } from '@ws/data-access';
+import type { OpponentDisplayRow } from '@ws/data-access';
 import { getWobaTier } from '@ws/stats-core';
 import { formatWoba, tierClass } from '@ws/stats-core';
 
@@ -21,6 +21,7 @@ export class PlayerDetail {
 
   getCumulativeLabel(year: number): string {
     const yd = this.row().yearData.get(year);
+
     return yd?.cumulativeLabel ?? `${year}`;
   }
 }

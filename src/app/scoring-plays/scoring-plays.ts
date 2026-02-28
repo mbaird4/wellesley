@@ -7,13 +7,13 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/data-access';
-import {
+import type {
   BaseSituation,
   GameScoringPlays,
   SacBuntSummary,
-  ScoringPlay,
   ScoringPlaySummary,
 } from '@ws/stats-core';
+import { ScoringPlay } from '@ws/stats-core';
 
 interface PlayerScoringBreakdown {
   name: string;
@@ -26,7 +26,10 @@ interface PlayerScoringBreakdown {
 @Component({
   selector: 'ws-scoring-plays',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+  ],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -42,6 +45,7 @@ export class ScoringPlays {
     2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
     2011,
   ];
+
   activeTab: 'summary' | 'by-game' | 'by-player' = 'summary';
 
   seasonSummary: ScoringPlaySummary | null = null;
@@ -136,6 +140,7 @@ export class ScoringPlays {
       productive_out: 'Productive Out',
       unknown: 'Unknown',
     };
+
     return labels[type] || type;
   }
 
@@ -144,7 +149,10 @@ export class ScoringPlays {
   }
 
   getTypesWithCounts(): { type: string; count: number; pct: number }[] {
-    if (!this.seasonSummary) return [];
+    if (!this.seasonSummary) {
+      return [];
+    }
+
     return this.typeOrder
       .filter((t) => (this.seasonSummary!.byType[t] || 0) > 0)
       .map((t) => ({
@@ -156,14 +164,20 @@ export class ScoringPlays {
   }
 
   getSortedRunners(): { name: string; count: number }[] {
-    if (!this.seasonSummary) return [];
+    if (!this.seasonSummary) {
+      return [];
+    }
+
     return Object.entries(this.seasonSummary.byRunner)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count);
   }
 
   getSortedBatters(): { name: string; count: number }[] {
-    if (!this.seasonSummary) return [];
+    if (!this.seasonSummary) {
+      return [];
+    }
+
     return Object.entries(this.seasonSummary.byBatter)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count);
@@ -191,6 +205,7 @@ export class ScoringPlays {
             (r.byType[play.scoringPlayType] || 0) + 1;
           runnerMap.set(play.runnerName, r);
         }
+
         if (play.batterName) {
           const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
           b.rbis++;
@@ -225,6 +240,7 @@ export class ScoringPlays {
       second_third: '2nd & 3rd',
       loaded: 'Bases Loaded',
     };
+
     return labels[situation] || situation;
   }
 
@@ -239,12 +255,16 @@ export class ScoringPlays {
       this.byOuts = [];
       this.bySituation = [];
       this.byScenario = [];
+
       return;
     }
 
     // By outs
     const outCounts = [0, 0, 0];
-    for (const p of allPlays) outCounts[p.outs]++;
+    for (const p of allPlays) {
+      outCounts[p.outs]++;
+    }
+
     this.byOuts = outCounts.map((count, outs) => ({
       outs,
       count,
@@ -256,6 +276,7 @@ export class ScoringPlays {
     for (const p of allPlays) {
       sitCounts[p.baseSituation] = (sitCounts[p.baseSituation] || 0) + 1;
     }
+
     const sitOrder: BaseSituation[] = [
       'empty',
       'first',
@@ -280,9 +301,11 @@ export class ScoringPlays {
       const key = `${p.baseSituation}|${p.outs}`;
       scenarioMap.set(key, (scenarioMap.get(key) || 0) + 1);
     }
+
     this.byScenario = Array.from(scenarioMap.entries())
       .map(([key, count]) => {
         const [situation, outs] = key.split('|');
+
         return {
           situation: situation as BaseSituation,
           outs: Number(outs),

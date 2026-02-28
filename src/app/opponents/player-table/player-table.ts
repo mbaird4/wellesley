@@ -5,7 +5,7 @@ import {
   input,
   output,
 } from '@angular/core';
-import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
+import type { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
 import { ClassYearPipe, WobaBadge } from '@ws/shared/ui';
 import { getWobaTier } from '@ws/stats-core';
 import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
@@ -15,7 +15,13 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-table',
   standalone: true,
-  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, WobaBadge, PlayerDetail],
+  imports: [
+    NgStyle,
+    NgTemplateOutlet,
+    ClassYearPipe,
+    WobaBadge,
+    PlayerDetail,
+  ],
   host: { class: 'block' },
   templateUrl: './player-table.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

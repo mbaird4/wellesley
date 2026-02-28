@@ -5,7 +5,7 @@ import {
   input,
   output,
 } from '@angular/core';
-import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
+import type { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
 import { ClassYearPipe } from '@ws/shared/ui';
 import { formatWoba, wobaGradientStyle } from '@ws/stats-core';
 
@@ -14,7 +14,12 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-card-list',
   standalone: true,
-  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, PlayerDetail],
+  imports: [
+    NgStyle,
+    NgTemplateOutlet,
+    ClassYearPipe,
+    PlayerDetail,
+  ],
   host: { class: 'block' },
   templateUrl: './player-card-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

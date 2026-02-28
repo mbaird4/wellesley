@@ -5,7 +5,7 @@ import {
   computed,
   input,
 } from '@angular/core';
-import { BaseRunners } from '@ws/stats-core';
+import type { BaseRunners } from '@ws/stats-core';
 
 @Component({
   selector: 'ws-diamond',
@@ -27,6 +27,7 @@ export class Diamond {
 
   outDots = computed(() => {
     const current = this.outs();
+
     return [0, 1, 2].map((i) => i < current);
   });
 }

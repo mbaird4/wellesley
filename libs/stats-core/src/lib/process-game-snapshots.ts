@@ -1,7 +1,7 @@
 import { computeBaseRunnerStats } from './base-runner-stats';
 import { classifyPlay, getPlayerNameFromText, processPlay } from './parse-play';
 import { extractScoringPlays } from './scoring-plays';
-import {
+import type {
   BaseRunners,
   GameData,
   GameState,
@@ -46,7 +46,9 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
     gameState.baseRunners = { first: null, second: null, third: null };
 
     for (const playText of inning.plays) {
-      if (classifyPlay(playText) === 'no_play') continue;
+      if (classifyPlay(playText) === 'no_play') {
+        continue;
+      }
 
       const basesBefore = cloneBases(gameState.baseRunners);
       const outsBefore = gameState.outs;

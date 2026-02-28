@@ -6,7 +6,7 @@ import {
   computeScoringPlaySummary,
   summarizeSacBuntOutcomes,
 } from './scoring-plays';
-import {
+import type {
   BaseRunnerRow,
   GameData,
   GameResult,
@@ -44,7 +44,9 @@ export function processGames(games: GameData[]): ProcessedStats {
   const gameResults: GameResult[] = [];
 
   for (const game of games) {
-    if (game.playByPlay.length === 0) continue;
+    if (game.playByPlay.length === 0) {
+      continue;
+    }
 
     const gameState: GameState = {
       baseRunners: { first: null, second: null, third: null },
@@ -114,7 +116,9 @@ export function processGamesWithSnapshots(
   let seasonBaseRunnerStats: BaseRunnerRow[] = [];
 
   for (const game of games) {
-    if (game.playByPlay.length === 0) continue;
+    if (game.playByPlay.length === 0) {
+      continue;
+    }
 
     const result = processGameWithSnapshots(game);
     gameResults.push(result);
@@ -154,6 +158,7 @@ export function processGamesWithSnapshots(
     for (const snap of game.snapshots) {
       gamePlays.push(...snap.scoringPlays);
     }
+
     allScoringPlays.push(...gamePlays);
     gameScoringPlays.push({
       url: game.url,
@@ -172,6 +177,7 @@ export function processGamesWithSnapshots(
       ...computeSacBuntOutcomes(game.snapshots, game.opponent, game.url)
     );
   }
+
   const sacBuntSummary = summarizeSacBuntOutcomes(allSacBuntOutcomes);
 
   return {

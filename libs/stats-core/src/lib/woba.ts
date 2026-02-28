@@ -1,11 +1,11 @@
-import {
+import type {
   BoxscoreData,
   PlayerCumulativeWoba,
-  PlayerGameStats,
   PlayerSeasonStats,
   PlayerWoba,
   WobaTier,
 } from './types';
+import { PlayerGameStats } from './types';
 
 // wOBA linear weights
 export const WOBA_WEIGHT_BB = 0.5;
@@ -34,7 +34,9 @@ export function calculateWoba(stats: {
 }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
-  if (denominator === 0) return 0;
+  if (denominator === 0) {
+    return 0;
+  }
 
   const numerator =
     WOBA_WEIGHT_BB * stats.bb +
@@ -48,10 +50,22 @@ export function calculateWoba(stats: {
 }
 
 export function getWobaTier(woba: number): WobaTier {
-  if (woba >= WOBA_TIER_EXCELLENT) return 'excellent';
-  if (woba >= WOBA_TIER_GREAT) return 'great';
-  if (woba >= WOBA_TIER_ABOVE_AVERAGE) return 'above_average';
-  if (woba >= WOBA_TIER_AVERAGE) return 'average';
+  if (woba >= WOBA_TIER_EXCELLENT) {
+    return 'excellent';
+  }
+
+  if (woba >= WOBA_TIER_GREAT) {
+    return 'great';
+  }
+
+  if (woba >= WOBA_TIER_ABOVE_AVERAGE) {
+    return 'above_average';
+  }
+
+  if (woba >= WOBA_TIER_AVERAGE) {
+    return 'average';
+  }
+
   return 'below_average';
 }
 
@@ -63,6 +77,7 @@ export function computePlayerSeasonWobas(
       const woba = calculateWoba(p);
       const singles = p.h - p.doubles - p.triples - p.hr;
       const pa = p.ab + p.bb + p.sf + p.sh + p.hbp;
+
       return {
         name: p.name,
         pa,
@@ -149,6 +164,7 @@ export function computePlayerCumulativeWobas(
     .sort((a, b) => {
       const aLast = a.games[a.games.length - 1]?.cumulativeWoba ?? 0;
       const bLast = b.games[b.games.length - 1]?.cumulativeWoba ?? 0;
+
       return bLast - aLast;
     });
 }

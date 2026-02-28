@@ -1,11 +1,10 @@
 import { inject, Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import type { Observable } from 'rxjs';
+import { map } from 'rxjs';
 
 import { SoftballDataService } from './softball-data.service';
-import {
-  ProcessedStatsWithSnapshots,
-  SoftballProcessorService,
-} from './softball-processor.service';
+import type { ProcessedStatsWithSnapshots } from './softball-processor.service';
+import { SoftballProcessorService } from './softball-processor.service';
 
 export type { ProcessedStatsWithSnapshots } from './softball-processor.service';
 export type {

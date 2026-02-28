@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import {
+import type {
   ProcessedStats,
   ProcessedStatsWithSnapshots,
-  processGames,
-  processGamesWithSnapshots,
 } from '@ws/stats-core';
+import { processGames, processGamesWithSnapshots } from '@ws/stats-core';
 
-import { GameData } from './softball-data.service';
+import type { GameData } from './softball-data.service';
 
 export type {
   ProcessedStats,

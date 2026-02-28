@@ -10,7 +10,7 @@ import {
   processPlay,
   removeFromBases,
 } from './parse-play';
-import { BaseRunners, GameState } from './types';
+import type { BaseRunners, GameState } from './types';
 
 // --- Helper ---
 

@@ -4,7 +4,8 @@
  * Usage:
  *   npx ts-node src/cli.ts --year 2025
  */
-import { GameData, PlayByPlayInning, processGames } from '@ws/stats-core';
+import type { GameData, PlayByPlayInning } from '@ws/stats-core';
+import { processGames } from '@ws/stats-core';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
@@ -35,6 +36,7 @@ async function fetchBoxscoreUrls(year: number): Promise<string[]> {
   console.log(
     `Found ${unique.length} unique boxscore URLs (${urls.length} total)`
   );
+
   return unique;
 }
 
@@ -46,24 +48,32 @@ async function fetchGameData(boxscoreUrl: string): Promise<GameData> {
 
   const $ = cheerio.load(resp.data);
   const playByPlay = parsePlayByPlay($);
+
   return { lineup: new Map(), playByPlay };
 }
 
 function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
   const innings: PlayByPlayInning[] = [];
   const pbpTab = $('#play-by-play');
-  if (pbpTab.length === 0) return innings;
+  if (pbpTab.length === 0) {
+    return innings;
+  }
 
   const processed = new Set<string>();
   pbpTab.find('table').each((_tableIndex, table) => {
     const $table = $(table);
     const caption = $table.find('caption').text() || '';
-    if (!caption.toLowerCase().includes('wellesley')) return;
+    if (!caption.toLowerCase().includes('wellesley')) {
+      return;
+    }
 
     const inningKey = caption
       .replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '')
       .trim();
-    if (processed.has(inningKey)) return;
+    if (processed.has(inningKey)) {
+      return;
+    }
+
     processed.add(inningKey);
 
     const plays: string[] = [];
@@ -79,6 +89,7 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
       ) {
         return;
       }
+
       plays.push(text);
     });
 
@@ -122,11 +133,12 @@ async function main() {
   const { totals } = processGames(games);
 
   console.log(
-    'Slot'.padEnd(6) +
+    `${
+      'Slot'.padEnd(6) +
       '0-Out'.padEnd(8) +
       '1-Out'.padEnd(8) +
-      '2-Out'.padEnd(8) +
-      'Total'
+      '2-Out'.padEnd(8)
+    }Total`
   );
   console.log('-'.repeat(35));
   for (const r of totals) {

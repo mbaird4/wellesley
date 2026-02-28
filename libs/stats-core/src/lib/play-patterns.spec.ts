@@ -5,7 +5,7 @@ import {
 } from './parse-play';
 import { mapBatterResultToScoringType } from './scoring-plays';
 import expectations from './test-data/play-pattern-expectations.json';
-import { ScoringPlayType } from './types';
+import type { ScoringPlayType } from './types';
 
 interface RunnerSubEventExpectation {
   playerName: string | null;
@@ -42,7 +42,10 @@ function deriveScoringType(
 
   if (playType === 'plate_appearance' && batterResult) {
     let type = mapBatterResultToScoringType(batterResult, sub, batterSubEvent);
-    if (lower.includes('error')) type = 'error';
+    if (lower.includes('error')) {
+      type = 'error';
+    }
+
     return type;
   }
 
@@ -52,6 +55,7 @@ function deriveScoringType(
 
   if (playType === 'wild_pitch') {
     const playLower = batterSubEvent.toLowerCase();
+
     return playLower.includes('passed ball') ? 'passed_ball' : 'wild_pitch';
   }
 

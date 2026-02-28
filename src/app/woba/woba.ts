@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { WobaDataService } from '@ws/data-access';
-import { PlayerCumulativeWoba, PlayerWoba } from '@ws/stats-core';
+import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/stats-core';
 import {
   computePlayerCumulativeWobas,
   computePlayerSeasonWobas,
@@ -35,7 +35,10 @@ export interface TeamPlayerRow {
 @Component({
   selector: 'ws-woba',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+  ],
   host: {
     class: 'block stats-section',
   },
@@ -53,6 +56,7 @@ export class Woba {
     2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
     2011,
   ];
+
   activeTab: 'players' | 'team' = 'players';
 
   playerWobas: PlayerWoba[] = [];
@@ -116,6 +120,7 @@ export class Woba {
       this.teamSortKey = key;
       this.teamSortDir = key === 'season' ? 'desc' : 'asc';
     }
+
     this.applySortTeamGrid();
   }
 
@@ -125,6 +130,7 @@ export class Woba {
       if (this.teamSortKey === 'name') {
         return dir * a.name.localeCompare(b.name);
       }
+
       return dir * (a.seasonWoba - b.seasonWoba);
     });
   }
@@ -140,6 +146,7 @@ export class Woba {
         }
       }
     }
+
     this.teamGameColumns = Array.from(gameKeys.values());
 
     // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
@@ -162,6 +169,7 @@ export class Woba {
         seasonTier: seasonPlayer?.tier ?? 'below_average',
         games: this.teamGameColumns.map((col) => {
           const key = `${col.date}|${col.opponent}`;
+
           return gameMap.get(key) ?? null;
         }),
       };

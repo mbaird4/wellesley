@@ -14,7 +14,7 @@ import {
   parseRunnerSubEvent,
 } from '../parse-play';
 import { mapBatterResultToScoringType } from '../scoring-plays';
-import { ScoringPlayType } from '../types';
+import type { ScoringPlayType } from '../types';
 
 interface PatternEntry {
   pattern: string;
@@ -75,7 +75,10 @@ function deriveScoringType(
 
   if (playType === 'plate_appearance' && batterResult) {
     let type = mapBatterResultToScoringType(batterResult, sub, batterSubEvent);
-    if (lower.includes('error')) type = 'error';
+    if (lower.includes('error')) {
+      type = 'error';
+    }
+
     return type;
   }
 
@@ -85,6 +88,7 @@ function deriveScoringType(
 
   if (playType === 'wild_pitch') {
     const playLower = batterSubEvent.toLowerCase(); // full first sub-event text
+
     return playLower.includes('passed ball') ? 'passed_ball' : 'wild_pitch';
   }
 
@@ -107,9 +111,13 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
   if (playType === 'plate_appearance') {
     const raw = parseBatterAction(subEvents[0]);
     batterAction = { result: raw.result };
-    if (raw.advancedTo !== undefined) batterAction.advancedTo = raw.advancedTo;
-    if (raw.batterAlsoOut !== undefined)
+    if (raw.advancedTo !== undefined) {
+      batterAction.advancedTo = raw.advancedTo;
+    }
+
+    if (raw.batterAlsoOut !== undefined) {
       batterAction.batterAlsoOut = raw.batterAlsoOut;
+    }
   }
 
   // Parse runner sub-events (everything after the first semicolon)
@@ -122,7 +130,10 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
         isOut: raw.isOut,
         scored: raw.scored,
       };
-      if (raw.advancedTo !== undefined) result.advancedTo = raw.advancedTo;
+      if (raw.advancedTo !== undefined) {
+        result.advancedTo = raw.advancedTo;
+      }
+
       if (raw.scored) {
         result.scoringType = deriveScoringType(
           playType,
@@ -131,6 +142,7 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
           subEvents[0]
         );
       }
+
       return result;
     });
 
@@ -145,7 +157,7 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
   };
 });
 
-writeFileSync(outputPath, JSON.stringify(expectations, null, 2) + '\n');
+writeFileSync(outputPath, `${JSON.stringify(expectations, null, 2)}\n`);
 
 console.log(`Generated ${expectations.length} expectations to ${outputPath}`);
 console.log(`Play type breakdown:`);
@@ -153,6 +165,7 @@ const typeCounts = new Map<string, number>();
 for (const e of expectations) {
   typeCounts.set(e.playType, (typeCounts.get(e.playType) || 0) + 1);
 }
+
 for (const [type, count] of [...typeCounts.entries()].sort(
   (a, b) => b[1] - a[1]
 )) {
@@ -170,6 +183,7 @@ for (const e of expectations) {
     }
   }
 }
+
 if (scoringTypes.size > 0) {
   console.log(`Scoring type breakdown:`);
   for (const [type, count] of [...scoringTypes.entries()].sort(

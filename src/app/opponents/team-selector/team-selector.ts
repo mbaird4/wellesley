@@ -4,7 +4,7 @@ import {
   input,
   output,
 } from '@angular/core';
-import { TeamEntry } from '@ws/data-access';
+import type { TeamEntry } from '@ws/data-access';
 
 @Component({
   selector: 'ws-team-selector',

@@ -22,10 +22,13 @@ export class WobaBadge {
   readonly formattedPrimary = computed(() => formatWoba(this.primary()));
   readonly formattedSecondary = computed(() => {
     const val = this.secondary();
+
     return val !== undefined ? formatWoba(val) : '';
   });
+
   readonly secondaryTierClass = computed(() => {
     const val = this.secondary();
+
     return val !== undefined ? tierClass(getWobaTier(val)) : '';
   });
 }

@@ -8,14 +8,18 @@ import {
   signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BaseRunners, PlaySnapshot } from '@ws/stats-core';
+import type { BaseRunners, PlaySnapshot } from '@ws/stats-core';
 
 import { Diamond } from '../diamond/diamond';
 
 @Component({
   selector: 'ws-game-viewer',
   standalone: true,
-  imports: [CommonModule, FormsModule, Diamond],
+  imports: [
+    CommonModule,
+    FormsModule,
+    Diamond,
+  ],
   templateUrl: './game-viewer.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -29,31 +33,42 @@ export class GameViewer {
   filteredSnapshots = computed(() => {
     const slot = this.slotFilter();
     const all = this.snapshots();
-    if (slot === null) return all;
+    if (slot === null) {
+      return all;
+    }
+
     return all.filter((s) => s.isPlateAppearance && s.lineupSlot === slot);
   });
 
   currentSnapshot = computed(() => {
     const filtered = this.filteredSnapshots();
     const idx = this.currentIndex();
+
     return filtered[idx] ?? null;
   });
 
   displayedBases = computed<BaseRunners>(() => {
     const snap = this.currentSnapshot();
-    if (!snap) return { first: null, second: null, third: null };
+    if (!snap) {
+      return { first: null, second: null, third: null };
+    }
+
     return this.played() ? snap.basesAfter : snap.basesBefore;
   });
 
   displayedOuts = computed(() => {
     const snap = this.currentSnapshot();
-    if (!snap) return 0;
+    if (!snap) {
+      return 0;
+    }
+
     return this.played() ? snap.outsAfter : snap.outsBefore;
   });
 
   displayedBatter = computed(() =>
     this.played() ? null : (this.currentSnapshot()?.currentBatterName ?? null)
   );
+
   displayedSlot = computed(() =>
     this.played() ? null : (this.currentSnapshot()?.currentBatterSlot ?? null)
   );
@@ -81,6 +96,7 @@ export class GameViewer {
         currentGroup = { inning: currentInning, plays: [] };
         groups.push(currentGroup);
       }
+
       currentGroup!.plays.push({ snap, filteredIndex: idx });
     });
 

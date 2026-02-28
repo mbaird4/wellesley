@@ -6,19 +6,23 @@ import {
   inject,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {
+import type {
   BaseRunnerRow,
   BaseSituation,
   GameWithSnapshots,
   ResultRow,
-  SoftballStatsService,
 } from '@ws/data-access';
+import { SoftballStatsService } from '@ws/data-access';
 import { GameViewer } from '@ws/shared/ui';
 
 @Component({
   selector: 'ws-lineup-stats',
   standalone: true,
-  imports: [CommonModule, FormsModule, GameViewer],
+  imports: [
+    CommonModule,
+    FormsModule,
+    GameViewer,
+  ],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

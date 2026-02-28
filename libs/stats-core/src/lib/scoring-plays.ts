@@ -5,7 +5,7 @@ import {
   parseBatterAction,
   parseRunnerSubEvent,
 } from './parse-play';
-import {
+import type {
   BaseRunners,
   PlaySnapshot,
   SacBuntOutcome,
@@ -60,6 +60,7 @@ export function extractScoringPlays(
           });
         }
       }
+
       // Batter scores
       plays.push({
         runnerName: batterName,
@@ -71,6 +72,7 @@ export function extractScoringPlays(
         playText,
         baseSituation,
       });
+
       return plays;
     }
 
@@ -85,7 +87,10 @@ export function extractScoringPlays(
           subEvents[0]
         );
         // Runner sub-event explicitly mentions error → override to 'error'
-        if (sub.toLowerCase().includes('error')) type = 'error';
+        if (sub.toLowerCase().includes('error')) {
+          type = 'error';
+        }
+
         plays.push({
           runnerName: result.playerName,
           scoringPlayType: type,
@@ -160,8 +165,14 @@ export function extractScoringPlays(
     // State-based fallback: runner was on base before but gone after (and not out or already detected)
     for (const base of ['first', 'second', 'third'] as const) {
       const runner = basesBefore[base];
-      if (!runner) continue;
-      if (scoredRunners.has(runner) || outRunners.has(runner)) continue;
+      if (!runner) {
+        continue;
+      }
+
+      if (scoredRunners.has(runner) || outRunners.has(runner)) {
+        continue;
+      }
+
       const stillOnBase =
         basesAfter.first === runner ||
         basesAfter.second === runner ||
@@ -203,6 +214,7 @@ export function extractScoringPlays(
         });
       }
     }
+
     return plays;
   }
 
@@ -236,10 +248,13 @@ export function mapBatterResultToScoringType(
       // rather than the runner sub-event ("scored, unearned")
       const runnerLower = runnerSubEvent.toLowerCase();
       const batterLower = (batterSubEvent || '').toLowerCase();
-      if (runnerLower.includes('error') || batterLower.includes('error'))
+      if (runnerLower.includes('error') || batterLower.includes('error')) {
         return 'error';
+      }
+
       return 'fielders_choice';
     }
+
     case 'out':
     case 'double_play':
       return 'productive_out';
@@ -261,7 +276,9 @@ export function computeSacBuntOutcomes(
 
   for (let i = 0; i < snapshots.length; i++) {
     const snap = snapshots[i];
-    if (!snap.isPlateAppearance) continue;
+    if (!snap.isPlateAppearance) {
+      continue;
+    }
 
     // Detect sac bunt from the batter action
     const subEvents = snap.playText
@@ -269,19 +286,29 @@ export function computeSacBuntOutcomes(
       .split(';')
       .map((s) => s.trim());
     const batterAction = parseBatterAction(subEvents[0]);
-    if (batterAction.result !== 'sac_bunt') continue;
+    if (batterAction.result !== 'sac_bunt') {
+      continue;
+    }
 
     // Who was on base before the bunt?
     const runnersOnBase: string[] = [];
     for (const base of ['first', 'second', 'third'] as const) {
-      if (snap.basesBefore[base]) runnersOnBase.push(snap.basesBefore[base]!);
+      if (snap.basesBefore[base]) {
+        runnersOnBase.push(snap.basesBefore[base]!);
+      }
     }
-    if (runnersOnBase.length === 0) continue;
+
+    if (runnersOnBase.length === 0) {
+      continue;
+    }
 
     // Check if those runners scored in the remainder of this inning (including this play)
     const runnersScored: string[] = [];
     for (let j = i; j < snapshots.length; j++) {
-      if (snapshots[j].inning !== snap.inning) break;
+      if (snapshots[j].inning !== snap.inning) {
+        break;
+      }
+
       for (const sp of snapshots[j].scoringPlays) {
         if (
           sp.runnerName &&
@@ -324,6 +351,7 @@ export function summarizeSacBuntOutcomes(
     (s, o) => s + o.runnersScored.length,
     0
   );
+
   return {
     totalSacBunts: outcomes.length,
     totalRunnersOnBase,
@@ -350,6 +378,7 @@ export function computeScoringPlaySummary(
     if (play.runnerName) {
       byRunner[play.runnerName] = (byRunner[play.runnerName] || 0) + 1;
     }
+
     if (play.batterName) {
       byBatter[play.batterName] = (byBatter[play.batterName] || 0) + 1;
     }
