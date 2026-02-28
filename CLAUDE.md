@@ -9,6 +9,8 @@ npx nx serve              # Dev server on :4200 (Vite + Tailwind watch)
 npx nx build              # Production build → dist/wellesley/
 npx nx test               # Jest unit tests
 npx nx lint               # ESLint
+npm run format            # Prettier (run before lint)
+npm run lint              # Prettier + ESLint fix (full pipeline)
 ```
 
 In both dev and production, the app reads from pre-generated static JSON files (`public/data/`), refreshed by a daily cron job during season.
@@ -53,6 +55,13 @@ Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley Col
 - Prefer using tailwind classes over custom css. If scoping needed, create a _partial.scss in `src/styles/` and `@forward` it into `src/_index.scss`, via a core mixin
 - **Responsive branching** — Use `bp.gtSm()` (greater-than) as the primary `@if` check for desktop, with mobile as the `@else`. Think "is it desktop?" not "is it mobile?". Prefer `gt*` signals over `lt*`.
 - **Responsive spacing utilities** — Use `p-section`, `p-card`, `p-cell` (and `px-`/`py-` variants) instead of writing manual responsive padding (`p-4 md:p-8`). These are defined in `tailwind.css` and scale automatically across breakpoints.
+- Always use curly braces, even for single-line `if`/`else`/`for` bodies
+- Always put `return` statements on their own line, even in single-line methods
+- Blank line before methods in classes; no blank lines between properties
+- Blank line before `return` statements
+- Blank lines around block-like structures (`if`, `for`, `switch`, etc.)
+- Always use array methods (`forEach`, `map`, `filter`, `reduce`, `find`, `some`, `every`, `flatMap`) over `for`/`for...in`/`for...of`/`while` loops
+- Exceptions: `for...of` only when you need `break`/`continue` (but prefer `find`/`some` first)
 
 ## Routes
 

@@ -7,7 +7,9 @@
     "build": "nx build",
     "test": "nx test",
     "prefetch": "ts-node --project tsconfig.scripts.json scripts/prefetch-data.ts",
-    "scrape-opponents": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts"
+    "scrape-opponents": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts",
+    "format": "prettier --write .",
+    "lint": "prettier --write . && nx run-many -t lint --fix"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +41,7 @@
     "@nx/web": "22.5.1",
     "@nx/workspace": "22.5.1",
     "@schematics/angular": "~21.1.0",
+    "@stylistic/eslint-plugin": "^5.9.0",
     "@swc-node/register": "~1.11.1",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
