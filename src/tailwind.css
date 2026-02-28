@@ -81,509 +81,288 @@
 @layer components {
   /* ── Shared Card ── */
   .stats-section {
-    background: var(--color-surface-card);
+    @apply bg-surface-card border border-line-hover rounded-2xl p-8;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    border: 1px solid var(--color-line-hover);
-    border-radius: 16px;
-    padding: 2rem;
   }
 
-  /* ── Select input ── */
+  /* ── Select input (focus ring, option bg, disabled state) ── */
   .year-select {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--color-line-strong);
-    border-radius: 8px;
-    font-size: 1.05rem;
-    background: var(--color-surface-elevated);
-    color: var(--color-content);
-    cursor: pointer;
-    min-width: 100px;
-    font-family: inherit;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    @apply py-2 px-4 border border-line-strong rounded-lg text-[1.05rem] bg-surface-elevated text-content cursor-pointer min-w-[100px] font-[inherit] transition-[border-color,box-shadow];
 
     &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
+      @apply opacity-40 cursor-not-allowed;
     }
 
     &:focus {
-      outline: none;
-      border-color: var(--color-brand);
+      @apply outline-none border-brand;
       box-shadow: 0 0 0 3px var(--color-brand-glow);
     }
 
     option {
-      background: var(--color-surface-option);
-      color: var(--color-content);
+      @apply bg-surface-option text-content;
     }
   }
 
-  /* ── Buttons ── */
+  /* ── Buttons (hover/active/disabled states) ── */
   .load-button {
-    border: none;
-    padding: 0.5rem 1.25rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s;
+    @apply border-none py-2 px-5 rounded-lg text-base font-medium font-[inherit] cursor-pointer text-white transition-[transform,box-shadow,opacity];
     background: linear-gradient(135deg, var(--color-brand-light), var(--color-brand));
-    color: white;
     box-shadow: 0 2px 8px var(--color-brand-glow);
 
     &:hover:not(:disabled) {
-      transform: translateY(-1px);
+      @apply -translate-y-px;
       box-shadow: 0 4px 16px var(--color-brand-glow-strong);
     }
 
     &:active:not(:disabled) {
-      transform: translateY(0);
+      @apply translate-y-0;
     }
 
     &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      transform: none;
+      @apply opacity-40 cursor-not-allowed translate-y-0;
     }
   }
 
   .clear-cache-button {
-    border: 1px solid var(--color-line-medium);
-    padding: 0.5rem 1.25rem;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
-    background: var(--color-surface-elevated);
-    color: var(--color-content-muted);
+    @apply border border-line-medium py-2 px-5 rounded-lg text-base font-medium font-[inherit] cursor-pointer bg-surface-elevated text-content-muted transition-[transform,box-shadow,opacity,background,color,border-color];
 
     &:hover:not(:disabled) {
-      transform: translateY(-1px);
-      background: var(--color-danger-bg-hover);
-      color: var(--color-error);
-      border-color: var(--color-danger-border-hover);
+      @apply -translate-y-px bg-danger-bg-hover text-error border-danger-border-hover;
     }
 
     &:active:not(:disabled) {
-      transform: translateY(0);
+      @apply translate-y-0;
     }
 
     &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      transform: none;
+      @apply opacity-40 cursor-not-allowed translate-y-0;
     }
   }
 
-  /* ── Data Table ── */
+  /* ── Data Table (nested selectors for thead/tbody/td) ── */
   .stats-table {
-    width: 100%;
+    @apply w-full mb-6 bg-surface-sunken border border-line rounded-xl overflow-hidden;
     border-collapse: separate;
     border-spacing: 0;
-    margin-bottom: 1.5rem;
-    background: var(--color-surface-sunken);
-    border: 1px solid var(--color-line);
-    border-radius: 12px;
-    overflow: hidden;
 
     thead {
-      background: var(--color-surface-elevated);
+      @apply bg-surface-elevated;
 
       th {
-        color: var(--color-content-muted);
-        font-size: 0.875rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.06em;
-        padding: 0.75rem 1rem;
-        text-align: left;
-        border-bottom: 1px solid var(--color-line);
+        @apply text-content-muted text-sm font-semibold uppercase tracking-[0.06em] py-3 px-4 text-left border-b border-line;
       }
     }
 
     td {
-      padding: 0.625rem 1rem;
-      font-size: 1rem;
-      color: var(--color-content-secondary);
-      border-bottom: 1px solid var(--color-surface-hover);
+      @apply py-2.5 px-4 text-base text-content-secondary border-b border-surface-hover;
     }
 
     tbody tr {
-      transition: background 0.15s;
+      @apply transition-[background];
 
       &:hover {
-        background: var(--color-surface-hover);
+        @apply bg-surface-hover;
       }
 
       &:last-child td {
-        border-bottom: none;
+        @apply border-b-0;
       }
     }
 
     td:first-child {
-      font-weight: 500;
-      color: var(--color-content-bright);
+      @apply font-medium text-content-bright;
     }
   }
 
   .game-table {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    @apply mt-0 mb-2 rounded-t-none!;
 
     th, td {
-      padding: 0.45rem 0.75rem;
-      font-size: 0.95rem;
+      @apply py-1.5 px-3 text-[0.95rem];
     }
   }
 
-  /* ── Tabs ── */
+  /* ── Tabs (active state) ── */
   .tabs {
-    display: flex;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
-    background: var(--color-surface-card);
-    border-radius: 10px;
-    padding: 3px;
-    width: fit-content;
+    @apply flex gap-1 mb-5 bg-surface-card rounded-[10px] p-[3px] w-fit;
   }
 
   .tab {
-    padding: 0.45rem 1.25rem;
-    background: none;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: inherit;
-    color: var(--color-content-dim);
-    transition: color 0.2s, background 0.2s;
+    @apply py-1.5 px-5 bg-transparent border-none rounded-lg cursor-pointer text-base font-medium font-[inherit] text-content-dim transition-[color,background];
 
     &:hover {
-      color: var(--color-content-secondary);
-      background: var(--color-surface-card);
+      @apply text-content-secondary bg-surface-card;
     }
 
     &.active {
-      background: var(--color-brand-bg);
-      color: var(--color-brand-text);
+      @apply bg-brand-bg text-brand-text;
     }
   }
 
-  /* ── Game accordion ── */
+  /* ── Game accordion (hover state) ── */
   .game-card {
-    margin-bottom: 0.5rem;
+    @apply mb-2;
   }
 
   .game-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    width: 100%;
-    padding: 0.65rem 1rem;
-    background: var(--color-surface-sunken);
-    border: 1px solid var(--color-line);
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: inherit;
-    text-align: left;
-    color: var(--color-content-secondary);
-    transition: background 0.15s, border-color 0.15s;
+    @apply flex items-center gap-3 w-full py-2.5 px-4 bg-surface-sunken border border-line rounded-[10px] cursor-pointer text-base font-[inherit] text-left text-content-secondary transition-[background,border-color];
 
     &:hover {
-      background: var(--color-surface-elevated);
-      border-color: var(--color-line-medium);
+      @apply bg-surface-elevated border-line-medium;
     }
   }
 
   .game-link {
-    color: var(--color-link);
-    text-decoration: none;
-    font-size: 0.95rem;
-    white-space: nowrap;
-    font-weight: 500;
+    @apply text-link no-underline text-[0.95rem] whitespace-nowrap font-medium;
 
     &:hover {
-      color: var(--color-link-hover);
-      text-decoration: underline;
+      @apply text-link-hover underline;
     }
   }
 
-  /* ── Nav link ── */
+  /* ── Nav link (active state) ── */
   .nav-link {
-    padding: 0.45rem 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--color-content-muted);
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.2s, background 0.2s;
+    @apply py-1.5 px-4 rounded-lg no-underline text-content-muted font-medium text-base transition-[color,background];
 
     &:hover {
-      color: var(--color-content-bright);
-      background: var(--color-surface-elevated);
+      @apply text-content-bright bg-surface-elevated;
     }
 
     &.active {
-      background: var(--color-brand-bg);
-      color: var(--color-brand-text);
+      @apply bg-brand-bg text-brand-text;
     }
   }
 
-  /* ── Base-runner table ── */
+  /* ── Base-runner table (sticky cols, grouped headers) ── */
   .base-runner-table {
-    white-space: nowrap;
+    @apply whitespace-nowrap;
 
     th, td {
-      padding: 0.35rem 0.5rem;
-      font-size: 0.95rem;
-      text-align: center;
-      min-width: 2.25rem;
+      @apply py-1 px-2 text-[0.95rem] text-center min-w-9;
     }
 
     .sticky-col {
-      position: sticky;
-      left: 0;
-      background: var(--color-surface-sticky);
-      z-index: 1;
-      font-weight: 600;
-      text-align: center;
-      border-right: 1px solid var(--color-line-hover);
+      @apply sticky left-0 bg-surface-sticky z-1 font-semibold text-center border-r border-line-hover;
     }
 
     thead .sticky-col {
-      background: var(--color-surface-sticky-header);
-      z-index: 2;
+      @apply bg-surface-sticky-header z-2;
     }
 
     .situation-header {
-      border-bottom: none;
-      padding-bottom: 0.2rem;
-      font-weight: 600;
-      border-left: 1px solid var(--color-line);
+      @apply border-b-0 pb-0.5 font-semibold border-l border-line;
     }
 
     .out-header {
-      font-weight: 500;
-      color: var(--color-content-dim);
-      font-size: 0.85rem;
+      @apply font-medium text-content-dim text-sm;
     }
 
     .last-in-group {
-      border-right: 1px solid var(--color-line);
+      @apply border-r border-line;
     }
   }
 
-  /* ── Woba ── */
-  .woba-cell {
-    font-weight: 600;
-    text-align: center;
-    font-variant-numeric: tabular-nums;
-    font-size: 1rem;
-  }
-
+  /* ── Woba tiers (dynamically applied via [class]) ── */
   .tier-excellent {
-    background: var(--color-tier-excellent-bg);
-    color: var(--color-tier-excellent);
+    @apply bg-tier-excellent-bg text-tier-excellent;
   }
 
   .tier-great {
-    background: var(--color-tier-great-bg);
-    color: var(--color-tier-great);
+    @apply bg-tier-great-bg text-tier-great;
   }
 
   .tier-above_average {
-    background: var(--color-tier-above-avg-bg);
-    color: var(--color-tier-above-avg);
+    @apply bg-tier-above-avg-bg text-tier-above-avg;
   }
 
   .tier-average {
-    background: var(--color-tier-average-bg);
-    color: var(--color-tier-average);
+    @apply bg-tier-average-bg text-tier-average;
   }
 
   .tier-below_average {
-    background: var(--color-tier-below-avg-bg);
-    color: var(--color-tier-below-avg);
+    @apply bg-tier-below-avg-bg text-tier-below-avg;
   }
 
+  /* ── Woba player table (hover states requiring nesting) ── */
   .woba-table .player-row {
-    cursor: pointer;
+    @apply cursor-pointer;
 
     &:hover {
       background: var(--color-brand-bg-subtle) !important;
     }
-  }
 
-  .woba-table .player-name {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .woba-table .expand-arrow {
-    font-size: 0.65rem;
-    color: var(--color-content-dim);
-    width: 1rem;
-    flex-shrink: 0;
-    transition: color 0.15s;
-  }
-
-  .woba-table .player-row:hover .expand-arrow {
-    color: var(--color-link-hover);
+    &:hover .expand-arrow {
+      @apply text-link-hover;
+    }
   }
 
   .cumulative-row > td {
-    padding: 0 !important;
-    background: var(--color-surface-overlay);
+    @apply p-0! bg-surface-overlay;
   }
 
   .game-progression-table {
-    margin: 0 !important;
-    border-radius: 0 !important;
-    border: none !important;
-    background: transparent !important;
+    @apply m-0! rounded-none! border-none! bg-transparent!;
 
     thead {
-      background: var(--color-surface-card) !important;
+      @apply bg-surface-card!;
 
       th {
-        color: var(--color-content-dim) !important;
-        font-size: 0.85rem !important;
+        @apply text-content-dim! text-sm!;
       }
     }
 
     td {
-      padding: 0.45rem 0.75rem !important;
-      font-size: 0.95rem;
+      @apply py-1.5 px-3! text-[0.95rem];
     }
   }
 
-  /* ── Team grid ── */
+  /* ── Legend swatches (first/last-child radius) ── */
+  .legend-swatch {
+    @apply py-1 px-2 text-[0.8rem] font-semibold tabular-nums text-center min-w-12;
+
+    &:first-child {
+      @apply rounded-l-[5px];
+    }
+
+    &:last-child {
+      @apply rounded-r-[5px];
+    }
+  }
+
+  /* ── Team grid (complex sticky + nested table overrides) ── */
   .team-grid-table {
-    white-space: nowrap;
-    border: none !important;
-    border-radius: 0 !important;
-    overflow: visible !important;
+    @apply whitespace-nowrap border-none! rounded-none! overflow-visible!;
 
     th, td {
-      padding: 0.5rem 0.6rem;
-      font-size: 0.95rem;
-      text-align: center;
-      min-width: 4.5rem;
+      @apply py-2 px-2.5 text-[0.95rem] text-center min-w-[4.5rem];
     }
 
     .sticky-col {
-      position: sticky;
-      left: 0;
-      z-index: 1;
-      background: var(--color-surface-sticky);
-      text-align: left;
-      font-weight: 600;
-      border-right: 1px solid var(--color-line-hover);
-      min-width: 8rem;
+      @apply sticky left-0 z-1 bg-surface-sticky text-left font-semibold border-r border-line-hover min-w-32;
     }
 
     thead .sticky-col {
-      background: var(--color-surface-sticky-header);
-      z-index: 2;
-    }
-
-    .game-col-header {
-      vertical-align: bottom;
-      padding: 0.3rem 0.4rem;
-      line-height: 1.2;
-    }
-
-    .game-col-opponent {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--color-content-secondary);
-    }
-
-    .game-col-date {
-      font-size: 0.75rem;
-      font-weight: 400;
-      color: var(--color-content-dim);
+      @apply bg-surface-sticky-header z-2;
     }
 
     .sticky-end {
-      position: sticky;
-      right: 0;
-      z-index: 1;
-      background: var(--color-surface-sticky);
-      border-left: 1px solid var(--color-line-hover);
+      @apply sticky right-0 z-1 bg-surface-sticky border-l border-line-hover;
     }
 
     .season-col-header {
-      font-weight: 700;
-      position: sticky;
-      right: 0;
-      z-index: 2;
-      background: var(--color-surface-sticky-header);
-      border-left: 1px solid var(--color-line-hover);
-    }
-
-    .player-name-cell {
-      font-weight: 500;
-      color: var(--color-content-bright);
+      @apply font-bold sticky right-0 z-2 bg-surface-sticky-header border-l border-line-hover;
     }
 
     .dual-cell {
-      padding: 0.25rem 0.2rem;
-      vertical-align: middle;
-
-      .cell-inner {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        gap: 0.3rem;
-      }
-    }
-
-    .cell-cumulative {
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .cell-game {
-      font-size: 0.75rem;
-      font-weight: 500;
-      opacity: 0.6;
-    }
-
-    .empty-cell {
-      color: var(--color-content-empty);
-      background: transparent;
-    }
-
-    .sortable-header {
-      cursor: pointer;
-      user-select: none;
-
-      &:hover {
-        color: var(--color-content-bright);
-      }
-    }
-
-    .sort-arrow {
-      font-size: 0.6rem;
-      margin-left: 0.25rem;
-      vertical-align: middle;
+      @apply py-1 px-0.5 align-middle;
     }
   }
 
-  /* ── Scoring ── */
+  /* ── Scoring (nth-child selectors, bunt highlights) ── */
   .bunt-highlight {
     background: rgba(250, 204, 21, 0.08) !important;
-    border-left: 3px solid rgba(250, 204, 21, 0.5);
+    @apply border-l-[3px] border-l-[rgba(250,204,21,0.5)];
   }
 
   .bunt-chip {
@@ -594,151 +373,88 @@
 
   .scoring-table {
     td:last-child {
-      text-align: right;
-      font-variant-numeric: tabular-nums;
+      @apply text-right tabular-nums;
     }
 
     td:nth-child(2) {
-      text-align: center;
-      font-weight: 600;
-      font-variant-numeric: tabular-nums;
+      @apply text-center font-semibold tabular-nums;
     }
   }
 
   .game-plays-table {
-    margin-top: 0;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    @apply mt-0 rounded-t-none!;
   }
 
-  /* ── Game viewer ── */
+  /* ── Game viewer (interactive states) ── */
   .filter-btn {
-    padding: 0.2rem 0.5rem;
-    font-size: 0.75rem;
-    border: 1px solid var(--color-line-strong);
-    border-radius: 6px;
-    background: var(--color-surface-card);
-    color: var(--color-content-secondary);
-    cursor: pointer;
-    transition: all 0.1s;
+    @apply py-0.5 px-2 text-xs border border-line-strong rounded-md bg-surface-card text-content-secondary cursor-pointer transition-all;
 
     &:hover {
-      background: var(--color-brand-bg);
-      border-color: var(--color-brand);
+      @apply bg-brand-bg border-brand;
     }
 
     &.active {
-      background: var(--color-brand);
-      color: #fff;
-      border-color: var(--color-brand);
+      @apply bg-brand text-white border-brand;
     }
   }
 
   .control-btn {
-    padding: 0.3rem 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.15s;
+    @apply py-1 px-4 text-xs font-semibold rounded-md cursor-pointer transition-all;
 
     &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
+      @apply opacity-40 cursor-not-allowed;
     }
   }
 
   .play-btn {
-    border: 1px solid var(--color-brand);
-    background: var(--color-brand);
-    color: #fff;
+    @apply border border-brand bg-brand text-white;
 
     &:hover:not(:disabled) {
-      background: var(--color-brand-light);
-      border-color: var(--color-brand-light);
+      @apply bg-brand-light border-brand-light;
     }
   }
 
   .rewind-btn {
-    border: 1px solid var(--color-line-strong);
-    background: var(--color-surface-elevated);
-    color: var(--color-content-muted);
+    @apply border border-line-strong bg-surface-elevated text-content-muted;
 
     &:hover:not(:disabled) {
-      background: var(--color-brand-bg);
-      border-color: var(--color-brand);
-      color: var(--color-brand-text);
+      @apply bg-brand-bg border-brand text-brand-text;
     }
   }
 
   .inning-header {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--color-brand-text);
-    background: var(--color-surface-sticky-header);
-    border-bottom: 1px solid var(--color-line);
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    @apply py-1 px-2 text-[0.7rem] font-bold text-brand-text bg-surface-sticky-header border-b border-line sticky top-0 z-1;
   }
 
   .play-row {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.5rem;
-    font-size: 0.75rem;
-    color: var(--color-content-secondary);
-    border-bottom: 1px solid var(--color-line);
-    cursor: pointer;
-    border-left: 3px solid transparent;
-    transition: all 0.1s;
+    @apply flex items-center gap-1.5 py-1 px-2 text-xs text-content-secondary border-b border-line cursor-pointer border-l-[3px] border-l-transparent transition-all;
 
     &:hover {
-      background: var(--color-surface-hover);
+      @apply bg-surface-hover;
     }
 
     &.active {
-      background: var(--color-brand-bg);
-      border-left-color: var(--color-brand);
+      @apply bg-brand-bg border-l-brand;
     }
 
     &.non-pa {
-      color: var(--color-content-dim);
-      font-style: italic;
+      @apply text-content-dim italic;
     }
   }
 
   .slot-chip {
-    display: inline-block;
-    background: var(--color-brand);
-    color: #fff;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 0.1rem 0.3rem;
-    border-radius: 4px;
-    flex-shrink: 0;
+    @apply inline-block bg-brand text-white text-[0.65rem] font-bold py-0.5 px-1.5 rounded shrink-0;
   }
 
   .nav-btn {
-    padding: 0.25rem 0.6rem;
-    font-size: 0.75rem;
-    border: 1px solid var(--color-line-strong);
-    border-radius: 6px;
-    background: var(--color-surface-card);
-    color: var(--color-content-secondary);
-    cursor: pointer;
+    @apply py-1 px-2.5 text-xs border border-line-strong rounded-md bg-surface-card text-content-secondary cursor-pointer;
 
     &:hover:not(:disabled) {
-      background: var(--color-brand-bg);
-      border-color: var(--color-brand);
-      color: var(--color-brand-text);
+      @apply bg-brand-bg border-brand text-brand-text;
     }
 
     &:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
+      @apply opacity-40 cursor-not-allowed;
     }
   }
 }

@@ -34,6 +34,9 @@ export interface TeamPlayerRow {
   selector: 'app-woba',
   standalone: true,
   imports: [CommonModule, FormsModule],
+  host: {
+    class: 'block stats-section'
+  },
   templateUrl: './woba.component.html',
 })
 export class WobaComponent {
@@ -110,6 +113,43 @@ export class WobaComponent {
   }
 
   getWobaTier = getWobaTier;
+
+  wobaGradientStyle(woba: number): Record<string, string> {
+    // Piecewise color stops: [wOBA threshold, hue, saturation, lightness]
+    const stops: [number, number, number, number][] = [
+      [0.000,  0,  85, 72],  // red
+      [0.150, 10,  85, 70],  // red-orange
+      [0.220, 22,  88, 68],  // orange
+      [0.260, 32,  90, 66],  // warm orange
+      [0.290, 42,  90, 64],  // amber
+      [0.310, 55,  88, 62],  // yellow-orange
+      [0.330, 68,  82, 60],  // yellow
+      [0.350, 85,  78, 58],  // yellow-green
+      [0.370, 105, 72, 58],  // light green
+      [0.400, 130, 68, 58],  // green
+      [0.450, 145, 72, 55],  // rich green
+      [0.550, 155, 78, 52],  // deep green
+    ];
+
+    const w = Math.max(0, Math.min(0.55, woba));
+    let i = 0;
+    while (i < stops.length - 1 && stops[i + 1][0] <= w) i++;
+    const [w0, h0, s0, l0] = stops[i];
+    const [w1, h1, s1, l1] = stops[Math.min(i + 1, stops.length - 1)];
+    const t = w1 > w0 ? (w - w0) / (w1 - w0) : 0;
+    const h = h0 + t * (h1 - h0);
+    const s = s0 + t * (s1 - s0);
+    const l = l0 + t * (l1 - l0);
+
+    const topColor = `hsl(${h + 8}, ${s + 5}%, ${l + 14}%)`;
+    const bottomColor = `hsl(${h}, ${s}%, ${l}%)`;
+    return {
+      background: `linear-gradient(to bottom, ${topColor}, ${bottomColor})`,
+      '-webkit-background-clip': 'text',
+      'background-clip': 'text',
+      '-webkit-text-fill-color': 'transparent',
+    };
+  }
 
   sortTeamGrid(key: 'name' | 'season'): void {
     if (this.teamSortKey === key) {

@@ -9,6 +9,7 @@ import { GameViewerComponent } from '../game-viewer/game-viewer.component';
   standalone: true,
   imports: [CommonModule, FormsModule, GameViewerComponent],
   templateUrl: './lineup-stats.component.html',
+  host: { class: 'block stats-section' },
 })
 export class LineupStatsComponent {
   private statsService = inject(SoftballStatsService);

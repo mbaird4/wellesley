@@ -17,6 +17,7 @@ interface PlayerScoringBreakdown {
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './scoring-plays.component.html',
+  host: { class: 'block stats-section' },
 })
 export class ScoringPlaysComponent {
   private statsService = inject(SoftballStatsService);
