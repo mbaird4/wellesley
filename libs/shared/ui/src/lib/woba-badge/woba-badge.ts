@@ -12,29 +12,20 @@ import { formatWoba, tierClass } from '@ws/stats-core';
   standalone: true,
   host: { class: 'flex items-baseline justify-center gap-1' },
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <span class="text-[0.95rem] font-semibold">{{
-      formattedCumulative()
-    }}</span>
-    <span
-      class="text-[0.7rem] font-semibold opacity-60"
-      [class]="seasonTierClass()"
-    >
-      {{ formattedSeason() }}
-      <span class="text-[0.6rem] opacity-80">{{ seasonPa() }}</span>
-    </span>
-  `,
+  templateUrl: './woba-badge.html',
 })
 export class WobaBadge {
-  readonly cumulativeWoba = input.required<number>();
-  readonly seasonWoba = input.required<number>();
-  readonly seasonPa = input.required<number>();
+  readonly primary = input.required<number>();
+  readonly secondary = input<number>(-1);
+  readonly pa = input<number>(-1);
 
-  readonly formattedCumulative = computed(() =>
-    formatWoba(this.cumulativeWoba())
-  );
-  readonly formattedSeason = computed(() => formatWoba(this.seasonWoba()));
-  readonly seasonTierClass = computed(() =>
-    tierClass(getWobaTier(this.seasonWoba()))
-  );
+  readonly formattedPrimary = computed(() => formatWoba(this.primary()));
+  readonly formattedSecondary = computed(() => {
+    const val = this.secondary();
+    return val !== undefined ? formatWoba(val) : '';
+  });
+  readonly secondaryTierClass = computed(() => {
+    const val = this.secondary();
+    return val !== undefined ? tierClass(getWobaTier(val)) : '';
+  });
 }

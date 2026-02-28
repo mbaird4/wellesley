@@ -6,18 +6,15 @@ import {
   output,
 } from '@angular/core';
 import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
-import {
-  abbreviateClassYear,
-  formatWoba,
-  wobaGradientStyle,
-} from '@ws/stats-core';
+import { ClassYearPipe } from '@ws/shared/ui';
+import { formatWoba, wobaGradientStyle } from '@ws/stats-core';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({
   selector: 'ws-player-card-list',
   standalone: true,
-  imports: [NgStyle, NgTemplateOutlet, PlayerDetail],
+  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-card-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -34,5 +31,4 @@ export class PlayerCardList {
 
   readonly fmtWoba = formatWoba;
   readonly gradientStyle = wobaGradientStyle;
-  readonly abbrevClassYear = abbreviateClassYear;
 }

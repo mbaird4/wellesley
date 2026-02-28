@@ -6,21 +6,16 @@ import {
   output,
 } from '@angular/core';
 import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
-import { WobaBadge } from '@ws/shared/ui';
+import { ClassYearPipe, WobaBadge } from '@ws/shared/ui';
 import { getWobaTier } from '@ws/stats-core';
-import {
-  abbreviateClassYear,
-  formatWoba,
-  tierClass,
-  wobaGradientStyle,
-} from '@ws/stats-core';
+import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({
   selector: 'ws-player-table',
   standalone: true,
-  imports: [NgStyle, NgTemplateOutlet, WobaBadge, PlayerDetail],
+  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, WobaBadge, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-table.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -39,7 +34,6 @@ export class PlayerTable {
 
   readonly fmtWoba = formatWoba;
   readonly gradientStyle = wobaGradientStyle;
-  readonly abbrevClassYear = abbreviateClassYear;
 
   getTierClass(woba: number): string {
     return tierClass(getWobaTier(woba));

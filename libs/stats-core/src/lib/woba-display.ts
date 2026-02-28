@@ -43,14 +43,3 @@ export function wobaGradientStyle(woba: number): Record<string, string> {
     '-webkit-text-fill-color': 'transparent',
   };
 }
-
-export function abbreviateClassYear(classYear: string): string {
-  const map: Record<string, string> = {
-    Freshman: 'Fr',
-    Sophomore: 'So',
-    Junior: 'Jr',
-    Senior: 'Sr',
-    'Graduate Student': 'Gr',
-  };
-  return map[classYear] ?? classYear;
-}

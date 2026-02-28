@@ -79,17 +79,16 @@
     <td class="text-content-dim tabular-nums">
       {{ row.jerseyNumber ?? '—' }}
     </td>
-    <td class="text-content-dim">{{ abbrevClassYear(row.classYear) }}</td>
+    <td class="text-content-dim">{{ row.classYear | classYear }}</td>
     @for (year of allYears(); track year) {
       @if (row.yearData.get(year); as yd) {
         <td
           class="dual-cell text-center font-semibold tabular-nums"
-          [class]="getTierClass(yd.cumulative.woba)"
+          [class]="getTierClass(yd.season.woba)"
         >
           <ws-woba-badge
-            [cumulativeWoba]="yd.cumulative.woba"
-            [seasonWoba]="yd.season.woba"
-            [seasonPa]="yd.season.pa"
+            [primary]="yd.season.woba"
+            [pa]="yd.season.pa"
           />
         </td>
       } @else {

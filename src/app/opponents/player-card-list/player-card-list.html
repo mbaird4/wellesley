@@ -71,7 +71,7 @@
               </span>
             }
             <span class="text-content-dim text-sm">
-              {{ abbrevClassYear(row.classYear) }}
+              {{ row.classYear | classYear }}
             </span>
             <span class="text-content-dim ml-auto text-[0.65rem]">
               {{ expandedPlayer() === row.name ? '▼' : '▶' }}
