@@ -14,7 +14,6 @@ import { GameViewerComponent } from '../game-viewer/game-viewer.component';
 export class LineupStatsComponent {
   private statsService = inject(SoftballStatsService);
   private cdr = inject(ChangeDetectorRef);
-  readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
   results: ResultRow[] = [];
   games: GameWithSnapshots[] = [];
@@ -71,11 +70,6 @@ export class LineupStatsComponent {
         this.cdr.markForCheck();
       },
     });
-  }
-
-  reload(): void {
-    this.statsService.clearCache(this.selectedYear);
-    this.loadStats();
   }
 
   toggleGame(index: number): void {

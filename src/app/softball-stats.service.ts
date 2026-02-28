@@ -21,8 +21,4 @@ export class SoftballStatsService {
       map(games => this.processorService.processGamesWithSnapshots(games))
     );
   }
-
-  clearCache(year?: number): void {
-    this.dataService.clearCache(year);
-  }
 }

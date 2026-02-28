@@ -5,7 +5,6 @@ import { WobaDataService } from './woba-data.service';
 import {
   PlayerWoba,
   PlayerCumulativeWoba,
-  WobaSeasonData,
 } from '../../lib/types';
 import {
   computePlayerSeasonWobas,
@@ -42,7 +41,6 @@ export interface TeamPlayerRow {
 export class WobaComponent {
   private wobaData = inject(WobaDataService);
   private cdr = inject(ChangeDetectorRef);
-  readonly isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
   loading = false;
   error: string | null = null;
@@ -87,11 +85,6 @@ export class WobaComponent {
         this.cdr.markForCheck();
       },
     });
-  }
-
-  reload(): void {
-    this.wobaData.clearCache(this.selectedYear);
-    this.loadData();
   }
 
   togglePlayer(name: string): void {

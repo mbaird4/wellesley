@@ -50,9 +50,7 @@
     "serve": {
       "continuous": true,
       "executor": "@angular/build:dev-server",
-      "options": {
-        "proxyConfig": "proxy.conf.json"
-      },
+      "options": {},
       "configurations": {
         "production": {
           "buildTarget": "wellesley:build:production"

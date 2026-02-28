@@ -19,7 +19,7 @@ npm install
 npx nx serve
 ```
 
-The dev server proxies `/wellesleyblue/*` requests to `https://wellesleyblue.com` so boxscore scraping works locally without CORS issues (see `proxy.conf.json`). In production, the app reads from pre-generated static JSON files — it never scrapes live.
+In both dev and production, the app reads from pre-generated static JSON files in `public/data/`.
 
 ## Commands
 
@@ -43,7 +43,7 @@ src/
     woba/                       # /woba — wOBA player rankings + team grid
     scoring-plays/              # /scoring — scoring play analysis
     opponents/                  # /opponents — opponent scouting (historical stats)
-    softball-data.service.ts    # Fetches + parses boxscore HTML (Axios + Cheerio)
+    softball-data.service.ts    # Loads pre-generated static JSON game data
     softball-processor.service.ts
     softball-stats.service.ts
   lib/                          # Framework-agnostic pure functions
@@ -66,9 +66,7 @@ public/
 
 ### Wellesley Stats
 
-**Local dev:** `SoftballDataService` scrapes boxscore HTML live from wellesleyblue.com via the Vite proxy, parses it with Cheerio, and caches results in `localStorage`.
-
-**Production:** The app loads pre-generated static JSON from `public/data/`. These files are created by `npm run prefetch` and checked into the repo. A GitHub Actions cron job (`.github/workflows/refresh-data.yml`) runs daily at 6 AM ET during softball season (Feb-May) to re-scrape the current year's data and auto-commit any changes.
+The app loads pre-generated static JSON from `public/data/`. These files are created by `npm run prefetch` and checked into the repo. A GitHub Actions cron job (`.github/workflows/refresh-data.yml`) runs daily at 6 AM ET during softball season (Feb-May) to re-scrape the current year's data and auto-commit any changes.
 
 **Processing pipeline (runs in-browser from the JSON):**
 

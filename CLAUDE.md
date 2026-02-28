@@ -11,13 +11,13 @@ npx nx test               # Jest unit tests
 npx nx lint               # ESLint
 ```
 
-Dev server proxies `/wellesleyblue/*` → `https://wellesleyblue.com` for CORS bypass (see `proxy.conf.json`). In production, the app reads from pre-generated static JSON files (`public/data/`), refreshed by a daily cron job during season.
+In both dev and production, the app reads from pre-generated static JSON files (`public/data/`), refreshed by a daily cron job during season.
 
 ## Architecture
 
 Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley College softball statistics. Three-layer data flow:
 
-1. **Data layer** (`src/app/softball-data.service.ts`) — Fetches boxscore HTML via Axios, parses with Cheerio, extracts lineup and play-by-play text. Caches in localStorage per year.
+1. **Data layer** (`src/app/softball-data.service.ts`) — Loads pre-generated static JSON game data from `public/data/`.
 2. **Processing layer** (`src/lib/`) — Framework-agnostic pure functions that simulate games play-by-play, tracking base runners, outs, and plate appearances. Also usable from CLI (`src/cli.ts`).
 3. **Display layer** (`src/app/` components) — Angular components consuming processed stats via `SoftballStatsService`.
 
