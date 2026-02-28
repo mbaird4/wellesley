@@ -1,14 +1,16 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  inject,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { WobaDataService } from '@ws/data-access';
+import { PlayerCumulativeWoba, PlayerWoba } from '@ws/stats-core';
 import {
-  PlayerWoba,
-  PlayerCumulativeWoba,
-} from '@ws/stats-core';
-import {
-  computePlayerSeasonWobas,
   computePlayerCumulativeWobas,
+  computePlayerSeasonWobas,
   getWobaTier,
 } from '@ws/stats-core';
 import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
@@ -35,9 +37,10 @@ export interface TeamPlayerRow {
   standalone: true,
   imports: [CommonModule, FormsModule],
   host: {
-    class: 'block stats-section'
+    class: 'block stats-section',
   },
   templateUrl: './woba.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Woba {
   private wobaData = inject(WobaDataService);
@@ -46,7 +49,10 @@ export class Woba {
   loading = false;
   error: string | null = null;
   selectedYear = 2025;
-  availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+  availableYears = [
+    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
+    2011,
+  ];
   activeTab: 'players' | 'team' = 'players';
 
   playerWobas: PlayerWoba[] = [];
@@ -137,7 +143,7 @@ export class Woba {
     this.teamGameColumns = Array.from(gameKeys.values());
 
     // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
-    this.teamPlayerRows = this.cumulativeWobas.map(player => {
+    this.teamPlayerRows = this.cumulativeWobas.map((player) => {
       const gameMap = new Map<string, TeamGameCell>();
       for (const g of player.games) {
         gameMap.set(`${g.date}|${g.opponent}`, {
@@ -147,14 +153,14 @@ export class Woba {
       }
 
       const seasonPlayer = this.playerWobas.find(
-        p => p.name.toLowerCase() === player.name.toLowerCase()
+        (p) => p.name.toLowerCase() === player.name.toLowerCase()
       );
 
       return {
         name: player.name,
         seasonWoba: seasonPlayer?.woba ?? 0,
         seasonTier: seasonPlayer?.tier ?? 'below_average',
-        games: this.teamGameColumns.map(col => {
+        games: this.teamGameColumns.map((col) => {
           const key = `${col.date}|${col.opponent}`;
           return gameMap.get(key) ?? null;
         }),

@@ -8,7 +8,8 @@ const prefix = '../src/app';
 const tailwindCssPath = path.join(__dirname, prefix, '/tailwind.css');
 const tailwindGeneratedCssPath = path.join(
   __dirname,
-  prefix, '/tailwind.generated.css',
+  prefix,
+  '/tailwind.generated.css'
 );
 const stylesDir = path.join(__dirname, prefix, '/styles');
 const srcDir = path.join(__dirname, prefix, '');
@@ -59,24 +60,22 @@ function triggerTailwindRegeneration(changedFile) {
   // Debounce the trigger to avoid multiple rapid file changes
   debounceTimer = setTimeout(() => {
     console.log(
-      `[SCSS Watcher] Detected change in: ${path.basename(changedFile)}`,
+      `[SCSS Watcher] Detected change in: ${path.basename(changedFile)}`
     );
     console.log(
-      `[SCSS Watcher] Touching tailwind.css to trigger regeneration...`,
+      `[SCSS Watcher] Touching tailwind.css to trigger regeneration...`
     );
 
     if (touchFile(tailwindCssPath)) {
       console.log(
-        `[SCSS Watcher] Successfully triggered Tailwind regeneration`,
+        `[SCSS Watcher] Successfully triggered Tailwind regeneration`
       );
 
       // Wait for Tailwind to regenerate, then touch generated CSS to trigger HMR
       setTimeout(() => {
         if (fs.existsSync(tailwindGeneratedCssPath)) {
           touchFile(tailwindGeneratedCssPath);
-          console.log(
-            `[SCSS Watcher] Touched generated CSS to trigger HMR`,
-          );
+          console.log(`[SCSS Watcher] Touched generated CSS to trigger HMR`);
         }
       }, 300);
     }
@@ -102,13 +101,13 @@ function watchDirectory(dir, callback) {
             callback(fullPath);
           }
         }
-      },
+      }
     );
     watchers.push(watcher);
   } catch (err) {
     console.error(
       `[SCSS Watcher] Error watching directory ${dir}:`,
-      err.message,
+      err.message
     );
   }
 

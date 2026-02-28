@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@source "../libs";
+@source '../libs';
 
 @theme {
   --color-brand: #0018a8;
@@ -85,36 +85,54 @@
    card:    inner panels        (p-3 → md:p-5)
    cell:    tight table content (p-2 → md:p-3)
 */
-@utility p-section { @apply p-4 md:p-8; }
-@utility px-section { @apply px-4 md:px-8; }
-@utility py-section { @apply py-4 md:py-8; }
+@utility p-section {
+  @apply p-4 md:p-8;
+}
+@utility px-section {
+  @apply px-4 md:px-8;
+}
+@utility py-section {
+  @apply py-4 md:py-8;
+}
 
-@utility p-card { @apply p-3 md:p-5; }
-@utility px-card { @apply px-3 md:px-5; }
-@utility py-card { @apply py-3 md:py-5; }
+@utility p-card {
+  @apply p-3 md:p-5;
+}
+@utility px-card {
+  @apply px-3 md:px-5;
+}
+@utility py-card {
+  @apply py-3 md:py-5;
+}
 
-@utility p-cell { @apply p-2 md:p-3; }
-@utility px-cell { @apply px-2 md:px-3; }
-@utility py-cell { @apply py-2 md:py-3; }
+@utility p-cell {
+  @apply p-2 md:p-3;
+}
+@utility px-cell {
+  @apply px-2 md:px-3;
+}
+@utility py-cell {
+  @apply py-2 md:py-3;
+}
 
 @layer components {
   /* ── Shared Card ── */
   .stats-section {
-    @apply bg-surface-card border border-line-hover rounded-2xl p-section;
+    @apply bg-surface-card border-line-hover p-section rounded-2xl border;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
   }
 
   /* ── Select input (focus ring, option bg, disabled state) ── */
   .year-select {
-    @apply py-2 px-4 border border-line-strong rounded-lg text-[1.05rem] bg-surface-elevated text-content cursor-pointer min-w-[100px] font-[inherit] transition-[border-color,box-shadow];
+    @apply border-line-strong bg-surface-elevated text-content min-w-[100px] cursor-pointer rounded-lg border px-4 py-2 font-[inherit] text-[1.05rem] transition-[border-color,box-shadow];
 
     &:disabled {
-      @apply opacity-40 cursor-not-allowed;
+      @apply cursor-not-allowed opacity-40;
     }
 
     &:focus {
-      @apply outline-none border-brand;
+      @apply border-brand outline-none;
       box-shadow: 0 0 0 3px var(--color-brand-glow);
     }
 
@@ -125,8 +143,12 @@
 
   /* ── Buttons (hover/active/disabled states) ── */
   .load-button {
-    @apply border-none py-2 px-5 rounded-lg text-base font-medium font-[inherit] cursor-pointer text-white transition-[transform,box-shadow,opacity];
-    background: linear-gradient(135deg, var(--color-brand-light), var(--color-brand));
+    @apply cursor-pointer rounded-lg border-none px-5 py-2 font-[inherit] text-base font-medium text-white transition-[transform,box-shadow,opacity];
+    background: linear-gradient(
+      135deg,
+      var(--color-brand-light),
+      var(--color-brand)
+    );
     box-shadow: 0 2px 8px var(--color-brand-glow);
 
     &:hover:not(:disabled) {
@@ -139,15 +161,15 @@
     }
 
     &:disabled {
-      @apply opacity-40 cursor-not-allowed translate-y-0;
+      @apply translate-y-0 cursor-not-allowed opacity-40;
     }
   }
 
   .clear-cache-button {
-    @apply border border-line-medium py-2 px-5 rounded-lg text-base font-medium font-[inherit] cursor-pointer bg-surface-elevated text-content-muted transition-[transform,box-shadow,opacity,background,color,border-color];
+    @apply border-line-medium bg-surface-elevated text-content-muted cursor-pointer rounded-lg border px-5 py-2 font-[inherit] text-base font-medium transition-[transform,box-shadow,opacity,background,color,border-color];
 
     &:hover:not(:disabled) {
-      @apply -translate-y-px bg-danger-bg-hover text-error border-danger-border-hover;
+      @apply bg-danger-bg-hover text-error border-danger-border-hover -translate-y-px;
     }
 
     &:active:not(:disabled) {
@@ -155,13 +177,13 @@
     }
 
     &:disabled {
-      @apply opacity-40 cursor-not-allowed translate-y-0;
+      @apply translate-y-0 cursor-not-allowed opacity-40;
     }
   }
 
   /* ── Data Table (nested selectors for thead/tbody/td) ── */
   .stats-table {
-    @apply w-full mb-6 bg-surface-sunken border border-line rounded-xl overflow-hidden;
+    @apply bg-surface-sunken border-line mb-6 w-full overflow-hidden rounded-xl border;
     border-collapse: separate;
     border-spacing: 0;
 
@@ -169,12 +191,12 @@
       @apply bg-surface-elevated;
 
       th {
-        @apply text-content-muted text-sm font-semibold uppercase tracking-[0.06em] py-3 px-4 text-left border-b border-line;
+        @apply text-content-muted border-line border-b px-4 py-3 text-left text-sm font-semibold tracking-[0.06em] uppercase;
       }
     }
 
     td {
-      @apply py-2.5 px-4 text-base text-content-secondary border-b border-surface-hover;
+      @apply text-content-secondary border-surface-hover border-b px-4 py-2.5 text-base;
     }
 
     tbody tr {
@@ -190,25 +212,26 @@
     }
 
     td:first-child {
-      @apply font-medium text-content-bright;
+      @apply text-content-bright font-medium;
     }
   }
 
   .game-table {
     @apply mt-0 mb-2 rounded-t-none!;
 
-    th, td {
-      @apply py-1.5 px-3 text-[0.95rem];
+    th,
+    td {
+      @apply px-3 py-1.5 text-[0.95rem];
     }
   }
 
   /* ── Tabs (active state) ── */
   .tabs {
-    @apply flex gap-1 mb-5 bg-surface-card rounded-[10px] p-[3px] w-fit;
+    @apply bg-surface-card mb-5 flex w-fit gap-1 rounded-[10px] p-[3px];
   }
 
   .tab {
-    @apply py-1.5 px-5 bg-transparent border-none rounded-lg cursor-pointer text-base font-medium font-[inherit] text-content-dim transition-[color,background];
+    @apply text-content-dim cursor-pointer rounded-lg border-none bg-transparent px-5 py-1.5 font-[inherit] text-base font-medium transition-[color,background];
 
     &:hover {
       @apply text-content-secondary bg-surface-card;
@@ -225,7 +248,7 @@
   }
 
   .game-toggle {
-    @apply flex items-center gap-3 w-full py-2.5 px-4 bg-surface-sunken border border-line rounded-[10px] cursor-pointer text-base font-[inherit] text-left text-content-secondary transition-[background,border-color];
+    @apply bg-surface-sunken border-line text-content-secondary flex w-full cursor-pointer items-center gap-3 rounded-[10px] border px-4 py-2.5 text-left font-[inherit] text-base transition-[background,border-color];
 
     &:hover {
       @apply bg-surface-elevated border-line-medium;
@@ -233,7 +256,7 @@
   }
 
   .game-link {
-    @apply text-link no-underline text-[0.95rem] whitespace-nowrap font-medium;
+    @apply text-link text-[0.95rem] font-medium whitespace-nowrap no-underline;
 
     &:hover {
       @apply text-link-hover underline;
@@ -242,7 +265,7 @@
 
   /* ── Nav link (active state) ── */
   .nav-link {
-    @apply py-1.5 px-4 rounded-lg no-underline text-content-muted font-medium text-base transition-[color,background];
+    @apply text-content-muted rounded-lg px-4 py-1.5 text-base font-medium no-underline transition-[color,background];
 
     &:hover {
       @apply text-content-bright bg-surface-elevated;
@@ -257,12 +280,13 @@
   .base-runner-table {
     @apply whitespace-nowrap;
 
-    th, td {
-      @apply py-1 px-2 text-[0.95rem] text-center min-w-9;
+    th,
+    td {
+      @apply min-w-9 px-2 py-1 text-center text-[0.95rem];
     }
 
     .sticky-col {
-      @apply sticky left-0 bg-surface-sticky z-1 font-semibold text-center border-r border-line-hover;
+      @apply bg-surface-sticky border-line-hover sticky left-0 z-1 border-r text-center font-semibold;
     }
 
     thead .sticky-col {
@@ -270,15 +294,15 @@
     }
 
     .situation-header {
-      @apply border-b-0 pb-0.5 font-semibold border-l border-line;
+      @apply border-line border-b-0 border-l pb-0.5 font-semibold;
     }
 
     .out-header {
-      @apply font-medium text-content-dim text-sm;
+      @apply text-content-dim text-sm font-medium;
     }
 
     .last-in-group {
-      @apply border-r border-line;
+      @apply border-line border-r;
     }
   }
 
@@ -317,7 +341,7 @@
   }
 
   .cumulative-row > td {
-    @apply p-0! bg-surface-overlay;
+    @apply bg-surface-overlay p-0!;
   }
 
   .game-progression-table {
@@ -332,13 +356,13 @@
     }
 
     td {
-      @apply py-1.5 px-3! text-[0.95rem];
+      @apply px-3! py-1.5 text-[0.95rem];
     }
   }
 
   /* ── Legend swatches (first/last-child radius) ── */
   .legend-swatch {
-    @apply py-1 px-2 text-[0.8rem] font-semibold tabular-nums text-center min-w-12;
+    @apply min-w-12 px-2 py-1 text-center text-[0.8rem] font-semibold tabular-nums;
 
     &:first-child {
       @apply rounded-l-[5px];
@@ -351,14 +375,15 @@
 
   /* ── Team grid (complex sticky + nested table overrides) ── */
   .team-grid-table {
-    @apply whitespace-nowrap border-none! rounded-none! overflow-visible!;
+    @apply overflow-visible! rounded-none! border-none! whitespace-nowrap;
 
-    th, td {
-      @apply py-2 px-2.5 text-[0.95rem] text-center min-w-[4.5rem];
+    th,
+    td {
+      @apply min-w-[4.5rem] px-2.5 py-2 text-center text-[0.95rem];
     }
 
     .sticky-col {
-      @apply sticky left-0 z-1 bg-surface-sticky text-left font-semibold border-r border-line-hover min-w-32;
+      @apply bg-surface-sticky border-line-hover sticky left-0 z-1 min-w-32 border-r text-left font-semibold;
     }
 
     thead .sticky-col {
@@ -366,15 +391,15 @@
     }
 
     .sticky-end {
-      @apply sticky right-0 z-1 bg-surface-sticky border-l border-line-hover;
+      @apply bg-surface-sticky border-line-hover sticky right-0 z-1 border-l;
     }
 
     .season-col-header {
-      @apply font-bold sticky right-0 z-2 bg-surface-sticky-header border-l border-line-hover;
+      @apply bg-surface-sticky-header border-line-hover sticky right-0 z-2 border-l font-bold;
     }
 
     .dual-cell {
-      @apply py-1 px-0.5 align-middle;
+      @apply px-0.5 py-1 align-middle;
     }
   }
 
@@ -406,27 +431,27 @@
 
   /* ── Game viewer (interactive states) ── */
   .filter-btn {
-    @apply py-0.5 px-2 text-xs border border-line-strong rounded-md bg-surface-card text-content-secondary cursor-pointer transition-all;
+    @apply border-line-strong bg-surface-card text-content-secondary cursor-pointer rounded-md border px-2 py-0.5 text-xs transition-all;
 
     &:hover {
       @apply bg-brand-bg border-brand;
     }
 
     &.active {
-      @apply bg-brand text-white border-brand;
+      @apply bg-brand border-brand text-white;
     }
   }
 
   .control-btn {
-    @apply py-1 px-4 text-xs font-semibold rounded-md cursor-pointer transition-all;
+    @apply cursor-pointer rounded-md px-4 py-1 text-xs font-semibold transition-all;
 
     &:disabled {
-      @apply opacity-40 cursor-not-allowed;
+      @apply cursor-not-allowed opacity-40;
     }
   }
 
   .play-btn {
-    @apply border border-brand bg-brand text-white;
+    @apply border-brand bg-brand border text-white;
 
     &:hover:not(:disabled) {
       @apply bg-brand-light border-brand-light;
@@ -434,7 +459,7 @@
   }
 
   .rewind-btn {
-    @apply border border-line-strong bg-surface-elevated text-content-muted;
+    @apply border-line-strong bg-surface-elevated text-content-muted border;
 
     &:hover:not(:disabled) {
       @apply bg-brand-bg border-brand text-brand-text;
@@ -442,11 +467,11 @@
   }
 
   .inning-header {
-    @apply py-1 px-2 text-[0.7rem] font-bold text-brand-text bg-surface-sticky-header border-b border-line sticky top-0 z-1;
+    @apply text-brand-text bg-surface-sticky-header border-line sticky top-0 z-1 border-b px-2 py-1 text-[0.7rem] font-bold;
   }
 
   .play-row {
-    @apply flex items-center gap-1.5 py-1 px-2 text-xs text-content-secondary border-b border-line cursor-pointer border-l-[3px] border-l-transparent transition-all;
+    @apply text-content-secondary border-line flex cursor-pointer items-center gap-1.5 border-b border-l-[3px] border-l-transparent px-2 py-1 text-xs transition-all;
 
     &:hover {
       @apply bg-surface-hover;
@@ -462,18 +487,18 @@
   }
 
   .slot-chip {
-    @apply inline-block bg-brand text-white text-[0.65rem] font-bold py-0.5 px-1.5 rounded shrink-0;
+    @apply bg-brand inline-block shrink-0 rounded px-1.5 py-0.5 text-[0.65rem] font-bold text-white;
   }
 
   .nav-btn {
-    @apply py-1 px-2.5 text-xs border border-line-strong rounded-md bg-surface-card text-content-secondary cursor-pointer;
+    @apply border-line-strong bg-surface-card text-content-secondary cursor-pointer rounded-md border px-2.5 py-1 text-xs;
 
     &:hover:not(:disabled) {
       @apply bg-brand-bg border-brand text-brand-text;
     }
 
     &:disabled {
-      @apply opacity-40 cursor-not-allowed;
+      @apply cursor-not-allowed opacity-40;
     }
   }
 }

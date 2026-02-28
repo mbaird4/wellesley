@@ -1,7 +1,17 @@
-import { Component, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { OpponentDisplayRow, SortKey, SortDir } from '@ws/data-access';
-import { formatWoba, wobaGradientStyle, abbreviateClassYear } from '@ws/stats-core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  output,
+} from '@angular/core';
+import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
+import {
+  abbreviateClassYear,
+  formatWoba,
+  wobaGradientStyle,
+} from '@ws/stats-core';
+
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({
@@ -10,6 +20,7 @@ import { PlayerDetail } from '../player-detail/player-detail';
   imports: [NgStyle, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-card-list.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerCardList {
   readonly rows = input.required<OpponentDisplayRow[]>();

@@ -4,7 +4,7 @@
   "sourceRoot": "libs/data-access/src",
   "prefix": "ws",
   "projectType": "library",
-  "tags": [],
+  "tags": ["type:data-access"],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"

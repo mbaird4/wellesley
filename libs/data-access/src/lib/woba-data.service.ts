@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, from } from 'rxjs';
 import { WobaSeasonData } from '@ws/stats-core';
+import { from, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +15,6 @@ export class WobaDataService {
     const url = `${base}data/wobadata-${year}.json`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return await response.json() as WobaSeasonData;
+    return (await response.json()) as WobaSeasonData;
   }
 }

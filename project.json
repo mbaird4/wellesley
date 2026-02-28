@@ -5,7 +5,7 @@
   "projectType": "application",
   "prefix": "ws",
   "sourceRoot": "./src",
-  "tags": [],
+  "tags": ["type:app"],
   "targets": {
     "build": {
       "executor": "@angular/build:application",

@@ -1,9 +1,20 @@
-import { Component, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { OpponentDisplayRow, SortKey, SortDir } from '@ws/data-access';
-import { getWobaTier } from '@ws/stats-core';
-import { formatWoba, tierClass, wobaGradientStyle, abbreviateClassYear } from '@ws/stats-core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  output,
+} from '@angular/core';
+import { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
 import { WobaBadge } from '@ws/shared/ui';
+import { getWobaTier } from '@ws/stats-core';
+import {
+  abbreviateClassYear,
+  formatWoba,
+  tierClass,
+  wobaGradientStyle,
+} from '@ws/stats-core';
+
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({
@@ -12,6 +23,7 @@ import { PlayerDetail } from '../player-detail/player-detail';
   imports: [NgStyle, WobaBadge, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-table.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerTable {
   readonly rows = input.required<OpponentDisplayRow[]>();

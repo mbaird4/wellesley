@@ -1,14 +1,23 @@
-import { Component, input, signal, computed, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  input,
+  signal,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BaseRunners, PlaySnapshot } from '@ws/stats-core';
+
 import { Diamond } from '../diamond/diamond';
-import { PlaySnapshot, BaseRunners } from '@ws/stats-core';
 
 @Component({
   selector: 'ws-game-viewer',
   standalone: true,
   imports: [CommonModule, FormsModule, Diamond],
   templateUrl: './game-viewer.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GameViewer {
   snapshots = input.required<PlaySnapshot[]>();
@@ -21,7 +30,7 @@ export class GameViewer {
     const slot = this.slotFilter();
     const all = this.snapshots();
     if (slot === null) return all;
-    return all.filter(s => s.isPlateAppearance && s.lineupSlot === slot);
+    return all.filter((s) => s.isPlateAppearance && s.lineupSlot === slot);
   });
 
   currentSnapshot = computed(() => {
@@ -42,8 +51,12 @@ export class GameViewer {
     return this.played() ? snap.outsAfter : snap.outsBefore;
   });
 
-  displayedBatter = computed(() => this.played() ? null : this.currentSnapshot()?.currentBatterName ?? null);
-  displayedSlot = computed(() => this.played() ? null : this.currentSnapshot()?.currentBatterSlot ?? null);
+  displayedBatter = computed(() =>
+    this.played() ? null : (this.currentSnapshot()?.currentBatterName ?? null)
+  );
+  displayedSlot = computed(() =>
+    this.played() ? null : (this.currentSnapshot()?.currentBatterSlot ?? null)
+  );
 
   totalFiltered = computed(() => this.filteredSnapshots().length);
 
@@ -52,9 +65,15 @@ export class GameViewer {
   // Group snapshots by inning for the play list
   groupedByInning = computed(() => {
     const filtered = this.filteredSnapshots();
-    const groups: { inning: string; plays: { snap: PlaySnapshot; filteredIndex: number }[] }[] = [];
+    const groups: {
+      inning: string;
+      plays: { snap: PlaySnapshot; filteredIndex: number }[];
+    }[] = [];
     let currentInning = '';
-    let currentGroup: { inning: string; plays: { snap: PlaySnapshot; filteredIndex: number }[] } | null = null;
+    let currentGroup: {
+      inning: string;
+      plays: { snap: PlaySnapshot; filteredIndex: number }[];
+    } | null = null;
 
     filtered.forEach((snap, idx) => {
       if (snap.inning !== currentInning) {
@@ -70,10 +89,13 @@ export class GameViewer {
 
   constructor() {
     // Reset index when filter changes
-    effect(() => {
-      this.slotFilter();
-      this.currentIndex.set(0);
-    }, { allowSignalWrites: true });
+    effect(
+      () => {
+        this.slotFilter();
+        this.currentIndex.set(0);
+      },
+      { allowSignalWrites: true }
+    );
   }
 
   setSlotFilter(slot: number | null): void {

@@ -127,8 +127,7 @@ describe('extractScoringPlays — single', () => {
 
   it('G2: 2-RBI single → 2 scoring plays', () => {
     const plays = extract({
-      playText:
-        'A. Batter singled to cf; B. Runner scored; C. Other scored.',
+      playText: 'A. Batter singled to cf; B. Runner scored; C. Other scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, 'C. Other', 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -139,8 +138,7 @@ describe('extractScoringPlays — single', () => {
 
   it('G3: single with runner scoring on throw → single', () => {
     const plays = extract({
-      playText:
-        'A. Batter singled to cf; B. Runner scored on the throw.',
+      playText: 'A. Batter singled to cf; B. Runner scored on the throw.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -157,8 +155,7 @@ describe('extractScoringPlays — single', () => {
 describe('extractScoringPlays — bunt single', () => {
   it('H1: bunt single with error-enabled scoring → type overridden to error', () => {
     const plays = extract({
-      playText:
-        'A. Batter singled, bunt; B. Runner scored on an error by ss.',
+      playText: 'A. Batter singled, bunt; B. Runner scored on an error by ss.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -199,8 +196,7 @@ describe('extractScoringPlays — double', () => {
 
   it('I2: ground-rule double RBI → type double', () => {
     const plays = extract({
-      playText:
-        'A. Batter doubled, ground-rule; B. Runner scored.',
+      playText: 'A. Batter doubled, ground-rule; B. Runner scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases(null, 'A. Batter'),
@@ -217,8 +213,7 @@ describe('extractScoringPlays — double', () => {
 describe('extractScoringPlays — triple', () => {
   it('J1: 2-RBI triple → 2 scoring plays of type triple', () => {
     const plays = extract({
-      playText:
-        'A. Batter tripled to rf; B. Runner scored; C. Other scored.',
+      playText: 'A. Batter tripled to rf; B. Runner scored; C. Other scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases('C. Other', 'B. Runner'),
       basesAfter: makeBases(null, null, 'A. Batter'),
@@ -261,8 +256,7 @@ describe('extractScoringPlays — sac fly', () => {
 
   it('K3: sacrifice fly keyword → type sac_fly', () => {
     const plays = extract({
-      playText:
-        'A. Batter sacrifice fly to rf; B. Runner scored.',
+      playText: 'A. Batter sacrifice fly to rf; B. Runner scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases(),
@@ -405,9 +399,7 @@ describe('extractScoringPlays — productive out', () => {
       outsAfter: 1,
     });
     expect(plays).toHaveLength(2);
-    plays.forEach((p) =>
-      expect(p.scoringPlayType).toBe('productive_out')
-    );
+    plays.forEach((p) => expect(p.scoringPlayType).toBe('productive_out'));
   });
 
   it('O3: RBI + runner also out → 1 productive_out (out runner not scored)', () => {
@@ -445,8 +437,7 @@ describe('extractScoringPlays — productive out', () => {
 describe("extractScoringPlays — fielder's choice", () => {
   it('P1: FC RBI → type fielders_choice', () => {
     const plays = extract({
-      playText:
-        "A. Batter reached on a fielder's choice; B. Runner scored.",
+      playText: "A. Batter reached on a fielder's choice; B. Runner scored.",
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -490,8 +481,7 @@ describe('extractScoringPlays — error', () => {
 
   it('Q2: error in runner sub-event overrides type', () => {
     const plays = extract({
-      playText:
-        'A. Batter singled to cf; B. Runner scored on an error by lf.',
+      playText: 'A. Batter singled to cf; B. Runner scored on an error by lf.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -590,8 +580,7 @@ describe('extractScoringPlays — stolen base', () => {
 
   it('T2: steal with error scoring → type error', () => {
     const plays = extract({
-      playText:
-        'B. Runner stole second; C. Other scored on an error by c.',
+      playText: 'B. Runner stole second; C. Other scored on an error by c.',
       playType: 'stolen_base',
       basesBefore: makeBases('B. Runner', null, 'C. Other'),
       basesAfter: makeBases(null, 'B. Runner'),
@@ -778,8 +767,7 @@ describe('extractScoringPlays — non-scoring', () => {
 
   it('V10: strikeout with runner sub-events but no scoring → 0 plays', () => {
     const plays = extract({
-      playText:
-        'A. Batter struck out swinging; B. Runner advanced to second.',
+      playText: 'A. Batter struck out swinging; B. Runner advanced to second.',
       playType: 'plate_appearance',
       basesBefore: makeBases('B. Runner'),
       basesAfter: makeBases(null, 'B. Runner'),

@@ -118,7 +118,8 @@ const DEFAULT_YEARS = [2025, 2024, 2023];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities (same as prefetch-data.ts) ──
@@ -133,10 +134,15 @@ function normalizeName(name: string): string {
 
 async function fetchPage(url: string): Promise<string | null> {
   try {
-    const response = await axios.get(url, { responseType: 'text', headers: HEADERS });
+    const response = await axios.get(url, {
+      responseType: 'text',
+      headers: HEADERS,
+    });
     const html = response.data;
     if (!html || html.length < 500) {
-      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
+      console.warn(
+        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
+      );
       return null;
     }
     return html;
@@ -149,8 +155,15 @@ async function fetchPage(url: string): Promise<string | null> {
 // ── wOBA calculation (inlined from src/lib/woba.ts) ──
 
 function calculateWoba(stats: {
-  ab: number; h: number; doubles: number; triples: number;
-  hr: number; bb: number; hbp: number; sf: number; sh: number;
+  ab: number;
+  h: number;
+  doubles: number;
+  triples: number;
+  hr: number;
+  bb: number;
+  hbp: number;
+  sf: number;
+  sh: number;
 }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
@@ -182,17 +195,29 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
     const firstName = nameParts[0] || '';
     const lastName = nameParts.slice(1).join(' ') || '';
 
-    const jerseyText = $el.find('.sidearm-roster-player-jersey-number').text().trim();
+    const jerseyText = $el
+      .find('.sidearm-roster-player-jersey-number')
+      .text()
+      .trim();
     const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
     // Two .sidearm-roster-player-academic-year elements: abbreviated ("Sr.") and full ("Senior")
     // Take the last (full) one
     const classYearEls = $el.find('.sidearm-roster-player-academic-year');
-    const classYear = classYearEls.length > 1
-      ? $(classYearEls[classYearEls.length - 1]).text().trim()
-      : classYearEls.text().trim();
+    const classYear =
+      classYearEls.length > 1
+        ? $(classYearEls[classYearEls.length - 1])
+            .text()
+            .trim()
+        : classYearEls.text().trim();
 
-    players.push({ name: fullName, firstName, lastName, jerseyNumber, classYear });
+    players.push({
+      name: fullName,
+      firstName,
+      lastName,
+      jerseyNumber,
+      classYear,
+    });
   });
 
   return players;
@@ -222,7 +247,12 @@ function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
       nameCell.find('a').first().text().trim() ||
       nameCell.text().trim();
 
-    if (!name || name.toLowerCase() === 'totals' || name.toLowerCase() === 'opponents') return;
+    if (
+      !name ||
+      name.toLowerCase() === 'totals' ||
+      name.toLowerCase() === 'opponents'
+    )
+      return;
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
@@ -302,17 +332,26 @@ function parseTeamArg(): string | null {
 function parseYearsArg(): number[] {
   const idx = process.argv.indexOf('--years');
   if (idx === -1 || idx + 1 >= process.argv.length) return DEFAULT_YEARS;
-  return process.argv[idx + 1].split(',').map((s) => parseInt(s.trim(), 10)).filter((n) => !isNaN(n));
+  return process.argv[idx + 1]
+    .split(',')
+    .map((s) => parseInt(s.trim(), 10))
+    .filter((n) => !isNaN(n));
 }
 
 // ── Per-team scraping ──
 
-async function scrapeTeam(slug: string, domain: string, years: number[]): Promise<TeamOutput> {
+async function scrapeTeam(
+  slug: string,
+  domain: string,
+  years: number[]
+): Promise<TeamOutput> {
   console.log(`\n=== ${slug} (${domain}) ===`);
 
   // 1. Fetch roster
   console.log('  Fetching roster...');
-  const rosterHtml = await fetchPage(`https://${domain}/sports/softball/roster`);
+  const rosterHtml = await fetchPage(
+    `https://${domain}/sports/softball/roster`
+  );
   const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
   console.log(`  Found ${roster.length} roster players`);
 
@@ -321,7 +360,9 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
   for (const year of years) {
     await delay(DELAY_MS);
     console.log(`  Fetching ${year} stats...`);
-    const statsHtml = await fetchPage(`https://${domain}/sports/softball/stats/${year}`);
+    const statsHtml = await fetchPage(
+      `https://${domain}/sports/softball/stats/${year}`
+    );
     if (statsHtml) {
       const stats = parseStatsTable(cheerio.load(statsHtml));
       statsByYear.set(year, stats);
@@ -371,8 +412,24 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
     // Build season entries
     const seasons: SeasonStats[] = [];
     const careerTotals = {
-      gp: 0, gs: 0, ab: 0, r: 0, h: 0, doubles: 0, triples: 0, hr: 0,
-      rbi: 0, tb: 0, bb: 0, hbp: 0, so: 0, gdp: 0, sf: 0, sh: 0, sb: 0, sbAtt: 0,
+      gp: 0,
+      gs: 0,
+      ab: 0,
+      r: 0,
+      h: 0,
+      doubles: 0,
+      triples: 0,
+      hr: 0,
+      rbi: 0,
+      tb: 0,
+      bb: 0,
+      hbp: 0,
+      so: 0,
+      gdp: 0,
+      sf: 0,
+      sh: 0,
+      sb: 0,
+      sbAtt: 0,
     };
 
     for (const year of years) {
@@ -433,13 +490,34 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
 
     if (seasons.length === 0) continue;
 
-    const careerPa = careerTotals.ab + careerTotals.bb + careerTotals.sf + careerTotals.sh + careerTotals.hbp;
+    const careerPa =
+      careerTotals.ab +
+      careerTotals.bb +
+      careerTotals.sf +
+      careerTotals.sh +
+      careerTotals.hbp;
     const careerWoba = calculateWoba(careerTotals);
 
     // Compute career rate stats from totals
-    const careerAvg = careerTotals.ab > 0 ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000 : 0;
-    const careerSlg = careerTotals.ab > 0 ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000 : 0;
-    const careerObp = careerPa > 0 ? Math.round(((careerTotals.h + careerTotals.bb + careerTotals.hbp) / (careerTotals.ab + careerTotals.bb + careerTotals.hbp + careerTotals.sf)) * 1000) / 1000 : 0;
+    const careerAvg =
+      careerTotals.ab > 0
+        ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000
+        : 0;
+    const careerSlg =
+      careerTotals.ab > 0
+        ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000
+        : 0;
+    const careerObp =
+      careerPa > 0
+        ? Math.round(
+            ((careerTotals.h + careerTotals.bb + careerTotals.hbp) /
+              (careerTotals.ab +
+                careerTotals.bb +
+                careerTotals.hbp +
+                careerTotals.sf)) *
+              1000
+          ) / 1000
+        : 0;
     const careerOps = Math.round((careerSlg + careerObp) * 1000) / 1000;
 
     players.push({
@@ -462,7 +540,9 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
   // Sort by career wOBA descending
   players.sort((a, b) => b.career.woba - a.career.woba);
 
-  console.log(`  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`);
+  console.log(
+    `  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`
+  );
 
   return {
     slug,
@@ -485,7 +565,9 @@ async function main(): Promise<void> {
     : TEAMS;
 
   if (teamFilter && !TEAMS[teamFilter]) {
-    console.error(`Unknown team slug: "${teamFilter}". Available: ${Object.keys(TEAMS).join(', ')}`);
+    console.error(
+      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(TEAMS).join(', ')}`
+    );
     process.exit(1);
   }
 

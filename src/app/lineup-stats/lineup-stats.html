@@ -1,5 +1,9 @@
-<div class="flex items-center gap-3 mb-6 flex-wrap">
-  <label for="year-select" class="font-medium text-content-muted text-base uppercase tracking-[0.05em]">Season:</label>
+<div class="mb-6 flex flex-wrap items-center gap-3">
+  <label
+    for="year-select"
+    class="text-content-muted text-base font-medium tracking-[0.05em] uppercase"
+    >Season:</label
+  >
   <select
     id="year-select"
     [(ngModel)]="selectedYear"
@@ -8,155 +12,171 @@
     class="year-select"
   >
     @for (year of availableYears; track year) {
-      <option [value]="year">{{ year }}</option>
+    <option [value]="year">{{ year }}</option>
     }
   </select>
 </div>
 
 @if (error) {
-  <div class="bg-error-bg text-error py-cell px-card rounded-[10px] mb-4 border border-error-border text-[1.05rem]">{{ error }}</div>
-}
+<div
+  class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+>
+  {{ error }}
+</div>
+} @if (loading) {
+<div class="py-card px-card text-content-muted text-[1.05rem]">
+  Loading statistics...
+</div>
+} @if (results.length > 0 && !loading) {
+<div class="mt-6">
+  <h2>Season Totals</h2>
+  <table class="stats-table">
+    <thead>
+      <tr>
+        <th>Lineup Slot</th>
+        <th>0-Out PAs</th>
+        <th>1-Out PAs</th>
+        <th>2-Out PAs</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (result of results; track result.lineupSlot) {
+      <tr>
+        <td>{{ result.lineupSlot }}</td>
+        <td>{{ result.paWith0Outs }}</td>
+        <td>{{ result.paWith1Out }}</td>
+        <td>{{ result.paWith2Outs }}</td>
+        <td>{{ result.totalPA }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  <div
+    class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text mb-6 rounded-[10px] border-l-[3px] text-[1.1rem]"
+  >
+    <strong>Total plate appearances: {{ totalPlateAppearances }}</strong>
+  </div>
 
-@if (loading) {
-  <div class="py-card px-card text-content-muted text-[1.05rem]">Loading statistics...</div>
-}
-
-@if (results.length > 0 && !loading) {
-  <div class="mt-6">
-    <h2>Season Totals</h2>
-    <table class="stats-table">
+  @if (baseRunnerStats.length > 0) {
+  <h2>Base-Runner Situations (Season)</h2>
+  <div class="mb-4 overflow-x-auto">
+    <table class="stats-table base-runner-table">
       <thead>
         <tr>
-          <th>Lineup Slot</th>
-          <th>0-Out PAs</th>
-          <th>1-Out PAs</th>
-          <th>2-Out PAs</th>
+          <th rowspan="2" class="sticky-col">Slot</th>
+          @for (sit of situations; track sit.key) {
+          <th colspan="3" class="situation-header">{{ sit.label }}</th>
+          }
+        </tr>
+        <tr>
+          @for (sit of situations; track sit.key) {
+          <th class="out-header">0</th>
+          <th class="out-header">1</th>
+          <th class="out-header last-in-group">2</th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of baseRunnerStats; track row.lineupSlot) {
+        <tr>
+          <td class="sticky-col">{{ row.lineupSlot }}</td>
+          @for (sit of situations; track sit.key) {
+          <td>{{ row.situations[sit.key][0] }}</td>
+          <td>{{ row.situations[sit.key][1] }}</td>
+          <td class="last-in-group">{{ row.situations[sit.key][2] }}</td>
+          }
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  }
+
+  <h2>Game-by-Game Breakdown</h2>
+  @for (game of games; track $index; let i = $index) {
+  <div class="game-card">
+    <button class="game-toggle" (click)="toggleGame(i)">
+      <span class="text-content-dim w-4 shrink-0 text-[0.65rem]"
+        >{{ expandedGame === i ? '&#9660;' : '&#9654;' }}</span
+      >
+      <span class="text-content-bright grow font-medium"
+        >{{ game.opponent }}</span
+      >
+      <span class="text-content-dim text-[0.95rem] whitespace-nowrap"
+        >{{ game.totalPA }} PAs</span
+      >
+      <a
+        class="game-link"
+        [href]="boxscoreUrl(game)"
+        target="_blank"
+        (click)="$event.stopPropagation()"
+        >Box Score</a
+      >
+    </button>
+    @if (expandedGame === i) {
+    <table class="stats-table game-table">
+      <thead>
+        <tr>
+          <th>Slot</th>
+          <th>0-Out</th>
+          <th>1-Out</th>
+          <th>2-Out</th>
           <th>Total</th>
         </tr>
       </thead>
       <tbody>
-        @for (result of results; track result.lineupSlot) {
-          <tr>
-            <td>{{ result.lineupSlot }}</td>
-            <td>{{ result.paWith0Outs }}</td>
-            <td>{{ result.paWith1Out }}</td>
-            <td>{{ result.paWith2Outs }}</td>
-            <td>{{ result.totalPA }}</td>
-          </tr>
+        @for (row of game.rows; track row.lineupSlot) {
+        <tr>
+          <td>{{ row.lineupSlot }}</td>
+          <td>{{ row.paWith0Outs }}</td>
+          <td>{{ row.paWith1Out }}</td>
+          <td>{{ row.paWith2Outs }}</td>
+          <td>{{ row.totalPA }}</td>
+        </tr>
         }
       </tbody>
     </table>
-    <div class="py-cell px-card bg-brand-bg-subtle rounded-[10px] border-l-[3px] border-l-brand text-[1.1rem] text-brand-text mb-6">
-      <strong>Total plate appearances: {{ totalPlateAppearances }}</strong>
-    </div>
-
-    @if (baseRunnerStats.length > 0) {
-      <h2>Base-Runner Situations (Season)</h2>
-      <div class="overflow-x-auto mb-4">
-        <table class="stats-table base-runner-table">
-          <thead>
-            <tr>
-              <th rowspan="2" class="sticky-col">Slot</th>
-              @for (sit of situations; track sit.key) {
-                <th colspan="3" class="situation-header">{{ sit.label }}</th>
-              }
-            </tr>
-            <tr>
-              @for (sit of situations; track sit.key) {
-                <th class="out-header">0</th>
-                <th class="out-header">1</th>
-                <th class="out-header last-in-group">2</th>
-              }
-            </tr>
-          </thead>
-          <tbody>
-            @for (row of baseRunnerStats; track row.lineupSlot) {
-              <tr>
-                <td class="sticky-col">{{ row.lineupSlot }}</td>
-                @for (sit of situations; track sit.key) {
-                  <td>{{ row.situations[sit.key][0] }}</td>
-                  <td>{{ row.situations[sit.key][1] }}</td>
-                  <td class="last-in-group">{{ row.situations[sit.key][2] }}</td>
-                }
-              </tr>
+    @if (game.baseRunnerStats.length > 0) {
+    <div class="mb-4 overflow-x-auto">
+      <table class="stats-table base-runner-table game-table">
+        <thead>
+          <tr>
+            <th rowspan="2" class="sticky-col">Slot</th>
+            @for (sit of situations; track sit.key) {
+            <th colspan="3" class="situation-header">{{ sit.label }}</th>
             }
-          </tbody>
-        </table>
-      </div>
-    }
-
-    <h2>Game-by-Game Breakdown</h2>
-    @for (game of games; track $index; let i = $index) {
-      <div class="game-card">
-        <button class="game-toggle" (click)="toggleGame(i)">
-          <span class="text-[0.65rem] text-content-dim w-4 shrink-0">{{ expandedGame === i ? '&#9660;' : '&#9654;' }}</span>
-          <span class="font-medium grow text-content-bright">{{ game.opponent }}</span>
-          <span class="text-content-dim text-[0.95rem] whitespace-nowrap">{{ game.totalPA }} PAs</span>
-          <a class="game-link" [href]="boxscoreUrl(game)" target="_blank" (click)="$event.stopPropagation()">Box Score</a>
-        </button>
-        @if (expandedGame === i) {
-          <table class="stats-table game-table">
-            <thead>
-              <tr>
-                <th>Slot</th>
-                <th>0-Out</th>
-                <th>1-Out</th>
-                <th>2-Out</th>
-                <th>Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              @for (row of game.rows; track row.lineupSlot) {
-                <tr>
-                  <td>{{ row.lineupSlot }}</td>
-                  <td>{{ row.paWith0Outs }}</td>
-                  <td>{{ row.paWith1Out }}</td>
-                  <td>{{ row.paWith2Outs }}</td>
-                  <td>{{ row.totalPA }}</td>
-                </tr>
-              }
-            </tbody>
-          </table>
-          @if (game.baseRunnerStats.length > 0) {
-            <div class="overflow-x-auto mb-4">
-              <table class="stats-table base-runner-table game-table">
-                <thead>
-                  <tr>
-                    <th rowspan="2" class="sticky-col">Slot</th>
-                    @for (sit of situations; track sit.key) {
-                      <th colspan="3" class="situation-header">{{ sit.label }}</th>
-                    }
-                  </tr>
-                  <tr>
-                    @for (sit of situations; track sit.key) {
-                      <th class="out-header">0</th>
-                      <th class="out-header">1</th>
-                      <th class="out-header last-in-group">2</th>
-                    }
-                  </tr>
-                </thead>
-                <tbody>
-                  @for (row of game.baseRunnerStats; track row.lineupSlot) {
-                    <tr>
-                      <td class="sticky-col">{{ row.lineupSlot }}</td>
-                      @for (sit of situations; track sit.key) {
-                        <td>{{ row.situations[sit.key][0] }}</td>
-                        <td>{{ row.situations[sit.key][1] }}</td>
-                        <td class="last-in-group">{{ row.situations[sit.key][2] }}</td>
-                      }
-                    </tr>
-                  }
-                </tbody>
-              </table>
-            </div>
+          </tr>
+          <tr>
+            @for (sit of situations; track sit.key) {
+            <th class="out-header">0</th>
+            <th class="out-header">1</th>
+            <th class="out-header last-in-group">2</th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of game.baseRunnerStats; track row.lineupSlot) {
+          <tr>
+            <td class="sticky-col">{{ row.lineupSlot }}</td>
+            @for (sit of situations; track sit.key) {
+            <td>{{ row.situations[sit.key][0] }}</td>
+            <td>{{ row.situations[sit.key][1] }}</td>
+            <td class="last-in-group">{{ row.situations[sit.key][2] }}</td>
+            }
+          </tr>
           }
-          <ws-game-viewer [snapshots]="game.snapshots" />
-        }
-      </div>
+        </tbody>
+      </table>
+    </div>
+    }
+    <ws-game-viewer [snapshots]="game.snapshots" />
     }
   </div>
-}
-
-@if (results.length === 0 && !loading && !error) {
-  <div class="py-section px-card text-center text-content-dim text-[1.05rem]">No results found. Select a season to load data.</div>
+  }
+</div>
+} @if (results.length === 0 && !loading && !error) {
+<div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+  No results found. Select a season to load data.
+</div>
 }

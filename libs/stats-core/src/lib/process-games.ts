@@ -1,8 +1,24 @@
-import { GameData, GameResult, GameState, GameWithSnapshots, BaseRunnerRow, ResultRow, ScoringPlay, ScoringPlaySummary, GameScoringPlays, SacBuntOutcome, SacBuntSummary } from './types';
+import { mergeBaseRunnerStats } from './base-runner-stats';
 import { processPlay } from './parse-play';
 import { processGameWithSnapshots } from './process-game-snapshots';
-import { mergeBaseRunnerStats } from './base-runner-stats';
-import { computeScoringPlaySummary, computeSacBuntOutcomes, summarizeSacBuntOutcomes } from './scoring-plays';
+import {
+  computeSacBuntOutcomes,
+  computeScoringPlaySummary,
+  summarizeSacBuntOutcomes,
+} from './scoring-plays';
+import {
+  BaseRunnerRow,
+  GameData,
+  GameResult,
+  GameScoringPlays,
+  GameState,
+  GameWithSnapshots,
+  ResultRow,
+  SacBuntOutcome,
+  SacBuntSummary,
+  ScoringPlay,
+  ScoringPlaySummary,
+} from './types';
 
 export interface ProcessedStats {
   totals: ResultRow[];
@@ -90,7 +106,9 @@ export function processGames(games: GameData[]): ProcessedStats {
 /**
  * Like processGames but also captures PlaySnapshot[] per game for the field visualization.
  */
-export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWithSnapshots {
+export function processGamesWithSnapshots(
+  games: GameData[]
+): ProcessedStatsWithSnapshots {
   const globalCounts = new Map<number, [number, number, number]>();
   const gameResults: GameWithSnapshots[] = [];
   let seasonBaseRunnerStats: BaseRunnerRow[] = [];
@@ -111,7 +129,10 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
     }
 
     // Aggregate base-runner stats
-    seasonBaseRunnerStats = mergeBaseRunnerStats(seasonBaseRunnerStats, result.baseRunnerStats);
+    seasonBaseRunnerStats = mergeBaseRunnerStats(
+      seasonBaseRunnerStats,
+      result.baseRunnerStats
+    );
   }
 
   const totals = Array.from(globalCounts.entries())
@@ -147,9 +168,18 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
   // Aggregate sac bunt outcomes across all games
   const allSacBuntOutcomes: SacBuntOutcome[] = [];
   for (const game of gameResults) {
-    allSacBuntOutcomes.push(...computeSacBuntOutcomes(game.snapshots, game.opponent, game.url));
+    allSacBuntOutcomes.push(
+      ...computeSacBuntOutcomes(game.snapshots, game.opponent, game.url)
+    );
   }
   const sacBuntSummary = summarizeSacBuntOutcomes(allSacBuntOutcomes);
 
-  return { totals, games: gameResults, baseRunnerStats: seasonBaseRunnerStats, seasonScoringPlays, gameScoringPlays, sacBuntSummary };
+  return {
+    totals,
+    games: gameResults,
+    baseRunnerStats: seasonBaseRunnerStats,
+    seasonScoringPlays,
+    gameScoringPlays,
+    sacBuntSummary,
+  };
 }

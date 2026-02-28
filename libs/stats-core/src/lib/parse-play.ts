@@ -34,14 +34,18 @@ export function classifyPlay(text: string): PlayType {
   if (lower.startsWith('/ ')) return 'no_play'; // "/ for PLAYER." substitution artifact
   if (lower.includes('foul ball')) return 'no_play';
   if (lower.includes('runner left early')) return 'no_play';
-  if (lower.includes('did not advance') && !lower.includes(';')) return 'no_play';
+  if (lower.includes('did not advance') && !lower.includes(';'))
+    return 'no_play';
 
   if (lower.includes('pinch hit for') || lower.includes('pinch ran for')) {
     return 'substitution';
   }
 
   // Defensive changes: "J. Colgan to p." or "E. Kulhanek to 1b for S. Wicker."
-  if (/\bto\s+(p|c|1b|2b|3b|ss|lf|cf|rf|dh|dp)\b/i.test(lower) && !lower.includes('advanced to')) {
+  if (
+    /\bto\s+(p|c|1b|2b|3b|ss|lf|cf|rf|dh|dp)\b/i.test(lower) &&
+    !lower.includes('advanced to')
+  ) {
     if (
       !lower.includes('singled') &&
       !lower.includes('doubled') &&
@@ -65,26 +69,44 @@ export function classifyPlay(text: string): PlayType {
   }
 
   // Stolen base / caught stealing — but not if a PA verb is present
-  if (/\bstole\s+(second|third|home|2nd|3rd)\b/i.test(lower) ||
-      lower.includes('caught stealing')) {
-    if (!lower.includes('walked') && !lower.includes('struck out') &&
-        !lower.includes('singled') && !lower.includes('doubled') &&
-        !lower.includes('tripled') && !lower.includes('homered') &&
-        !lower.includes('grounded') && !lower.includes('flied') &&
-        !lower.includes('lined') && !lower.includes('popped') &&
-        !lower.includes('reached') && !lower.includes('hit by pitch')) {
+  if (
+    /\bstole\s+(second|third|home|2nd|3rd)\b/i.test(lower) ||
+    lower.includes('caught stealing')
+  ) {
+    if (
+      !lower.includes('walked') &&
+      !lower.includes('struck out') &&
+      !lower.includes('singled') &&
+      !lower.includes('doubled') &&
+      !lower.includes('tripled') &&
+      !lower.includes('homered') &&
+      !lower.includes('grounded') &&
+      !lower.includes('flied') &&
+      !lower.includes('lined') &&
+      !lower.includes('popped') &&
+      !lower.includes('reached') &&
+      !lower.includes('hit by pitch')
+    ) {
       return 'stolen_base';
     }
   }
 
   // Wild pitch / passed ball — but not if a PA verb is present
   if (lower.includes('wild pitch') || lower.includes('passed ball')) {
-    if (!lower.includes('walked') && !lower.includes('struck out') &&
-        !lower.includes('singled') && !lower.includes('doubled') &&
-        !lower.includes('tripled') && !lower.includes('homered') &&
-        !lower.includes('grounded') && !lower.includes('flied') &&
-        !lower.includes('lined') && !lower.includes('popped') &&
-        !lower.includes('reached') && !lower.includes('hit by pitch')) {
+    if (
+      !lower.includes('walked') &&
+      !lower.includes('struck out') &&
+      !lower.includes('singled') &&
+      !lower.includes('doubled') &&
+      !lower.includes('tripled') &&
+      !lower.includes('homered') &&
+      !lower.includes('grounded') &&
+      !lower.includes('flied') &&
+      !lower.includes('lined') &&
+      !lower.includes('popped') &&
+      !lower.includes('reached') &&
+      !lower.includes('hit by pitch')
+    ) {
       return 'wild_pitch';
     }
   }
@@ -95,11 +117,21 @@ export function classifyPlay(text: string): PlayType {
 
   // Standalone runner events — no PA, but need runner movement processing
   // (defensive indifference, errors, etc.) Route through wild_pitch handler.
-  if (/^[A-Z](?:\.|[a-zA-Z]+)\s+\S+\s+(advanced|scored)\b/.test(text) &&
-      !lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') &&
-      !lower.includes('homered') && !lower.includes('walked') && !lower.includes('struck out') &&
-      !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') &&
-      !lower.includes('popped') && !lower.includes('reached') && !lower.includes('hit by pitch')) {
+  if (
+    /^[A-Z](?:\.|[a-zA-Z]+)\s+\S+\s+(advanced|scored)\b/.test(text) &&
+    !lower.includes('singled') &&
+    !lower.includes('doubled') &&
+    !lower.includes('tripled') &&
+    !lower.includes('homered') &&
+    !lower.includes('walked') &&
+    !lower.includes('struck out') &&
+    !lower.includes('grounded') &&
+    !lower.includes('flied') &&
+    !lower.includes('lined') &&
+    !lower.includes('popped') &&
+    !lower.includes('reached') &&
+    !lower.includes('hit by pitch')
+  ) {
     return 'wild_pitch';
   }
 
@@ -131,13 +163,20 @@ export function parseBatterAction(subEvent: string): {
   const lower = subEvent.toLowerCase();
 
   // Sac plays — must check before generic outs since text also contains "flied out", "grounded out", etc.
-  if (lower.includes('sac fly') || lower.includes('sacrifice fly')) return { result: 'sac_fly' };
+  if (lower.includes('sac fly') || lower.includes('sacrifice fly'))
+    return { result: 'sac_fly' };
   if (lower.includes('sac bunt')) return { result: 'sac_bunt' };
-  if (/\bsac\b/.test(lower) && /\bbunt\b/.test(lower)) return { result: 'sac_bunt' };
-  if (/\bsac\b/.test(lower) && (/flied out|popped/.test(lower))) return { result: 'sac_fly' };
+  if (/\bsac\b/.test(lower) && /\bbunt\b/.test(lower))
+    return { result: 'sac_bunt' };
+  if (/\bsac\b/.test(lower) && /flied out|popped/.test(lower))
+    return { result: 'sac_fly' };
 
   // SAC without explicit bunt/fly — infer from fielder position
-  if (/\bsac\b/i.test(lower) && !lower.includes('sac fly') && !lower.includes('sacrifice fly')) {
+  if (
+    /\bsac\b/i.test(lower) &&
+    !lower.includes('sac fly') &&
+    !lower.includes('sacrifice fly')
+  ) {
     if (/\b(lf|cf|rf)\b/.test(lower)) return { result: 'sac_fly' };
     return { result: 'sac_bunt' }; // infield default
   }
@@ -149,7 +188,8 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'out' };
   }
   if (lower.includes('infield fly')) return { result: 'out' };
-  if (/\b(lined|popped|flied) into double play\b/.test(lower)) return { result: 'out' };
+  if (/\b(lined|popped|flied) into double play\b/.test(lower))
+    return { result: 'out' };
   if (lower.includes('grounded into double play'))
     return { result: 'double_play' };
   if (lower.includes('out at first')) return { result: 'out' };
@@ -161,7 +201,7 @@ export function parseBatterAction(subEvent: string): {
   if (lower.includes('fouled out')) return { result: 'out' };
 
   // Fielder's choice — batter reaches, someone else is out
-  if (lower.includes('fielder\'s choice') || lower.includes('fielders choice')) {
+  if (lower.includes("fielder's choice") || lower.includes('fielders choice')) {
     let advancedTo: 'first' | 'second' | 'third' = 'first';
     if (lower.includes('advanced to third')) advancedTo = 'third';
     else if (lower.includes('advanced to second')) advancedTo = 'second';
@@ -170,21 +210,36 @@ export function parseBatterAction(subEvent: string): {
 
   // Hits
   // Check if batter was also thrown out on the bases (e.g. "singled, out at second c to p to 1b")
-  const batterAlsoOut = /\bout at\b/.test(lower) || lower.includes('out on the play');
+  const batterAlsoOut =
+    /\bout at\b/.test(lower) || lower.includes('out on the play');
 
   if (lower.includes('homered')) return { result: 'homer' };
-  if (lower.includes('tripled')) return { result: 'triple', batterAlsoOut: batterAlsoOut || undefined };
+  if (lower.includes('tripled'))
+    return { result: 'triple', batterAlsoOut: batterAlsoOut || undefined };
   if (lower.includes('doubled')) {
     let advancedTo: 'second' | 'third' | undefined = undefined;
     if (lower.includes('advanced to third')) advancedTo = 'third';
-    return { result: 'double', advancedTo, batterAlsoOut: batterAlsoOut || undefined };
+    return {
+      result: 'double',
+      advancedTo,
+      batterAlsoOut: batterAlsoOut || undefined,
+    };
   }
   if (lower.includes('singled')) {
     let advancedTo: 'first' | 'second' | 'third' | undefined = undefined;
     if (lower.includes('advanced to third')) advancedTo = 'third';
     else if (lower.includes('advanced to second')) advancedTo = 'second';
-    if (/\bbunt\b/i.test(lower)) return { result: 'bunt_single', advancedTo, batterAlsoOut: batterAlsoOut || undefined };
-    return { result: 'single', advancedTo, batterAlsoOut: batterAlsoOut || undefined };
+    if (/\bbunt\b/i.test(lower))
+      return {
+        result: 'bunt_single',
+        advancedTo,
+        batterAlsoOut: batterAlsoOut || undefined,
+      };
+    return {
+      result: 'single',
+      advancedTo,
+      batterAlsoOut: batterAlsoOut || undefined,
+    };
   }
 
   // Walks / HBP / reached
@@ -223,9 +278,7 @@ export function parseRunnerSubEvent(subEvent: string): RunnerSubEventResult {
     return { playerName, isOut: false, scored: true };
   }
 
-  const advMatch = lower.match(
-    /advanced\s+to\s+(first|second|third|1b|2b|3b)/
-  );
+  const advMatch = lower.match(/advanced\s+to\s+(first|second|third|1b|2b|3b)/);
   if (advMatch) {
     const base = normalizeBase(advMatch[1]);
     return { playerName, isOut: false, scored: false, advancedTo: base };
@@ -328,7 +381,10 @@ function handleSubstitution(playText: string, gameState: GameState): void {
 }
 
 function handleStolenBase(playText: string, gameState: GameState): void {
-  const subEvents = playText.replace(/\.$/, '').split(';').map((s) => s.trim());
+  const subEvents = playText
+    .replace(/\.$/, '')
+    .split(';')
+    .map((s) => s.trim());
   for (const sub of subEvents) {
     const playerName = getPlayerNameFromText(sub);
     if (!playerName) continue;
@@ -362,7 +418,10 @@ function handleWildPitchOrPassedBall(
   playText: string,
   gameState: GameState
 ): void {
-  const subEvents = playText.replace(/\.$/, '').split(';').map((s) => s.trim());
+  const subEvents = playText
+    .replace(/\.$/, '')
+    .split(';')
+    .map((s) => s.trim());
   for (const sub of subEvents) {
     const result = parseRunnerSubEvent(sub);
     if (!result.playerName) continue;
@@ -492,10 +551,7 @@ function handlePlateAppearance(playText: string, gameState: GameState): void {
   checkInningEnd(gameState);
 }
 
-function processRunnerSubEvent(
-  subEvent: string,
-  gameState: GameState
-): void {
+function processRunnerSubEvent(subEvent: string, gameState: GameState): void {
   const result = parseRunnerSubEvent(subEvent);
   if (!result.playerName) return;
 

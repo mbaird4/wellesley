@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -9,11 +9,11 @@ const PASSWORD_HASH =
   imports: [RouterModule, FormsModule],
   selector: 'ws-root',
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
   protected title = 'Wellesley Softball Stats Hub';
-  protected authenticated =
-    sessionStorage.getItem('wellesley-auth') === 'true';
+  protected authenticated = sessionStorage.getItem('wellesley-auth') === 'true';
   protected password = '';
   protected error = false;
 

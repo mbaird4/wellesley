@@ -1,12 +1,26 @@
-import { Component, computed, inject, signal } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { OpponentTeam, OpponentDisplayRow, YearData, TeamEntry, SortKey, SortDir } from '@ws/data-access';
-import { calculateWoba } from '@ws/stats-core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+  signal,
+} from '@angular/core';
+import {
+  OpponentDisplayRow,
+  OpponentTeam,
+  SortDir,
+  SortKey,
+  TeamEntry,
+  YearData,
+} from '@ws/data-access';
 import { BreakpointService } from '@ws/shared/util';
-import { TeamSelector } from './team-selector/team-selector';
-import { PlayerTable } from './player-table/player-table';
+import { calculateWoba } from '@ws/stats-core';
+
 import { PlayerCardList } from './player-card-list/player-card-list';
+import { PlayerTable } from './player-table/player-table';
+import { TeamSelector } from './team-selector/team-selector';
 
 @Component({
   selector: 'ws-opponents',
@@ -14,6 +28,7 @@ import { PlayerCardList } from './player-card-list/player-card-list';
   imports: [NgTemplateOutlet, TeamSelector, PlayerTable, PlayerCardList],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Opponents {
   private http = inject(HttpClient);
@@ -42,7 +57,7 @@ export class Opponents {
   readonly yearSortYear = signal<number | null>(null);
 
   readonly selectedTeamName = computed(
-    () => this.teams.find((t) => t.slug === this.selectedSlug())?.name ?? '',
+    () => this.teams.find((t) => t.slug === this.selectedSlug())?.name ?? ''
   );
 
   readonly allYears = computed(() => {
@@ -69,7 +84,17 @@ export class Opponents {
     const rows: OpponentDisplayRow[] = data.players.map((player) => {
       const sortedSeasons = [...player.seasons].sort((a, b) => a.year - b.year);
 
-      const accum = { ab: 0, h: 0, doubles: 0, triples: 0, hr: 0, bb: 0, hbp: 0, sf: 0, sh: 0 };
+      const accum = {
+        ab: 0,
+        h: 0,
+        doubles: 0,
+        triples: 0,
+        hr: 0,
+        bb: 0,
+        hbp: 0,
+        sf: 0,
+        sh: 0,
+      };
       const cumulativeByYear = sortedSeasons.map((s) => {
         accum.ab += s.ab;
         accum.h += s.h;
@@ -89,7 +114,10 @@ export class Opponents {
       for (let i = 0; i < sortedSeasons.length; i++) {
         const s = sortedSeasons[i];
         const cum = cumulativeByYear[i];
-        const label = i === 0 ? `${s.year}` : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
+        const label =
+          i === 0
+            ? `${s.year}`
+            : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
         yearData.set(s.year, {
           season: s,
           cumulative: { woba: cum.woba, pa: cum.pa },
@@ -125,7 +153,9 @@ export class Opponents {
     return rows;
   });
 
-  readonly empty = computed(() => this.displayRows().length === 0 && !this.loading() && !this.error());
+  readonly empty = computed(
+    () => this.displayRows().length === 0 && !this.loading() && !this.error()
+  );
 
   constructor() {
     this.loadTeam(this.selectedSlug());
@@ -162,16 +192,18 @@ export class Opponents {
     this.expandedPlayer.set(null);
     this.yearSortYear.set(null);
 
-    this.http.get<OpponentTeam>(`/data/opponents/${slug}-historical-stats.json`).subscribe({
-      next: (data) => {
-        this.teamData.set(data);
-        this.loading.set(false);
-      },
-      error: (err) => {
-        this.error.set(err.message || 'Failed to load team data');
-        this.loading.set(false);
-        this.teamData.set(null);
-      },
-    });
+    this.http
+      .get<OpponentTeam>(`/data/opponents/${slug}-historical-stats.json`)
+      .subscribe({
+        next: (data) => {
+          this.teamData.set(data);
+          this.loading.set(false);
+        },
+        error: (err) => {
+          this.error.set(err.message || 'Failed to load team data');
+          this.loading.set(false);
+          this.teamData.set(null);
+        },
+      });
   }
 }

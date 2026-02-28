@@ -1,5 +1,10 @@
-import { Component, input, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+} from '@angular/core';
 import { BaseRunners } from '@ws/stats-core';
 
 @Component({
@@ -8,6 +13,7 @@ import { BaseRunners } from '@ws/stats-core';
   imports: [CommonModule],
   templateUrl: './diamond.html',
   styleUrl: './diamond.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Diamond {
   bases = input.required<BaseRunners>();
@@ -21,6 +27,6 @@ export class Diamond {
 
   outDots = computed(() => {
     const current = this.outs();
-    return [0, 1, 2].map(i => i < current);
+    return [0, 1, 2].map((i) => i < current);
   });
 }

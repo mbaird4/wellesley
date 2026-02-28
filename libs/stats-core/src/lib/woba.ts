@@ -1,9 +1,9 @@
 import {
-  PlayerSeasonStats,
-  PlayerGameStats,
   BoxscoreData,
-  PlayerWoba,
   PlayerCumulativeWoba,
+  PlayerGameStats,
+  PlayerSeasonStats,
+  PlayerWoba,
   WobaTier,
 } from './types';
 
@@ -16,10 +16,10 @@ export const WOBA_WEIGHT_3B = 1.7;
 export const WOBA_WEIGHT_HR = 2.5;
 
 // Tier thresholds
-export const WOBA_TIER_EXCELLENT = 0.400;
-export const WOBA_TIER_GREAT = 0.350;
-export const WOBA_TIER_ABOVE_AVERAGE = 0.320;
-export const WOBA_TIER_AVERAGE = 0.290;
+export const WOBA_TIER_EXCELLENT = 0.4;
+export const WOBA_TIER_GREAT = 0.35;
+export const WOBA_TIER_ABOVE_AVERAGE = 0.32;
+export const WOBA_TIER_AVERAGE = 0.29;
 
 export function calculateWoba(stats: {
   ab: number;
@@ -55,7 +55,9 @@ export function getWobaTier(woba: number): WobaTier {
   return 'below_average';
 }
 
-export function computePlayerSeasonWobas(players: PlayerSeasonStats[]): PlayerWoba[] {
+export function computePlayerSeasonWobas(
+  players: PlayerSeasonStats[]
+): PlayerWoba[] {
   return players
     .map((p) => {
       const woba = calculateWoba(p);
@@ -77,19 +79,42 @@ export function computePlayerSeasonWobas(players: PlayerSeasonStats[]): PlayerWo
     .sort((a, b) => b.woba - a.woba);
 }
 
-export function computePlayerCumulativeWobas(boxscores: BoxscoreData[]): PlayerCumulativeWoba[] {
+export function computePlayerCumulativeWobas(
+  boxscores: BoxscoreData[]
+): PlayerCumulativeWoba[] {
   // Accumulate stats per player across games in order
-  const playerAccum = new Map<string, {
-    ab: number; h: number; doubles: number; triples: number;
-    hr: number; bb: number; hbp: number; sf: number; sh: number;
-    games: PlayerCumulativeWoba['games'];
-  }>();
+  const playerAccum = new Map<
+    string,
+    {
+      ab: number;
+      h: number;
+      doubles: number;
+      triples: number;
+      hr: number;
+      bb: number;
+      hbp: number;
+      sf: number;
+      sh: number;
+      games: PlayerCumulativeWoba['games'];
+    }
+  >();
 
   for (const box of boxscores) {
     for (const ps of box.playerStats) {
       let acc = playerAccum.get(ps.name);
       if (!acc) {
-        acc = { ab: 0, h: 0, doubles: 0, triples: 0, hr: 0, bb: 0, hbp: 0, sf: 0, sh: 0, games: [] };
+        acc = {
+          ab: 0,
+          h: 0,
+          doubles: 0,
+          triples: 0,
+          hr: 0,
+          bb: 0,
+          hbp: 0,
+          sf: 0,
+          sh: 0,
+          games: [],
+        };
         playerAccum.set(ps.name, acc);
       }
 

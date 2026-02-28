@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, from } from 'rxjs';
+import { from, Observable } from 'rxjs';
 
 export interface GameData {
   url?: string;
@@ -26,13 +26,13 @@ export class SoftballDataService {
     const url = `${base}data/gamedata-${year}.json`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const parsed = await response.json() as Array<{
+    const parsed = (await response.json()) as Array<{
       url?: string;
       opponent?: string;
       lineup: [number, string[]][];
       playByPlay: PlayByPlayInning[];
     }>;
-    return parsed.map(g => ({
+    return parsed.map((g) => ({
       ...g,
       lineup: new Map(g.lineup),
     }));

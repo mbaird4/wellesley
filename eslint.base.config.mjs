@@ -1,4 +1,6 @@
 import nx from '@nx/eslint-plugin';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import prettier from 'eslint-plugin-prettier';
 
 export default [
   ...nx.configs['flat/base'],
@@ -17,8 +19,29 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'type:core',
+              onlyDependOnLibsWithTags: [],
+            },
+            {
+              sourceTag: 'type:util',
+              onlyDependOnLibsWithTags: ['type:core'],
+            },
+            {
+              sourceTag: 'type:data-access',
+              onlyDependOnLibsWithTags: ['type:core', 'type:util'],
+            },
+            {
+              sourceTag: 'type:ui',
+              onlyDependOnLibsWithTags: ['type:core', 'type:util'],
+            },
+            {
+              sourceTag: 'type:app',
+              onlyDependOnLibsWithTags: [
+                'type:core',
+                'type:util',
+                'type:data-access',
+                'type:ui',
+              ],
             },
           ],
         },
@@ -36,7 +59,14 @@ export default [
       '**/*.cjs',
       '**/*.mjs',
     ],
-    // Override or add rules here
-    rules: {},
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+      prettier,
+    },
+    rules: {
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
+      'prettier/prettier': 'error',
+    },
   },
 ];

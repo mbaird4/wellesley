@@ -1,7 +1,18 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  inject,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SoftballStatsService, ResultRow, GameWithSnapshots, BaseRunnerRow, BaseSituation } from '@ws/data-access';
+import {
+  BaseRunnerRow,
+  BaseSituation,
+  GameWithSnapshots,
+  ResultRow,
+  SoftballStatsService,
+} from '@ws/data-access';
 import { GameViewer } from '@ws/shared/ui';
 
 @Component({
@@ -10,6 +21,7 @@ import { GameViewer } from '@ws/shared/ui';
   imports: [CommonModule, FormsModule, GameViewer],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LineupStats {
   private statsService = inject(SoftballStatsService);

@@ -1,8 +1,19 @@
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  inject,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/data-access';
-import { ScoringPlay, ScoringPlaySummary, GameScoringPlays, SacBuntSummary, BaseSituation } from '@ws/stats-core';
+import {
+  BaseSituation,
+  GameScoringPlays,
+  SacBuntSummary,
+  ScoringPlay,
+  ScoringPlaySummary,
+} from '@ws/stats-core';
 
 interface PlayerScoringBreakdown {
   name: string;
@@ -18,6 +29,7 @@ interface PlayerScoringBreakdown {
   imports: [CommonModule, FormsModule],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ScoringPlays {
   private statsService = inject(SoftballStatsService);
@@ -26,7 +38,10 @@ export class ScoringPlays {
   loading = false;
   error: string | null = null;
   selectedYear = 2025;
-  availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+  availableYears = [
+    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
+    2011,
+  ];
   activeTab: 'summary' | 'by-game' | 'by-player' = 'summary';
 
   seasonSummary: ScoringPlaySummary | null = null;
@@ -38,13 +53,31 @@ export class ScoringPlays {
   // Scenario breakdowns
   byOuts: { outs: number; count: number; pct: number }[] = [];
   bySituation: { situation: BaseSituation; count: number; pct: number }[] = [];
-  byScenario: { situation: BaseSituation; outs: number; count: number; pct: number }[] = [];
+  byScenario: {
+    situation: BaseSituation;
+    outs: number;
+    count: number;
+    pct: number;
+  }[] = [];
 
   // Ordered list of scoring play types for display
   readonly typeOrder: string[] = [
-    'homer', 'triple', 'double', 'single', 'bunt_single',
-    'sac_fly', 'sac_bunt', 'walk', 'hbp', 'wild_pitch', 'passed_ball',
-    'stolen_base', 'fielders_choice', 'error', 'productive_out', 'unknown',
+    'homer',
+    'triple',
+    'double',
+    'single',
+    'bunt_single',
+    'sac_fly',
+    'sac_bunt',
+    'walk',
+    'hbp',
+    'wild_pitch',
+    'passed_ball',
+    'stolen_base',
+    'fielders_choice',
+    'error',
+    'productive_out',
+    'unknown',
   ];
 
   constructor() {
@@ -71,7 +104,8 @@ export class ScoringPlays {
         this.cdr.markForCheck();
       },
       error: (err) => {
-        this.error = err.message || 'An error occurred while loading scoring data';
+        this.error =
+          err.message || 'An error occurred while loading scoring data';
         this.loading = false;
         console.error('Error loading scoring data:', err);
         this.cdr.markForCheck();
@@ -112,11 +146,12 @@ export class ScoringPlays {
   getTypesWithCounts(): { type: string; count: number; pct: number }[] {
     if (!this.seasonSummary) return [];
     return this.typeOrder
-      .filter(t => (this.seasonSummary!.byType[t] || 0) > 0)
-      .map(t => ({
+      .filter((t) => (this.seasonSummary!.byType[t] || 0) > 0)
+      .map((t) => ({
         type: t,
         count: this.seasonSummary!.byType[t],
-        pct: (this.seasonSummary!.byType[t] / this.seasonSummary!.totalRuns) * 100,
+        pct:
+          (this.seasonSummary!.byType[t] / this.seasonSummary!.totalRuns) * 100,
       }));
   }
 
@@ -135,21 +170,32 @@ export class ScoringPlays {
   }
 
   private buildPlayerBreakdowns(games: GameScoringPlays[]): void {
-    const runnerMap = new Map<string, { runsScored: number; byType: Record<string, number> }>();
-    const batterMap = new Map<string, { rbis: number; byType: Record<string, number> }>();
+    const runnerMap = new Map<
+      string,
+      { runsScored: number; byType: Record<string, number> }
+    >();
+    const batterMap = new Map<
+      string,
+      { rbis: number; byType: Record<string, number> }
+    >();
 
     for (const game of games) {
       for (const play of game.plays) {
         if (play.runnerName) {
-          const r = runnerMap.get(play.runnerName) || { runsScored: 0, byType: {} };
+          const r = runnerMap.get(play.runnerName) || {
+            runsScored: 0,
+            byType: {},
+          };
           r.runsScored++;
-          r.byType[play.scoringPlayType] = (r.byType[play.scoringPlayType] || 0) + 1;
+          r.byType[play.scoringPlayType] =
+            (r.byType[play.scoringPlayType] || 0) + 1;
           runnerMap.set(play.runnerName, r);
         }
         if (play.batterName) {
           const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
           b.rbis++;
-          b.byType[play.scoringPlayType] = (b.byType[play.scoringPlayType] || 0) + 1;
+          b.byType[play.scoringPlayType] =
+            (b.byType[play.scoringPlayType] || 0) + 1;
           batterMap.set(play.batterName, b);
         }
       }
@@ -158,14 +204,14 @@ export class ScoringPlays {
     // Merge into unified player list
     const allNames = new Set([...runnerMap.keys(), ...batterMap.keys()]);
     this.playerBreakdowns = Array.from(allNames)
-      .map(name => ({
+      .map((name) => ({
         name,
         runsScored: runnerMap.get(name)?.runsScored || 0,
         rbis: batterMap.get(name)?.rbis || 0,
         scoredByType: runnerMap.get(name)?.byType || {},
         rbiByType: batterMap.get(name)?.byType || {},
       }))
-      .sort((a, b) => (b.runsScored + b.rbis) - (a.runsScored + a.rbis));
+      .sort((a, b) => b.runsScored + b.rbis - (a.runsScored + a.rbis));
   }
 
   formatSituation(situation: string): string {
@@ -187,7 +233,7 @@ export class ScoringPlays {
   }
 
   private buildScenarioBreakdowns(games: GameScoringPlays[]): void {
-    const allPlays = games.flatMap(g => g.plays);
+    const allPlays = games.flatMap((g) => g.plays);
     const total = allPlays.length;
     if (total === 0) {
       this.byOuts = [];
@@ -211,12 +257,18 @@ export class ScoringPlays {
       sitCounts[p.baseSituation] = (sitCounts[p.baseSituation] || 0) + 1;
     }
     const sitOrder: BaseSituation[] = [
-      'empty', 'first', 'second', 'third',
-      'first_second', 'first_third', 'second_third', 'loaded',
+      'empty',
+      'first',
+      'second',
+      'third',
+      'first_second',
+      'first_third',
+      'second_third',
+      'loaded',
     ];
     this.bySituation = sitOrder
-      .filter(s => (sitCounts[s] || 0) > 0)
-      .map(s => ({
+      .filter((s) => (sitCounts[s] || 0) > 0)
+      .map((s) => ({
         situation: s,
         count: sitCounts[s],
         pct: (sitCounts[s] / total) * 100,

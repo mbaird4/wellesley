@@ -1,7 +1,13 @@
-import { BaseRunners, GameData, GameState, PlaySnapshot, GameWithSnapshots } from './types';
-import { processPlay, classifyPlay, getPlayerNameFromText } from './parse-play';
 import { computeBaseRunnerStats } from './base-runner-stats';
+import { classifyPlay, getPlayerNameFromText, processPlay } from './parse-play';
 import { extractScoringPlays } from './scoring-plays';
+import {
+  BaseRunners,
+  GameData,
+  GameState,
+  GameWithSnapshots,
+  PlaySnapshot,
+} from './types';
 
 function cloneBases(bases: BaseRunners): BaseRunners {
   return { first: bases.first, second: bases.second, third: bases.third };
@@ -55,9 +61,10 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
       const isPA = playType === 'plate_appearance';
       const batterName = isPA ? getPlayerNameFromText(playText) : null;
       // If it was a PA, the batterIndex was incremented by processPlay
-      const lineupSlot = isPA && gameState.batterIndex > batterIndexBefore
-        ? (batterIndexBefore % 9) + 1
-        : null;
+      const lineupSlot =
+        isPA && gameState.batterIndex > batterIndexBefore
+          ? (batterIndexBefore % 9) + 1
+          : null;
 
       // Learn batter names from PAs
       if (isPA && batterName) {
@@ -68,8 +75,15 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
       const outsAfter = gameState.outs;
 
       const scoringPlays = extractScoringPlays(
-        playText, playType, basesBefore, basesAfter,
-        outsBefore, outsAfter, inning.inning, batterName, lineupSlot,
+        playText,
+        playType,
+        basesBefore,
+        basesAfter,
+        outsBefore,
+        outsAfter,
+        inning.inning,
+        batterName,
+        lineupSlot
       );
 
       snapshots.push({

@@ -1,8 +1,20 @@
-import { BaseRunners, BaseSituation, OutBreakdown, BaseRunnerRow, PlaySnapshot } from './types';
+import {
+  BaseRunnerRow,
+  BaseRunners,
+  BaseSituation,
+  OutBreakdown,
+  PlaySnapshot,
+} from './types';
 
 const ALL_SITUATIONS: BaseSituation[] = [
-  'empty', 'first', 'second', 'third',
-  'first_second', 'first_third', 'second_third', 'loaded',
+  'empty',
+  'first',
+  'second',
+  'third',
+  'first_second',
+  'first_third',
+  'second_third',
+  'loaded',
 ];
 
 function emptyRow(slot: number): BaseRunnerRow {
@@ -28,7 +40,9 @@ export function classifyBaseSituation(bases: BaseRunners): BaseSituation {
   return 'loaded';
 }
 
-export function computeBaseRunnerStats(snapshots: PlaySnapshot[]): BaseRunnerRow[] {
+export function computeBaseRunnerStats(
+  snapshots: PlaySnapshot[]
+): BaseRunnerRow[] {
   const rows = new Map<number, BaseRunnerRow>();
 
   for (const snap of snapshots) {
@@ -51,15 +65,20 @@ export function computeBaseRunnerStats(snapshots: PlaySnapshot[]): BaseRunnerRow
   return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
 }
 
-export function mergeBaseRunnerStats(a: BaseRunnerRow[], b: BaseRunnerRow[]): BaseRunnerRow[] {
+export function mergeBaseRunnerStats(
+  a: BaseRunnerRow[],
+  b: BaseRunnerRow[]
+): BaseRunnerRow[] {
   const map = new Map<number, BaseRunnerRow>();
 
   for (const row of a) {
     map.set(row.lineupSlot, {
       lineupSlot: row.lineupSlot,
-      situations: { ...Object.fromEntries(
-        ALL_SITUATIONS.map(s => [s, [...row.situations[s]] as OutBreakdown])
-      ) } as Record<BaseSituation, OutBreakdown>,
+      situations: {
+        ...Object.fromEntries(
+          ALL_SITUATIONS.map((s) => [s, [...row.situations[s]] as OutBreakdown])
+        ),
+      } as Record<BaseSituation, OutBreakdown>,
     });
   }
 

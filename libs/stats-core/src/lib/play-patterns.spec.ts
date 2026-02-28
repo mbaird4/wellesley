@@ -1,7 +1,11 @@
-import { classifyPlay, parseBatterAction, parseRunnerSubEvent } from './parse-play';
+import {
+  classifyPlay,
+  parseBatterAction,
+  parseRunnerSubEvent,
+} from './parse-play';
 import { mapBatterResultToScoringType } from './scoring-plays';
-import { ScoringPlayType } from './types';
 import expectations from './test-data/play-pattern-expectations.json';
+import { ScoringPlayType } from './types';
 
 interface RunnerSubEventExpectation {
   playerName: string | null;
@@ -32,7 +36,7 @@ function deriveScoringType(
   playType: string,
   batterResult: string | null,
   sub: string,
-  batterSubEvent: string,
+  batterSubEvent: string
 ): ScoringPlayType {
   const lower = sub.toLowerCase();
 
@@ -67,7 +71,10 @@ describe('Play pattern expectations', () => {
 
       if (entry.batterAction) {
         it('parseBatterAction', () => {
-          const subEvents = entry.example.replace(/\.$/, '').split(';').map((s) => s.trim());
+          const subEvents = entry.example
+            .replace(/\.$/, '')
+            .split(';')
+            .map((s) => s.trim());
           const result = parseBatterAction(subEvents[0]);
 
           expect(result.result).toBe(entry.batterAction!.result);
@@ -77,14 +84,19 @@ describe('Play pattern expectations', () => {
           }
 
           if (entry.batterAction!.batterAlsoOut !== undefined) {
-            expect(result.batterAlsoOut).toBe(entry.batterAction!.batterAlsoOut);
+            expect(result.batterAlsoOut).toBe(
+              entry.batterAction!.batterAlsoOut
+            );
           }
         });
       }
 
       if (entry.runnerSubEvents.length > 0) {
         it('parseRunnerSubEvent', () => {
-          const subEvents = entry.example.replace(/\.$/, '').split(';').map((s) => s.trim());
+          const subEvents = entry.example
+            .replace(/\.$/, '')
+            .split(';')
+            .map((s) => s.trim());
           const runnerSubs = subEvents.slice(1);
 
           expect(runnerSubs.length).toBe(entry.runnerSubEvents.length);
@@ -106,7 +118,7 @@ describe('Play pattern expectations', () => {
                 entry.playType,
                 entry.batterAction?.result ?? null,
                 runnerSubs[i],
-                subEvents[0],
+                subEvents[0]
               );
               expect(scoringType).toBe(expected.scoringType);
             }

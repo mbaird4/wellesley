@@ -6,20 +6,6 @@ export default [
   {
     ignores: ['**/dist', '**/out-tsc', '**/vitest.config.*.timestamp*'],
   },
-  {
-    files: [
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.cts',
-      '**/*.mts',
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.cjs',
-      '**/*.mjs',
-    ],
-    // Override or add rules here
-    rules: {},
-  },
   ...nx.configs['flat/angular'],
   ...nx.configs['flat/angular-template'],
   {
@@ -41,11 +27,14 @@ export default [
           style: 'kebab-case',
         },
       ],
+      '@angular-eslint/prefer-standalone': 'error',
+      '@angular-eslint/prefer-on-push-component-change-detection': 'error',
+      '@angular-eslint/no-input-rename': 'error',
+      '@angular-eslint/no-output-rename': 'error',
     },
   },
   {
     files: ['**/*.html'],
-    // Override or add rules here
     rules: {},
   },
 ];

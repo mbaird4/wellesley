@@ -4,9 +4,9 @@
  * Usage:
  *   npx ts-node src/cli.ts --year 2025
  */
+import { GameData, PlayByPlayInning, processGames } from '@ws/stats-core';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import { GameData, PlayByPlayInning, processGames } from '@ws/stats-core';
 
 const BASE_URL = 'https://wellesleyblue.com';
 
@@ -23,12 +23,18 @@ async function fetchBoxscoreUrls(year: number): Promise<string[]> {
   $('.sidearm-schedule-game-links-boxscore a').each((_i, el) => {
     const href = $(el).attr('href');
     if (href) {
-      urls.push(href.startsWith('http') ? href : `${BASE_URL}/${href.replace(/^\//, '')}`);
+      urls.push(
+        href.startsWith('http')
+          ? href
+          : `${BASE_URL}/${href.replace(/^\//, '')}`
+      );
     }
   });
 
   const unique = [...new Set(urls)];
-  console.log(`Found ${unique.length} unique boxscore URLs (${urls.length} total)`);
+  console.log(
+    `Found ${unique.length} unique boxscore URLs (${urls.length} total)`
+  );
   return unique;
 }
 

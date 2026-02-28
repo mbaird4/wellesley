@@ -42,9 +42,22 @@ export interface GameResult {
 // --- Scoring play types ---
 
 export type ScoringPlayType =
-  | 'homer' | 'triple' | 'double' | 'single' | 'bunt_single'
-  | 'sac_fly' | 'sac_bunt' | 'walk' | 'hbp' | 'wild_pitch' | 'passed_ball'
-  | 'stolen_base' | 'fielders_choice' | 'error' | 'productive_out' | 'unknown';
+  | 'homer'
+  | 'triple'
+  | 'double'
+  | 'single'
+  | 'bunt_single'
+  | 'sac_fly'
+  | 'sac_bunt'
+  | 'walk'
+  | 'hbp'
+  | 'wild_pitch'
+  | 'passed_ball'
+  | 'stolen_base'
+  | 'fielders_choice'
+  | 'error'
+  | 'productive_out'
+  | 'unknown';
 
 export interface ScoringPlay {
   runnerName: string | null;
@@ -105,8 +118,15 @@ export interface PlaySnapshot {
   scoringPlays: ScoringPlay[];
 }
 
-export type BaseSituation = 'empty' | 'first' | 'second' | 'third'
-  | 'first_second' | 'first_third' | 'second_third' | 'loaded';
+export type BaseSituation =
+  | 'empty'
+  | 'first'
+  | 'second'
+  | 'third'
+  | 'first_second'
+  | 'first_third'
+  | 'second_third'
+  | 'loaded';
 
 /** [0-out count, 1-out count, 2-out count] */
 export type OutBreakdown = [number, number, number];
@@ -123,7 +143,12 @@ export interface GameWithSnapshots extends GameResult {
 
 // --- wOBA types ---
 
-export type WobaTier = 'excellent' | 'great' | 'above_average' | 'average' | 'below_average';
+export type WobaTier =
+  | 'excellent'
+  | 'great'
+  | 'above_average'
+  | 'average'
+  | 'below_average';
 
 /** Raw per-player season totals scraped from the stats page */
 export interface PlayerSeasonStats {

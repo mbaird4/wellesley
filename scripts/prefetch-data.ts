@@ -69,11 +69,14 @@ interface WobaSeasonData {
 
 const BASE_URL = 'https://wellesleyblue.com';
 const DELAY_MS = 300;
-const DEFAULT_YEARS = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+const DEFAULT_YEARS = [
+  2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
+];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities ──
@@ -93,10 +96,15 @@ function extractPlayerName(cellText: string): string {
 
 async function fetchPage(url: string): Promise<string | null> {
   try {
-    const response = await axios.get(url, { responseType: 'text', headers: HEADERS });
+    const response = await axios.get(url, {
+      responseType: 'text',
+      headers: HEADERS,
+    });
     const html = response.data;
     if (!html || html.length < 1000) {
-      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
+      console.warn(
+        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
+      );
       return null;
     }
     return html;
@@ -109,7 +117,10 @@ async function fetchPage(url: string): Promise<string | null> {
 function parseYearsArg(): number[] {
   const idx = process.argv.indexOf('--years');
   if (idx === -1 || idx + 1 >= process.argv.length) return DEFAULT_YEARS;
-  return process.argv[idx + 1].split(',').map((s) => parseInt(s.trim(), 10)).filter((n) => !isNaN(n));
+  return process.argv[idx + 1]
+    .split(',')
+    .map((s) => parseInt(s.trim(), 10))
+    .filter((n) => !isNaN(n));
 }
 
 // ── Schedule page → boxscore URLs ──
@@ -129,7 +140,9 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI): string[] {
     const href = $(element).attr('href');
     if (!href) return;
     // Resolve to full URL
-    const fullUrl = href.startsWith('http') ? href : `${BASE_URL}${href.startsWith('/') ? '' : '/'}${href}`;
+    const fullUrl = href.startsWith('http')
+      ? href
+      : `${BASE_URL}${href.startsWith('/') ? '' : '/'}${href}`;
     urls.push(fullUrl);
   });
 
@@ -197,7 +210,9 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
     const caption = $table.find('caption').text() || '';
     if (!caption.toLowerCase().includes('wellesley')) return;
 
-    const inningKey = caption.replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '').trim();
+    const inningKey = caption
+      .replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '')
+      .trim();
     if (processedInnings.has(inningKey)) return;
     processedInnings.add(inningKey);
 
@@ -205,11 +220,17 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const firstCell = $row.find('td').first();
-      const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const originalText =
+        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (!originalText || text.includes('play description') || text.length < 5) return;
-      if (text.includes('inning summary') || text.match(/^\d+(st|nd|rd|th)\s+inning/i)) return;
+      if (!originalText || text.includes('play description') || text.length < 5)
+        return;
+      if (
+        text.includes('inning summary') ||
+        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
+      )
+        return;
 
       plays.push(originalText);
     });
@@ -222,13 +243,18 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
   return innings;
 }
 
-function extractGameData($: cheerio.CheerioAPI, url: string): SerializedGameData {
+function extractGameData(
+  $: cheerio.CheerioAPI,
+  url: string
+): SerializedGameData {
   const lineup = parseLineup($);
   const playByPlay = parsePlayByPlay($);
 
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
   const opponent = opponentMatch
-    ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+    ? opponentMatch[1]
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase())
     : 'Unknown';
 
   return {
@@ -263,7 +289,12 @@ function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
       nameCell.find('a').first().text().trim() ||
       nameCell.text().trim();
 
-    if (!name || name.toLowerCase() === 'totals' || name.toLowerCase() === 'opponents') return;
+    if (
+      !name ||
+      name.toLowerCase() === 'totals' ||
+      name.toLowerCase() === 'opponents'
+    )
+      return;
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
@@ -287,7 +318,10 @@ function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
   return players;
 }
 
-function parseGameInfo($: cheerio.CheerioAPI, url: string): { date: string; opponent: string } {
+function parseGameInfo(
+  $: cheerio.CheerioAPI,
+  url: string
+): { date: string; opponent: string } {
   let date = '';
   $('dt').each((_, el) => {
     if ($(el).text().trim() === 'Date') {
@@ -304,7 +338,9 @@ function parseGameInfo($: cheerio.CheerioAPI, url: string): { date: string; oppo
 
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
   const opponent = opponentMatch
-    ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+    ? opponentMatch[1]
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase())
     : 'Unknown';
 
   return { date, opponent };
@@ -342,8 +378,14 @@ function attributeStatToPlayers(
   }
 }
 
-function parseSupplementaryStats($: cheerio.CheerioAPI, playerMap: Map<string, PlayerGameStats>): void {
-  const dtDdStats: Array<{ label: string; field: 'doubles' | 'triples' | 'hr' | 'sf' | 'sh' }> = [
+function parseSupplementaryStats(
+  $: cheerio.CheerioAPI,
+  playerMap: Map<string, PlayerGameStats>
+): void {
+  const dtDdStats: Array<{
+    label: string;
+    field: 'doubles' | 'triples' | 'hr' | 'sf' | 'sh';
+  }> = [
     { label: '2B:', field: 'doubles' },
     { label: '3B:', field: 'triples' },
     { label: 'HR:', field: 'hr' },
@@ -371,7 +413,10 @@ function parseSupplementaryStats($: cheerio.CheerioAPI, playerMap: Map<string, P
   });
 }
 
-function extractBoxscoreBatting($: cheerio.CheerioAPI, url: string): BoxscoreData | null {
+function extractBoxscoreBatting(
+  $: cheerio.CheerioAPI,
+  url: string
+): BoxscoreData | null {
   const { date, opponent } = parseGameInfo($, url);
   const playerStats: PlayerGameStats[] = [];
   const playerMap = new Map<string, PlayerGameStats>();
@@ -436,7 +481,9 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
 
   // 1. Fetch schedule page to get boxscore URLs
   console.log(`  Fetching schedule page...`);
-  const scheduleHtml = await fetchPage(`${BASE_URL}/sports/softball/schedule/${year}`);
+  const scheduleHtml = await fetchPage(
+    `${BASE_URL}/sports/softball/schedule/${year}`
+  );
   if (!scheduleHtml) {
     console.log(`  No schedule page for ${year}, skipping`);
     return;
@@ -454,7 +501,9 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   // 2. Fetch stats page for wOBA season totals
   console.log(`  Fetching stats page...`);
   await delay(DELAY_MS);
-  const statsHtml = await fetchPage(`${BASE_URL}/sports/softball/stats/${year}`);
+  const statsHtml = await fetchPage(
+    `${BASE_URL}/sports/softball/stats/${year}`
+  );
   const seasonStats = statsHtml ? parseStatsTable(cheerio.load(statsHtml)) : [];
   console.log(`  Parsed ${seasonStats.length} players from stats table`);
 
@@ -487,7 +536,9 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   const wobadataPath = path.join(outputDir, `wobadata-${year}.json`);
   const wobaData: WobaSeasonData = { seasonStats, boxscores: boxscoreDataList };
   fs.writeFileSync(wobadataPath, JSON.stringify(wobaData));
-  console.log(`  Wrote ${wobadataPath} (${seasonStats.length} players, ${boxscoreDataList.length} boxscores)`);
+  console.log(
+    `  Wrote ${wobadataPath} (${seasonStats.length} players, ${boxscoreDataList.length} boxscores)`
+  );
 }
 
 async function main(): Promise<void> {

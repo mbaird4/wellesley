@@ -7,7 +7,12 @@
 
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { classifyPlay, parseBatterAction, parseRunnerSubEvent } from '../parse-play';
+
+import {
+  classifyPlay,
+  parseBatterAction,
+  parseRunnerSubEvent,
+} from '../parse-play';
 import { mapBatterResultToScoringType } from '../scoring-plays';
 import { ScoringPlayType } from '../types';
 
@@ -18,7 +23,12 @@ interface PatternEntry {
 }
 
 interface PatternsFile {
-  summary: { totalPlays: number; totalGames: number; years: number[]; uniquePatterns: number };
+  summary: {
+    totalPlays: number;
+    totalGames: number;
+    years: number[];
+    uniquePatterns: number;
+  };
   patterns: PatternEntry[];
 }
 
@@ -45,16 +55,21 @@ interface Expectation {
   notes?: string;
 }
 
-const patternsPath = join(__dirname, '../../../public/data/unique-play-patterns.json');
+const patternsPath = join(
+  __dirname,
+  '../../../public/data/unique-play-patterns.json'
+);
 const outputPath = join(__dirname, 'play-pattern-expectations.json');
 
-const patternsFile: PatternsFile = JSON.parse(readFileSync(patternsPath, 'utf-8'));
+const patternsFile: PatternsFile = JSON.parse(
+  readFileSync(patternsPath, 'utf-8')
+);
 
 function deriveScoringType(
   playType: string,
   batterResult: string | null,
   sub: string,
-  batterSubEvent: string,
+  batterSubEvent: string
 ): ScoringPlayType {
   const lower = sub.toLowerCase();
 
@@ -82,7 +97,10 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
   const playType = classifyPlay(example);
 
   // Split on semicolons for sub-event analysis
-  const subEvents = example.replace(/\.$/, '').split(';').map((s) => s.trim());
+  const subEvents = example
+    .replace(/\.$/, '')
+    .split(';')
+    .map((s) => s.trim());
 
   // Parse batter action only for plate appearances
   let batterAction: Expectation['batterAction'] = null;
@@ -90,28 +108,31 @@ const expectations: Expectation[] = patternsFile.patterns.map((entry) => {
     const raw = parseBatterAction(subEvents[0]);
     batterAction = { result: raw.result };
     if (raw.advancedTo !== undefined) batterAction.advancedTo = raw.advancedTo;
-    if (raw.batterAlsoOut !== undefined) batterAction.batterAlsoOut = raw.batterAlsoOut;
+    if (raw.batterAlsoOut !== undefined)
+      batterAction.batterAlsoOut = raw.batterAlsoOut;
   }
 
   // Parse runner sub-events (everything after the first semicolon)
-  const runnerSubEvents: RunnerSubEventExpectation[] = subEvents.slice(1).map((sub) => {
-    const raw = parseRunnerSubEvent(sub);
-    const result: RunnerSubEventExpectation = {
-      playerName: raw.playerName,
-      isOut: raw.isOut,
-      scored: raw.scored,
-    };
-    if (raw.advancedTo !== undefined) result.advancedTo = raw.advancedTo;
-    if (raw.scored) {
-      result.scoringType = deriveScoringType(
-        playType,
-        batterAction?.result ?? null,
-        sub,
-        subEvents[0],
-      );
-    }
-    return result;
-  });
+  const runnerSubEvents: RunnerSubEventExpectation[] = subEvents
+    .slice(1)
+    .map((sub) => {
+      const raw = parseRunnerSubEvent(sub);
+      const result: RunnerSubEventExpectation = {
+        playerName: raw.playerName,
+        isOut: raw.isOut,
+        scored: raw.scored,
+      };
+      if (raw.advancedTo !== undefined) result.advancedTo = raw.advancedTo;
+      if (raw.scored) {
+        result.scoringType = deriveScoringType(
+          playType,
+          batterAction?.result ?? null,
+          sub,
+          subEvents[0]
+        );
+      }
+      return result;
+    });
 
   return {
     pattern,
@@ -132,7 +153,9 @@ const typeCounts = new Map<string, number>();
 for (const e of expectations) {
   typeCounts.set(e.playType, (typeCounts.get(e.playType) || 0) + 1);
 }
-for (const [type, count] of [...typeCounts.entries()].sort((a, b) => b[1] - a[1])) {
+for (const [type, count] of [...typeCounts.entries()].sort(
+  (a, b) => b[1] - a[1]
+)) {
   console.log(`  ${type}: ${count}`);
 }
 
@@ -140,13 +163,18 @@ const scoringTypes = new Map<string, number>();
 for (const e of expectations) {
   for (const sub of e.runnerSubEvents) {
     if (sub.scoringType) {
-      scoringTypes.set(sub.scoringType, (scoringTypes.get(sub.scoringType) || 0) + 1);
+      scoringTypes.set(
+        sub.scoringType,
+        (scoringTypes.get(sub.scoringType) || 0) + 1
+      );
     }
   }
 }
 if (scoringTypes.size > 0) {
   console.log(`Scoring type breakdown:`);
-  for (const [type, count] of [...scoringTypes.entries()].sort((a, b) => b[1] - a[1])) {
+  for (const [type, count] of [...scoringTypes.entries()].sort(
+    (a, b) => b[1] - a[1]
+  )) {
     console.log(`  ${type}: ${count}`);
   }
 }

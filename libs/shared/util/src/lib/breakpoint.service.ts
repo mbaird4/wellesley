@@ -1,5 +1,12 @@
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { computed, DestroyRef, inject, Injectable, signal } from '@angular/core';
+import {
+  computed,
+  DestroyRef,
+  inject,
+  Injectable,
+  signal,
+} from '@angular/core';
+
 import { StyleReader } from './style-reader.utils';
 
 interface Breakpoint {
@@ -35,19 +42,40 @@ export class BreakpointService {
     // Tailwind v4 exposes --breakpoint-sm, --breakpoint-md, etc. as CSS custom properties
     this.breakpoints = [
       { label: 'xs', query: '(min-width: 0px)' },
-      { label: 'sm', query: `(min-width: ${StyleReader.read('--breakpoint-sm') || '40rem'})` },
-      { label: 'md', query: `(min-width: ${StyleReader.read('--breakpoint-md') || '48rem'})` },
-      { label: 'lg', query: `(min-width: ${StyleReader.read('--breakpoint-lg') || '64rem'})` },
-      { label: 'xl', query: `(min-width: ${StyleReader.read('--breakpoint-xl') || '80rem'})` },
-      { label: '2xl', query: `(min-width: ${StyleReader.read('--breakpoint-2xl') || '96rem'})` },
+      {
+        label: 'sm',
+        query: `(min-width: ${StyleReader.read('--breakpoint-sm') || '40rem'})`,
+      },
+      {
+        label: 'md',
+        query: `(min-width: ${StyleReader.read('--breakpoint-md') || '48rem'})`,
+      },
+      {
+        label: 'lg',
+        query: `(min-width: ${StyleReader.read('--breakpoint-lg') || '64rem'})`,
+      },
+      {
+        label: 'xl',
+        query: `(min-width: ${StyleReader.read('--breakpoint-xl') || '80rem'})`,
+      },
+      {
+        label: '2xl',
+        query: `(min-width: ${StyleReader.read('--breakpoint-2xl') || '96rem'})`,
+      },
     ];
 
     const queries = this.breakpoints.map((bp) => bp.query);
-    const sub = this.observer.observe(queries).subscribe((state: BreakpointState) => {
-      const matching = this.breakpoints.filter((bp) => state.breakpoints[bp.query]);
-      const largest = matching.length ? matching[matching.length - 1].label : null;
-      this.activeBreakpoint.set(largest);
-    });
+    const sub = this.observer
+      .observe(queries)
+      .subscribe((state: BreakpointState) => {
+        const matching = this.breakpoints.filter(
+          (bp) => state.breakpoints[bp.query]
+        );
+        const largest = matching.length
+          ? matching[matching.length - 1].label
+          : null;
+        this.activeBreakpoint.set(largest);
+      });
 
     this.destroyRef.onDestroy(() => sub.unsubscribe());
   }
@@ -55,7 +83,10 @@ export class BreakpointService {
   is(label: string): boolean {
     const active = this.activeBreakpoint();
     if (!active) return false;
-    return LABELS.indexOf(active as (typeof LABELS)[number]) >= LABELS.indexOf(label as (typeof LABELS)[number]);
+    return (
+      LABELS.indexOf(active as (typeof LABELS)[number]) >=
+      LABELS.indexOf(label as (typeof LABELS)[number])
+    );
   }
 
   gt(label: string): boolean {
@@ -66,6 +97,9 @@ export class BreakpointService {
   lt(label: string): boolean {
     const active = this.activeBreakpoint();
     if (!active) return true;
-    return LABELS.indexOf(active as (typeof LABELS)[number]) < LABELS.indexOf(label as (typeof LABELS)[number]);
+    return (
+      LABELS.indexOf(active as (typeof LABELS)[number]) <
+      LABELS.indexOf(label as (typeof LABELS)[number])
+    );
   }
 }

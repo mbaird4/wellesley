@@ -4,6 +4,9 @@
  */
 export class StyleReader {
   static read(property: string): string {
-    return window.getComputedStyle(document.body).getPropertyValue(property).trim();
+    return window
+      .getComputedStyle(document.body)
+      .getPropertyValue(property)
+      .trim();
   }
 }

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { OpponentDisplayRow } from '@ws/data-access';
 import { getWobaTier } from '@ws/stats-core';
 import { formatWoba, tierClass } from '@ws/stats-core';
@@ -8,6 +8,7 @@ import { formatWoba, tierClass } from '@ws/stats-core';
   standalone: true,
   host: { class: 'block' },
   templateUrl: './player-detail.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerDetail {
   readonly row = input.required<OpponentDisplayRow>();
