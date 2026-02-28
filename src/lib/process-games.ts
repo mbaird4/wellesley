@@ -145,7 +145,7 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
   const seasonScoringPlays = computeScoringPlaySummary(allScoringPlays);
 
   // Aggregate sac bunt outcomes across all games
-  let allSacBuntOutcomes: SacBuntOutcome[] = [];
+  const allSacBuntOutcomes: SacBuntOutcome[] = [];
   for (const game of gameResults) {
     allSacBuntOutcomes.push(...computeSacBuntOutcomes(game.snapshots, game.opponent, game.url));
   }

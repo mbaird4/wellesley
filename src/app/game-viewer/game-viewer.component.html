@@ -50,6 +50,9 @@
               [class.active]="item.filteredIndex === currentIndex()"
               [class.non-pa]="!item.snap.isPlateAppearance"
               (click)="goTo(item.filteredIndex)"
+              (keydown.enter)="goTo(item.filteredIndex)"
+              tabindex="0"
+              role="button"
             >
               @if (item.snap.lineupSlot) {
                 <span class="slot-chip">#{{ item.snap.lineupSlot }}</span>

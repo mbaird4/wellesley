@@ -474,7 +474,7 @@ export class SoftballDataService {
    * Extracts player name from cell text, removing position prefix
    */
   private extractPlayerName(cellText: string): string {
-    const match = cellText.match(/^[a-z\/]+ (.+)$/i);
+    const match = cellText.match(/^[a-z/]+ (.+)$/i);
     if (match) {
       return match[1].trim();
     }
