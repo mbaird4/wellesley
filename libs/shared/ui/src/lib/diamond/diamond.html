@@ -14,9 +14,9 @@
       class="base"
     />
     @if (bases().second) {
-    <text x="150" y="25" text-anchor="middle" class="runner-label">
-      {{ bases().second }}
-    </text>
+      <text x="150" y="25" text-anchor="middle" class="runner-label">
+        {{ bases().second }}
+      </text>
     }
 
     <!-- 3B -->
@@ -30,9 +30,9 @@
       class="base"
     />
     @if (bases().third) {
-    <text x="65" y="88" text-anchor="end" class="runner-label">
-      {{ bases().third }}
-    </text>
+      <text x="65" y="88" text-anchor="end" class="runner-label">
+        {{ bases().third }}
+      </text>
     }
 
     <!-- 1B -->
@@ -46,9 +46,9 @@
       class="base"
     />
     @if (bases().first) {
-    <text x="235" y="88" text-anchor="start" class="runner-label">
-      {{ bases().first }}
-    </text>
+      <text x="235" y="88" text-anchor="start" class="runner-label">
+        {{ bases().first }}
+      </text>
     }
 
     <!-- Home plate (pentagon: flat top, pointed bottom) -->
@@ -59,23 +59,24 @@
 
     <!-- Out indicators -->
     @for (filled of outDots(); track $index) {
-    <circle
-      [attr.cx]="135 + $index * 15"
-      cy="195"
-      r="5"
-      [class.out-filled]="filled"
-      [class.out-empty]="!filled"
-      class="out-dot"
-    />
+      <circle
+        [attr.cx]="135 + $index * 15"
+        cy="195"
+        r="5"
+        [class.out-filled]="filled"
+        [class.out-empty]="!filled"
+        class="out-dot"
+      />
     }
 
     <!-- Batter info -->
     @if (batterName()) {
-    <text x="150" y="215" text-anchor="middle" class="batter-label">
-      @if (lineupSlot()) {
-      <tspan class="slot-badge">#{{ lineupSlot() }}</tspan>
-      } {{ batterName() }}
-    </text>
+      <text x="150" y="215" text-anchor="middle" class="batter-label">
+        @if (lineupSlot()) {
+          <tspan class="slot-badge">#{{ lineupSlot() }}</tspan>
+        }
+        {{ batterName() }}
+      </text>
     }
   </svg>
 </div>

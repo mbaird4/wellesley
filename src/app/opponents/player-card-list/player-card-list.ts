@@ -1,4 +1,4 @@
-import { NgStyle } from '@angular/common';
+import { NgStyle, NgTemplateOutlet } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -17,13 +17,14 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-card-list',
   standalone: true,
-  imports: [NgStyle, PlayerDetail],
+  imports: [NgStyle, NgTemplateOutlet, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-card-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerCardList {
-  readonly rows = input.required<OpponentDisplayRow[]>();
+  readonly regulars = input.required<OpponentDisplayRow[]>();
+  readonly reserves = input.required<OpponentDisplayRow[]>();
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();
   readonly sortDir = input.required<SortDir>();

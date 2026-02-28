@@ -5,30 +5,32 @@
         class="hover:text-content-bright cursor-pointer select-none"
         (click)="sortChanged.emit('name')"
       >
-        Player @if (sortKey() === 'name') {
-        <span class="ml-1 align-middle text-[0.6rem]"
-          >{{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}</span
-        >
+        Player
+        @if (sortKey() === 'name') {
+          <span class="ml-1 align-middle text-[0.6rem]">
+            {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
+          </span>
         }
       </th>
       <th>#</th>
       <th>Yr</th>
       @for (year of allYears(); track year) {
-      <th
-        class="hover:text-content-bright cursor-pointer text-center select-none"
-        (click)="yearSortChanged.emit(year)"
-      >
-        '{{ ('' + year).slice(2) }}
-      </th>
+        <th
+          class="hover:text-content-bright cursor-pointer text-center select-none"
+          (click)="yearSortChanged.emit(year)"
+        >
+          '{{ ('' + year).slice(2) }}
+        </th>
       }
       <th
         class="hover:text-content-bright cursor-pointer text-center select-none"
         (click)="sortChanged.emit('career')"
       >
-        Career @if (sortKey() === 'career') {
-        <span class="ml-1 align-middle text-[0.6rem]"
-          >{{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}</span
-        >
+        Career
+        @if (sortKey() === 'career') {
+          <span class="ml-1 align-middle text-[0.6rem]">
+            {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
+          </span>
         }
       </th>
       <th class="text-center">PA</th>
@@ -37,38 +39,68 @@
     </tr>
   </thead>
   <tbody>
-    @for (row of rows(); track row.name) {
-    <tr class="player-row" (click)="playerToggled.emit(row.name)">
-      <td class="flex items-center gap-2">
-        <span
-          class="text-content-dim expand-arrow w-4 shrink-0 text-[0.65rem] transition-colors"
-          >{{ expandedPlayer() === row.name ? '&#9660;' : '&#9654;' }}</span
+    <!-- Regulars -->
+    @for (row of regulars(); track row.name) {
+      <ng-container
+        *ngTemplateOutlet="playerRowTpl; context: { $implicit: row }"
+      />
+    }
+
+    <!-- Reserves divider -->
+    @if (reserves().length > 0) {
+      <tr class="reserves-divider">
+        <td
+          [attr.colspan]="4 + allYears().length + 4"
+          class="text-content-dim bg-surface-overlay py-1.5 text-center text-xs font-semibold tracking-wide uppercase"
         >
-        {{ row.name }}
-      </td>
-      <td class="text-content-dim tabular-nums">
-        {{ row.jerseyNumber ?? '—' }}
-      </td>
-      <td class="text-content-dim">{{ abbrevClassYear(row.classYear) }}</td>
-      @for (year of allYears(); track year) { @if (row.yearData.get(year); as
-      yd) {
-      <td
-        class="dual-cell text-center font-semibold tabular-nums"
-        [class]="getTierClass(yd.cumulative.woba)"
-      >
-        <ws-woba-badge
-          [cumulativeWoba]="yd.cumulative.woba"
-          [seasonWoba]="yd.season.woba"
-          [seasonPa]="yd.season.pa"
+          Fewer than 2 PAs/Game
+        </td>
+      </tr>
+      @for (row of reserves(); track row.name) {
+        <ng-container
+          *ngTemplateOutlet="playerRowTpl; context: { $implicit: row }"
         />
-      </td>
-      } @else {
-      <td class="text-content-empty text-center">—</td>
-      } }
-      <td class="text-center text-[1.05rem] font-bold tabular-nums">
-        <span [ngStyle]="gradientStyle(row.career.woba)"
-          >{{ fmtWoba(row.career.woba) }}</span
+      }
+    }
+  </tbody>
+</table>
+
+<!-- Shared row template -->
+<ng-template #playerRowTpl let-row>
+  <tr class="player-row" (click)="playerToggled.emit(row.name)">
+    <td class="flex items-center gap-2">
+      <span
+        class="text-content-dim expand-arrow w-4 shrink-0 text-[0.65rem] transition-colors"
+      >
+        {{ expandedPlayer() === row.name ? '&#9660;' : '&#9654;' }}
+      </span>
+      {{ row.name }}
+    </td>
+    <td class="text-content-dim tabular-nums">
+      {{ row.jerseyNumber ?? '—' }}
+    </td>
+    <td class="text-content-dim">{{ abbrevClassYear(row.classYear) }}</td>
+    @for (year of allYears(); track year) {
+      @if (row.yearData.get(year); as yd) {
+        <td
+          class="dual-cell text-center font-semibold tabular-nums"
+          [class]="getTierClass(yd.cumulative.woba)"
         >
+          <ws-woba-badge
+            [cumulativeWoba]="yd.cumulative.woba"
+            [seasonWoba]="yd.season.woba"
+            [seasonPa]="yd.season.pa"
+          />
+        </td>
+      } @else {
+        <td class="text-content-empty text-center">—</td>
+      }
+    }
+    @if (row.seasons.length > 0) {
+      <td class="text-center text-[1.05rem] font-bold tabular-nums">
+        <span [ngStyle]="gradientStyle(row.career.woba)">
+          {{ fmtWoba(row.career.woba) }}
+        </span>
       </td>
       <td class="text-content-secondary text-center tabular-nums">
         {{ row.career.pa }}
@@ -77,16 +109,24 @@
         {{ row.career.gp }}
       </td>
       <td class="text-content-secondary text-center tabular-nums">
-        @if (row.career.sbAtt > 0) { {{ row.career.sb }}/{{ row.career.sbAtt }}
-        } @else { — }
+        @if (row.career.sbAtt > 0) {
+          {{ row.career.sb }}/{{ row.career.sbAtt }}
+        } @else {
+          —
+        }
       </td>
-    </tr>
-    @if (expandedPlayer() === row.name) {
+    } @else {
+      <td class="text-content-empty text-center">—</td>
+      <td class="text-content-empty text-center">—</td>
+      <td class="text-content-empty text-center">—</td>
+      <td class="text-content-empty text-center">—</td>
+    }
+  </tr>
+  @if (expandedPlayer() === row.name) {
     <tr class="cumulative-row">
       <td [attr.colspan]="4 + allYears().length + 4">
         <ws-player-detail [row]="row" />
       </td>
     </tr>
-    } }
-  </tbody>
-</table>
+  }
+</ng-template>

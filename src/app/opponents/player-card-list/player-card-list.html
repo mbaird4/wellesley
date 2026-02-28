@@ -3,14 +3,22 @@
   <button
     (click)="sortChanged.emit('name')"
     class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors"
-    [class]="sortKey() === 'name' ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted'"
+    [class]="
+      sortKey() === 'name'
+        ? 'bg-brand-bg text-brand-text'
+        : 'bg-surface-elevated text-content-muted'
+    "
   >
     Name {{ sortKey() === 'name' ? (sortDir() === 'asc' ? '↑' : '↓') : '' }}
   </button>
   <button
     (click)="sortChanged.emit('career')"
     class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors"
-    [class]="sortKey() === 'career' ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted'"
+    [class]="
+      sortKey() === 'career'
+        ? 'bg-brand-bg text-brand-text'
+        : 'bg-surface-elevated text-content-muted'
+    "
   >
     wOBA {{ sortKey() === 'career' ? (sortDir() === 'asc' ? '↑' : '↓') : '' }}
   </button>
@@ -18,7 +26,30 @@
 
 <!-- Player cards -->
 <div class="flex flex-col gap-2">
-  @for (row of rows(); track row.name) {
+  <!-- Regulars -->
+  @for (row of regulars(); track row.name) {
+    <ng-container
+      *ngTemplateOutlet="playerCardTpl; context: { $implicit: row }"
+    />
+  }
+
+  <!-- Reserves divider -->
+  @if (reserves().length > 0) {
+    <div
+      class="text-content-dim bg-surface-overlay mt-2 mb-1 rounded-lg py-1.5 text-center text-xs font-semibold tracking-wide uppercase"
+    >
+      Reserves
+    </div>
+    @for (row of reserves(); track row.name) {
+      <ng-container
+        *ngTemplateOutlet="playerCardTpl; context: { $implicit: row }"
+      />
+    }
+  }
+</div>
+
+<!-- Shared card template -->
+<ng-template #playerCardTpl let-row>
   <div
     class="bg-surface-card border-line overflow-hidden rounded-xl border transition-colors"
     [class.border-line-medium]="expandedPlayer() === row.name"
@@ -31,44 +62,49 @@
       <div class="flex items-start justify-between gap-3">
         <div class="min-w-0">
           <div class="flex flex-wrap items-baseline gap-2">
-            <span class="text-content-bright text-base font-semibold"
-              >{{ row.name }}</span
-            >
+            <span class="text-content-bright text-base font-semibold">
+              {{ row.name }}
+            </span>
             @if (row.jerseyNumber !== null) {
-            <span class="text-content-dim text-sm"
-              >#{{ row.jerseyNumber }}</span
-            >
+              <span class="text-content-dim text-sm">
+                #{{ row.jerseyNumber }}
+              </span>
             }
-            <span class="text-content-dim text-sm"
-              >{{ abbrevClassYear(row.classYear) }}</span
-            >
-            <span class="text-content-dim ml-auto text-[0.65rem]"
-              >{{ expandedPlayer() === row.name ? '▼' : '▶' }}</span
-            >
+            <span class="text-content-dim text-sm">
+              {{ abbrevClassYear(row.classYear) }}
+            </span>
+            <span class="text-content-dim ml-auto text-[0.65rem]">
+              {{ expandedPlayer() === row.name ? '▼' : '▶' }}
+            </span>
           </div>
-          <div class="mt-2">
-            <span
-              class="text-2xl font-bold tabular-nums"
-              [ngStyle]="gradientStyle(row.career.woba)"
-              >{{ fmtWoba(row.career.woba) }}</span
-            >
-            <span class="text-content-dim ml-1.5 text-xs">career</span>
-          </div>
-          <div class="text-content-secondary mt-1.5 text-sm tabular-nums">
-            {{ row.career.pa }} PA · {{ row.career.gp }} GP @if
-            (row.career.sbAtt > 0) { · {{ row.career.sb }}/{{ row.career.sbAtt
-            }} SB }
-          </div>
+          @if (row.seasons.length > 0) {
+            <div class="mt-2">
+              <span
+                class="text-2xl font-bold tabular-nums"
+                [ngStyle]="gradientStyle(row.career.woba)"
+              >
+                {{ fmtWoba(row.career.woba) }}
+              </span>
+              <span class="text-content-dim ml-1.5 text-xs">career</span>
+            </div>
+            <div class="text-content-secondary mt-1.5 text-sm tabular-nums">
+              {{ row.career.pa }} PA · {{ row.career.gp }} GP
+              @if (row.career.sbAtt > 0) {
+                · {{ row.career.sb }}/{{ row.career.sbAtt }} SB
+              }
+            </div>
+          } @else {
+            <div class="text-content-dim mt-2 text-sm">No stats yet</div>
+          }
         </div>
       </div>
     </button>
 
     <!-- Expanded detail -->
     @if (expandedPlayer() === row.name) {
-    <div class="border-line bg-surface-overlay border-t">
-      <ws-player-detail [row]="row" />
-    </div>
+      <div class="border-line bg-surface-overlay border-t">
+        <ws-player-detail [row]="row" />
+      </div>
     }
   </div>
-  }
-</div>
+</ng-template>

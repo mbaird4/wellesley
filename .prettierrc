@@ -4,5 +4,15 @@
   "printWidth": 80,
   "tabWidth": 2,
   "useTabs": false,
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular",
+        "tabWidth": 2,
+        "htmlWhitespaceSensitivity": "ignore",
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    }
+  ]
 }

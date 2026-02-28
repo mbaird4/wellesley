@@ -1,60 +1,63 @@
 @if (authenticated) {
-<div class="mx-auto max-w-[2400px] px-8 py-6">
-  <header
-    class="border-line mb-6 flex items-center justify-between border-b pb-4"
-  >
-    <h1
-      class="from-brand-lighter to-brand m-0 bg-linear-to-br bg-clip-text text-[1.75rem] font-bold tracking-tight text-transparent"
+  <div class="mx-auto max-w-[2400px] px-8 py-6">
+    <header
+      class="border-line mb-6 flex items-center justify-between border-b pb-4"
     >
-      {{ title }}
-    </h1>
-    <nav class="bg-surface-card flex gap-1 rounded-[10px] p-[3px]">
-      <a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        class="nav-link"
-        >Lineup Stats</a
+      <h1
+        class="from-brand-lighter to-brand m-0 bg-linear-to-br bg-clip-text text-[1.75rem] font-bold tracking-tight text-transparent"
       >
-      <a routerLink="/woba" routerLinkActive="active" class="nav-link">wOBA</a>
-      <a routerLink="/scoring" routerLinkActive="active" class="nav-link"
-        >Scoring Plays</a
-      >
-      <a routerLink="/opponents" routerLinkActive="active" class="nav-link"
-        >Opponents</a
-      >
-    </nav>
-  </header>
+        {{ title }}
+      </h1>
+      <nav class="bg-surface-card flex gap-1 rounded-[10px] p-[3px]">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+        >
+          Lineup Stats
+        </a>
+        <a routerLink="/woba" routerLinkActive="active" class="nav-link">
+          wOBA
+        </a>
+        <a routerLink="/scoring" routerLinkActive="active" class="nav-link">
+          Scoring Plays
+        </a>
+        <a routerLink="/opponents" routerLinkActive="active" class="nav-link">
+          Opponents
+        </a>
+      </nav>
+    </header>
 
-  <router-outlet></router-outlet>
-</div>
-} @else {
-<div class="flex min-h-screen items-center justify-center">
-  <div class="bg-surface-card w-full max-w-sm rounded-2xl p-8 shadow-lg">
-    <h1
-      class="from-brand-lighter to-brand mb-6 bg-linear-to-br bg-clip-text text-center text-xl font-bold text-transparent"
-    >
-      {{ title }}
-    </h1>
-    <form (ngSubmit)="checkPassword()">
-      <input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Enter password"
-        class="bg-surface border-line text-text-primary placeholder-text-secondary focus:border-brand w-full rounded-lg border px-4 py-2.5 transition-colors focus:outline-none"
-        (input)="error = false"
-      />
-      @if (error) {
-      <p class="mt-2 text-sm text-red-400">Incorrect password.</p>
-      }
-      <button
-        type="submit"
-        class="bg-brand hover:bg-brand-lighter mt-4 w-full cursor-pointer rounded-lg px-4 py-2.5 font-medium text-white transition-colors"
-      >
-        Enter
-      </button>
-    </form>
+    <router-outlet></router-outlet>
   </div>
-</div>
+} @else {
+  <div class="flex min-h-screen items-center justify-center">
+    <div class="bg-surface-card w-full max-w-sm rounded-2xl p-8 shadow-lg">
+      <h1
+        class="from-brand-lighter to-brand mb-6 bg-linear-to-br bg-clip-text text-center text-xl font-bold text-transparent"
+      >
+        {{ title }}
+      </h1>
+      <form (ngSubmit)="checkPassword()">
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Enter password"
+          class="bg-surface border-line text-text-primary placeholder-text-secondary focus:border-brand w-full rounded-lg border px-4 py-2.5 transition-colors focus:outline-none"
+          (input)="error = false"
+        />
+        @if (error) {
+          <p class="mt-2 text-sm text-red-400">Incorrect password.</p>
+        }
+        <button
+          type="submit"
+          class="bg-brand hover:bg-brand-lighter mt-4 w-full cursor-pointer rounded-lg px-4 py-2.5 font-medium text-white transition-colors"
+        >
+          Enter
+        </button>
+      </form>
+    </div>
+  </div>
 }

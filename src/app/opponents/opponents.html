@@ -1,71 +1,76 @@
 @if (bp.gtSm()) {
-<!-- Desktop: sidebar + table -->
-<div class="flex gap-6">
+  <!-- Desktop: sidebar + table -->
+  <div class="flex gap-6">
+    <ws-team-selector
+      layout="vertical"
+      [teams]="teams"
+      [selectedSlug]="selectedSlug()"
+      (teamSelected)="selectTeam($event)"
+    />
+
+    <div class="min-w-0 flex-1">
+      <h2>{{ selectedTeamName() }} — Historical wOBA</h2>
+
+      <ng-container *ngTemplateOutlet="statusTpl" />
+
+      @if ((regulars().length > 0 || reserves().length > 0) && !loading()) {
+        <ws-player-table
+          [regulars]="regulars()"
+          [reserves]="reserves()"
+          [allYears]="allYears()"
+          [expandedPlayer]="expandedPlayer()"
+          [sortKey]="sortKey()"
+          [sortDir]="sortDir()"
+          (playerToggled)="togglePlayer($event)"
+          (sortChanged)="sort($event)"
+          (yearSortChanged)="sortByYear($event)"
+        />
+      }
+    </div>
+  </div>
+} @else {
+  <!-- Mobile: stacked layout -->
   <ws-team-selector
-    layout="vertical"
+    layout="horizontal"
     [teams]="teams"
     [selectedSlug]="selectedSlug()"
     (teamSelected)="selectTeam($event)"
   />
 
-  <div class="min-w-0 flex-1">
-    <h2>{{ selectedTeamName() }} — Historical wOBA</h2>
+  <h2 class="mt-3 mb-2 text-lg">{{ selectedTeamName() }} — Historical wOBA</h2>
 
-    <ng-container *ngTemplateOutlet="statusTpl" />
+  <ng-container *ngTemplateOutlet="statusTpl" />
 
-    @if (displayRows().length > 0 && !loading()) {
-    <ws-player-table
-      [rows]="displayRows()"
-      [allYears]="allYears()"
+  @if ((regulars().length > 0 || reserves().length > 0) && !loading()) {
+    <ws-player-card-list
+      [regulars]="regulars()"
+      [reserves]="reserves()"
       [expandedPlayer]="expandedPlayer()"
       [sortKey]="sortKey()"
       [sortDir]="sortDir()"
       (playerToggled)="togglePlayer($event)"
       (sortChanged)="sort($event)"
-      (yearSortChanged)="sortByYear($event)"
     />
-    }
-  </div>
-</div>
-} @else {
-<!-- Mobile: stacked layout -->
-<ws-team-selector
-  layout="horizontal"
-  [teams]="teams"
-  [selectedSlug]="selectedSlug()"
-  (teamSelected)="selectTeam($event)"
-/>
-
-<h2 class="mt-3 mb-2 text-lg">{{ selectedTeamName() }} — Historical wOBA</h2>
-
-<ng-container *ngTemplateOutlet="statusTpl" />
-
-@if (displayRows().length > 0 && !loading()) {
-<ws-player-card-list
-  [rows]="displayRows()"
-  [expandedPlayer]="expandedPlayer()"
-  [sortKey]="sortKey()"
-  [sortDir]="sortDir()"
-  (playerToggled)="togglePlayer($event)"
-  (sortChanged)="sort($event)"
-/>
-} }
+  }
+}
 
 <!-- Shared loading/error/empty states -->
 <ng-template #statusTpl>
   @if (error()) {
-  <div
-    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
-  >
-    {{ error() }}
-  </div>
-  } @if (loading()) {
-  <div class="py-card px-card text-content-muted text-[1.05rem]">
-    Loading...
-  </div>
-  } @if (empty()) {
-  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-    No data available for this team.
-  </div>
+    <div
+      class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+    >
+      {{ error() }}
+    </div>
+  }
+  @if (loading()) {
+    <div class="py-card px-card text-content-muted text-[1.05rem]">
+      Loading...
+    </div>
+  }
+  @if (empty()) {
+    <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+      No data available for this team.
+    </div>
   }
 </ng-template>

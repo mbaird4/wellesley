@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-02-28T20:34:59.824Z",
+  "scrapedAt": "2026-02-28T20:56:20.708Z",
   "players": [
     {
       "name": "Megan Dube",
@@ -1690,6 +1690,70 @@
       }
     },
     {
+      "name": "Gwen Castro",
+      "jerseyNumber": 1,
+      "classYear": "Sophomore",
+      "seasons": [],
+      "career": {
+        "avg": 0,
+        "ops": 0,
+        "gp": 0,
+        "gs": 0,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 0,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 0
+      }
+    },
+    {
+      "name": "Natalie Kandel",
+      "jerseyNumber": 13,
+      "classYear": "Freshman",
+      "seasons": [],
+      "career": {
+        "avg": 0,
+        "ops": 0,
+        "gp": 0,
+        "gs": 0,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 0,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 0
+      }
+    },
+    {
       "name": "Hannah Wagstaff",
       "jerseyNumber": 21,
       "classYear": "Junior",
@@ -1777,6 +1841,43 @@
         "woba": 0,
         "pa": 13
       }
+    },
+    {
+      "name": "Karilyn Perez-Guerrero",
+      "jerseyNumber": 25,
+      "classYear": "Freshman",
+      "seasons": [],
+      "career": {
+        "avg": 0,
+        "ops": 0,
+        "gp": 0,
+        "gs": 0,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 0,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 0
+      }
     }
-  ]
+  ],
+  "teamGamesByYear": {
+    "2023": 34,
+    "2024": 36,
+    "2025": 38
+  }
 }

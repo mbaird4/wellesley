@@ -14,105 +14,112 @@
       All
     </button>
     @for (slot of slots; track slot) {
-    <button
-      class="filter-btn"
-      [class.active]="slotFilter() === slot"
-      (click)="setSlotFilter(slot)"
-    >
-      {{ slot }}
-    </button>
+      <button
+        class="filter-btn"
+        [class.active]="slotFilter() === slot"
+        (click)="setSlotFilter(slot)"
+      >
+        {{ slot }}
+      </button>
     }
   </div>
 
   @if (totalFiltered() > 0) {
-  <div class="p-card flex min-h-[200px] gap-3">
-    <!-- Left: diamond -->
-    <div class="flex shrink-0 basis-80 flex-col items-center gap-2">
-      <ws-diamond
-        [bases]="displayedBases()"
-        [outs]="displayedOuts()"
-        [batterName]="displayedBatter()"
-        [lineupSlot]="displayedSlot()"
-      />
-      <div class="flex gap-2">
-        <button
-          class="control-btn rewind-btn"
-          (click)="rewind()"
-          [disabled]="!played() && currentIndex() === 0"
-        >
-          Rewind
-        </button>
-        <button
-          class="control-btn play-btn"
-          (click)="play()"
-          [disabled]="played() && currentIndex() >= totalFiltered() - 1"
-        >
-          Play
-        </button>
+    <div class="p-card flex min-h-[200px] gap-3">
+      <!-- Left: diamond -->
+      <div class="flex shrink-0 basis-80 flex-col items-center gap-2">
+        <ws-diamond
+          [bases]="displayedBases()"
+          [outs]="displayedOuts()"
+          [batterName]="displayedBatter()"
+          [lineupSlot]="displayedSlot()"
+        />
+        <div class="flex gap-2">
+          <button
+            class="control-btn rewind-btn"
+            (click)="rewind()"
+            [disabled]="!played() && currentIndex() === 0"
+          >
+            Rewind
+          </button>
+          <button
+            class="control-btn play-btn"
+            (click)="play()"
+            [disabled]="played() && currentIndex() >= totalFiltered() - 1"
+          >
+            Play
+          </button>
+        </div>
       </div>
-    </div>
 
-    <!-- Right: play list -->
-    <div
-      class="border-line bg-surface-sunken max-h-[300px] flex-1 overflow-y-auto rounded-lg border"
-    >
-      @for (group of groupedByInning(); track group.inning) {
-      <div class="inning-header">{{ group.inning }}</div>
-      @for (item of group.plays; track item.filteredIndex) {
+      <!-- Right: play list -->
       <div
-        class="play-row"
-        [class.active]="item.filteredIndex === currentIndex()"
-        [class.non-pa]="!item.snap.isPlateAppearance"
-        (click)="goTo(item.filteredIndex)"
-        (keydown.enter)="goTo(item.filteredIndex)"
-        tabindex="0"
-        role="button"
+        class="border-line bg-surface-sunken max-h-[300px] flex-1 overflow-y-auto rounded-lg border"
       >
-        @if (item.snap.lineupSlot) {
-        <span class="slot-chip">#{{ item.snap.lineupSlot }}</span>
+        @for (group of groupedByInning(); track group.inning) {
+          <div class="inning-header">{{ group.inning }}</div>
+          @for (item of group.plays; track item.filteredIndex) {
+            <div
+              class="play-row"
+              [class.active]="item.filteredIndex === currentIndex()"
+              [class.non-pa]="!item.snap.isPlateAppearance"
+              (click)="goTo(item.filteredIndex)"
+              (keydown.enter)="goTo(item.filteredIndex)"
+              tabindex="0"
+              role="button"
+            >
+              @if (item.snap.lineupSlot) {
+                <span class="slot-chip">#{{ item.snap.lineupSlot }}</span>
+              }
+              <span
+                class="flex-1 overflow-hidden text-ellipsis whitespace-nowrap"
+              >
+                {{ item.snap.playText }}
+              </span>
+              <span class="text-content-dim shrink-0 text-[0.65rem]">
+                {{ item.snap.outsBefore }}O
+              </span>
+            </div>
+          }
         }
-        <span class="flex-1 overflow-hidden text-ellipsis whitespace-nowrap"
-          >{{ item.snap.playText }}</span
-        >
-        <span class="text-content-dim shrink-0 text-[0.65rem]"
-          >{{ item.snap.outsBefore }}O</span
-        >
       </div>
-      } }
     </div>
-  </div>
 
-  <!-- Navigation -->
-  <div
-    class="px-cell border-line bg-surface-elevated flex items-center justify-center gap-4 border-t py-1.5"
-  >
-    <button class="nav-btn" (click)="prev()" [disabled]="currentIndex() === 0">
-      &lt; Prev
-    </button>
-    <span class="text-content-muted text-xs"
-      >Play {{ currentIndex() + 1 }} of {{ totalFiltered() }}</span
+    <!-- Navigation -->
+    <div
+      class="px-cell border-line bg-surface-elevated flex items-center justify-center gap-4 border-t py-1.5"
     >
-    <button
-      class="nav-btn"
-      (click)="next()"
-      [disabled]="currentIndex() >= totalFiltered() - 1"
-    >
-      Next &gt;
-    </button>
-  </div>
-  <div class="px-cell bg-surface-elevated pb-2">
-    <input
-      type="range"
-      class="accent-brand w-full"
-      [min]="0"
-      [max]="totalFiltered() - 1"
-      [value]="currentIndex()"
-      (input)="onSliderChange($event)"
-    />
-  </div>
+      <button
+        class="nav-btn"
+        (click)="prev()"
+        [disabled]="currentIndex() === 0"
+      >
+        &lt; Prev
+      </button>
+      <span class="text-content-muted text-xs">
+        Play {{ currentIndex() + 1 }} of {{ totalFiltered() }}
+      </span>
+      <button
+        class="nav-btn"
+        (click)="next()"
+        [disabled]="currentIndex() >= totalFiltered() - 1"
+      >
+        Next &gt;
+      </button>
+    </div>
+    <div class="px-cell bg-surface-elevated pb-2">
+      <input
+        type="range"
+        class="accent-brand w-full"
+        [min]="0"
+        [max]="totalFiltered() - 1"
+        [value]="currentIndex()"
+        (input)="onSliderChange($event)"
+      />
+    </div>
   } @else {
-  <div class="py-card text-content-dim text-center italic">
-    No plays to display.
-  </div>
+    <div class="py-card text-content-dim text-center italic">
+      No plays to display.
+    </div>
   }
 </div>

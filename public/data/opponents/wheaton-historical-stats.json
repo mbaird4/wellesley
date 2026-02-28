@@ -1,7 +1,7 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-02-28T18:17:21.577Z",
+  "scrapedAt": "2026-02-28T20:55:25.803Z",
   "players": [
     {
       "name": "Juliette Zito",
@@ -1540,6 +1540,38 @@
       }
     },
     {
+      "name": "Mary Claire McClintock",
+      "jerseyNumber": 8,
+      "classYear": "Sophomore",
+      "seasons": [],
+      "career": {
+        "avg": 0,
+        "ops": 0,
+        "gp": 0,
+        "gs": 0,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 0,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 0
+      }
+    },
+    {
       "name": "Alli Wisnouskas",
       "jerseyNumber": 9,
       "classYear": "First Year",
@@ -1599,6 +1631,43 @@
         "woba": 0,
         "pa": 1
       }
+    },
+    {
+      "name": "Sofia De La Rosa",
+      "jerseyNumber": 14,
+      "classYear": "Sophomore",
+      "seasons": [],
+      "career": {
+        "avg": 0,
+        "ops": 0,
+        "gp": 0,
+        "gs": 0,
+        "ab": 0,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 0,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 0
+      }
     }
-  ]
+  ],
+  "teamGamesByYear": {
+    "2023": 40,
+    "2024": 39,
+    "2025": 43
+  }
 }

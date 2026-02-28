@@ -109,6 +109,7 @@ interface TeamOutput {
   domain: string;
   scrapedAt: string;
   players: PlayerOutput[];
+  teamGamesByYear: Record<string, number>;
 }
 
 // ── Constants ──
@@ -306,6 +307,40 @@ function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
   return players;
 }
 
+// ── Team GP from Totals row ──
+
+function parseTeamGames($: cheerio.CheerioAPI): number | null {
+  let targetTable: any = null;
+  $('table').each((_, table) => {
+    const caption = $(table).find('caption').text();
+    if (caption.includes('Individual Overall Batting Statistics')) {
+      targetTable = $(table);
+      return false;
+    }
+  });
+
+  if (!targetTable) return null;
+
+  let teamGp: number | null = null;
+  targetTable.find('tbody tr').each((_: number, row: any) => {
+    const $row = $(row);
+    const nameCell = $row.find('th[scope="row"]');
+    const name =
+      nameCell.find('a.hide-on-medium-down').text().trim() ||
+      nameCell.find('a').first().text().trim() ||
+      nameCell.text().trim();
+
+    if (name.toLowerCase() === 'totals') {
+      const gpGsCell = $row.find('td[data-label="GP-GS"]').text().trim();
+      const gpGsMatch = gpGsCell.match(/^(\d+)-(\d+)$/);
+      teamGp = gpGsMatch ? parseInt(gpGsMatch[1], 10) : null;
+      return false;
+    }
+  });
+
+  return teamGp;
+}
+
 // ── Name matching ──
 
 function toNormalizedKey(first: string, last: string): string {
@@ -338,6 +373,37 @@ function parseYearsArg(): number[] {
     .filter((n) => !isNaN(n));
 }
 
+// ── Empty career stats for first-years ──
+
+function emptyCareer(): CareerStats {
+  return {
+    avg: 0,
+    ops: 0,
+    gp: 0,
+    gs: 0,
+    ab: 0,
+    r: 0,
+    h: 0,
+    doubles: 0,
+    triples: 0,
+    hr: 0,
+    rbi: 0,
+    tb: 0,
+    slg: 0,
+    bb: 0,
+    hbp: 0,
+    so: 0,
+    gdp: 0,
+    obp: 0,
+    sf: 0,
+    sh: 0,
+    sb: 0,
+    sbAtt: 0,
+    woba: 0,
+    pa: 0,
+  };
+}
+
 // ── Per-team scraping ──
 
 async function scrapeTeam(
@@ -357,6 +423,7 @@ async function scrapeTeam(
 
   // 2. Fetch stats for each year
   const statsByYear = new Map<number, BattingStats[]>();
+  const teamGpByYear = new Map<number, number>();
   for (const year of years) {
     await delay(DELAY_MS);
     console.log(`  Fetching ${year} stats...`);
@@ -364,9 +431,23 @@ async function scrapeTeam(
       `https://${domain}/sports/softball/stats/${year}`
     );
     if (statsHtml) {
-      const stats = parseStatsTable(cheerio.load(statsHtml));
+      const $stats = cheerio.load(statsHtml);
+      const stats = parseStatsTable($stats);
       statsByYear.set(year, stats);
       console.log(`    Parsed ${stats.length} players`);
+
+      const teamGp = parseTeamGames($stats);
+      if (teamGp !== null) {
+        teamGpByYear.set(year, teamGp);
+        console.log(`    Team GP: ${teamGp}`);
+      } else {
+        // Fallback: max player GP
+        const maxGp = Math.max(...stats.map((s) => s.gp), 0);
+        if (maxGp > 0) {
+          teamGpByYear.set(year, maxGp);
+          console.log(`    Team GP (fallback from max player GP): ${maxGp}`);
+        }
+      }
     } else {
       console.log(`    No stats page for ${year}`);
     }
@@ -430,7 +511,15 @@ async function scrapeTeam(
     const playerStats = matchResults.get(rp);
 
     if (!playerStats || playerStats.size === 0) {
+      // First-year or unmatched player — include with empty stats
       unmatched++;
+      players.push({
+        name: rp.name,
+        jerseyNumber: rp.jerseyNumber,
+        classYear: rp.classYear,
+        seasons: [],
+        career: emptyCareer(),
+      });
       continue;
     }
     matched++;
@@ -514,7 +603,16 @@ async function scrapeTeam(
       careerTotals.sbAtt += s.sbAtt;
     }
 
-    if (seasons.length === 0) continue;
+    if (seasons.length === 0) {
+      players.push({
+        name: rp.name,
+        jerseyNumber: rp.jerseyNumber,
+        classYear: rp.classYear,
+        seasons: [],
+        career: emptyCareer(),
+      });
+      continue;
+    }
 
     const careerPa =
       careerTotals.ab +
@@ -570,11 +668,18 @@ async function scrapeTeam(
     `  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`
   );
 
+  // Convert teamGpByYear map to plain object for JSON
+  const teamGamesByYear: Record<string, number> = {};
+  for (const [year, gp] of teamGpByYear) {
+    teamGamesByYear[String(year)] = gp;
+  }
+
   return {
     slug,
     domain,
     scrapedAt: new Date().toISOString(),
     players,
+    teamGamesByYear,
   };
 }
 

@@ -27,6 +27,7 @@ jobs:
 
       - run: npm ci
 
+      - run: npx nx run wellesley:tailwind:build
       - run: npx nx build wellesley --base-href /wellesley/
         env:
           NODE_ENV: production

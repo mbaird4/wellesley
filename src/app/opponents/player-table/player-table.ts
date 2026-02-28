@@ -1,4 +1,4 @@
-import { NgStyle } from '@angular/common';
+import { NgStyle, NgTemplateOutlet } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -20,13 +20,14 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-table',
   standalone: true,
-  imports: [NgStyle, WobaBadge, PlayerDetail],
+  imports: [NgStyle, NgTemplateOutlet, WobaBadge, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-table.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerTable {
-  readonly rows = input.required<OpponentDisplayRow[]>();
+  readonly regulars = input.required<OpponentDisplayRow[]>();
+  readonly reserves = input.required<OpponentDisplayRow[]>();
   readonly allYears = input.required<number[]>();
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();

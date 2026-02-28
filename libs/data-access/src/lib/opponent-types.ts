@@ -11,6 +11,7 @@ export interface OpponentTeam {
   domain: string;
   scrapedAt: string;
   players: OpponentPlayer[];
+  teamGamesByYear?: Record<string, number>;
 }
 
 export interface OpponentPlayer {
@@ -89,6 +90,8 @@ export interface YearData {
   cumulativeLabel: string;
 }
 
+export type PlayerTier = 'regular' | 'reserve';
+
 export interface OpponentDisplayRow {
   name: string;
   jerseyNumber: number | null;
@@ -97,4 +100,6 @@ export interface OpponentDisplayRow {
   cumulativeByYear: CumulativeEntry[];
   yearData: Map<number, YearData>;
   career: OpponentCareerStats;
+  tier: PlayerTier;
+  paPerGame: number;
 }

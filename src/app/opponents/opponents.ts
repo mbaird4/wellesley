@@ -10,6 +10,7 @@ import {
 import {
   OpponentDisplayRow,
   OpponentTeam,
+  PlayerTier,
   SortDir,
   SortKey,
   TeamEntry,
@@ -81,6 +82,8 @@ export class Opponents {
     const dir = this.sortDir();
     const yearSort = this.yearSortYear();
 
+    const gpByYear = data.teamGamesByYear ?? {};
+
     const rows: OpponentDisplayRow[] = data.players.map((player) => {
       const sortedSeasons = [...player.seasons].sort((a, b) => a.year - b.year);
 
@@ -125,6 +128,15 @@ export class Opponents {
         });
       }
 
+      // Compute tier: ≥2 PA per team game (only counting seasons player was on the team)
+      const playerTeamGames = sortedSeasons.reduce(
+        (sum, s) => sum + (gpByYear[String(s.year)] ?? 0),
+        0
+      );
+      const paPerGame =
+        playerTeamGames > 0 ? player.career.pa / playerTeamGames : 0;
+      const tier: PlayerTier = paPerGame >= 2 ? 'regular' : 'reserve';
+
       return {
         name: player.name,
         jerseyNumber: player.jerseyNumber,
@@ -133,28 +145,46 @@ export class Opponents {
         cumulativeByYear,
         yearData,
         career: player.career,
+        tier,
+        paPerGame,
       };
     });
 
-    // Sort
+    // Sort — players with no data always last
     const mult = dir === 'asc' ? 1 : -1;
-    if (yearSort !== null) {
-      rows.sort((a, b) => {
+    rows.sort((a, b) => {
+      const aEmpty = a.seasons.length === 0 ? 1 : 0;
+      const bEmpty = b.seasons.length === 0 ? 1 : 0;
+      if (aEmpty !== bEmpty) return aEmpty - bEmpty;
+
+      if (yearSort !== null) {
         const aWoba = a.yearData.get(yearSort)?.season.woba ?? -1;
         const bWoba = b.yearData.get(yearSort)?.season.woba ?? -1;
         return mult * (aWoba - bWoba);
-      });
-    } else if (key === 'name') {
-      rows.sort((a, b) => mult * a.name.localeCompare(b.name));
-    } else {
-      rows.sort((a, b) => mult * (a.career.woba - b.career.woba));
-    }
+      } else if (key === 'name') {
+        return mult * a.name.localeCompare(b.name);
+      } else {
+        return mult * (a.career.woba - b.career.woba);
+      }
+    });
 
     return rows;
   });
 
+  readonly regulars = computed(() =>
+    this.displayRows().filter((r) => r.tier === 'regular')
+  );
+
+  readonly reserves = computed(() =>
+    this.displayRows().filter((r) => r.tier === 'reserve')
+  );
+
   readonly empty = computed(
-    () => this.displayRows().length === 0 && !this.loading() && !this.error()
+    () =>
+      this.regulars().length === 0 &&
+      this.reserves().length === 0 &&
+      !this.loading() &&
+      !this.error()
   );
 
   constructor() {
@@ -193,7 +223,9 @@ export class Opponents {
     this.yearSortYear.set(null);
 
     this.http
-      .get<OpponentTeam>(`/data/opponents/${slug}-historical-stats.json`)
+      .get<OpponentTeam>(
+        `${document.querySelector('base')?.getAttribute('href') || '/'}data/opponents/${slug}-historical-stats.json`
+      )
       .subscribe({
         next: (data) => {
           this.teamData.set(data);
