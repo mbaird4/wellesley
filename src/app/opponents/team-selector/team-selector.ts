@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { TeamEntry } from '../opponent-types';
+import { TeamEntry } from '@ws/data-access';
 
 @Component({
   selector: 'ws-team-selector',

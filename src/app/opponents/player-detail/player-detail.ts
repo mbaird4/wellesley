@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
-import { OpponentDisplayRow } from '../opponent-types';
-import { getWobaTier } from '../../../lib/woba';
-import { formatWoba, tierClass } from '../../../lib/woba-display';
+import { OpponentDisplayRow } from '@ws/data-access';
+import { getWobaTier } from '@ws/stats-core';
+import { formatWoba, tierClass } from '@ws/stats-core';
 
 @Component({
   selector: 'ws-player-detail',

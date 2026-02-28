@@ -6,8 +6,7 @@
  */
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import { GameData, PlayByPlayInning } from './lib/types';
-import { processGames } from './lib/process-games';
+import { GameData, PlayByPlayInning, processGames } from '@ws/stats-core';
 
 const BASE_URL = 'https://wellesleyblue.com';
 

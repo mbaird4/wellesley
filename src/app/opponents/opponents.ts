@@ -1,9 +1,9 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { OpponentTeam, OpponentDisplayRow, YearData, TeamEntry, SortKey, SortDir } from './opponent-types';
-import { calculateWoba } from '../../lib/woba';
-import { BreakpointService } from '../shared/breakpoint.service';
+import { OpponentTeam, OpponentDisplayRow, YearData, TeamEntry, SortKey, SortDir } from '@ws/data-access';
+import { calculateWoba } from '@ws/stats-core';
+import { BreakpointService } from '@ws/shared/util';
 import { TeamSelector } from './team-selector/team-selector';
 import { PlayerTable } from './player-table/player-table';
 import { PlayerCardList } from './player-card-list/player-card-list';

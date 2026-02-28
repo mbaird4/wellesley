@@ -1,9 +1,9 @@
 import { Component, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { OpponentDisplayRow, SortKey, SortDir } from '../opponent-types';
-import { getWobaTier } from '../../../lib/woba';
-import { formatWoba, tierClass, wobaGradientStyle, abbreviateClassYear } from '../../../lib/woba-display';
-import { WobaBadge } from '../woba-badge/woba-badge';
+import { OpponentDisplayRow, SortKey, SortDir } from '@ws/data-access';
+import { getWobaTier } from '@ws/stats-core';
+import { formatWoba, tierClass, wobaGradientStyle, abbreviateClassYear } from '@ws/stats-core';
+import { WobaBadge } from '@ws/shared/ui';
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({

@@ -59,9 +59,7 @@
           "buildTarget": "wellesley:build:development"
         }
       },
-      "dependsOn": [
-        "tailwind:serve"
-      ],
+      "dependsOn": ["tailwind:serve"],
       "defaultConfiguration": "development"
     },
     "lint": {
@@ -74,7 +72,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
-        "jestConfig": "jest.config.cts",
+        "jestConfig": "jest.config.app.ts",
         "tsConfig": "tsconfig.spec.json"
       }
     },

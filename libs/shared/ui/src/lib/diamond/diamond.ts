@@ -1,6 +1,6 @@
 import { Component, input, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BaseRunners } from '../../lib/types';
+import { BaseRunners } from '@ws/stats-core';
 
 @Component({
   selector: 'ws-diamond',

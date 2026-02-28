@@ -41,7 +41,7 @@
           "codeCoverage": true
         }
       }
-    }
+    },
   },
   "generators": {
     "@nx/angular:application": {
@@ -49,7 +49,18 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "none"
     }
   },
-  "defaultProject": "wellesley"
+  "defaultProject": "wellesley",
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    }
+  ]
 }

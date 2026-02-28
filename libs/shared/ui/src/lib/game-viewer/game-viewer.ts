@@ -2,7 +2,7 @@ import { Component, input, signal, computed, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Diamond } from '../diamond/diamond';
-import { PlaySnapshot, BaseRunners } from '../../lib/types';
+import { PlaySnapshot, BaseRunners } from '@ws/stats-core';
 
 @Component({
   selector: 'ws-game-viewer',

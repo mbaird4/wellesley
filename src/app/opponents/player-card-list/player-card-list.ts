@@ -1,7 +1,7 @@
 import { Component, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { OpponentDisplayRow, SortKey, SortDir } from '../opponent-types';
-import { formatWoba, wobaGradientStyle, abbreviateClassYear } from '../../../lib/woba-display';
+import { OpponentDisplayRow, SortKey, SortDir } from '@ws/data-access';
+import { formatWoba, wobaGradientStyle, abbreviateClassYear } from '@ws/stats-core';
 import { PlayerDetail } from '../player-detail/player-detail';
 
 @Component({

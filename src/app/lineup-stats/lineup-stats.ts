@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SoftballStatsService, ResultRow, GameWithSnapshots, BaseRunnerRow, BaseSituation } from '../softball-stats.service';
-import { GameViewer } from '../game-viewer/game-viewer';
+import { SoftballStatsService, ResultRow, GameWithSnapshots, BaseRunnerRow, BaseSituation } from '@ws/data-access';
+import { GameViewer } from '@ws/shared/ui';
 
 @Component({
   selector: 'ws-lineup-stats',

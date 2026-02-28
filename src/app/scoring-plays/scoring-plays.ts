@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SoftballStatsService } from '../softball-stats.service';
-import { ScoringPlay, ScoringPlaySummary, GameScoringPlays, SacBuntSummary, BaseSituation } from '../../lib/types';
+import { SoftballStatsService } from '@ws/data-access';
+import { ScoringPlay, ScoringPlaySummary, GameScoringPlays, SacBuntSummary, BaseSituation } from '@ws/stats-core';
 
 interface PlayerScoringBreakdown {
   name: string;

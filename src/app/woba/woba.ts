@@ -1,17 +1,17 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { WobaDataService } from './woba-data.service';
+import { WobaDataService } from '@ws/data-access';
 import {
   PlayerWoba,
   PlayerCumulativeWoba,
-} from '../../lib/types';
+} from '@ws/stats-core';
 import {
   computePlayerSeasonWobas,
   computePlayerCumulativeWobas,
   getWobaTier,
-} from '../../lib/woba';
-import { formatWoba, tierClass, wobaGradientStyle } from '../../lib/woba-display';
+} from '@ws/stats-core';
+import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
 
 export interface TeamGameColumn {
   date: string;

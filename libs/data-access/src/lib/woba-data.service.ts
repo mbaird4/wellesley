@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, from } from 'rxjs';
-import { WobaSeasonData } from '../../lib/types';
+import { WobaSeasonData } from '@ws/stats-core';
 
 @Injectable({
   providedIn: 'root',

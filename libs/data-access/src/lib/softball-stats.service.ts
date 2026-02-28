@@ -7,7 +7,7 @@ import {
 } from './softball-processor.service';
 
 export type { ProcessedStatsWithSnapshots } from './softball-processor.service';
-export type { ResultRow, GameResult, GameWithSnapshots, BaseRunnerRow, BaseSituation, ScoringPlay, ScoringPlayType, ScoringPlaySummary, GameScoringPlays, SacBuntOutcome, SacBuntSummary } from '../lib/types';
+export type { ResultRow, GameResult, GameWithSnapshots, BaseRunnerRow, BaseSituation, ScoringPlay, ScoringPlayType, ScoringPlaySummary, GameScoringPlays, SacBuntOutcome, SacBuntSummary } from '@ws/stats-core';
 
 @Injectable({
   providedIn: 'root',

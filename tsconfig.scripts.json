@@ -8,7 +8,11 @@
     "strict": true,
     "outDir": "./dist/scripts",
     "lib": ["es2022"],
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@ws/stats-core": ["libs/stats-core/src/index.ts"]
+    }
   },
   "include": ["scripts/**/*.ts"]
 }
