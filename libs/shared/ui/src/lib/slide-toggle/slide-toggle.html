@@ -1,0 +1,13 @@
+<button
+  type="button"
+  role="switch"
+  [attr.aria-checked]="checked()"
+  class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-none transition-colors duration-200"
+  [class]="checked() ? 'bg-brand-lighter' : 'bg-content-dim'"
+  (click)="toggle()"
+>
+  <span
+    class="pointer-events-none inline-block h-4 w-4 translate-y-0.5 rounded-full bg-white shadow-sm transition-transform duration-200"
+    [class]="checked() ? 'translate-x-4.5!' : 'translate-x-0.5'"
+  ></span>
+</button>

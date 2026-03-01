@@ -14,6 +14,12 @@ import type {
   ScoringPlaySummary,
 } from '@ws/stats-core';
 import { ScoringPlay } from '@ws/stats-core';
+import {
+  FormatOutsPipe,
+  FormatPlayTypePipe,
+  FormatSituationPipe,
+  IsEmptyPipe,
+} from '@ws/shared/ui';
 
 interface PlayerScoringBreakdown {
   name: string;
@@ -29,6 +35,10 @@ interface PlayerScoringBreakdown {
   imports: [
     CommonModule,
     FormsModule,
+    FormatOutsPipe,
+    FormatPlayTypePipe,
+    FormatSituationPipe,
+    IsEmptyPipe,
   ],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
@@ -127,29 +137,6 @@ export class ScoringPlays {
     this.expandedGame = this.expandedGame === index ? null : index;
   }
 
-  formatType(type: string): string {
-    const labels: Record<string, string> = {
-      homer: 'Home Run',
-      triple: 'Triple',
-      double: 'Double',
-      single: 'Single',
-      bunt_single: 'Bunt Single',
-      sac_fly: 'Sac Fly',
-      sac_bunt: 'Sac Bunt',
-      walk: 'Walk',
-      hbp: 'Hit By Pitch',
-      wild_pitch: 'Wild Pitch',
-      passed_ball: 'Passed Ball',
-      stolen_base: 'Stolen Base',
-      fielders_choice: "Fielder's Choice",
-      error: 'Error',
-      productive_out: 'Productive Out',
-      unknown: 'Unknown',
-    };
-
-    return labels[type] || type;
-  }
-
   isBuntRelated(type: string): boolean {
     return type === 'bunt_single' || type === 'sac_bunt';
   }
@@ -205,26 +192,28 @@ export class ScoringPlays {
       { rbis: number; byType: Record<string, number> }
     >();
 
-    games.flatMap((game) => game.plays).forEach((play) => {
-      if (play.runnerName) {
-        const r = runnerMap.get(play.runnerName) || {
-          runsScored: 0,
-          byType: {},
-        };
-        r.runsScored++;
-        r.byType[play.scoringPlayType] =
-          (r.byType[play.scoringPlayType] || 0) + 1;
-        runnerMap.set(play.runnerName, r);
-      }
+    games
+      .flatMap((game) => game.plays)
+      .forEach((play) => {
+        if (play.runnerName) {
+          const r = runnerMap.get(play.runnerName) || {
+            runsScored: 0,
+            byType: {},
+          };
+          r.runsScored++;
+          r.byType[play.scoringPlayType] =
+            (r.byType[play.scoringPlayType] || 0) + 1;
+          runnerMap.set(play.runnerName, r);
+        }
 
-      if (play.batterName) {
-        const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
-        b.rbis++;
-        b.byType[play.scoringPlayType] =
-          (b.byType[play.scoringPlayType] || 0) + 1;
-        batterMap.set(play.batterName, b);
-      }
-    });
+        if (play.batterName) {
+          const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
+          b.rbis++;
+          b.byType[play.scoringPlayType] =
+            (b.byType[play.scoringPlayType] || 0) + 1;
+          batterMap.set(play.batterName, b);
+        }
+      });
 
     // Merge into unified player list
     const allNames = new Set([...runnerMap.keys(), ...batterMap.keys()]);
@@ -237,25 +226,6 @@ export class ScoringPlays {
         rbiByType: batterMap.get(name)?.byType || {},
       }))
       .sort((a, b) => b.runsScored + b.rbis - (a.runsScored + a.rbis));
-  }
-
-  formatSituation(situation: string): string {
-    const labels: Record<string, string> = {
-      empty: 'Bases Empty',
-      first: 'Runner on 1st',
-      second: 'Runner on 2nd',
-      third: 'Runner on 3rd',
-      first_second: '1st & 2nd',
-      first_third: '1st & 3rd',
-      second_third: '2nd & 3rd',
-      loaded: 'Bases Loaded',
-    };
-
-    return labels[situation] || situation;
-  }
-
-  formatOuts(outs: number): string {
-    return outs === 1 ? '1 Out' : `${outs} Outs`;
   }
 
   private buildScenarioBreakdowns(games: GameScoringPlays[]): void {

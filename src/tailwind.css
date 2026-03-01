@@ -115,6 +115,16 @@
   @apply py-2 md:py-3;
 }
 
+@utility disabled {
+  @apply cursor-not-allowed opacity-40;
+}
+@utility gradient-light {
+  @apply from-brand-light to-brand bg-linear-to-br;
+}
+@utility gradient-lighter {
+  @apply from-brand-lighter to-brand bg-linear-to-br;
+}
+
 @layer components {
   /* ── Shared Card ── */
   .stats-section {
@@ -128,7 +138,7 @@
     @apply border-line-strong bg-surface-elevated text-content min-w-[100px] cursor-pointer rounded-lg border px-4 py-2 font-[inherit] text-[1.05rem] transition-[border-color,box-shadow];
 
     &:disabled {
-      @apply cursor-not-allowed opacity-40;
+      @apply disabled;
     }
 
     &:focus {
@@ -143,12 +153,7 @@
 
   /* ── Buttons (hover/active/disabled states) ── */
   .load-button {
-    @apply cursor-pointer rounded-lg border-none px-5 py-2 font-[inherit] text-base font-medium text-white transition-[transform,box-shadow,opacity];
-    background: linear-gradient(
-      135deg,
-      var(--color-brand-light),
-      var(--color-brand)
-    );
+    @apply gradient-light cursor-pointer rounded-lg border-none px-5 py-2 font-[inherit] text-base font-medium text-white transition-[transform,box-shadow,opacity];
     box-shadow: 0 2px 8px var(--color-brand-glow);
 
     &:hover:not(:disabled) {
@@ -161,7 +166,7 @@
     }
 
     &:disabled {
-      @apply translate-y-0 cursor-not-allowed opacity-40;
+      @apply translate-y-0 disabled;
     }
   }
 
@@ -177,7 +182,7 @@
     }
 
     &:disabled {
-      @apply translate-y-0 cursor-not-allowed opacity-40;
+      @apply translate-y-0 disabled;
     }
   }
 
@@ -202,7 +207,7 @@
     tbody tr {
       @apply transition-[background];
 
-      &:hover {
+      &.player-row:hover {
         @apply bg-surface-hover;
       }
 
@@ -409,19 +414,13 @@
     @apply border-l-[3px] border-l-[rgba(250,204,21,0.5)];
   }
 
-  .bunt-chip {
-    background: rgba(250, 204, 21, 0.15) !important;
-    color: #fde047 !important;
-    border-color: rgba(250, 204, 21, 0.3) !important;
-  }
-
   .scoring-table {
     td:last-child {
-      @apply text-right tabular-nums;
+      @apply tabular-nums;
     }
 
     td:nth-child(2) {
-      @apply text-center font-semibold tabular-nums;
+      @apply font-semibold tabular-nums;
     }
   }
 
@@ -431,14 +430,18 @@
 
   /* ── Game viewer (interactive states) ── */
   .filter-btn {
-    @apply border-line-strong bg-surface-card text-content-secondary cursor-pointer rounded-md border px-2 py-0.5 text-xs transition-all;
+    @apply inline-flex items-center border-line-strong text-content-secondary cursor-pointer rounded-md border px-2 py-0.5 text-xs transition-all;
 
-    &:hover {
+    &:hover:not(:disabled) {
       @apply bg-brand-bg border-brand;
     }
 
     &.active {
-      @apply bg-brand border-brand text-white;
+      @apply border-brand-light bg-brand-light text-white;
+    }
+
+    &:disabled {
+      @apply disabled;
     }
   }
 
@@ -446,7 +449,7 @@
     @apply cursor-pointer rounded-md px-4 py-1 text-xs font-semibold transition-all;
 
     &:disabled {
-      @apply cursor-not-allowed opacity-40;
+      @apply disabled;
     }
   }
 
@@ -498,7 +501,7 @@
     }
 
     &:disabled {
-      @apply cursor-not-allowed opacity-40;
+      @apply disabled;
     }
   }
 }

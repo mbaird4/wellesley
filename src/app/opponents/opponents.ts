@@ -51,7 +51,7 @@ export class Opponents {
     { slug: 'coastguard', name: 'Coast Guard' },
     { slug: 'clark', name: 'Clark' },
     { slug: 'babson', name: 'Babson' },
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   readonly selectedSlug = signal(this.teams[0].slug);
   readonly teamData = signal<OpponentTeam | null>(null);

@@ -1,0 +1,157 @@
+<svg viewBox="0 80 700 410" class="spray-svg" xmlns="http://www.w3.org/2000/svg">
+  <!-- Foul lines (behind zones) -->
+  <path [attr.d]="foulLineRF" class="foul-line" />
+  <path [attr.d]="foulLineLF" class="foul-line" />
+
+  <!-- Outfield zones (arc top, straight chord bottom) -->
+  @for (z of ofZones; track z.zone) {
+    <path
+      [attr.d]="z.path"
+      [attr.fill]="zoneFill(z.zone)"
+      [class.highlighted]="isHighlighted(z.zone)"
+      class="zone"
+      (mouseenter)="onZoneHover(z.zone)"
+      (mouseleave)="onZoneHover(null)"
+      (click)="onZoneClick(z.zone)"
+    />
+  }
+
+  <!-- Infield zones (all straight edges, no curves) -->
+  @for (z of ifZones; track z.zone) {
+    <path
+      [attr.d]="z.path"
+      [attr.fill]="zoneFill(z.zone)"
+      [class.highlighted]="isHighlighted(z.zone)"
+      class="zone"
+      (mouseenter)="onZoneHover(z.zone)"
+      (mouseleave)="onZoneHover(null)"
+      (click)="onZoneClick(z.zone)"
+    />
+  }
+
+  <!-- Plate bunt zones -->
+  @for (z of plateZones; track z.zone) {
+    <path
+      [attr.d]="z.path"
+      [attr.fill]="zoneFill(z.zone)"
+      [class.highlighted]="isHighlighted(z.zone)"
+      class="zone"
+      (mouseenter)="onZoneHover(z.zone)"
+      (mouseleave)="onZoneHover(null)"
+      (click)="onZoneClick(z.zone)"
+    />
+  }
+
+  <!-- Outfield arc (the ONLY curve in the field) -->
+  <path [attr.d]="fieldOutline" class="field-line" />
+
+  <!-- Radial dividers between zones -->
+  @for (d of dividers; track $index) {
+    <path [attr.d]="d" class="divider" />
+  }
+
+  <!-- Home plate -->
+  <polygon
+    [attr.points]="(homeX-6)+','+(homeY-12)+' '+(homeX-6)+','+(homeY-6)+' '+homeX+','+(homeY)+' '+(homeX+6)+','+(homeY-6)+' '+(homeX+6)+','+(homeY-12)"
+    class="home-plate"
+  />
+
+  <!-- Outfield zone labels -->
+  @for (z of ofZones; track z.zone) {
+    @if (zoneCount(z.zone)) {
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY - 10"
+        [attr.fill]="zoneLabelFill(z.zone)"
+        [attr.text-anchor]="zoneLabelAnchor(z.zone)"
+        class="zone-label"
+      >
+        {{ zoneLabel(z.zone) }}
+      </text>
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY + 6"
+        [attr.fill]="zoneTextFill(z.zone)"
+        [attr.text-anchor]="zoneLabelAnchor(z.zone)"
+        class="zone-count"
+      >
+        {{ zoneCount(z.zone) }}
+      </text>
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY + 20"
+        [attr.fill]="zoneLabelFill(z.zone)"
+        [attr.text-anchor]="zoneLabelAnchor(z.zone)"
+        class="zone-detail"
+      >
+        {{ zoneDetail(z.zone) }}
+      </text>
+    }
+  }
+
+  <!-- Infield zone labels -->
+  @for (z of ifZones; track z.zone) {
+    @if (zoneCount(z.zone)) {
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY - 4"
+        [attr.fill]="zoneLabelFill(z.zone)"
+        class="zone-label zone-label-sm"
+      >
+        {{ zoneLabel(z.zone) }}
+      </text>
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY + 10"
+        [attr.fill]="zoneTextFill(z.zone)"
+        class="zone-count zone-count-sm"
+      >
+        {{ zoneCount(z.zone) }}
+      </text>
+    }
+  }
+
+  <!-- Plate zone labels (count only) -->
+  @for (z of plateZones; track z.zone) {
+    @if (zoneCount(z.zone)) {
+      <text
+        [attr.x]="z.labelX"
+        [attr.y]="z.labelY + 4"
+        [attr.fill]="zoneTextFill(z.zone)"
+        class="zone-count zone-count-xs"
+      >
+        {{ zoneCount(z.zone) }}
+      </text>
+    }
+  }
+
+  <!-- Hover grow overlay + tooltip -->
+  @if (tooltipData(); as tt) {
+    <g class="zone-hover-overlay">
+      <!-- Scaled duplicate path rendered on top -->
+      <path
+        [attr.d]="tt.path"
+        [attr.fill]="tt.fill"
+        [attr.transform]="tt.scaleTransform"
+        class="zone-hover-path"
+      />
+
+      <!-- Tooltip background + text -->
+      <g [attr.transform]="'translate(' + tt.tooltipX + ',' + tt.tooltipY + ')'">
+        <rect
+          x="-52" y="-38"
+          width="104" height="52"
+          rx="6"
+          class="tooltip-bg"
+        />
+        <text x="0" y="-22" class="tooltip-title">{{ tt.label }}</text>
+        <text x="0" y="-8" class="tooltip-stat">
+          {{ tt.total }} balls &middot; {{ tt.avg }} AVG
+        </text>
+        <text x="0" y="6" class="tooltip-detail">
+          {{ tt.hits }}H / {{ tt.outs }}O &middot; {{ tt.pct }}
+        </text>
+      </g>
+    </g>
+  }
+</svg>

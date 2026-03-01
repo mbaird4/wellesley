@@ -1,0 +1,46 @@
+<!-- Outcome toggles -->
+<div class="filter-group">
+  <span class="filter-group-label">Result</span>
+  <ws-button-toggle
+    [options]="outcomeOptions"
+    [value]="outcomeValue()"
+    (valueChange)="onOutcomeChange($event)"
+  />
+</div>
+
+<!-- Contact type toggles -->
+<div class="filter-group">
+  <span class="filter-group-label">Contact</span>
+  <ws-button-toggle
+    [options]="contactOptions"
+    [value]="contactValue()"
+    [disabledValues]="disabledContactTypes()"
+    (valueChange)="onContactChange($event)"
+  />
+</div>
+
+<!-- Contact quality toggles -->
+<div class="filter-group">
+  <span class="filter-group-label">Quality</span>
+  <ws-button-toggle
+    [options]="qualityOptions"
+    [value]="qualityValue()"
+    (valueChange)="onQualityChange($event)"
+  />
+</div>
+
+<!-- Out count toggles -->
+<div class="filter-group">
+  <span class="filter-group-label">Outs</span>
+  <ws-button-toggle
+    [options]="outCountOptions"
+    [value]="outCountValue()"
+    (valueChange)="onOutCountChange($event)"
+  />
+</div>
+
+<!-- RISP slide toggle -->
+<div class="filter-group">
+  <span class="filter-group-label">RISP</span>
+  <ws-slide-toggle [checked]="rispActive()" (checkedChange)="toggleRisp()" class="p-1"/>
+</div>

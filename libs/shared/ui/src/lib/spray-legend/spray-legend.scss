@@ -1,0 +1,13 @@
+.legend-gradient {
+  width: 100px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid var(--color-line);
+  background: linear-gradient(
+    to right,
+    hsl(140, 35%, 88%),
+    hsl(140, 50%, 60%),
+    hsl(140, 65%, 40%),
+    hsl(140, 70%, 30%)
+  );
+}

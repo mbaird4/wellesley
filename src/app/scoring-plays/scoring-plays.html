@@ -75,7 +75,7 @@
         <tbody>
           @for (row of typesWithCounts; track row.type) {
             <tr [class.bunt-highlight]="isBuntRelated(row.type)">
-              <td>{{ formatType(row.type) }}</td>
+              <td>{{ row.type | formatPlayType }}</td>
               <td>{{ row.count }}</td>
               <td>{{ row.pct | number: '1.1-1' }}%</td>
             </tr>
@@ -97,7 +97,7 @@
             <tbody>
               @for (row of byOuts; track row.outs) {
                 <tr>
-                  <td>{{ formatOuts(row.outs) }}</td>
+                  <td>{{ row.outs | formatOuts }}</td>
                   <td>{{ row.count }}</td>
                   <td>{{ row.pct | number: '1.1-1' }}%</td>
                 </tr>
@@ -118,7 +118,7 @@
             <tbody>
               @for (row of bySituation; track row.situation) {
                 <tr>
-                  <td>{{ formatSituation(row.situation) }}</td>
+                  <td>{{ row.situation | formatSituation }}</td>
                   <td>{{ row.count }}</td>
                   <td>{{ row.pct | number: '1.1-1' }}%</td>
                 </tr>
@@ -141,10 +141,10 @@
         <tbody>
           @for (row of byScenario; track $index) {
             <tr>
-              <td>{{ formatSituation(row.situation) }}</td>
-              <td>{{ formatOuts(row.outs) }}</td>
-              <td>{{ row.count }}</td>
-              <td>{{ row.pct | number: '1.1-1' }}%</td>
+              <td class="text-start">{{ row.situation | formatSituation }}</td>
+              <td class="text-start">{{ row.outs | formatOuts }}</td>
+              <td class="text-start">{{ row.count }}</td>
+              <td class="text-start">{{ row.pct | number: '1.1-1' }}%</td>
             </tr>
           }
         </tbody>
@@ -338,10 +338,10 @@
                       >
                         <td>{{ play.inning }}</td>
                         <td>{{ play.outs }}</td>
-                        <td>{{ formatSituation(play.baseSituation) }}</td>
+                        <td>{{ play.baseSituation | formatSituation }}</td>
                         <td>{{ play.runnerName || '—' }}</td>
                         <td class="font-medium whitespace-nowrap">
-                          {{ formatType(play.scoringPlayType) }}
+                          {{ play.scoringPlayType | formatPlayType }}
                         </td>
                         <td>{{ play.batterName || '—' }}</td>
                         <td
@@ -365,38 +365,30 @@
         <thead>
           <tr>
             <th>Player</th>
-            <th>Runs Scored</th>
             <th>RBI</th>
-            <th>Top Scoring Types</th>
             <th>Top RBI Types</th>
+            <th>Runs Scored</th>
           </tr>
         </thead>
         <tbody>
           @for (p of playerBreakdowns; track p.name) {
             <tr>
               <td>{{ p.name }}</td>
-              <td>{{ p.runsScored }}</td>
               <td>{{ p.rbis }}</td>
-              <td class="flex flex-wrap gap-[0.3rem]">
-                @for (entry of p.scoredByType | keyvalue; track entry.key) {
-                  <span
-                    class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap"
-                    [class.bunt-chip]="isBuntRelated(entry.key)"
-                  >
-                    {{ formatType(entry.key) }}: {{ entry.value }}
-                  </span>
-                }
-              </td>
               <td class="flex flex-wrap gap-[0.3rem]">
                 @for (entry of p.rbiByType | keyvalue; track entry.key) {
                   <span
                     class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap"
-                    [class.bunt-chip]="isBuntRelated(entry.key)"
                   >
-                    {{ formatType(entry.key) }}: {{ entry.value }}
+                    {{ entry.key | formatPlayType }}: {{ entry.value }}
                   </span>
                 }
+
+                @if (p.rbiByType | isEmpty) {
+                  <span class="inline-block px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap text-transparent">.</span>
+                }
               </td>
+              <td>{{ p.runsScored }}</td>
             </tr>
           }
         </tbody>

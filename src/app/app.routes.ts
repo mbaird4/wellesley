@@ -20,5 +20,10 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./opponents/opponents').then((m) => m.Opponents),
   },
+  {
+    path: 'spray-chart',
+    loadComponent: () =>
+      import('./spray-chart/spray-chart').then((m) => m.SprayChart),
+  },
   { path: '**', redirectTo: '' },
 ];

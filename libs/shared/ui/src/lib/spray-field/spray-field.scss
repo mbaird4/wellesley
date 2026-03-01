@@ -1,0 +1,117 @@
+.spray-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.foul-line {
+  stroke: var(--color-line-strong);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.field-line {
+  stroke: var(--color-line-strong);
+  stroke-width: 2;
+  fill: none;
+}
+
+.divider {
+  stroke: var(--color-line);
+  stroke-width: 0.5;
+  fill: none;
+  opacity: 0.5;
+}
+
+.zone {
+  stroke: rgba(0, 0, 0, 0.15);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+
+  &:hover,
+  &.highlighted {
+    opacity: 0.8;
+  }
+}
+
+.home-plate {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+// Text fills are set dynamically via [attr.fill] to adapt to zone background color.
+.zone-label {
+  font-size: 11px;
+  font-weight: 500;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+.zone-label-sm {
+  font-size: 9px;
+}
+
+.zone-count {
+  font-size: 15px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+.zone-count-sm {
+  font-size: 12px;
+}
+
+.zone-count-xs {
+  font-size: 10px;
+}
+
+.zone-detail {
+  font-size: 10px;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+// --- Hover overlay ---
+
+.zone-hover-overlay {
+  pointer-events: none;
+}
+
+.zone-hover-path {
+  stroke: rgba(0, 0, 0, 0.3);
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.tooltip-bg {
+  fill: rgba(20, 20, 35, 0.92);
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 1;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.tooltip-title {
+  font-size: 11px;
+  font-weight: 700;
+  fill: #fff;
+  text-anchor: middle;
+}
+
+.tooltip-stat {
+  font-size: 10px;
+  font-weight: 500;
+  fill: rgba(255, 255, 255, 0.85);
+  text-anchor: middle;
+}
+
+.tooltip-detail {
+  font-size: 9px;
+  fill: rgba(255, 255, 255, 0.6);
+  text-anchor: middle;
+}

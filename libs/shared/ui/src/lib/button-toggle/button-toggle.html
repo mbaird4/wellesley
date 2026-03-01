@@ -1,0 +1,28 @@
+@for (opt of options(); track opt.value) {
+  <button
+    class="filter-btn inline-grid!"
+    [class.active]="isActive(opt)"
+    [disabled]="isDisabled(opt)"
+    (click)="toggle(opt)"
+  >
+    <!-- Invisible sizer: always includes checkmark space to lock width -->
+    <span class="invisible col-start-1 row-start-1 inline-flex items-center">
+      <svg class="mr-0.5 h-3 w-3 shrink-0" viewBox="0 0 12 12">
+        <polyline points="2.5 6 5 8.5 9.5 3.5" />
+      </svg>
+      {{ opt.label }}
+    </span>
+    <!-- Visible content: animates checkmark in/out, centers within fixed width -->
+    <span class="col-start-1 row-start-1 inline-flex items-center justify-center">
+      <svg
+        class="h-3 shrink-0 overflow-hidden transition-all duration-200"
+        [class]="isActive(opt) ? 'w-3 opacity-100 mr-0.5' : 'w-0 opacity-0'"
+        viewBox="0 0 12 12" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      >
+        <polyline points="2.5 6 5 8.5 9.5 3.5" />
+      </svg>
+      {{ opt.label }}
+    </span>
+  </button>
+}

@@ -44,6 +44,7 @@ Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley Col
 
 - **Small, focused components** — Favor many small components over fewer large ones. Extract sub-sections into their own components early.
 - **Signals over functions in templates** — Use Angular signals (`computed`, `signal`, `input`, `output`) for reactive state. Avoid calling functions directly in templates; derive values via `computed()` signals instead.
+- **Pipes for value formatting** — Never use component methods to format/transform values in templates. Create shared pipes in `libs/shared/ui/src/lib/pipes/` instead. Label maps should be module-level constants, not declared inside functions.
 - **Reusable presentational wrappers** — Build shared layout/presentational components (cards, panels, stat blocks) that accept content via projection or inputs. Keep them stateless and reusable across routes.
 - **Mobile-first mindset** — Design components and layouts with mobile responsiveness in mind. Use Tailwind responsive utilities (`sm:`, `md:`, `lg:`) and avoid fixed-width layouts.
 - **Components over repeated CSS** — Use Angular components for presentational patterns (badges, stat cells, cards) instead of repeating inline markup. Keep components stateless with inputs/outputs.
