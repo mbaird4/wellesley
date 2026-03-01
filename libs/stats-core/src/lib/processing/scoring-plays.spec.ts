@@ -1,5 +1,5 @@
+import type { BaseRunners, ScoringPlay } from '../models';
 import { extractScoringPlays } from './scoring-plays';
-import type { BaseRunners, ScoringPlay } from './types';
 
 // --- Helpers ---
 

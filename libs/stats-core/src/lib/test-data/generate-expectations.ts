@@ -8,13 +8,13 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
+import type { ScoringPlayType } from '../models';
 import {
   classifyPlay,
   parseBatterAction,
   parseRunnerSubEvent,
-} from '../parse-play';
-import { mapBatterResultToScoringType } from '../scoring-plays';
-import type { ScoringPlayType } from '../types';
+} from '../parsing/parse-play';
+import { mapBatterResultToScoringType } from '../processing/scoring-plays';
 
 interface PatternEntry {
   pattern: string;

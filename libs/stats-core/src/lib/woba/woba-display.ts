@@ -1,4 +1,4 @@
-import type { WobaTier } from './types';
+import type { WobaTier } from '../models';
 
 export function formatWoba(value: number): string {
   return value.toFixed(3).replace(/^0/, '');

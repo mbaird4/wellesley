@@ -1,4 +1,4 @@
-import type { BaseRunners, GameState } from './types';
+import type { BaseRunners, GameState } from '../models';
 
 // Regex that handles initials ("A. Delgado"), full names ("Andrea Delgado"),
 // hyphenated names ("M. Jo-Laudat"), and multi-word last names

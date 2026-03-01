@@ -1,11 +1,11 @@
+import type { ScoringPlayType } from '../models';
+import { mapBatterResultToScoringType } from '../processing/scoring-plays';
+import expectations from '../test-data/play-pattern-expectations.json';
 import {
   classifyPlay,
   parseBatterAction,
   parseRunnerSubEvent,
 } from './parse-play';
-import { mapBatterResultToScoringType } from './scoring-plays';
-import expectations from './test-data/play-pattern-expectations.json';
-import type { ScoringPlayType } from './types';
 
 interface RunnerSubEventExpectation {
   playerName: string | null;

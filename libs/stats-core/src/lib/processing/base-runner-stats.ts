@@ -4,7 +4,7 @@ import type {
   BaseSituation,
   OutBreakdown,
   PlaySnapshot,
-} from './types';
+} from '../models';
 
 const ALL_SITUATIONS: BaseSituation[] = [
   'empty',

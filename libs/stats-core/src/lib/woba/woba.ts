@@ -4,8 +4,7 @@ import type {
   PlayerSeasonStats,
   PlayerWoba,
   WobaTier,
-} from './types';
-import { PlayerGameStats } from './types';
+} from '../models';
 
 // wOBA linear weights
 export const WOBA_WEIGHT_BB = 0.5;

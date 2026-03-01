@@ -1,13 +1,13 @@
-import { computeBaseRunnerStats } from './base-runner-stats';
-import { classifyPlay, getPlayerNameFromText, processPlay } from './parse-play';
-import { extractScoringPlays } from './scoring-plays';
 import type {
   BaseRunners,
   GameData,
   GameState,
   GameWithSnapshots,
   PlaySnapshot,
-} from './types';
+} from '../models';
+import { classifyPlay, getPlayerNameFromText, processPlay } from '../parsing/parse-play';
+import { computeBaseRunnerStats } from './base-runner-stats';
+import { extractScoringPlays } from './scoring-plays';
 
 function cloneBases(bases: BaseRunners): BaseRunners {
   return { first: bases.first, second: bases.second, third: bases.third };
