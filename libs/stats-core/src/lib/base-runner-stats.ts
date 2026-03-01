@@ -18,10 +18,9 @@ const ALL_SITUATIONS: BaseSituation[] = [
 ];
 
 function emptyRow(slot: number): BaseRunnerRow {
-  const situations = {} as Record<BaseSituation, OutBreakdown>;
-  for (const s of ALL_SITUATIONS) {
-    situations[s] = [0, 0, 0];
-  }
+  const situations = Object.fromEntries(
+    ALL_SITUATIONS.map((s) => [s, [0, 0, 0] as OutBreakdown])
+  ) as Record<BaseSituation, OutBreakdown>;
 
   return { lineupSlot: slot, situations };
 }
@@ -67,28 +66,27 @@ export function computeBaseRunnerStats(
 ): BaseRunnerRow[] {
   const rows = new Map<number, BaseRunnerRow>();
 
-  for (const snap of snapshots) {
-    if (!snap.isPlateAppearance || snap.lineupSlot === null) {
-      continue;
-    }
+  snapshots
+    .filter((snap) => snap.isPlateAppearance && snap.lineupSlot !== null)
+    .forEach((snap) => {
+      const slot = snap.lineupSlot!;
 
-    const slot = snap.lineupSlot;
-    if (!rows.has(slot)) {
-      rows.set(slot, emptyRow(slot));
-    }
+      if (!rows.has(slot)) {
+        rows.set(slot, emptyRow(slot));
+      }
 
-    const row = rows.get(slot)!;
-    const situation = classifyBaseSituation(snap.basesBefore);
-    const outs = snap.outsBefore as 0 | 1 | 2;
-    row.situations[situation][outs]++;
-  }
+      const row = rows.get(slot)!;
+      const situation = classifyBaseSituation(snap.basesBefore);
+      const outs = snap.outsBefore as 0 | 1 | 2;
+      row.situations[situation][outs]++;
+    });
 
   // Ensure all 9 slots exist
-  for (let s = 1; s <= 9; s++) {
+  Array.from({ length: 9 }, (_, i) => i + 1).forEach((s) => {
     if (!rows.has(s)) {
       rows.set(s, emptyRow(s));
     }
-  }
+  });
 
   return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
 }
@@ -99,7 +97,7 @@ export function mergeBaseRunnerStats(
 ): BaseRunnerRow[] {
   const map = new Map<number, BaseRunnerRow>();
 
-  for (const row of a) {
+  a.forEach((row) => {
     map.set(row.lineupSlot, {
       lineupSlot: row.lineupSlot,
       situations: {
@@ -108,27 +106,27 @@ export function mergeBaseRunnerStats(
         ),
       } as Record<BaseSituation, OutBreakdown>,
     });
-  }
+  });
 
-  for (const row of b) {
+  b.forEach((row) => {
     if (!map.has(row.lineupSlot)) {
       map.set(row.lineupSlot, emptyRow(row.lineupSlot));
     }
 
     const target = map.get(row.lineupSlot)!;
-    for (const s of ALL_SITUATIONS) {
+    ALL_SITUATIONS.forEach((s) => {
       target.situations[s][0] += row.situations[s][0];
       target.situations[s][1] += row.situations[s][1];
       target.situations[s][2] += row.situations[s][2];
-    }
-  }
+    });
+  });
 
   // Ensure all 9 slots
-  for (let s = 1; s <= 9; s++) {
+  Array.from({ length: 9 }, (_, i) => i + 1).forEach((s) => {
     if (!map.has(s)) {
       map.set(s, emptyRow(s));
     }
-  }
+  });
 
   return Array.from(map.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
 }

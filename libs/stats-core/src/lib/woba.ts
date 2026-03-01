@@ -114,9 +114,10 @@ export function computePlayerCumulativeWobas(
     }
   >();
 
-  for (const box of boxscores) {
-    for (const ps of box.playerStats) {
+  boxscores.forEach((box) => {
+    box.playerStats.forEach((ps) => {
       let acc = playerAccum.get(ps.name);
+
       if (!acc) {
         acc = {
           ab: 0,
@@ -156,8 +157,8 @@ export function computePlayerCumulativeWobas(
         cumulativeWoba,
         tier: getWobaTier(cumulativeWoba),
       });
-    }
-  }
+    });
+  });
 
   return Array.from(playerAccum.entries())
     .map(([name, acc]) => ({ name, games: acc.games }))

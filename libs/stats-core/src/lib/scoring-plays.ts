@@ -46,8 +46,9 @@ export function extractScoringPlays(
     // Homer: batter + all runners on base score
     if (batterAction.result === 'homer') {
       // Runners on base score
-      for (const base of ['first', 'second', 'third'] as const) {
-        if (basesBefore[base]) {
+      (['first', 'second', 'third'] as const)
+        .filter((base) => basesBefore[base])
+        .forEach((base) => {
           plays.push({
             runnerName: basesBefore[base],
             scoringPlayType: 'homer',
@@ -58,8 +59,7 @@ export function extractScoringPlays(
             baseSituation,
             playText,
           });
-        }
-      }
+        });
 
       // Batter scores
       plays.push({
@@ -77,15 +77,16 @@ export function extractScoringPlays(
     }
 
     // For non-homer PAs, check runner sub-events for "scored"
-    const runnerSubEvents = subEvents.slice(1);
-    for (const sub of runnerSubEvents) {
+    subEvents.slice(1).forEach((sub) => {
       const result = parseRunnerSubEvent(sub);
+
       if (result.scored && result.playerName) {
         let type = mapBatterResultToScoringType(
           batterAction.result,
           sub,
           subEvents[0]
         );
+
         // Runner sub-event explicitly mentions error → override to 'error'
         if (sub.toLowerCase().includes('error')) {
           type = 'error';
@@ -102,7 +103,7 @@ export function extractScoringPlays(
           playText,
         });
       }
-    }
+    });
 
     // Walk/HBP with bases loaded: batter forces a run even if text doesn't have "scored" for the runner
     if (
@@ -138,7 +139,7 @@ export function extractScoringPlays(
     const outRunners = new Set<string>();
 
     // Text-based detection
-    for (const sub of subEvents) {
+    subEvents.forEach((sub) => {
       const result = parseRunnerSubEvent(sub);
       const lower = sub.toLowerCase();
 
@@ -160,43 +161,44 @@ export function extractScoringPlays(
           playText,
         });
       }
-    }
+    });
 
     // State-based fallback: runner was on base before but gone after (and not out or already detected)
-    for (const base of ['first', 'second', 'third'] as const) {
-      const runner = basesBefore[base];
-      if (!runner) {
-        continue;
-      }
+    (['first', 'second', 'third'] as const)
+      .filter((base) => basesBefore[base])
+      .filter((base) => {
+        const runner = basesBefore[base]!;
 
-      if (scoredRunners.has(runner) || outRunners.has(runner)) {
-        continue;
-      }
+        return !scoredRunners.has(runner) && !outRunners.has(runner);
+      })
+      .forEach((base) => {
+        const runner = basesBefore[base]!;
+        const stillOnBase =
+          basesAfter.first === runner ||
+          basesAfter.second === runner ||
+          basesAfter.third === runner;
 
-      const stillOnBase =
-        basesAfter.first === runner ||
-        basesAfter.second === runner ||
-        basesAfter.third === runner;
-      if (!stillOnBase) {
-        plays.push({
-          runnerName: runner,
-          scoringPlayType: 'stolen_base',
-          batterName: null,
-          lineupSlot: null,
-          inning,
-          outs: outsBefore,
-          baseSituation,
-          playText,
-        });
-      }
-    }
+        if (!stillOnBase) {
+          plays.push({
+            runnerName: runner,
+            scoringPlayType: 'stolen_base',
+            batterName: null,
+            lineupSlot: null,
+            inning,
+            outs: outsBefore,
+            baseSituation,
+            playText,
+          });
+        }
+      });
 
     return plays;
   }
 
   if (playType === 'wild_pitch') {
-    for (const sub of subEvents) {
+    subEvents.forEach((sub) => {
       const result = parseRunnerSubEvent(sub);
+
       if (result.scored && result.playerName) {
         const lower = playText.toLowerCase();
         const type: ScoringPlayType = lower.includes('passed ball')
@@ -213,7 +215,7 @@ export function extractScoringPlays(
           playText,
         });
       }
-    }
+    });
 
     return plays;
   }
@@ -274,10 +276,9 @@ export function computeSacBuntOutcomes(
 ): SacBuntOutcome[] {
   const outcomes: SacBuntOutcome[] = [];
 
-  for (let i = 0; i < snapshots.length; i++) {
-    const snap = snapshots[i];
+  snapshots.forEach((snap, i) => {
     if (!snap.isPlateAppearance) {
-      continue;
+      return;
     }
 
     // Detect sac bunt from the batter action
@@ -286,38 +287,37 @@ export function computeSacBuntOutcomes(
       .split(';')
       .map((s) => s.trim());
     const batterAction = parseBatterAction(subEvents[0]);
+
     if (batterAction.result !== 'sac_bunt') {
-      continue;
+      return;
     }
 
     // Who was on base before the bunt?
-    const runnersOnBase: string[] = [];
-    for (const base of ['first', 'second', 'third'] as const) {
-      if (snap.basesBefore[base]) {
-        runnersOnBase.push(snap.basesBefore[base]!);
-      }
-    }
+    const runnersOnBase = (['first', 'second', 'third'] as const)
+      .filter((base) => snap.basesBefore[base])
+      .map((base) => snap.basesBefore[base]!);
 
     if (runnersOnBase.length === 0) {
-      continue;
+      return;
     }
 
     // Check if those runners scored in the remainder of this inning (including this play)
     const runnersScored: string[] = [];
-    for (let j = i; j < snapshots.length; j++) {
-      if (snapshots[j].inning !== snap.inning) {
+
+    // Uses for...of with break — needs to stop at inning boundary
+    for (const future of snapshots.slice(i)) {
+      if (future.inning !== snap.inning) {
         break;
       }
 
-      for (const sp of snapshots[j].scoringPlays) {
-        if (
-          sp.runnerName &&
-          runnersOnBase.includes(sp.runnerName) &&
-          !runnersScored.includes(sp.runnerName)
-        ) {
-          runnersScored.push(sp.runnerName);
-        }
-      }
+      future.scoringPlays
+        .filter(
+          (sp) =>
+            sp.runnerName &&
+            runnersOnBase.includes(sp.runnerName) &&
+            !runnersScored.includes(sp.runnerName)
+        )
+        .forEach((sp) => runnersScored.push(sp.runnerName!));
     }
 
     outcomes.push({
@@ -328,7 +328,7 @@ export function computeSacBuntOutcomes(
       runnersOnBase,
       runnersScored,
     });
-  }
+  });
 
   return outcomes;
 }
@@ -372,7 +372,7 @@ export function computeScoringPlaySummary(
   const byRunner: Record<string, number> = {};
   const byBatter: Record<string, number> = {};
 
-  for (const play of plays) {
+  plays.forEach((play) => {
     byType[play.scoringPlayType] = (byType[play.scoringPlayType] || 0) + 1;
 
     if (play.runnerName) {
@@ -382,7 +382,7 @@ export function computeScoringPlaySummary(
     if (play.batterName) {
       byBatter[play.batterName] = (byBatter[play.batterName] || 0) + 1;
     }
-  }
+  });
 
   return {
     totalRuns: plays.length,

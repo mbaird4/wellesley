@@ -41,73 +41,71 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
   let playIndex = 0;
   const knownBatters: (string | null)[] = new Array(9).fill(null);
 
-  for (const inning of game.playByPlay) {
+  game.playByPlay.forEach((inning) => {
     gameState.outs = 0;
     gameState.baseRunners = { first: null, second: null, third: null };
 
-    for (const playText of inning.plays) {
-      if (classifyPlay(playText) === 'no_play') {
-        continue;
-      }
+    inning.plays
+      .filter((playText) => classifyPlay(playText) !== 'no_play')
+      .forEach((playText) => {
+        const basesBefore = cloneBases(gameState.baseRunners);
+        const outsBefore = gameState.outs;
+        const batterIndexBefore = gameState.batterIndex;
 
-      const basesBefore = cloneBases(gameState.baseRunners);
-      const outsBefore = gameState.outs;
-      const batterIndexBefore = gameState.batterIndex;
+        // Current batter slot is whoever is due up (before processPlay increments)
+        const currentSlot = (batterIndexBefore % 9) + 1;
 
-      // Current batter slot is whoever is due up (before processPlay increments)
-      const currentSlot = (batterIndexBefore % 9) + 1;
+        processPlay(playText, gameState);
 
-      processPlay(playText, gameState);
+        const playType = classifyPlay(playText);
+        const isPA = playType === 'plate_appearance';
+        const batterName = isPA ? getPlayerNameFromText(playText) : null;
+        // If it was a PA, the batterIndex was incremented by processPlay
+        const lineupSlot =
+          isPA && gameState.batterIndex > batterIndexBefore
+            ? (batterIndexBefore % 9) + 1
+            : null;
 
-      const playType = classifyPlay(playText);
-      const isPA = playType === 'plate_appearance';
-      const batterName = isPA ? getPlayerNameFromText(playText) : null;
-      // If it was a PA, the batterIndex was incremented by processPlay
-      const lineupSlot =
-        isPA && gameState.batterIndex > batterIndexBefore
-          ? (batterIndexBefore % 9) + 1
-          : null;
+        // Learn batter names from PAs
+        if (isPA && batterName) {
+          knownBatters[currentSlot - 1] = batterName;
+        }
 
-      // Learn batter names from PAs
-      if (isPA && batterName) {
-        knownBatters[currentSlot - 1] = batterName;
-      }
+        const basesAfter = cloneBases(gameState.baseRunners);
+        const outsAfter = gameState.outs;
 
-      const basesAfter = cloneBases(gameState.baseRunners);
-      const outsAfter = gameState.outs;
+        const scoringPlays = extractScoringPlays(
+          playText,
+          playType,
+          basesBefore,
+          basesAfter,
+          outsBefore,
+          outsAfter,
+          inning.inning,
+          batterName,
+          lineupSlot
+        );
 
-      const scoringPlays = extractScoringPlays(
-        playText,
-        playType,
-        basesBefore,
-        basesAfter,
-        outsBefore,
-        outsAfter,
-        inning.inning,
-        batterName,
-        lineupSlot
-      );
+        snapshots.push({
+          playIndex,
+          inning: inning.inning,
+          playText,
+          playType,
+          basesBefore,
+          outsBefore,
+          basesAfter,
+          outsAfter,
+          lineupSlot,
+          batterName,
+          isPlateAppearance: isPA,
+          currentBatterName: knownBatters[currentSlot - 1],
+          currentBatterSlot: currentSlot,
+          scoringPlays,
+        });
 
-      snapshots.push({
-        playIndex,
-        inning: inning.inning,
-        playText,
-        playType,
-        basesBefore,
-        outsBefore,
-        basesAfter,
-        outsAfter,
-        lineupSlot,
-        batterName,
-        isPlateAppearance: isPA,
-        currentBatterName: knownBatters[currentSlot - 1],
-        currentBatterSlot: currentSlot,
-        scoringPlays,
+        playIndex++;
       });
-
-      playIndex++;
-    }
-  }
+  });
 
   // Build per-game ResultRow[]
   const gameRows = Array.from(gameState.plateAppearances.entries())

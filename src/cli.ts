@@ -141,7 +141,7 @@ async function main() {
     }Total`
   );
   console.log('-'.repeat(35));
-  for (const r of totals) {
+  totals.forEach((r) => {
     console.log(
       String(r.lineupSlot).padEnd(6) +
         String(r.paWith0Outs).padEnd(8) +
@@ -149,7 +149,7 @@ async function main() {
         String(r.paWith2Outs).padEnd(8) +
         String(r.totalPA)
     );
-  }
+  });
 
   const totalPA = totals.reduce((s, r) => s + r.totalPA, 0);
   console.log('-'.repeat(35));

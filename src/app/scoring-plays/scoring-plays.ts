@@ -53,6 +53,9 @@ export class ScoringPlays {
   playerBreakdowns: PlayerScoringBreakdown[] = [];
   sacBuntSummary: SacBuntSummary | null = null;
   expandedGame: number | null = null;
+  typesWithCounts: { type: string; count: number; pct: number }[] = [];
+  sortedRunners: { name: string; count: number }[] = [];
+  sortedBatters: { name: string; count: number }[] = [];
 
   // Scenario breakdowns
   byOuts: { outs: number; count: number; pct: number }[] = [];
@@ -102,6 +105,9 @@ export class ScoringPlays {
         this.seasonSummary = stats.seasonScoringPlays;
         this.gameScoringPlays = stats.gameScoringPlays;
         this.sacBuntSummary = stats.sacBuntSummary;
+        this.buildTypesWithCounts();
+        this.buildSortedRunners();
+        this.buildSortedBatters();
         this.buildPlayerBreakdowns(stats.gameScoringPlays);
         this.buildScenarioBreakdowns(stats.gameScoringPlays);
         this.loading = false;
@@ -148,37 +154,43 @@ export class ScoringPlays {
     return type === 'bunt_single' || type === 'sac_bunt';
   }
 
-  getTypesWithCounts(): { type: string; count: number; pct: number }[] {
+  private buildTypesWithCounts(): void {
     if (!this.seasonSummary) {
-      return [];
+      this.typesWithCounts = [];
+
+      return;
     }
 
-    return this.typeOrder
-      .filter((t) => (this.seasonSummary!.byType[t] || 0) > 0)
+    const summary = this.seasonSummary;
+    this.typesWithCounts = this.typeOrder
+      .filter((t) => (summary.byType[t] || 0) > 0)
       .map((t) => ({
         type: t,
-        count: this.seasonSummary!.byType[t],
-        pct:
-          (this.seasonSummary!.byType[t] / this.seasonSummary!.totalRuns) * 100,
+        count: summary.byType[t],
+        pct: (summary.byType[t] / summary.totalRuns) * 100,
       }));
   }
 
-  getSortedRunners(): { name: string; count: number }[] {
+  private buildSortedRunners(): void {
     if (!this.seasonSummary) {
-      return [];
+      this.sortedRunners = [];
+
+      return;
     }
 
-    return Object.entries(this.seasonSummary.byRunner)
+    this.sortedRunners = Object.entries(this.seasonSummary.byRunner)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count);
   }
 
-  getSortedBatters(): { name: string; count: number }[] {
+  private buildSortedBatters(): void {
     if (!this.seasonSummary) {
-      return [];
+      this.sortedBatters = [];
+
+      return;
     }
 
-    return Object.entries(this.seasonSummary.byBatter)
+    this.sortedBatters = Object.entries(this.seasonSummary.byBatter)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count);
   }
@@ -193,28 +205,26 @@ export class ScoringPlays {
       { rbis: number; byType: Record<string, number> }
     >();
 
-    for (const game of games) {
-      for (const play of game.plays) {
-        if (play.runnerName) {
-          const r = runnerMap.get(play.runnerName) || {
-            runsScored: 0,
-            byType: {},
-          };
-          r.runsScored++;
-          r.byType[play.scoringPlayType] =
-            (r.byType[play.scoringPlayType] || 0) + 1;
-          runnerMap.set(play.runnerName, r);
-        }
-
-        if (play.batterName) {
-          const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
-          b.rbis++;
-          b.byType[play.scoringPlayType] =
-            (b.byType[play.scoringPlayType] || 0) + 1;
-          batterMap.set(play.batterName, b);
-        }
+    games.flatMap((game) => game.plays).forEach((play) => {
+      if (play.runnerName) {
+        const r = runnerMap.get(play.runnerName) || {
+          runsScored: 0,
+          byType: {},
+        };
+        r.runsScored++;
+        r.byType[play.scoringPlayType] =
+          (r.byType[play.scoringPlayType] || 0) + 1;
+        runnerMap.set(play.runnerName, r);
       }
-    }
+
+      if (play.batterName) {
+        const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
+        b.rbis++;
+        b.byType[play.scoringPlayType] =
+          (b.byType[play.scoringPlayType] || 0) + 1;
+        batterMap.set(play.batterName, b);
+      }
+    });
 
     // Merge into unified player list
     const allNames = new Set([...runnerMap.keys(), ...batterMap.keys()]);
@@ -260,10 +270,14 @@ export class ScoringPlays {
     }
 
     // By outs
-    const outCounts = [0, 0, 0];
-    for (const p of allPlays) {
-      outCounts[p.outs]++;
-    }
+    const outCounts = allPlays.reduce(
+      (acc, p) => {
+        acc[p.outs]++;
+
+        return acc;
+      },
+      [0, 0, 0]
+    );
 
     this.byOuts = outCounts.map((count, outs) => ({
       outs,
@@ -273,9 +287,9 @@ export class ScoringPlays {
 
     // By base situation
     const sitCounts: Record<string, number> = {};
-    for (const p of allPlays) {
+    allPlays.forEach((p) => {
       sitCounts[p.baseSituation] = (sitCounts[p.baseSituation] || 0) + 1;
-    }
+    });
 
     const sitOrder: BaseSituation[] = [
       'empty',
@@ -297,10 +311,10 @@ export class ScoringPlays {
 
     // Cross-tab: situation × outs
     const scenarioMap = new Map<string, number>();
-    for (const p of allPlays) {
+    allPlays.forEach((p) => {
       const key = `${p.baseSituation}|${p.outs}`;
       scenarioMap.set(key, (scenarioMap.get(key) || 0) + 1);
-    }
+    });
 
     this.byScenario = Array.from(scenarioMap.entries())
       .map(([key, count]) => {

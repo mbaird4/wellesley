@@ -61,6 +61,7 @@ export class Woba {
 
   playerWobas: PlayerWoba[] = [];
   cumulativeWobas: PlayerCumulativeWoba[] = [];
+  cumulativeByName = new Map<string, PlayerCumulativeWoba>();
   expandedPlayer: string | null = null;
 
   teamGameColumns: TeamGameColumn[] = [];
@@ -77,6 +78,7 @@ export class Woba {
     this.error = null;
     this.playerWobas = [];
     this.cumulativeWobas = [];
+    this.cumulativeByName = new Map();
     this.expandedPlayer = null;
     this.teamGameColumns = [];
     this.teamPlayerRows = [];
@@ -85,6 +87,9 @@ export class Woba {
       next: (data) => {
         this.playerWobas = computePlayerSeasonWobas(data.seasonStats);
         this.cumulativeWobas = computePlayerCumulativeWobas(data.boxscores);
+        this.cumulativeByName = new Map(
+          this.cumulativeWobas.map((c) => [c.name.toLowerCase(), c])
+        );
         this.buildTeamGrid();
         this.loading = false;
         this.cdr.markForCheck();
@@ -100,12 +105,6 @@ export class Woba {
 
   togglePlayer(name: string): void {
     this.expandedPlayer = this.expandedPlayer === name ? null : name;
-  }
-
-  getCumulativeForPlayer(name: string): PlayerCumulativeWoba | undefined {
-    return this.cumulativeWobas.find(
-      (c) => c.name.toLowerCase() === name.toLowerCase()
-    );
   }
 
   tierClass = tierClass;
@@ -138,26 +137,26 @@ export class Woba {
   private buildTeamGrid(): void {
     // Build unique ordered game list from cumulative data
     const gameKeys = new Map<string, TeamGameColumn>();
-    for (const player of this.cumulativeWobas) {
-      for (const g of player.games) {
+    this.cumulativeWobas.forEach((player) => {
+      player.games.forEach((g) => {
         const key = `${g.date}|${g.opponent}`;
+
         if (!gameKeys.has(key)) {
           gameKeys.set(key, { date: g.date, opponent: g.opponent });
         }
-      }
-    }
+      });
+    });
 
     this.teamGameColumns = Array.from(gameKeys.values());
 
     // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
     this.teamPlayerRows = this.cumulativeWobas.map((player) => {
-      const gameMap = new Map<string, TeamGameCell>();
-      for (const g of player.games) {
-        gameMap.set(`${g.date}|${g.opponent}`, {
-          gameWoba: g.gameWoba,
-          cumulativeWoba: g.cumulativeWoba,
-        });
-      }
+      const gameMap = new Map(
+        player.games.map((g) => [
+          `${g.date}|${g.opponent}`,
+          { gameWoba: g.gameWoba, cumulativeWoba: g.cumulativeWoba },
+        ])
+      );
 
       const seasonPlayer = this.playerWobas.find(
         (p) => p.name.toLowerCase() === player.name.toLowerCase()

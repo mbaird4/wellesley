@@ -101,12 +101,15 @@ async function fetchPage(url: string): Promise<string | null> {
       headers: HEADERS,
     });
     const html = response.data;
+
     if (!html || html.length < 1000) {
       console.warn(
         `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
       );
+
       return null;
     }
+
     return html;
   } catch (error: any) {
     console.warn(`  Failed to fetch ${url}: ${error.message}`);
@@ -116,7 +119,11 @@ async function fetchPage(url: string): Promise<string | null> {
 
 function parseYearsArg(): number[] {
   const idx = process.argv.indexOf('--years');
-  if (idx === -1 || idx + 1 >= process.argv.length) return DEFAULT_YEARS;
+
+  if (idx === -1 || idx + 1 >= process.argv.length) {
+    return DEFAULT_YEARS;
+  }
+
   return process.argv[idx + 1]
     .split(',')
     .map((s) => parseInt(s.trim(), 10))
@@ -138,7 +145,10 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI): string[] {
 
   links.each((_, element) => {
     const href = $(element).attr('href');
-    if (!href) return;
+
+    if (!href) {
+      return;
+    }
     // Resolve to full URL
     const fullUrl = href.startsWith('http')
       ? href
@@ -157,13 +167,19 @@ function parseLineup($: cheerio.CheerioAPI): Map<number, string[]> {
   $('table').each((_, table) => {
     const $table = $(table);
     const header = $table.find('caption').text() || '';
-    if (!header.includes('Wellesley')) return;
+
+    if (!header.includes('Wellesley')) {
+      return;
+    }
 
     let slot = 1;
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const cells = $row.find('td');
-      if (cells.length < 2) return;
+
+      if (cells.length < 2) {
+        return;
+      }
 
       const $nameCell = $(cells[1]);
       const cellHtml = $nameCell.html() || '';
@@ -177,7 +193,10 @@ function parseLineup($: cheerio.CheerioAPI): Map<number, string[]> {
         /^(\u00A0|\s){4,}/.test(rawText);
 
       const playerName = extractPlayerName(playerText);
-      if (!playerName) return;
+
+      if (!playerName) {
+        return;
+      }
 
       const normalized = normalizeName(playerName);
 
@@ -201,19 +220,28 @@ function parseLineup($: cheerio.CheerioAPI): Map<number, string[]> {
 function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
   const innings: PlayByPlayInning[] = [];
   const pbpTab = $('#play-by-play');
-  if (pbpTab.length === 0) return innings;
+
+  if (pbpTab.length === 0) {
+    return innings;
+  }
 
   const processedInnings = new Set<string>();
 
   pbpTab.find('table').each((_, table) => {
     const $table = $(table);
     const caption = $table.find('caption').text() || '';
-    if (!caption.toLowerCase().includes('wellesley')) return;
+
+    if (!caption.toLowerCase().includes('wellesley')) {
+      return;
+    }
 
     const inningKey = caption
       .replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '')
       .trim();
-    if (processedInnings.has(inningKey)) return;
+
+    if (processedInnings.has(inningKey)) {
+      return;
+    }
     processedInnings.add(inningKey);
 
     const plays: string[] = [];
@@ -224,13 +252,20 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
         (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (!originalText || text.includes('play description') || text.length < 5)
+      if (
+        !originalText ||
+        text.includes('play description') ||
+        text.length < 5
+      ) {
         return;
+      }
+
       if (
         text.includes('inning summary') ||
         text.match(/^\d+(st|nd|rd|th)\s+inning/i)
-      )
+      ) {
         return;
+      }
 
       plays.push(originalText);
     });
@@ -279,7 +314,9 @@ function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
     }
   });
 
-  if (!targetTable) return players;
+  if (!targetTable) {
+    return players;
+  }
 
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
@@ -293,8 +330,9 @@ function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
       !name ||
       name.toLowerCase() === 'totals' ||
       name.toLowerCase() === 'opponents'
-    )
+    ) {
       return;
+    }
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
@@ -333,7 +371,9 @@ function parseGameInfo(
   if (!date) {
     const title = $('title').text();
     const titleMatch = title.match(/on (\d{1,2}\/\d{1,2}\/\d{4})/);
-    if (titleMatch) date = titleMatch[1];
+    if (titleMatch) {
+      date = titleMatch[1];
+    }
   }
 
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
@@ -393,22 +433,37 @@ function parseSupplementaryStats(
     { label: 'SH:', field: 'sh' },
   ];
 
-  for (const { label, field } of dtDdStats) {
+  dtDdStats.forEach(({ label, field }) => {
     $('dt').each((_, dt) => {
-      if ($(dt).text().trim() !== label) return;
+      if ($(dt).text().trim() !== label) {
+        return;
+      }
+
       const dd = $(dt).next('dd');
       const ddText = dd.text().trim();
-      if (!ddText || ddText.toLowerCase() === 'none') return;
+
+      if (!ddText || ddText.toLowerCase() === 'none') {
+        return;
+      }
+
       attributeStatToPlayers(ddText, playerMap, field);
     });
-  }
+  });
 
   $('td').each((_, td) => {
     const text = $(td).text().trim();
     const hbpMatch = text.match(/^HBP:\s*(.+)$/i);
-    if (!hbpMatch) return;
+
+    if (!hbpMatch) {
+      return;
+    }
+
     const line = hbpMatch[1].trim();
-    if (line.toLowerCase() === 'none') return;
+
+    if (line.toLowerCase() === 'none') {
+      return;
+    }
+
     attributeStatToPlayers(line, playerMap, 'hbp');
   });
 }
@@ -436,16 +491,24 @@ function extractBoxscoreBatting(
     }
   });
 
-  if (!wellesleyTable) return null;
+  if (!wellesleyTable) {
+    return null;
+  }
 
   wellesleyTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const cells = $row.find('td');
-    if (cells.length < 3) return;
+
+    if (cells.length < 3) {
+      return;
+    }
 
     const playerLink = $row.find('.boxscore_player_link');
     const name = playerLink.text().trim();
-    if (!name) return;
+
+    if (!name) {
+      return;
+    }
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
@@ -517,7 +580,10 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     await delay(DELAY_MS);
 
     const html = await fetchPage(url);
-    if (!html) continue;
+
+    if (!html) {
+      continue;
+    }
 
     const $ = cheerio.load(html);
 
@@ -525,7 +591,10 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     gameDataList.push(gameData);
 
     const boxscoreData = extractBoxscoreBatting($, url);
-    if (boxscoreData) boxscoreDataList.push(boxscoreData);
+
+    if (boxscoreData) {
+      boxscoreDataList.push(boxscoreData);
+    }
   }
 
   // 4. Write JSON files

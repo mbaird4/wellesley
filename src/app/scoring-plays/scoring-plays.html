@@ -73,7 +73,7 @@
           </tr>
         </thead>
         <tbody>
-          @for (row of getTypesWithCounts(); track row.type) {
+          @for (row of typesWithCounts; track row.type) {
             <tr [class.bunt-highlight]="isBuntRelated(row.type)">
               <td>{{ formatType(row.type) }}</td>
               <td>{{ row.count }}</td>
@@ -161,7 +161,7 @@
               </tr>
             </thead>
             <tbody>
-              @for (r of getSortedRunners(); track r.name) {
+              @for (r of sortedRunners; track r.name) {
                 <tr>
                   <td>{{ r.name }}</td>
                   <td>{{ r.count }}</td>
@@ -180,7 +180,7 @@
               </tr>
             </thead>
             <tbody>
-              @for (b of getSortedBatters(); track b.name) {
+              @for (b of sortedBatters; track b.name) {
                 <tr>
                   <td>{{ b.name }}</td>
                   <td>{{ b.count }}</td>

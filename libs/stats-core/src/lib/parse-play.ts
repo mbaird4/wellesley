@@ -490,10 +490,11 @@ function handleStolenBase(playText: string, gameState: GameState): void {
     .replace(/\.$/, '')
     .split(';')
     .map((s) => s.trim());
-  for (const sub of subEvents) {
+  subEvents.forEach((sub) => {
     const playerName = getPlayerNameFromText(sub);
+
     if (!playerName) {
-      continue;
+      return;
     }
 
     const lower = sub.toLowerCase();
@@ -516,7 +517,7 @@ function handleStolenBase(playText: string, gameState: GameState): void {
       removeFromBases(gameState.baseRunners, playerName);
       placeOnBase(gameState.baseRunners, playerName, 'second');
     }
-  }
+  });
 
   checkInningEnd(gameState);
 }
@@ -529,10 +530,12 @@ function handleWildPitchOrPassedBall(
     .replace(/\.$/, '')
     .split(';')
     .map((s) => s.trim());
-  for (const sub of subEvents) {
+
+  subEvents.forEach((sub) => {
     const result = parseRunnerSubEvent(sub);
+
     if (!result.playerName) {
-      continue;
+      return;
     }
 
     if (result.isOut) {
@@ -543,7 +546,7 @@ function handleWildPitchOrPassedBall(
     } else if (result.advancedTo) {
       placeOnBase(gameState.baseRunners, result.playerName, result.advancedTo);
     }
-  }
+  });
 
   checkInningEnd(gameState);
 }
@@ -571,12 +574,10 @@ function handlePlateAppearance(playText: string, gameState: GameState): void {
   const runnerSubEvents = subEvents.slice(1);
 
   const batterName = getPlayerNameFromText(batterSubEvent);
+
   if (!batterName) {
     // Can't identify batter — process runner sub-events only
-    for (const sub of runnerSubEvents) {
-      processRunnerSubEvent(sub, gameState);
-    }
-
+    runnerSubEvents.forEach((sub) => processRunnerSubEvent(sub, gameState));
     checkInningEnd(gameState);
 
     return;
@@ -655,10 +656,7 @@ function handlePlateAppearance(playText: string, gameState: GameState): void {
   }
 
   // Process runner sub-events
-  for (const sub of runnerSubEvents) {
-    processRunnerSubEvent(sub, gameState);
-  }
-
+  runnerSubEvents.forEach((sub) => processRunnerSubEvent(sub, gameState));
   checkInningEnd(gameState);
 }
 

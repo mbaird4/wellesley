@@ -68,16 +68,14 @@ export class Opponents {
 
   readonly allYears = computed(() => {
     const data = this.teamData();
+
     if (!data) {
       return [];
     }
 
-    const yearSet = new Set<number>();
-    for (const player of data.players) {
-      for (const season of player.seasons) {
-        yearSet.add(season.year);
-      }
-    }
+    const yearSet = new Set(
+      data.players.flatMap((player) => player.seasons.map((s) => s.year))
+    );
 
     return Array.from(yearSet).sort((a, b) => a - b);
   });
@@ -125,20 +123,24 @@ export class Opponents {
       });
 
       // Build yearData map for O(1) template lookups
-      const yearData = new Map<number, YearData>();
-      for (let i = 0; i < sortedSeasons.length; i++) {
-        const s = sortedSeasons[i];
-        const cum = cumulativeByYear[i];
-        const label =
-          i === 0
-            ? `${s.year}`
-            : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
-        yearData.set(s.year, {
-          season: s,
-          cumulative: { woba: cum.woba, pa: cum.pa },
-          cumulativeLabel: label,
-        });
-      }
+      const yearData = new Map<number, YearData>(
+        sortedSeasons.map((s, i) => {
+          const cum = cumulativeByYear[i];
+          const label =
+            i === 0
+              ? `${s.year}`
+              : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
+
+          return [
+            s.year,
+            {
+              season: s,
+              cumulative: { woba: cum.woba, pa: cum.pa },
+              cumulativeLabel: label,
+            },
+          ];
+        })
+      );
 
       // Compute tier: ≥2 PA per team game (only counting seasons player was on the team)
       const playerTeamGames = sortedSeasons.reduce(
