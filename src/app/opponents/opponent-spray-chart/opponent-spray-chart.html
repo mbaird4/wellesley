@@ -1,0 +1,107 @@
+@if (loading()) {
+  <p class="text-content-muted py-card px-card text-[1.05rem]">
+    Loading spray chart data...
+  </p>
+} @else if (error()) {
+  <div
+    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+  >
+    {{ error() }}
+  </div>
+} @else if (allDataPoints().length === 0) {
+  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+    No spray chart data available for this team.
+  </div>
+} @else {
+  <ws-spray-filters
+    [players]="players()"
+    [filters]="filters()"
+    (filterChange)="onFilterChange($event)"
+    class="mb-4 shrink-0"
+  />
+
+  @if (bp.gtSm()) {
+    <!-- Desktop: player sidebar + field -->
+    <div class="flex min-h-0 flex-1">
+      <nav class="flex w-40 shrink-0 flex-col gap-0.5 overflow-y-auto">
+        <button
+          (click)="onPlayerChange('')"
+          class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+          [class]="
+            summary().playerName === null
+              ? 'bg-brand-bg text-brand-text'
+              : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+          "
+        >
+          All Players
+        </button>
+
+        @for (player of rosteredPlayers(); track $index) {
+          <button
+            (click)="onPlayerChange(player)"
+            class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+            [class]="
+              summary().playerName === player
+                ? 'bg-brand-bg text-brand-text'
+                : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+            "
+          >
+            <span class="text-content-dim mr-1 text-xs">#{{ jerseyMap()[player] }}</span>
+            {{ player }}
+          </button>
+        }
+
+        @if (nonRosteredPlayers().length > 0 && rosteredPlayers().length > 0) {
+          <hr class="border-surface-border my-1 border-t" />
+        }
+
+        @for (player of nonRosteredPlayers(); track $index) {
+          <button
+            (click)="onPlayerChange(player)"
+            class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+            [class]="
+              summary().playerName === player
+                ? 'bg-brand-bg text-brand-text'
+                : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+            "
+          >
+            {{ player }}
+          </button>
+        }
+      </nav>
+
+      <div class="mx-auto min-h-0 max-w-5xl flex-1">
+        <ws-spray-field
+          [zones]="summary().zones"
+          [highlightZone]="highlightZone()"
+          (zoneHover)="onZoneHover($event)"
+          (zoneClick)="onZoneClick($event)"
+        />
+
+        <div class="mt-2 flex items-center justify-center gap-4">
+          <ws-spray-legend />
+          <span class="text-content-muted text-xs">
+            {{ summary().totalContact }} batted balls
+          </span>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <!-- Mobile: field only (no sidebar) -->
+    <div class="mx-auto max-w-5xl">
+      <ws-spray-field
+        [zones]="summary().zones"
+        [highlightZone]="highlightZone()"
+        (zoneHover)="onZoneHover($event)"
+        (zoneClick)="onZoneClick($event)"
+      />
+
+      <div class="mt-2 flex items-center justify-center gap-4">
+        <ws-spray-legend />
+        <span class="text-content-muted text-xs">
+          {{ summary().totalContact }} batted balls
+        </span>
+      </div>
+    </div>
+  }
+}

@@ -1,14 +1,14 @@
 import {
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
   computed,
+  effect,
   inject,
+  input,
   signal,
 } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import type { JerseyMap } from '@ws/data-access';
-import { SoftballDataService, SoftballStatsService } from '@ws/data-access';
+import { SoftballDataService, SoftballProcessorService } from '@ws/data-access';
 import {
   ALL_CONTACT_QUALITIES,
   ALL_CONTACT_TYPES,
@@ -20,45 +20,36 @@ import {
   type SprayFilterState,
   SprayLegend,
 } from '@ws/shared/ui';
-import type {
-  SprayChartSummary,
-  SprayDataPoint,
-  SprayZone,
-} from '@ws/stats-core';
+import { BreakpointService } from '@ws/shared/util';
+import type { SprayChartSummary, SprayDataPoint, SprayZone } from '@ws/stats-core';
 import { computeSprayZones, parseSprayData } from '@ws/stats-core';
 
 @Component({
-  selector: 'ws-spray-chart',
+  selector: 'ws-opponent-spray-chart',
   standalone: true,
   imports: [
-    FormsModule,
     SprayField,
     SprayFilters,
     SprayLegend,
   ],
-  templateUrl: './spray-chart.html',
-  host: { class: 'flex flex-col overflow-hidden', style: 'height: calc(100vh - 140px)' },
+  templateUrl: './opponent-spray-chart.html',
+  host: { class: 'flex flex-1 flex-col overflow-hidden' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SprayChart {
-  private statsService = inject(SoftballStatsService);
+export class OpponentSprayChart {
   private dataService = inject(SoftballDataService);
-  private cdr = inject(ChangeDetectorRef);
+  private processorService = inject(SoftballProcessorService);
+  readonly bp = inject(BreakpointService);
 
-  loading = false;
-  error: string | null = null;
-  selectedYear = 2025;
-  availableYears = [
-    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
-    2011,
-  ];
+  readonly slug = input.required<string>();
+  readonly year = input(2025);
 
-  // Raw spray data from all games
-  allDataPoints = signal<SprayDataPoint[]>([]);
-  private rawRoster = signal<JerseyMap>({});
+  readonly loading = signal(false);
+  readonly error = signal<string | null>(null);
+  readonly allDataPoints = signal<SprayDataPoint[]>([]);
+  private readonly rawRoster = signal<JerseyMap>({});
 
-  // Filter state
-  filters = signal<SprayFilterState>({
+  readonly filters = signal<SprayFilterState>({
     playerName: null,
     outcomes: [...ALL_OUTCOMES],
     contactTypes: [...ALL_CONTACT_TYPES],
@@ -67,16 +58,15 @@ export class SprayChart {
     risp: null,
   });
 
-  highlightZone = signal<SprayZone | null>(null);
+  readonly highlightZone = signal<SprayZone | null>(null);
 
-  // Available players (derived from data)
-  players = computed(() => {
+  readonly players = computed(() => {
     const names = new Set(this.allDataPoints().map((p) => p.playerName));
 
     return Array.from(names).sort();
   });
 
-  rosteredPlayers = computed(() => {
+  readonly rosteredPlayers = computed(() => {
     const map = this.jerseyMap();
 
     return this.players()
@@ -84,12 +74,12 @@ export class SprayChart {
       .sort((a, b) => map[a] - map[b]);
   });
 
-  nonRosteredPlayers = computed(() =>
+  readonly nonRosteredPlayers = computed(() =>
     this.players().filter((p) => this.jerseyMap()[p] === undefined)
   );
 
   /** Map display names (e.g. "S. Moore") → jersey numbers by matching last name */
-  jerseyMap = computed(() => {
+  readonly jerseyMap = computed(() => {
     const roster = this.rawRoster();
     const map: JerseyMap = {};
 
@@ -122,8 +112,7 @@ export class SprayChart {
     return map;
   });
 
-  // Filtered + aggregated summary
-  summary = computed<SprayChartSummary>(() => {
+  readonly summary = computed<SprayChartSummary>(() => {
     const f = this.filters();
     const allowed = computeAllowedContacts(f);
     const effectiveContactTypes = f.contactTypes.filter((ct) => allowed.has(ct));
@@ -139,36 +128,10 @@ export class SprayChart {
   });
 
   constructor() {
-    this.loadData();
-    this.dataService.getRoster().subscribe({
-      next: (map) => {
-        this.rawRoster.set(map);
-        this.cdr.markForCheck();
-      },
-    });
-  }
-
-  loadData(): void {
-    this.loading = true;
-    this.error = null;
-    this.allDataPoints.set([]);
-
-    this.statsService.getStats(this.selectedYear).subscribe({
-      next: (stats) => {
-        const points = stats.games.flatMap((game, i) =>
-          parseSprayData(game.snapshots, i)
-        );
-        this.allDataPoints.set(points);
-        this.loading = false;
-        this.cdr.markForCheck();
-      },
-      error: (err) => {
-        this.error =
-          err.message || 'An error occurred while loading spray chart data';
-        this.loading = false;
-        console.error('Error loading spray chart data:', err);
-        this.cdr.markForCheck();
-      },
+    effect(() => {
+      const slug = this.slug();
+      const year = this.year();
+      this.loadData(slug, year);
     });
   }
 
@@ -191,7 +154,11 @@ export class SprayChart {
     // Future: could show zone detail panel
   }
 
-  onYearChange(): void {
+  private loadData(slug: string, year: number): void {
+    this.loading.set(true);
+    this.error.set(null);
+    this.allDataPoints.set([]);
+    this.rawRoster.set({});
     this.filters.set({
       playerName: null,
       outcomes: [...ALL_OUTCOMES],
@@ -200,6 +167,26 @@ export class SprayChart {
       outCount: [...ALL_OUT_COUNTS],
       risp: null,
     });
-    this.loadData();
+
+    this.dataService.getOpponentRoster(slug).subscribe({
+      next: (map) => this.rawRoster.set(map),
+    });
+
+    this.dataService.getOpponentGameData(slug, year).subscribe({
+      next: (games) => {
+        const processed = this.processorService.processGamesWithSnapshots(games);
+        const points = processed.games.flatMap((game, i) =>
+          parseSprayData(game.snapshots, i)
+        );
+        this.allDataPoints.set(points);
+        this.loading.set(false);
+      },
+      error: (err) => {
+        this.error.set(
+          err.message || 'Failed to load spray chart data'
+        );
+        this.loading.set(false);
+      },
+    });
   }
 }

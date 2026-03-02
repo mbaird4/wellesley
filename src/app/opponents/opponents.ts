@@ -19,6 +19,7 @@ import type {
 import { BreakpointService } from '@ws/shared/util';
 import { calculateWoba } from '@ws/stats-core';
 
+import { OpponentSprayChart } from './opponent-spray-chart/opponent-spray-chart';
 import { PlayerCardList } from './player-card-list/player-card-list';
 import { PlayerTable } from './player-table/player-table';
 import { TeamSelector } from './team-selector/team-selector';
@@ -31,6 +32,7 @@ import { TeamSelector } from './team-selector/team-selector';
     TeamSelector,
     PlayerTable,
     PlayerCardList,
+    OpponentSprayChart,
   ],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',
@@ -53,6 +55,7 @@ export class Opponents {
     { slug: 'babson', name: 'Babson' },
   ].sort((a, b) => a.name.localeCompare(b.name));
 
+  readonly activeTab = signal<'woba' | 'spray'>('woba');
   readonly selectedSlug = signal(this.teams[0].slug);
   readonly teamData = signal<OpponentTeam | null>(null);
   readonly loading = signal(false);
@@ -215,6 +218,10 @@ export class Opponents {
 
     this.selectedSlug.set(slug);
     this.loadTeam(slug);
+  }
+
+  selectTab(tab: 'woba' | 'spray'): void {
+    this.activeTab.set(tab);
   }
 
   togglePlayer(name: string): void {

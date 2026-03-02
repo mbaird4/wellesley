@@ -610,6 +610,47 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   );
 }
 
+// ── Roster scraping (jersey numbers) ──
+
+function parseRoster($: cheerio.CheerioAPI): Record<string, number> {
+  const jerseyMap: Record<string, number> = {};
+
+  $('tr').each((_, row) => {
+    const jersey = $(row).find('.roster_jerseynum').text().trim();
+    const name = $(row).find('.sidearm-table-player-name').text().trim();
+
+    if (!jersey || !name) {
+      return;
+    }
+
+    const normalized = normalizeName(name);
+    const parts = normalized.split(/\s+/);
+    const first = parts[0];
+    const last = parts.slice(1).join(' ');
+    const key = `${last}, ${first}`;
+    jerseyMap[key] = parseInt(jersey, 10);
+  });
+
+  return jerseyMap;
+}
+
+async function prefetchRoster(outputDir: string): Promise<void> {
+  console.log('\n=== Fetching roster ===');
+  const html = await fetchPage(`${BASE_URL}/sports/softball/roster`);
+
+  if (!html) {
+    console.log('  Could not fetch roster page');
+
+    return;
+  }
+
+  const $ = cheerio.load(html);
+  const jerseyMap = parseRoster($);
+  const outPath = path.join(outputDir, 'roster.json');
+  fs.writeFileSync(outPath, JSON.stringify(jerseyMap));
+  console.log(`  Wrote ${outPath} (${Object.keys(jerseyMap).length} players)`);
+}
+
 async function main(): Promise<void> {
   const years = parseYearsArg();
   const outputDir = path.resolve(__dirname, '../public/data');
@@ -617,6 +658,8 @@ async function main(): Promise<void> {
 
   console.log(`Prefetching data for years: ${years.join(', ')}`);
   console.log(`Output directory: ${outputDir}`);
+
+  await prefetchRoster(outputDir);
 
   for (const year of years) {
     await prefetchYear(year, outputDir);

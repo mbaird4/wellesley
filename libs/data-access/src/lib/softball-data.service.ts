@@ -14,28 +14,52 @@ export interface PlayByPlayInning {
   plays: string[]; // Array of play description texts
 }
 
+export type JerseyMap = Record<string, number>;
+
 @Injectable({
   providedIn: 'root',
 })
 export class SoftballDataService {
   getGameData(year: number): Observable<GameData[]> {
-    return from(this.fetchStaticJson(year));
+    return from(this.fetchGameJson(`data/gamedata-${year}.json`));
   }
 
-  private async fetchStaticJson(year: number): Promise<GameData[]> {
+  getOpponentGameData(slug: string, year: number): Observable<GameData[]> {
+    return from(
+      this.fetchGameJson(`data/opponents/${slug}-gamedata-${year}.json`)
+    );
+  }
+
+  getRoster(): Observable<JerseyMap> {
+    return from(this.fetchJson<JerseyMap>('data/roster.json'));
+  }
+
+  getOpponentRoster(slug: string): Observable<JerseyMap> {
+    return from(
+      this.fetchJson<JerseyMap>(`data/opponents/${slug}-roster.json`)
+    );
+  }
+
+  private async fetchJson<T>(path: string): Promise<T> {
     const base = document.querySelector('base')?.getAttribute('href') || '/';
-    const url = `${base}data/gamedata-${year}.json`;
+    const url = `${base}${path}`;
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
 
-    const parsed = (await response.json()) as Array<{
-      url?: string;
-      opponent?: string;
-      lineup: [number, string[]][];
-      playByPlay: PlayByPlayInning[];
-    }>;
+    return response.json() as Promise<T>;
+  }
+
+  private async fetchGameJson(path: string): Promise<GameData[]> {
+    const parsed = await this.fetchJson<
+      Array<{
+        url?: string;
+        opponent?: string;
+        lineup: [number, string[]][];
+        playByPlay: PlayByPlayInning[];
+      }>
+    >(path);
 
     return parsed.map((g) => ({
       ...g,
