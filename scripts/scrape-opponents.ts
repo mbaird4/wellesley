@@ -709,7 +709,9 @@ async function main(): Promise<void> {
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
     const result = await scrapeTeam(slug, domain, years);
 
-    const outPath = path.join(outputDir, `${slug}-historical-stats.json`);
+    const teamDir = path.join(outputDir, slug);
+    fs.mkdirSync(teamDir, { recursive: true });
+    const outPath = path.join(teamDir, 'historical-stats.json');
     fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
     console.log(`  Wrote ${outPath} (${result.players.length} players)`);
 

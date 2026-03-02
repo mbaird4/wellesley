@@ -400,7 +400,9 @@ async function scrapeRoster(
 
   const $ = cheerio.load(html);
   const jerseyMap = parseRoster($);
-  const outPath = path.join(outputDir, `${slug}-roster.json`);
+  const teamDir = path.join(outputDir, slug);
+  fs.mkdirSync(teamDir, { recursive: true });
+  const outPath = path.join(teamDir, 'roster.json');
   fs.writeFileSync(outPath, JSON.stringify(jerseyMap));
   console.log(`  Wrote ${outPath} (${Object.keys(jerseyMap).length} players)`);
 }
@@ -526,7 +528,9 @@ async function main(): Promise<void> {
     for (const year of years) {
       const games = await scrapeTeamBoxscores(slug, domain, year);
 
-      const outPath = path.join(outputDir, `${slug}-gamedata-${year}.json`);
+      const teamDir = path.join(outputDir, slug);
+      fs.mkdirSync(teamDir, { recursive: true });
+      const outPath = path.join(teamDir, `gamedata-${year}.json`);
       fs.writeFileSync(outPath, JSON.stringify(games));
       console.log(`  Wrote ${outPath} (${games.length} games)`);
     }

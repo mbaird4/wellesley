@@ -26,7 +26,7 @@ export class SoftballDataService {
 
   getOpponentGameData(slug: string, year: number): Observable<GameData[]> {
     return from(
-      this.fetchGameJson(`data/opponents/${slug}-gamedata-${year}.json`)
+      this.fetchGameJson(`data/opponents/${slug}/gamedata-${year}.json`)
     );
   }
 
@@ -36,7 +36,7 @@ export class SoftballDataService {
 
   getOpponentRoster(slug: string): Observable<JerseyMap> {
     return from(
-      this.fetchJson<JerseyMap>(`data/opponents/${slug}-roster.json`)
+      this.fetchJson<JerseyMap>(`data/opponents/${slug}/roster.json`)
     );
   }
 

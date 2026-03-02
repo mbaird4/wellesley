@@ -251,7 +251,7 @@ export class Opponents {
 
     this.http
       .get<OpponentTeam>(
-        `${document.querySelector('base')?.getAttribute('href') || '/'}data/opponents/${slug}-historical-stats.json`
+        `${document.querySelector('base')?.getAttribute('href') || '/'}data/opponents/${slug}/historical-stats.json`
       )
       .subscribe({
         next: (data) => {
