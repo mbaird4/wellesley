@@ -1,10 +1,14 @@
 /**
- * Scrape opponent team rosters and all batting stats (with derived wOBA).
+ * Scrape opponent team rosters, batting stats (with derived wOBA), and
+ * optionally pitching play-by-play data or full gamedata (lineup + play-by-play).
  *
  * Usage:
- *   npm run scrape-opponents                         # all teams
- *   npm run scrape-opponents -- --team wpi            # single team
- *   npm run scrape-opponents -- --years 2024,2025     # override years
+ *   npm run scrape-opponents                                     # all teams, batting only
+ *   npm run scrape-opponents -- --team wpi                        # single team
+ *   npm run scrape-opponents -- --years 2024,2025                 # override years
+ *   npm run scrape-opponents -- --with-pitching                   # include pitching data
+ *   npm run scrape-opponents -- --with-gamedata                   # include full gamedata
+ *   npm run scrape-opponents -- --team wpi --with-gamedata --years 2025
  */
 
 import axios from 'axios';
@@ -27,7 +31,23 @@ const TEAMS: Record<string, string> = {
   babson: 'babsonathletics.com',
 };
 
+/** Known name aliases used in boxscore captions for team matching */
+const TEAM_ALIASES: Record<string, string[]> = {
+  wpi: ['WPI', 'Worcester Polytechnic'],
+  wheaton: ['Wheaton'],
+  springfield: ['Springfield'],
+  smith: ['Smith'],
+  salve: ['Salve Regina', 'Salve'],
+  mit: ['MIT'],
+  emerson: ['Emerson'],
+  coastguard: ['Coast Guard', 'USCGA'],
+  clark: ['Clark'],
+  babson: ['Babson'],
+};
+
 // ── Types ──
+
+type BatHand = 'L' | 'R' | 'S';
 
 interface RosterPlayer {
   name: string;
@@ -35,6 +55,8 @@ interface RosterPlayer {
   lastName: string;
   jerseyNumber: number | null;
   classYear: string;
+  position: string | null;
+  bats: BatHand | null;
 }
 
 interface BattingStats {
@@ -61,6 +83,22 @@ interface BattingStats {
   sh: number;
   sb: number;
   sbAtt: number;
+}
+
+interface PitchingStatsRow {
+  name: string;
+  w: number;
+  l: number;
+  era: number;
+  app: number;
+  gs: number;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hr: number;
 }
 
 interface SeasonStats extends BattingStats {
@@ -100,6 +138,8 @@ interface PlayerOutput {
   name: string;
   jerseyNumber: number | null;
   classYear: string;
+  position: string | null;
+  bats: BatHand | null;
   seasons: SeasonStats[];
   career: CareerStats;
 }
@@ -110,6 +150,55 @@ interface TeamOutput {
   scrapedAt: string;
   players: PlayerOutput[];
   teamGamesByYear: Record<string, number>;
+}
+
+// ── Pitching scraping types ──
+
+interface PbPInning {
+  inning: string;
+  teamName: string;
+  plays: string[];
+}
+
+interface GamePitchingData {
+  year: number;
+  url: string;
+  date: string;
+  opponent: string;
+  pitchers: string[];
+  battingInnings: { inning: string; plays: string[] }[];
+}
+
+interface PitchingOutput {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  pitchingStatsByYear: Record<string, PitchingStatsRow[]>;
+  games: GamePitchingData[];
+}
+
+// ── Gamedata scraping types ──
+
+interface GamedataPlayByPlayInning {
+  inning: string;
+  half: 'offense' | 'defense';
+  plays: string[];
+}
+
+interface GamedataSerializedGame {
+  year: number;
+  url: string;
+  opponent: string;
+  pitchers: string[];
+  lineup: [number, string[]][];
+  playByPlay: GamedataPlayByPlayInning[];
+}
+
+interface GamedataOutput {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  gamesByYear: Record<string, GamedataSerializedGame[]>;
 }
 
 // ── Constants ──
@@ -212,19 +301,36 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
             .trim()
         : classYearEls.text().trim();
 
+    // Position from .rp_position_short
+    const posText = $el.find('.rp_position_short').text().trim();
+    const position = posText || null;
+
+    // B/T from [data-custom-label="B/T:"] — may not be in default template
+    let bats: BatHand | null = null;
+    const btEl = $el.find('[data-custom-label="B/T:"]');
+    if (btEl.length > 0) {
+      const btText = btEl.text().trim(); // e.g. "R/R" or "L/R"
+      const batChar = btText.split('/')[0]?.trim().toUpperCase();
+      if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
+        bats = batChar;
+      }
+    }
+
     players.push({
       name: fullName,
       firstName,
       lastName,
       jerseyNumber,
       classYear,
+      position,
+      bats,
     });
   });
 
   return players;
 }
 
-// ── Stats table parsing (same logic as prefetch-data.ts) ──
+// ── Batting stats table parsing ──
 
 function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
   const players: BattingStats[] = [];
@@ -307,6 +413,84 @@ function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
   return players;
 }
 
+// ── Pitching stats table parsing ──
+
+function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
+  const pitchers: PitchingStatsRow[] = [];
+
+  let targetTable: any = null;
+  $('table').each((_, table) => {
+    const caption = $(table).find('caption').text();
+    if (caption.includes('Individual Overall Pitching Statistics')) {
+      targetTable = $(table);
+      return false;
+    }
+  });
+
+  if (!targetTable) return pitchers;
+
+  targetTable.find('tbody tr').each((_: number, row: any) => {
+    const $row = $(row);
+    const nameCell = $row.find('th[scope="row"]');
+    const name =
+      nameCell.find('a.hide-on-medium-down').text().trim() ||
+      nameCell.find('a').first().text().trim() ||
+      nameCell.text().trim();
+
+    if (
+      !name ||
+      name.toLowerCase() === 'totals' ||
+      name.toLowerCase() === 'opponents' ||
+      !/[a-zA-Z]/.test(name)
+    )
+      return;
+
+    const num = (label: string): number => {
+      const cell = $row.find(`td[data-label="${label}"]`);
+      return parseInt(cell.text().trim(), 10) || 0;
+    };
+
+    const pct = (label: string): number => {
+      const cell = $row.find(`td[data-label="${label}"]`);
+      return parseFloat(cell.text().trim()) || 0;
+    };
+
+    // W-L is formatted "w-l" (e.g. "12-3")
+    const wlCell = $row.find('td[data-label="W-L"]').text().trim();
+    const wlMatch = wlCell.match(/^(\d+)-(\d+)$/);
+    const w = wlMatch ? parseInt(wlMatch[1], 10) : 0;
+    const l = wlMatch ? parseInt(wlMatch[2], 10) : 0;
+
+    // APP-GS column is formatted "app-gs" (e.g. "15-12")
+    const appGsCell = $row.find('td[data-label="APP-GS"]').text().trim();
+    const appGsMatch = appGsCell.match(/^(\d+)-(\d+)$/);
+    const app = appGsMatch ? parseInt(appGsMatch[1], 10) : 0;
+    const gs = appGsMatch ? parseInt(appGsMatch[2], 10) : 0;
+
+    // IP can be fractional (e.g. "45.1" means 45 and 1/3 innings)
+    const ipText = $row.find('td[data-label="IP"]').text().trim();
+    const ip = parseFloat(ipText) || 0;
+
+    pitchers.push({
+      name,
+      w,
+      l,
+      era: pct('ERA'),
+      app,
+      gs,
+      ip,
+      h: num('H'),
+      r: num('R'),
+      er: num('ER'),
+      bb: num('BB'),
+      so: num('SO'),
+      hr: num('HR'),
+    });
+  });
+
+  return pitchers;
+}
+
 // ── Team GP from Totals row ──
 
 function parseTeamGames($: cheerio.CheerioAPI): number | null {
@@ -373,6 +557,14 @@ function parseYearsArg(): number[] {
     .filter((n) => !isNaN(n));
 }
 
+function parseWithPitchingFlag(): boolean {
+  return process.argv.includes('--with-pitching');
+}
+
+function parseWithGamedataFlag(): boolean {
+  return process.argv.includes('--with-gamedata');
+}
+
 // ── Empty career stats for first-years ──
 
 function emptyCareer(): CareerStats {
@@ -404,7 +596,326 @@ function emptyCareer(): CareerStats {
   };
 }
 
-// ── Per-team scraping ──
+// ── Boxscore URL extraction (same pattern as prefetch-data.ts) ──
+
+function extractBoxscoreUrls(
+  $: cheerio.CheerioAPI,
+  domain: string
+): string[] {
+  const baseUrl = `https://${domain}`;
+  const urls: string[] = [];
+
+  let links = $('.sidearm-schedule-game-links-boxscore a');
+
+  if (links.length === 0) {
+    links = $('a[href*="boxscore"]');
+  }
+
+  links.each((_, element) => {
+    const href = $(element).attr('href');
+
+    if (!href) {
+      return;
+    }
+
+    const fullUrl = href.startsWith('http')
+      ? href
+      : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
+    urls.push(fullUrl);
+  });
+
+  return [...new Set(urls)];
+}
+
+// ── Play-by-play parsing for opponent pitching ──
+
+/** Check if a caption belongs to the scraped team */
+function captionMatchesTeam(caption: string, teamAliases: string[]): boolean {
+  const lower = caption.toLowerCase();
+
+  return teamAliases.some((alias) => lower.includes(alias.toLowerCase()));
+}
+
+/** Parse all play-by-play tables from a boxscore page */
+function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
+  const innings: PbPInning[] = [];
+  const pbpTab = $('#play-by-play');
+
+  if (pbpTab.length === 0) {
+    return innings;
+  }
+
+  // Sidearm Sports renders the play-by-play tables twice in the DOM
+  // (an "all plays" view and a filtered view). Deduplicate by
+  // (teamName, inning) key — keep only the first occurrence.
+  const seen = new Set<string>();
+
+  pbpTab.find('table').each((_, table) => {
+    const $table = $(table);
+    const caption = $table.find('caption').text() || '';
+
+    if (!caption) {
+      return;
+    }
+
+    // Extract team name and inning from caption
+    // Format: "TeamName - Top/Bottom of 1st" or similar
+    const teamName = caption
+      .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
+      .trim();
+
+    const inningMatch = caption.match(
+      /(?:Top|Bottom)\s+of\s+(.+)/i
+    );
+    const inning = inningMatch ? inningMatch[1].trim() : '';
+
+    if (!inning) {
+      return;
+    }
+
+    const dedupeKey = `${teamName}::${inning}`;
+
+    if (seen.has(dedupeKey)) {
+      return;
+    }
+
+    seen.add(dedupeKey);
+
+    const plays: string[] = [];
+    $table.find('tbody tr').each((_, row) => {
+      const $row = $(row);
+      const firstCell = $row.find('td').first();
+      const originalText =
+        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const text = originalText.toLowerCase();
+
+      if (
+        !originalText ||
+        text.includes('play description') ||
+        text.length < 5
+      ) {
+        return;
+      }
+
+      if (
+        text.includes('inning summary') ||
+        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
+      ) {
+        return;
+      }
+
+      plays.push(originalText);
+    });
+
+    if (plays.length > 0) {
+      innings.push({ inning, teamName, plays });
+    }
+  });
+
+  return innings;
+}
+
+/** Parse all pitchers from the boxscore pitching table, in appearance order */
+function parseTeamPitchers(
+  $: cheerio.CheerioAPI,
+  teamAliases: string[]
+): string[] {
+  const pitchers: string[] = [];
+
+  $('table').each((_, table) => {
+    const caption = $(table).find('caption').text() || '';
+
+    if (!caption.toLowerCase().includes('pitching')) {
+      return;
+    }
+
+    if (!captionMatchesTeam(caption, teamAliases)) {
+      return;
+    }
+
+    $(table)
+      .find('tbody tr')
+      .each((_, row) => {
+        const playerLink = $(row).find('.boxscore_player_link');
+        const name = playerLink.text().trim();
+
+        if (name) {
+          pitchers.push(name);
+        }
+      });
+
+    return false; // stop after first matching pitching table
+  });
+
+  return pitchers;
+}
+
+// ── Gamedata parsing (lineup + play-by-play for opponent teams) ──
+
+/** Parse batting lineup for a specific team (adapted from prefetch-data.ts parseLineup) */
+function parseTeamLineup(
+  $: cheerio.CheerioAPI,
+  teamAliases: string[]
+): [number, string[]][] {
+  const lineup = new Map<number, string[]>();
+
+  $('table').each((_, table) => {
+    const $table = $(table);
+    const caption = $table.find('caption').text() || '';
+
+    if (!captionMatchesTeam(caption, teamAliases)) {
+      return;
+    }
+
+    // Skip pitching tables and play-by-play tables
+    const lower = caption.toLowerCase();
+    if (
+      lower.includes('pitching') ||
+      caption.includes('Top of') ||
+      caption.includes('Bottom of') ||
+      caption.includes('Scoring Summary')
+    ) {
+      return;
+    }
+
+    let slot = 1;
+    $table.find('tbody tr').each((_, row) => {
+      const $row = $(row);
+      const cells = $row.find('td');
+
+      if (cells.length < 2) {
+        return;
+      }
+
+      const $nameCell = $(cells[1]);
+      const cellHtml = $nameCell.html() || '';
+      const $playerLink = $nameCell.find('.boxscore_player_link');
+      const playerText = $playerLink.text().trim() || '';
+      const rawText = $nameCell.text() || '';
+
+      const isSubstitution =
+        cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') ||
+        /^(&nbsp;){4,}/.test(cellHtml) ||
+        /^(\u00A0|\s){4,}/.test(rawText);
+
+      // Extract player name: strip leading position text (e.g. "cf Emily Smith" → "Emily Smith")
+      const nameMatch = playerText.match(/^[a-z/]+ (.+)$/i);
+      const playerName = nameMatch ? nameMatch[1].trim() : playerText.trim();
+
+      if (!playerName) {
+        return;
+      }
+
+      const normalized = normalizeName(playerName);
+
+      if (isSubstitution) {
+        const previousSlot = slot - 1;
+        if (previousSlot > 0) {
+          const existingNames = lineup.get(previousSlot) || [];
+          existingNames.push(normalized);
+          lineup.set(previousSlot, existingNames);
+        }
+      } else {
+        lineup.set(slot, [normalized]);
+        slot += 1;
+      }
+    });
+
+    return false; // stop after first matching batting table
+  });
+
+  return Array.from(lineup.entries());
+}
+
+/** Parse play-by-play for both halves, labeling each as offense or defense */
+function parseTeamPlayByPlay(
+  $: cheerio.CheerioAPI,
+  teamAliases: string[]
+): GamedataPlayByPlayInning[] {
+  const allInnings = parseAllPlayByPlay($);
+
+  return allInnings.map((inn) => ({
+    inning: inn.inning,
+    half: captionMatchesTeam(inn.teamName, teamAliases)
+      ? 'offense'
+      : 'defense',
+    plays: inn.plays,
+  }));
+}
+
+/** Extract game date from boxscore page */
+function parseGameDate($: cheerio.CheerioAPI, url: string): string {
+  let date = '';
+  $('dt').each((_, el) => {
+    if ($(el).text().trim() === 'Date') {
+      date = $(el).next('dd').text().trim();
+
+      return false;
+    }
+  });
+
+  if (!date) {
+    const title = $('title').text();
+    const titleMatch = title.match(/on (\d{1,2}\/\d{1,2}\/\d{4})/);
+    if (titleMatch) {
+      date = titleMatch[1];
+    }
+  }
+
+  return date;
+}
+
+/** Extract opponent name from boxscore URL */
+function parseOpponentFromUrl(url: string): string {
+  const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
+
+  return opponentMatch
+    ? opponentMatch[1]
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase())
+    : 'Unknown';
+}
+
+/** Parse a single boxscore for pitching data (year added by caller) */
+function parseBoxscorePitching(
+  $: cheerio.CheerioAPI,
+  url: string,
+  teamAliases: string[]
+): Omit<GamePitchingData, 'year'> | null {
+  const allInnings = parseAllPlayByPlay($);
+
+  if (allInnings.length === 0) {
+    return null;
+  }
+
+  const date = parseGameDate($, url);
+  const opponent = parseOpponentFromUrl(url);
+
+  // Separate innings: team's fielding innings are when the OTHER team bats
+  // The other team's batting innings = innings where caption team does NOT match our team
+  const opponentBattingInnings = allInnings.filter(
+    (inn) => !captionMatchesTeam(inn.teamName, teamAliases)
+  );
+
+  // Authoritative pitcher list from the pitching table (in appearance order)
+  const pitchers = parseTeamPitchers($, teamAliases);
+
+  // Build batting innings (plays against our team's pitcher)
+  const battingInnings = opponentBattingInnings.map((inn) => ({
+    inning: inn.inning,
+    plays: inn.plays,
+  }));
+
+  return {
+    url,
+    date,
+    opponent,
+    pitchers,
+    battingInnings,
+  };
+}
+
+// ── Per-team batting scraping ──
 
 async function scrapeTeam(
   slug: string,
@@ -517,6 +1028,8 @@ async function scrapeTeam(
         name: rp.name,
         jerseyNumber: rp.jerseyNumber,
         classYear: rp.classYear,
+        position: rp.position,
+        bats: rp.bats,
         seasons: [],
         career: emptyCareer(),
       });
@@ -608,6 +1121,8 @@ async function scrapeTeam(
         name: rp.name,
         jerseyNumber: rp.jerseyNumber,
         classYear: rp.classYear,
+        position: rp.position,
+        bats: rp.bats,
         seasons: [],
         career: emptyCareer(),
       });
@@ -648,6 +1163,8 @@ async function scrapeTeam(
       name: rp.name,
       jerseyNumber: rp.jerseyNumber,
       classYear: rp.classYear,
+      position: rp.position,
+      bats: rp.bats,
       seasons,
       career: {
         ...careerTotals,
@@ -683,11 +1200,169 @@ async function scrapeTeam(
   };
 }
 
+// ── Per-team pitching scraping ──
+
+async function scrapeTeamPitching(
+  slug: string,
+  domain: string,
+  years: number[]
+): Promise<PitchingOutput> {
+  const teamAliases = TEAM_ALIASES[slug] || [slug];
+  console.log(`\n  --- Pitching scrape for ${slug} ---`);
+
+  const pitchingStatsByYear: Record<string, PitchingStatsRow[]> = {};
+  const allGames: GamePitchingData[] = [];
+
+  for (const year of years) {
+    // Fetch pitching stats from the same stats page (already fetched for batting,
+    // but we re-fetch here since pitching is opt-in and may run independently)
+    console.log(`  Fetching ${year} pitching stats...`);
+    await delay(DELAY_MS);
+    const statsHtml = await fetchPage(
+      `https://${domain}/sports/softball/stats/${year}`
+    );
+
+    if (statsHtml) {
+      const $stats = cheerio.load(statsHtml);
+      const pitchingStats = parsePitchingStatsTable($stats);
+      pitchingStatsByYear[String(year)] = pitchingStats;
+      console.log(`    Parsed ${pitchingStats.length} pitchers`);
+    }
+
+    // Fetch schedule to get boxscore URLs
+    console.log(`  Fetching ${year} schedule...`);
+    await delay(DELAY_MS);
+    const scheduleHtml = await fetchPage(
+      `https://${domain}/sports/softball/schedule/${year}`
+    );
+
+    if (!scheduleHtml) {
+      console.log(`    No schedule page for ${year}`);
+      continue;
+    }
+
+    const $schedule = cheerio.load(scheduleHtml);
+    const boxscoreUrls = extractBoxscoreUrls($schedule, domain);
+    console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
+
+    // Fetch each boxscore and extract pitching data
+    for (let i = 0; i < boxscoreUrls.length; i++) {
+      const url = boxscoreUrls[i];
+      console.log(
+        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
+      );
+      await delay(DELAY_MS);
+
+      const html = await fetchPage(url);
+      if (!html) {
+        continue;
+      }
+
+      const $ = cheerio.load(html);
+      const gameData = parseBoxscorePitching($, url, teamAliases);
+
+      if (gameData && gameData.battingInnings.length > 0) {
+        allGames.push({ ...gameData, year });
+      }
+    }
+  }
+
+  console.log(
+    `  Pitching scrape complete: ${allGames.length} games with play-by-play`
+  );
+
+  return {
+    slug,
+    domain,
+    scrapedAt: new Date().toISOString(),
+    pitchingStatsByYear,
+    games: allGames,
+  };
+}
+
+// ── Per-team gamedata scraping ──
+
+async function scrapeTeamGamedata(
+  slug: string,
+  domain: string,
+  years: number[]
+): Promise<GamedataOutput> {
+  const teamAliases = TEAM_ALIASES[slug] || [slug];
+  console.log(`\n  --- Gamedata scrape for ${slug} ---`);
+
+  const gamesByYear: Record<string, GamedataSerializedGame[]> = {};
+
+  for (const year of years) {
+    console.log(`  Fetching ${year} schedule...`);
+    await delay(DELAY_MS);
+    const scheduleHtml = await fetchPage(
+      `https://${domain}/sports/softball/schedule/${year}`
+    );
+
+    if (!scheduleHtml) {
+      console.log(`    No schedule page for ${year}`);
+      continue;
+    }
+
+    const $schedule = cheerio.load(scheduleHtml);
+    const boxscoreUrls = extractBoxscoreUrls($schedule, domain);
+    console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
+
+    const games: GamedataSerializedGame[] = [];
+
+    for (let i = 0; i < boxscoreUrls.length; i++) {
+      const url = boxscoreUrls[i];
+      console.log(
+        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
+      );
+      await delay(DELAY_MS);
+
+      const html = await fetchPage(url);
+      if (!html) {
+        continue;
+      }
+
+      const $ = cheerio.load(html);
+      const lineup = parseTeamLineup($, teamAliases);
+      const playByPlay = parseTeamPlayByPlay($, teamAliases);
+
+      if (lineup.length === 0 && playByPlay.length === 0) {
+        continue;
+      }
+
+      const opponent = parseOpponentFromUrl(url);
+      const pitchers = parseTeamPitchers($, teamAliases).map(normalizeName);
+      games.push({ year, url, opponent, pitchers, lineup, playByPlay });
+    }
+
+    if (games.length > 0) {
+      gamesByYear[String(year)] = games;
+    }
+
+    console.log(`    ${year}: ${games.length} games with gamedata`);
+  }
+
+  const totalGames = Object.values(gamesByYear).reduce(
+    (sum, g) => sum + g.length,
+    0
+  );
+  console.log(`  Gamedata scrape complete: ${totalGames} total games`);
+
+  return {
+    slug,
+    domain,
+    scrapedAt: new Date().toISOString(),
+    gamesByYear,
+  };
+}
+
 // ── Main ──
 
 async function main(): Promise<void> {
   const teamFilter = parseTeamArg();
   const years = parseYearsArg();
+  const withPitching = parseWithPitchingFlag();
+  const withGamedata = parseWithGamedataFlag();
   const outputDir = path.resolve(__dirname, '../public/data/opponents');
   fs.mkdirSync(outputDir, { recursive: true });
 
@@ -704,16 +1379,51 @@ async function main(): Promise<void> {
 
   console.log(`Scraping opponents for years: ${years.join(', ')}`);
   console.log(`Teams: ${Object.keys(teamsToScrape).join(', ')}`);
+  console.log(`Pitching play-by-play: ${withPitching ? 'YES' : 'no'}`);
+  console.log(`Full gamedata: ${withGamedata ? 'YES' : 'no'}`);
   console.log(`Output directory: ${outputDir}`);
 
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
-    const result = await scrapeTeam(slug, domain, years);
-
     const teamDir = path.join(outputDir, slug);
     fs.mkdirSync(teamDir, { recursive: true });
+
+    const result = await scrapeTeam(slug, domain, years);
+
     const outPath = path.join(teamDir, 'historical-stats.json');
     fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
     console.log(`  Wrote ${outPath} (${result.players.length} players)`);
+
+    // Optionally scrape pitching play-by-play
+    if (withPitching) {
+      const pitchingResult = await scrapeTeamPitching(slug, domain, years);
+
+      const pitchingOutPath = path.join(teamDir, 'pitching.json');
+      fs.writeFileSync(
+        pitchingOutPath,
+        JSON.stringify(pitchingResult, null, 2)
+      );
+      console.log(
+        `  Wrote ${pitchingOutPath} (${pitchingResult.games.length} games)`
+      );
+    }
+
+    // Optionally scrape full gamedata (lineup + play-by-play)
+    if (withGamedata) {
+      const gamedataResult = await scrapeTeamGamedata(slug, domain, years);
+
+      const gamedataOutPath = path.join(teamDir, 'gamedata.json');
+      fs.writeFileSync(
+        gamedataOutPath,
+        JSON.stringify(gamedataResult, null, 2)
+      );
+      const totalGames = Object.values(gamedataResult.gamesByYear).reduce(
+        (sum, g) => sum + g.length,
+        0
+      );
+      console.log(
+        `  Wrote ${gamedataOutPath} (${totalGames} games)`
+      );
+    }
 
     // Be nice between teams
     if (Object.keys(teamsToScrape).length > 1) {

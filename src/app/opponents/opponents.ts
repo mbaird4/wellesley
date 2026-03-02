@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import type {
   OpponentDisplayRow,
+  OpponentPitchingData,
   OpponentTeam,
   PlayerTier,
   SortDir,
@@ -20,9 +21,12 @@ import { BreakpointService } from '@ws/shared/util';
 import { calculateWoba } from '@ws/stats-core';
 
 import { OpponentSprayChart } from './opponent-spray-chart/opponent-spray-chart';
+import { PitcherAnalysis } from './pitcher-analysis/pitcher-analysis';
 import { PlayerCardList } from './player-card-list/player-card-list';
 import { PlayerTable } from './player-table/player-table';
 import { TeamSelector } from './team-selector/team-selector';
+
+export type OpponentTab = 'woba' | 'spray' | 'pitching';
 
 @Component({
   selector: 'ws-opponents',
@@ -33,6 +37,7 @@ import { TeamSelector } from './team-selector/team-selector';
     PlayerTable,
     PlayerCardList,
     OpponentSprayChart,
+    PitcherAnalysis,
   ],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',
@@ -55,10 +60,12 @@ export class Opponents {
     { slug: 'babson', name: 'Babson' },
   ].sort((a, b) => a.name.localeCompare(b.name));
 
-  readonly activeTab = signal<'woba' | 'spray'>('woba');
+  readonly activeTab = signal<OpponentTab>('woba');
   readonly selectedSlug = signal(this.teams[0].slug);
   readonly teamData = signal<OpponentTeam | null>(null);
+  readonly pitchingData = signal<OpponentPitchingData | null>(null);
   readonly loading = signal(false);
+  readonly pitchingLoading = signal(false);
   readonly error = signal<string | null>(null);
   readonly expandedPlayer = signal<string | null>(null);
   readonly sortKey = signal<SortKey>('career');
@@ -217,11 +224,20 @@ export class Opponents {
     }
 
     this.selectedSlug.set(slug);
+    this.pitchingData.set(null);
     this.loadTeam(slug);
+
+    if (this.activeTab() === 'pitching') {
+      this.loadPitching(slug);
+    }
   }
 
-  selectTab(tab: 'woba' | 'spray'): void {
+  selectTab(tab: OpponentTab): void {
     this.activeTab.set(tab);
+
+    if (tab === 'pitching' && !this.pitchingData() && !this.pitchingLoading()) {
+      this.loadPitching(this.selectedSlug());
+    }
   }
 
   togglePlayer(name: string): void {
@@ -262,6 +278,28 @@ export class Opponents {
           this.error.set(err.message || 'Failed to load team data');
           this.loading.set(false);
           this.teamData.set(null);
+        },
+      });
+  }
+
+  private loadPitching(slug: string): void {
+    this.pitchingLoading.set(true);
+
+    const base =
+      document.querySelector('base')?.getAttribute('href') || '/';
+
+    this.http
+      .get<OpponentPitchingData>(
+        `${base}data/opponents/${slug}/pitching.json`
+      )
+      .subscribe({
+        next: (data) => {
+          this.pitchingData.set(data);
+          this.pitchingLoading.set(false);
+        },
+        error: () => {
+          this.pitchingData.set(null);
+          this.pitchingLoading.set(false);
         },
       });
   }

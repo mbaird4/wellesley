@@ -1,0 +1,59 @@
+@if (loading()) {
+  <div class="py-card px-card text-content-muted text-[1.05rem]">
+    Loading pitching data...
+  </div>
+} @else if (!pitchingData()) {
+  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+    No pitching data available for this team.
+  </div>
+} @else if (pitcherList().length === 0) {
+  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+    No pitchers found in data.
+  </div>
+} @else {
+  @if (bp.gtSm()) {
+    <!-- Desktop: sidebar pitcher list + stats panels -->
+    <div class="flex gap-6">
+      <ws-pitcher-selector
+        layout="vertical"
+        [pitchers]="pitcherList()"
+        [selectedPitcher]="effectivePitcher()"
+        (pitcherSelected)="selectPitcher($event)"
+      />
+
+      <div class="min-w-0 flex-1 space-y-4">
+        <ws-pitcher-overview [data]="rawStats()" />
+
+        @if (seasonSummary(); as summary) {
+          <ws-inning-breakdown
+            [byInning]="summary.byInning"
+            [totals]="summary.totals"
+          />
+
+          <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
+        }
+      </div>
+    </div>
+  } @else {
+    <!-- Mobile: stacked layout -->
+    <ws-pitcher-selector
+      layout="horizontal"
+      [pitchers]="pitcherList()"
+      [selectedPitcher]="effectivePitcher()"
+      (pitcherSelected)="selectPitcher($event)"
+    />
+
+    <div class="mt-3 space-y-3">
+      <ws-pitcher-overview [data]="rawStats()" />
+
+      @if (seasonSummary(); as summary) {
+        <ws-inning-breakdown
+          [byInning]="summary.byInning"
+          [totals]="summary.totals"
+        />
+
+        <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
+      }
+    </div>
+  }
+}

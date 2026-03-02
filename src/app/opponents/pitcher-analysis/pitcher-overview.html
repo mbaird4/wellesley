@@ -1,0 +1,51 @@
+@if (data(); as d) {
+  <div class="bg-surface-card overflow-hidden rounded-xl">
+    <div class="border-line border-b px-card py-3">
+      <h3 class="text-content-bright text-base font-semibold">{{ d.name }}</h3>
+    </div>
+
+    <div class="p-card">
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div>
+          <div class="text-content-dim text-xs font-medium uppercase tracking-wide">ERA</div>
+          <div class="text-content-bright mt-0.5 text-3xl font-bold tabular-nums">{{ d.era.toFixed(2) }}</div>
+        </div>
+        <div>
+          <div class="text-content-dim text-xs font-medium uppercase tracking-wide">Record</div>
+          <div class="text-content-bright mt-0.5 text-3xl font-bold tabular-nums">{{ d.w }}-{{ d.l }}</div>
+        </div>
+        <div>
+          <div class="text-content-dim text-xs font-medium uppercase tracking-wide">IP</div>
+          <div class="text-content-bright mt-0.5 text-3xl font-bold tabular-nums">{{ d.ip }}</div>
+        </div>
+        <div>
+          <div class="text-content-dim text-xs font-medium uppercase tracking-wide">SO</div>
+          <div class="text-content-bright mt-0.5 text-3xl font-bold tabular-nums">{{ d.so }}</div>
+        </div>
+      </div>
+
+      <div class="border-line mt-4 flex flex-wrap gap-x-6 gap-y-2 border-t pt-4">
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-content-dim text-xs font-medium uppercase tracking-wide">BB</span>
+          <span class="text-content-bright font-semibold">{{ d.bb }}</span>
+        </div>
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-content-dim text-xs font-medium uppercase tracking-wide">H</span>
+          <span class="text-content-bright font-semibold">{{ d.h }}</span>
+        </div>
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-content-dim text-xs font-medium uppercase tracking-wide">HR</span>
+          <span class="text-content-bright font-semibold">{{ d.hr }}</span>
+        </div>
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-content-dim text-xs font-medium uppercase tracking-wide">APP</span>
+          <span class="text-content-bright font-semibold">{{ d.app }}</span>
+        </div>
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-content-dim text-xs font-medium uppercase tracking-wide">GS</span>
+          <span class="text-content-bright font-semibold">{{ d.gs }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+}

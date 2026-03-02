@@ -9,6 +9,8 @@
     "prefetch": "ts-node --project tsconfig.scripts.json scripts/prefetch-data.ts",
     "scrape-opponents": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts",
     "scrape-opponent-boxscores": "ts-node --project tsconfig.scripts.json scripts/scrape-opponent-boxscores.ts",
+    "scrape-pitching": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts --with-pitching",
+    "scrape-gamedata": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts --with-gamedata",
     "format": "prettier --write .",
     "lint": "prettier --write . && nx run-many -t lint --fix"
   },

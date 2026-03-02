@@ -1,0 +1,3043 @@
+{
+  "slug": "coastguard",
+  "domain": "coastguardathletics.com",
+  "scrapedAt": "2026-03-02T19:49:31.501Z",
+  "pitchingStatsByYear": {
+    "2025": [
+      {
+        "name": "Walker, Dana",
+        "w": 14,
+        "l": 9,
+        "era": 1.9,
+        "app": 29,
+        "gs": 23,
+        "ip": 165.2,
+        "h": 146,
+        "r": 68,
+        "er": 45,
+        "bb": 44,
+        "so": 152,
+        "hr": 2
+      },
+      {
+        "name": "Behel, Emma",
+        "w": 1,
+        "l": 9,
+        "era": 4.99,
+        "app": 13,
+        "gs": 12,
+        "ip": 60.1,
+        "h": 97,
+        "r": 74,
+        "er": 43,
+        "bb": 34,
+        "so": 26,
+        "hr": 0
+      },
+      {
+        "name": "Reilly, Hayden",
+        "w": 1,
+        "l": 2,
+        "era": 4.47,
+        "app": 7,
+        "gs": 2,
+        "ip": 15.2,
+        "h": 22,
+        "r": 14,
+        "er": 10,
+        "bb": 4,
+        "so": 3,
+        "hr": 1
+      }
+    ]
+  },
+  "games": [
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/psu-harrisburg/boxscore/8769",
+      "date": "3/9/2025",
+      "opponent": "Psu Harrisburg",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Allison struck out looking.",
+            "M. Lehigh grounded out to 3b.",
+            "M. Minney grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Walker grounded out to 1b unassisted.",
+            "S. Sims struck out swinging.",
+            "L. Feltenber flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "O. Herncane popped up to 3b.",
+            "C. Biesecker reached first on an error by ss.",
+            "M. Fisher struck out looking; C. Biesecker stole second.",
+            "A. Allison grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Lehigh grounded out to 3b.",
+            "M. Minney grounded out to 2b.",
+            "A. Walker grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "O. Garcia to 1b.",
+            "S. Sims singled, bunt.",
+            "L. Feltenber out at first 1b to 2b, SAC, bunt; S. Sims advanced to second.",
+            "O. Herncane singled up the middle, RBI; S. Sims scored.",
+            "E. Gates pinch ran for O. Herncane.",
+            "C. Biesecker grounded out to 3b, SAC, bunt; E. Gates advanced to second.",
+            "M. Fisher singled through the right side; E. Gates advanced to third.",
+            "A. Allison struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Behel to 1b for O. Garcia.",
+            "M. Lehigh struck out looking.",
+            "M. Minney reached first on an error by 2b.",
+            "A. Walker popped up to 2b.",
+            "S. Sims struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Feltenber grounded out to 2b.",
+            "O. Herncane grounded out to 3b.",
+            "C. Biesecker singled to center field.",
+            "M. Fisher grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/fdu-florham/boxscore/8825",
+      "date": "3/9/2025",
+      "opponent": "Fdu Florham",
+      "pitchers": [
+        "Behel, Emma",
+        "Reilly, Hayden",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Olear singled to left field.",
+            "K. Berg grounded out to 3b, SAC, bunt; G. Olear advanced to second, out at third 2b to 3b.",
+            "J. Lambright singled to left center.",
+            "A. Rodriguez doubled to left field, RBI; J. Lambright scored.",
+            "R. Signor walked.",
+            "H. Wodecki popped up to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. DiSanto walked.",
+            "S. Alves grounded out to 3b, SAC; B. DiSanto advanced to second.",
+            "A. Wysocki reached on a fielder's choice to shortstop.",
+            "G. Olear reached on a fielder's choice to second base; A. Wysocki out at second 2b to ss; B. DiSanto advanced to third.",
+            "G. Olear advanced to second on an error by ss.",
+            "K. Berg walked.",
+            "J. Lambright doubled to left center, 3 RBI; K. Berg scored; G. Olear scored; B. DiSanto scored.",
+            "A. Rodriguez singled to first base; J. Lambright advanced to third.",
+            "R. Signor flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Schmutz to lf.",
+            "H. Reilly to p.",
+            "H. Wodecki struck out swinging.",
+            "B. DiSanto walked.",
+            "S. Alves popped up to 2b.",
+            "A. Wysocki grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Olear flied out to rf.",
+            "K. Berg singled through the left side.",
+            "J. Lambright grounded out to ss; K. Berg advanced to second.",
+            "A. Rodriguez reached first on an error by 2b; K. Berg scored on the error, unearned.",
+            "A. Rodriguez advanced to second on a wild pitch.",
+            "R. Signor singled; A. Rodriguez advanced to third.",
+            "H. Wodecki grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "V. Fantozzi grounded out to ss.",
+            "S. Alves lined out to ss.",
+            "A. Wysocki grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Olear flied out to lf.",
+            "G. Abinanti pinch hit for K. Berg.",
+            "G. Abinanti struck out looking, out at first c to 1b.",
+            "R. Smith popped up to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Walker to p for A. Schmutz.",
+            "H. Reilly to lf for A. Schmutz.",
+            "A. Rodriguez struck out swinging.",
+            "C. Jordan pinch hit for R. Signor.",
+            "C. Jordan struck out swinging.",
+            "H. Wodecki struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/cairn/boxscore/8828",
+      "date": "3/12/2025",
+      "opponent": "Cairn",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Feliciano struck out swinging.",
+            "R. Curtis struck out looking.",
+            "M. Petroro struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Heacock grounded out to 2b.",
+            "J. Baker walked.",
+            "J. Bruestle singled, bunt; J. Baker advanced to second.",
+            "M. Deshetsky struck out swinging.",
+            "A. McIntyre struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Wright struck out swinging.",
+            "K. Feliciano struck out swinging.",
+            "R. Curtis reached first on an error by 1b, assist by 3b.",
+            "M. Petroro struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Kibler to 1b.",
+            "M. Long to c.",
+            "A. Heacock grounded out to ss.",
+            "J. Baker struck out swinging.",
+            "J. Bruestle struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "V. Krystofik to 3b for B. Bartz.",
+            "M. Deshetsky grounded out to 2b.",
+            "A. McIntyre struck out looking.",
+            "S. Wright struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/keystone/boxscore/8829",
+      "date": "3/12/2025",
+      "opponent": "Keystone",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Taylor walked.",
+            "A. Morley reached first on an error by p; K. Taylor advanced to second.",
+            "I. Mandarano struck out looking.",
+            "S. Ratti reached first on an error by p; A. Morley advanced to second; K. Taylor advanced to third.",
+            "E. Schultz walked, RBI; S. Ratti advanced to second; A. Morley advanced to third; K. Taylor scored, unearned.",
+            "I. Benitez struck out swinging.",
+            "J. Gorel grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Riley struck out looking.",
+            "M. Brooks grounded out to 2b.",
+            "K. Taylor grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Reyna to rf.",
+            "A. Morley struck out looking.",
+            "I. Mandarano flied out to cf.",
+            "S. Ratti singled up the middle.",
+            "E. Schultz grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Bartz to 2b.",
+            "M. Long to c.",
+            "M. Kibler to 1b.",
+            "I. Benitez grounded out to p.",
+            "J. Gorel grounded out to 1b unassisted.",
+            "H. Riley struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "V. Krystofik to 3b for E. Behel.",
+            "M. Brooks grounded out to ss.",
+            "K. Taylor grounded out to 3b.",
+            "E. Schultz reached first on an error by 1b, assist by c.",
+            "I. Mandarano reached first on an error by 3b; E. Schultz advanced to second.",
+            "S. Ratti singled to right field; I. Mandarano advanced to second; E. Schultz advanced to third, out at home lf to c."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/suny-morrisville/boxscore/8830",
+      "date": "3/13/2025",
+      "opponent": "Suny Morrisville",
+      "pitchers": [
+        "Walker, Dana",
+        "Reilly, Hayden"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Fish singled down the rf line.",
+            "C. Lafontain struck out looking.",
+            "E. Sawitzki singled; L. Fish advanced to third on the throw.",
+            "H. Brennan walked; E. Sawitzki advanced to second.",
+            "P. Kaylor struck out looking.",
+            "A. Platt reached on a fielder's choice; H. Brennan out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "I. Gaskins singled up the middle.",
+            "K. Kendrick singled to right field; I. Gaskins advanced to second.",
+            "S. Brefka struck out swinging.",
+            "L. Fish grounded out to 2b; K. Kendrick advanced to second; I. Gaskins advanced to third.",
+            "C. Lafontain walked.",
+            "E. Sawitzki singled to center field, advanced to second on the throw, 2 RBI; C. Lafontain advanced to third; K. Kendrick scored; I. Gaskins scored.",
+            "H. Brennan struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "P. Kaylor walked.",
+            "C. Baldwin pinch ran for P. Kaylor.",
+            "A. Platt popped up to 2b.",
+            "I. Gaskins grounded out to 1b unassisted; C. Baldwin advanced to second.",
+            "K. Kendrick struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Brefka grounded out to ss.",
+            "L. Fish popped up to 1b.",
+            "C. Lafontain struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Sawitzki walked.",
+            "H. Brennan struck out looking.",
+            "P. Kaylor grounded out to ss; E. Sawitzki out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Schmutz to lf.",
+            "H. Reilly to p.",
+            "A. Platt lined out to 3b.",
+            "I. Gaskins reached first on an error by lf.",
+            "D. Miranda pinch ran for I. Gaskins.",
+            "K. Kendrick out at first p to 2b, SAC, bunt; D. Miranda advanced to second.",
+            "S. Brefka popped up to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Fish singled through the left side.",
+            "C. Lafontain out at first 1b to 2b, SAC, bunt.",
+            "L. Fish advanced to second on a passed ball.",
+            "E. Sawitzki reached first on an error by rf, advanced to second on the throw; L. Fish scored on the error, unearned.",
+            "E. Sawitzki out at third c to 3b, caught stealing.",
+            "H. Brennan grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/mitchell/boxscore/8831",
+      "date": "3/13/2025",
+      "opponent": "Mitchell",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry grounded out to p.",
+            "M. Cole popped up to 3b.",
+            "O. DeCicco grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Whitmarsh struck out looking.",
+            "E. LaBreck grounded out to p.",
+            "C. Housley struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Hudson doubled down the lf line.",
+            "N. Hudson stole third.",
+            "K. Drago struck out looking.",
+            "C. Roman struck out looking.",
+            "G. Landry grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Beck to cf for E. Reyna.",
+            "M. Cole struck out looking.",
+            "O. DeCicco doubled to left center.",
+            "B. Whitmarsh tripled, RBI; O. DeCicco scored.",
+            "E. LaBreck reached first on an error by ss, advanced to second on the error, RBI; B. Whitmarsh scored.",
+            "C. Housley singled; E. LaBreck advanced to third.",
+            "C. Housley stole second.",
+            "N. Hudson struck out looking.",
+            "K. Drago struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Roman reached first on an error by 2b, assist by p, bunt.",
+            "G. Landry reached on a fielder's choice; C. Roman out at second ss to 2b.",
+            "M. Cole struck out looking.",
+            "O. DeCicco singled to right center; G. Landry advanced to second.",
+            "O. DeCicco advanced to second on a wild pitch; G. Landry advanced to third on a wild pitch.",
+            "B. Whitmarsh struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Long to c for E. Behel.",
+            "M. Kibler to 1b.",
+            "E. LaBreck grounded out to p.",
+            "C. Housley grounded out to ss.",
+            "B. Taylor pinch hit for N. Hudson.",
+            "B. Taylor grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Clancy pinch hit for K. Drago.",
+            "B. Clancy grounded out to ss.",
+            "C. Roman struck out looking.",
+            "G. Landry grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/roger-williams/boxscore/8770",
+      "date": "3/19/2025",
+      "opponent": "Roger Williams",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Williams grounded out to 1b unassisted.",
+            "L. Maurao grounded out to 1b unassisted.",
+            "S. Starratt doubled to right field.",
+            "S. Starratt advanced to third on a wild pitch.",
+            "C. Denovelli walked; S. Starratt scored on a passed ball, unearned.",
+            "K. Burr grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. O'Connor singled up the middle.",
+            "C. Thomas grounded out to 3b, SAC, bunt; K. O'Connor advanced to second.",
+            "J. Wells singled to shortstop; K. O'Connor did not advance.",
+            "A. Klingberg singled down the rf line, RBI; J. Wells advanced to third; K. O'Connor scored.",
+            "A. Klingberg stole second.",
+            "H. Williams grounded out to 3b, RBI; A. Klingberg advanced to third; J. Wells scored.",
+            "L. Maurao grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Starratt grounded out to p.",
+            "C. Denovelli grounded out to 3b.",
+            "K. Burr grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. O'Connor flied out to lf.",
+            "C. Thomas struck out swinging.",
+            "J. Wells grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Behel to 1b for M. Long.",
+            "M. Kibler to c.",
+            "A. Klingberg singled.",
+            "A. Klingberg stole second.",
+            "H. Williams popped up to ss.",
+            "A. Klingberg stole third.",
+            "L. Maurao struck out swinging.",
+            "S. Starratt grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Denovelli reached first on an error by 1b.",
+            "C. Moody pinch ran for C. Denovelli.",
+            "K. Burr reached on a fielder's choice; C. Moody out at second 2b to ss.",
+            "M. Foley pinch ran for K. Burr.",
+            "K. O'Connor out at first 1b to 2b; M. Foley advanced to second.",
+            "M. Foley advanced to third on a wild pitch.",
+            "C. Thomas popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Bartz to ss.",
+            "J. Wells reached first on an error by ss.",
+            "A. Klingberg out at first p to 2b, SAC, bunt; J. Wells advanced to second.",
+            "H. Williams grounded out to 1b unassisted; J. Wells advanced to third.",
+            "L. Maurao grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/roger-williams/boxscore/8771",
+      "date": "3/19/2025",
+      "opponent": "Roger Williams",
+      "pitchers": [
+        "Behel, Emma",
+        "Reilly, Hayden",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Williams reached first on an error by 2b.",
+            "S. Starratt reached first on an error by ss; H. Williams advanced to second.",
+            "L. Maurao singled to center field; S. Starratt advanced to second; H. Williams advanced to third.",
+            "C. Denovelli lined out to 1b.",
+            "K. Burr singled, RBI; L. Maurao advanced to second; S. Starratt advanced to third; H. Williams scored, unearned.",
+            "C. Moody pinch ran for K. Burr.",
+            "K. O'Connor singled to left field, RBI; C. Moody advanced to second; L. Maurao advanced to third; S. Starratt scored, unearned.",
+            "V. Chamberli grounded out to 2b, RBI; K. O'Connor advanced to second; C. Moody advanced to third; L. Maurao scored.",
+            "J. Wells grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Fraser singled to center field.",
+            "H. Williams struck out swinging; N. Fraser out at second p to 1b, caught stealing.",
+            "S. Starratt flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Maurao singled to right center.",
+            "C. Denovelli singled, advanced to second on an error by rf; L. Maurao advanced to third on the error.",
+            "K. Burr pinch hit for C. Moody.",
+            "K. Burr grounded out to 1b unassisted; C. Denovelli did not advance; L. Maurao did not advance.",
+            "K. O'Connor grounded out to ss, RBI; C. Denovelli advanced to third; L. Maurao scored, unearned.",
+            "V. Chamberli struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Wells popped up to 1b.",
+            "N. Fraser grounded out to ss.",
+            "H. Williams doubled to left center.",
+            "S. Starratt doubled to right center, RBI; H. Williams scored.",
+            "L. Maurao hit by pitch.",
+            "C. Denovelli singled to center field, RBI; L. Maurao advanced to third on the throw; S. Starratt scored.",
+            "H. Reilly to p.",
+            "E. Behel to 1b.",
+            "A. Schmutz to lf.",
+            "K. Burr walked; C. Denovelli advanced to second.",
+            "K. O'Connor singled, RBI; K. Burr advanced to second; C. Denovelli advanced to third; L. Maurao scored.",
+            "V. Chamberli singled up the middle, RBI; K. O'Connor advanced to second; K. Burr advanced to third; C. Denovelli scored.",
+            "J. Wells flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Walker to p for H. Reilly.",
+            "N. Fraser grounded out to 2b.",
+            "A. Fairbanks pinch hit for H. Williams.",
+            "A. Fairbanks grounded out to p.",
+            "S. Merrow pinch hit for S. Starratt.",
+            "S. Merrow reached first on an error by 2b.",
+            "L. Maurao grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/babson/boxscore/8772",
+      "date": "3/29/2025",
+      "opponent": "Babson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore singled to left field, advanced to second on an error by ss.",
+            "A. Hadjipana struck out looking.",
+            "B. DiCampell walked.",
+            "C. Raymond popped up to 1b.",
+            "S. Pak grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Whiteford walked.",
+            "A. Cubberly struck out swinging.",
+            "E. Walsh struck out swinging.",
+            "M. DeLong walked; C. Whiteford advanced to second.",
+            "S. Moore grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Hadjipana grounded out to p.",
+            "B. DiCampell lined out to 2b.",
+            "C. Raymond singled to second base.",
+            "S. Pak singled to left field; C. Raymond advanced to second.",
+            "C. Whiteford struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Cubberly struck out swinging.",
+            "E. Walsh struck out swinging.",
+            "M. DeLong grounded out to p unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Moore grounded out to 3b.",
+            "A. Hadjipana reached first on an error by 1b.",
+            "B. DiCampell struck out swinging.",
+            "C. Raymond singled to third base; A. Hadjipana advanced to third on the throw.",
+            "S. Pak singled to shortstop, RBI; C. Raymond advanced to second; A. Hadjipana scored, unearned.",
+            "C. Whiteford struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Cubberly struck out looking.",
+            "D. McCall pinch hit for E. Walsh.",
+            "D. McCall hit by pitch.",
+            "E. Walsh pinch ran for D. McCall.",
+            "M. DeLong grounded out to 1b unassisted; E. Walsh advanced to second.",
+            "S. Moore singled to center field, RBI; E. Walsh scored.",
+            "A. Hadjipana singled to right field, advanced to second on the throw, advanced to third on an error by rf; S. Moore scored on the error, unearned.",
+            "B. DiCampell grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Raymond popped up to 2b.",
+            "S. Pak singled up the middle.",
+            "S. Pak advanced to second on a wild pitch.",
+            "C. Whiteford reached first on an error by ss; S. Pak scored on the error, unearned.",
+            "R. Madia pinch hit for A. Cubberly.",
+            "R. Madia struck out looking.",
+            "E. Walsh reached first on an error by 2b; C. Whiteford scored on the error, unearned.",
+            "M. DeLong walked; E. Walsh advanced to second.",
+            "S. Moore singled down the rf line; M. DeLong advanced to second; E. Walsh advanced to third, out at home lf to c."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/babson/boxscore/8773",
+      "date": "3/29/2025",
+      "opponent": "Babson",
+      "pitchers": [
+        "Reilly, Hayden",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore out at first p to 2b.",
+            "A. Hadjipana lined out to ss.",
+            "B. DiCampell singled to shortstop.",
+            "B. DiCampell advanced to second on a passed ball.",
+            "S. Pak grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Raymond lined out to cf.",
+            "D. McCall grounded out to ss.",
+            "C. Whiteford singled to center field.",
+            "E. Walsh doubled down the lf line; C. Whiteford advanced to third.",
+            "M. DeLong flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Walker to p for H. Reilly.",
+            "H. Reilly to ss for D. Walker.",
+            "B. Bartz to 1b.",
+            "D. Walker to p for O. Garcia.",
+            "S. Moore grounded out to 1b unassisted.",
+            "A. Hadjipana singled to right field.",
+            "B. DiCampell singled up the middle; A. Hadjipana advanced to second.",
+            "A. Hadjipana advanced to third on a wild pitch.",
+            "S. Pak reached on a fielder's choice, RBI; B. DiCampell advanced to second on an error by 2b; A. Hadjipana scored.",
+            "C. Raymond singled up the middle, advanced to second on the throw, RBI; S. Pak advanced to third; B. DiCampell scored, unearned.",
+            "D. McCall reached first on an error by rf; C. Raymond advanced to third; S. Pak scored, unearned.",
+            "C. Whiteford singled to right field, RBI; D. McCall out at second rf to ss; C. Raymond scored, unearned.",
+            "E. Walsh reached first on an error by 3b; C. Whiteford advanced to third on the error.",
+            "M. DeLong flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Reilly to p.",
+            "M. Murnane to 2b.",
+            "D. Walker to ss.",
+            "S. Moore grounded out to 2b.",
+            "A. Hadjipana out at first p to 2b, bunt.",
+            "B. DiCampell homered, RBI.",
+            "S. Pak popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Raymond lined out to cf.",
+            "D. McCall singled up the middle.",
+            "C. Whiteford flied out to cf; D. McCall did not advance.",
+            "E. Walsh flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. DeLong grounded out to p.",
+            "S. Moore reached first on an error by 1b.",
+            "A. Hadjipana grounded out to 3b; S. Moore advanced to second.",
+            "B. DiCampell grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Pak singled through the right side.",
+            "C. Raymond doubled to left field; S. Pak advanced to third.",
+            "D. McCall grounded out to p.",
+            "C. Whiteford flied out to rf, sacrifice fly, RBI; C. Raymond advanced to third; S. Pak scored.",
+            "E. Walsh lined out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/clark-mass-/boxscore/8774",
+      "date": "4/4/2025",
+      "opponent": "Clark Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Quigley grounded out to 2b.",
+            "A. Dillon walked.",
+            "A. Piana out at first p to 2b, SAC, bunt; A. Dillon advanced to second.",
+            "R. Mauro grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Dube popped up to ss.",
+            "F. Salvati struck out swinging.",
+            "M. Dillon grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Castro popped up to 2b.",
+            "E. Spence struck out swinging.",
+            "C. Quigley walked.",
+            "A. Dillon singled through the right side; C. Quigley advanced to second.",
+            "A. Piana struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Mauro grounded out to p.",
+            "M. Dube grounded out to ss.",
+            "F. Salvati struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Dillon grounded out to p.",
+            "G. Castro grounded out to 3b.",
+            "E. Spence struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Kibler to 1b for E. Behel.",
+            "C. Quigley walked.",
+            "A. Dillon lined into double play 1b unassisted; C. Quigley out on the play.",
+            "A. Piana grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Mauro doubled to right center.",
+            "M. Dube singled through the left side; R. Mauro advanced to third.",
+            "F. Salvati walked; M. Dube advanced to second.",
+            "E. Slavin to rf for M. Dillon.",
+            "E. Slavin struck out swinging.",
+            "G. Castro struck out swinging.",
+            "E. Spence reached on a fielder's choice; F. Salvati advanced to second; M. Dube out at third 3b unassisted."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/clark-mass-/boxscore/8775",
+      "date": "4/4/2025",
+      "opponent": "Clark Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Quigley struck out swinging.",
+            "A. Dillon singled down the rf line.",
+            "A. Piana grounded out to 2b; A. Dillon advanced to second.",
+            "R. Mauro grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Dube struck out swinging.",
+            "F. Salvati grounded out to 2b.",
+            "G. Castro reached first on a throwing error by 3b.",
+            "M. Dillon out at first 3b to 2b, bunt."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Spence struck out swinging.",
+            "C. Quigley grounded out to ss.",
+            "A. Dillon grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Piana struck out swinging.",
+            "R. Mauro reached first on a fielding error by 1b.",
+            "M. Dube grounded out to ss; R. Mauro advanced to second.",
+            "F. Salvati walked; R. Mauro advanced to third on a wild pitch.",
+            "G. Castro singled through the left side, RBI; F. Salvati advanced to second; R. Mauro scored, unearned.",
+            "M. Dillon grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Bartz to 1b.",
+            "M. Kibler to c.",
+            "L. Ragonese to 2b.",
+            "E. Spence struck out swinging.",
+            "C. Quigley grounded out to ss.",
+            "A. Dillon grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Piana struck out looking.",
+            "R. Mauro flied out to cf.",
+            "M. Dube struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/mitchell/boxscore/8778",
+      "date": "4/9/2025",
+      "opponent": "Mitchell",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry singled.",
+            "M. Cole struck out looking.",
+            "O. DeCicco struck out looking.",
+            "B. Whitmarsh grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Housley struck out looking.",
+            "E. LaBreck struck out swinging.",
+            "C. Roman grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Hudson grounded out to 3b.",
+            "K. Drago struck out swinging.",
+            "G. Landry grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Cole singled to right field.",
+            "O. DeCicco struck out looking.",
+            "B. Whitmarsh grounded out to 2b; M. Cole advanced to second.",
+            "C. Housley grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. LaBreck singled up the middle.",
+            "C. Roman struck out swinging.",
+            "N. Hudson struck out looking.",
+            "K. Drago singled; E. LaBreck advanced to second.",
+            "G. Landry grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Cole grounded out to 3b.",
+            "O. DeCicco singled through the left side.",
+            "B. Whitmarsh hit by pitch; O. DeCicco advanced to second.",
+            "C. Housley grounded out to 1b unassisted; B. Whitmarsh advanced to second; O. DeCicco advanced to third.",
+            "E. LaBreck grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Roman grounded out to 3b.",
+            "N. Hudson grounded out to p.",
+            "K. Drago singled up the middle.",
+            "G. Landry grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/mitchell/boxscore/8779",
+      "date": "4/9/2025",
+      "opponent": "Mitchell",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry walked.",
+            "G. Landry advanced to second on a wild pitch.",
+            "M. Cole grounded out to 3b; G. Landry advanced to third.",
+            "O. DeCicco grounded out to 2b, RBI; G. Landry scored.",
+            "B. Whitmarsh grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Housley grounded out to p.",
+            "E. LaBreck singled to shortstop.",
+            "K. Drago singled to left field; E. LaBreck advanced to second.",
+            "K. Drago advanced to second on a wild pitch; E. LaBreck advanced to third.",
+            "E. Reynolds flied out to rf; K. Drago did not advance; E. LaBreck did not advance.",
+            "B. Taylor grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Landry lined out to p.",
+            "M. Cole walked.",
+            "O. DeCicco singled to shortstop; M. Cole advanced to second.",
+            "B. Whitmarsh doubled to center field, RBI; O. DeCicco advanced to third; M. Cole scored.",
+            "C. Housley grounded out to 2b, RBI; B. Whitmarsh did not advance; O. DeCicco scored.",
+            "E. LaBreck grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Reilly to cf for N. Beck.",
+            "K. Drago doubled to right field.",
+            "E. Reynolds reached first on an error by cf; K. Drago did not advance.",
+            "B. Taylor singled up the middle; E. Reynolds advanced to second; K. Drago advanced to third.",
+            "G. Landry walked, RBI; B. Taylor advanced to second; E. Reynolds advanced to third; K. Drago scored, unearned.",
+            "D. Walker to p for E. Behel.",
+            "M. Cole fouled out to rf; G. Landry advanced to second on the throw; B. Taylor advanced to third on the throw; E. Reynolds scored, unearned.",
+            "O. DeCicco walked.",
+            "B. Whitmarsh struck out looking.",
+            "O. DeCicco advanced to second on a wild pitch; G. Landry advanced to third; B. Taylor scored.",
+            "C. Housley walked.",
+            "E. LaBreck reached first on an error by 3b; C. Housley advanced to second; O. DeCicco scored on the error, unearned; G. Landry scored on the error, unearned.",
+            "K. Drago grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Reynolds grounded out to p.",
+            "B. Taylor grounded out to 2b.",
+            "G. Landry singled to right center.",
+            "M. Cole struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Beck to cf for H. Reilly.",
+            "K. Goodman walked.",
+            "C. Housley doubled to right field, RBI; K. Goodman scored.",
+            "O. DeCicco singled; C. Housley advanced to third.",
+            "E. LaBreck reached first on an error by 3b; O. DeCicco advanced to second on the error.",
+            "K. Drago lined into double play 2b to ss; O. DeCicco out on the play.",
+            "B. Whitmarsh grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Taylor flied out to rf.",
+            "G. Landry struck out swinging, out at first c to 1b.",
+            "M. Cole struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wellesley/boxscore/8780",
+      "date": "4/11/2025",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out swinging.",
+            "C. Chung grounded out to p.",
+            "J. Colgan singled.",
+            "B. Mellady grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Borrison grounded out to ss.",
+            "E. Gaunce struck out swinging.",
+            "G. Jones grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol flied out to cf.",
+            "A. Delgado struck out swinging.",
+            "A. Mulhern singled to right field.",
+            "A. Mulhern stole second.",
+            "C. Chung grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Colgan grounded out to 2b.",
+            "B. Mellady reached first on an error by 3b.",
+            "D. Borrison struck out looking.",
+            "B. Mellady out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Gaunce grounded out to 3b.",
+            "G. Jones grounded out to ss.",
+            "N. Nicol singled to shortstop.",
+            "A. Delgado grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Mulhern singled, bunt.",
+            "C. Chung singled to left field; A. Mulhern advanced to second.",
+            "J. Colgan reached on a fielder's choice to shortstop; C. Chung out at second ss to 2b; A. Mulhern advanced to third.",
+            "B. Mellady grounded out to 3b, SAC, bunt, RBI; J. Colgan advanced to second; A. Mulhern scored.",
+            "E. Kulhanek pinch ran for J. Colgan.",
+            "D. Borrison singled, advanced to second on the throw, RBI; E. Kulhanek scored.",
+            "R. Yang pinch ran for D. Borrison.",
+            "E. Gaunce singled to pitcher; R. Yang advanced to third.",
+            "E. Gaunce stole second.",
+            "G. Jones lined out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Nicol singled up the middle.",
+            "A. Delgado grounded out to 1b unassisted, SAC, bunt; N. Nicol advanced to second.",
+            "N. Nicol advanced to third on a wild pitch.",
+            "A. Mulhern walked.",
+            "A. Mulhern stole second.",
+            "C. Chung singled to first base, RBI; A. Mulhern advanced to third; N. Nicol scored.",
+            "J. Colgan pinch hit for L. Young.",
+            "J. Colgan singled to left field, advanced to second on the throw, 2 RBI; C. Chung scored; A. Mulhern scored.",
+            "B. Mellady grounded out to p; J. Colgan advanced to third.",
+            "D. Borrison flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wellesley/boxscore/8781",
+      "date": "4/11/2025",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern walked.",
+            "A. Mulhern stole second.",
+            "N. Nicol walked.",
+            "S. Wicker singled to left field; N. Nicol advanced to second; A. Mulhern advanced to third.",
+            "J. Colgan grounded into double play p to c to 1b; S. Wicker advanced to second; N. Nicol advanced to third; A. Mulhern out on the play.",
+            "D. Borrison struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Jones struck out looking.",
+            "R. Yang grounded out to 2b.",
+            "E. Kulhanek singled up the middle.",
+            "A. Delgado reached first on an error by ss; E. Kulhanek advanced to second.",
+            "A. Mulhern lined out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol popped up to ss.",
+            "S. Wicker grounded out to 3b.",
+            "J. Colgan reached first on an error by 3b.",
+            "D. Borrison reached on a fielder's choice to shortstop; J. Colgan out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Jones flied out to rf.",
+            "R. Yang walked.",
+            "R. Yang stole second.",
+            "E. Kulhanek walked.",
+            "A. Delgado flied out to lf; E. Kulhanek did not advance; R. Yang advanced to third.",
+            "A. Mulhern walked; E. Kulhanek advanced to second.",
+            "N. Nicol popped up to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Wicker reached first on an error by 3b.",
+            "J. Colgan reached on a fielder's choice, bunt; S. Wicker advanced to second, out at third 3b to lf.",
+            "D. Borrison struck out swinging.",
+            "G. Jones reached on a fielder's choice; J. Colgan out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Yang reached first on an error by 2b.",
+            "R. Yang advanced to second on an error by c.",
+            "E. Kulhanek flied out to cf; R. Yang out at third cf to ss.",
+            "A. Delgado doubled to left field.",
+            "A. Mulhern flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Nicol popped up to 3b.",
+            "J. Colgan grounded out to 3b.",
+            "J. Colgan flied out to lf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wheaton-mass-/boxscore/8782",
+      "date": "4/18/2025",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Behel, Emma",
+        "Reilly, Hayden"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito singled to left field.",
+            "J. Zito out at second c to 2b, caught stealing.",
+            "G. Dibacco grounded out to 3b.",
+            "E. Molinari lined out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Blankenhe flied out to rf.",
+            "T. Barry walked.",
+            "T. Barry stole second.",
+            "R. Dolan singled to right center, RBI; T. Barry scored.",
+            "M. Miller grounded out to ss; R. Dolan advanced to second.",
+            "E. Boucher singled to shortstop; R. Dolan advanced to third.",
+            "E. Boucher stole second.",
+            "J. Rohon struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Zito flied out to cf.",
+            "G. Dibacco out at first p to 2b, bunt.",
+            "E. Molinari singled to right field.",
+            "P. Blankenhe struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Barry tripled down the rf line.",
+            "R. Dolan lined out to 1b.",
+            "M. Miller grounded out to p.",
+            "E. Boucher singled to center field, RBI; T. Barry scored.",
+            "J. Rohon reached first on a muffed throw by 1b; E. Boucher advanced to second.",
+            "J. Zito singled to center field, advanced to second on an error by cf, advanced to third, 2 RBI; J. Rohon scored, unearned; E. Boucher scored, unearned.",
+            "G. Dibacco struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Molinari doubled to center field.",
+            "M. Murphy to rf.",
+            "E. Behel to dp.",
+            "H. Reilly to p.",
+            "P. Blankenhe grounded out to ss.",
+            "T. Barry flied out to rf; E. Molinari advanced to third.",
+            "R. Dolan grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Miller grounded out to p.",
+            "E. Boucher struck out swinging.",
+            "J. Rohon singled to left field.",
+            "J. Zito singled through the left side; J. Rohon advanced to second.",
+            "K. Copperthi pinch hit for G. Dibacco.",
+            "K. Copperthi grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wheaton-mass-/boxscore/8783",
+      "date": "4/18/2025",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito grounded out to 3b.",
+            "G. Dibacco grounded out to 2b.",
+            "E. Molinari grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Blankenhe grounded out to 3b.",
+            "T. Barry singled to shortstop.",
+            "E. Boucher struck out looking.",
+            "M. Miller grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Kibler to c for E. Reyna.",
+            "S. Vaidya grounded out to 2b.",
+            "J. Rohon grounded out to 3b.",
+            "J. Zito struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Dibacco grounded out to 2b.",
+            "E. Molinari grounded out to 3b.",
+            "P. Blankenhe singled to center field.",
+            "T. Barry doubled to right field; P. Blankenhe advanced to third, out at home rf to 2b to c."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Boucher singled through the left side.",
+            "M. Miller flied out to rf.",
+            "S. Vaidya struck out swinging.",
+            "J. Rohon reached on a fielder's choice; E. Boucher out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Zito grounded out to p.",
+            "G. Dibacco walked.",
+            "E. Molinari singled to center field, scored, unearned; G. Dibacco advanced to third, scored on an error by cf.",
+            "P. Blankenhe grounded out to 2b.",
+            "T. Barry singled to shortstop.",
+            "E. Boucher flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Miller grounded out to ss.",
+            "S. Vaidya walked.",
+            "J. Rohon flied out to cf.",
+            "J. Zito singled through the left side; S. Vaidya advanced to second.",
+            "G. Dibacco grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/springfield/boxscore/8784",
+      "date": "4/19/2025",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Behel, Emma",
+        "Reilly, Hayden"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. DeRosa flied out to cf.",
+            "B. Eckles singled to center field.",
+            "C. Pecchia struck out swinging.",
+            "B. Eckles advanced to second on a passed ball.",
+            "C. Gendron walked.",
+            "K. Manzone grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Puskas lined out to ss.",
+            "M. Ponticell singled, out at second p to 2b.",
+            "K. Katsetos walked.",
+            "M. Seyfert singled to right field; K. Katsetos advanced to third.",
+            "M. Seyfert stole second.",
+            "A. DeRosa flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "O. Garcia to 1b for B. Bartz.",
+            "B. Eckles singled to shortstop.",
+            "C. Pecchia grounded out to p; B. Eckles advanced to second.",
+            "C. Gendron walked.",
+            "K. Manzone popped up to 1b.",
+            "L. Puskas singled up the middle, RBI; C. Gendron advanced to second; B. Eckles scored.",
+            "M. Ponticell lined out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Katsetos grounded out to p.",
+            "M. Seyfert popped up to 1b.",
+            "A. DeRosa flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Eckles grounded out to p.",
+            "C. Pecchia struck out swinging.",
+            "C. Gendron walked.",
+            "L. Donston pinch ran for C. Gendron.",
+            "K. Manzone flied out to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Puskas reached first on an error by 2b.",
+            "M. Ponticell singled through the left side; L. Puskas advanced to second.",
+            "K. Katsetos singled to right field, RBI; M. Ponticell advanced to third; L. Puskas scored, unearned.",
+            "K. Katsetos advanced to second on a wild pitch.",
+            "H. Reilly to p.",
+            "E. Behel to 1b.",
+            "B. Bartz to 2b for O. Garcia.",
+            "M. Seyfert walked.",
+            "A. DeRosa hit by pitch, RBI; M. Seyfert advanced to second; K. Katsetos advanced to third; M. Ponticell scored.",
+            "B. Eckles singled to center field, RBI; A. DeRosa advanced to second; M. Seyfert advanced to third; K. Katsetos scored.",
+            "C. Pecchia singled to left field, RBI; B. Eckles advanced to second; A. DeRosa advanced to third; M. Seyfert scored.",
+            "H. Reilly to 2b.",
+            "E. Behel to p.",
+            "B. Bartz to 1b.",
+            "C. Gendron singled to right field, RBI; C. Pecchia advanced to second; B. Eckles advanced to third; A. DeRosa scored.",
+            "T. Falotico pinch ran for C. Pecchia.",
+            "K. Manzone grounded out to 2b, RBI; C. Gendron advanced to second; T. Falotico advanced to third; B. Eckles scored.",
+            "L. Puskas singled to right field, RBI; C. Gendron advanced to third; T. Falotico scored.",
+            "M. Ponticell flied out to cf; L. Puskas did not advance; C. Gendron did not advance.",
+            "L. Puskas stole second.",
+            "K. Katsetos flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Murphy to rf for M. Long.",
+            "M. Seyfert grounded out to ss.",
+            "A. DeRosa flied out to lf.",
+            "B. Eckles walked.",
+            "C. Pecchia flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/springfield/boxscore/8785",
+      "date": "4/19/2025",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. DeRosa walked.",
+            "A. DeRosa advanced to second on a wild pitch.",
+            "B. Eckles walked.",
+            "C. Pecchia singled to right center, RBI; B. Eckles advanced to third; A. DeRosa scored.",
+            "C. Gendron walked; C. Pecchia advanced to second.",
+            "L. Puskas struck out swinging.",
+            "K. Manzone grounded out to 2b, RBI; C. Gendron advanced to second; C. Pecchia advanced to third; B. Eckles scored.",
+            "M. Ponticell struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Katsetos grounded out to 2b.",
+            "M. Seyfert struck out swinging.",
+            "A. DeRosa grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Eckles grounded out to p.",
+            "C. Pecchia reached first on an error by ss.",
+            "C. Gendron walked; C. Pecchia advanced to second.",
+            "L. Puskas singled to right field; C. Gendron advanced to second; C. Pecchia advanced to third.",
+            "K. Manzone singled up the middle, RBI; L. Puskas advanced to second; C. Gendron advanced to third; C. Pecchia scored, unearned.",
+            "M. Ponticell walked, RBI; K. Manzone advanced to second; L. Puskas advanced to third; C. Gendron scored.",
+            "K. Katsetos singled through the left side, 2 RBI; M. Ponticell advanced to second; K. Manzone scored; L. Puskas scored.",
+            "K. Katsetos advanced to second on a wild pitch; M. Ponticell advanced to third.",
+            "M. Seyfert walked.",
+            "A. DeRosa reached on a fielder's choice to shortstop, RBI; M. Seyfert advanced to second; K. Katsetos out at third ss to 3b; M. Ponticell scored, unearned.",
+            "B. Eckles grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Pecchia struck out looking, out at first c to 1b.",
+            "C. Gendron walked.",
+            "M. Tse pinch ran for C. Gendron.",
+            "L. Puskas grounded into double play ss to 1b; M. Tse out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Murnane to ss for M. Murphy.",
+            "L. Ragonese to 2b for E. Reyna.",
+            "K. Manzone flied out to cf.",
+            "M. Long to c for O. Garcia.",
+            "M. Kibler to 1b.",
+            "M. Ponticell singled to shortstop.",
+            "K. Katsetos singled to left field; M. Ponticell advanced to second.",
+            "M. Seyfert out at first 1b to 2b, SAC, bunt; K. Katsetos advanced to second; M. Ponticell advanced to third.",
+            "A. DeRosa reached on a fielder's choice, RBI; K. Katsetos out at third 3b to 2b to ss to 3b; M. Ponticell scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/emerson/boxscore/8920",
+      "date": "4/22/2025",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti singled to pitcher.",
+            "G. Beaulieu struck out swinging; S. Zannotti out at second c to ss, caught stealing.",
+            "J. Gomez popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Caiazza grounded out to 3b.",
+            "A. Kuperman reached first on a throwing error by 3b, advanced to second on the error.",
+            "C. Sheehan singled down the lf line, advanced to second on the throw, RBI; A. Kuperman scored, unearned.",
+            "I. Shaffer reached on a fielder's choice; C. Sheehan out at third 3b to 2b.",
+            "A. Lacey singled to center field; I. Shaffer advanced to second.",
+            "A. Lacey advanced to second on a wild pitch; I. Shaffer advanced to third on a wild pitch.",
+            "M. Rice walked.",
+            "S. Zannotti flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Beaulieu struck out swinging.",
+            "J. Gomez reached first on a throwing error by 2b.",
+            "R. Caiazza singled to pitcher; J. Gomez advanced to second.",
+            "A. Kuperman reached on a fielder's choice; R. Caiazza advanced to second; J. Gomez out at third ss to 3b.",
+            "C. Sheehan doubled to right center, 2 RBI; A. Kuperman scored, unearned; R. Caiazza scored, unearned.",
+            "I. Shaffer singled up the middle, advanced to second on the throw; C. Sheehan advanced to third.",
+            "A. Lacey singled to third base, RBI; C. Sheehan scored, unearned.",
+            "M. Rice struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Zannotti flied out to lf.",
+            "G. Beaulieu grounded out to ss.",
+            "J. Gomez grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Reilly to cf.",
+            "E. Reyna to rf for M. Murphy.",
+            "L. Ragonese to 2b for N. Beck.",
+            "R. Caiazza grounded out to 2b.",
+            "A. Kuperman grounded out to 2b.",
+            "C. Sheehan walked.",
+            "D. Miles pinch ran for C. Sheehan.",
+            "D. Miles advanced to second on a wild pitch.",
+            "I. Shaffer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Lacey struck out looking.",
+            "M. Rice walked.",
+            "M. Rice stole second.",
+            "S. Zannotti flied out to lf.",
+            "M. Rice out at third c to 3b, caught stealing."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/emerson/boxscore/8921",
+      "date": "4/22/2025",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti walked.",
+            "I. Shaffer grounded out to p; S. Zannotti advanced to second.",
+            "J. Gomez struck out swinging.",
+            "R. Caiazza struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Kuperman singled to pitcher.",
+            "C. Sheehan grounded out to 1b unassisted; A. Kuperman advanced to second.",
+            "G. Beaulieu popped up to 1b.",
+            "A. Lacey singled through the left side, RBI; A. Kuperman scored.",
+            "C. Rosenberg struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Zannotti grounded out to 3b.",
+            "I. Shaffer singled to pitcher.",
+            "J. Gomez reached on a fielder's choice to pitcher; I. Shaffer advanced to second.",
+            "R. Caiazza grounded out to 2b; J. Gomez advanced to second; I. Shaffer advanced to third.",
+            "A. Kuperman lined out to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Sheehan grounded out to 2b.",
+            "G. Beaulieu grounded out to 2b.",
+            "A. Lacey grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Rosenberg reached first on a throwing error by p, advanced to second on the error.",
+            "S. Zannotti struck out swinging.",
+            "I. Shaffer grounded out to p; C. Rosenberg advanced to third.",
+            "J. Gomez grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Caiazza grounded out to 2b.",
+            "A. Kuperman singled up the middle.",
+            "A. Kuperman advanced to second on a wild pitch.",
+            "C. Sheehan flied out to rf; A. Kuperman advanced to third.",
+            "G. Beaulieu grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Lacey singled to center field.",
+            "M. Rice pinch hit for C. Rosenberg.",
+            "M. Rice struck out swinging.",
+            "S. Zannotti flied out to lf.",
+            "I. Shaffer grounded out to p."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "J. Gomez I. Shaffer placed on second.",
+            "J. Gomez out at first p to 2b, SAC, bunt; I. Shaffer advanced to third.",
+            "R. Caiazza struck out swinging.",
+            "A. Kuperman grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/albertus-magnus/boxscore/8786",
+      "date": "4/23/2025",
+      "opponent": "Albertus Magnus",
+      "pitchers": [
+        "Reilly, Hayden",
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Smith flied out to lf.",
+            "G. Carrano grounded out to 2b.",
+            "S. Arent singled to right field.",
+            "M. Scwhipper reached first on an error by 3b; S. Arent advanced to second.",
+            "K. Carangelo singled to center field, RBI; M. Scwhipper advanced to second; S. Arent scored, unearned.",
+            "C. Edwards grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Boulli walked.",
+            "I. Barreiro reached on a fielder's choice to third base; A. Boulli out at second 3b to 2b.",
+            "G. Rubino reached on a fielder's choice to second base; I. Barreiro advanced to second on an error by 2b.",
+            "I. Smith singled to center field; G. Rubino advanced to second; I. Barreiro advanced to third.",
+            "G. Carrano singled up the middle, RBI; I. Smith advanced to second; G. Rubino advanced to third; I. Barreiro scored, unearned.",
+            "S. Arent doubled to right field, 2 RBI; G. Carrano advanced to third; I. Smith scored; G. Rubino scored.",
+            "M. Scwhipper singled to center field, RBI; S. Arent advanced to third; G. Carrano scored.",
+            "E. Behel to p.",
+            "H. Reilly to lf.",
+            "M. Scwhipper stole second.",
+            "K. Carangelo singled through the right side, RBI; M. Scwhipper advanced to third; S. Arent scored.",
+            "K. Carangelo stole second.",
+            "C. Edwards singled up the middle, 2 RBI; K. Carangelo scored; M. Scwhipper scored.",
+            "A. Boulli singled to shortstop; C. Edwards advanced to second.",
+            "I. Barreiro flied out to cf; A. Boulli did not advance; C. Edwards did not advance.",
+            "G. Rubino singled to center field, RBI; A. Boulli advanced to third; C. Edwards scored.",
+            "G. Rubino stole second.",
+            "I. Smith flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Carrano struck out swinging.",
+            "S. Arent flied out to cf.",
+            "M. Scwhipper walked.",
+            "K. Carangelo walked; M. Scwhipper advanced to second.",
+            "C. Edwards singled to center field, advanced to second on the throw, RBI; K. Carangelo advanced to third; M. Scwhipper scored.",
+            "A. Boulli grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Reyna to c.",
+            "A. Schmutz to lf.",
+            "M. Murphy to rf for M. Long.",
+            "M. Kibler to 1b for O. Garcia.",
+            "H. Reilly to cf.",
+            "I. Barreiro grounded out to ss.",
+            "G. Rubino singled through the left side.",
+            "J. Trocchio pinch ran for G. Rubino.",
+            "I. Smith singled up the middle; J. Trocchio advanced to second.",
+            "G. Carrano reached on a fielder's choice to second base; I. Smith out at second 2b to ss; J. Trocchio advanced to third.",
+            "G. Carrano stole second.",
+            "S. Arent grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Cross singled to center field.",
+            "K. Carangelo reached first on an error by 2b; M. Cross advanced to second on the error.",
+            "C. Edwards reached on a fielder's choice; K. Carangelo advanced to second; M. Cross advanced to third.",
+            "A. Boulli grounded into double play 2b to 1b; C. Edwards out on the play; K. Carangelo advanced to third; M. Cross scored, unearned.",
+            "I. Barreiro singled down the lf line, RBI; K. Carangelo scored, unearned.",
+            "J. Trocchio grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/albertus-magnus/boxscore/8787",
+      "date": "4/23/2025",
+      "opponent": "Albertus Magnus",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Smith grounded out to ss.",
+            "G. Carrano grounded out to 3b.",
+            "S. Arent lined out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Scwhipper singled through the right side.",
+            "M. Scwhipper out at first 1b unassisted, runner left early.",
+            "K. Carangelo struck out swinging.",
+            "C. Edwards grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Boulli grounded out to 3b.",
+            "I. Barreiro struck out swinging.",
+            "G. Rubino struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Murphy to rf for H. Reilly.",
+            "I. Smith doubled down the rf line.",
+            "G. Carrano singled through the right side; I. Smith advanced to third.",
+            "S. Arent struck out swinging.",
+            "G. Carrano stole second.",
+            "M. Scwhipper flied out to rf, RBI; G. Carrano advanced to third; I. Smith scored.",
+            "K. Carangelo singled to third base, RBI; G. Carrano scored.",
+            "C. Edwards singled to pitcher, bunt; K. Carangelo advanced to second.",
+            "A. Boulli struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Barreiro struck out swinging.",
+            "G. Rubino struck out swinging.",
+            "I. Smith grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Reilly to rf for M. Murphy.",
+            "B. Bartz to 1b for E. Reyna.",
+            "G. Carrano singled to shortstop.",
+            "S. Arent popped up to ss.",
+            "G. Carrano advanced to second on a wild pitch.",
+            "M. Scwhipper lined out to p.",
+            "K. Carangelo grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/salve-regina/boxscore/8788",
+      "date": "4/25/2025",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Wicklund walked.",
+            "S. Oliveira out at first 1b to 2b, SAC; S. Wicklund advanced to second.",
+            "S. Francesch tripled to right center, RBI; S. Wicklund scored.",
+            "E. Cronin flied out to rf.",
+            "M. Bello singled through the left side, RBI; S. Francesch scored.",
+            "M. Bello stole second.",
+            "K. Lanteri lined out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Lane singled to center field.",
+            "E. Lane stole second.",
+            "C. Nittoly out at first 1b to 2b, SAC; E. Lane advanced to third.",
+            "E. Moskal grounded out to 3b, RBI; E. Lane scored.",
+            "J. Cosciello pinch hit for S. Wicklund.",
+            "J. Cosciello singled up the middle.",
+            "J. Cosciello stole second.",
+            "S. Oliveira singled down the lf line, RBI; J. Cosciello scored.",
+            "S. Oliveira out at second lf to c to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Francesch singled to third base.",
+            "S. Francesch out at second c to ss, caught stealing.",
+            "E. Cronin walked.",
+            "M. Bello grounded out to 3b; E. Cronin advanced to second.",
+            "K. Lanteri grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "V. Krystofik to 3b for M. Murphy.",
+            "E. Lane flied out to lf.",
+            "C. Nittoly struck out swinging.",
+            "E. Moskal singled to left field.",
+            "J. Cosciello grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Oliveira walked.",
+            "S. Oliveira advanced to second on a muffed throw by 1b.",
+            "S. Francesch walked.",
+            "/  for N. Beck.",
+            "E. Reyna to rf for E. Behel.",
+            "D. Walker to p.",
+            "H. Reilly to cf.",
+            "E. Cronin out at first 3b to 2b, SAC; S. Francesch advanced to second; S. Oliveira advanced to third.",
+            "M. Bello doubled down the rf line, 2 RBI; S. Francesch scored; S. Oliveira scored.",
+            "K. Lanteri struck out swinging.",
+            "E. Lane singled down the rf line, RBI; M. Bello scored.",
+            "C. Nittoly struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Moskal grounded out to 3b.",
+            "J. Cosciello struck out looking.",
+            "S. Oliveira struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/salve-regina/boxscore/8789",
+      "date": "4/25/2025",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Cosciello struck out swinging.",
+            "S. Oliveira struck out swinging.",
+            "S. Francesch struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Bello grounded out to 2b.",
+            "E. Cronin grounded out to 3b.",
+            "E. Lane singled.",
+            "E. Lane stole second.",
+            "M. Oswald grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Lanteri out at first 1b to 2b.",
+            "E. Moskal grounded out to 2b.",
+            "J. Cosciello lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Oliveira singled to right field.",
+            "S. Francesch grounded out to 3b; S. Oliveira advanced to second.",
+            "M. Bello singled through the right side; S. Oliveira advanced to third.",
+            "E. Cronin flied out to rf, sacrifice fly, RBI; M. Bello out at second rf to c to ss; S. Oliveira scored."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Lane singled to third base.",
+            "M. Oswald struck out looking.",
+            "K. Lanteri grounded out to 2b; E. Lane advanced to second.",
+            "E. Lane stole third.",
+            "E. Moskal struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Kibler to c for M. Murphy.",
+            "J. Cosciello singled up the middle.",
+            "S. Oliveira lined into double play 1b; J. Cosciello out on the play.",
+            "S. Francesch struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Bello out at first 1b to 2b.",
+            "E. Cronin fouled out to rf.",
+            "E. Lane popped up to 1b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wpi/boxscore/8790",
+      "date": "4/28/2025",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Latour popped up to p.",
+            "V. McKinney singled to left field.",
+            "V. McKinney stole second.",
+            "D. Lum reached first on an error by ss; V. McKinney scored, unearned.",
+            "R. O'Brien doubled to left field, advanced to third on the throw, RBI; D. Lum scored, unearned.",
+            "S. Fairbairn grounded out to ss, RBI; R. O'Brien scored.",
+            "M. Francisco grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Kreuzer reached first on an error by ss.",
+            "E. Jordan out at first 1b to 2b, SAC, bunt; A. Kreuzer advanced to second.",
+            "M. Sherwood grounded out to 3b; A. Kreuzer advanced to third.",
+            "L. Latour walked.",
+            "L. Latour stole second.",
+            "V. McKinney singled to right field, 2 RBI; L. Latour scored, unearned; A. Kreuzer scored, unearned.",
+            "D. Lum grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. O'Brien reached first on an error by ss.",
+            "S. Fairbairn doubled to left center, RBI; R. O'Brien scored, unearned.",
+            "M. Francisco struck out swinging.",
+            "S. Fairbairn stole third.",
+            "A. Kreuzer struck out swinging.",
+            "E. Jordan reached first on an error by 1b; S. Fairbairn scored on the error, unearned.",
+            "M. Sherwood doubled to left center, RBI; E. Jordan scored, unearned.",
+            "L. Latour grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "V. McKinney grounded out to 2b.",
+            "D. Lum grounded out to ss.",
+            "R. O'Brien popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Kibler to c for O. Garcia.",
+            "V. Krystofik to 3b for M. Murphy.",
+            "S. Fairbairn singled up the middle.",
+            "S. Fairbairn advanced to second on a wild pitch.",
+            "S. Fairbairn stole third, scored on an error by c, unearned.",
+            "M. Francisco grounded out to 2b.",
+            "A. Kreuzer reached first on an error by 2b.",
+            "A. Kreuzer out at second ss unassisted.",
+            "E. Jordan walked.",
+            "M. Sherwood reached on a fielder's choice; E. Jordan out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Latour grounded out to 2b.",
+            "V. McKinney flied out to cf.",
+            "D. Lum grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. O'Brien doubled to right center.",
+            "C. Mayer pinch ran for R. O'Brien.",
+            "C. Mayer stole third.",
+            "S. Fairbairn walked.",
+            "E. Nagy pinch hit for M. Francisco.",
+            "S. Fairbairn stole second.",
+            "E. Nagy flied out to cf, sacrifice fly, RBI; S. Fairbairn advanced to third; C. Mayer scored.",
+            "A. Kreuzer grounded out to 1b unassisted; S. Fairbairn did not advance.",
+            "E. Jordan grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wpi/boxscore/8791",
+      "date": "4/28/2025",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Latour singled to shortstop.",
+            "L. Latour stole second.",
+            "V. McKinney grounded out to 1b unassisted; L. Latour advanced to third.",
+            "D. Lum grounded out to 2b, RBI; L. Latour scored.",
+            "R. O'Brien singled to right center.",
+            "S. Fairbairn walked; R. O'Brien advanced to second.",
+            "E. Nagy singled to right center, RBI; S. Fairbairn advanced to third; R. O'Brien scored.",
+            "E. Nagy stole second.",
+            "A. Kreuzer struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Reilly to ss.",
+            "E. Reyna to rf for M. Murnane.",
+            "M. Francisco struck out swinging.",
+            "M. Sherwood flied out to lf.",
+            "L. Latour grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "V. McKinney singled to right field.",
+            "D. Lum flied out to rf; V. McKinney did not advance.",
+            "V. McKinney stole second.",
+            "R. O'Brien flied out to rf, sacrifice fly; V. McKinney did not advance.",
+            "S. Fairbairn struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Nagy struck out swinging.",
+            "A. Kreuzer grounded out to p.",
+            "M. Francisco struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Sherwood singled to shortstop.",
+            "L. Latour out at first p to 2b; M. Sherwood advanced to third on an error by 2b.",
+            "V. McKinney grounded out to 2b, RBI; M. Sherwood scored, unearned.",
+            "D. Lum singled to center field.",
+            "S. Figler pinch ran for D. Lum.",
+            "R. O'Brien flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Murnane to ss for E. Reyna.",
+            "H. Reilly to rf.",
+            "S. Fairbairn struck out looking.",
+            "E. Nagy walked.",
+            "A. Kreuzer grounded out to 1b unassisted; E. Nagy advanced to second.",
+            "M. Francisco reached first on an error by 1b, assist by ss; E. Nagy scored on the error, unearned.",
+            "M. Sherwood singled; M. Francisco advanced to third on an error by ss.",
+            "L. Latour reached first on an error by 2b; M. Sherwood scored, unearned; M. Francisco scored, unearned.",
+            "V. McKinney grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Long to c for M. Kibler.",
+            "D. Lum flied out to rf.",
+            "R. O'Brien doubled to right center.",
+            "A. Davis pinch ran for R. O'Brien.",
+            "S. Fairbairn grounded out to 1b unassisted; A. Davis advanced to third.",
+            "E. Nagy flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wesleyan-conn-/boxscore/8792",
+      "date": "4/29/2025",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Lennon homered to center field, RBI.",
+            "R. Cassel-Si struck out swinging, reached first on a wild pitch.",
+            "B. Secaira-C grounded out to 3b; R. Cassel-Si advanced to second.",
+            "C. Palmer singled to left field, advanced to second on the throw; R. Cassel-Si advanced to third.",
+            "A. Orso grounded out to 3b, RBI; C. Palmer advanced to third on the throw; R. Cassel-Si scored.",
+            "W. Smart grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Killion walked.",
+            "J. Killion stole second.",
+            "N. Celi walked.",
+            "L. Marino reached on a fielder's choice to second base; N. Celi out at second 2b to ss; J. Killion advanced to third.",
+            "L. Marino stole second.",
+            "M. Lennon grounded out to ss.",
+            "R. Cassel-Si grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Secaira-C lined out to rf.",
+            "C. Palmer singled up the middle.",
+            "A. Orso flied out to cf.",
+            "W. Smart grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Killion lined out to 1b.",
+            "N. Celi struck out looking.",
+            "L. Marino singled up the middle.",
+            "L. Marino stole second.",
+            "M. Lennon flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Cassel-Si singled to catcher, bunt.",
+            "B. Secaira-C reached on a fielder's choice to third base; R. Cassel-Si out at second 3b to 2b.",
+            "B. Tassone pinch ran for B. Secaira-C.",
+            "C. Palmer doubled to right center; B. Tassone advanced to third.",
+            "A. Orso singled to right field, RBI, advanced to second; C. Palmer advanced to third, out at home rf to c; B. Tassone scored.",
+            "A. Orso advanced to third on a wild pitch.",
+            "W. Smart singled to shortstop, RBI; A. Orso scored.",
+            "W. Smart stole second.",
+            "J. Killion singled to right field, advanced to second on the throw, RBI; W. Smart scored.",
+            "N. Celi struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Marino grounded out to 3b.",
+            "M. Lennon grounded out to 2b.",
+            "R. Cassel-Si grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Secaira-C homered to right center, RBI.",
+            "C. Palmer singled up the middle.",
+            "S. Chappell pinch ran for C. Palmer.",
+            "A. Orso popped up to 2b.",
+            "W. Smart walked; S. Chappell advanced to second.",
+            "J. Killion flied out to lf.",
+            "W. Gigante pinch hit for N. Celi.",
+            "W. Gigante grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wesleyan-conn-/boxscore/8793",
+      "date": "4/29/2025",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Orso singled up the middle.",
+            "R. Cassel-Si singled to center field; A. Orso advanced to second.",
+            "B. Secaira-C grounded out to 2b; R. Cassel-Si advanced to second; A. Orso advanced to third.",
+            "C. Palmer walked.",
+            "J. Lees singled through the right side, 2 RBI; C. Palmer advanced to second; R. Cassel-Si scored; A. Orso scored.",
+            "W. Smart popped up to c.",
+            "K. Baker reached first on an error by ss; J. Lees advanced to third on the error; C. Palmer scored on the error, unearned.",
+            "K. Baker stole second.",
+            "L. Marino flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Tassone singled to center field.",
+            "A. Orso struck out looking.",
+            "R. Cassel-Si lined out to ss.",
+            "B. Tassone stole second.",
+            "B. Secaira-C grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Palmer grounded out to ss.",
+            "J. Lees lined out to cf.",
+            "W. Smart popped up to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Murnane to 2b for L. Ragonese.",
+            "K. Baker struck out swinging.",
+            "L. Marino out at first p to 2b, bunt.",
+            "B. Tassone reached first on an error by ss.",
+            "A. Orso popped up to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Murnane to ss.",
+            "B. Bartz to 2b.",
+            "R. Cassel-Si doubled to right center.",
+            "B. Secaira-C flied out to rf; R. Cassel-Si advanced to third.",
+            "C. Palmer singled to third base, bunt, RBI; R. Cassel-Si scored.",
+            "J. Lees grounded out to ss; C. Palmer advanced to second.",
+            "W. Smart popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Baker struck out looking.",
+            "L. Marino fouled out to c.",
+            "B. Tassone grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Orso struck out looking.",
+            "R. Cassel-Si doubled to right center, advanced to third on an error by cf.",
+            "B. Secaira-C reached on a fielder's choice to shortstop, RBI; R. Cassel-Si scored.",
+            "S. Baez pinch ran for B. Secaira-C.",
+            "C. Palmer doubled to right center; S. Baez advanced to third.",
+            "S. Chappell pinch ran for C. Palmer.",
+            "J. Lees reached on a fielder's choice to shortstop; S. Chappell scored on the error, unearned; S. Baez scored on an error by ss, unearned.",
+            "W. Smart walked; J. Lees advanced to second.",
+            "W. Smart advanced to second on a wild pitch; J. Lees advanced to third on a wild pitch.",
+            "K. Baker walked.",
+            "L. Marino popped up to 1b.",
+            "M. Lennon pinch hit for B. Tassone.",
+            "M. Lennon struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/smith/boxscore/8796",
+      "date": "5/1/2025",
+      "opponent": "Smith",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Tamai grounded out to ss.",
+            "B. Gray singled to center field.",
+            "K. Wajerski singled to right field; B. Gray advanced to second.",
+            "L. Allen struck out swinging.",
+            "E. Washingto grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Corey struck out swinging.",
+            "L. Bennett grounded out to 2b.",
+            "A. Lansbury struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Hackett struck out looking.",
+            "T. Tamai singled to center field.",
+            "B. Gray reached on a fielder's choice; T. Tamai out at second ss to 2b.",
+            "K. Wajerski struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Beck to rf for H. Reilly.",
+            "L. Allen grounded out to ss.",
+            "E. Washingto grounded out to p.",
+            "P. Corey grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Bennett fouled out to 1b.",
+            "A. Lansbury struck out swinging.",
+            "L. Hackett flied out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "T. Tamai grounded out to ss.",
+            "B. Gray singled to left field.",
+            "K. Wajerski walked; B. Gray advanced to second.",
+            "L. Allen struck out swinging.",
+            "E. Washingto reached on a fielder's choice; K. Wajerski advanced to second; B. Gray out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Long to c for E. Reyna.",
+            "P. Corey lined out to 2b.",
+            "L. Bennett singled to center field.",
+            "A. Lansbury grounded out to p; L. Bennett advanced to second.",
+            "L. Hackett grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/smith/boxscore/8797",
+      "date": "5/1/2025",
+      "opponent": "Smith",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Tamai struck out swinging.",
+            "B. Gray grounded out to ss.",
+            "K. Wajerski doubled to left center.",
+            "L. Allen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Washingto walked.",
+            "E. Washingto stole second.",
+            "P. Corey singled to second base.",
+            "P. Corey stole second; E. Washingto stole third.",
+            "L. Bennett singled to left field, advanced to second on the throw, RBI; P. Corey advanced to third; E. Washingto scored.",
+            "A. Lansbury singled to center field, RBI; P. Corey scored.",
+            "D. Walker to p for E. Behel.",
+            "A. Lansbury stole second; L. Bennett stole third.",
+            "L. Hackett reached first on an error by 2b, RBI; A. Lansbury advanced to third; L. Bennett scored.",
+            "T. Tamai struck out looking; L. Hackett advanced to second.",
+            "B. Gray flied out to rf, RBI; A. Lansbury scored on an error by c, unearned.",
+            "K. Wajerski singled to right field, out at second rf to 2b, RBI; L. Hackett scored, unearned."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Allen grounded out to p.",
+            "E. Washingto grounded out to ss.",
+            "P. Corey grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "/  for M. Long.",
+            "M. Kibler to c.",
+            "B. Bartz to 1b.",
+            "L. Ragonese to 2b.",
+            "L. Bennett singled to left center.",
+            "A. Lansbury singled to third base; L. Bennett advanced to second.",
+            "L. Hackett out at first p to 2b, SAC; A. Lansbury advanced to second; L. Bennett advanced to third.",
+            "T. Tamai struck out swinging.",
+            "B. Gray reached first on an error by ss, advanced to second on the throw; A. Lansbury scored, unearned; L. Bennett scored, unearned.",
+            "K. Wajerski grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Allen struck out swinging.",
+            "E. Washingto singled to right field.",
+            "P. Corey reached on a fielder's choice; E. Washingto out at second ss to 2b.",
+            "L. Bennett grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. Bartz to 1b for O. Garcia.",
+            "H. Reilly to lf.",
+            "V. Krystofik to 3b for E. Reyna.",
+            "A. Lansbury grounded out to 2b.",
+            "L. Hackett grounded out to ss.",
+            "T. Tamai struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Gray grounded out to ss.",
+            "K. Wajerski grounded out to 2b.",
+            "L. Allen grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/mit/boxscore/8924",
+      "date": "5/2/2025",
+      "opponent": "Mit",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Thiessen struck out swinging.",
+            "M. Cable singled, bunt.",
+            "A. Ladd singled to center field; M. Cable advanced to second.",
+            "M. Bivin walked; A. Ladd advanced to second; M. Cable advanced to third.",
+            "A. Kumar grounded out to 2b, RBI; M. Bivin advanced to second; A. Ladd advanced to third; M. Cable scored.",
+            "K. Adkison singled to center field, 2 RBI; M. Bivin scored; A. Ladd scored.",
+            "O. Scarpaci singled to left center; K. Adkison advanced to second.",
+            "B. O'Connor singled to shortstop; O. Scarpaci advanced to second; K. Adkison advanced to third.",
+            "D. Benevides singled to center field, RBI; B. O'Connor advanced to second; O. Scarpaci advanced to third; K. Adkison scored.",
+            "L. Thiessen singled to shortstop, RBI; D. Benevides advanced to second; B. O'Connor advanced to third; O. Scarpaci scored.",
+            "M. Cable grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Ladd reached first on an error by 3b.",
+            "M. Bivin doubled to left center, RBI; A. Ladd scored, unearned.",
+            "A. Kumar lined out to 1b.",
+            "K. Adkison out at first 3b to 2b, SAC, bunt; M. Bivin advanced to third.",
+            "O. Scarpaci popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. O'Connor grounded out to 3b.",
+            "D. Benevides singled to shortstop.",
+            "D. Benevides stole second.",
+            "L. Thiessen grounded out to p; D. Benevides advanced to third.",
+            "M. Cable singled to center field, RBI; D. Benevides scored.",
+            "A. Ladd singled to left field; M. Cable advanced to second.",
+            "A. Ladd stole second; M. Cable stole third.",
+            "M. Bivin popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Feng pinch hit for A. Kumar.",
+            "M. Feng flied out to rf.",
+            "K. Adkison flied out to cf.",
+            "O. Scarpaci fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Behel to p for O. Garcia.",
+            "B. O'Connor singled down the lf line.",
+            "A. Huang pinch ran for B. O'Connor.",
+            "A. Huang stole second.",
+            "D. Benevides reached first on an error by 2b; A. Huang scored, unearned.",
+            "D. Benevides stole second.",
+            "L. Thiessen reached first on an error by 2b; D. Benevides scored, unearned.",
+            "M. Murnane to 2b.",
+            "B. Bartz to ss.",
+            "L. Thiessen stole second.",
+            "M. Cable flied out to lf.",
+            "A. Ladd singled to right center, RBI; L. Thiessen scored.",
+            "M. Bivin grounded out to 3b; A. Ladd advanced to second.",
+            "M. Feng doubled to left center, RBI; A. Ladd scored, unearned.",
+            "K. Adkison singled to left center, RBI; M. Feng scored, unearned.",
+            "O. Scarpaci struck out looking."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/mit/boxscore/8795",
+      "date": "5/2/2025",
+      "opponent": "Mit",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Thiessen singled to left field.",
+            "L. Thiessen stole second.",
+            "M. Cable struck out swinging.",
+            "A. Ladd grounded out to 2b; L. Thiessen advanced to third.",
+            "M. Bivin singled to center field, RBI; L. Thiessen scored.",
+            "A. Kumar struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Adkison grounded out to 3b.",
+            "O. Scarpaci grounded out to p.",
+            "B. O'Connor lined out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Benevides grounded out to c unassisted.",
+            "L. Thiessen walked.",
+            "L. Thiessen stole second.",
+            "M. Cable grounded out to ss.",
+            "A. Ladd doubled to center field, RBI; L. Thiessen scored.",
+            "M. Bivin out at first c to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Kumar struck out looking.",
+            "K. Adkison grounded out to 2b.",
+            "O. Scarpaci lined out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Walker to p for O. Garcia.",
+            "L. Ragonese to 2b for M. Murphy.",
+            "B. O'Connor reached first on an error by 2b.",
+            "K. Katsuyama pinch ran for B. O'Connor.",
+            "K. Katsuyama out at second c to ss, caught stealing.",
+            "D. Benevides struck out swinging.",
+            "L. Thiessen singled to left center.",
+            "M. Cable singled to right field, advanced to third on an error by rf; L. Thiessen scored, unearned.",
+            "A. Ladd tripled to right field, RBI; M. Cable scored.",
+            "M. Bivin singled to left field, RBI; A. Ladd scored.",
+            "A. Kumar singled to right field; M. Bivin advanced to second.",
+            "M. Bivin out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Adkison singled to center field.",
+            "A. Huang pinch ran for K. Adkison.",
+            "O. Scarpaci doubled to left field, RBI; A. Huang scored.",
+            "B. O'Connor flied out to rf; O. Scarpaci advanced to third.",
+            "D. Benevides struck out swinging.",
+            "L. Thiessen grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Behel to dp for N. Beck.",
+            "N. Beck to lf for E. Behel.",
+            "M. Cable grounded out to 2b.",
+            "A. Ladd flied out to rf.",
+            "M. Bivin grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/emerson/boxscore/8798",
+      "date": "5/5/2025",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti struck out swinging.",
+            "G. Beaulieu grounded out to 1b unassisted.",
+            "J. Gomez struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Caiazza grounded out to p.",
+            "A. Kuperman singled to right field.",
+            "A. Kuperman out at second c to ss, caught stealing.",
+            "C. Sheehan struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Walker to p for O. Garcia.",
+            "A. Lacey grounded out to 3b.",
+            "I. Shaffer grounded out to 1b unassisted.",
+            "C. Rosenberg grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Zannotti fouled out to lf.",
+            "G. Beaulieu grounded out to p.",
+            "J. Gomez walked.",
+            "R. Caiazza grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Kuperman walked.",
+            "C. Sheehan struck out swinging.",
+            "A. Lacey singled to pitcher; A. Kuperman advanced to second.",
+            "I. Shaffer struck out swinging.",
+            "C. Rosenberg walked; A. Lacey advanced to second; A. Kuperman advanced to third.",
+            "S. Zannotti grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Kibler to c for M. Murphy.",
+            "G. Beaulieu grounded out to p.",
+            "J. Gomez singled up the middle.",
+            "R. Caiazza grounded out to 1b unassisted; J. Gomez advanced to second.",
+            "A. Kuperman singled to second base; J. Gomez advanced to third.",
+            "C. Sheehan flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Lacey grounded out to p.",
+            "I. Shaffer grounded out to 2b.",
+            "C. Rosenberg singled up the middle.",
+            "S. Zannotti singled through the left side; C. Rosenberg advanced to second.",
+            "G. Beaulieu grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/springfield/boxscore/8927",
+      "date": "5/7/2025",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. DeRosa grounded out to p.",
+            "B. Eckles grounded out to 2b.",
+            "C. Pecchia reached first on a fielding error by 2b.",
+            "C. Gendron walked; C. Pecchia advanced to second.",
+            "M. Ponticell singled to left field; C. Gendron advanced to second; C. Pecchia advanced to third.",
+            "L. Puskas grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Katsetos grounded out to p.",
+            "K. Manzone grounded out to 2b.",
+            "M. Seyfert flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. DeRosa flied out to lf.",
+            "B. Eckles struck out looking.",
+            "C. Pecchia singled to right field.",
+            "C. Pecchia advanced to second on a wild pitch.",
+            "C. Gendron grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Ponticell grounded out to 2b.",
+            "L. Puskas walked.",
+            "L. Puskas advanced to second on a wild pitch.",
+            "K. Katsetos grounded out to p; L. Puskas advanced to third.",
+            "K. Manzone struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "N. Beck to rf for M. Murphy.",
+            "M. Seyfert grounded out to 3b.",
+            "A. DeRosa grounded out to ss.",
+            "B. Eckles grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia singled up the middle.",
+            "L. Donston pinch ran for C. Pecchia.",
+            "C. Gendron walked; L. Donston advanced to second.",
+            "A. Hammer pinch ran for C. Gendron.",
+            "M. Ponticell reached on a fielder's choice; A. Hammer out at second 2b to ss; L. Donston advanced to third.",
+            "L. Puskas doubled to center field, RBI; M. Ponticell advanced to third; L. Donston scored.",
+            "K. Katsetos doubled to left field, 2 RBI; L. Puskas scored; M. Ponticell scored.",
+            "H. Ball pinch hit for K. Manzone.",
+            "H. Ball grounded out to ss.",
+            "M. Seyfert grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2025/wheaton-mass-/boxscore/8928",
+      "date": "5/8/2025",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito tripled to center field.",
+            "G. Dibacco lined out to ss.",
+            "E. Molinari grounded out to ss.",
+            "P. Blankenhe singled to right field, RBI; J. Zito scored.",
+            "T. Barry grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Boucher popped up to ss.",
+            "R. Dolan struck out looking.",
+            "A. Arcand singled to center field.",
+            "J. Rohon grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Zito flied out to rf.",
+            "G. Dibacco popped up to 1b.",
+            "E. Molinari lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "P. Blankenhe grounded out to 2b.",
+            "T. Barry popped up to 2b.",
+            "E. Boucher singled to left field.",
+            "R. Dolan reached on a fielder's choice; E. Boucher out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Arcand struck out looking.",
+            "J. Rohon singled to right center.",
+            "J. Zito reached on a fielder's choice; J. Rohon advanced to second.",
+            "G. Dibacco reached first on an error by ss, advanced to second on the throw; J. Zito advanced to third; J. Rohon scored, unearned.",
+            "E. Molinari reached on a fielder's choice, RBI; G. Dibacco advanced to third; J. Zito scored, unearned.",
+            "P. Blankenhe struck out swinging.",
+            "T. Barry struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Murnane to ss for E. Reyna.",
+            "E. Boucher grounded out to 1b unassisted.",
+            "K. Copperthi pinch hit for R. Dolan.",
+            "K. Copperthi struck out swinging.",
+            "A. Arcand grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Ragonese to 2b for N. Beck.",
+            "J. Rohon singled to right field.",
+            "J. Zito lined out to cf.",
+            "G. Dibacco hit by pitch; J. Rohon advanced to second.",
+            "E. Molinari reached on a fielder's choice; G. Dibacco out at second 2b to ss; J. Rohon advanced to third.",
+            "P. Blankenhe singled to center field, RBI; E. Molinari advanced to second; J. Rohon scored."
+          ]
+        }
+      ],
+      "year": 2025
+    }
+  ]
+}

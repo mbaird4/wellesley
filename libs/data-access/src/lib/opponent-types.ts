@@ -18,8 +18,57 @@ export interface OpponentPlayer {
   name: string;
   jerseyNumber: number | null;
   classYear: string;
+  position: string | null;
+  bats: BatHand | null;
   seasons: OpponentSeasonStats[];
   career: OpponentCareerStats;
+}
+
+export type BatHand = 'L' | 'R' | 'S';
+
+export interface PlayerHandedness {
+  name: string;
+  bats: BatHand;
+}
+
+/** Raw pitching stats scraped from the stats page */
+export interface OpponentPitchingStats {
+  name: string;
+  w: number;
+  l: number;
+  era: number;
+  app: number;
+  gs: number;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hr: number;
+}
+
+/** Per-game play-by-play for an opponent */
+export interface OpponentGamePbP {
+  url: string;
+  date: string;
+  opponent: string;
+  pitchers: string[];
+  battingInnings: OpponentPbPInning[];
+}
+
+export interface OpponentPbPInning {
+  inning: string;
+  plays: string[];
+}
+
+/** Top-level JSON shape for opponent pitching data */
+export interface OpponentPitchingData {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  pitchingStatsByYear: Record<string, OpponentPitchingStats[]>;
+  games: OpponentGamePbP[];
 }
 
 export interface OpponentSeasonStats {

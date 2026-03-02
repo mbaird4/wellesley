@@ -1,5 +1,5 @@
 @if (bp.gtSm()) {
-  <!-- Desktop: sidebar + table -->
+  <!-- Desktop: sidebar + content -->
   <div class="flex gap-6">
     <ws-team-selector
       layout="vertical"
@@ -34,6 +34,17 @@
         >
           Spray Chart
         </button>
+        <button
+          (click)="selectTab('pitching')"
+          class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+          [class]="
+            activeTab() === 'pitching'
+              ? 'bg-brand-bg text-brand-text'
+              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+          "
+        >
+          Pitching
+        </button>
       </div>
 
       @if (activeTab() === 'woba') {
@@ -52,8 +63,13 @@
             (yearSortChanged)="sortByYear($event)"
           />
         }
-      } @else {
+      } @else if (activeTab() === 'spray') {
         <ws-opponent-spray-chart [slug]="selectedSlug()" />
+      } @else {
+        <ws-pitcher-analysis
+          [pitchingData]="pitchingData()"
+          [loading]="pitchingLoading()"
+        />
       }
     </div>
   </div>
@@ -91,6 +107,17 @@
     >
       Spray Chart
     </button>
+    <button
+      (click)="selectTab('pitching')"
+      class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+      [class]="
+        activeTab() === 'pitching'
+          ? 'bg-brand-bg text-brand-text'
+          : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+      "
+    >
+      Pitching
+    </button>
   </div>
 
   @if (activeTab() === 'woba') {
@@ -107,8 +134,13 @@
         (sortChanged)="sort($event)"
       />
     }
-  } @else {
+  } @else if (activeTab() === 'spray') {
     <ws-opponent-spray-chart [slug]="selectedSlug()" />
+  } @else {
+    <ws-pitcher-analysis
+      [pitchingData]="pitchingData()"
+      [loading]="pitchingLoading()"
+    />
   }
 }
 
@@ -121,12 +153,12 @@
       {{ error() }}
     </div>
   }
-  @if (loading()) {
+  @if (loading() && activeTab() === 'woba') {
     <div class="py-card px-card text-content-muted text-[1.05rem]">
       Loading...
     </div>
   }
-  @if (empty()) {
+  @if (empty() && activeTab() === 'woba') {
     <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
       No data available for this team.
     </div>

@@ -1,0 +1,52 @@
+<div class="bg-surface-card overflow-hidden rounded-xl">
+  <div class="border-line flex items-center justify-between border-b px-card py-3">
+    <h3 class="text-content-bright text-base font-semibold">Game Log</h3>
+
+    @if (gameLogViews().length > 0) {
+      <span class="text-content-dim flex items-center gap-1.5">
+        <ws-slide-toggle [checked]="colorCoding()" (checkedChange)="colorCoding.set($event)" />
+        Color coding
+      </span>
+    }
+  </div>
+
+  @if (gameLogViews().length === 0) {
+    <p class="text-content-dim p-card text-sm">No game data available.</p>
+  } @else {
+    <div class="p-card space-y-1.5">
+      @for (log of gameLogViews(); track log.url) {
+        <div>
+          <button
+            class="game-toggle"
+            [class.rounded-b-none]="expandedUrl() === log.url"
+            (click)="toggleExpand(log.url)"
+          >
+            <span class="text-content-dim w-20 shrink-0 text-sm">{{ log.date }}</span>
+            <span class="flex-1 font-medium">vs {{ log.opponent }}</span>
+            <span class="text-content-dim text-sm">IP {{ log.formattedIP }}</span>
+            <span class="text-content-dim text-sm">H {{ log.totals.hits }}</span>
+            <span class="text-content-dim text-sm">R {{ log.totals.runs }}</span>
+            <span class="text-content-dim text-sm">K {{ log.totals.strikeouts }}</span>
+            <span class="font-medium" [style]="log.totals.avgStyle">{{ log.totals.formattedAvg }}</span>
+            <span class="font-medium" [style]="log.totals.wobaStyle">{{ log.totals.formattedWoba }}</span>
+            <svg
+              class="text-content-dim h-4 w-4 shrink-0 transition-transform"
+              [class.rotate-180]="expandedUrl() === log.url"
+              viewBox="0 0 20 20" fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          @if (expandedUrl() === log.url) {
+            <ws-pitcher-innings-table [rows]="log.innings" />
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

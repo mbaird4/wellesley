@@ -66,14 +66,12 @@
 
   h2 {
     color: var(--color-content-heading);
-    margin: 0 0 1rem;
     font-size: 1.5rem;
     font-weight: 600;
   }
 
   h3 {
     color: var(--color-content-heading);
-    margin: 0 0 0.75rem;
     font-size: 1.15rem;
     font-weight: 600;
   }
@@ -226,7 +224,7 @@
 
     th,
     td {
-      @apply px-3 py-1.5 text-[0.95rem];
+      @apply text-[0.95rem];
     }
   }
 
