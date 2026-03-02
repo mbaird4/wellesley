@@ -18,19 +18,26 @@ export const ALL_CONTACT_TYPES: ContactType[] = ['hit', 'line_out', 'ground_ball
 export const ALL_CONTACT_QUALITIES: ContactQuality[] = ['hard', 'weak'];
 export const ALL_OUT_COUNTS: number[] = [0, 1, 2];
 
-/** Returns the set of contact types compatible with the current outcome + quality selections. */
-export function computeAllowedContacts(state: SprayFilterState): Set<ContactType> {
-  let allowed = new Set(ALL_CONTACT_TYPES);
+const HARD_CONTACT_TYPES: Set<ContactType> = new Set(['hit', 'line_out']);
+const WEAK_CONTACT_TYPES: Set<ContactType> = new Set(['ground_ball', 'popup']);
 
+/** Contact types reachable from outcome selection alone (bunt is always reachable). */
+function outcomeAllowedContacts(state: SprayFilterState): Set<ContactType> {
   const hasHit = state.outcomes.includes('hit');
   const hasOut = state.outcomes.includes('out') || state.outcomes.includes('error');
 
   if (hasHit !== hasOut) {
-    const fromOutcome: Set<ContactType> = hasHit
-      ? new Set(['hit', 'bunt'])
-      : new Set(['line_out', 'ground_ball', 'popup', 'bunt']);
-    allowed = new Set([...allowed].filter((ct) => fromOutcome.has(ct)));
+    return hasHit
+      ? new Set<ContactType>(['hit', 'bunt'])
+      : new Set<ContactType>(['line_out', 'ground_ball', 'popup', 'bunt']);
   }
+
+  return new Set(ALL_CONTACT_TYPES);
+}
+
+/** Returns the set of contact types compatible with the current outcome + quality selections. */
+export function computeAllowedContacts(state: SprayFilterState): Set<ContactType> {
+  let allowed = outcomeAllowedContacts(state);
 
   const hasHard = state.contactQualities.includes('hard');
   const hasWeak = state.contactQualities.includes('weak');
@@ -38,8 +45,48 @@ export function computeAllowedContacts(state: SprayFilterState): Set<ContactType
   if (hasHard !== hasWeak) {
     const fromQuality: Set<ContactType> = hasHard
       ? new Set(['hit', 'line_out', 'bunt'])
-      : new Set(['ground_ball', 'popup']);
+      : new Set(['ground_ball', 'popup', 'bunt']);
     allowed = new Set([...allowed].filter((ct) => fromQuality.has(ct)));
+  }
+
+  return allowed;
+}
+
+/** Returns the set of outcomes compatible with the current quality selection. */
+export function computeAllowedOutcomes(state: SprayFilterState): Set<SprayOutcome> {
+  const hasHard = state.contactQualities.includes('hard');
+  const hasWeak = state.contactQualities.includes('weak');
+
+  if (hasHard !== hasWeak) {
+    return hasHard
+      ? new Set<SprayOutcome>(['hit'])
+      : new Set<SprayOutcome>(['out', 'error']);
+  }
+
+  return new Set(ALL_OUTCOMES);
+}
+
+/** Returns the set of qualities compatible with the current outcome + contact type selections. */
+export function computeAllowedQualities(state: SprayFilterState): Set<ContactQuality> {
+  const fromOutcome = outcomeAllowedContacts(state);
+  const effective = state.contactTypes.filter((ct) => fromOutcome.has(ct));
+
+  const hasHard = effective.some((ct) => HARD_CONTACT_TYPES.has(ct));
+  const hasWeak = effective.some((ct) => WEAK_CONTACT_TYPES.has(ct));
+
+  // Only bunt selected — both qualities remain valid
+  if (!hasHard && !hasWeak) {
+    return new Set(ALL_CONTACT_QUALITIES);
+  }
+
+  const allowed = new Set<ContactQuality>();
+
+  if (hasHard) {
+    allowed.add('hard');
+  }
+
+  if (hasWeak) {
+    allowed.add('weak');
   }
 
   return allowed;
@@ -92,10 +139,22 @@ export class SprayFilters {
   readonly outCountValue = computed(() => this.filters().outCount.map(String));
   readonly rispActive = computed(() => this.filters().risp === true);
 
+  readonly disabledOutcomes = computed(() => {
+    const allowed = computeAllowedOutcomes(this.filters());
+
+    return ALL_OUTCOMES.filter((o) => !allowed.has(o));
+  });
+
   readonly disabledContactTypes = computed(() => {
     const allowed = computeAllowedContacts(this.filters());
 
     return ALL_CONTACT_TYPES.filter((ct) => !allowed.has(ct));
+  });
+
+  readonly disabledQualities = computed(() => {
+    const allowed = computeAllowedQualities(this.filters());
+
+    return ALL_CONTACT_QUALITIES.filter((q) => !allowed.has(q));
   });
 
   onPlayerChange(event: Event): void {

@@ -15,6 +15,7 @@ import {
   ALL_OUT_COUNTS,
   ALL_OUTCOMES,
   computeAllowedContacts,
+  computeAllowedOutcomes,
   SprayField,
   SprayFilters,
   type SprayFilterState,
@@ -125,12 +126,14 @@ export class SprayChart {
   // Filtered + aggregated summary
   summary = computed<SprayChartSummary>(() => {
     const f = this.filters();
-    const allowed = computeAllowedContacts(f);
-    const effectiveContactTypes = f.contactTypes.filter((ct) => allowed.has(ct));
+    const allowedContacts = computeAllowedContacts(f);
+    const allowedOutcomes = computeAllowedOutcomes(f);
+    const effectiveContactTypes = f.contactTypes.filter((ct) => allowedContacts.has(ct));
+    const effectiveOutcomes = f.outcomes.filter((o) => allowedOutcomes.has(o));
 
     return computeSprayZones(this.allDataPoints(), {
       playerName: f.playerName,
-      outcomes: f.outcomes,
+      outcomes: effectiveOutcomes,
       contactTypes: effectiveContactTypes,
       contactQualities: f.contactQualities,
       outCount: f.outCount,

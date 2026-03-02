@@ -4,6 +4,7 @@
   <ws-button-toggle
     [options]="outcomeOptions"
     [value]="outcomeValue()"
+    [disabledValues]="disabledOutcomes()"
     (valueChange)="onOutcomeChange($event)"
   />
 </div>
@@ -25,6 +26,7 @@
   <ws-button-toggle
     [options]="qualityOptions"
     [value]="qualityValue()"
+    [disabledValues]="disabledQualities()"
     (valueChange)="onQualityChange($event)"
   />
 </div>
