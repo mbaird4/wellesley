@@ -1411,17 +1411,20 @@ async function main(): Promise<void> {
     if (withGamedata) {
       const gamedataResult = await scrapeTeamGamedata(slug, domain, years);
 
-      const gamedataOutPath = path.join(teamDir, 'gamedata.json');
-      fs.writeFileSync(
-        gamedataOutPath,
-        JSON.stringify(gamedataResult, null, 2)
-      );
-      const totalGames = Object.values(gamedataResult.gamesByYear).reduce(
-        (sum, g) => sum + g.length,
-        0
-      );
-      console.log(
-        `  Wrote ${gamedataOutPath} (${totalGames} games)`
+      Object.entries(gamedataResult.gamesByYear).forEach(
+        ([year, games]) => {
+          const gamedataOutPath = path.join(
+            teamDir,
+            `gamedata-${year}.json`
+          );
+          fs.writeFileSync(
+            gamedataOutPath,
+            JSON.stringify(games, null, 2)
+          );
+          console.log(
+            `  Wrote ${gamedataOutPath} (${games.length} games)`
+          );
+        }
       );
     }
 

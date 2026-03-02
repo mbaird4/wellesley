@@ -54,15 +54,20 @@ function normalizePlayerName(name: string): string {
 }
 
 /**
- * Build a rename map that merges truncated last names (e.g. "E. Santi" → "E. Santiago").
- * Groups names by jersey number + first initial; within each group, maps shorter
- * variants to the longest canonical form.
+ * Build a rename map that merges truncated last names (e.g. "E. Santi" → "E. Santiago")
+ * and corrects wrong first initials (e.g. "A. Walsh" → "E. Walsh" when the roster says
+ * Emily Walsh). Groups names by jersey number; uses the roster's first name to pick the
+ * correct initial, then longest display name as the canonical form.
  */
 function buildCanonicalNameMap(names: string[], roster: JerseyMap): Map<string, string> {
   const byLastName = new Map<string, number>();
+  const jerseyToFirstName = new Map<number, string>();
   Object.entries(roster).forEach(([key, num]) => {
-    const last = key.split(',')[0].trim();
+    const parts = key.split(',');
+    const last = parts[0].trim();
+    const first = parts[1]?.trim() ?? '';
     byLastName.set(last, num);
+    jerseyToFirstName.set(num, first);
   });
 
   // Match each display name to a jersey number
@@ -86,7 +91,7 @@ function buildCanonicalNameMap(names: string[], roster: JerseyMap): Map<string, 
     }
   });
 
-  // Group by jersey number, then by first initial
+  // Group by jersey number
   const byJersey = new Map<number, string[]>();
   nameToJersey.forEach((jersey, name) => {
     const group = byJersey.get(jersey) ?? [];
@@ -95,32 +100,26 @@ function buildCanonicalNameMap(names: string[], roster: JerseyMap): Map<string, 
   });
 
   const canonMap = new Map<string, string>();
-  byJersey.forEach((group) => {
+  byJersey.forEach((group, jersey) => {
     if (group.length <= 1) {
       return;
     }
 
-    // Sub-group by first initial
-    const byInitial = new Map<string, string[]>();
+    // Prefer the name whose initial matches the roster's first name
+    const rosterFirst = jerseyToFirstName.get(jersey) ?? '';
+    const rosterInitial = rosterFirst[0]?.toUpperCase() ?? '';
+
+    // Among names with the correct initial, pick the longest (handles truncated last names)
+    const correctInitial = group.filter((n) => n[0] === rosterInitial);
+    const canonical =
+      correctInitial.length > 0
+        ? correctInitial.reduce((a, b) => (b.length > a.length ? b : a))
+        : group.reduce((a, b) => (b.length > a.length ? b : a));
+
     group.forEach((name) => {
-      const initial = name[0];
-      const sub = byInitial.get(initial) ?? [];
-      sub.push(name);
-      byInitial.set(initial, sub);
-    });
-
-    byInitial.forEach((sub) => {
-      if (sub.length <= 1) {
-        return;
+      if (name !== canonical) {
+        canonMap.set(name, canonical);
       }
-
-      // Longest name wins as the canonical form
-      const canonical = sub.reduce((a, b) => (b.length > a.length ? b : a));
-      sub.forEach((name) => {
-        if (name !== canonical) {
-          canonMap.set(name, canonical);
-        }
-      });
     });
   });
 
