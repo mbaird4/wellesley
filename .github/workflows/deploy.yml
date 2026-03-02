@@ -32,6 +32,8 @@ jobs:
         env:
           NODE_ENV: production
 
+      - run: echo "v1-auth" > dist/wellesley/browser/data/dcfg.txt
+
       # SPA routing: copy index.html to 404.html so GitHub Pages
       # serves the Angular app for all routes
       - run: cp dist/wellesley/browser/index.html dist/wellesley/browser/404.html

@@ -106,4 +106,5 @@ GitHub Pages via `.github/workflows/deploy.yml`. Builds with `--base-href /welle
 - **Play text parsing** is regex-based against the Sidearm Sports boxscore format. Semicolons separate sub-events within a play (batter action first, then runner advances).
 - **`GameState.batterIndex`** persists across innings (does NOT reset) — it cycles mod 9 for lineup slot tracking.
 - **wOBA weights** use NCAA-appropriate linear weights: BB/HBP=0.5, 1B=0.9, 2B=1.2, 3B=1.7, HR=2.5.
-- The app is password-gated (SHA-256 hash check) to prevent casual public access.
+- **Player names are scrambled** — to protect individual privacy, player names are shuffled across stats so no name corresponds to its real statistics.
+- The deployed site is password-gated (SHA-256 hash check) to prevent casual public access.

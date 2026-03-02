@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { DataContextService } from '@ws/data-access';
 
 const PASSWORD_HASH =
   '0d3e8d6bfcf410ae73561671871f8b258d64529620c2dad88b5c46dbe4790af6';
@@ -15,9 +16,15 @@ const PASSWORD_HASH =
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
+  private readonly context = inject(DataContextService);
+
   protected title = 'Wellesley Softball Stats Hub';
-  protected authenticated = sessionStorage.getItem('wellesley-auth') === 'true';
+  protected authenticated =
+    !this.context.isAuthRequired() ||
+    sessionStorage.getItem('wellesley-auth') === 'true';
+
   protected password = '';
+
   protected error = false;
 
   protected async checkPassword() {
