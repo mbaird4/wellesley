@@ -13,66 +13,99 @@
     No spray chart data available for this team.
   </div>
 } @else {
-  <ws-spray-filters
-    [players]="players()"
-    [filters]="filters()"
-    (filterChange)="onFilterChange($event)"
-    class="mb-4 shrink-0"
-  />
+  <!-- Control bar: view mode toggle + filters -->
+  <div class="mb-3 flex flex-wrap items-end gap-4">
+    <div class="flex flex-col gap-1">
+      <span class="text-content-dim text-xs font-medium">View</span>
+      <ws-button-toggle
+        [options]="viewModeOptions"
+        [value]="viewMode()"
+        mode="single"
+        (valueChange)="onViewModeChange($event)"
+      />
+    </div>
 
-  @if (bp.gtSm()) {
-    <!-- Desktop: player sidebar + field -->
-    <div class="flex min-h-0 flex-1">
-      <nav class="flex w-40 shrink-0 flex-col gap-0.5 overflow-y-auto">
-        <button
-          (click)="onPlayerChange('')"
-          class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
-          [class]="
-            summary().playerName === null
-              ? 'bg-brand-bg text-brand-text'
-              : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
-          "
-        >
-          All Players
-        </button>
+    <ws-spray-filters
+      [players]="players()"
+      [filters]="filters()"
+      (filterChange)="onFilterChange($event)"
+      class="shrink-0"
+    />
+  </div>
 
-        @for (player of rosteredPlayers(); track $index) {
-          <button
-            (click)="onPlayerChange(player)"
-            class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
-            [class]="
-              summary().playerName === player
-                ? 'bg-brand-bg text-brand-text'
-                : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
-            "
-          >
-            <span class="text-content-dim mr-1 text-xs">#{{ jerseyMap()[player] }}</span>
-            {{ player }}
-          </button>
+  @if (viewMode() === 'split') {
+    <!-- SPLIT MODE -->
+    @if (bp.gtSm()) {
+      <!-- Desktop: player sidebar + year panels -->
+      <div class="flex min-h-0 flex-1">
+        <ng-container *ngTemplateOutlet="playerNav" />
+
+        <div class="flex min-h-0 min-w-0 flex-1 gap-2">
+          @for (year of activeYears(); track year) {
+            <ws-spray-year-panel
+              class="min-w-0 basis-1/3"
+              [year]="year"
+              [zones]="summaryByYear().get(year)!.zones"
+              [totalContact]="summaryByYear().get(year)!.totalContact"
+              [highlightZone]="highlightZone()"
+              (zoneHover)="onZoneHover($event)"
+              (zoneClick)="onZoneClick($event)"
+            />
+          }
+        </div>
+      </div>
+    } @else {
+      <!-- Mobile: stacked vertically -->
+      <div class="flex flex-col gap-6">
+        @for (year of activeYears(); track year) {
+          <ws-spray-year-panel
+            [year]="year"
+            [zones]="summaryByYear().get(year)!.zones"
+            [totalContact]="summaryByYear().get(year)!.totalContact"
+            [highlightZone]="highlightZone()"
+            (zoneHover)="onZoneHover($event)"
+            (zoneClick)="onZoneClick($event)"
+          />
         }
+      </div>
+    }
+  } @else {
+    <!-- COMBINED MODE -->
+    <div class="mb-3 flex items-center gap-3">
+      <span class="text-content-dim text-xs font-medium">Years</span>
+      <ws-button-toggle
+        [options]="yearOptions"
+        [value]="selectedYears()"
+        (valueChange)="onYearChange($event)"
+      />
+    </div>
 
-        @if (nonRosteredPlayers().length > 0 && rosteredPlayers().length > 0) {
-          <hr class="border-surface-border my-1 border-t" />
-        }
+    @if (bp.gtSm()) {
+      <!-- Desktop: player sidebar + field -->
+      <div class="flex min-h-0 flex-1">
+        <ng-container *ngTemplateOutlet="playerNav" />
 
-        @for (player of nonRosteredPlayers(); track $index) {
-          <button
-            (click)="onPlayerChange(player)"
-            class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
-            [class]="
-              summary().playerName === player
-                ? 'bg-brand-bg text-brand-text'
-                : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
-            "
-          >
-            {{ player }}
-          </button>
-        }
-      </nav>
+        <div class="mx-auto min-h-0 max-w-5xl flex-1">
+          <ws-spray-field
+            [zones]="combinedSummary().zones"
+            [highlightZone]="highlightZone()"
+            (zoneHover)="onZoneHover($event)"
+            (zoneClick)="onZoneClick($event)"
+          />
 
-      <div class="mx-auto min-h-0 max-w-5xl flex-1">
+          <div class="mt-2 flex items-center justify-center gap-4">
+            <ws-spray-legend />
+            <span class="text-content-muted text-xs">
+              {{ combinedSummary().totalContact }} batted balls
+            </span>
+          </div>
+        </div>
+      </div>
+    } @else {
+      <!-- Mobile: field only (no sidebar) -->
+      <div class="mx-auto max-w-5xl">
         <ws-spray-field
-          [zones]="summary().zones"
+          [zones]="combinedSummary().zones"
           [highlightZone]="highlightZone()"
           (zoneHover)="onZoneHover($event)"
           (zoneClick)="onZoneClick($event)"
@@ -81,27 +114,42 @@
         <div class="mt-2 flex items-center justify-center gap-4">
           <ws-spray-legend />
           <span class="text-content-muted text-xs">
-            {{ summary().totalContact }} batted balls
+            {{ combinedSummary().totalContact }} batted balls
           </span>
         </div>
       </div>
-    </div>
-  } @else {
-    <!-- Mobile: field only (no sidebar) -->
-    <div class="mx-auto max-w-5xl">
-      <ws-spray-field
-        [zones]="summary().zones"
-        [highlightZone]="highlightZone()"
-        (zoneHover)="onZoneHover($event)"
-        (zoneClick)="onZoneClick($event)"
-      />
-
-      <div class="mt-2 flex items-center justify-center gap-4">
-        <ws-spray-legend />
-        <span class="text-content-muted text-xs">
-          {{ summary().totalContact }} batted balls
-        </span>
-      </div>
-    </div>
+    }
   }
 }
+
+<!-- Shared player sidebar nav -->
+<ng-template #playerNav>
+  <nav class="flex w-40 shrink-0 flex-col gap-0.5 overflow-y-auto">
+    <button
+      (click)="onPlayerChange('')"
+      class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+      [class]="
+        filters().playerName === null
+          ? 'bg-brand-bg text-brand-text'
+          : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+      "
+    >
+      All Players
+    </button>
+
+    @for (player of rosteredPlayers(); track player) {
+      <button
+        (click)="onPlayerChange(player)"
+        class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+        [class]="
+          filters().playerName === player
+            ? 'bg-brand-bg text-brand-text'
+            : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+        "
+      >
+        <span class="text-content-dim mr-1 text-xs">#{{ jerseyMap()[player] }}</span>
+        {{ player }}
+      </button>
+    }
+  </nav>
+</ng-template>
