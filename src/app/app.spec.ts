@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
+import { DataContextService } from '@ws/data-access';
 
 import { App } from './app';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [App, RouterModule.forRoot([])],
+      providers: [DataContextService],
     }).compileComponents();
   });
 

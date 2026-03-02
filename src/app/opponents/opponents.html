@@ -9,42 +9,44 @@
     />
 
     <div class="flex min-w-0 flex-1 flex-col">
-      <h2>{{ selectedTeamName() }}</h2>
+      <div class="flex flex-col gap-3 mb-4">
+        <h2>{{ selectedTeamName() }}</h2>
 
-      <div class="mb-4 flex gap-1">
-        <button
-          (click)="selectTab('woba')"
-          class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
-          [class]="
-            activeTab() === 'woba'
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-        >
-          wOBA Stats
-        </button>
-        <button
-          (click)="selectTab('spray')"
-          class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
-          [class]="
-            activeTab() === 'spray'
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-        >
-          Spray Chart
-        </button>
-        <button
-          (click)="selectTab('pitching')"
-          class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
-          [class]="
-            activeTab() === 'pitching'
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-        >
-          Pitching
-        </button>
+        <div class="flex gap-1">
+          <button
+            (click)="selectTab('woba')"
+            class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+            [class]="
+              activeTab() === 'woba'
+                ? 'bg-brand-bg text-brand-text'
+                : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+            "
+          >
+            wOBA Stats
+          </button>
+          <button
+            (click)="selectTab('spray')"
+            class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+            [class]="
+              activeTab() === 'spray'
+                ? 'bg-brand-bg text-brand-text'
+                : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+            "
+          >
+            Spray Chart
+          </button>
+          <button
+            (click)="selectTab('pitching')"
+            class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+            [class]="
+              activeTab() === 'pitching'
+                ? 'bg-brand-bg text-brand-text'
+                : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+            "
+          >
+            Pitching
+          </button>
+        </div>
       </div>
 
       @if (activeTab() === 'woba') {

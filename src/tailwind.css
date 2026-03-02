@@ -113,6 +113,14 @@
   @apply py-2 md:py-3;
 }
 
+@utility section-heading-sm {
+  @apply mb-3;
+}
+
+@utility section-heading-lg {
+  @apply mb-4;
+}
+
 @utility disabled {
   @apply cursor-not-allowed opacity-40;
 }

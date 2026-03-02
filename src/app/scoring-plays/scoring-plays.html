@@ -57,7 +57,7 @@
     </div>
 
     @if (activeTab === 'summary') {
-      <h2>Scoring Plays — {{ selectedYear }}</h2>
+      <h2 class="section-heading-lg">Scoring Plays — {{ selectedYear }}</h2>
       <div
         class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text mb-6 rounded-[10px] border-l-[3px] text-[1.1rem]"
       >
@@ -85,7 +85,7 @@
 
       <div class="mt-6 grid grid-cols-2 gap-6 max-md:grid-cols-1">
         <div>
-          <h3>By Out Count</h3>
+          <h3 class="section-heading-sm">By Out Count</h3>
           <table class="stats-table">
             <thead>
               <tr>
@@ -106,7 +106,7 @@
           </table>
         </div>
         <div>
-          <h3>By Base Situation</h3>
+          <h3 class="section-heading-sm">By Base Situation</h3>
           <table class="stats-table">
             <thead>
               <tr>
@@ -128,7 +128,7 @@
         </div>
       </div>
 
-      <h3>By Scenario (Situation + Outs)</h3>
+      <h3 class="section-heading-sm">By Scenario (Situation + Outs)</h3>
       <table class="stats-table scoring-table">
         <thead>
           <tr>
@@ -152,7 +152,7 @@
 
       <div class="mt-6 grid grid-cols-2 gap-6 max-md:grid-cols-1">
         <div>
-          <h3>Runs Scored (by runner)</h3>
+          <h3 class="section-heading-sm">Runs Scored (by runner)</h3>
           <table class="stats-table">
             <thead>
               <tr>
@@ -171,7 +171,7 @@
           </table>
         </div>
         <div>
-          <h3>RBIs (by batter)</h3>
+          <h3 class="section-heading-sm">RBIs (by batter)</h3>
           <table class="stats-table">
             <thead>
               <tr>
@@ -192,7 +192,7 @@
       </div>
 
       @if (sacBuntSummary && sacBuntSummary.totalSacBunts > 0) {
-        <h3>Sac Bunt Effectiveness</h3>
+        <h3 class="section-heading-sm">Sac Bunt Effectiveness</h3>
         <div class="mt-3">
           <div class="mb-4 flex gap-4">
             <div
