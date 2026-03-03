@@ -1,116 +1,110 @@
 @if (availableInnings().length > 0) {
   <div class="bg-surface-card overflow-hidden rounded-xl">
-    <div
-      class="border-line px-card flex items-center justify-between border-b py-3"
-    >
+    <div class="border-line px-card border-b py-3">
       <h3 class="text-content-bright text-base font-semibold">Inning Detail</h3>
-
-      @if (gameRows().length > 0) {
-        <span class="text-content-dim flex items-center gap-1.5">
-          <ws-slide-toggle
-            [checked]="colorCoding()"
-            (checkedChange)="colorCoding.set($event)"
-          />
-          Color coding
-        </span>
-      }
     </div>
 
-    <div class="px-card pt-3 pb-1">
-      <div class="flex flex-wrap items-center gap-1.5">
-        @for (inn of availableInnings(); track inn) {
-          <button
-            class="filter-btn"
-            [class.active]="effectiveInning() === inn"
-            (click)="selectInning(inn)"
-          >
-            {{ inn }}
-          </button>
-        }
+    <!-- Controls -->
+    <div class="px-card space-y-2 pt-3 pb-1">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-content-dim text-xs font-medium uppercase tracking-wide">
+          Color by
+        </span>
+        <ws-button-toggle
+          mode="single"
+          [options]="statOptions"
+          [value]="selectedStat()"
+          (valueChange)="selectedStat.set($event + '')"
+        />
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-content-dim text-xs font-medium uppercase tracking-wide">
+          Innings
+        </span>
+        <ws-button-toggle
+          mode="multi"
+          [options]="inningToggleOptions()"
+          [value]="selectedInnings()"
+          (valueChange)="selectedInnings.set($any($event))"
+        />
       </div>
     </div>
 
-    @if (gameRows().length === 0) {
-      <p class="text-content-dim p-card text-sm">
-        No games pitched in this inning.
-      </p>
-    } @else {
-      <div class="overflow-x-auto">
-        <table class="stats-table game-table mb-0! table-fixed">
-          <colgroup>
-            <col class="w-[14%]" />
-            <col class="w-[14%]" />
-            <col class="w-[8%]" />
-            <col class="w-[8%]" />
-            <col class="w-[8%]" />
-            <col class="w-[8%]" />
-            <col class="w-[8%]" />
-            <col class="w-[16%]" />
-            <col class="w-[16%]" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="text-left">Date</th>
-              <th class="text-left">Opp</th>
-              <th class="text-left">BF</th>
-              <th class="text-left">H</th>
-              <th class="text-left">R</th>
-              <th class="text-left">K</th>
-              <th class="text-left">BB</th>
-              <th class="text-left">AVG</th>
-              <th class="text-left normal-case!">wOBA</th>
-            </tr>
-          </thead>
-          <tbody>
-            @for (row of gameRows(); track row.date + row.opponent) {
+    <!-- Matrix table -->
+    <div class="overflow-x-auto">
+      <table class="stats-table game-table mb-0! w-full">
+        <thead>
+          <tr>
+            <th class="text-left">Date</th>
+            <th class="text-left">Opp</th>
+            @for (inn of effectiveInnings(); track inn) {
+              <th class="text-center">{{ inn }}</th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (group of yearGroups(); track group.year) {
+            @if (hasMultipleYears()) {
               <tr>
-                <td class="text-content-dim">{{ row.date }}</td>
-                <td>{{ row.opponent }}</td>
-                <td class="text-left">{{ row.battersFaced }}</td>
-                <td class="text-left">{{ row.hits }}</td>
                 <td
-                  class="text-left"
-                  [class]="row.runs > 0 ? 'text-error! font-semibold' : ''"
+                  class="text-content-dim border-b-0! pt-3 pb-1 text-xs font-semibold tracking-wider uppercase"
+                  [attr.colspan]="effectiveInnings().length + 2"
                 >
-                  {{ row.runs }}
-                </td>
-                <td class="text-left">{{ row.strikeouts }}</td>
-                <td class="text-left">{{ row.walks }}</td>
-                <td class="text-left font-medium" [style]="row.avgStyle">
-                  {{ row.formattedAvg }}
-                </td>
-                <td class="text-left font-medium" [style]="row.wobaStyle">
-                  {{ row.formattedWoba }}
+                  {{ group.year }}
                 </td>
               </tr>
             }
-          </tbody>
-          @if (totalsRow(); as t) {
-            <tfoot>
-              <tr class="border-line border-t font-semibold">
-                <td class="border-b-0!" colspan="2">Total</td>
-                <td class="border-b-0! text-left">{{ t.battersFaced }}</td>
-                <td class="border-b-0! text-left">{{ t.hits }}</td>
-                <td class="border-b-0! text-left">{{ t.runs }}</td>
-                <td class="border-b-0! text-left">{{ t.strikeouts }}</td>
-                <td class="border-b-0! text-left">{{ t.walks }}</td>
-                <td
-                  class="border-b-0! text-left font-medium"
-                  [style]="t.avgStyle"
-                >
-                  {{ t.formattedAvg }}
-                </td>
-                <td
-                  class="border-b-0! text-left font-medium"
-                  [style]="t.wobaStyle"
-                >
-                  {{ t.formattedWoba }}
-                </td>
+
+            @for (game of group.games; track game.url) {
+              <tr
+                class="cursor-pointer transition-colors hover:bg-white/5"
+                (click)="toggleExpand(game.url)"
+              >
+                <td class="text-content-dim">{{ game.date }}</td>
+                <td>{{ game.opponent }}</td>
+                @for (cell of game.cells; track $index) {
+                  <td
+                    class="text-center font-medium"
+                    [class.text-content-dim]="cell.empty"
+                    [style]="cell.empty ? {} : cell.style"
+                  >
+                    <span [class.opacity-30]="cell.empty">{{ cell.value }}</span>
+                  </td>
+                }
               </tr>
-            </tfoot>
+
+              @if (expandedUrl() === game.url) {
+                <tr>
+                  <td
+                    class="border-b-0! p-0!"
+                    [attr.colspan]="effectiveInnings().length + 2"
+                  >
+                    <ws-pitcher-innings-table
+                      [rows]="game.inningRows"
+                      [totals]="game.inningTotals"
+                      [bordered]="false"
+                    />
+                  </td>
+                </tr>
+              }
+            }
           }
-        </table>
-      </div>
-    }
+        </tbody>
+        <tfoot>
+          <tr class="border-line border-t font-semibold">
+            <td class="border-b-0!" colspan="2">Total</td>
+            @for (total of columnTotals(); track $index) {
+              <td
+                class="border-b-0! text-center font-medium"
+                [style]="total.style"
+              >
+                {{ total.value }}
+              </td>
+            }
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   </div>
 }

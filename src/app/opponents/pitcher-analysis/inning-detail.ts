@@ -5,7 +5,8 @@ import {
   input,
   signal,
 } from '@angular/core';
-import { SlideToggle } from '@ws/shared/ui';
+import type { ToggleOption } from '@ws/shared/ui';
+import { ButtonToggle } from '@ws/shared/ui';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/stats-core';
 import {
   battingAvgAgainst,
@@ -14,49 +15,200 @@ import {
   wobaColorStyle,
 } from '@ws/stats-core';
 
+import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
+import { PitcherInningsTable } from './pitcher-innings-table';
+
+type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'AVG' | 'wOBA';
+
+const STAT_OPTIONS: ToggleOption[] = [
+  { value: 'H', label: 'H' },
+  { value: 'R', label: 'R' },
+  { value: 'BB', label: 'BB' },
+  { value: 'K', label: 'K' },
+  { value: 'AVG', label: 'AVG' },
+  { value: 'wOBA', label: 'wOBA' },
+];
+
 const EMPTY_STYLE: Record<string, string> = {};
+
+/**
+ * Color lookup tables for counting stats.
+ * Index = count value, value = woba scale input for wobaColorStyle.
+ * Higher woba scale = greener (good for pitcher).
+ */
+const COUNT_COLOR_MAP: Record<string, number[]> = {
+  H: [0.55, 0.35, 0.15, 0.0],
+  R: [0.55, 0.25, 0.0],
+  BB: [0.55, 0.3, 0.0],
+};
+
+/** Standalone K color ramp — 0 = muted dash, 1 = purple, 2 = teal, 3+ = green */
+const K_COLORS: Record<string, string>[] = [
+  { color: 'hsl(0, 0%, 35%)' },
+  { color: 'hsl(270, 70%, 65%)' },
+  { color: 'hsl(180, 75%, 52%)' },
+  { color: 'hsl(140, 70%, 65%)' },
+];
 
 function fmtStat(value: number): string {
   return value.toFixed(3).replace(/^0/, '');
 }
 
-interface InningGameRow {
+function extractYear(dateStr: string): number {
+  const match = dateStr.match(/(\d{4})/);
+
+  return match ? parseInt(match[1], 10) : 0;
+}
+
+/** Get the color style for a counting stat cell */
+function countStatColor(stat: string, count: number): Record<string, string> {
+  if (stat === 'K') {
+    const idx = Math.min(count, K_COLORS.length - 1);
+
+    return K_COLORS[idx];
+  }
+
+  const table = COUNT_COLOR_MAP[stat];
+
+  if (!table) {
+    return EMPTY_STYLE;
+  }
+
+  const idx = Math.min(count, table.length - 1);
+
+  return wobaColorStyle(table[idx]);
+}
+
+/** Get the color style for a rate stat cell */
+function rateStatColor(
+  stat: MatrixStat,
+  innStats: PitcherInningStats
+): Record<string, string> {
+  if (stat === 'AVG') {
+    const avg = battingAvgAgainst(innStats);
+
+    return wobaColorStyle(0.55 - avg * 1.2);
+  }
+
+  const woba = wobaAgainst(innStats);
+
+  return wobaColorStyle(0.55 - woba);
+}
+
+/** Extract the display value for a cell given the stat mode */
+function cellValue(stat: MatrixStat, innStats: PitcherInningStats): string {
+  switch (stat) {
+    case 'H':
+      return String(innStats.hits);
+    case 'R':
+      return String(innStats.runs);
+    case 'BB':
+      return String(innStats.walks);
+    case 'K':
+      return String(innStats.strikeouts);
+    case 'AVG':
+      return fmtStat(battingAvgAgainst(innStats));
+    case 'wOBA':
+      return fmtStat(wobaAgainst(innStats));
+  }
+}
+
+/** Raw count for a counting stat */
+function rawCount(stat: MatrixStat, innStats: PitcherInningStats): number {
+  switch (stat) {
+    case 'H':
+      return innStats.hits;
+    case 'R':
+      return innStats.runs;
+    case 'BB':
+      return innStats.walks;
+    case 'K':
+      return innStats.strikeouts;
+    default:
+      return 0;
+  }
+}
+
+/** K color based on K-per-out rate (for totals) */
+function kRateColor(innStats: PitcherInningStats): Record<string, string> {
+  if (innStats.outs === 0 || innStats.strikeouts === 0) {
+    return K_COLORS[0];
+  }
+
+  const kPerOut = innStats.strikeouts / innStats.outs;
+
+  // ~0.5 K/IP → purple, ~1.0 K/IP → teal, ~1.5+ K/IP → green
+  if (kPerOut < 0.17) {
+    return K_COLORS[0];
+  }
+
+  if (kPerOut < 0.34) {
+    return K_COLORS[1];
+  }
+
+  if (kPerOut < 0.50) {
+    return K_COLORS[2];
+  }
+
+  return K_COLORS[3];
+}
+
+/** Get the color style for a cell */
+function cellColor(
+  stat: MatrixStat,
+  innStats: PitcherInningStats
+): Record<string, string> {
+  if (stat === 'AVG' || stat === 'wOBA') {
+    return rateStatColor(stat, innStats);
+  }
+
+  return countStatColor(stat, rawCount(stat, innStats));
+}
+
+/** Get the color style for a total cell (uses rate for K) */
+function totalCellColor(
+  stat: MatrixStat,
+  innStats: PitcherInningStats
+): Record<string, string> {
+  if (stat === 'K') {
+    return kRateColor(innStats);
+  }
+
+  return cellColor(stat, innStats);
+}
+
+interface MatrixCell {
+  value: string;
+  style: Record<string, string>;
+  empty: boolean;
+}
+
+interface MatrixGameRow {
+  url: string;
   date: string;
   opponent: string;
-  battersFaced: number;
-  hits: number;
-  runs: number;
-  strikeouts: number;
-  walks: number;
-  formattedAvg: string;
-  formattedWoba: string;
-  avgStyle: Record<string, string>;
-  wobaStyle: Record<string, string>;
+  cells: MatrixCell[];
+  inningRows: InningsTableRow[];
+  inningTotals: InningsTotalsRow;
 }
 
-interface InningTotalsRow {
-  battersFaced: number;
-  hits: number;
-  runs: number;
-  strikeouts: number;
-  walks: number;
-  formattedAvg: string;
-  formattedWoba: string;
-  avgStyle: Record<string, string>;
-  wobaStyle: Record<string, string>;
+export interface MatrixYearGroup {
+  year: number;
+  games: MatrixGameRow[];
 }
 
-function buildGameRow(
-  log: PitcherGameLog,
-  inn: PitcherInningStats,
-  showColors: boolean
-): InningGameRow {
+interface ColumnTotal {
+  value: string;
+  style: Record<string, string>;
+}
+
+/** Build InningsTableRow for expansion panel */
+function buildInningView(inn: PitcherInningStats): InningsTableRow {
   const avg = battingAvgAgainst(inn);
   const woba = wobaAgainst(inn);
 
   return {
-    date: log.date,
-    opponent: log.opponent,
+    inning: inn.inning,
     battersFaced: inn.battersFaced,
     hits: inn.hits,
     runs: inn.runs,
@@ -64,35 +216,36 @@ function buildGameRow(
     walks: inn.walks,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
-    avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
-    wobaStyle: showColors ? wobaColorStyle(0.55 - woba) : EMPTY_STYLE,
+    avgStyle: wobaColorStyle(0.55 - avg * 1.2),
+    wobaStyle: wobaColorStyle(0.55 - woba),
   };
 }
 
-function buildTotalsRow(
-  stats: PitcherInningStats,
-  showColors: boolean
-): InningTotalsRow {
-  const avg = battingAvgAgainst(stats);
-  const woba = wobaAgainst(stats);
+/** Build InningsTotalsRow for expansion panel */
+function buildTotalsView(totals: PitcherInningStats): InningsTotalsRow {
+  const avg = battingAvgAgainst(totals);
+  const woba = wobaAgainst(totals);
 
   return {
-    battersFaced: stats.battersFaced,
-    hits: stats.hits,
-    runs: stats.runs,
-    strikeouts: stats.strikeouts,
-    walks: stats.walks,
+    battersFaced: totals.battersFaced,
+    hits: totals.hits,
+    runs: totals.runs,
+    strikeouts: totals.strikeouts,
+    walks: totals.walks,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
-    avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
-    wobaStyle: showColors ? wobaColorStyle(0.55 - woba) : EMPTY_STYLE,
+    avgStyle: wobaColorStyle(0.55 - avg * 1.2),
+    wobaStyle: wobaColorStyle(0.55 - woba),
   };
 }
 
 @Component({
   selector: 'ws-inning-detail',
   standalone: true,
-  imports: [SlideToggle],
+  imports: [
+    ButtonToggle,
+    PitcherInningsTable,
+  ],
   host: { class: 'block' },
   templateUrl: './inning-detail.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -101,8 +254,10 @@ export class InningDetail {
   readonly gameLogs = input.required<PitcherGameLog[]>();
   readonly byInning = input.required<Map<string, PitcherInningStats>>();
 
-  readonly selectedInning = signal<string | null>(null);
-  readonly colorCoding = signal(true);
+  readonly statOptions = STAT_OPTIONS;
+  readonly selectedStat = signal<string>('R');
+  readonly selectedInnings = signal<string[]>([]);
+  readonly expandedUrl = signal<string | null>(null);
 
   /** Available innings sorted numerically */
   readonly availableInnings = computed<string[]>(() => {
@@ -111,59 +266,96 @@ export class InningDetail {
     return keys.sort((a, b) => inningToNumber(a) - inningToNumber(b));
   });
 
-  /** Auto-select first inning if none selected */
-  readonly effectiveInning = computed<string | null>(() => {
-    const selected = this.selectedInning();
+  /** Toggle options derived from available innings */
+  readonly inningToggleOptions = computed<ToggleOption[]>(() =>
+    this.availableInnings().map((inn) => ({ value: inn, label: inn }))
+  );
+
+  /** Effective visible inning columns — all when none selected */
+  readonly effectiveInnings = computed<string[]>(() => {
+    const selected = this.selectedInnings();
     const available = this.availableInnings();
 
-    if (selected && available.includes(selected)) {
-      return selected;
+    if (selected.length === 0) {
+      return available;
     }
 
-    return available[0] ?? null;
+    return available.filter((inn) => selected.includes(inn));
   });
 
-  /** Game-by-game rows for the selected inning */
-  readonly gameRows = computed<InningGameRow[]>(() => {
-    const inning = this.effectiveInning();
-    const showColors = this.colorCoding();
+  /** Game rows grouped by year */
+  readonly yearGroups = computed<MatrixYearGroup[]>(() => {
+    const logs = this.gameLogs();
+    const innings = this.effectiveInnings();
+    const stat = this.selectedStat() as MatrixStat;
+    const groups = new Map<number, MatrixGameRow[]>();
 
-    if (!inning) {
-      return [];
-    }
+    [...logs].reverse().forEach((log) => {
+      if (log.totals.outs === 0) {
+        return;
+      }
 
-    const rows: InningGameRow[] = [];
+      const cells = innings.map((inn) => {
+        const innStats = log.innings.find((i) => i.inning === inn);
 
-    [...this.gameLogs()].reverse().forEach((log) => {
-      const inn = log.innings.find((i) => i.inning === inning);
+        if (!innStats) {
+          return { value: '-', style: EMPTY_STYLE, empty: true };
+        }
 
-      if (inn) {
-        rows.push(buildGameRow(log, inn, showColors));
+        return {
+          value: cellValue(stat, innStats),
+          style: cellColor(stat, innStats),
+          empty: false,
+        };
+      });
+
+      const row: MatrixGameRow = {
+        url: log.url,
+        date: log.date,
+        opponent: log.opponent,
+        cells,
+        inningRows: log.innings.map(buildInningView),
+        inningTotals: buildTotalsView(log.totals),
+      };
+
+      const year = extractYear(log.date);
+      const existing = groups.get(year);
+
+      if (existing) {
+        existing.push(row);
+      } else {
+        groups.set(year, [row]);
       }
     });
 
-    return rows;
+    return Array.from(groups.entries())
+      .sort(([a], [b]) => b - a)
+      .map(([year, games]) => ({ year, games }));
   });
 
-  /** Aggregate totals for the selected inning */
-  readonly totalsRow = computed<InningTotalsRow | null>(() => {
-    const inning = this.effectiveInning();
-    const showColors = this.colorCoding();
+  readonly hasMultipleYears = computed(() => this.yearGroups().length > 1);
 
-    if (!inning) {
-      return null;
-    }
+  /** Column totals from the aggregated byInning data */
+  readonly columnTotals = computed<ColumnTotal[]>(() => {
+    const innings = this.effectiveInnings();
+    const stat = this.selectedStat() as MatrixStat;
+    const byInning = this.byInning();
 
-    const stats = this.byInning().get(inning);
+    return innings.map((inn) => {
+      const innStats = byInning.get(inn);
 
-    if (!stats) {
-      return null;
-    }
+      if (!innStats) {
+        return { value: '-', style: EMPTY_STYLE };
+      }
 
-    return buildTotalsRow(stats, showColors);
+      return {
+        value: cellValue(stat, innStats),
+        style: totalCellColor(stat, innStats),
+      };
+    });
   });
 
-  selectInning(inning: string): void {
-    this.selectedInning.set(inning);
+  toggleExpand(url: string): void {
+    this.expandedUrl.update((current) => (current === url ? null : url));
   }
 }
