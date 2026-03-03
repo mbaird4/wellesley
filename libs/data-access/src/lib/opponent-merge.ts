@@ -1,6 +1,7 @@
 import { calculateWoba } from '@ws/stats-core';
 
 import type {
+  BatHand,
   OpponentCareerStats,
   OpponentGamePbP,
   OpponentPitchingData,
@@ -70,7 +71,7 @@ export function mergeBattingYears(
       jerseyNumber: number | null;
       classYear: string;
       position: string | null;
-      bats: import('./opponent-types').BatHand | null;
+      bats: BatHand | null;
     }
   >();
 

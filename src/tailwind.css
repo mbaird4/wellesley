@@ -295,7 +295,7 @@
 
     th,
     td {
-      @apply min-w-9 px-2 py-1 text-center text-[0.95rem];
+      @apply min-w-9 px-2! py-1! text-[0.95rem];
     }
 
     .sticky-col {

@@ -26,7 +26,13 @@ import type {
   SprayDataPoint,
   SprayZone,
 } from '@ws/stats-core';
-import { computeSprayZones, parseSprayData } from '@ws/stats-core';
+import {
+  buildCanonicalNameMap,
+  computeSprayZones,
+  normalizePlayerName,
+  parseSprayData,
+} from '@ws/stats-core';
+import { catchError, forkJoin, of } from 'rxjs';
 
 @Component({
   selector: 'ws-spray-chart',
@@ -151,12 +157,6 @@ export class SprayChart {
 
   constructor() {
     this.loadData();
-    this.dataService.getRoster().subscribe({
-      next: (map) => {
-        this.rawRoster.set(map);
-        this.cdr.markForCheck();
-      },
-    });
   }
 
   loadData(): void {
@@ -164,11 +164,40 @@ export class SprayChart {
     this.error = null;
     this.allDataPoints.set([]);
 
-    this.statsService.getStats(this.selectedYear).subscribe({
-      next: (stats) => {
+    forkJoin({
+      stats: this.statsService.getStats(this.selectedYear),
+      roster: this.dataService
+        .getRoster()
+        .pipe(catchError(() => of({} as JerseyMap))),
+    }).subscribe({
+      next: ({ stats, roster }) => {
+        this.rawRoster.set(roster);
+
         const points = stats.games.flatMap((game, i) =>
           parseSprayData(game.snapshots, i)
         );
+
+        // Normalize full first names → initials ("Joe Smith" → "J. Smith")
+        points.forEach(
+          (p) => (p.playerName = normalizePlayerName(p.playerName))
+        );
+
+        // Merge truncated last names and wrong initials using jersey numbers
+        if (Object.keys(roster).length > 0) {
+          const allNames = [...new Set(points.map((p) => p.playerName))];
+          const canonMap = buildCanonicalNameMap(allNames, roster);
+
+          if (canonMap.size > 0) {
+            points.forEach((p) => {
+              const canon = canonMap.get(p.playerName);
+
+              if (canon) {
+                p.playerName = canon;
+              }
+            });
+          }
+        }
+
         this.allDataPoints.set(points);
         this.loading = false;
         this.cdr.markForCheck();

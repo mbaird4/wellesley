@@ -7,6 +7,7 @@ export * from './lib/processing/pitcher-tracking';
 export * from './lib/processing/process-game-snapshots';
 export * from './lib/processing/process-games';
 export * from './lib/processing/scoring-plays';
+export * from './lib/spray/name-normalization';
 export * from './lib/spray/spray.models';
 export * from './lib/spray/spray-chart';
 export * from './lib/woba/woba';

@@ -15,11 +15,7 @@ import { Diamond } from '../diamond/diamond';
 @Component({
   selector: 'ws-game-viewer',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    Diamond,
-  ],
+  imports: [CommonModule, FormsModule, Diamond],
   templateUrl: './game-viewer.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

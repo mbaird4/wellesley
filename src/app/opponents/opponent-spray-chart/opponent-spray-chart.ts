@@ -30,7 +30,12 @@ import type {
   SprayDataPoint,
   SprayZone,
 } from '@ws/stats-core';
-import { computeSprayZones, parseSprayData } from '@ws/stats-core';
+import {
+  buildCanonicalNameMap,
+  computeSprayZones,
+  normalizePlayerName,
+  parseSprayData,
+} from '@ws/stats-core';
 import { catchError, forkJoin, of } from 'rxjs';
 
 import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
@@ -40,105 +45,6 @@ const SPRAY_YEARS = Array.from(
   { length: 4 },
   (_, i) => CURRENT_YEAR - i
 ).reverse();
-
-/** Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly. */
-function normalizePlayerName(name: string): string {
-  const parts = name.split(/\s+/);
-
-  if (parts.length < 2) {
-    return name;
-  }
-
-  const first = parts[0];
-
-  // Already initial format ("J." or "J")
-  if (first.length <= 2) {
-    return name;
-  }
-
-  const rest = parts.slice(1).join(' ');
-
-  return `${first[0]}. ${rest}`;
-}
-
-/**
- * Build a rename map that merges truncated last names (e.g. "E. Santi" → "E. Santiago")
- * and corrects wrong first initials (e.g. "A. Walsh" → "E. Walsh" when the roster says
- * Emily Walsh). Groups names by jersey number; uses the roster's first name to pick the
- * correct initial, then longest display name as the canonical form.
- */
-function buildCanonicalNameMap(
-  names: string[],
-  roster: OpponentRoster
-): Map<string, string> {
-  const byLastName = new Map<string, number>();
-  const jerseyToFirstName = new Map<number, string>();
-  Object.entries(roster).forEach(([key, entry]) => {
-    const parts = key.split(',');
-    const last = parts[0].trim();
-    const first = parts[1]?.trim() ?? '';
-    byLastName.set(last, entry.jersey);
-    jerseyToFirstName.set(entry.jersey, first);
-  });
-
-  // Match each display name to a jersey number
-  const nameToJersey = new Map<string, number>();
-  names.forEach((displayName) => {
-    const parts = displayName.split(/\s+/);
-    const displayLast = parts.slice(1).join(' ').toLowerCase();
-    const jersey = byLastName.get(displayLast);
-
-    if (jersey !== undefined) {
-      nameToJersey.set(displayName, jersey);
-
-      return;
-    }
-
-    for (const [rosterLast, num] of byLastName) {
-      if (
-        rosterLast.startsWith(displayLast) ||
-        displayLast.startsWith(rosterLast)
-      ) {
-        nameToJersey.set(displayName, num);
-        break;
-      }
-    }
-  });
-
-  // Group by jersey number
-  const byJersey = new Map<number, string[]>();
-  nameToJersey.forEach((jersey, name) => {
-    const group = byJersey.get(jersey) ?? [];
-    group.push(name);
-    byJersey.set(jersey, group);
-  });
-
-  const canonMap = new Map<string, string>();
-  byJersey.forEach((group, jersey) => {
-    if (group.length <= 1) {
-      return;
-    }
-
-    // Prefer the name whose initial matches the roster's first name
-    const rosterFirst = jerseyToFirstName.get(jersey) ?? '';
-    const rosterInitial = rosterFirst[0]?.toUpperCase() ?? '';
-
-    // Among names with the correct initial, pick the longest (handles truncated last names)
-    const correctInitial = group.filter((n) => n[0] === rosterInitial);
-    const canonical =
-      correctInitial.length > 0
-        ? correctInitial.reduce((a, b) => (b.length > a.length ? b : a))
-        : group.reduce((a, b) => (b.length > a.length ? b : a));
-
-    group.forEach((name) => {
-      if (name !== canonical) {
-        canonMap.set(name, canonical);
-      }
-    });
-  });
-
-  return canonMap;
-}
 
 const VIEW_MODE_OPTIONS: ToggleOption[] = [
   { value: 'split', label: 'Split' },
@@ -398,7 +304,12 @@ export class OpponentSprayChart {
             )
           ),
         ];
-        const canonMap = buildCanonicalNameMap(allNames, roster);
+        // Convert OpponentRoster → simple jersey map for shared utility
+        const jerseyMap: Record<string, number> = {};
+        Object.entries(roster).forEach(([key, entry]) => {
+          jerseyMap[key] = entry.jersey;
+        });
+        const canonMap = buildCanonicalNameMap(allNames, jerseyMap);
 
         if (canonMap.size > 0) {
           map.forEach((points) => {
