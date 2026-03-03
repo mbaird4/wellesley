@@ -16,7 +16,7 @@ export interface ToggleOption {
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'inline-flex gap-1 rounded-lg bg-content-dim p-1',
+    class: 'inline-flex gap-1 rounded-lg bg-surface-elevated p-1',
   },
   templateUrl: './button-toggle.html',
 })

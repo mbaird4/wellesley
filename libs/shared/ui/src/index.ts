@@ -6,4 +6,5 @@ export * from './lib/slide-toggle/slide-toggle';
 export * from './lib/spray-field/spray-field';
 export * from './lib/spray-filters/spray-filters';
 export * from './lib/spray-legend/spray-legend';
+export * from './lib/sticky-player-header/sticky-player-header';
 export * from './lib/woba-badge/woba-badge';

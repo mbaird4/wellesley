@@ -32,6 +32,7 @@ export class Pitching implements OnInit {
 
   readonly pitchingData = signal<OpponentPitchingData | null>(null);
   readonly rosterNames = signal<Set<string>>(new Set());
+  readonly jerseyMap = signal<Record<string, number> | null>(null);
   readonly loading = signal(true);
 
   ngOnInit(): void {
@@ -65,6 +66,7 @@ export class Pitching implements OnInit {
     this.dataService.getRoster().subscribe({
       next: (roster) => {
         this.rosterNames.set(new Set(Object.keys(roster)));
+        this.jerseyMap.set(roster);
       },
     });
   }

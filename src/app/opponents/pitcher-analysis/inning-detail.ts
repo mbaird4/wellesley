@@ -15,7 +15,10 @@ import {
   wobaColorStyle,
 } from '@ws/stats-core';
 
-import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
+import type {
+  InningsTableRow,
+  InningsTotalsRow,
+} from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'AVG' | 'wOBA';
@@ -146,7 +149,7 @@ function kRateColor(innStats: PitcherInningStats): Record<string, string> {
     return K_COLORS[1];
   }
 
-  if (kPerOut < 0.50) {
+  if (kPerOut < 0.5) {
     return K_COLORS[2];
   }
 
@@ -256,7 +259,16 @@ export class InningDetail {
 
   readonly statOptions = STAT_OPTIONS;
   readonly selectedStat = signal<string>('R');
-  readonly selectedInnings = signal<string[]>([]);
+  readonly selectedInnings = signal<string[]>([
+    '1st',
+    '2nd',
+    '3rd',
+    '4th',
+    '5th',
+    '6th',
+    '7th',
+  ]);
+
   readonly expandedUrl = signal<string | null>(null);
 
   /** Available innings sorted numerically */
@@ -283,15 +295,27 @@ export class InningDetail {
     return available.filter((inn) => selected.includes(inn));
   });
 
+  /** Whether the user has actively filtered to a subset of innings */
+  readonly isFiltered = computed(() => this.selectedInnings().length > 0);
+
   /** Game rows grouped by year */
   readonly yearGroups = computed<MatrixYearGroup[]>(() => {
     const logs = this.gameLogs();
     const innings = this.effectiveInnings();
     const stat = this.selectedStat() as MatrixStat;
+    const filtered = this.isFiltered();
     const groups = new Map<number, MatrixGameRow[]>();
 
     [...logs].reverse().forEach((log) => {
       if (log.totals.outs === 0) {
+        return;
+      }
+
+      // When filtering to specific innings, skip games with no data in any of them
+      if (
+        filtered &&
+        !innings.some((inn) => log.innings.find((i) => i.inning === inn))
+      ) {
         return;
       }
 

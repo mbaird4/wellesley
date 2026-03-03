@@ -1,0 +1,16 @@
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 flex-row">
+  <h3
+    class="text-content-bright stuck:text-xl text-lg font-semibold transition-[font-size] duration-100"
+  >
+    @if (jerseyNumber() !== null) {
+      <span class="text-content-dim font-normal">#{{ jerseyNumber() }}</span>
+    }
+    {{ name() }}
+    @if (subtitle()) {
+      <span class="text-content-dim stuck:text-xs text-base font-normal">
+        &mdash; {{ subtitle() }}
+      </span>
+    }
+  </h3>
+  <ng-content />
+</div>

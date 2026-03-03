@@ -19,6 +19,7 @@ export interface PitcherOption {
 })
 export class PitcherSelector {
   readonly pitchers = input.required<PitcherOption[]>();
+  readonly jerseyMap = input<Record<string, number> | null>(null);
   readonly selectedPitcher = input.required<string | null>();
   readonly layout = input<'horizontal' | 'vertical'>('horizontal');
   readonly pitcherSelected = output<string>();

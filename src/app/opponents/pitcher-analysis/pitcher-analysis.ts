@@ -7,6 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import type { OpponentPitchingData } from '@ws/data-access';
+import { StickyPlayerHeader } from '@ws/shared/ui';
 import { BreakpointService } from '@ws/shared/util';
 import type { PitcherGameLog, PitcherSeasonSummary } from '@ws/stats-core';
 import {
@@ -27,6 +28,7 @@ import { PitcherSelector } from './pitcher-selector';
   selector: 'ws-pitcher-analysis',
   standalone: true,
   imports: [
+    StickyPlayerHeader,
     PitcherSelector,
     PitcherOverview,
     InningBreakdown,
@@ -42,6 +44,7 @@ export class PitcherAnalysis {
 
   readonly pitchingData = input.required<OpponentPitchingData | null>();
   readonly rosterNames = input<Set<string>>(new Set());
+  readonly jerseyMap = input<Record<string, number> | null>(null);
   readonly loading = input<boolean>(false);
 
   readonly selectedPitcher = signal<string | null>(null);
@@ -111,7 +114,21 @@ export class PitcherAnalysis {
   readonly yearLabel = computed(() => {
     const year = this.selectedYear();
 
-    return year === 'all' ? 'All Years' : String(year);
+    return year === 'all' ? 'Career' : String(year);
+  });
+
+  /** Look up jersey number for the selected pitcher from roster data */
+  readonly jerseyNumber = computed<number | null>(() => {
+    const pitcher = this.effectivePitcher();
+    const map = this.jerseyMap();
+
+    if (!pitcher || !map) {
+      return null;
+    }
+
+    const key = pitcher.toLowerCase().replace(/\./g, '');
+
+    return map[key] ?? null;
   });
 
   /** Raw stats for the selected pitcher, scoped by selected year */

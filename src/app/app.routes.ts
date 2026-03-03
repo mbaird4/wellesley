@@ -3,6 +3,11 @@ import type { Route } from '@angular/router';
 export const appRoutes: Route[] = [
   {
     path: '',
+    redirectTo: '/lineup',
+    pathMatch: 'full',
+  },
+  {
+    path: 'lineup',
     loadComponent: () =>
       import('./lineup-stats/lineup-stats').then((m) => m.LineupStats),
   },
@@ -29,5 +34,6 @@ export const appRoutes: Route[] = [
     loadComponent: () =>
       import('./spray-chart/spray-chart').then((m) => m.SprayChart),
   },
+
   { path: '**', redirectTo: '' },
 ];

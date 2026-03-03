@@ -9,12 +9,7 @@
         {{ title }}
       </h1>
       <nav class="bg-surface-card flex gap-1 rounded-[10px] p-[3px]">
-        <a
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="nav-link"
-        >
+        <a routerLink="/lineup" routerLinkActive="active" class="nav-link">
           Lineup Stats
         </a>
         <a routerLink="/woba" routerLinkActive="active" class="nav-link">
@@ -23,14 +18,14 @@
         <a routerLink="/scoring" routerLinkActive="active" class="nav-link">
           Scoring Plays
         </a>
-        <a routerLink="/opponents" routerLinkActive="active" class="nav-link">
-          Opponents
+        <a routerLink="/spray-chart" routerLinkActive="active" class="nav-link">
+          Spray Chart
         </a>
         <a routerLink="/pitching" routerLinkActive="active" class="nav-link">
           Pitching
         </a>
-        <a routerLink="/spray-chart" routerLinkActive="active" class="nav-link">
-          Spray Chart
+        <a routerLink="/opponents" routerLinkActive="active" class="nav-link">
+          Opponents
         </a>
       </nav>
     </header>

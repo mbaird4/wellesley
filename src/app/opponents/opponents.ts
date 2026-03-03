@@ -219,6 +219,26 @@ export class Opponents {
    */
   readonly rosterNames = signal<Set<string>>(new Set());
 
+  /** Full roster data — used to look up jersey numbers */
+  readonly roster = signal<OpponentRoster | null>(null);
+
+  /** Jersey number lookup keyed by lowercase name (no dots) */
+  readonly jerseyMap = computed<Record<string, number> | null>(() => {
+    const roster = this.roster();
+
+    if (!roster) {
+      return null;
+    }
+
+    const map: Record<string, number> = {};
+
+    Object.entries(roster).forEach(([name, entry]) => {
+      map[name] = entry.jersey;
+    });
+
+    return map;
+  });
+
   readonly empty = computed(
     () =>
       this.regulars().length === 0 &&
@@ -305,6 +325,7 @@ export class Opponents {
         );
         this.teamData.set(mergeBattingYears(valid, roster));
         this.rosterNames.set(roster ? new Set(Object.keys(roster)) : new Set());
+        this.roster.set(roster);
         this.loading.set(false);
       },
       error: (err) => {

@@ -127,4 +127,8 @@ export class SoftballDataService {
       lineup: new Map(g.lineup),
     }));
   }
+
+  public getCurrentCareerSpan() {
+    return RESOLVE_YEARS;
+  }
 }

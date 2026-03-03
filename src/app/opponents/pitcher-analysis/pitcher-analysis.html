@@ -17,33 +17,39 @@
       <ws-pitcher-selector
         layout="vertical"
         [pitchers]="pitcherList()"
+        [jerseyMap]="jerseyMap()"
         [selectedPitcher]="effectivePitcher()"
         (pitcherSelected)="selectPitcher($event)"
       />
 
       <div class="min-w-0 flex-1 space-y-4">
-        @if (availableYears().length > 1) {
-          <div class="flex flex-wrap items-center gap-1.5">
-            <button
-              class="filter-btn"
-              [class.active]="selectedYear() === 'all'"
-              (click)="selectYear('all')"
-            >
-              All
-            </button>
-            @for (year of availableYears(); track year) {
+        <ws-sticky-player-header
+          [name]="effectivePitcher()!"
+          [jerseyNumber]="jerseyNumber()"
+        >
+          @if (availableYears().length >= 1) {
+            <div class="flex flex-wrap items-center gap-1.5">
               <button
                 class="filter-btn"
-                [class.active]="selectedYear() === year"
-                (click)="selectYear(year)"
+                [class.active]="selectedYear() === 'all'"
+                (click)="selectYear('all')"
               >
-                {{ year }}
+                Career
               </button>
-            }
-          </div>
-        }
+              @for (year of availableYears(); track year) {
+                <button
+                  class="filter-btn"
+                  [class.active]="selectedYear() === year"
+                  (click)="selectYear(year)"
+                >
+                  {{ year }}
+                </button>
+              }
+            </div>
+          }
+        </ws-sticky-player-header>
 
-        <ws-pitcher-overview [data]="rawStats()" [yearLabel]="yearLabel()" />
+        <ws-pitcher-overview [data]="rawStats()" />
 
         @if (seasonSummary(); as summary) {
           <ws-inning-breakdown
@@ -64,34 +70,40 @@
     <!-- Mobile: stacked layout -->
     <ws-pitcher-selector
       layout="horizontal"
+      [jerseyMap]="jerseyMap()"
       [pitchers]="pitcherList()"
       [selectedPitcher]="effectivePitcher()"
       (pitcherSelected)="selectPitcher($event)"
     />
 
-    @if (availableYears().length > 1) {
-      <div class="mt-2 flex flex-wrap items-center gap-1.5">
-        <button
-          class="filter-btn"
-          [class.active]="selectedYear() === 'all'"
-          (click)="selectYear('all')"
-        >
-          All
-        </button>
-        @for (year of availableYears(); track year) {
+    <ws-sticky-player-header
+      [name]="effectivePitcher()!"
+      [jerseyNumber]="jerseyNumber()"
+    >
+      @if (availableYears().length > 1) {
+        <div class="flex flex-wrap items-center gap-1.5">
           <button
             class="filter-btn"
-            [class.active]="selectedYear() === year"
-            (click)="selectYear(year)"
+            [class.active]="selectedYear() === 'all'"
+            (click)="selectYear('all')"
           >
-            {{ year }}
+            All
           </button>
-        }
-      </div>
-    }
+          @for (year of availableYears(); track year) {
+            <button
+              class="filter-btn"
+              [class.active]="selectedYear() === year"
+              (click)="selectYear(year)"
+            >
+              {{ year }}
+            </button>
+          }
+        </div>
+      }
+    </ws-sticky-player-header>
 
     <div class="mt-3 space-y-3">
-      <ws-pitcher-overview [data]="rawStats()" [yearLabel]="yearLabel()" />
+      <ws-pitcher-overview [data]="rawStats()" />
 
       @if (seasonSummary(); as summary) {
         <ws-inning-breakdown

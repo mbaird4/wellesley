@@ -7,7 +7,9 @@
     <!-- Controls -->
     <div class="px-card space-y-2 pt-3 pb-1">
       <div class="flex flex-wrap items-center gap-2">
-        <span class="text-content-dim text-xs font-medium uppercase tracking-wide">
+        <span
+          class="text-content-dim text-xs font-medium tracking-wide uppercase"
+        >
           Color by
         </span>
         <ws-button-toggle
@@ -19,7 +21,9 @@
       </div>
 
       <div class="flex flex-wrap items-center gap-2">
-        <span class="text-content-dim text-xs font-medium uppercase tracking-wide">
+        <span
+          class="text-content-dim text-xs font-medium tracking-wide uppercase"
+        >
           Innings
         </span>
         <ws-button-toggle
@@ -69,7 +73,9 @@
                     [class.text-content-dim]="cell.empty"
                     [style]="cell.empty ? {} : cell.style"
                   >
-                    <span [class.opacity-30]="cell.empty">{{ cell.value }}</span>
+                    <span [class.opacity-30]="cell.empty">
+                      {{ cell.value }}
+                    </span>
                   </td>
                 }
               </tr>

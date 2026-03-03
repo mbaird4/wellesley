@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @source '../libs';
 
+@custom-variant stuck (&:where([data-state="stuck"], [data-state="stuck"] *));
+
 @theme {
   --color-brand: #0018a8;
   --color-brand-light: #1a3fd4;
