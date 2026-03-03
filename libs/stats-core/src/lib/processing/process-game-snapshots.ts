@@ -5,7 +5,11 @@ import type {
   GameWithSnapshots,
   PlaySnapshot,
 } from '../models';
-import { classifyPlay, getPlayerNameFromText, processPlay } from '../parsing/parse-play';
+import {
+  classifyPlay,
+  getPlayerNameFromText,
+  processPlay,
+} from '../parsing/parse-play';
 import { computeBaseRunnerStats } from './base-runner-stats';
 import { extractScoringPlays } from './scoring-plays';
 

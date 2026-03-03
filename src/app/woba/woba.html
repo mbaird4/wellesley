@@ -93,7 +93,10 @@
             @if (expandedPlayer === player.name) {
               <tr class="cumulative-row">
                 <td colspan="9">
-                  @if (cumulativeByName.get(player.name.toLowerCase()); as cumData) {
+                  @if (
+                    cumulativeByName.get(player.name.toLowerCase());
+                    as cumData
+                  ) {
                     <table class="stats-table game-progression-table">
                       <thead>
                         <tr>

@@ -143,10 +143,7 @@ const rule: RuleModule = {
 
               const elements = arrayNode.elements.filter(Boolean);
               const elementsText = elements
-                .map(
-                  (el: any) =>
-                    `${elementIndent}${sourceCode.getText(el)},`
-                )
+                .map((el: any) => `${elementIndent}${sourceCode.getText(el)},`)
                 .join('\n');
               const replacement = `[\n${elementsText}\n${baseIndent}]`;
 

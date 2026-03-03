@@ -127,9 +127,7 @@ function resolvePlayText(text: string, nameMap: NameMap): string {
   });
 
   // Build combined regex from all registered patterns (longest first)
-  const allPatterns = [...prefixMap.keys()].sort(
-    (a, b) => b.length - a.length
-  );
+  const allPatterns = [...prefixMap.keys()].sort((a, b) => b.length - a.length);
   const escaped = allPatterns.map((p) =>
     p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
   );

@@ -14,7 +14,10 @@ import {
   wobaColorStyle,
 } from '@ws/stats-core';
 
-import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
+import type {
+  InningsTableRow,
+  InningsTotalsRow,
+} from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 const EMPTY_STYLE: Record<string, string> = {};

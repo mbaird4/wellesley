@@ -110,7 +110,6 @@ export function trackPitcherPerformance(
         }
       });
 
-
       tracked.push({
         activePitcher,
         inning: inning.inning,

@@ -1,1 +1,163 @@
-{"ball, haley":{"jersey":1,"classYear":"Sophomore","position":"OF","bats":"L","throws":"L"},"katsetos, kate":{"jersey":2,"classYear":"Senior","position":"INF","bats":"L","throws":"R"},"rimshnick, julia":{"jersey":3,"classYear":"Sophomore","position":"P","bats":"R","throws":"R"},"falcone, sarah":{"jersey":4,"classYear":"Senior","position":"OF","bats":"L","throws":"R"},"robinson, abby":{"jersey":5,"classYear":"Sophomore","position":"P","bats":"R","throws":"R"},"falotico, taylor":{"jersey":6,"classYear":"Senior","position":"OF","bats":"L","throws":"R"},"powers, rachel":{"jersey":7,"classYear":"Junior","position":"INF","bats":"R","throws":"R"},"eckles, brynlee":{"jersey":8,"classYear":"Sophomore","position":"UT","bats":"R","throws":"R"},"bohlander, addy":{"jersey":9,"classYear":"First Year","position":"OF","bats":"L","throws":"R"},"mccauliffe, lily":{"jersey":10,"classYear":"Senior","position":"P","bats":"R","throws":"R"},"hunter, reilly":{"jersey":11,"classYear":"Sophomore","position":"UT","bats":"R","throws":"R"},"spingola, tessa":{"jersey":13,"classYear":"Senior","position":"C","bats":"R","throws":"R"},"tse, maddie":{"jersey":14,"classYear":"Sophomore","position":"OF","bats":"R","throws":"R"},"derosa, amelia":{"jersey":16,"classYear":"Senior","position":"P/INF","bats":"L","throws":"R"},"king, madison":{"jersey":18,"classYear":"First Year","position":"UT","bats":"L","throws":"R"},"santiago, emilia":{"jersey":19,"classYear":"Senior","position":"INF","bats":"R","throws":"R"},"hammer, ariana":{"jersey":20,"classYear":"Sophomore","position":"INF","bats":"R","throws":"R"},"vlahakis, christina":{"jersey":21,"classYear":"First Year","position":"C/UT","bats":"R","throws":"R"},"swords, sammy":{"jersey":22,"classYear":"First Year","position":"UT","bats":"R","throws":"R"},"levesque, aurora":{"jersey":23,"classYear":"Sophomore","position":"C/INF","bats":"R","throws":"R"},"testo, madi":{"jersey":25,"classYear":"First Year","position":"C/INF","bats":"L","throws":"R"},"manzone, katie":{"jersey":26,"classYear":"Sophomore","position":"INF","bats":"R","throws":"R"},"pecchia, carissa":{"jersey":27,"classYear":"Senior","position":"C","bats":"R","throws":"R"}}
+{
+  "ball, haley": {
+    "jersey": 1,
+    "classYear": "Sophomore",
+    "position": "OF",
+    "bats": "L",
+    "throws": "L"
+  },
+  "katsetos, kate": {
+    "jersey": 2,
+    "classYear": "Senior",
+    "position": "INF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "rimshnick, julia": {
+    "jersey": 3,
+    "classYear": "Sophomore",
+    "position": "P",
+    "bats": "R",
+    "throws": "R"
+  },
+  "falcone, sarah": {
+    "jersey": 4,
+    "classYear": "Senior",
+    "position": "OF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "robinson, abby": {
+    "jersey": 5,
+    "classYear": "Sophomore",
+    "position": "P",
+    "bats": "R",
+    "throws": "R"
+  },
+  "falotico, taylor": {
+    "jersey": 6,
+    "classYear": "Senior",
+    "position": "OF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "powers, rachel": {
+    "jersey": 7,
+    "classYear": "Junior",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "eckles, brynlee": {
+    "jersey": 8,
+    "classYear": "Sophomore",
+    "position": "UT",
+    "bats": "R",
+    "throws": "R"
+  },
+  "bohlander, addy": {
+    "jersey": 9,
+    "classYear": "First Year",
+    "position": "OF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "mccauliffe, lily": {
+    "jersey": 10,
+    "classYear": "Senior",
+    "position": "P",
+    "bats": "R",
+    "throws": "R"
+  },
+  "hunter, reilly": {
+    "jersey": 11,
+    "classYear": "Sophomore",
+    "position": "UT",
+    "bats": "R",
+    "throws": "R"
+  },
+  "spingola, tessa": {
+    "jersey": 13,
+    "classYear": "Senior",
+    "position": "C",
+    "bats": "R",
+    "throws": "R"
+  },
+  "tse, maddie": {
+    "jersey": 14,
+    "classYear": "Sophomore",
+    "position": "OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "derosa, amelia": {
+    "jersey": 16,
+    "classYear": "Senior",
+    "position": "P/INF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "king, madison": {
+    "jersey": 18,
+    "classYear": "First Year",
+    "position": "UT",
+    "bats": "L",
+    "throws": "R"
+  },
+  "santiago, emilia": {
+    "jersey": 19,
+    "classYear": "Senior",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "hammer, ariana": {
+    "jersey": 20,
+    "classYear": "Sophomore",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "vlahakis, christina": {
+    "jersey": 21,
+    "classYear": "First Year",
+    "position": "C/UT",
+    "bats": "R",
+    "throws": "R"
+  },
+  "swords, sammy": {
+    "jersey": 22,
+    "classYear": "First Year",
+    "position": "UT",
+    "bats": "R",
+    "throws": "R"
+  },
+  "levesque, aurora": {
+    "jersey": 23,
+    "classYear": "Sophomore",
+    "position": "C/INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "testo, madi": {
+    "jersey": 25,
+    "classYear": "First Year",
+    "position": "C/INF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "manzone, katie": {
+    "jersey": 26,
+    "classYear": "Sophomore",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "pecchia, carissa": {
+    "jersey": 27,
+    "classYear": "Senior",
+    "position": "C",
+    "bats": "R",
+    "throws": "R"
+  }
+}

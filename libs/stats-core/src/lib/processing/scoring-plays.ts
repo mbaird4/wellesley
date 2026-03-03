@@ -7,10 +7,7 @@ import type {
   ScoringPlaySummary,
   ScoringPlayType,
 } from '../models';
-import {
-  parseBatterAction,
-  parseRunnerSubEvent,
-} from '../parsing/parse-play';
+import { parseBatterAction, parseRunnerSubEvent } from '../parsing/parse-play';
 import { classifyBaseSituation } from './base-runner-stats';
 
 /**

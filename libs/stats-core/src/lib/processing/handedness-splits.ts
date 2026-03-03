@@ -36,9 +36,7 @@ export interface HandednessSplitStats {
 export function isConferenceGame(opponentName: string): boolean {
   const lower = opponentName.toLowerCase();
 
-  return NEWMAC_TEAMS.some(
-    (team) => lower.includes(team)
-  );
+  return NEWMAC_TEAMS.some((team) => lower.includes(team));
 }
 
 /**
@@ -78,7 +76,10 @@ export function computeHandednessSplits(
   plays
     .filter((p) => p.isPlateAppearance && p.batterName)
     .forEach((play) => {
-      const normalizedName = (play.batterName ?? '').replace(/\./g, '').trim().toLowerCase();
+      const normalizedName = (play.batterName ?? '')
+        .replace(/\./g, '')
+        .trim()
+        .toLowerCase();
       const hand = handednessMap.get(normalizedName);
 
       if (!hand) {
@@ -128,7 +129,10 @@ export function computeHandednessSplits(
           break;
       }
 
-      if (play.batterResult === 'out' && play.playText.toLowerCase().includes('struck out')) {
+      if (
+        play.batterResult === 'out' &&
+        play.playText.toLowerCase().includes('struck out')
+      ) {
         stats.strikeouts += 1;
       }
     });

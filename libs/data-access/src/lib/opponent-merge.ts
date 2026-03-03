@@ -22,8 +22,7 @@ function rosterKeyToDisplayName(key: string): string {
   const first = parts[1] || '';
 
   // Title-case each word
-  const titleCase = (s: string) =>
-    s.replace(/\b\w/g, (c) => c.toUpperCase());
+  const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
 
   return `${titleCase(first)} ${titleCase(last)}`;
 }
@@ -195,13 +194,9 @@ export function computeCareerStats(
   const pa = totals.ab + totals.bb + totals.sf + totals.sh + totals.hbp;
   const woba = calculateWoba(totals);
   const avg =
-    totals.ab > 0
-      ? Math.round((totals.h / totals.ab) * 1000) / 1000
-      : 0;
+    totals.ab > 0 ? Math.round((totals.h / totals.ab) * 1000) / 1000 : 0;
   const slg =
-    totals.ab > 0
-      ? Math.round((totals.tb / totals.ab) * 1000) / 1000
-      : 0;
+    totals.ab > 0 ? Math.round((totals.tb / totals.ab) * 1000) / 1000 : 0;
   const obp =
     pa > 0
       ? Math.round(

@@ -9,8 +9,7 @@ export class DataContextService {
 
   async resolveProfile(): Promise<void> {
     try {
-      const base =
-        document.querySelector('base')?.getAttribute('href') || '/';
+      const base = document.querySelector('base')?.getAttribute('href') || '/';
       const response = await fetch(`${base}data/dcfg.txt`);
 
       if (response.ok) {

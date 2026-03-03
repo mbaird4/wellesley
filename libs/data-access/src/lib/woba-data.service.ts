@@ -36,7 +36,9 @@ export class WobaDataService {
   private async fetchStaticJson(year: number): Promise<WobaSeasonData> {
     const base = document.querySelector('base')?.getAttribute('href') || '/';
     const file =
-      year === CURRENT_YEAR ? 'data/wobadata.json' : `data/wobadata-${year}.json`;
+      year === CURRENT_YEAR
+        ? 'data/wobadata.json'
+        : `data/wobadata-${year}.json`;
     const url = `${base}${file}`;
     const response = await fetch(url);
 

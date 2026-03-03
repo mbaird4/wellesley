@@ -13,7 +13,11 @@ import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 import { classifyPlay, parseBatterAction } from '../parsing/parse-play';
-import { classifyContactType, parseBuntZone, parseSprayDirection } from '../spray/spray-chart';
+import {
+  classifyContactType,
+  parseBuntZone,
+  parseSprayDirection,
+} from '../spray/spray-chart';
 
 interface PatternEntry {
   pattern: string;
@@ -46,8 +50,15 @@ interface SprayExpectation {
 
 /** Results that represent ball-in-play contact with meaningful direction */
 const SPRAY_RESULTS = new Set([
-  'out', 'double_play', 'single', 'bunt_single',
-  'double', 'triple', 'homer', 'sac_bunt', 'sac_fly',
+  'out',
+  'double_play',
+  'single',
+  'bunt_single',
+  'double',
+  'triple',
+  'homer',
+  'sac_bunt',
+  'sac_fly',
 ]);
 
 const HIT_RESULTS = new Set(['single', 'double', 'triple', 'homer']);
@@ -91,9 +102,10 @@ const expectations: SprayExpectation[] = patternsFile.patterns
     const dirResult = parseSprayDirection(example);
     const baseContactType = classifyContactType(example);
     // Hits get contactType 'hit' unless it's a bunt
-    const contactType = HIT_RESULTS.has(result) && baseContactType !== 'bunt'
-      ? 'hit'
-      : baseContactType;
+    const contactType =
+      HIT_RESULTS.has(result) && baseContactType !== 'bunt'
+        ? 'hit'
+        : baseContactType;
 
     // For bunts, use bunt zone parsing (fielder-based, not throw destination)
     if (contactType === 'bunt') {
@@ -132,7 +144,9 @@ writeFileSync(outputPath, `${JSON.stringify(expectations, null, 2)}\n`);
 const withDirection = expectations.filter((e) => e.hasDirection);
 const withoutDirection = expectations.filter((e) => !e.hasDirection);
 
-console.log(`Generated ${expectations.length} spray expectations to ${outputPath}`);
+console.log(
+  `Generated ${expectations.length} spray expectations to ${outputPath}`
+);
 console.log(`  With directional info: ${withDirection.length}`);
 console.log(`  Without directional info: ${withoutDirection.length}`);
 

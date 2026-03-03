@@ -118,10 +118,7 @@ function parseYearsArg(): number[] {
 
 // ── Schedule page → boxscore URLs ──
 
-function extractBoxscoreUrls(
-  $: cheerio.CheerioAPI,
-  baseUrl: string
-): string[] {
+function extractBoxscoreUrls($: cheerio.CheerioAPI, baseUrl: string): string[] {
   const urls: string[] = [];
 
   // Primary selector: Sidearm Sports boxscore links
@@ -295,7 +292,10 @@ function parsePlayByPlay(
     }
 
     const inningKey = caption
-      .replace(new RegExp(`${teamName}\\s*-\\s*(Top|Bottom)\\s+of\\s*`, 'gi'), '')
+      .replace(
+        new RegExp(`${teamName}\\s*-\\s*(Top|Bottom)\\s+of\\s*`, 'gi'),
+        ''
+      )
       .trim();
 
     if (processedInnings.has(inningKey)) {

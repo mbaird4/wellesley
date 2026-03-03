@@ -9,7 +9,9 @@ import {
 
 // ── Helpers ──
 
-function makePlay(overrides: Partial<PitcherTrackedPlay> = {}): PitcherTrackedPlay {
+function makePlay(
+  overrides: Partial<PitcherTrackedPlay> = {}
+): PitcherTrackedPlay {
   return {
     activePitcher: 'J. Pitcher',
     inning: '1st',
@@ -65,8 +67,17 @@ describe('computePitcherInningStats', () => {
 
   it('separates stats for different pitchers', () => {
     const plays: PitcherTrackedPlay[] = [
-      makePlay({ activePitcher: 'A. Starter', inning: '1st', batterResult: 'out' }),
-      makePlay({ activePitcher: 'B. Relief', inning: '1st', batterResult: 'single', hitsOnPlay: 1 }),
+      makePlay({
+        activePitcher: 'A. Starter',
+        inning: '1st',
+        batterResult: 'out',
+      }),
+      makePlay({
+        activePitcher: 'B. Relief',
+        inning: '1st',
+        batterResult: 'single',
+        hitsOnPlay: 1,
+      }),
     ];
 
     const result = computePitcherInningStats(plays);
@@ -98,9 +109,18 @@ describe('computePitcherInningStats', () => {
 
   it('counts strikeouts from play text', () => {
     const plays: PitcherTrackedPlay[] = [
-      makePlay({ batterResult: 'out', playText: 'A. Batter struck out swinging.' }),
-      makePlay({ batterResult: 'out', playText: 'B. Batter struck out looking.' }),
-      makePlay({ batterResult: 'out', playText: 'C. Batter grounded out to ss.' }),
+      makePlay({
+        batterResult: 'out',
+        playText: 'A. Batter struck out swinging.',
+      }),
+      makePlay({
+        batterResult: 'out',
+        playText: 'B. Batter struck out looking.',
+      }),
+      makePlay({
+        batterResult: 'out',
+        playText: 'C. Batter grounded out to ss.',
+      }),
     ];
 
     const result = computePitcherInningStats(plays);
@@ -197,10 +217,52 @@ describe('computePitcherSeasonSummary', () => {
         url: 'url1',
         pitcher: 'J. Pitcher',
         innings: [
-          { inning: '1st', battersFaced: 3, ab: 3, hits: 1, singles: 1, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 2, walks: 0, strikeouts: 1, hbp: 0 },
-          { inning: '2nd', battersFaced: 3, ab: 3, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 3, walks: 0, strikeouts: 2, hbp: 0 },
+          {
+            inning: '1st',
+            battersFaced: 3,
+            ab: 3,
+            hits: 1,
+            singles: 1,
+            doubles: 0,
+            triples: 0,
+            hr: 0,
+            runs: 0,
+            outs: 2,
+            walks: 0,
+            strikeouts: 1,
+            hbp: 0,
+          },
+          {
+            inning: '2nd',
+            battersFaced: 3,
+            ab: 3,
+            hits: 0,
+            singles: 0,
+            doubles: 0,
+            triples: 0,
+            hr: 0,
+            runs: 0,
+            outs: 3,
+            walks: 0,
+            strikeouts: 2,
+            hbp: 0,
+          },
         ],
-        totals: { inning: 'Total', battersFaced: 6, ab: 6, hits: 1, singles: 1, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 5, walks: 0, strikeouts: 3, hbp: 0 },
+        totals: {
+          inning: 'Total',
+          battersFaced: 6,
+          ab: 6,
+          hits: 1,
+          singles: 1,
+          doubles: 0,
+          triples: 0,
+          hr: 0,
+          runs: 0,
+          outs: 5,
+          walks: 0,
+          strikeouts: 3,
+          hbp: 0,
+        },
       },
       {
         date: '3/15/2025',
@@ -208,9 +270,37 @@ describe('computePitcherSeasonSummary', () => {
         url: 'url2',
         pitcher: 'J. Pitcher',
         innings: [
-          { inning: '1st', battersFaced: 4, ab: 3, hits: 2, singles: 1, doubles: 1, triples: 0, hr: 0, runs: 1, outs: 1, walks: 1, strikeouts: 0, hbp: 0 },
+          {
+            inning: '1st',
+            battersFaced: 4,
+            ab: 3,
+            hits: 2,
+            singles: 1,
+            doubles: 1,
+            triples: 0,
+            hr: 0,
+            runs: 1,
+            outs: 1,
+            walks: 1,
+            strikeouts: 0,
+            hbp: 0,
+          },
         ],
-        totals: { inning: 'Total', battersFaced: 4, ab: 3, hits: 2, singles: 1, doubles: 1, triples: 0, hr: 0, runs: 1, outs: 1, walks: 1, strikeouts: 0, hbp: 0 },
+        totals: {
+          inning: 'Total',
+          battersFaced: 4,
+          ab: 3,
+          hits: 2,
+          singles: 1,
+          doubles: 1,
+          triples: 0,
+          hr: 0,
+          runs: 1,
+          outs: 1,
+          walks: 1,
+          strikeouts: 0,
+          hbp: 0,
+        },
       },
     ];
 
@@ -233,19 +323,118 @@ describe('computePitcherSeasonSummary', () => {
   it('sorts pitchers by games pitched descending', () => {
     const gameLogs = [
       {
-        date: '3/10', opponent: 'A', url: 'u1', pitcher: 'Starter',
-        innings: [{ inning: '1st', battersFaced: 3, ab: 3, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 3, walks: 0, strikeouts: 0, hbp: 0 }],
-        totals: { inning: 'Total', battersFaced: 3, ab: 3, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 3, walks: 0, strikeouts: 0, hbp: 0 },
+        date: '3/10',
+        opponent: 'A',
+        url: 'u1',
+        pitcher: 'Starter',
+        innings: [
+          {
+            inning: '1st',
+            battersFaced: 3,
+            ab: 3,
+            hits: 0,
+            singles: 0,
+            doubles: 0,
+            triples: 0,
+            hr: 0,
+            runs: 0,
+            outs: 3,
+            walks: 0,
+            strikeouts: 0,
+            hbp: 0,
+          },
+        ],
+        totals: {
+          inning: 'Total',
+          battersFaced: 3,
+          ab: 3,
+          hits: 0,
+          singles: 0,
+          doubles: 0,
+          triples: 0,
+          hr: 0,
+          runs: 0,
+          outs: 3,
+          walks: 0,
+          strikeouts: 0,
+          hbp: 0,
+        },
       },
       {
-        date: '3/12', opponent: 'B', url: 'u2', pitcher: 'Starter',
-        innings: [{ inning: '1st', battersFaced: 3, ab: 3, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 3, walks: 0, strikeouts: 0, hbp: 0 }],
-        totals: { inning: 'Total', battersFaced: 3, ab: 3, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 3, walks: 0, strikeouts: 0, hbp: 0 },
+        date: '3/12',
+        opponent: 'B',
+        url: 'u2',
+        pitcher: 'Starter',
+        innings: [
+          {
+            inning: '1st',
+            battersFaced: 3,
+            ab: 3,
+            hits: 0,
+            singles: 0,
+            doubles: 0,
+            triples: 0,
+            hr: 0,
+            runs: 0,
+            outs: 3,
+            walks: 0,
+            strikeouts: 0,
+            hbp: 0,
+          },
+        ],
+        totals: {
+          inning: 'Total',
+          battersFaced: 3,
+          ab: 3,
+          hits: 0,
+          singles: 0,
+          doubles: 0,
+          triples: 0,
+          hr: 0,
+          runs: 0,
+          outs: 3,
+          walks: 0,
+          strikeouts: 0,
+          hbp: 0,
+        },
       },
       {
-        date: '3/10', opponent: 'A', url: 'u1', pitcher: 'Relief',
-        innings: [{ inning: '3rd', battersFaced: 1, ab: 1, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 1, walks: 0, strikeouts: 0, hbp: 0 }],
-        totals: { inning: 'Total', battersFaced: 1, ab: 1, hits: 0, singles: 0, doubles: 0, triples: 0, hr: 0, runs: 0, outs: 1, walks: 0, strikeouts: 0, hbp: 0 },
+        date: '3/10',
+        opponent: 'A',
+        url: 'u1',
+        pitcher: 'Relief',
+        innings: [
+          {
+            inning: '3rd',
+            battersFaced: 1,
+            ab: 1,
+            hits: 0,
+            singles: 0,
+            doubles: 0,
+            triples: 0,
+            hr: 0,
+            runs: 0,
+            outs: 1,
+            walks: 0,
+            strikeouts: 0,
+            hbp: 0,
+          },
+        ],
+        totals: {
+          inning: 'Total',
+          battersFaced: 1,
+          ab: 1,
+          hits: 0,
+          singles: 0,
+          doubles: 0,
+          triples: 0,
+          hr: 0,
+          runs: 0,
+          outs: 1,
+          walks: 0,
+          strikeouts: 0,
+          hbp: 0,
+        },
       },
     ];
 

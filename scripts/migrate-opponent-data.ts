@@ -129,11 +129,7 @@ function migrateBatting(teamDir: string, slug: string, dryRun: boolean): void {
   }
 }
 
-function migratePitching(
-  teamDir: string,
-  slug: string,
-  dryRun: boolean
-): void {
+function migratePitching(teamDir: string, slug: string, dryRun: boolean): void {
   const combinedPath = path.join(teamDir, 'pitching.json');
 
   if (!fs.existsSync(combinedPath)) {

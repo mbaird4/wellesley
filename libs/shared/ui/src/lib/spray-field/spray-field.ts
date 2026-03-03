@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+  output,
+  signal,
+} from '@angular/core';
 import type { SprayZone, ZoneAggregate } from '@ws/stats-core';
 
 export interface ZoneTooltipData {
@@ -44,11 +51,11 @@ const FIELD_SPAN = FOUL_LF - FOUL_RF; // 144°
 // Each row must sum to 100. To resize zones, only edit these arrays.
 //
 //                       RF Line  RF    RF-CF  CF    LF-CF  LF    LF Line
-const OF_W = [  3,     17,    12,   36,    12,   17,    3     ];
+const OF_W = [3, 17, 12, 36, 12, 17, 3];
 //              1B      2B     P     SS     3B
-const IF_W = [  17,     25,    16,   25,    17    ];
+const IF_W = [17, 25, 16, 25, 17];
 //              1B      P      3B
-const PL_W = [  38,     24,    38    ];
+const PL_W = [38, 24, 38];
 
 /** Convert an array of zone width %s into boundary angles between zones. */
 function toBounds(widths: number[]): number[] {
@@ -114,7 +121,11 @@ function ifSectorPath(startAngle: number, endAngle: number): string {
 }
 
 /** Pie-slice wedge from home plate to an outer arc */
-function wedgePath(startAngle: number, endAngle: number, radius: number): string {
+function wedgePath(
+  startAngle: number,
+  endAngle: number,
+  radius: number
+): string {
   const [x1, y1] = polarToXY(startAngle, radius);
   const [x2, y2] = polarToXY(endAngle, radius);
   const largeArc = Math.abs(endAngle - startAngle) > 180 ? 1 : 0;
@@ -160,7 +171,15 @@ function makePlateZone(start: number, end: number): Omit<ZonePathData, 'zone'> {
   return { path: wedgePath(start, end, PLATE_RADIUS), labelX: lx, labelY: ly };
 }
 
-const OF_ZONE_IDS: SprayZone[] = ['rf_line', 'rf', 'rf_cf', 'cf', 'lf_cf', 'lf', 'lf_line'];
+const OF_ZONE_IDS: SprayZone[] = [
+  'rf_line',
+  'rf',
+  'rf_cf',
+  'cf',
+  'lf_cf',
+  'lf',
+  'lf_line',
+];
 const IF_ZONE_IDS: SprayZone[] = ['if_1b', 'if_2b', 'if_p', 'if_ss', 'if_3b'];
 const PL_ZONE_IDS: SprayZone[] = ['plate_1b', 'plate_p', 'plate_3b'];
 
@@ -212,8 +231,14 @@ const DIVIDERS: string[] = [
   ...PL_B.slice(1, -1).map((a) => makeDivider(a, 0, PLATE_RADIUS)),
 ];
 
-const ALL_ZONE_PATHS: ZonePathData[] = [...OF_ZONES, ...IF_ZONES, ...PLATE_ZONES];
-const ZONE_PATH_MAP = new Map<SprayZone, ZonePathData>(ALL_ZONE_PATHS.map((z) => [z.zone, z]));
+const ALL_ZONE_PATHS: ZonePathData[] = [
+  ...OF_ZONES,
+  ...IF_ZONES,
+  ...PLATE_ZONES,
+];
+const ZONE_PATH_MAP = new Map<SprayZone, ZonePathData>(
+  ALL_ZONE_PATHS.map((z) => [z.zone, z])
+);
 
 const ZONE_LABEL_MAP: Record<SprayZone, string> = {
   rf_line: 'RF Line',

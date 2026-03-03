@@ -92,7 +92,9 @@ describe('Spray pattern expectations', () => {
 
 describe('classifyContactType', () => {
   it('identifies ground balls', () => {
-    expect(classifyContactType('A. Player grounded out to ss.')).toBe('ground_ball');
+    expect(classifyContactType('A. Player grounded out to ss.')).toBe(
+      'ground_ball'
+    );
   });
 
   it('identifies line outs', () => {
@@ -120,17 +122,25 @@ describe('classifyContactType', () => {
   });
 
   it('identifies popped into double play as popup', () => {
-    expect(classifyContactType('A. Player popped into double play c to 2b.')).toBe('popup');
+    expect(
+      classifyContactType('A. Player popped into double play c to 2b.')
+    ).toBe('popup');
   });
 
   it('identifies out at first to infield as bunt', () => {
-    expect(classifyContactType('A. Player out at first 3b to 2b, SAC, bunt.')).toBe('bunt');
+    expect(
+      classifyContactType('A. Player out at first 3b to 2b, SAC, bunt.')
+    ).toBe('bunt');
     expect(classifyContactType('A. Player out at first p to 2b.')).toBe('bunt');
-    expect(classifyContactType('A. Player out at first 1b to 2b.')).toBe('bunt');
+    expect(classifyContactType('A. Player out at first 1b to 2b.')).toBe(
+      'bunt'
+    );
   });
 
   it('identifies out at first to outfield as popup', () => {
-    expect(classifyContactType('A. Player out at first lf to cf, SAC.')).toBe('popup');
+    expect(classifyContactType('A. Player out at first lf to cf, SAC.')).toBe(
+      'popup'
+    );
   });
 
   it('returns unknown for plain singles', () => {
@@ -152,27 +162,51 @@ describe('parseSprayDirection', () => {
   });
 
   it('parses gap directions', () => {
-    expect(parseSprayDirection('A. Player doubled to left center.')!.zone).toBe('lf_cf');
-    expect(parseSprayDirection('A. Player doubled to right center.')!.zone).toBe('rf_cf');
-    expect(parseSprayDirection('A. Player singled up the middle.')!.zone).toBe('cf');
+    expect(parseSprayDirection('A. Player doubled to left center.')!.zone).toBe(
+      'lf_cf'
+    );
+    expect(
+      parseSprayDirection('A. Player doubled to right center.')!.zone
+    ).toBe('rf_cf');
+    expect(parseSprayDirection('A. Player singled up the middle.')!.zone).toBe(
+      'cf'
+    );
   });
 
   it('parses line directions', () => {
-    expect(parseSprayDirection('A. Player doubled down the lf line.')!.zone).toBe('lf_line');
-    expect(parseSprayDirection('A. Player doubled down the rf line.')!.zone).toBe('rf_line');
+    expect(
+      parseSprayDirection('A. Player doubled down the lf line.')!.zone
+    ).toBe('lf_line');
+    expect(
+      parseSprayDirection('A. Player doubled down the rf line.')!.zone
+    ).toBe('rf_line');
   });
 
   it('parses through-side directions', () => {
-    expect(parseSprayDirection('A. Player singled through the left side.')!.zone).toBe('lf_cf');
-    expect(parseSprayDirection('A. Player singled through the right side.')!.zone).toBe('rf_cf');
+    expect(
+      parseSprayDirection('A. Player singled through the left side.')!.zone
+    ).toBe('lf_cf');
+    expect(
+      parseSprayDirection('A. Player singled through the right side.')!.zone
+    ).toBe('rf_cf');
   });
 
   it('parses infield positions', () => {
-    expect(parseSprayDirection('A. Player grounded out to 3b.')!.zone).toBe('if_3b');
-    expect(parseSprayDirection('A. Player grounded out to ss.')!.zone).toBe('if_ss');
-    expect(parseSprayDirection('A. Player grounded out to 2b.')!.zone).toBe('if_2b');
-    expect(parseSprayDirection('A. Player grounded out to 1b.')!.zone).toBe('if_1b');
-    expect(parseSprayDirection('A. Player grounded out to p.')!.zone).toBe('if_p');
+    expect(parseSprayDirection('A. Player grounded out to 3b.')!.zone).toBe(
+      'if_3b'
+    );
+    expect(parseSprayDirection('A. Player grounded out to ss.')!.zone).toBe(
+      'if_ss'
+    );
+    expect(parseSprayDirection('A. Player grounded out to 2b.')!.zone).toBe(
+      'if_2b'
+    );
+    expect(parseSprayDirection('A. Player grounded out to 1b.')!.zone).toBe(
+      'if_1b'
+    );
+    expect(parseSprayDirection('A. Player grounded out to p.')!.zone).toBe(
+      'if_p'
+    );
     expect(parseSprayDirection('A. Player popped up to c.')!.zone).toBe('if_c');
   });
 
@@ -214,9 +248,7 @@ describe('parseSprayData', () => {
   }
 
   it('extracts spray data from a single with direction', () => {
-    const snapshots = [
-      makeSnapshot({ playText: 'A. Player singled to cf.' }),
-    ];
+    const snapshots = [makeSnapshot({ playText: 'A. Player singled to cf.' })];
     const result = parseSprayData(snapshots, 0);
     expect(result).toHaveLength(1);
     expect(result[0].zone).toBe('cf');
@@ -273,7 +305,9 @@ describe('parseSprayData', () => {
   it('skips strikeouts even with directional info (dropped 3rd strike)', () => {
     const snapshots = [
       makeSnapshot({ playText: 'A. Player struck out swinging.' }),
-      makeSnapshot({ playText: 'A. Player struck out swinging, out at first c to 1b.' }),
+      makeSnapshot({
+        playText: 'A. Player struck out swinging, out at first c to 1b.',
+      }),
       makeSnapshot({ playText: 'A. Player struck out looking.' }),
     ];
     const result = parseSprayData(snapshots, 0);
@@ -291,7 +325,8 @@ describe('parseSprayData', () => {
   it('skips fielders choice (no contact direction info)', () => {
     const snapshots = [
       makeSnapshot({
-        playText: "A. Player reached on a fielder's choice; B. Runner out at second ss to 2b.",
+        playText:
+          "A. Player reached on a fielder's choice; B. Runner out at second ss to 2b.",
       }),
     ];
     const result = parseSprayData(snapshots, 0);
@@ -331,9 +366,7 @@ describe('parseSprayData', () => {
   });
 
   it('handles bunts without direction', () => {
-    const snapshots = [
-      makeSnapshot({ playText: 'A. Player singled, bunt.' }),
-    ];
+    const snapshots = [makeSnapshot({ playText: 'A. Player singled, bunt.' })];
     const result = parseSprayData(snapshots, 0);
     expect(result).toHaveLength(1);
     expect(result[0].contactType).toBe('bunt');
@@ -384,7 +417,9 @@ describe('parseSprayData', () => {
 
   it('handles sac flies', () => {
     const snapshots = [
-      makeSnapshot({ playText: 'A. Player flied out to cf, SAC; B. Runner scored.' }),
+      makeSnapshot({
+        playText: 'A. Player flied out to cf, SAC; B. Runner scored.',
+      }),
     ];
     const result = parseSprayData(snapshots, 0);
     expect(result).toHaveLength(1);
@@ -498,13 +533,17 @@ describe('computeSprayZones', () => {
 
   it('filters by contact quality — hard', () => {
     // hard = 'hit' + 'line_out' → 3 data points
-    const summary = computeSprayZones(testPoints, { contactQualities: ['hard'] });
+    const summary = computeSprayZones(testPoints, {
+      contactQualities: ['hard'],
+    });
     expect(summary.totalContact).toBe(3);
   });
 
   it('filters by contact quality — weak', () => {
     // weak = 'popup' + 'ground_ball' → 1 data point (popup in test data)
-    const summary = computeSprayZones(testPoints, { contactQualities: ['weak'] });
+    const summary = computeSprayZones(testPoints, {
+      contactQualities: ['weak'],
+    });
     expect(summary.totalContact).toBe(1);
   });
 
@@ -524,7 +563,10 @@ describe('computeSprayZones', () => {
   });
 
   it('combines out count and RISP filters', () => {
-    const summary = computeSprayZones(testPoints, { outCount: [2], risp: true });
+    const summary = computeSprayZones(testPoints, {
+      outCount: [2],
+      risp: true,
+    });
     expect(summary.totalContact).toBe(1);
     expect(summary.dataPoints[0].playerName).toBe('A. Player');
   });

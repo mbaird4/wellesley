@@ -38,7 +38,10 @@ import { computeSprayZones, parseSprayData } from '@ws/stats-core';
     SprayLegend,
   ],
   templateUrl: './spray-chart.html',
-  host: { class: 'flex flex-col overflow-hidden', style: 'height: calc(100vh - 140px)' },
+  host: {
+    class: 'flex flex-col overflow-hidden',
+    style: 'height: calc(100vh - 140px)',
+  },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayChart {
@@ -112,7 +115,10 @@ export class SprayChart {
       } else {
         // Try prefix match for truncated names (e.g. "DiCampell" vs "dicampello")
         for (const [rosterLast, num] of byLastName) {
-          if (rosterLast.startsWith(displayLast) || displayLast.startsWith(rosterLast)) {
+          if (
+            rosterLast.startsWith(displayLast) ||
+            displayLast.startsWith(rosterLast)
+          ) {
             map[displayName] = num;
             break;
           }
@@ -128,7 +134,9 @@ export class SprayChart {
     const f = this.filters();
     const allowedContacts = computeAllowedContacts(f);
     const allowedOutcomes = computeAllowedOutcomes(f);
-    const effectiveContactTypes = f.contactTypes.filter((ct) => allowedContacts.has(ct));
+    const effectiveContactTypes = f.contactTypes.filter((ct) =>
+      allowedContacts.has(ct)
+    );
     const effectiveOutcomes = f.outcomes.filter((o) => allowedOutcomes.has(o));
 
     return computeSprayZones(this.allDataPoints(), {

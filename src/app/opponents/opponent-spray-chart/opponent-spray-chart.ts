@@ -25,14 +25,21 @@ import {
   type ToggleOption,
 } from '@ws/shared/ui';
 import { BreakpointService } from '@ws/shared/util';
-import type { SprayChartSummary, SprayDataPoint, SprayZone } from '@ws/stats-core';
+import type {
+  SprayChartSummary,
+  SprayDataPoint,
+  SprayZone,
+} from '@ws/stats-core';
 import { computeSprayZones, parseSprayData } from '@ws/stats-core';
 import { catchError, forkJoin, of } from 'rxjs';
 
 import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
 
 const CURRENT_YEAR = new Date().getFullYear();
-const SPRAY_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i).reverse();
+const SPRAY_YEARS = Array.from(
+  { length: 4 },
+  (_, i) => CURRENT_YEAR - i
+).reverse();
 
 /** Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly. */
 function normalizePlayerName(name: string): string {
@@ -60,7 +67,10 @@ function normalizePlayerName(name: string): string {
  * Emily Walsh). Groups names by jersey number; uses the roster's first name to pick the
  * correct initial, then longest display name as the canonical form.
  */
-function buildCanonicalNameMap(names: string[], roster: OpponentRoster): Map<string, string> {
+function buildCanonicalNameMap(
+  names: string[],
+  roster: OpponentRoster
+): Map<string, string> {
   const byLastName = new Map<string, number>();
   const jerseyToFirstName = new Map<number, string>();
   Object.entries(roster).forEach(([key, entry]) => {
@@ -85,7 +95,10 @@ function buildCanonicalNameMap(names: string[], roster: OpponentRoster): Map<str
     }
 
     for (const [rosterLast, num] of byLastName) {
-      if (rosterLast.startsWith(displayLast) || displayLast.startsWith(rosterLast)) {
+      if (
+        rosterLast.startsWith(displayLast) ||
+        displayLast.startsWith(rosterLast)
+      ) {
         nameToJersey.set(displayName, num);
         break;
       }
@@ -222,7 +235,10 @@ export class OpponentSprayChart {
       } else {
         // Try prefix match for truncated names
         for (const [rosterLast, num] of byLastName) {
-          if (rosterLast.startsWith(displayLast) || displayLast.startsWith(rosterLast)) {
+          if (
+            rosterLast.startsWith(displayLast) ||
+            displayLast.startsWith(rosterLast)
+          ) {
             map[displayName] = num;
             break;
           }
@@ -346,10 +362,14 @@ export class OpponentSprayChart {
     });
 
     forkJoin({
-      roster: this.dataService.getOpponentRoster(slug).pipe(catchError(() => of({} as OpponentRoster))),
+      roster: this.dataService
+        .getOpponentRoster(slug)
+        .pipe(catchError(() => of({} as OpponentRoster))),
       years: forkJoin(
         SPRAY_YEARS.map((year) =>
-          this.dataService.getOpponentGameData(slug, year).pipe(catchError(() => of([])))
+          this.dataService
+            .getOpponentGameData(slug, year)
+            .pipe(catchError(() => of([])))
         )
       ),
     }).subscribe({
@@ -359,16 +379,25 @@ export class OpponentSprayChart {
         // Parse and normalize first names ("Joe Smith" → "J. Smith")
         const map = new Map<number, SprayDataPoint[]>();
         years.forEach((games, i) => {
-          const processed = this.processorService.processGamesWithSnapshots(games);
+          const processed =
+            this.processorService.processGamesWithSnapshots(games);
           const points = processed.games.flatMap((game, gi) =>
             parseSprayData(game.snapshots, gi)
           );
-          points.forEach((p) => (p.playerName = normalizePlayerName(p.playerName)));
+          points.forEach(
+            (p) => (p.playerName = normalizePlayerName(p.playerName))
+          );
           map.set(SPRAY_YEARS[i], points);
         });
 
         // Merge truncated last names ("E. Santi" → "E. Santiago") using jersey numbers
-        const allNames = [...new Set(SPRAY_YEARS.flatMap((y) => (map.get(y) ?? []).map((p) => p.playerName)))];
+        const allNames = [
+          ...new Set(
+            SPRAY_YEARS.flatMap((y) =>
+              (map.get(y) ?? []).map((p) => p.playerName)
+            )
+          ),
+        ];
         const canonMap = buildCanonicalNameMap(allNames, roster);
 
         if (canonMap.size > 0) {
@@ -387,9 +416,7 @@ export class OpponentSprayChart {
         this.loading.set(false);
       },
       error: (err) => {
-        this.error.set(
-          err.message || 'Failed to load spray chart data'
-        );
+        this.error.set(err.message || 'Failed to load spray chart data');
         this.loading.set(false);
       },
     });

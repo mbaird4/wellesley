@@ -278,8 +278,7 @@ export class Opponents {
     this.expandedPlayer.set(null);
     this.yearSortYear.set(null);
 
-    const base =
-      document.querySelector('base')?.getAttribute('href') || '/';
+    const base = document.querySelector('base')?.getAttribute('href') || '/';
     const currentYear = new Date().getFullYear();
     const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
@@ -290,9 +289,7 @@ export class Opponents {
           : `batting-stats-${year}.json`;
 
       return this.http
-        .get<OpponentYearBattingData>(
-          `${base}data/opponents/${slug}/${file}`
-        )
+        .get<OpponentYearBattingData>(`${base}data/opponents/${slug}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 
@@ -307,9 +304,7 @@ export class Opponents {
           (r): r is OpponentYearBattingData => r !== null
         );
         this.teamData.set(mergeBattingYears(valid, roster));
-        this.rosterNames.set(
-          roster ? new Set(Object.keys(roster)) : new Set()
-        );
+        this.rosterNames.set(roster ? new Set(Object.keys(roster)) : new Set());
         this.loading.set(false);
       },
       error: (err) => {
@@ -323,8 +318,7 @@ export class Opponents {
   private loadPitching(slug: string): void {
     this.pitchingLoading.set(true);
 
-    const base =
-      document.querySelector('base')?.getAttribute('href') || '/';
+    const base = document.querySelector('base')?.getAttribute('href') || '/';
     const currentYear = new Date().getFullYear();
     const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
@@ -333,9 +327,7 @@ export class Opponents {
         year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
 
       return this.http
-        .get<OpponentYearPitchingData>(
-          `${base}data/opponents/${slug}/${file}`
-        )
+        .get<OpponentYearPitchingData>(`${base}data/opponents/${slug}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 

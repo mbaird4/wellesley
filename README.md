@@ -23,16 +23,16 @@ In both dev and production, the app reads from pre-generated static JSON files i
 
 ## Commands
 
-| Command | What it does |
-|---|---|
-| `npx nx serve` | Dev server on `:4200` with hot reload |
-| `npx nx build` | Production build to `dist/wellesley/` |
-| `npx nx test` | Run Jest unit tests |
-| `npx nx lint` | Run ESLint |
-| `npm run prefetch` | Pre-scrape Wellesley boxscores to `public/data/` |
-| `npm run scrape-opponents` | Scrape all 10 opponent teams' batting stats |
-| `npm run scrape-opponents -- --team wpi` | Scrape a single team |
-| `npm run scrape-opponents -- --years 2024,2025` | Override which years to scrape |
+| Command                                         | What it does                                     |
+| ----------------------------------------------- | ------------------------------------------------ |
+| `npx nx serve`                                  | Dev server on `:4200` with hot reload            |
+| `npx nx build`                                  | Production build to `dist/wellesley/`            |
+| `npx nx test`                                   | Run Jest unit tests                              |
+| `npx nx lint`                                   | Run ESLint                                       |
+| `npm run prefetch`                              | Pre-scrape Wellesley boxscores to `public/data/` |
+| `npm run scrape-opponents`                      | Scrape all 10 opponent teams' batting stats      |
+| `npm run scrape-opponents -- --team wpi`        | Scrape a single team                             |
+| `npm run scrape-opponents -- --years 2024,2025` | Override which years to scrape                   |
 
 ## Project Structure
 
@@ -84,18 +84,18 @@ The app loads pre-generated static JSON from `public/data/`. These files are cre
 
 **The 10 opponent teams:**
 
-| Slug | Domain |
-|---|---|
-| wpi | athletics.wpi.edu |
-| wheaton | wheatoncollegelyons.com |
+| Slug        | Domain                      |
+| ----------- | --------------------------- |
+| wpi         | athletics.wpi.edu           |
+| wheaton     | wheatoncollegelyons.com     |
 | springfield | springfieldcollegepride.com |
-| smith | gosmithbears.com |
-| salve | salveathletics.com |
-| mit | mitathletics.com |
-| emerson | emersonlions.com |
-| coastguard | coastguardathletics.com |
-| clark | clarkathletics.com |
-| babson | babsonathletics.com |
+| smith       | gosmithbears.com            |
+| salve       | salveathletics.com          |
+| mit         | mitathletics.com            |
+| emerson     | emersonlions.com            |
+| coastguard  | coastguardathletics.com     |
+| clark       | clarkathletics.com          |
+| babson      | babsonathletics.com         |
 
 ## Deployment
 

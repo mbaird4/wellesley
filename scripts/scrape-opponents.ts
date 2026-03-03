@@ -310,8 +310,16 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
     // Some templates nest long/short variants; grab the most specific match first.
     const posText =
       $el.find('.rp_position_short').first().text().trim() ||
-      $el.find('.sidearm-roster-player-position-long-short').first().text().trim() ||
-      $el.find('.sidearm-roster-player-position span.text-bold').first().text().trim() ||
+      $el
+        .find('.sidearm-roster-player-position-long-short')
+        .first()
+        .text()
+        .trim() ||
+      $el
+        .find('.sidearm-roster-player-position span.text-bold')
+        .first()
+        .text()
+        .trim() ||
       $el.find('.sidearm-roster-player-position').first().text().trim();
     const position = posText || null;
 
@@ -640,10 +648,7 @@ function emptyCareer(): CareerStats {
 
 // ── Boxscore URL extraction (same pattern as prefetch-data.ts) ──
 
-function extractBoxscoreUrls(
-  $: cheerio.CheerioAPI,
-  domain: string
-): string[] {
+function extractBoxscoreUrls($: cheerio.CheerioAPI, domain: string): string[] {
   const baseUrl = `https://${domain}`;
   const urls: string[] = [];
 
@@ -706,9 +711,7 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
       .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
       .trim();
 
-    const inningMatch = caption.match(
-      /(?:Top|Bottom)\s+of\s+(.+)/i
-    );
+    const inningMatch = caption.match(/(?:Top|Bottom)\s+of\s+(.+)/i);
     const inning = inningMatch ? inningMatch[1].trim() : '';
 
     if (!inning) {
@@ -878,9 +881,7 @@ function parseTeamPlayByPlay(
 
   return allInnings.map((inn) => ({
     inning: inn.inning,
-    half: captionMatchesTeam(inn.teamName, teamAliases)
-      ? 'offense'
-      : 'defense',
+    half: captionMatchesTeam(inn.teamName, teamAliases) ? 'offense' : 'defense',
     plays: inn.plays,
   }));
 }
@@ -1436,7 +1437,16 @@ async function main(): Promise<void> {
       const teamDir = path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
       const rosterOutPath = path.join(teamDir, 'roster.json');
-      const enrichedRoster: Record<string, { jersey: number; classYear: string; position: string | null; bats: BatHand | null; throws: 'L' | 'R' | null }> = {};
+      const enrichedRoster: Record<
+        string,
+        {
+          jersey: number;
+          classYear: string;
+          position: string | null;
+          bats: BatHand | null;
+          throws: 'L' | 'R' | null;
+        }
+      > = {};
       roster.forEach((rp) => {
         const key = normalizeName(`${rp.lastName}, ${rp.firstName}`);
         if (rp.jerseyNumber !== null) {
@@ -1502,9 +1512,7 @@ async function main(): Promise<void> {
       };
       const outPath = path.join(teamDir, battingFilename(year));
       fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
-      console.log(
-        `  Wrote ${outPath} (${yearPlayers.length} players)`
-      );
+      console.log(`  Wrote ${outPath} (${yearPlayers.length} players)`);
     });
 
     // Optionally scrape pitching play-by-play
@@ -1513,11 +1521,8 @@ async function main(): Promise<void> {
 
       // Write per-year pitching files
       years.forEach((year) => {
-        const stats =
-          pitchingResult.pitchingStatsByYear[String(year)] ?? [];
-        const games = pitchingResult.games.filter(
-          (g) => g.year === year
-        );
+        const stats = pitchingResult.pitchingStatsByYear[String(year)] ?? [];
+        const games = pitchingResult.games.filter((g) => g.year === year);
 
         if (stats.length === 0 && games.length === 0) {
           return;
@@ -1543,21 +1548,14 @@ async function main(): Promise<void> {
     if (withGamedata) {
       const gamedataResult = await scrapeTeamGamedata(slug, domain, years);
 
-      Object.entries(gamedataResult.gamesByYear).forEach(
-        ([year, games]) => {
-          const gamedataOutPath = path.join(
-            teamDir,
-            gamedataFilename(Number(year))
-          );
-          fs.writeFileSync(
-            gamedataOutPath,
-            JSON.stringify(games, null, 2)
-          );
-          console.log(
-            `  Wrote ${gamedataOutPath} (${games.length} games)`
-          );
-        }
-      );
+      Object.entries(gamedataResult.gamesByYear).forEach(([year, games]) => {
+        const gamedataOutPath = path.join(
+          teamDir,
+          gamedataFilename(Number(year))
+        );
+        fs.writeFileSync(gamedataOutPath, JSON.stringify(games, null, 2));
+        console.log(`  Wrote ${gamedataOutPath} (${games.length} games)`);
+      });
     }
 
     // Be nice between teams

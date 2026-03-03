@@ -53,7 +53,7 @@ Angular 21 app that scrapes wellesleyblue.com boxscores to analyze Wellesley Col
 ## Code Style
 
 - Apply layout/styling classes via the component's `host` metadata (e.g., `host: { class: 'flex justify-center items-center' }`) instead of adding wrapper `<div>` elements in templates. Avoid extra markup just for styling.
-- Prefer using tailwind classes over custom css. If scoping needed, create a _partial.scss in `src/styles/` and `@forward` it into `src/_index.scss`, via a core mixin
+- Prefer using tailwind classes over custom css. If scoping needed, create a \_partial.scss in `src/styles/` and `@forward` it into `src/_index.scss`, via a core mixin
 - **Responsive branching** — Use `bp.gtSm()` (greater-than) as the primary `@if` check for desktop, with mobile as the `@else`. Think "is it desktop?" not "is it mobile?". Prefer `gt*` signals over `lt*`.
 - **Responsive spacing utilities** — Use `p-section`, `p-card`, `p-cell` (and `px-`/`py-` variants) instead of writing manual responsive padding (`p-4 md:p-8`). These are defined in `tailwind.css` and scale automatically across breakpoints.
 - Always use curly braces, even for single-line `if`/`else`/`for` bodies

@@ -220,7 +220,8 @@ export function computePitcherSeasonSummary(
           byInning.set(inn.inning, emptyInningStats(inn.inning));
         }
 
-        const existing = byInning.get(inn.inning) ?? emptyInningStats(inn.inning);
+        const existing =
+          byInning.get(inn.inning) ?? emptyInningStats(inn.inning);
         mergeInningStats(existing, inn);
       });
     });

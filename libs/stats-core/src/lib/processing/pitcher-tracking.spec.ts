@@ -151,9 +151,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '2nd',
-          plays: [
-            'Wild pitch; A. Runner advanced to second.',
-          ],
+          plays: ['Wild pitch; A. Runner advanced to second.'],
         },
       ],
       ['J. Pitcher']
@@ -190,9 +188,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '4th',
-          plays: [
-            'A. Batter walked; B. Runner scored.',
-          ],
+          plays: ['A. Batter walked; B. Runner scored.'],
         },
       ],
       ['J. Pitcher']

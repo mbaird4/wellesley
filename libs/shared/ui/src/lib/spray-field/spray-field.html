@@ -1,4 +1,8 @@
-<svg viewBox="0 80 700 410" class="spray-svg" xmlns="http://www.w3.org/2000/svg">
+<svg
+  viewBox="0 80 700 410"
+  class="spray-svg"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <!-- Foul lines (behind zones) -->
   <path [attr.d]="foulLineRF" class="foul-line" />
   <path [attr.d]="foulLineLF" class="foul-line" />
@@ -52,7 +56,28 @@
 
   <!-- Home plate -->
   <polygon
-    [attr.points]="(homeX-6)+','+(homeY-12)+' '+(homeX-6)+','+(homeY-6)+' '+homeX+','+(homeY)+' '+(homeX+6)+','+(homeY-6)+' '+(homeX+6)+','+(homeY-12)"
+    [attr.points]="
+      homeX -
+      6 +
+      ',' +
+      (homeY - 12) +
+      ' ' +
+      (homeX - 6) +
+      ',' +
+      (homeY - 6) +
+      ' ' +
+      homeX +
+      ',' +
+      homeY +
+      ' ' +
+      (homeX + 6) +
+      ',' +
+      (homeY - 6) +
+      ' ' +
+      (homeX + 6) +
+      ',' +
+      (homeY - 12)
+    "
     class="home-plate"
   />
 
@@ -137,10 +162,14 @@
       />
 
       <!-- Tooltip background + text -->
-      <g [attr.transform]="'translate(' + tt.tooltipX + ',' + tt.tooltipY + ')'">
+      <g
+        [attr.transform]="'translate(' + tt.tooltipX + ',' + tt.tooltipY + ')'"
+      >
         <rect
-          x="-52" y="-38"
-          width="104" height="52"
+          x="-52"
+          y="-38"
+          width="104"
+          height="52"
           rx="6"
           class="tooltip-bg"
         />

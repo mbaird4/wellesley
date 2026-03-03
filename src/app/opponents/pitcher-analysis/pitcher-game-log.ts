@@ -7,11 +7,7 @@ import {
 } from '@angular/core';
 import { SlideToggle } from '@ws/shared/ui';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/stats-core';
-import {
-  battingAvgAgainst,
-  wobaAgainst,
-  wobaColorStyle,
-} from '@ws/stats-core';
+import { battingAvgAgainst, wobaAgainst, wobaColorStyle } from '@ws/stats-core';
 
 import type { InningsTableRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';

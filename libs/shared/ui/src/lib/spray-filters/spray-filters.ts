@@ -1,7 +1,16 @@
-import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+  output,
+} from '@angular/core';
 import type { ContactQuality, ContactType, SprayOutcome } from '@ws/stats-core';
 
-import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
+import {
+  ButtonToggle,
+  type ToggleOption,
+} from '../button-toggle/button-toggle';
 import { SlideToggle } from '../slide-toggle/slide-toggle';
 
 export interface SprayFilterState {
@@ -14,7 +23,13 @@ export interface SprayFilterState {
 }
 
 export const ALL_OUTCOMES: SprayOutcome[] = ['hit', 'out', 'error'];
-export const ALL_CONTACT_TYPES: ContactType[] = ['hit', 'line_out', 'ground_ball', 'popup', 'bunt'];
+export const ALL_CONTACT_TYPES: ContactType[] = [
+  'hit',
+  'line_out',
+  'ground_ball',
+  'popup',
+  'bunt',
+];
 export const ALL_CONTACT_QUALITIES: ContactQuality[] = ['hard', 'weak'];
 export const ALL_OUT_COUNTS: number[] = [0, 1, 2];
 
@@ -24,7 +39,8 @@ const WEAK_CONTACT_TYPES: Set<ContactType> = new Set(['ground_ball', 'popup']);
 /** Contact types reachable from outcome selection alone (bunt is always reachable). */
 function outcomeAllowedContacts(state: SprayFilterState): Set<ContactType> {
   const hasHit = state.outcomes.includes('hit');
-  const hasOut = state.outcomes.includes('out') || state.outcomes.includes('error');
+  const hasOut =
+    state.outcomes.includes('out') || state.outcomes.includes('error');
 
   if (hasHit !== hasOut) {
     return hasHit
@@ -36,7 +52,9 @@ function outcomeAllowedContacts(state: SprayFilterState): Set<ContactType> {
 }
 
 /** Returns the set of contact types compatible with the current outcome + quality selections. */
-export function computeAllowedContacts(state: SprayFilterState): Set<ContactType> {
+export function computeAllowedContacts(
+  state: SprayFilterState
+): Set<ContactType> {
   let allowed = outcomeAllowedContacts(state);
 
   const hasHard = state.contactQualities.includes('hard');
@@ -53,7 +71,9 @@ export function computeAllowedContacts(state: SprayFilterState): Set<ContactType
 }
 
 /** Returns the set of outcomes compatible with the current quality selection. */
-export function computeAllowedOutcomes(state: SprayFilterState): Set<SprayOutcome> {
+export function computeAllowedOutcomes(
+  state: SprayFilterState
+): Set<SprayOutcome> {
   const hasHard = state.contactQualities.includes('hard');
   const hasWeak = state.contactQualities.includes('weak');
 
@@ -67,7 +87,9 @@ export function computeAllowedOutcomes(state: SprayFilterState): Set<SprayOutcom
 }
 
 /** Returns the set of qualities compatible with the current outcome + contact type selections. */
-export function computeAllowedQualities(state: SprayFilterState): Set<ContactQuality> {
+export function computeAllowedQualities(
+  state: SprayFilterState
+): Set<ContactQuality> {
   const fromOutcome = outcomeAllowedContacts(state);
   const effective = state.contactTypes.filter((ct) => fromOutcome.has(ct));
 
@@ -95,7 +117,10 @@ export function computeAllowedQualities(state: SprayFilterState): Set<ContactQua
 @Component({
   selector: 'ws-spray-filters',
   standalone: true,
-  imports: [ButtonToggle, SlideToggle],
+  imports: [
+    ButtonToggle,
+    SlideToggle,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-wrap gap-4 items-end' },
   templateUrl: './spray-filters.html',
@@ -134,8 +159,14 @@ export class SprayFilters {
   readonly selectedPlayer = computed(() => this.filters().playerName);
 
   readonly outcomeValue = computed(() => this.filters().outcomes as string[]);
-  readonly contactValue = computed(() => this.filters().contactTypes as string[]);
-  readonly qualityValue = computed(() => this.filters().contactQualities as string[]);
+  readonly contactValue = computed(
+    () => this.filters().contactTypes as string[]
+  );
+
+  readonly qualityValue = computed(
+    () => this.filters().contactQualities as string[]
+  );
+
   readonly outCountValue = computed(() => this.filters().outCount.map(String));
   readonly rispActive = computed(() => this.filters().risp === true);
 
@@ -166,15 +197,24 @@ export class SprayFilters {
   }
 
   onOutcomeChange(values: string[] | string): void {
-    this.filterChange.emit({ ...this.filters(), outcomes: values as SprayOutcome[] });
+    this.filterChange.emit({
+      ...this.filters(),
+      outcomes: values as SprayOutcome[],
+    });
   }
 
   onContactChange(values: string[] | string): void {
-    this.filterChange.emit({ ...this.filters(), contactTypes: values as ContactType[] });
+    this.filterChange.emit({
+      ...this.filters(),
+      contactTypes: values as ContactType[],
+    });
   }
 
   onQualityChange(values: string[] | string): void {
-    this.filterChange.emit({ ...this.filters(), contactQualities: values as ContactQuality[] });
+    this.filterChange.emit({
+      ...this.filters(),
+      contactQualities: values as ContactQuality[],
+    });
   }
 
   onOutCountChange(values: string[] | string): void {
