@@ -55,6 +55,17 @@ interface GameLogView {
   innings: InningsTableRow[];
 }
 
+export interface GameLogYearGroup {
+  year: number;
+  games: GameLogView[];
+}
+
+function extractYear(dateStr: string): number {
+  const match = dateStr.match(/(\d{4})/);
+
+  return match ? parseInt(match[1], 10) : 0;
+}
+
 @Component({
   selector: 'ws-pitcher-game-log',
   standalone: true,
@@ -75,15 +86,43 @@ export class PitcherGameLogComponent {
   readonly gameLogViews = computed<GameLogView[]>(() => {
     const showColors = this.colorCoding();
 
-    return [...this.gameLogs()].reverse().map((log) => ({
-      url: log.url,
-      date: log.date,
-      opponent: log.opponent,
-      formattedIP: fmtIP(log.totals.outs),
-      totals: buildInningView(log.totals, showColors),
-      innings: log.innings.map((inn) => buildInningView(inn, showColors)),
-    }));
+    return [...this.gameLogs()]
+      .filter((log) => log.totals.outs > 0)
+      .reverse()
+      .map((log) => ({
+        url: log.url,
+        date: log.date,
+        opponent: log.opponent,
+        formattedIP: fmtIP(log.totals.outs),
+        totals: buildInningView(log.totals, showColors),
+        innings: log.innings.map((inn) => buildInningView(inn, showColors)),
+      }));
   });
+
+  /** Game logs grouped by year, sorted descending */
+  readonly yearGroups = computed<GameLogYearGroup[]>(() => {
+    const views = this.gameLogViews();
+    const groups = new Map<number, GameLogView[]>();
+
+    views.forEach((view) => {
+      const year = extractYear(view.date);
+      const existing = groups.get(year);
+
+      if (existing) {
+        existing.push(view);
+      } else {
+        groups.set(year, [view]);
+      }
+    });
+
+    return Array.from(groups.entries())
+      .sort(([a], [b]) => b - a)
+      .map(([year, games]) => ({ year, games }));
+  });
+
+  readonly hasMultipleYears = computed(
+    () => this.yearGroups().length > 1
+  );
 
   toggleExpand(url: string): void {
     this.expandedUrl.update((current) => (current === url ? null : url));

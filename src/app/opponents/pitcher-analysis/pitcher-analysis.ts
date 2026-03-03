@@ -45,16 +45,18 @@ export class PitcherAnalysis {
   readonly selectedPitcher = signal<string | null>(null);
   readonly selectedYear = signal<number | 'all'>('all');
 
-  /** Available years from pitchingStatsByYear, sorted descending */
+  /** Available years where the selected pitcher has stats, sorted descending */
   readonly availableYears = computed<number[]>(() => {
     const data = this.pitchingData();
+    const pitcher = this.effectivePitcher();
 
-    if (!data) {
+    if (!data || !pitcher) {
       return [];
     }
 
-    return Object.keys(data.pitchingStatsByYear)
-      .map(Number)
+    return Object.entries(data.pitchingStatsByYear)
+      .filter(([, stats]) => stats.some((p) => p.name === pitcher))
+      .map(([year]) => Number(year))
       .sort((a, b) => b - a);
   });
 
