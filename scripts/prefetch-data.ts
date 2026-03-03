@@ -31,6 +31,46 @@ interface SerializedGameData {
   playByPlay: PlayByPlayInning[];
 }
 
+interface PitchingStatsRow {
+  name: string;
+  w: number;
+  l: number;
+  era: number;
+  app: number;
+  gs: number;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hr: number;
+}
+
+interface PbPInning {
+  inning: string;
+  teamName: string;
+  plays: string[];
+}
+
+interface GamePitchingData {
+  year: number;
+  url: string;
+  date: string;
+  opponent: string;
+  pitchers: string[];
+  battingInnings: { inning: string; plays: string[] }[];
+}
+
+interface PitchingOutput {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  year: number;
+  pitchingStats: PitchingStatsRow[];
+  games: GamePitchingData[];
+}
+
 interface PlayerSeasonStats {
   name: string;
   ab: number;
@@ -551,6 +591,205 @@ function extractBoxscoreBatting(
   return { date, opponent, url, playerStats };
 }
 
+// ── Pitching data extraction ──
+
+function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
+  const pitchers: PitchingStatsRow[] = [];
+
+  let targetTable: any = null;
+  $('table').each((_, table) => {
+    const caption = $(table).find('caption').text();
+    if (caption.includes('Individual Overall Pitching Statistics')) {
+      targetTable = $(table);
+      return false;
+    }
+  });
+
+  if (!targetTable) {
+    return pitchers;
+  }
+
+  targetTable.find('tbody tr').each((_: number, row: any) => {
+    const $row = $(row);
+    const nameCell = $row.find('th[scope="row"]');
+    const name =
+      nameCell.find('a.hide-on-medium-down').text().trim() ||
+      nameCell.find('a').first().text().trim() ||
+      nameCell.text().trim();
+
+    if (
+      !name ||
+      name.toLowerCase() === 'totals' ||
+      name.toLowerCase() === 'opponents' ||
+      !/[a-zA-Z]/.test(name)
+    ) {
+      return;
+    }
+
+    const num = (label: string): number => {
+      const cell = $row.find(`td[data-label="${label}"]`);
+      return parseInt(cell.text().trim(), 10) || 0;
+    };
+
+    const pct = (label: string): number => {
+      const cell = $row.find(`td[data-label="${label}"]`);
+      return parseFloat(cell.text().trim()) || 0;
+    };
+
+    const wlCell = $row.find('td[data-label="W-L"]').text().trim();
+    const wlMatch = wlCell.match(/^(\d+)-(\d+)$/);
+    const w = wlMatch ? parseInt(wlMatch[1], 10) : 0;
+    const l = wlMatch ? parseInt(wlMatch[2], 10) : 0;
+
+    const appGsCell = $row.find('td[data-label="APP-GS"]').text().trim();
+    const appGsMatch = appGsCell.match(/^(\d+)-(\d+)$/);
+    const app = appGsMatch ? parseInt(appGsMatch[1], 10) : 0;
+    const gs = appGsMatch ? parseInt(appGsMatch[2], 10) : 0;
+
+    const ipText = $row.find('td[data-label="IP"]').text().trim();
+    const ip = parseFloat(ipText) || 0;
+
+    pitchers.push({
+      name,
+      w,
+      l,
+      era: pct('ERA'),
+      app,
+      gs,
+      ip,
+      h: num('H'),
+      r: num('R'),
+      er: num('ER'),
+      bb: num('BB'),
+      so: num('SO'),
+      hr: num('HR'),
+    });
+  });
+
+  return pitchers;
+}
+
+/** Check if a caption belongs to Wellesley */
+function captionMatchesWellesley(caption: string): boolean {
+  return caption.toLowerCase().includes('wellesley');
+}
+
+/** Parse all play-by-play tables from a boxscore page (both teams) */
+function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
+  const innings: PbPInning[] = [];
+  const pbpTab = $('#play-by-play');
+
+  if (pbpTab.length === 0) {
+    return innings;
+  }
+
+  const seen = new Set<string>();
+
+  pbpTab.find('table').each((_, table) => {
+    const $table = $(table);
+    const caption = $table.find('caption').text() || '';
+
+    if (!caption) {
+      return;
+    }
+
+    const teamName = caption
+      .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
+      .trim();
+
+    const inningMatch = caption.match(/(?:Top|Bottom)\s+of\s+(.+)/i);
+    const inning = inningMatch ? inningMatch[1].trim() : '';
+
+    if (!inning) {
+      return;
+    }
+
+    const dedupeKey = `${teamName}::${inning}`;
+
+    if (seen.has(dedupeKey)) {
+      return;
+    }
+
+    seen.add(dedupeKey);
+
+    const plays: string[] = [];
+    $table.find('tbody tr').each((_, row) => {
+      const $row = $(row);
+      const firstCell = $row.find('td').first();
+      const originalText =
+        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const text = originalText.toLowerCase();
+
+      if (
+        !originalText ||
+        text.includes('play description') ||
+        text.length < 5
+      ) {
+        return;
+      }
+
+      if (
+        text.includes('inning summary') ||
+        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
+      ) {
+        return;
+      }
+
+      plays.push(originalText);
+    });
+
+    if (plays.length > 0) {
+      innings.push({ inning, teamName, plays });
+    }
+  });
+
+  return innings;
+}
+
+/** Filter play-by-play to only innings where opponents bat (against Wellesley pitchers) */
+function parseDefensiveInnings(
+  $: cheerio.CheerioAPI
+): { inning: string; plays: string[] }[] {
+  const allInnings = parseAllPlayByPlay($);
+
+  // Non-Wellesley batting innings = when opponents bat against Wellesley pitchers
+  return allInnings
+    .filter((inn) => !captionMatchesWellesley(inn.teamName))
+    .map((inn) => ({ inning: inn.inning, plays: inn.plays }));
+}
+
+/** Extract Wellesley's pitchers from the boxscore pitching table, in appearance order */
+function parseWellesleyPitchers($: cheerio.CheerioAPI): string[] {
+  const pitchers: string[] = [];
+
+  $('table').each((_, table) => {
+    const caption = $(table).find('caption').text() || '';
+
+    if (!caption.toLowerCase().includes('pitching')) {
+      return;
+    }
+
+    if (!captionMatchesWellesley(caption)) {
+      return;
+    }
+
+    $(table)
+      .find('tbody tr')
+      .each((_, row) => {
+        const playerLink = $(row).find('.boxscore_player_link');
+        const name = playerLink.text().trim();
+
+        if (name) {
+          pitchers.push(name);
+        }
+      });
+
+    return false; // stop after first matching pitching table
+  });
+
+  return pitchers;
+}
+
 // ── Main orchestration ──
 
 async function prefetchYear(year: number, outputDir: string): Promise<void> {
@@ -581,12 +820,16 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   const statsHtml = await fetchPage(
     `${BASE_URL}/sports/softball/stats/${year}`
   );
-  const seasonStats = statsHtml ? parseStatsTable(cheerio.load(statsHtml)) : [];
+  const $stats = statsHtml ? cheerio.load(statsHtml) : null;
+  const seasonStats = $stats ? parseStatsTable($stats) : [];
   console.log(`  Parsed ${seasonStats.length} players from stats table`);
+  const pitchingStats = $stats ? parsePitchingStatsTable($stats) : [];
+  console.log(`  Parsed ${pitchingStats.length} pitchers from stats table`);
 
-  // 3. Fetch each boxscore and extract both game data and woba batting data
+  // 3. Fetch each boxscore and extract game data, woba batting data, and pitching data
   const gameDataList: SerializedGameData[] = [];
   const boxscoreDataList: BoxscoreData[] = [];
+  const pitchingGameList: GamePitchingData[] = [];
 
   for (let i = 0; i < boxscoreUrls.length; i++) {
     const url = boxscoreUrls[i];
@@ -609,6 +852,22 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     if (boxscoreData) {
       boxscoreDataList.push(boxscoreData);
     }
+
+    // Extract pitching data (Wellesley pitchers + opponent batting innings)
+    const wellesleyPitchers = parseWellesleyPitchers($);
+    const defensiveInnings = parseDefensiveInnings($);
+
+    if (wellesleyPitchers.length > 0 || defensiveInnings.length > 0) {
+      const { date, opponent } = parseGameInfo($, url);
+      pitchingGameList.push({
+        year,
+        url,
+        date,
+        opponent,
+        pitchers: wellesleyPitchers,
+        battingInnings: defensiveInnings,
+      });
+    }
   }
 
   // 4. Write JSON files
@@ -621,6 +880,20 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   fs.writeFileSync(wobadataPath, JSON.stringify(wobaData));
   console.log(
     `  Wrote ${wobadataPath} (${seasonStats.length} players, ${boxscoreDataList.length} boxscores)`
+  );
+
+  const pitchingPath = path.join(outputDir, dataFilename('pitching', year));
+  const pitchingOutput: PitchingOutput = {
+    slug: 'wellesley',
+    domain: 'wellesleyblue.com',
+    scrapedAt: new Date().toISOString(),
+    year,
+    pitchingStats,
+    games: pitchingGameList,
+  };
+  fs.writeFileSync(pitchingPath, JSON.stringify(pitchingOutput));
+  console.log(
+    `  Wrote ${pitchingPath} (${pitchingStats.length} pitchers, ${pitchingGameList.length} games)`
   );
 }
 

@@ -126,21 +126,52 @@ export class PitcherAnalysis {
       return stats?.find((p) => p.name === pitcher) ?? null;
     }
 
-    // "all" — find most recent year's stats for this pitcher
-    const years = Object.keys(data.pitchingStatsByYear)
-      .map(Number)
-      .sort((a, b) => b - a);
+    // "all" — aggregate stats across all years
+    const yearEntries = Object.values(data.pitchingStatsByYear)
+      .flatMap((stats) => stats.filter((p) => p.name === pitcher));
 
-    for (const y of years) {
-      const stats = data.pitchingStatsByYear[String(y)];
-      const found = stats?.find((p) => p.name === pitcher);
-
-      if (found) {
-        return found;
-      }
+    if (yearEntries.length === 0) {
+      return null;
     }
 
-    return null;
+    if (yearEntries.length === 1) {
+      return yearEntries[0];
+    }
+
+    const totals = yearEntries.reduce(
+      (acc, s) => ({
+        w: acc.w + s.w,
+        l: acc.l + s.l,
+        app: acc.app + s.app,
+        gs: acc.gs + s.gs,
+        ip: acc.ip + s.ip,
+        h: acc.h + s.h,
+        r: acc.r + s.r,
+        er: acc.er + s.er,
+        bb: acc.bb + s.bb,
+        so: acc.so + s.so,
+        hr: acc.hr + s.hr,
+      }),
+      { w: 0, l: 0, app: 0, gs: 0, ip: 0, h: 0, r: 0, er: 0, bb: 0, so: 0, hr: 0 }
+    );
+
+    // Convert IP from display format (e.g. 99.1 = 99⅓) to true thirds for ERA calc
+    const totalThirds = yearEntries.reduce((acc, s) => {
+      const whole = Math.floor(s.ip);
+      const frac = Math.round((s.ip - whole) * 10);
+
+      return acc + whole * 3 + frac;
+    }, 0);
+    const trueIp = totalThirds / 3;
+    const era = trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
+    const displayIp = Math.floor(totalThirds / 3) + (totalThirds % 3) * 0.1;
+
+    return {
+      name: pitcher,
+      ...totals,
+      ip: Math.round(displayIp * 10) / 10,
+      era,
+    };
   });
 
   /** Process games to get season summary for selected pitcher, scoped by year */
@@ -155,18 +186,13 @@ export class PitcherAnalysis {
 
     // Filter games by selected year
     const games =
-      year === 'all'
-        ? data.games
-        : data.games.filter((g) => g.year === year);
+      year === 'all' ? data.games : data.games.filter((g) => g.year === year);
 
     // Track pitcher performance across filtered games
     const allGameLogs: PitcherGameLog[] = [];
 
     games.forEach((game) => {
-      const plays = trackPitcherPerformance(
-        game.battingInnings,
-        game.pitchers
-      );
+      const plays = trackPitcherPerformance(game.battingInnings, game.pitchers);
 
       const logs = computePitcherGameLog(plays, {
         date: game.date,

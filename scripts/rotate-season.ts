@@ -180,7 +180,9 @@ async function main(): Promise<void> {
 
   console.log(`Season rotation: ${prevYear} → ${newYear}`);
   console.log(`4-year window: ${newYear - 3}–${newYear}`);
-  console.log(`Oldest to keep: ${newYear - 3} (deleting ${oldestYear} and older)`);
+  console.log(
+    `Oldest to keep: ${newYear - 3} (deleting ${oldestYear} and older)`
+  );
 
   if (dryRun) {
     console.log('DRY RUN — no files will be modified\n');
@@ -198,10 +200,27 @@ async function main(): Promise<void> {
     path.join(dataDir, `wobadata-${prevYear}.json`),
     dryRun
   );
+  renameIfExists(
+    path.join(dataDir, 'pitching.json'),
+    path.join(dataDir, `pitching-${prevYear}.json`),
+    dryRun
+  );
   writeFile(path.join(dataDir, 'gamedata.json'), '[]', dryRun);
   writeFile(
     path.join(dataDir, 'wobadata.json'),
     JSON.stringify({ seasonStats: [], boxscores: [] }),
+    dryRun
+  );
+  writeFile(
+    path.join(dataDir, 'pitching.json'),
+    JSON.stringify({
+      slug: 'wellesley',
+      domain: 'wellesleyblue.com',
+      scrapedAt: new Date().toISOString(),
+      year: newYear,
+      pitchingStats: [],
+      games: [],
+    }),
     dryRun
   );
 
@@ -275,9 +294,7 @@ async function main(): Promise<void> {
     console.log('\n=== [dry-run] Would scrape rosters ===');
   } else {
     console.log('\n=== Scraping Wellesley roster ===');
-    const wellesleyHtml = await fetchPage(
-      `${BASE_URL}/sports/softball/roster`
-    );
+    const wellesleyHtml = await fetchPage(`${BASE_URL}/sports/softball/roster`);
 
     if (wellesleyHtml) {
       const $ = cheerio.load(wellesleyHtml);
@@ -308,9 +325,7 @@ async function main(): Promise<void> {
     for (const [slug, domain] of Object.entries(TEAMS)) {
       console.log(`  ${slug}...`);
       await delay(DELAY_MS);
-      const html = await fetchPage(
-        `https://${domain}/sports/softball/roster`
-      );
+      const html = await fetchPage(`https://${domain}/sports/softball/roster`);
 
       if (!html) {
         console.log(`    Could not fetch roster`);

@@ -4,7 +4,10 @@ import { from } from 'rxjs';
 
 import { DataContextService } from './data-context.service';
 import { resolveGameData, resolveRoster } from './data-resolve';
-import type { OpponentRoster } from './opponent-types';
+import type {
+  OpponentRoster,
+  OpponentYearPitchingData,
+} from './opponent-types';
 
 export interface GameData {
   url?: string;
@@ -24,7 +27,9 @@ const CURRENT_YEAR = new Date().getFullYear();
 const RESOLVE_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 
 function dataPath(base: string, year: number): string {
-  return year === CURRENT_YEAR ? `data/${base}.json` : `data/${base}-${year}.json`;
+  return year === CURRENT_YEAR
+    ? `data/${base}.json`
+    : `data/${base}-${year}.json`;
 }
 
 @Injectable({
@@ -57,20 +62,24 @@ export class SoftballDataService {
     );
   }
 
+  getWellesleyPitchingData(year: number): Observable<OpponentYearPitchingData> {
+    return from(
+      this.fetchJson<OpponentYearPitchingData>(dataPath('pitching', year))
+    );
+  }
+
   /** Cached game data fetch — used by both getGameData and getRoster. */
   fetchGameDataCached(year: number): Promise<GameData[]> {
     let cached = this.gameDataCache.get(year);
 
     if (!cached) {
-      cached = this.fetchGameJson(dataPath('gamedata', year)).then(
-        (games) => {
-          if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
-            return resolveGameData(games, year);
-          }
-
-          return games;
+      cached = this.fetchGameJson(dataPath('gamedata', year)).then((games) => {
+        if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
+          return resolveGameData(games, year);
         }
-      );
+
+        return games;
+      });
       this.gameDataCache.set(year, cached);
     }
 

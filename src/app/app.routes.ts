@@ -21,6 +21,10 @@ export const appRoutes: Route[] = [
       import('./opponents/opponents').then((m) => m.Opponents),
   },
   {
+    path: 'pitching',
+    loadComponent: () => import('./pitching/pitching').then((m) => m.Pitching),
+  },
+  {
     path: 'spray-chart',
     loadComponent: () =>
       import('./spray-chart/spray-chart').then((m) => m.SprayChart),
