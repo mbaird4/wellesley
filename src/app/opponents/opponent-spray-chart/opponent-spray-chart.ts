@@ -8,8 +8,12 @@ import {
   input,
   signal,
 } from '@angular/core';
-import type { JerseyMap, OpponentRoster } from '@ws/data-access';
-import { SoftballDataService, SoftballProcessorService } from '@ws/data-access';
+import type { JerseyMap, Roster } from '@ws/data-access';
+import {
+  SoftballDataService,
+  SoftballProcessorService,
+  toJerseyMap,
+} from '@ws/data-access';
 import {
   ALL_CONTACT_QUALITIES,
   ALL_CONTACT_TYPES,
@@ -81,7 +85,7 @@ export class OpponentSprayChart {
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
   readonly dataByYear = signal<Map<number, SprayDataPoint[]>>(new Map());
-  private readonly rawRoster = signal<OpponentRoster>({});
+  private readonly rawRoster = signal<Roster>({});
 
   readonly viewMode = signal<'split' | 'combined'>('split');
   readonly selectedYears = signal<string[]>(SPRAY_YEARS.map(String));
@@ -257,7 +261,7 @@ export class OpponentSprayChart {
     this.loading.set(true);
     this.error.set(null);
     this.dataByYear.set(new Map());
-    this.rawRoster.set({} as OpponentRoster);
+    this.rawRoster.set({} as Roster);
     this.filters.set({
       playerName: null,
       outcomes: [...ALL_OUTCOMES],
@@ -270,7 +274,7 @@ export class OpponentSprayChart {
     forkJoin({
       roster: this.dataService
         .getOpponentRoster(slug)
-        .pipe(catchError(() => of({} as OpponentRoster))),
+        .pipe(catchError(() => of({} as Roster))),
       years: forkJoin(
         SPRAY_YEARS.map((year) =>
           this.dataService
@@ -304,12 +308,7 @@ export class OpponentSprayChart {
             )
           ),
         ];
-        // Convert OpponentRoster → simple jersey map for shared utility
-        const jerseyMap: Record<string, number> = {};
-        Object.entries(roster).forEach(([key, entry]) => {
-          jerseyMap[key] = entry.jersey;
-        });
-        const canonMap = buildCanonicalNameMap(allNames, jerseyMap);
+        const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
 
         if (canonMap.size > 0) {
           map.forEach((points) => {

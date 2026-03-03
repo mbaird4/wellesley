@@ -7,19 +7,19 @@ import {
   inject,
   signal,
 } from '@angular/core';
+import type { PitchingData, YearPitchingData } from '@ws/data-access';
 import {
+  type DisplayRow,
   mergeBattingYears,
   mergePitchingYears,
-  type OpponentDisplayRow,
-  type OpponentPitchingData,
-  type OpponentRoster,
-  type OpponentTeam,
-  type OpponentYearBattingData,
-  type OpponentYearPitchingData,
   type PlayerTier,
+  type Roster,
   type SortDir,
   type SortKey,
+  type Team,
   type TeamEntry,
+  toJerseyMap,
+  type YearBattingData,
   type YearData,
 } from '@ws/data-access';
 import { BreakpointService } from '@ws/shared/util';
@@ -69,8 +69,8 @@ export class Opponents {
 
   readonly activeTab = signal<OpponentTab>('woba');
   readonly selectedSlug = signal(this.teams[0].slug);
-  readonly teamData = signal<OpponentTeam | null>(null);
-  readonly pitchingData = signal<OpponentPitchingData | null>(null);
+  readonly teamData = signal<Team | null>(null);
+  readonly pitchingData = signal<PitchingData | null>(null);
   readonly loading = signal(false);
   readonly pitchingLoading = signal(false);
   readonly error = signal<string | null>(null);
@@ -110,7 +110,7 @@ export class Opponents {
 
     const gpByYear = data.teamGamesByYear ?? {};
 
-    const rows: OpponentDisplayRow[] = data.players.map((player) => {
+    const rows: DisplayRow[] = data.players.map((player) => {
       const sortedSeasons = [...player.seasons].sort((a, b) => a.year - b.year);
 
       const accum = {
@@ -220,7 +220,7 @@ export class Opponents {
   readonly rosterNames = signal<Set<string>>(new Set());
 
   /** Full roster data — used to look up jersey numbers */
-  readonly roster = signal<OpponentRoster | null>(null);
+  readonly roster = signal<Roster | null>(null);
 
   /** Jersey number lookup keyed by lowercase name (no dots) */
   readonly jerseyMap = computed<Record<string, number> | null>(() => {
@@ -230,13 +230,7 @@ export class Opponents {
       return null;
     }
 
-    const map: Record<string, number> = {};
-
-    Object.entries(roster).forEach(([name, entry]) => {
-      map[name] = entry.jersey;
-    });
-
-    return map;
+    return toJerseyMap(roster);
   });
 
   readonly empty = computed(
@@ -309,20 +303,18 @@ export class Opponents {
           : `batting-stats-${year}.json`;
 
       return this.http
-        .get<OpponentYearBattingData>(`${base}data/opponents/${slug}/${file}`)
+        .get<YearBattingData>(`${base}data/opponents/${slug}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 
     // Also load roster.json for pitcher filtering
     const rosterRequest = this.http
-      .get<OpponentRoster>(`${base}data/opponents/${slug}/roster.json`)
+      .get<Roster>(`${base}data/opponents/${slug}/roster.json`)
       .pipe(catchError(() => of(null)));
 
     forkJoin([forkJoin(requests), rosterRequest]).subscribe({
       next: ([results, roster]) => {
-        const valid = results.filter(
-          (r): r is OpponentYearBattingData => r !== null
-        );
+        const valid = results.filter((r): r is YearBattingData => r !== null);
         this.teamData.set(mergeBattingYears(valid, roster));
         this.rosterNames.set(roster ? new Set(Object.keys(roster)) : new Set());
         this.roster.set(roster);
@@ -348,15 +340,13 @@ export class Opponents {
         year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
 
       return this.http
-        .get<OpponentYearPitchingData>(`${base}data/opponents/${slug}/${file}`)
+        .get<YearPitchingData>(`${base}data/opponents/${slug}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 
     forkJoin(requests).subscribe({
       next: (results) => {
-        const valid = results.filter(
-          (r): r is OpponentYearPitchingData => r !== null
-        );
+        const valid = results.filter((r): r is YearPitchingData => r !== null);
         this.pitchingData.set(mergePitchingYears(valid));
         this.pitchingLoading.set(false);
       },

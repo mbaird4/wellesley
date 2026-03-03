@@ -1,11 +1,9 @@
-export type WobaTier =
-  | 'excellent'
-  | 'great'
-  | 'above_average'
-  | 'average'
-  | 'below_average';
+// ── Minimum interfaces for wOBA computation ──
+// These are the subset shapes that woba functions need.
+// The canonical full types (SeasonStats, GameBattingStats, etc.) live in
+// @ws/data-access/batting-types and are structural supersets of these.
 
-/** Raw per-player season totals scraped from the stats page */
+/** Minimum fields needed for season-level wOBA computation */
 export interface PlayerSeasonStats {
   name: string;
   ab: number;
@@ -19,7 +17,7 @@ export interface PlayerSeasonStats {
   sh: number;
 }
 
-/** Per-player stats from a single boxscore */
+/** Minimum fields needed for per-game wOBA computation */
 export interface PlayerGameStats {
   name: string;
   ab: number;
@@ -40,6 +38,15 @@ export interface BoxscoreData {
   url: string;
   playerStats: PlayerGameStats[];
 }
+
+// ── wOBA display/computation types ──
+
+export type WobaTier =
+  | 'excellent'
+  | 'great'
+  | 'above_average'
+  | 'average'
+  | 'below_average';
 
 /** Computed season wOBA with components */
 export interface PlayerWoba {
@@ -65,10 +72,4 @@ export interface PlayerCumulativeWoba {
     cumulativeWoba: number;
     tier: WobaTier;
   }[];
-}
-
-/** Combined season data returned by woba data service */
-export interface WobaSeasonData {
-  seasonStats: PlayerSeasonStats[];
-  boxscores: BoxscoreData[];
 }

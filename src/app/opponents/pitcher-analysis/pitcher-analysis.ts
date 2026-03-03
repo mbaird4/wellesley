@@ -6,7 +6,7 @@ import {
   input,
   signal,
 } from '@angular/core';
-import type { OpponentPitchingData } from '@ws/data-access';
+import type { PitchingData } from '@ws/data-access';
 import { StickyPlayerHeader } from '@ws/shared/ui';
 import { BreakpointService } from '@ws/shared/util';
 import type { PitcherGameLog, PitcherSeasonSummary } from '@ws/stats-core';
@@ -42,7 +42,7 @@ import { PitcherSelector } from './pitcher-selector';
 export class PitcherAnalysis {
   readonly bp = inject(BreakpointService);
 
-  readonly pitchingData = input.required<OpponentPitchingData | null>();
+  readonly pitchingData = input.required<PitchingData | null>();
   readonly rosterNames = input<Set<string>>(new Set());
   readonly jerseyMap = input<Record<string, number> | null>(null);
   readonly loading = input<boolean>(false);

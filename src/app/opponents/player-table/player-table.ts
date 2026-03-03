@@ -5,7 +5,7 @@ import {
   input,
   output,
 } from '@angular/core';
-import type { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
+import type { DisplayRow, SortDir, SortKey } from '@ws/data-access';
 import { ClassYearPipe, WobaBadge } from '@ws/shared/ui';
 import { getWobaTier } from '@ws/stats-core';
 import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
@@ -27,8 +27,8 @@ import { PlayerDetail } from '../player-detail/player-detail';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerTable {
-  readonly regulars = input.required<OpponentDisplayRow[]>();
-  readonly reserves = input.required<OpponentDisplayRow[]>();
+  readonly regulars = input.required<DisplayRow[]>();
+  readonly reserves = input.required<DisplayRow[]>();
   readonly allYears = input.required<number[]>();
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();

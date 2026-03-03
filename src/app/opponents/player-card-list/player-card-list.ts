@@ -5,7 +5,7 @@ import {
   input,
   output,
 } from '@angular/core';
-import type { OpponentDisplayRow, SortDir, SortKey } from '@ws/data-access';
+import type { DisplayRow, SortDir, SortKey } from '@ws/data-access';
 import { ClassYearPipe } from '@ws/shared/ui';
 import { formatWoba, wobaGradientStyle } from '@ws/stats-core';
 
@@ -25,8 +25,8 @@ import { PlayerDetail } from '../player-detail/player-detail';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerCardList {
-  readonly regulars = input.required<OpponentDisplayRow[]>();
-  readonly reserves = input.required<OpponentDisplayRow[]>();
+  readonly regulars = input.required<DisplayRow[]>();
+  readonly reserves = input.required<DisplayRow[]>();
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();
   readonly sortDir = input.required<SortDir>();

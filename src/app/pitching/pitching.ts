@@ -7,9 +7,10 @@ import {
 } from '@angular/core';
 import {
   mergePitchingYears,
-  type OpponentPitchingData,
-  type OpponentYearPitchingData,
+  type PitchingData,
   SoftballDataService,
+  toJerseyMap,
+  type YearPitchingData,
 } from '@ws/data-access';
 import { forkJoin, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
@@ -30,7 +31,7 @@ const YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 export class Pitching implements OnInit {
   private readonly dataService = inject(SoftballDataService);
 
-  readonly pitchingData = signal<OpponentPitchingData | null>(null);
+  readonly pitchingData = signal<PitchingData | null>(null);
   readonly rosterNames = signal<Set<string>>(new Set());
   readonly jerseyMap = signal<Record<string, number> | null>(null);
   readonly loading = signal(true);
@@ -49,9 +50,7 @@ export class Pitching implements OnInit {
 
     forkJoin(requests).subscribe({
       next: (results) => {
-        const valid = results.filter(
-          (r): r is OpponentYearPitchingData => r !== null
-        );
+        const valid = results.filter((r): r is YearPitchingData => r !== null);
         this.pitchingData.set(mergePitchingYears(valid));
         this.loading.set(false);
       },
@@ -66,7 +65,7 @@ export class Pitching implements OnInit {
     this.dataService.getRoster().subscribe({
       next: (roster) => {
         this.rosterNames.set(new Set(Object.keys(roster)));
-        this.jerseyMap.set(roster);
+        this.jerseyMap.set(toJerseyMap(roster));
       },
     });
   }

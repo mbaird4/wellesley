@@ -1,6 +1,5 @@
-import type { WobaSeasonData } from '@ws/stats-core';
-
-import type { GameData, JerseyMap } from './softball-data.service';
+import type { Roster, YearBattingData } from './batting-types';
+import type { GameData } from './softball-data.service';
 
 // --- Seeded PRNG (Mulberry32) ---
 
@@ -192,14 +191,14 @@ function resolveLineup(
 }
 
 /**
- * Resolves wobadata by shuffling player names in season stats and boxscores.
+ * Resolves YearBattingData by shuffling player names in season stats and boxscores.
  * Uses the same name mapping as gamedata for the same year.
  */
-export function resolveWobaData(
-  data: WobaSeasonData,
+export function resolveYearBattingData(
+  data: YearBattingData,
   games: GameData[],
   year: number
-): WobaSeasonData {
+): YearBattingData {
   const names = collectPlayerNames(games);
 
   if (names.length < 2) {
@@ -208,37 +207,45 @@ export function resolveWobaData(
 
   const nameMap = buildNameMap(names, year);
 
-  // Build "Last, First" → "Last, First" mapping (wobadata uses capitalized format)
-  const wobaNameMap = new Map<string, string>();
+  // Build "Last, First" → "Last, First" mapping (batting data uses capitalized format)
+  const capitalNameMap = new Map<string, string>();
 
   nameMap.forEach((toName, fromName) => {
-    wobaNameMap.set(capitalizeFullName(fromName), capitalizeFullName(toName));
+    capitalNameMap.set(
+      capitalizeFullName(fromName),
+      capitalizeFullName(toName)
+    );
   });
 
   return {
-    seasonStats: data.seasonStats.map((stat) => ({
-      ...stat,
-      name: wobaNameMap.get(stat.name) ?? stat.name,
+    ...data,
+    players: data.players.map((p) => ({
+      ...p,
+      name: capitalNameMap.get(p.name) ?? p.name,
+      season: {
+        ...p.season,
+        name: capitalNameMap.get(p.season.name) ?? p.season.name,
+      },
     })),
-    boxscores: data.boxscores.map((box) => ({
+    boxscores: data.boxscores?.map((box) => ({
       ...box,
       playerStats: box.playerStats.map((ps) => ({
         ...ps,
-        name: wobaNameMap.get(ps.name) ?? ps.name,
+        name: capitalNameMap.get(ps.name) ?? ps.name,
       })),
     })),
   };
 }
 
 /**
- * Resolves roster by shuffling name → jersey number assignments.
+ * Resolves roster by shuffling name → entry assignments.
  * Uses the current year's mapping.
  */
 export function resolveRoster(
-  roster: JerseyMap,
+  roster: Roster,
   games: GameData[],
   year: number
-): JerseyMap {
+): Roster {
   const names = collectPlayerNames(games);
 
   if (names.length < 2) {
@@ -246,11 +253,11 @@ export function resolveRoster(
   }
 
   const nameMap = buildNameMap(names, year);
-  const resolved: JerseyMap = {};
+  const resolved: Roster = {};
 
-  Object.entries(roster).forEach(([name, jersey]) => {
+  Object.entries(roster).forEach(([name, entry]) => {
     const mappedName = nameMap.get(name) ?? name;
-    resolved[mappedName] = jersey;
+    resolved[mappedName] = entry;
   });
 
   return resolved;

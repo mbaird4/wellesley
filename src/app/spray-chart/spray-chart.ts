@@ -7,8 +7,12 @@ import {
   signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import type { JerseyMap } from '@ws/data-access';
-import { SoftballDataService, SoftballStatsService } from '@ws/data-access';
+import type { JerseyMap, Roster } from '@ws/data-access';
+import {
+  SoftballDataService,
+  SoftballStatsService,
+  toJerseyMap,
+} from '@ws/data-access';
 import {
   ALL_CONTACT_QUALITIES,
   ALL_CONTACT_TYPES,
@@ -65,7 +69,7 @@ export class SprayChart {
 
   // Raw spray data from all games
   allDataPoints = signal<SprayDataPoint[]>([]);
-  private rawRoster = signal<JerseyMap>({});
+  private rawRoster = signal<Roster>({});
 
   // Filter state
   filters = signal<SprayFilterState>({
@@ -105,9 +109,9 @@ export class SprayChart {
 
     // Build last-name lookup from roster: "moore" → 7
     const byLastName = new Map<string, number>();
-    Object.entries(roster).forEach(([key, num]) => {
+    Object.entries(roster).forEach(([key, entry]) => {
       const last = key.split(',')[0].trim();
-      byLastName.set(last, num);
+      byLastName.set(last, entry.jersey);
     });
 
     this.players().forEach((displayName) => {
@@ -168,7 +172,7 @@ export class SprayChart {
       stats: this.statsService.getStats(this.selectedYear),
       roster: this.dataService
         .getRoster()
-        .pipe(catchError(() => of({} as JerseyMap))),
+        .pipe(catchError(() => of({} as Roster))),
     }).subscribe({
       next: ({ stats, roster }) => {
         this.rawRoster.set(roster);
@@ -185,7 +189,7 @@ export class SprayChart {
         // Merge truncated last names and wrong initials using jersey numbers
         if (Object.keys(roster).length > 0) {
           const allNames = [...new Set(points.map((p) => p.playerName))];
-          const canonMap = buildCanonicalNameMap(allNames, roster);
+          const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
 
           if (canonMap.size > 0) {
             points.forEach((p) => {

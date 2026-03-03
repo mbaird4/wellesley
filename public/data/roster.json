@@ -1,22 +1,142 @@
 {
-  "awad, brooklyn": 0,
-  "nicol, natalie": 1,
-  "mulhern, alena": 4,
-  "gaunce, emeline": 5,
-  "polski, jailey": 6,
-  "delgado, andrea": 7,
-  "seyller, lauren": 9,
-  "reulet, elsa": 10,
-  "colgan, jill": 11,
-  "abernethy, milo": 12,
-  "lundin, chiara": 13,
-  "mellady, brynne": 14,
-  "jones, giana": 16,
-  "rodriguez, anisa": 20,
-  "wicker, sarah": 21,
-  "fredericks, sophia": 22,
-  "kulhanek, emily": 23,
-  "claybrook, tiye": 24,
-  "borrison, diana": 25,
-  "hassett, bella": 29
+  "awad, brooklyn": {
+    "jersey": 0,
+    "classYear": "Fy.",
+    "position": "OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "nicol, natalie": {
+    "jersey": 1,
+    "classYear": "So.",
+    "position": "OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "mulhern, alena": {
+    "jersey": 4,
+    "classYear": "Jr.",
+    "position": "INF/OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "gaunce, emeline": {
+    "jersey": 5,
+    "classYear": "Sr.",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "polski, jailey": {
+    "jersey": 6,
+    "classYear": "Fy.",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "delgado, andrea": {
+    "jersey": 7,
+    "classYear": "Sr.",
+    "position": "INF/OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "seyller, lauren": {
+    "jersey": 9,
+    "classYear": "Fy.",
+    "position": "P/INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "reulet, elsa": {
+    "jersey": 10,
+    "classYear": "Fy.",
+    "position": "INF/OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "colgan, jill": {
+    "jersey": 11,
+    "classYear": "Jr.",
+    "position": "P/INF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "abernethy, milo": {
+    "jersey": 12,
+    "classYear": "Sr.",
+    "position": "C",
+    "bats": "R",
+    "throws": "R"
+  },
+  "lundin, chiara": {
+    "jersey": 13,
+    "classYear": "Sr.",
+    "position": "C/INF",
+    "bats": "L",
+    "throws": "R"
+  },
+  "mellady, brynne": {
+    "jersey": 14,
+    "classYear": "So.",
+    "position": "C/INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "jones, giana": {
+    "jersey": 16,
+    "classYear": "Jr.",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "rodriguez, anisa": {
+    "jersey": 20,
+    "classYear": "Jr.",
+    "position": "INF/C",
+    "bats": "R",
+    "throws": "R"
+  },
+  "wicker, sarah": {
+    "jersey": 21,
+    "classYear": "Jr.",
+    "position": "P/INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "fredericks, sophia": {
+    "jersey": 22,
+    "classYear": "Fy.",
+    "position": "UTL",
+    "bats": "R",
+    "throws": "R"
+  },
+  "kulhanek, emily": {
+    "jersey": 23,
+    "classYear": "Jr.",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "claybrook, tiye": {
+    "jersey": 24,
+    "classYear": "Fy.",
+    "position": "C/OF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "borrison, diana": {
+    "jersey": 25,
+    "classYear": "Jr.",
+    "position": "INF",
+    "bats": "R",
+    "throws": "R"
+  },
+  "hassett, bella": {
+    "jersey": 29,
+    "classYear": "So.",
+    "position": "P",
+    "bats": "L",
+    "throws": "L"
+  }
 }

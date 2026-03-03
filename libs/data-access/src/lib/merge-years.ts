@@ -2,17 +2,19 @@ import { calculateWoba } from '@ws/stats-core';
 
 import type {
   BatHand,
-  OpponentCareerStats,
-  OpponentGamePbP,
-  OpponentPitchingData,
-  OpponentPitchingStats,
-  OpponentPlayer,
-  OpponentRoster,
-  OpponentSeasonStats,
-  OpponentTeam,
-  OpponentYearBattingData,
-  OpponentYearPitchingData,
-} from './opponent-types';
+  CareerStats,
+  Roster,
+  RosterPlayer,
+  SeasonStats,
+  Team,
+  YearBattingData,
+} from './batting-types';
+import type {
+  GamePbP,
+  PitchingData,
+  PitchingStats,
+  YearPitchingData,
+} from './pitching-types';
 
 /**
  * Convert a roster key ("last, first") to display name ("First Last").
@@ -40,16 +42,16 @@ function displayNameToRosterKey(name: string): string {
 }
 
 /**
- * Merge multiple per-year batting data files into the combined OpponentTeam shape.
+ * Merge multiple per-year batting data files into the combined Team shape.
  * Career stats are computed client-side from the loaded per-year seasons.
  *
  * If a roster is provided, players on the roster but missing from batting data
  * are included with empty stats so the full team is visible.
  */
 export function mergeBattingYears(
-  years: OpponentYearBattingData[],
-  roster?: OpponentRoster | null
-): OpponentTeam {
+  years: YearBattingData[],
+  roster?: Roster | null
+): Team {
   if (years.length === 0 && !roster) {
     return { slug: '', domain: '', scrapedAt: '', players: [] };
   }
@@ -67,7 +69,7 @@ export function mergeBattingYears(
   const playerMap = new Map<
     string,
     {
-      seasons: OpponentSeasonStats[];
+      seasons: SeasonStats[];
       jerseyNumber: number | null;
       classYear: string;
       position: string | null;
@@ -119,7 +121,7 @@ export function mergeBattingYears(
   }
 
   // Build players with computed career stats
-  const players: OpponentPlayer[] = Array.from(playerMap.entries()).map(
+  const players: RosterPlayer[] = Array.from(playerMap.entries()).map(
     ([name, data]) => ({
       name,
       jerseyNumber: data.jerseyNumber,
@@ -147,9 +149,7 @@ export function mergeBattingYears(
  * Compute career stats from an array of season stats.
  * Sums counting stats, then derives rate stats + wOBA.
  */
-export function computeCareerStats(
-  seasons: OpponentSeasonStats[]
-): OpponentCareerStats {
+export function computeCareerStats(seasons: SeasonStats[]): CareerStats {
   const totals = {
     gp: 0,
     gs: 0,
@@ -220,11 +220,9 @@ export function computeCareerStats(
 }
 
 /**
- * Merge multiple per-year pitching data files into the combined OpponentPitchingData shape.
+ * Merge multiple per-year pitching data files into the combined PitchingData shape.
  */
-export function mergePitchingYears(
-  years: OpponentYearPitchingData[]
-): OpponentPitchingData {
+export function mergePitchingYears(years: YearPitchingData[]): PitchingData {
   if (years.length === 0) {
     return {
       slug: '',
@@ -238,8 +236,8 @@ export function mergePitchingYears(
   const sorted = [...years].sort((a, b) => a.year - b.year);
   const latest = sorted[sorted.length - 1];
 
-  const pitchingStatsByYear: Record<string, OpponentPitchingStats[]> = {};
-  const allGames: OpponentGamePbP[] = [];
+  const pitchingStatsByYear: Record<string, PitchingStats[]> = {};
+  const allGames: GamePbP[] = [];
 
   sorted.forEach((yearData) => {
     pitchingStatsByYear[String(yearData.year)] = yearData.pitchingStats;

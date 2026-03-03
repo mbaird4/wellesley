@@ -2,7 +2,7 @@
  * Pre-fetch script: fetches boxscore data directly from wellesleyblue.com
  * (no CORS proxy needed in Node.js) and writes static JSON to public/data/.
  *
- * Current-year files use unsuffixed names (gamedata.json, wobadata.json);
+ * Current-year files use unsuffixed names (gamedata.json, batting-stats.json);
  * historical files keep year suffixes (gamedata-2025.json, etc.).
  *
  * Usage:
@@ -17,7 +17,7 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// ── Types (mirroring src/lib/types.ts, avoiding Angular imports) ──
+// ── Types (mirroring batting-types.ts, avoiding Angular imports) ──
 
 interface PlayByPlayInning {
   inning: string;
@@ -71,20 +71,48 @@ interface PitchingOutput {
   games: GamePitchingData[];
 }
 
-interface PlayerSeasonStats {
+type BatHand = 'L' | 'R' | 'S';
+
+interface RosterEntry {
+  jersey: number;
+  classYear: string;
+  position: string | null;
+  bats: BatHand | null;
+  throws: 'L' | 'R' | null;
+}
+
+type Roster = Record<string, RosterEntry>;
+
+interface SeasonStats {
+  year: number;
   name: string;
+  avg: number;
+  ops: number;
+  gp: number;
+  gs: number;
   ab: number;
+  r: number;
   h: number;
   doubles: number;
   triples: number;
   hr: number;
+  rbi: number;
+  tb: number;
+  slg: number;
   bb: number;
   hbp: number;
+  so: number;
+  gdp: number;
+  obp: number;
   sf: number;
   sh: number;
+  sb: number;
+  sbAtt: number;
+  woba: number;
+  pa: number;
 }
 
-interface PlayerGameStats {
+interface GameBattingStats {
   name: string;
   ab: number;
   h: number;
@@ -101,12 +129,64 @@ interface BoxscoreData {
   date: string;
   opponent: string;
   url: string;
-  playerStats: PlayerGameStats[];
+  playerStats: GameBattingStats[];
 }
 
-interface WobaSeasonData {
-  seasonStats: PlayerSeasonStats[];
-  boxscores: BoxscoreData[];
+interface YearPlayer {
+  name: string;
+  jerseyNumber: number | null;
+  classYear: string;
+  position: string | null;
+  bats: BatHand | null;
+  season: SeasonStats;
+}
+
+interface YearBattingData {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  year: number;
+  teamGames: number;
+  players: YearPlayer[];
+  boxscores?: BoxscoreData[];
+}
+
+// ── wOBA calculation (mirroring stats-core/woba.ts) ──
+
+const WOBA_WEIGHT_BB = 0.5;
+const WOBA_WEIGHT_HBP = 0.5;
+const WOBA_WEIGHT_1B = 0.9;
+const WOBA_WEIGHT_2B = 1.2;
+const WOBA_WEIGHT_3B = 1.7;
+const WOBA_WEIGHT_HR = 2.5;
+
+function calculateWoba(stats: {
+  ab: number;
+  h: number;
+  doubles: number;
+  triples: number;
+  hr: number;
+  bb: number;
+  hbp: number;
+  sf: number;
+  sh: number;
+}): number {
+  const singles = stats.h - stats.doubles - stats.triples - stats.hr;
+  const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
+
+  if (denominator === 0) {
+    return 0;
+  }
+
+  const numerator =
+    WOBA_WEIGHT_BB * stats.bb +
+    WOBA_WEIGHT_HBP * stats.hbp +
+    WOBA_WEIGHT_1B * singles +
+    WOBA_WEIGHT_2B * stats.doubles +
+    WOBA_WEIGHT_3B * stats.triples +
+    WOBA_WEIGHT_HR * stats.hr;
+
+  return Math.round((numerator / denominator) * 1000) / 1000;
 }
 
 // ── Constants ──
@@ -356,20 +436,25 @@ function extractGameData(
 
 // ── wOBA data extraction ──
 
-function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
-  const players: PlayerSeasonStats[] = [];
+function parseStatsTable(
+  $: cheerio.CheerioAPI,
+  year: number
+): { players: SeasonStats[]; teamGames: number } {
+  const players: SeasonStats[] = [];
+  let teamGames = 0;
 
   let targetTable: any = null;
   $('table').each((_, table) => {
     const caption = $(table).find('caption').text();
     if (caption.includes('Individual Overall Batting Statistics')) {
       targetTable = $(table);
+
       return false;
     }
   });
 
   if (!targetTable) {
-    return players;
+    return { players, teamGames };
   }
 
   targetTable.find('tbody tr').each((_: number, row: any) => {
@@ -380,34 +465,100 @@ function parseStatsTable($: cheerio.CheerioAPI): PlayerSeasonStats[] {
       nameCell.find('a').first().text().trim() ||
       nameCell.text().trim();
 
-    if (
-      !name ||
-      name.toLowerCase() === 'totals' ||
-      name.toLowerCase() === 'opponents'
-    ) {
+    if (!name || name.toLowerCase() === 'opponents') {
       return;
     }
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
+    const pct = (label: string): number => {
+      const cell = $row.find(`td[data-label="${label}"]`);
+
+      return parseFloat(cell.text().trim()) || 0;
+    };
+
+    // GP-GS is hyphenated: "35-35"
+    const gpGsCell = $row.find('td[data-label="GP-GS"]').text().trim();
+    const gpGsMatch = gpGsCell.match(/^(\d+)-(\d+)$/);
+    const gp = gpGsMatch ? parseInt(gpGsMatch[1], 10) : 0;
+    const gs = gpGsMatch ? parseInt(gpGsMatch[2], 10) : 0;
+
+    // SB column may be hyphenated: "12-15" (SB-SBA)
+    const sbCell = $row.find('td[data-label="SB"]').text().trim();
+    const sbMatch = sbCell.match(/^(\d+)-(\d+)$/);
+    const sb = sbMatch ? parseInt(sbMatch[1], 10) : parseInt(sbCell, 10) || 0;
+    const sbAtt = sbMatch ? parseInt(sbMatch[2], 10) : sb;
+
+    // Totals row — capture team GP then skip
+    if (name.toLowerCase() === 'totals') {
+      teamGames = gp;
+
+      return;
+    }
+
+    const ab = num('AB');
+    const h = num('H');
+    const doubles = num('2B');
+    const triples = num('3B');
+    const hr = num('HR');
+    const bb = num('BB');
+    const hbp = num('HBP');
+    const sf = num('SF');
+    const sh = num('SH');
+    const pa = ab + bb + sf + sh + hbp;
+
+    const woba = calculateWoba({
+      ab,
+      h,
+      doubles,
+      triples,
+      hr,
+      bb,
+      hbp,
+      sf,
+      sh,
+    });
+
     players.push({
+      year,
       name,
-      ab: num('AB'),
-      h: num('H'),
-      doubles: num('2B'),
-      triples: num('3B'),
-      hr: num('HR'),
-      bb: num('BB'),
-      hbp: num('HBP'),
-      sf: num('SF'),
-      sh: num('SH'),
+      avg: pct('AVG'),
+      ops: pct('OPS'),
+      gp,
+      gs,
+      ab,
+      r: num('R'),
+      h,
+      doubles,
+      triples,
+      hr,
+      rbi: num('RBI'),
+      tb: num('TB'),
+      slg: pct('SLG%'),
+      bb,
+      hbp,
+      so: num('SO'),
+      gdp: num('GDP'),
+      obp: pct('OB%'),
+      sf,
+      sh,
+      sb,
+      sbAtt,
+      woba,
+      pa,
     });
   });
 
-  return players;
+  // Fallback: use max GP if totals row wasn't found
+  if (teamGames === 0 && players.length > 0) {
+    teamGames = Math.max(...players.map((p) => p.gp));
+  }
+
+  return { players, teamGames };
 }
 
 function parseGameInfo(
@@ -440,6 +591,33 @@ function parseGameInfo(
   return { date, opponent };
 }
 
+/**
+ * Match a stats-page player name (e.g. "Smith, Jane") to a roster key (e.g. "smith, jane").
+ * Returns the matching roster key or null.
+ */
+function matchStatNameToRoster(
+  statName: string,
+  roster: Roster
+): string | null {
+  const normalized = normalizeName(statName);
+
+  // Exact match
+  if (roster[normalized]) {
+    return normalized;
+  }
+
+  // Surname fallback
+  const statLast = normalized.split(',')[0].trim();
+
+  return (
+    Object.keys(roster).find((key) => {
+      const rosterLast = key.split(',')[0].trim();
+
+      return statLast.length > 2 && statLast === rosterLast;
+    }) ?? null
+  );
+}
+
 function lastNameMatch(a: string, b: string): boolean {
   const lastA = a.split(',')[0].trim();
   const lastB = b.split(',')[0].trim();
@@ -448,7 +626,7 @@ function lastNameMatch(a: string, b: string): boolean {
 
 function attributeStatToPlayers(
   text: string,
-  playerMap: Map<string, PlayerGameStats>,
+  playerMap: Map<string, GameBattingStats>,
   field: 'doubles' | 'triples' | 'hr' | 'hbp' | 'sf' | 'sh'
 ): void {
   const playerRegex = /([\w][\w\s,.'"-]+?)\s*\((\d+)\)/g;
@@ -474,7 +652,7 @@ function attributeStatToPlayers(
 
 function parseSupplementaryStats(
   $: cheerio.CheerioAPI,
-  playerMap: Map<string, PlayerGameStats>
+  playerMap: Map<string, GameBattingStats>
 ): void {
   const dtDdStats: Array<{
     label: string;
@@ -527,8 +705,8 @@ function extractBoxscoreBatting(
   url: string
 ): BoxscoreData | null {
   const { date, opponent } = parseGameInfo($, url);
-  const playerStats: PlayerGameStats[] = [];
-  const playerMap = new Map<string, PlayerGameStats>();
+  const playerStats: GameBattingStats[] = [];
+  const playerMap = new Map<string, GameBattingStats>();
 
   let wellesleyTable: any = null;
   $('table').each((_, table) => {
@@ -569,7 +747,7 @@ function extractBoxscoreBatting(
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
-    const stats: PlayerGameStats = {
+    const stats: GameBattingStats = {
       name,
       ab: num('AB'),
       h: num('H'),
@@ -814,15 +992,19 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     return;
   }
 
-  // 2. Fetch stats page for wOBA season totals
+  // 2. Fetch stats page for season totals
   console.log(`  Fetching stats page...`);
   await delay(DELAY_MS);
   const statsHtml = await fetchPage(
     `${BASE_URL}/sports/softball/stats/${year}`
   );
   const $stats = statsHtml ? cheerio.load(statsHtml) : null;
-  const seasonStats = $stats ? parseStatsTable($stats) : [];
-  console.log(`  Parsed ${seasonStats.length} players from stats table`);
+  const { players: seasonStats, teamGames } = $stats
+    ? parseStatsTable($stats, year)
+    : { players: [], teamGames: 0 };
+  console.log(
+    `  Parsed ${seasonStats.length} players from stats table (${teamGames} team GP)`
+  );
   const pitchingStats = $stats ? parsePitchingStatsTable($stats) : [];
   console.log(`  Parsed ${pitchingStats.length} pitchers from stats table`);
 
@@ -875,11 +1057,46 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   fs.writeFileSync(gamedataPath, JSON.stringify(gameDataList));
   console.log(`  Wrote ${gamedataPath} (${gameDataList.length} games)`);
 
-  const wobadataPath = path.join(outputDir, dataFilename('wobadata', year));
-  const wobaData: WobaSeasonData = { seasonStats, boxscores: boxscoreDataList };
-  fs.writeFileSync(wobadataPath, JSON.stringify(wobaData));
+  // Load roster for enriching player data
+  const rosterPath = path.join(outputDir, 'roster.json');
+  let roster: Roster = {};
+
+  if (fs.existsSync(rosterPath)) {
+    roster = JSON.parse(fs.readFileSync(rosterPath, 'utf-8'));
+  }
+
+  // Build YearBattingData with enriched player info from roster
+  const yearPlayers: YearPlayer[] = seasonStats.map((stat) => {
+    // Match stat name to roster by last name
+    const rosterKey = matchStatNameToRoster(stat.name, roster);
+    const rosterEntry = rosterKey ? roster[rosterKey] : null;
+
+    return {
+      name: stat.name,
+      jerseyNumber: rosterEntry?.jersey ?? null,
+      classYear: rosterEntry?.classYear ?? '',
+      position: rosterEntry?.position ?? null,
+      bats: rosterEntry?.bats ?? null,
+      season: stat,
+    };
+  });
+
+  const battingStatsPath = path.join(
+    outputDir,
+    dataFilename('batting-stats', year)
+  );
+  const battingData: YearBattingData = {
+    slug: 'wellesley',
+    domain: 'wellesleyblue.com',
+    scrapedAt: new Date().toISOString(),
+    year,
+    teamGames,
+    players: yearPlayers,
+    boxscores: boxscoreDataList,
+  };
+  fs.writeFileSync(battingStatsPath, JSON.stringify(battingData));
   console.log(
-    `  Wrote ${wobadataPath} (${seasonStats.length} players, ${boxscoreDataList.length} boxscores)`
+    `  Wrote ${battingStatsPath} (${yearPlayers.length} players, ${boxscoreDataList.length} boxscores)`
   );
 
   const pitchingPath = path.join(outputDir, dataFilename('pitching', year));
@@ -899,9 +1116,90 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
 
 // ── Roster scraping (jersey numbers) ──
 
-function parseRoster($: cheerio.CheerioAPI): Record<string, number> {
-  const jerseyMap: Record<string, number> = {};
+function parseRoster($: cheerio.CheerioAPI): Roster {
+  const roster: Roster = {};
 
+  // Wellesley's Sidearm Sports page has two parallel element sets:
+  // 1. Table-view <li.sidearm-roster-player>: jersey + position
+  // 2. Card-view <li.sidearm-list-card-item>: first/last name + class year + B/T
+  // We also use <tr> with .sidearm-table-player-name for the reliable name + jersey.
+
+  // Card view: extract class year and B/T by name
+  const cardData = new Map<
+    string,
+    { classYear: string; bats: BatHand | null; throws: 'L' | 'R' | null }
+  >();
+  $('li.sidearm-list-card-item').each((_, el) => {
+    const $el = $(el);
+    const firstName = $el
+      .find('.sidearm-roster-player-first-name')
+      .text()
+      .trim();
+    const lastName = $el.find('.sidearm-roster-player-last-name').text().trim();
+
+    if (!firstName || !lastName) {
+      return;
+    }
+
+    const key = `${normalizeName(lastName)}, ${normalizeName(firstName)}`;
+    const yearEls = $el.find('.sidearm-roster-player-academic-year');
+    const classYear =
+      yearEls.length > 1
+        ? $(yearEls[yearEls.length - 1])
+            .text()
+            .trim()
+        : yearEls.text().trim();
+
+    // B/T (bats/throws)
+    let bats: BatHand | null = null;
+    let throws: 'L' | 'R' | null = null;
+    const btSelectors = [
+      '[data-custom-label="B/T:"]',
+      '[data-custom-label="B-T:"]',
+      '.sidearm-roster-player-custom2',
+      '.sidearm-roster-player-custom3',
+    ];
+    btSelectors.some((sel) => {
+      const text = $el.find(sel).text().trim();
+      const btMatch = text.match(/([LRS])\s*[/\-]\s*([LR])/i);
+
+      if (btMatch) {
+        const b = btMatch[1].toUpperCase();
+        const t = btMatch[2].toUpperCase();
+        bats = (
+          b === 'L' || b === 'R' || b === 'S' ? b : null
+        ) as BatHand | null;
+        throws = (t === 'L' || t === 'R' ? t : null) as 'L' | 'R' | null;
+
+        return true;
+      }
+
+      return false;
+    });
+
+    cardData.set(key, { classYear: classYear || '', bats, throws });
+  });
+
+  // Table view: extract position by jersey number
+  const positionByJersey = new Map<number, string>();
+  $('li.sidearm-roster-player').each((_, el) => {
+    const $el = $(el);
+    const jn = parseInt(
+      $el.find('.sidearm-roster-player-jersey-number').text().trim(),
+      10
+    );
+    const pos =
+      $el
+        .find('.sidearm-roster-player-position span.text-bold')
+        .text()
+        .trim() || $el.find('.sidearm-roster-player-position').text().trim();
+
+    if (!isNaN(jn) && pos) {
+      positionByJersey.set(jn, pos);
+    }
+  });
+
+  // Main: table rows (reliable name + jersey)
   $('tr').each((_, row) => {
     const jersey = $(row).find('.roster_jerseynum').text().trim();
     const name = $(row).find('.sidearm-table-player-name').text().trim();
@@ -915,10 +1213,20 @@ function parseRoster($: cheerio.CheerioAPI): Record<string, number> {
     const first = parts[0];
     const last = parts.slice(1).join(' ');
     const key = `${last}, ${first}`;
-    jerseyMap[key] = parseInt(jersey, 10);
+    const jerseyNum = parseInt(jersey, 10);
+
+    const card = cardData.get(key);
+
+    roster[key] = {
+      jersey: jerseyNum,
+      classYear: card?.classYear ?? '',
+      position: positionByJersey.get(jerseyNum) ?? null,
+      bats: card?.bats ?? null,
+      throws: card?.throws ?? null,
+    };
   });
 
-  return jerseyMap;
+  return roster;
 }
 
 async function prefetchRoster(outputDir: string): Promise<void> {
@@ -932,10 +1240,10 @@ async function prefetchRoster(outputDir: string): Promise<void> {
   }
 
   const $ = cheerio.load(html);
-  const jerseyMap = parseRoster($);
+  const roster = parseRoster($);
   const outPath = path.join(outputDir, 'roster.json');
-  fs.writeFileSync(outPath, JSON.stringify(jerseyMap));
-  console.log(`  Wrote ${outPath} (${Object.keys(jerseyMap).length} players)`);
+  fs.writeFileSync(outPath, JSON.stringify(roster));
+  console.log(`  Wrote ${outPath} (${Object.keys(roster).length} players)`);
 }
 
 async function main(): Promise<void> {

@@ -6,7 +6,7 @@ import {
   inject,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { WobaDataService } from '@ws/data-access';
+import { SoftballDataService } from '@ws/data-access';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/stats-core';
 import {
   computePlayerCumulativeWobas,
@@ -46,7 +46,7 @@ export interface TeamPlayerRow {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Woba {
-  private wobaData = inject(WobaDataService);
+  private dataService = inject(SoftballDataService);
   private cdr = inject(ChangeDetectorRef);
 
   loading = false;
@@ -83,10 +83,12 @@ export class Woba {
     this.teamGameColumns = [];
     this.teamPlayerRows = [];
 
-    this.wobaData.getSeasonData(this.selectedYear).subscribe({
+    this.dataService.getWellesleyBattingData(this.selectedYear).subscribe({
       next: (data) => {
-        this.playerWobas = computePlayerSeasonWobas(data.seasonStats);
-        this.cumulativeWobas = computePlayerCumulativeWobas(data.boxscores);
+        const seasonStats = data.players.map((p) => p.season);
+        const boxscores = data.boxscores ?? [];
+        this.playerWobas = computePlayerSeasonWobas(seasonStats);
+        this.cumulativeWobas = computePlayerCumulativeWobas(boxscores);
         this.cumulativeByName = new Map(
           this.cumulativeWobas.map((c) => [c.name.toLowerCase(), c])
         );

@@ -2,12 +2,14 @@ import { inject, Injectable } from '@angular/core';
 import type { Observable } from 'rxjs';
 import { from } from 'rxjs';
 
+import type { Roster, YearBattingData } from './batting-types';
 import { DataContextService } from './data-context.service';
-import { resolveGameData, resolveRoster } from './data-resolve';
-import type {
-  OpponentRoster,
-  OpponentYearPitchingData,
-} from './opponent-types';
+import {
+  resolveGameData,
+  resolveRoster,
+  resolveYearBattingData,
+} from './data-resolve';
+import type { YearPitchingData } from './pitching-types';
 
 export interface GameData {
   url?: string;
@@ -21,7 +23,7 @@ export interface PlayByPlayInning {
   plays: string[]; // Array of play description texts
 }
 
-export type JerseyMap = Record<string, number>;
+// JerseyMap is exported from batting-types.ts
 
 const CURRENT_YEAR = new Date().getFullYear();
 const RESOLVE_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
@@ -52,20 +54,20 @@ export class SoftballDataService {
     return from(this.fetchGameJson(file));
   }
 
-  getRoster(): Observable<JerseyMap> {
+  getRoster(): Observable<Roster> {
     return from(this.fetchResolvedRoster());
   }
 
-  getOpponentRoster(slug: string): Observable<OpponentRoster> {
-    return from(
-      this.fetchJson<OpponentRoster>(`data/opponents/${slug}/roster.json`)
-    );
+  getOpponentRoster(slug: string): Observable<Roster> {
+    return from(this.fetchJson<Roster>(`data/opponents/${slug}/roster.json`));
   }
 
-  getWellesleyPitchingData(year: number): Observable<OpponentYearPitchingData> {
-    return from(
-      this.fetchJson<OpponentYearPitchingData>(dataPath('pitching', year))
-    );
+  getWellesleyPitchingData(year: number): Observable<YearPitchingData> {
+    return from(this.fetchJson<YearPitchingData>(dataPath('pitching', year)));
+  }
+
+  getWellesleyBattingData(year: number): Observable<YearBattingData> {
+    return from(this.fetchResolvedBattingData(year));
   }
 
   /** Cached game data fetch — used by both getGameData and getRoster. */
@@ -86,8 +88,8 @@ export class SoftballDataService {
     return cached;
   }
 
-  private async fetchResolvedRoster(): Promise<JerseyMap> {
-    const roster = await this.fetchJson<JerseyMap>('data/roster.json');
+  private async fetchResolvedRoster(): Promise<Roster> {
+    const roster = await this.fetchJson<Roster>('data/roster.json');
 
     if (!this.context.isVerified()) {
       // Use the most recent year with data for the roster mapping
@@ -98,6 +100,22 @@ export class SoftballDataService {
     }
 
     return roster;
+  }
+
+  private async fetchResolvedBattingData(
+    year: number
+  ): Promise<YearBattingData> {
+    const data = await this.fetchJson<YearBattingData>(
+      dataPath('batting-stats', year)
+    );
+
+    if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
+      const games = await this.fetchGameDataCached(year);
+
+      return resolveYearBattingData(data, games, year);
+    }
+
+    return data;
   }
 
   private async fetchJson<T>(path: string): Promise<T> {
