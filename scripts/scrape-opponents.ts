@@ -2,12 +2,16 @@
  * Scrape opponent team rosters, batting stats (with derived wOBA), and
  * optionally pitching play-by-play data or full gamedata (lineup + play-by-play).
  *
+ * Current-year gamedata uses unsuffixed names (gamedata.json);
+ * historical files keep year suffixes (gamedata-2025.json, etc.).
+ *
  * Usage:
  *   npm run scrape-opponents                                     # all teams, batting only
  *   npm run scrape-opponents -- --team wpi                        # single team
  *   npm run scrape-opponents -- --years 2024,2025                 # override years
  *   npm run scrape-opponents -- --with-pitching                   # include pitching data
  *   npm run scrape-opponents -- --with-gamedata                   # include full gamedata
+ *   npm run scrape-opponents -- --roster-only                     # rosters only, skip stats
  *   npm run scrape-opponents -- --team wpi --with-gamedata --years 2025
  */
 
@@ -57,6 +61,7 @@ interface RosterPlayer {
   classYear: string;
   position: string | null;
   bats: BatHand | null;
+  throws: 'L' | 'R' | null;
 }
 
 interface BattingStats {
@@ -204,7 +209,7 @@ interface GamedataOutput {
 // ── Constants ──
 
 const DELAY_MS = 500;
-const DEFAULT_YEARS = [2025, 2024, 2023];
+const DEFAULT_YEARS = [2026, 2025, 2024, 2023];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -301,18 +306,34 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
             .trim()
         : classYearEls.text().trim();
 
-    // Position from .rp_position_short
-    const posText = $el.find('.rp_position_short').text().trim();
+    // Position — teams customize which selector is used.
+    // Some templates nest long/short variants; grab the most specific match first.
+    const posText =
+      $el.find('.rp_position_short').first().text().trim() ||
+      $el.find('.sidearm-roster-player-position-long-short').first().text().trim() ||
+      $el.find('.sidearm-roster-player-position span.text-bold').first().text().trim() ||
+      $el.find('.sidearm-roster-player-position').first().text().trim();
     const position = posText || null;
 
-    // B/T from [data-custom-label="B/T:"] — may not be in default template
+    // B/T — teams customize which element holds this; try multiple selectors.
+    // Use .first() because some templates duplicate the element (abbreviated + full rows).
     let bats: BatHand | null = null;
-    const btEl = $el.find('[data-custom-label="B/T:"]');
-    if (btEl.length > 0) {
-      const btText = btEl.text().trim(); // e.g. "R/R" or "L/R"
-      const batChar = btText.split('/')[0]?.trim().toUpperCase();
+    let throws: 'L' | 'R' | null = null;
+    const btText =
+      $el.find('[data-custom-label="B/T:"]').first().text().trim() ||
+      $el.find('[data-custom-label="B-T:"]').first().text().trim() ||
+      $el.find('.sidearm-roster-player-custom1').first().text().trim() ||
+      $el.find('.sidearm-roster-player-custom2').first().text().trim() ||
+      $el.find('.sidearm-roster-player-custom3').first().text().trim();
+    if (btText && /[LRS]\s*[\/\-]\s*[LR]/i.test(btText)) {
+      const btParts = btText.split(/[\/\-]/);
+      const batChar = btParts[0]?.trim().toUpperCase();
       if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
         bats = batChar;
+      }
+      const throwChar = btParts[1]?.trim().toUpperCase();
+      if (throwChar === 'L' || throwChar === 'R') {
+        throws = throwChar;
       }
     }
 
@@ -324,6 +345,7 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
       classYear,
       position,
       bats,
+      throws,
     });
   });
 
@@ -563,6 +585,26 @@ function parseWithPitchingFlag(): boolean {
 
 function parseWithGamedataFlag(): boolean {
   return process.argv.includes('--with-gamedata');
+}
+
+function parseRosterOnlyFlag(): boolean {
+  return process.argv.includes('--roster-only');
+}
+
+const CURRENT_YEAR = new Date().getFullYear();
+
+function gamedataFilename(year: number): string {
+  return year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
+}
+
+function battingFilename(year: number): string {
+  return year === CURRENT_YEAR
+    ? 'batting-stats.json'
+    : `batting-stats-${year}.json`;
+}
+
+function pitchingFilename(year: number): string {
+  return year === CURRENT_YEAR ? 'pitching.json' : `pitching-${year}.json`;
 }
 
 // ── Empty career stats for first-years ──
@@ -1363,6 +1405,7 @@ async function main(): Promise<void> {
   const years = parseYearsArg();
   const withPitching = parseWithPitchingFlag();
   const withGamedata = parseWithGamedataFlag();
+  const rosterOnly = parseRosterOnlyFlag();
   const outputDir = path.resolve(__dirname, '../public/data/opponents');
   fs.mkdirSync(outputDir, { recursive: true });
 
@@ -1377,11 +1420,53 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(`Scraping opponents for years: ${years.join(', ')}`);
   console.log(`Teams: ${Object.keys(teamsToScrape).join(', ')}`);
+  console.log(`Output directory: ${outputDir}`);
+
+  if (rosterOnly) {
+    console.log('--roster-only: scraping rosters only');
+
+    for (const [slug, domain] of Object.entries(teamsToScrape)) {
+      console.log(`\n=== ${slug} (${domain}) ===`);
+      console.log('  Fetching roster...');
+      const rosterHtml = await fetchPage(
+        `https://${domain}/sports/softball/roster`
+      );
+      const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
+      const teamDir = path.join(outputDir, slug);
+      fs.mkdirSync(teamDir, { recursive: true });
+      const rosterOutPath = path.join(teamDir, 'roster.json');
+      const enrichedRoster: Record<string, { jersey: number; classYear: string; position: string | null; bats: BatHand | null; throws: 'L' | 'R' | null }> = {};
+      roster.forEach((rp) => {
+        const key = normalizeName(`${rp.lastName}, ${rp.firstName}`);
+        if (rp.jerseyNumber !== null) {
+          enrichedRoster[key] = {
+            jersey: rp.jerseyNumber,
+            classYear: rp.classYear,
+            position: rp.position,
+            bats: rp.bats,
+            throws: rp.throws,
+          };
+        }
+      });
+      fs.writeFileSync(rosterOutPath, JSON.stringify(enrichedRoster));
+      console.log(
+        `  Wrote ${rosterOutPath} (${Object.keys(enrichedRoster).length} players)`
+      );
+
+      if (Object.keys(teamsToScrape).length > 1) {
+        await delay(DELAY_MS);
+      }
+    }
+
+    console.log('\nDone!');
+
+    return;
+  }
+
+  console.log(`Scraping opponents for years: ${years.join(', ')}`);
   console.log(`Pitching play-by-play: ${withPitching ? 'YES' : 'no'}`);
   console.log(`Full gamedata: ${withGamedata ? 'YES' : 'no'}`);
-  console.log(`Output directory: ${outputDir}`);
 
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
     const teamDir = path.join(outputDir, slug);
@@ -1389,22 +1474,69 @@ async function main(): Promise<void> {
 
     const result = await scrapeTeam(slug, domain, years);
 
-    const outPath = path.join(teamDir, 'historical-stats.json');
-    fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
-    console.log(`  Wrote ${outPath} (${result.players.length} players)`);
+    // Write per-year batting files
+    const scrapedAt = result.scrapedAt;
+    years.forEach((year) => {
+      const yearPlayers = result.players
+        .filter((p) => p.seasons.some((s) => s.year === year))
+        .map((p) => ({
+          name: p.name,
+          jerseyNumber: p.jerseyNumber,
+          classYear: p.classYear,
+          position: p.position,
+          bats: p.bats,
+          season: p.seasons.find((s) => s.year === year)!,
+        }));
+
+      if (yearPlayers.length === 0) {
+        return;
+      }
+
+      const yearData = {
+        slug,
+        domain,
+        scrapedAt,
+        year,
+        teamGames: result.teamGamesByYear[String(year)] ?? 0,
+        players: yearPlayers,
+      };
+      const outPath = path.join(teamDir, battingFilename(year));
+      fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
+      console.log(
+        `  Wrote ${outPath} (${yearPlayers.length} players)`
+      );
+    });
 
     // Optionally scrape pitching play-by-play
     if (withPitching) {
       const pitchingResult = await scrapeTeamPitching(slug, domain, years);
 
-      const pitchingOutPath = path.join(teamDir, 'pitching.json');
-      fs.writeFileSync(
-        pitchingOutPath,
-        JSON.stringify(pitchingResult, null, 2)
-      );
-      console.log(
-        `  Wrote ${pitchingOutPath} (${pitchingResult.games.length} games)`
-      );
+      // Write per-year pitching files
+      years.forEach((year) => {
+        const stats =
+          pitchingResult.pitchingStatsByYear[String(year)] ?? [];
+        const games = pitchingResult.games.filter(
+          (g) => g.year === year
+        );
+
+        if (stats.length === 0 && games.length === 0) {
+          return;
+        }
+
+        const yearData = {
+          slug,
+          domain,
+          scrapedAt: pitchingResult.scrapedAt,
+          year,
+          pitchingStats: stats,
+          games,
+        };
+        const outPath = path.join(teamDir, pitchingFilename(year));
+        fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
+        console.log(
+          `  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`
+        );
+      });
     }
 
     // Optionally scrape full gamedata (lineup + play-by-play)
@@ -1415,7 +1547,7 @@ async function main(): Promise<void> {
         ([year, games]) => {
           const gamedataOutPath = path.join(
             teamDir,
-            `gamedata-${year}.json`
+            gamedataFilename(Number(year))
           );
           fs.writeFileSync(
             gamedataOutPath,

@@ -7,18 +7,25 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import type {
-  OpponentDisplayRow,
-  OpponentPitchingData,
-  OpponentTeam,
-  PlayerTier,
-  SortDir,
-  SortKey,
-  TeamEntry,
-  YearData,
+import {
+  mergeBattingYears,
+  mergePitchingYears,
+  type OpponentDisplayRow,
+  type OpponentPitchingData,
+  type OpponentRoster,
+  type OpponentTeam,
+  type OpponentYearBattingData,
+  type OpponentYearPitchingData,
+  type PlayerTier,
+  type SortDir,
+  type SortKey,
+  type TeamEntry,
+  type YearData,
 } from '@ws/data-access';
 import { BreakpointService } from '@ws/shared/util';
 import { calculateWoba } from '@ws/stats-core';
+import { forkJoin, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 import { OpponentSprayChart } from './opponent-spray-chart/opponent-spray-chart';
 import { PitcherAnalysis } from './pitcher-analysis/pitcher-analysis';
@@ -206,6 +213,12 @@ export class Opponents {
     this.displayRows().filter((r) => r.tier === 'reserve')
   );
 
+  /**
+   * Set of roster player names from roster.json (already "last, first" lowercase format)
+   * used to filter graduated players from pitching analysis.
+   */
+  readonly rosterNames = signal<Set<string>>(new Set());
+
   readonly empty = computed(
     () =>
       this.regulars().length === 0 &&
@@ -265,21 +278,46 @@ export class Opponents {
     this.expandedPlayer.set(null);
     this.yearSortYear.set(null);
 
-    this.http
-      .get<OpponentTeam>(
-        `${document.querySelector('base')?.getAttribute('href') || '/'}data/opponents/${slug}/historical-stats.json`
-      )
-      .subscribe({
-        next: (data) => {
-          this.teamData.set(data);
-          this.loading.set(false);
-        },
-        error: (err) => {
-          this.error.set(err.message || 'Failed to load team data');
-          this.loading.set(false);
-          this.teamData.set(null);
-        },
-      });
+    const base =
+      document.querySelector('base')?.getAttribute('href') || '/';
+    const currentYear = new Date().getFullYear();
+    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
+
+    const requests = years.map((year) => {
+      const file =
+        year === currentYear
+          ? 'batting-stats.json'
+          : `batting-stats-${year}.json`;
+
+      return this.http
+        .get<OpponentYearBattingData>(
+          `${base}data/opponents/${slug}/${file}`
+        )
+        .pipe(catchError(() => of(null)));
+    });
+
+    // Also load roster.json for pitcher filtering
+    const rosterRequest = this.http
+      .get<OpponentRoster>(`${base}data/opponents/${slug}/roster.json`)
+      .pipe(catchError(() => of(null)));
+
+    forkJoin([forkJoin(requests), rosterRequest]).subscribe({
+      next: ([results, roster]) => {
+        const valid = results.filter(
+          (r): r is OpponentYearBattingData => r !== null
+        );
+        this.teamData.set(mergeBattingYears(valid, roster));
+        this.rosterNames.set(
+          roster ? new Set(Object.keys(roster)) : new Set()
+        );
+        this.loading.set(false);
+      },
+      error: (err) => {
+        this.error.set(err.message || 'Failed to load team data');
+        this.loading.set(false);
+        this.teamData.set(null);
+      },
+    });
   }
 
   private loadPitching(slug: string): void {
@@ -287,20 +325,32 @@ export class Opponents {
 
     const base =
       document.querySelector('base')?.getAttribute('href') || '/';
+    const currentYear = new Date().getFullYear();
+    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
-    this.http
-      .get<OpponentPitchingData>(
-        `${base}data/opponents/${slug}/pitching.json`
-      )
-      .subscribe({
-        next: (data) => {
-          this.pitchingData.set(data);
-          this.pitchingLoading.set(false);
-        },
-        error: () => {
-          this.pitchingData.set(null);
-          this.pitchingLoading.set(false);
-        },
-      });
+    const requests = years.map((year) => {
+      const file =
+        year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
+
+      return this.http
+        .get<OpponentYearPitchingData>(
+          `${base}data/opponents/${slug}/${file}`
+        )
+        .pipe(catchError(() => of(null)));
+    });
+
+    forkJoin(requests).subscribe({
+      next: (results) => {
+        const valid = results.filter(
+          (r): r is OpponentYearPitchingData => r !== null
+        );
+        this.pitchingData.set(mergePitchingYears(valid));
+        this.pitchingLoading.set(false);
+      },
+      error: () => {
+        this.pitchingData.set(null);
+        this.pitchingLoading.set(false);
+      },
+    });
   }
 }

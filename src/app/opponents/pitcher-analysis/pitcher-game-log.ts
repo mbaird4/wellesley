@@ -5,13 +5,14 @@ import {
   input,
   signal,
 } from '@angular/core';
+import { SlideToggle } from '@ws/shared/ui';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/stats-core';
 import {
   battingAvgAgainst,
   wobaAgainst,
-  wobaGradientStyle,
+  wobaColorStyle,
 } from '@ws/stats-core';
-import { SlideToggle } from '@ws/shared/ui';
+
 import type { InningsTableRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
@@ -44,8 +45,8 @@ function buildInningView(
     walks: inn.walks,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
-    avgStyle: showColors ? wobaGradientStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
-    wobaStyle: showColors ? wobaGradientStyle(0.55 - woba) : EMPTY_STYLE,
+    avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
+    wobaStyle: showColors ? wobaColorStyle(0.55 - woba) : EMPTY_STYLE,
   };
 }
 
@@ -61,7 +62,10 @@ interface GameLogView {
 @Component({
   selector: 'ws-pitcher-game-log',
   standalone: true,
-  imports: [SlideToggle, PitcherInningsTable],
+  imports: [
+    SlideToggle,
+    PitcherInningsTable,
+  ],
   host: { class: 'block' },
   templateUrl: './pitcher-game-log.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -75,7 +79,7 @@ export class PitcherGameLogComponent {
   readonly gameLogViews = computed<GameLogView[]>(() => {
     const showColors = this.colorCoding();
 
-    return this.gameLogs().map((log) => ({
+    return [...this.gameLogs()].reverse().map((log) => ({
       url: log.url,
       date: log.date,
       opponent: log.opponent,

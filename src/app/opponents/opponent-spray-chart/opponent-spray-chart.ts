@@ -8,7 +8,7 @@ import {
   input,
   signal,
 } from '@angular/core';
-import type { JerseyMap } from '@ws/data-access';
+import type { JerseyMap, OpponentRoster } from '@ws/data-access';
 import { SoftballDataService, SoftballProcessorService } from '@ws/data-access';
 import {
   ALL_CONTACT_QUALITIES,
@@ -31,7 +31,8 @@ import { catchError, forkJoin, of } from 'rxjs';
 
 import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
 
-const SPRAY_YEARS = [2023, 2024, 2025];
+const CURRENT_YEAR = new Date().getFullYear();
+const SPRAY_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i).reverse();
 
 /** Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly. */
 function normalizePlayerName(name: string): string {
@@ -59,15 +60,15 @@ function normalizePlayerName(name: string): string {
  * Emily Walsh). Groups names by jersey number; uses the roster's first name to pick the
  * correct initial, then longest display name as the canonical form.
  */
-function buildCanonicalNameMap(names: string[], roster: JerseyMap): Map<string, string> {
+function buildCanonicalNameMap(names: string[], roster: OpponentRoster): Map<string, string> {
   const byLastName = new Map<string, number>();
   const jerseyToFirstName = new Map<number, string>();
-  Object.entries(roster).forEach(([key, num]) => {
+  Object.entries(roster).forEach(([key, entry]) => {
     const parts = key.split(',');
     const last = parts[0].trim();
     const first = parts[1]?.trim() ?? '';
-    byLastName.set(last, num);
-    jerseyToFirstName.set(num, first);
+    byLastName.set(last, entry.jersey);
+    jerseyToFirstName.set(entry.jersey, first);
   });
 
   // Match each display name to a jersey number
@@ -161,7 +162,7 @@ export class OpponentSprayChart {
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
   readonly dataByYear = signal<Map<number, SprayDataPoint[]>>(new Map());
-  private readonly rawRoster = signal<JerseyMap>({});
+  private readonly rawRoster = signal<OpponentRoster>({});
 
   readonly viewMode = signal<'split' | 'combined'>('split');
   readonly selectedYears = signal<string[]>(SPRAY_YEARS.map(String));
@@ -196,9 +197,7 @@ export class OpponentSprayChart {
   readonly rosteredPlayers = computed(() => {
     const map = this.jerseyMap();
 
-    return this.players()
-      .filter((p) => map[p] !== undefined)
-      .sort((a, b) => map[a] - map[b]);
+    return Object.keys(map).sort((a, b) => map[a] - map[b]);
   });
 
   /** Map display names (e.g. "S. Moore") → jersey numbers by matching last name */
@@ -208,9 +207,9 @@ export class OpponentSprayChart {
 
     // Build last-name lookup from roster: "moore" → 7
     const byLastName = new Map<string, number>();
-    Object.entries(roster).forEach(([key, num]) => {
+    Object.entries(roster).forEach(([key, entry]) => {
       const last = key.split(',')[0].trim();
-      byLastName.set(last, num);
+      byLastName.set(last, entry.jersey);
     });
 
     this.players().forEach((displayName) => {
@@ -229,6 +228,22 @@ export class OpponentSprayChart {
           }
         }
       }
+    });
+
+    // Add roster players not yet in the map (no spray data)
+    const mappedJerseys = new Set(Object.values(map));
+    Object.entries(roster).forEach(([key, entry]) => {
+      if (mappedJerseys.has(entry.jersey)) {
+        return;
+      }
+
+      const parts = key.split(',').map((s) => s.trim());
+      const last = parts[0] || '';
+      const first = parts[1] || '';
+      const titleCase = (s: string) =>
+        s.replace(/\b\w/g, (c) => c.toUpperCase());
+      const displayName = `${titleCase(first)[0]}. ${titleCase(last)}`;
+      map[displayName] = entry.jersey;
     });
 
     return map;
@@ -320,7 +335,7 @@ export class OpponentSprayChart {
     this.loading.set(true);
     this.error.set(null);
     this.dataByYear.set(new Map());
-    this.rawRoster.set({});
+    this.rawRoster.set({} as OpponentRoster);
     this.filters.set({
       playerName: null,
       outcomes: [...ALL_OUTCOMES],
@@ -331,7 +346,7 @@ export class OpponentSprayChart {
     });
 
     forkJoin({
-      roster: this.dataService.getOpponentRoster(slug).pipe(catchError(() => of({} as JerseyMap))),
+      roster: this.dataService.getOpponentRoster(slug).pipe(catchError(() => of({} as OpponentRoster))),
       years: forkJoin(
         SPRAY_YEARS.map((year) =>
           this.dataService.getOpponentGameData(slug, year).pipe(catchError(() => of([])))

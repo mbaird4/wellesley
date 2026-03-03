@@ -26,6 +26,16 @@ export interface OpponentPlayer {
 
 export type BatHand = 'L' | 'R' | 'S';
 
+export interface OpponentRosterEntry {
+  jersey: number;
+  classYear: string;
+  position: string | null;
+  bats: BatHand | null;
+  throws: 'L' | 'R' | null;
+}
+
+export type OpponentRoster = Record<string, OpponentRosterEntry>;
+
 export interface PlayerHandedness {
   name: string;
   bats: BatHand;
@@ -50,6 +60,7 @@ export interface OpponentPitchingStats {
 
 /** Per-game play-by-play for an opponent */
 export interface OpponentGamePbP {
+  year: number;
   url: string;
   date: string;
   opponent: string;
@@ -125,6 +136,35 @@ export interface OpponentCareerStats {
   sbAtt: number;
   woba: number;
   pa: number;
+}
+
+/** Per-year batting data file shape (batting-stats.json / batting-stats-{year}.json) */
+export interface OpponentYearBattingData {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  year: number;
+  teamGames: number;
+  players: OpponentYearPlayer[];
+}
+
+export interface OpponentYearPlayer {
+  name: string;
+  jerseyNumber: number | null;
+  classYear: string;
+  position: string | null;
+  bats: BatHand | null;
+  season: OpponentSeasonStats;
+}
+
+/** Per-year pitching data file shape (pitching.json / pitching-{year}.json) */
+export interface OpponentYearPitchingData {
+  slug: string;
+  domain: string;
+  scrapedAt: string;
+  year: number;
+  pitchingStats: OpponentPitchingStats[];
+  games: OpponentGamePbP[];
 }
 
 export interface CumulativeEntry {

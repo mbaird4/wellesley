@@ -4,6 +4,7 @@ import { from } from 'rxjs';
 
 import { DataContextService } from './data-context.service';
 import { resolveGameData, resolveRoster } from './data-resolve';
+import type { OpponentRoster } from './opponent-types';
 
 export interface GameData {
   url?: string;
@@ -19,7 +20,12 @@ export interface PlayByPlayInning {
 
 export type JerseyMap = Record<string, number>;
 
-const RESOLVE_YEARS = [2023, 2024, 2025, 2026];
+const CURRENT_YEAR = new Date().getFullYear();
+const RESOLVE_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
+
+function dataPath(base: string, year: number): string {
+  return year === CURRENT_YEAR ? `data/${base}.json` : `data/${base}-${year}.json`;
+}
 
 @Injectable({
   providedIn: 'root',
@@ -33,18 +39,21 @@ export class SoftballDataService {
   }
 
   getOpponentGameData(slug: string, year: number): Observable<GameData[]> {
-    return from(
-      this.fetchGameJson(`data/opponents/${slug}/gamedata-${year}.json`)
-    );
+    const file =
+      year === CURRENT_YEAR
+        ? `data/opponents/${slug}/gamedata.json`
+        : `data/opponents/${slug}/gamedata-${year}.json`;
+
+    return from(this.fetchGameJson(file));
   }
 
   getRoster(): Observable<JerseyMap> {
     return from(this.fetchResolvedRoster());
   }
 
-  getOpponentRoster(slug: string): Observable<JerseyMap> {
+  getOpponentRoster(slug: string): Observable<OpponentRoster> {
     return from(
-      this.fetchJson<JerseyMap>(`data/opponents/${slug}/roster.json`)
+      this.fetchJson<OpponentRoster>(`data/opponents/${slug}/roster.json`)
     );
   }
 
@@ -53,7 +62,7 @@ export class SoftballDataService {
     let cached = this.gameDataCache.get(year);
 
     if (!cached) {
-      cached = this.fetchGameJson(`data/gamedata-${year}.json`).then(
+      cached = this.fetchGameJson(dataPath('gamedata', year)).then(
         (games) => {
           if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
             return resolveGameData(games, year);
