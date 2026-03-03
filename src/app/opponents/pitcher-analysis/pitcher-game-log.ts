@@ -120,9 +120,7 @@ export class PitcherGameLogComponent {
       .map(([year, games]) => ({ year, games }));
   });
 
-  readonly hasMultipleYears = computed(
-    () => this.yearGroups().length > 1
-  );
+  readonly hasMultipleYears = computed(() => this.yearGroups().length > 1);
 
   toggleExpand(url: string): void {
     this.expandedUrl.update((current) => (current === url ? null : url));
