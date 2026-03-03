@@ -1,0 +1,12 @@
+{
+  "name": "woba",
+  "sourceRoot": "libs/woba/src",
+  "prefix": "ws",
+  "projectType": "library",
+  "tags": ["type:feature"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

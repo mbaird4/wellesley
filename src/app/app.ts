@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { DataContextService } from '@ws/data-access';
+import { DataContextService } from '@ws/core/data';
 
 const PASSWORD_HASH =
   '0d3e8d6bfcf410ae73561671871f8b258d64529620c2dad88b5c46dbe4790af6';

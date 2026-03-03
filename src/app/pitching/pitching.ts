@@ -5,17 +5,15 @@ import {
   type OnInit,
   signal,
 } from '@angular/core';
+import { mergePitchingYears, SoftballDataService } from '@ws/core/data';
 import {
-  mergePitchingYears,
   type PitchingData,
-  SoftballDataService,
   toJerseyMap,
   type YearPitchingData,
-} from '@ws/data-access';
+} from '@ws/core/models';
+import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-
-import { PitcherAnalysis } from '../opponents/pitcher-analysis/pitcher-analysis';
 
 const CURRENT_YEAR = new Date().getFullYear();
 const YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);

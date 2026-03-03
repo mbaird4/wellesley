@@ -1,0 +1,11 @@
+{
+  "name": "core-util",
+  "sourceRoot": "libs/core/util/src",
+  "projectType": "library",
+  "tags": ["type:util"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

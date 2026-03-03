@@ -14,10 +14,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ws/stats-core": ["libs/stats-core/src/index.ts"],
-      "@ws/data-access": ["libs/data-access/src/index.ts"],
-      "@ws/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@ws/shared/util": ["libs/shared/util/src/index.ts"]
+      "@ws/core/models": ["libs/core/models/src/index.ts"],
+      "@ws/core/processors": ["libs/core/processors/src/index.ts"],
+      "@ws/core/data": ["libs/core/data/src/index.ts"],
+      "@ws/core/ui": ["libs/core/ui/src/index.ts"],
+      "@ws/core/util": ["libs/core/util/src/index.ts"],
+      "@ws/pitching": ["libs/pitching/src/index.ts"],
+      "@ws/woba": ["libs/woba/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

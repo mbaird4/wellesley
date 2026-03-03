@@ -6,7 +6,7 @@ import {
   provideBrowserGlobalErrorListeners,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { DataContextService } from '@ws/data-access';
+import { DataContextService } from '@ws/core/data';
 
 import { appRoutes } from './app.routes';
 

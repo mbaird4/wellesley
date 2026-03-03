@@ -5,9 +5,9 @@ import {
   input,
   output,
 } from '@angular/core';
-import type { DisplayRow, SortDir, SortKey } from '@ws/data-access';
-import { ClassYearPipe } from '@ws/shared/ui';
-import { formatWoba, wobaGradientStyle } from '@ws/stats-core';
+import type { DisplayRow, SortDir, SortKey } from '@ws/core/models';
+import { formatWoba, wobaGradientStyle } from '@ws/core/processors';
+import { ClassYearPipe } from '@ws/core/ui';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 

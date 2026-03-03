@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
-import { DataContextService } from '@ws/data-access';
+import { DataContextService } from '@ws/core/data';
 
 import { App } from './app';
 

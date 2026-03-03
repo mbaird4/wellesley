@@ -13,7 +13,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'woba',
-    loadComponent: () => import('./woba/woba').then((m) => m.Woba),
+    loadComponent: () => import('@ws/woba').then((m) => m.Woba),
   },
   {
     path: 'scoring',

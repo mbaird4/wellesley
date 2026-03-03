@@ -1,0 +1,12 @@
+{
+  "name": "core-ui",
+  "sourceRoot": "libs/core/ui/src",
+  "prefix": "ws",
+  "projectType": "library",
+  "tags": ["type:ui"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

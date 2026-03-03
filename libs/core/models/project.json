@@ -1,0 +1,11 @@
+{
+  "name": "core-models",
+  "sourceRoot": "libs/core/models/src",
+  "projectType": "library",
+  "tags": ["type:models"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

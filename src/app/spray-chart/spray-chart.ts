@@ -7,12 +7,21 @@ import {
   signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import type { JerseyMap, Roster } from '@ws/data-access';
+import { SoftballDataService, SoftballStatsService } from '@ws/core/data';
 import {
-  SoftballDataService,
-  SoftballStatsService,
+  type JerseyMap,
+  type Roster,
+  type SprayChartSummary,
+  type SprayDataPoint,
+  type SprayZone,
   toJerseyMap,
-} from '@ws/data-access';
+} from '@ws/core/models';
+import {
+  buildCanonicalNameMap,
+  computeSprayZones,
+  normalizePlayerName,
+  parseSprayData,
+} from '@ws/core/processors';
 import {
   ALL_CONTACT_QUALITIES,
   ALL_CONTACT_TYPES,
@@ -24,18 +33,7 @@ import {
   SprayFilters,
   type SprayFilterState,
   SprayLegend,
-} from '@ws/shared/ui';
-import type {
-  SprayChartSummary,
-  SprayDataPoint,
-  SprayZone,
-} from '@ws/stats-core';
-import {
-  buildCanonicalNameMap,
-  computeSprayZones,
-  normalizePlayerName,
-  parseSprayData,
-} from '@ws/stats-core';
+} from '@ws/core/ui';
 import { catchError, forkJoin, of } from 'rxjs';
 
 @Component({

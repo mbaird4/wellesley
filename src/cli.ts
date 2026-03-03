@@ -4,8 +4,8 @@
  * Usage:
  *   npx ts-node src/cli.ts --year 2025
  */
-import type { GameData, PlayByPlayInning } from '@ws/stats-core';
-import { processGames } from '@ws/stats-core';
+import type { GameData, PlayByPlayInning } from '@ws/core/models';
+import { processGames } from '@ws/core/processors';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 

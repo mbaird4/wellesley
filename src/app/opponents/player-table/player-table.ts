@@ -5,10 +5,14 @@ import {
   input,
   output,
 } from '@angular/core';
-import type { DisplayRow, SortDir, SortKey } from '@ws/data-access';
-import { ClassYearPipe, WobaBadge } from '@ws/shared/ui';
-import { getWobaTier } from '@ws/stats-core';
-import { formatWoba, tierClass, wobaGradientStyle } from '@ws/stats-core';
+import type { DisplayRow, SortDir, SortKey } from '@ws/core/models';
+import {
+  formatWoba,
+  getWobaTier,
+  tierClass,
+  wobaGradientStyle,
+} from '@ws/core/processors';
+import { ClassYearPipe, WobaBadge } from '@ws/core/ui';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 

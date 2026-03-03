@@ -6,14 +6,14 @@ import {
   inject,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SoftballStatsService } from '@ws/core/data';
 import type {
   BaseRunnerRow,
   BaseSituation,
   GameWithSnapshots,
   ResultRow,
-} from '@ws/data-access';
-import { SoftballStatsService } from '@ws/data-access';
-import { GameViewer } from '@ws/shared/ui';
+} from '@ws/core/models';
+import { GameViewer } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-lineup-stats',

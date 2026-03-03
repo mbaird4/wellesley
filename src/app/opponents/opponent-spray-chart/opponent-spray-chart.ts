@@ -8,12 +8,21 @@ import {
   input,
   signal,
 } from '@angular/core';
-import type { JerseyMap, Roster } from '@ws/data-access';
+import { SoftballDataService, SoftballProcessorService } from '@ws/core/data';
 import {
-  SoftballDataService,
-  SoftballProcessorService,
+  type JerseyMap,
+  type Roster,
+  type SprayChartSummary,
+  type SprayDataPoint,
+  type SprayZone,
   toJerseyMap,
-} from '@ws/data-access';
+} from '@ws/core/models';
+import {
+  buildCanonicalNameMap,
+  computeSprayZones,
+  normalizePlayerName,
+  parseSprayData,
+} from '@ws/core/processors';
 import {
   ALL_CONTACT_QUALITIES,
   ALL_CONTACT_TYPES,
@@ -27,19 +36,8 @@ import {
   type SprayFilterState,
   SprayLegend,
   type ToggleOption,
-} from '@ws/shared/ui';
-import { BreakpointService } from '@ws/shared/util';
-import type {
-  SprayChartSummary,
-  SprayDataPoint,
-  SprayZone,
-} from '@ws/stats-core';
-import {
-  buildCanonicalNameMap,
-  computeSprayZones,
-  normalizePlayerName,
-  parseSprayData,
-} from '@ws/stats-core';
+} from '@ws/core/ui';
+import { BreakpointService } from '@ws/core/util';
 import { catchError, forkJoin, of } from 'rxjs';
 
 import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';

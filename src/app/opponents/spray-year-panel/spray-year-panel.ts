@@ -4,8 +4,8 @@ import {
   input,
   output,
 } from '@angular/core';
-import { SprayField, SprayLegend } from '@ws/shared/ui';
-import type { SprayZone, ZoneAggregate } from '@ws/stats-core';
+import type { SprayZone, ZoneAggregate } from '@ws/core/models';
+import { SprayField, SprayLegend } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-spray-year-panel',

@@ -6,20 +6,19 @@ import {
   inject,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SoftballStatsService } from '@ws/data-access';
-import {
-  FormatOutsPipe,
-  FormatPlayTypePipe,
-  FormatSituationPipe,
-  IsEmptyPipe,
-} from '@ws/shared/ui';
+import { SoftballStatsService } from '@ws/core/data';
 import type {
   BaseSituation,
   GameScoringPlays,
   SacBuntSummary,
   ScoringPlaySummary,
-} from '@ws/stats-core';
-import { ScoringPlay } from '@ws/stats-core';
+} from '@ws/core/models';
+import {
+  FormatOutsPipe,
+  FormatPlayTypePipe,
+  FormatSituationPipe,
+  IsEmptyPipe,
+} from '@ws/core/ui';
 
 interface PlayerScoringBreakdown {
   name: string;

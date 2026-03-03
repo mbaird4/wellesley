@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import type { DisplayRow } from '@ws/data-access';
-import { getWobaTier } from '@ws/stats-core';
-import { formatWoba, tierClass } from '@ws/stats-core';
+import type { DisplayRow } from '@ws/core/models';
+import { formatWoba, getWobaTier, tierClass } from '@ws/core/processors';
 
 @Component({
   selector: 'ws-player-detail',

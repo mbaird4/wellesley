@@ -1,0 +1,11 @@
+{
+  "name": "core-data",
+  "sourceRoot": "libs/core/data/src",
+  "projectType": "library",
+  "tags": ["type:data"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

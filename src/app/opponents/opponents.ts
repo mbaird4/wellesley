@@ -7,11 +7,10 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import type { PitchingData, YearPitchingData } from '@ws/data-access';
+import { mergeBattingYears, mergePitchingYears } from '@ws/core/data';
 import {
   type DisplayRow,
-  mergeBattingYears,
-  mergePitchingYears,
+  type PitchingData,
   type PlayerTier,
   type Roster,
   type SortDir,
@@ -21,14 +20,15 @@ import {
   toJerseyMap,
   type YearBattingData,
   type YearData,
-} from '@ws/data-access';
-import { BreakpointService } from '@ws/shared/util';
-import { calculateWoba } from '@ws/stats-core';
+  type YearPitchingData,
+} from '@ws/core/models';
+import { calculateWoba } from '@ws/core/processors';
+import { BreakpointService } from '@ws/core/util';
+import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 import { OpponentSprayChart } from './opponent-spray-chart/opponent-spray-chart';
-import { PitcherAnalysis } from './pitcher-analysis/pitcher-analysis';
 import { PlayerCardList } from './player-card-list/player-card-list';
 import { PlayerTable } from './player-table/player-table';
 import { TeamSelector } from './team-selector/team-selector';

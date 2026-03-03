@@ -20,28 +20,44 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
             {
-              sourceTag: 'type:core',
+              sourceTag: 'type:models',
               onlyDependOnLibsWithTags: [],
             },
             {
               sourceTag: 'type:util',
-              onlyDependOnLibsWithTags: ['type:core'],
+              onlyDependOnLibsWithTags: [],
             },
             {
-              sourceTag: 'type:data-access',
-              onlyDependOnLibsWithTags: ['type:core', 'type:util'],
+              sourceTag: 'type:processors',
+              onlyDependOnLibsWithTags: ['type:models'],
+            },
+            {
+              sourceTag: 'type:data',
+              onlyDependOnLibsWithTags: ['type:models', 'type:processors'],
             },
             {
               sourceTag: 'type:ui',
-              onlyDependOnLibsWithTags: ['type:core', 'type:util'],
+              onlyDependOnLibsWithTags: ['type:models', 'type:processors'],
+            },
+            {
+              sourceTag: 'type:feature',
+              onlyDependOnLibsWithTags: [
+                'type:models',
+                'type:processors',
+                'type:data',
+                'type:ui',
+                'type:util',
+              ],
             },
             {
               sourceTag: 'type:app',
               onlyDependOnLibsWithTags: [
-                'type:core',
-                'type:util',
-                'type:data-access',
+                'type:models',
+                'type:processors',
+                'type:data',
                 'type:ui',
+                'type:util',
+                'type:feature',
               ],
             },
           ],
