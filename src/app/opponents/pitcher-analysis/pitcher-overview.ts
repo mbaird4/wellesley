@@ -27,4 +27,5 @@ export interface PitcherOverviewData {
 })
 export class PitcherOverview {
   readonly data = input.required<PitcherOverviewData | null>();
+  readonly yearLabel = input<string>('');
 }

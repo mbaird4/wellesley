@@ -45,6 +45,7 @@ interface SerializedGameData {
 
 const DELAY_MS = 400;
 const DEFAULT_YEARS = [2025];
+const CURRENT_YEAR = new Date().getFullYear();
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -530,7 +531,9 @@ async function main(): Promise<void> {
 
       const teamDir = path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
-      const outPath = path.join(teamDir, `gamedata-${year}.json`);
+      const filename =
+        year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
+      const outPath = path.join(teamDir, filename);
       fs.writeFileSync(outPath, JSON.stringify(games));
       console.log(`  Wrote ${outPath} (${games.length} games)`);
     }

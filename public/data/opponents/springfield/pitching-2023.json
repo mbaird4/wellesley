@@ -1,0 +1,3583 @@
+{
+  "slug": "springfield",
+  "domain": "springfieldcollegepride.com",
+  "scrapedAt": "2026-03-02T22:18:37.793Z",
+  "year": 2023,
+  "pitchingStats": [
+    {
+      "name": "DeRosa, Amelia",
+      "w": 9,
+      "l": 1,
+      "era": 2.2,
+      "app": 16,
+      "gs": 12,
+      "ip": 70,
+      "h": 69,
+      "r": 30,
+      "er": 22,
+      "bb": 13,
+      "so": 38,
+      "hr": 6
+    },
+    {
+      "name": "Pugliese, Ashley",
+      "w": 7,
+      "l": 0,
+      "era": 3.32,
+      "app": 16,
+      "gs": 9,
+      "ip": 50.2,
+      "h": 60,
+      "r": 24,
+      "er": 24,
+      "bb": 23,
+      "so": 24,
+      "hr": 1
+    },
+    {
+      "name": "Kane, Gillian",
+      "w": 13,
+      "l": 5,
+      "era": 3.44,
+      "app": 22,
+      "gs": 20,
+      "ip": 110,
+      "h": 117,
+      "r": 57,
+      "er": 54,
+      "bb": 56,
+      "so": 75,
+      "hr": 4
+    },
+    {
+      "name": "McCauliffe, Lily",
+      "w": 0,
+      "l": 0,
+      "era": 1.4,
+      "app": 3,
+      "gs": 0,
+      "ip": 5,
+      "h": 2,
+      "r": 1,
+      "er": 1,
+      "bb": 4,
+      "so": 5,
+      "hr": 0
+    },
+    {
+      "name": "Gell, Emily",
+      "w": 5,
+      "l": 3,
+      "era": 3.77,
+      "app": 20,
+      "gs": 2,
+      "ip": 42.2,
+      "h": 44,
+      "r": 27,
+      "er": 23,
+      "bb": 18,
+      "so": 48,
+      "hr": 2
+    },
+    {
+      "name": "Carey, Logann",
+      "w": 1,
+      "l": 0,
+      "era": 3.82,
+      "app": 2,
+      "gs": 0,
+      "ip": 3.2,
+      "h": 6,
+      "r": 2,
+      "er": 2,
+      "bb": 2,
+      "so": 1,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/carroll-wis-/boxscore/8122",
+      "date": "3/12/2023",
+      "opponent": "Carroll Wis ",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Curtis, Abby grounded out to 3b, bunt.",
+            "Harshbarger, Lauren singled to shortstop.",
+            "Johnson, Kiana walked; Harshbarger, Lauren advanced to second.",
+            "Goluch, Reagan reached on a fielder's choice to second base; Johnson, Kiana out at second 2b to ss; Harshbarger, Lauren advanced to third.",
+            "Raddeman, Sydney doubled to center field, RBI; Goluch, Reagan advanced to third; Harshbarger, Lauren scored.",
+            "Palasz, Madison struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Napoli, Antoinette flied out to rf.",
+            "Wimmer, Abby grounded out to ss.",
+            "Reed, Katilyn grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Curtis, Abby singled to left field.",
+            "Curtis, Abby stole second.",
+            "Harshbarger, Lauren out at first 3b to 2b, SAC, bunt; Curtis, Abby advanced to third.",
+            "Johnson, Kiana doubled to left field, RBI; Curtis, Abby scored.",
+            "Goluch, Reagan popped up to 2b.",
+            "Raddeman, Sydney lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Palasz, Madison grounded out to p.",
+            "Napoli, Antoinette grounded out to ss.",
+            "Nanut, Jessie pinch hit for Wimmer, Abby.",
+            "Nanut, Jessie flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rath, Bridget pinch hit for Reed, Katilyn.",
+            "Rath, Bridget grounded out to 3b, bunt.",
+            "Curtis, Abby singled to third base, bunt.",
+            "Harshbarger, Lauren reached on a fielder's choice to shortstop; Curtis, Abby out at second ss to 2b.",
+            "Harshbarger, Lauren stole second.",
+            "Johnson, Kiana reached first on a fielding error by 3b; Harshbarger, Lauren advanced to third, scored on the error.",
+            "Goluch, Reagan singled to left field; Johnson, Kiana advanced to second.",
+            "Raddeman, Sydney reached first on an error by 2b; Goluch, Reagan advanced to second; Johnson, Kiana advanced to third.",
+            "Palasz, Madison fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Napoli, Antoinette grounded out to ss.",
+            "Nanut, Jessie fouled out to c.",
+            "Rath, Bridget flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. McC to 3b for L. Puskas.",
+            "Curtis, Abby flied out to cf.",
+            "Harshbarger, Lauren grounded out to 2b.",
+            "Johnson, Kiana lined out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/fredonia/boxscore/8123",
+      "date": "3/12/2023",
+      "opponent": "Fredonia",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Wulf grounded out to ss.",
+            "A. Wandell singled to third base.",
+            "E. Chelius grounded out to 3b; A. Wandell advanced to second.",
+            "A. Santiago struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Guidry popped up to 2b.",
+            "A. Hill struck out swinging.",
+            "H. Mezzopret grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Miller struck out looking.",
+            "T. Pauwels grounded out to 2b.",
+            "L. Wulf singled to center field.",
+            "L. Wulf stole second.",
+            "A. Wandell walked.",
+            "E. Chelius flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Santiago struck out swinging.",
+            "M. Guidry struck out swinging.",
+            "A. Hill flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Mezzopret grounded out to 1b unassisted.",
+            "M. Miller struck out swinging.",
+            "T. Pauwels flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to 3b for C. Pecchia.",
+            "M. Britt to cf for L. McCauliff.",
+            "L. Wulf popped up to ss.",
+            "A. Wandell singled to right field.",
+            "E. Chelius pinch hit for E. Cunningha.",
+            "E. Chelius grounded out to p; A. Wandell advanced to second.",
+            "A. Santiago fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/geneseo/boxscore/8124",
+      "date": "3/13/2023",
+      "opponent": "Geneseo",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Smith walked.",
+            "G. Smith advanced to second on a wild pitch.",
+            "T. Guary walked.",
+            "T. Guary advanced to second on a wild pitch; G. Smith advanced to third on a wild pitch.",
+            "B. Nadzan walked.",
+            "T. Brochu walked, RBI; B. Nadzan advanced to second; T. Guary advanced to third; G. Smith scored.",
+            "H. Recine struck out swinging.",
+            "I. Kahris grounded out to 2b, RBI; T. Brochu advanced to second; B. Nadzan advanced to third; T. Guary scored.",
+            "Olejniczak grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Bolton struck out swinging.",
+            "A. McGrory struck out swinging.",
+            "G. Smith doubled to right center.",
+            "T. Guary lined out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Nadzan walked.",
+            "T. Brochu doubled to left field; B. Nadzan advanced to third.",
+            "H. Recine grounded out to 2b, RBI; T. Brochu advanced to third; B. Nadzan scored.",
+            "I. Kahris struck out swinging.",
+            "Olejniczak lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Bolton grounded out to 2b.",
+            "A. McGrory walked.",
+            "G. Smith flied out to 2b.",
+            "T. Guary flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Nadzan grounded out to p.",
+            "T. Brochu flied out to cf.",
+            "H. Recine grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Gendron to c for L. Puskas.",
+            "M. Britt to cf for C. Pecchia.",
+            "I. Kahris grounded out to 2b.",
+            "VanDerwarker pinch hit for Olejniczak.",
+            "VanDerwarker struck out looking.",
+            "S. Bolton walked.",
+            "R. Schwartz pinch hit for A. McGrory.",
+            "R. Schwartz walked; S. Bolton advanced to second.",
+            "K. Schmitz pinch hit for G. Smith.",
+            "K. Schmitz reached on a fielder's choice; R. Schwartz out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. DeRosa to p.",
+            "/  for A. Pugliese.",
+            "S. Martz pinch hit for T. Guary.",
+            "S. Martz grounded out to p.",
+            "B. Nadzan struck out swinging.",
+            "T. Brochu flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/geneseo/boxscore/8125",
+      "date": "3/13/2023",
+      "opponent": "Geneseo",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "VanDerwarker grounded out to ss.",
+            "S. Martz popped up to ss.",
+            "R. Schwartz grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Schmitz singled to right field.",
+            "A. Minton grounded out to 2b, SAC, bunt; K. Schmitz advanced to second.",
+            "B. Fraas flied out to lf.",
+            "O. Fazio singled; K. Schmitz advanced to third.",
+            "O. Fazio out at first p to 1b to 2b to 1b, picked off."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "H. Coombs struck out looking.",
+            "S. Bolton struck out swinging.",
+            "VanDerwarker walked.",
+            "VanDerwarker stole second.",
+            "S. Martz struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Schwartz flied out to cf.",
+            "K. Schmitz flied out to rf.",
+            "A. Minton walked.",
+            "B. Fraas grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "O. Fazio singled to right field.",
+            "G. Smith pinch hit for H. Coombs.",
+            "G. Smith out at first 1b to 2b, SAC, bunt; O. Fazio advanced to second.",
+            "B. Nadzan pinch hit for S. Bolton.",
+            "B. Nadzan reached first on an error by ss, advanced to second; O. Fazio advanced to third.",
+            "VanDerwarker struck out swinging.",
+            "S. Martz flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to 3b for L. Puskas.",
+            "R. Schwartz struck out swinging.",
+            "K. Schmitz walked.",
+            "Olejniczak pinch ran for K. Schmitz.",
+            "Olejniczak advanced to second on a wild pitch.",
+            "A. Minton struck out looking.",
+            "B. Fraas flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "O. Fazio singled to center field.",
+            "T. Brochu pinch hit for H. Coombs.",
+            "O. Fazio advanced to second on a wild pitch.",
+            "T. Brochu struck out swinging.",
+            "B. Nadzan flied into double play rf; O. Fazio out on the play."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/carthage/boxscore/8126",
+      "date": "3/14/2023",
+      "opponent": "Carthage",
+      "pitchers": [
+        "Gell, Emily",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Rettler doubled.",
+            "G. Vlach grounded out to ss, SAC; C. Rettler advanced to third on an error by ss.",
+            "G. Hendrick popped up to 3b.",
+            "I. Hernandez struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Bennett singled.",
+            "H. Adler pinch hit for M. Conway.",
+            "H. Adler grounded out to 3b; S. Bennett advanced to second.",
+            "A. Wierzbick struck out swinging.",
+            "O. Capuano struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Chronos struck out swinging.",
+            "C. Rettler grounded out to 3b, bunt.",
+            "G. Vlach singled.",
+            "G. Hendrick grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "I. Hernandez lined out to rf.",
+            "S. Bennett walked.",
+            "H. Adler singled; S. Bennett advanced to second.",
+            "A. Wierzbick singled, RBI; H. Adler advanced to second; S. Bennett advanced to third.",
+            "O. Capuano flied out to rf, SAC, RBI; S. Bennett scored.",
+            "K. Chronos singled, RBI; A. Wierzbick advanced to second; H. Adler scored.",
+            "C. Rettler singled, RBI; K. Chronos advanced to second; A. Wierzbick scored.",
+            "G. Vlach popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Pugliese to p for E. Gell.",
+            "G. Hendrick grounded out to 3b.",
+            "I. Hernandez flied out to rf.",
+            "S. Bennett walked.",
+            "H. Adler grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/mt-st-mary-n-y-/boxscore/8127",
+      "date": "3/14/2023",
+      "opponent": "Mt St Mary N Y ",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "McCauliffe, Lily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Killeen fouled out to 1b.",
+            "O. Ferara reached first on an error by rf.",
+            "S. Bendig struck out looking.",
+            "L. Dentato grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Cedeno grounded out to 3b.",
+            "S. Gannon struck out looking.",
+            "R. Norwood grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Reed popped up to 2b.",
+            "M. McClinche popped up to c.",
+            "A. Killeen singled.",
+            "O. Ferara singled; A. Killeen advanced to second.",
+            "S. Bendig struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Dentato flied out to rf.",
+            "J. Cedeno popped up to ss.",
+            "S. Gannon grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Norwood grounded out to ss.",
+            "S. Reed popped up to 1b.",
+            "M. McClinche struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Littman pinch hit for A. Killeen.",
+            "R. Littman singled.",
+            "O. Ferara flied out to rf.",
+            "S. Bendig singled; R. Littman advanced to second.",
+            "L. Dentato singled, RBI; S. Bendig advanced to second; R. Littman scored.",
+            "D. Lane pinch hit for J. Cedeno.",
+            "D. Donnelly pinch ran for S. Bendig.",
+            "D. Lane flied out to rf.",
+            "S. Gannon walked; L. Dentato advanced to second; D. Donnelly advanced to third.",
+            "A. Rigano pinch hit for R. Norwood.",
+            "A. Rigano grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. McCauliff to p for A. DeRosa.",
+            "S. Reed singled.",
+            "K. McAnally pinch hit for M. McClinche.",
+            "K. McAnally struck out looking.",
+            "P. Shrimpton pinch ran for S. Reed.",
+            "A. Killeen grounded out to 2b.",
+            "O. Ferara popped up to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/simpson/boxscore/8128",
+      "date": "3/16/2023",
+      "opponent": "Simpson",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily",
+        "Carey, Logann"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashlyn Steen walked.",
+            "Ashlyn Steen out at second c to ss, caught stealing.",
+            "Kate Kriegel struck out swinging.",
+            "Maddie Luderman walked.",
+            "Karlie Hill walked; Maddie Luderman advanced to second.",
+            "Makayla Bryant struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alexis Ehlers singled to left center.",
+            "Rylee Purvis reached on a fielder's choice; Alexis Ehlers advanced to third.",
+            "Megan Heidelbauer struck out swinging; Rylee Purvis stole second.",
+            "Caelynn Obleton singled to right field, 2 RBI; Rylee Purvis scored; Alexis Ehlers scored.",
+            "Ashlyn Steen reached first on a fielding error by 3b; Caelynn Obleton advanced to second.",
+            "Kate Kriegel doubled to right center, RBI; Ashlyn Steen advanced to third; Caelynn Obleton scored.",
+            "Maddie Luderman doubled to right field, 2 RBI; Kate Kriegel scored; Ashlyn Steen scored, unearned.",
+            "Karlie Hill popped up to 3b.",
+            "Makayla Bryant struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Gell to p for G. Kane.",
+            "Alexis Ehlers flied out to lf.",
+            "Rylee Purvis singled to center field.",
+            "Megan Heidelbauer reached on a fielder's choice; Rylee Purvis out at second 3b to 2b.",
+            "Caelynn Obleton grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ashlyn Steen grounded out to 2b.",
+            "Kate Kriegel walked.",
+            "Maddie Luderman struck out swinging.",
+            "Karlie Hill struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoe Baker pinch hit for Makayla Bryant.",
+            "Zoe Baker doubled down the lf line.",
+            "Caroline Pellett pinch ran for Zoe Baker.",
+            "Alexis Ehlers out at first p to 2b, SAC, bunt; Caroline Pellett advanced to third.",
+            "Payton Ganzer pinch hit for Rylee Purvis.",
+            "Payton Ganzer struck out swinging.",
+            "Megan Heidelbauer flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Britt to cf for C. Pecchia.",
+            "Caelynn Obleton singled to left field.",
+            "Ashlyn Steen singled to first base, bunt; Caelynn Obleton advanced to second.",
+            "Ashlyn Steen advanced to second on a throwing error by c, Ashlyn Steen; Caelynn Obleton scored.",
+            "Kate Kriegel grounded out to 3b.",
+            "Maddie Luderman singled to center field.",
+            "Kayla Jack pinch ran for Maddie Luderman.",
+            "Karlie Hill singled to center field; Kayla Jack advanced to second.",
+            "Bailey Petersen pinch ran for Karlie Hill.",
+            "Makayla Bryant walked; Bailey Petersen advanced to second; Kayla Jack advanced to third.",
+            "Alexis Ehlers doubled to left field, 3 RBI; Makayla Bryant scored; Bailey Petersen scored; Kayla Jack scored.",
+            "L. Carey to p for E. Gell.",
+            "Rylee Purvis singled to left field; Alexis Ehlers advanced to third.",
+            "Megan Heidelbauer doubled to center field, RBI; Rylee Purvis advanced to third; Alexis Ehlers scored.",
+            "Caelynn Obleton lined out to ss.",
+            "Ashlyn Steen singled to center field, RBI; Megan Heidelbauer advanced to third; Rylee Purvis scored.",
+            "Ashlyn Steen stole second.",
+            "Kate Kriegel walked.",
+            "Maddie Luderman to c for Kayla Jack.",
+            "Maddie Luderman grounded out to c unassisted."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/franklin-marshall/boxscore/8129",
+      "date": "3/16/2023",
+      "opponent": "Franklin Marshall",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "D. Witt walked.",
+            "J. Spigner reached first on an error by cf; D. Witt advanced to second.",
+            "J. Macaulay out at first p to 2b, SAC, bunt; J. Spigner advanced to second; D. Witt advanced to third.",
+            "K. Gunther lined out to rf.",
+            "C. Sullivan grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Williams singled to left field.",
+            "S. LaRosa grounded out to 2b; T. Williams advanced to second.",
+            "R. Williams singled; T. Williams advanced to third.",
+            "R. Williams stole second; T. Williams scored on a throwing error by c.",
+            "K. Kilmer singled; R. Williams advanced to third.",
+            "K. Kilmer out at second c to ss, caught stealing.",
+            "D. Witt walked.",
+            "J. Spigner flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Macaulay flied out to rf.",
+            "K. Gunther grounded out to ss.",
+            "C. Sullivan singled to shortstop.",
+            "T. Williams grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. LaRosa singled.",
+            "R. Williams struck out swinging.",
+            "K. Kilmer singled; S. LaRosa advanced to second.",
+            "D. Witt reached on a fielder's choice; K. Kilmer advanced to second; S. LaRosa out at third 3b to ss.",
+            "J. Spigner reached on a fielder's choice; D. Witt advanced to second; K. Kilmer out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Macaulay singled to right field.",
+            "K. Gunther doubled to right center; J. Macaulay advanced to third.",
+            "C. Sullivan grounded out to 2b, RBI; K. Gunther advanced to third; J. Macaulay scored.",
+            "T. Williams flied out to rf.",
+            "S. LaRosa flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. DeRosa to p.",
+            "/  for A. Pugliese.",
+            "R. Williams singled to left center.",
+            "O. Henderson pinch ran for R. Williams.",
+            "K. Kilmer struck out swinging.",
+            "D. Witt popped into double play 3b to 1b, bunt; O. Henderson out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Spigner struck out swinging.",
+            "J. Macaulay out at first p to 2b, bunt.",
+            "K. Gunther struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wis-lutheran/boxscore/8130",
+      "date": "03/17/23",
+      "opponent": "Wis Lutheran",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "McCauliffe, Lily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malecke, Gwen grounded out to 3b.",
+            "Peterson, Taylor grounded out to 2b.",
+            "Martin, Lexi singled to left field.",
+            "Martin, Lexi out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Corley, Ashley walked.",
+            "Chestolowski, Maddy out at first p to 2b, bunt, SAC; Corley, Ashley advanced to second.",
+            "Huff, Makayla grounded out to 1b unassisted; Corley, Ashley advanced to third.",
+            "Krieser, Olivia grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Velez, Cara fouled out to 1b.",
+            "Sengbusch, Kim fouled out to p.",
+            "Malecke, Gwen flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Peterson, Taylor popped up to 3b.",
+            "Martin, Lexi grounded out to 1b unassisted.",
+            "Corley, Ashley flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Chestolowski, Maddy fouled out to 1b.",
+            "Huff, Makayla reached first on a muffed throw by 1b.",
+            "Sieber, Juliana pinch ran for Huff, Makayla.",
+            "Krieser, Olivia singled to center field; Sieber, Juliana advanced to second.",
+            "Velez, Cara grounded out to 1b unassisted; Krieser, Olivia advanced to second; Sieber, Juliana advanced to third.",
+            "Gelande, Addison pinch hit for Sengbusch, Kim.",
+            "Gelande, Addison walked.",
+            "Sengbusch, Kim to cf for Gelande, Addison.",
+            "Malecke, Gwen lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amelia DeRosa to 1b.",
+            "Callie Gendron to c for Lucy Puskas.",
+            "Lily McCauliffe to p for Kate Katsetos.",
+            "Peterson, Taylor walked.",
+            "Martin, Lexi popped up to 3b.",
+            "Corley, Ashley struck out swinging.",
+            "Peterson, Taylor stole second.",
+            "Chestolowski, Maddy struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Huff, Makayla flied out to lf.",
+            "Krieser, Olivia grounded out to p.",
+            "Vilches, Briana pinch hit for Velez, Cara.",
+            "Vilches, Briana walked.",
+            "De Leon, Chloe pinch hit for Sengbusch, Kim.",
+            "De Leon, Chloe struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wis-river-falls/boxscore/8131",
+      "date": "3/17/2023",
+      "opponent": "Wis River Falls",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Breyen grounded out to p.",
+            "K. Piton grounded out to p.",
+            "Waupekenay walked.",
+            "M. Renikow grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Aultman grounded out to rf unassisted.",
+            "E. Hoge grounded out to 2b.",
+            "L. Strom lined out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Wallin fouled out to p.",
+            "M. Halvorson grounded out to rf unassisted.",
+            "C. Pecchia to c.",
+            "M. LaValle to dp.",
+            "J. Breyen grounded out to lf unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Piton doubled to right field.",
+            "Waupekenay reached first on a fielding error by ss.",
+            "M. Renikow singled to center field; Waupekenay advanced to second; K. Piton advanced to third.",
+            "K. Aultman singled to left field, RBI; M. Renikow advanced to second; Waupekenay advanced to third; K. Piton scored.",
+            "E. Hoge flied out to 2b, SAC, RBI; M. Renikow advanced to third; Waupekenay scored, unearned.",
+            "L. Strom reached on a fielder's choice, RBI; K. Aultman out at second ss to 2b; M. Renikow scored.",
+            "L. Duggan walked; L. Strom advanced to second.",
+            "H. Richards pinch ran for L. Strom.",
+            "/  for H. Richards.",
+            "M. Halvorson walked; L. Duggan advanced to second; H. Richards advanced to third.",
+            "E. Gell to p for G. Kane.",
+            "J. Breyen grounded out to rf unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Piton grounded out to cf unassisted.",
+            "Waupekenay singled to center field.",
+            "M. Renikow struck out swinging.",
+            "K. Aultman grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Hoge grounded out to 2b unassisted.",
+            "L. Strom grounded out to p.",
+            "M. Stevenson walked.",
+            "M. Stevenson advanced to second on a wild pitch.",
+            "M. Halvorson fouled out to c."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Pugliese to p for E. Gell.",
+            "J. Breyen walked.",
+            "K. Piton reached on a fielder's choice; J. Breyen out at second 2b to ss.",
+            "Waupekenay grounded out to rf unassisted.",
+            "M. Renikow lined out to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/eastern-connecticut/boxscore/8132",
+      "date": "3/22/2023",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "McCauliffe, Lily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emma Marelli singled to left field.",
+            "Alyssa Vilchez grounded out to 3b, SAC; Emma Marelli advanced to second.",
+            "Julia SanGiovanni hit by pitch.",
+            "Victoria Heaphy reached first on an error by 3b; Julia SanGiovanni advanced to second; Emma Marelli advanced to third.",
+            "Emma Marelli out at home ss to c.",
+            "Victoria Heaphy advanced to second; Julia SanGiovanni advanced to third.",
+            "Carley Stoker singled to left field, RBI; Victoria Heaphy scored, unearned; Julia SanGiovanni scored on a wild pitch, unearned.",
+            "Sarah Remillard lined out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ally Gruca singled through the left side.",
+            "Ally Gruca stole second.",
+            "Maddy Bowen out at first p to 2b, SAC; Ally Gruca advanced to third.",
+            "Maggie Baker singled to left field, RBI; Ally Gruca scored.",
+            "Maggie Baker stole second.",
+            "Emma Marelli grounded out to 2b; Maggie Baker advanced to third.",
+            "Alyssa Vilchez fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Julia SanGiovanni doubled to center field.",
+            "Kaylee Armida pinch ran for Julia SanGiovanni.",
+            "Kaylee Armida advanced to third on a wild pitch.",
+            "Victoria Heaphy grounded out to p.",
+            "Carley Stoker doubled to left field, RBI; Kaylee Armida scored.",
+            "Sarah Remillard grounded out to 3b.",
+            "Ally Gruca grounded out to 2b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Sands pinch ran for Maddy Bowen.",
+            "Maddy Bowen to c for Emma Sands.",
+            "Maddy Bowen singled to left field.",
+            "Emma Sands pinch ran for Maddy Bowen.",
+            "Maggie Baker walked; Emma Sands advanced to second.",
+            "Emma Marelli singled, bunt; Maggie Baker advanced to second; Emma Sands advanced to third.",
+            "Alyssa Vilchez grounded out to lf unassisted.",
+            "Julia SanGiovanni flied out to cf, sacrifice fly, RBI; Maggie Baker advanced to third; Emma Sands scored.",
+            "Emma Marelli stole second.",
+            "Emma Marelli advanced to third; Maggie Baker scored on a passed ball, unearned.",
+            "Victoria Heaphy flied out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily McCauliffe to p for Amelia DeRosa.",
+            "Carley Stoker tripled to center field.",
+            "Carley Stoker scored on a wild pitch.",
+            "Amelia DeRosa to 1b for Lily McCauliffe.",
+            "Lily McCauliffe to p for Kate Katsetos.",
+            "Sarah Remillard walked.",
+            "Sophia Vilchez pinch ran for Ally Gruca.",
+            "Sophia Vilchez reached on a fielder's choice; Sarah Remillard out at second ss to 2b.",
+            "Maddy Bowen grounded out to p.",
+            "Jillian Ciccarelli pinch hit for Maggie Baker.",
+            "Maggie Baker to cf for Jillian Ciccarelli.",
+            "Jillian Ciccarelli pinch hit for Maggie Baker.",
+            "Jillian Ciccarelli walked; Sophia Vilchez advanced to second.",
+            "Jillian Ciccarelli advanced to second; Sophia Vilchez advanced to third on a wild pitch.",
+            "Emma Marelli grounded out to ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alyssa Vilchez grounded out to cf unassisted.",
+            "Julia SanGiovanni struck out swinging.",
+            "Maddi Sauve pinch hit for Victoria Heaphy.",
+            "Maddi Sauve grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/eastern-connecticut/boxscore/8133",
+      "date": "3/22/2023",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emma Marelli grounded out to 2b.",
+            "Alyssa Vilchez doubled to center field.",
+            "Julia SanGiovanni hit by pitch.",
+            "Carley Stoker reached on a fielder's choice; Julia SanGiovanni advanced to second; Alyssa Vilchez out at third 3b unassisted.",
+            "Victoria Heaphy walked; Carley Stoker advanced to second; Julia SanGiovanni advanced to third.",
+            "Sarah Remillard grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ally Gruca struck out looking.",
+            "Maddi Sauve grounded out to lf unassisted.",
+            "Maggie Baker grounded out to ss unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Marelli tripled to center field.",
+            "Alyssa Vilchez reached first on an error by 1b, assist by p.",
+            "Alyssa Vilchez advanced to second.",
+            "Julia SanGiovanni flied out to rf, sacrifice fly, RBI; Alyssa Vilchez advanced to third; Emma Marelli scored.",
+            "Carley Stoker singled to left field, RBI; Alyssa Vilchez scored, unearned.",
+            "Victoria Heaphy singled to center field; Carley Stoker advanced to third.",
+            "Victoria Heaphy advanced to second on the throw.",
+            "Sarah Remillard singled, bunt, RBI; Victoria Heaphy advanced to third; Carley Stoker scored.",
+            "Sarah Remillard advanced to second.",
+            "Ally Gruca singled to center field, 2 RBI; Sarah Remillard scored; Victoria Heaphy scored.",
+            "Maddi Sauve grounded out to cf unassisted.",
+            "Maggie Baker grounded out to rf unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Marelli singled to second base.",
+            "Alyssa Vilchez grounded out to rf unassisted.",
+            "Julia SanGiovanni reached on a fielder's choice; Emma Marelli out at second ss to 2b.",
+            "Carley Stoker singled to left field; Julia SanGiovanni advanced to third.",
+            "Carley Stoker stole second.",
+            "Victoria Heaphy singled to right field, 2 RBI; Carley Stoker scored; Julia SanGiovanni scored.",
+            "Sarah Remillard singled through the right side; Victoria Heaphy advanced to second.",
+            "Kaylee Armida pinch ran for Victoria Heaphy.",
+            "Ally Gruca singled to pitcher; Sarah Remillard advanced to second; Kaylee Armida advanced to third.",
+            "Kaylee Armida out at home p to ss to c."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Gell to p for Gillian Kane.",
+            "Maddi Sauve struck out, out at first c to 1b.",
+            "Maggie Baker fouled out to 1b.",
+            "Emma Marelli grounded out to cf unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alyssa Vilchez grounded out to cf unassisted.",
+            "Julia SanGiovanni singled to right field.",
+            "Sophia Vilchez pinch ran for Julia SanGiovanni.",
+            "Carley Stoker walked; Sophia Vilchez advanced to second.",
+            "Victoria Heaphy to dp for Kaylee Armida.",
+            "Victoria Heaphy grounded out to ss unassisted.",
+            "Sarah Remillard struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/worcester-state/boxscore/8134",
+      "date": "3/26/2023",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Kane, Gillian",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Lapoint doubled to left center.",
+            "E. Lanpher popped up to p, bunt.",
+            "R. Sinclair struck out swinging.",
+            "A. Koziol grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Dube singled to center field.",
+            "B. Gasbarro walked; L. Dube advanced to second.",
+            "B. Tammaro out at first c to 2b, SAC, bunt; B. Gasbarro advanced to second; L. Dube advanced to third.",
+            "N. Baez grounded into double play c to 2b to c, bunt; L. Dube out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Schwalm grounded out to ss.",
+            "E. Lapoint popped up to p.",
+            "E. Lanpher fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron pinch ran for L. Puskas.",
+            "C. Gendron to c.",
+            "R. Sinclair walked.",
+            "A. Koziol walked; R. Sinclair advanced to second.",
+            "L. Dube struck out swinging.",
+            "B. Gasbarro singled to shortstop; A. Koziol advanced to second; R. Sinclair advanced to third.",
+            "B. Tammaro walked, RBI; B. Gasbarro advanced to second; A. Koziol advanced to third; R. Sinclair scored.",
+            "N. Baez reached on a fielder's choice, RBI; B. Tammaro out at second 2b to ss; B. Gasbarro advanced to third; A. Koziol scored.",
+            "J. Schwalm lined out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeRosa to p.",
+            "K. Katsetos to 1b for G. Kane.",
+            "E. Lapoint grounded out to 2b.",
+            "E. Lanpher grounded out to p.",
+            "R. Sinclair grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Koziol grounded out to p.",
+            "L. Dube popped up to ss.",
+            "B. Gasbarro walked.",
+            "B. Tammaro flied out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Bartlett pinch hit for N. Baez.",
+            "E. Bartlett singled to right field.",
+            "N. Baez pinch ran for E. Bartlett.",
+            "J. Schwalm grounded into double play 3b to 1b, bunt; N. Baez out on the play.",
+            "E. Lapoint singled to left field.",
+            "E. Lapoint out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/worcester-state/boxscore/8135",
+      "date": "3/26/2023",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Lapoint grounded out to p.",
+            "E. Bartlett grounded out to 2b.",
+            "R. Sinclair walked.",
+            "B. Gasbarro flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Kelly grounded out to 2b.",
+            "B. Tammaro flied out to lf.",
+            "N. Baez singled to right field.",
+            "N. Baez advanced to second.",
+            "J. Schwalm walked.",
+            "E. Lanpher reached on a fielder's choice; J. Schwalm advanced to second; N. Baez out at third ss unassisted, interference."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Lapoint singled.",
+            "E. Bartlett out at first c to 2b, SAC, bunt; E. Lapoint advanced to second.",
+            "R. Sinclair singled down the rf line, RBI; E. Lapoint scored.",
+            "B. Gasbarro singled; R. Sinclair out at second rf to ss.",
+            "J. Kelly flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Tammaro singled to center field.",
+            "N. Baez out at first p to 2b, SAC, bunt; B. Tammaro advanced to second.",
+            "J. Schwalm grounded out to ss.",
+            "E. Lanpher singled, advanced to second on the throw, RBI; B. Tammaro scored.",
+            "E. Lapoint grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "S. Gosselin struck out swinging.",
+            "R. Sinclair flied out to lf.",
+            "B. Gasbarro flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Kelly popped up to 2b.",
+            "B. Tammaro struck out swinging.",
+            "N. Baez struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Schwalm singled to pitcher.",
+            "E. Lanpher struck out looking.",
+            "E. Lapoint popped up to 2b.",
+            "S. Gosselin struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/keene-state/boxscore/8136",
+      "date": "3/29/2023",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Murray grounded out to 3b.",
+            "S. Cote popped up to p.",
+            "L. Whittier walked.",
+            "G. Hallett lined out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Ferry popped up to 2b.",
+            "L. Demmy grounded out to p.",
+            "K. Halvorsen struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Cerretani singled to left field.",
+            "C. Chadwick singled to center field; A. Cerretani advanced to second.",
+            "M. Murray struck out swinging.",
+            "C. Chadwick advanced to second on a wild pitch; A. Cerretani advanced to third on a wild pitch.",
+            "S. Cote walked.",
+            "L. Whittier walked, RBI; S. Cote advanced to second; C. Chadwick advanced to third; A. Cerretani scored.",
+            "G. Hallett grounded into double play ss to 2b to 1b; L. Whittier out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Ferry flied out to rf.",
+            "L. Bumpus walked.",
+            "K. Halvorsen out at first p to 2b, SAC, bunt; L. Bumpus advanced to second.",
+            "A. Cerretani grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Gendron to c for A. Rainone.",
+            "C. Chadwick grounded out to 3b.",
+            "M. Murray grounded out to 3b.",
+            "S. Cote fouled out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Whittier grounded out to ss.",
+            "G. Hallett popped up to 2b.",
+            "M. Ferry singled to right field.",
+            "L. Bumpus struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. DeRosa to 3b for T. Spingola.",
+            "H. Townsend to 3b for K. Halvorsen.",
+            "H. Townsend popped up to 2b.",
+            "A. Cerretani walked.",
+            "A. Adams to lf for C. Chadwick.",
+            "A. Adams grounded out to 2b.",
+            "M. Murray struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/keene-state/boxscore/8137",
+      "date": "3/29/2023",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Pugliese to p.",
+            "M. Murray struck out swinging.",
+            "S. Cote singled to right field.",
+            "L. Whittier struck out looking.",
+            "M. Ferry struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Townsend grounded out to 2b.",
+            "A. Cerretani grounded out to ss.",
+            "C. Miller popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Halvorsen struck out swinging.",
+            "C. Chadwick grounded out to 3b.",
+            "M. Murray struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Cote grounded out to 3b.",
+            "L. Whittier grounded out to 2b.",
+            "M. Ferry out at first 1b to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Townsend grounded out to ss.",
+            "A. Cerretani flied out to cf.",
+            "C. Miller struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Olsen to 2b for C. Gendron.",
+            "E. Gell to p for A. Pugliese.",
+            "K. Halvorsen struck out swinging.",
+            "C. Chadwick struck out swinging.",
+            "M. Murray singled to left field.",
+            "S. Cote reached on a fielder's choice; M. Murray out at second 2b to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/emerson/boxscore/8138",
+      "date": "4/2/2023",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti walked.",
+            "M. Rice struck out swinging.",
+            "S. Zannotti advanced to second on a passed ball.",
+            "M. Killough grounded out to 2b, SAC; S. Zannotti advanced to third.",
+            "C. Overton popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Gomez singled through the right side.",
+            "K. Zenga struck out swinging.",
+            "K. Nuehlen struck out swinging.",
+            "A. Lacey struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Rosenberg singled to right field.",
+            "S. Zannotti reached on a fielder's choice; C. Rosenberg out at second p to 2b.",
+            "M. Rice struck out swinging.",
+            "M. Killough grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Overton grounded out to 3b.",
+            "J. Gomez walked.",
+            "B. Bowler pinch ran for J. Gomez.",
+            "K. Zenga singled to right field; B. Bowler advanced to third.",
+            "K. Nuehlen struck out swinging.",
+            "K. Zenga stole second.",
+            "A. Lacey struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Rosenberg flied out to rf.",
+            "S. Zannotti grounded out to 3b.",
+            "M. Rice struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Killough grounded out to 1b unassisted.",
+            "C. Overton singled to center field.",
+            "J. Gomez fouled out to c.",
+            "K. Zenga grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Nuehlen grounded out to 2b.",
+            "A. Lacey walked.",
+            "C. Rosenberg reached on a fielder's choice; A. Lacey out at second 2b to ss.",
+            "S. Zannotti reached first on an error by lf, advanced to second; C. Rosenberg advanced to third on the error.",
+            "M. Rice struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/emerson/boxscore/8139",
+      "date": "4/2/2023",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti struck out looking.",
+            "K. Zenga flied out to cf.",
+            "M. Killough struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Overton singled to left field.",
+            "J. Gomez reached on a fielder's choice; C. Overton advanced to second.",
+            "A. Lacey struck out looking.",
+            "S. Trendell grounded out to 1b unassisted; J. Gomez advanced to second; C. Overton advanced to third.",
+            "G. Beaulieu singled to right field, RBI; J. Gomez advanced to third; C. Overton scored.",
+            "G. Beaulieu stole second; J. Gomez scored.",
+            "C. Rosenberg singled to right center, RBI; G. Beaulieu scored.",
+            "S. Zannotti reached on a fielder's choice; C. Rosenberg out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Zenga flied out to rf.",
+            "M. Killough singled to second base.",
+            "C. Overton popped up to 2b.",
+            "J. Gomez reached on a fielder's choice; M. Killough out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Lacey grounded out to 3b.",
+            "S. Trendell struck out swinging.",
+            "M. Rice struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "C. Rosenberg grounded out to ss.",
+            "S. Zannotti struck out swinging.",
+            "K. Zenga struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Killough doubled down the lf line.",
+            "C. Overton doubled to left field, RBI; M. Killough scored.",
+            "J. Gomez flied out to rf, SAC; C. Overton advanced to third.",
+            "A. Lacey struck out swinging.",
+            "S. Trendell struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Pecchia to c for L. Puskas.",
+            "J. Gomez to lf.",
+            "M. Rice to p for G. Beaulieu.",
+            "G. Beaulieu to dp for M. Rice.",
+            "G. Beaulieu flied out to cf.",
+            "C. Rosenberg struck out swinging.",
+            "S. Zannotti struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/western-new-england/boxscore/8140",
+      "date": "4/4/2023",
+      "opponent": "Western New England",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Keegan struck out swinging.",
+            "P. Baca grounded out to 2b.",
+            "D. DiBlasio grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Carrano singled to left field.",
+            "G. Hemstock reached on a fielder's choice to shortstop; K. Carrano out at second ss to 2b.",
+            "M. Mason struck out swinging; G. Hemstock advanced to second on a wild pitch.",
+            "A. Ferriouol fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Floyd grounded out to ss.",
+            "C. Rizzo flied out to rf.",
+            "T. Keegan grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron to c for A. Rainone.",
+            "P. Baca lined out to rf.",
+            "D. DiBlasio popped up to ss.",
+            "K. Carrano popped up to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "G. Hemstock singled to left field.",
+            "I. Flores pinch ran for G. Hemstock.",
+            "M. Mason struck out looking.",
+            "A. Ferriouol reached on a fielder's choice to second base; I. Flores out at second 2b to ss.",
+            "K. Blades pinch hit for B. Floyd.",
+            "K. Blades flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to 3b for L. Puskas.",
+            "K. Katsetos to 1b for K. Acocella.",
+            "C. Rizzo lined out to rf.",
+            "T. Keegan singled to left field.",
+            "P. Baca struck out swinging.",
+            "D. DiBlasio doubled to center field, RBI; T. Keegan scored.",
+            "K. Carrano grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Hemstock to dp for I. Flores.",
+            "G. Hemstock grounded out to c unassisted.",
+            "M. Mason struck out swinging, out at first c to 1b.",
+            "A. Ferriouol popped up to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/western-new-england/boxscore/8141",
+      "date": "4/4/2023",
+      "opponent": "Western New England",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Keegan grounded out to 1b unassisted.",
+            "P. Baca grounded out to 2b.",
+            "D. DiBlasio flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Hemstock grounded out to ss.",
+            "K. Carrano walked.",
+            "K. Blades singled to second base; K. Carrano advanced to second.",
+            "A. Ferriouol reached on a fielder's choice to shortstop; K. Blades advanced to second; K. Carrano out at third ss to 3b.",
+            "L. Weston reached on a fielder's choice to shortstop; A. Ferriouol out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Rizzo grounded out to ss.",
+            "T. Keegan grounded out to 2b.",
+            "P. Baca flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. DiBlasio grounded out to ss.",
+            "G. Hemstock singled to left field.",
+            "K. Carrano reached on a fielder's choice to shortstop; G. Hemstock out at second ss unassisted.",
+            "K. Blades struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. McCann to 3b for A. Rainone.",
+            "D. Serricchi to ss for G. Kane.",
+            "A. Ferriouol singled to shortstop.",
+            "L. Weston out at first 3b to 2b, SAC, bunt; A. Ferriouol advanced to second, out at third 2b to c.",
+            "C. Rizzo singled to center field.",
+            "T. Keegan out at first 1b to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "P. Baca flied out to cf.",
+            "D. DiBlasio singled to shortstop.",
+            "G. Hemstock reached on a fielder's choice to pitcher; D. DiBlasio out at second p to ss.",
+            "K. Carrano struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Blades popped up to ss.",
+            "A. Ferriouol popped up to ss.",
+            "E. Picone pinch hit for L. Weston.",
+            "E. Picone walked.",
+            "S. McDaniel pinch ran for E. Picone.",
+            "C. Rizzo popped up to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/clark-university/boxscore/8142",
+      "date": "4/7/2023",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Kane, Gillian",
+        "Carey, Logann"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Crowley grounded out to 3b.",
+            "E. Lindberg struck out swinging.",
+            "R. Mauro grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "F. Salvati doubled to left field.",
+            "K. Gibson struck out swinging.",
+            "R. Bronson struck out swinging.",
+            "J. Martin grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Carey to p for G. Kane.",
+            "C. Andre pinch hit for N. Stilwell.",
+            "C. Andre walked.",
+            "M. Dillon pinch hit for E. Spence.",
+            "M. Dillon doubled to left field; C. Andre advanced to third.",
+            "A. Briggs pinch hit for S. Crowley.",
+            "A. Briggs lined out to ss.",
+            "A. Mauro pinch hit for E. Lindberg.",
+            "A. Mauro grounded into double play 3b to 1b to ss; M. Dillon out on the play; C. Andre scored."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Puskas to rf.",
+            "K. Katsetos to 2b.",
+            "S. Lyons hit by pitch.",
+            "F. Salvati reached on a fielder's choice to shortstop; S. Lyons out at second ss to 2b.",
+            "M. Barthel reached on a fielder's choice to shortstop; F. Salvati out at second ss to 2b.",
+            "E. Slavin reached on a fielder's choice to shortstop; M. Barthel advanced to second.",
+            "E. Traynor singled to left field; E. Slavin advanced to second; M. Barthel advanced to third.",
+            "A. Hughes pinch hit for C. Andre.",
+            "A. Hughes reached on a fielder's choice to third base; E. Traynor advanced to second; E. Slavin out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Spingola to c.",
+            "M. Dillon flied out to cf.",
+            "A. Briggs doubled to left field.",
+            "A. Mauro struck out swinging.",
+            "S. Lyons grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/clark-university/boxscore/8143",
+      "date": "4/7/2023",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dillon struck out swinging.",
+            "E. Slavin lined out to ss.",
+            "R. Mauro walked.",
+            "F. Salvati grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Gibson grounded out to 3b.",
+            "A. Briggs walked.",
+            "E. Traynor reached on a fielder's choice to second base; A. Briggs out at second 2b to ss.",
+            "C. Andre grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Spence popped up to 2b.",
+            "M. Dillon grounded out to ss.",
+            "E. Slavin flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Mauro doubled.",
+            "F. Salvati doubled to center field, RBI; R. Mauro scored.",
+            "K. Gibson walked.",
+            "A. Briggs reached on a fielder's choice to shortstop; K. Gibson out at second ss to 2b; F. Salvati advanced to third.",
+            "E. Traynor singled to center field, RBI; A. Briggs advanced to third; F. Salvati scored.",
+            "M. Barthel pinch hit for C. Andre.",
+            "M. Barthel reached on a fielder's choice to shortstop; E. Traynor out at second ss unassisted.",
+            "E. Spence reached on a fielder's choice to shortstop; M. Barthel out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. McCann to 3b for L. Puskas.",
+            "E. Gell to p for A. Pugliese.",
+            "E. Lindberg walked.",
+            "E. Lindberg advanced to second on a wild pitch.",
+            "E. Slavin flied out to rf.",
+            "N. Stilwell popped up to 2b.",
+            "F. Salvati struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wellesley/boxscore/8144",
+      "date": "4/8/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Hsu reached first on an error by 1b, assist by 3b.",
+            "A. Delgado singled, bunt; I. Hsu advanced to third on the throw.",
+            "A. Delgado stole second.",
+            "C. Lundin flied out to cf, sacrifice fly, RBI; I. Hsu scored, unearned.",
+            "E. Gaunce reached on a fielder's choice; A. Delgado out at third 3b to 2b to ss to 2b.",
+            "M. Sgambati singled to left center; E. Gaunce advanced to third.",
+            "M. Abernethy walked; M. Sgambati advanced to second.",
+            "C. Theriault struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Phillips struck out looking.",
+            "C. Chung popped up to ss.",
+            "I. Hsu grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado doubled to left center.",
+            "C. Lundin flied out to lf.",
+            "E. Gaunce flied out to lf.",
+            "M. Sgambati popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Abernethy grounded out to p.",
+            "C. Theriault reached first on an error by lf.",
+            "P. Phillips struck out swinging.",
+            "C. Chung singled to left center; C. Theriault advanced to second.",
+            "I. Hsu tripled to right center, 2 RBI; C. Chung scored, unearned; C. Theriault scored, unearned.",
+            "A. Delgado grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Gell to p for K. Katsetos.",
+            "C. Pecchia to dp.",
+            "A. DeRosa to 1b.",
+            "C. Lundin flied out to cf.",
+            "E. Gaunce flied out to lf.",
+            "M. Sgambati struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Abernethy fouled out to 1b.",
+            "C. Theriault flied out to cf.",
+            "P. Phillips struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Chung grounded out to ss.",
+            "I. Hsu popped up to 2b.",
+            "A. Delgado singled to right center.",
+            "A. Delgado advanced to second on a passed ball.",
+            "C. Lundin struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wellesley/boxscore/8145",
+      "date": "4/8/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Kane, Gillian",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Hsu fouled out to 3b.",
+            "A. Delgado singled through the left side.",
+            "C. Lundin out at first 3b to 2b, SAC, bunt; A. Delgado advanced to second.",
+            "M. Sgambati flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Theriault flied out to lf.",
+            "E. Gaunce grounded out to p.",
+            "M. Abernethy grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "P. Penny singled up the middle.",
+            "C. Chung struck out looking.",
+            "I. Hsu reached on a fielder's choice; P. Penny out at second 2b to ss.",
+            "A. Delgado singled to left field; I. Hsu advanced to second.",
+            "I. Hsu stole third.",
+            "A. Delgado stole second.",
+            "C. Lundin singled to left field, advanced to second on the throw, 2 RBI; A. Delgado scored; I. Hsu scored.",
+            "M. Sgambati grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Theriault lined out to 1b.",
+            "E. Gaunce grounded out to 3b.",
+            "M. Abernethy lined out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "P. Penny grounded out to ss.",
+            "C. Chung flied out to lf.",
+            "I. Hsu singled through the right side.",
+            "A. Delgado singled through the left side; I. Hsu advanced to second.",
+            "C. Lundin reached on a fielder's choice; A. Delgado out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Pugliese to p for G. Kane.",
+            "M. Sgambati grounded out to 2b.",
+            "C. Theriault singled through the left side.",
+            "E. Gaunce doubled to left field; C. Theriault advanced to second, out at third lf to 3b.",
+            "M. Abernethy lined out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "P. Penny grounded out to p.",
+            "C. Chung struck out swinging.",
+            "I. Hsu struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/amherst/boxscore/8146",
+      "date": "4/12/2023",
+      "opponent": "Amherst",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Taketa hit by pitch.",
+            "R. Lovejoy reached on a fielder's choice; M. Taketa advanced to second.",
+            "D. Werra flied out to rf; M. Taketa advanced to third.",
+            "R. Lovejoy stole second.",
+            "S. Pool flied out to rf, sacrifice fly, RBI; R. Lovejoy advanced to third; M. Taketa scored.",
+            "A. Lee flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Butler flied out to cf.",
+            "R. Finkelste singled to shortstop.",
+            "A. Rangel reached on a fielder's choice; R. Finkelste out at second p to ss.",
+            "M. Castro grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Taketa grounded out to 3b.",
+            "R. Lovejoy flied out to lf.",
+            "D. Werra singled to center field.",
+            "S. Pool singled to second base; D. Werra advanced to second.",
+            "A. Lee walked; S. Pool advanced to second; D. Werra advanced to third.",
+            "J. Butler reached on a fielder's choice; A. Lee out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Finkelste homered to center field, RBI.",
+            "A. Rangel flied out to cf.",
+            "M. Castro singled to right center.",
+            "M. Taketa reached on a fielder's choice; M. Castro out at second 2b unassisted.",
+            "M. Taketa stole second.",
+            "R. Lovejoy doubled to left center, RBI; M. Taketa scored.",
+            "D. Werra grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Gendron to c for L. Puskas.",
+            "D. Serricchi to ss.",
+            "A. DeRosa to 1b.",
+            "E. Gell to p for K. Katsetos.",
+            "S. Pool fouled out to 1b.",
+            "A. Lee walked.",
+            "J. Butler Dropped foul ball, E2.",
+            "J. Butler struck out swinging.",
+            "R. Finkelste struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Rangel singled up the middle.",
+            "D. Wilderman pinch hit for M. Castro.",
+            "D. Wilderman reached on a fielder's choice; A. Rangel out at second 2b to ss.",
+            "M. Taketa walked; D. Wilderman advanced to second.",
+            "R. Lovejoy reached on a fielder's choice, advanced to second on a throwing error by 3b; M. Taketa advanced to second, advanced to third on the error; D. Wilderman out at third 3b unassisted.",
+            "D. Werra flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Pool popped up to 1b.",
+            "A. Lee walked.",
+            "J. Butler reached first on an error by rf; A. Lee advanced to second.",
+            "R. Finkelste struck out swinging.",
+            "A. Rangel walked; J. Butler advanced to second; A. Lee advanced to third.",
+            "M. Castro reached on a fielder's choice; A. Rangel out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/amherst/boxscore/8147",
+      "date": "4/12/2023",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Taketa grounded out to p.",
+            "R. Lovejoy hit by pitch.",
+            "D. Werra grounded out to 2b; R. Lovejoy advanced to second.",
+            "S. Pool doubled through the left side, RBI; R. Lovejoy scored.",
+            "J. Butler grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Finkelste homered, RBI.",
+            "A. Lee struck out swinging.",
+            "A. Rangel grounded out to p.",
+            "A. Orlowski struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Taketa reached first on a fielding error by 1b.",
+            "R. Lovejoy grounded out to c, SAC, bunt; M. Taketa advanced to second.",
+            "D. Werra grounded out to 1b unassisted; M. Taketa advanced to third.",
+            "S. Pool grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. McCann to 3b for A. Rainone.",
+            "J. Butler tripled to center field.",
+            "R. Finkelste homered, 2 RBI; J. Butler scored.",
+            "A. Lee singled down the lf line.",
+            "A. Rangel out on batter's interference, grounded out to c unassisted, out at first  unassisted.",
+            "A. Orlowski struck out swinging.",
+            "M. Taketa singled through the left side; A. Lee advanced to second.",
+            "R. Lovejoy grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Werra grounded out to 2b.",
+            "S. Pool singled through the left side.",
+            "J. Butler struck out swinging.",
+            "R. Finkelste walked; S. Pool advanced to second.",
+            "A. Lee grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Moravek flied out to rf.",
+            "D. Briggs grounded out to p.",
+            "M. Taketa doubled down the lf line.",
+            "R. Lovejoy singled through the left side, advanced to second on a throwing error by rf, RBI; M. Taketa scored.",
+            "D. Werra grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Pool singled to right center.",
+            "A. Kong pinch ran for S. Pool.",
+            "J. Butler struck out swinging.",
+            "R. Finkelste flied out to rf.",
+            "A. Lee singled to center field; A. Kong advanced to second.",
+            "A. Moravek doubled to center field, RBI; A. Lee advanced to third; A. Kong scored.",
+            "D. Briggs flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/smith/boxscore/8148",
+      "date": "4/14/2023",
+      "opponent": "Smith",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Osmond hit by pitch.",
+            "K. Collins-J singled, bunt; M. Osmond advanced to second.",
+            "J. Shantz singled; K. Collins-J advanced to second; M. Osmond out at third ss unassisted, interference.",
+            "C. Alaniz walked; J. Shantz advanced to second; K. Collins-J advanced to third.",
+            "T. Ang flied out to rf, sacrifice fly, RBI; K. Collins-J scored.",
+            "L. Helms grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Corey struck out swinging.",
+            "E. Washingto popped up to 1b.",
+            "L. Balam walked.",
+            "L. Balam stole second.",
+            "M. Osmond flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Collins-J struck out swinging.",
+            "J. Shantz doubled to center field.",
+            "C. Alaniz walked.",
+            "T. Ang flied out to cf.",
+            "L. Helms singled down the rf line, RBI; C. Alaniz advanced to third; J. Shantz scored.",
+            "P. Corey walked; L. Helms advanced to second.",
+            "E. Washingto flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron pinch ran for L. Puskas.",
+            "C. Gendron to c.",
+            "L. Balam walked.",
+            "M. Osmond grounded out to 1b unassisted; L. Balam advanced to second.",
+            "K. Collins-J walked.",
+            "J. Shantz singled to second base; K. Collins-J advanced to second; L. Balam advanced to third.",
+            "C. Alaniz flied out to rf; J. Shantz advanced to second; K. Collins-J advanced to third; L. Balam out at home rf to c."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Ang grounded out to 2b.",
+            "L. Helms walked.",
+            "P. Corey struck out looking.",
+            "E. Washingto flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gell to p for G. Kane.",
+            "K. Beals walked.",
+            "M. Osmond reached on a fielder's choice; K. Beals out at second ss to 2b.",
+            "K. Collins-J struck out swinging.",
+            "J. Shantz flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Alaniz reached first on a fielding error by 1b.",
+            "M. Moore pinch ran for C. Alaniz.",
+            "T. Ang singled, advanced to second on the throw; M. Moore advanced to third.",
+            "G. Kane to p for E. Gell.",
+            "L. Helms grounded out to 2b, RBI; T. Ang advanced to third; M. Moore scored.",
+            "P. Corey singled down the lf line, RBI; T. Ang scored, unearned.",
+            "E. Washingto popped up to ss.",
+            "K. Beals struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/smith/boxscore/8149",
+      "date": "4/14/2023",
+      "opponent": "Smith",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Osmond singled to left field.",
+            "L. Balam reached first on a fielding error by 3b, advanced to second; M. Osmond advanced to third.",
+            "J. Shantz flied out to rf.",
+            "L. Balam advanced to third; M. Osmond scored on a wild pitch, unearned.",
+            "C. Alaniz grounded out to 2b, RBI; L. Balam scored.",
+            "T. Ang singled down the rf line.",
+            "L. Helms singled to left field; T. Ang advanced to second.",
+            "P. Corey struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Washingto flied out to cf.",
+            "R. Austin singled to right field.",
+            "M. Osmond singled up the middle; R. Austin advanced to second.",
+            "L. Balam grounded out to p; M. Osmond advanced to second; R. Austin advanced to third.",
+            "J. Shantz singled up the middle, 2 RBI; M. Osmond scored; R. Austin scored.",
+            "C. Alaniz grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Serricchi pinch hit for L. Puskas.",
+            "D. Serricchi to ss.",
+            "K. Collins-J struck out looking.",
+            "L. Helms grounded out to 3b.",
+            "P. Corey singled down the lf line.",
+            "E. Washingto flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Austin fouled out to 1b.",
+            "M. Osmond singled to second base.",
+            "L. Balam reached on a fielder's choice; M. Osmond out at second ss to 2b.",
+            "L. Balam advanced to second on a wild pitch.",
+            "J. Shantz grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Alaniz doubled to center field.",
+            "M. Moore pinch ran for C. Alaniz.",
+            "K. Collins-J struck out swinging.",
+            "L. Helms singled to right field; M. Moore advanced to third.",
+            "P. Corey struck out swinging.",
+            "K. Beals pinch ran for L. Helms.",
+            "E. Washingto reached on a fielder's choice; K. Beals out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/mit/boxscore/8150",
+      "date": "4/15/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Kane, Gillian",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Cable walked.",
+            "A. Ladd singled to left field; M. Cable advanced to second.",
+            "J. Sell reached on a fielder's choice to third base; A. Ladd advanced to second; M. Cable out at third 3b unassisted.",
+            "M. Bivin doubled to center field, 2 RBI; J. Sell scored; A. Ladd scored.",
+            "K. Adkison doubled to left field, RBI; M. Bivin scored.",
+            "M. Relihan lined out to 2b.",
+            "K. Pendowski grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Spiegel lined out to rf.",
+            "H. Samuelsen popped up to ss.",
+            "M. Cable struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Ladd struck out swinging.",
+            "J. Sell singled to left field.",
+            "M. Bivin lined out to ss.",
+            "J. Sell stole second.",
+            "K. Adkison singled to right field, RBI; J. Sell scored.",
+            "M. Relihan struck out swinging, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pendowski doubled to right field.",
+            "K. Lee pinch ran for K. Pendowski.",
+            "R. Spiegel singled to left field; K. Lee advanced to third.",
+            "R. Spiegel stole second.",
+            "H. Samuelsen singled to left field, RBI; R. Spiegel out at third lf to 2b; K. Lee scored.",
+            "M. Cable out at first p to 2b, SAC, bunt; H. Samuelsen advanced to second.",
+            "A. Ladd singled, bunt; H. Samuelsen advanced to third.",
+            "A. Ladd stole second.",
+            "J. Sell singled, bunt, RBI; A. Ladd advanced to third; H. Samuelsen scored.",
+            "J. Sell stole second.",
+            "M. Bivin struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Adkison singled to center field.",
+            "M. Relihan singled to right field; K. Adkison advanced to second.",
+            "K. Adkison out at third c to 3b, caught stealing.",
+            "K. Pendowski to dp for K. Lee.",
+            "K. Pendowski grounded into double play 2b to ss to 1b; M. Relihan out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. DeRosa to p.",
+            "K. Katsetos to 1b for G. Kane.",
+            "R. Spiegel grounded out to ss.",
+            "H. Samuelsen popped up to lf.",
+            "M. Cable flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Ladd doubled to center field.",
+            "J. Sell doubled to right field, RBI; A. Ladd scored.",
+            "M. Bivin doubled to left field, RBI; J. Sell scored.",
+            "K. Adkison singled, advanced to second on the throw, RBI; M. Bivin scored.",
+            "M. Relihan singled to shortstop.",
+            "K. Pendowski walked; M. Relihan advanced to second; K. Adkison advanced to third.",
+            "R. Spiegel flied out to cf, sacrifice fly, RBI; K. Adkison scored.",
+            "H. Samuelsen reached on a fielder's choice to shortstop; K. Pendowski advanced to second; M. Relihan out at third ss unassisted.",
+            "M. Cable struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/mit/boxscore/8151",
+      "date": "4/15/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Gell, Emily",
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Sell doubled to center field.",
+            "A. Ladd doubled to left field, RBI; J. Sell scored.",
+            "K. Adkison reached first on an error by ss.",
+            "M. Bivin singled to left field; K. Adkison advanced to second; A. Ladd advanced to third.",
+            "M. Relihan singled to center field, 2 RBI; M. Bivin advanced to third; K. Adkison scored, unearned; A. Ladd scored, unearned.",
+            "M. Relihan advanced to second on a wild pitch.",
+            "K. Pendowski grounded out to 3b.",
+            "R. Spiegel popped up to rf.",
+            "H. Samuelsen popped up to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Cable lined out to rf.",
+            "J. Sell walked.",
+            "A. Ladd singled to left field; J. Sell advanced to second.",
+            "K. Adkison reached on a fielder's choice to second base; A. Ladd out at second 2b to ss; J. Sell advanced to third.",
+            "M. Bivin doubled to right field, RBI; K. Adkison advanced to third; J. Sell scored.",
+            "M. Relihan walked.",
+            "G. Kane to p for E. Gell.",
+            "K. Pendowski walked, RBI; M. Relihan advanced to second; M. Bivin advanced to third; K. Adkison scored.",
+            "R. Spiegel singled to right field, 2 RBI; K. Pendowski advanced to third; M. Relihan scored; M. Bivin scored.",
+            "R. Spiegel stole second.",
+            "H. Samuelsen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Cable struck out swinging.",
+            "J. Sell grounded out to 1b unassisted.",
+            "A. Ladd struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Adkison singled to pitcher.",
+            "M. Bivin struck out swinging.",
+            "M. Relihan singled to right field; K. Adkison advanced to second, out at third rf to 3b.",
+            "K. Pendowski struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Spiegel grounded out to 3b.",
+            "H. Samuelsen hit by pitch.",
+            "H. Samuelsen advanced to second on a wild pitch.",
+            "M. Cable reached on a fielder's choice to shortstop; H. Samuelsen out at third ss unassisted, interference.",
+            "J. Sell lined out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Ladd out at first p to 2b.",
+            "K. Adkison grounded out to ss.",
+            "M. Bivin singled to center field.",
+            "M. Bivin stole second.",
+            "M. Relihan singled to right field, RBI; M. Bivin scored.",
+            "M. Relihan out at second 2b to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/westfield-state/boxscore/8152",
+      "date": "4/19/2023",
+      "opponent": "Westfield State",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Higgins walked.",
+            "E. Malanson struck out swinging.",
+            "S. Testa struck out swinging.",
+            "M. Higgins stole second.",
+            "M. Doyle singled to right field, RBI; M. Higgins scored.",
+            "V. Quill struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Silva doubled to right field.",
+            "J. Jose doubled to right field, RBI; L. Silva scored.",
+            "L. Mastromat struck out swinging.",
+            "X. Silva struck out looking.",
+            "M. Higgins grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Malanson struck out swinging.",
+            "S. Testa struck out swinging.",
+            "M. Doyle singled to right field.",
+            "V. Quill flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Silva grounded out to ss.",
+            "J. Jose struck out looking.",
+            "L. Mastromat walked.",
+            "X. Silva struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Higgins lined out to 3b.",
+            "E. Malanson struck out swinging.",
+            "S. Testa reached first on an error by 1b.",
+            "M. Doyle walked; S. Testa advanced to second.",
+            "V. Quill lined out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Silva grounded out to 2b.",
+            "J. Jose grounded out to 1b unassisted.",
+            "L. Mastromat walked.",
+            "X. Silva grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Higgins singled to left field.",
+            "E. Malanson struck out swinging.",
+            "S. Testa struck out swinging.",
+            "M. Doyle singled to center field; M. Higgins advanced to second.",
+            "J. Lummus pinch ran for M. Doyle.",
+            "V. Quill grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/westfield-state/boxscore/8153",
+      "date": "4/19/2023",
+      "opponent": "Westfield State",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Lummus grounded out to 2b.",
+            "M. Higgins grounded out to 2b.",
+            "A. Higgins popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Bingham flied out to cf.",
+            "A. Clark struck out looking.",
+            "C. Ciampa popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Alfonso flied out to rf.",
+            "M. Doyle popped up to 3b.",
+            "M. Metzger lined out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Lummus fouled out to 1b.",
+            "M. Higgins grounded out to p.",
+            "A. Higgins lined out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Bingham struck out swinging.",
+            "A. Clark flied out to cf.",
+            "C. Ciampa lined out to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/coast-guard/boxscore/8154",
+      "date": "4/21/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Kane, Gillian",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dewey grounded out to ss.",
+            "N. Beck flied out to rf.",
+            "C. Carey struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Serna flied out to lf.",
+            "L. Farlow flied out to cf.",
+            "I. Shroyer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Behel walked.",
+            "J. Breidenth singled to center field; E. Behel advanced to second.",
+            "K. Becker out at first p to 2b, SAC; J. Breidenth advanced to second; E. Behel advanced to third.",
+            "J. Breidenth advanced to third on a wild pitch; E. Behel scored on a wild pitch.",
+            "M. Dewey homered, 2 RBI; J. Breidenth scored.",
+            "N. Beck struck out swinging.",
+            "C. Carey grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron to c for L. Puskas.",
+            "S. Serna walked.",
+            "L. Farlow grounded out to ss; S. Serna out at second ss.",
+            "I. Shroyer singled to left field.",
+            "G. Hare pinch ran for I. Shroyer.",
+            "E. Behel grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Ponticell to lf for K. Acocella.",
+            "A. Pugliese to p for G. Kane.",
+            "K. Acocella to lf for M. Ponticell.",
+            "J. Breidenth doubled to right field.",
+            "K. Becker grounded out to 3b; J. Breidenth advanced to third.",
+            "M. Dewey grounded out to ss, RBI; J. Breidenth scored.",
+            "N. Beck reached first on an error by ss.",
+            "C. Carey singled to left field; N. Beck advanced to second.",
+            "S. Serna walked; C. Carey advanced to second; N. Beck advanced to third.",
+            "L. Farlow reached on a fielder's choice; S. Serna out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "I. Shroyer singled.",
+            "E. Behel reached on a fielder's choice; I. Shroyer out at second ss to 2b.",
+            "J. Breidenth grounded into double play 2b to ss to 1b; E. Behel out on the play."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/coast-guard/boxscore/8155",
+      "date": "4/21/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dewey homered, RBI.",
+            "N. Beck singled to left field.",
+            "C. Carey singled to left field; N. Beck advanced to second.",
+            "I. Shroyer reached first on an error by ss; C. Carey advanced to second; N. Beck advanced to third.",
+            "L. Farlow popped up to 2b.",
+            "S. Serna reached first on an error by ss, RBI; I. Shroyer advanced to second; C. Carey advanced to third; N. Beck scored, unearned.",
+            "B. Bartz reached on a fielder's choice; S. Serna advanced to second; I. Shroyer advanced to third; C. Carey out at home ss to 3b.",
+            "J. Breidenth reached on a fielder's choice; B. Bartz advanced to second; S. Serna out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Becker grounded out to 2b.",
+            "M. Dewey struck out swinging.",
+            "N. Beck grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Carey grounded out to 2b.",
+            "I. Shroyer popped up to ss.",
+            "L. Farlow homered, RBI.",
+            "S. Serna singled to left field.",
+            "B. Bartz reached first on an error by 3b; S. Serna advanced to second.",
+            "J. Breidenth grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Becker singled to left field.",
+            "M. Dewey lined into double play 3b to 1b; K. Becker out on the play.",
+            "N. Beck grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Carey singled to left field.",
+            "I. Shroyer flied out to lf.",
+            "L. Farlow grounded into double play p to ss to 1b; C. Carey out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Serna doubled to center field.",
+            "B. Bartz singled to center field, RBI; S. Serna scored.",
+            "J. Breidenth reached on a fielder's choice; B. Bartz out at second 1b to ss.",
+            "E. Behel pinch hit for K. Becker.",
+            "E. Behel struck out swinging.",
+            "M. Dewey homered, 2 RBI; J. Breidenth scored.",
+            "N. Beck walked.",
+            "N. Beck stole second.",
+            "C. Carey reached first on an error by ss; N. Beck advanced to third.",
+            "I. Shroyer grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Kane to p for A. DeRosa.",
+            "A. DeRosa to 1b for K. Katsetos.",
+            "L. Farlow grounded out to 2b.",
+            "S. Serna flied out to rf.",
+            "B. Bartz struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/babson/boxscore/8156",
+      "date": "4/22/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "Kane, Gillian",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore walked.",
+            "S. Moore stole second.",
+            "C. Taylor out at first 3b to 2b, SAC, bunt; S. Moore advanced to third.",
+            "L. Morris out at first 1b to 2b.",
+            "K. Karamouzi walked.",
+            "A. Hadjipana fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hennessy singled to left center.",
+            "T. Steed hit by pitch; M. Hennessy advanced to second.",
+            "C. Joslin out at first p to 2b, SAC, bunt; T. Steed advanced to second; M. Hennessy advanced to third.",
+            "A. Cubberly struck out looking.",
+            "S. Moore grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Taylor singled up the middle.",
+            "L. Morris out at first 1b to 2b, SAC, bunt; C. Taylor advanced to second.",
+            "K. Karamouzi singled to third base.",
+            "A. Hadjipana singled to center field; K. Karamouzi advanced to second; C. Taylor advanced to third.",
+            "M. Hennessy singled through the right side, 2 RBI; A. Hadjipana advanced to second; K. Karamouzi scored; C. Taylor scored.",
+            "T. Steed grounded out to p; M. Hennessy advanced to second; A. Hadjipana advanced to third.",
+            "C. Joslin walked.",
+            "A. Cubberly grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Moore walked.",
+            "S. Moore stole second.",
+            "C. Taylor reached first on a fielding error by p, SAC, bunt, advanced to second on a throwing error by p; S. Moore advanced to third.",
+            "L. Morris reached on a fielder's choice; C. Taylor advanced to third; S. Moore out at home ss to c.",
+            "L. Morris stole second.",
+            "K. Karamouzi walked.",
+            "A. Hadjipana lined into double play ss to 3b; C. Taylor out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Hennessy grounded out to 3b.",
+            "T. Steed flied out to cf.",
+            "C. Joslin flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to 3b for A. Rainone.",
+            "D. Serricchi to ss for M. Ponticell.",
+            "A. Cubberly struck out swinging.",
+            "S. Moore walked.",
+            "S. Moore stole second.",
+            "C. Taylor flied out to lf.",
+            "L. Morris reached first on a fielding error by 3b; S. Moore advanced to third.",
+            "K. Karamouzi popped up to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Hadjipana singled to left field.",
+            "M. Hennessy doubled to left center, RBI; A. Hadjipana scored.",
+            "T. Steed singled to center field; M. Hennessy advanced to third.",
+            "C. Joslin singled down the rf line, RBI; T. Steed advanced to second; M. Hennessy scored.",
+            "A. DeStefano pinch hit for A. Cubberly.",
+            "A. Pugliese to p for G. Kane.",
+            "A. DeStefano singled to right center, RBI; C. Joslin advanced to third; T. Steed scored.",
+            "A. Cubberly to 3b for A. DeStefano.",
+            "S. Moore reached on a fielder's choice; A. Cubberly out at second ss to 2b.",
+            "C. Taylor reached on a fielder's choice to second base; S. Moore advanced to second.",
+            "L. Morris walked, RBI; C. Taylor advanced to second; S. Moore advanced to third; C. Joslin scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/babson/boxscore/8157",
+      "date": "4/22/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore singled to first base.",
+            "S. Moore stole second.",
+            "C. Taylor grounded out to ss; S. Moore advanced to third.",
+            "L. Morris grounded out to ss, RBI; S. Moore scored.",
+            "K. Karamouzi singled to right field.",
+            "A. Hadjipana lined out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hennessy grounded out to ss.",
+            "T. Steed singled up the middle.",
+            "T. Steed stole second.",
+            "C. Joslin lined out to p.",
+            "A. Cubberly singled to left field, RBI; T. Steed scored.",
+            "S. Moore singled through the left side, advanced to second on the throw; A. Cubberly advanced to third.",
+            "C. Taylor flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Morris grounded out to 3b.",
+            "K. Karamouzi singled to left field.",
+            "A. Hadjipana doubled to left center; K. Karamouzi advanced to third.",
+            "M. Hennessy grounded out to 3b.",
+            "T. Steed grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "C. Joslin flied out to lf.",
+            "A. Cubberly struck out swinging.",
+            "S. Moore walked.",
+            "C. Taylor grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Serricchi to ss for M. Ponticell.",
+            "L. Morris singled to second base.",
+            "K. Karamouzi reached first on a dropped fly by ss; L. Morris advanced to second.",
+            "A. Hadjipana flied out to lf.",
+            "M. Hennessy walked; K. Karamouzi advanced to second; L. Morris advanced to third.",
+            "T. Steed singled to shortstop, RBI; M. Hennessy advanced to second; K. Karamouzi advanced to third; L. Morris scored.",
+            "C. Joslin struck out looking.",
+            "A. Cubberly struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wpi/boxscore/8158",
+      "date": "4/28/2023",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell hit by pitch.",
+            "S. Russell out at second c to ss, caught stealing.",
+            "L. Ambrosino walked.",
+            "D. Lum homered, 2 RBI; L. Ambrosino scored.",
+            "A. Salvalzo grounded out to ss.",
+            "E. Nagy singled to center field.",
+            "J. Diaz flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Pritchard walked.",
+            "A. Sheehan grounded out to p; K. Pritchard advanced to second.",
+            "L. Jordan popped up to 2b.",
+            "S. Russell grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Ambrosino struck out looking.",
+            "D. Lum struck out swinging.",
+            "A. Salvalzo struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Nagy lined out to ss.",
+            "J. Diaz flied out to cf.",
+            "K. Pritchard doubled to left field.",
+            "A. Amaro pinch ran for K. Pritchard.",
+            "G. Cerbo pinch hit for A. Sheehan.",
+            "G. Cerbo popped up to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Jordan grounded out to ss.",
+            "S. Russell lined out to rf.",
+            "L. Ambrosino fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum singled to right field.",
+            "M. Sherwood pinch ran for D. Lum.",
+            "A. Salvalzo popped up to ss.",
+            "E. Nagy struck out swinging.",
+            "J. Diaz singled to right field; M. Sherwood advanced to third.",
+            "J. Diaz stole second.",
+            "K. Pritchard walked.",
+            "A. Sheehan struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. McCann to 3b for L. Puskas.",
+            "K. Case pinch hit for L. Jordan.",
+            "K. Case walked.",
+            "L. Jordan to lf for K. Case.",
+            "E. Gell to p for G. Kane.",
+            "S. Russell lined out to cf.",
+            "L. Ambrosino struck out swinging.",
+            "D. Lum struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wpi/boxscore/8159",
+      "date": "4/28/2023",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell singled to right field.",
+            "L. Ambrosino reached on a fielder's choice to third base; S. Russell out at second 3b to 2b.",
+            "D. Lum doubled to left field, RBI; L. Ambrosino scored.",
+            "A. Salvalzo singled through the left side; D. Lum advanced to third.",
+            "J. Diaz grounded out to p; A. Salvalzo advanced to second.",
+            "K. Pritchard flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Case struck out looking.",
+            "E. Nagy reached first on a throwing error by ss.",
+            "A. Laughlin reached on a fielder's choice to shortstop; E. Nagy out at second ss to 2b.",
+            "S. Russell singled to right field; A. Laughlin advanced to second.",
+            "L. Ambrosino grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Lum grounded out to 3b.",
+            "A. Salvalzo singled through the left side.",
+            "J. Diaz flied out to rf.",
+            "K. Pritchard flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "K. Case doubled to right center.",
+            "E. Nagy homered to left field, 2 RBI; K. Case scored.",
+            "A. Laughlin struck out swinging.",
+            "S. Russell singled to left field.",
+            "L. Ambrosino popped up to 2b.",
+            "D. Lum walked; S. Russell advanced to second.",
+            "A. Salvalzo flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz singled to second base.",
+            "A. Amaro pinch ran for J. Diaz.",
+            "K. Pritchard flied out to lf.",
+            "K. Case flied out to rf.",
+            "E. Nagy singled to center field; A. Amaro advanced to second.",
+            "A. Laughlin reached on a fielder's choice to shortstop; E. Nagy advanced to second; A. Amaro out at third ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Gendron to c for L. Puskas.",
+            "S. Russell struck out swinging.",
+            "L. Ambrosino struck out swinging.",
+            "D. Lum homered to center field, RBI.",
+            "A. Salvalzo flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wheaton-mass-/boxscore/8160",
+      "date": "4/29/2023",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Kane, Gillian",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Knopf to p.",
+            "B. Dost to dp.",
+            "J. Zito walked.",
+            "B. Agan out at first p to 2b, SAC, bunt; J. Zito advanced to second.",
+            "L. Oliveira singled to right field; J. Zito advanced to third.",
+            "L. Oliveira advanced to second; J. Zito out at home c to 2b to c, caught stealing.",
+            "G. DiBacco doubled to right center, RBI; L. Oliveira scored.",
+            "J. Ceddia popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Rohon walked.",
+            "S. Knopf out at first p to 2b, SAC, bunt; J. Rohon advanced to second.",
+            "L. Platt walked.",
+            "A. Arcand fouled out to c.",
+            "J. Rohon out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Zito popped up to 2b.",
+            "B. Agan walked.",
+            "L. Oliveira struck out looking.",
+            "G. DiBacco doubled to left center, RBI; B. Agan scored.",
+            "J. Ceddia singled up the middle; G. DiBacco advanced to third.",
+            "J. Rohon reached on a fielder's choice; J. Ceddia out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Knopf fouled out to lf.",
+            "L. Platt singled to pitcher.",
+            "A. Arcand flied out to rf.",
+            "J. Zito doubled to right center, RBI; L. Platt scored.",
+            "B. Agan popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Gendron to c for L. Puskas.",
+            "L. Oliveira grounded out to p.",
+            "G. DiBacco fouled out to c.",
+            "J. Ceddia doubled to left field.",
+            "J. Rohon struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Burt pinch hit for S. Knopf.",
+            "A. Burt grounded out to 2b.",
+            "L. Platt singled to center field.",
+            "A. Arcand doubled to right center, RBI; L. Platt scored.",
+            "J. Zito grounded out to 2b; A. Arcand advanced to third.",
+            "B. Agan walked.",
+            "L. Oliveira reached on a fielder's choice; B. Agan out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. McCann to 3b for A. Rainone.",
+            "E. Gell to p for G. Kane.",
+            "G. DiBacco singled down the lf line.",
+            "J. Ceddia popped up to 2b.",
+            "J. Rohon popped up to ss.",
+            "A. Burt popped up to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/wheaton-mass-/boxscore/8161",
+      "date": "4/29/2023",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito grounded out to p.",
+            "B. Agan struck out swinging.",
+            "L. Oliveira grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. DiBacco popped up to 2b.",
+            "J. Ceddia fouled out to 1b.",
+            "L. Platt flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Rohon flied out to rf.",
+            "A. Weston singled to right field.",
+            "A. Burt struck out swinging.",
+            "A. Weston advanced to second on a passed ball.",
+            "J. Zito struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Agan lined out to 2b.",
+            "L. Oliveira homered to left center, RBI.",
+            "G. DiBacco grounded out to 3b.",
+            "J. Ceddia singled up the middle.",
+            "L. Platt struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Rohon flied out to lf.",
+            "A. Weston flied out to lf.",
+            "A. Burt homered to center field, RBI.",
+            "J. Zito grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. Agan singled to center field.",
+            "L. Oliveira reached on a fielder's choice; B. Agan out at second 3b to 2b.",
+            "G. DiBacco reached on a fielder's choice; L. Oliveira out at second ss to 2b.",
+            "J. Ceddia walked; G. DiBacco advanced to second.",
+            "L. Platt struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/coast-guard/boxscore/8162",
+      "date": "5/3/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Kane, Gillian"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Breidenth lined out to rf.",
+            "N. Beck grounded out to 3b.",
+            "C. Carey grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Serna grounded out to 3b.",
+            "I. Shroyer grounded out to 2b.",
+            "L. Farlow grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Bartz grounded out p to 2b to 1b.",
+            "K. Becker grounded out to 2b.",
+            "M. Murphy struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Breidenth grounded out to 1b unassisted.",
+            "N. Beck popped up to ss.",
+            "C. Carey singled to pitcher, bunt.",
+            "S. Serna grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Shroyer flied out to cf.",
+            "L. Farlow grounded out to ss.",
+            "B. Bartz grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to 3b for L. Puskas.",
+            "K. Becker flied out to cf.",
+            "M. Murphy lined out to p.",
+            "J. Breidenth grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Beck singled to right center.",
+            "C. Carey struck out swinging.",
+            "S. Serna out at first p to 2b, SAC, bunt; N. Beck advanced to second.",
+            "I. Shroyer reached on a fielder's choice; N. Beck advanced to third.",
+            "G. Beardsley pinch ran for I. Shroyer.",
+            "L. Farlow reached on a fielder's choice; G. Beardsley out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/mit/boxscore/8163",
+      "date": "5/6/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Kane, Gillian",
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Sell grounded out to 3b.",
+            "A. Ladd singled to right center.",
+            "K. Adkison singled through the right side; A. Ladd advanced to second.",
+            "M. Bivin grounded out to 2b; K. Adkison advanced to second; A. Ladd advanced to third.",
+            "M. Relihan walked.",
+            "M. Cable walked, RBI; M. Relihan advanced to second; K. Adkison advanced to third; A. Ladd scored.",
+            "K. Pendowski fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Spiegel flied out to rf.",
+            "H. Samuelsen grounded out to ss.",
+            "J. Sell flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Ladd doubled down the lf line.",
+            "K. Adkison grounded out to ss; A. Ladd advanced to third.",
+            "M. Bivin flied out to cf, sacrifice fly, RBI; A. Ladd scored.",
+            "M. Relihan flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Pugliese to p for G. Kane.",
+            "M. Cable struck out swinging.",
+            "K. Pendowski singled to center field.",
+            "K. Katsuyama pinch ran for K. Pendowski.",
+            "R. Spiegel reached on a fielder's choice to shortstop; K. Katsuyama out at second ss to 2b.",
+            "H. Samuelsen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Sell grounded out to 3b.",
+            "A. Ladd singled down the rf line.",
+            "K. Adkison reached on a fielder's choice to second base; A. Ladd out at second 2b to ss.",
+            "M. Bivin popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Relihan grounded out p to ss to 1b.",
+            "M. Cable struck out swinging.",
+            "K. Pendowski homered to center field, RBI.",
+            "R. Spiegel singled to center field.",
+            "H. Samuelsen walked; R. Spiegel advanced to second.",
+            "J. Sell singled through the right side, RBI; H. Samuelsen advanced to second, advanced to third on the throw; R. Spiegel scored.",
+            "J. Sell stole second; H. Samuelsen scored on a throwing error by c.",
+            "A. Ladd singled through the right side, advanced to second on the throw, RBI; J. Sell scored.",
+            "K. Adkison singled to left field, RBI; A. Ladd scored.",
+            "M. Bivin singled to left field; K. Adkison advanced to second.",
+            "E. Gell to p for A. Pugliese.",
+            "M. Relihan struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/babson/boxscore/8164",
+      "date": "5/7/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sara Moore doubled to center field.",
+            "Sara Moore out at second 2b unassisted, runner left early.",
+            "Caroline Taylor flied out to lf.",
+            "Lexi Morris flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Karamouzis fouled out to 3b.",
+            "Molly Hennessy popped up to 2b.",
+            "Athena Hadjipanayis struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Chloe Joslin singled through the left side.",
+            "Sophia Pak grounded out to 3b, SAC, bunt; Chloe Joslin advanced to second.",
+            "Allie Cubberly struck out swinging.",
+            "Sara Moore walked.",
+            "Caroline Taylor walked; Sara Moore advanced to second; Chloe Joslin advanced to third.",
+            "Lexi Morris fouled out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kate Karamouzis singled to left field.",
+            "Molly Hennessy grounded out to 3b, SAC, bunt; Kate Karamouzis advanced to second.",
+            "Athena Hadjipanayis flied out to cf.",
+            "Chloe Joslin flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeRosa to 1b.",
+            "E. Gell to p for K. Katsetos.",
+            "Sophia Pak struck out looking.",
+            "Allie Cubberly flied out to cf.",
+            "Sara Moore struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Caroline Taylor grounded out to ss.",
+            "Lexi Morris grounded out to ss.",
+            "Kate Karamouzis grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Molly Hennessy struck out swinging.",
+            "Athena Hadjipanayis popped up to 2b.",
+            "Chloe Joslin struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2023/mit/boxscore/8165",
+      "date": "5/7/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Sell walked.",
+            "A. Ladd reached on a fielder's choice to shortstop; J. Sell out at second ss unassisted.",
+            "K. Adkison singled to second base; A. Ladd advanced to second.",
+            "M. Bivin singled through the right side, RBI; K. Adkison advanced to third; A. Ladd scored.",
+            "M. Bivin stole second.",
+            "K. Pendowski grounded out to 2b, RBI; M. Bivin advanced to third; K. Adkison scored.",
+            "R. Spiegel popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Cable grounded out to 3b.",
+            "M. Relihan singled to right center.",
+            "H. Samuelsen reached on a fielder's choice to third base; M. Relihan out at second 3b to 2b.",
+            "J. Sell singled through the left side; H. Samuelsen advanced to second.",
+            "A. Ladd popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Adkison walked.",
+            "M. Bivin singled to center field; K. Adkison advanced to second.",
+            "K. Pendowski grounded out to ss; M. Bivin advanced to second; K. Adkison advanced to third.",
+            "R. Spiegel singled to shortstop, RBI; K. Adkison scored.",
+            "K. Lee pinch ran for R. Spiegel.",
+            "M. Cable grounded out to 1b unassisted; K. Lee advanced to second; M. Bivin advanced to third.",
+            "M. Relihan hit by pitch.",
+            "H. Samuelsen lined out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "J. Sell singled to third base, bunt.",
+            "A. Ladd singled to third base, bunt; J. Sell advanced to third.",
+            "A. Ladd stole second.",
+            "K. Adkison grounded out to 2b, RBI; A. Ladd advanced to third; J. Sell scored.",
+            "M. Bivin flied out to lf.",
+            "K. Pendowski struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Spiegel grounded out to ss.",
+            "M. Cable walked.",
+            "M. Relihan doubled to right center, RBI; M. Cable scored.",
+            "K. Katsuyama pinch ran for M. Relihan.",
+            "H. Samuelsen singled to pitcher; K. Katsuyama advanced to third.",
+            "J. Sell out at first 3b to 2b, SAC, bunt, RBI; H. Samuelsen advanced to second; K. Katsuyama scored.",
+            "A. Ladd hit by pitch.",
+            "K. Adkison flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Bivin reached first on a muffed throw by 1b.",
+            "K. Pendowski struck out looking.",
+            "M. Bivin stole second.",
+            "R. Spiegel struck out swinging.",
+            "M. Cable reached on a fielder's choice to shortstop; M. Bivin advanced to third.",
+            "M. Cable stole second.",
+            "M. Relihan singled through the left side, RBI; M. Cable advanced to third, out at home lf to c; M. Bivin scored, unearned."
+          ]
+        }
+      ],
+      "year": 2023
+    }
+  ]
+}

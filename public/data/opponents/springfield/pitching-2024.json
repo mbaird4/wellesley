@@ -1,0 +1,3154 @@
+{
+  "slug": "springfield",
+  "domain": "springfieldcollegepride.com",
+  "scrapedAt": "2026-03-02T22:18:37.793Z",
+  "year": 2024,
+  "pitchingStats": [
+    {
+      "name": "Pugliese, Ashley",
+      "w": 12,
+      "l": 2,
+      "era": 1.79,
+      "app": 20,
+      "gs": 18,
+      "ip": 109.2,
+      "h": 113,
+      "r": 46,
+      "er": 28,
+      "bb": 38,
+      "so": 45,
+      "hr": 3
+    },
+    {
+      "name": "DeRosa, Amelia",
+      "w": 15,
+      "l": 7,
+      "era": 1.86,
+      "app": 24,
+      "gs": 20,
+      "ip": 131.2,
+      "h": 125,
+      "r": 51,
+      "er": 35,
+      "bb": 14,
+      "so": 42,
+      "hr": 4
+    },
+    {
+      "name": "Gell, Emily",
+      "w": 2,
+      "l": 0,
+      "era": 2.28,
+      "app": 6,
+      "gs": 1,
+      "ip": 15.1,
+      "h": 7,
+      "r": 8,
+      "er": 5,
+      "bb": 13,
+      "so": 18,
+      "hr": 0
+    },
+    {
+      "name": "Puskas, Lucy",
+      "w": 0,
+      "l": 1,
+      "era": 3.23,
+      "app": 1,
+      "gs": 1,
+      "ip": 4.1,
+      "h": 8,
+      "r": 3,
+      "er": 2,
+      "bb": 3,
+      "so": 0,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/fredonia/boxscore/8681",
+      "date": "3/10/2024",
+      "opponent": "Fredonia",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Devore grounded out to 3b.",
+            "A. Wandell flied out to cf.",
+            "E. Chelius grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Cunningha hit by pitch.",
+            "A. Santiago struck out swinging.",
+            "M. Guidry reached on a fielder's choice; E. Cunningha out at second ss to 2b.",
+            "M. Woolums grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Peregosky struck out swinging.",
+            "M. Esmond struck out swinging.",
+            "I. Lemke pinch hit for M. Devore.",
+            "I. Lemke flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Donston to dp.",
+            "A. Wandell lined out to cf.",
+            "G. Delacruz struck out swinging.",
+            "E. Cunningha grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to c for L. Puskas.",
+            "K. Katsetos to 1b for T. Falotico.",
+            "T. Brojer struck out swinging.",
+            "M. Guidry singled through the left side.",
+            "M. Woolums grounded into double play p to 1b; M. Guidry out on the play."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/haverford/boxscore/8682",
+      "date": "3/10/2024",
+      "opponent": "Haverford",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Leal grounded out to 2b.",
+            "A. Sapirstei walked.",
+            "A. Sapirstei stole second.",
+            "M. Kessinger walked.",
+            "T. Pearlstei struck out swinging.",
+            "L. Martin walked; M. Kessinger advanced to second; A. Sapirstei advanced to third.",
+            "K. Denburgh flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Stowe struck out swinging.",
+            "A. Litchfiel popped up to ss.",
+            "M. Etheridge struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Leal grounded out to ss.",
+            "A. Sapirstei grounded out to ss.",
+            "M. Kessinger singled.",
+            "T. Pearlstei struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Martin reached first on an error by 3b.",
+            "K. Denburgh popped up to ss.",
+            "G. Stowe singled; L. Martin advanced to second.",
+            "S. Fan pinch ran for G. Stowe.",
+            "A. Litchfiel singled, RBI; S. Fan advanced to second; L. Martin scored, unearned.",
+            "M. Etheridge lined out to 2b.",
+            "J. Leal singled, RBI; A. Litchfiel advanced to second; S. Fan scored, unearned.",
+            "A. Sapirstei doubled, RBI; J. Leal advanced to third; A. Litchfiel scored, unearned.",
+            "M. Kessinger grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Whelan to rf for L. Puskas.",
+            "E. Gell to p for A. Pugliese.",
+            "T. Pearlstei walked.",
+            "T. Pearlstei stole second.",
+            "L. Martin struck out swinging.",
+            "K. Denburgh walked.",
+            "S. Fan struck out swinging.",
+            "A. Litchfiel struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Etheridge popped up to 1b.",
+            "J. Leal popped up to p.",
+            "A. Sapirstei grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Kessinger flied out to lf.",
+            "T. Pearlstei struck out swinging.",
+            "L. Martin lined out to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wesleyan-conn-/boxscore/8683",
+      "date": "3/11/2024",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Marino struck out swinging.",
+            "H. Docktor struck out swinging.",
+            "M. Lennon flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Palmer grounded out to p.",
+            "B. Secaira-C grounded out to 3b.",
+            "D. La flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Falcone to dp.",
+            "W. Smart flied out to cf.",
+            "R. Brown grounded out to 2b.",
+            "E. DeCrescen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Santiago to 3b.",
+            "N. Celi pinch hit for L. Marino.",
+            "N. Celi singled to left field.",
+            "B. Tassone pinch hit for H. Docktor.",
+            "B. Tassone out at first 1b to 2b, SAC, bunt; N. Celi advanced to second.",
+            "M. Lennon singled to third base; N. Celi advanced to third.",
+            "C. Palmer flied out to lf, sacrifice fly, RBI; N. Celi scored.",
+            "B. Secaira-C flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. McCann to ss for T. Spingola.",
+            "L. Puskas to lf for L. May.",
+            "A. Olsen to 2b for L. Donston.",
+            "J. Killion grounded out to ss.",
+            "W. Smart popped up to 2b.",
+            "R. Stewart pinch hit for R. Brown.",
+            "R. Stewart struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/saint-josephs-maine-/boxscore/8684",
+      "date": "3/11/2024",
+      "opponent": "Saint Josephs Maine ",
+      "pitchers": [
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Tirrell struck out swinging.",
+            "H. Gosselin grounded out to ss.",
+            "C. Bouchard flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Foley singled to shortstop.",
+            "L. Goodnough struck out swinging.",
+            "A. Carpenter singled to center field; S. Foley advanced to second.",
+            "C. Cloutier struck out swinging.",
+            "M. Verreault struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Owen grounded out to 3b.",
+            "S. Tirrell walked.",
+            "H. Gosselin singled to center field, advanced to second on the throw; S. Tirrell advanced to third.",
+            "C. Bouchard doubled to right center, 2 RBI; H. Gosselin scored; S. Tirrell scored.",
+            "S. Foley popped up to 2b.",
+            "L. Goodnough grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Carpenter struck out swinging.",
+            "C. Cloutier flied out to rf.",
+            "M. Verreault flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Owen struck out swinging.",
+            "S. Tirrell flied out to rf.",
+            "H. Gosselin lined out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Green-Ser pinch hit for C. Bouchard.",
+            "A. Green-Ser grounded out to p.",
+            "A. Gilbert pinch hit for S. Foley.",
+            "A. Gilbert struck out swinging.",
+            "A. Downs pinch hit for L. Goodnough.",
+            "A. Downs popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/lasell/boxscore/8685",
+      "date": "3/12/2024",
+      "opponent": "Lasell",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Fortin singled to third base.",
+            "B. Gendreau singled to third base; A. Fortin advanced to third on a throwing error by 3b.",
+            "B. Gendreau stole second.",
+            "M. Still grounded out to 2b, RBI; B. Gendreau advanced to third; A. Fortin scored, unearned.",
+            "K. Hopkins grounded out to p.",
+            "S. Raccio grounded out p to ss to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Sheeley walked.",
+            "A. DeMarest out at first 1b to 2b, SAC, bunt; E. Sheeley advanced to second.",
+            "A. Bland walked.",
+            "A. Kirck struck out swinging.",
+            "A. Fortin popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Gendreau popped up to 1b.",
+            "M. Still walked.",
+            "M. Still to rf for E. Stilwell.",
+            "E. Stilwell to dp for M. Still.",
+            "K. Hopkins reached on a fielder's choice to shortstop; E. Stilwell out at second ss to 2b.",
+            "S. Raccio singled to left field; K. Hopkins advanced to second.",
+            "E. Sheeley popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. DeMarest flied out to rf.",
+            "A. Bland struck out swinging.",
+            "A. Kirck struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Fortin grounded out to ss.",
+            "B. Gendreau singled down the rf line.",
+            "M. Still grounded out to 2b; B. Gendreau advanced to second.",
+            "M. Theall struck out swinging, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia to c for T. Falotico.",
+            "S. Raccio popped up to ss.",
+            "E. Sheeley grounded out to ss.",
+            "A. DeMarest grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Puskas to dp.",
+            "E. Whelan to rf for E. Santiago.",
+            "E. Rondeau pinch hit for A. Bland.",
+            "E. Rondeau reached first on a throwing error by p.",
+            "A. Kirck walked; E. Rondeau advanced to second.",
+            "A. Fortin singled down the rf line; A. Kirck advanced to second; E. Rondeau advanced to third.",
+            "B. Gendreau reached on a fielder's choice to second base, RBI; A. Fortin out at second 2b to ss; A. Kirck advanced to third, out at home ss to c; E. Rondeau scored, unearned.",
+            "M. Still reached on a fielder's choice to second base; B. Gendreau out at second 2b to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/hope-college/boxscore/8686",
+      "date": "3/12/2024",
+      "opponent": "Hope College",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Martin grounded out to 2b.",
+            "P. Benjamin singled to center field.",
+            "S. Zombo reached on a fielder's choice to third base; P. Benjamin out at second 3b to 2b.",
+            "S. Zombo advanced to second on a wild pitch.",
+            "K. DeMann singled to right field, RBI; S. Zombo scored.",
+            "E. Ruhrup reached on a fielder's choice to shortstop; K. DeMann out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Stironek singled to third base.",
+            "L. Iden pinch ran for S. Stironek.",
+            "M. Holser out at first 3b to 2b, SAC, bunt; L. Iden advanced to second.",
+            "M. Pahl flied out to cf.",
+            "K. Acker flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Martin singled up the middle.",
+            "P. Benjamin singled, bunt, advanced to second; E. Martin advanced to third.",
+            "S. Zombo reached on a fielder's choice to third base; P. Benjamin advanced to third; E. Martin out at home 3b to c.",
+            "S. Zombo stole second.",
+            "K. DeMann popped up to 2b, sacrifice fly, RBI; S. Zombo advanced to third; P. Benjamin scored.",
+            "E. Ruhrup flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Stironek doubled to center field.",
+            "M. Holser grounded out to ss.",
+            "S. Stironek advanced to third on a wild pitch.",
+            "M. Pahl walked.",
+            "M. Pahl stole second.",
+            "K. Acker flied out to rf, sacrifice fly, RBI; S. Stironek scored.",
+            "E. Martin fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeRosa to 3b.",
+            "E. Gell to p for E. Santiago.",
+            "P. Benjamin walked.",
+            "S. Zombo reached on a fielder's choice to pitcher; P. Benjamin advanced to second.",
+            "K. DeMann singled to catcher, bunt; S. Zombo advanced to second; P. Benjamin advanced to third.",
+            "K. DeMann advanced to second on a wild pitch; S. Zombo advanced to third on a wild pitch; P. Benjamin scored on a wild pitch.",
+            "E. Ruhrup struck out swinging.",
+            "S. Stironek reached first on a throwing error by 1b; K. DeMann scored, unearned; S. Zombo scored, unearned.",
+            "M. Holser popped up to 2b.",
+            "M. Pahl struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Olsen to 2b for L. Puskas.",
+            "K. Acker grounded out to 3b.",
+            "E. Martin lined out to cf.",
+            "P. Benjamin fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/mount-saint-mary-ny-/boxscore/8687",
+      "date": "3/14/2024",
+      "opponent": "Mount Saint Mary Ny ",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "O. Ferara singled to center field.",
+            "L. Dentato fouled out to rf.",
+            "S. Bendig flied out to cf.",
+            "S. Reed flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Gannon walked.",
+            "G. Macdonald reached on a fielder's choice to shortstop; S. Gannon out at second ss to 2b.",
+            "R. Norwood grounded into double play ss to 1b; G. Macdonald out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Seyfert to cf.",
+            "P. Shrimpton walked.",
+            "M. McClinche flied out to lf.",
+            "O. Ferara grounded into double play ss to 1b; P. Shrimpton out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Falotico to dp.",
+            "C. Pecchia to c for S. Falcone.",
+            "K. Katsetos to 1b.",
+            "L. Donston to 2b for A. Olsen.",
+            "L. Dentato grounded out to ss.",
+            "S. Bendig singled up the middle.",
+            "S. Reed reached on a fielder's choice to third base; S. Bendig out at second 3b to 2b.",
+            "S. Gannon struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Whelan to rf for T. Spingola.",
+            "G. Macdonald singled to center field.",
+            "R. Norwood reached on a fielder's choice to third base; G. Macdonald out at second 3b to 2b.",
+            "P. Shrimpton reached on a fielder's choice; R. Norwood out at second 3b to 2b.",
+            "C. Graham singled to center field; P. Shrimpton advanced to second.",
+            "O. Ferara popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/montclair-state/boxscore/8688",
+      "date": "3/14/2024",
+      "opponent": "Montclair State",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "R. Glynn grounded out to ss.",
+            "M. Leech grounded out to p.",
+            "K. Cosentino popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Mullen flied out to rf.",
+            "K. Brunner singled to shortstop.",
+            "M. Colligan popped up to 3b.",
+            "J. Casillas flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Santiago struck out swinging.",
+            "N. Wood grounded out to c unassisted.",
+            "R. Glynn grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Leech singled through the left side.",
+            "K. Cosentino singled to left field; M. Leech advanced to second.",
+            "L. Mullen out at first p to 2b, SAC, bunt; K. Cosentino advanced to second; M. Leech advanced to third.",
+            "K. Brunner flied out to rf, sacrifice fly, RBI; K. Cosentino advanced to third; M. Leech scored.",
+            "M. Colligan flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Casillas grounded out to 1b unassisted.",
+            "S. Seretis pinch hit for A. Santiago.",
+            "S. Seretis lined out to cf.",
+            "D. Plaganis pinch hit for N. Wood.",
+            "D. Plaganis popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. DeRosa to 3b.",
+            "E. Gell to p for E. Santiago.",
+            "R. Glynn walked.",
+            "R. Glynn stole second.",
+            "M. Leech walked.",
+            "K. Cosentino popped up to 1b.",
+            "L. Mullen struck out swinging.",
+            "M. Leech advanced to second on a wild pitch; R. Glynn advanced to third on a wild pitch.",
+            "K. Brunner flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Colligan popped up to ss.",
+            "J. Casillas popped up to 2b.",
+            "S. Seretis walked.",
+            "N. Wood lined out to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/cortland/boxscore/8689",
+      "date": "3/15/2024",
+      "opponent": "Cortland",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "No play.",
+            "T.REICH flied out to rf (1-1 KB).",
+            "G.MEYERS grounded out to p (0-1 K).",
+            "M.BARRY struck out looking (2-2 KBFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K.WESTENBERG grounded out to ss (1-2 KFB).",
+            "H.WRIGHT grounded out to 2b (1-1 BF).",
+            "K.McANALLY grounded out to 1b unassisted (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J.KOCH grounded out to 3b (1-2 FBK).",
+            "K.STORK out at first p to 2b, bunt (0-0).",
+            "L.ORNSTEIN reached on a fielding error by p (1-1 SB).",
+            "T.REICH reached on a fielder's choice (2-1 BKB); L.ORNSTEIN out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G.MEYERS singled to shortstop (0-0).",
+            "M.BARRY walked (3-1 KBBBB); G.MEYERS advanced to second.",
+            "K.WESTENBERG grounded into double play ss to 2b to 1b (0-0); M.BARRY out on the play; G.MEYERS advanced to third.",
+            "H.WRIGHT reached on a fielding error by ss (0-0); G.MEYERS scored, unearned.",
+            "K.McANALLY lined out to 1b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J.KOCH walked (3-1 BFBBB).",
+            "A.FERRARA pinch ran for J.KOCH.",
+            "K.STORK singled to catcher, bunt (0-0); A.FERRARA advanced to second.",
+            "K.STORK advanced to second; A.FERRARA out at third c to 3b.",
+            "L.ORNSTEIN singled to third base (2-2 BKFB); K.STORK no advance.",
+            "T.REICH singled down the rf line (1-1 KB); L.ORNSTEIN advanced to second; K.STORK advanced to third.",
+            "G.MEYERS reached on a fielder's choice to shortstop (1-1 FB); T.REICH advanced to second; L.ORNSTEIN advanced to third; K.STORK scored on a muffed throw by c, unearned.",
+            "G.MEYERS advanced to second on the error; T.REICH advanced to third on the error; L.ORNSTEIN scored on the error, unearned.",
+            "M.BARRY struck out swinging (1-2 KBKFS).",
+            "K.WESTENBERG reached on catcher's interference (0-1 K).",
+            "H.WRIGHT singled down the rf line, 2 RBI (0-1 K); K.WESTENBERG advanced to third; G.MEYERS scored, unearned; T.REICH scored, unearned.",
+            "K.McANALLY lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amelia DeRos to 3b.",
+            "Emily Gell to p for Emilia Santi.",
+            "J.KOCH walked (3-2 BSBSBB).",
+            "K.STORK singled to right center (1-2 BSF); J.KOCH advanced to third.",
+            "K.STORK stole second.",
+            "K.PENDERGAST walked (3-2 BKBBKB).",
+            "Ashley Pugli to p for Emily Gell.",
+            "T.REICH singled through the left side, 2 RBI (1-1 KB); K.PENDERGAST advanced to third, scored on a throwing error by cf, unearned; K.STORK scored; J.KOCH scored.",
+            "T.REICH advanced to third on the error.",
+            "G.MEYERS lined out to 2b (0-0).",
+            "M.BARRY walked (3-1 BBKBB).",
+            "K.WESTENBERG lined out to 2b (0-0).",
+            "H.WRIGHT grounded out to 2b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Callie Gendr to c for Taylor Falot.",
+            "K.McANALLY grounded out to 1b unassisted (2-2 KBFB).",
+            "J.KOCH grounded out to ss (0-1 K).",
+            "K.STORK reached on a throwing error by p (3-1 BKBB).",
+            "K.PENDERGAST singled to right field (1-2 KBFF); K.STORK advanced to second, out at third rf to 3b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/beloit/boxscore/8690",
+      "date": "3/15/2024",
+      "opponent": "Beloit",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Murrah reached first on an error by 2b.",
+            "L. Murrah stole second.",
+            "B. Arteaga grounded out to 3b, SAC, bunt; L. Murrah advanced to third.",
+            "A. Donath singled to second base, RBI; L. Murrah scored, unearned.",
+            "K. Witte singled to left field; A. Donath advanced to second.",
+            "A. Olson reached on a fielder's choice; K. Witte advanced to second; A. Donath out at third ss to 3b.",
+            "S. Meyers singled to right field; A. Olson advanced to second; K. Witte advanced to third.",
+            "S. Harbison struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Coppe grounded out to 2b.",
+            "P. Reyes flied out to cf.",
+            "L. Murrah lined out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Arteaga walked.",
+            "A. Donath singled to left field; B. Arteaga advanced to second.",
+            "K. Witte flied out to lf.",
+            "A. Olson flied out to cf.",
+            "S. Meyers grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Harbison grounded out to 3b.",
+            "J. Coppe struck out swinging.",
+            "P. Reyes singled to right center.",
+            "L. Murrah grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to c for S. Falcone.",
+            "B. Arteaga walked.",
+            "A. Donath singled, bunt; B. Arteaga advanced to second.",
+            "K. Witte struck out swinging.",
+            "A. Olson grounded into double play 3b unassisted; B. Arteaga out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. DeRosa to p.",
+            "E. Santiago to 3b for A. Pugliese.",
+            "S. Meyers flied out to cf.",
+            "J. Jordan pinch hit for S. Harbison.",
+            "S. Lutes pinch hit for J. Coppe.",
+            "J. Jordan grounded out to 2b.",
+            "S. Lutes lined out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Olsen to 2b for K. Katsetos.",
+            "I. Johnson struck out swinging, out at first c to 1b.",
+            "L. Murrah flied out to rf.",
+            "B. Arteaga flied out to cf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/eastern-connecticut/boxscore/8166",
+      "date": "3/22/2024",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marelli grounded out to 3b.",
+            "S. Remillard grounded out to 2b.",
+            "J. SanGiovan grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Vilchez fouled out to lf.",
+            "M. Sauve singled to shortstop.",
+            "M. Rubeck singled to shortstop; M. Sauve advanced to second.",
+            "K. Laird out at first p to 2b, SAC, bunt; M. Rubeck advanced to second; M. Sauve advanced to third.",
+            "L. Kenefick grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Baker grounded out to ss.",
+            "E. Marelli grounded out to 2b.",
+            "S. Remillard singled to center field.",
+            "J. SanGiovan singled to left field; S. Remillard advanced to second.",
+            "A. Vilchez grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Pecchia to dp for S. Falcone.",
+            "M. Sauve lined out to 1b.",
+            "M. Rubeck flied out to lf.",
+            "K. Laird grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Kenefick grounded out to rf.",
+            "M. Baker struck out swinging.",
+            "E. Marelli popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Remillard doubled to left field.",
+            "J. SanGiovan struck out swinging.",
+            "A. Vilchez singled to left field; S. Remillard advanced to third.",
+            "J. Boya pinch ran for A. Vilchez.",
+            "M. Sauve grounded out to p; J. Boya advanced to second.",
+            "M. Rubeck grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Laird doubled to right field, out at third rf to 2b to 3b.",
+            "/  for M. Bowen.",
+            "M. Bowen pinch hit for L. Kenefick.",
+            "M. Bowen doubled to right field.",
+            "A. Gruca pinch hit for M. Baker.",
+            "R. Lalor pinch ran for M. Bowen.",
+            "A. Gruca grounded out to 1b unassisted; R. Lalor advanced to third.",
+            "E. Marelli grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "S. Remillard E. Marelli placed on second.",
+            "S. Remillard reached on a fielder's choice to third base, bunt.",
+            "J. SanGiovan out at first p to 2b, SAC, bunt; S. Remillard advanced to second; E. Marelli advanced to third.",
+            "A. Vilchez reached on a fielder's choice to pitcher, advanced to second; S. Remillard advanced to third; E. Marelli out at home p to c.",
+            "M. Sauve grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/eastern-connecticut/boxscore/8167",
+      "date": "3/22/2024",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marelli singled through the left side.",
+            "S. Remillard struck out swinging.",
+            "E. Marelli stole second.",
+            "A. Vilchez flied out to lf.",
+            "J. SanGiovan grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Sauve flied out to cf.",
+            "K. Laird grounded out to 3b.",
+            "M. Rubeck flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Bowen grounded out to rf.",
+            "M. Baker walked.",
+            "M. Baker out at second c to ss, caught stealing.",
+            "E. Marelli grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Remillard lined out to 3b.",
+            "A. Vilchez grounded out to 2b.",
+            "J. SanGiovan popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Sauve flied out to lf.",
+            "K. Laird doubled to center field.",
+            "M. Rubeck singled through the left side; K. Laird advanced to third.",
+            "R. Lalor pinch ran for M. Rubeck.",
+            "R. Lalor out at first 1b unassisted, runner left early.",
+            "M. Bowen grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Boya pinch hit for M. Baker.",
+            "J. Boya flied out to lf.",
+            "E. Marelli singled up the middle.",
+            "E. Marelli advanced to second on a passed ball.",
+            "S. Remillard struck out swinging.",
+            "A. Vilchez singled up the middle, advanced to second on the throw, RBI; E. Marelli scored, unearned.",
+            "A. Gruca pinch ran for A. Vilchez.",
+            "J. SanGiovan flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. McCann to ss for L. Donston.",
+            "M. Sauve singled through the left side.",
+            "K. Laird singled through the left side; M. Sauve advanced to second.",
+            "T. Lathrop pinch ran for M. Sauve.",
+            "M. Rubeck reached on a fielder's choice to second base; K. Laird out at second 2b to ss; T. Lathrop advanced to third.",
+            "M. Bowen tripled to right field, 2 RBI; M. Rubeck scored; T. Lathrop scored.",
+            "M. Baker grounded out to 2b, RBI; M. Bowen scored.",
+            "E. Marelli grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/keene-state/boxscore/8168",
+      "date": "3/27/2024",
+      "opponent": "Keene State",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Miller struck out swinging.",
+            "K. Halvorsen struck out swinging.",
+            "E. Picard grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Whittier grounded out to p.",
+            "G. Wallace popped up to ss.",
+            "A. Monkevicz struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Demmy flied out to rf.",
+            "M. Rodrigues grounded out to p.",
+            "M. Murray flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Miller grounded out to p.",
+            "K. Halvorsen struck out swinging.",
+            "E. Picard grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Whittier flied out to cf.",
+            "G. Wallace lined out to cf.",
+            "A. Monkevicz grounded out to 2b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Santiago to 3b.",
+            "C. Gendron to c for T. Spingola.",
+            "B. McCann to ss for L. Donston.",
+            "L. Demmy singled up the middle.",
+            "M. Rodrigues singled to pitcher; L. Demmy advanced to second.",
+            "M. Murray struck out looking.",
+            "C. Miller lined into double play 1b; M. Rodrigues out on the play."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/keene-state/boxscore/8169",
+      "date": "3/27/2024",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Miller grounded out to 2b.",
+            "E. Picard grounded out to ss.",
+            "L. Whittier grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Wallace homered to left field, RBI.",
+            "K. Keyser flied out to cf.",
+            "L. Mandel struck out looking.",
+            "A. Monkevicz doubled to right center.",
+            "K. Halvorsen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Murray grounded out to 3b, bunt.",
+            "C. Miller grounded out to 2b.",
+            "E. Picard singled to right field.",
+            "L. Whittier reached on a fielder's choice to shortstop; E. Picard out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Puskas to rf.",
+            "G. Wallace walked.",
+            "K. Keyser singled to left field; G. Wallace advanced to second.",
+            "M. Rodrigues out at first 3b to 2b, SAC, bunt; K. Keyser advanced to second; G. Wallace advanced to third.",
+            "A. Monkevicz grounded out to 2b, RBI; G. Wallace scored.",
+            "K. Halvorsen singled to center field; K. Keyser advanced to third.",
+            "M. Murray walked; K. Halvorsen advanced to second.",
+            "C. Miller struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Gell to p for A. Pugliese.",
+            "E. Picard walked.",
+            "L. Whittier popped up to ss.",
+            "G. Wallace struck out swinging.",
+            "K. Keyser struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Rodrigues flied out to cf.",
+            "A. Monkevicz struck out swinging.",
+            "A. Adams pinch hit for K. Halvorsen.",
+            "A. Adams walked.",
+            "K. Halvorsen to ss for A. Adams.",
+            "M. Murray singled to left field; K. Halvorsen advanced to second.",
+            "C. Miller struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Picard walked.",
+            "L. Whittier reached on a fielder's choice to shortstop; E. Picard out at second ss to 2b.",
+            "G. Wallace walked; L. Whittier advanced to second.",
+            "A. Pugliese to p for E. Gell.",
+            "K. Keyser singled to center field; G. Wallace out at second cf to ss; L. Whittier advanced to third.",
+            "C. Chordas pinch ran for K. Keyser.",
+            "C. Chordas stole second.",
+            "M. Rodrigues grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/emerson/boxscore/8170",
+      "date": "3/30/2024",
+      "opponent": "Emerson",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Zannotti flied out to lf (1-1 BK).",
+            "Zenga singled through the left side (3-2 BBBKK).",
+            "Overton grounded into double play 2b to ss to 1b (0-1 F); Zenga out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Caiazza grounded out to 2b (2-1 KBB).",
+            "Killough doubled to left center (1-1 KB).",
+            "Sheehan grounded out to 3b (0-0); Killough advanced to third.",
+            "Beaulieu flied out to cf (1-2 BKFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lacey flied out to cf (2-1 BBK).",
+            "Rosenberger struck out swinging (0-2 KSS).",
+            "Zannotti doubled to left center (1-0 B).",
+            "Zenga struck out looking (0-2 FSK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Overton flied out to cf (1-1 BK).",
+            "Caiazza grounded out to ss (0-1 K).",
+            "Killough grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sheehan reached on a fielding error by lf, advanced to second (0-1 K).",
+            "Rice pinch ran for Sheehan.",
+            "Beaulieu popped up to ss (3-2 BKBBF).",
+            "Lacey struck out looking (0-2 FKK).",
+            "Rosenberger struck out swinging (0-2 KSFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zannotti flied out to lf (2-0 BB).",
+            "Zenga popped up to ss (0-0).",
+            "Overton popped up to ss (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Caiazza struck out swinging (0-2 KKS).",
+            "Killough grounded out to p (2-1 BKB).",
+            "Sheehan grounded out to 2b (0-1 K)."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/emerson/boxscore/8171",
+      "date": "3/30/2024",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Zannotti walked.",
+            "I. Shaffer singled to right field; S. Zannotti advanced to second.",
+            "C. Overton singled to center field; I. Shaffer advanced to second; S. Zannotti advanced to third.",
+            "R. Caiazza reached on a fielder's choice, RBI; C. Overton out at second ss unassisted; I. Shaffer advanced to third; S. Zannotti scored.",
+            "M. Killough grounded out to 3b; R. Caiazza advanced to second.",
+            "K. Zenga popped up to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Gomez grounded out to 3b.",
+            "G. Beaulieu singled to center field.",
+            "M. Rice struck out swinging.",
+            "G. Beaulieu stole second.",
+            "S. Zannotti fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "I. Shaffer grounded out to ss.",
+            "C. Overton grounded out to ss.",
+            "R. Caiazza grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Rainone to cf.",
+            "M. Killough lined out to rf.",
+            "K. Zenga lined out to 3b.",
+            "J. Gomez struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "G. Beaulieu walked.",
+            "M. Rice struck out looking.",
+            "S. Zannotti struck out looking.",
+            "G. Beaulieu stole second.",
+            "I. Shaffer lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Katsetos to 1b for S. Falcone.",
+            "C. Overton lined out to rf.",
+            "R. Caiazza struck out swinging.",
+            "M. Killough lined out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Pecchia to c for L. Donston.",
+            "K. Zenga reached first on an error by 2b.",
+            "J. Gomez pinch hit for K. Regan.",
+            "J. Gomez grounded into double play ss to 1b; K. Zenga out on the play.",
+            "G. Beaulieu struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8174",
+      "date": "4/5/2024",
+      "opponent": "Babson",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore singled to left field.",
+            "S. Moore out at second c to 2b, caught stealing.",
+            "E. Walsh walked.",
+            "E. Walsh out at second c to ss, caught stealing.",
+            "A. Hadjipana flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Karamouzi struck out swinging.",
+            "M. Hennessy singled to right field.",
+            "C. Raymond reached on a fielder's choice to pitcher; M. Hennessy out at second p to 2b.",
+            "C. Musco singled to left field; C. Raymond advanced to second.",
+            "R. Madia grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Russell flied out to cf.",
+            "S. Moore singled up the middle.",
+            "E. Walsh grounded out to 1b unassisted; S. Moore advanced to second.",
+            "A. Hadjipana grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron to c for S. Falcone.",
+            "K. Karamouzi doubled to right center.",
+            "M. Hennessy out at first p to 2b, SAC, bunt; K. Karamouzi advanced to third.",
+            "C. Raymond singled to left field, RBI; K. Karamouzi scored.",
+            "C. Raymond out at second c to 2b, caught stealing.",
+            "C. Musco lined out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Madia lined out to ss.",
+            "M. Russell grounded out to 2b.",
+            "S. Moore grounded out to p, bunt."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Whelan to rf for K. Katsetos.",
+            "M. Seyfert to dp.",
+            "E. Walsh grounded out to 2b.",
+            "A. Hadjipana singled to second base.",
+            "A. Hadjipana stole second.",
+            "K. Karamouzi walked.",
+            "M. Hennessy reached on a fielder's choice to shortstop; K. Karamouzi advanced to second; A. Hadjipana advanced to third on an error by 3b.",
+            "C. Raymond popped up to 2b.",
+            "C. Musco grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8175",
+      "date": "4/5/2024",
+      "opponent": "Babson",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore grounded out to 2b.",
+            "E. Walsh singled up the middle.",
+            "A. Hadjipana reached on a fielder's choice to second base; E. Walsh out at second 2b unassisted.",
+            "A. Hadjipana stole second.",
+            "K. Karamouzi grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hennessy tripled to right field.",
+            "C. Raymond grounded out to 2b, RBI; M. Hennessy scored.",
+            "C. Musco grounded out to 3b.",
+            "N. Petrillo grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Russell grounded out to ss.",
+            "S. Moore grounded out to 2b.",
+            "E. Walsh walked.",
+            "E. Walsh out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Hadjipana singled to first base.",
+            "K. Karamouzi reached on a fielder's choice to second base; A. Hadjipana advanced to second on a fielding error by 2b.",
+            "M. Hennessy out at first 3b to 2b, SAC, bunt; K. Karamouzi advanced to second; A. Hadjipana advanced to third.",
+            "C. Raymond grounded out to ss, RBI; K. Karamouzi advanced to third; A. Hadjipana scored, unearned.",
+            "C. Musco grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Seyfert to dp.",
+            "B. McCann to ss for S. Falcone.",
+            "N. Petrillo flied out to rf.",
+            "M. Russell grounded out to 3b.",
+            "S. Moore singled to center field.",
+            "E. Walsh singled to left field; S. Moore advanced to second.",
+            "A. Hadjipana grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Karamouzi grounded out to 3b.",
+            "M. Hennessy flied out to rf.",
+            "C. Raymond grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Pak reached first on a fielding error by 3b.",
+            "N. Petrillo reached on a fielder's choice to second base; S. Pak out at second 2b to ss.",
+            "M. Russell singled through the left side; N. Petrillo advanced to second.",
+            "S. Moore reached on a fielder's choice to shortstop; M. Russell advanced to second; N. Petrillo out at third ss to 3b.",
+            "E. Walsh grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wellesley/boxscore/8176",
+      "date": "4/6/2024",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out swinging.",
+            "E. DeCleene singled to pitcher.",
+            "G. Jones out at first c to 2b, SAC, bunt; E. DeCleene advanced to second.",
+            "J. Colgan flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Lundin flied out to cf.",
+            "A. Rodriguez doubled to right field.",
+            "S. Wicker singled up the middle; A. Rodriguez advanced to third.",
+            "S. Wicker stole second.",
+            "P. Phillips fouled out to p.",
+            "J. Vargas grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Mulhern struck out looking.",
+            "E. DeCleene grounded out to p, bunt.",
+            "G. Jones grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Colgan flied out to lf.",
+            "C. Lundin flied out to cf.",
+            "A. Rodriguez grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Wicker reached first on a throwing error by 2b.",
+            "K. Xiao pinch ran for S. Wicker.",
+            "P. Phillips flied out to cf.",
+            "D. Borrison pinch hit for J. Vargas.",
+            "D. Borrison flied out to rf.",
+            "A. Mulhern singled to center field, advanced to second on the throw; K. Xiao advanced to third.",
+            "E. Kulhanek pinch hit for E. DeCleene.",
+            "E. Kulhanek grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Jones singled to center field.",
+            "J. Colgan singled through the right side; G. Jones advanced to second.",
+            "C. Lundin flied out to lf.",
+            "A. Rodriguez grounded into double play ss to 1b; J. Colgan out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Gendron to c for S. Falcone.",
+            "B. McCann to ss for L. Donston.",
+            "A. Rainone to cf for T. Spingola.",
+            "P. Penny pinch hit for S. Wicker.",
+            "P. Penny struck out swinging.",
+            "L. Young pinch hit for P. Phillips.",
+            "L. Young reached first on a fielding error by 3b.",
+            "P. Phillips to cf for L. Young.",
+            "E. Gaunce pinch hit for J. Vargas.",
+            "E. Gaunce singled to left field; P. Phillips advanced to second.",
+            "K. Parsons pinch hit for A. Mulhern.",
+            "K. Parsons grounded out to 3b; E. Gaunce advanced to second; P. Phillips advanced to third.",
+            "E. DeCleene flied out to lf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wellesley/boxscore/8177",
+      "date": "4/6/2024",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern grounded out to p.",
+            "E. DeCleene grounded out to c unassisted.",
+            "G. Jones grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan grounded out to 3b.",
+            "C. Lundin lined out to 3b.",
+            "A. Rodriguez walked.",
+            "E. Gaunce grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Vargas grounded out to 3b.",
+            "C. Chung grounded out to ss.",
+            "A. Mulhern singled to left field.",
+            "E. DeCleene grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Jones flied out to cf.",
+            "J. Colgan doubled down the lf line.",
+            "C. Lundin grounded out to ss.",
+            "A. Rodriguez singled to right field; J. Colgan scored on an error by rf, unearned.",
+            "E. Gaunce singled to right field; A. Rodriguez advanced to second.",
+            "J. Vargas singled to shortstop; E. Gaunce advanced to second; A. Rodriguez advanced to third.",
+            "C. Chung reached on a fielder's choice, RBI; J. Vargas advanced to second; E. Gaunce advanced to third; A. Rodriguez scored.",
+            "A. Mulhern grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. DeCleene lined out to ss.",
+            "G. Jones flied out to rf.",
+            "J. Colgan singled to left field.",
+            "C. Lundin reached on a fielder's choice; J. Colgan out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Rodriguez singled to second base.",
+            "A. Delgado pinch ran for A. Rodriguez.",
+            "E. Gaunce reached first on a fielding error by 3b, SAC, bunt; A. Delgado advanced to second.",
+            "J. Vargas out at first 3b to 2b, SAC, bunt; E. Gaunce advanced to second; A. Delgado advanced to third.",
+            "C. Chung struck out swinging.",
+            "A. Mulhern singled up the middle, 2 RBI; E. Gaunce scored, unearned; A. Delgado scored, unearned.",
+            "E. Kulhanek pinch hit for E. DeCleene.",
+            "E. Kulhanek struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Jones walked.",
+            "J. Colgan flied out to cf.",
+            "C. Lundin reached on a fielder's choice to third base; G. Jones out at second 3b to 2b.",
+            "/  for P. Phillips.",
+            "P. Phillips pinch ran for C. Lundin.",
+            "P. Phillips out at second c to ss, caught stealing."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/-25-mit/boxscore/8180",
+      "date": "4/13/2024",
+      "opponent": " 25 Mit",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M Cable doubled to right center.",
+            "M Bivin homered to left field, 2 RBI; M Cable scored.",
+            "K Adkison grounded out to p.",
+            "K Pendowski grounded out to 2b.",
+            "M Relihan singled to left field.",
+            "A Kumar grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O Scarpaci flied out to cf.",
+            "R Spiegel grounded out to p.",
+            "K Hines popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M Cable flied out to lf.",
+            "M Bivin popped up to 2b.",
+            "K Adkison popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K Pendowski flied out to cf.",
+            "M Relihan flied out to lf.",
+            "A Kumar singled to right field.",
+            "O Scarpaci walked; A Kumar advanced to second.",
+            "R Spiegel struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K Hines struck out swinging.",
+            "M Cable singled to center field.",
+            "M Bivin flied out to cf.",
+            "K Adkison grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K Pendowski out at first p to ss to 1b.",
+            "M Relihan grounded out to ss.",
+            "A Kumar flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "O Scarpaci popped up to 2b.",
+            "R Spiegel popped up to ss.",
+            "K Hines flied out to cf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/-25-mit/boxscore/8181",
+      "date": "4/13/2024",
+      "opponent": " 25 Mit",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M Cable walked.",
+            "M Bivin walked; M Cable advanced to second.",
+            "K Pendowski singled to left field; M Bivin advanced to second; M Cable advanced to third.",
+            "K Pendowski advanced to second; M Bivin advanced to third; M Cable scored on a wild pitch.",
+            "M Relihan walked.",
+            "K Adkison popped up to ss.",
+            "O Scarpaci reached on a fielder's choice; M Relihan advanced to second; K Pendowski advanced to third; M Bivin out at home 3b to c.",
+            "A Kumar grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R Spiegel flied out to rf.",
+            "K Hines grounded out to ss.",
+            "M Cable grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M Bivin singled to center field.",
+            "K Pendowski lined into double play ss unassisted; M Bivin out on the play.",
+            "M Relihan reached on an error by ss.",
+            "K Adkison grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "O Scarpaci flied out to cf.",
+            "A Kumar flied out to lf.",
+            "R Spiegel grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Callie Gendr to c for Sarah Falcon.",
+            "Breannah McC to ss for Kate Katseto.",
+            "K Hines struck out looking.",
+            "M Cable flied out to cf.",
+            "M Bivin flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K Pendowski grounded out to p.",
+            "M Relihan lined out to ss.",
+            "K Adkison singled to right field.",
+            "E Hasegawa pinch hit for O Scarpaci.",
+            "E Hasegawa walked; K Adkison advanced to second.",
+            "A Kumar grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ava Rainone to cf.",
+            "A Chinchar pinch hit for R Spiegel.",
+            "A Chinchar flied out to lf.",
+            "K Hines popped up to 3b.",
+            "M Cable singled to right field.",
+            "M Bivin singled to center field; M Cable advanced to second.",
+            "K Pendowski fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8178",
+      "date": "4/14/2024",
+      "opponent": "Wpi",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell grounded out to ss.",
+            "V. McKinney doubled down the rf line.",
+            "E. Nagy flied out to rf; V. McKinney advanced to third.",
+            "D. Lum reached first on a fielding error by 2b, out at second 1b to ss; V. McKinney scored, unearned."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Sherwood reached first on a throwing error by ss.",
+            "R. O'Brien flied out to cf.",
+            "M. Sherwood out at second c to ss, caught stealing.",
+            "C. Allison singled up the middle.",
+            "K. Gagne grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Sheehan grounded out to p, bunt.",
+            "S. Russell flied out to lf.",
+            "V. McKinney singled to shortstop.",
+            "E. Nagy grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Lum flied out to rf.",
+            "M. Sherwood grounded out to 3b.",
+            "R. O'Brien lined out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Allison singled to right field.",
+            "S. Fairbairn pinch hit for K. Gagne.",
+            "S. Fairbairn popped up to 2b.",
+            "A. Sheehan grounded out to 3b; C. Allison advanced to second.",
+            "S. Russell grounded out 1b to 2b to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "V. McKinney flied out to lf.",
+            "E. Nagy struck out looking.",
+            "D. Lum struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. McCann to ss for K. Katsetos.",
+            "M. Sherwood flied out to rf.",
+            "R. O'Brien doubled to center field.",
+            "M. Francisco pinch ran for R. O'Brien.",
+            "C. Allison singled up the middle, advanced to second on the throw, RBI; M. Francisco scored.",
+            "E. Jordan pinch ran for C. Allison.",
+            "S. Fairbairn singled up the middle, advanced to second on a throwing error by cf; E. Jordan advanced to third.",
+            "K. Case pinch hit for A. Sheehan.",
+            "K. Case flied out to cf, sacrifice fly, RBI; S. Fairbairn advanced to third; E. Jordan scored, unearned.",
+            "S. Russell struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8179",
+      "date": "4/14/2024",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell singled down the rf line.",
+            "V. McKinney reached on a fielder's choice; S. Russell out at second 2b to ss.",
+            "E. Nagy flied out to rf.",
+            "V. McKinney stole second.",
+            "R. O'Brien walked.",
+            "C. Allison grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Lum singled to right field.",
+            "S. Lazarus singled to left center; D. Lum advanced to second.",
+            "M. Sherwood doubled to right center, RBI; S. Lazarus advanced to third; D. Lum scored.",
+            "S. Fairbairn grounded out to p.",
+            "S. Russell homered to right center, inside the park, 3 RBI; M. Sherwood scored; S. Lazarus scored.",
+            "V. McKinney singled to right field.",
+            "E. Nagy singled up the middle; V. McKinney advanced to second.",
+            "R. O'Brien doubled to center field, RBI; E. Nagy advanced to third; V. McKinney scored.",
+            "C. Allison singled to right center, RBI; R. O'Brien advanced to third; E. Nagy scored.",
+            "D. Lum lined into double play 2b to 1b; C. Allison out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Seyfert to lf for L. Puskas.",
+            "S. Lazarus grounded out to ss.",
+            "M. Sherwood grounded out to ss.",
+            "S. Fairbairn singled up the middle.",
+            "S. Fairbairn stole second.",
+            "S. Russell struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "V. McKinney grounded out to 2b.",
+            "E. Nagy walked.",
+            "R. O'Brien grounded out to 3b; E. Nagy advanced to second.",
+            "C. Allison struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to dp for L. Donston.",
+            "D. Lum reached first on a fielding error by 2b.",
+            "A. Sheehan pinch ran for D. Lum.",
+            "S. Lazarus walked; A. Sheehan advanced to second.",
+            "M. Sherwood flied out to rf; A. Sheehan advanced to third.",
+            "S. Fairbairn singled up the middle, RBI; S. Lazarus advanced to second; A. Sheehan scored, unearned.",
+            "S. Russell singled down the rf line, RBI; S. Fairbairn advanced to third; S. Lazarus scored.",
+            "S. Russell stole second, advanced to third on a throwing error by c; S. Fairbairn scored on the error, unearned.",
+            "V. McKinney reached first on a fielding error by 2b, RBI; S. Russell scored on the error, unearned.",
+            "E. Nagy fouled out to 1b.",
+            "V. McKinney stole second.",
+            "R. O'Brien flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. McCann to ss for T. Falotico.",
+            "C. Allison grounded out to 2b.",
+            "D. Lum grounded out to ss.",
+            "S. Lazarus homered down the rf line, RBI."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/western-new-england/boxscore/8172",
+      "date": "4/16/2024",
+      "opponent": "Western New England",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Keegan grounded out to ss.",
+            "G. Hemstock grounded out to 3b.",
+            "K. Carrano singled to left center.",
+            "L. Weston singled to right field; K. Carrano advanced to second.",
+            "M. Mason doubled down the lf line, RBI; L. Weston out at second lf to 3b; K. Carrano scored."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Ferriouol grounded out to ss.",
+            "R. Kane singled through the left side.",
+            "M. Rodriguez reached on a fielder's choice; R. Kane out at second ss to 2b.",
+            "S. McDaniel singled to right field, advanced to third on the error; M. Rodriguez advanced to third on an error by 2b, scored on the error, unearned.",
+            "T. Keegan flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Hemstock grounded out to 2b.",
+            "K. Carrano doubled to right center.",
+            "L. Weston reached first on a fielding error by 3b, advanced to second on the error; K. Carrano scored on the error, unearned.",
+            "M. Mason flied out to rf.",
+            "A. Ferriouol grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Kane grounded out to ss.",
+            "M. Rodriguez grounded out to 3b.",
+            "S. McDaniel grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Keegan popped up to 2b.",
+            "G. Hemstock singled to left center.",
+            "A. Poisson pinch ran for G. Hemstock.",
+            "K. Carrano walked; A. Poisson advanced to second.",
+            "A. Carrasqui pinch ran for K. Carrano.",
+            "L. Weston flied out to rf; A. Carrasqui advanced to second on an error by rf, advanced to third; A. Poisson scored, unearned.",
+            "M. Mason singled to left field, RBI; A. Carrasqui scored.",
+            "A. Ferriouol grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Olsen to 2b for K. Katsetos.",
+            "R. Kane grounded out to 3b.",
+            "M. Rodriguez grounded out to 3b.",
+            "S. McDaniel singled to left center.",
+            "T. Keegan grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/amherst/boxscore/8182",
+      "date": "4/17/2024",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Knop grounded out to ss.",
+            "H. Li flied out to rf.",
+            "E. Nordstrom grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Finkelste doubled to left field.",
+            "D. Werra flied out to rf.",
+            "S. Pool grounded out to ss; R. Finkelste advanced to third.",
+            "A. Primozic walked.",
+            "O. Aitkin struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Holmes doubled to right field.",
+            "A. Knop singled to center field, RBI; J. Holmes scored.",
+            "H. Li flied out to rf.",
+            "E. Nordstrom reached on a fielder's choice; A. Knop out at second ss to 2b.",
+            "R. Finkelste grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Seyfert to dp.",
+            "D. Werra grounded out to 3b.",
+            "S. Pool flied out to rf.",
+            "A. Primozic struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeRosa to 3b for T. Spingola.",
+            "M. Ponticell to lf for T. Falotico.",
+            "B. McCann to ss for L. Donston.",
+            "O. Aitkin struck out looking.",
+            "J. Holmes singled to center field.",
+            "D. Briggs struck out swinging.",
+            "H. Li walked; J. Holmes advanced to second.",
+            "E. Nordstrom reached first on an error by ss, advanced to second; H. Li advanced to third; J. Holmes scored, unearned.",
+            "R. Finkelste flied out to lf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/amherst/boxscore/8183",
+      "date": "4/17/2024",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Puskas, Lucy",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Knop walked.",
+            "O. Aitkin out at first p to 2b, SAC, bunt; A. Knop advanced to second.",
+            "E. Nordstrom singled to center field; A. Knop advanced to third.",
+            "R. Finkelste popped up to ss.",
+            "D. Werra singled to center field, RBI; E. Nordstrom advanced to second; A. Knop scored.",
+            "S. Pool flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Castro walked.",
+            "H. Li flied out to rf.",
+            "J. Holmes lined into double play 3b; A. Castro out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Knop singled to left field.",
+            "O. Aitkin out at first p to 2b, SAC, bunt; A. Knop advanced to second.",
+            "E. Nordstrom reached on a fielder's choice; A. Knop out at third ss to 3b.",
+            "R. Finkelste grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Werra reached first on an error by ss, advanced to second.",
+            "S. Pool doubled to left field; D. Werra advanced to third.",
+            "A. Castro singled to left field, RBI; S. Pool advanced to third; D. Werra scored, unearned.",
+            "H. Li flied out to cf, sacrifice fly, RBI; S. Pool scored.",
+            "J. Holmes flied out to cf.",
+            "A. Knop singled to third base; A. Castro advanced to second.",
+            "O. Aitkin singled to shortstop; A. Knop advanced to second; A. Castro advanced to third.",
+            "E. Nordstrom grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to c for S. Falcone.",
+            "R. Finkelste singled to left field.",
+            "D. Werra reached on a fielder's choice; R. Finkelste out at second 2b to ss.",
+            "S. Pool walked; D. Werra advanced to second.",
+            "A. DeRosa to p.",
+            "L. Puskas to dp.",
+            "A. Castro struck out swinging.",
+            "H. Li popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Holmes popped up to 2b.",
+            "A. Knop popped up to 2b.",
+            "O. Aitkin flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Nordstrom flied out to cf.",
+            "R. Finkelste flied out to cf.",
+            "D. Werra singled to right field.",
+            "S. Pool lined out to rf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/coast-guard/boxscore/8184",
+      "date": "4/20/2024",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Schmutz singled to left field.",
+            "A. Schmutz stole second.",
+            "C. Carey doubled down the lf line, RBI; A. Schmutz scored.",
+            "I. Shroyer grounded out to 2b; C. Carey advanced to third.",
+            "L. Farlow grounded out to 1b unassisted, RBI; C. Carey scored.",
+            "J. Breidenth lined out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Behel flied out to lf.",
+            "B. Bartz singled to right field.",
+            "V. Krystofik flied out to rf.",
+            "N. Beck flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Schmutz lined out to 2b.",
+            "C. Carey lined out to 2b.",
+            "I. Shroyer singled to left field.",
+            "G. Beardsley pinch ran for I. Shroyer.",
+            "L. Farlow struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Breidenth flied out to rf.",
+            "E. Behel grounded out to 1b unassisted.",
+            "B. Bartz flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "V. Krystofik flied out to cf.",
+            "N. Beck struck out looking.",
+            "A. Schmutz singled, bunt.",
+            "C. Carey singled through the right side; A. Schmutz advanced to second.",
+            "I. Shroyer grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Gendron to c for S. Falcone.",
+            "L. Farlow doubled to right center.",
+            "J. Breidenth out at first p to 2b, SAC, bunt; L. Farlow advanced to third.",
+            "E. Behel grounded out to ss.",
+            "B. Bartz flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "V. Krystofik grounded out to p.",
+            "N. Beck grounded out to p.",
+            "A. Schmutz grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/coast-guard/boxscore/8185",
+      "date": "4/20/2024",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Schmutz struck out swinging.",
+            "C. Carey struck out swinging.",
+            "I. Shroyer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Farlow walked.",
+            "J. Breidenth struck out looking.",
+            "N. Beck reached on a fielder's choice to pitcher; L. Farlow out at second p to ss.",
+            "V. Krystofik grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Behel walked.",
+            "B. Bartz reached on a fielder's choice to third base; E. Behel out at second 3b to ss.",
+            "A. Schmutz reached first on a fielding error by 3b; B. Bartz advanced to second.",
+            "C. Carey lined into double play ss to 2b; B. Bartz out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gendron to dp for S. Falcone.",
+            "I. Shroyer grounded out to 3b.",
+            "L. Farlow singled through the right side.",
+            "J. Breidenth grounded into double play ss to 2b to 1b; L. Farlow out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "N. Beck singled to shortstop.",
+            "V. Krystofik out at first 3b to 2b, SAC, bunt; N. Beck advanced to second.",
+            "E. Behel struck out swinging.",
+            "B. Bartz singled to left field; N. Beck advanced to third.",
+            "B. Bartz stole second.",
+            "A. Schmutz grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia to c for T. Falotico.",
+            "C. Carey singled to left field.",
+            "I. Shroyer singled through the left side; C. Carey advanced to second.",
+            "G. Beardsley pinch ran for I. Shroyer.",
+            "L. Farlow grounded out to ss; G. Beardsley advanced to second; C. Carey advanced to third.",
+            "J. Breidenth grounded out to 2b, RBI; G. Beardsley advanced to third; C. Carey scored.",
+            "N. Beck singled up the middle, RBI; G. Beardsley scored.",
+            "V. Krystofik grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. DeRosa to p.",
+            "K. Katsetos to 1b for L. Donston.",
+            "E. Santiago to 3b for A. Pugliese.",
+            "/  for D. Walker.",
+            "D. Walker pinch hit for E. Behel.",
+            "D. Walker doubled to left center.",
+            "B. Bartz singled to shortstop; D. Walker advanced to third.",
+            "A. Schmutz singled to left field, RBI; B. Bartz advanced to second; D. Walker scored.",
+            "C. Carey doubled to left center, 2 RBI; A. Schmutz scored; B. Bartz scored.",
+            "C. Carey advanced to third on a wild pitch.",
+            "I. Shroyer flied out to rf, sacrifice fly, RBI; C. Carey scored.",
+            "L. Farlow grounded out to 2b.",
+            "J. Breidenth walked.",
+            "N. Beck grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "V. Krystofik N. Beck placed on second.",
+            "V. Krystofik out at first p to 2b, SAC, bunt; N. Beck advanced to third.",
+            "/  for D. Walker.",
+            "D. Walker to p for E. Behel.",
+            "D. Walker popped up to p.",
+            "B. Bartz popped up to 1b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8188",
+      "date": "4/26/2024",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito singled to right field.",
+            "T. Barry grounded out to 3b; J. Zito advanced to second.",
+            "E. Molinari lined out to p.",
+            "B. Agan flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Blankenhe singled to right field.",
+            "L. Oliveira singled to center field; P. Blankenhe advanced to second.",
+            "J. Ceddia homered, 3 RBI; L. Oliveira scored; P. Blankenhe scored.",
+            "G. DiBacco grounded out to 1b unassisted.",
+            "J. Rohon grounded out to ss.",
+            "J. Zito grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Barry grounded out to p.",
+            "E. Molinari singled to pitcher.",
+            "B. Agan reached on a fielder's choice; E. Molinari out at second 1b to rf to ss.",
+            "P. Blankenhe grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Oliveira popped up to 2b.",
+            "J. Ceddia grounded out to ss.",
+            "G. DiBacco singled to right center.",
+            "J. Rohon grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Zito singled to shortstop, advanced to second on a throwing error by ss.",
+            "T. Barry grounded out to 2b; J. Zito advanced to third.",
+            "E. Molinari struck out swinging.",
+            "B. Agan grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "P. Blankenhe flied out to cf.",
+            "L. Oliveira flied out to lf.",
+            "J. Ceddia grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. DiBacco fouled out to c.",
+            "J. Rohon singled through the left side.",
+            "J. Zito flied out to cf.",
+            "T. Barry grounded out to p."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "E. Molinari T. Barry placed on second.",
+            "E. Molinari singled to first base, bunt; T. Barry scored on a throwing error by p, unearned.",
+            "B. Agan out at first 3b to 2b, SAC, bunt; E. Molinari advanced to second.",
+            "P. Blankenhe doubled to center field, RBI; E. Molinari scored."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8189",
+      "date": "4/26/2024",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Falcone to lf for M. Ponticell.",
+            "J. Zito singled up the middle.",
+            "T. Barry grounded into double play 2b to ss to 1b; J. Zito out on the play.",
+            "E. Molinari grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Agan doubled to left center.",
+            "P. Blankenhe struck out swinging.",
+            "L. Oliveira singled up the middle; B. Agan advanced to third.",
+            "B. Agan out at home c to 2b to ss to 2b to c, caught stealing.",
+            "B. Dost grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. DiBacco grounded out to ss.",
+            "J. Rohon grounded out to 3b.",
+            "J. Zito tripled to right center.",
+            "T. Barry flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Molinari grounded out to 3b.",
+            "B. Agan popped up to 2b.",
+            "P. Blankenhe singled to pitcher.",
+            "L. Oliveira grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Dost flied out to rf.",
+            "G. DiBacco singled, advanced to second on an error by cf.",
+            "J. Rohon popped up to p.",
+            "J. Zito popped up to 1b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/clark-university/boxscore/8190",
+      "date": "4/27/2024",
+      "opponent": "Clark University",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Crowley singled down the lf line.",
+            "E. Spence grounded out to p, SAC, bunt; S. Crowley advanced to second.",
+            "R. Mauro singled to center field.",
+            "M. Barthel doubled to right center, RBI; R. Mauro advanced to third; S. Crowley scored.",
+            "F. Salvati fouled out to 1b.",
+            "E. Slavin grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Dube walked.",
+            "J. Albano pinch ran for M. Dube.",
+            "R. Bronson popped up to 2b.",
+            "C. Quigley reached on a fielder's choice; J. Albano out at second ss to 2b.",
+            "C. Quigley stole second.",
+            "S. Crowley singled to center field, RBI; C. Quigley scored.",
+            "E. Spence grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. Mauro lined out to cf.",
+            "M. Barthel reached first on a throwing error by 3b.",
+            "F. Salvati lined into double play 2b to 1b; M. Barthel out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Slavin grounded out to ss.",
+            "M. Dube lined out to rf.",
+            "R. Bronson fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to dp for S. Falcone.",
+            "S. Falcone to lf for C. Pecchia.",
+            "C. Quigley doubled to left center.",
+            "S. Crowley grounded out to 3b; C. Quigley advanced to third.",
+            "C. Quigley scored on a passed ball, unearned.",
+            "E. Spence popped up to ss.",
+            "R. Mauro popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Barthel grounded out to 2b.",
+            "F. Salvati flied out to cf.",
+            "E. Slavin popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Falcone to lf.",
+            "C. Gendron to c for L. Donston.",
+            "M. Dube lined out to 3b.",
+            "R. Bronson popped up to 2b.",
+            "C. Quigley singled through the left side.",
+            "S. Crowley singled to left field; C. Quigley advanced to second.",
+            "E. Spence grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/clark-university/boxscore/8191",
+      "date": "4/27/2024",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Crowley grounded out to ss.",
+            "E. Spence struck out swinging.",
+            "R. Mauro doubled to right center.",
+            "M. Barthel grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "F. Salvati doubled to right center.",
+            "S. Lyons pinch ran for F. Salvati.",
+            "A. Briggs reached on a fielder's choice; S. Lyons out at third ss to 2b.",
+            "E. Slavin singled to right field; A. Briggs advanced to second.",
+            "M. Dillon reached on a fielder's choice; E. Slavin advanced to second; A. Briggs out at third ss to 3b.",
+            "C. Quigley grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Crowley popped up to 2b.",
+            "E. Spence struck out swinging.",
+            "R. Mauro grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Barthel walked.",
+            "F. Salvati lined out to cf.",
+            "A. Briggs reached first on a throwing error by p; M. Barthel advanced to second.",
+            "E. Slavin reached on a fielder's choice; A. Briggs advanced to second; M. Barthel out at third ss to 3b.",
+            "M. Dillon grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Quigley doubled to left field.",
+            "S. Crowley singled to right field, RBI; C. Quigley scored.",
+            "S. Crowley advanced to second on a wild pitch.",
+            "E. Spence struck out swinging.",
+            "R. Mauro lined out to cf.",
+            "M. Barthel grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia to c for T. Falotico.",
+            "S. Falcone to lf for T. Spingola.",
+            "F. Salvati walked.",
+            "A. Briggs walked; F. Salvati advanced to second.",
+            "E. Slavin popped up to 2b.",
+            "M. Dillon reached on a fielder's choice; A. Briggs advanced to second; F. Salvati out at third 3b to ss.",
+            "C. Quigley walked; M. Dillon advanced to second; A. Briggs advanced to third.",
+            "S. Crowley lined out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Dube pinch hit for E. Spence.",
+            "M. Dube grounded out to 3b.",
+            "R. Mauro grounded out to ss.",
+            "M. Barthel singled to right field.",
+            "C. Andre pinch ran for M. Barthel.",
+            "F. Salvati reached on a fielder's choice; C. Andre out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/smith/boxscore/8192",
+      "date": "5/3/2024",
+      "opponent": "Smith",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Tamai lined out to 1b.",
+            "J. Shantz struck out swinging.",
+            "B. Gray lined out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Alaniz grounded out to 3b.",
+            "L. Allen lined out to ss.",
+            "P. Corey grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Ang flied out to cf.",
+            "L. Helms reached first on a fielding error by ss.",
+            "M. Taketa grounded into double play 2b to ss to 1b; L. Helms out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Tamai grounded out to p.",
+            "J. Shantz homered to right field, RBI.",
+            "B. Gray grounded out to ss.",
+            "C. Alaniz lined out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Allen grounded out to rf.",
+            "P. Corey singled to left field.",
+            "T. Ang homered to left field, 2 RBI; P. Corey scored.",
+            "L. Helms singled to center field.",
+            "M. Taketa reached on a fielder's choice to shortstop; L. Helms out at second ss to 2b.",
+            "T. Tamai walked; M. Taketa advanced to second.",
+            "J. Shantz singled to pitcher; T. Tamai advanced to second; M. Taketa advanced to third.",
+            "B. Gray singled to pitcher, RBI; J. Shantz advanced to second; T. Tamai advanced to third; M. Taketa scored.",
+            "C. Alaniz doubled to right center, 3 RBI; B. Gray scored; J. Shantz scored; T. Tamai scored.",
+            "K. Collins-J pinch ran for C. Alaniz.",
+            "L. Allen flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "P. Corey grounded out to p.",
+            "T. Ang flied out to rf.",
+            "L. Helms singled to center field.",
+            "M. Taketa fouled out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Pecchia to dp for S. Falcone.",
+            "C. Gendron to c for L. Donston.",
+            "T. Tamai singled through the left side.",
+            "J. Shantz reached on a fielder's choice to third base; T. Tamai out at second 3b to 2b.",
+            "B. Gray lined out to 2b.",
+            "C. Alaniz flied out to cf."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/smith/boxscore/8193",
+      "date": "5/3/2024",
+      "opponent": "Smith",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Helms to p.",
+            "E. Doty to dp.",
+            "T. Tamai grounded out to 1b unassisted.",
+            "J. Shantz singled to right field.",
+            "B. Gray grounded out to 3b; J. Shantz advanced to second.",
+            "C. Alaniz grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Allen grounded out to 2b.",
+            "P. Corey reached first on a fielding error by 3b, advanced to second.",
+            "T. Ang singled to left field; P. Corey advanced to third.",
+            "L. Helms reached on a fielder's choice to second base, RBI; T. Ang out at second 2b unassisted; P. Corey scored, unearned.",
+            "M. Taketa reached on a fielder's choice to shortstop; L. Helms out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Tamai flied out to rf.",
+            "J. Shantz walked.",
+            "B. Gray reached on a fielder's choice to shortstop; J. Shantz out at second ss to 2b.",
+            "C. Alaniz struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Allen flied out to rf.",
+            "P. Corey flied out to rf.",
+            "T. Ang flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Helms grounded out to p.",
+            "M. Taketa popped up to 2b.",
+            "T. Tamai lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia to c for S. Falcone.",
+            "J. Shantz grounded out to 2b.",
+            "B. Gray flied out to cf.",
+            "C. Alaniz flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Allen popped up to 2b.",
+            "P. Corey grounded out to 3b.",
+            "T. Ang singled up the middle.",
+            "L. Helms reached on a fielder's choice to shortstop; T. Ang out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/salve-regina/boxscore/8194",
+      "date": "5/4/2024",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Bello grounded out to 3b.",
+            "M. Capetta singled to right field.",
+            "O. Saccoccio reached on a fielder's choice to second base; M. Capetta out at second 2b to ss.",
+            "E. Cronin singled to third base, advanced to second on the throw; O. Saccoccio advanced to third on a throwing error by 3b.",
+            "E. Lane grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Lanteri singled through the right side.",
+            "S. Francesch struck out looking.",
+            "K. Ramos grounded into double play p to 2b to 1b; K. Lanteri out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Moskal grounded out to 2b.",
+            "M. Bello singled to right field.",
+            "M. Capetta flied out to cf.",
+            "O. Saccoccio singled to center field; M. Bello advanced to second.",
+            "E. Cronin flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Lane grounded out to 2b.",
+            "K. Lanteri walked.",
+            "S. Francesch flied out to cf.",
+            "K. Ramos grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Moskal lined out to ss.",
+            "M. Bello flied out to cf.",
+            "M. Capetta walked.",
+            "O. Saccoccio struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/salve-regina/boxscore/8195",
+      "date": "5/4/2024",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Lane singled to left field.",
+            "M. Capetta singled through the right side; E. Lane advanced to second.",
+            "O. Saccoccio singled to right field; M. Capetta out at second rf to ss; E. Lane advanced to third.",
+            "E. Cronin singled to center field, RBI; O. Saccoccio advanced to second; E. Lane scored.",
+            "E. Plourde reached on a fielder's choice to pitcher; E. Cronin advanced to second; O. Saccoccio out at third p to 3b.",
+            "K. Lanteri grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Francesch flied out to rf.",
+            "K. Ramos reached first on a throwing error by p.",
+            "E. Moskal singled to third base; K. Ramos advanced to second.",
+            "E. Lane grounded into double play ss to 1b; E. Moskal out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Capetta walked.",
+            "O. Saccoccio singled up the middle; M. Capetta advanced to second.",
+            "E. Cronin reached first on a fielding error by ss; O. Saccoccio advanced to second; M. Capetta advanced to third.",
+            "E. Plourde reached on a fielder's choice to third base; E. Cronin advanced to second; O. Saccoccio advanced to third; M. Capetta out at home 3b to c.",
+            "K. Lanteri singled to right field, RBI; E. Plourde advanced to second; E. Cronin advanced to third; O. Saccoccio scored, unearned.",
+            "S. Francesch reached on a fielder's choice to third base; K. Lanteri advanced to second; E. Plourde advanced to third; E. Cronin out at home 3b to c.",
+            "K. Ramos flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Moskal flied out to lf.",
+            "E. Lane lined out to 2b.",
+            "M. Capetta singled down the lf line.",
+            "O. Saccoccio reached on a fielder's choice to shortstop; M. Capetta out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Cronin grounded out to 3b.",
+            "E. Plourde grounded out to 2b.",
+            "K. Lanteri grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Pecchia to dp for S. Falcone.",
+            "C. Gendron to c for L. Donston.",
+            "M. Ponticell to 1b for T. Spingola.",
+            "S. Francesch flied out to rf.",
+            "K. Ramos struck out swinging.",
+            "M. Oswald pinch hit for E. Moskal.",
+            "M. Oswald struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8781",
+      "date": "5/7/2024",
+      "opponent": "Babson",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore grounded out to p.",
+            "M. Russell grounded out to p.",
+            "E. Walsh grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Karamouzi grounded out to 3b.",
+            "A. Hadjipana singled to center field.",
+            "C. Raymond singled up the middle; A. Hadjipana advanced to second.",
+            "S. Pak grounded out to 3b, SAC, bunt; C. Raymond advanced to second; A. Hadjipana advanced to third.",
+            "C. Musco grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Paglieri grounded out to 2b.",
+            "S. Moore flied out to cf.",
+            "M. Russell reached first on a fielding error by 2b.",
+            "E. Walsh grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Karamouzi popped up to 2b.",
+            "A. Hadjipana flied out to lf.",
+            "C. Raymond popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Pecchia to dp for S. Falcone.",
+            "S. Pak popped up to 2b.",
+            "C. Musco singled to pitcher, bunt.",
+            "J. Paglieri singled to left field; C. Musco advanced to second.",
+            "S. Moore singled to left field; J. Paglieri advanced to second; C. Musco advanced to third.",
+            "M. Russell reached on a fielder's choice to third base; S. Moore advanced to second; J. Paglieri advanced to third; C. Musco out at home 3b to c.",
+            "E. Walsh grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Karamouzi walked.",
+            "A. Cubberly pinch ran for K. Karamouzi.",
+            "A. Hadjipana grounded out to p, SAC, bunt; A. Cubberly advanced to second.",
+            "C. Raymond grounded out to 1b unassisted; A. Cubberly advanced to third.",
+            "S. Pak singled to left field, RBI; A. Cubberly scored.",
+            "C. Musco flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Paglieri lined out to 1b.",
+            "S. Moore grounded out to 2b.",
+            "M. Russell popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8786",
+      "date": "5/9/2024",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito lined out to cf.",
+            "E. Molinari grounded out to 2b.",
+            "P. Blankenhe singled up the middle.",
+            "B. Agan struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Ceddia singled up the middle.",
+            "L. Oliveira reached on a fielder's choice to pitcher; J. Ceddia advanced to second.",
+            "J. Ceddia advanced to third on a wild pitch.",
+            "T. Barry grounded out to 3b; L. Oliveira advanced to second.",
+            "J. Rohon reached on a fielder's choice to shortstop; L. Oliveira advanced to third; J. Ceddia out at home ss to c.",
+            "J. Rohon advanced to second on a throwing error by c; L. Oliveira scored, unearned.",
+            "G. DiBacco grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Zito singled through the left side.",
+            "E. Molinari singled to third base; J. Zito advanced to second.",
+            "P. Blankenhe doubled down the rf line, RBI; E. Molinari advanced to third; J. Zito scored.",
+            "B. Agan grounded out to 2b, RBI; P. Blankenhe advanced to third; E. Molinari scored.",
+            "J. Ceddia grounded out to 2b, RBI; P. Blankenhe scored.",
+            "L. Oliveira reached first on a fielding error by 3b.",
+            "L. Oliveira advanced to second on a wild pitch.",
+            "T. Barry flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. DeRosa to p.",
+            "E. Santiago to 3b for A. Pugliese.",
+            "J. Rohon grounded out to ss.",
+            "G. DiBacco flied out to rf.",
+            "J. Zito singled to left field.",
+            "E. Molinari grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "P. Blankenhe singled up the middle.",
+            "B. Agan walked; P. Blankenhe advanced to second.",
+            "J. Ceddia reached on a fielder's choice to shortstop; B. Agan advanced to second; P. Blankenhe out at third ss to 3b.",
+            "L. Oliveira reached first on a dropped fly by cf, advanced to second; J. Ceddia advanced to third; B. Agan scored on a throwing error by ss, unearned.",
+            "T. Barry flied out to lf.",
+            "J. Rohon grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Gendron to c for S. Falcone.",
+            "G. DiBacco popped up to 2b.",
+            "J. Zito flied out to rf.",
+            "E. Molinari grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "P. Blankenhe flied out to rf.",
+            "B. Agan reached first on a fielding error by 1b.",
+            "J. Ceddia doubled to right center, RBI; B. Agan scored, unearned.",
+            "L. Oliveira popped up to 2b.",
+            "T. Barry grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8787",
+      "date": "5/9/2024",
+      "opponent": "Wpi",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Pugliese, Ashley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell singled up the middle.",
+            "S. Russell stole second.",
+            "A. Sheehan grounded out to 2b; S. Russell advanced to third.",
+            "R. O'Brien flied out to rf, sacrifice fly, RBI; S. Russell scored.",
+            "E. Nagy popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Lazarus grounded out to ss.",
+            "M. Sherwood singled through the left side.",
+            "D. Lum doubled to right field, advanced to third on a throwing error by 2b, RBI; M. Sherwood scored, unearned.",
+            "V. McKinney singled to right field, RBI; D. Lum scored, unearned.",
+            "V. McKinney stole second.",
+            "K. Gagne struck out swinging.",
+            "S. Russell grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Sheehan singled to second base.",
+            "R. O'Brien struck out swinging.",
+            "E. Nagy singled to center field, advanced to second on the throw; A. Sheehan advanced to third.",
+            "S. Lazarus fouled out to rf, sacrifice fly, RBI; E. Nagy advanced to third; A. Sheehan scored.",
+            "M. Sherwood doubled to center field, RBI; E. Nagy scored.",
+            "D. Lum singled to center field, RBI; M. Sherwood scored.",
+            "A. DeRosa to 3b.",
+            "A. Pugliese to p for E. Santiago.",
+            "V. McKinney grounded out p to 2b to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Gagne grounded out to 3b.",
+            "S. Russell popped up to 2b.",
+            "A. Sheehan singled to shortstop.",
+            "R. O'Brien singled to second base; A. Sheehan advanced to third.",
+            "R. O'Brien stole second.",
+            "E. Nagy singled to center field, 2 RBI; R. O'Brien scored; A. Sheehan scored.",
+            "S. Fairbairn pinch ran for E. Nagy.",
+            "S. Lazarus grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Sherwood tripled down the rf line.",
+            "D. Lum reached first on a fielding error by ss.",
+            "E. Jordan pinch ran for D. Lum.",
+            "V. McKinney grounded out to 2b, RBI; E. Jordan advanced to second; M. Sherwood scored.",
+            "K. Gagne walked.",
+            "S. Russell struck out swinging.",
+            "A. Sheehan struck out swinging."
+          ]
+        }
+      ],
+      "year": 2024
+    }
+  ]
+}

@@ -7,7 +7,8 @@ import { DataContextService } from './data-context.service';
 import { resolveWobaData } from './data-resolve';
 import { SoftballDataService } from './softball-data.service';
 
-const RESOLVE_YEARS = [2023, 2024, 2025, 2026];
+const CURRENT_YEAR = new Date().getFullYear();
+const RESOLVE_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 
 @Injectable({
   providedIn: 'root',
@@ -34,7 +35,9 @@ export class WobaDataService {
 
   private async fetchStaticJson(year: number): Promise<WobaSeasonData> {
     const base = document.querySelector('base')?.getAttribute('href') || '/';
-    const url = `${base}data/wobadata-${year}.json`;
+    const file =
+      year === CURRENT_YEAR ? 'data/wobadata.json' : `data/wobadata-${year}.json`;
+    const url = `${base}${file}`;
     const response = await fetch(url);
 
     if (!response.ok) {

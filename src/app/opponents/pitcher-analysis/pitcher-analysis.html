@@ -22,7 +22,28 @@
       />
 
       <div class="min-w-0 flex-1 space-y-4">
-        <ws-pitcher-overview [data]="rawStats()" />
+        @if (availableYears().length > 1) {
+          <div class="flex flex-wrap items-center gap-1.5">
+            <button
+              class="filter-btn"
+              [class.active]="selectedYear() === 'all'"
+              (click)="selectYear('all')"
+            >
+              All
+            </button>
+            @for (year of availableYears(); track year) {
+              <button
+                class="filter-btn"
+                [class.active]="selectedYear() === year"
+                (click)="selectYear(year)"
+              >
+                {{ year }}
+              </button>
+            }
+          </div>
+        }
+
+        <ws-pitcher-overview [data]="rawStats()" [yearLabel]="yearLabel()" />
 
         @if (seasonSummary(); as summary) {
           <ws-inning-breakdown
@@ -43,8 +64,29 @@
       (pitcherSelected)="selectPitcher($event)"
     />
 
+    @if (availableYears().length > 1) {
+      <div class="mt-2 flex flex-wrap items-center gap-1.5">
+        <button
+          class="filter-btn"
+          [class.active]="selectedYear() === 'all'"
+          (click)="selectYear('all')"
+        >
+          All
+        </button>
+        @for (year of availableYears(); track year) {
+          <button
+            class="filter-btn"
+            [class.active]="selectedYear() === year"
+            (click)="selectYear(year)"
+          >
+            {{ year }}
+          </button>
+        }
+      </div>
+    }
+
     <div class="mt-3 space-y-3">
-      <ws-pitcher-overview [data]="rawStats()" />
+      <ws-pitcher-overview [data]="rawStats()" [yearLabel]="yearLabel()" />
 
       @if (seasonSummary(); as summary) {
         <ws-inning-breakdown

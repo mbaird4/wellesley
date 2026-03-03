@@ -1,0 +1,3375 @@
+{
+  "slug": "wpi",
+  "domain": "athletics.wpi.edu",
+  "scrapedAt": "2026-03-02T22:13:10.421Z",
+  "year": 2023,
+  "pitchingStats": [
+    {
+      "name": "Togneri, Sophia",
+      "w": 9,
+      "l": 13,
+      "era": 2.9,
+      "app": 31,
+      "gs": 23,
+      "ip": 125.1,
+      "h": 125,
+      "r": 61,
+      "er": 52,
+      "bb": 33,
+      "so": 66,
+      "hr": 4
+    },
+    {
+      "name": "Pritchard, Kelly",
+      "w": 5,
+      "l": 1,
+      "era": 4.02,
+      "app": 25,
+      "gs": 3,
+      "ip": 61,
+      "h": 79,
+      "r": 50,
+      "er": 35,
+      "bb": 27,
+      "so": 38,
+      "hr": 4
+    },
+    {
+      "name": "Nagy, Emma",
+      "w": 6,
+      "l": 6,
+      "era": 4.79,
+      "app": 19,
+      "gs": 14,
+      "ip": 73,
+      "h": 101,
+      "r": 68,
+      "er": 50,
+      "bb": 32,
+      "so": 25,
+      "hr": 2
+    }
+  ],
+  "games": [
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/occidental-ca-/boxscore/10988",
+      "date": "3/5/2023",
+      "opponent": "Occidental Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Lebsock reached first on a fielding error by rf.",
+            "J. Lebsock advanced to second.",
+            "S. Crespo out at first p to 2b, SAC, bunt; J. Lebsock advanced to third.",
+            "K. McKenna struck out swinging.",
+            "I. Harding struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Pedrosa popped up to 2b.",
+            "S. Palacio grounded out to p.",
+            "K. Suarez struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Pritchard to 1b for A. Amaro.",
+            "Z. Day-Adams struck out swinging.",
+            "A. Wagner hit by pitch.",
+            "J. Lebsock singled to center field; A. Wagner advanced to second.",
+            "S. Crespo popped up to ss.",
+            "K. McKenna flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "I. Harding walked.",
+            "P. Pedrosa flied out to cf.",
+            "S. Palacio struck out looking.",
+            "K. Suarez popped up to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Jordan to rf for G. Cerbo.",
+            "J. Diaz to c for M. Urakawa.",
+            "Z. Day-Adams struck out swinging.",
+            "A. Wagner walked.",
+            "J. Lebsock grounded into double play p to ss to 1b; A. Wagner out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Pritchard to p.",
+            "K. Case to 1b for A. Laughlin.",
+            "S. Togneri to dp.",
+            "M. Sherwood to rf for L. Jordan.",
+            "L. Jordan to dp for M. Sherwood.",
+            "M. Sherwood to rf for S. Togneri.",
+            "A. Krishnada flied out to cf.",
+            "K. McKenna singled to left field.",
+            "I. Harding flied out to cf.",
+            "P. Pedrosa grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Siu pinch hit for S. Palacio.",
+            "S. Swaine pinch hit for K. Suarez.",
+            "S. Siu struck out swinging.",
+            "S. Swaine walked.",
+            "M. Mark pinch hit for Z. Day-Adams.",
+            "K. Suarez pinch ran for S. Swaine.",
+            "M. Mark grounded out to 2b; K. Suarez advanced to second.",
+            "A. Wagner grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/occidental-ca-/boxscore/10989",
+      "date": "3/5/2023",
+      "opponent": "Occidental Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Lebsock walked.",
+            "A. Wagner singled to right field; J. Lebsock advanced to second.",
+            "K. McKenna flied out to rf.",
+            "A. Krishnada popped up to 1b.",
+            "E. Mitchell walked; A. Wagner advanced to second; J. Lebsock advanced to third.",
+            "K. Suarez struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Pedrosa singled up the middle.",
+            "S. Swaine struck out swinging; P. Pedrosa stole second.",
+            "S. Palacio walked.",
+            "J. Lebsock flied out to ss.",
+            "A. Wagner flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. McKenna flied out to cf.",
+            "A. Krishnada singled to right field.",
+            "E. Mitchell tripled, RBI; A. Krishnada scored.",
+            "S. Siu pinch hit for K. Suarez.",
+            "S. Siu singled to center field, RBI; E. Mitchell scored.",
+            "K. Pritchard to p.",
+            "K. Case to 1b for S. Togneri.",
+            "P. Pedrosa popped up to cf.",
+            "S. Swaine struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Palacio struck out swinging.",
+            "J. Lebsock flied out to cf.",
+            "A. Wagner grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Gannoe to c for G. Cerbo.",
+            "K. McKenna singled to center field.",
+            "K. McKenna advanced to second on a wild pitch.",
+            "A. Krishnada grounded out to ss.",
+            "E. Mitchell struck out looking.",
+            "K. McKenna advanced to third on a wild pitch.",
+            "S. Siu grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "I. Harding to rf for S. Palacio.",
+            "S. Palacio to rf for I. Harding.",
+            "I. Harding to 1b for S. Swaine.",
+            "P. Pedrosa lined out to cf.",
+            "I. Harding grounded out to p.",
+            "S. Palacio struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "J. Diaz to c.",
+            "K. Pritchard to p for M. Urakawa.",
+            "J. Lebsock grounded out to p.",
+            "A. Wagner grounded out to 3b.",
+            "K. McKenna pinch hit for J. Lebsock.",
+            "K. McKenna grounded out to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/chapman-ca-/boxscore/10990",
+      "date": "3/6/2023",
+      "opponent": "Chapman Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Kennedy walked.",
+            "S. Higa grounded out to 3b, SAC, bunt; S. Kennedy advanced to second.",
+            "I. Serna grounded into double play 1b to ss; S. Kennedy out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Fosselman grounded out to ss.",
+            "M. Lastinger flied out to rf.",
+            "T. Corcoran grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Stinnett flied out to rf.",
+            "E. Milante flied out to lf.",
+            "M. Murphy lined out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "E. Nagy to 1b for M. Urakawa.",
+            "S. Kennedy tripled down the lf line.",
+            "S. Higa grounded out p to 2b to 1b, SAC, RBI; S. Kennedy scored.",
+            "I. Serna walked.",
+            "/  for S. Togneri.",
+            "K. Pritchard to p.",
+            "G. Fosselman singled to pitcher; I. Serna advanced to second.",
+            "M. Lastinger reached first on an error by 3b; G. Fosselman advanced to second; I. Serna advanced to third.",
+            "T. Corcoran grounded out to 2b, RBI; M. Lastinger advanced to second; G. Fosselman advanced to third; I. Serna scored, unearned.",
+            "J. Stinnett flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Milante flied out to cf.",
+            "M. Murphy reached first on an error by 3b.",
+            "M. Murphy advanced to second on a wild pitch.",
+            "M. Murphy advanced to third on a passed ball.",
+            "S. Kennedy struck out swinging.",
+            "S. Higa singled to right field, RBI; M. Murphy scored, unearned.",
+            "S. Higa stole second.",
+            "I. Serna singled to left field, advanced to second on the throw, RBI; S. Higa scored, unearned.",
+            "C. Denlinger pinch ran for I. Serna.",
+            "G. Fosselman reached first on an error by 3b; C. Denlinger scored, unearned.",
+            "M. Lastinger reached on a fielder's choice; G. Fosselman out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Diaz to c for L. Jordan.",
+            "T. Corcoran popped up to 1b.",
+            "J. Stinnett singled to left field.",
+            "B. Leach pinch hit for E. Milante.",
+            "K. Carder pinch ran for J. Stinnett.",
+            "B. Leach grounded out to 1b unassisted; K. Carder advanced to second.",
+            "M. Lynch pinch hit for M. Murphy.",
+            "M. Lynch grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/chapman-ca-/boxscore/10991",
+      "date": "3/6/2023",
+      "opponent": "Chapman Ca ",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Kennedy grounded out to 3b.",
+            "S. Higa singled up the middle.",
+            "I. Serna reached on a fielder's choice; S. Higa out at second 3b to 2b.",
+            "G. Fosselman grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Lastinger grounded out to ss.",
+            "T. Corcoran grounded out to p.",
+            "S. Lake walked.",
+            "E. Hayes hit by pitch; S. Lake advanced to second.",
+            "M. Murphy walked; E. Hayes advanced to second; S. Lake advanced to third.",
+            "S. Kennedy singled, advanced to second on the throw, 2 RBI; M. Murphy advanced to third on an error by rf, scored, unearned; E. Hayes scored; S. Lake scored.",
+            "S. Higa grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Leach grounded out to ss.",
+            "G. Fosselman singled to left field.",
+            "G. Fosselman advanced to second on a wild pitch.",
+            "M. Lastinger grounded out to p.",
+            "T. Corcoran grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Lake singled up the middle.",
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "E. Hayes reached first on an error by p, bunt; S. Lake advanced to second.",
+            "C. Denlinger pinch ran for E. Hayes.",
+            "M. Murphy singled, bunt; C. Denlinger advanced to third; S. Lake scored on an error by p, unearned.",
+            "M. Murphy stole second.",
+            "S. Kennedy walked.",
+            "S. Higa reached on a fielder's choice, RBI; S. Kennedy advanced to second on an error by 2b; M. Murphy scored, unearned; C. Denlinger scored, unearned.",
+            "S. Higa advanced to second; S. Kennedy out at third c to ss, caught stealing.",
+            "B. Leach grounded out to 2b; S. Higa advanced to third.",
+            "G. Fosselman grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Stinnett pinch hit for M. Lastinger.",
+            "J. Stinnett grounded out to ss.",
+            "T. Corcoran singled through the left side.",
+            "K. Carder pinch ran for T. Corcoran.",
+            "S. Lake tripled to left center, RBI; K. Carder scored.",
+            "E. Hayes grounded out to p, SAC, RBI; S. Lake scored.",
+            "M. Murphy singled up the middle.",
+            "S. Kennedy grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Nagy to 1b for A. Amaro.",
+            "S. Higa struck out swinging.",
+            "B. Leach grounded out to p.",
+            "G. Fosselman grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/pomona-pitzer-ca-/boxscore/10992",
+      "date": "3/8/2023",
+      "opponent": "Pomona Pitzer Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Liu doubled to center field, advanced to third on a throwing error by cf.",
+            "E. Hurtado out at first ss to p.",
+            "D. Waddell grounded out to 2b, RBI; K. Liu scored, unearned.",
+            "C. Sefkow popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Robman flied out to ss.",
+            "L. Ziment flied out to cf.",
+            "N. Murguia flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Bradley struck out swinging.",
+            "A. Wasikonis singled to shortstop.",
+            "K. Liu struck out looking.",
+            "A. Wasikonis stole second.",
+            "E. Hurtado flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Waddell grounded out to ss.",
+            "C. Sefkow popped up to 2b.",
+            "A. Robman singled to left field.",
+            "A. Robman stole second.",
+            "L. Ziment walked.",
+            "N. Murguia popped up to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Bradley struck out swinging.",
+            "A. Wasikonis flied out to cf.",
+            "K. Liu homered, RBI.",
+            "E. Hurtado flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Waddell flied out to rf.",
+            "C. Sefkow singled to left field.",
+            "A. Robman singled to center field; C. Sefkow advanced to second.",
+            "L. Ziment singled to center field, RBI; A. Robman advanced to third; C. Sefkow scored.",
+            "K. Pritchard to p.",
+            "S. Togneri to dp.",
+            "L. Ziment stole second.",
+            "L. Ziment advanced to third on a wild pitch; A. Robman scored on a wild pitch.",
+            "N. Murguia walked.",
+            "D. Bradley struck out swinging.",
+            "N. Murguia stole second.",
+            "A. Wasikonis walked.",
+            "A. Wasikonis out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/pomona-pitzer-ca-/boxscore/10993",
+      "date": "3/8/2023",
+      "opponent": "Pomona Pitzer Ca ",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Liu grounded out to ss.",
+            "A. Robman singled to shortstop.",
+            "D. Waddell reached on a fielder's choice; A. Robman advanced to second on an error by ss.",
+            "E. Hurtado grounded out to p; D. Waddell advanced to second; A. Robman advanced to third.",
+            "L. Ziment flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Murguia grounded out to p.",
+            "B. Carreon doubled to center field.",
+            "S. Hawkes walked.",
+            "A. Wasikonis flied out to cf.",
+            "K. Liu grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Robman singled to third base.",
+            "D. Waddell singled through the right side; A. Robman advanced to second.",
+            "E. Hurtado grounded out to p, SAC; D. Waddell advanced to second; A. Robman advanced to third.",
+            "L. Ziment singled through the right side, RBI; D. Waddell advanced to third, out at home rf to c; A. Robman scored.",
+            "N. Murguia fouled out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Carreon homered to left center, RBI.",
+            "S. Hawkes grounded out to ss.",
+            "A. Wasikonis singled to right field.",
+            "A. Wasikonis stole second.",
+            "K. Liu grounded out to ss.",
+            "A. Robman singled to left field; A. Wasikonis advanced to third.",
+            "D. Waddell reached on a fielder's choice; A. Robman out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Hurtado singled to center field.",
+            "K. Pritchard to p.",
+            "E. Nagy to 1b.",
+            "L. Ziment out at first c to 2b, SAC; E. Hurtado advanced to second.",
+            "N. Murguia reached first on an error by 1b; E. Hurtado advanced to third.",
+            "B. Carreon grounded out to 3b; N. Murguia advanced to second.",
+            "S. Hawkes walked.",
+            "A. Wasikonis singled up the middle, 2 RBI; S. Hawkes advanced to second; N. Murguia scored, unearned; E. Hurtado scored, unearned.",
+            "K. Liu grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Robman grounded out to 2b.",
+            "D. Waddell homered to right field, RBI.",
+            "E. Hurtado singled to left field.",
+            "S. Togneri to p for K. Pritchard.",
+            "L. Ziment walked; E. Hurtado advanced to second.",
+            "N. Murguia walked; L. Ziment advanced to second; E. Hurtado advanced to third.",
+            "B. Carreon popped up to ss.",
+            "M. Simonsen pinch hit for S. Hawkes.",
+            "M. Simonsen flied out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/la-verne-ca-/boxscore/10994",
+      "date": "3/9/2023",
+      "opponent": "La Verne Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Hsieh flied out to cf.",
+            "T. Gray struck out looking.",
+            "I. Garcia flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Acosta lined out to 3b.",
+            "A. Rodriguez walked.",
+            "E. Garcia reached first on an error by 1b, assist by 3b; A. Rodriguez advanced to third.",
+            "M. Pintado struck out looking.",
+            "A. Campbell singled to third base, RBI; E. Garcia advanced to second; A. Rodriguez scored, unearned.",
+            "C. Salazar singled to second base; A. Campbell advanced to second; E. Garcia advanced to third.",
+            "H. Hsieh flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Gray popped up to 2b.",
+            "I. Garcia doubled to right center.",
+            "M. Acosta singled through the left side; I. Garcia advanced to third.",
+            "A. Rodriguez flied out to cf, sacrifice fly, RBI; I. Garcia scored.",
+            "E. Garcia singled to center field; M. Acosta advanced to second.",
+            "M. Pintado doubled down the rf line, RBI; E. Garcia advanced to third; M. Acosta scored.",
+            "A. Campbell singled to center field, RBI; M. Pintado advanced to third; E. Garcia scored.",
+            "C. Salazar flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Case to dp for A. Montgomer.",
+            "J. Diaz to c for L. Jordan.",
+            "E. Nagy to p for S. Togneri.",
+            "H. Hsieh walked.",
+            "H. Hsieh stole second.",
+            "T. Gray out at first 3b to 2b, SAC; H. Hsieh advanced to third.",
+            "I. Garcia grounded out to 2b, RBI; H. Hsieh scored.",
+            "M. Acosta singled up the middle.",
+            "A. Rodriguez doubled down the rf line; M. Acosta advanced to third.",
+            "E. Garcia lined out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Pintado grounded out to ss.",
+            "A. Campbell popped up to 2b.",
+            "C. Salazar lined out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Hsieh grounded out to p.",
+            "T. Gray lined out to 2b.",
+            "I. Garcia singled to shortstop.",
+            "C. Bliss pinch ran for I. Garcia.",
+            "M. Acosta reached first on a fielding error by 3b; C. Bliss advanced to second.",
+            "A. Rodriguez singled, advanced to second, RBI; M. Acosta out at second lf to 3b to 2b; C. Bliss scored, unearned."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/la-verne-ca-/boxscore/10995",
+      "date": "3/9/2023",
+      "opponent": "La Verne Ca ",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly",
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Hsieh struck out swinging.",
+            "T. Gray flied out to cf.",
+            "I. Garcia grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Pritchard to p.",
+            "S. Togneri to dp.",
+            "M. Acosta grounded out to 3b.",
+            "A. Rodriguez homered, RBI.",
+            "E. Garcia singled to pitcher.",
+            "M. Pintado reached on a fielder's choice; E. Garcia out at second 2b to ss.",
+            "I. Ramirez singled to second base; M. Pintado advanced to second.",
+            "C. Salazar reached on a fielder's choice; I. Ramirez out at second ss to 2b; M. Pintado advanced to third."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "H. Hsieh grounded out to 2b.",
+            "T. Gray singled up the middle.",
+            "I. Garcia doubled to left center, RBI; T. Gray scored.",
+            "I. Garcia advanced to third on a wild pitch.",
+            "M. Acosta singled up the middle, RBI; I. Garcia scored.",
+            "M. Acosta advanced to second on a passed ball.",
+            "A. Rodriguez walked.",
+            "A. Rodriguez stole second; M. Acosta stole third.",
+            "E. Garcia popped up to 2b, sacrifice fly, RBI; A. Rodriguez advanced to third; M. Acosta scored, unearned.",
+            "K. Pritchard to dp.",
+            "S. Togneri to p.",
+            "M. Pintado reached first on a fielding error by ss; A. Rodriguez scored, unearned.",
+            "I. Ramirez flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Salazar grounded out to 2b.",
+            "H. Hsieh grounded out to 2b.",
+            "T. Gray fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Nagy to 1b for A. Amaro.",
+            "I. Garcia grounded out to p.",
+            "M. Acosta popped up to 2b.",
+            "A. Rodriguez walked.",
+            "A. Rodriguez stole second.",
+            "E. Garcia singled to left field, RBI; A. Rodriguez scored.",
+            "M. Pintado singled to right field; E. Garcia advanced to third.",
+            "J. Contreras pinch hit for I. Ramirez.",
+            "J. Contreras singled to right field, RBI; M. Pintado advanced to third; E. Garcia scored.",
+            "C. Bliss pinch ran for J. Contreras.",
+            "C. Salazar flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "/  for S. Togneri.",
+            "D. Lum to 3b for L. Jordan.",
+            "K. Pritchard to 1b for M. Urakawa.",
+            "E. Nagy to p.",
+            "H. Hsieh walked.",
+            "H. Hsieh stole second.",
+            "H. Hsieh advanced to third on a wild pitch.",
+            "T. Gray grounded out to 3b, RBI; H. Hsieh scored.",
+            "I. Garcia reached first on a throwing error by ss.",
+            "I. Bastien pinch ran for I. Garcia.",
+            "M. Acosta doubled, advanced to third on a fielding error by lf, RBI; I. Bastien scored, unearned.",
+            "A. Rodriguez grounded out to 3b.",
+            "E. Garcia grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/johnson-amp-wales/boxscore/10998",
+      "date": "03/18/23",
+      "opponent": "Johnson Amp Wales",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clee grounded out to ss.",
+            "Huzi singled to right center.",
+            "Pulek reached on a fielder's choice; Huzi out at second 2b to ss.",
+            "Amorelli grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Erickson singled through the left side.",
+            "Lyons flied out to rf.",
+            "Gurska lined into double play 1b; Erickson out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Ganno to c for J. Diaz.",
+            "Torres struck out swinging.",
+            "Antaya singled to shortstop.",
+            "Antaya stole second.",
+            "Clee singled to center field; Antaya advanced to third.",
+            "Huzi flied out to rf, sacrifice fly, RBI; Clee advanced to second; Antaya scored.",
+            "Pulek grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Amorelli singled through the right side.",
+            "Erickson walked; Amorelli advanced to second.",
+            "Lyons grounded out to p; Erickson advanced to second; Amorelli advanced to third.",
+            "Gurska struck out looking.",
+            "Torres hit by pitch.",
+            "Antaya flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Pritch to p.",
+            "A. Sheehan to lf for M. Uraka.",
+            "/  for S. Togne.",
+            "Clee singled to left field.",
+            "Huzi walked; Clee advanced to second.",
+            "Pulek grounded out to 2b; Huzi advanced to second; Clee advanced to third.",
+            "Amorelli reached on a fielder's choice; Huzi advanced to third; Clee out at home p to c.",
+            "Erickson singled to shortstop, RBI; Amorelli advanced to second; Huzi scored.",
+            "Gosselin pinch ran for Erickson.",
+            "Lyons singled to center field, RBI; Gosselin advanced to second; Amorelli scored.",
+            "Gurska grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Pritch to p for A. Amaro.",
+            "Torres struck out swinging.",
+            "Antaya singled to right field.",
+            "Antaya advanced to second on a wild pitch.",
+            "Clee walked.",
+            "Antaya advanced to third on a wild pitch.",
+            "Huzi walked; Clee advanced to second.",
+            "S. Togne to p for K. Pritch.",
+            "Pulek singled to center field, RBI; Huzi advanced to second; Clee advanced to third; Antaya scored.",
+            "Pulek advanced to second; Huzi advanced to third; Clee scored on a wild pitch.",
+            "Amorelli lined out to 3b.",
+            "Erickson lined out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/johnson-amp-wales/boxscore/10999",
+      "date": "03/18/23",
+      "opponent": "Johnson Amp Wales",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clee grounded out to ss.",
+            "Huzi walked.",
+            "Pulek singled through the left side; Huzi advanced to second.",
+            "Amorelli singled to center field; Pulek advanced to second; Huzi advanced to third.",
+            "Erickson reached first on a fielding error by 3b; Amorelli advanced to second; Pulek advanced to third; Huzi scored, unearned.",
+            "Lyons struck out swinging.",
+            "Antaya grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gurska hit by pitch.",
+            "Torres reached on a fielder's choice; Gurska out at second 2b to ss.",
+            "Torres advanced to second on a wild pitch.",
+            "Clee walked; Torres advanced to third on a wild pitch.",
+            "Clee stole second.",
+            "Huzi walked.",
+            "Huzi advanced to second; Clee advanced to third; Torres scored on a passed ball.",
+            "Pulek singled through the right side, RBI; Huzi advanced to third; Clee scored.",
+            "Amorelli singled up the middle, RBI; Pulek advanced to second; Huzi scored.",
+            "Erickson reached first on an error by p; Amorelli advanced to second; Pulek advanced to third.",
+            "Lyons singled to left field, 2 RBI; Erickson advanced to second; Amorelli scored; Pulek scored.",
+            "K. Pritch to p.",
+            "E. Nagy to 1b.",
+            "Antaya lined out to p.",
+            "Gurska walked; Lyons advanced to second; Erickson advanced to third.",
+            "Torres singled up the middle, RBI; Gurska advanced to second; Lyons advanced to third; Erickson scored, unearned.",
+            "Clee singled to left field, 2 RBI; Torres advanced to second; Gurska scored, unearned; Lyons scored, unearned.",
+            "Clee advanced to second on a wild pitch; Torres advanced to third on a wild pitch.",
+            "Huzi walked.",
+            "Pulek grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Amorelli flied out to lf.",
+            "Erickson walked.",
+            "Lyons reached on a fielder's choice; Erickson out at second ss to 2b.",
+            "Antaya singled to right field; Lyons advanced to second.",
+            "Gurska hit by pitch; Antaya advanced to second; Lyons advanced to third.",
+            "Torres struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Clee singled through the left side.",
+            "Huzi singled up the middle; Clee advanced to second.",
+            "Pulek doubled to right field, RBI; Huzi advanced to third; Clee scored.",
+            "Amorelli struck out swinging, reached first on an error by c.",
+            "Erickson singled to left field, advanced to second on an error by lf, 2 RBI; Amorelli scored, unearned; Pulek scored; Huzi scored.",
+            "Rynee pinch ran for Erickson.",
+            "Rynee advanced to third on a wild pitch.",
+            "Lyons singled up the middle, RBI; Rynee scored.",
+            "Gosselin pinch ran for Lyons.",
+            "Antaya reached on a fielder's choice; Gosselin out at second ss to 2b.",
+            "Antaya stole second.",
+            "Gurska singled to center field; Antaya advanced to third.",
+            "Gurska advanced to second on a wild pitch.",
+            "Torres grounded out to ss, RBI; Gurska advanced to third; Antaya scored, unearned.",
+            "Clee grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Pritch to 1b.",
+            "E. Nagy to dp.",
+            "A. Laughlin to lf for A. Sheehan.",
+            "S. Togne to p for M. Uraka.",
+            "Huzi grounded out to 2b.",
+            "Pulek singled to right center.",
+            "A. Sheehan to lf for A. Laughlin.",
+            "Amorelli reached on a fielder's choice; Pulek out at second ss to 2b.",
+            "Erickson grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lyons grounded out to 2b.",
+            "Antaya hit by pitch.",
+            "Gurska doubled to center field; Antaya advanced to third.",
+            "Floyd pinch hit for Torres.",
+            "A. Amaro to lf for A. Sheehan.",
+            "Floyd singled, bunt, RBI; Gurska advanced to third; Antaya scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/amherst/boxscore/11000",
+      "date": "3/22/2023",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Rangel grounded out to 2b.",
+            "R. Lovejoy fouled out to 1b.",
+            "A. Lee lined out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Pool singled up the middle.",
+            "D. Werra singled to left field; S. Pool advanced to second.",
+            "J. Butler grounded out to 2b; D. Werra advanced to second; S. Pool advanced to third.",
+            "R. Finkelste lined out to cf, sacrifice fly, RBI; D. Werra advanced to third; S. Pool scored.",
+            "A. Orlowski struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Kong popped up to ss.",
+            "A. Rangel grounded out to ss.",
+            "R. Lovejoy lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Lee doubled to left field.",
+            "S. Pool homered, 2 RBI; A. Lee scored.",
+            "D. Werra singled to left center.",
+            "J. Butler doubled to right center; D. Werra advanced to third.",
+            "/  for S. Togneri.",
+            "K. Pritchard to p.",
+            "R. Finkelste singled to left center, RBI; D. Werra scored.",
+            "A. Orlowski grounded into double play 2b to ss to 1b; R. Finkelste out on the play; J. Butler advanced to third.",
+            "A. Kong lined out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Rangel singled to shortstop.",
+            "R. Lovejoy singled to shortstop; A. Rangel advanced to second.",
+            "R. Lovejoy advanced to second on a wild pitch; A. Rangel advanced to third on a wild pitch.",
+            "R. Lovejoy advanced to third on a wild pitch; A. Rangel scored on a wild pitch.",
+            "A. Lee reached first on a fielding error by 1b, advanced to second; R. Lovejoy scored, unearned.",
+            "S. Pool struck out swinging.",
+            "D. Werra struck out looking.",
+            "J. Butler struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Sheehan to lf.",
+            "R. Finkelste homered, RBI.",
+            "A. Moravek pinch hit for A. Orlowski.",
+            "A. Moravek struck out looking.",
+            "M. Castro pinch hit for A. Kong.",
+            "M. Castro flied out to rf.",
+            "A. Rangel grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Pritchard to p for M. Urakawa.",
+            "R. Lovejoy singled to left field.",
+            "A. Lee singled to right center; R. Lovejoy advanced to third.",
+            "A. Lee advanced to second on a wild pitch.",
+            "S. Pool grounded out to ss, RBI; R. Lovejoy scored.",
+            "D. Briggs struck out swinging.",
+            "J. Butler singled up the middle; A. Lee advanced to third.",
+            "R. Finkelste lined out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/amherst/boxscore/11001",
+      "date": "3/22/2023",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Rangel grounded out to 2b.",
+            "R. Lovejoy singled to right center.",
+            "A. Lee reached on a fielder's choice; R. Lovejoy out at second 2b to ss.",
+            "S. Pool singled to right field; A. Lee advanced to second.",
+            "D. Werra grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Butler walked.",
+            "R. Finkelste singled up the middle; J. Butler advanced to second.",
+            "D. Wilderman out at first 3b to 2b, SAC; R. Finkelste advanced to second on a fielder's choice; J. Butler advanced to third on a fielder's choice.",
+            "A. Moravek doubled to center field, 2 RBI; R. Finkelste scored; J. Butler scored.",
+            "A. Rangel singled down the rf line; A. Moravek advanced to third.",
+            "A. Rangel stole second.",
+            "R. Lovejoy doubled to center field, RBI; A. Rangel advanced to third; A. Moravek scored.",
+            "A. Lee struck out looking.",
+            "A. Rangel out at home c unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Pool singled up the middle.",
+            "D. Werra doubled down the rf line; S. Pool advanced to third.",
+            "J. Butler walked.",
+            "R. Finkelste grounded out to 3b, RBI; J. Butler advanced to second; D. Werra out at third 3b to 1b; S. Pool scored.",
+            "D. Wilderman struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Moravek lined out to cf.",
+            "A. Rangel singled, bunt.",
+            "A. Rangel advanced to second on a wild pitch.",
+            "R. Lovejoy reached first on a throwing error by ss; A. Rangel advanced to third on the error.",
+            "A. Lee doubled to left field, 2 RBI; R. Lovejoy scored; A. Rangel scored.",
+            "A. Lee out at third c to 3b, caught stealing.",
+            "S. Pool popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Pritchard to p.",
+            "E. Nagy to 1b.",
+            "D. Werra singled up the middle.",
+            "J. Butler singled to right center; D. Werra advanced to second.",
+            "R. Finkelste homered, 3 RBI; J. Butler scored; D. Werra scored.",
+            "D. Wilderman grounded out to 3b.",
+            "A. Moravek struck out looking.",
+            "A. Rangel grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Togneri to p for K. Pritchard.",
+            "R. Lovejoy reached first on a fielding error by cf, advanced to second on the error.",
+            "A. Lee flied out to cf; R. Lovejoy advanced to third.",
+            "S. Pool walked.",
+            "S. Pool stole second.",
+            "D. Werra grounded out to ss, RBI; S. Pool advanced to third; R. Lovejoy scored.",
+            "J. Butler flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Finkelste homered, RBI.",
+            "D. Wilderman walked.",
+            "A. Kong pinch ran for D. Wilderman.",
+            "A. Kong out at second c to ss, caught stealing.",
+            "A. Orlowski grounded out to 2b.",
+            "M. Castro pinch hit for A. Rangel.",
+            "M. Castro singled up the middle.",
+            "R. Lovejoy reached first on a fielding error by 2b; M. Castro advanced to second.",
+            "M. Castro advanced to third, out at home 2b to c."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/eastern-connecticut/boxscore/11002",
+      "date": "3/26/2023",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marelli walked.",
+            "E. Marelli advanced to second on a wild pitch.",
+            "A. Vilchez lined into double play 2b to ss; E. Marelli out on the play.",
+            "J. SanGiovan grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Stoker singled to third base.",
+            "C. Stoker stole second.",
+            "V. Heapy walked; C. Stoker advanced to third on a wild pitch.",
+            "M. Baker to cf for V. Heapy.",
+            "M. Baker stole second.",
+            "M. Baker advanced to third; C. Stoker scored on a wild pitch.",
+            "S. Remillard grounded out to 2b, RBI; M. Baker scored.",
+            "M. Bowen walked.",
+            "A. Gruca singled through the left side; M. Bowen advanced to second.",
+            "M. Sauve singled to catcher, bunt; A. Gruca advanced to second; M. Bowen advanced to third.",
+            "E. Marelli doubled to left center, 2 RBI; M. Sauve advanced to third; A. Gruca scored; M. Bowen scored.",
+            "A. Vilchez popped up to ss.",
+            "J. SanGiovan singled through the right side, 2 RBI; E. Marelli scored; M. Sauve scored.",
+            "C. Stoker flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "M. Baker hit by pitch.",
+            "M. Baker stole second.",
+            "S. Remillard walked.",
+            "M. Bowen out at first p to 2b, SAC, bunt; S. Remillard advanced to second; M. Baker advanced to third.",
+            "A. Gruca doubled down the lf line, 2 RBI; S. Remillard scored; M. Baker scored.",
+            "M. Sauve walked.",
+            "E. Marelli infield fly to 2b.",
+            "A. Vilchez lined out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. SanGiovan singled through the left side.",
+            "K. Armida pinch ran for J. SanGiovan.",
+            "C. Stoker grounded out to p; K. Armida advanced to second.",
+            "M. Baker doubled to right center, RBI; K. Armida scored.",
+            "S. Remillard singled up the middle, RBI; M. Baker scored.",
+            "L. Kenefick pinch hit for M. Bowen.",
+            "L. Kenefick hit by pitch; S. Remillard advanced to second.",
+            "A. Gruca walked; L. Kenefick advanced to second; S. Remillard advanced to third.",
+            "M. Rubeck pinch hit for M. Sauve.",
+            "G. Leone pinch ran for L. Kenefick.",
+            "M. Rubeck lined into double play lf to 3b; S. Remillard out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Nagy to 1b for L. Jordan.",
+            "E. Marelli struck out swinging.",
+            "A. Vilchez lined out to cf.",
+            "J. SanGiovan grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Stoker singled to center field.",
+            "M. Baker to cf for V. Heapy.",
+            "V. Heapy to dp for M. Baker.",
+            "T. Darby pinch hit for V. Heapy.",
+            "T. Darby reached on a fielder's choice; C. Stoker out at second 3b to 2b.",
+            "S. Remillard reached on a fielder's choice; T. Darby advanced to second on a throwing error by ss, advanced to third on the error.",
+            "M. Bowen grounded out to p, SAC, bunt, RBI; S. Remillard advanced to second; T. Darby scored, unearned.",
+            "A. Gruca walked.",
+            "M. Rubeck popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/eastern-connecticut/boxscore/11003",
+      "date": "3/26/2023",
+      "opponent": "Eastern Connecticut",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marelli grounded out to 2b.",
+            "A. Vilchez lined out to 3b.",
+            "J. SanGiovan doubled to right field.",
+            "C. Stoker struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Sheehan to rf.",
+            "L. Jordan to lf.",
+            "V. Heapy grounded out to p.",
+            "S. Remillard struck out looking.",
+            "T. Darby flied out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Sheehan to rf for G. Cerbo.",
+            "A. Gruca struck out swinging.",
+            "M. Baker reached first on a throwing error by p, advanced to second on the error.",
+            "E. Marelli grounded out to p, SAC, bunt; M. Baker advanced to third.",
+            "A. Vilchez grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. SanGiovan flied out to cf.",
+            "C. Stoker flied out to cf.",
+            "C. Stoker singled to left field.",
+            "S. Remillard grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Darby lined out to 1b.",
+            "A. Gruca walked.",
+            "K. Armida pinch ran for A. Gruca.",
+            "M. Baker reached on a fielder's choice; K. Armida out at second 3b to 2b.",
+            "E. Marelli flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/worcester-state/boxscore/11004",
+      "date": "3/29/2023",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Lapoint grounded out to ss.",
+            "E. Bartlett lined out to rf.",
+            "R. Sinclair grounded out to p, bunt."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Koziol fouled out to 3b.",
+            "B. Gasbarro struck out looking.",
+            "B. Tammaro flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Baez out at first p to 2b, bunt.",
+            "L. Dube walked.",
+            "E. Lanpher reached on a fielder's choice; L. Dube out at second 2b to ss.",
+            "E. Lapoint lined out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Gosselin singled to left center.",
+            "R. Sinclair reached first on a fielding error by 1b; S. Gosselin advanced to second.",
+            "A. Koziol singled to pitcher, bunt; R. Sinclair advanced to second; S. Gosselin advanced to third.",
+            "B. Gasbarro singled to shortstop, RBI; A. Koziol advanced to second; R. Sinclair advanced to third; S. Gosselin scored.",
+            "B. Tammaro struck out swinging.",
+            "N. Baez reached on a fielder's choice; B. Gasbarro advanced to second on a fielder's choice; A. Koziol advanced to third on a fielder's choice; R. Sinclair out at home 1b to c.",
+            "L. Dube singled to right field, RBI; N. Baez advanced to second; B. Gasbarro advanced to third; A. Koziol scored, unearned.",
+            "E. Lanpher lined out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Lum to 3b for M. Francisco.",
+            "E. Lapoint grounded out to 2b.",
+            "S. Gosselin struck out swinging.",
+            "R. Sinclair doubled down the rf line.",
+            "R. Sinclair advanced to third on a wild pitch.",
+            "A. Koziol singled to left field, RBI; R. Sinclair scored.",
+            "B. Gasbarro singled to center field; A. Koziol advanced to second.",
+            "B. Tammaro popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Pritchard to p.",
+            "S. Togneri to dp.",
+            "N. Baez popped up to ss.",
+            "L. Dube singled down the lf line.",
+            "C. Andrews pinch ran for L. Dube.",
+            "E. Lanpher reached on a fielder's choice; C. Andrews out at second ss unassisted.",
+            "E. Lapoint grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Diaz to c for M. Urakawa.",
+            "A. Sheehan to lf for G. Cerbo.",
+            "S. Gosselin lined out to ss.",
+            "R. Sinclair grounded out to 2b.",
+            "A. Koziol grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/worcester-state/boxscore/11005",
+      "date": "3/29/2023",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Nagy to p.",
+            "S. Togneri to dp.",
+            "E. Lapoint grounded out to ss.",
+            "E. Lanpher grounded out to ss.",
+            "R. Sinclair grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Koziol singled to left center.",
+            "B. Gasbarro struck out swinging.",
+            "A. Adamuska fouled out to 3b.",
+            "N. Baez grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Dube grounded out to p.",
+            "J. Thorburn grounded out to 2b.",
+            "E. Lapoint grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Lanpher grounded out to 3b.",
+            "R. Sinclair grounded out to 2b.",
+            "A. Koziol singled to right field.",
+            "B. Gasbarro walked; A. Koziol advanced to second.",
+            "A. Adamuska walked; B. Gasbarro advanced to second; A. Koziol advanced to third.",
+            "N. Baez fouled out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Dube walked.",
+            "J. Schwalm pinch ran for L. Dube.",
+            "J. Kelly fouled out to c, bunt.",
+            "E. Lapoint singled to right field; J. Schwalm advanced to second.",
+            "E. Lanpher flied out to rf.",
+            "R. Sinclair grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Diaz to c for M. Urakawa.",
+            "J. Geloso struck out looking.",
+            "B. Gasbarro grounded out to 2b.",
+            "A. Adamuska fouled out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11006",
+      "date": "4/2/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore flied out to cf.",
+            "A. Hadjipana grounded out to 2b.",
+            "K. Karamouzi struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Morris flied out to rf.",
+            "S. Pak doubled down the lf line.",
+            "C. Taylor grounded out to 1b unassisted; S. Pak advanced to third.",
+            "C. Joslin fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. O'Reilly singled through the right side.",
+            "M. O'Reilly advanced to second on a wild pitch.",
+            "T. Steed out at first 3b to 2b, SAC, bunt; M. O'Reilly advanced to third.",
+            "S. Moore popped up to ss.",
+            "A. Hadjipana flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Karamouzi flied out to lf.",
+            "L. Morris fouled out to 1b.",
+            "S. Pak grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Taylor grounded out to 1b unassisted.",
+            "C. Joslin grounded out to 2b.",
+            "M. O'Reilly popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "T. Steed walked.",
+            "S. Moore doubled to right center; T. Steed advanced to third.",
+            "A. Hadjipana popped up to ss.",
+            "K. Karamouzi struck out swinging.",
+            "L. Morris singled to right center, 2 RBI; S. Moore scored; T. Steed scored.",
+            "L. Morris stole second.",
+            "S. Pak flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Taylor grounded out to ss.",
+            "C. Joslin flied out to rf.",
+            "M. O'Reilly popped up to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11007",
+      "date": "4/2/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore singled, bunt, advanced to second on a throwing error by p.",
+            "S. Moore stole third.",
+            "A. Hadjipana hit by pitch.",
+            "A. Hadjipana stole second.",
+            "K. Karamouzi singled to right field, RBI; A. Hadjipana advanced to third; S. Moore scored.",
+            "L. Morris flied out to rf, sacrifice fly, RBI; A. Hadjipana scored.",
+            "S. Pak singled through the right side; K. Karamouzi advanced to second.",
+            "M. Hennessy reached on a fielder's choice; S. Pak out at second rf to ss; K. Karamouzi advanced to third.",
+            "C. Joslin reached on a fielder's choice; M. Hennessy out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Pritchard to 1b.",
+            "E. Nagy to p.",
+            "S. Togneri to dp.",
+            "M. O'Reilly reached first on a dropped fly by lf.",
+            "T. Steed reached first on a throwing error by p, SAC, bunt, advanced to second on the error; M. O'Reilly advanced to second, advanced to third on the error.",
+            "C. Taylor pinch ran for M. O'Reilly.",
+            "S. Moore doubled to right center, 2 RBI; T. Steed scored, unearned; C. Taylor scored, unearned.",
+            "A. Hadjipana singled to left field; S. Moore advanced to third.",
+            "A. Hadjipana stole second.",
+            "K. Karamouzi flied out to 2b.",
+            "L. Morris grounded out to 2b, RBI; A. Hadjipana advanced to third; S. Moore scored, unearned.",
+            "S. Pak grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Hennessy grounded out to 3b.",
+            "C. Joslin singled to third base.",
+            "C. Joslin stole second.",
+            "M. O'Reilly doubled to center field, RBI; C. Joslin scored.",
+            "T. Steed popped up to 2b.",
+            "S. Moore singled to shortstop; M. O'Reilly advanced to third.",
+            "S. Moore stole second.",
+            "A. Hadjipana flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pritchard to 1b for G. Cerbo.",
+            "K. Karamouzi flied out to cf.",
+            "L. Morris singled to center field.",
+            "S. Pak out at first 1b to 2b, SAC, bunt; L. Morris advanced to second.",
+            "M. Hennessy flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz to c.",
+            "C. Joslin grounded out to ss.",
+            "N. Taubenhei struck out swinging.",
+            "T. Steed reached first on a fielding error by 2b.",
+            "T. Steed stole second.",
+            "S. Moore walked.",
+            "A. Hadjipana grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Karamouzi flied out to rf.",
+            "L. Morris reached first on a dropped fly by lf, advanced to second on the error.",
+            "S. Pak grounded out to 2b; L. Morris advanced to third.",
+            "M. Hennessy singled to center field, RBI; L. Morris scored, unearned.",
+            "C. Joslin reached on a fielder's choice; M. Hennessy out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Lum to 3b.",
+            "A. DeStefano flied out to cf.",
+            "T. Steed flied out to rf.",
+            "S. Moore flied out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11008",
+      "date": "4/7/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dewey singled to center field.",
+            "C. Carey singled; M. Dewey advanced to second.",
+            "J. Breidenth reached on a fielder's choice; C. Carey out at second 2b to ss; M. Dewey advanced to third.",
+            "S. Serna popped up to p.",
+            "L. Farlow flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Becker popped up to 2b.",
+            "E. Behel grounded out to ss.",
+            "I. Shroyer grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Beck grounded out to ss.",
+            "M. Dewey grounded out to 3b.",
+            "C. Carey singled to shortstop.",
+            "J. Breidenth singled to right field; C. Carey advanced to second.",
+            "J. Breidenth advanced to second on a passed ball; C. Carey advanced to third on a passed ball.",
+            "S. Serna grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Farlow popped up to 2b.",
+            "K. Becker grounded out to 3b.",
+            "E. Behel struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Shroyer lined out to ss.",
+            "N. Beck grounded out to ss.",
+            "M. Dewey flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Carey singled to right field.",
+            "J. Breidenth out at first 3b to 2b; C. Carey advanced to second.",
+            "S. Serna popped up to c.",
+            "L. Farlow doubled to center field, RBI; C. Carey scored.",
+            "J. Lewandowk pinch ran for L. Farlow.",
+            "K. Becker walked; J. Lewandowk out at third c to 3b, caught stealing."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11009",
+      "date": "4/7/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dewey grounded out to ss.",
+            "C. Carey flied out to cf.",
+            "J. Breidenth singled to center field.",
+            "L. Farlow grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Becker singled to left field.",
+            "I. Shroyer out at first 1b to 2b; K. Becker advanced to second.",
+            "S. Serna grounded out to ss; K. Becker advanced to third.",
+            "B. Bartz grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Sherwood to rf for K. Case.",
+            "N. Beck singled to center field.",
+            "M. Dewey singled to left field; N. Beck advanced to second.",
+            "C. Carey flied out to lf.",
+            "J. Breidenth grounded out to 3b; M. Dewey advanced to second; N. Beck advanced to third.",
+            "L. Farlow grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Becker singled to shortstop.",
+            "I. Shroyer popped up to ss.",
+            "S. Serna singled to center field; K. Becker advanced to second.",
+            "B. Bartz singled to center field; S. Serna advanced to second; K. Becker advanced to third.",
+            "N. Beck reached on a fielder's choice; B. Bartz advanced to second; S. Serna advanced to third; K. Becker out at home 1b to c.",
+            "M. Dewey hit by pitch, RBI; N. Beck advanced to second; B. Bartz advanced to third; S. Serna scored.",
+            "C. Carey grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "J. Breidenth flied out to cf.",
+            "L. Farlow grounded out to 3b.",
+            "K. Becker grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Diaz to c for A. Amaro.",
+            "I. Shroyer grounded out to 2b.",
+            "S. Serna flied out to rf.",
+            "B. Bartz grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Beck struck out swinging.",
+            "M. Dewey popped up to 2b.",
+            "C. Carey struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wheaton-mass-/boxscore/11010",
+      "date": "4/8/2023",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito walked.",
+            "J. Zito stole second.",
+            "B. Agan struck out swinging.",
+            "L. Oliveira singled up the middle, RBI; J. Zito scored.",
+            "J. Ceddia singled to center field; L. Oliveira advanced to second.",
+            "G. DiBacco struck out swinging.",
+            "J. Rohon struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Knopf singled to right field.",
+            "A. Burt reached on a fielder's choice; S. Knopf out at second ss to 2b.",
+            "A. Arcand flied out to rf.",
+            "J. Zito flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Agan walked.",
+            "L. Oliveira reached on a fielder's choice; B. Agan advanced to second on a throwing error by p.",
+            "J. Ceddia grounded out to 1b unassisted; L. Oliveira advanced to second; B. Agan advanced to third.",
+            "G. DiBacco fouled out to c.",
+            "J. Rohon grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Knopf flied out to lf.",
+            "A. Burt flied out to rf.",
+            "A. Arcand grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Zito singled to center field.",
+            "J. Zito stole second.",
+            "B. Agan walked.",
+            "L. Oliveira singled down the rf line, RBI; B. Agan advanced to second; J. Zito scored.",
+            "J. Ceddia grounded into double play 2b to ss to 1b; L. Oliveira out on the play; B. Agan advanced to third.",
+            "G. DiBacco popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Diaz to c for M. Sherwood.",
+            "J. Rohon grounded out to p.",
+            "S. Knopf flied out to rf.",
+            "A. Burt singled through the left side.",
+            "A. Burt stole second.",
+            "A. Arcand lined out to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wheaton-mass-/boxscore/11011",
+      "date": "4/8/2023",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Zito grounded out to p.",
+            "B. Agan walked.",
+            "L. Oliveira grounded out to 2b; B. Agan advanced to second.",
+            "J. Ceddia singled to center field, RBI; B. Agan scored.",
+            "G. DiBacco lined out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Rohon singled to right center.",
+            "A. Weston singled to pitcher; J. Rohon advanced to second.",
+            "A. Bogardus out at first p to 2b, SAC, bunt; A. Weston advanced to second; J. Rohon advanced to third.",
+            "A. Arcand walked.",
+            "J. Zito flied out to rf, SAC, RBI; A. Arcand advanced to second; A. Weston advanced to third; J. Rohon scored.",
+            "B. Agan flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Sheehan to rf for K. Case.",
+            "L. Oliveira flied out to rf.",
+            "J. Ceddia walked.",
+            "G. DiBacco flied out to lf.",
+            "J. Rohon walked; J. Ceddia advanced to second.",
+            "J. Rohon advanced to second on a wild pitch; J. Ceddia advanced to third on a wild pitch.",
+            "A. Weston grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Bogardus singled to shortstop.",
+            "M. Caron pinch ran for A. Bogardus.",
+            "A. Arcand out at first p to 2b, SAC, bunt; M. Caron advanced to second, advanced to third on a throwing error by 2b.",
+            "J. Zito grounded out to p.",
+            "B. Agan struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz to c for A. Amaro.",
+            "E. Nagy to p for M. Sherwood.",
+            "L. Oliveira flied out to cf.",
+            "J. Ceddia walked.",
+            "G. DiBacco walked; J. Ceddia advanced to second.",
+            "K. Pritchard to p.",
+            "E. Nagy to 1b.",
+            "J. Rohon singled to left center; G. DiBacco advanced to second; J. Ceddia advanced to third.",
+            "A. Weston reached on a fielder's choice, RBI; J. Rohon out at second ss to 2b; G. DiBacco advanced to third; J. Ceddia scored.",
+            "A. Bogardus walked; A. Weston advanced to second.",
+            "A. Arcand flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Zito reached first on an error by 2b.",
+            "J. Zito stole second.",
+            "B. Agan flied out to lf; J. Zito advanced to third.",
+            "L. Oliveira struck out swinging.",
+            "J. Ceddia singled to shortstop, RBI; J. Zito scored, unearned.",
+            "G. DiBacco singled to center field; J. Ceddia advanced to second.",
+            "J. Rohon lined out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Togneri to p for K. Pritchard.",
+            "A. Weston grounded out to p.",
+            "A. Bogardus walked.",
+            "S. Knopf pinch ran for A. Bogardus.",
+            "A. Burt flied out to rf.",
+            "J. Zito grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/mit/boxscore/11012",
+      "date": "4/14/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Adkison tripled down the rf line.",
+            "J. Sell struck out swinging.",
+            "M. Cable popped up to ss; K. Adkison did not advance.",
+            "M. Bivin singled to shortstop, RBI; K. Adkison scored.",
+            "M. Bivin stole second.",
+            "K. Pendowski grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Bell popped up to p.",
+            "R. Spiegel struck out swinging.",
+            "H. Samuelsen grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Ladd lined out to 2b.",
+            "K. Adkison singled to right center.",
+            "J. Sell lined out to 2b.",
+            "M. Cable doubled to left center, RBI; K. Adkison scored.",
+            "M. Bivin flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pendowski popped up to 2b.",
+            "D. Bell struck out swinging.",
+            "R. Spiegel singled down the lf line.",
+            "H. Samuelsen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Ladd singled, bunt.",
+            "A. Ladd stole second.",
+            "K. Adkison grounded out to ss; A. Ladd advanced to third.",
+            "J. Sell fouled out to c.",
+            "M. Cable lined out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "J. Diaz to c for M. Francisco.",
+            "M. Bivin lined out to p.",
+            "K. Pendowski doubled to left field.",
+            "K. Hines pinch hit for D. Bell.",
+            "K. Lee pinch ran for K. Pendowski.",
+            "K. Hines popped up to 3b.",
+            "R. Spiegel popped up to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Sheehan to lf.",
+            "M. Sherwood to rf for L. Jordan.",
+            "M. Relihan pinch hit for H. Samuelsen.",
+            "M. Relihan flied out to rf.",
+            "A. Ladd singled, bunt.",
+            "A. Ladd stole second.",
+            "K. Adkison reached on a fielder's choice; A. Ladd advanced to third on a throwing error by ss.",
+            "J. Sell singled, bunt, RBI; K. Adkison advanced to second; A. Ladd scored, unearned.",
+            "M. Cable singled to right field, RBI; J. Sell advanced to second; K. Adkison scored.",
+            "M. Bivin fouled out to 3b.",
+            "K. Pendowski popped up to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/mit/boxscore/11013",
+      "date": "4/14/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Laughlin to dp for K. Pritchard.",
+            "K. Pritchard to 1b.",
+            "K. Adkison popped up to lf.",
+            "J. Sell grounded out to 1b unassisted.",
+            "M. Cable grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Bivin walked.",
+            "M. Relihan flied out to rf.",
+            "M. Bivin out at first 1b unassisted, runner left early.",
+            "K. Pendowski walked.",
+            "O. Scarpaci flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "H. Samuelsen lined out to rf.",
+            "A. Ladd lined out to rf.",
+            "K. Adkison singled to right center.",
+            "J. Sell singled to second base; K. Adkison advanced to second.",
+            "M. Cable singled to shortstop, RBI; J. Sell advanced to second; K. Adkison scored.",
+            "M. Bivin lined out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Relihan lined out to lf.",
+            "K. Pendowski grounded out to 2b.",
+            "O. Scarpaci singled to right center.",
+            "H. Samuelsen flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Nagy to p for A. Amaro.",
+            "A. Ladd singled to left field.",
+            "K. Adkison grounded out to 2b; A. Ladd advanced to second.",
+            "A. Ladd stole third.",
+            "J. Sell singled to shortstop, RBI; A. Ladd scored.",
+            "M. Cable lined out to rf.",
+            "J. Sell stole second.",
+            "M. Bivin singled to right center, advanced to second on the throw, RBI; J. Sell scored.",
+            "M. Relihan singled to left center, RBI; M. Bivin scored.",
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "K. Hines pinch ran for M. Relihan.",
+            "K. Pendowski walked; K. Hines advanced to second.",
+            "O. Scarpaci struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for M. Urakawa.",
+            "A. Shull pinch hit for H. Samuelsen.",
+            "A. Shull grounded out to ss.",
+            "A. Ladd singled to second base.",
+            "A. Ladd stole second.",
+            "K. Adkison reached on a fielder's choice; A. Ladd advanced to third.",
+            "J. Sell singled, bunt, RBI; K. Adkison advanced to second; A. Ladd scored.",
+            "M. Cable reached on a fielder's choice; J. Sell advanced to second on a fielder's choice; K. Adkison out at third p to 3b.",
+            "M. Cable advanced to second; J. Sell advanced to third on a wild pitch.",
+            "M. Bivin grounded out to c, bunt."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Pritchard to dp for M. Francisco.",
+            "S. Togneri to p for A. Laughlin.",
+            "M. Relihan struck out swinging.",
+            "K. Pendowski grounded out to p.",
+            "O. Scarpaci popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/emerson/boxscore/11014",
+      "date": "4/15/2023",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Zenga flied out to rf.",
+            "G. Beaulieu grounded out to 2b.",
+            "C. Overton struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Killough popped up to ss.",
+            "A. Lacey fouled out to rf.",
+            "S. Zannotti fouled out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Gomez lined out to 2b.",
+            "S. Trendell struck out looking.",
+            "C. Rosenberg flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Diaz to c for A. Montgomer.",
+            "K. Zenga grounded out to 3b.",
+            "G. Beaulieu singled to left field.",
+            "C. Overton singled to third base; G. Beaulieu advanced to second.",
+            "M. Killough grounded out to 2b; C. Overton advanced to second; G. Beaulieu advanced to third.",
+            "A. Lacey grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Lum to 3b for G. Cerbo.",
+            "S. Zannotti flied out to lf.",
+            "J. Gomez lined out to 3b.",
+            "S. Trendell grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Rosenberg singled to shortstop.",
+            "K. Zenga doubled to left field, RBI; C. Rosenberg scored.",
+            "G. Beaulieu lined out to 2b.",
+            "C. Overton grounded out to ss; K. Zenga advanced to third.",
+            "M. Killough struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Lacey struck out swinging.",
+            "S. Zannotti struck out swinging.",
+            "J. Gomez struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/emerson/boxscore/11015",
+      "date": "4/15/2023",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Zenga popped up to ss.",
+            "G. Beaulieu struck out swinging.",
+            "C. Overton homered to center field, RBI.",
+            "M. Killough grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Gannoe pinch ran for A. Amaro.",
+            "S. Gannoe to c.",
+            "A. Lacey grounded out to 3b.",
+            "S. Zannotti grounded out to p.",
+            "S. Trendell struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Rosenberg walked.",
+            "M. Rice walked; C. Rosenberg advanced to second.",
+            "K. Zenga flied out to lf.",
+            "G. Beaulieu singled up the middle; M. Rice advanced to second; C. Rosenberg advanced to third.",
+            "C. Overton flied out to lf, SAC, RBI; C. Rosenberg scored.",
+            "M. Killough doubled to right center, 2 RBI; G. Beaulieu scored; M. Rice scored.",
+            "A. Lacey flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Nagy to 1b.",
+            "M. Sherwood to rf.",
+            "K. Pritchard to p.",
+            "S. Zannotti grounded out to 2b.",
+            "S. Trendell struck out swinging.",
+            "C. Rosenberg grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Lum to 3b for M. Francisco.",
+            "J. Diaz to c.",
+            "M. Rice grounded out to p.",
+            "K. Zenga singled through the left side.",
+            "G. Beaulieu struck out swinging.",
+            "C. Overton grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Killough grounded out to 3b.",
+            "A. Lacey singled to right field.",
+            "S. Zannotti reached on a fielder's choice; A. Lacey out at second ss to 2b.",
+            "S. Zannotti advanced to second on a wild pitch.",
+            "S. Trendell struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/bridgewater-state/boxscore/11016",
+      "date": "4/18/2023",
+      "opponent": "Bridgewater State",
+      "pitchers": [
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Dana to c.",
+            "A. Blake to dp.",
+            "O. Silva struck out swinging.",
+            "K. McLaughli walked.",
+            "J. Jolly out at first 1b to 2b, SAC, bunt; K. McLaughli advanced to second.",
+            "M. Dana singled to right field, RBI; K. McLaughli scored.",
+            "A. Blake struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Thibaudea reached first on a fielding error by ss.",
+            "A. Habib reached first on a fielding error by ss; M. Thibaudea advanced to second on the error.",
+            "S. Silva grounded out to 2b; A. Habib advanced to second; M. Thibaudea advanced to third.",
+            "V. Becker lined out to cf, sacrifice fly, RBI; A. Habib did not advance; M. Thibaudea scored, unearned.",
+            "O. Silva struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. McLaughli lined out to rf.",
+            "J. Jolly singled to right center.",
+            "M. Dana lined out to rf.",
+            "A. Blake grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Thibaudea grounded out to ss.",
+            "A. Habib grounded out to 2b.",
+            "M. Cusack grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Nagy to p for M. Francisco.",
+            "K. Pritchard to 1b for A. Amaro.",
+            "V. Becker struck out swinging.",
+            "O. Silva struck out swinging.",
+            "K. McLaughli lined out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/bridgewater-state/boxscore/11017",
+      "date": "4/18/2023",
+      "opponent": "Bridgewater State",
+      "pitchers": [
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Burcy lined out to rf.",
+            "K. McLaughli lined out to cf.",
+            "J. Jolly grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Dana grounded out to 3b.",
+            "A. Novakoski grounded out to c, bunt.",
+            "A. Habib grounded out to c, bunt."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Eastman singled to left center.",
+            "R. Dunn grounded into double play ss to 1b; E. Eastman out on the play.",
+            "V. Becker struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Klingel grounded out to p, bunt.",
+            "K. McLaughli lined out to cf.",
+            "J. Jolly lined out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Gannoe to c for A. Montgomer.",
+            "M. Dana grounded out to 2b.",
+            "A. Novakoski grounded out to 2b.",
+            "R. Fitzgeral pinch hit for A. Habib.",
+            "R. Fitzgeral singled to right center.",
+            "E. Eastman struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Dunn grounded out to 3b.",
+            "A. Blake pinch hit for V. Becker.",
+            "A. Blake grounded out to ss.",
+            "M. Klingel singled to left field.",
+            "K. McLaughli lined out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/smith/boxscore/11018",
+      "date": "4/21/2023",
+      "opponent": "Smith",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Helms to p.",
+            "M. Osmond struck out looking.",
+            "R. Austin lined out to 2b.",
+            "J. Shantz lined out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Alaniz singled to right field.",
+            "L. Helms grounded out to ss; C. Alaniz advanced to second.",
+            "T. Ang struck out looking.",
+            "E. Washingto singled up the middle; C. Alaniz advanced to third.",
+            "P. Corey walked; E. Washingto advanced to second.",
+            "L. Balam singled to left field, RBI; P. Corey advanced to second; E. Washingto advanced to third; C. Alaniz scored.",
+            "M. Osmond reached on a fielder's choice; L. Balam out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Diaz to c for M. Urakawa.",
+            "R. Austin lined out to 1b.",
+            "J. Shantz flied out to cf.",
+            "C. Alaniz flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Helms lined out to rf.",
+            "T. Ang flied out to rf.",
+            "E. Washingto popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Sheehan to rf for G. Cerbo.",
+            "P. Corey struck out swinging.",
+            "L. Balam grounded out to p.",
+            "M. Osmond grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for M. Sherwood.",
+            "R. Austin grounded out to 2b.",
+            "J. Shantz walked.",
+            "C. Alaniz grounded out to 3b; J. Shantz advanced to second.",
+            "L. Helms doubled to left field, RBI; J. Shantz scored.",
+            "T. Ang singled to right field, RBI; L. Helms scored.",
+            "E. Washingto struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Collins-J pinch hit for P. Corey.",
+            "K. Collins-J struck out swinging.",
+            "L. Balam struck out looking.",
+            "M. Osmond struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/smith/boxscore/11019",
+      "date": "4/21/2023",
+      "opponent": "Smith",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Osmond flied out to cf.",
+            "R. Austin singled to right center.",
+            "J. Shantz struck out looking.",
+            "C. Alaniz lined out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Helms grounded out to 2b.",
+            "T. Ang flied out to rf.",
+            "E. Washingto grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "P. Corey struck out looking.",
+            "L. Balam grounded out to 3b.",
+            "M. Osmond flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pritchard to 1b for A. Amaro.",
+            "A. Sheehan to rf for K. Case.",
+            "R. Austin fouled out to 1b.",
+            "J. Shantz reached first on a throwing error by ss.",
+            "C. Alaniz doubled to left field, RBI; J. Shantz scored, unearned.",
+            "C. Alaniz advanced to third on a wild pitch.",
+            "L. Helms grounded out to 2b.",
+            "T. Ang grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Washingto grounded out to 3b.",
+            "P. Corey singled to right field.",
+            "L. Balam grounded out to p, SAC, bunt; P. Corey advanced to second.",
+            "M. Osmond doubled to right center, RBI; P. Corey scored.",
+            "S. Gannoe to c for J. Diaz.",
+            "R. Austin grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for M. Sherwood.",
+            "J. Shantz grounded out to p.",
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "C. Alaniz reached first on a fielding error by ss.",
+            "K. Collins-J pinch ran for C. Alaniz.",
+            "L. Helms singled up the middle; K. Collins-J advanced to second.",
+            "T. Ang singled to center field, advanced to second on the throw, RBI; L. Helms advanced to third; K. Collins-J scored.",
+            "E. Washingto lined out to ss.",
+            "P. Corey struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Togneri to p for K. Pritchard.",
+            "L. Balam grounded out to p.",
+            "M. Osmond walked.",
+            "R. Austin popped up to 2b.",
+            "M. Osmond advanced to second on a wild pitch.",
+            "J. Shantz singled to left field, advanced to second on the throw, RBI; M. Osmond scored.",
+            "C. Alaniz lined out to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "L. Helms C. Alaniz placed on second.",
+            "J. Diaz to c for S. Gannoe.",
+            "L. Helms flied out to rf.",
+            "T. Ang walked.",
+            "E. Washingto flied out to rf.",
+            "P. Corey struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/clark/boxscore/11020",
+      "date": "4/22/2023",
+      "opponent": "Clark",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Crowley walked.",
+            "E. Lindberg struck out looking.",
+            "R. Mauro doubled to left center; S. Crowley advanced to third.",
+            "F. Salvati struck out swinging.",
+            "K. Gibson struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Barthel grounded out to 2b.",
+            "E. Slavin flied out to cf.",
+            "C. Andre struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Spence walked.",
+            "S. Crowley singled, bunt; E. Spence advanced to second.",
+            "S. Crowley advanced to second; E. Spence advanced to third on a wild pitch.",
+            "E. Lindberg struck out looking.",
+            "R. Mauro doubled down the rf line, 2 RBI; S. Crowley scored; E. Spence scored.",
+            "F. Salvati grounded out to 1b unassisted; R. Mauro advanced to third.",
+            "K. Gibson singled to right center, RBI; R. Mauro scored.",
+            "M. Barthel flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "J. Martin to rf for C. Andre.",
+            "E. Slavin struck out looking.",
+            "J. Martin grounded out to 3b.",
+            "E. Spence singled down the lf line.",
+            "S. Crowley grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Laughlin to rf.",
+            "K. Case to 1b.",
+            "M. Francisco to dp.",
+            "N. Stilwell struck out swinging.",
+            "R. Mauro singled to center field.",
+            "F. Salvati singled to pitcher; R. Mauro advanced to second.",
+            "K. Gibson reached on a fielder's choice; F. Salvati advanced to second; R. Mauro out at third ss to 3b.",
+            "M. Barthel popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Briggs grounded out to p.",
+            "A. Hughes pinch hit for C. Andre.",
+            "A. Hughes walked.",
+            "E. Spence walked; A. Hughes advanced to second.",
+            "S. Crowley singled to right field; E. Spence advanced to second; A. Hughes advanced to third.",
+            "N. Stilwell struck out swinging.",
+            "R. Mauro singled to right center, RBI; S. Crowley advanced to second; E. Spence advanced to third; A. Hughes scored.",
+            "F. Salvati grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Gibson lined out to lf.",
+            "E. Traynor grounded out to ss.",
+            "A. Briggs singled down the lf line.",
+            "A. Hughes grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/clark/boxscore/11021",
+      "date": "4/22/2023",
+      "opponent": "Clark",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Crowley struck out swinging.",
+            "E. Lindberg singled to shortstop.",
+            "R. Mauro lined out to rf.",
+            "F. Salvati struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Gibson grounded out to ss.",
+            "M. Barthel lined out to lf.",
+            "K. Langus struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. Bronson struck out looking.",
+            "E. Spence walked.",
+            "E. Spence out at second c to ss, caught stealing.",
+            "S. Crowley singled to left field.",
+            "E. Lindberg grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Gannoe to c for E. Nagy.",
+            "R. Mauro grounded out to 2b.",
+            "F. Salvati struck out swinging.",
+            "K. Gibson walked.",
+            "M. Barthel popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Langus flied out to cf.",
+            "R. Bronson lined out to p.",
+            "E. Spence lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "K. Pritchard to 1b for M. Urakawa.",
+            "J. Diaz to c.",
+            "S. Crowley grounded out to 2b.",
+            "E. Lindberg grounded out to 2b.",
+            "R. Mauro popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "F. Salvati singled down the rf line.",
+            "F. Salvati advanced to second on a throwing error by c.",
+            "K. Gibson struck out swinging.",
+            "M. Barthel flied out to cf.",
+            "K. Langus struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/brandeis/boxscore/11022",
+      "date": "4/26/2023",
+      "opponent": "Brandeis",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Hunt grounded out to p.",
+            "B. Burdenski flied out to lf.",
+            "A. Cohen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Nash grounded out to 3b.",
+            "M. Manes grounded out to ss.",
+            "T. Boyer fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Pippin popped up to ss.",
+            "E. Ehrlich grounded out to c.",
+            "L. Medici grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "E. Hunt singled to shortstop.",
+            "E. Hunt stole second.",
+            "B. Burdenski out at first 1b to 2b, SAC; E. Hunt advanced to third.",
+            "A. Cohen fouled out to rf, sacrifice fly, RBI; E. Hunt scored.",
+            "H. Nash popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Manes singled to right field.",
+            "T. Boyer flied out to cf.",
+            "J. Pippin grounded out to ss; M. Manes advanced to second.",
+            "E. Ehrlich struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Medici fouled out to 3b.",
+            "E. Hunt walked.",
+            "E. Hunt stole second.",
+            "B. Burdenski flied out to rf; E. Hunt advanced to third.",
+            "A. Cohen flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Nash singled to second base.",
+            "H. Nash stole second.",
+            "M. Manes reached first on an error by 3b; H. Nash advanced to third.",
+            "A. Kolb pinch ran for M. Manes.",
+            "T. Boyer singled to center field, RBI; A. Kolb advanced to second; H. Nash scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/brandeis/boxscore/11023",
+      "date": "4/26/2023",
+      "opponent": "Brandeis",
+      "pitchers": [
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Hunt grounded out to c unassisted.",
+            "B. Burdenski lined out to 3b.",
+            "A. Cohen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Nash flied out to cf.",
+            "M. Manes flied out to lf.",
+            "T. Boyer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Kolb grounded out to p.",
+            "J. Pippin grounded out to 2b.",
+            "L. Medici walked.",
+            "E. Hunt grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Burdenski struck out swinging.",
+            "A. Cohen grounded out to ss.",
+            "H. Nash singled to shortstop.",
+            "M. Manes grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz to c for A. Amaro.",
+            "T. Boyer grounded out to ss.",
+            "A. Kolb struck out looking.",
+            "J. Pippin singled to third base.",
+            "L. Medici grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Jordan to lf for M. Sherwood.",
+            "E. Hunt singled to center field.",
+            "B. Burdenski flied out to rf.",
+            "A. Cohen fouled out to rf; E. Hunt advanced to second.",
+            "H. Nash reached first on an error by ss; E. Hunt scored, unearned.",
+            "H. Nash stole second.",
+            "M. Manes walked.",
+            "T. Boyer struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Sheehan to rf for M. Francisco.",
+            "C. Elbaz pinch hit for A. Kolb.",
+            "S. Togneri to p for K. Pritchard.",
+            "C. Elbaz fouled out to rf.",
+            "J. Pippin singled to right field.",
+            "L. Medici popped up to ss.",
+            "E. Hunt struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/springfield/boxscore/11024",
+      "date": "4/28/2023",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Doyle lined out to 3b.",
+            "A. DeRosa singled to left field.",
+            "C. Pecchia popped up to cf.",
+            "C. Gendron struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Acocella flied out to lf.",
+            "B. McCann lined out to lf.",
+            "A. Olsen grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Britt popped up to 3b.",
+            "D. Serricchi flied out to cf.",
+            "M. Doyle singled to second base.",
+            "M. Doyle stole second.",
+            "A. DeRosa grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pritchard to dp for A. Amaro.",
+            "A. Sheehan to rf for G. Cerbo.",
+            "C. Pecchia grounded out to ss.",
+            "C. Gendron homered, RBI.",
+            "K. Acocella popped up to cf.",
+            "B. McCann popped up to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Olsen flied out to rf.",
+            "M. Britt singled to shortstop.",
+            "D. Serricchi flied out to cf; M. Britt advanced to second on a wild pitch.",
+            "M. Doyle grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for M. Sherwood.",
+            "A. DeRosa singled to shortstop.",
+            "C. Pecchia doubled to right field; A. DeRosa advanced to third.",
+            "C. Gendron struck out swinging.",
+            "K. Acocella popped up to c.",
+            "B. McCann singled to right field, advanced to second on the throw, 2 RBI; C. Pecchia scored; A. DeRosa scored.",
+            "L. Puskas pinch ran for B. McCann.",
+            "A. Olsen singled to center field, RBI; L. Puskas scored.",
+            "M. Britt struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/springfield/boxscore/11025",
+      "date": "4/28/2023",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Pritchard, Kelly",
+        "Nagy, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Doyle walked.",
+            "A. DeRosa reached on a fielder's choice to second base; M. Doyle out at second 2b to ss.",
+            "C. Pecchia flied out to rf.",
+            "C. Gendron singled to left field; A. DeRosa advanced to second.",
+            "M. Ponticell singled up the middle, RBI; C. Gendron advanced to second; A. DeRosa scored.",
+            "B. McCann doubled to right center, 2 RBI; M. Ponticell scored; C. Gendron scored.",
+            "A. Olsen walked.",
+            "M. Britt singled to first base; A. Olsen advanced to second; B. McCann advanced to third.",
+            "D. Serricchi doubled to center field, 3 RBI; M. Britt scored; A. Olsen scored; B. McCann scored.",
+            "M. Doyle doubled to left field, RBI; D. Serricchi scored.",
+            "A. DeRosa grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Pritchard to 1b.",
+            "E. Nagy to p.",
+            "C. Pecchia singled to right field.",
+            "C. Pecchia advanced to second on a passed ball.",
+            "C. Gendron grounded out to ss.",
+            "M. Ponticell singled; C. Pecchia scored on an error by lf, unearned.",
+            "B. McCann singled to center field; M. Ponticell advanced to second.",
+            "A. Olsen reached on a fielder's choice to second base; B. McCann out at second 2b unassisted; M. Ponticell advanced to third.",
+            "M. Britt doubled to left field, 2 RBI; A. Olsen scored; M. Ponticell scored.",
+            "D. Serricchi flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Sherwood to lf for L. Jordan.",
+            "M. Doyle grounded out to 3b.",
+            "A. DeRosa singled to second base.",
+            "C. Pecchia popped up to 2b.",
+            "C. Gendron flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Ponticell singled through the right side.",
+            "B. McCann grounded out to 1b unassisted; M. Ponticell advanced to second.",
+            "A. Olsen lined out to 2b.",
+            "M. Britt walked.",
+            "D. Serricchi lined out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz to c for A. Amaro.",
+            "M. Doyle grounded out to p.",
+            "A. DeRosa reached first on a fielding error by ss.",
+            "C. Pecchia lined out to 1b.",
+            "C. Gendron singled up the middle; A. DeRosa advanced to second.",
+            "L. Puskas pinch ran for C. Gendron.",
+            "M. Ponticell singled to second base; L. Puskas advanced to second; A. DeRosa advanced to third.",
+            "B. McCann lined out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Olsen singled to center field.",
+            "M. Britt singled to pitcher; A. Olsen advanced to second.",
+            "D. Serricchi out at first 3b to 2b, SAC, bunt; M. Britt advanced to second; A. Olsen advanced to third.",
+            "M. Doyle grounded out to p.",
+            "A. DeRosa singled to left field, 2 RBI; M. Britt scored; A. Olsen scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wellesley/boxscore/11026",
+      "date": "4/29/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "/  for K. Liston.",
+            "L. Young to p.",
+            "I. Hsu grounded out to ss.",
+            "C. Chung grounded out to ss.",
+            "A. Delgado grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Delgado to rf.",
+            "E. DeCleene to lf.",
+            "C. Lundin singled to shortstop.",
+            "E. Gaunce reached first on an error by 2b, bunt; C. Lundin advanced to third.",
+            "L. Young singled up the middle, RBI; E. Gaunce advanced to second; C. Lundin scored, unearned.",
+            "A. Alexander grounded into double play 2b to ss to 1b; L. Young out on the play; E. Gaunce advanced to third.",
+            "E. DeCleene grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Vargas singled up the middle.",
+            "I. Hsu singled to pitcher; J. Vargas advanced to second.",
+            "C. Chung reached first on an error by 1b, bunt; I. Hsu advanced to third; J. Vargas scored.",
+            "C. Chung stole second; I. Hsu stole home.",
+            "A. Delgado reached first on an error by 2b, bunt; C. Chung advanced to third.",
+            "A. Delgado stole second; C. Chung stole home, unearned.",
+            "C. Lundin popped up to ss.",
+            "E. Gaunce lined out to p.",
+            "A. Delgado stole third.",
+            "L. Young lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Alexander reached first on an error by rf, advanced to second.",
+            "E. DeCleene singled to first base, bunt; A. Alexander advanced to third.",
+            "E. DeCleene stole second; A. Alexander out at home c to ss to c.",
+            "J. Vargas grounded out to ss; E. DeCleene advanced to third.",
+            "I. Hsu singled to third base, RBI; E. DeCleene scored, unearned.",
+            "C. Chung grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Delgado lined out to p.",
+            "C. Lundin grounded out to 2b.",
+            "E. Gaunce struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Young flied out to lf.",
+            "A. Alexander singled up the middle.",
+            "E. DeCleene popped up to 3b.",
+            "J. Vargas singled to second base; A. Alexander advanced to second.",
+            "I. Hsu popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Chung grounded out to p.",
+            "A. Delgado grounded out to 1b, bunt unassisted.",
+            "C. Lundin reached first on an error by 3b.",
+            "P. Phillips pinch ran for C. Lundin.",
+            "E. Gaunce reached first on an error by 2b; P. Phillips advanced to second.",
+            "L. Young grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wellesley/boxscore/11027",
+      "date": "4/29/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Hsu singled to shortstop.",
+            "I. Hsu stole second.",
+            "C. Chung singled to pitcher; I. Hsu advanced to third.",
+            "C. Chung stole second.",
+            "A. Delgado out at first 1b to 2b, SAC, bunt, RBI; C. Chung advanced to third; I. Hsu scored.",
+            "C. Chung scored on a passed ball, unearned.",
+            "C. Lundin grounded out to 3b.",
+            "L. Young grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Alexander singled to second base.",
+            "M. Sgambati grounded out to 2b; A. Alexander advanced to second.",
+            "A. Alexander advanced to third on a wild pitch.",
+            "C. Theriault struck out swinging.",
+            "J. Vargas struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "I. Hsu reached first on an error by p.",
+            "C. Chung grounded out to 3b, SAC, bunt; I. Hsu advanced to second.",
+            "I. Hsu advanced to third on a passed ball.",
+            "A. Delgado out at first 3b to 2b, SAC, bunt, RBI; I. Hsu scored, unearned.",
+            "C. Lundin flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Young popped up to 2b.",
+            "P. Penny popped up to 1b.",
+            "M. Sgambati lined out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Theriault singled through the right side.",
+            "M. Abernethy reached first on an error by 3b, advanced to second; C. Theriault scored.",
+            "I. Hsu grounded out to p; M. Abernethy advanced to third.",
+            "P. Phillips pinch hit for C. Chung.",
+            "P. Phillips grounded out to 2b, RBI; M. Abernethy scored, unearned.",
+            "A. Delgado grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Pritchard to 1b for M. Urakawa.",
+            "E. Nagy to p for A. Montgomer.",
+            "M. Francisco to dp.",
+            "C. Lundin grounded out to p.",
+            "L. Young popped up to ss.",
+            "P. Penny singled up the middle.",
+            "M. Sgambati grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Pritchard to p.",
+            "E. Nagy to 1b.",
+            "C. Theriault struck out swinging.",
+            "M. Abernethy grounded out to p.",
+            "I. Hsu singled to shortstop.",
+            "I. Hsu stole second.",
+            "P. Phillips struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11028",
+      "date": "5/5/2023",
+      "opponent": "Babson",
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore singled through the right side.",
+            "S. Moore stole second.",
+            "C. Taylor grounded out to 2b; S. Moore advanced to third.",
+            "L. Morris singled to right center, RBI; S. Moore scored.",
+            "L. Morris stole second.",
+            "K. Karamouzi lined out to rf; L. Morris advanced to third.",
+            "S. Pak grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hennessy popped up to 2b.",
+            "C. Joslin grounded out to ss.",
+            "A. Hadjipana tripled to left center.",
+            "M. O'Reilly doubled down the rf line, RBI; A. Hadjipana scored.",
+            "S. Moore grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Taylor grounded out p to ss to 1b.",
+            "L. Morris grounded out to p.",
+            "K. Karamouzi doubled to left center.",
+            "S. Pak grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Hennessy flied out to rf.",
+            "C. Joslin grounded out to 2b.",
+            "A. Hadjipana fouled out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Diaz to c for A. Amaro.",
+            "K. Case to dp for M. Urakawa.",
+            "M. O'Reilly struck out swinging.",
+            "S. Moore walked.",
+            "S. Moore stole second.",
+            "C. Taylor singled through the right side, advanced to second on the throw, RBI; S. Moore scored.",
+            "L. Morris doubled to left center, RBI; C. Taylor scored.",
+            "K. Pritchard to p for S. Togneri.",
+            "K. Karamouzi grounded out to 2b; L. Morris advanced to third.",
+            "L. Morris scored on a passed ball, unearned.",
+            "S. Pak walked.",
+            "S. Pak stole second.",
+            "M. Hennessy flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Joslin flied out to cf.",
+            "A. Hadjipana doubled to left field.",
+            "M. O'Reilly struck out swinging.",
+            "S. Moore walked.",
+            "C. Taylor singled to left center, RBI; S. Moore advanced to second, out at third cf to 3b; A. Hadjipana scored."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Togneri to p for K. Pritchard.",
+            "L. Morris grounded out to 2b.",
+            "K. Karamouzi struck out swinging.",
+            "S. Pak singled down the lf line.",
+            "M. Hennessy grounded out to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "C. Joslin singled to right field.",
+            "C. Joslin stole second.",
+            "A. Hadjipana walked; C. Joslin advanced to third on a wild pitch.",
+            "M. O'Reilly struck out looking.",
+            "A. Hadjipana stole second.",
+            "S. Moore popped up to ss.",
+            "C. Taylor singled up the middle, 2 RBI; A. Hadjipana scored; C. Joslin scored.",
+            "L. Morris singled through the left side, advanced to second on the throw; C. Taylor advanced to third.",
+            "K. Karamouzi doubled to right center, 2 RBI; L. Morris scored; C. Taylor scored.",
+            "S. Pak flied out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11029",
+      "date": "5/6/2023",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Breidenth flied out to rf.",
+            "N. Beck singled to right field.",
+            "C. Carey struck out swinging.",
+            "S. Serna singled up the middle; N. Beck advanced to second.",
+            "L. Farlow doubled to right center, 2 RBI; S. Serna scored; N. Beck scored.",
+            "B. Bartz lined out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Becker singled through the left side.",
+            "K. Becker advanced to second on a wild pitch.",
+            "I. Shroyer singled through the left side, RBI; K. Becker scored.",
+            "M. Murphy struck out looking.",
+            "J. Breidenth lined into double play p to 1b; I. Shroyer out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Beck lined out to cf.",
+            "C. Carey walked.",
+            "E. Nagy to 1b.",
+            "K. Pritchard to p.",
+            "S. Serna walked; C. Carey advanced to second.",
+            "L. Farlow flied out to lf.",
+            "B. Bartz struck out swinging, reached first on a wild pitch; S. Serna advanced to second; C. Carey advanced to third.",
+            "K. Becker grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "I. Shroyer singled to center field.",
+            "S. Togneri to p for K. Pritchard.",
+            "M. Murphy struck out swinging.",
+            "J. Breidenth struck out swinging.",
+            "N. Beck popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ambrosino out of box.",
+            "C. Carey grounded out to ss.",
+            "S. Serna walked.",
+            "L. Farlow struck out looking.",
+            "B. Bartz flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Lum to 3b for A. Amaro.",
+            "K. Case to dp for M. Sherwood.",
+            "K. Becker flied out to lf.",
+            "I. Shroyer grounded out to p.",
+            "M. Murphy fouled out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    }
+  ]
+}

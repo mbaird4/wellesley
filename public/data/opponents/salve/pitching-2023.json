@@ -1,0 +1,3550 @@
+{
+  "slug": "salve",
+  "domain": "salveathletics.com",
+  "scrapedAt": "2026-03-02T22:23:19.298Z",
+  "year": 2023,
+  "pitchingStats": [
+    {
+      "name": "Wicklund, Skylar",
+      "w": 9,
+      "l": 5,
+      "era": 4.19,
+      "app": 20,
+      "gs": 11,
+      "ip": 95.1,
+      "h": 122,
+      "r": 76,
+      "er": 57,
+      "bb": 38,
+      "so": 30,
+      "hr": 5
+    },
+    {
+      "name": "Peterson, Caroline",
+      "w": 4,
+      "l": 7,
+      "era": 5.27,
+      "app": 20,
+      "gs": 14,
+      "ip": 70.1,
+      "h": 59,
+      "r": 69,
+      "er": 53,
+      "bb": 98,
+      "so": 89,
+      "hr": 2
+    },
+    {
+      "name": "Gendron, Sophia",
+      "w": 5,
+      "l": 7,
+      "era": 5.77,
+      "app": 18,
+      "gs": 13,
+      "ip": 83.2,
+      "h": 133,
+      "r": 79,
+      "er": 69,
+      "bb": 28,
+      "so": 50,
+      "hr": 5
+    },
+    {
+      "name": "Kelly, Alex",
+      "w": 0,
+      "l": 5,
+      "era": 5.01,
+      "app": 6,
+      "gs": 4,
+      "ip": 22.1,
+      "h": 29,
+      "r": 17,
+      "er": 16,
+      "bb": 7,
+      "so": 20,
+      "hr": 1
+    },
+    {
+      "name": "Michaud, Isabelle",
+      "w": 0,
+      "l": 0,
+      "era": 12.6,
+      "app": 1,
+      "gs": 0,
+      "ip": 1.2,
+      "h": 3,
+      "r": 3,
+      "er": 3,
+      "bb": 6,
+      "so": 1,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/mit/boxscore/7066",
+      "date": "3/10/2023",
+      "opponent": "Mit",
+      "pitchers": [
+        "Kelly, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Adkison singled.",
+            "J. Sell walked; K. Adkison advanced to second.",
+            "M. Cable singled, bunt; J. Sell advanced to second; K. Adkison advanced to third.",
+            "M. Bivin struck out.",
+            "A. Shull walked, RBI; M. Cable advanced to second; J. Sell advanced to third; K. Adkison scored.",
+            "O. Scarpaci doubled, 2 RBI; A. Shull advanced to third; M. Cable scored; J. Sell scored.",
+            "D. Bell struck out looking.",
+            "A. Ladd flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Samuelsen walked.",
+            "K. Adkison doubled; H. Samuelsen advanced to third.",
+            "J. Sell flied out to lf, SF, RBI; H. Samuelsen scored.",
+            "M. Cable flied out to 3b.",
+            "M. Bivin grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Shull flied out to rf.",
+            "O. Scarpaci flied out to cf.",
+            "D. Bell doubled.",
+            "A. Ladd flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Samuelsen flied out to cf.",
+            "K. Adkison flied out to ss.",
+            "J. Sell flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Cable doubled.",
+            "M. Bivin singled, RBI; M. Cable scored.",
+            "M. Bivin stole second.",
+            "A. Shull grounded out to 2b; M. Bivin advanced to third.",
+            "O. Scarpaci struck out.",
+            "D. Bell flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Ladd flied out to cf.",
+            "H. Samuelsen flied out to cf.",
+            "K. Adkison flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Sell flied out to ss.",
+            "M. Cable doubled.",
+            "M. Bivin doubled, RBI; M. Cable scored.",
+            "M. Bivin advanced to third on a wild pitch.",
+            "A. Shull lined out to cf, SAC, RBI; M. Bivin scored.",
+            "O. Scarpaci flied out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/mit/boxscore/7067",
+      "date": "3/10/2022",
+      "opponent": "Mit",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Adkison doubled.",
+            "J. Sell lined out to rf.",
+            "M. Cable tripled, RBI; K. Adkison scored.",
+            "M. Bivin grounded out to ss, RBI; M. Cable scored.",
+            "D. Bell singled.",
+            "R. Spiegel grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Hines walked.",
+            "A. Ladd grounded out to 2b; K. Hines advanced to second.",
+            "H. Samuelsen grounded out to 3b; K. Hines advanced to third.",
+            "K. Adkison grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Sell grounded out to p.",
+            "M. Cable doubled.",
+            "M. Bivin walked.",
+            "D. Bell grounded out to 3b; M. Bivin advanced to second; M. Cable advanced to third.",
+            "R. Spiegel doubled, 2 RBI; M. Bivin scored; M. Cable scored.",
+            "K. Hines flied out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Smith pinch hit for A. Ladd.",
+            "M. Smith flied out to rf.",
+            "H. Samuelsen walked.",
+            "K. Adkison flied out to rf.",
+            "J. Sell singled; H. Samuelsen advanced to second.",
+            "M. Cable struck out."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Bivin doubled.",
+            "D. Bell struck out.",
+            "R. Spiegel flied out to cf.",
+            "K. Hines grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Peterson to p for Gendron.",
+            "A. Ladd struck out.",
+            "H. Samuelsen struck out.",
+            "K. Adkison walked.",
+            "J. Sell flied out to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Strazza to ss for Wicklund.",
+            "M. Cable grounded out to ss.",
+            "M. Bivin lined out to ss.",
+            "D. Bell flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/ohio-northern/boxscore/7068",
+      "date": "3/12/2023",
+      "opponent": "Ohio Northern",
+      "pitchers": [
+        "Kelly, Alex",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Elliott struck out looking.",
+            "M. Alejandro struck out, out at first c to 1b.",
+            "C. Rosser popped up to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Motylinsk grounded out to ss.",
+            "A. Lenser grounded out to 3b.",
+            "A. Wilson flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Howell grounded out to 1b unassisted.",
+            "C. Clark struck out.",
+            "A. Murray popped up to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Elliott popped up to ss.",
+            "M. Alejandro flied out to rf.",
+            "C. Rosser walked.",
+            "S. Motylinsk singled to left field; C. Rosser advanced to second.",
+            "A. Lenser grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Wilson reached first on an error by 2b.",
+            "L. Howell out at first 3b to 2b, SAC, bunt; A. Wilson advanced to second.",
+            "C. Clark struck out looking.",
+            "A. Murray singled, RBI; A. Wilson scored, unearned.",
+            "A. Elliott singled; A. Murray advanced to third.",
+            "M. Alejandro struck out."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Wicklund to p.",
+            "E. Medeiros to dp.",
+            "C. Rosser singled.",
+            "S. Motylinsk singled; C. Rosser advanced to second.",
+            "A. Lenser out at first 1b to 2b, SAC, bunt; S. Motylinsk advanced to second; C. Rosser advanced to third.",
+            "S. Motylinsk advanced to third; C. Rosser scored on a wild pitch.",
+            "S. Motylinsk scored on a wild pitch.",
+            "A. Wilson walked.",
+            "L. Howell singled; A. Wilson advanced to second.",
+            "C. Clark popped up to 2b.",
+            "A. Murray singled, RBI; L. Howell advanced to third; A. Wilson scored.",
+            "L. Howell scored on a wild pitch.",
+            "A. Elliott flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Alejandro singled.",
+            "M. Alejandro stole second.",
+            "C. Rosser walked.",
+            "S. Motylinsk reached first on an error by 1b, SAC, bunt; C. Rosser advanced to second; M. Alejandro advanced to third, out at home 1b to c.",
+            "A. Lenser singled, RBI; S. Motylinsk advanced to second; C. Rosser scored.",
+            "A. Lenser out at second c to 2b, caught stealing; S. Motylinsk advanced to third.",
+            "A. Wilson singled.",
+            "L. Howell singled, RBI; A. Wilson advanced to second; S. Motylinsk scored, unearned.",
+            "C. Clark struck out."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/ramapo/boxscore/7069",
+      "date": "3/12/2023",
+      "opponent": "Ramapo",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Kontura reached first on an error by 1b.",
+            "K. Rygiel popped up to 3b.",
+            "A. Kontura out at second c to 1b to ss, caught stealing.",
+            "A. Corra popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Wheeler flied out to lf down the lf line.",
+            "A. Bartolome singled to left center.",
+            "A. Messina singled through the right side; A. Bartolome advanced to second.",
+            "A. Bartolome advanced to third on the throw.",
+            "H. Hensler struck out swinging.",
+            "A. Messina advanced to second on a wild pitch.",
+            "N. Cerasi struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Monaco walked.",
+            "A. Kontura singled up the middle, advanced to second on the throw; J. Monaco advanced to third.",
+            "K. Rygiel singled up the middle, RBI; A. Kontura advanced to third; J. Monaco scored.",
+            "A. Corra homered to center field, 3 RBI; K. Rygiel scored; A. Kontura scored.",
+            "M. Wheeler walked.",
+            "A. Bartolome doubled to left field; M. Wheeler advanced to third.",
+            "A. Messina grounded out to 2b.",
+            "H. Hensler singled up the middle, RBI; A. Bartolome advanced to third; M. Wheeler scored.",
+            "N. Cerasi singled to center field, RBI; H. Hensler advanced to second; A. Bartolome scored.",
+            "N. Cerasi advanced to second; H. Hensler advanced to third on a wild pitch.",
+            "J. Monaco reached first on a fielding error by 3b.",
+            "A. Kontura grounded out to ss, RBI; J. Monaco advanced to second; N. Cerasi advanced to third; H. Hensler scored, unearned.",
+            "K. Rygiel grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Corra singled through the right side.",
+            "K. Lafferty pinch ran for A. Corra.",
+            "M. Wheeler fouled out to c.",
+            "A. Bartolome flied out to lf.",
+            "A. Messina grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Hensler doubled to center field.",
+            "N. Cerasi lined out to lf; H. Hensler advanced to third.",
+            "J. Monaco reached on a fielder's choice to second base, RBI; H. Hensler scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/smith/boxscore/7070",
+      "date": "3/13/2023",
+      "opponent": "Smith",
+      "pitchers": [
+        "Kelly, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Taketa struck out swinging.",
+            "R. Austin struck out swinging.",
+            "T. Ang grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Shantz singled to left field.",
+            "J. Shantz stole second.",
+            "C. Alaniz flied out to cf.",
+            "L. Helms singled to center field; J. Shantz advanced to third.",
+            "P. Corey homered, 3 RBI; L. Helms scored; J. Shantz scored.",
+            "E. Washingto struck out swinging.",
+            "M. Moore struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Taketa singled to left field.",
+            "R. Austin flied out to lf.",
+            "T. Ang reached on a fielder's choice; M. Taketa out at second ss to 2b.",
+            "J. Shantz singled to left field; T. Ang advanced to second.",
+            "C. Alaniz flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Helms doubled to left field.",
+            "L. Balam pinch ran for L. Helms.",
+            "P. Corey flied out to cf; L. Balam advanced to third.",
+            "E. Washingto struck out swinging.",
+            "M. Moore struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Taketa singled to right field.",
+            "R. Austin singled to left field; M. Taketa advanced to second.",
+            "T. Ang singled to center field; R. Austin advanced to second; M. Taketa advanced to third.",
+            "J. Shantz popped up to 2b.",
+            "C. Alaniz popped up to 1b.",
+            "L. Helms singled to right field, RBI; T. Ang advanced to second; R. Austin advanced to third; M. Taketa scored.",
+            "P. Corey struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Washingto doubled to left field.",
+            "M. Swain lined out to 2b.",
+            "M. Taketa walked.",
+            "R. Austin flied out to lf, sacrifice fly.",
+            "T. Ang doubled to left field, 2 RBI; M. Taketa scored; E. Washingto scored.",
+            "J. Shantz flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Alaniz walked.",
+            "K. Collins-J pinch ran for C. Alaniz.",
+            "K. Collins-J advanced to second on a passed ball.",
+            "L. Helms grounded out to ss; K. Collins-J advanced to third.",
+            "P. Corey flied out to cf, sacrifice fly, RBI; K. Collins-J scored.",
+            "S. Wicklund to lf for E. Medeiros.",
+            "G. Messier to lf for S. Wicklund.",
+            "S. Wicklund to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/case-western-reserve/boxscore/7071",
+      "date": "3/13/2023",
+      "opponent": "Case Western Reserve",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gross reached first on an error by ss.",
+            "Gross stole second.",
+            "Rieger struck out swinging.",
+            "Russo singled to right field, RBI; Gross scored, unearned.",
+            "Riely flied out to rf.",
+            "Russo stole second.",
+            "Russo stole third.",
+            "Tucci walked.",
+            "Tucci stole second.",
+            "Berry flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gobeyn flied out to rf.",
+            "Landers singled to right field.",
+            "Landers stole second.",
+            "Jagoda singled through the right side, advanced to second on the throw, RBI; Landers scored.",
+            "Jagoda stole third.",
+            "Gross doubled to left field, RBI; Jagoda scored.",
+            "Gross stole third.",
+            "Rieger grounded out to ss, RBI; Gross scored.",
+            "Russo doubled to left center.",
+            "Riely flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Tucci homered to left center, RBI.",
+            "Berry reached first on an error by ss.",
+            "Gobeyn singled to center field; Berry advanced to second.",
+            "Landers reached on a fielder's choice; Gobeyn advanced to second; Berry out at third 3b unassisted.",
+            "Jagoda doubled to right field, RBI; Landers advanced to third; Gobeyn scored.",
+            "Gross tripled to right field, 2 RBI; Jagoda scored; Landers scored.",
+            "S. Wicklund to p for S. Gendron.",
+            "Fritscher pinch hit for Rieger.",
+            "Fritscher grounded out to 2b, RBI; Gross scored, unearned.",
+            "Russo walked.",
+            "Riely grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Francesch to 2b for J. Cosciello.",
+            "Gazda reached first on an error by ss.",
+            "Tucci pinch ran for Gazda.",
+            "Berry flied out to cf.",
+            "Gobeyn singled to center field; Tucci advanced to second.",
+            "Landers reached on a fielder's choice; Gobeyn advanced to second, out at third ss unassisted; Tucci advanced to third on an error by 3b.",
+            "Landers stole second.",
+            "Jagoda reached first on an error by 3b; Landers advanced to third; Tucci scored, unearned.",
+            "Gross singled up the middle, RBI; Jagoda advanced to second, out at third cf to 3b; Landers scored, unearned."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Strazza to 3b for E. Medeiros.",
+            "Rieger to lf for Fritscher.",
+            "Rieger doubled down the lf line, ground-rule.",
+            "Rieger out at third c to 3b, caught stealing.",
+            "Russo singled to third base.",
+            "Riely reached on a fielder's choice; Russo out at second 3b to 2b.",
+            "Tucci singled up the middle, advanced to second on the throw; Riely advanced to third.",
+            "Berry grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gobeyn reached first on an error by ss.",
+            "Manworren pinch hit for Landers.",
+            "Lamm pinch ran for Gobeyn.",
+            "Manworren walked, advanced to second on a wild pitch; Lamm advanced to second, out at third c to 3b.",
+            "Manworren advanced to third on a wild pitch.",
+            "Jagoda grounded out to 2b, RBI; Manworren scored.",
+            "Gross grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Rieger grounded out to 3b.",
+            "Russo grounded out to 2b.",
+            "Riely singled through the left side.",
+            "Riely advanced to second on a wild pitch.",
+            "Tucci grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/hood/boxscore/7072",
+      "date": "3/14/2023",
+      "opponent": "Hood",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Saunders walked.",
+            "C. Saunders stole second.",
+            "J. Pfleiger walked.",
+            "R. Gottleib walked; J. Pfleiger advanced to second; C. Saunders advanced to third.",
+            "R. Benden singled to center field, RBI; R. Gottleib advanced to second; J. Pfleiger advanced to third; C. Saunders scored.",
+            "A. Walters walked, RBI; R. Benden advanced to second; R. Gottleib advanced to third; J. Pfleiger scored.",
+            "M. Hetzel struck out looking.",
+            "S. McIntosh popped up to ss.",
+            "K. Blocher struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Blasko walked.",
+            "C. Saunders singled to left field; C. Blasko advanced to third.",
+            "C. Saunders stole second.",
+            "J. Pfleiger popped up to ss.",
+            "R. Gottleib flied out to lf, SAC, RBI; C. Blasko scored.",
+            "R. Benden singled to right field, RBI; C. Saunders scored.",
+            "A. Walters popped up to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Hetzel grounded out to 3b.",
+            "S. McIntosh grounded out to 2b.",
+            "K. Blocher grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Strazza to ss for E. Medeiros.",
+            "S. Wicklund to p for C. Peterson.",
+            "C. Blasko singled, bunt.",
+            "C. Saunders grounded into double play ss to 1b; C. Blasko out on the play.",
+            "J. Pfleiger reached first on an error by 3b.",
+            "R. Gottleib homered to center field, unearned, 2 RBI; J. Pfleiger scored, unearned.",
+            "R. Benden grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Cosciello to ss.",
+            "S. Strazza to lf.",
+            "A. Walters grounded out to p.",
+            "M. Hetzel grounded out to 1b unassisted.",
+            "S. McIntosh grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Blocher singled to center field.",
+            "C. Blasko reached first on a fielding error by 2b, advanced to second; K. Blocher advanced to third.",
+            "C. Saunders struck out swinging.",
+            "J. Pfleiger grounded out to 3b.",
+            "R. Gottleib lined out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Bello to c for M. Capetta.",
+            "R. Benden singled to shortstop.",
+            "A. Walters singled; R. Benden advanced to second.",
+            "M. Hetzel reached on a fielder's choice; A. Walters advanced to second; R. Benden out at third ss to 3b.",
+            "S. McIntosh struck out swinging.",
+            "K. Blocher lined out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/wesleyan-conn-/boxscore/7073",
+      "date": "3/14/2023",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Docktor popped up to ss.",
+            "A. Campbell grounded out to 3b.",
+            "R. Brown struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Secaira-C grounded out to ss.",
+            "M. Lennon singled to center field.",
+            "D. La reached on a fielder's choice to shortstop, advanced to second on an error by 2b; M. Lennon out at second ss to 2b.",
+            "K. Gately popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Williams flied out to cf.",
+            "K. Baker struck out swinging.",
+            "H. Docktor doubled to center field.",
+            "A. Campbell grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Brown flied out to cf.",
+            "B. Secaira-C fouled out to 1b.",
+            "M. Lennon singled to left field.",
+            "D. La singled to right field; M. Lennon advanced to third.",
+            "K. Gately singled to second base, RBI; D. La advanced to third; M. Lennon scored.",
+            "B. Williams singled to center field, RBI; K. Gately advanced to second; D. La scored.",
+            "K. Baker struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Docktor singled to right field.",
+            "H. Docktor stole second.",
+            "A. Campbell walked.",
+            "H. Docktor advanced to third on a wild pitch.",
+            "A. Campbell advanced to second.",
+            "R. Brown grounded out to 3b.",
+            "B. Secaira-C grounded out to 1b unassisted, RBI; A. Campbell advanced to third; H. Docktor scored.",
+            "M. Lennon singled to center field, RBI; A. Campbell scored.",
+            "M. Lennon stole second.",
+            "D. La struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Gately singled to second base.",
+            "L. Marino pinch ran for K. Gately.",
+            "L. Marino stole second.",
+            "B. Williams struck out swinging.",
+            "C. Palmer flied out to cf.",
+            "H. Docktor tripled to right field, RBI; L. Marino scored.",
+            "A. Campbell grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Brown flied out to cf.",
+            "B. Secaira-C singled to center field.",
+            "C. Castillo pinch ran for B. Secaira-C.",
+            "M. Lennon popped up to 1b.",
+            "D. La grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/oswego/boxscore/7074",
+      "date": "3/16/2023",
+      "opponent": "Oswego",
+      "pitchers": [
+        "Wicklund, Skylar",
+        "Kelly, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Hoeflich grounded out to ss.",
+            "K. Souders walked.",
+            "M. Phinney popped up to 2b.",
+            "K. Souders stole second.",
+            "S. Morgan walked.",
+            "C. Kania struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "F. Higgins reached first on an error by ss.",
+            "T. Smith grounded out to 3b; F. Higgins advanced to second.",
+            "E. Mahoney struck out swinging.",
+            "A. Guinassi grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Hoeflich singled to left field.",
+            "K. Souders out at first 3b to 1b to lf.",
+            "M. Hoeflich advanced to second, out at third 1b to lf.",
+            "M. Phinney lined out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Morgan popped up to 2b.",
+            "C. Kania lined out to 3b.",
+            "F. Higgins reached first on an error by ss.",
+            "A. Edgar pinch ran for F. Higgins.",
+            "T. Smith singled to right field; A. Edgar advanced to second.",
+            "E. Mahoney grounded out to 3b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Guinassi grounded out to ss.",
+            "M. Hoeflich doubled to center field.",
+            "K. Souders reached first on an error by 1b; M. Hoeflich advanced to third.",
+            "K. Souders advanced to second on a wild pitch, advanced to third; M. Hoeflich scored.",
+            "M. Phinney walked.",
+            "M. Phinney stole second.",
+            "S. Morgan homered to left field, 3 RBI; M. Phinney scored; K. Souders scored.",
+            "C. Kania grounded out to p.",
+            "F. Higgins pinch hit for A. Edgar.",
+            "F. Higgins doubled down the rf line.",
+            "A. Kelly to p for S. Wicklund.",
+            "T. Smith popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Mahoney grounded out to 2b.",
+            "A. Guinassi struck out swinging.",
+            "M. Hoeflich singled through the right side.",
+            "K. Souders grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Strazza to ss for E. Medeiros.",
+            "M. Phinney flied out to lf.",
+            "S. Morgan singled to shortstop.",
+            "S. LoPiccolo pinch ran for S. Morgan.",
+            "K. Farro pinch hit for C. Kania.",
+            "K. Farro struck out looking.",
+            "F. Higgins struck out swinging."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "S. Wicklund to p for A. Kelly.",
+            "M. Bello to c for C. Braid.",
+            "T. Smith F. Higgins placed on second.",
+            "T. Smith doubled to left field; F. Higgins advanced to third.",
+            "E. Mahoney doubled to center field, 2 RBI; T. Smith scored; F. Higgins scored.",
+            "A. Guinassi struck out looking.",
+            "M. Hoeflich grounded out to 2b.",
+            "K. Souders grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/wis-stout/boxscore/7076",
+      "date": "3/17/2023",
+      "opponent": "Wis Stout",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar",
+        "Kelly, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Albrecht struck out swinging.",
+            "M. Murphy walked.",
+            "M. Murphy out at second c to ss, caught stealing.",
+            "K. Pfeffer flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Kupczak lined out to ss.",
+            "K. Funk struck out swinging.",
+            "K. Peterson reached first on an error by 1b.",
+            "K. Beck struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Belleau walked.",
+            "K. Belleau out at second c to ss, caught stealing.",
+            "R. Kious walked.",
+            "A. Albrecht popped up to 1b.",
+            "M. Murphy struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Pfeffer singled.",
+            "S. Noreen pinch ran for K. Pfeffer.",
+            "L. Kupczak singled; S. Noreen out at second rf to ss.",
+            "K. Funk walked; L. Kupczak advanced to second.",
+            "K. Peterson struck out swinging.",
+            "K. Beck struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Belleau grounded out to p.",
+            "R. Kious walked.",
+            "A. Albrecht struck out swinging.",
+            "M. Murphy grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Bello to c.",
+            "K. Pfeffer singled.",
+            "L. Kupczak reached on a fielder's choice; K. Pfeffer advanced to second on an error by 2b.",
+            "K. Funk struck out looking.",
+            "K. Peterson singled, 2 RBI; L. Kupczak scored; K. Pfeffer scored, unearned.",
+            "K. Peterson stole second.",
+            "K. Beck grounded out to 2b.",
+            "K. Belleau walked.",
+            "R. Kious walked; K. Belleau advanced to second; K. Peterson advanced to third.",
+            "A. Albrecht walked, RBI; R. Kious advanced to second; K. Belleau advanced to third; K. Peterson scored.",
+            "P. Dolecki pinch hit for M. Murphy.",
+            "P. Dolecki hit by pitch, RBI; A. Albrecht advanced to second; R. Kious advanced to third; K. Belleau scored.",
+            "M. Murphy pinch ran for P. Dolecki.",
+            "S. Wicklund to p for C. Peterson.",
+            "K. Pfeffer walked, RBI; M. Murphy advanced to second; A. Albrecht advanced to third; R. Kious scored.",
+            "L. Kupczak struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Funk homered, RBI.",
+            "K. Peterson struck out swinging.",
+            "M. O'Brien pinch hit for K. Beck.",
+            "M. O'Brien doubled.",
+            "K. Beck pinch ran for M. O'Brien.",
+            "K. Belleau grounded out to 3b.",
+            "R. Kious struck out looking."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "A. Albrecht R. Kious placed on second.",
+            "A. Kelly to p for S. Wicklund.",
+            "A. Albrecht grounded out to p, SAC; R. Kious advanced to third.",
+            "M. Murphy singled, RBI; R. Kious scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/hope/boxscore/7077",
+      "date": "3/17/2023",
+      "opponent": "Hope",
+      "pitchers": [
+        "Kelly, Alex",
+        "Gendron, Sophia",
+        "Michaud, Isabelle"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "P. Benjamin singled.",
+            "E. Martin walked; P. Benjamin advanced to second.",
+            "G. Henry doubled, 2 RBI; E. Martin scored; P. Benjamin scored.",
+            "L. Potapczak flied out to cf; G. Henry advanced to third.",
+            "H. Bennett struck out swinging.",
+            "L. DeHoop struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Gendron to p for A. Kelly.",
+            "S. Zombo struck out swinging.",
+            "K. Acker struck out swinging.",
+            "K. Pochmara singled.",
+            "P. Benjamin walked; K. Pochmara advanced to second.",
+            "E. Martin singled; P. Benjamin advanced to second; K. Pochmara advanced to third.",
+            "G. Henry singled, 2 RBI; E. Martin advanced to second; P. Benjamin scored; K. Pochmara scored.",
+            "L. Potapczak doubled, RBI; G. Henry advanced to third; E. Martin scored.",
+            "H. Bennett singled, 2 RBI; L. Potapczak scored; G. Henry scored.",
+            "L. DeHoop struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Zombo reached first on an error by p.",
+            "K. Acker singled; S. Zombo advanced to second.",
+            "K. Pochmara doubled, 2 RBI; K. Acker scored; S. Zombo scored.",
+            "P. Benjamin flied out to cf.",
+            "E. Martin popped up to 1b.",
+            "G. Henry flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Potapczak popped up to p.",
+            "I. Michaud to p for S. Gendron.",
+            "H. Bennett grounded out to 3b.",
+            "L. DeHoop walked.",
+            "S. Zombo doubled; L. DeHoop advanced to third.",
+            "K. Acker walked.",
+            "K. Pochmara walked, RBI; K. Acker advanced to second; S. Zombo advanced to third; L. DeHoop scored.",
+            "P. Benjamin walked, RBI; K. Pochmara advanced to second; K. Acker advanced to third; S. Zombo scored.",
+            "E. Martin grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "G. Henry lined out to ss.",
+            "L. Potapczak singled.",
+            "M. Pahl pinch ran for L. Potapczak.",
+            "H. Bennett walked; M. Pahl advanced to second.",
+            "L. DeHoop flied out to lf.",
+            "S. Zombo singled, RBI; H. Bennett advanced to second; M. Pahl scored.",
+            "K. Acker walked; S. Zombo advanced to second; H. Bennett advanced to third.",
+            "K. Pochmara struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/rhode-island-col-/boxscore/7078",
+      "date": "3/21/2023",
+      "opponent": "Rhode Island Col ",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Avery Katz walked.",
+            "Avery Katz advanced to second on a wild pitch.",
+            "Noelle Simmons struck out looking.",
+            "Alexis Boyce flied out to cf; Avery Katz advanced to third.",
+            "Avery Katz scored on a wild pitch.",
+            "Katelyn Ashe doubled to left field.",
+            "Cassidy Schoen struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Kidd lined out to ss.",
+            "Amanda Conti singled through the left side.",
+            "Sophia Crudale singled to shortstop; Amanda Conti advanced to second.",
+            "Paige Jones out at first 3b to 2b, SAC; Sophia Crudale advanced to second; Amanda Conti advanced to third.",
+            "Avery Katz lined out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Noelle Simmons tripled to center field.",
+            "Alexis Boyce homered to left center, 2 RBI; Noelle Simmons scored.",
+            "Katelyn Ashe singled up the middle.",
+            "Sarah Mickelson pinch ran for Katelyn Ashe.",
+            "Cassidy Schoen reached on a fielder's choice; Sarah Mickelson out at second ss to 2b.",
+            "Abby Kidd reached on a fielder's choice; Cassidy Schoen out at second rf to ss.",
+            "Amanda Conti singled through the left side; Abby Kidd advanced to second.",
+            "Sophia Crudale popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Paige Jones flied out to rf.",
+            "Avery Katz singled to center field.",
+            "Avery Katz stole second.",
+            "Noelle Simmons grounded out to p; Avery Katz advanced to third.",
+            "Alexis Boyce homered to left center, 2 RBI; Avery Katz scored.",
+            "Katelyn Ashe flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Cassidy Schoen flied out to rf.",
+            "Abby Kidd doubled to right field.",
+            "Amanda Conti grounded out to ss.",
+            "Sophia Crudale doubled to center field, RBI; Abby Kidd scored.",
+            "Paige Jones doubled through the right side, RBI; Sophia Crudale scored.",
+            "Caroline Peterson to p for Sophie Gendron.",
+            "Avery Katz walked.",
+            "Noelle Simmons flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexis Boyce singled to shortstop.",
+            "Victoria Young pinch ran for Alexis Boyce.",
+            "Victoria Young stole second.",
+            "Katelyn Ashe walked.",
+            "Katelyn Ashe advanced to second; Victoria Young advanced to third on a wild pitch.",
+            "Cassidy Schoen grounded out to 2b, RBI; Katelyn Ashe advanced to third; Victoria Young scored.",
+            "Abby Kidd walked.",
+            "Abby Kidd advanced to third; Katelyn Ashe scored on a wild pitch.",
+            "Amanda Conti struck out swinging.",
+            "Abby Kidd scored on a wild pitch."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/rhode-island-col-/boxscore/7079",
+      "date": "3/21/2023",
+      "opponent": "Rhode Island Col ",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Katz singled up the middle.",
+            "N. Simmons singled to shortstop, advanced to second; A. Katz advanced to third.",
+            "A. Boyce struck out swinging.",
+            "N. Simmons advanced to third; A. Katz Failed pickoff attempt, scored on a throwing error by c.",
+            "K. Ashe singled through the right side, RBI; N. Simmons scored, unearned.",
+            "C. Schoen reached on a fielder's choice; K. Ashe out at second 2b to ss.",
+            "S. Timmons grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Conti singled to second base.",
+            "S. Crudale walked; A. Conti advanced to second.",
+            "P. Jones reached on a fielder's choice; S. Crudale advanced to second; A. Conti out at third ss unassisted.",
+            "A. Katz reached on a fielder's choice; P. Jones advanced to second; S. Crudale out at third p to 3b.",
+            "N. Simmons grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Boyce grounded out to 3b.",
+            "K. Ashe grounded out to p.",
+            "C. Schoen doubled, out at third rf to ss to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Timmons grounded out to 2b.",
+            "A. Conti walked.",
+            "S. Crudale reached on a fielder's choice; A. Conti out at second 2b to ss.",
+            "P. Jones struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Bennett to ss.",
+            "A. Katz grounded out to ss.",
+            "N. Simmons tripled to right center.",
+            "A. Boyce struck out swinging, reached first on a wild pitch; N. Simmons scored.",
+            "K. Ashe reached first on an error by ss; A. Boyce advanced to second.",
+            "S. Mickelson pinch ran for A. Boyce.",
+            "A. Clesas pinch ran for K. Ashe.",
+            "C. Schoen singled; A. Clesas advanced to second; S. Mickelson advanced to third.",
+            "A. Kidd pinch hit for S. Timmons.",
+            "A. Kidd reached on a fielder's choice; C. Schoen advanced to second; A. Clesas advanced to third; S. Mickelson out at home 3b to c.",
+            "A. Conti flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Lanteri to 3b for E. Medeiros.",
+            "S. Crudale grounded out to 2b.",
+            "P. Jones reached first on an error by 2b.",
+            "A. Katz singled to shortstop; P. Jones advanced to second, advanced to third on a throwing error by ss.",
+            "A. Katz stole second.",
+            "N. Simmons grounded out to p, RBI; A. Katz advanced to third; P. Jones scored, unearned.",
+            "A. Boyce singled down the lf line, RBI; A. Katz scored, unearned.",
+            "A. Boyce advanced to second on a wild pitch.",
+            "K. Ashe flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Strazza to ss for M. Bennett.",
+            "C. Schoen lined out to rf.",
+            "S. Timmons grounded out to 3b.",
+            "A. Conti grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/bridgewater-st-/boxscore/7080",
+      "date": "3/30/2023",
+      "opponent": "Bridgewater St ",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marcotte walked.",
+            "E. Marcotte advanced to second on a wild pitch.",
+            "M. Flamme struck out swinging.",
+            "J. Jolly doubled to left field, RBI; E. Marcotte scored.",
+            "M. Dana lined out to 3b.",
+            "O. Silva walked.",
+            "A. Novakoski singled through the left side; O. Silva advanced to second; J. Jolly advanced to third.",
+            "K. McLaughli struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Collins-F struck out swinging.",
+            "A. Habib struck out swinging.",
+            "E. Marcotte popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Flamme singled to pitcher.",
+            "M. Flamme advanced to second on a wild pitch.",
+            "M. Flamme advanced to third on a wild pitch.",
+            "J. Jolly singled to pitcher, bunt, RBI; M. Flamme scored.",
+            "M. Dana lined out to lf.",
+            "J. Jolly stole second.",
+            "O. Silva walked.",
+            "A. Novakoski grounded out to 3b; O. Silva advanced to second; J. Jolly advanced to third.",
+            "K. McLaughli walked.",
+            "K. Collins-F struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Fitzgeral pinch hit for A. Habib.",
+            "R. Fitzgeral struck out swinging.",
+            "E. Marcotte walked.",
+            "V. Becker pinch hit for M. Flamme.",
+            "V. Becker struck out swinging.",
+            "E. Marcotte stole second.",
+            "J. Jolly walked.",
+            "M. Dana grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "O. Silva singled through the left side.",
+            "O. Silva advanced to second on a passed ball.",
+            "A. Novakoski struck out swinging.",
+            "K. Tobin grounded out to ss; O. Silva advanced to third.",
+            "A. Blake singled through the right side, RBI; O. Silva scored, unearned.",
+            "A. Blake stole second.",
+            "R. Fitzgeral struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/bridgewater-st-/boxscore/7081",
+      "date": "3/30/2023",
+      "opponent": "Bridgewater St ",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Marcotte lined out to lf.",
+            "M. Klingel singled down the lf line.",
+            "J. Jolly grounded out to 1b unassisted; M. Klingel advanced to second.",
+            "M. Dana struck out swinging, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Novakoski tripled to left field.",
+            "E. Medeiros to lf for J. Cosciello.",
+            "K. Tobin grounded out to 2b, RBI; A. Novakoski scored.",
+            "E. Eastman grounded out to ss.",
+            "R. Fitzgeral singled to right field.",
+            "M. Thibaudea struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Marcotte singled to third base, advanced to second on a throwing error by 3b.",
+            "M. Klingel reached first on a fielding error by p; E. Marcotte advanced to third.",
+            "M. Klingel stole second.",
+            "J. Jolly lined into double play ss unassisted; M. Klingel out on the play.",
+            "M. Dana lined out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Novakoski lined out to cf.",
+            "K. Tobin struck out swinging.",
+            "E. Eastman struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Fitzgeral flied out to rf.",
+            "M. Thibaudea singled through the left side.",
+            "M. Thibaudea advanced to second on a throwing error by c, failed pickoff attempt.",
+            "E. Marcotte grounded out to p; M. Thibaudea advanced to third.",
+            "M. Klingel grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "F. Rubino to cf for M. Capetta.",
+            "J. Jolly struck out swinging.",
+            "M. Dana struck out swinging, reached first on a throwing error by c.",
+            "M. Flamme pinch ran for M. Dana.",
+            "A. Novakoski popped up to 1b, bunt.",
+            "K. Tobin reached on a fielder's choice; M. Flamme out at second 2b unassisted, interference."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Eastman singled to second base.",
+            "E. Eastman advanced to second on a wild pitch.",
+            "E. Eastman advanced to third on a wild pitch.",
+            "R. Fitzgeral struck out swinging.",
+            "M. Thibaudea singled to left center, RBI; E. Eastman scored.",
+            "E. Marcotte grounded out to 3b, bunt; M. Thibaudea advanced to second.",
+            "A. Blake pinch hit for M. Cusack.",
+            "A. Blake grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/curry/boxscore/7082",
+      "date": "4/2/2023",
+      "opponent": "Curry",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "N. O'Kleasky struck out swinging, out at first c to 1b.",
+            "J. Rogers doubled to left field.",
+            "M. White struck out swinging.",
+            "T. McDermott fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. King walked.",
+            "K. Pontes reached on a fielder's choice, bunt; S. King out at second 1b to 2b.",
+            "K. Pontes advanced to second on a wild pitch.",
+            "H. King struck out swinging.",
+            "K. Pontes advanced to third on a wild pitch.",
+            "M. Schwartz walked.",
+            "M. Schwartz advanced to second on a wild pitch; K. Pontes scored.",
+            "E. Bussiere walked; M. Schwartz out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. O'Kleasky walked.",
+            "J. Rogers walked; N. O'Kleasky advanced to second.",
+            "M. White reached on a fielder's choice, bunt; J. Rogers advanced to second; N. O'Kleasky out at third 3b to ss.",
+            "M. White advanced to second on a wild pitch; J. Rogers advanced to third.",
+            "T. McDermott doubled to left field, 2 RBI; M. White scored; J. Rogers scored.",
+            "S. King walked.",
+            "A. Mansfield pinch ran for T. McDermott.",
+            "K. Pontes struck out swinging.",
+            "H. King struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Schwartz reached first on a muffed throw by 1b, assist by ss.",
+            "E. Bussiere walked; M. Schwartz advanced to second.",
+            "E. Bussiere advanced to second on a passed ball; M. Schwartz advanced to third.",
+            "N. O'Kleasky struck out looking.",
+            "J. Rogers walked.",
+            "S. Wicklund to p for C. Peterson.",
+            "M. White struck out swinging.",
+            "T. McDermott grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Medeiros to lf.",
+            "S. King grounded out to ss.",
+            "A. Melchione pinch hit for K. Pontes.",
+            "A. Melchione singled to shortstop.",
+            "A. Melchione out at second c to ss, caught stealing.",
+            "H. King grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Schwartz grounded out to ss.",
+            "E. Bussiere singled up the middle.",
+            "E. Bussiere out at second c to ss, caught stealing.",
+            "N. O'Kleasky struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Rogers lined out to 2b.",
+            "M. White grounded out to 3b.",
+            "T. McDermott singled to left field.",
+            "S. King reached first on a fielding error by 3b; T. McDermott advanced to second.",
+            "K. Pontes struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/curry/boxscore/7083",
+      "date": "4/2/2023",
+      "opponent": "Curry",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Bussiere grounded out to p, bunt.",
+            "J. Rogers grounded out to 2b.",
+            "T. McDermott singled through the right side.",
+            "M. White struck out swinging, reached first on a wild pitch; T. McDermott advanced to second.",
+            "N. O'Kleasky reached on a fielder's choice; M. White advanced to second; T. McDermott out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. King walked.",
+            "K. Pontes fouled out to 1b.",
+            "E. Burke grounded out to p; S. King advanced to second.",
+            "M. Schwartz struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Bussiere singled down the lf line.",
+            "E. Bussiere out at second c to ss, caught stealing.",
+            "J. Rogers singled through the right side.",
+            "T. McDermott singled to right field; J. Rogers advanced to second.",
+            "M. White grounded out to ss; T. McDermott advanced to second; J. Rogers advanced to third.",
+            "N. O'Kleasky grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Basso to rf for C. Braid.",
+            "S. King walked.",
+            "M. Bianchi pinch ran for S. King.",
+            "K. Pontes reached on a fielder's choice; M. Bianchi out at second 2b to ss.",
+            "E. Burke struck out swinging.",
+            "M. Schwartz grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Bussiere grounded out to 2b.",
+            "J. Rogers grounded out to 1b unassisted.",
+            "T. McDermott grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "F. Rubino to cf for G. Messier.",
+            "M. White flied out to lf.",
+            "N. O'Kleasky flied out to cf.",
+            "S. King grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Melchione pinch hit for K. Pontes.",
+            "A. Melchione fouled out to c.",
+            "E. Burke struck out looking.",
+            "M. Schwartz singled up the middle.",
+            "B. Newcomb pinch ran for M. Schwartz.",
+            "E. Bussiere grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/u-of-new-england/boxscore/7084",
+      "date": "4/6/2023",
+      "opponent": "U Of New England",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Bessette struck out swinging.",
+            "M. Herron struck out swinging.",
+            "A. Miner popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Tutt struck out swinging.",
+            "A. Walsh struck out looking.",
+            "E. Connor flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Koenig struck out looking.",
+            "J. DuPont hit by pitch.",
+            "B. Dumont walked; J. DuPont advanced to second.",
+            "K. Bessette struck out swinging.",
+            "M. Herron popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Miner fouled out to 1b.",
+            "G. Tutt singled to right field.",
+            "A. Walsh walked; G. Tutt advanced to second.",
+            "J. McKenna pinch ran for G. Tutt.",
+            "A. Walsh stole second; J. McKenna out at third c to 3b, caught stealing.",
+            "E. Connor struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Koenig singled up the middle.",
+            "E. Koenig advanced to second on a wild pitch.",
+            "J. DuPont walked.",
+            "B. Dumont out at first p to 2b, SAC, bunt; J. DuPont advanced to second; E. Koenig advanced to third.",
+            "K. Bessette struck out swinging.",
+            "M. Herron popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Strazza to ss for K. Ramos.",
+            "A. Miner popped up to ss.",
+            "G. Tutt walked.",
+            "M. Chamberla pinch ran for G. Tutt.",
+            "A. Walsh struck out looking.",
+            "E. Connor lined out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/u-of-new-england/boxscore/7085",
+      "date": "4/6/2023",
+      "opponent": "U Of New England",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Wicklund, Skylar",
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Bessette grounded out to ss.",
+            "M. Herron flied out to lf.",
+            "A. Miner singled up the middle.",
+            "G. Tutt singled to right field; A. Miner advanced to second.",
+            "A. Walsh struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Wicklund to p for S. Gendron.",
+            "E. Connor grounded out to p.",
+            "E. Koenig grounded out to 3b.",
+            "J. DuPont struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Dumont fouled out to lf.",
+            "K. Bessette doubled to left center.",
+            "K. Bessette stole third.",
+            "M. Herron singled to left center, RBI; K. Bessette scored.",
+            "A. Miner reached on a fielder's choice to shortstop; M. Herron out at second ss unassisted.",
+            "G. Tutt grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Walsh singled up the middle.",
+            "E. Connor grounded out to 2b; A. Walsh advanced to second.",
+            "E. Koenig singled up the middle; A. Walsh advanced to third.",
+            "E. Koenig stole second.",
+            "J. DuPont walked.",
+            "B. Dumont reached on a fielder's choice to third base; J. DuPont advanced to second; E. Koenig advanced to third; A. Walsh out at home 3b to c.",
+            "K. Bessette singled down the lf line, RBI; B. Dumont advanced to second; J. DuPont advanced to third; E. Koenig scored.",
+            "M. Herron singled to third base, RBI; K. Bessette advanced to second; B. Dumont advanced to third; J. DuPont scored.",
+            "A. Miner grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Lane to 1b for G. Messier.",
+            "K. Ramos to lf.",
+            "G. Tutt doubled up the middle.",
+            "J. McKenna pinch ran for G. Tutt.",
+            "A. Walsh singled up the middle, advanced to second on the throw, RBI; J. McKenna scored.",
+            "C. Peterson to p for S. Wicklund.",
+            "A. Walsh advanced to third on a wild pitch.",
+            "E. Connor walked.",
+            "E. Connor stole second.",
+            "E. Koenig flied out to rf, sacrifice fly, RBI; E. Connor advanced to third; A. Walsh scored.",
+            "L. Joyal pinch hit for J. DuPont.",
+            "L. Joyal struck out swinging.",
+            "B. Dumont singled to center field, RBI; E. Connor scored.",
+            "K. Bessette walked; B. Dumont advanced to second.",
+            "M. Herron walked; K. Bessette advanced to second; B. Dumont advanced to third.",
+            "A. Miner popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Tutt walked.",
+            "M. Chamberla pinch ran for G. Tutt.",
+            "A. Walsh struck out swinging.",
+            "E. Connor walked; M. Chamberla advanced to second.",
+            "E. Koenig struck out swinging.",
+            "J. DuPont walked; E. Connor advanced to second; M. Chamberla advanced to third.",
+            "B. Dumont walked, RBI; J. DuPont advanced to second; E. Connor advanced to third; M. Chamberla scored.",
+            "K. Bessette walked, RBI; B. Dumont advanced to second; J. DuPont advanced to third; E. Connor scored.",
+            "M. Herron reached on a fielder's choice to third base; K. Bessette advanced to second; B. Dumont advanced to third; J. DuPont out at home 3b to c."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Strazza to ss for H. Basso.",
+            "A. Miner homered to center field, RBI.",
+            "M. Chamberla reached first on a fielding error by c.",
+            "A. Walsh struck out swinging.",
+            "E. Connor reached on a fielder's choice to pitcher; M. Chamberla out at second p to ss.",
+            "E. Koenig grounded out to p."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "J. DuPont E. Koenig placed on second.",
+            "J. DuPont out at first 1b to 2b, SAC, bunt; E. Koenig advanced to third.",
+            "B. Dumont walked.",
+            "B. Dumont stole second.",
+            "K. Bessette singled to left field, RBI; B. Dumont advanced to third; E. Koenig scored.",
+            "K. Bessette stole second.",
+            "M. Herron singled to left center, RBI; K. Bessette advanced to third; B. Dumont scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/roger-williams/boxscore/7086",
+      "date": "4/7/2023",
+      "opponent": "Roger Williams",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. O'Connor struck out swinging.",
+            "I. Rosado singled to right field.",
+            "I. Rosado out at second c to ss, caught stealing.",
+            "T. Howell walked.",
+            "J. Wells struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Maclean walked.",
+            "M. Predaris reached first on a throwing error by ss; E. Maclean out at second 2b to ss.",
+            "K. Burr struck out looking.",
+            "J. Beaulieu grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Uryga grounded out to c unassisted.",
+            "K. O'Connor grounded out to p.",
+            "I. Rosado flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Howell struck out swinging.",
+            "J. Wells walked.",
+            "E. Maclean singled through the right side; J. Wells advanced to second.",
+            "M. Predaris hit by pitch; E. Maclean advanced to second; J. Wells advanced to third.",
+            "K. Burr flied out to lf, sacrifice fly, RBI; M. Predaris advanced to second; E. Maclean advanced to third; J. Wells scored.",
+            "J. Beaulieu flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Uryga fouled out to c.",
+            "K. O'Connor grounded out to 3b.",
+            "I. Rosado doubled to left center.",
+            "T. Howell walked.",
+            "J. Wells walked; T. Howell advanced to second; I. Rosado advanced to third.",
+            "C. Thomas pinch ran for T. Howell.",
+            "E. Maclean hit by pitch, RBI; J. Wells advanced to second; C. Thomas advanced to third; I. Rosado scored.",
+            "M. Predaris popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Burr struck out looking.",
+            "J. Beaulieu struck out swinging.",
+            "K. Ruo pinch hit for C. Uryga.",
+            "K. Ruo walked.",
+            "K. O'Connor struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Lane to 1b.",
+            "S. Strazza to ss for E. Medeiros.",
+            "I. Rosado singled to third base, advanced to second on a throwing error by 3b.",
+            "I. Rosado advanced to third on a wild pitch.",
+            "T. Howell fouled out to c.",
+            "J. Wells struck out swinging.",
+            "E. Maclean lined out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/roger-williams/boxscore/7087",
+      "date": "4/7/2023",
+      "opponent": "Roger Williams",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. O'Connor struck out swinging.",
+            "I. Rosado singled up the middle.",
+            "J. Wells doubled to left field; I. Rosado advanced to third.",
+            "E. Maclean grounded out to 3b.",
+            "M. Predaris hit by pitch.",
+            "K. Ruo fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Burr popped up to 2b.",
+            "/ to p for N. Corey.",
+            "N. Corey to dp for A. Burdick.",
+            "N. Corey struck out looking.",
+            "J. Beaulieu walked.",
+            "K. O'Connor struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "I. Rosado walked.",
+            "J. Wells walked; I. Rosado advanced to second.",
+            "E. Maclean flied out to rf.",
+            "M. Predaris walked; J. Wells advanced to second; I. Rosado advanced to third.",
+            "M. Predaris advanced to second; J. Wells advanced to third; I. Rosado scored on a wild pitch.",
+            "M. Predaris advanced to third; J. Wells scored on a wild pitch, obstruction.",
+            "S. Wicklund to p for C. Peterson.",
+            "K. Ruo walked.",
+            "K. Ruo stole second; M. Predaris out at home c to 2b to c, caught stealing.",
+            "K. Burr grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Corey grounded out to 2b.",
+            "J. Beaulieu grounded out to 3b.",
+            "K. O'Connor grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Rosado grounded out to 3b.",
+            "J. Wells grounded out to p.",
+            "E. Maclean flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Predaris grounded out to 3b.",
+            "K. Ruo grounded out to ss.",
+            "K. Burr grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Messier to dp for S. Wicklund.",
+            "E. Lane to 1b for M. Capetta.",
+            "S. Strazza to ss for E. Medeiros.",
+            "S. Wicklund to p.",
+            "A. Burdick to dp for N. Corey.",
+            "N. Corey to p.",
+            "T. Howell pinch hit for A. Burdick.",
+            "T. Howell grounded out to 2b.",
+            "J. Beaulieu grounded out to ss.",
+            "K. O'Connor grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/eastern-nazarene/boxscore/7088",
+      "date": "4/12/2023",
+      "opponent": "Eastern Nazarene",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Brandt singled to left center.",
+            "T. Brandt out at second c to ss.",
+            "C. Wernsing struck out swinging.",
+            "B. Olaveson fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Castro struck out looking.",
+            "J. Munoz hit by pitch.",
+            "A. Giddings struck out swinging.",
+            "Y. Bowden struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Schwenger popped up to c, bunt.",
+            "D. Maliszews fouled out to c.",
+            "T. Brandt hit by pitch.",
+            "C. Wernsing popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Medeiros to lf.",
+            "B. Olaveson lined out to rf.",
+            "D. Castro struck out swinging.",
+            "J. Munoz walked.",
+            "A. Giddings grounded out p to c to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Bennett to ss.",
+            "Y. Bowden singled to right field.",
+            "A. Schwenger popped up to 2b.",
+            "D. Maliszews singled up the middle; Y. Bowden advanced to second.",
+            "D. Maliszews advanced to second on a wild pitch; Y. Bowden advanced to third on a wild pitch.",
+            "T. Brandt fouled out to rf, sacrifice fly, RBI; D. Maliszews advanced to third; Y. Bowden scored.",
+            "C. Wernsing walked.",
+            "B. Olaveson lined out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/eastern-nazarene/boxscore/7089",
+      "date": "4/12/2023",
+      "opponent": "Eastern Nazarene",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Brandt grounded out to 2b.",
+            "C. Wernsing grounded out to p.",
+            "B. Olaveson grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Castro grounded out to 3b.",
+            "A. Schwenger popped up to 2b.",
+            "A. Giddings grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Y. Bowden walked.",
+            "Y. Bowden stole second.",
+            "D. Gongora struck out swinging.",
+            "D. Maliszews doubled to left center, RBI; Y. Bowden scored.",
+            "T. Brandt grounded into double play 3b to 1b to 3b; D. Maliszews out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Wernsing grounded out to p.",
+            "B. Olaveson flied out to rf.",
+            "D. Castro doubled to left center.",
+            "A. Schwenger struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Giddings walked.",
+            "Y. Bowden homered to center field, 2 RBI; A. Giddings scored.",
+            "D. Gongora singled through the right side.",
+            "D. Maliszews popped up to ss.",
+            "T. Brandt popped up to 2b.",
+            "C. Wernsing doubled to left field, RBI; D. Gongora scored.",
+            "B. Olaveson grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Castro reached first on a muffed throw by 1b.",
+            "D. Castro advanced to second on a wild pitch.",
+            "A. Schwenger lined out to rf.",
+            "A. Giddings singled to catcher, advanced to second on the throw, RBI; D. Castro scored, unearned.",
+            "Y. Bowden grounded out to ss; A. Giddings advanced to third.",
+            "D. Gongora flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Medeiros to lf.",
+            "H. Basso to rf.",
+            "D. Maliszews grounded out to 3b.",
+            "T. Brandt grounded out to p.",
+            "C. Wernsing singled through the right side.",
+            "B. Olaveson singled up the middle; C. Wernsing advanced to second.",
+            "D. Castro grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/endicott/boxscore/7090",
+      "date": "4/15/2023",
+      "opponent": "Endicott",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Katie Watts popped up to 3b.",
+            "Christina Nowicki walked.",
+            "Raven Comtois walked; Christina Nowicki advanced to second.",
+            "Lauren Misiaszek singled through the right side, advanced to second on an error by rf, RBI; Raven Comtois advanced to third; Christina Nowicki scored.",
+            "Chloe Shapleigh walked.",
+            "Chloe Shapleigh advanced to second on a wild pitch; Lauren Misiaszek advanced to third on a wild pitch; Raven Comtois scored on a wild pitch.",
+            "Emma DaSilva struck out swinging.",
+            "Julianna Roche walked.",
+            "Chrissy Marotto hit by pitch, RBI; Julianna Roche advanced to second; Chloe Shapleigh advanced to third; Lauren Misiaszek scored.",
+            "Paige Berdos walked, RBI; Chrissy Marotto advanced to second; Julianna Roche advanced to third; Chloe Shapleigh scored.",
+            "Katie Watts flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Christina Nowicki grounded out to 3b.",
+            "Raven Comtois grounded out to 3b.",
+            "Lauren Misiaszek singled up the middle.",
+            "Chloe Shapleigh doubled down the lf line, RBI; Lauren Misiaszek scored.",
+            "Emma DaSilva homered to center field, 2 RBI; Chloe Shapleigh scored.",
+            "S. Gendron to p for C. Peterson.",
+            "Julianna Roche doubled to right center.",
+            "Morgan Peryer pinch ran for Julianna Roche.",
+            "Chrissy Marotto flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Paige Berdos lined out to 3b.",
+            "Katie Watts walked.",
+            "Christina Nowicki lined out to cf.",
+            "Raven Comtois singled to second base; Katie Watts advanced to second.",
+            "Lauren Misiaszek flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Medeiros to lf.",
+            "Chloe Shapleigh singled to second base.",
+            "Chloe Shapleigh advanced to second on a wild pitch.",
+            "Ella Tower pinch ran for Chloe Shapleigh.",
+            "Emma DaSilva reached first on a dropped fly by 3b.",
+            "Julianna Roche pinch hit for Morgan Peryer.",
+            "Julianna Roche grounded into double play ss to 1b; Emma DaSilva out on the play; Ella Tower advanced to third.",
+            "Chrissy Marotto walked.",
+            "Paige Berdos doubled to left center, 2 RBI; Chrissy Marotto scored; Ella Tower scored.",
+            "Katie Watts singled through the left side, RBI; Paige Berdos scored.",
+            "Christina Nowicki walked; Katie Watts advanced to second.",
+            "Raven Comtois grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/endicott/boxscore/7091",
+      "date": "4/15/2023",
+      "opponent": "Endicott",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Katie Watts grounded out to ss.",
+            "Christina Nowicki singled to right field.",
+            "Raven Comtois walked; Christina Nowicki advanced to second.",
+            "Lauren Misiaszek singled to third base; Raven Comtois advanced to second; Christina Nowicki advanced to third.",
+            "Chloe Shapleigh singled, advanced to second on a fielding error by cf, RBI; Lauren Misiaszek scored; Raven Comtois scored; Christina Nowicki scored.",
+            "Emma DaSilva grounded out to ss.",
+            "Dani Lear singled to left center, RBI; Chloe Shapleigh scored, unearned.",
+            "Chrissy Marotto singled to center field; Dani Lear advanced to second.",
+            "Paige Berdos reached first on a dropped fly by 3b; Chrissy Marotto advanced to second; Dani Lear advanced to third.",
+            "Katie Watts lined out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Christina Nowicki grounded out to ss.",
+            "Raven Comtois doubled to center field.",
+            "Lauren Misiaszek walked.",
+            "Chloe Shapleigh doubled to left center, 2 RBI; Lauren Misiaszek scored; Raven Comtois scored.",
+            "Emma DaSilva singled up the middle, RBI; Chloe Shapleigh scored.",
+            "Dani Lear walked; Emma DaSilva advanced to second.",
+            "Chrissy Marotto reached on a fielder's choice to shortstop; Dani Lear advanced to second; Emma DaSilva out at third ss to 3b.",
+            "Paige Berdos grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Katie Watts walked.",
+            "Christina Nowicki grounded out to 2b; Katie Watts advanced to second.",
+            "Raven Comtois singled through the left side; Katie Watts advanced to third.",
+            "Lauren Misiaszek reached on a fielder's choice to second base, RBI; Raven Comtois out at second 2b to ss; Katie Watts scored.",
+            "Chloe Shapleigh singled through the right side; Lauren Misiaszek advanced to third.",
+            "Emma DaSilva grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dani Lear grounded out to 3b.",
+            "Chrissy Marotto flied out to cf.",
+            "Paige Berdos grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Basso to cf.",
+            "G. Messier to lf.",
+            "E. Lane to 1b for M. Bennett.",
+            "Katie Watts singled to center field, advanced to second on a fielding error by cf.",
+            "Christina Nowicki flied out to rf; Katie Watts advanced to third.",
+            "Raven Comtois walked.",
+            "Lauren Misiaszek walked; Raven Comtois advanced to second.",
+            "Chloe Shapleigh walked, RBI; Lauren Misiaszek advanced to second; Raven Comtois advanced to third; Katie Watts scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/nichols/boxscore/7092",
+      "date": "4/16/2023",
+      "opponent": "Nichols",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Slavinsky singled to first base.",
+            "A. Slavinsky advanced to second on a wild pitch.",
+            "A. Brown doubled to center field, RBI; A. Slavinsky scored.",
+            "A. Brown advanced to third on a wild pitch.",
+            "E. Gour hit by pitch.",
+            "E. Gour stole second, advanced to third on an error by c; A. Brown scored.",
+            "B. Littlefie struck out swinging.",
+            "M. Jackson hit by pitch.",
+            "M. Jackson advanced to second.",
+            "A. Silliman struck out swinging.",
+            "E. West-Test popped up to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Chartier struck out looking.",
+            "E. Iannuccil grounded out to 2b.",
+            "A. Slavinsky singled to left field.",
+            "A. Brown reached first on an error by 2b, advanced to second; A. Slavinsky advanced to third.",
+            "E. Gour walked; A. Brown advanced to third on a wild pitch; A. Slavinsky scored on a wild pitch, unearned.",
+            "B. Littlefie singled to right field, RBI; E. Gour advanced to third; A. Brown scored, unearned.",
+            "M. Jackson struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Silliman walked.",
+            "E. West-Test doubled down the lf line; A. Silliman advanced to third.",
+            "R. Chartier flied out to cf, SAC, RBI; A. Silliman scored.",
+            "E. Iannuccil out at first 1b to 2b, SAC, bunt; E. West-Test advanced to third.",
+            "A. Slavinsky doubled down the lf line, RBI; E. West-Test scored.",
+            "A. Brown flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Gendron to p for C. Peterson.",
+            "E. Gour flied out to cf.",
+            "B. Littlefie singled through the left side.",
+            "F. Decicco pinch ran for B. Littlefie.",
+            "M. Jackson singled up the middle; F. Decicco advanced to second.",
+            "A. Silliman fouled out to 1b.",
+            "E. West-Test grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Chartier struck out swinging.",
+            "E. Iannuccil grounded out to p.",
+            "A. Slavinsky walked.",
+            "A. Brown singled to center field; A. Slavinsky advanced to second.",
+            "E. Gour popped up to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Strazza to ss for E. Medeiros.",
+            "B. Littlefie singled up the middle.",
+            "M. Jackson out at first p to 2b, SAC, bunt; B. Littlefie advanced to second.",
+            "A. Silliman doubled to center field, RBI; B. Littlefie scored.",
+            "E. West-Test struck out swinging.",
+            "M. Gilmore pinch hit for R. Chartier.",
+            "M. Jo-Laudat pinch ran for A. Silliman.",
+            "M. Gilmore struck out swinging, out at first c to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/nichols/boxscore/7093",
+      "date": "4/16/2023",
+      "opponent": "Nichols",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Slavinsky reached first on an error by ss.",
+            "A. Slavinsky out at second c to ss, caught stealing.",
+            "A. Brown singled to right field.",
+            "E. Gour singled to shortstop; A. Brown advanced to second.",
+            "B. Littlefie singled to center field, RBI; E. Gour advanced to second; A. Brown scored.",
+            "A. Silliman to 1b for M. Jackson.",
+            "M. Jackson to dp for A. Silliman.",
+            "M. Jackson reached on a fielder's choice; B. Littlefie advanced to second; E. Gour advanced to third.",
+            "A. Silliman grounded into double play p to c to 1b; E. Gour out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. West-Test grounded out to ss.",
+            "R. Chartier struck out looking.",
+            "E. Iannuccil grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Slavinsky singled through the right side.",
+            "A. Brown reached first on an error by 3b; A. Slavinsky advanced to second.",
+            "E. Gour reached first on an error by 2b; A. Brown advanced to second; A. Slavinsky advanced to third.",
+            "B. Littlefie doubled to right center, 2 RBI; E. Gour advanced to third; A. Brown scored, unearned; A. Slavinsky scored.",
+            "M. Jackson to dp for A. Silliman.",
+            "A. Silliman to 1b for M. Jackson.",
+            "A. Silliman grounded out to p.",
+            "M. Jackson grounded out to ss.",
+            "E. West-Test flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Chartier struck out swinging.",
+            "E. Iannuccil grounded out to ss.",
+            "A. Slavinsky doubled to right center, advanced to third on an error by cf.",
+            "A. Brown singled up the middle, RBI; A. Slavinsky scored.",
+            "A. Brown advanced to second on a wild pitch.",
+            "E. Gour reached first on an error by 3b; A. Brown advanced to third.",
+            "B. Littlefie grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Silliman grounded out to 3b.",
+            "M. Jackson grounded out to p.",
+            "E. West-Test singled to second base.",
+            "M. Gilmore pinch hit for R. Chartier.",
+            "M. Gilmore grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Steiniger pinch hit for E. Iannuccil.",
+            "C. Steiniger singled to left field.",
+            "A. Slavinsky out at first 1b to 2b, SAC, bunt; C. Steiniger advanced to second.",
+            "A. Brown grounded out to ss; C. Steiniger advanced to third.",
+            "E. Gour struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/gordon/boxscore/7094",
+      "date": "4/21/2023",
+      "opponent": "Gordon",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Peterson struck out swinging.",
+            "I. Rivera flied out to cf.",
+            "A. Rivera doubled to center field.",
+            "A. Rivera advanced to third on a wild pitch.",
+            "J. Johnson walked.",
+            "J. Johnson advanced to second; A. Rivera scored on a wild pitch.",
+            "G. Terrazzan struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Little doubled to right center.",
+            "A. Murray doubled to left center, RBI; M. Little scored.",
+            "A. Murray advanced to third on a wild pitch.",
+            "H. Bouvier walked.",
+            "H. Bouvier stole second.",
+            "E. Graham walked.",
+            "E. Peterson struck out swinging.",
+            "E. Graham advanced to third; H. Bouvier advanced to third on an error by p, scored, unearned; A. Murray scored on a wild pitch.",
+            "I. Rivera walked, advanced to second.",
+            "S. Gendron to p for C. Peterson.",
+            "A. Rivera reached on a fielder's choice down the lf line, advanced to second; I. Rivera advanced to third; E. Graham out at home 3b to c to ss.",
+            "J. Johnson flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Terrazzan flied out to lf to left center.",
+            "M. Little grounded out to 3b.",
+            "A. Murray doubled down the lf line.",
+            "A. Murray advanced to third on a wild pitch.",
+            "H. Bouvier struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Graham struck out swinging.",
+            "E. Peterson grounded out to p.",
+            "I. Rivera singled up the middle.",
+            "A. Rivera grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Johnson grounded out to ss.",
+            "G. Terrazzan grounded out to 3b.",
+            "M. Little struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Murray lined out to 3b.",
+            "H. Bouvier singled through the left side.",
+            "E. Graham walked; H. Bouvier advanced to second.",
+            "E. Peterson struck out looking.",
+            "I. Rivera singled up the middle, RBI; E. Graham advanced to second; H. Bouvier scored.",
+            "A. Rivera reached on a fielder's choice to shortstop; I. Rivera out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Strazza to 3b for E. Medeiros.",
+            "J. Johnson walked.",
+            "V. Manson pinch ran for J. Johnson.",
+            "G. Terrazzan struck out swinging.",
+            "M. Little grounded out to 1b unassisted; V. Manson advanced to second.",
+            "A. Murray struck out looking."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "H. Bouvier A. Murray placed on second.",
+            "H. Bouvier grounded out to p; A. Murray advanced to third.",
+            "E. Graham grounded out to 1b down the rf line unassisted, RBI; A. Murray scored.",
+            "E. Peterson grounded out to ss."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "I. Rivera E. Peterson placed on second.",
+            "I. Rivera popped up to 3b down the lf line.",
+            "A. Rivera flied out to cf to left center; E. Peterson advanced to third.",
+            "J. Johnson struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/gordon/boxscore/7095",
+      "date": "4/21/2023",
+      "opponent": "Gordon",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Peterson singled down the lf line.",
+            "I. Rivera reached on a fielder's choice up the middle; E. Peterson out at second p to ss.",
+            "I. Rivera stole second.",
+            "A. Rivera walked.",
+            "A. Rivera advanced to second; I. Rivera advanced to third on a wild pitch.",
+            "J. Johnson struck out swinging.",
+            "M. Little singled up the middle, 2 RBI; A. Rivera scored; I. Rivera scored.",
+            "H. Bouvier reached first on an error by 2b; M. Little advanced to second.",
+            "A. Murray grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Graham grounded out to p.",
+            "G. Olsen singled through the right side.",
+            "E. Peterson singled up the middle; G. Olsen advanced to second.",
+            "I. Rivera singled, bunt; E. Peterson advanced to second; G. Olsen advanced to third.",
+            "A. Rivera grounded out to 2b, RBI; I. Rivera advanced to second; E. Peterson advanced to third; G. Olsen scored.",
+            "J. Johnson grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Little grounded out to p.",
+            "H. Bouvier doubled to left field.",
+            "A. Murray singled up the middle, out at second cf to 1b to 2b, RBI; H. Bouvier scored.",
+            "E. Graham grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Olsen singled to shortstop.",
+            "E. Peterson singled to third base; G. Olsen advanced to second.",
+            "I. Rivera singled up the middle, RBI; E. Peterson advanced to second; G. Olsen scored.",
+            "A. Rivera grounded out to 1b unassisted, RBI; I. Rivera advanced to third; E. Peterson scored.",
+            "J. Johnson flied out to rf, sacrifice fly, RBI; I. Rivera scored.",
+            "M. Little singled up the middle.",
+            "M. Little out at second 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Bouvier reached first on an error by ss.",
+            "A. Murray flied out to cf to right center.",
+            "E. Graham walked; H. Bouvier advanced to second.",
+            "G. Olsen grounded into double play 3b to 1b; E. Graham out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Peterson grounded out to p.",
+            "I. Rivera singled through the right side.",
+            "A. Rivera grounded out to p; I. Rivera advanced to second.",
+            "J. Johnson singled through the right side, RBI; I. Rivera scored.",
+            "M. Little grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/suffolk/boxscore/7096",
+      "date": "4/22/2023",
+      "opponent": "Suffolk",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Murphy, Caitlin lined out to 2b.",
+            "Boci, Ira doubled to left field.",
+            "Brandow, Ava flied out to lf.",
+            "Scripter, Savannah singled up the middle, RBI; Boci, Ira scored.",
+            "Turnbull, Ella struck out swinging, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Carignan, Catherine flied out to lf.",
+            "Gustafson, Lily flied out to lf.",
+            "Cifaratta, Ally popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "O'Neil, Lily lined out to 2b.",
+            "Murphy, Caitlin struck out swinging.",
+            "Boci, Ira doubled to right center.",
+            "Brandow, Ava grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Scripter, Savannah singled up the middle.",
+            "Conley, Ashlyn pinch ran for Scripter, Savannah.",
+            "/  for Conley, Ashlyn.",
+            "Turnbull, Ella walked; Conley, Ashlyn advanced to second.",
+            "Carignan, Catherine out at first 3b to 2b, SAC, bunt; Turnbull, Ella advanced to second; Conley, Ashlyn advanced to third.",
+            "Gustafson, Lily flied out to cf.",
+            "Cifaratta, Ally doubled to left center, 2 RBI; Turnbull, Ella scored; Conley, Ashlyn scored.",
+            "O'Neil, Lily singled up the middle; Cifaratta, Ally advanced to third, scored on an error by ss, unearned.",
+            "Murphy, Caitlin flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Boci, Ira grounded out to 3b.",
+            "Brandow, Ava walked.",
+            "Scripter, Savannah flied out to lf.",
+            "Turnbull, Ella flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Carignan, Catherine popped up to 2b.",
+            "Gustafson, Lily fouled out to 1b.",
+            "Cifaratta, Ally walked.",
+            "O'Neil, Lily singled up the middle; Cifaratta, Ally advanced to second.",
+            "Murphy, Caitlin singled to shortstop, RBI; O'Neil, Lily advanced to second; Cifaratta, Ally scored.",
+            "Boci, Ira singled to center field, RBI; Murphy, Caitlin advanced to third; O'Neil, Lily scored.",
+            "Boci, Ira stole second.",
+            "Brandow, Ava singled to left field, 2 RBI, advanced to second on the throw; Boci, Ira scored; Murphy, Caitlin scored.",
+            "Scripter, Savannah walked.",
+            "Turnbull, Ella flied out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/suffolk/boxscore/7097",
+      "date": "4/22/2023",
+      "opponent": "Suffolk",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Scripter, Savannah to 1b.",
+            "Turnbull, Ella to dp.",
+            "Murphy, Caitlin walked.",
+            "Boci, Ira hit by pitch; Murphy, Caitlin advanced to second.",
+            "Brandow, Ava struck out swinging.",
+            "Scripter, Savannah struck out swinging.",
+            "Turnbull, Ella popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Carignan, Catherine walked.",
+            "Carignan, Catherine advanced to second on a passed ball.",
+            "Gustafson, Lily walked.",
+            "Gustafson, Lily stole second; Carignan, Catherine stole third.",
+            "Cifaratta, Ally walked.",
+            "O'Neil, Lily walked, RBI; Cifaratta, Ally advanced to second; Gustafson, Lily advanced to third; Carignan, Catherine scored.",
+            "Murphy, Caitlin flied out to lf.",
+            "O'Neil, Lily advanced to second on a wild pitch; Cifaratta, Ally advanced to third on a wild pitch; Gustafson, Lily scored on a wild pitch.",
+            "Boci, Ira walked.",
+            "Brandow, Ava flied out to lf, sacrifice fly, RBI; Cifaratta, Ally scored, unearned.",
+            "Scripter, Savannah flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Turnbull, Ella struck out swinging.",
+            "Carignan, Catherine fouled out to 3b.",
+            "Gustafson, Lily flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cifaratta, Ally struck out swinging.",
+            "O'Neil, Lily lined out to 3b.",
+            "Murphy, Caitlin walked.",
+            "Murphy, Caitlin stole second.",
+            "Boci, Ira struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brandow, Ava reached first on an error by cf, advanced to third.",
+            "Scripter, Savannah singled up the middle, RBI; Brandow, Ava scored, unearned.",
+            "Southers, Maddi pinch ran for Scripter, Savannah.",
+            "/  for Southers, Maddi.",
+            "Turnbull, Ella singled to second base; Southers, Maddi advanced to second.",
+            "Carignan, Catherine out at first 3b to 2b, SAC, bunt; Turnbull, Ella advanced to second; Southers, Maddi advanced to third.",
+            "Gustafson, Lily flied out to rf, sacrifice fly, RBI; Turnbull, Ella out at third rf to c to 3b; Southers, Maddi scored."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Strazza to 3b for E. Medeiros.",
+            "Cifaratta, Ally walked.",
+            "O'Neil, Lily out at first 3b to 2b, SAC, bunt; Cifaratta, Ally advanced to third.",
+            "Murphy, Caitlin struck out looking.",
+            "Boci, Ira walked.",
+            "Boci, Ira advanced to second on a throwing error by c, scored, unearned; Cifaratta, Ally scored on the error, unearned.",
+            "Brandow, Ava struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Ramos to cf for J. Cosciello.",
+            "Scripter, Savannah flied out to 2b.",
+            "Turnbull, Ella popped up to 2b.",
+            "Zellin, Becky pinch hit for Carignan, Catherine.",
+            "Zellin, Becky struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/mitchell/boxscore/7098",
+      "date": "4/25/2023",
+      "opponent": "Mitchell",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry singled to shortstop.",
+            "S. Aviles flied out to c, bunt.",
+            "E. LaBreck reached on a fielder's choice; G. Landry out at second p to ss.",
+            "B. Whitmarsh struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Nicynski singled to right field.",
+            "J. Bennett grounded into double play ss unassisted; M. Nicynski out on the play.",
+            "O. DeCicco grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Worsdale grounded out to 1b unassisted.",
+            "H. Lemke flied out to ss.",
+            "G. Landry grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Aviles flied out to ss.",
+            "E. LaBreck doubled to left field.",
+            "B. Whitmarsh grounded out to p; E. LaBreck advanced to third.",
+            "M. Nicynski singled to second base, RBI; E. LaBreck scored.",
+            "M. Nicynski advanced to second on a wild pitch.",
+            "J. Bennett grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "O. DeCicco tripled to center field.",
+            "L. Worsdale struck out swinging.",
+            "H. Lemke grounded out to p.",
+            "G. Landry flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Medeiros to 3b.",
+            "S. Aviles grounded out to 3b.",
+            "E. LaBreck grounded out to 2b.",
+            "B. Whitmarsh singled to right field.",
+            "M. Nicynski grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Francesch to 2b.",
+            "S. Strazza to 3b.",
+            "J. Bennett reached first on an error by p.",
+            "O. DeCicco reached on a fielder's choice; J. Bennett out at second p to ss.",
+            "O. DeCicco advanced to second on a wild pitch.",
+            "L. Worsdale singled to shortstop; O. DeCicco advanced to third.",
+            "L. Worsdale stole second.",
+            "H. Lemke singled to center field, advanced to second, 2 RBI; L. Worsdale scored; O. DeCicco scored, unearned.",
+            "G. Landry flied out to rf; H. Lemke advanced to third.",
+            "S. Aviles singled to right field, RBI; H. Lemke scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/mitchell/boxscore/7099",
+      "date": "4/25/2023",
+      "opponent": "Mitchell",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry struck out swinging.",
+            "H. Lemke struck out swinging.",
+            "E. LaBreck walked.",
+            "B. Whitmarsh fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Nicynski walked.",
+            "J. Bennett grounded out to p, bunt, SAC; M. Nicynski advanced to second.",
+            "C. Roman grounded out to 1b unassisted; M. Nicynski advanced to third.",
+            "L. Worsdale struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "O. DeCicco struck out swinging.",
+            "G. Landry grounded out to 1b unassisted.",
+            "H. Lemke grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. LaBreck struck out swinging.",
+            "B. Whitmarsh walked.",
+            "M. Nicynski walked; B. Whitmarsh advanced to second.",
+            "J. Bennett singled to center field; M. Nicynski advanced to second; B. Whitmarsh advanced to third.",
+            "C. Roman walked, RBI; J. Bennett advanced to second; M. Nicynski advanced to third; B. Whitmarsh scored.",
+            "L. Worsdale reached on a fielder's choice; C. Roman advanced to second; J. Bennett advanced to third; M. Nicynski out at home 2b to c.",
+            "O. DeCicco walked, RBI; L. Worsdale advanced to second; C. Roman advanced to third; J. Bennett scored.",
+            "G. Landry flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Strazza to 3b for E. Medeiros.",
+            "H. Lemke singled to pitcher.",
+            "E. LaBreck singled; H. Lemke advanced to second.",
+            "B. Whitmarsh singled to center field; E. LaBreck advanced to second; H. Lemke advanced to third.",
+            "M. Nicynski infield fly to 1b.",
+            "B. Whitmarsh advanced to second on a wild pitch; E. LaBreck advanced to third on a wild pitch; H. Lemke scored on a wild pitch.",
+            "J. Bennett flied out to cf.",
+            "B. Whitmarsh advanced to third on a passed ball; E. LaBreck scored on a passed ball, unearned.",
+            "C. Roman walked.",
+            "C. Roman out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Worsdale struck out looking.",
+            "O. DeCicco tripled to center field.",
+            "G. Landry doubled, advanced to third on an error by 3b, RBI; O. DeCicco scored.",
+            "H. Lemke reached on a fielder's choice, RBI; G. Landry scored, unearned.",
+            "E. LaBreck flied out to ss.",
+            "B. Whitmarsh flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/johnson-amp-wales-ri-/boxscore/7100",
+      "date": "4/26/2023",
+      "opponent": "Johnson Amp Wales Ri ",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clee walked.",
+            "Clee advanced to second on a wild pitch.",
+            "Clee advanced to third on a wild pitch.",
+            "Huzi walked.",
+            "Pulek walked; Huzi advanced to second.",
+            "Erickson walked, RBI; Pulek advanced to second; Huzi advanced to third; Clee scored.",
+            "Amorelli struck out looking.",
+            "Lyons struck out swinging.",
+            "Erickson advanced to second on a wild pitch; Pulek advanced to third on a wild pitch; Huzi scored on a wild pitch.",
+            "Antaya reached on a fielding error by 1b; Erickson advanced to third; Pulek scored, unearned.",
+            "Antaya stole second.",
+            "Gurska walked.",
+            "Torres hit by pitch, RBI; Gurska advanced to second; Antaya advanced to third; Erickson scored, unearned.",
+            "Clee walked, RBI; Torres advanced to second; Gurska advanced to third; Antaya scored, unearned.",
+            "Skylar Wickl to p for Caroline Pet.",
+            "Huzi grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Pulek walked.",
+            "Erickson reached on a fielder's choice; Pulek out at second 2b unassisted.",
+            "Amorelli grounded out to 3b; Erickson advanced to second.",
+            "Lyons doubled to right field, RBI; Erickson scored.",
+            "Antaya grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gurska grounded out to 1b unassisted.",
+            "Torres grounded out to ss.",
+            "Clee grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Huzi grounded out to ss.",
+            "Pulek grounded out to 2b.",
+            "Erickson grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Amorelli singled down the lf line.",
+            "Lyons lined out to 2b.",
+            "Antaya grounded out to p; Amorelli advanced to second.",
+            "Gurska flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Torres grounded out to 2b.",
+            "Clee walked.",
+            "Huzi singled to right center; Clee advanced to third.",
+            "Huzi stole second.",
+            "Pulek doubled to center field, 2 RBI; Huzi scored; Clee scored.",
+            "Erickson grounded out to p; Pulek advanced to third.",
+            "Amorelli grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jacey Coscie to cf.",
+            "Kylie Lanter to ss.",
+            "Chloe Bean to lf.",
+            "Emily Lane to 1b.",
+            "Katie Ramos to rf.",
+            "Lyons doubled down the lf line.",
+            "Gosselin pinch ran for Lyons.",
+            "Gosselin advanced to third on a wild pitch.",
+            "Antaya walked.",
+            "Gurska flied out to rf.",
+            "Antaya stole second.",
+            "Torres reached on a fielding error by 3b; Antaya advanced to third; Gosselin scored, unearned.",
+            "Torres stole second.",
+            "Clee grounded out to p.",
+            "Huzi flied out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/johnson-amp-wales-ri-/boxscore/7101",
+      "date": "4/26/2023",
+      "opponent": "Johnson Amp Wales Ri ",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clee grounded out to 3b.",
+            "Huzi walked.",
+            "Pulek doubled to center field; Huzi advanced to third.",
+            "Erickson lined out to cf, SF, RBI; Pulek advanced to third; Huzi scored.",
+            "Amorelli grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lyons popped up to 2b.",
+            "Gurska popped up to ss.",
+            "Floyd grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Martins walked.",
+            "Clee reached on a fielder's choice; Martins out at second 3b to 2b.",
+            "Huzi struck out swinging.",
+            "Pulek reached on a fielder's choice; Clee out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Erickson walked.",
+            "Amorelli fouled out to 1b.",
+            "Lyons popped up to 2b.",
+            "Gurska grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Floyd popped up to ss.",
+            "Martins struck out looking.",
+            "Clee grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Huzi grounded out to 3b.",
+            "Pulek flied out to lf.",
+            "Erickson struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Amorelli grounded out to 3b.",
+            "Lyons flied out to cf.",
+            "Gurska doubled to right field, out at third rf to 2b to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/western-new-eng-/boxscore/7102",
+      "date": "5/2/2023",
+      "opponent": "Western New Eng ",
+      "pitchers": [
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Keegan flied out to lf.",
+            "P. Baca grounded out to p.",
+            "D. DiBlasio flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Carrano flied out to rf.",
+            "M. Mason grounded out to 3b.",
+            "G. Hemstock grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Ferriouol singled to left field.",
+            "C. Rizzo grounded out to p; A. Ferriouol advanced to second.",
+            "K. Blades grounded out to 3b; A. Ferriouol advanced to third.",
+            "T. Keegan walked.",
+            "P. Baca walked; T. Keegan advanced to second.",
+            "D. DiBlasio flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Carrano popped up to 2b.",
+            "M. Mason singled up the middle.",
+            "G. Hemstock walked; M. Mason advanced to second.",
+            "A. Ferriouol reached on a fielder's choice; G. Hemstock advanced to second; M. Mason out at third ss to 3b.",
+            "A. Ferriouol advanced to second on a passed ball; G. Hemstock advanced to third on a passed ball.",
+            "C. Rizzo grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Blades doubled to left center.",
+            "T. Keegan grounded out to p; K. Blades advanced to third.",
+            "P. Baca hit by pitch.",
+            "P. Baca stole second.",
+            "D. DiBlasio grounded out to 2b, RBI; P. Baca advanced to third; K. Blades scored.",
+            "K. Carrano grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Mason singled down the lf line.",
+            "S. McDaniel pinch ran for M. Mason.",
+            "S. McDaniel picked off, out at first c to 1b.",
+            "G. Hemstock grounded out to 3b.",
+            "A. Ferriouol singled to left field.",
+            "C. Rizzo grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Blades walked.",
+            "K. Blades stole second.",
+            "T. Keegan flied out to rf, sacrifice fly, RBI; K. Blades scored.",
+            "P. Baca lined out to cf.",
+            "D. DiBlasio grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/western-new-eng-/boxscore/7103",
+      "date": "5/2/2023",
+      "opponent": "Western New Eng ",
+      "pitchers": [
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Keegan lined out to ss.",
+            "P. Baca singled down the lf line.",
+            "D. DiBlasio singled to third base; P. Baca advanced to second.",
+            "K. Carrano singled to left field; D. DiBlasio advanced to second; P. Baca advanced to third.",
+            "M. Mason popped up to ss.",
+            "G. Hemstock singled to shortstop, RBI; K. Carrano advanced to second; D. DiBlasio advanced to third; P. Baca scored.",
+            "A. Ferriouol singled to shortstop, RBI; G. Hemstock advanced to second; K. Carrano advanced to third; D. DiBlasio scored.",
+            "C. Rizzo popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Blades walked.",
+            "T. Keegan flied out to cf.",
+            "P. Baca flied out to cf.",
+            "D. DiBlasio flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Carrano singled through the left side.",
+            "M. Mason struck out swinging.",
+            "G. Hemstock singled through the left side; K. Carrano advanced to second.",
+            "A. Ferriouol flied out to cf.",
+            "C. Rizzo flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Blades fouled out to 1b.",
+            "T. Keegan popped up to 2b.",
+            "P. Baca doubled to right center.",
+            "D. DiBlasio popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Carrano homered to left field, RBI.",
+            "M. Mason struck out swinging.",
+            "G. Hemstock struck out looking.",
+            "A. Ferriouol popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Rizzo doubled to right center.",
+            "K. Blades out at first 1b to 2b, SAC, bunt; C. Rizzo advanced to third.",
+            "T. Keegan popped up to 2b.",
+            "P. Baca reached first on an error by rf, advanced to second; C. Rizzo scored, unearned.",
+            "P. Baca stole third.",
+            "D. DiBlasio doubled to center field, RBI; P. Baca scored, unearned.",
+            "K. Carrano flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Mason flied out to rf.",
+            "G. Hemstock fouled out to 3b.",
+            "M. Bennett to ss for S. Strazza.",
+            "A. Ferriouol struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/wentworth/boxscore/7104",
+      "date": "05/06/23",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Wicklund, Skylar",
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kaitlin Pettenger walked.",
+            "Briana Beverly struck out swinging.",
+            "Alexandra Pina reached on a fielder's choice to pitcher, advanced to second on a throwing error by ss; Kaitlin Pettenger out at second p to ss.",
+            "Julia Bollentin grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kyla Igawa flied out to rf.",
+            "Jess Rowe struck out looking.",
+            "Erin Hancock grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Katie Kranz grounded out to ss.",
+            "Kait Shawney grounded out to 3b.",
+            "Kaitlin Pettenger grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Briana Beverly singled to center field.",
+            "Alexandra Pina reached on a fielder's choice to third base; Briana Beverly out at second 3b to 2b.",
+            "Julia Bollentin struck out swinging.",
+            "Kyla Igawa walked; Alexandra Pina advanced to second.",
+            "Jess Rowe fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Erin Hancock grounded out to 1b unassisted.",
+            "Katie Kranz grounded out to ss.",
+            "Kait Shawney walked.",
+            "Kaitlin Pettenger doubled to left center; Kait Shawney advanced to third, out at home cf to ss to c."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Briana Beverly flied out to lf.",
+            "Alexandra Pina singled to center field.",
+            "Julia Bollentin reached first on a dropped fly by rf, advanced to second; Alexandra Pina advanced to third.",
+            "Kyla Igawa lined into double play cf to 3b, sacrifice fly, RBI; Julia Bollentin out on the play; Alexandra Pina scored, unearned."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jess Rowe grounded out to ss.",
+            "Erin Hancock singled to center field.",
+            "Katie Kranz tripled to left field, RBI; Erin Hancock scored.",
+            "Kait Shawney reached first on a fielding error by 2b, RBI; Katie Kranz scored.",
+            "Katelin Howe pinch ran for Kait Shawney.",
+            "Caroline Peterson to p for Skylar Wicklund.",
+            "Kaitlin Pettenger walked; Katelin Howe advanced to second.",
+            "Kaitlin Pettenger advanced to second on a wild pitch; Katelin Howe advanced to third on a wild pitch.",
+            "Briana Beverly struck out swinging.",
+            "Alexandra Pina struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/wentworth/boxscore/7105",
+      "date": "05/06/23",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kaitlin Pettenger tripled down the rf line.",
+            "Briana Beverly popped up to 2b.",
+            "Alexandra Pina singled up the middle, RBI; Kaitlin Pettenger scored.",
+            "Kyla Igawa reached on a fielder's choice to second base; Alexandra Pina out at second 2b to ss.",
+            "Jess Rowe struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia Bollentin singled to center field.",
+            "Katie Kranz popped up to 2b.",
+            "Julia Hutchinson singled, advanced to second on an error by rf, advanced to third; Julia Bollentin scored.",
+            "Katelin Howe singled to pitcher.",
+            "Kaitlin Pettenger doubled to center field, ground-rule, RBI; Katelin Howe advanced to third; Julia Hutchinson scored.",
+            "Briana Beverly singled to left field, RBI; Kaitlin Pettenger advanced to third; Katelin Howe scored.",
+            "Briana Beverly stole second.",
+            "Alexandra Pina doubled to left center, 2 RBI; Briana Beverly scored; Kaitlin Pettenger scored.",
+            "Caroline Peterson to p for Sophie Gendron.",
+            "Kyla Igawa fouled out to c.",
+            "Alexandra Pina advanced to third on a passed ball.",
+            "Jess Rowe reached first on a throwing error by 3b, advanced to second; Alexandra Pina scored, unearned.",
+            "Jess Rowe advanced to third on a wild pitch.",
+            "Julia Bollentin flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Katie Kranz grounded out to 2b.",
+            "Julia Hutchinson flied out to cf.",
+            "Katelin Howe walked.",
+            "Kaitlin Pettenger struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Briana Beverly popped up to 1b.",
+            "Alexandra Pina singled to center field.",
+            "Kyla Igawa singled down the lf line; Alexandra Pina advanced to second.",
+            "Jess Rowe grounded into double play 3b to 1b; Alexandra Pina out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sophia Strazza to ss for Emma Medeiros.",
+            "Julia Bollentin struck out swinging.",
+            "Katie Kranz struck out swinging.",
+            "Julia Hutchinson doubled to right center.",
+            "Julia Hutchinson advanced to third on a wild pitch.",
+            "Katelin Howe struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kaitlin Pettenger doubled to left center.",
+            "Briana Beverly walked.",
+            "Alexandra Pina struck out swinging.",
+            "Kyla Igawa singled to left center, RBI; Briana Beverly advanced to second; Kaitlin Pettenger scored.",
+            "Kyla Igawa advanced to second on a wild pitch; Briana Beverly advanced to third on a wild pitch.",
+            "Jess Rowe struck out swinging.",
+            "Kyla Igawa advanced to third on a wild pitch; Briana Beverly scored on a wild pitch.",
+            "Julia Bollentin fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/nichols/boxscore/7106",
+      "date": "5/10/2023",
+      "opponent": "Nichols",
+      "pitchers": [
+        "Wicklund, Skylar",
+        "Gendron, Sophia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Slavinsky doubled to left center.",
+            "A. Brown grounded out to 2b; A. Slavinsky advanced to third.",
+            "E. Gour homered to left center, 2 RBI; A. Slavinsky scored.",
+            "B. Littlefie flied out to rf.",
+            "M. Jackson walked.",
+            "A. Silliman grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Steiniger doubled to right field.",
+            "E. West-Test grounded out to ss.",
+            "C. Steiniger advanced to third on a wild pitch.",
+            "B. Sulikowsk reached first on a fielding error by 2b, RBI; C. Steiniger scored.",
+            "A. Slavinsky singled down the rf line; B. Sulikowsk advanced to second.",
+            "A. Brown singled down the rf line; A. Slavinsky advanced to second; B. Sulikowsk advanced to third.",
+            "E. Gour walked, RBI; A. Brown advanced to second; A. Slavinsky advanced to third; B. Sulikowsk scored, unearned.",
+            "B. Littlefie singled up the middle, RBI; E. Gour advanced to second; A. Brown advanced to third; A. Slavinsky scored.",
+            "M. Jackson lined out to 3b.",
+            "A. Silliman singled to left center, 2 RBI; B. Littlefie advanced to second; E. Gour scored, unearned; A. Brown scored, unearned.",
+            "C. Steiniger grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Gendron to p for S. Wicklund.",
+            "E. West-Test walked.",
+            "E. West-Test advanced to second on a wild pitch.",
+            "B. Sulikowsk flied out to cf.",
+            "A. Slavinsky struck out looking.",
+            "A. Brown grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Gour popped up to ss up the middle.",
+            "B. Littlefie grounded out to ss.",
+            "M. Jackson struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Silliman grounded out to 3b.",
+            "C. Steiniger grounded out to 3b.",
+            "E. West-Test walked.",
+            "B. Sulikowsk popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Slavinsky flied out to rf.",
+            "A. Brown singled up the middle.",
+            "A. Brown advanced to second on a wild pitch.",
+            "E. Gour walked.",
+            "B. Littlefie flied out to cf.",
+            "M. Jackson lined out to 3b down the lf line."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2023/gordon/boxscore/7107",
+      "date": "5/10/2023",
+      "opponent": "Gordon",
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Peterson grounded out p to ss to 1b.",
+            "I. Rivera singled through the right side.",
+            "A. Rivera doubled down the lf line; I. Rivera advanced to third.",
+            "J. Johnson lined out to 1b.",
+            "A. Rivera advanced to third on a wild pitch; I. Rivera scored on a wild pitch.",
+            "M. Little walked.",
+            "H. Bouvier grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Murray struck out swinging.",
+            "E. Graham singled to center field.",
+            "G. Olsen grounded out to ss; E. Graham advanced to second.",
+            "E. Peterson singled through the right side; E. Graham advanced to third.",
+            "I. Rivera singled through the left side, RBI; E. Peterson advanced to second; E. Graham scored.",
+            "A. Rivera doubled to left center, 2 RBI; I. Rivera scored; E. Peterson scored.",
+            "J. Johnson grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Little singled to center field.",
+            "H. Bouvier doubled to center field; M. Little advanced to third.",
+            "A. Murray grounded out to 3b; H. Bouvier advanced to third on the error; M. Little scored on a throwing error by 1b, unearned.",
+            "E. Graham struck out swinging.",
+            "G. Olsen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Peterson grounded out to 1b unassisted.",
+            "I. Rivera grounded out to 3b.",
+            "A. Rivera singled through the left side.",
+            "J. Johnson flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Little singled down the rf line.",
+            "H. Bouvier walked; M. Little advanced to second.",
+            "A. Murray out at first p to 2b, SAC, bunt; H. Bouvier advanced to second; M. Little advanced to third.",
+            "E. Graham grounded out to 2b, RBI; H. Bouvier advanced to third; M. Little scored.",
+            "G. Terrazzan pinch hit for G. Olsen.",
+            "G. Terrazzan doubled to right center, RBI; H. Bouvier scored.",
+            "G. Olsen to c for G. Terrazzan.",
+            "E. Peterson singled to center field, RBI; G. Olsen scored.",
+            "I. Rivera reached first on an error by 3b; E. Peterson advanced to second.",
+            "A. Rivera singled up the middle, RBI; I. Rivera advanced to third; E. Peterson scored, unearned.",
+            "C. Peterson to p for S. Gendron.",
+            "J. Johnson hit by pitch; A. Rivera advanced to second.",
+            "M. Little lined out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Lanteri to 1b.",
+            "M. Capetta to 3b.",
+            "S. Strazza to ss for E. Medeiros.",
+            "H. Bouvier flied out to cf.",
+            "A. Murray walked.",
+            "E. Graham walked; A. Murray advanced to second.",
+            "G. Olsen singled to left field; E. Graham advanced to second; A. Murray advanced to third.",
+            "E. Peterson walked, RBI; G. Olsen advanced to second; E. Graham advanced to third; A. Murray scored.",
+            "I. Rivera infield fly to 2b.",
+            "A. Rivera grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Johnson walked.",
+            "M. Little singled up the middle; J. Johnson advanced to second.",
+            "V. Manson pinch ran for J. Johnson.",
+            "M. Little advanced to second on a wild pitch; V. Manson advanced to third on a wild pitch.",
+            "H. Bouvier walked.",
+            "A. Murray popped up to ss.",
+            "E. Graham walked, RBI; H. Bouvier advanced to second; M. Little advanced to third; V. Manson scored.",
+            "G. Olsen reached on a fielder's choice; E. Graham advanced to second; H. Bouvier advanced to third; M. Little scored on a throwing error by 3b, unearned.",
+            "S. Wicklund to p for C. Peterson.",
+            "E. Peterson reached on a fielder's choice; G. Olsen advanced to second; E. Graham advanced to third; H. Bouvier out at home p to c.",
+            "I. Rivera grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    }
+  ]
+}

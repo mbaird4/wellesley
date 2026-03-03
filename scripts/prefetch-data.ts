@@ -2,10 +2,14 @@
  * Pre-fetch script: fetches boxscore data directly from wellesleyblue.com
  * (no CORS proxy needed in Node.js) and writes static JSON to public/data/.
  *
+ * Current-year files use unsuffixed names (gamedata.json, wobadata.json);
+ * historical files keep year suffixes (gamedata-2025.json, etc.).
+ *
  * Usage:
  *   npm run prefetch                          # all years
  *   npm run prefetch -- --years 2025          # single year
  *   npm run prefetch -- --years 2025,2024     # multiple years
+ *   npm run prefetch -- --roster-only         # scrape roster only
  */
 
 import axios from 'axios';
@@ -128,6 +132,16 @@ function parseYearsArg(): number[] {
     .split(',')
     .map((s) => parseInt(s.trim(), 10))
     .filter((n) => !isNaN(n));
+}
+
+function parseRosterOnlyFlag(): boolean {
+  return process.argv.includes('--roster-only');
+}
+
+const CURRENT_YEAR = new Date().getFullYear();
+
+function dataFilename(base: string, year: number): string {
+  return year === CURRENT_YEAR ? `${base}.json` : `${base}-${year}.json`;
 }
 
 // ── Schedule page → boxscore URLs ──
@@ -598,11 +612,11 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   }
 
   // 4. Write JSON files
-  const gamedataPath = path.join(outputDir, `gamedata-${year}.json`);
+  const gamedataPath = path.join(outputDir, dataFilename('gamedata', year));
   fs.writeFileSync(gamedataPath, JSON.stringify(gameDataList));
   console.log(`  Wrote ${gamedataPath} (${gameDataList.length} games)`);
 
-  const wobadataPath = path.join(outputDir, `wobadata-${year}.json`);
+  const wobadataPath = path.join(outputDir, dataFilename('wobadata', year));
   const wobaData: WobaSeasonData = { seasonStats, boxscores: boxscoreDataList };
   fs.writeFileSync(wobadataPath, JSON.stringify(wobaData));
   console.log(
@@ -653,13 +667,22 @@ async function prefetchRoster(outputDir: string): Promise<void> {
 
 async function main(): Promise<void> {
   const years = parseYearsArg();
+  const rosterOnly = parseRosterOnlyFlag();
   const outputDir = path.resolve(__dirname, '../public/data');
   fs.mkdirSync(outputDir, { recursive: true });
 
-  console.log(`Prefetching data for years: ${years.join(', ')}`);
   console.log(`Output directory: ${outputDir}`);
 
   await prefetchRoster(outputDir);
+
+  if (rosterOnly) {
+    console.log('\n--roster-only: skipping game/woba data');
+    console.log('\nDone!');
+
+    return;
+  }
+
+  console.log(`Prefetching data for years: ${years.join(', ')}`);
 
   for (const year of years) {
     await prefetchYear(year, outputDir);

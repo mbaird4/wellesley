@@ -5,14 +5,15 @@ import {
   input,
   signal,
 } from '@angular/core';
+import { SlideToggle } from '@ws/shared/ui';
 import type { PitcherInningStats } from '@ws/stats-core';
 import {
   battingAvgAgainst,
   inningToNumber,
   wobaAgainst,
-  wobaGradientStyle,
+  wobaColorStyle,
 } from '@ws/stats-core';
-import { SlideToggle } from '@ws/shared/ui';
+
 import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
@@ -25,7 +26,10 @@ function fmtStat(value: number): string {
 @Component({
   selector: 'ws-inning-breakdown',
   standalone: true,
-  imports: [SlideToggle, PitcherInningsTable],
+  imports: [
+    SlideToggle,
+    PitcherInningsTable,
+  ],
   host: { class: 'block' },
   templateUrl: './inning-breakdown.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -55,8 +59,8 @@ export class InningBreakdown {
         walks: inn.walks,
         formattedAvg: fmtStat(avg),
         formattedWoba: fmtStat(woba),
-        avgStyle: showColors ? wobaGradientStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
-        wobaStyle: showColors ? wobaGradientStyle(0.55 - woba) : EMPTY_STYLE,
+        avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
+        wobaStyle: showColors ? wobaColorStyle(0.55 - woba) : EMPTY_STYLE,
       };
     });
   });
@@ -75,8 +79,8 @@ export class InningBreakdown {
       walks: t.walks,
       formattedAvg: fmtStat(avg),
       formattedWoba: fmtStat(woba),
-      avgStyle: showColors ? wobaGradientStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
-      wobaStyle: showColors ? wobaGradientStyle(0.55 - woba) : EMPTY_STYLE,
+      avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,
+      wobaStyle: showColors ? wobaColorStyle(0.55 - woba) : EMPTY_STYLE,
     };
   });
 }

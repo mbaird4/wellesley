@@ -7,6 +7,12 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/data-access';
+import {
+  FormatOutsPipe,
+  FormatPlayTypePipe,
+  FormatSituationPipe,
+  IsEmptyPipe,
+} from '@ws/shared/ui';
 import type {
   BaseSituation,
   GameScoringPlays,
@@ -14,12 +20,6 @@ import type {
   ScoringPlaySummary,
 } from '@ws/stats-core';
 import { ScoringPlay } from '@ws/stats-core';
-import {
-  FormatOutsPipe,
-  FormatPlayTypePipe,
-  FormatSituationPipe,
-  IsEmptyPipe,
-} from '@ws/shared/ui';
 
 interface PlayerScoringBreakdown {
   name: string;
