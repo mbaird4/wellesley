@@ -51,6 +51,11 @@
             [totals]="summary.totals"
           />
 
+          <ws-inning-detail
+            [gameLogs]="summary.gameLogs"
+            [byInning]="summary.byInning"
+          />
+
           <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
         }
       </div>
@@ -92,6 +97,11 @@
         <ws-inning-breakdown
           [byInning]="summary.byInning"
           [totals]="summary.totals"
+        />
+
+        <ws-inning-detail
+          [gameLogs]="summary.gameLogs"
+          [byInning]="summary.byInning"
         />
 
         <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />

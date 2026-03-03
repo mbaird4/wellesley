@@ -16,6 +16,7 @@ import {
 } from '@ws/stats-core';
 
 import { InningBreakdown } from './inning-breakdown';
+import { InningDetail } from './inning-detail';
 import { PitcherGameLogComponent } from './pitcher-game-log';
 import type { PitcherOverviewData } from './pitcher-overview';
 import { PitcherOverview } from './pitcher-overview';
@@ -29,6 +30,7 @@ import { PitcherSelector } from './pitcher-selector';
     PitcherSelector,
     PitcherOverview,
     InningBreakdown,
+    InningDetail,
     PitcherGameLogComponent,
   ],
   host: { class: 'block' },
@@ -129,8 +131,9 @@ export class PitcherAnalysis {
     }
 
     // "all" — aggregate stats across all years
-    const yearEntries = Object.values(data.pitchingStatsByYear)
-      .flatMap((stats) => stats.filter((p) => p.name === pitcher));
+    const yearEntries = Object.values(data.pitchingStatsByYear).flatMap(
+      (stats) => stats.filter((p) => p.name === pitcher)
+    );
 
     if (yearEntries.length === 0) {
       return null;
@@ -154,7 +157,19 @@ export class PitcherAnalysis {
         so: acc.so + s.so,
         hr: acc.hr + s.hr,
       }),
-      { w: 0, l: 0, app: 0, gs: 0, ip: 0, h: 0, r: 0, er: 0, bb: 0, so: 0, hr: 0 }
+      {
+        w: 0,
+        l: 0,
+        app: 0,
+        gs: 0,
+        ip: 0,
+        h: 0,
+        r: 0,
+        er: 0,
+        bb: 0,
+        so: 0,
+        hr: 0,
+      }
     );
 
     // Convert IP from display format (e.g. 99.1 = 99⅓) to true thirds for ERA calc
@@ -165,7 +180,8 @@ export class PitcherAnalysis {
       return acc + whole * 3 + frac;
     }, 0);
     const trueIp = totalThirds / 3;
-    const era = trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
+    const era =
+      trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
     const displayIp = Math.floor(totalThirds / 3) + (totalThirds % 3) * 0.1;
 
     return {

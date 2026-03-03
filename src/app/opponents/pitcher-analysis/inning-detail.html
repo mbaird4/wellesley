@@ -1,0 +1,116 @@
+@if (availableInnings().length > 0) {
+  <div class="bg-surface-card overflow-hidden rounded-xl">
+    <div
+      class="border-line px-card flex items-center justify-between border-b py-3"
+    >
+      <h3 class="text-content-bright text-base font-semibold">Inning Detail</h3>
+
+      @if (gameRows().length > 0) {
+        <span class="text-content-dim flex items-center gap-1.5">
+          <ws-slide-toggle
+            [checked]="colorCoding()"
+            (checkedChange)="colorCoding.set($event)"
+          />
+          Color coding
+        </span>
+      }
+    </div>
+
+    <div class="px-card pt-3 pb-1">
+      <div class="flex flex-wrap items-center gap-1.5">
+        @for (inn of availableInnings(); track inn) {
+          <button
+            class="filter-btn"
+            [class.active]="effectiveInning() === inn"
+            (click)="selectInning(inn)"
+          >
+            {{ inn }}
+          </button>
+        }
+      </div>
+    </div>
+
+    @if (gameRows().length === 0) {
+      <p class="text-content-dim p-card text-sm">
+        No games pitched in this inning.
+      </p>
+    } @else {
+      <div class="overflow-x-auto">
+        <table class="stats-table game-table mb-0! table-fixed">
+          <colgroup>
+            <col class="w-[14%]" />
+            <col class="w-[14%]" />
+            <col class="w-[8%]" />
+            <col class="w-[8%]" />
+            <col class="w-[8%]" />
+            <col class="w-[8%]" />
+            <col class="w-[8%]" />
+            <col class="w-[16%]" />
+            <col class="w-[16%]" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="text-left">Date</th>
+              <th class="text-left">Opp</th>
+              <th class="text-left">BF</th>
+              <th class="text-left">H</th>
+              <th class="text-left">R</th>
+              <th class="text-left">K</th>
+              <th class="text-left">BB</th>
+              <th class="text-left">AVG</th>
+              <th class="text-left normal-case!">wOBA</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (row of gameRows(); track row.date + row.opponent) {
+              <tr>
+                <td class="text-content-dim">{{ row.date }}</td>
+                <td>{{ row.opponent }}</td>
+                <td class="text-left">{{ row.battersFaced }}</td>
+                <td class="text-left">{{ row.hits }}</td>
+                <td
+                  class="text-left"
+                  [class]="row.runs > 0 ? 'text-error! font-semibold' : ''"
+                >
+                  {{ row.runs }}
+                </td>
+                <td class="text-left">{{ row.strikeouts }}</td>
+                <td class="text-left">{{ row.walks }}</td>
+                <td class="text-left font-medium" [style]="row.avgStyle">
+                  {{ row.formattedAvg }}
+                </td>
+                <td class="text-left font-medium" [style]="row.wobaStyle">
+                  {{ row.formattedWoba }}
+                </td>
+              </tr>
+            }
+          </tbody>
+          @if (totalsRow(); as t) {
+            <tfoot>
+              <tr class="border-line border-t font-semibold">
+                <td class="border-b-0!" colspan="2">Total</td>
+                <td class="border-b-0! text-left">{{ t.battersFaced }}</td>
+                <td class="border-b-0! text-left">{{ t.hits }}</td>
+                <td class="border-b-0! text-left">{{ t.runs }}</td>
+                <td class="border-b-0! text-left">{{ t.strikeouts }}</td>
+                <td class="border-b-0! text-left">{{ t.walks }}</td>
+                <td
+                  class="border-b-0! text-left font-medium"
+                  [style]="t.avgStyle"
+                >
+                  {{ t.formattedAvg }}
+                </td>
+                <td
+                  class="border-b-0! text-left font-medium"
+                  [style]="t.wobaStyle"
+                >
+                  {{ t.formattedWoba }}
+                </td>
+              </tr>
+            </tfoot>
+          }
+        </table>
+      </div>
+    }
+  </div>
+}
