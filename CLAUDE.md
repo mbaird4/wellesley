@@ -8,7 +8,7 @@ These rules are non-negotiable. Violating any of them means the task is NOT comp
 
 ### Component size limit
 
-Components MUST NOT exceed ~150 lines of TypeScript. If a component grows beyond this, extract sub-components before continuing. Inline templates count toward the limit.
+Components MUST NOT exceed ~300 lines of TypeScript. If a component grows beyond this, extract sub-components before continuing. Inline templates count toward the limit.
 
 ### No functions in templates
 

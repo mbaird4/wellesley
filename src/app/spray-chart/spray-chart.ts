@@ -1,25 +1,22 @@
+import { NgTemplateOutlet } from '@angular/common';
 import {
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
   computed,
   inject,
   signal,
 } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { SoftballDataService, SoftballStatsService } from '@ws/core/data';
 import {
-  type JerseyMap,
   type Roster,
   type SprayChartSummary,
   type SprayDataPoint,
   type SprayZone,
-  toJerseyMap,
 } from '@ws/core/models';
 import {
-  buildCanonicalNameMap,
+  buildDisplayJerseyMap,
+  canonicalizeSprayNames,
   computeSprayZones,
-  normalizePlayerName,
   parseSprayData,
 } from '@ws/core/processors';
 import {
@@ -27,50 +24,67 @@ import {
   ALL_CONTACT_TYPES,
   ALL_OUT_COUNTS,
   ALL_OUTCOMES,
-  computeAllowedContacts,
-  computeAllowedOutcomes,
+  ButtonToggle,
+  computeEffectiveFilters,
   SprayField,
   SprayFilters,
   type SprayFilterState,
   SprayLegend,
+  SprayYearPanel,
+  type ToggleOption,
 } from '@ws/core/ui';
+import { BreakpointService } from '@ws/core/util';
 import { catchError, forkJoin, of } from 'rxjs';
+
+const CURRENT_YEAR = new Date().getFullYear();
+const SPRAY_YEARS = Array.from(
+  { length: 4 },
+  (_, i) => CURRENT_YEAR - i
+).reverse();
+
+const VIEW_MODE_OPTIONS: ToggleOption[] = [
+  { value: 'split', label: 'Split' },
+  { value: 'combined', label: 'Combined' },
+];
+
+const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
+  value: String(y),
+  label: String(y),
+}));
 
 @Component({
   selector: 'ws-spray-chart',
   standalone: true,
   imports: [
-    FormsModule,
+    NgTemplateOutlet,
+    ButtonToggle,
     SprayField,
     SprayFilters,
     SprayLegend,
+    SprayYearPanel,
   ],
   templateUrl: './spray-chart.html',
   host: {
-    class: 'flex flex-col overflow-hidden',
-    style: 'height: calc(100vh - 140px)',
+    class: 'flex flex-1 flex-col overflow-hidden',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayChart {
   private statsService = inject(SoftballStatsService);
   private dataService = inject(SoftballDataService);
-  private cdr = inject(ChangeDetectorRef);
+  readonly bp = inject(BreakpointService);
 
-  loading = false;
-  error: string | null = null;
-  selectedYear = 2025;
-  availableYears = [
-    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
-    2011,
-  ];
+  readonly loading = signal(false);
+  readonly error = signal<string | null>(null);
+  readonly dataByYear = signal<Map<number, SprayDataPoint[]>>(new Map());
+  private readonly rawRoster = signal<Roster>({});
 
-  // Raw spray data from all games
-  allDataPoints = signal<SprayDataPoint[]>([]);
-  private rawRoster = signal<Roster>({});
+  readonly viewMode = signal<'split' | 'combined'>('split');
+  readonly selectedYears = signal<string[]>(SPRAY_YEARS.map(String));
+  readonly viewModeOptions = VIEW_MODE_OPTIONS;
+  readonly yearOptions = YEAR_OPTIONS;
 
-  // Filter state
-  filters = signal<SprayFilterState>({
+  readonly filters = signal<SprayFilterState>({
     playerName: null,
     outcomes: [...ALL_OUTCOMES],
     contactTypes: [...ALL_CONTACT_TYPES],
@@ -79,16 +93,23 @@ export class SprayChart {
     risp: null,
   });
 
-  highlightZone = signal<SprayZone | null>(null);
+  readonly highlightZone = signal<SprayZone | null>(null);
 
-  // Available players (derived from data)
-  players = computed(() => {
-    const names = new Set(this.allDataPoints().map((p) => p.playerName));
+  readonly players = computed(() => {
+    const map = this.dataByYear();
 
-    return Array.from(names).sort();
+    return Array.from(
+      new Set(
+        SPRAY_YEARS.flatMap((y) => (map.get(y) ?? []).map((p) => p.playerName))
+      )
+    ).sort();
   });
 
-  rosteredPlayers = computed(() => {
+  readonly jerseyMap = computed(() =>
+    buildDisplayJerseyMap(this.rawRoster(), this.players())
+  );
+
+  readonly rosteredPlayers = computed(() => {
     const map = this.jerseyMap();
 
     return this.players()
@@ -96,122 +117,42 @@ export class SprayChart {
       .sort((a, b) => map[a] - map[b]);
   });
 
-  nonRosteredPlayers = computed(() =>
+  readonly nonRosteredPlayers = computed(() =>
     this.players().filter((p) => this.jerseyMap()[p] === undefined)
   );
 
-  /** Map display names (e.g. "S. Moore") → jersey numbers by matching last name */
-  jerseyMap = computed(() => {
-    const roster = this.rawRoster();
-    const map: JerseyMap = {};
+  private readonly effectiveFilters = computed(() =>
+    computeEffectiveFilters(this.filters())
+  );
 
-    // Build last-name lookup from roster: "moore" → 7
-    const byLastName = new Map<string, number>();
-    Object.entries(roster).forEach(([key, entry]) => {
-      const last = key.split(',')[0].trim();
-      byLastName.set(last, entry.jersey);
-    });
+  readonly summaryByYear = computed(() => {
+    const map = this.dataByYear();
+    const ef = this.effectiveFilters();
 
-    this.players().forEach((displayName) => {
-      // Display names are like "S. Moore" or "A. Hadjipana"
-      const parts = displayName.split(/\s+/);
-      const displayLast = parts.slice(1).join(' ').toLowerCase();
-      const jersey = byLastName.get(displayLast);
-
-      if (jersey !== undefined) {
-        map[displayName] = jersey;
-      } else {
-        // Try prefix match for truncated names (e.g. "DiCampell" vs "dicampello")
-        for (const [rosterLast, num] of byLastName) {
-          if (
-            rosterLast.startsWith(displayLast) ||
-            displayLast.startsWith(rosterLast)
-          ) {
-            map[displayName] = num;
-            break;
-          }
-        }
-      }
-    });
-
-    return map;
-  });
-
-  // Filtered + aggregated summary
-  summary = computed<SprayChartSummary>(() => {
-    const f = this.filters();
-    const allowedContacts = computeAllowedContacts(f);
-    const allowedOutcomes = computeAllowedOutcomes(f);
-    const effectiveContactTypes = f.contactTypes.filter((ct) =>
-      allowedContacts.has(ct)
+    return new Map(
+      SPRAY_YEARS.map(
+        (y) => [y, computeSprayZones(map.get(y) ?? [], ef)] as const
+      )
     );
-    const effectiveOutcomes = f.outcomes.filter((o) => allowedOutcomes.has(o));
-
-    return computeSprayZones(this.allDataPoints(), {
-      playerName: f.playerName,
-      outcomes: effectiveOutcomes,
-      contactTypes: effectiveContactTypes,
-      contactQualities: f.contactQualities,
-      outCount: f.outCount,
-      risp: f.risp ?? undefined,
-    });
   });
+
+  readonly activeYears = computed(() =>
+    SPRAY_YEARS.filter(
+      (y) => (this.summaryByYear().get(y)?.totalContact ?? 0) > 0
+    )
+  );
+
+  readonly combinedSummary = computed<SprayChartSummary>(() =>
+    computeSprayZones(
+      this.selectedYears().flatMap(
+        (y) => this.dataByYear().get(Number(y)) ?? []
+      ),
+      this.effectiveFilters()
+    )
+  );
 
   constructor() {
     this.loadData();
-  }
-
-  loadData(): void {
-    this.loading = true;
-    this.error = null;
-    this.allDataPoints.set([]);
-
-    forkJoin({
-      stats: this.statsService.getStats(this.selectedYear),
-      roster: this.dataService
-        .getRoster()
-        .pipe(catchError(() => of({} as Roster))),
-    }).subscribe({
-      next: ({ stats, roster }) => {
-        this.rawRoster.set(roster);
-
-        const points = stats.games.flatMap((game, i) =>
-          parseSprayData(game.snapshots, i)
-        );
-
-        // Normalize full first names → initials ("Joe Smith" → "J. Smith")
-        points.forEach(
-          (p) => (p.playerName = normalizePlayerName(p.playerName))
-        );
-
-        // Merge truncated last names and wrong initials using jersey numbers
-        if (Object.keys(roster).length > 0) {
-          const allNames = [...new Set(points.map((p) => p.playerName))];
-          const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
-
-          if (canonMap.size > 0) {
-            points.forEach((p) => {
-              const canon = canonMap.get(p.playerName);
-
-              if (canon) {
-                p.playerName = canon;
-              }
-            });
-          }
-        }
-
-        this.allDataPoints.set(points);
-        this.loading = false;
-        this.cdr.markForCheck();
-      },
-      error: (err) => {
-        this.error =
-          err.message || 'An error occurred while loading spray chart data';
-        this.loading = false;
-        console.error('Error loading spray chart data:', err);
-        this.cdr.markForCheck();
-      },
-    });
   }
 
   onPlayerChange(player: string): void {
@@ -225,6 +166,14 @@ export class SprayChart {
     this.filters.set(newFilters);
   }
 
+  onViewModeChange(value: string[] | string): void {
+    this.viewMode.set(value as 'split' | 'combined');
+  }
+
+  onYearChange(values: string[] | string): void {
+    this.selectedYears.set(values as string[]);
+  }
+
   onZoneHover(zone: SprayZone | null): void {
     this.highlightZone.set(zone);
   }
@@ -233,15 +182,48 @@ export class SprayChart {
     // Future: could show zone detail panel
   }
 
-  onYearChange(): void {
-    this.filters.set({
-      playerName: null,
-      outcomes: [...ALL_OUTCOMES],
-      contactTypes: [...ALL_CONTACT_TYPES],
-      contactQualities: [...ALL_CONTACT_QUALITIES],
-      outCount: [...ALL_OUT_COUNTS],
-      risp: null,
+  private loadData(): void {
+    this.loading.set(true);
+    this.error.set(null);
+    this.dataByYear.set(new Map());
+
+    forkJoin({
+      roster: this.dataService
+        .getRoster()
+        .pipe(catchError(() => of({} as Roster))),
+      years: forkJoin(
+        SPRAY_YEARS.map((year) =>
+          this.statsService.getStats(year).pipe(catchError(() => of(null)))
+        )
+      ),
+    }).subscribe({
+      next: ({ roster, years }) => {
+        this.rawRoster.set(roster);
+
+        const map = new Map<number, SprayDataPoint[]>();
+        years.forEach((stats, i) => {
+          if (!stats) {
+            return;
+          }
+
+          map.set(
+            SPRAY_YEARS[i],
+            stats.games.flatMap((game, gi) =>
+              parseSprayData(game.snapshots, gi)
+            )
+          );
+        });
+
+        canonicalizeSprayNames(map, SPRAY_YEARS, roster);
+        this.dataByYear.set(map);
+        this.loading.set(false);
+      },
+      error: (err) => {
+        this.error.set(
+          err.message || 'An error occurred while loading spray chart data'
+        );
+        this.loading.set(false);
+      },
     });
-    this.loadData();
   }
 }

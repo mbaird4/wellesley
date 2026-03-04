@@ -5,7 +5,9 @@ import {
   output,
 } from '@angular/core';
 import type { SprayZone, ZoneAggregate } from '@ws/core/models';
-import { SprayField, SprayLegend } from '@ws/core/ui';
+
+import { SprayField } from '../spray-field/spray-field';
+import { SprayLegend } from '../spray-legend/spray-legend';
 
 @Component({
   selector: 'ws-spray-year-panel',
@@ -15,7 +17,7 @@ import { SprayField, SprayLegend } from '@ws/core/ui';
     SprayLegend,
   ],
   templateUrl: './spray-year-panel.html',
-  host: { class: 'flex flex-col' },
+  host: { class: 'flex flex-col gap-1' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayYearPanel {

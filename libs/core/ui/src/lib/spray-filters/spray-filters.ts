@@ -8,6 +8,7 @@ import {
 import type {
   ContactQuality,
   ContactType,
+  SprayFilters as SprayFilterOptions,
   SprayOutcome,
 } from '@ws/core/models';
 
@@ -116,6 +117,25 @@ export function computeAllowedQualities(
   }
 
   return allowed;
+}
+
+/**
+ * Apply cross-filter constraints and convert SprayFilterState → SprayFilterOptions
+ * suitable for passing to computeSprayZones.
+ */
+export function computeEffectiveFilters(
+  f: SprayFilterState
+): SprayFilterOptions {
+  return {
+    playerName: f.playerName,
+    outcomes: f.outcomes.filter((o) => computeAllowedOutcomes(f).has(o)),
+    contactTypes: f.contactTypes.filter((ct) =>
+      computeAllowedContacts(f).has(ct)
+    ),
+    contactQualities: f.contactQualities,
+    outCount: f.outCount,
+    risp: f.risp ?? undefined,
+  };
 }
 
 @Component({

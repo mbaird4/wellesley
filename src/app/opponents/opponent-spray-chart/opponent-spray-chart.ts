@@ -35,12 +35,11 @@ import {
   SprayFilters,
   type SprayFilterState,
   SprayLegend,
+  SprayYearPanel,
   type ToggleOption,
 } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 import { catchError, forkJoin, of } from 'rxjs';
-
-import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
 
 const CURRENT_YEAR = new Date().getFullYear();
 const SPRAY_YEARS = Array.from(

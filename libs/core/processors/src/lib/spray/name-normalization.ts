@@ -8,6 +8,9 @@
  * Groups display names by jersey number, then picks the canonical form per group.
  */
 
+import type { JerseyMap, Roster, SprayDataPoint } from '@ws/core/models';
+import { toJerseyMap } from '@ws/core/models';
+
 /**
  * Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly.
  * Names already in initial format (e.g. "J. Smith") pass through unchanged.
@@ -118,4 +121,84 @@ export function buildCanonicalNameMap(
   });
 
   return canonMap;
+}
+
+/**
+ * Build a map of display names (e.g. "S. Moore") → jersey numbers by matching
+ * against the roster using last-name exact match then prefix match.
+ */
+export function buildDisplayJerseyMap(
+  roster: Roster,
+  playerNames: string[]
+): JerseyMap {
+  const map: JerseyMap = {};
+
+  const byLastName = new Map<string, number>();
+  Object.entries(roster).forEach(([key, entry]) => {
+    const last = key.split(',')[0].trim();
+    byLastName.set(last, entry.jersey);
+  });
+
+  playerNames.forEach((displayName) => {
+    const parts = displayName.split(/\s+/);
+    const displayLast = parts.slice(1).join(' ').toLowerCase();
+    const jersey = byLastName.get(displayLast);
+
+    if (jersey !== undefined) {
+      map[displayName] = jersey;
+
+      return;
+    }
+
+    const match = [...byLastName.entries()].find(
+      ([rosterLast]) =>
+        rosterLast.startsWith(displayLast) || displayLast.startsWith(rosterLast)
+    );
+
+    if (match) {
+      map[displayName] = match[1];
+    }
+  });
+
+  return map;
+}
+
+/**
+ * Canonicalize player names across multiple years of spray data in-place.
+ * Normalizes first names to initials, then merges truncated last names and
+ * wrong initials using roster jersey numbers.
+ */
+export function canonicalizeSprayNames(
+  dataByYear: Map<number, SprayDataPoint[]>,
+  years: number[],
+  roster: Roster
+): void {
+  dataByYear.forEach((points) => {
+    points.forEach((p) => (p.playerName = normalizePlayerName(p.playerName)));
+  });
+
+  if (Object.keys(roster).length === 0) {
+    return;
+  }
+
+  const allNames = [
+    ...new Set(
+      years.flatMap((y) => (dataByYear.get(y) ?? []).map((p) => p.playerName))
+    ),
+  ];
+  const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
+
+  if (canonMap.size === 0) {
+    return;
+  }
+
+  dataByYear.forEach((points) => {
+    points.forEach((p) => {
+      const canon = canonMap.get(p.playerName);
+
+      if (canon) {
+        p.playerName = canon;
+      }
+    });
+  });
 }
