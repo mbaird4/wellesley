@@ -11,7 +11,10 @@ import {
   getPlayerNameFromText,
   processPlay,
 } from '../parsing/parse-play';
-import { computeBaseRunnerStats } from './base-runner-stats';
+import {
+  computeBaseRunnerStats,
+  computeBaseRunnerStatsAtBatStart,
+} from './base-runner-stats';
 import { extractScoringPlays } from './scoring-plays';
 
 function cloneBases(bases: BaseRunners): BaseRunners {
@@ -33,6 +36,7 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
       totalPA: 0,
       snapshots: [],
       baseRunnerStats: [],
+      baseRunnerStatsAtBatStart: [],
     };
   }
 
@@ -130,5 +134,6 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
     totalPA: gameRows.reduce((s, r) => s + r.totalPA, 0),
     snapshots,
     baseRunnerStats: computeBaseRunnerStats(snapshots),
+    baseRunnerStatsAtBatStart: computeBaseRunnerStatsAtBatStart(snapshots),
   };
 }

@@ -1,3 +1,4 @@
+export * from './lib/base-runner-table/base-runner-table';
 export * from './lib/button-toggle/button-toggle';
 export * from './lib/diamond/diamond';
 export * from './lib/game-viewer/game-viewer';

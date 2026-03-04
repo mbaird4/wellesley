@@ -36,7 +36,10 @@ export interface BaseRunnerRow {
   situations: Record<BaseSituation, OutBreakdown>;
 }
 
+export type BaseRunnerMode = 'at-bat-start' | 'ball-in-play';
+
 export interface GameWithSnapshots extends GameResult {
   snapshots: PlaySnapshot[];
   baseRunnerStats: BaseRunnerRow[];
+  baseRunnerStatsAtBatStart: BaseRunnerRow[];
 }

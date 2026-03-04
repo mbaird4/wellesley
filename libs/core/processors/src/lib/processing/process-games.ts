@@ -28,6 +28,7 @@ export interface ProcessedStatsWithSnapshots {
   totals: ResultRow[];
   games: GameWithSnapshots[];
   baseRunnerStats: BaseRunnerRow[];
+  baseRunnerStatsAtBatStart: BaseRunnerRow[];
   seasonScoringPlays: ScoringPlaySummary;
   gameScoringPlays: GameScoringPlays[];
   sacBuntSummary: SacBuntSummary;
@@ -108,6 +109,7 @@ export function processGamesWithSnapshots(
   const globalCounts = new Map<number, [number, number, number]>();
   const gameResults: GameWithSnapshots[] = [];
   let seasonBaseRunnerStats: BaseRunnerRow[] = [];
+  let seasonBaseRunnerStatsAtBatStart: BaseRunnerRow[] = [];
 
   games
     .filter((game) => game.playByPlay.length > 0)
@@ -128,6 +130,11 @@ export function processGamesWithSnapshots(
       seasonBaseRunnerStats = mergeBaseRunnerStats(
         seasonBaseRunnerStats,
         result.baseRunnerStats
+      );
+
+      seasonBaseRunnerStatsAtBatStart = mergeBaseRunnerStats(
+        seasonBaseRunnerStatsAtBatStart,
+        result.baseRunnerStatsAtBatStart
       );
     });
 
@@ -167,6 +174,7 @@ export function processGamesWithSnapshots(
     totals,
     games: gameResults,
     baseRunnerStats: seasonBaseRunnerStats,
+    baseRunnerStatsAtBatStart: seasonBaseRunnerStatsAtBatStart,
     seasonScoringPlays,
     gameScoringPlays,
     sacBuntSummary,

@@ -62,46 +62,13 @@
     </div>
 
     @if (baseRunnerStats.length > 0) {
-      <h2>Base-Runner Situations (Season)</h2>
-      <div class="mb-4 overflow-x-auto">
-        <table class="stats-table base-runner-table">
-          <thead>
-            <tr>
-              <th rowspan="2" class="sticky-col">Slot</th>
-              @for (sit of situations; track sit.key) {
-                <th colspan="4" class="situation-header">{{ sit.label }}</th>
-              }
-            </tr>
-            <tr>
-              @for (sit of situations; track sit.key) {
-                <th class="out-header">0</th>
-                <th class="out-header">1</th>
-                <th class="out-header">2</th>
-                <th class="out-header last-in-group"></th>
-              }
-            </tr>
-          </thead>
-          <tbody>
-            @for (row of baseRunnerStats; track row.lineupSlot) {
-              <tr>
-                <td class="sticky-col">{{ row.lineupSlot }}</td>
-                @for (sit of situations; track sit.key) {
-                  <td>{{ row.situations[sit.key][0] }}</td>
-                  <td>{{ row.situations[sit.key][1] }}</td>
-                  <td>{{ row.situations[sit.key][2] }}</td>
-                  <td class="last-in-group">
-                    {{
-                      row.situations[sit.key][0] +
-                        row.situations[sit.key][1] +
-                        row.situations[sit.key][2]
-                    }}
-                  </td>
-                }
-              </tr>
-            }
-          </tbody>
-        </table>
-      </div>
+      <ws-base-runner-table
+        [rows]="baseRunnerStats"
+        [rowsAtBatStart]="baseRunnerStatsAtBatStart"
+        [mode]="baseRunnerMode()"
+        [showToggle]="true"
+        (modeChange)="baseRunnerMode.set($event)"
+      />
     }
 
     <h2>Game-by-Game Breakdown</h2>
@@ -150,41 +117,13 @@
             </tbody>
           </table>
           @if (game.baseRunnerStats.length > 0) {
-            <div class="mb-4 overflow-x-auto">
-              <table class="stats-table base-runner-table game-table">
-                <thead>
-                  <tr>
-                    <th rowspan="2" class="sticky-col">Slot</th>
-                    @for (sit of situations; track sit.key) {
-                      <th colspan="3" class="situation-header">
-                        {{ sit.label }}
-                      </th>
-                    }
-                  </tr>
-                  <tr>
-                    @for (sit of situations; track sit.key) {
-                      <th class="out-header">0</th>
-                      <th class="out-header">1</th>
-                      <th class="out-header last-in-group">2</th>
-                    }
-                  </tr>
-                </thead>
-                <tbody>
-                  @for (row of game.baseRunnerStats; track row.lineupSlot) {
-                    <tr>
-                      <td class="sticky-col">{{ row.lineupSlot }}</td>
-                      @for (sit of situations; track sit.key) {
-                        <td>{{ row.situations[sit.key][0] }}</td>
-                        <td>{{ row.situations[sit.key][1] }}</td>
-                        <td class="last-in-group">
-                          {{ row.situations[sit.key][2] }}
-                        </td>
-                      }
-                    </tr>
-                  }
-                </tbody>
-              </table>
-            </div>
+            <ws-base-runner-table
+              [rows]="game.baseRunnerStats"
+              [rowsAtBatStart]="game.baseRunnerStatsAtBatStart"
+              [mode]="baseRunnerMode()"
+              [showTotals]="false"
+              [compact]="true"
+            />
           }
           <ws-game-viewer [snapshots]="game.snapshots" />
         }

@@ -91,6 +91,60 @@ export function computeBaseRunnerStats(
   return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
 }
 
+/**
+ * Computes base-runner stats using the bases at the START of each at-bat,
+ * ignoring mid-AB events (stolen bases, wild pitches) that modify the bases
+ * before the PA snapshot is recorded.
+ *
+ * "Start of AB" bases = basesAfter of the most recent previous PA in the same
+ * inning, or empty bases if it's the first PA of the inning.
+ */
+export function computeBaseRunnerStatsAtBatStart(
+  snapshots: PlaySnapshot[]
+): BaseRunnerRow[] {
+  const rows = new Map<number, BaseRunnerRow>();
+  const emptyBases: BaseRunners = { first: null, second: null, third: null };
+  let lastPABasesAfter: BaseRunners = { ...emptyBases };
+  let currentInning: string | null = null;
+
+  snapshots.forEach((snap) => {
+    // Reset at each new inning
+    if (snap.inning !== currentInning) {
+      currentInning = snap.inning;
+      lastPABasesAfter = { ...emptyBases };
+    }
+
+    // Tiebreaker runners are setup events (not mid-AB), so apply them
+    if (snap.playType === 'tiebreaker') {
+      lastPABasesAfter = { ...snap.basesAfter };
+    }
+
+    if (snap.isPlateAppearance && snap.lineupSlot !== null) {
+      const slot = snap.lineupSlot;
+
+      if (!rows.has(slot)) {
+        rows.set(slot, emptyRow(slot));
+      }
+
+      const row = rows.get(slot)!;
+      const situation = classifyBaseSituation(lastPABasesAfter);
+      const outs = snap.outsBefore as 0 | 1 | 2;
+      row.situations[situation][outs]++;
+
+      lastPABasesAfter = { ...snap.basesAfter };
+    }
+  });
+
+  // Ensure all 9 slots exist
+  Array.from({ length: 9 }, (_, i) => i + 1).forEach((s) => {
+    if (!rows.has(s)) {
+      rows.set(s, emptyRow(s));
+    }
+  });
+
+  return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
+}
+
 export function mergeBaseRunnerStats(
   a: BaseRunnerRow[],
   b: BaseRunnerRow[]

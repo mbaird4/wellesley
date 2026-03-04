@@ -4,21 +4,23 @@ import {
   ChangeDetectorRef,
   Component,
   inject,
+  signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/core/data';
 import type {
+  BaseRunnerMode,
   BaseRunnerRow,
-  BaseSituation,
   GameWithSnapshots,
   ResultRow,
 } from '@ws/core/models';
-import { GameViewer } from '@ws/core/ui';
+import { BaseRunnerTable, GameViewer } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-lineup-stats',
   standalone: true,
   imports: [
+    BaseRunnerTable,
     CommonModule,
     FormsModule,
     GameViewer,
@@ -34,6 +36,7 @@ export class LineupStats {
   results: ResultRow[] = [];
   games: GameWithSnapshots[] = [];
   baseRunnerStats: BaseRunnerRow[] = [];
+  baseRunnerStatsAtBatStart: BaseRunnerRow[] = [];
   expandedGame: number | null = null;
   loading = false;
   error: string | null = null;
@@ -41,16 +44,7 @@ export class LineupStats {
   selectedYear = 2025;
   availableYears: number[] = [];
 
-  readonly situations: { key: BaseSituation; label: string }[] = [
-    { key: 'empty', label: 'No one on' },
-    { key: 'first', label: '1st' },
-    { key: 'second', label: '2nd' },
-    { key: 'third', label: '3rd' },
-    { key: 'first_second', label: '1st & 2nd' },
-    { key: 'first_third', label: '1st & 3rd' },
-    { key: 'second_third', label: '2nd & 3rd' },
-    { key: 'loaded', label: 'Loaded' },
-  ];
+  readonly baseRunnerMode = signal<BaseRunnerMode>('at-bat-start');
 
   constructor() {
     const currentYear = new Date().getFullYear();
@@ -64,6 +58,7 @@ export class LineupStats {
     this.results = [];
     this.games = [];
     this.baseRunnerStats = [];
+    this.baseRunnerStatsAtBatStart = [];
     this.expandedGame = null;
     this.totalPlateAppearances = 0;
 
@@ -72,6 +67,7 @@ export class LineupStats {
         this.results = stats.totals;
         this.games = stats.games;
         this.baseRunnerStats = stats.baseRunnerStats;
+        this.baseRunnerStatsAtBatStart = stats.baseRunnerStatsAtBatStart;
         this.totalPlateAppearances = stats.totals.reduce(
           (sum, r) => sum + r.totalPA,
           0
