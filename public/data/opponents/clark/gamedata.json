@@ -1,22 +1,79 @@
 [
   {
+    "year": 2026,
     "url": "https://clarkathletics.com/sports/softball/stats/2026/simmons-university/boxscore/19214",
     "opponent": "Simmons University",
+    "pitchers": [
+      "wagstaff, hannah",
+      "dube, megan"
+    ],
     "lineup": [
-      [1, ["quigley, charlise"]],
-      [2, ["dillon, avery"]],
-      [3, ["piana, avery"]],
-      [4, ["dube, megan"]],
-      [5, ["griffin, merry"]],
-      [6, ["castro, gricelda"]],
-      [7, ["salvati, felicia", "castro, gwen"]],
-      [8, ["albano, jennifer"]],
-      [9, ["spence, emelie"]],
-      [10, ["wagstaff, hannah"]]
+      [
+        1,
+        [
+          "quigley, charlise"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "piana, avery"
+        ]
+      ],
+      [
+        4,
+        [
+          "dube, megan"
+        ]
+      ],
+      [
+        5,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        6,
+        [
+          "castro, gricelda"
+        ]
+      ],
+      [
+        7,
+        [
+          "salvati, felicia",
+          "castro, gwen"
+        ]
+      ],
+      [
+        8,
+        [
+          "albano, jennifer"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "wagstaff, hannah"
+        ]
+      ]
     ],
     "playByPlay": [
       {
         "inning": "1st",
+        "half": "offense",
         "plays": [
           "C. Quigley struck out looking.",
           "A. Dillon struck out swinging.",
@@ -26,7 +83,20 @@
         ]
       },
       {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "M. Dube to p.",
+          "H. Wagstaff to dp.",
+          "E. Deleault walked.",
+          "A. Carvalho reached on a fielder's choice, SAC, bunt; E. Deleault advanced to second on an error by ss.",
+          "T. Buckley struck out swinging.",
+          "T. Payne infield fly to ss; E. Deleault out at third ss to 3b."
+        ]
+      },
+      {
         "inning": "2nd",
+        "half": "offense",
         "plays": [
           "Gr. Castro struck out swinging.",
           "F. Salvati struck out swinging.",
@@ -34,7 +104,18 @@
         ]
       },
       {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "E. Soule singled through the left side.",
+          "Kreidel-Reim struck out swinging.",
+          "L. Stenmon grounded out to p; E. Soule advanced to second.",
+          "L. Sidler struck out swinging."
+        ]
+      },
+      {
         "inning": "3rd",
+        "half": "offense",
         "plays": [
           "E. Spence struck out swinging.",
           "C. Quigley flied out to cf to left center.",
@@ -44,7 +125,18 @@
         ]
       },
       {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "P. Kinney struck out swinging.",
+          "E. Deleault fouled out to 1b.",
+          "A. Carvalho singled to left center.",
+          "T. Buckley lined out to rf."
+        ]
+      },
+      {
         "inning": "4th",
+        "half": "offense",
         "plays": [
           "M. Dube reached first on a fielding error by ss.",
           "M. Griffin out at first p to 2b, SAC, bunt; M. Dube advanced to second.",
@@ -53,7 +145,19 @@
         ]
       },
       {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "T. Payne singled to right center.",
+          "E. Soule struck out swinging.",
+          "Kreidel-Reim struck out swinging.",
+          "L. Stenmon walked; T. Payne advanced to second.",
+          "L. Sidler struck out swinging."
+        ]
+      },
+      {
         "inning": "5th",
+        "half": "offense",
         "plays": [
           "J. Albano grounded out to p, bunt.",
           "E. Spence doubled to left center.",
@@ -63,7 +167,21 @@
         ]
       },
       {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "P. Kinney singled to shortstop.",
+          "P. Kinney stole second.",
+          "E. Deleault walked.",
+          "A. Carvalho doubled to right center, RBI; E. Deleault advanced to third; P. Kinney scored.",
+          "T. Buckley flied out to cf, sacrifice fly, RBI; A. Carvalho advanced to third; E. Deleault scored.",
+          "T. Payne struck out swinging.",
+          "E. Soule flied out to rf to right center."
+        ]
+      },
+      {
         "inning": "6th",
+        "half": "offense",
         "plays": [
           "M. Dube fouled out to c.",
           "M. Griffin flied out to cf.",
@@ -74,7 +192,19 @@
         ]
       },
       {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "F. Salvati to 1b for Gw. Castro.",
+          "D. Vaudreuil pinch hit for Kreidel-Reim.",
+          "D. Vaudreuil popped up to ss.",
+          "L. Stenmon struck out looking.",
+          "L. Sidler grounded out to 2b."
+        ]
+      },
+      {
         "inning": "7th",
+        "half": "offense",
         "plays": [
           "Kreidel-Reim to c for D. Vaudreuil.",
           "F. Salvati singled to left center.",
@@ -87,23 +217,300 @@
     ]
   },
   {
-    "url": "https://clarkathletics.com/sports/softball/stats/2026/norwich-university/boxscore/19216",
-    "opponent": "Norwich University",
+    "year": 2026,
+    "url": "https://clarkathletics.com/sports/softball/stats/2026/johnson-wales-n-c-/boxscore/19215",
+    "opponent": "Johnson Wales N C ",
+    "pitchers": [
+      "buzzeo, brooke"
+    ],
     "lineup": [
-      [1, ["quigley, charlise"]],
-      [2, ["dillon, avery"]],
-      [3, ["piana, avery", "albano, jennifer"]],
-      [4, ["dube, megan", "andre, caitriona"]],
-      [5, ["griffin, merry"]],
-      [6, ["salvati, felicia"]],
-      [7, ["castro, gricelda", "castro, gwen"]],
-      [8, ["dillon, madison"]],
-      [9, ["spence, emelie"]],
-      [10, ["buzzeo, brooke"]]
+      [
+        1,
+        [
+          "quigley, charlise",
+          "andre, caitriona"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "piana, avery"
+        ]
+      ],
+      [
+        4,
+        [
+          "castro, gwen"
+        ]
+      ],
+      [
+        5,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        6,
+        [
+          "salvati, felicia"
+        ]
+      ],
+      [
+        7,
+        [
+          "castro, gricelda",
+          "slavin, erin"
+        ]
+      ],
+      [
+        8,
+        [
+          "taudel, alexis"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "buzzeo, brooke"
+        ]
+      ]
     ],
     "playByPlay": [
       {
         "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Murphy singles on a line drive to left fielder",
+          "Strawn pops out to third baseman",
+          "Hassell doubles on a fly ball to right fielder. Murphy scores",
+          "Hope strikes out looking, Buzzeo pitching",
+          "Hamilton strikes out swinging, Buzzeo pitching"
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "offense",
+        "plays": [
+          "Quigley hits a ground ball and reaches on an error by first baseman Tellez-Martinez",
+          "Dillon flies out to center fielder",
+          "Lineup changed: Hassell in at center fielder",
+          "Della Piana singles on a line drive to right fielder Ciplickas. Quigley scores",
+          "Castro pops out to third baseman Hope",
+          "Griffin hits a ground ball and reaches on an error by first baseman Tellez-Martinez. Della Piana scores",
+          "Salvati pops out to pitcher Murphy"
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Tellez-Martinez singles on a line drive to left fielder Quigley",
+          "Herrera strikes out looking, Buzzeo pitching",
+          "Gary grounds out, pitcher Buzzeo to first baseman Salvati",
+          "Ciplickas walks, Buzzeo pitching",
+          "Murphy singles on a hard ground ball to left fielder Quigley",
+          "Strawn grounds out, shortstop Castro to first baseman Salvati"
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
+        "plays": [
+          "Castro triples on a fly ball to center fielder Hassell",
+          "Taudel strikes out swinging, Murphy pitching",
+          "Spence singles on a hard ground ball to second baseman Herrera. Castro scores",
+          "Spence steals 2nd",
+          "Quigley doubles on a fly ball to center fielder Hassell. Spence scores",
+          "Dillon hits a ground ball and reaches on an error by shortstop Strawn. Quigley scores",
+          "Lineup changed: Hassell in at pitcher",
+          "Lineup changed: Murphy in at second baseman",
+          "Lineup changed: Herrera in at center fielder",
+          "Della Piana walks, Hassell pitching",
+          "Dillon steals 3rd",
+          "Della Piana steals 2nd",
+          "Dillon scores on error by third baseman Hope",
+          "Castro walks, Hassell pitching",
+          "Griffin walks, Hassell pitching",
+          "Lineup changed: Murphy in at pitcher",
+          "Lineup changed: Herrera in at second baseman",
+          "Lineup changed: Hassell in at center fielder",
+          "Salvati walks, Murphy pitching. Della Piana scores",
+          "Castro singles on a hard ground ball to left fielder Gary. Castro scores. Griffin scores",
+          "Taudel singles on a ground ball to center fielder Hassell. Salvati scores",
+          "Taudel steals 2nd",
+          "Spence singles on a fly ball to left fielder Gary. Castro scores",
+          "Quigley grounds out, pitcher Murphy to first baseman Tellez-Martinez",
+          "Dillon singles on a fly ball to left fielder Gary. Taudel scores. Spence scores",
+          "Della Piana lines out to shortstop Strawn"
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Hassell flies out to right fielder Taudel",
+          "Hope singles on a line drive to center fielder Spence",
+          "Hamilton singles on a ground ball to third baseman Griffin",
+          "Tellez-Martinez flies out to left fielder Quigley",
+          "Herrera strikes out swinging, Buzzeo pitching"
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
+        "plays": [
+          "Lineup changed: Herrera in at left fielder",
+          "Lineup changed: Gary in at pitcher",
+          "Lineup changed: Murphy in at second baseman",
+          "Castro flies out to left fielder Herrera",
+          "Griffin walks, Gary pitching",
+          "Salvati pops out in foul territory to first baseman Tellez-Martinez",
+          "Castro triples on a fly ball to left fielder Herrera. Griffin scores",
+          "Taudel pops out to third baseman Hope"
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Gary pops out to first baseman Salvati",
+          "Ciplickas hits a ground ball and reaches on an error by first baseman Salvati",
+          "Murphy pops out to second baseman Dillon",
+          "Strawn pops out in foul territory to third baseman Griffin"
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
+        "plays": [
+          "Spence walks, Gary pitching",
+          "Lineup changed: Andre in for left fielder Quigley",
+          "Spence steals 2nd",
+          "Andre grounds into fielder's choice to shortstop Strawn",
+          "Dillon flies out to center fielder Hassell",
+          "Spence advances to 3rd",
+          "Della Piana singles on a line drive to center fielder Hassell. Spence scores",
+          "Andre advances to 3rd on wild pitch",
+          "Della Piana advances to 2nd on the same pitch",
+          "Castro doubles on a fly ball to left fielder Herrera. Andre scores. Della Piana scores",
+          "Griffin doubles on a fly ball to center fielder Hassell. Castro scores",
+          "Salvati lines out to second baseman Murphy",
+          "Lineup changed: Slavin in for shortstop Castro",
+          "Slavin singles on a line drive to right fielder Ciplickas. Griffin scores",
+          "Taudel grounds out, third baseman Hope to first baseman Tellez-Martinez"
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Hassell singles on a fly ball to right fielder Taudel",
+          "Hope strikes out swinging, Buzzeo pitching",
+          "Hamilton grounds into fielder's choice, third baseman Griffin to pitcher Buzzeo",
+          "Tellez-Martinez pops out in foul territory to catcher Castro"
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "url": "https://clarkathletics.com/sports/softball/stats/2026/norwich-university/boxscore/19216",
+    "opponent": "Norwich University",
+    "pitchers": [
+      "buzzeo, brooke"
+    ],
+    "lineup": [
+      [
+        1,
+        [
+          "quigley, charlise"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "piana, avery",
+          "albano, jennifer"
+        ]
+      ],
+      [
+        4,
+        [
+          "dube, megan",
+          "andre, caitriona"
+        ]
+      ],
+      [
+        5,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        6,
+        [
+          "salvati, felicia"
+        ]
+      ],
+      [
+        7,
+        [
+          "castro, gricelda",
+          "castro, gwen"
+        ]
+      ],
+      [
+        8,
+        [
+          "dillon, madison"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "buzzeo, brooke"
+        ]
+      ]
+    ],
+    "playByPlay": [
+      {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Jessica Zalucki singled to shortstop (1-4 BSKF).",
+          "Charlii Carbajal Sanchez struck out swinging (1-3 BKSS).",
+          "Madison DeCota homered to left center, 2 RBI (0-1 ); Jessica Zalucki scored.",
+          "Emily Munson struck out swinging (0-3 SSS).",
+          "Courtney Thomas struck out swinging (1-3 SBSS)."
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "offense",
         "plays": [
           "Charlise Quigley singled to center field (1-1 B).",
           "Charlise Quigley out at second c to ss, caught stealing.",
@@ -116,6 +523,17 @@
       },
       {
         "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Delia Mannion walked (4-3 BSBKFBB).",
+          "Ellie Laroche struck out looking (0-3 KKK).",
+          "Josephine Whitney struck out swinging (2-3 SBBSF).",
+          "Brianna Vitale struck out looking (0-3 SKK)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
         "plays": [
           "Gricelda Castro popped up to 2b (2-2 BFB).",
           "Madison Dillon singled to second base, advanced to second on a throwing error by 2b (1-4 SKFB).",
@@ -128,6 +546,18 @@
       },
       {
         "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Jessica Zalucki singled up the middle (3-5 KBSBBFF).",
+          "Charlii Carbajal Sanchez singled to pitcher, bunt (0-2 F); Jessica Zalucki advanced to second.",
+          "Madison DeCota fouled out to 1b (0-2 F).",
+          "Emily Munson struck out swinging (0-3 SSS).",
+          "Courtney Thomas struck out swinging (1-3 SSBF)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
         "plays": [
           "Megan Dube doubled to left center (1-1 B).",
           "Merry Griffin grounded out to 2b (1-1 B); Megan Dube advanced to third.",
@@ -137,6 +567,16 @@
       },
       {
         "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Delia Mannion struck out swinging (1-3 FKBF).",
+          "Ellie Laroche lined out to lf (0-3 FF).",
+          "Josephine Whitney popped up to 2b (1-1 B)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
         "plays": [
           "Madison Dillon fouled out to 1b (0-1 ).",
           "Emelie Spence struck out looking (1-5 FFFBFF).",
@@ -146,6 +586,16 @@
       },
       {
         "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Brianna Vitale struck out swinging (0-3 KFS).",
+          "Jessica Zalucki struck out looking (3-5 BBFKFFBF).",
+          "Charlii Carbajal Sanchez flied out to cf (0-1 )."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "offense",
         "plays": [
           "Avery Della Piana singled to center field (1-2 BF).",
           "Jennifer Albano pinch ran for Avery Della Piana.",
@@ -162,6 +612,21 @@
       },
       {
         "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "Avery Dillon to 2b.",
+          "/ to c for Jennifer Albano.",
+          "Gricelda Castro to ss for Gwen Castro.",
+          "Madison Dillon to rf.",
+          "Madison DeCota homered to center field, RBI (0-2 K).",
+          "Emily Munson flied out to lf (0-3 SS).",
+          "Courtney Thomas struck out swinging (0-4 SKFF).",
+          "Delia Mannion popped up to ss (1-4 KBFF)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "offense",
         "plays": [
           "Avery Dillon reached first on a fielding error by 2b (0-1 ).",
           "Avery Dillon advanced to second.",
@@ -169,27 +634,96 @@
           "Caitriona Andre pinch ran for Megan Dube.",
           "Avery Dillon scored on a wild pitch, unearned."
         ]
+      },
+      {
+        "inning": "7th",
+        "half": "defense",
+        "plays": [
+          "Ellie Laroche popped up to 3b (0-3 FK).",
+          "Emma Thompson pinch hit for Josephine Whitney.",
+          "Emma Thompson to 2b.",
+          "Abbigale Williams to cf for Brianna Vitale.",
+          "Emma Thompson grounded out to 1b unassisted (1-2 FB).",
+          "Abbigale Williams struck out swinging (0-3 SKS)."
+        ]
       }
     ]
   },
   {
+    "year": 2026,
     "url": "https://clarkathletics.com/sports/softball/stats/2026/bluffton-university/boxscore/19217",
     "opponent": "Bluffton University",
+    "pitchers": [
+      "dube, megan"
+    ],
     "lineup": [
-      [1, ["quigley, charlise"]],
-      [2, ["dillon, avery"]],
-      [3, ["piana, avery"]],
-      [4, ["dube, megan", "andre, caitriona"]],
-      [5, ["castro, gwen"]],
-      [6, ["griffin, merry"]],
-      [7, ["castro, gricelda"]],
-      [8, ["albano, jennifer", "slavin, erin"]],
-      [9, ["spence, emelie"]],
-      [10, ["salvati, felicia"]]
+      [
+        1,
+        [
+          "quigley, charlise"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "piana, avery"
+        ]
+      ],
+      [
+        4,
+        [
+          "dube, megan",
+          "andre, caitriona"
+        ]
+      ],
+      [
+        5,
+        [
+          "castro, gwen"
+        ]
+      ],
+      [
+        6,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        7,
+        [
+          "castro, gricelda"
+        ]
+      ],
+      [
+        8,
+        [
+          "albano, jennifer",
+          "slavin, erin"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "salvati, felicia"
+        ]
+      ]
     ],
     "playByPlay": [
       {
         "inning": "1st",
+        "half": "offense",
         "plays": [
           "C. Quigley popped up to ss.",
           "A. Dillon lined out to ss.",
@@ -198,7 +732,20 @@
         ]
       },
       {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "T. Hampton reached first on a throwing error by 3b, advanced to second.",
+          "M. Brentling singled up the middle, advanced to second on the throw, RBI; T. Hampton scored, unearned.",
+          "J. Tegeder reached first on a fielding error by ss; M. Brentling advanced to third.",
+          "K. Grant singled to center field, RBI; J. Tegeder advanced to second; M. Brentling scored.",
+          "B. Bakle popped up to 2b.",
+          "L. Ramirez grounded into double play 3b to 1b; J. Tegeder out on the play."
+        ]
+      },
+      {
         "inning": "2nd",
+        "half": "offense",
         "plays": [
           "Gw. Castro grounded out to ss.",
           "M. Griffin fouled out to 1b.",
@@ -207,7 +754,17 @@
         ]
       },
       {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "K. McKay grounded out to 3b.",
+          "H. McDade flied out to lf.",
+          "T. Galbraith grounded out to 2b."
+        ]
+      },
+      {
         "inning": "3rd",
+        "half": "offense",
         "plays": [
           "E. Spence singled to pitcher, advanced to second on a throwing error by 3b.",
           "C. Quigley grounded out to ss; E. Spence advanced to third.",
@@ -217,7 +774,18 @@
         ]
       },
       {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "T. Hampton walked.",
+          "T. Hampton out at second c to ss, caught stealing.",
+          "M. Brentling flied out to cf.",
+          "J. Tegeder grounded out to 2b."
+        ]
+      },
+      {
         "inning": "4th",
+        "half": "offense",
         "plays": [
           "Gw. Castro grounded out to c.",
           "M. Griffin flied out to cf.",
@@ -225,7 +793,18 @@
         ]
       },
       {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "K. Grant hit by pitch.",
+          "B. Bakle out at first 3b to 2b, bunt, SAC; K. Grant advanced to second.",
+          "L. Ramirez singled to left center; K. Grant out at third ss to 3b.",
+          "K. McKay fouled out to 1b."
+        ]
+      },
+      {
         "inning": "5th",
+        "half": "offense",
         "plays": [
           "C. Meese to rf for T. Galbraith.",
           "H. McDade to dp.",
@@ -245,7 +824,21 @@
         ]
       },
       {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "M. Dube to p for C. Andre.",
+          "J. Albano to rf for E. Slavin.",
+          "H. McDade flied out to rf.",
+          "C. Meese singled to left field.",
+          "T. Hampton grounded out to ss; C. Meese advanced to second.",
+          "M. Brentling singled to left center; C. Meese advanced to third.",
+          "J. Tegeder popped up to ss."
+        ]
+      },
+      {
         "inning": "6th",
+        "half": "offense",
         "plays": [
           "H. Lennard to c for R. O'Brien.",
           "E. Spence grounded out to p.",
@@ -257,7 +850,22 @@
         ]
       },
       {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "K. Grant singled through the left side.",
+          "B. Bakle struck out swinging.",
+          "L. Ramirez singled through the right side; K. Grant advanced to second.",
+          "G. Gronberg pinch hit for J. Meyer.",
+          "L. Ramirez advanced to second; K. Grant advanced to third on a wild pitch.",
+          "G. Gronberg flied out to cf.",
+          "H. McDade singled down the lf line, advanced to second on the throw, RBI; L. Ramirez advanced to third; K. Grant scored.",
+          "C. Meese flied out to lf."
+        ]
+      },
+      {
         "inning": "7th",
+        "half": "offense",
         "plays": [
           "G. Gronberg to p.",
           "M. Griffin walked.",
@@ -269,27 +877,103 @@
           "A. Dillon walked.",
           "A. Piana grounded out to ss."
         ]
+      },
+      {
+        "inning": "7th",
+        "half": "defense",
+        "plays": [
+          "T. Hampton flied out to lf.",
+          "M. Brentling lined out to cf.",
+          "J. Tegeder flied out to rf."
+        ]
       }
     ]
   },
   {
+    "year": 2026,
     "url": "https://clarkathletics.com/sports/softball/stats/2026/saint-vincent-college/boxscore/19218",
     "opponent": "Saint Vincent College",
+    "pitchers": [
+      "buzzeo, brooke"
+    ],
     "lineup": [
-      [1, ["quigley, charlise"]],
-      [2, ["dillon, avery"]],
-      [3, ["piana, avery", "albano, jennifer"]],
-      [4, ["dube, megan", "andre, caitriona"]],
-      [5, ["griffin, merry"]],
-      [6, ["venis, abigail"]],
-      [7, ["dillon, madison"]],
-      [8, ["castro, gricelda"]],
-      [9, ["spence, emelie"]],
-      [10, ["buzzeo, brooke"]]
+      [
+        1,
+        [
+          "quigley, charlise"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "piana, avery",
+          "albano, jennifer"
+        ]
+      ],
+      [
+        4,
+        [
+          "dube, megan",
+          "andre, caitriona"
+        ]
+      ],
+      [
+        5,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        6,
+        [
+          "venis, abigail"
+        ]
+      ],
+      [
+        7,
+        [
+          "dillon, madison"
+        ]
+      ],
+      [
+        8,
+        [
+          "castro, gricelda"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "buzzeo, brooke"
+        ]
+      ]
     ],
     "playByPlay": [
       {
         "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "E. Dudenhoef walked (3-2 BFBBFB).",
+          "A. Bauer flied out to cf (0-2 FF).",
+          "S. Perigo struck out looking (2-2 BSBSFF).",
+          "D. Hershberg struck out swinging (1-2 KFBS)."
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "offense",
         "plays": [
           "C. Quigley reached first on an error by ss, advanced to second on an error by lf, advanced to third (2-2 FBBFF).",
           "A. Dillon singled to center field, RBI (0-2 K); C. Quigley scored, unearned.",
@@ -300,6 +984,17 @@
       },
       {
         "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "A. Henderson flied out to rf (1-2 FB).",
+          "J. Michalski singled to left field (0-2 S).",
+          "Ma. McHugh struck out swinging (1-2 BSFS).",
+          "A. Szymoniak struck out swinging (1-2 SBSS)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
         "plays": [
           "A. Venis struck out looking (1-2 KBSK).",
           "M. Dillon doubled to center field (0-1).",
@@ -309,6 +1004,19 @@
       },
       {
         "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "M. Favero singled to left center (0-2 K).",
+          "E. Dudenhoef out at first 1b to 2b, SAC, bunt (0-1); M. Favero advanced to second.",
+          "A. Bauer hit by pitch (1-2 KSFH).",
+          "S. Perigo singled to center field (1-2 BF); A. Bauer advanced to second; M. Favero advanced to third.",
+          "D. Hershberg doubled to left field, RBI (2-2 KBFB); S. Perigo advanced to third; A. Bauer out at third lf to ss to c; M. Favero scored.",
+          "A. Henderson grounded out to 3b (2-2 BFBK)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
         "plays": [
           "C. Quigley walked (3-1 BKBBB).",
           "A. Dillon flied out to cf (0-1).",
@@ -319,6 +1027,18 @@
       },
       {
         "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "J. Michalski flied out to lf (0-2 SS).",
+          "Ma. McHugh singled through the left side (0-2 KK).",
+          "A. Szymoniak fouled out to c (3-2 SBFFFFBB).",
+          "M. Favero singled to left field (0-2 FF); Ma. McHugh advanced to second.",
+          "E. Dudenhoef grounded out to 2b (1-1 B)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
         "plays": [
           "M. Griffin singled up the middle (2-2 BKFB).",
           "A. Venis grounded out to 3b (0-2 K); M. Griffin advanced to second.",
@@ -329,6 +1049,18 @@
       },
       {
         "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "A. Bauer walked (3-0 BBBB).",
+          "S. Perigo popped up to 1b (1-2 BFF).",
+          "D. Hershberg struck out swinging (1-2 SSBS).",
+          "A. Henderson singled up the middle (0-1); A. Bauer advanced to second.",
+          "J. Michalski popped up to 2b (2-2 BBF)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "offense",
         "plays": [
           "C. Quigley reached first on an error by 3b (2-2 BKKB).",
           "A. Dillon reached on a fielder's choice (0-2 K); C. Quigley out at second rf to ss.",
@@ -339,6 +1071,21 @@
       },
       {
         "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "Ma. McHugh flied out to lf (3-1 BHB).",
+          "H. Hamilton pinch hit for A. Szymoniak.",
+          "H. Hamilton struck out looking (1-2 SBKK).",
+          "M. Favero singled through the left side (0-2 FKF).",
+          "E. Dudenhoef singled to right field, advanced to second on the throw (0-1); M. Favero advanced to third.",
+          "A. Bauer doubled to right center, 2 RBI (0-2 K); E. Dudenhoef scored; M. Favero scored.",
+          "S. Perigo doubled to left center, RBI (0-2 FFFF); A. Bauer scored.",
+          "D. Hershberg struck out swinging (0-2 KFS)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "offense",
         "plays": [
           "/ to c.",
           "M. Griffin singled up the middle (1-1 B).",
@@ -353,6 +1100,16 @@
       },
       {
         "inning": "7th",
+        "half": "defense",
+        "plays": [
+          "A. Henderson popped up to 3b (0-1).",
+          "J. Michalski popped up to 2b (1-2 KB).",
+          "Ma. McHugh flied out to lf (1-2 FFBF)."
+        ]
+      },
+      {
+        "inning": "7th",
+        "half": "offense",
         "plays": [
           "T. Williams to rf for Ma. McHugh.",
           "A. Piana singled up the middle (0-2 K).",
@@ -368,23 +1125,80 @@
     ]
   },
   {
+    "year": 2026,
     "url": "https://clarkathletics.com/sports/softball/stats/2026/susquehanna-university/boxscore/19219",
     "opponent": "Susquehanna University",
+    "pitchers": [
+      "dube, megan"
+    ],
     "lineup": [
-      [1, ["quigley, charlise"]],
-      [2, ["dillon, avery"]],
-      [3, ["castro, gwen"]],
-      [4, ["dube, megan", "albano, jennifer"]],
-      [5, ["piana, avery", "andre, caitriona"]],
-      [6, ["griffin, merry"]],
-      [7, ["dillon, madison"]],
-      [8, ["castro, gricelda"]],
-      [9, ["spence, emelie"]],
-      [10, ["salvati, felicia"]]
+      [
+        1,
+        [
+          "quigley, charlise"
+        ]
+      ],
+      [
+        2,
+        [
+          "dillon, avery"
+        ]
+      ],
+      [
+        3,
+        [
+          "castro, gwen"
+        ]
+      ],
+      [
+        4,
+        [
+          "dube, megan",
+          "albano, jennifer"
+        ]
+      ],
+      [
+        5,
+        [
+          "piana, avery",
+          "andre, caitriona"
+        ]
+      ],
+      [
+        6,
+        [
+          "griffin, merry"
+        ]
+      ],
+      [
+        7,
+        [
+          "dillon, madison"
+        ]
+      ],
+      [
+        8,
+        [
+          "castro, gricelda"
+        ]
+      ],
+      [
+        9,
+        [
+          "spence, emelie"
+        ]
+      ],
+      [
+        10,
+        [
+          "salvati, felicia"
+        ]
+      ]
     ],
     "playByPlay": [
       {
         "inning": "1st",
+        "half": "offense",
         "plays": [
           "Charlise Quigley flied out to cf (0-2 F).",
           "Avery Dillon singled to pitcher (0-1).",
@@ -392,7 +1206,21 @@
         ]
       },
       {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Brianna Jones singled through the right side (2-2 FBBK).",
+          "Alyssa Mayorca struck out swinging (2-2 BFSBS).",
+          "Savannah Patrone reached first on a throwing error by 3b (2-2 BKFBF); Brianna Jones advanced to second, advanced to third on the throw.",
+          "Savannah Patrone stole second.",
+          "Katelyn Dugery flied out to rf, sacrifice fly, RBI (1-1 B); Savannah Patrone advanced to third; Brianna Jones scored.",
+          "Kaylee Smallen singled to right field, RBI (0-1); Savannah Patrone scored.",
+          "Brooke Allen struck out swinging (1-2 BSSS)."
+        ]
+      },
+      {
         "inning": "2nd",
+        "half": "offense",
         "plays": [
           "Megan Dube singled to left field (3-2 BSBB).",
           "Avery Della Piana reached on a fielder's choice (2-2 BBK); Megan Dube out at second ss unassisted.",
@@ -402,7 +1230,18 @@
         ]
       },
       {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Mary Wilkinson struck out swinging (3-2 BKBBSS).",
+          "Stevie Shaak walked (3-0 BBBB).",
+          "Elle Walasavage flied out to rf (1-2 KB).",
+          "Brianna Jones popped up to 2b (0-1)."
+        ]
+      },
+      {
         "inning": "3rd",
+        "half": "offense",
         "plays": [
           "Emelie Spence doubled to left center (0-2 F).",
           "Charlise Quigley flied out to lf (2-2 KBB); Emelie Spence advanced to third.",
@@ -411,7 +1250,18 @@
         ]
       },
       {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Alyssa Mayorca flied out to lf (1-1 B).",
+          "Savannah Patrone struck out swinging (1-2 BSFS).",
+          "Katelyn Dugery homered to left center, RBI (3-2 BSBFFB).",
+          "Kaylee Smallen struck out swinging (2-2 KBFBS)."
+        ]
+      },
+      {
         "inning": "4th",
+        "half": "offense",
         "plays": [
           "Megan Dube singled to center field (3-2 BBBK).",
           "Avery Della Piana singled to right center (0-1); Megan Dube advanced to second.",
@@ -421,7 +1271,21 @@
         ]
       },
       {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Brooke Allen struck out swinging (2-2 KBSBF).",
+          "Mary Wilkinson singled to left center (0-2 K).",
+          "Stevie Shaak tripled to right center, RBI (0-2 FK); Mary Wilkinson scored.",
+          "Elle Walasavage doubled to left center, RBI (2-2 KBBS); Stevie Shaak scored.",
+          "Brianna Jones hit by pitch (2-0 BB).",
+          "Alyssa Mayorca flied out to cf (0-2 S); Brianna Jones advanced to second on the throw; Elle Walasavage advanced to third.",
+          "Savannah Patrone grounded out to ss (2-2 KFBBF)."
+        ]
+      },
+      {
         "inning": "5th",
+        "half": "offense",
         "plays": [
           "Sydney Perez to 3b for Brooke Allen.",
           "Gricelda Castro doubled to right center (1-1 B).",
@@ -433,7 +1297,23 @@
         ]
       },
       {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Katelyn Dugery walked (3-0 BBBB).",
+          "Graysen Trybulski pinch ran for Katelyn Dugery.",
+          "Kaylee Smallen popped up to ss (0-2 KF).",
+          "Sydney Perez flied out to lf (0-1).",
+          "Graysen Trybulski stole second.",
+          "Mary Wilkinson singled up the middle, RBI (1-2 KKB); Graysen Trybulski scored.",
+          "Mary Wilkinson stole second.",
+          "Stevie Shaak walked (3-2 KBKBFFBB).",
+          "Elle Walasavage popped up to 3b (0-1)."
+        ]
+      },
+      {
         "inning": "6th",
+        "half": "offense",
         "plays": [
           "Megan Dube singled to right field (0-1).",
           "Jennifer Albano pinch ran for Megan Dube.",
@@ -450,7 +1330,20 @@
         ]
       },
       {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "/ to p for Jennifer Albano.",
+          "Brianna Jones popped up to ss (1-1 B).",
+          "/ to dp for Caitriona Andre.",
+          "Riley Mullen pinch hit for Alyssa Mayorca.",
+          "Riley Mullen popped up to 2b (0-2 K).",
+          "Savannah Patrone flied out to lf (0-1)."
+        ]
+      },
+      {
         "inning": "7th",
+        "half": "offense",
         "plays": [
           "Alyssa Mayorca to rf for Riley Mullen.",
           "Avery Dillon popped up to 2b (1-1 B).",

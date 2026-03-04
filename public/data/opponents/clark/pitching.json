@@ -1,38 +1,38 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-03T00:36:24.350Z",
+  "scrapedAt": "2026-03-04T11:25:36.920Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 2,
+      "w": 3,
       "l": 0,
-      "era": 1.8,
-      "app": 2,
-      "gs": 1,
-      "ip": 11.2,
-      "h": 11,
-      "r": 3,
-      "er": 3,
-      "bb": 2,
-      "so": 18,
+      "era": 2.62,
+      "app": 3,
+      "gs": 2,
+      "ip": 18.2,
+      "h": 22,
+      "r": 7,
+      "er": 7,
+      "bb": 4,
+      "so": 25,
       "hr": 2
     },
     {
       "name": "Dube, Megan",
       "w": 1,
-      "l": 1,
-      "era": 2.15,
-      "app": 2,
-      "gs": 1,
-      "ip": 13,
-      "h": 13,
-      "r": 5,
-      "er": 4,
-      "bb": 4,
-      "so": 10,
-      "hr": 0
+      "l": 2,
+      "era": 3.68,
+      "app": 3,
+      "gs": 2,
+      "ip": 19,
+      "h": 20,
+      "r": 11,
+      "er": 10,
+      "bb": 7,
+      "so": 16,
+      "hr": 1
     },
     {
       "name": "Wagstaff, Hannah",
@@ -55,7 +55,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2026/simmons-university/boxscore/19214",
       "date": "3/1/2026",
       "opponent": "Simmons University",
-      "pitchers": ["Wagstaff, Hannah", "Dube, Megan"],
+      "pitchers": [
+        "Wagstaff, Hannah",
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -125,7 +128,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2026/johnson-wales-n-c-/boxscore/19215",
       "date": "3/1/2026",
       "opponent": "Johnson Wales N C ",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -183,7 +188,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2026/norwich-university/boxscore/19216",
       "date": "3/2/2026",
       "opponent": "Norwich University",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -261,7 +268,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2026/bluffton-university/boxscore/19217",
       "date": "3/2/2026",
       "opponent": "Bluffton University",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -331,6 +340,165 @@
             "T. Hampton flied out to lf.",
             "M. Brentling lined out to cf.",
             "J. Tegeder flied out to rf."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/saint-vincent-college/boxscore/19218",
+      "date": "3/3/2026",
+      "opponent": "Saint Vincent College",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Dudenhoef walked (3-2 BFBBFB).",
+            "A. Bauer flied out to cf (0-2 FF).",
+            "S. Perigo struck out looking (2-2 BSBSFF).",
+            "D. Hershberg struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Henderson flied out to rf (1-2 FB).",
+            "J. Michalski singled to left field (0-2 S).",
+            "Ma. McHugh struck out swinging (1-2 BSFS).",
+            "A. Szymoniak struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Favero singled to left center (0-2 K).",
+            "E. Dudenhoef out at first 1b to 2b, SAC, bunt (0-1); M. Favero advanced to second.",
+            "A. Bauer hit by pitch (1-2 KSFH).",
+            "S. Perigo singled to center field (1-2 BF); A. Bauer advanced to second; M. Favero advanced to third.",
+            "D. Hershberg doubled to left field, RBI (2-2 KBFB); S. Perigo advanced to third; A. Bauer out at third lf to ss to c; M. Favero scored.",
+            "A. Henderson grounded out to 3b (2-2 BFBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Michalski flied out to lf (0-2 SS).",
+            "Ma. McHugh singled through the left side (0-2 KK).",
+            "A. Szymoniak fouled out to c (3-2 SBFFFFBB).",
+            "M. Favero singled to left field (0-2 FF); Ma. McHugh advanced to second.",
+            "E. Dudenhoef grounded out to 2b (1-1 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Bauer walked (3-0 BBBB).",
+            "S. Perigo popped up to 1b (1-2 BFF).",
+            "D. Hershberg struck out swinging (1-2 SSBS).",
+            "A. Henderson singled up the middle (0-1); A. Bauer advanced to second.",
+            "J. Michalski popped up to 2b (2-2 BBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ma. McHugh flied out to lf (3-1 BHB).",
+            "H. Hamilton pinch hit for A. Szymoniak.",
+            "H. Hamilton struck out looking (1-2 SBKK).",
+            "M. Favero singled through the left side (0-2 FKF).",
+            "E. Dudenhoef singled to right field, advanced to second on the throw (0-1); M. Favero advanced to third.",
+            "A. Bauer doubled to right center, 2 RBI (0-2 K); E. Dudenhoef scored; M. Favero scored.",
+            "S. Perigo doubled to left center, RBI (0-2 FFFF); A. Bauer scored.",
+            "D. Hershberg struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Henderson popped up to 3b (0-1).",
+            "J. Michalski popped up to 2b (1-2 KB).",
+            "Ma. McHugh flied out to lf (1-2 FFBF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/susquehanna-university/boxscore/19219",
+      "date": "3/3/2026",
+      "opponent": "Susquehanna University",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Brianna Jones singled through the right side (2-2 FBBK).",
+            "Alyssa Mayorca struck out swinging (2-2 BFSBS).",
+            "Savannah Patrone reached first on a throwing error by 3b (2-2 BKFBF); Brianna Jones advanced to second, advanced to third on the throw.",
+            "Savannah Patrone stole second.",
+            "Katelyn Dugery flied out to rf, sacrifice fly, RBI (1-1 B); Savannah Patrone advanced to third; Brianna Jones scored.",
+            "Kaylee Smallen singled to right field, RBI (0-1); Savannah Patrone scored.",
+            "Brooke Allen struck out swinging (1-2 BSSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mary Wilkinson struck out swinging (3-2 BKBBSS).",
+            "Stevie Shaak walked (3-0 BBBB).",
+            "Elle Walasavage flied out to rf (1-2 KB).",
+            "Brianna Jones popped up to 2b (0-1)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alyssa Mayorca flied out to lf (1-1 B).",
+            "Savannah Patrone struck out swinging (1-2 BSFS).",
+            "Katelyn Dugery homered to left center, RBI (3-2 BSBFFB).",
+            "Kaylee Smallen struck out swinging (2-2 KBFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brooke Allen struck out swinging (2-2 KBSBF).",
+            "Mary Wilkinson singled to left center (0-2 K).",
+            "Stevie Shaak tripled to right center, RBI (0-2 FK); Mary Wilkinson scored.",
+            "Elle Walasavage doubled to left center, RBI (2-2 KBBS); Stevie Shaak scored.",
+            "Brianna Jones hit by pitch (2-0 BB).",
+            "Alyssa Mayorca flied out to cf (0-2 S); Brianna Jones advanced to second on the throw; Elle Walasavage advanced to third.",
+            "Savannah Patrone grounded out to ss (2-2 KFBBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Katelyn Dugery walked (3-0 BBBB).",
+            "Graysen Trybulski pinch ran for Katelyn Dugery.",
+            "Kaylee Smallen popped up to ss (0-2 KF).",
+            "Sydney Perez flied out to lf (0-1).",
+            "Graysen Trybulski stole second.",
+            "Mary Wilkinson singled up the middle, RBI (1-2 KKB); Graysen Trybulski scored.",
+            "Mary Wilkinson stole second.",
+            "Stevie Shaak walked (3-2 KBKBFFBB).",
+            "Elle Walasavage popped up to 3b (0-1)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "/ to p for Jennifer Albano.",
+            "Brianna Jones popped up to ss (1-1 B).",
+            "/ to dp for Caitriona Andre.",
+            "Riley Mullen pinch hit for Alyssa Mayorca.",
+            "Riley Mullen popped up to 2b (0-2 K).",
+            "Savannah Patrone flied out to lf (0-1)."
           ]
         }
       ],
