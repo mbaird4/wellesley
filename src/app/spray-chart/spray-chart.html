@@ -40,10 +40,30 @@
       <div class="flex min-h-0 flex-1">
         <ng-container *ngTemplateOutlet="playerNav" />
 
-        <div class="flex min-h-0 min-w-0 flex-1 gap-2">
+        @if (filters().playerName) {
+          <div class="flex min-h-0 min-w-0 flex-1 gap-2">
+            @for (year of activeYears(); track year) {
+              <ws-spray-year-panel
+                class="min-w-0 basis-1/3"
+                [year]="year"
+                [zones]="summaryByYear().get(year)!.zones"
+                [totalContact]="summaryByYear().get(year)!.totalContact"
+                [highlightZone]="highlightZone()"
+                (zoneHover)="onZoneHover($event)"
+                (zoneClick)="onZoneClick($event)"
+              />
+            }
+          </div>
+        } @else {
+          <ng-container *ngTemplateOutlet="selectPlayerMsg" />
+        }
+      </div>
+    } @else {
+      <!-- Mobile: stacked vertically -->
+      @if (filters().playerName) {
+        <div class="flex flex-col gap-6">
           @for (year of activeYears(); track year) {
             <ws-spray-year-panel
-              class="min-w-0 basis-1/3"
               [year]="year"
               [zones]="summaryByYear().get(year)!.zones"
               [totalContact]="summaryByYear().get(year)!.totalContact"
@@ -53,21 +73,9 @@
             />
           }
         </div>
-      </div>
-    } @else {
-      <!-- Mobile: stacked vertically -->
-      <div class="flex flex-col gap-6">
-        @for (year of activeYears(); track year) {
-          <ws-spray-year-panel
-            [year]="year"
-            [zones]="summaryByYear().get(year)!.zones"
-            [totalContact]="summaryByYear().get(year)!.totalContact"
-            [highlightZone]="highlightZone()"
-            (zoneHover)="onZoneHover($event)"
-            (zoneClick)="onZoneClick($event)"
-          />
-        }
-      </div>
+      } @else {
+        <ng-container *ngTemplateOutlet="selectPlayerMsg" />
+      }
     }
   } @else {
     <!-- COMBINED MODE -->
@@ -76,6 +84,7 @@
       <ws-button-toggle
         [options]="yearOptions"
         [value]="selectedYears()"
+        [disabledValues]="disabledYears()"
         (valueChange)="onYearChange($event)"
       />
     </div>
@@ -85,7 +94,30 @@
       <div class="flex min-h-0 flex-1">
         <ng-container *ngTemplateOutlet="playerNav" />
 
-        <div class="mx-auto flex min-h-0 max-w-5xl flex-1 flex-col gap-2">
+        @if (filters().playerName) {
+          <div class="mx-auto flex min-h-0 max-w-5xl flex-1 flex-col gap-2">
+            <ws-spray-field
+              [zones]="combinedSummary().zones"
+              [highlightZone]="highlightZone()"
+              (zoneHover)="onZoneHover($event)"
+              (zoneClick)="onZoneClick($event)"
+            />
+
+            <div class="flex items-center justify-center gap-4">
+              <ws-spray-legend />
+              <span class="text-content-muted text-xs">
+                {{ combinedSummary().totalContact }} batted balls
+              </span>
+            </div>
+          </div>
+        } @else {
+          <ng-container *ngTemplateOutlet="selectPlayerMsg" />
+        }
+      </div>
+    } @else {
+      <!-- Mobile: field only (no sidebar) -->
+      @if (filters().playerName) {
+        <div class="mx-auto flex max-w-5xl flex-col gap-2">
           <ws-spray-field
             [zones]="combinedSummary().zones"
             [highlightZone]="highlightZone()"
@@ -100,24 +132,9 @@
             </span>
           </div>
         </div>
-      </div>
-    } @else {
-      <!-- Mobile: field only (no sidebar) -->
-      <div class="mx-auto flex max-w-5xl flex-col gap-2">
-        <ws-spray-field
-          [zones]="combinedSummary().zones"
-          [highlightZone]="highlightZone()"
-          (zoneHover)="onZoneHover($event)"
-          (zoneClick)="onZoneClick($event)"
-        />
-
-        <div class="flex items-center justify-center gap-4">
-          <ws-spray-legend />
-          <span class="text-content-muted text-xs">
-            {{ combinedSummary().totalContact }} batted balls
-          </span>
-        </div>
-      </div>
+      } @else {
+        <ng-container *ngTemplateOutlet="selectPlayerMsg" />
+      }
     }
   }
 }
@@ -125,18 +142,6 @@
 <!-- Shared player sidebar nav -->
 <ng-template #playerNav>
   <nav class="flex w-40 shrink-0 flex-col gap-0.5 overflow-y-auto">
-    <button
-      (click)="onPlayerChange('')"
-      class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
-      [class]="
-        filters().playerName === null
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
-      "
-    >
-      All Players
-    </button>
-
     @for (player of rosteredPlayers(); track player) {
       <button
         (click)="onPlayerChange(player)"
@@ -153,23 +158,12 @@
         {{ player }}
       </button>
     }
-
-    @if (nonRosteredPlayers().length > 0 && rosteredPlayers().length > 0) {
-      <hr class="border-surface-border my-1 border-t" />
-    }
-
-    @for (player of nonRosteredPlayers(); track player) {
-      <button
-        (click)="onPlayerChange(player)"
-        class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
-        [class]="
-          filters().playerName === player
-            ? 'bg-brand-bg text-brand-text'
-            : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
-        "
-      >
-        {{ player }}
-      </button>
-    }
   </nav>
+</ng-template>
+
+<!-- Placeholder when no player selected -->
+<ng-template #selectPlayerMsg>
+  <div class="text-content-dim flex flex-1 items-center justify-center text-lg">
+    Select a player
+  </div>
 </ng-template>

@@ -15,12 +15,10 @@ import {
   type SprayChartSummary,
   type SprayDataPoint,
   type SprayZone,
-  toJerseyMap,
 } from '@ws/core/models';
 import {
-  buildCanonicalNameMap,
+  canonicalizeSprayNames,
   computeSprayZones,
-  normalizePlayerName,
   parseSprayData,
 } from '@ws/core/processors';
 import {
@@ -141,14 +139,14 @@ export class OpponentSprayChart {
         map[displayName] = jersey;
       } else {
         // Try prefix match for truncated names
-        for (const [rosterLast, num] of byLastName) {
-          if (
+        const match = [...byLastName.entries()].find(
+          ([rosterLast]) =>
             rosterLast.startsWith(displayLast) ||
             displayLast.startsWith(rosterLast)
-          ) {
-            map[displayName] = num;
-            break;
-          }
+        );
+
+        if (match) {
+          map[displayName] = match[1];
         }
       }
     });
@@ -209,13 +207,24 @@ export class OpponentSprayChart {
     return SPRAY_YEARS.filter((y) => (summaries.get(y)?.totalContact ?? 0) > 0);
   });
 
+  readonly disabledYears = computed(() =>
+    SPRAY_YEARS.filter(
+      (y) => (this.summaryByYear().get(y)?.totalContact ?? 0) === 0
+    ).map(String)
+  );
+
+  readonly effectiveSelectedYears = computed(() =>
+    this.selectedYears().filter((y) => !this.disabledYears().includes(y))
+  );
+
   /** Combined summary merging selected years for combined mode */
   readonly combinedSummary = computed<SprayChartSummary>(() => {
     const map = this.dataByYear();
-    const selected = this.selectedYears();
     const ef = this.effectiveFilters();
 
-    const points = selected.flatMap((y) => map.get(Number(y)) ?? []);
+    const points = this.effectiveSelectedYears().flatMap(
+      (y) => map.get(Number(y)) ?? []
+    );
 
     return computeSprayZones(points, ef);
   });
@@ -283,7 +292,6 @@ export class OpponentSprayChart {
       next: ({ roster, years }) => {
         this.rawRoster.set(roster);
 
-        // Parse and normalize first names ("Joe Smith" → "J. Smith")
         const map = new Map<number, SprayDataPoint[]>();
         years.forEach((games, i) => {
           const processed =
@@ -291,34 +299,10 @@ export class OpponentSprayChart {
           const points = processed.games.flatMap((game, gi) =>
             parseSprayData(game.snapshots, gi)
           );
-          points.forEach(
-            (p) => (p.playerName = normalizePlayerName(p.playerName))
-          );
           map.set(SPRAY_YEARS[i], points);
         });
 
-        // Merge truncated last names ("E. Santi" → "E. Santiago") using jersey numbers
-        const allNames = [
-          ...new Set(
-            SPRAY_YEARS.flatMap((y) =>
-              (map.get(y) ?? []).map((p) => p.playerName)
-            )
-          ),
-        ];
-        const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
-
-        if (canonMap.size > 0) {
-          map.forEach((points) => {
-            points.forEach((p) => {
-              const canon = canonMap.get(p.playerName);
-
-              if (canon) {
-                p.playerName = canon;
-              }
-            });
-          });
-        }
-
+        canonicalizeSprayNames(map, SPRAY_YEARS, roster);
         this.dataByYear.set(map);
         this.loading.set(false);
       },

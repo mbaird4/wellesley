@@ -117,10 +117,6 @@ export class SprayChart {
       .sort((a, b) => map[a] - map[b]);
   });
 
-  readonly nonRosteredPlayers = computed(() =>
-    this.players().filter((p) => this.jerseyMap()[p] === undefined)
-  );
-
   private readonly effectiveFilters = computed(() =>
     computeEffectiveFilters(this.filters())
   );
@@ -142,9 +138,19 @@ export class SprayChart {
     )
   );
 
+  readonly disabledYears = computed(() =>
+    SPRAY_YEARS.filter(
+      (y) => (this.summaryByYear().get(y)?.totalContact ?? 0) === 0
+    ).map(String)
+  );
+
+  readonly effectiveSelectedYears = computed(() =>
+    this.selectedYears().filter((y) => !this.disabledYears().includes(y))
+  );
+
   readonly combinedSummary = computed<SprayChartSummary>(() =>
     computeSprayZones(
-      this.selectedYears().flatMap(
+      this.effectiveSelectedYears().flatMap(
         (y) => this.dataByYear().get(Number(y)) ?? []
       ),
       this.effectiveFilters()

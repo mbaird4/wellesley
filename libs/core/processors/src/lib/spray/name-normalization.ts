@@ -5,11 +5,80 @@
  * 1. Truncated last names (e.g. "E. Santi" vs "E. Santiago")
  * 2. Wrong first initials (e.g. "A. Walsh" when roster says "Emily Walsh")
  *
- * Groups display names by jersey number, then picks the canonical form per group.
+ * Matching uses a relaxed key: first initial + first 2 letters of surname.
+ * Jersey numbers disambiguate when multiple roster entries share a key.
  */
 
 import type { JerseyMap, Roster, SprayDataPoint } from '@ws/core/models';
 import { toJerseyMap } from '@ws/core/models';
+
+/**
+ * Build a relaxed match key from a first initial and last name.
+ * Returns lowercase key like "e-sa" for ("E", "Santiago").
+ */
+function buildMatchKey(initial: string, lastName: string): string {
+  return `${initial[0].toLowerCase()}-${lastName.slice(0, 2).toLowerCase()}`;
+}
+
+interface RosterCandidate {
+  jersey: number;
+  last: string;
+}
+
+/** Parse a "last, first" roster key into its parts. */
+function parseRosterKey(key: string): { first: string; last: string } {
+  const parts = key.split(',');
+
+  return { last: parts[0].trim(), first: parts[1]?.trim() ?? '' };
+}
+
+/** Index roster entries by relaxed match key for O(1) lookup. */
+function buildRosterKeyMap(
+  entries: { first: string; last: string; jersey: number }[]
+): Map<string, RosterCandidate[]> {
+  const byKey = new Map<string, RosterCandidate[]>();
+
+  entries.forEach(({ first, last, jersey }) => {
+    const mk = buildMatchKey(first, last);
+    const group = byKey.get(mk) ?? [];
+    group.push({ jersey, last });
+    byKey.set(mk, group);
+  });
+
+  return byKey;
+}
+
+/**
+ * Match a display name (e.g. "E. Santiago") against the roster key map.
+ * Returns the jersey number if matched, or undefined.
+ */
+function matchJersey(
+  displayName: string,
+  rosterByKey: Map<string, RosterCandidate[]>
+): number | undefined {
+  const parts = displayName.split(/\s+/);
+  const displayInitial = parts[0][0];
+  const displayLast = parts.slice(1).join(' ');
+  const mk = buildMatchKey(displayInitial, displayLast);
+  const candidates = rosterByKey.get(mk);
+
+  if (!candidates || candidates.length === 0) {
+    return undefined;
+  }
+
+  if (candidates.length === 1) {
+    return candidates[0].jersey;
+  }
+
+  // Multiple candidates share the same key — disambiguate with more of the last name
+  const best = candidates.find(
+    (c) =>
+      c.last.toLowerCase().startsWith(displayLast.toLowerCase()) ||
+      displayLast.toLowerCase().startsWith(c.last.toLowerCase())
+  );
+
+  return best?.jersey;
+}
 
 /**
  * Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly.
@@ -46,44 +115,26 @@ export function buildCanonicalNameMap(
   names: string[],
   rosterJerseyMap: Record<string, number>
 ): Map<string, string> {
-  const byLastName = new Map<string, number>();
   const jerseyToFirstName = new Map<number, string>();
+  const entries: { first: string; last: string; jersey: number }[] = [];
 
   Object.entries(rosterJerseyMap).forEach(([key, jersey]) => {
-    const parts = key.split(',');
-    const last = parts[0].trim();
-    const first = parts[1]?.trim() ?? '';
-    byLastName.set(last, jersey);
+    const { first, last } = parseRosterKey(key);
     jerseyToFirstName.set(jersey, first);
+    entries.push({ first, last, jersey });
   });
+
+  const rosterByKey = buildRosterKeyMap(entries);
 
   // Match each display name to a jersey number
   const nameToJersey = new Map<string, number>();
 
   names.forEach((displayName) => {
-    const parts = displayName.split(/\s+/);
-    const displayLast = parts.slice(1).join(' ').toLowerCase();
-    const jersey = byLastName.get(displayLast);
+    const jersey = matchJersey(displayName, rosterByKey);
 
     if (jersey !== undefined) {
       nameToJersey.set(displayName, jersey);
-
-      return;
     }
-
-    // Prefix match for truncated names
-    byLastName.forEach((num, rosterLast) => {
-      if (nameToJersey.has(displayName)) {
-        return;
-      }
-
-      if (
-        rosterLast.startsWith(displayLast) ||
-        displayLast.startsWith(rosterLast)
-      ) {
-        nameToJersey.set(displayName, num);
-      }
-    });
   });
 
   // Group by jersey number
@@ -125,38 +176,26 @@ export function buildCanonicalNameMap(
 
 /**
  * Build a map of display names (e.g. "S. Moore") → jersey numbers by matching
- * against the roster using last-name exact match then prefix match.
+ * against the roster using first initial + first 2 letters of surname.
  */
 export function buildDisplayJerseyMap(
   roster: Roster,
   playerNames: string[]
 ): JerseyMap {
+  const rosterByKey = buildRosterKeyMap(
+    Object.entries(roster).map(([key, entry]) => ({
+      ...parseRosterKey(key),
+      jersey: entry.jersey,
+    }))
+  );
+
   const map: JerseyMap = {};
 
-  const byLastName = new Map<string, number>();
-  Object.entries(roster).forEach(([key, entry]) => {
-    const last = key.split(',')[0].trim();
-    byLastName.set(last, entry.jersey);
-  });
-
   playerNames.forEach((displayName) => {
-    const parts = displayName.split(/\s+/);
-    const displayLast = parts.slice(1).join(' ').toLowerCase();
-    const jersey = byLastName.get(displayLast);
+    const jersey = matchJersey(displayName, rosterByKey);
 
     if (jersey !== undefined) {
       map[displayName] = jersey;
-
-      return;
-    }
-
-    const match = [...byLastName.entries()].find(
-      ([rosterLast]) =>
-        rosterLast.startsWith(displayLast) || displayLast.startsWith(rosterLast)
-    );
-
-    if (match) {
-      map[displayName] = match[1];
     }
   });
 
@@ -164,9 +203,45 @@ export function buildDisplayJerseyMap(
 }
 
 /**
+ * Merge truncated name variants by grouping on (initial + first 2 chars of surname).
+ * Within each group, the longest name wins (e.g. "A. Galbraith" over "A. Galbr").
+ * Only returns entries where the variant differs from the canonical.
+ */
+function mergeTruncatedNames(names: string[]): Map<string, string> {
+  const byKey = new Map<string, string[]>();
+
+  names.forEach((name) => {
+    const parts = name.split(/\s+/);
+    const mk = buildMatchKey(parts[0], parts.slice(1).join(' '));
+    const group = byKey.get(mk) ?? [];
+    group.push(name);
+    byKey.set(mk, group);
+  });
+
+  const result = new Map<string, string>();
+
+  byKey.forEach((group) => {
+    if (group.length <= 1) {
+      return;
+    }
+
+    const canonical = group.reduce((a, b) => (b.length > a.length ? b : a));
+
+    group.forEach((name) => {
+      if (name !== canonical) {
+        result.set(name, canonical);
+      }
+    });
+  });
+
+  return result;
+}
+
+/**
  * Canonicalize player names across multiple years of spray data in-place.
- * Normalizes first names to initials, then merges truncated last names and
- * wrong initials using roster jersey numbers.
+ * 1. Normalizes first names to initials ("Joe Smith" → "J. Smith").
+ * 2. Merges truncated variants via roster jersey numbers when available.
+ * 3. Merges remaining truncated variants by (initial + first 2 chars of surname).
  */
 export function canonicalizeSprayNames(
   dataByYear: Map<number, SprayDataPoint[]>,
@@ -177,28 +252,33 @@ export function canonicalizeSprayNames(
     points.forEach((p) => (p.playerName = normalizePlayerName(p.playerName)));
   });
 
-  if (Object.keys(roster).length === 0) {
-    return;
-  }
-
-  const allNames = [
+  const collectNames = () => [
     ...new Set(
       years.flatMap((y) => (dataByYear.get(y) ?? []).map((p) => p.playerName))
     ),
   ];
-  const canonMap = buildCanonicalNameMap(allNames, toJerseyMap(roster));
 
-  if (canonMap.size === 0) {
-    return;
+  const applyMap = (canonMap: Map<string, string>) => {
+    if (canonMap.size === 0) {
+      return;
+    }
+
+    dataByYear.forEach((points) => {
+      points.forEach((p) => {
+        const canon = canonMap.get(p.playerName);
+
+        if (canon) {
+          p.playerName = canon;
+        }
+      });
+    });
+  };
+
+  // Pass 1: roster-based canonicalization (jersey number grouping)
+  if (Object.keys(roster).length > 0) {
+    applyMap(buildCanonicalNameMap(collectNames(), toJerseyMap(roster)));
   }
 
-  dataByYear.forEach((points) => {
-    points.forEach((p) => {
-      const canon = canonMap.get(p.playerName);
-
-      if (canon) {
-        p.playerName = canon;
-      }
-    });
-  });
+  // Pass 2: merge remaining truncated variants by (initial + first 2 chars)
+  applyMap(mergeTruncatedNames(collectNames()));
 }
