@@ -2,7 +2,7 @@
  * Scrape opponent boxscore play-by-play data for spray chart analysis.
  *
  * Usage:
- *   npm run scrape-opponent-boxscores                         # all teams, 2025
+ *   npm run scrape-opponent-boxscores                         # all teams, current year
  *   npm run scrape-opponent-boxscores -- --team babson         # single team
  *   npm run scrape-opponent-boxscores -- --years 2025,2024     # override years
  */
@@ -44,8 +44,8 @@ interface SerializedGameData {
 // ── Constants ──
 
 const DELAY_MS = 400;
-const DEFAULT_YEARS = [2025];
 const CURRENT_YEAR = new Date().getFullYear();
+const DEFAULT_YEARS = [CURRENT_YEAR];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -404,6 +404,15 @@ async function scrapeRoster(
   const teamDir = path.join(outputDir, slug);
   fs.mkdirSync(teamDir, { recursive: true });
   const outPath = path.join(teamDir, 'roster.json');
+
+  if (Object.keys(jerseyMap).length === 0 && fs.existsSync(outPath)) {
+    console.log(
+      `  Roster parse returned 0 players, keeping existing ${outPath}`
+    );
+
+    return;
+  }
+
   fs.writeFileSync(outPath, JSON.stringify(jerseyMap));
   console.log(`  Wrote ${outPath} (${Object.keys(jerseyMap).length} players)`);
 }

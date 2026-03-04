@@ -4,6 +4,7 @@ export * from './lib/diamond/diamond';
 export * from './lib/game-viewer/game-viewer';
 export * from './lib/pipes';
 export * from './lib/slide-toggle/slide-toggle';
+export * from './lib/spray-chart-viewer/spray-chart-viewer';
 export * from './lib/spray-field/spray-field';
 export * from './lib/spray-filters/spray-filters';
 export * from './lib/spray-legend/spray-legend';

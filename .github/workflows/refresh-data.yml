@@ -25,6 +25,9 @@ jobs:
       - name: Fetch current season data
         run: npm run prefetch -- --years $(date +%Y)
 
+      - name: Fetch opponent data (batting, pitching, gamedata)
+        run: npm run scrape-opponents -- --years $(date +%Y) --with-pitching --with-gamedata
+
       - name: Commit updated data if changed
         run: |
           git config user.name "github-actions[bot]"

@@ -194,7 +194,8 @@ function calculateWoba(stats: {
 const BASE_URL = 'https://wellesleyblue.com';
 const DELAY_MS = 300;
 const DEFAULT_YEARS = [
-  2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011,
+  2026, 2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
+  2011,
 ];
 
 const HEADERS = {

@@ -180,14 +180,15 @@ export function buildCanonicalNameMap(
  */
 export function buildDisplayJerseyMap(
   roster: Roster,
-  playerNames: string[]
+  playerNames: string[],
+  options?: { includeUnmatched?: boolean }
 ): JerseyMap {
-  const rosterByKey = buildRosterKeyMap(
-    Object.entries(roster).map(([key, entry]) => ({
-      ...parseRosterKey(key),
-      jersey: entry.jersey,
-    }))
-  );
+  const rosterEntries = Object.entries(roster).map(([key, entry]) => ({
+    ...parseRosterKey(key),
+    jersey: entry.jersey,
+  }));
+
+  const rosterByKey = buildRosterKeyMap(rosterEntries);
 
   const map: JerseyMap = {};
 
@@ -198,6 +199,19 @@ export function buildDisplayJerseyMap(
       map[displayName] = jersey;
     }
   });
+
+  if (options?.includeUnmatched) {
+    const mappedJerseys = new Set(Object.values(map));
+
+    rosterEntries
+      .filter((e) => !mappedJerseys.has(e.jersey))
+      .forEach(({ first, last, jersey }) => {
+        const titleCase = (s: string) =>
+          s.replace(/\b\w/g, (c) => c.toUpperCase());
+        const displayName = `${titleCase(first)[0]}. ${titleCase(last)}`;
+        map[displayName] = jersey;
+      });
+  }
 
   return map;
 }

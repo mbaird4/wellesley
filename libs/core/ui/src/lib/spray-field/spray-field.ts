@@ -51,7 +51,7 @@ const FIELD_SPAN = FOUL_LF - FOUL_RF; // 144°
 // Each row must sum to 100. To resize zones, only edit these arrays.
 //
 //                       RF Line  RF    RF-CF  CF    LF-CF  LF    LF Line
-const OF_W = [3, 17, 12, 36, 12, 17, 3];
+const OF_W = [3, 23, 12, 24, 12, 23, 3];
 //              1B      2B     P     SS     3B
 const IF_W = [17, 25, 16, 25, 17];
 //              1B      P      3B

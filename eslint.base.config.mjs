@@ -37,7 +37,11 @@ export default [
             },
             {
               sourceTag: 'type:ui',
-              onlyDependOnLibsWithTags: ['type:models', 'type:processors'],
+              onlyDependOnLibsWithTags: [
+                'type:models',
+                'type:processors',
+                'type:util',
+              ],
             },
             {
               sourceTag: 'type:feature',

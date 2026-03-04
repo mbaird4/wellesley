@@ -8,13 +8,13 @@
   >
     {{ error() }}
   </div>
-} @else if (allDataPoints().length === 0) {
+} @else if (players().length === 0) {
   <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-    No spray chart data available for this team.
+    {{ emptyMessage() }}
   </div>
 } @else {
   <!-- Control bar: view mode toggle + filters -->
-  <div class="mb-3 flex flex-wrap items-end gap-4">
+  <div class="flex flex-wrap items-end gap-4">
     <div class="flex flex-col gap-1">
       <span class="text-content-dim text-xs font-medium">View</span>
       <ws-button-toggle
@@ -79,12 +79,11 @@
     }
   } @else {
     <!-- COMBINED MODE -->
-    <div class="mb-3 flex items-center gap-3">
+    <div class="flex items-center gap-3">
       <span class="text-content-dim text-xs font-medium">Years</span>
       <ws-button-toggle
         [options]="yearOptions"
         [value]="selectedYears()"
-        [disabledValues]="disabledYears()"
         (valueChange)="onYearChange($event)"
       />
     </div>
