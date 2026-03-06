@@ -3,6 +3,8 @@
   height: 14px;
   border-radius: 3px;
   border: 1px solid var(--color-line);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
   background: linear-gradient(
     to right,
     hsl(140, 35%, 88%),

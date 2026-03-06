@@ -235,13 +235,16 @@ export class SprayChartViewer {
     const ef = this.effectiveFilters();
     const team = this.teamData();
 
+    const jerseyMap = this.jerseyMap();
+
     return this.rosteredPlayers()
       .map((name) => {
-        const rp = team?.players.find((p) => p.name === name);
+        const jersey = jerseyMap[name];
+        const rp = team?.players.find((p) => p.jerseyNumber === jersey);
 
         return {
           name,
-          jersey: this.jerseyMap()[name],
+          jersey,
           summary: computeSprayZones(allData, { ...ef, playerName: name }),
           bats: rp?.bats,
           position: rp?.position,

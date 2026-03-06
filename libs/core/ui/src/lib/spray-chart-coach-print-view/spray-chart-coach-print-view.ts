@@ -71,6 +71,19 @@ export class SprayChartCoachPrintView {
   readonly players = input.required<PrintPlayerSummary[]>();
   readonly title = input('');
   readonly subtitle = input('');
+  readonly years = input<string[]>([]);
+
+  readonly yearsLabel = computed(() => {
+    const y = this.years();
+
+    return y.length > 0 ? `Data: ${y.join(', ')}` : '';
+  });
+
+  readonly printDate = computed(() => {
+    const d = new Date();
+
+    return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+  });
 
   readonly rows = computed<CoachRow[]>(() =>
     this.players().map((p) => {

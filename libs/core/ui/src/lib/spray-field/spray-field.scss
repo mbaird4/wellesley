@@ -41,6 +41,14 @@
   stroke-width: 2;
 }
 
+@media print {
+  .foul-line,
+  .field-line,
+  .divider {
+    stroke: #333 !important;
+  }
+}
+
 // Text fills are set dynamically via [attr.fill] to adapt to zone background color.
 .zone-label {
   font-size: 11px;

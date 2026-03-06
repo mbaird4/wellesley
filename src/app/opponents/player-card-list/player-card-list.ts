@@ -14,12 +14,7 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-card-list',
   standalone: true,
-  imports: [
-    NgStyle,
-    NgTemplateOutlet,
-    ClassYearPipe,
-    PlayerDetail,
-  ],
+  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, PlayerDetail],
   host: { class: 'block' },
   templateUrl: './player-card-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
