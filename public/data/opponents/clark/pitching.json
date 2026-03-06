@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-05T11:29:06.188Z",
+  "scrapedAt": "2026-03-06T11:23:43.372Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -22,31 +22,31 @@
     {
       "name": "Dube, Megan",
       "w": 1,
-      "l": 2,
-      "era": 3.68,
-      "app": 3,
-      "gs": 2,
-      "ip": 19,
-      "h": 20,
-      "r": 11,
-      "er": 10,
+      "l": 3,
+      "era": 3.64,
+      "app": 4,
+      "gs": 3,
+      "ip": 25,
+      "h": 28,
+      "r": 15,
+      "er": 13,
       "bb": 7,
-      "so": 16,
-      "hr": 1
+      "so": 18,
+      "hr": 2
     },
     {
       "name": "Wagstaff, Hannah",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "era": 0,
-      "app": 1,
-      "gs": 1,
-      "ip": 0,
-      "h": 0,
+      "app": 2,
+      "gs": 2,
+      "ip": 5,
+      "h": 3,
       "r": 0,
       "er": 0,
       "bb": 0,
-      "so": 0,
+      "so": 2,
       "hr": 0
     }
   ],
@@ -499,6 +499,131 @@
             "Riley Mullen pinch hit for Alyssa Mayorca.",
             "Riley Mullen popped up to 2b (0-2 K).",
             "Savannah Patrone flied out to lf (0-1)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/chatham-university/boxscore/19220",
+      "date": "3/5/2026",
+      "opponent": "Chatham University",
+      "pitchers": [
+        "Wagstaff, Hannah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anna Borst lined out to ss (1-0 B).",
+            "Gaby McTavish flied out to lf (2-2 FBFB).",
+            "Kayleen Garcia struck out looking (1-2 FSFFFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Tori Cavanaugh grounded out to 3b (0-0).",
+            "Victoria Murren flied out to lf (1-0 B).",
+            "Kyla Milne grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Corryn Beard flied out to lf (0-1 S).",
+            "Chelsea Stabile struck out swinging (2-2 BBKSS).",
+            "Chloe Pagliarini singled up the middle (0-1 K).",
+            "Anna Borst grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gaby McTavish flied out to cf (1-1 SB).",
+            "Kayleen Garcia grounded out to 3b (0-0).",
+            "Tori Cavanaugh singled up the middle (2-1 BBK).",
+            "Victoria Murren lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kyla Milne grounded out to 3b (0-0).",
+            "Corryn Beard singled through the left side (1-0 B).",
+            "Chelsea Stabile lined out to cf (0-0).",
+            "Chloe Pagliarini reached first on a fielding error by ss (1-1 BK); Corryn Beard advanced to second.",
+            "Anna Borst lined out to 3b (2-1 BBF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/johnson-wales-university/boxscore/19221",
+      "date": "3/5/2026",
+      "opponent": "Johnson Wales University",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amanda Madigan fouled out to 1b (0-1 F).",
+            "Jadyn Torres flied out to rf (2-2 FBFBF).",
+            "Mady Lyons singled to center field (0-0).",
+            "Macy Pagano struck out swinging (1-2 BSFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jessica Forneiro fouled out to 3b (1-2 SBF).",
+            "Ashley Bergeron homered to center field, RBI (2-2 FFBFFFFBF).",
+            "Chloe Brunelle fouled out to 3b (0-1 K).",
+            "Gabby Bellamore hit by pitch (2-2 BSFB).",
+            "Olivia Mason singled through the left side (0-2 FS); Gabby Bellamore advanced to second.",
+            "Amanda Madigan lined out to 2b (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jadyn Torres popped up to 2b (2-1 BFB).",
+            "Mady Lyons struck out swinging (3-2 KBBBFS).",
+            "Macy Pagano flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jessica Forneiro singled to first base, bunt (2-1 FBB).",
+            "Ashley Bergeron doubled to left field (2-1 KBB); Jessica Forneiro advanced to third.",
+            "Chloe Brunelle singled to left field, advanced to second on the throw, RBI (0-0); Ashley Bergeron advanced to third; Jessica Forneiro scored.",
+            "Gabby Bellamore popped up to 2b (0-2 KF).",
+            "Olivia Mason flied out to lf (0-0).",
+            "Amanda Madigan lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jadyn Torres flied out to rf (1-0 B).",
+            "Mady Lyons grounded out to 3b (2-1 KBB).",
+            "Macy Pagano flied out to lf (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Dube to p for Caitriona Andre.",
+            "Jessica Forneiro reached first on a fielding error by ss (0-1 S).",
+            "Ashley Bergeron singled to center field (0-1 K); Jessica Forneiro advanced to second.",
+            "Chloe Brunelle out at first 1b to 2b, bunt, SAC (2-0 BB); Ashley Bergeron advanced to second; Jessica Forneiro advanced to third.",
+            "Gabby Bellamore doubled to center field, 2 RBI (3-2 KBFFBB); Ashley Bergeron scored; Jessica Forneiro scored, unearned.",
+            "Olivia Mason grounded out to ss (2-2 BBKF); Gabby Bellamore advanced to third.",
+            "Amanda Madigan popped up to 2b (0-2 KF)."
           ]
         }
       ],
