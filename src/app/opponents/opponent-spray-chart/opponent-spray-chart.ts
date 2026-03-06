@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { SoftballDataService, SoftballProcessorService } from '@ws/core/data';
-import { type Roster, type SprayDataPoint } from '@ws/core/models';
+import { type Roster, type SprayDataPoint, type Team } from '@ws/core/models';
 import { canonicalizeSprayNames, parseSprayData } from '@ws/core/processors';
 import { SPRAY_YEARS, SprayChartViewer } from '@ws/core/ui';
 import { catchError, forkJoin, of } from 'rxjs';
@@ -20,13 +20,18 @@ import { catchError, forkJoin, of } from 'rxjs';
     <ws-spray-chart-viewer
       [dataByYear]="dataByYear()"
       [roster]="roster()"
+      [teamData]="teamData()"
       [loading]="loading()"
       [error]="error()"
       [includeUnmatchedRoster]="true"
+      [printTitle]="teamName()"
       emptyMessage="No spray chart data available for this team."
     />
   `,
-  host: { class: 'flex flex-1 flex-col overflow-hidden' },
+  host: {
+    class:
+      'flex flex-1 flex-col overflow-hidden print:block print:overflow-visible',
+  },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OpponentSprayChart {
@@ -34,6 +39,8 @@ export class OpponentSprayChart {
   private processorService = inject(SoftballProcessorService);
 
   readonly slug = input.required<string>();
+  readonly teamName = input('');
+  readonly teamData = input<Team | null>(null);
 
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);

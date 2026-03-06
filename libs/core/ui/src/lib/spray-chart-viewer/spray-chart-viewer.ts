@@ -6,6 +6,7 @@ import {
   effect,
   inject,
   input,
+  isDevMode,
   signal,
 } from '@angular/core';
 import type {
@@ -13,6 +14,7 @@ import type {
   SprayChartSummary,
   SprayDataPoint,
   SprayZone,
+  Team,
 } from '@ws/core/models';
 import { buildDisplayJerseyMap, computeSprayZones } from '@ws/core/processors';
 import { BreakpointService } from '@ws/core/util';
@@ -21,6 +23,12 @@ import {
   ButtonToggle,
   type ToggleOption,
 } from '../button-toggle/button-toggle';
+import {
+  type PrintOptions,
+  PrintOptionsModal,
+} from '../print-options-modal/print-options-modal';
+import { SprayChartCoachPrintView } from '../spray-chart-coach-print-view/spray-chart-coach-print-view';
+import { SprayChartPrintView } from '../spray-chart-print-view/spray-chart-print-view';
 import { SprayField } from '../spray-field/spray-field';
 import {
   ALL_CONTACT_QUALITIES,
@@ -56,13 +64,19 @@ const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
   imports: [
     NgTemplateOutlet,
     ButtonToggle,
+    PrintOptionsModal,
+    SprayChartCoachPrintView,
+    SprayChartPrintView,
     SprayField,
     SprayFilters,
     SprayLegend,
     SprayYearPanel,
   ],
   templateUrl: './spray-chart-viewer.html',
-  host: { class: 'flex flex-1 flex-col gap-3 overflow-hidden' },
+  host: {
+    class:
+      'flex flex-1 flex-col gap-3 overflow-hidden print:block print:overflow-visible',
+  },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayChartViewer {
@@ -70,10 +84,12 @@ export class SprayChartViewer {
 
   readonly dataByYear = input.required<Map<number, SprayDataPoint[]>>();
   readonly roster = input.required<Roster>();
+  readonly teamData = input<Team | null>(null);
   readonly loading = input(false);
   readonly error = input<string | null>(null);
   readonly emptyMessage = input('No spray chart data available.');
   readonly includeUnmatchedRoster = input(false);
+  readonly printTitle = input('');
 
   readonly viewMode = signal<'split' | 'combined'>('combined');
   readonly selectedYears = signal<string[]>([String(CURRENT_YEAR)]);
@@ -90,6 +106,69 @@ export class SprayChartViewer {
   });
 
   readonly highlightZone = signal<SprayZone | null>(null);
+  readonly showPrintModal = signal(false);
+  readonly printDugout = signal(true);
+  readonly printCoach = signal(true);
+  readonly printPreview = signal(false);
+  readonly isDev = isDevMode();
+
+  readonly hasNonDefaultFilters = computed(() => {
+    const f = this.filters();
+
+    return (
+      f.outcomes.length !== ALL_OUTCOMES.length ||
+      f.contactTypes.length !== ALL_CONTACT_TYPES.length ||
+      f.contactQualities.length !== ALL_CONTACT_QUALITIES.length ||
+      f.outCount.length !== ALL_OUT_COUNTS.length ||
+      f.risp !== null
+    );
+  });
+
+  readonly printSubtitle = computed(() => {
+    if (!this.hasNonDefaultFilters()) {
+      return '';
+    }
+
+    const f = this.filters();
+    const parts: string[] = [];
+
+    if (f.outcomes.length !== ALL_OUTCOMES.length) {
+      parts.push(
+        f.outcomes
+          .map((o) => `${o.charAt(0).toUpperCase() + o.slice(1)}s`)
+          .join(', ')
+      );
+    }
+
+    if (f.contactTypes.length !== ALL_CONTACT_TYPES.length) {
+      const labels: Record<string, string> = {
+        hit: 'Line drives',
+        line_out: 'Line outs',
+        ground_ball: 'Ground balls',
+        popup: 'Popups',
+        bunt: 'Bunts',
+      };
+      parts.push(f.contactTypes.map((t) => labels[t] ?? t).join(', '));
+    }
+
+    if (f.contactQualities.length !== ALL_CONTACT_QUALITIES.length) {
+      parts.push(
+        f.contactQualities
+          .map((q) => q.charAt(0).toUpperCase() + q.slice(1))
+          .join(', ')
+      );
+    }
+
+    if (f.outCount.length !== ALL_OUT_COUNTS.length) {
+      parts.push(f.outCount.map((o) => `${o} outs`).join(', '));
+    }
+
+    if (f.risp !== null) {
+      parts.push(f.risp ? 'RISP' : 'No RISP');
+    }
+
+    return parts.join(' · ');
+  });
 
   readonly players = computed(() => {
     const map = this.dataByYear();
@@ -149,6 +228,34 @@ export class SprayChartViewer {
     )
   );
 
+  readonly allPlayerSummaries = computed(() => {
+    const allData = this.selectedYears().flatMap(
+      (y) => this.dataByYear().get(Number(y)) ?? []
+    );
+    const ef = this.effectiveFilters();
+    const team = this.teamData();
+
+    return this.rosteredPlayers()
+      .map((name) => {
+        const rp = team?.players.find((p) => p.name === name);
+
+        return {
+          name,
+          jersey: this.jerseyMap()[name],
+          summary: computeSprayZones(allData, { ...ef, playerName: name }),
+          bats: rp?.bats,
+          position: rp?.position,
+          avg: rp?.career.avg,
+          woba: rp?.career.woba,
+          pa: rp?.career.pa,
+          sb: rp?.career.sb,
+          gp: rp?.career.gp,
+          sh: rp?.career.sh,
+        };
+      })
+      .filter((p) => p.summary.totalContact > 0);
+  });
+
   constructor() {
     // Auto-select current year + first year with data when dataByYear changes
     effect(() => {
@@ -202,5 +309,52 @@ export class SprayChartViewer {
 
   onZoneClick(_zone: SprayZone): void {
     // Future: could show zone detail panel
+  }
+
+  onPrint(): void {
+    if (this.teamData()) {
+      this.showPrintModal.set(true);
+
+      return;
+    }
+
+    this.executePrint();
+  }
+
+  onPrintConfirm(opts: PrintOptions): void {
+    this.printDugout.set(opts.dugout);
+    this.printCoach.set(opts.coach);
+    this.showPrintModal.set(false);
+    setTimeout(() => this.executePrint(), 0);
+  }
+
+  onPrintCancel(): void {
+    this.showPrintModal.set(false);
+  }
+
+  private executePrint(): void {
+    if (!this.hasNonDefaultFilters()) {
+      window.print();
+
+      return;
+    }
+
+    const msg = `Filters are applied: ${this.printSubtitle()}\n\nOK = print with filters\nCancel = reset to all contact and print`;
+
+    if (confirm(msg)) {
+      window.print();
+    } else {
+      this.filters.set({
+        playerName: this.filters().playerName,
+        outcomes: [...ALL_OUTCOMES],
+        contactTypes: [...ALL_CONTACT_TYPES],
+        contactQualities: [...ALL_CONTACT_QUALITIES],
+        outCount: [...ALL_OUT_COUNTS],
+        risp: null,
+      });
+
+      // Allow a tick for the filter reset to propagate before printing
+      setTimeout(() => window.print(), 0);
+    }
   }
 }

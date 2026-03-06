@@ -1,0 +1,24 @@
+<div class="flex flex-col items-center gap-1 py-4">
+  <h2 class="text-2xl font-bold print:text-black">{{ title() }}</h2>
+  @if (subtitle(); as sub) {
+    <p class="text-sm print:text-gray-600">{{ sub }}</p>
+  }
+</div>
+
+<div class="grid grid-cols-2 gap-6">
+  @for (player of players(); track player.name) {
+    <div class="flex break-inside-avoid flex-col items-center gap-1">
+      <h3 class="text-sm font-bold print:text-black">
+        #{{ player.jersey }} {{ player.name }}
+      </h3>
+      <ws-spray-field [zones]="player.summary.zones" [highlightZone]="null" />
+      <span class="text-xs print:text-gray-600">
+        {{ player.summary.totalContact }} batted balls
+      </span>
+    </div>
+  }
+</div>
+
+<div class="mt-4 flex justify-center">
+  <ws-spray-legend />
+</div>

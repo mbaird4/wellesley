@@ -1,0 +1,45 @@
+<button
+  aria-label="Close modal"
+  class="absolute inset-0 cursor-default border-none bg-black/50"
+  (click)="dismissed.emit()"
+></button>
+
+<div class="relative flex flex-col gap-4 rounded-xl bg-white p-6 shadow-xl">
+  <h3 class="text-lg font-bold text-gray-900">Print Options</h3>
+
+  <div class="flex flex-col gap-2">
+    <label class="flex items-center gap-2 text-sm text-gray-700">
+      <input
+        type="checkbox"
+        [checked]="dugout()"
+        (change)="dugout.set(!dugout())"
+      />
+      Dugout Sheet
+    </label>
+
+    <label class="flex items-center gap-2 text-sm text-gray-700">
+      <input
+        type="checkbox"
+        [checked]="coach()"
+        (change)="coach.set(!coach())"
+      />
+      Coach Scouting Report
+    </label>
+  </div>
+
+  <div class="flex justify-end gap-2">
+    <button
+      class="cursor-pointer rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+      (click)="dismissed.emit()"
+    >
+      Cancel
+    </button>
+    <button
+      class="cursor-pointer rounded-lg border-none bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+      [disabled]="!dugout() && !coach()"
+      (click)="onPrint()"
+    >
+      Print
+    </button>
+  </div>
+</div>

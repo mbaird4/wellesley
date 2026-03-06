@@ -3,6 +3,15 @@
 
 @custom-variant stuck (&:where([data-state="stuck"], [data-state="stuck"] *));
 
+@custom-variant print {
+  @media print {
+    @slot;
+  }
+  .print-preview & {
+    @slot;
+  }
+}
+
 @theme {
   --color-brand: #0018a8;
   --color-brand-light: #1a3fd4;
@@ -57,7 +66,20 @@
   --color-danger-border-hover: rgba(239, 68, 68, 0.3);
 }
 
+@page {
+  margin: 0.3in;
+}
+
 @layer base {
+  @media print {
+    body {
+      background: white !important;
+      color: #1a1a1a !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -136,7 +158,7 @@
 @layer components {
   /* ── Shared Card ── */
   .stats-section {
-    @apply bg-surface-card border-line-hover p-section rounded-2xl border;
+    @apply bg-surface-card border-line-hover p-section rounded-2xl border print:border-none print:bg-transparent print:p-0;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
   }
@@ -511,5 +533,10 @@
     &:disabled {
       @apply disabled;
     }
+  }
+
+  /* Dev-only: visual boundary for print preview */
+  .print-preview {
+    @apply rounded-lg border-2 border-dashed border-amber-400 bg-white p-4;
   }
 }

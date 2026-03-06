@@ -1,15 +1,16 @@
 @if (bp.gtSm()) {
   <!-- Desktop: sidebar + content -->
-  <div class="flex gap-6">
+  <div class="flex gap-6 print:block">
     <ws-team-selector
       layout="vertical"
       [teams]="teams"
       [selectedSlug]="selectedSlug()"
       (teamSelected)="selectTeam($event)"
+      class="print:hidden"
     />
 
-    <div class="flex min-w-0 flex-1 flex-col">
-      <div class="mb-4 flex flex-col gap-3">
+    <div class="flex min-w-0 flex-1 flex-col print:block">
+      <div class="mb-4 flex flex-col gap-3 print:hidden">
         <h2>{{ selectedTeamName() }}</h2>
 
         <div class="flex gap-1">
@@ -67,7 +68,11 @@
           />
         }
       } @else if (activeTab() === 'spray') {
-        <ws-opponent-spray-chart [slug]="selectedSlug()" />
+        <ws-opponent-spray-chart
+          [slug]="selectedSlug()"
+          [teamName]="selectedTeamName()"
+          [teamData]="teamData()"
+        />
       } @else {
         <ws-pitcher-analysis
           [pitchingData]="pitchingData()"
@@ -85,11 +90,12 @@
     [teams]="teams"
     [selectedSlug]="selectedSlug()"
     (teamSelected)="selectTeam($event)"
+    class="print:hidden"
   />
 
-  <h2 class="mt-3 mb-2 text-lg">{{ selectedTeamName() }}</h2>
+  <h2 class="mt-3 mb-2 text-lg print:hidden">{{ selectedTeamName() }}</h2>
 
-  <div class="mb-3 flex gap-1">
+  <div class="mb-3 flex gap-1 print:hidden">
     <button
       (click)="selectTab('woba')"
       class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
@@ -141,7 +147,7 @@
       />
     }
   } @else if (activeTab() === 'spray') {
-    <ws-opponent-spray-chart [slug]="selectedSlug()" />
+    <ws-opponent-spray-chart [slug]="selectedSlug()" [teamData]="teamData()" />
   } @else {
     <ws-pitcher-analysis
       [pitchingData]="pitchingData()"

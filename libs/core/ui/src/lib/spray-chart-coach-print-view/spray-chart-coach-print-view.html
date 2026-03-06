@@ -1,0 +1,64 @@
+<div class="flex flex-col items-center gap-0.5 pt-1 pb-2">
+  <h2 class="text-xl font-bold print:text-black">
+    {{ title() }} — Coach Report
+  </h2>
+  @if (subtitle(); as sub) {
+    <p class="text-xs print:text-gray-600">{{ sub }}</p>
+  }
+</div>
+
+<div class="flex flex-col">
+  @for (row of rows(); track row.name) {
+    <div
+      class="flex break-inside-avoid gap-2 border-b border-gray-200 py-1 text-[10px] print:text-black"
+    >
+      <!-- Player info -->
+      <div class="flex w-36 shrink-0 flex-col">
+        <div class="flex items-baseline gap-1">
+          <span class="font-bold">#{{ row.jersey }}</span>
+          <span class="font-semibold">{{ row.name }}</span>
+        </div>
+        <div class="flex gap-1 text-gray-500">
+          @if (row.batsLabel) {
+            <span>{{ row.batsLabel }}</span>
+          }
+          @if (row.posLabel) {
+            <span>{{ row.posLabel }}</span>
+          }
+          <span class="tabular-nums">
+            {{ row.avgLabel }}·{{ row.wobaLabel }}·{{ row.paLabel }}PA
+          </span>
+        </div>
+        @if (row.sbCallout || row.buntCallout) {
+          <div class="flex flex-col text-[9px] font-medium text-gray-700">
+            @if (row.sbCallout) {
+              <span>⚡ {{ row.sbCallout }}</span>
+            }
+            @if (row.buntCallout) {
+              <span>📋 {{ row.buntCallout }}</span>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Spray field -->
+      <div class="w-24 shrink-0">
+        <ws-spray-field [zones]="row.summary.zones" [highlightZone]="null" />
+      </div>
+
+      <!-- Zone breakdown -->
+      @if (row.zones.length > 0) {
+        <div class="flex flex-wrap gap-x-3 gap-y-0 text-[9px] tabular-nums">
+          @for (z of row.zones; track z.label) {
+            <span>
+              <span class="font-medium">{{ z.label }}</span>
+              {{ z.total }}({{ z.hits }}H/{{ z.outs }}O) {{ z.hard }}h/{{
+                z.weak
+              }}w {{ z.avg }} {{ z.pct }}
+            </span>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>
