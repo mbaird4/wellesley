@@ -1,7 +1,12 @@
-<div
-  class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text rounded-[10px] border-l-[3px] text-[1.1rem]"
->
-  {{ totalRuns() }} total runs scored
+<div class="flex items-baseline gap-4 px-1">
+  <span class="font-stat text-content-heading text-5xl font-bold tabular-nums">
+    {{ totalRuns() }}
+  </span>
+  <span
+    class="text-content-dim text-base font-medium tracking-widest uppercase"
+  >
+    runs scored
+  </span>
 </div>
 
 <!-- Play Type Breakdown -->
@@ -35,10 +40,12 @@
 <!-- Sac Bunt Effectiveness -->
 @if (sacBuntSummary(); as sac) {
   @if (sac.totalSacBunts > 0) {
-    <div class="bg-surface-card border-line p-card rounded-xl border">
-      <h3 class="section-heading-sm mt-0">Sac Bunt Effectiveness</h3>
+    <div
+      class="bg-surface-card border-line p-card flex flex-col gap-4 rounded-xl border"
+    >
+      <h3 class="mt-0">Sac Bunt Effectiveness</h3>
 
-      <div class="stagger-children mb-4 flex flex-wrap gap-4">
+      <div class="stagger-children flex flex-wrap gap-4">
         <div class="stat-card">
           <div class="stat-value">{{ sac.totalSacBunts }}</div>
           <div class="stat-label">Sac Bunts</div>
@@ -59,55 +66,71 @@
         </div>
       </div>
 
-      <table class="stats-table scoring-table">
-        <thead>
-          <tr>
-            <th>Game</th>
-            <th>Inning</th>
-            <th>Batter</th>
-            <th>Runners on Base</th>
-            <th>Runners Scored</th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (outcome of sac.outcomes; track $index) {
-            <tr [class.bunt-highlight]="true">
-              <td>
-                <a
-                  [href]="outcome.url | boxscoreUrl"
-                  target="_blank"
-                  class="game-link"
-                >
-                  {{ outcome.opponent }}
-                </a>
-              </td>
-              <td>{{ outcome.inning }}</td>
-              <td>{{ outcome.batterName || '—' }}</td>
-              <td>{{ outcome.runnersOnBase.join(', ') }}</td>
-              <td>
-                <div class="flex items-center gap-1.5">
-                  <span>
-                    {{
-                      outcome.runnersScored.length > 0
-                        ? outcome.runnersScored.join(', ')
-                        : 'None'
-                    }}
-                  </span>
-                  @if (outcome.runnersScored.length > 0) {
-                    <i
-                      class="fa-solid fa-check text-tier-excellent text-xs"
-                    ></i>
-                  } @else {
-                    <i
-                      class="fa-solid fa-xmark text-tier-below-avg text-xs"
-                    ></i>
-                  }
-                </div>
-              </td>
+      <button
+        class="text-content-dim hover:text-content-muted flex cursor-pointer items-center gap-1.5 border-none bg-transparent text-sm font-medium transition-colors"
+        (click)="toggleSacBunts()"
+      >
+        <span class="text-[0.65rem]">
+          {{ sacBuntsExpanded() ? '&#9660;' : '&#9654;' }}
+        </span>
+        @if (sacBuntsExpanded()) {
+          Hide outcomes
+        } @else {
+          Show all {{ sac.outcomes.length }} outcomes
+        }
+      </button>
+
+      @if (sacBuntsExpanded()) {
+        <table class="stats-table scoring-table">
+          <thead>
+            <tr>
+              <th>Game</th>
+              <th>Inning</th>
+              <th>Batter</th>
+              <th>Runners on Base</th>
+              <th>Runners Scored</th>
             </tr>
-          }
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            @for (outcome of sac.outcomes; track $index) {
+              <tr [class.bunt-highlight]="true">
+                <td>
+                  <a
+                    [href]="outcome.url | boxscoreUrl"
+                    target="_blank"
+                    class="game-link"
+                  >
+                    {{ outcome.opponent }}
+                  </a>
+                </td>
+                <td>{{ outcome.inning }}</td>
+                <td>{{ outcome.batterName || '—' }}</td>
+                <td>{{ outcome.runnersOnBase.join(', ') }}</td>
+                <td>
+                  <div class="flex items-center gap-1.5">
+                    <span>
+                      {{
+                        outcome.runnersScored.length > 0
+                          ? outcome.runnersScored.join(', ')
+                          : 'None'
+                      }}
+                    </span>
+                    @if (outcome.runnersScored.length > 0) {
+                      <i
+                        class="fa-solid fa-check text-tier-excellent text-xs"
+                      ></i>
+                    } @else {
+                      <i
+                        class="fa-solid fa-xmark text-tier-below-avg text-xs"
+                      ></i>
+                    }
+                  </div>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
     </div>
   }
 }

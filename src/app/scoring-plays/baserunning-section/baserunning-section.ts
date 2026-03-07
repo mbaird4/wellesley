@@ -11,6 +11,16 @@ import { SITUATION_LABELS } from '@ws/core/ui';
 
 type SortKey = 'situation' | 'runners' | 'scored' | 'rate';
 
+const SITUATION_ORDER: Record<string, number> = {
+  first: 0,
+  second: 1,
+  third: 2,
+  first_second: 3,
+  first_third: 4,
+  second_third: 5,
+  loaded: 6,
+};
+
 interface ConversionDisplayRow {
   label: string;
   situation: string;
@@ -32,8 +42,8 @@ export class BaserunningSection {
   readonly stolenBaseSummary = input<StolenBaseSummary | null>(null);
   readonly runnerConversions = input<RunnerConversionRow[]>([]);
 
-  readonly sortKey = signal<SortKey>('rate');
-  readonly sortAsc = signal(false);
+  readonly sortKey = signal<SortKey>('situation');
+  readonly sortAsc = signal(true);
 
   readonly filteredByBase = computed(() => {
     const sb = this.stolenBaseSummary();
@@ -72,7 +82,11 @@ export class BaserunningSection {
     withRate.sort((a, b) => {
       switch (key) {
         case 'situation':
-          return mult * a.label.localeCompare(b.label);
+          return (
+            mult *
+            ((SITUATION_ORDER[a.situation] ?? 99) -
+              (SITUATION_ORDER[b.situation] ?? 99))
+          );
         case 'runners':
           return mult * (a.totalRunners - b.totalRunners);
         case 'scored':

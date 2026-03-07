@@ -1,5 +1,10 @@
 import { DecimalPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  signal,
+} from '@angular/core';
 import type {
   RunnerConversionRow,
   SacBuntSummary,
@@ -50,4 +55,9 @@ export class SummaryTab {
   readonly sacBuntSummary = input.required<SacBuntSummary | null>();
   readonly stolenBaseSummary = input.required<StolenBaseSummary | null>();
   readonly runnerConversions = input.required<RunnerConversionRow[]>();
+  readonly sacBuntsExpanded = signal(false);
+
+  toggleSacBunts(): void {
+    this.sacBuntsExpanded.update((v) => !v);
+  }
 }
