@@ -27,6 +27,7 @@
         <ws-sticky-player-header
           [name]="effectivePitcher()!"
           [jerseyNumber]="jerseyNumber()"
+          [subtitle]="teamName()"
         >
           @if (availableYears().length >= 1) {
             <div class="flex flex-wrap items-center gap-1.5">

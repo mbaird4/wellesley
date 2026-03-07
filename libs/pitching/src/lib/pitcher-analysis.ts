@@ -49,6 +49,7 @@ export class PitcherAnalysis {
   readonly rosterNames = input<Set<string>>(new Set());
   readonly jerseyMap = input<Record<string, number> | null>(null);
   readonly loading = input<boolean>(false);
+  readonly teamName = input<string>('');
 
   readonly selectedPitcher = signal<string | null>(null);
   readonly selectedYear = signal<number | 'all'>('all');

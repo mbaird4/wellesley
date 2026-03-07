@@ -141,6 +141,7 @@
     [rosterNames]="rosterNames()"
     [jerseyMap]="jerseyMap()"
     [loading]="pitchingLoading()"
+    [teamName]="selectedTeamName()"
   />
 } @else if (activeTab() === 'stats') {
   <ws-season-stats [slug]="slug()" />

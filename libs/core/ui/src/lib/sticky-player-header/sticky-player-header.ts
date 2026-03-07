@@ -18,8 +18,9 @@ import { asyncScheduler, fromEvent, throttleTime } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
-      'sticky top-0 z-10 block transition-[background-color,box-shadow,width,margin-left] duration-100 stuck:bg-surface-sticky-header stuck:shadow-[0_2px_8px_rgba(0,0,0,0.3)] stuck:z-20 w-auto stuck:w-screen pb-3 stuck:py-2 stuck:px-8',
+      'sticky-player-header sticky z-20 block transition-[background-color,box-shadow,width,margin-left,padding,top] duration-150 w-auto stuck:w-screen pb-3 stuck:py-2',
     '[attr.data-state]': 'state()',
+    '[style.top]': '"var(--header-height, 0px)"',
     '[style.margin-left.px]': 'isStuck() ? -leftOffset() : null',
   },
   templateUrl: './sticky-player-header.html',
@@ -59,7 +60,13 @@ export class StickyPlayerHeader implements AfterViewInit {
       window.scrollY || 0,
       document.documentElement.scrollTop || 0
     );
-    const newState = scrollY >= this.originalTop ? 'stuck' : 'default';
+    const headerHeight = parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue(
+        '--header-height'
+      ) || '0'
+    );
+    const newState =
+      scrollY + headerHeight >= this.originalTop ? 'stuck' : 'default';
 
     if (newState !== this.scrollState()) {
       this.scrollState.set(newState);

@@ -201,6 +201,7 @@
   animation: fade-in 0.5s ease-out both;
 }
 
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -211,6 +212,7 @@
     transform: translateY(0);
   }
 }
+
 
 @layer components {
   /* ── Shared Card ── */
@@ -399,6 +401,71 @@
     &:hover {
       @apply text-link-hover underline;
     }
+  }
+
+  /* ── Sticky header ── */
+  .sticky-header {
+    @apply sticky top-0 z-10 mb-6 flex items-center justify-between border-b py-4 print:hidden;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-left: max(2rem, calc((100vw - 2400px) / 2 + 2rem));
+    padding-right: max(2rem, calc((100vw - 2400px) / 2 + 2rem));
+    border-color: var(--color-line);
+    background: rgba(15, 17, 23, 0.55);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    transition:
+      padding 250ms ease,
+      border-color 250ms ease;
+
+    &.scrolled {
+      @apply py-2;
+      border-color: var(--color-line-medium);
+    }
+  }
+
+  .header-logo {
+    @apply h-0 w-0 opacity-0;
+    transition:
+      width 250ms ease,
+      height 250ms ease,
+      opacity 200ms ease;
+
+    &.logo-visible {
+      @apply h-6 w-6 opacity-100;
+    }
+  }
+
+  .header-title {
+    @apply text-[1.75rem] leading-none;
+    transition:
+      font-size 250ms ease,
+      opacity 200ms ease,
+      width 250ms ease,
+      max-width 250ms ease;
+    max-width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &.title-hidden {
+      @apply text-[0px] opacity-0;
+      max-width: 0;
+    }
+  }
+
+  /* ── Sticky player header (glass style when stuck) ── */
+  ws-sticky-player-header[data-state='stuck'] {
+    padding-left: max(2rem, calc((100vw - 2400px) / 2 + 2rem));
+    padding-right: max(2rem, calc((100vw - 2400px) / 2 + 2rem));
+    background: rgba(15, 17, 23, 0.55);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border-bottom: 1px solid var(--color-line-medium);
+  }
+
+  /* Hide main nav border when player header is stuck below it */
+  .sticky-header:has(~ * ws-sticky-player-header[data-state='stuck']) {
+    border-color: transparent;
   }
 
   /* ── Nav link (active state) ── */
