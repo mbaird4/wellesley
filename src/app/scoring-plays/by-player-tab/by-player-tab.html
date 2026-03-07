@@ -1,10 +1,16 @@
 <h2>Scoring Plays by Player — {{ selectedYear() }}</h2>
 
-<table class="stats-table">
+<table class="stats-table table-fixed">
+  <colgroup>
+    <col class="w-40" />
+    <col class="w-20" />
+    <col class="w-16" />
+    <col />
+  </colgroup>
   <thead>
     <tr>
       <th class="cursor-pointer" (click)="sort('name')">Player</th>
-      <th class="cursor-pointer" (click)="sort('runs')">Runs Scored</th>
+      <th class="cursor-pointer" (click)="sort('runs')">Runs</th>
       <th class="cursor-pointer" (click)="sort('rbis')">RBI</th>
       <th>Top RBI Types</th>
     </tr>
@@ -17,7 +23,10 @@
         <td class="tabular-nums">{{ p.rbis }}</td>
         <td>
           <div class="flex flex-wrap gap-[0.3rem]">
-            @for (badge of p.topTypes; track badge.key) {
+            @for (
+              badge of expandedPlayer() === p.name ? p.allTypes : p.topTypes;
+              track badge.key
+            ) {
               <span
                 class="bg-surface-elevated text-content-muted inline-block rounded-md border-l-2 px-2 py-[0.15rem] text-[0.75rem] whitespace-nowrap"
                 [class]="badge.colorClass"
@@ -26,11 +35,14 @@
               </span>
             }
             @if (p.overflowCount > 0) {
-              <span
-                class="text-content-dim inline-block px-1 py-[0.15rem] text-[0.75rem]"
+              <button
+                class="text-content-dim hover:text-content-muted cursor-pointer border-none bg-transparent px-1 py-[0.15rem] text-[0.75rem] transition-colors"
+                (click)="togglePlayer(p.name)"
               >
-                +{{ p.overflowCount }}
-              </span>
+                {{
+                  expandedPlayer() === p.name ? 'less' : '+' + p.overflowCount
+                }}
+              </button>
             }
             @if (p.topTypes.length === 0) {
               <span class="text-content-empty text-[0.75rem]">—</span>

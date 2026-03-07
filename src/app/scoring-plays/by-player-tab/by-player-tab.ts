@@ -37,6 +37,7 @@ const DEFAULT_BADGE_COLOR = 'border-chart-muted';
 
 interface DisplayPlayer extends PlayerScoringBreakdown {
   topTypes: TypeBadge[];
+  allTypes: TypeBadge[];
   overflowCount: number;
 }
 
@@ -57,6 +58,7 @@ export class ByPlayerTab {
   readonly players = input.required<PlayerScoringBreakdown[]>();
   readonly sortKey = signal<SortKey>('runs');
   readonly sortAsc = signal(false);
+  readonly expandedPlayer = signal<string | null>(null);
 
   readonly displayPlayers = computed<DisplayPlayer[]>(() => {
     const players = this.players();
@@ -76,6 +78,7 @@ export class ByPlayerTab {
       return {
         ...p,
         topTypes: entries.slice(0, MAX_BADGES),
+        allTypes: entries,
         overflowCount: Math.max(0, entries.length - MAX_BADGES),
       };
     });
@@ -95,6 +98,10 @@ export class ByPlayerTab {
 
     return enriched;
   });
+
+  togglePlayer(name: string): void {
+    this.expandedPlayer.update((current) => (current === name ? null : name));
+  }
 
   sort(key: SortKey): void {
     if (this.sortKey() === key) {
