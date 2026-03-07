@@ -5,3 +5,4 @@ export * from './format-play-type.pipe';
 export * from './format-situation.pipe';
 export * from './format-stat.pipe';
 export * from './is-empty.pipe';
+export * from './season-wobas.pipe';

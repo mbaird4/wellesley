@@ -12,7 +12,12 @@ import {
   tierClass,
   wobaGradientStyle,
 } from '@ws/core/processors';
-import { ClassYearPipe, WobaBadge } from '@ws/core/ui';
+import {
+  ClassYearPipe,
+  SeasonWobasPipe,
+  Sparkline,
+  WobaBadge,
+} from '@ws/core/ui';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 
@@ -23,6 +28,8 @@ import { PlayerDetail } from '../player-detail/player-detail';
     NgStyle,
     NgTemplateOutlet,
     ClassYearPipe,
+    SeasonWobasPipe,
+    Sparkline,
     WobaBadge,
     PlayerDetail,
   ],

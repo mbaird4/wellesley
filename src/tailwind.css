@@ -23,7 +23,7 @@
   --color-brand-glow-strong: rgba(0, 24, 168, 0.5);
 
   --color-surface: #0f1117;
-  --color-surface-card: rgba(255, 255, 255, 0.04);
+  --color-surface-card: #161821;
   --color-surface-elevated: rgba(255, 255, 255, 0.06);
   --color-surface-sunken: rgba(255, 255, 255, 0.03);
   --color-surface-hover: rgba(255, 255, 255, 0.04);
@@ -70,6 +70,30 @@
   margin: 0.3in;
 }
 
+/* ── Custom scrollbar ── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
 @layer base {
   @media print {
     body {
@@ -84,6 +108,12 @@
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--color-surface);
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      rgba(0, 24, 168, 0.06)
+    );
+    background-attachment: fixed;
     color: var(--color-content);
     -webkit-font-smoothing: antialiased;
   }

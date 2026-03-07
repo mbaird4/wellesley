@@ -5,6 +5,7 @@ export * from './lib/game-viewer/game-viewer';
 export * from './lib/pipes';
 export * from './lib/print-options-modal/print-options-modal';
 export * from './lib/slide-toggle/slide-toggle';
+export * from './lib/sparkline/sparkline';
 export * from './lib/spray-chart-coach-print-view/spray-chart-coach-print-view';
 export * from './lib/spray-chart-print-view/spray-chart-print-view';
 export * from './lib/spray-chart-viewer/spray-chart-viewer';
