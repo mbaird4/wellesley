@@ -1,5 +1,6 @@
 @if (loading()) {
-  <div class="py-card px-card text-content-muted text-[1.05rem]">
+  <div class="loading-state">
+    <i class="fa-solid fa-baseball loading-spinner"></i>
     Loading pitching data...
   </div>
 } @else if (!pitchingData()) {

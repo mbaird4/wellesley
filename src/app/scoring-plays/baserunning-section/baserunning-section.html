@@ -2,24 +2,16 @@
   @if (sb.totalStolenBases > 0) {
     <h3 class="section-heading-sm">Stolen Base Scoring</h3>
     <div class="mt-3">
-      <div class="mb-4 flex flex-wrap gap-4">
-        <div
-          class="bg-surface-card border-line p-card min-w-[100px] rounded-[10px] border text-center"
-        >
-          <div class="text-content-bright text-2xl font-bold tabular-nums">
-            {{ sb.totalStolenBases }}
-          </div>
-          <div class="text-content-dim mt-0.5 text-[0.85rem]">Stolen Bases</div>
+      <div class="stagger-children mb-4 flex flex-wrap gap-4">
+        <div class="stat-card">
+          <div class="stat-value">{{ sb.totalStolenBases }}</div>
+          <div class="stat-label">Stolen Bases</div>
         </div>
-        <div
-          class="bg-surface-card border-line p-card min-w-[100px] rounded-[10px] border text-center"
-        >
-          <div class="text-content-bright text-2xl font-bold tabular-nums">
+        <div class="stat-card">
+          <div class="stat-value">
             {{ sb.overallScoringRate * 100 | number: '1.1-1' }}%
           </div>
-          <div class="text-content-dim mt-0.5 text-[0.85rem]">
-            Eventually Scored
-          </div>
+          <div class="stat-label">Eventually Scored</div>
         </div>
       </div>
 

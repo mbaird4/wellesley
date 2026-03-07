@@ -26,12 +26,13 @@
   </div>
 }
 @if (loading) {
-  <div class="py-card px-card text-content-muted text-[1.05rem]">
+  <div class="loading-state">
+    <i class="fa-solid fa-baseball loading-spinner"></i>
     Loading statistics...
   </div>
 }
 @if (results.length > 0 && !loading) {
-  <div class="mt-6">
+  <div class="stagger-children mt-6">
     <h2>Season Totals</h2>
     <table class="stats-table">
       <thead>
@@ -56,9 +57,12 @@
       </tbody>
     </table>
     <div
-      class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text mb-6 rounded-[10px] border-l-[3px] text-[1.1rem]"
+      class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text mb-6 flex items-baseline gap-2 rounded-[10px] border-l-[3px] text-[1.1rem]"
     >
-      <strong>Total plate appearances: {{ totalPlateAppearances }}</strong>
+      Total plate appearances:
+      <span class="font-stat text-xl font-bold">
+        {{ totalPlateAppearances }}
+      </span>
     </div>
 
     @if (baseRunnerStats.length > 0) {
@@ -74,7 +78,11 @@
     <h2>Game-by-Game Breakdown</h2>
     @for (game of games; track $index; let i = $index) {
       <div class="game-card">
-        <button class="game-toggle" (click)="toggleGame(i)">
+        <button
+          class="game-toggle"
+          [class.expanded]="expandedGame === i"
+          (click)="toggleGame(i)"
+        >
           <span class="text-content-dim w-4 shrink-0 text-[0.65rem]">
             {{ expandedGame === i ? '&#9660;' : '&#9654;' }}
           </span>
@@ -132,7 +140,10 @@
   </div>
 }
 @if (results.length === 0 && !loading && !error) {
-  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-    No results found. Select a season to load data.
+  <div class="empty-state">
+    <div class="empty-state-icon">
+      <i class="fa-solid fa-baseball"></i>
+    </div>
+    Pick a season above to get started.
   </div>
 }

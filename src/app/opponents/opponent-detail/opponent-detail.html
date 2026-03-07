@@ -156,13 +156,14 @@
     </div>
   }
   @if (loading() && activeTab() === 'woba') {
-    <div class="py-card px-card text-content-muted text-[1.05rem]">
+    <div class="loading-state">
+      <i class="fa-solid fa-baseball loading-spinner"></i>
       Loading...
     </div>
   }
   @if (empty() && activeTab() === 'woba') {
     <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-      No data available for this team.
+      No scouting data for this team yet.
     </div>
   }
 </ng-template>

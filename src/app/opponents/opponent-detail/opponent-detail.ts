@@ -52,7 +52,7 @@ export type OpponentTab = 'woba' | 'spray' | 'pitching' | 'stats';
     SeasonStats,
     WobaLegend,
   ],
-  host: { class: 'flex min-w-0 flex-1 flex-col print:block' },
+  host: { class: 'stagger-children flex min-w-0 flex-1 flex-col print:block' },
   templateUrl: './opponent-detail.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

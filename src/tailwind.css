@@ -82,7 +82,7 @@
 
   body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--color-surface);
     color: var(--color-content);
     -webkit-font-smoothing: antialiased;
@@ -154,6 +154,33 @@
 @utility gradient-lighter {
   @apply from-brand-lighter to-brand bg-linear-to-br;
 }
+@utility font-stat {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@utility animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @layer components {
   /* ── Shared Card ── */
@@ -161,6 +188,43 @@
     @apply bg-surface-card border-line-hover p-section rounded-2xl border print:border-none print:bg-transparent print:p-0;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
+    animation: fade-in-up 0.4s ease-out both;
+  }
+
+  /* ── Staggered fade-in for direct children ── */
+  .stagger-children > * {
+    animation: fade-in-up 0.35s ease-out both;
+  }
+
+  .stagger-children > :nth-child(1) {
+    animation-delay: 0ms;
+  }
+  .stagger-children > :nth-child(2) {
+    animation-delay: 60ms;
+  }
+  .stagger-children > :nth-child(3) {
+    animation-delay: 120ms;
+  }
+  .stagger-children > :nth-child(4) {
+    animation-delay: 180ms;
+  }
+  .stagger-children > :nth-child(5) {
+    animation-delay: 240ms;
+  }
+  .stagger-children > :nth-child(6) {
+    animation-delay: 300ms;
+  }
+  .stagger-children > :nth-child(7) {
+    animation-delay: 360ms;
+  }
+  .stagger-children > :nth-child(8) {
+    animation-delay: 420ms;
+  }
+  .stagger-children > :nth-child(9) {
+    animation-delay: 480ms;
+  }
+  .stagger-children > :nth-child(n + 10) {
+    animation-delay: 540ms;
   }
 
   /* ── Select input (focus ring, option bg, disabled state) ── */
@@ -231,11 +295,20 @@
     }
 
     td {
-      @apply text-content-secondary border-surface-hover border-b px-4 py-2.5 text-base;
+      @apply text-content-secondary border-surface-hover border-b px-4 py-2.5 text-base font-stat tabular-nums;
+    }
+
+    td:first-child {
+      @apply text-content-bright font-medium;
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     tbody tr {
-      @apply transition-[background];
+      @apply transition-[background,border-color] duration-150;
+
+      &:hover {
+        @apply bg-surface-hover;
+      }
 
       &.player-row:hover {
         @apply bg-surface-hover;
@@ -244,10 +317,6 @@
       &:last-child td {
         @apply border-b-0;
       }
-    }
-
-    td:first-child {
-      @apply text-content-bright font-medium;
     }
   }
 
@@ -283,10 +352,14 @@
   }
 
   .game-toggle {
-    @apply bg-surface-sunken border-line text-content-secondary flex w-full cursor-pointer items-center gap-3 rounded-[10px] border px-4 py-2.5 text-left font-[inherit] text-base transition-[background,border-color];
+    @apply bg-surface-sunken border-line text-content-secondary flex w-full cursor-pointer items-center gap-3 rounded-[10px] border border-l-[3px] border-l-transparent px-4 py-2.5 text-left font-[inherit] text-base transition-[background,border-color] duration-150;
 
     &:hover {
       @apply bg-surface-elevated border-line-medium;
+    }
+
+    &.expanded {
+      @apply border-l-brand bg-surface-elevated;
     }
   }
 
@@ -300,7 +373,7 @@
 
   /* ── Nav link (active state) ── */
   .nav-link {
-    @apply text-content-muted rounded-lg px-4 py-1.5 text-base font-medium no-underline transition-[color,background];
+    @apply text-content-muted rounded-lg px-4 py-1.5 text-base font-medium no-underline transition-[color,background,box-shadow] duration-200;
 
     &:hover {
       @apply text-content-bright bg-surface-elevated;
@@ -308,6 +381,9 @@
 
     &.active {
       @apply bg-brand-bg text-brand-text;
+      box-shadow:
+        0 0 12px var(--color-brand-glow-strong),
+        0 0 4px var(--color-brand-glow);
     }
   }
 
@@ -344,22 +420,27 @@
   /* ── Woba tiers (dynamically applied via [class]) ── */
   .tier-excellent {
     @apply bg-tier-excellent-bg text-tier-excellent;
+    box-shadow: inset 0 0 12px rgba(34, 197, 94, 0.08);
   }
 
   .tier-great {
     @apply bg-tier-great-bg text-tier-great;
+    box-shadow: inset 0 0 12px rgba(34, 197, 94, 0.05);
   }
 
   .tier-above_average {
     @apply bg-tier-above-avg-bg text-tier-above-avg;
+    box-shadow: inset 0 0 12px rgba(250, 204, 21, 0.06);
   }
 
   .tier-average {
     @apply bg-tier-average-bg text-tier-average;
+    box-shadow: inset 0 0 12px rgba(251, 146, 60, 0.06);
   }
 
   .tier-below_average {
     @apply bg-tier-below-avg-bg text-tier-below-avg;
+    box-shadow: inset 0 0 12px rgba(239, 68, 68, 0.08);
   }
 
   /* ── Woba player table (hover states requiring nesting) ── */
@@ -532,6 +613,37 @@
 
     &:disabled {
       @apply disabled;
+    }
+  }
+
+  /* ── Stat callout card (brand top accent) ── */
+  .stat-card {
+    @apply bg-surface-card border-line p-card min-w-[100px] rounded-[10px] border border-t-2 border-t-brand-light text-center;
+  }
+
+  .stat-card .stat-value {
+    @apply text-content-bright font-stat text-2xl font-bold tabular-nums;
+  }
+
+  .stat-card .stat-label {
+    @apply text-content-dim mt-0.5 text-[0.85rem];
+  }
+
+  /* ── Empty state ── */
+  .empty-state {
+    @apply py-section px-card text-content-dim text-center text-[1.05rem];
+
+    .empty-state-icon {
+      @apply text-content-empty mb-2 text-3xl;
+    }
+  }
+
+  /* ── Loading state ── */
+  .loading-state {
+    @apply py-card px-card text-content-muted flex items-center gap-3 text-[1.05rem];
+
+    .loading-spinner {
+      @apply text-brand-text animate-spin text-lg;
     }
   }
 
