@@ -18,7 +18,22 @@ interface PlayerScoringBreakdown {
 interface TypeBadge {
   key: string;
   value: number;
+  colorClass: string;
 }
+
+const BADGE_COLORS: Record<string, string> = {
+  homer: 'border-chart-green',
+  triple: 'border-chart-teal',
+  double: 'border-chart-yellow',
+  single: 'border-chart-blue',
+  bunt_single: 'border-chart-blue',
+  sac_fly: 'border-chart-orange',
+  sac_bunt: 'border-chart-orange',
+  walk: 'border-chart-yellow',
+  hbp: 'border-chart-yellow',
+};
+
+const DEFAULT_BADGE_COLOR = 'border-chart-muted';
 
 interface DisplayPlayer extends PlayerScoringBreakdown {
   topTypes: TypeBadge[];
@@ -51,7 +66,11 @@ export class ByPlayerTab {
 
     const enriched = players.map((p) => {
       const entries = Object.entries(p.rbiByType)
-        .map(([k, v]) => ({ key: k, value: v }))
+        .map(([k, v]) => ({
+          key: k,
+          value: v,
+          colorClass: BADGE_COLORS[k] ?? DEFAULT_BADGE_COLOR,
+        }))
         .sort((a, b) => b.value - a.value);
 
       return {

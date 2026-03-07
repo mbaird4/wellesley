@@ -19,7 +19,8 @@
           <div class="flex flex-wrap gap-[0.3rem]">
             @for (badge of p.topTypes; track badge.key) {
               <span
-                class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.75rem] whitespace-nowrap"
+                class="bg-surface-elevated text-content-muted inline-block rounded-md border-l-2 px-2 py-[0.15rem] text-[0.75rem] whitespace-nowrap"
+                [class]="badge.colorClass"
               >
                 {{ badge.key | formatPlayType }}: {{ badge.value }}
               </span>
