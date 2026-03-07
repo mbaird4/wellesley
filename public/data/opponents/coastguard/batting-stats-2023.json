@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-02T22:28:33.372Z",
+  "scrapedAt": "2026-03-07T00:50:52.448Z",
   "year": 2023,
   "teamGames": 42,
   "players": [
@@ -9,8 +9,8 @@
       "name": "Dana Walker",
       "jerseyNumber": 22,
       "classYear": "Senior",
-      "position": null,
-      "bats": null,
+      "position": "RHP",
+      "bats": "R",
       "season": {
         "year": 2023,
         "name": "Walker, Dana",
@@ -41,46 +41,11 @@
       }
     },
     {
-      "name": "Bridget Bartz",
-      "jerseyNumber": 10,
-      "classYear": "Senior",
-      "position": null,
-      "bats": null,
-      "season": {
-        "year": 2023,
-        "name": "Bartz, Bridget",
-        "avg": 0.198,
-        "ops": 0.478,
-        "gp": 33,
-        "gs": 28,
-        "ab": 86,
-        "r": 11,
-        "h": 17,
-        "doubles": 3,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 13,
-        "tb": 20,
-        "slg": 0.233,
-        "bb": 5,
-        "hbp": 1,
-        "so": 17,
-        "gdp": 0,
-        "obp": 0.245,
-        "sf": 2,
-        "sh": 1,
-        "sb": 0,
-        "sbAtt": 0,
-        "woba": 0.202,
-        "pa": 95
-      }
-    },
-    {
       "name": "Maura Murphy",
       "jerseyNumber": 4,
       "classYear": "Senior",
-      "position": null,
-      "bats": null,
+      "position": "Outfield",
+      "bats": "R",
       "season": {
         "year": 2023,
         "name": "Murphy, Maura",
@@ -114,8 +79,8 @@
       "name": "Emma Behel",
       "jerseyNumber": 8,
       "classYear": "Senior",
-      "position": null,
-      "bats": null,
+      "position": "RHP, 1B",
+      "bats": "L",
       "season": {
         "year": 2023,
         "name": "Behel, Emma",
@@ -143,6 +108,41 @@
         "sbAtt": 0,
         "woba": 0.229,
         "pa": 35
+      }
+    },
+    {
+      "name": "Bridget Bartz",
+      "jerseyNumber": 10,
+      "classYear": "Senior",
+      "position": "Infield",
+      "bats": "R",
+      "season": {
+        "year": 2023,
+        "name": "Bartz, Bridget",
+        "avg": 0.198,
+        "ops": 0.478,
+        "gp": 33,
+        "gs": 28,
+        "ab": 86,
+        "r": 11,
+        "h": 17,
+        "doubles": 3,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 13,
+        "tb": 20,
+        "slg": 0.233,
+        "bb": 5,
+        "hbp": 1,
+        "so": 17,
+        "gdp": 0,
+        "obp": 0.245,
+        "sf": 2,
+        "sh": 1,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0.202,
+        "pa": 95
       }
     }
   ]
