@@ -66,7 +66,7 @@ export class OpponentDetail {
 
   readonly teams: TeamEntry[] = OPPONENT_TEAMS;
 
-  readonly activeTab = signal<OpponentTab>('woba');
+  readonly activeTab = signal<OpponentTab>('spray');
   readonly teamData = signal<Team | null>(null);
   readonly pitchingData = signal<PitchingData | null>(null);
   readonly loading = signal(false);

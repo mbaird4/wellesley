@@ -4,17 +4,6 @@
 
     <div class="flex gap-1">
       <button
-        (click)="selectTab('woba')"
-        class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
-        [class]="
-          activeTab() === 'woba'
-            ? 'bg-brand-bg text-brand-text'
-            : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-        "
-      >
-        wOBA Stats
-      </button>
-      <button
         (click)="selectTab('spray')"
         class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
         [class]="
@@ -24,6 +13,17 @@
         "
       >
         Spray Chart
+      </button>
+      <button
+        (click)="selectTab('woba')"
+        class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+        [class]="
+          activeTab() === 'woba'
+            ? 'bg-brand-bg text-brand-text'
+            : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+        "
+      >
+        wOBA
       </button>
       <button
         (click)="selectTab('pitching')"
