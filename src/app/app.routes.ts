@@ -32,6 +32,31 @@ export const appRoutes: Route[] = [
           import('./opponents/opponent-detail/opponent-detail').then(
             (m) => m.OpponentDetail
           ),
+        children: [
+          { path: '', redirectTo: 'spray', pathMatch: 'full' },
+          {
+            path: 'spray',
+            loadComponent: () =>
+              import('./opponents/tabs/spray-tab').then((m) => m.SprayTab),
+          },
+          {
+            path: 'woba',
+            loadComponent: () =>
+              import('./opponents/tabs/woba-tab').then((m) => m.WobaTab),
+          },
+          {
+            path: 'pitching',
+            loadComponent: () =>
+              import('./opponents/tabs/pitching-tab').then(
+                (m) => m.PitchingTab
+              ),
+          },
+          {
+            path: 'stats',
+            loadComponent: () =>
+              import('./opponents/tabs/stats-tab').then((m) => m.StatsTab),
+          },
+        ],
       },
     ],
   },
