@@ -24,6 +24,16 @@ export const appRoutes: Route[] = [
     path: 'opponents',
     loadComponent: () =>
       import('./opponents/opponents').then((m) => m.Opponents),
+    children: [
+      { path: '', redirectTo: 'babson', pathMatch: 'full' },
+      {
+        path: ':slug',
+        loadComponent: () =>
+          import('./opponents/opponent-detail/opponent-detail').then(
+            (m) => m.OpponentDetail
+          ),
+      },
+    ],
   },
   {
     path: 'pitching',

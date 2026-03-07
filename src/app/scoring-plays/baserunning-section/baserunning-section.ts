@@ -11,7 +11,10 @@ import { FormatSituationPipe } from '@ws/core/ui';
 @Component({
   selector: 'ws-baserunning-section',
   standalone: true,
-  imports: [DecimalPipe, FormatSituationPipe],
+  imports: [
+    DecimalPipe,
+    FormatSituationPipe,
+  ],
   templateUrl: './baserunning-section.html',
   host: { class: 'flex flex-col' },
   changeDetection: ChangeDetectionStrategy.OnPush,

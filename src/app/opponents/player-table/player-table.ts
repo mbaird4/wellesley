@@ -19,7 +19,13 @@ import { PlayerDetail } from '../player-detail/player-detail';
 @Component({
   selector: 'ws-player-table',
   standalone: true,
-  imports: [NgStyle, NgTemplateOutlet, ClassYearPipe, WobaBadge, PlayerDetail],
+  imports: [
+    NgStyle,
+    NgTemplateOutlet,
+    ClassYearPipe,
+    WobaBadge,
+    PlayerDetail,
+  ],
   host: { class: 'block' },
   templateUrl: './player-table.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
