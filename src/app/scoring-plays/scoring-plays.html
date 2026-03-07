@@ -1,21 +1,23 @@
-<div class="mb-6 flex flex-wrap items-center gap-3">
-  <label
-    for="scoring-year-select"
-    class="text-content-muted text-base font-medium tracking-[0.05em] uppercase"
+<div class="mb-6 flex flex-wrap items-center gap-2">
+  <span
+    class="text-content-muted mr-1 text-sm font-medium tracking-[0.05em] uppercase"
   >
-    Season:
-  </label>
-  <select
-    id="scoring-year-select"
-    [ngModel]="selectedYear()"
-    (ngModelChange)="setYear($event)"
-    [disabled]="loading()"
-    class="year-select"
-  >
-    @for (year of availableYears; track year) {
-      <option [value]="year">{{ year }}</option>
-    }
-  </select>
+    Season
+  </span>
+  @for (year of availableYears; track year) {
+    <button
+      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-sm font-medium tabular-nums transition-[color,background] disabled:cursor-not-allowed disabled:opacity-40"
+      [class]="
+        selectedYear() === year
+          ? 'bg-brand-bg text-brand-text'
+          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
+      "
+      [disabled]="loading()"
+      (click)="setYear(year)"
+    >
+      {{ year }}
+    </button>
+  }
 </div>
 
 @if (error()) {
@@ -60,10 +62,10 @@
     </div>
 
     @if (activeTab() === 'summary') {
-      <h2 class="section-heading-lg">Scoring Plays — {{ selectedYear() }}</h2>
       <ws-summary-tab
         [selectedYear]="selectedYear()"
         [totalRuns]="totalRuns()"
+        [gamesCount]="gamesCount()"
         [typesWithCounts]="typesWithCounts()"
         [byOuts]="byOuts()"
         [bySituation]="bySituation()"

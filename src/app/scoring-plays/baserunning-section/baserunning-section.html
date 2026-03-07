@@ -1,8 +1,8 @@
 @if (stolenBaseSummary(); as sb) {
   @if (sb.totalStolenBases > 0) {
     <h3 class="section-heading-sm">Stolen Base Scoring</h3>
-    <div class="mt-3">
-      <div class="stagger-children mb-4 flex flex-wrap gap-4">
+    <div class="mt-3 flex flex-col gap-4">
+      <div class="stagger-children flex flex-wrap gap-4">
         <div class="stat-card">
           <div class="stat-value">{{ sb.totalStolenBases }}</div>
           <div class="stat-label">Stolen Bases</div>
@@ -15,32 +15,48 @@
         </div>
       </div>
 
-      <table class="stats-table">
-        <thead>
-          <tr>
-            <th>Base Stolen To</th>
-            <th>Total</th>
-            <th>Scored</th>
-            <th>Rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          @for (row of filteredByBase(); track row.base) {
+      <button
+        class="text-content-dim hover:text-content-muted flex cursor-pointer items-center gap-1.5 border-none bg-transparent text-sm font-medium transition-colors"
+        (click)="toggleStolenBases()"
+      >
+        <span class="text-[0.65rem]">
+          {{ stolenBasesExpanded() ? '&#9660;' : '&#9654;' }}
+        </span>
+        @if (stolenBasesExpanded()) {
+          Hide breakdown
+        } @else {
+          Show breakdown by base
+        }
+      </button>
+
+      @if (stolenBasesExpanded()) {
+        <table class="stats-table">
+          <thead>
             <tr>
-              <td class="capitalize">{{ row.base }}</td>
-              <td>{{ row.total }}</td>
-              <td>{{ row.scored }}</td>
-              <td>
-                {{
-                  row.total > 0
-                    ? ((row.scored / row.total) * 100 | number: '1.1-1') + '%'
-                    : '—'
-                }}
-              </td>
+              <th>Base Stolen To</th>
+              <th>Total</th>
+              <th>Scored</th>
+              <th>Rate</th>
             </tr>
-          }
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            @for (row of filteredByBase(); track row.base) {
+              <tr>
+                <td class="capitalize">{{ row.base }}</td>
+                <td>{{ row.total }}</td>
+                <td>{{ row.scored }}</td>
+                <td>
+                  {{
+                    row.total > 0
+                      ? ((row.scored / row.total) * 100 | number: '1.1-1') + '%'
+                      : '—'
+                  }}
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
     </div>
   }
 }
@@ -57,7 +73,7 @@
       >
         Situation
       </button>
-      <div class="min-w-0 flex-1 mr-4"></div>
+      <div class="mr-4 min-w-0 flex-1"></div>
       <button
         class="text-content-dim hover:text-content-muted w-16 cursor-pointer border-none bg-transparent text-right text-xs font-semibold tracking-widest uppercase transition-colors"
         (click)="sort('runners')"

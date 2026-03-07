@@ -44,6 +44,11 @@ export class BaserunningSection {
 
   readonly sortKey = signal<SortKey>('situation');
   readonly sortAsc = signal(true);
+  readonly stolenBasesExpanded = signal(false);
+
+  toggleStolenBases(): void {
+    this.stolenBasesExpanded.update((v) => !v);
+  }
 
   readonly filteredByBase = computed(() => {
     const sb = this.stolenBaseSummary();

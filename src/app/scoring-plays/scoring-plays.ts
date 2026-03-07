@@ -5,7 +5,6 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/core/data';
 import type {
   BaseSituation,
@@ -60,7 +59,6 @@ const SITUATION_ORDER: BaseSituation[] = [
   selector: 'ws-scoring-plays',
   standalone: true,
   imports: [
-    FormsModule,
     ByGameTab,
     ByPlayerTab,
     SummaryTab,
@@ -222,6 +220,7 @@ export class ScoringPlays {
   });
 
   readonly totalRuns = computed(() => this.seasonSummary()?.totalRuns ?? 0);
+  readonly gamesCount = computed(() => this.gameScoringPlays().length);
 
   constructor() {
     this.loadData();

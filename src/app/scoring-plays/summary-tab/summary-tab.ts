@@ -2,6 +2,7 @@ import { DecimalPipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  computed,
   input,
   signal,
 } from '@angular/core';
@@ -47,6 +48,7 @@ import {
 export class SummaryTab {
   readonly selectedYear = input.required<number>();
   readonly totalRuns = input.required<number>();
+  readonly gamesCount = input.required<number>();
   readonly typesWithCounts = input.required<PlayTypeRow[]>();
   readonly byOuts = input.required<DistributionRow[]>();
   readonly bySituation = input.required<DistributionRow[]>();
@@ -55,6 +57,16 @@ export class SummaryTab {
   readonly sacBuntSummary = input.required<SacBuntSummary | null>();
   readonly stolenBaseSummary = input.required<StolenBaseSummary | null>();
   readonly runnerConversions = input.required<RunnerConversionRow[]>();
+  readonly runsPerGame = computed(() => {
+    const games = this.gamesCount();
+
+    if (games === 0) {
+      return 0;
+    }
+
+    return this.totalRuns() / games;
+  });
+
   readonly sacBuntsExpanded = signal(false);
 
   toggleSacBunts(): void {

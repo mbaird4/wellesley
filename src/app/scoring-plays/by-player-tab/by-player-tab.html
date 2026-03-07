@@ -3,35 +3,39 @@
 <table class="stats-table">
   <thead>
     <tr>
-      <th>Player</th>
-      <th>RBI</th>
+      <th class="cursor-pointer" (click)="sort('name')">Player</th>
+      <th class="cursor-pointer" (click)="sort('runs')">Runs Scored</th>
+      <th class="cursor-pointer" (click)="sort('rbis')">RBI</th>
       <th>Top RBI Types</th>
-      <th>Runs Scored</th>
     </tr>
   </thead>
   <tbody>
-    @for (p of players(); track p.name) {
+    @for (p of displayPlayers(); track p.name) {
       <tr>
         <td>{{ p.name }}</td>
-        <td>{{ p.rbis }}</td>
-        <td class="flex flex-wrap gap-[0.3rem]">
-          @for (entry of p.rbiByType | keyvalue; track entry.key) {
-            <span
-              class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap"
-            >
-              {{ entry.key | formatPlayType }}: {{ entry.value }}
-            </span>
-          }
-
-          @if (p.rbiByType | isEmpty) {
-            <span
-              class="inline-block px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap text-transparent"
-            >
-              .
-            </span>
-          }
+        <td class="tabular-nums">{{ p.runsScored }}</td>
+        <td class="tabular-nums">{{ p.rbis }}</td>
+        <td>
+          <div class="flex flex-wrap gap-[0.3rem]">
+            @for (badge of p.topTypes; track badge.key) {
+              <span
+                class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.75rem] whitespace-nowrap"
+              >
+                {{ badge.key | formatPlayType }}: {{ badge.value }}
+              </span>
+            }
+            @if (p.overflowCount > 0) {
+              <span
+                class="text-content-dim inline-block px-1 py-[0.15rem] text-[0.75rem]"
+              >
+                +{{ p.overflowCount }}
+              </span>
+            }
+            @if (p.topTypes.length === 0) {
+              <span class="text-content-empty text-[0.75rem]">—</span>
+            }
+          </div>
         </td>
-        <td>{{ p.runsScored }}</td>
       </tr>
     }
   </tbody>
