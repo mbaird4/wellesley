@@ -20,7 +20,7 @@
 
 <!-- Play Type Breakdown -->
 <div class="bg-surface-card border-line p-card rounded-xl border">
-  <h3 class="section-heading-sm mt-0">How Runs Score</h3>
+  <h3>How Runs Score</h3>
   <ws-play-type-chart [data]="typesWithCounts()" />
 </div>
 
@@ -36,13 +36,13 @@
 
 <!-- Scenario Heatmap -->
 <div class="bg-surface-card border-line p-card rounded-xl border">
-  <h3 class="section-heading-sm mt-0">Scoring by Scenario</h3>
+  <h3>Scoring by Scenario</h3>
   <ws-scenario-heatmap [data]="byScenario()" />
 </div>
 
 <!-- Scoring Leaderboard -->
 <div class="bg-surface-card border-line p-card rounded-xl border">
-  <h3 class="section-heading-sm mt-0">Scoring Leaders</h3>
+  <h3>Scoring Leaders</h3>
   <ws-scoring-leaderboard [rows]="playerBreakdowns()" />
 </div>
 
@@ -52,7 +52,7 @@
     <div
       class="bg-surface-card border-line p-card flex flex-col gap-4 rounded-xl border"
     >
-      <h3 class="mt-0">Sac Bunt Effectiveness</h3>
+      <h3 class="mb-0">Sac Bunt Effectiveness</h3>
 
       <div class="stagger-children flex flex-wrap gap-4">
         <div class="stat-card">

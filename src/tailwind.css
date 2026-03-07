@@ -139,12 +139,14 @@
     color: var(--color-content-heading);
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
   }
 
   h3 {
     color: var(--color-content-heading);
     font-size: 1.15rem;
     font-weight: 600;
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -182,14 +184,6 @@
 }
 @utility py-cell {
   @apply py-2 md:py-3;
-}
-
-@utility section-heading-sm {
-  @apply mb-3;
-}
-
-@utility section-heading-lg {
-  @apply mb-4;
 }
 
 @utility disabled {
