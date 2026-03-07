@@ -1,37 +1,37 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-06T11:23:43.372Z",
+  "scrapedAt": "2026-03-07T11:15:35.713Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 3,
-      "l": 0,
-      "era": 2.62,
-      "app": 3,
-      "gs": 2,
-      "ip": 18.2,
-      "h": 22,
-      "r": 7,
-      "er": 7,
-      "bb": 4,
-      "so": 25,
+      "l": 1,
+      "era": 2.27,
+      "app": 4,
+      "gs": 3,
+      "ip": 24.2,
+      "h": 27,
+      "r": 8,
+      "er": 8,
+      "bb": 5,
+      "so": 33,
       "hr": 2
     },
     {
       "name": "Dube, Megan",
-      "w": 1,
+      "w": 2,
       "l": 3,
-      "era": 3.64,
-      "app": 4,
-      "gs": 3,
-      "ip": 25,
-      "h": 28,
-      "r": 15,
-      "er": 13,
-      "bb": 7,
-      "so": 18,
+      "era": 3.94,
+      "app": 5,
+      "gs": 4,
+      "ip": 32,
+      "h": 39,
+      "r": 22,
+      "er": 18,
+      "bb": 8,
+      "so": 24,
       "hr": 2
     },
     {
@@ -624,6 +624,164 @@
             "Gabby Bellamore doubled to center field, 2 RBI (3-2 KBFFBB); Ashley Bergeron scored; Jessica Forneiro scored, unearned.",
             "Olivia Mason grounded out to ss (2-2 BBKF); Gabby Bellamore advanced to third.",
             "Amanda Madigan popped up to 2b (0-2 KF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/elizabethtown-college/boxscore/19222",
+      "date": "3/6/2026",
+      "opponent": "Elizabethtown College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hannah Long doubled to left field (0-1 F).",
+            "Lily Baldwin doubled to right center, RBI (2-1 FBB); Hannah Long scored.",
+            "Morgan Carr struck out looking (3-2 BBKSBF).",
+            "Brooke Huczko flied out to cf (1-2 SBS); Lily Baldwin advanced to third.",
+            "Maddie Reever reached first on a fielding error by ss, advanced to second (3-1 BBBK); Lily Baldwin scored, unearned.",
+            "Skye Zolomij struck out swinging (0-2 SKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Erin Slavin to ss for Gricelda Castro.",
+            "Izzy Akelaitis flied out to cf (0-0).",
+            "Sarah Birner struck out swinging (0-2 FKS).",
+            "Taylor Sherry struck out looking (3-2 SBBSFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Hannah Long singled to catcher, bunt (1-0 B).",
+            "Lily Baldwin fouled out to 1b (2-2 FFBFB).",
+            "Hannah Long stole second.",
+            "Morgan Carr flied out to cf (2-2 BFBF).",
+            "Brooke Huczko flied out to rf (3-1 BKBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Reever flied out to lf (1-1 BK).",
+            "Skye Zolomij tripled to left center (2-2 BKFBF).",
+            "Izzy Akelaitis popped up to 2b (1-0 B).",
+            "Emily Bittner struck out looking (1-2 KBFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Sherry walked (3-2 FBKBBB).",
+            "Hannah Long singled, bunt, advanced to second on a throwing error by 3b (0-0); Taylor Sherry advanced to second, advanced to third on the throw.",
+            "Lily Baldwin fouled out to c (1-2 FKB).",
+            "Morgan Carr fouled out to 3b (2-2 KBBF).",
+            "Brooke Huczko singled to right field, 2 RBI (0-0); Hannah Long scored, unearned; Taylor Sherry scored.",
+            "Brooke Huczko out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abigail Venis to 1b for Gwen Castro.",
+            "Maddie Reever doubled to left field (2-2 KFBBF).",
+            "Skye Zolomij flied out to rf (1-2 BKSF); Maddie Reever advanced to third.",
+            "Emma Dahl pinch hit for Izzy Akelaitis.",
+            "Courtney Oliver pinch ran for Maddie Reever.",
+            "Emma Dahl singled, bunt, advanced to second on a throwing error by p, RBI (0-0); Courtney Oliver scored.",
+            "Emily Bittner popped up to 1b (0-1 S).",
+            "Taylor Sherry lined out to lf (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Hannah Long flied out to cf (1-0 B).",
+            "Lily Baldwin doubled to left field (1-1 BS).",
+            "Morgan Carr singled to right field, advanced to second on the throw (2-1 KBB); Lily Baldwin advanced to third.",
+            "Cassidy Blaskopf pinch ran for Morgan Carr.",
+            "Brooke Huczko singled to center field, advanced to second on the throw, 2 RBI (0-0); Cassidy Blaskopf scored; Lily Baldwin scored.",
+            "Maddie Reever struck out swinging (2-2 BKBKS).",
+            "Skye Zolomij fouled out to c (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/carnegie-mellon-university/boxscore/19223",
+      "date": "3/6/2026",
+      "opponent": "Carnegie Mellon University",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maddie Lee struck out looking (2-2 BBKFK).",
+            "Kira Monji walked (3-0 BBBB).",
+            "Kira Monji stole second.",
+            "Maddy Beall hit by pitch (2-2 BKFH).",
+            "Sophia Doherty popped up to p (1-2 KSBF).",
+            "Maya Bala struck out swinging (2-2 BFBSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lindsey Murai lined out to 2b (0-2 KSF).",
+            "Madison Heimann flied out to cf (1-1 KB).",
+            "Riya Sharda singled to third base, bunt (0-0).",
+            "Riya Sharda stole second.",
+            "Aubrey Feldman singled to left field, advanced to second on the throw, RBI (2-2 BKFFB); Riya Sharda scored.",
+            "Maddie Lee struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Michelle Pacheco struck out swinging (2-2 KBFFB).",
+            "Maddy Beall singled to left center (2-0 BB).",
+            "Sophia Doherty fouled out to 1b (0-0).",
+            "Maya Bala struck out swinging (3-2 BBSBFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lindsey Murai flied out to cf (1-2 BSF).",
+            "Madison Heimann popped up to 1b (1-2 FFB).",
+            "Riya Sharda fouled out to 3b (3-2 FBBKFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jasmine Chao singled to center field (2-2 BSBS).",
+            "Maddie Lee fouled out to 3b, bunt (0-1 F).",
+            "Jasmine Chao stole second.",
+            "Michelle Pacheco struck out swinging (1-2 SSBS).",
+            "Maddy Beall fouled out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Reagan Diamond pinch hit for Sophia Doherty.",
+            "Bella Reuss to 3b for Maya Bala.",
+            "Gabrielle Yamoah to 1b for Lindsey Murai.",
+            "Reagan Diamond singled up the middle (0-1 F).",
+            "Bella Reuss struck out swinging (1-2 SBKS).",
+            "Gabrielle Yamoah struck out swinging (1-2 SBFS).",
+            "Madison Heimann flied out to lf (0-2 KK)."
           ]
         }
       ],
