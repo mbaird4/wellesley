@@ -35,7 +35,7 @@ interface ConversionDisplayRow {
   standalone: true,
   imports: [DecimalPipe],
   templateUrl: './baserunning-section.html',
-  host: { class: 'flex flex-col' },
+  host: { class: 'flex flex-col gap-6' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BaserunningSection {
