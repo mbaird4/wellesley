@@ -64,6 +64,23 @@
   --color-error-border: rgba(239, 68, 68, 0.2);
   --color-danger-bg-hover: rgba(239, 68, 68, 0.15);
   --color-danger-border-hover: rgba(239, 68, 68, 0.3);
+
+  /* ── Chart palette ── */
+  /* Categorical bar colors — visible against #0f1117 surface */
+  --color-chart-green: rgba(74, 222, 128, 0.35);
+  --color-chart-teal: rgba(45, 212, 191, 0.35);
+  --color-chart-blue: rgba(91, 122, 230, 0.35);
+  --color-chart-yellow: rgba(253, 224, 71, 0.28);
+  --color-chart-orange: rgba(251, 146, 60, 0.3);
+  --color-chart-muted: rgba(255, 255, 255, 0.08);
+
+  /* Heatmap intensity scale (blue) */
+  --color-chart-heat-1: rgba(91, 122, 230, 0.12);
+  --color-chart-heat-2: rgba(91, 122, 230, 0.22);
+  --color-chart-heat-3: rgba(91, 122, 230, 0.35);
+
+  /* Single-series bar fill */
+  --color-chart-bar: rgba(91, 122, 230, 0.3);
 }
 
 @page {

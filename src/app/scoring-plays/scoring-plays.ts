@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
   Component,
+  computed,
   inject,
+  signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/core/data';
@@ -15,34 +15,55 @@ import type {
   ScoringPlaySummary,
   StolenBaseSummary,
 } from '@ws/core/models';
-import {
-  FormatOutsPipe,
-  FormatPlayTypePipe,
-  FormatSituationPipe,
-  IsEmptyPipe,
-} from '@ws/core/ui';
+import { SITUATION_LABELS } from '@ws/core/ui';
 
-import { BaserunningSection } from './baserunning-section/baserunning-section';
+import { ByGameTab } from './by-game-tab/by-game-tab';
+import { ByPlayerTab } from './by-player-tab/by-player-tab';
+import type { PlayTypeRow } from './play-type-chart/play-type-chart';
+import type { DistributionRow } from './run-distribution/run-distribution';
+import type { ScenarioRow } from './scenario-heatmap/scenario-heatmap';
+import { SummaryTab } from './summary-tab/summary-tab';
 
-interface PlayerScoringBreakdown {
-  name: string;
-  runsScored: number;
-  rbis: number;
-  scoredByType: Record<string, number>;
-  rbiByType: Record<string, number>;
-}
+type ScoringTab = 'summary' | 'by-game' | 'by-player';
+
+const TYPE_ORDER: string[] = [
+  'homer',
+  'triple',
+  'double',
+  'single',
+  'bunt_single',
+  'sac_fly',
+  'sac_bunt',
+  'walk',
+  'hbp',
+  'wild_pitch',
+  'passed_ball',
+  'stolen_base',
+  'fielders_choice',
+  'error',
+  'productive_out',
+  'unknown',
+];
+
+const SITUATION_ORDER: BaseSituation[] = [
+  'empty',
+  'first',
+  'second',
+  'third',
+  'first_second',
+  'first_third',
+  'second_third',
+  'loaded',
+];
 
 @Component({
   selector: 'ws-scoring-plays',
   standalone: true,
   imports: [
-    CommonModule,
     FormsModule,
-    FormatOutsPipe,
-    FormatPlayTypePipe,
-    FormatSituationPipe,
-    IsEmptyPipe,
-    BaserunningSection,
+    ByGameTab,
+    ByPlayerTab,
+    SummaryTab,
   ],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
@@ -50,149 +71,111 @@ interface PlayerScoringBreakdown {
 })
 export class ScoringPlays {
   private statsService = inject(SoftballStatsService);
-  private cdr = inject(ChangeDetectorRef);
 
-  loading = false;
-  error: string | null = null;
-  selectedYear = 2025;
-  availableYears = [
+  readonly loading = signal(false);
+  readonly error = signal<string | null>(null);
+  readonly selectedYear = signal(2025);
+  readonly activeTab = signal<ScoringTab>('summary');
+
+  readonly availableYears = [
     2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
     2011,
   ];
 
-  activeTab: 'summary' | 'by-game' | 'by-player' = 'summary';
+  readonly seasonSummary = signal<ScoringPlaySummary | null>(null);
+  readonly gameScoringPlays = signal<GameScoringPlays[]>([]);
+  readonly sacBuntSummary = signal<SacBuntSummary | null>(null);
+  readonly stolenBaseSummary = signal<StolenBaseSummary | null>(null);
+  readonly runnerConversions = signal<RunnerConversionRow[]>([]);
+  readonly expandedGame = signal<number | null>(null);
 
-  seasonSummary: ScoringPlaySummary | null = null;
-  gameScoringPlays: GameScoringPlays[] = [];
-  playerBreakdowns: PlayerScoringBreakdown[] = [];
-  sacBuntSummary: SacBuntSummary | null = null;
-  stolenBaseSummary: StolenBaseSummary | null = null;
-  runnerConversions: RunnerConversionRow[] = [];
-  expandedGame: number | null = null;
-  typesWithCounts: { type: string; count: number; pct: number }[] = [];
-  sortedRunners: { name: string; count: number }[] = [];
-  sortedBatters: { name: string; count: number }[] = [];
+  readonly typesWithCounts = computed<PlayTypeRow[]>(() => {
+    const summary = this.seasonSummary();
+    if (!summary) {
+      return [];
+    }
 
-  // Scenario breakdowns
-  byOuts: { outs: number; count: number; pct: number }[] = [];
-  bySituation: { situation: BaseSituation; count: number; pct: number }[] = [];
-  byScenario: {
-    situation: BaseSituation;
-    outs: number;
-    count: number;
-    pct: number;
-  }[] = [];
+    return TYPE_ORDER.filter((t) => (summary.byType[t] || 0) > 0).map((t) => ({
+      type: t,
+      count: summary.byType[t],
+      pct: (summary.byType[t] / summary.totalRuns) * 100,
+    }));
+  });
 
-  // Ordered list of scoring play types for display
-  readonly typeOrder: string[] = [
-    'homer',
-    'triple',
-    'double',
-    'single',
-    'bunt_single',
-    'sac_fly',
-    'sac_bunt',
-    'walk',
-    'hbp',
-    'wild_pitch',
-    'passed_ball',
-    'stolen_base',
-    'fielders_choice',
-    'error',
-    'productive_out',
-    'unknown',
-  ];
+  readonly byOuts = computed<DistributionRow[]>(() => {
+    const games = this.gameScoringPlays();
+    const allPlays = games.flatMap((g) => g.plays);
+    const total = allPlays.length;
+    if (total === 0) {
+      return [];
+    }
 
-  constructor() {
-    this.loadData();
-  }
+    const outCounts = allPlays.reduce(
+      (acc, p) => {
+        acc[p.outs]++;
 
-  loadData(): void {
-    this.loading = true;
-    this.error = null;
-    this.seasonSummary = null;
-    this.gameScoringPlays = [];
-    this.playerBreakdowns = [];
-    this.sacBuntSummary = null;
-    this.stolenBaseSummary = null;
-    this.runnerConversions = [];
-    this.expandedGame = null;
-
-    this.statsService.getStats(this.selectedYear).subscribe({
-      next: (stats) => {
-        this.seasonSummary = stats.seasonScoringPlays;
-        this.gameScoringPlays = stats.gameScoringPlays;
-        this.sacBuntSummary = stats.sacBuntSummary;
-        this.stolenBaseSummary = stats.stolenBaseSummary;
-        this.runnerConversions = stats.runnerConversions;
-        this.buildTypesWithCounts();
-        this.buildSortedRunners();
-        this.buildSortedBatters();
-        this.buildPlayerBreakdowns(stats.gameScoringPlays);
-        this.buildScenarioBreakdowns(stats.gameScoringPlays);
-        this.loading = false;
-        this.cdr.markForCheck();
+        return acc;
       },
-      error: (err) => {
-        this.error =
-          err.message || 'An error occurred while loading scoring data';
-        this.loading = false;
-        console.error('Error loading scoring data:', err);
-        this.cdr.markForCheck();
-      },
+      [0, 0, 0]
+    );
+
+    return outCounts.map((count, outs) => ({
+      label: outs === 1 ? '1 Out' : `${outs} Outs`,
+      count,
+      pct: (count / total) * 100,
+    }));
+  });
+
+  readonly bySituation = computed<DistributionRow[]>(() => {
+    const games = this.gameScoringPlays();
+    const allPlays = games.flatMap((g) => g.plays);
+    const total = allPlays.length;
+    if (total === 0) {
+      return [];
+    }
+
+    const sitCounts: Record<string, number> = {};
+    allPlays.forEach((p) => {
+      sitCounts[p.baseSituation] = (sitCounts[p.baseSituation] || 0) + 1;
     });
-  }
 
-  toggleGame(index: number): void {
-    this.expandedGame = this.expandedGame === index ? null : index;
-  }
+    return SITUATION_ORDER.filter((s) => (sitCounts[s] || 0) > 0).map((s) => ({
+      label: SITUATION_LABELS[s] || s,
+      count: sitCounts[s],
+      pct: (sitCounts[s] / total) * 100,
+    }));
+  });
 
-  isBuntRelated(type: string): boolean {
-    return type === 'bunt_single' || type === 'sac_bunt';
-  }
-
-  private buildTypesWithCounts(): void {
-    if (!this.seasonSummary) {
-      this.typesWithCounts = [];
-
-      return;
+  readonly byScenario = computed<ScenarioRow[]>(() => {
+    const games = this.gameScoringPlays();
+    const allPlays = games.flatMap((g) => g.plays);
+    const total = allPlays.length;
+    if (total === 0) {
+      return [];
     }
 
-    const summary = this.seasonSummary;
-    this.typesWithCounts = this.typeOrder
-      .filter((t) => (summary.byType[t] || 0) > 0)
-      .map((t) => ({
-        type: t,
-        count: summary.byType[t],
-        pct: (summary.byType[t] / summary.totalRuns) * 100,
-      }));
-  }
+    const scenarioMap = new Map<string, number>();
+    allPlays.forEach((p) => {
+      const key = `${p.baseSituation}|${p.outs}`;
+      scenarioMap.set(key, (scenarioMap.get(key) || 0) + 1);
+    });
 
-  private buildSortedRunners(): void {
-    if (!this.seasonSummary) {
-      this.sortedRunners = [];
+    return Array.from(scenarioMap.entries())
+      .map(([key, count]) => {
+        const [situation, outs] = key.split('|');
 
-      return;
-    }
-
-    this.sortedRunners = Object.entries(this.seasonSummary.byRunner)
-      .map(([name, count]) => ({ name, count }))
+        return {
+          situation: situation as BaseSituation,
+          outs: Number(outs),
+          count,
+          pct: (count / total) * 100,
+        };
+      })
       .sort((a, b) => b.count - a.count);
-  }
+  });
 
-  private buildSortedBatters(): void {
-    if (!this.seasonSummary) {
-      this.sortedBatters = [];
-
-      return;
-    }
-
-    this.sortedBatters = Object.entries(this.seasonSummary.byBatter)
-      .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => b.count - a.count);
-  }
-
-  private buildPlayerBreakdowns(games: GameScoringPlays[]): void {
+  readonly playerBreakdowns = computed(() => {
+    const games = this.gameScoringPlays();
     const runnerMap = new Map<
       string,
       { runsScored: number; byType: Record<string, number> }
@@ -225,9 +208,9 @@ export class ScoringPlays {
         }
       });
 
-    // Merge into unified player list
     const allNames = new Set([...runnerMap.keys(), ...batterMap.keys()]);
-    this.playerBreakdowns = Array.from(allNames)
+
+    return Array.from(allNames)
       .map((name) => ({
         name,
         runsScored: runnerMap.get(name)?.runsScored || 0,
@@ -236,81 +219,53 @@ export class ScoringPlays {
         rbiByType: batterMap.get(name)?.byType || {},
       }))
       .sort((a, b) => b.runsScored + b.rbis - (a.runsScored + a.rbis));
+  });
+
+  readonly totalRuns = computed(() => this.seasonSummary()?.totalRuns ?? 0);
+
+  constructor() {
+    this.loadData();
   }
 
-  private buildScenarioBreakdowns(games: GameScoringPlays[]): void {
-    const allPlays = games.flatMap((g) => g.plays);
-    const total = allPlays.length;
-    if (total === 0) {
-      this.byOuts = [];
-      this.bySituation = [];
-      this.byScenario = [];
+  loadData(): void {
+    this.loading.set(true);
+    this.error.set(null);
+    this.seasonSummary.set(null);
+    this.gameScoringPlays.set([]);
+    this.sacBuntSummary.set(null);
+    this.stolenBaseSummary.set(null);
+    this.runnerConversions.set([]);
+    this.expandedGame.set(null);
 
-      return;
-    }
-
-    // By outs
-    const outCounts = allPlays.reduce(
-      (acc, p) => {
-        acc[p.outs]++;
-
-        return acc;
+    this.statsService.getStats(this.selectedYear()).subscribe({
+      next: (stats) => {
+        this.seasonSummary.set(stats.seasonScoringPlays);
+        this.gameScoringPlays.set(stats.gameScoringPlays);
+        this.sacBuntSummary.set(stats.sacBuntSummary);
+        this.stolenBaseSummary.set(stats.stolenBaseSummary);
+        this.runnerConversions.set(stats.runnerConversions);
+        this.loading.set(false);
       },
-      [0, 0, 0]
-    );
-
-    this.byOuts = outCounts.map((count, outs) => ({
-      outs,
-      count,
-      pct: (count / total) * 100,
-    }));
-
-    // By base situation
-    const sitCounts: Record<string, number> = {};
-    allPlays.forEach((p) => {
-      sitCounts[p.baseSituation] = (sitCounts[p.baseSituation] || 0) + 1;
+      error: (err) => {
+        this.error.set(
+          err.message || 'An error occurred while loading scoring data'
+        );
+        this.loading.set(false);
+        console.error('Error loading scoring data:', err);
+      },
     });
-
-    const sitOrder: BaseSituation[] = [
-      'empty',
-      'first',
-      'second',
-      'third',
-      'first_second',
-      'first_third',
-      'second_third',
-      'loaded',
-    ];
-    this.bySituation = sitOrder
-      .filter((s) => (sitCounts[s] || 0) > 0)
-      .map((s) => ({
-        situation: s,
-        count: sitCounts[s],
-        pct: (sitCounts[s] / total) * 100,
-      }));
-
-    // Cross-tab: situation × outs
-    const scenarioMap = new Map<string, number>();
-    allPlays.forEach((p) => {
-      const key = `${p.baseSituation}|${p.outs}`;
-      scenarioMap.set(key, (scenarioMap.get(key) || 0) + 1);
-    });
-
-    this.byScenario = Array.from(scenarioMap.entries())
-      .map(([key, count]) => {
-        const [situation, outs] = key.split('|');
-
-        return {
-          situation: situation as BaseSituation,
-          outs: Number(outs),
-          count,
-          pct: (count / total) * 100,
-        };
-      })
-      .sort((a, b) => b.count - a.count);
   }
 
-  boxscoreUrl(url: string): string {
-    return url.replace(/^\/wellesleyblue/, 'https://wellesleyblue.com');
+  toggleGame(index: number): void {
+    this.expandedGame.update((current) => (current === index ? null : index));
+  }
+
+  setYear(year: number): void {
+    this.selectedYear.set(year);
+    this.loadData();
+  }
+
+  setTab(tab: ScoringTab): void {
+    this.activeTab.set(tab);
   }
 }

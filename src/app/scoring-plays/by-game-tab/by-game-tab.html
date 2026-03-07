@@ -1,0 +1,77 @@
+<h2>Scoring Plays by Game — {{ selectedYear() }}</h2>
+
+@for (game of games(); track $index) {
+  <div class="mb-2">
+    <button
+      class="game-toggle"
+      [class.expanded]="expandedGame() === $index"
+      (click)="gameToggled.emit($index)"
+    >
+      <span class="text-content-dim w-4 shrink-0 text-[0.65rem]">
+        {{ expandedGame() === $index ? '&#9660;' : '&#9654;' }}
+      </span>
+      <span class="text-content-bright grow font-medium">
+        {{ game.opponent }}
+      </span>
+      <span
+        class="text-content-muted text-[0.95rem] whitespace-nowrap tabular-nums"
+      >
+        {{ game.summary.totalRuns }} runs
+      </span>
+      @if (game.url) {
+        <a
+          class="game-link"
+          [href]="game.url | boxscoreUrl"
+          target="_blank"
+          (click)="$event.stopPropagation()"
+        >
+          Boxscore
+        </a>
+      }
+    </button>
+
+    @if (expandedGame() === $index) {
+      @if (game.plays.length === 0) {
+        <div class="empty-state">
+          <div class="empty-state-icon">
+            <i class="fa-solid fa-baseball"></i>
+          </div>
+          No scoring plays detected
+        </div>
+      } @else {
+        <table class="stats-table game-plays-table">
+          <thead>
+            <tr>
+              <th>Inning</th>
+              <th>Outs</th>
+              <th>Situation</th>
+              <th>Runner</th>
+              <th>Type</th>
+              <th>Batter</th>
+              <th>Play</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (play of game.plays; track $index) {
+              <tr [class.bunt-highlight]="play.scoringPlayType | buntRelated">
+                <td>{{ play.inning }}</td>
+                <td>{{ play.outs }}</td>
+                <td>{{ play.baseSituation | formatSituation }}</td>
+                <td>{{ play.runnerName || '—' }}</td>
+                <td class="font-medium whitespace-nowrap">
+                  {{ play.scoringPlayType | formatPlayType }}
+                </td>
+                <td>{{ play.batterName || '—' }}</td>
+                <td
+                  class="text-content-dim max-w-[300px] overflow-hidden text-[0.85rem] text-ellipsis whitespace-nowrap"
+                >
+                  {{ play.playText }}
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    }
+  </div>
+}

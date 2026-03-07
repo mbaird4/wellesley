@@ -1,7 +1,7 @@
 import type { PipeTransform } from '@angular/core';
 import { Pipe } from '@angular/core';
 
-const SITUATION_LABELS: Record<string, string> = {
+export const SITUATION_LABELS: Record<string, string> = {
   empty: 'Bases Empty',
   first: 'Runner on 1st',
   second: 'Runner on 2nd',

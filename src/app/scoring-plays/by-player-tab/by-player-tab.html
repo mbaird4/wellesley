@@ -1,0 +1,38 @@
+<h2>Scoring Plays by Player — {{ selectedYear() }}</h2>
+
+<table class="stats-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>RBI</th>
+      <th>Top RBI Types</th>
+      <th>Runs Scored</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of players(); track p.name) {
+      <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.rbis }}</td>
+        <td class="flex flex-wrap gap-[0.3rem]">
+          @for (entry of p.rbiByType | keyvalue; track entry.key) {
+            <span
+              class="bg-surface-elevated border-line text-content-muted inline-block rounded-md border px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap"
+            >
+              {{ entry.key | formatPlayType }}: {{ entry.value }}
+            </span>
+          }
+
+          @if (p.rbiByType | isEmpty) {
+            <span
+              class="inline-block px-2 py-[0.15rem] text-[0.8rem] whitespace-nowrap text-transparent"
+            >
+              .
+            </span>
+          }
+        </td>
+        <td>{{ p.runsScored }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

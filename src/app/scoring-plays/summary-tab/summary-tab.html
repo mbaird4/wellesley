@@ -1,0 +1,118 @@
+<div
+  class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text rounded-[10px] border-l-[3px] text-[1.1rem]"
+>
+  {{ totalRuns() }} total runs scored
+</div>
+
+<!-- Play Type Breakdown -->
+<div class="bg-surface-card border-line p-card rounded-xl border">
+  <h3 class="section-heading-sm mt-0">How Runs Score</h3>
+  <ws-play-type-chart [data]="typesWithCounts()" />
+</div>
+
+<!-- Distribution Charts -->
+<div class="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+  <div class="bg-surface-card border-line p-card rounded-xl border">
+    <ws-run-distribution title="By Out Count" [data]="byOuts()" />
+  </div>
+  <div class="bg-surface-card border-line p-card rounded-xl border">
+    <ws-run-distribution title="By Base Situation" [data]="bySituation()" />
+  </div>
+</div>
+
+<!-- Scenario Heatmap -->
+<div class="bg-surface-card border-line p-card rounded-xl border">
+  <h3 class="section-heading-sm mt-0">Scoring by Scenario</h3>
+  <ws-scenario-heatmap [data]="byScenario()" />
+</div>
+
+<!-- Scoring Leaderboard -->
+<div class="bg-surface-card border-line p-card rounded-xl border">
+  <h3 class="section-heading-sm mt-0">Scoring Leaders</h3>
+  <ws-scoring-leaderboard [rows]="playerBreakdowns()" />
+</div>
+
+<!-- Sac Bunt Effectiveness -->
+@if (sacBuntSummary(); as sac) {
+  @if (sac.totalSacBunts > 0) {
+    <div class="bg-surface-card border-line p-card rounded-xl border">
+      <h3 class="section-heading-sm mt-0">Sac Bunt Effectiveness</h3>
+
+      <div class="stagger-children mb-4 flex flex-wrap gap-4">
+        <div class="stat-card">
+          <div class="stat-value">{{ sac.totalSacBunts }}</div>
+          <div class="stat-label">Sac Bunts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">{{ sac.totalRunnersOnBase }}</div>
+          <div class="stat-label">Runners on Base</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">{{ sac.totalRunnersScored }}</div>
+          <div class="stat-label">Runners Scored</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">
+            {{ sac.scoringRate * 100 | number: '1.1-1' }}%
+          </div>
+          <div class="stat-label">Scoring Rate</div>
+        </div>
+      </div>
+
+      <table class="stats-table scoring-table">
+        <thead>
+          <tr>
+            <th>Game</th>
+            <th>Inning</th>
+            <th>Batter</th>
+            <th>Runners on Base</th>
+            <th>Runners Scored</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (outcome of sac.outcomes; track $index) {
+            <tr [class.bunt-highlight]="true">
+              <td>
+                <a
+                  [href]="outcome.url | boxscoreUrl"
+                  target="_blank"
+                  class="game-link"
+                >
+                  {{ outcome.opponent }}
+                </a>
+              </td>
+              <td>{{ outcome.inning }}</td>
+              <td>{{ outcome.batterName || '—' }}</td>
+              <td>{{ outcome.runnersOnBase.join(', ') }}</td>
+              <td>
+                <div class="flex items-center gap-1.5">
+                  <span>
+                    {{
+                      outcome.runnersScored.length > 0
+                        ? outcome.runnersScored.join(', ')
+                        : 'None'
+                    }}
+                  </span>
+                  @if (outcome.runnersScored.length > 0) {
+                    <i
+                      class="fa-solid fa-check text-tier-excellent text-xs"
+                    ></i>
+                  } @else {
+                    <i
+                      class="fa-solid fa-xmark text-tier-below-avg text-xs"
+                    ></i>
+                  }
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+}
+
+<ws-baserunning-section
+  [stolenBaseSummary]="stolenBaseSummary()"
+  [runnerConversions]="runnerConversions()"
+/>
