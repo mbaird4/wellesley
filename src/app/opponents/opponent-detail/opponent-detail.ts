@@ -35,9 +35,10 @@ import { catchError } from 'rxjs/operators';
 import { OpponentSprayChart } from '../opponent-spray-chart/opponent-spray-chart';
 import { PlayerCardList } from '../player-card-list/player-card-list';
 import { PlayerTable } from '../player-table/player-table';
+import { SeasonStats } from '../season-stats/season-stats';
 import { OPPONENT_TEAMS } from '../teams';
 
-export type OpponentTab = 'woba' | 'spray' | 'pitching';
+export type OpponentTab = 'woba' | 'spray' | 'pitching' | 'stats';
 
 @Component({
   selector: 'ws-opponent-detail',
@@ -48,6 +49,7 @@ export type OpponentTab = 'woba' | 'spray' | 'pitching';
     PlayerCardList,
     OpponentSprayChart,
     PitcherAnalysis,
+    SeasonStats,
     WobaLegend,
   ],
   host: { class: 'flex min-w-0 flex-1 flex-col print:block' },

@@ -36,6 +36,17 @@
       >
         Pitching
       </button>
+      <button
+        (click)="selectTab('stats')"
+        class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+        [class]="
+          activeTab() === 'stats'
+            ? 'bg-brand-bg text-brand-text'
+            : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+        "
+      >
+        Season Stats
+      </button>
     </div>
   </div>
 } @else {
@@ -75,6 +86,17 @@
     >
       Pitching
     </button>
+    <button
+      (click)="selectTab('stats')"
+      class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium transition-colors"
+      [class]="
+        activeTab() === 'stats'
+          ? 'bg-brand-bg text-brand-text'
+          : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+      "
+    >
+      Stats
+    </button>
   </div>
 }
 
@@ -113,13 +135,15 @@
     [teamName]="selectedTeamName()"
     [teamData]="teamData()"
   />
-} @else {
+} @else if (activeTab() === 'pitching') {
   <ws-pitcher-analysis
     [pitchingData]="pitchingData()"
     [rosterNames]="rosterNames()"
     [jerseyMap]="jerseyMap()"
     [loading]="pitchingLoading()"
   />
+} @else if (activeTab() === 'stats') {
+  <ws-season-stats [slug]="slug()" />
 }
 
 <!-- Shared loading/error/empty states -->

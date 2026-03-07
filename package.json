@@ -13,6 +13,7 @@
     "scrape-gamedata": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents.ts --with-gamedata",
     "rotate-season": "ts-node --project tsconfig.scripts.json scripts/rotate-season.ts",
     "migrate-opponents": "ts-node --project tsconfig.scripts.json scripts/migrate-opponent-data.ts",
+    "scrape-season-stats": "ts-node --project tsconfig.scripts.json scripts/scrape-season-stats.ts",
     "format": "prettier --write .",
     "lint": "prettier --write . && nx run-many -t lint --fix"
   },
