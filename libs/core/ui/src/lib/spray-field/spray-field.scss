@@ -24,7 +24,7 @@
 }
 
 .zone {
-  stroke: rgba(0, 0, 0, 0.15);
+  stroke: var(--color-line-strong);
   stroke-width: 1;
   cursor: pointer;
   transition: opacity 0.15s ease;
@@ -36,8 +36,8 @@
 }
 
 .home-plate {
-  fill: #fff;
-  stroke: #000;
+  fill: var(--color-content-bright);
+  stroke: var(--color-line-strong);
   stroke-width: 2;
 }
 
@@ -92,34 +92,34 @@
 }
 
 .zone-hover-path {
-  stroke: rgba(0, 0, 0, 0.3);
+  stroke: var(--color-line-strong);
   stroke-width: 2;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 .tooltip-bg {
-  fill: rgba(20, 20, 35, 0.92);
-  stroke: rgba(255, 255, 255, 0.15);
+  fill: var(--color-surface-card);
+  stroke: var(--color-line-medium);
   stroke-width: 1;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
 }
 
 .tooltip-title {
   font-size: 11px;
   font-weight: 700;
-  fill: #fff;
+  fill: var(--color-content-heading);
   text-anchor: middle;
 }
 
 .tooltip-stat {
   font-size: 10px;
   font-weight: 500;
-  fill: rgba(255, 255, 255, 0.85);
+  fill: var(--color-content-secondary);
   text-anchor: middle;
 }
 
 .tooltip-detail {
   font-size: 9px;
-  fill: rgba(255, 255, 255, 0.6);
+  fill: var(--color-content-dim);
   text-anchor: middle;
 }

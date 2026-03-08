@@ -735,6 +735,28 @@
     @apply text-content-dim mt-0.5 text-[0.85rem];
   }
 
+  /* ── Season stats table — dual sticky columns ── */
+  .season-stats-table {
+    .sticky-col {
+      @apply bg-surface-sticky sticky left-0 z-1 whitespace-nowrap;
+    }
+
+    .sticky-col-name {
+      @apply bg-surface-sticky text-content-bright sticky left-12 z-1 min-w-28 font-medium;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    thead .sticky-col,
+    thead .sticky-col-name {
+      @apply bg-surface-sticky-header z-2;
+    }
+
+    tfoot .sticky-col,
+    tfoot .sticky-col-name {
+      @apply bg-surface-sticky;
+    }
+  }
+
   /* ── Empty state ── */
   .empty-state {
     @apply py-section px-card text-content-dim text-center text-[1.05rem];

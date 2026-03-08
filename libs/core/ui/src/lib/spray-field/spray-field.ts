@@ -362,7 +362,7 @@ export class SprayField {
     const intensity = this.zoneIntensity(zone);
 
     if (intensity < 0) {
-      return '#f5f5f0';
+      return 'rgba(255, 255, 255, 0.03)';
     }
 
     const s = 35 + intensity * 35;
@@ -374,11 +374,19 @@ export class SprayField {
   zoneTextFill(zone: SprayZone): string {
     const intensity = this.zoneIntensity(zone);
 
+    if (intensity < 0) {
+      return 'rgba(255, 255, 255, 0.25)';
+    }
+
     return intensity > 0.5 ? '#ffffff' : '#1a1a2e';
   }
 
   zoneLabelFill(zone: SprayZone): string {
     const intensity = this.zoneIntensity(zone);
+
+    if (intensity < 0) {
+      return 'rgba(255, 255, 255, 0.15)';
+    }
 
     return intensity > 0.5 ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.45)';
   }

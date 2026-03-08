@@ -23,7 +23,7 @@
         (pitcherSelected)="selectPitcher($event)"
       />
 
-      <div class="min-w-0 flex-1 space-y-4">
+      <div class="flex min-w-0 flex-1 flex-col gap-4">
         <ws-sticky-player-header
           [name]="effectivePitcher()!"
           [jerseyNumber]="jerseyNumber()"
@@ -104,7 +104,7 @@
       }
     </ws-sticky-player-header>
 
-    <div class="mt-3 space-y-3">
+    <div class="flex flex-col gap-3">
       <ws-pitcher-overview [data]="rawStats()" />
 
       @if (seasonSummary(); as summary) {

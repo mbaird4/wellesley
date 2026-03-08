@@ -29,7 +29,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
       @for (cat of categories; track cat.key) {
         <button
           (click)="activeCategory.set(cat.key)"
-          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-xs font-medium transition-colors"
+          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-[color,background] duration-150"
           [class]="
             activeCategory() === cat.key
               ? 'bg-brand-bg text-brand-text'
@@ -42,36 +42,52 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
     </div>
 
     @if (loading()) {
-      <div class="text-content-muted py-4">Loading...</div>
+      <div class="loading-state">
+        <i class="fa-solid fa-baseball loading-spinner"></i>
+        Loading season stats...
+      </div>
     } @else if (error()) {
-      <div class="text-content-muted py-4">{{ error() }}</div>
+      <div class="empty-state">
+        <div class="empty-state-icon">
+          <i class="fa-solid fa-table"></i>
+        </div>
+        {{ error() }}
+      </div>
     } @else if (data()) {
-      @switch (activeCategory()) {
-        @case ('hitting') {
-          <ws-stats-table
-            [columns]="hittingColumns"
-            [players]="data()!.hitting.players"
-            [totals]="data()!.hitting.totals"
-            [opponents]="data()!.hitting.opponents"
-          />
+      <div
+        class="bg-surface-card border-line overflow-hidden rounded-xl border"
+      >
+        @switch (activeCategory()) {
+          @case ('hitting') {
+            <ws-stats-table
+              [columns]="hittingColumns"
+              [players]="data()!.hitting.players"
+              [totals]="data()!.hitting.totals"
+              [opponents]="data()!.hitting.opponents"
+              defaultSortKey="avg"
+            />
+          }
+          @case ('pitching') {
+            <ws-stats-table
+              [columns]="pitchingColumns"
+              [players]="data()!.pitching.players"
+              [totals]="data()!.pitching.totals"
+              [opponents]="data()!.pitching.opponents"
+              defaultSortKey="era"
+              defaultSortDir="asc"
+            />
+          }
+          @case ('fielding') {
+            <ws-stats-table
+              [columns]="fieldingColumns"
+              [players]="data()!.fielding.players"
+              [totals]="data()!.fielding.totals"
+              [opponents]="data()!.fielding.opponents"
+              defaultSortKey="fldPct"
+            />
+          }
         }
-        @case ('pitching') {
-          <ws-stats-table
-            [columns]="pitchingColumns"
-            [players]="data()!.pitching.players"
-            [totals]="data()!.pitching.totals"
-            [opponents]="data()!.pitching.opponents"
-          />
-        }
-        @case ('fielding') {
-          <ws-stats-table
-            [columns]="fieldingColumns"
-            [players]="data()!.fielding.players"
-            [totals]="data()!.fielding.totals"
-            [opponents]="data()!.fielding.opponents"
-          />
-        }
-      }
+      </div>
     }
   `,
 })

@@ -1,16 +1,23 @@
 @if (layout() === 'vertical') {
-  <nav class="flex w-44 shrink-0 flex-col gap-0.5">
+  <nav
+    class="bg-surface-card border-line sticky top-20 flex max-h-[70vh] w-44 shrink-0 flex-col gap-0.5 self-start overflow-y-auto rounded-xl border p-1.5"
+  >
     @for (p of pitchers(); track p.name) {
       <button
         (click)="pitcherSelected.emit(p.name)"
-        class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+        class="flex cursor-pointer items-baseline gap-1.5 rounded-lg border-l-2 border-transparent px-2.5 py-2 text-left text-sm font-medium transition-[color,background,border-color] duration-150"
         [class]="
           p.name === selectedPitcher()
-            ? 'bg-brand-bg text-brand-text'
+            ? 'bg-brand-bg text-brand-text border-l-brand'
             : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
         "
       >
-        {{ p.label }}
+        @if (jerseyMap()?.[p.name.toLowerCase().replace('.', '')]; as jersey) {
+          <span class="text-content-dim text-xs font-medium tabular-nums">
+            {{ jersey }}
+          </span>
+        }
+        <span>{{ p.label }}</span>
       </button>
     }
   </nav>

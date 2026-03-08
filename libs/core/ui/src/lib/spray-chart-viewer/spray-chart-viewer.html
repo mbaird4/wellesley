@@ -141,6 +141,7 @@
         <ws-button-toggle
           [options]="yearOptions"
           [value]="selectedYears()"
+          [disabledValues]="disabledYears()"
           (valueChange)="onYearChange($event)"
         />
       </div>
@@ -195,22 +196,22 @@
 <!-- Shared player sidebar nav -->
 <ng-template #playerNav>
   <nav
-    class="sticky top-20 flex max-h-[70vh] w-40 shrink-0 flex-col gap-0.5 self-start overflow-y-auto print:hidden"
+    class="bg-surface-card border-line sticky top-20 flex max-h-[70vh] w-44 shrink-0 flex-col gap-0.5 self-start overflow-y-auto rounded-xl border p-1.5 print:hidden"
   >
     @for (player of rosteredPlayers(); track player) {
       <button
         (click)="onPlayerChange(player)"
-        class="cursor-pointer rounded-lg border-none px-3 py-2 text-left text-sm font-medium transition-colors"
+        class="flex cursor-pointer items-baseline gap-1.5 rounded-lg border-l-2 border-transparent px-2.5 py-2 text-left text-sm font-medium transition-[color,background,border-color] duration-150"
         [class]="
           filters().playerName === player
-            ? 'bg-brand-bg text-brand-text'
+            ? 'bg-brand-bg text-brand-text border-l-brand'
             : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
         "
       >
-        <span class="text-content-dim mr-1 text-xs">
-          #{{ jerseyMap()[player] }}
+        <span class="text-content-dim text-xs font-medium tabular-nums">
+          {{ jerseyMap()[player] }}
         </span>
-        {{ player }}
+        <span>{{ player }}</span>
       </button>
     }
   </nav>
@@ -218,7 +219,10 @@
 
 <!-- Placeholder when no player selected -->
 <ng-template #selectPlayerMsg>
-  <div class="text-content-dim flex flex-1 items-center justify-center text-lg">
-    Select a player
+  <div
+    class="text-content-dim flex flex-1 flex-col items-center justify-center gap-2 py-16"
+  >
+    <i class="fa-solid fa-baseball text-content-empty text-3xl"></i>
+    <span class="text-base">Select a player to view their spray chart</span>
   </div>
 </ng-template>

@@ -44,6 +44,7 @@ export class PlayerTable {
   readonly expandedPlayer = input.required<string | null>();
   readonly sortKey = input.required<SortKey>();
   readonly sortDir = input.required<SortDir>();
+  readonly yearSortYear = input<number | null>(null);
 
   readonly playerToggled = output<string>();
   readonly sortChanged = output<SortKey>();

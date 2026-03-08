@@ -29,8 +29,7 @@ import { catchError, forkJoin, of } from 'rxjs';
     />
   `,
   host: {
-    class:
-      'flex flex-1 flex-col overflow-hidden print:block print:overflow-visible',
+    class: 'block',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

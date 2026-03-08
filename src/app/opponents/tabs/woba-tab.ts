@@ -51,6 +51,7 @@ import { PlayerTable } from '../player-table/player-table';
           [expandedPlayer]="data.expandedPlayer()"
           [sortKey]="data.sortKey()"
           [sortDir]="data.sortDir()"
+          [yearSortYear]="data.yearSortYear()"
           (playerToggled)="data.togglePlayer($event)"
           (sortChanged)="data.sort($event)"
           (yearSortChanged)="data.sortByYear($event)"

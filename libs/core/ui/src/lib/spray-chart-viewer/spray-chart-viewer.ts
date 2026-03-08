@@ -97,6 +97,11 @@ export class SprayChartViewer {
   readonly selectedYears = signal<string[]>([String(CURRENT_YEAR)]);
   readonly viewModeOptions = VIEW_MODE_OPTIONS;
   readonly yearOptions = YEAR_OPTIONS;
+  readonly disabledYears = computed(() =>
+    SPRAY_YEARS.filter(
+      (y) => (this.dataByYear().get(y)?.length ?? 0) === 0
+    ).map(String)
+  );
 
   readonly filters = signal<SprayFilterState>({
     playerName: null,
@@ -262,20 +267,14 @@ export class SprayChartViewer {
   });
 
   constructor() {
-    // Auto-select current year + first year with data when dataByYear changes
+    // Auto-select the most recent year with data (falls back to current year)
     effect(() => {
       const map = this.dataByYear();
-      const currentHasData = (map.get(CURRENT_YEAR)?.length ?? 0) > 0;
       const firstWithData = SPRAY_YEARS.find(
         (y) => (map.get(y)?.length ?? 0) > 0
       );
-      const years = new Set([String(CURRENT_YEAR)]);
 
-      if (!currentHasData && firstWithData) {
-        years.add(String(firstWithData));
-      }
-
-      this.selectedYears.set([...years]);
+      this.selectedYears.set([String(firstWithData ?? CURRENT_YEAR)]);
 
       // Reset filters when data changes
       this.filters.set({

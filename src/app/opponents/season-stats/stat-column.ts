@@ -4,13 +4,13 @@ export interface StatColumn {
   key: string;
   label: string;
   format: StatFormat;
-  dashPairKeys?: [string, string];
 }
 
 export const HITTING_COLUMNS: StatColumn[] = [
   { key: 'avg', label: 'AVG', format: 'avg' },
   { key: 'ops', label: 'OPS', format: 'avg' },
-  { key: 'gp-gs', label: 'GP-GS', format: 'int', dashPairKeys: ['gp', 'gs'] },
+  { key: 'gp', label: 'GP', format: 'int' },
+  { key: 'gs', label: 'GS', format: 'int' },
   { key: 'ab', label: 'AB', format: 'int' },
   { key: 'r', label: 'R', format: 'int' },
   { key: 'h', label: 'H', format: 'int' },
@@ -27,24 +27,17 @@ export const HITTING_COLUMNS: StatColumn[] = [
   { key: 'obp', label: 'OB%', format: 'avg' },
   { key: 'sf', label: 'SF', format: 'int' },
   { key: 'sh', label: 'SH', format: 'int' },
-  {
-    key: 'sb-sbAtt',
-    label: 'SB-ATT',
-    format: 'int',
-    dashPairKeys: ['sb', 'sbAtt'],
-  },
+  { key: 'sb', label: 'SB', format: 'int' },
+  { key: 'sbAtt', label: 'ATT', format: 'int' },
 ];
 
 export const PITCHING_COLUMNS: StatColumn[] = [
   { key: 'era', label: 'ERA', format: 'era' },
   { key: 'whip', label: 'WHIP', format: 'era' },
-  { key: 'w-l', label: 'W-L', format: 'int', dashPairKeys: ['w', 'l'] },
-  {
-    key: 'app-gs',
-    label: 'APP-GS',
-    format: 'int',
-    dashPairKeys: ['app', 'gs'],
-  },
+  { key: 'w', label: 'W', format: 'int' },
+  { key: 'l', label: 'L', format: 'int' },
+  { key: 'app', label: 'APP', format: 'int' },
+  { key: 'gs', label: 'GS', format: 'int' },
   { key: 'cg', label: 'CG', format: 'int' },
   { key: 'sho', label: 'SHO', format: 'int' },
   { key: 'sv', label: 'SV', format: 'int' },

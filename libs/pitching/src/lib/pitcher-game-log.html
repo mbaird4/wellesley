@@ -18,11 +18,11 @@
   @if (gameLogViews().length === 0) {
     <p class="text-content-dim p-card text-sm">No game data available.</p>
   } @else {
-    <div class="p-card space-y-1.5">
+    <div class="p-card flex flex-col gap-1.5">
       @for (group of yearGroups(); track group.year) {
         @if (hasMultipleYears()) {
           <h4
-            class="text-content-dim mt-2 text-xs font-semibold tracking-wider uppercase first:mt-0"
+            class="text-content-dim text-xs font-semibold tracking-wider uppercase"
           >
             {{ group.year }}
           </h4>

@@ -62,7 +62,7 @@ export class OpponentDataService {
       data.players.flatMap((player) => player.seasons.map((s) => s.year))
     );
 
-    return Array.from(yearSet).sort((a, b) => a - b);
+    return Array.from(yearSet).sort((a, b) => b - a);
   });
 
   readonly displayRows = computed(() => {
@@ -287,9 +287,21 @@ export class OpponentDataService {
     forkJoin([forkJoin(requests), rosterRequest]).subscribe({
       next: ([results, roster]) => {
         const valid = results.filter((r): r is YearBattingData => r !== null);
-        this.teamData.set(mergeBattingYears(valid, roster));
+        const team = mergeBattingYears(valid, roster);
+        this.teamData.set(team);
         this.rosterNames.set(roster ? new Set(Object.keys(roster)) : new Set());
         this.roster.set(roster);
+
+        // Default sort by most recent year with data
+        const maxYear = team.players
+          .flatMap((p) => p.seasons.map((s) => s.year))
+          .reduce((max, y) => Math.max(max, y), 0);
+
+        if (maxYear > 0) {
+          this.yearSortYear.set(maxYear);
+          this.sortDir.set('desc');
+        }
+
         this.loading.set(false);
       },
       error: (err) => {

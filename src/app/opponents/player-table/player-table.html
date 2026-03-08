@@ -14,14 +14,6 @@
       </th>
       <th>#</th>
       <th>Yr</th>
-      @for (year of allYears(); track year) {
-        <th
-          class="hover:text-content-bright cursor-pointer text-center select-none"
-          (click)="yearSortChanged.emit(year)"
-        >
-          '{{ ('' + year).slice(2) }}
-        </th>
-      }
       <th
         class="hover:text-content-bright cursor-pointer text-center select-none"
         (click)="sortChanged.emit('career')"
@@ -33,6 +25,19 @@
           </span>
         }
       </th>
+      @for (year of allYears(); track year) {
+        <th
+          class="hover:text-content-bright cursor-pointer text-center select-none"
+          (click)="yearSortChanged.emit(year)"
+        >
+          '{{ ('' + year).slice(2) }}
+          @if (yearSortYear() === year) {
+            <span class="ml-1 align-middle text-[0.6rem]">
+              {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
+            </span>
+          }
+        </th>
+      }
       <th class="text-center">PA</th>
       <th class="text-center">GP</th>
       <th class="text-center">SB</th>
@@ -80,6 +85,15 @@
       {{ row.jerseyNumber ?? '—' }}
     </td>
     <td class="text-content-dim">{{ row.classYear | classYear }}</td>
+    @if (row.seasons.length > 0) {
+      <td class="text-center text-[1.05rem] font-bold tabular-nums">
+        <span [ngStyle]="gradientStyle(row.career.woba)">
+          {{ fmtWoba(row.career.woba) }}
+        </span>
+      </td>
+    } @else {
+      <td class="text-content-empty text-center">—</td>
+    }
     @for (year of allYears(); track year) {
       @if (row.yearData.get(year); as yd) {
         <td
@@ -93,11 +107,6 @@
       }
     }
     @if (row.seasons.length > 0) {
-      <td class="text-center text-[1.05rem] font-bold tabular-nums">
-        <span [ngStyle]="gradientStyle(row.career.woba)">
-          {{ fmtWoba(row.career.woba) }}
-        </span>
-      </td>
       <td class="text-content-secondary text-center tabular-nums">
         {{ row.career.pa }}
       </td>
@@ -112,7 +121,6 @@
         }
       </td>
     } @else {
-      <td class="text-content-empty text-center">—</td>
       <td class="text-content-empty text-center">—</td>
       <td class="text-content-empty text-center">—</td>
       <td class="text-content-empty text-center">—</td>
