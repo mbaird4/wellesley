@@ -1,0 +1,183 @@
+{
+  "slug": "wheaton",
+  "domain": "wheatoncollegelyons.com",
+  "scrapedAt": "2026-03-08T11:15:47.624Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "De La Rosa, Sofia",
+      "w": 1,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 1,
+      "ip": 7,
+      "h": 2,
+      "r": 0,
+      "er": 0,
+      "bb": 0,
+      "so": 12,
+      "hr": 0
+    },
+    {
+      "name": "Blankenheim-Brown, Peyton",
+      "w": 1,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 1,
+      "ip": 7,
+      "h": 5,
+      "r": 0,
+      "er": 0,
+      "bb": 1,
+      "so": 5,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/anderson-university-in-/boxscore/10112",
+      "date": "3/7/2026",
+      "opponent": "Anderson University In ",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maddie Schoenradt struck out swinging (3-2 BBKBKS).",
+            "Jayda McKee struck out swinging (2-2 BSSBS).",
+            "Paycee Lewis struck out swinging (1-2 KSBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kylie Coleman flied out to lf (2-1 BKB).",
+            "Belle Blickenstaff struck out looking (2-2 BBKSK).",
+            "Lindsey Pickering fouled out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M.J. Harper popped up to ss (0-2 KFF).",
+            "Saige Fellers flied out to lf (1-0 B).",
+            "Avery Owens singled to shortstop (1-0 B).",
+            "Avery Owens stole second.",
+            "Maddie Schoenradt struck out swinging (2-2 BSSBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jayda McKee struck out swinging (1-2 FBKS).",
+            "Paycee Lewis grounded out to 3b (0-1 S).",
+            "Kylie Coleman out at first 1b to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Belle Blickenstaff struck out looking (0-2 FFK).",
+            "Lindsey Pickering struck out swinging (3-2 KBBBKS).",
+            "M.J. Harper singled to shortstop (1-0 B).",
+            "Saige Fellers struck out looking (1-2 BKKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avery Owens struck out swinging (1-2 BSFS).",
+            "Maddie Schoenradt struck out swinging (1-2 KBSS).",
+            "Jayda McKee grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Paycee Lewis grounded out to 3b (0-1 F).",
+            "Kylie Coleman popped up to ss (0-2 KS).",
+            "Belle Blickenstaff struck out swinging (0-2 FFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/thomas-college/boxscore/10113",
+      "date": "3/7/2026",
+      "opponent": "Thomas College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Brooklyn Federico fouled out to 2b (2-2 BSBF).",
+            "Maddy Morris walked (3-2 FSBBBFB).",
+            "Megan Oberholzer popped up to ss (2-1 BSH).",
+            "Mackenzie Toner struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jennie Whitten singled to shortstop (0-2 FS).",
+            "Maeve Hickok singled to right field (2-2 FKBFBFFFF); Jennie Whitten advanced to second.",
+            "Corinne Vasvary struck out swinging (0-2 KKS).",
+            "Leah Knight grounded out to p, SAC, bunt (0-1 F); Maeve Hickok advanced to second; Jennie Whitten advanced to third.",
+            "Abby Farone struck out swinging (1-2 FFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Brooklyn Federico flied out to lf (2-1 KBB).",
+            "Maddy Morris grounded out to 3b (0-2 FK).",
+            "Brooke Smith struck out swinging (2-2 BSBSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mackenzie Toner singled to left field (0-0).",
+            "Jennie Whitten popped up to 2b (0-0).",
+            "Maeve Hickok singled to right field (2-2 FBBF); Mackenzie Toner advanced to second.",
+            "Corinne Vasvary out at first 1b to 2b, SAC, bunt (1-1 FB); Maeve Hickok advanced to second; Mackenzie Toner advanced to third.",
+            "Leah Knight grounded out to 2b (3-2 BSBFBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abby Farone grounded out to 3b (0-0).",
+            "Brooklyn Federico flied out to lf (2-1 BBK).",
+            "Maddy Morris grounded out to 3b (0-2 SKF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Brooke Smith singled to center field (0-1 K).",
+            "Mackenzie Toner grounded into double play ss to 2b to 1b (1-2 KFFFBF); Brooke Smith out on the play.",
+            "Jennie Whitten grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Lauren Kelley.",
+            "Maeve Hickok flied out to cf (2-2 BSFBFF).",
+            "Corinne Vasvary flied out to cf (0-0).",
+            "Leah Knight struck out swinging (2-2 KBBSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

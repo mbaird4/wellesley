@@ -1,0 +1,120 @@
+{
+  "slug": "emerson",
+  "domain": "emersonlions.com",
+  "scrapedAt": "2026-03-08T11:18:36.783Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Sheehan, Caleigh",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "ip": 1,
+      "h": 1,
+      "r": 0,
+      "er": 0,
+      "bb": 0,
+      "so": 2,
+      "hr": 0
+    },
+    {
+      "name": "Regan, Kate",
+      "w": 0,
+      "l": 1,
+      "era": 5.6,
+      "app": 1,
+      "gs": 1,
+      "ip": 5,
+      "h": 8,
+      "r": 5,
+      "er": 4,
+      "bb": 4,
+      "so": 4,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/shenandoah-university/boxscore/4308",
+      "date": "3/7/2026",
+      "opponent": "Shenandoah University",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Allison McQueeney walked (3-2 BBBKKB).",
+            "Allison McQueeney stole second.",
+            "Cadence Rieg flied out to rf (3-2 BBBKF).",
+            "Allison McQueeney stole third, scored on an error by ss, unearned.",
+            "Keagan Cooper walked (3-0 BBBB).",
+            "Makayla Cox doubled (0-0); Keagan Cooper advanced to third.",
+            "Sarah Connell walked (3-2 BBKFBB).",
+            "Brenna Westwood reached on a fielder's choice (1-2 BSK); Sarah Connell advanced to second; Makayla Cox advanced to third; Keagan Cooper out at home 3b to c.",
+            "Marisa Sawn struck out swinging (3-2 BKBBKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Paige Eagleton struck out looking (3-2 BFFBBK).",
+            "Payton Jensen flied out to cf (3-2 KKBBB).",
+            "Allison McQueeney grounded out to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Cadence Rieg flied out to cf (1-0 B).",
+            "Keagan Cooper popped up to 2b (0-0).",
+            "Makayla Cox singled (0-0).",
+            "Sarah Connell grounded out to ss (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brenna Westwood flied out to rf (1-2 BFK).",
+            "Marisa Sawn popped up to 2b (2-0 BB).",
+            "Paige Eagleton walked (3-2 BBBSFB).",
+            "Paige Eagleton stole second.",
+            "Payton Jensen flied out to cf (2-2 KFFBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Allison McQueeney struck out looking (3-2 BBKSBK).",
+            "Cadence Rieg tripled (0-1 K).",
+            "Keagan Cooper singled up the middle, RBI (1-2 FFB); Cadence Rieg scored.",
+            "Ella Montgomery pinch ran for Keagan Cooper.",
+            "Makayla Cox singled (1-1 FB); Ella Montgomery advanced to second.",
+            "Lu Cirillo pinch ran for Makayla Cox.",
+            "Sarah Connell tripled, 2 RBI (1-0 B); Lu Cirillo scored; Ella Montgomery scored.",
+            "Brenna Westwood singled, RBI (0-1 K); Sarah Connell scored.",
+            "Sarah Medellin pinch hit for Marisa Sawn.",
+            "Sarah Medellin struck out swinging (2-2 KBSBK).",
+            "Paige Eagleton singled (0-1 K); Brenna Westwood advanced to second.",
+            "Payton Jensen flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cal Sheehan to p for Kate Regan.",
+            "Allison McQueeney lined out to 3b (3-1 BBFB).",
+            "Cadence Rieg tripled (0-2 FK).",
+            "Keagan Cooper struck out swinging (2-2 KBSBS).",
+            "Makayla Cox struck out swinging (1-2 BFSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}
