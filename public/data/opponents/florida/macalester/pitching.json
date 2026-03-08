@@ -1,0 +1,635 @@
+{
+  "slug": "macalester",
+  "domain": "athletics.macalester.edu",
+  "scrapedAt": "2026-03-08T16:08:21.520Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Miller, Martha",
+      "w": 2,
+      "l": 2,
+      "era": 3.5,
+      "app": 5,
+      "gs": 3,
+      "ip": 24,
+      "h": 29,
+      "r": 19,
+      "er": 12,
+      "bb": 8,
+      "so": 24,
+      "hr": 2
+    },
+    {
+      "name": "Schultz, Paige",
+      "w": 0,
+      "l": 0,
+      "era": 3,
+      "app": 2,
+      "gs": 2,
+      "ip": 2.1,
+      "h": 5,
+      "r": 3,
+      "er": 1,
+      "bb": 1,
+      "so": 0,
+      "hr": 0
+    },
+    {
+      "name": "Sullivan, Ainsley",
+      "w": 0,
+      "l": 1,
+      "era": 5.6,
+      "app": 2,
+      "gs": 1,
+      "ip": 5,
+      "h": 8,
+      "r": 5,
+      "er": 4,
+      "bb": 4,
+      "so": 7,
+      "hr": 1
+    },
+    {
+      "name": "Jensen, Kara",
+      "w": 0,
+      "l": 0,
+      "era": 5.73,
+      "app": 2,
+      "gs": 0,
+      "ip": 3.2,
+      "h": 4,
+      "r": 3,
+      "er": 3,
+      "bb": 4,
+      "so": 3,
+      "hr": 0
+    },
+    {
+      "name": "Bojorquez, Tess",
+      "w": 0,
+      "l": 1,
+      "era": 9.19,
+      "app": 3,
+      "gs": 0,
+      "ip": 5.1,
+      "h": 15,
+      "r": 8,
+      "er": 7,
+      "bb": 2,
+      "so": 1,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/university-of-wisconsin-stout/boxscore/10929",
+      "date": "2/14/2026",
+      "opponent": "University Of Wisconsin Stout",
+      "pitchers": ["Miller, Martha"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "D. D'Addabbo singled through the right side.",
+            "P. Dolecki out at first p to 2b, SAC, bunt; D. D'Addabbo advanced to second.",
+            "S. Kuhn struck out swinging.",
+            "S. Wilkins doubled to right center, RBI; D. D'Addabbo scored.",
+            "S. Wilkins advanced to third on a wild pitch.",
+            "R. Bresnahan flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Monroe struck out swinging.",
+            "M. Cain singled up the middle.",
+            "M. Cain advanced to second on a passed ball.",
+            "A. Dusterhof grounded out to p; M. Cain advanced to third.",
+            "A. Singer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. D'Addabbo grounded out to 1b unassisted.",
+            "P. Dolecki struck out looking.",
+            "S. Kuhn doubled to right center.",
+            "S. Wilkins struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Bresnahan singled to second base.",
+            "K. Monroe reached on a fielder's choice, bunt; R. Bresnahan out at second 3b to 2b.",
+            "M. Cain flied out to lf.",
+            "A. Dusterhof flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Singer walked.",
+            "D. D'Addabbo grounded out to 3b, SAC, bunt; A. Singer advanced to second.",
+            "P. Dolecki walked.",
+            "S. Kuhn grounded out to 2b; P. Dolecki advanced to second; A. Singer advanced to third.",
+            "S. Wilkins grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Bresnahan walked.",
+            "K. Monroe out at first 3b to 2b, SAC, bunt; R. Bresnahan advanced to second.",
+            "R. Bresnahan advanced to third on a wild pitch.",
+            "M. Cain struck out swinging.",
+            "A. Dusterhof flied out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Singer struck out looking.",
+            "D. D'Addabbo singled to left field.",
+            "P. Dolecki flied out to 2b.",
+            "S. Kuhn singled to shortstop; D. D'Addabbo advanced to second.",
+            "E. Fortier pinch ran for D. D'Addabbo.",
+            "S. Wilkins struck out looking."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/university-of-wisconsin-superior/boxscore/10930",
+      "date": "2/14/2026",
+      "opponent": "University Of Wisconsin Superior",
+      "pitchers": ["Schultz, Paige", "Bojorquez, Tess", "Sullivan, Ainsley"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Bojorquez to p.",
+            "P. Schultz to dp.",
+            "C. Stuckmaye lined out to 2b.",
+            "K. Balabon singled up the middle.",
+            "P. Bennett reached on a fielder's choice to third base; K. Balabon out at second 3b to 2b.",
+            "L. Snyder singled up the middle, advanced to second on the throw; P. Bennett advanced to third.",
+            "M. Witt grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Swartz singled through the left side.",
+            "M. Gammell grounded out to 3b; S. Swartz advanced to second.",
+            "H. Hovland singled to third base; S. Swartz advanced to third.",
+            "H. Hovland advanced to third; S. Swartz out at home c to 3b to p, caught stealing.",
+            "S. Otto singled to left field, RBI; H. Hovland scored.",
+            "S. Otto stole second.",
+            "C. Stuckmaye reached first on a fielding error by p; S. Otto advanced to third.",
+            "K. Balabon singled through the left side, RBI; C. Stuckmaye advanced to second; S. Otto scored, unearned.",
+            "P. Bennett lined out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Snyder tripled to left field.",
+            "M. Witt grounded out to 1b unassisted, RBI; L. Snyder scored.",
+            "S. Swartz singled up the middle.",
+            "M. Gammell doubled to right field, RBI; S. Swartz scored.",
+            "T. Bojorquez to dp.",
+            "P. Schultz to p.",
+            "H. Hovland flied out to 2b.",
+            "S. Otto singled up the middle, RBI; M. Gammell scored.",
+            "C. Stuckmaye walked; S. Otto advanced to second.",
+            "K. Balabon grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "P. Bennett doubled down the lf line.",
+            "P. Bennett advanced to third on a wild pitch.",
+            "L. Snyder singled through the left side, RBI; P. Bennett scored.",
+            "A. Sullivan to p for P. Schultz.",
+            "L. Snyder stole second.",
+            "L. Snyder advanced to third on a wild pitch.",
+            "M. Witt popped up to 1b.",
+            "S. Swartz walked.",
+            "S. Swartz stole second.",
+            "M. Gammell struck out looking.",
+            "H. Hovland grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Otto struck out looking.",
+            "C. Stuckmaye grounded out to ss.",
+            "K. Balabon singled to center field.",
+            "K. Balabon out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "P. Bennett singled to right field, out at second 2b to ss.",
+            "L. Snyder struck out swinging.",
+            "M. Witt walked.",
+            "T. Twedt pinch ran for M. Witt.",
+            "T. Twedt advanced to second on a passed ball.",
+            "S. Swartz flied out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Gammell walked.",
+            "K. Hochsprun pinch hit for H. Hovland.",
+            "K. Hochsprun struck out swinging.",
+            "S. Otto flied out to rf.",
+            "C. Stuckmaye singled to right field; M. Gammell advanced to second.",
+            "K. Balabon reached first on a fielding error by ss; C. Stuckmaye advanced to second; M. Gammell advanced to third.",
+            "P. Bennett singled through the left side, RBI; K. Balabon advanced to second; C. Stuckmaye advanced to third, out at home lf to c; M. Gammell scored, unearned."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/university-of-wisconsin-eau-claire/boxscore/10931",
+      "date": "2/20/2026",
+      "opponent": "University Of Wisconsin Eau Claire",
+      "pitchers": ["Schultz, Paige", "Miller, Martha"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "P. Lathrop struck out swinging.",
+            "B. Swanepoel singled up the middle.",
+            "B. Swanepoel stole second.",
+            "B. Swanepoel advanced to third on a wild pitch.",
+            "M. Marquardt grounded out to ss.",
+            "C. Beck homered, 2 RBI; B. Swanepoel scored.",
+            "S. Springer homered, RBI.",
+            "N. Kutnink struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Hagedorn reached first on an error by rf.",
+            "E. Raikowski grounded out to 3b, SAC, bunt; H. Hagedorn advanced to second.",
+            "B. Blanchard out at first p to 2b, SAC, bunt; H. Hagedorn advanced to third.",
+            "P. Lathrop singled up the middle, RBI; H. Hagedorn scored, unearned.",
+            "B. Swanepoel singled up the middle; P. Lathrop advanced to second.",
+            "M. Marquardt popped up to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Beck grounded out to 1b unassisted.",
+            "S. Springer grounded out to p.",
+            "N. Kutnink grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Hagedorn popped up to p.",
+            "J. Wallace pinch hit for E. Raikowski.",
+            "J. Wallace grounded out to 2b.",
+            "A. Kozlovsky pinch hit for B. Blanchard.",
+            "A. Kozlovsky struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "P. Lathrop grounded out to 1b unassisted.",
+            "B. Swanepoel struck out swinging, reached first on a passed ball.",
+            "M. Marquardt singled to left center; B. Swanepoel advanced to second.",
+            "C. Beck walked; M. Marquardt advanced to second; B. Swanepoel advanced to third.",
+            "B. Florio pinch ran for C. Beck.",
+            "K. Tumm pinch ran for M. Marquardt.",
+            "S. Springer singled to shortstop, RBI; B. Florio advanced to second; K. Tumm advanced to third; B. Swanepoel scored, unearned.",
+            "N. Kutnink singled, advanced to second on the throw, 2 RBI; S. Springer advanced to third on the throw; B. Florio scored; K. Tumm scored.",
+            "B. Gluch reached on a fielder's choice to third base, bunt, advanced to second on the throw, RBI; N. Kutnink advanced to third; S. Springer scored.",
+            "T. Bojorquez to dp.",
+            "P. Schultz to p.",
+            "M. Miller to 2b.",
+            "J. Wallace hit by pitch.",
+            "C. Ricard pinch hit for B. Blanchard.",
+            "C. Ricard reached on a fielder's choice to shortstop, RBI; J. Wallace out at second ss unassisted; B. Gluch advanced to third; N. Kutnink scored, unearned.",
+            "E. Olson pinch ran for C. Ricard.",
+            "P. Lathrop singled to left field, advanced to second on the throw, RBI; E. Olson advanced to third; B. Gluch scored, unearned.",
+            "B. Swanepoel doubled down the lf line, 2 RBI; P. Lathrop scored, unearned; E. Olson scored, unearned.",
+            "M. Marquardt to c for K. Tumm.",
+            "M. Marquardt grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Dvorak to ss for M. Molay.",
+            "C. Beck grounded out to 3b.",
+            "S. Springer grounded out to ss.",
+            "N. Kutnink hit by pitch.",
+            "N. Kutnink stole second.",
+            "B. Gluch grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/university-of-wisconsin-eau-claire/boxscore/10932",
+      "date": "2/20/2026",
+      "opponent": "University Of Wisconsin Eau Claire",
+      "pitchers": [
+        "Sullivan, Ainsley",
+        "Bojorquez, Tess",
+        "Jensen, Kara",
+        "Miller, Martha"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "P. Lathrop walked.",
+            "B. Swanepoel struck out swinging; P. Lathrop stole second.",
+            "M. Marquardt homered, 2 RBI; P. Lathrop scored.",
+            "C. Beck doubled down the rf line.",
+            "S. Springer struck out swinging.",
+            "N. Kutnink doubled to center field, RBI; C. Beck scored.",
+            "H. Hagedorn doubled to right center, RBI; N. Kutnink scored.",
+            "E. Raikowski struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Bojorquez to p.",
+            "A. Johnson to dp.",
+            "A. Sullivan to rf.",
+            "B. Blanchard grounded out to p.",
+            "P. Lathrop singled up the middle.",
+            "P. Lathrop stole second.",
+            "B. Swanepoel singled, bunt; P. Lathrop advanced to third.",
+            "B. Swanepoel stole second.",
+            "M. Marquardt singled to right center, 2 RBI; B. Swanepoel scored; P. Lathrop scored.",
+            "C. Beck reached on a fielder's choice to shortstop, RBI; M. Marquardt out at second ss unassisted.",
+            "S. Springer lined out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Bojorquez to 2b.",
+            "K. Jensen to p for M. Miller.",
+            "N. Kutnink reached first on an error by lf.",
+            "N. Kutnink out at first 1b unassisted, runner left early.",
+            "H. Hagedorn flied out to rf.",
+            "K. Jones pinch hit for E. Raikowski.",
+            "K. Jones grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Montoya to lf for C. Holland.",
+            "M. Smith pinch hit for B. Blanchard.",
+            "M. Smith flied out to cf.",
+            "P. Lathrop grounded out to ss.",
+            "B. Swanepoel singled up the middle.",
+            "B. Swanepoel out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Marquardt struck out swinging.",
+            "C. Beck singled up the middle.",
+            "B. Florio pinch ran for C. Beck.",
+            "S. Springer grounded out to 1b unassisted; B. Florio advanced to second.",
+            "B. Florio stole third.",
+            "N. Kutnink walked.",
+            "N. Kutnink stole second.",
+            "H. Hagedorn singled up the middle, advanced to second on the throw, 2 RBI; N. Kutnink scored; B. Florio scored.",
+            "K. Jones walked.",
+            "M. Miller to p for K. Jensen.",
+            "M. Smith struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Tapia to c for M. Thomas.",
+            "C. Holland to lf.",
+            "A. Sullivan to rf for R. Heinze.",
+            "P. Lathrop flied out to lf.",
+            "B. Swanepoel singled up the middle.",
+            "M. Marquardt hit by pitch; B. Swanepoel advanced to second.",
+            "K. Tumm pinch ran for M. Marquardt.",
+            "C. Beck pinch hit for B. Florio.",
+            "C. Beck singled up the middle, RBI; K. Tumm advanced to second; B. Swanepoel scored.",
+            "E. Olson pinch ran for C. Beck.",
+            "S. Springer grounded out to ss; E. Olson advanced to second; K. Tumm advanced to third.",
+            "N. Kutnink walked.",
+            "H. Hagedorn reached on a fielder's choice to shortstop; N. Kutnink out at second ss unassisted."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/buena-vista-university/boxscore/10933",
+      "date": "3/1/2026",
+      "opponent": "Buena Vista University",
+      "pitchers": ["Miller, Martha", "Bojorquez, Tess", "Jensen, Kara"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Raveling struck out.",
+            "Bowers popped up to 1b.",
+            "Garcia struck out."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Noe reached on an error by 2b.",
+            "Irlmeier doubled to left center; Noe advanced to third.",
+            "Merron reached on an error by lf, advanced to second, 2 RBI; Irlmeier scored, unearned; Noe scored, unearned.",
+            "Fabirkiewicz walked.",
+            "Craun popped up to 3b.",
+            "France struck out.",
+            "Raveling popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Tapia to c for Thomas.",
+            "Bowers grounded out to 3b.",
+            "Garcia hit by pitch.",
+            "Trayte pinch ran for Garcia.",
+            "Noe reached on a fielder's choice; Trayte out at second ss unassisted.",
+            "Irlmeier flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sullivan to rf.",
+            "Merron struck out.",
+            "Fabirkiewicz singled to shortstop.",
+            "Craun struck out.",
+            "France walked; Fabirkiewicz advanced to second.",
+            "Raveling grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Johnson, A. to 2b for Schultz.",
+            "Bojorquez to p.",
+            "Miller to ss.",
+            "Bowers grounded out to 2b.",
+            "Trayte to dh.",
+            "Trayte walked.",
+            "Noe reached on an error by ss; Trayte advanced to second.",
+            "Irlmeier walked; Noe advanced to second; Trayte advanced to third.",
+            "Merron struck out looking.",
+            "Fabirkiewicz singled, RBI; Irlmeier advanced to second; Noe advanced to third, out at home cf to c; Trayte scored."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sullivan to rf.",
+            "Craun singled, bunt.",
+            "France singled to left field; Craun advanced to second.",
+            "Brown pinch hit for Raveling.",
+            "Brown grounded out to 3b; France out at second 3b unassisted; Craun advanced to third.",
+            "Bowers grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Elmer to c for Tapia.",
+            "Bojorquez to dh.",
+            "Jensen, K. to p.",
+            "Trayte hit by pitch.",
+            "Noe singled to left field; Trayte advanced to second.",
+            "Irlmeier struck out.",
+            "Merron struck out looking.",
+            "Fabirkiewicz walked; Noe advanced to second; Trayte advanced to third.",
+            "Craun walked, RBI; Fabirkiewicz advanced to second; Noe advanced to third; Trayte scored.",
+            "Nelson pinch hit for France.",
+            "Nelson reached on a fielder's choice; Craun out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/luther-college/boxscore/10934",
+      "date": "3/1/2026",
+      "opponent": "Luther College",
+      "pitchers": ["Miller, Martha"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Urfer struck out looking.",
+            "Larsen grounded out to 3b.",
+            "Allen flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elwood struck out swinging.",
+            "Nehring singled to left field.",
+            "Bygd pinch ran for Nehring.",
+            "Welter struck out.",
+            "Strigel singled to center field; Bygd advanced to second.",
+            "Weber lined out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Torrez singled to center field.",
+            "Urfer walked; Torrez advanced to second.",
+            "Fyles pinch ran for Torrez.",
+            "Larsen reached on a fielder's choice; Urfer advanced to second; Fyles out at third p to 3b.",
+            "Allen grounded out to 2b; Larsen advanced to second; Urfer advanced to third.",
+            "Elwood grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Nehring popped up to ss.",
+            "Welter flied out to cf.",
+            "Strigel struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Weber singled to right field.",
+            "Torrez singled to shortstop; Weber advanced to second.",
+            "Urfer hit by pitch; Torrez advanced to second; Weber advanced to third.",
+            "Larsen singled to center field, RBI; Urfer advanced to second; Torrez advanced to third; Weber scored.",
+            "Krambeer pinch ran for Urfer.",
+            "Allen popped up to 2b.",
+            "Elwood reached on a fielder's choice, advanced to second, RBI; Larsen advanced to third; Krambeer scored; Torrez out at home 1b to c.",
+            "McDonough pinch ran for Elwood.",
+            "Nehring lined out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Welter popped up to ss.",
+            "Strigel struck out.",
+            "Weber struck out."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Torrez struck out.",
+            "Urfer flied out to lf.",
+            "Larsen singled to second base.",
+            "Larsen advanced to second on a passed ball.",
+            "Allen tripled to left field, RBI; Larsen scored.",
+            "Elwood to dh for McDonough.",
+            "Elwood singled to center field, RBI; Allen scored.",
+            "Nehring popped up to 2b."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Nehring placed on second.",
+            "Wagner pinch ran for Nehring.",
+            "Welter out at first 1b to 2b, SAC, bunt; Wagner advanced to third.",
+            "Clayton pinch hit for Strigel.",
+            "Clayton reached on a fielder's choice.",
+            "Weber singled to left field, RBI; Clayton advanced to second; Wagner scored."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

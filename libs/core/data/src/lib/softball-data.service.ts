@@ -40,11 +40,11 @@ export class SoftballDataService {
     return from(this.fetchGameDataCached(year));
   }
 
-  getOpponentGameData(slug: string, year: number): Observable<GameData[]> {
+  getOpponentGameData(dataDir: string, year: number): Observable<GameData[]> {
     const file =
       year === CURRENT_YEAR
-        ? `data/opponents/${slug}/gamedata.json`
-        : `data/opponents/${slug}/gamedata-${year}.json`;
+        ? `data/opponents/${dataDir}/gamedata.json`
+        : `data/opponents/${dataDir}/gamedata-${year}.json`;
 
     return from(this.fetchGameJson(file));
   }
@@ -53,8 +53,10 @@ export class SoftballDataService {
     return from(this.fetchResolvedRoster());
   }
 
-  getOpponentRoster(slug: string): Observable<Roster> {
-    return from(this.fetchJson<Roster>(`data/opponents/${slug}/roster.json`));
+  getOpponentRoster(dataDir: string): Observable<Roster> {
+    return from(
+      this.fetchJson<Roster>(`data/opponents/${dataDir}/roster.json`)
+    );
   }
 
   getWellesleyPitchingData(year: number): Observable<YearPitchingData> {

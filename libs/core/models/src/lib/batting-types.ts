@@ -3,6 +3,8 @@
 export interface TeamEntry {
   slug: string;
   name: string;
+  group?: string;
+  dataPath?: string;
 }
 
 export type SortKey = 'name' | 'career';

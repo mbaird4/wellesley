@@ -11,6 +11,7 @@ import { OpponentSprayChart } from '../opponent-spray-chart/opponent-spray-chart
   template: `
     <ws-opponent-spray-chart
       [slug]="data.slug()"
+      [dataDir]="data.dataDir()"
       [teamName]="data.selectedTeamName()"
       [teamData]="data.teamData()"
     />

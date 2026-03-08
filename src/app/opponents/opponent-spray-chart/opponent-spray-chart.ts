@@ -38,6 +38,7 @@ export class OpponentSprayChart {
   private processorService = inject(SoftballProcessorService);
 
   readonly slug = input.required<string>();
+  readonly dataDir = input<string>('');
   readonly teamName = input('');
   readonly teamData = input<Team | null>(null);
 
@@ -54,6 +55,7 @@ export class OpponentSprayChart {
   }
 
   private loadData(slug: string): void {
+    const dir = this.dataDir() || slug;
     this.loading.set(true);
     this.error.set(null);
     this.dataByYear.set(new Map());
@@ -61,12 +63,12 @@ export class OpponentSprayChart {
 
     forkJoin({
       roster: this.dataService
-        .getOpponentRoster(slug)
+        .getOpponentRoster(dir)
         .pipe(catchError(() => of({} as Roster))),
       years: forkJoin(
         SPRAY_YEARS.map((year) =>
           this.dataService
-            .getOpponentGameData(slug, year)
+            .getOpponentGameData(dir, year)
             .pipe(catchError(() => of([])))
         )
       ),

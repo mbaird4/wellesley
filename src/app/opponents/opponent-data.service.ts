@@ -21,14 +21,14 @@ import { calculateWoba } from '@ws/core/processors';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { OPPONENT_TEAMS } from './teams';
+import { ALL_OPPONENT_TEAMS } from './teams';
 
 @Injectable()
 export class OpponentDataService {
   private http = inject(HttpClient);
   private route = inject(ActivatedRoute);
 
-  readonly teams: TeamEntry[] = OPPONENT_TEAMS;
+  readonly teams: TeamEntry[] = ALL_OPPONENT_TEAMS;
 
   readonly slug = toSignal(
     this.route.paramMap.pipe(map((params) => params.get('slug') ?? '')),
@@ -50,6 +50,12 @@ export class OpponentDataService {
   readonly selectedTeamName = computed(
     () => this.teams.find((t) => t.slug === this.slug())?.name ?? ''
   );
+
+  readonly dataDir = computed(() => {
+    const team = this.teams.find((t) => t.slug === this.slug());
+
+    return team?.dataPath ?? this.slug();
+  });
 
   readonly allYears = computed(() => {
     const data = this.teamData();
@@ -203,7 +209,7 @@ export class OpponentDataService {
       }
 
       this.pitchingData.set(null);
-      this.loadTeam(slug);
+      this.loadTeam(this.dataDir());
     });
   }
 
@@ -226,7 +232,7 @@ export class OpponentDataService {
     this.sortDir.update((d) => (d === 'asc' ? 'desc' : 'asc'));
   }
 
-  loadPitching(slug: string): void {
+  loadPitching(dataDir: string): void {
     if (this.pitchingData() || this.pitchingLoading()) {
       return;
     }
@@ -242,7 +248,7 @@ export class OpponentDataService {
         year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
 
       return this.http
-        .get<YearPitchingData>(`${base}data/opponents/${slug}/${file}`)
+        .get<YearPitchingData>(`${base}data/opponents/${dataDir}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 
@@ -259,7 +265,7 @@ export class OpponentDataService {
     });
   }
 
-  private loadTeam(slug: string): void {
+  private loadTeam(dataDir: string): void {
     this.loading.set(true);
     this.error.set(null);
     this.expandedPlayer.set(null);
@@ -276,12 +282,12 @@ export class OpponentDataService {
           : `batting-stats-${year}.json`;
 
       return this.http
-        .get<YearBattingData>(`${base}data/opponents/${slug}/${file}`)
+        .get<YearBattingData>(`${base}data/opponents/${dataDir}/${file}`)
         .pipe(catchError(() => of(null)));
     });
 
     const rosterRequest = this.http
-      .get<Roster>(`${base}data/opponents/${slug}/roster.json`)
+      .get<Roster>(`${base}data/opponents/${dataDir}/roster.json`)
       .pipe(catchError(() => of(null)));
 
     forkJoin([forkJoin(requests), rosterRequest]).subscribe({

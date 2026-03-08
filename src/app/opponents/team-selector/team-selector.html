@@ -15,6 +15,30 @@
         {{ team.name }}
       </a>
     }
+
+    @if (floridaTeams().length > 0) {
+      <span
+        class="text-content-dim mt-4 mb-1 px-3 text-[0.65rem] font-semibold tracking-widest uppercase"
+      >
+        Florida Trip
+      </span>
+
+      @for (team of floridaTeams(); track team.slug) {
+        <a
+          [routerLink]="[team.slug]"
+          routerLinkActive
+          #rla="routerLinkActive"
+          class="rounded-lg px-3 py-2 text-left text-sm font-medium no-underline transition-colors"
+          [class]="
+            rla.isActive
+              ? 'bg-brand-bg text-brand-text'
+              : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+          "
+        >
+          {{ team.name }}
+        </a>
+      }
+    }
   </nav>
 } @else {
   <nav class="scrollbar-none -mx-2 flex gap-1.5 overflow-x-auto px-2 pb-2">
@@ -32,6 +56,26 @@
       >
         {{ team.name }}
       </a>
+    }
+
+    @if (floridaTeams().length > 0) {
+      <span class="bg-surface-border mx-1 my-auto h-4 w-px shrink-0"></span>
+
+      @for (team of floridaTeams(); track team.slug) {
+        <a
+          [routerLink]="[team.slug]"
+          routerLinkActive
+          #rla="routerLinkActive"
+          class="shrink-0 rounded-full px-3 py-1.5 text-sm font-medium whitespace-nowrap no-underline transition-colors"
+          [class]="
+            rla.isActive
+              ? 'bg-brand-bg text-brand-text'
+              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+          "
+        >
+          {{ team.name }}
+        </a>
+      }
     }
   </nav>
 }

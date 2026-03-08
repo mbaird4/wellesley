@@ -27,6 +27,17 @@ const TEAMS: Record<string, string> = {
   babson: 'babsonathletics.com',
 };
 
+// ── Florida Sidearm Teams ──
+
+const FLORIDA_SIDEARM_TEAMS: Record<string, string> = {
+  wesleyan: 'athletics.wesleyan.edu',
+  uwrf: 'uwrfsports.com',
+  brockport: 'gobrockport.com',
+  macalester: 'athletics.macalester.edu',
+  ecsu: 'gowarriorathletics.com',
+  uww: 'uwwsports.com',
+};
+
 // ── Types (mirroring prefetch-data.ts) ──
 
 interface PlayByPlayInning {
@@ -114,6 +125,10 @@ function parseYearsArg(): number[] {
     .split(',')
     .map((s) => parseInt(s.trim(), 10))
     .filter((n) => !isNaN(n));
+}
+
+function parseFloridaFlag(): boolean {
+  return process.argv.includes('--florida');
 }
 
 // ── Schedule page → boxscore URLs ──
@@ -513,18 +528,28 @@ async function scrapeTeamBoxscores(
 async function main(): Promise<void> {
   const teamFilter = parseTeamArg();
   const years = parseYearsArg();
-  const outputDir = path.resolve(__dirname, '../public/data/opponents');
+  const florida = parseFloridaFlag();
+  const baseOutputDir = path.resolve(__dirname, '../public/data/opponents');
+  const outputDir = florida
+    ? path.join(baseOutputDir, 'florida')
+    : baseOutputDir;
   fs.mkdirSync(outputDir, { recursive: true });
 
-  const teamsToScrape = teamFilter
-    ? { [teamFilter]: TEAMS[teamFilter] }
-    : TEAMS;
+  const activeTeams = florida ? FLORIDA_SIDEARM_TEAMS : TEAMS;
 
-  if (teamFilter && !TEAMS[teamFilter]) {
+  const teamsToScrape = teamFilter
+    ? { [teamFilter]: activeTeams[teamFilter] }
+    : activeTeams;
+
+  if (teamFilter && !activeTeams[teamFilter]) {
     console.error(
-      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(TEAMS).join(', ')}`
+      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(activeTeams).join(', ')}`
     );
     process.exit(1);
+  }
+
+  if (florida) {
+    console.log('Mode: FLORIDA SIDEARM teams');
   }
 
   console.log(`Scraping opponent boxscores for years: ${years.join(', ')}`);

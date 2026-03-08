@@ -21,10 +21,7 @@ export interface PrintPlayerSummary {
 @Component({
   selector: 'ws-spray-chart-print-view',
   standalone: true,
-  imports: [
-    SprayField,
-    SprayLegend,
-  ],
+  imports: [SprayField, SprayLegend],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'hidden print:block' },
   templateUrl: './spray-chart-print-view.html',

@@ -1,0 +1,210 @@
+{
+  "slug": "uww",
+  "domain": "uwwsports.com",
+  "scrapedAt": "2026-03-08T16:11:12.277Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Hock, Brooke",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "ip": 2.2,
+      "h": 3,
+      "r": 0,
+      "er": 0,
+      "bb": 1,
+      "so": 3,
+      "hr": 0
+    },
+    {
+      "name": "Hammen, Josie",
+      "w": 0,
+      "l": 1,
+      "era": 1.17,
+      "app": 1,
+      "gs": 1,
+      "ip": 6,
+      "h": 5,
+      "r": 1,
+      "er": 1,
+      "bb": 2,
+      "so": 4,
+      "hr": 0
+    },
+    {
+      "name": "DeBennette, Madi",
+      "w": 1,
+      "l": 0,
+      "era": 3.23,
+      "app": 1,
+      "gs": 1,
+      "ip": 4.1,
+      "h": 10,
+      "r": 2,
+      "er": 2,
+      "bb": 0,
+      "so": 3,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/washington-university-in-st-louis/boxscore/23027",
+      "date": "3/7/2026",
+      "opponent": "Washington University In St Louis",
+      "pitchers": ["Hammen, Josie"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Julia Sullo singled to third base, bunt, out at second rf to ss (1-0 B).",
+            "Harper Nix lined out to 3b (1-2 KFB).",
+            "Emmy May struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kristina Donaldson struck out swinging (3-2 BKBBKFS).",
+            "Elena Locascio flied out to lf (1-2 BFF).",
+            "Kennedy Grippo grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jamie Cendana walked (3-1 BFBBB).",
+            "Julia Nicholus lined into double play p (1-2 FFBF); Jamie Cendana out on the play.",
+            "Maria Brooks grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Julia Sullo struck out swinging, out at first c to 1b (3-2 BBFFBS).",
+            "Harper Nix singled up the middle (3-2 SFBBFFB).",
+            "Harper Nix advanced to second on a wild pitch.",
+            "Allie Botkin pinch ran for Harper Nix.",
+            "Emmy May struck out swinging (3-2 SBBSBS).",
+            "Kristina Donaldson flied out to cf (2-2 KBBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elena Locascio flied out to cf (3-2 KBBKBF).",
+            "Kennedy Grippo popped up to 2b (2-2 BKKFB).",
+            "Jamie Cendana flied out to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sydney Schneider pinch hit for Julia Nicholus.",
+            "Sydney Schneider flied out to lf (0-0).",
+            "Maria Brooks walked (3-1 BKBBB).",
+            "Katie Dolin pinch ran for Maria Brooks.",
+            "Julia Sullo singled to third base, bunt (1-1 BF); Katie Dolin advanced to second.",
+            "Harper Nix flied out to rf (0-0); Julia Sullo advanced to second; Katie Dolin advanced to third.",
+            "Emmy May popped up to 3b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kristina Donaldson doubled to right center (0-0).",
+            "Natalie Muellner to lf for Maggie Ward.",
+            "Elena Locascio singled to pitcher, bunt, RBI (1-0 B); Kristina Donaldson scored."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/rhodes-college/boxscore/23028",
+      "date": "3/7/2026",
+      "opponent": "Rhodes College",
+      "pitchers": ["DeBennette, Madi", "Hock, Brooke"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Athena Gonzales flied out to rf (3-2 BKBBK).",
+            "Kaitlyn Sun popped up to ss (2-2 SBBK).",
+            "Harper Allee-Press singled to right center (0-0).",
+            "Harper Allee-Press out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Isabela Barber doubled to right center (1-1 BK).",
+            "Isabella Phelps out at first 1b to 2b, SAC, bunt (0-1 F); Isabela Barber advanced to third.",
+            "Emma Whittington singled to third base, advanced to second on the throw (3-1 BKBB); Isabela Barber out at home 3b to c.",
+            "Talia Travis flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Caplinger struck out swinging (1-2 KSBFS).",
+            "Jasmyn Stanley singled through the left side (0-0).",
+            "Athena Gonzales singled through the left side (0-2 KF); Jasmyn Stanley advanced to second.",
+            "Kaitlyn Sun singled to right field (1-2 BKF); Athena Gonzales advanced to second; Jasmyn Stanley advanced to third.",
+            "Harper Allee-Press reached on a fielder's choice to third base (0-0); Kaitlyn Sun advanced to second; Athena Gonzales advanced to third; Jasmyn Stanley out at home 3b to c.",
+            "Isabela Barber popped up to cf (2-2 KKBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Isabella Phelps struck out swinging (3-2 BKBBFFS).",
+            "Emma Whittington singled to right center (0-2 KS).",
+            "Emma Whittington advanced to second on a wild pitch.",
+            "Talia Travis flied out to rf (1-2 KSB); Emma Whittington advanced to third.",
+            "Emma Caplinger struck out swinging, out at first c to 1b (1-2 BKKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ellery Stoltz to lf.",
+            "Jasmyn Stanley grounded out to p, bunt (0-1 K).",
+            "Athena Gonzales singled down the rf line (1-0 B).",
+            "Kaitlyn Sun tripled to left center, RBI (1-0 B); Athena Gonzales scored.",
+            "Harper Allee-Press singled to right center, RBI (1-2 KKB); Kaitlyn Sun scored.",
+            "Brooke Hock to p for Madi DeBennette.",
+            "Isabela Barber struck out swinging (1-2 KBFS).",
+            "Isabella Phelps struck out looking (2-2 FBFBFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Whittington walked (3-2 BBKBFB).",
+            "Talia Travis singled to center field (0-0); Emma Whittington advanced to second.",
+            "Kate Ledlie pinch hit for Emma Caplinger.",
+            "Kate Ledlie grounded out to 1b unassisted (0-2 KFF); Talia Travis advanced to second; Emma Whittington advanced to third.",
+            "Jasmyn Stanley singled to pitcher (1-2 KBFFFF).",
+            "Athena Gonzales reached on a fielder's choice to third base (0-1 F); Jasmyn Stanley advanced to second; Talia Travis advanced to third; Emma Whittington out at home 3b to c.",
+            "Kaitlyn Sun fouled out to 1b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bella Eggert to cf.",
+            "Harper Allee-Press popped up to ss (0-1 K).",
+            "Isabela Barber singled down the lf line (0-1 F).",
+            "Isabella Phelps struck out swinging (1-2 SFBFS).",
+            "Emma Whittington fouled out to 1b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

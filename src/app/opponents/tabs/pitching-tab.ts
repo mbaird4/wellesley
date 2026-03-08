@@ -31,7 +31,7 @@ export class PitchingTab {
     effect(() => {
       const slug = this.data.slug();
       if (slug) {
-        this.data.loadPitching(slug);
+        this.data.loadPitching(this.data.dataDir());
       }
     });
   }

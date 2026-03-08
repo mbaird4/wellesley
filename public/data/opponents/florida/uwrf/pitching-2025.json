@@ -1,0 +1,3327 @@
+{
+  "slug": "uwrf",
+  "domain": "uwrfsports.com",
+  "scrapedAt": "2026-03-08T16:05:46.189Z",
+  "year": 2025,
+  "pitchingStats": [
+    {
+      "name": "Dusterhoft, Alexa",
+      "w": 4,
+      "l": 5,
+      "era": 3.16,
+      "app": 19,
+      "gs": 14,
+      "ip": 62,
+      "h": 81,
+      "r": 48,
+      "er": 28,
+      "bb": 14,
+      "so": 30,
+      "hr": 2
+    },
+    {
+      "name": "VanGruensven, Brooklyn",
+      "w": 7,
+      "l": 8,
+      "era": 3.36,
+      "app": 26,
+      "gs": 14,
+      "ip": 89.2,
+      "h": 91,
+      "r": 62,
+      "er": 43,
+      "bb": 42,
+      "so": 55,
+      "hr": 5
+    },
+    {
+      "name": "Duggan, Lindsey",
+      "w": 6,
+      "l": 7,
+      "era": 3.53,
+      "app": 29,
+      "gs": 11,
+      "ip": 79.1,
+      "h": 74,
+      "r": 47,
+      "er": 40,
+      "bb": 71,
+      "so": 71,
+      "hr": 3
+    },
+    {
+      "name": "Crowe, Emily",
+      "w": 2,
+      "l": 1,
+      "era": 5.32,
+      "app": 12,
+      "gs": 1,
+      "ip": 25,
+      "h": 43,
+      "r": 28,
+      "er": 19,
+      "bb": 14,
+      "so": 12,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/hamline/boxscore/6918",
+      "date": "3/2/2025",
+      "opponent": "Hamline",
+      "pitchers": ["VanGruensven, Brooklyn", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mi. Johnson popped up to ss.",
+            "J. Rubbelke struck out.",
+            "G. Tuhy grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Herbert lined out to 3b.",
+            "J. Cariveau walked.",
+            "M. Borek reached on a fielder's choice; J. Cariveau out at second p to ss.",
+            "L. Wier reached on a fielder's choice; M. Borek out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ma. Johnson doubled to left center.",
+            "A. Boynton struck out, reached first on a passed ball; Ma. Johnson advanced to third.",
+            "Mi. Johnson grounded out to p, SAC, RBI; A. Boynton advanced to second; Ma. Johnson scored, unearned.",
+            "J. Rubbelke singled; A. Boynton advanced to third.",
+            "G. Tuhy struck out looking.",
+            "A. Herbert homered, 3 RBI, unearned; J. Rubbelke scored, unearned; A. Boynton scored, unearned.",
+            "J. Cariveau flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Borek walked.",
+            "L. Wier flied out to lf.",
+            "Ma. Johnson reached on a fielder's choice; M. Borek out at second 3b to 2b.",
+            "Ma. Johnson stole second.",
+            "A. Boynton popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Duggan to p for VanGruensven.",
+            "Mi. Johnson out at first 1b to 2b.",
+            "J. Rubbelke struck out.",
+            "G. Tuhy grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Herbert popped up to 2b.",
+            "J. Cariveau popped up to 2b.",
+            "M. Borek grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Wier flied out to rf.",
+            "Ma. Johnson grounded out to p.",
+            "A. Boynton flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/luther/boxscore/6919",
+      "date": "3/2/2025",
+      "opponent": "Luther",
+      "pitchers": ["Duggan, Lindsey", "VanGruensven, Brooklyn", "Crowe, Emily"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Nehring flied out to cf.",
+            "Allen singled to center field.",
+            "Allen stole second.",
+            "Sauser struck out looking.",
+            "Allen stole third.",
+            "Elwood grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Harter struck out swinging.",
+            "Urfer popped up to ss.",
+            "Hansen struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Wagner reached on an error by ss.",
+            "Dannenmuelle popped up to 3b.",
+            "Wagner out at first 1b unassisted, runner left early.",
+            "Nehring walked.",
+            "Allen walked; Nehring advanced to second.",
+            "Sauser struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elwood popped up to 2b.",
+            "Harter doubled to center field.",
+            "VanGruensven to p for L. Duggan.",
+            "Urfer hit by pitch.",
+            "Welter pinch ran for Urfer.",
+            "Wilson pinch hit for Hansen.",
+            "Wilson struck out swinging.",
+            "Wagner doubled to center field, 2 RBI; Welter scored; Harter scored.",
+            "Clayton pinch hit for Dannenmuelle.",
+            "Wagner advanced to third on a passed ball.",
+            "Clayton walked.",
+            "Nehring struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Allen homered to left field, RBI.",
+            "Sauser grounded out to 3b.",
+            "Elwood walked.",
+            "Strigel pinch ran for Elwood.",
+            "Harter walked; Strigel advanced to second.",
+            "Urfer flied out to lf.",
+            "Hansen struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Crowe to p for VanGruensven.",
+            "Wagner grounded out to 3b.",
+            "Dannenmuelle flied out to cf.",
+            "Nehring doubled to left field.",
+            "Krambeer pinch ran for Nehring.",
+            "Allen grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/martin-luther/boxscore/6920",
+      "date": "3/7/2025",
+      "opponent": "Martin Luther",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Rachel McCaughna popped up to p.",
+            "Jessica Horn reached first on a fielding error by ss.",
+            "Chloe Berg popped into double play 2b to 1b; Jessica Horn out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Anna Busch struck out looking.",
+            "Amelia Thiel struck out looking.",
+            "Chloe Koschnitzke popped up to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sarah Yonkovich out at first 1b to 2b.",
+            "Katelyn Rassat struck out looking.",
+            "Hannah Ott walked.",
+            "Rachel McCaughna struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jessica Horn grounded out to p.",
+            "Chloe Berg grounded out to 3b.",
+            "Anna Busch grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kayla Dolan to ss for Autumn Hughes.",
+            "Kaitlyn Hall to rf for A. DeMeyer.",
+            "Abby Pitts to lf for Emily Crowe.",
+            "Amelia Thiel struck out swinging.",
+            "Chloe Koschnitzke struck out looking.",
+            "Sarah Yonkovich grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/martin-luther/boxscore/7177",
+      "date": "3/7/2025",
+      "opponent": "Martin Luther",
+      "pitchers": ["Dusterhoft, Alexa", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "R. McCaughna struck out swinging.",
+            "J. Horn grounded out to ss.",
+            "C. Berg grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Busch struck out looking.",
+            "K. Rassat popped up to 2b.",
+            "C. Koschnitz grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Schultz struck out looking.",
+            "E. Frey struck out looking.",
+            "H. Ott struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Duggan to p for A. Dusterhof.",
+            "R. McCaughna struck out swinging.",
+            "J. Horn popped up to ss.",
+            "C. Berg struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeMeyer to 2b for M. Hasapopou.",
+            "A. Busch struck out swinging.",
+            "K. Rassat struck out swinging.",
+            "C. Koschnitz struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/crown/boxscore/7178",
+      "date": "3/8/2025",
+      "opponent": "Crown",
+      "pitchers": [
+        "VanGruensven, Brooklyn",
+        "Duggan, Lindsey",
+        "Dusterhoft, Alexa"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Romportl grounded out to 2b (0-0).",
+            "K. Vaughan grounded out to 2b (2-2 BKFB).",
+            "Lilienthal popped up to ss (2-2 BBKSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "I. Valles grounded out to 3b (1-1 BF).",
+            "S. Gardner struck out looking (2-2 BKFBK).",
+            "C. Garza flied out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Abreo hit by pitch (1-0 B).",
+            "K. Fude doubled to left center, RBI (1-1 BK); K. Abreo scored.",
+            "L. Duggan to p for VanGruensven.",
+            "M. Aylsworth singled to third base, bunt (0-0); K. Fude advanced to third.",
+            "E. Romportl singled to center field, RBI (3-2 KBBSB); M. Aylsworth advanced to second; K. Fude scored.",
+            "K. Vaughan grounded out to 3b (3-1 BBBK); E. Romportl advanced to second; M. Aylsworth advanced to third.",
+            "L. Duggan to p for VanGruensven.",
+            "Lilienthal struck out swinging (2-2 KFBBS).",
+            "I. Valles struck out swinging, out at first c to 1b (2-2 KBBSFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Dolan to ss for E. Woida.",
+            "S. Gardner struck out swinging (3-2 FFBBBS).",
+            "C. Garza walked (3-2 KBBBKB).",
+            "K. Abreo singled down the lf line (1-2 BKS); C. Garza advanced to second.",
+            "K. Fude struck out looking (3-2 FKBBBFK).",
+            "M. Aylsworth struck out swinging (2-2 KSBBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Romportl out at first 2b to c (2-1 FBB).",
+            "K. Vaughan walked (3-1 SBBBB).",
+            "Lilienthal walked (3-2 FBKBBFFB); K. Vaughan advanced to second.",
+            "I. Valles struck out swinging (0-2 SFS).",
+            "S. Gardner struck out swinging (2-2 FSBBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dusterhoft to p.",
+            "K. Hall to rf for L. Duggan.",
+            "A. Pitts to lf for A. Hughes.",
+            "C. Garza grounded out to 2b (2-1 BBK).",
+            "K. Abreo struck out looking (1-2 BSFK).",
+            "K. Oakes pinch hit for K. Fude.",
+            "K. Oakes flied out to cf (0-2 FS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Koch to cf for A. DeMeyer.",
+            "M. Martinez pinch hit for M. Aylsworth.",
+            "M. Martinez popped up to 1b (1-0 B).",
+            "E. Romportl popped up to ss (0-1 K).",
+            "K. Vaughan grounded out to 2b (0-2 SK)."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/crown/boxscore/7179",
+      "date": "3/8/2025",
+      "opponent": "Crown",
+      "pitchers": ["Dusterhoft, Alexa", "Crowe, Emily", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Romportl singled to center field.",
+            "K. Vaughan popped up to 1b.",
+            "M. Lilientha flied out to cf.",
+            "I. Valles popped up to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Gardner singled to left field.",
+            "C. Garza out at first 1b to 2b, SAC, bunt; S. Gardner advanced to second.",
+            "M. Martinez flied out to lf.",
+            "K. Oakes flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Crowe to p for A. Dusterhof.",
+            "M. Aylsworth walked.",
+            "E. Romportl grounded out to 2b; M. Aylsworth advanced to second.",
+            "K. Vaughan hit by pitch.",
+            "M. Lilientha walked; K. Vaughan advanced to second; M. Aylsworth advanced to third.",
+            "I. Valles reached on a fielder's choice to third base; M. Lilientha advanced to second; K. Vaughan advanced to third; M. Aylsworth out at home 3b to c.",
+            "S. Gardner grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Garza struck out swinging.",
+            "M. Martinez walked.",
+            "K. Oakes walked; M. Martinez advanced to second.",
+            "L. Duggan to p for E. Crowe.",
+            "M. Aylsworth struck out swinging.",
+            "E. Romportl grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeMeyer to 2b for G. Gardner.",
+            "K. Vaughan grounded out to 3b.",
+            "M. Lilientha flied out to cf.",
+            "I. Valles popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/lakeland/boxscore/6921",
+      "date": "3/15/25",
+      "opponent": "Lakeland",
+      "pitchers": ["VanGruensven, Brooklyn", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Morrow grounded out to 3b, bunt.",
+            "Meyer singled up the middle.",
+            "Linders grounded out to 3b; Meyer advanced to second.",
+            "August singled down the rf line; Meyer advanced to third.",
+            "Meyer out at home c unassisted, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Raske grounded out to ss.",
+            "Heitman popped up to 1b.",
+            "Howard grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Staudinger walked.",
+            "Rupnow pinch ran for Staudinger.",
+            "Harlow out at first 1b to 2b, SAC, bunt; Rupnow advanced to second.",
+            "Morrow reached on a throwing error by 2b, advanced to second on the error; Rupnow advanced to third, scored on the error, unearned.",
+            "L. Duggan to p for VanGruensven.",
+            "Meyer walked.",
+            "Meyer advanced to second on a wild pitch; Morrow advanced to third on a wild pitch.",
+            "Linders struck out.",
+            "August struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Raske walked.",
+            "Heitman walked; Raske advanced to second.",
+            "Hunt pinch ran for Raske.",
+            "Howard struck out looking.",
+            "Staudinger struck out swinging.",
+            "Harlow popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Morrow walked.",
+            "Meyer singled, bunt; Morrow advanced to second, out at third p to 3b.",
+            "Linders reached on a fielder's choice; Meyer advanced to second.",
+            "August out at first 1b to 2b, SAC, bunt; Linders advanced to second; Meyer advanced to third.",
+            "Raske walked.",
+            "Heitman lined out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Aultman to 3b for K. Hall.",
+            "K. Hall to rf for A. Hughes.",
+            "Howard singled down the lf line.",
+            "Staudinger out at first 1b to 2b, SAC, bunt; Howard advanced to second.",
+            "Gaedtke pinch hit for Harlow.",
+            "Gaedtke struck out swinging.",
+            "Morrow popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Burinda to 1b for H. Effertz.",
+            "Meyer walked.",
+            "Meyer advanced to second on a wild pitch.",
+            "Linders struck out swinging.",
+            "August popped up to 2b.",
+            "Raske flied out to rf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/simpson/boxscore/6922",
+      "date": "3/15/2025",
+      "opponent": "Simpson",
+      "pitchers": [
+        "Dusterhoft, Alexa",
+        "Crowe, Emily",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Steen singled to right field.",
+            "A. Steen advanced to second on a passed ball.",
+            "M. Heidelbau reached first on an error by 1b.",
+            "A. Steen scored on the throw, unearned.",
+            "M. Heidelbau stole second.",
+            "A. Ehlers flied out to cf; M. Heidelbau advanced to third on the throw.",
+            "M. James grounded out to ss, RBI; M. Heidelbau scored on the throw, unearned.",
+            "K. Shaner tripled to right field.",
+            "A. Gookin flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Fowler singled to left field.",
+            "B. Petersen pinch ran for M. Fowler.",
+            "A. Rouse pinch ran for B. Petersen.",
+            "C. Obleton doubled to left field; A. Rouse advanced to third.",
+            "K. Kriegel grounded out to ss, RBI; C. Obleton advanced to third on the throw; A. Rouse scored on the throw.",
+            "E. Crowe to p for A. Dusterhof.",
+            "A. Steen grounded out to ss, RBI; C. Obleton scored.",
+            "M. Heidelbau hit by pitch.",
+            "M. Heidelbau stole second.",
+            "A. Ehlers walked.",
+            "M. James flied out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Shaner reached first on an error by 3b.",
+            "A. Gookin struck out swinging.",
+            "M. Fowler doubled to left center, RBI; K. Shaner scored on the throw.",
+            "C. Obleton singled to shortstop, advanced to second on an error by ss, RBI; M. Fowler scored, unearned.",
+            "K. Kriegel struck out looking.",
+            "C. Obleton advanced to third on a wild pitch.",
+            "A. Steen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Heidelbau doubled to center field.",
+            "A. Ehlers flied out to 2b.",
+            "M. James flied out to cf; M. Heidelbau advanced to third on the throw.",
+            "K. Shaner singled to left center, RBI; M. Heidelbau scored.",
+            "A. Gookin singled to left field; K. Shaner advanced to second.",
+            "M. Fowler flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Woida to cf for M. Koch.",
+            "C. Obleton reached first on an error by 3b.",
+            "K. Kriegel singled to left center, advanced to second on the throw; C. Obleton advanced to third on the throw.",
+            "B. Vangruens to p for E. Crowe.",
+            "A. Steen grounded out to p, RBI; K. Kriegel advanced to third; C. Obleton scored, unearned.",
+            "M. Heidelbau reached on a fielder's choice; K. Kriegel out at home ss to c.",
+            "A. Ehlers doubled to left center; M. Heidelbau advanced to third.",
+            "M. James singled to left center, 2 RBI; A. Ehlers scored on the throw; M. Heidelbau scored.",
+            "K. Shaner grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Hughes to lf for A. Pitts.",
+            "A. Gookin walked.",
+            "M. Fowler singled to right center; A. Gookin advanced to second.",
+            "C. Obleton reached on a fielder's choice; M. Fowler advanced to second; A. Gookin out at third 3b unassisted.",
+            "M. Fowler advanced to third.",
+            "C. Obleton stole second.",
+            "K. Kriegel struck out swinging.",
+            "A. Steen flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. DeMeyer to rf.",
+            "M. Heidelbau flied out to lf.",
+            "A. Ehlers flied out to rf.",
+            "M. James grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/babson-college/boxscore/6924",
+      "date": "3/16/2025",
+      "opponent": "Babson College",
+      "pitchers": ["Duggan, Lindsey", "Crowe, Emily"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Moore reached first on an error by 2b, advanced to second.",
+            "S. Moore stole third.",
+            "S. Moore scored on a wild pitch, unearned.",
+            "M. DeLong singled to center field.",
+            "M. DeLong out at second c to ss, caught stealing.",
+            "A. Hadjipana fouled out to 1b.",
+            "C. Raymond struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. McCall walked.",
+            "S. Skivo struck out swinging; D. McCall advanced to second.",
+            "B. DiCampell doubled to left field, RBI; D. McCall scored.",
+            "S. Pak struck out looking.",
+            "E. Walsh singled to center field, RBI; B. DiCampell scored on the throw.",
+            "S. Moore reached first on an error by 1b, bunt; E. Walsh advanced to third.",
+            "S. Moore stole second.",
+            "M. DeLong walked.",
+            "A. Hadjipana singled to center field, advanced to second on the throw, 2 RBI; M. DeLong advanced to third on the throw; S. Moore scored; E. Walsh scored.",
+            "C. Raymond flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Crowe to p for L. Duggan.",
+            "H. Effertz to 1b for N. Burinda.",
+            "D. McCall grounded out to 3b.",
+            "S. Skivo grounded out to 2b.",
+            "B. DiCampell struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Pak singled to shortstop.",
+            "E. Walsh walked; S. Pak advanced to second.",
+            "S. Moore grounded out to c unassisted.",
+            "M. DeLong tripled to right field, 2 RBI; E. Walsh scored; S. Pak scored.",
+            "A. Hadjipana grounded out to 1b unassisted.",
+            "C. Raymond grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. McCall grounded out to ss.",
+            "S. Skivo grounded out to 2b.",
+            "B. DiCampell doubled to left center.",
+            "S. Pak tripled to right center, RBI; B. DiCampell scored.",
+            "E. Walsh flied out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/framingham-state/boxscore/6923",
+      "date": "3/16/2025",
+      "opponent": "Framingham State",
+      "pitchers": ["Crowe, Emily", "Duggan, Lindsey", "VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Grassia singled to center field.",
+            "A. Behrikis flied out to rf.",
+            "M. Rooney reached on a fielder's choice; B. Grassia out at second ss to 2b.",
+            "J. Pepe walked; M. Rooney advanced to second.",
+            "I. MacDonald grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Jensen struck out looking.",
+            "A. Gray lined out to 2b.",
+            "V. Connelly singled to center field.",
+            "E. Etemad-Gi flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman to 3b for G. Gardner.",
+            "L. Duggan to p for E. Crowe.",
+            "B. Grassia flied out to rf.",
+            "A. Behrikis flied out to cf to left center.",
+            "M. Rooney walked.",
+            "M. Rooney stole second.",
+            "J. Pepe singled to left field, advanced to second on the throw, RBI; M. Rooney scored on the throw.",
+            "I. MacDonald walked.",
+            "E. Carignan pinch hit for H. Jensen.",
+            "E. Carignan doubled to left center, 2 RBI; I. MacDonald scored; J. Pepe scored.",
+            "A. Sillings pinch ran for E. Carignan.",
+            "A. Gray struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Vangruens to p for K. Dolan.",
+            "V. Connelly struck out swinging.",
+            "G. Paolino lined out to lf.",
+            "B. Grassia singled to left center.",
+            "A. Behrikis grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Pitts to ss for H. Effertz.",
+            "M. Rooney reached first on an error by lf.",
+            "J. Pepe grounded into double play ss to 1b; M. Rooney out on the play.",
+            "I. MacDonald grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Crowe to p.",
+            "A. Sillings walked.",
+            "A. Gray to dp for A. Sillings.",
+            "A. Sillings to 1b.",
+            "A. Sillings reached first on an error by ss; A. Sillings advanced to second.",
+            "K. Brodzinsk pinch ran for A. Gray.",
+            "V. Connelly singled to center field; A. Sillings advanced to second; A. Sillings advanced to third.",
+            "V. Connelly advanced to second; A. Sillings advanced to third; A. Sillings scored on a passed ball, unearned.",
+            "G. Paolino lined out to 3b.",
+            "B. Grassia singled to left center, RBI; V. Connelly advanced to third; A. Sillings scored, unearned.",
+            "B. Grassia stole second.",
+            "A. Behrikis doubled to left center, 2 RBI; B. Grassia scored; V. Connelly scored.",
+            "M. Rooney singled to center field, RBI; A. Behrikis scored on the throw, unearned.",
+            "J. Pepe singled to center field, advanced to second on the throw; M. Rooney advanced to second, advanced to third on the throw.",
+            "I. MacDonald fouled out to 1b.",
+            "A. Sillings singled to right center, RBI; J. Pepe advanced to third, out at home cf to c; M. Rooney scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/plattsburgh-state/boxscore/6926",
+      "date": "3/18/2025",
+      "opponent": "Plattsburgh State",
+      "pitchers": ["Duggan, Lindsey", "Crowe, Emily"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Noll singled to center field.",
+            "G. Noll stole second.",
+            "M. Manalo reached on a fielder's choice; G. Noll out at third 3b to 2b.",
+            "M. Stork singled to right field; M. Manalo out at second rf to ss.",
+            "S. Isaacs grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Toleman walked.",
+            "E. Deo struck out swinging.",
+            "M. Pillus doubled to right center; B. Toleman advanced to third.",
+            "A. Hemingway struck out swinging.",
+            "M. DeFina struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Noll grounded out to ss.",
+            "M. Manalo walked.",
+            "M. Stork singled to right field; M. Manalo advanced to second.",
+            "S. Isaacs lined out to 3b; M. Stork advanced to second on an error by 3b, assist by 1b; M. Manalo advanced to third.",
+            "B. Toleman grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Deo flied out to p.",
+            "M. Pillus singled to left field.",
+            "A. Hemingway flied out to cf.",
+            "M. DeFina walked; M. Pillus advanced to second.",
+            "G. Noll walked; M. DeFina advanced to second; M. Pillus advanced to third.",
+            "M. Manalo singled to left field, RBI; G. Noll advanced to second; M. DeFina advanced to third; M. Pillus scored.",
+            "E. Crowe to p for L. Duggan.",
+            "M. Stork singled to right field, 2 RBI; M. Manalo advanced to second; G. Noll scored; M. DeFina scored.",
+            "S. Isaacs grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Hughes to lf.",
+            "K. Aultman to 3b for E. Woida.",
+            "B. Toleman fouled out to rf.",
+            "E. Deo singled to left field.",
+            "M. Pappas pinch ran for E. Deo.",
+            "M. Pillus grounded into double play ss to 2b to 1b; M. Pappas out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Hemingway grounded out to 3b.",
+            "M. DeFina flied out to rf.",
+            "G. Noll lined out to 1b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/hamline/boxscore/6925",
+      "date": "3/18/2025",
+      "opponent": "Hamline",
+      "pitchers": ["VanGruensven, Brooklyn", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Effertz to 1b for M. Hasapopou.",
+            "Mi. Johnson flied out to lf.",
+            "J. Rubbelke walked.",
+            "J. Rubbelke stole second.",
+            "G. Tuhy fouled out to lf.",
+            "A. Herbert fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Cariveau struck out swinging.",
+            "N. Lundeen flied out to lf.",
+            "M. Borek flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Burinda to 1b.",
+            "A. Chamernic singled to pitcher, bunt.",
+            "E. Martinez grounded out to ss; A. Chamernic advanced to second.",
+            "Mi. Johnson singled to center field, advanced to second on the throw, RBI; A. Chamernic scored on the throw.",
+            "Mi. Johnson stole third.",
+            "J. Rubbelke grounded out to p, bunt, SAC, RBI; Mi. Johnson scored.",
+            "G. Tuhy reached first on an error by ss.",
+            "A. Herbert doubled to left center, RBI; G. Tuhy scored, unearned.",
+            "/  for A. Boynton.",
+            "A. Boynton pinch ran for A. Herbert.",
+            "J. Cariveau walked.",
+            "N. Lundeen reached first on an error by 2b, RBI; J. Cariveau advanced to third; A. Boynton scored, unearned.",
+            "M. Borek singled to shortstop, RBI; N. Lundeen advanced to second; J. Cariveau scored.",
+            "A. Chamernic walked; M. Borek advanced to second; N. Lundeen advanced to third.",
+            "E. Martinez flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Hughes to lf for E. Crowe.",
+            "L. Duggan to p for B. Vangruens.",
+            "D. Rosbacka to p for A. Boynton.",
+            "Mi. Johnson doubled to left center.",
+            "J. Rubbelke reached first on an error by 1b, assist by 2b, bunt, advanced to second, RBI; Mi. Johnson scored, unearned.",
+            "G. Tuhy flied out to lf.",
+            "A. Herbert fouled out to 1b.",
+            "J. Cariveau flied out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "N. Lundeen walked.",
+            "M. Borek walked; N. Lundeen advanced to second.",
+            "M. Borek advanced to second on a wild pitch; N. Lundeen advanced to third on a wild pitch.",
+            "A. Chamernic flied out to ss.",
+            "E. Martinez struck out swinging.",
+            "Mi. Johnson struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Rubbelke singled to left field.",
+            "G. Tuhy flied out to cf.",
+            "A. Herbert doubled to left field, RBI; J. Rubbelke scored on the throw.",
+            "S. Johnson pinch ran for A. Herbert.",
+            "J. Cariveau walked.",
+            "N. Lundeen doubled to left center, 2 RBI; J. Cariveau scored on the throw; S. Johnson scored.",
+            "M. Borek walked.",
+            "A. Chamernic flied out to lf.",
+            "E. Martinez singled to shortstop; M. Borek advanced to second; N. Lundeen advanced to third.",
+            "Mi. Johnson flied out to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Dusterhof to rf for E. Woida.",
+            "J. Rubbelke flied out to 2b.",
+            "G. Tuhy walked.",
+            "Ma. Johnson pinch ran for G. Tuhy.",
+            "B. Vangruens to p for L. Duggan.",
+            "S. Johnson singled to right center; Ma. Johnson advanced to second.",
+            "J. Cariveau walked; S. Johnson advanced to second; Ma. Johnson advanced to third.",
+            "N. Lundeen singled to center field, RBI; J. Cariveau advanced to second; S. Johnson advanced to third; Ma. Johnson scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/university-of-chicago/boxscore/6927",
+      "date": "3/19/2025",
+      "opponent": "University Of Chicago",
+      "pitchers": ["VanGruensven, Brooklyn", "Dusterhoft, Alexa"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Ding grounded out to p.",
+            "M. Murphy walked.",
+            "A. Hui singled to right field; M. Murphy advanced to second.",
+            "M. Nelson singled to left field; A. Hui advanced to second; M. Murphy advanced to third.",
+            "N. Antin singled to left field, RBI; M. Nelson advanced to second; A. Hui advanced to third; M. Murphy scored.",
+            "L. Sims singled to center field, RBI; N. Antin advanced to second; M. Nelson advanced to third; A. Hui scored.",
+            "A. Jensen flied out to cf, RBI; N. Antin advanced to third on the throw; M. Nelson scored on the throw.",
+            "L. Sims stole second.",
+            "M. Bocian walked.",
+            "M. Martinez flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Ding grounded out to p.",
+            "M. Murphy singled to second base.",
+            "M. Murphy stole second.",
+            "A. Hui singled to center field, RBI; M. Murphy scored on the throw.",
+            "A. Dusterhof to p for B. Vangruens.",
+            "M. Nelson doubled to left center, advanced to third on the throw, RBI; A. Hui scored on the throw.",
+            "N. Antin flied out to lf, RBI; M. Nelson scored on the throw.",
+            "L. Sims singled to right field.",
+            "L. Sims stole second.",
+            "A. Jensen flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman to 3b for E. Woida.",
+            "M. Bocian grounded out to ss.",
+            "M. Martinez struck out looking.",
+            "S. Ding grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Murphy flied out to cf.",
+            "A. Hui fouled out to 1b.",
+            "M. Nelson doubled to left center.",
+            "N. Antin singled to right center, RBI; M. Nelson scored on the throw.",
+            "A. Boodoo pinch ran for N. Antin.",
+            "A. Boodoo stole second.",
+            "L. Sims flied out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeMeyer to ss.",
+            "G. Gardner to 2b for K. Dolan.",
+            "A. Jensen grounded out to p.",
+            "M. Bocian lined out to 1b.",
+            "M. Martinez grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Hughes to lf for E. Crowe.",
+            "N. Burinda to 1b.",
+            "S. Ding grounded out to ss.",
+            "M. Murphy walked.",
+            "M. Murphy stole second.",
+            "A. Hui grounded out to ss.",
+            "M. Nelson walked.",
+            "N. Antin reached first on an error by 1b, RBI; M. Nelson advanced to third; M. Murphy scored, unearned.",
+            "N. Antin stole second.",
+            "L. Sims doubled to left center, 2 RBI; N. Antin scored, unearned; M. Nelson scored, unearned.",
+            "A. Jensen doubled to left center, RBI; L. Sims scored.",
+            "A. Jensen advanced to third on a passed ball.",
+            "K. Bannister flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/blackburn-college/boxscore/6928",
+      "date": "3/19/2025",
+      "opponent": "Blackburn College",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Allen singled to center field.",
+            "S. Hiser flied out to 3b.",
+            "K. Frey flied out to cf.",
+            "B. Allen advanced to second on a passed ball.",
+            "Z. Mitchell flied out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Burinda to 1b.",
+            "C. Gibson singled to center field.",
+            "K. Kruep struck out swinging.",
+            "M. Schoen walked; C. Gibson advanced to second.",
+            "E. Steibel singled to center field; M. Schoen advanced to second; C. Gibson advanced to third.",
+            "M. Hollon reached on a fielder's choice; E. Steibel advanced to second; M. Schoen advanced to third; C. Gibson out at home p to c.",
+            "B. Allen grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Hiser struck out looking.",
+            "K. Frey grounded out to 3b.",
+            "Z. Mitchell flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Gibson reached first on an error by 3b.",
+            "C. Gibson out at first 1b unassisted, runner left early.",
+            "K. Kruep grounded out to 3b.",
+            "M. Schoen grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Crowe to dp.",
+            "K. Hall to lf.",
+            "E. Steibel struck out swinging.",
+            "M. Hollon struck out swinging.",
+            "B. Allen grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/fredonia-state/boxscore/6929",
+      "date": "3/21/2025",
+      "opponent": "Fredonia State",
+      "pitchers": ["VanGruensven, Brooklyn", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Devore walked.",
+            "M. Devore stole second.",
+            "A. Wandell walked.",
+            "K. Lajewski walked; A. Wandell advanced to second; M. Devore advanced to third.",
+            "M. Lowe struck out swinging.",
+            "A. Bogad flied out to ss.",
+            "A. Hill flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Guidry doubled to left field.",
+            "M. Celauro flied out to cf.",
+            "B. Caldwell reached first on an error by rf; M. Guidry advanced to third.",
+            "B. Caldwell stole second.",
+            "M. Devore grounded out to ss.",
+            "A. Wandell grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Lajewski struck out swinging.",
+            "M. Lowe grounded out to 3b.",
+            "A. Bogad lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Hill doubled to left field.",
+            "E. Fisher pinch ran for A. Hill.",
+            "M. Guidry walked.",
+            "K. Phillips reached on a fielder's choice; M. Guidry out at second 2b unassisted; E. Fisher advanced to third.",
+            "B. Caldwell singled to second base, advanced to second on an error by 2b, assist by rf, RBI; K. Phillips advanced to third; E. Fisher scored.",
+            "M. Devore singled to center field, advanced to second on the throw, RBI; B. Caldwell advanced to third; K. Phillips scored, unearned.",
+            "L. Duggan to p for B. Vangruens.",
+            "A. Wandell walked.",
+            "K. Lajewski singled to left field, RBI; A. Wandell advanced to second; M. Devore advanced to third; B. Caldwell scored.",
+            "M. Lowe struck out swinging.",
+            "A. Bogad flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Hill walked.",
+            "M. Guidry struck out swinging.",
+            "K. Phillips reached on a fielder's choice; A. Hill out at second 2b unassisted.",
+            "K. Phillips stole second.",
+            "B. Caldwell struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Pitts to lf.",
+            "M. Devore reached first on an error by ss.",
+            "A. Wandell reached on a fielder's choice; M. Devore out at second 2b unassisted.",
+            "K. Lajewski struck out swinging.",
+            "A. Wandell stole second.",
+            "M. Lowe walked.",
+            "M. Lowe advanced to second on a passed ball; A. Wandell advanced to third on a passed ball.",
+            "A. Bogad lined out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Vangruens to p for L. Duggan.",
+            "A. Hill grounded out to 3b.",
+            "A. LeRouzes pinch hit for K. Phillips.",
+            "M. Guidry reached first on an error by ss.",
+            "A. LeRouzes out at first 1b to 2b; M. Guidry advanced to second.",
+            "B. Caldwell flied out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/buffalo-state/boxscore/6930",
+      "date": "3/21/2025",
+      "opponent": "Buffalo State",
+      "pitchers": ["Dusterhoft, Alexa", "Crowe, Emily", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Albano doubled to left field.",
+            "E. Stewart flied out to rf.",
+            "M. Lucas popped up to ss.",
+            "C. O'Hara walked.",
+            "L. Quagliana flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Jedrich flied out to lf.",
+            "N. Burck flied out to lf.",
+            "S. Graczyk singled to center field.",
+            "D. Kellogg grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Albano grounded out to 3b.",
+            "E. Stewart doubled to center field.",
+            "M. Lucas singled to right field; E. Stewart advanced to third.",
+            "C. O'Hara struck out looking.",
+            "L. Quagliana reached on a fielder's choice; M. Lucas out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Pitts to lf.",
+            "A. Jedrich reached first on an error by 3b.",
+            "N. Burck reached on a fielder's choice; A. Jedrich out at second ss to 2b.",
+            "S. Graczyk popped up to p.",
+            "D. Kellogg struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Crowe to p for A. Dusterhof.",
+            "G. Albano singled to right field.",
+            "G. Albano advanced to second on a wild pitch.",
+            "E. Stewart singled to left field; G. Albano advanced to third.",
+            "M. Lucas reached first on an error by 3b, RBI; E. Stewart advanced to second; G. Albano scored.",
+            "C. O'Hara singled to pitcher; M. Lucas advanced to second; E. Stewart advanced to third.",
+            "L. Quagliana reached on a fielder's choice; C. O'Hara advanced to second; M. Lucas advanced to third; E. Stewart out at home ss to c.",
+            "A. Jedrich reached on a fielder's choice; L. Quagliana advanced to second; C. O'Hara advanced to third; M. Lucas out at home 3b to c.",
+            "M. Hurley pinch hit for N. Burck.",
+            "A. Thayer pinch ran for C. O'Hara.",
+            "M. Hurley doubled to left field, advanced to third on the throw, 3 RBI; A. Jedrich scored, unearned; L. Quagliana scored, unearned; A. Thayer scored, unearned.",
+            "G. Martinez grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Koch to rf for M. Hasapopou.",
+            "H. Effertz to 1b.",
+            "L. Duggan to p for E. Crowe.",
+            "D. Kellogg struck out looking.",
+            "G. Albano popped up to ss.",
+            "E. Stewart singled to center field.",
+            "M. Lucas flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. O'Hara singled to left field.",
+            "E. Mullen pinch ran for C. O'Hara.",
+            "L. Quagliana struck out swinging.",
+            "A. Jedrich walked; E. Mullen advanced to second.",
+            "M. Hurley struck out swinging.",
+            "G. Martinez walked; A. Jedrich advanced to second; E. Mullen advanced to third.",
+            "D. Kellogg flied out to cf."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "G. Albano D. Kellogg placed on second.",
+            "G. Albano popped up to ss.",
+            "E. Stewart walked.",
+            "M. Lucas walked; E. Stewart advanced to second; D. Kellogg advanced to third.",
+            "M. Montes pinch hit for E. Mullen.",
+            "M. Montes walked, RBI; M. Lucas advanced to second; E. Stewart advanced to third; D. Kellogg scored.",
+            "A. Dusterhof to p for L. Duggan.",
+            "M. Lucas to p for G. Core.",
+            "G. Core pinch ran for M. Lucas.",
+            "L. Quagliana flied out to cf.",
+            "A. Jedrich popped up to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/manchester-university/boxscore/6931",
+      "date": "3/22/2025",
+      "opponent": "Manchester University",
+      "pitchers": ["Duggan, Lindsey", "Dusterhoft, Alexa"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Rider struck out swinging.",
+            "L. Goodman grounded out to c unassisted.",
+            "S. Leonard struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Cooke flied out to lf.",
+            "B. Egold grounded out to 1b unassisted.",
+            "M. Gillhooly walked.",
+            "K. Wentz walked; M. Gillhooly advanced to second.",
+            "K. Ousley walked; K. Wentz advanced to second; M. Gillhooly advanced to third.",
+            "E. Bartlett struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "K. Rider grounded out to 2b.",
+            "L. Goodman flied out to ss.",
+            "S. Leonard walked.",
+            "C. Cooke lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Smith struck out looking.",
+            "M. Gillhooly singled to center field.",
+            "K. Wentz lined out to 2b.",
+            "K. Ousley walked; M. Gillhooly advanced to second.",
+            "E. Singleton pinch hit for E. Bartlett.",
+            "E. Singleton flied out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Dusterhof to p for L. Duggan.",
+            "K. Rider singled to second base.",
+            "K. Rider stole second.",
+            "L. Goodman singled to third base; K. Rider advanced to third.",
+            "S. Leonard doubled to right center, 2 RBI; L. Goodman scored on the throw; K. Rider scored.",
+            "C. Cooke lined out to 2b.",
+            "A. Smith struck out swinging.",
+            "M. Gillhooly flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Kressel to c for A. Hughes.",
+            "N. Burinda to 1b.",
+            "K. Wentz flied out to cf.",
+            "K. Ousley singled to center field.",
+            "E. Bartlett lined into double play p to 1b; K. Ousley out on the play."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/lawrence/boxscore/6932",
+      "date": "3/22/2025",
+      "opponent": "Lawrence",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Z. Doherty walked.",
+            "M. Haller walked; Z. Doherty advanced to second.",
+            "T. Hughes out at first p to 2b, SAC, bunt; M. Haller advanced to second; Z. Doherty advanced to third.",
+            "J. Wallin-Sw lined out to cf.",
+            "G. Guerriero grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Mercer grounded out to 3b.",
+            "J. Gonzalez walked.",
+            "J. Gonzalez out at second c to ss, caught stealing.",
+            "K. Santiago hit by pitch.",
+            "A. Villa grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Z. Doherty singled to left field.",
+            "M. Haller singled to second base, advanced to second on the throw; Z. Doherty advanced to third on the throw.",
+            "T. Hughes struck out swinging.",
+            "J. Wallin-Sw flied out to cf, RBI; M. Haller advanced to third on the throw; Z. Doherty scored on the throw.",
+            "G. Guerriero struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Mercer reached first on an error by 3b.",
+            "J. Gonzalez reached on a fielder's choice; K. Mercer out at second 3b to 2b.",
+            "J. Gonzalez stole second.",
+            "K. Santiago struck out swinging.",
+            "A. Whiteside pinch ran for J. Gonzalez.",
+            "A. Villa fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Z. Doherty grounded out to 3b.",
+            "M. Haller singled to left field.",
+            "T. Hughes flied out to rf.",
+            "J. Wallin-Sw reached on a fielder's choice; M. Haller out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Guerriero popped up to ss.",
+            "K. Mercer struck out swinging.",
+            "J. Gonzalez walked.",
+            "A. Pilgrim pinch ran for J. Gonzalez.",
+            "K. Santiago grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Aultman to 3b for G. Gardner.",
+            "N. Burinda to 1b.",
+            "A. Villa grounded out to p.",
+            "Z. Doherty flied out to 2b.",
+            "M. Haller flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/augsburg/boxscore/6933",
+      "date": "3/27/2025",
+      "opponent": "Augsburg",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Rehder reached first on a fielding error by ss.",
+            "O. Hennager singled up the middle; T. Rehder advanced to second, advanced to third on a throwing error by 2b.",
+            "M. Paaske homered to center field, 3 RBI; O. Hennager scored; T. Rehder scored, unearned.",
+            "L. Pilon struck out looking.",
+            "O. Funk struck out swinging.",
+            "Z. Johnson walked.",
+            "J. Olson grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Syson popped up to ss.",
+            "J. Evenson walked.",
+            "T. Rehder homered to right field, 2 RBI; J. Evenson scored.",
+            "O. Hennager struck out looking.",
+            "M. Paaske singled up the middle.",
+            "L. Pilon doubled to left center, RBI; M. Paaske scored.",
+            "O. Funk singled to right field; L. Pilon advanced to third.",
+            "Z. Johnson struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Olson grounded out to 3b.",
+            "G. Syson popped up to 2b.",
+            "J. Evenson struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Rehder singled up the middle.",
+            "T. Rehder advanced to second on a throwing error by c, failed pickoff attempt.",
+            "O. Hennager grounded out to 2b; T. Rehder advanced to third.",
+            "M. Paaske popped up to 3b.",
+            "L. Pilon flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "O. Funk singled, advanced to second on a fielding error by lf.",
+            "Z. Johnson singled to shortstop.",
+            "J. Olson reached on a fielder's choice to shortstop; Z. Johnson advanced to second; O. Funk advanced to third.",
+            "G. Syson singled to pitcher, RBI; J. Olson advanced to second; Z. Johnson advanced to third; O. Funk scored.",
+            "J. Evenson reached on a fielder's choice to shortstop; G. Syson advanced to second; J. Olson advanced to third; Z. Johnson out at home ss to c.",
+            "T. Rehder grounded out p to 2b to 1b, RBI; J. Evenson advanced to second; G. Syson advanced to third; J. Olson scored.",
+            "O. Hennager grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "A. DeMeyer to ss for K. Dolan.",
+            "M. Paaske flied out to cf.",
+            "L. Pilon grounded out to 2b.",
+            "O. Funk popped up to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Effertz to 1b for N. Burinda.",
+            "Z. Johnson struck out looking.",
+            "J. Olson grounded out to 2b.",
+            "G. Syson singled to center field.",
+            "M. Gissler pinch ran for G. Syson.",
+            "J. Evenson struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/augsburg/boxscore/6934",
+      "date": "3/27/2025",
+      "opponent": "Augsburg",
+      "pitchers": ["Duggan, Lindsey", "Dusterhoft, Alexa"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Rehder popped up to ss.",
+            "O. Hennager walked.",
+            "M. Paaske walked; O. Hennager advanced to second.",
+            "L. Pilon struck out swinging.",
+            "O. Funk struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Z. Johnson homered to left center, RBI.",
+            "M. Gissler grounded out to ss.",
+            "G. Syson grounded out to p.",
+            "J. Evenson grounded out to 3b, bunt."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Rehder popped up to 2b.",
+            "O. Hennager reached first on a fielding error by 3b.",
+            "M. Paaske popped up to p.",
+            "L. Pilon popped up to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "O. Funk doubled to left field.",
+            "Z. Johnson popped up to p.",
+            "O. Funk advanced to third on a wild pitch.",
+            "M. Gissler struck out swinging.",
+            "G. Syson grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Hughes to dp.",
+            "K. Aultman to 3b for M. Hasapopou.",
+            "J. Evenson struck out looking.",
+            "T. Rehder lined out to ss.",
+            "O. Hennager struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Hall to rf for M. Koch.",
+            "M. Paaske grounded out to 3b.",
+            "L. Pilon flied out to rf.",
+            "O. Funk walked.",
+            "Z. Johnson singled to third base; O. Funk advanced to second.",
+            "M. Gissler flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Effertz to 1b for N. Burinda.",
+            "A. Dusterhof to p for L. Duggan.",
+            "G. Syson struck out swinging.",
+            "J. Evenson grounded out to 3b.",
+            "T. Rehder grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/macalester/boxscore/6935",
+      "date": "3/28/2025",
+      "opponent": "Macalester",
+      "pitchers": ["Dusterhoft, Alexa", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Butler singled.",
+            "S. Butler out at second c to ss, caught stealing.",
+            "S. Futchko flied out to lf.",
+            "E. Welch grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Bojorquez flied out to cf.",
+            "A. Johnson flied out to lf.",
+            "C. Holland popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. Heinze doubled to center field.",
+            "R. Heinze to dp for M. Kemper.",
+            "M. Kemper pinch ran for R. Heinze.",
+            "A. Wolf singled to right field; M. Kemper advanced to third.",
+            "A. Wolf stole second.",
+            "A. Dvorak reached on a fielder's choice to pitcher, bunt; A. Wolf advanced to third; M. Kemper out at home p to c.",
+            "A. Dvorak stole second.",
+            "S. Butler singled to first base, bunt.",
+            "S. Futchko flied out to lf, sacrifice fly, RBI; A. Wolf scored.",
+            "E. Welch flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Gardner to 2b for A. DeMeyer.",
+            "T. Bojorquez grounded out to 3b.",
+            "A. Johnson doubled to right field.",
+            "C. Holland reached on a fielder's choice to pitcher; A. Johnson out at third p to 3b to ss to p.",
+            "R. Heinze pinch hit for M. Kemper.",
+            "C. Holland stole second.",
+            "R. Heinze struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Wolf lined out to cf.",
+            "A. Dvorak flied out to cf.",
+            "S. Butler popped up to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Futchko grounded out to ss.",
+            "E. Welch singled up the middle.",
+            "T. Bojorquez reached first on an error by 2b; E. Welch advanced to second.",
+            "A. Johnson struck out looking.",
+            "C. Holland struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "T. Peterson to c.",
+            "H. Effertz to 1b for N. Burinda.",
+            "M. Kemper singled to right field.",
+            "R. Heinze to dp for M. Kemper.",
+            "M. Kemper pinch ran for R. Heinze.",
+            "A. Wolf singled to left field; M. Kemper advanced to second.",
+            "D. Tapia pinch hit for A. Dvorak.",
+            "L. Duggan to p for A. Dusterhof.",
+            "D. Tapia doubled to left center, RBI; A. Wolf advanced to third; M. Kemper scored.",
+            "S. Butler doubled to left center, 2 RBI; D. Tapia scored; A. Wolf scored.",
+            "S. Futchko grounded out to ss.",
+            "E. Welch singled to center field, advanced to second on the throw; S. Butler advanced to third.",
+            "T. Bojorquez struck out swinging.",
+            "A. Johnson doubled to left field, 2 RBI; E. Welch scored; S. Butler scored.",
+            "C. Holland doubled to left field, RBI; A. Johnson scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/macalester/boxscore/6936",
+      "date": "3/28/2025",
+      "opponent": "Macalester",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Butler grounded out to 2b.",
+            "S. Futchko out at first p to 2b.",
+            "E. Welch grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Bojorquez struck out swinging.",
+            "A. Johnson singled to third base.",
+            "A. Johnson stole second.",
+            "C. Holland grounded out to ss.",
+            "A. Wolf doubled to right field, RBI; A. Johnson scored.",
+            "D. Tapia grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Miller struck out looking.",
+            "S. Butler singled to right center.",
+            "S. Futchko walked; S. Butler advanced to second.",
+            "E. Welch flied out to rf; S. Futchko advanced to second; S. Butler advanced to third.",
+            "T. Bojorquez singled to left center, 2 RBI; S. Futchko scored; S. Butler scored.",
+            "A. Johnson flied out to cf to left center."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Holland doubled to left field.",
+            "A. Wolf popped up to 1b.",
+            "D. Tapia singled to left field.",
+            "M. Miller out at first p to 2b, SAC, bunt; D. Tapia advanced to second; C. Holland advanced to third.",
+            "S. Butler grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Hughes to lf.",
+            "S. Futchko doubled to right center.",
+            "E. Welch grounded out to ss; S. Futchko advanced to third.",
+            "T. Bojorquez reached on a fielder's choice to third base, bunt, RBI; S. Futchko scored.",
+            "T. Bojorquez out at second c to ss.",
+            "A. Johnson struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Holland grounded out to ss.",
+            "A. Wolf grounded out to 3b.",
+            "D. Tapia grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/carleton/boxscore/6939",
+      "date": "4/9/2025",
+      "opponent": "Carleton",
+      "pitchers": ["Dusterhoft, Alexa"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Megan Smith flied out to lf.",
+            "Esme Song popped up to 2b.",
+            "Bryanna Schaffer flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Adriana Wiggins popped up to ss.",
+            "Grace Colburn walked.",
+            "Livi Peters singled to right field; Grace Colburn advanced to second.",
+            "Ella Collins grounded out to 2b; Livi Peters advanced to second; Grace Colburn advanced to third.",
+            "Mia Salardino walked.",
+            "Natasha Paez reached on a fielder's choice; Mia Salardino advanced to second; Livi Peters out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Megan Smith singled through the left side.",
+            "Esme Song lined into double play p to 1b; Megan Smith out on the play.",
+            "Bryanna Schaffer homered to center field, RBI.",
+            "Adriana Wiggins grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Grace Colburn lined out to cf.",
+            "Livi Peters singled to shortstop.",
+            "Ella Collins grounded out to 2b; Livi Peters advanced to second.",
+            "Mia Salardino grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hannah Effertz to 1b for M. Hasapopoulos.",
+            "Natasha Burinda to rf.",
+            "Natasha Paez doubled to right center.",
+            "Natasha Paez stole third.",
+            "Megan Smith singled to left field, RBI; Natasha Paez scored.",
+            "Esme Song out at first p to 2b, SAC; Megan Smith advanced to second.",
+            "Megan Smith out at third c to 3b to ss to p, caught stealing.",
+            "Bryanna Schaffer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Adriana Wiggins grounded out to ss.",
+            "Grace Colburn grounded out to ss.",
+            "Livi Peters struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Samantha Rodriguez flied out to lf.",
+            "Paige Arnold pinch hit for Mia Salardino.",
+            "Paige Arnold singled to second base.",
+            "Jade Thach pinch ran for Paige Arnold.",
+            "Natasha Paez reached first on a fielding error by 3b, advanced to second on a throwing error by 3b; Jade Thach advanced to second, advanced to third on the error.",
+            "Megan Smith grounded out to rf unassisted, sacrifice fly, RBI; Natasha Paez advanced to third; Jade Thach scored, unearned.",
+            "Esme Song singled up the middle, RBI; Natasha Paez scored, unearned.",
+            "Bryanna Schaffer popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/carleton/boxscore/6941",
+      "date": "4/9/2025",
+      "opponent": "Carleton",
+      "pitchers": ["VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Megan Smith walked.",
+            "Esme Song reached first on a fielding error by p, SAC; Megan Smith advanced to second.",
+            "Bryanna Schaffer out at first p to 2b, SAC; Esme Song advanced to second; Megan Smith advanced to third.",
+            "Grace Colburn grounded into double play p to 1b to c; Esme Song advanced to third; Megan Smith out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Natasha Burinda to 1b.",
+            "Livi Peters struck out swinging.",
+            "Adriana Wiggins struck out looking.",
+            "Samantha Rodriguez singled through the left side.",
+            "Paige Arnold grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kelly Aultman to 3b for Grace Gardner.",
+            "Jade Thach reached first on an error by 3b.",
+            "Megan Smith grounded out to 3b, bunt; Jade Thach advanced to second.",
+            "Esme Song grounded out to 1b; Jade Thach advanced to third.",
+            "Bryanna Schaffer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Grace Colburn grounded out to p.",
+            "Livi Peters doubled through the left side.",
+            "Adriana Wiggins grounded out to 3b.",
+            "Samantha Rodriguez reached first on a fielding error by 2b; Livi Peters scored, unearned.",
+            "Paige Arnold grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. DeMeyer to 2b for Emily Crowe.",
+            "Hannah Effertz to 1b.",
+            "Jade Thach struck out swinging.",
+            "Megan Smith lined out to lf.",
+            "Esme Song popped up to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Autumn Hughes to cf for Maddie Koch.",
+            "Bryanna Schaffer popped up to ss.",
+            "Grace Colburn lined out to p.",
+            "Livi Peters grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Rachel Block pinch hit for Adriana Wiggins.",
+            "Rachel Block singled to first base.",
+            "Samantha Rodriguez lined into double play p to 1b; Rachel Block out on the play.",
+            "Paige Arnold singled to right center.",
+            "Genevieve Lyon pinch ran for Paige Arnold.",
+            "Morgan Arnold pinch hit for Jade Thach.",
+            "Morgan Arnold grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-platteville/boxscore/6942",
+      "date": "4/12/2025",
+      "opponent": "Uw Platteville",
+      "pitchers": ["Dusterhoft, Alexa", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "F. Teubert singled to center field.",
+            "A. Peters lined into double play 3b to 2b; F. Teubert out on the play.",
+            "M. Dietz walked.",
+            "A. Grayczyk homered, 2 RBI; M. Dietz scored.",
+            "J. Johnson walked.",
+            "A. Davis singled to catcher, bunt; J. Johnson advanced to second.",
+            "T. Roughen struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Trumbo reached first on a fielding error by ss.",
+            "L. Heuberger struck out looking.",
+            "F. Teubert doubled to left center; D. Trumbo advanced to third.",
+            "A. Peters reached first on an error by rf, advanced to second, RBI; F. Teubert scored, unearned; D. Trumbo scored, unearned.",
+            "M. Dietz flied out to cf.",
+            "A. Grayczyk grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Johnson grounded out to ss.",
+            "A. Davis struck out swinging.",
+            "T. Roughen struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Aultman to 3b for A. DeMeyer.",
+            "D. Trumbo grounded out to 2b.",
+            "R. Broshous pinch hit for L. Heuberger.",
+            "R. Broshous singled to third base.",
+            "F. Teubert flied out to rf.",
+            "R. Broshous out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Peters flied out to rf.",
+            "M. Dietz reached first on an error by 1b.",
+            "T. Lynch pinch ran for M. Dietz.",
+            "D. Johnson pinch hit for A. Grayczyk.",
+            "D. Johnson grounded out to 3b; T. Lynch advanced to second.",
+            "J. Johnson singled through the left side, RBI; T. Lynch scored, unearned.",
+            "M. Hoffman pinch ran for J. Johnson.",
+            "A. Davis singled to left field; M. Hoffman advanced to second.",
+            "M. Savage pinch hit for T. Roughen.",
+            "M. Savage singled to left field, RBI, unearned; A. Davis advanced to second; M. Hoffman scored, unearned.",
+            "L. Salerno pinch ran for M. Savage.",
+            "D. Trumbo singled to right center, RBI; L. Salerno advanced to third; A. Davis scored, unearned.",
+            "L. Heuberger singled to pitcher, RBI; D. Trumbo advanced to second; L. Salerno scored, unearned.",
+            "G. Volkening pinch ran for D. Trumbo.",
+            "L. Duggan to p for A. Dusterhof.",
+            "F. Teubert reached first on a fielding error by p; L. Heuberger advanced to second; G. Volkening advanced to third.",
+            "A. Peters fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "T. Peterson to c.",
+            "M. Dietz doubled up the middle.",
+            "A. Davis to dp for M. Erickson.",
+            "M. Erickson to p for D. Johnson.",
+            "M. Erickson grounded out to p, bunt, SAC; M. Dietz advanced to third.",
+            "J. Johnson grounded out to ss.",
+            "A. Davis walked.",
+            "T. Roughen flied out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-platteville/boxscore/6943",
+      "date": "4/12/2025",
+      "opponent": "Uw Platteville",
+      "pitchers": ["VanGruensven, Brooklyn", "Crowe, Emily"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Savage doubled to left center.",
+            "A. Peters singled to right field, advanced to second on the throw; M. Savage advanced to third.",
+            "M. Dietz doubled to right center, 2 RBI; A. Peters scored; M. Savage scored.",
+            "F. Teubert struck out swinging.",
+            "J. Johnson grounded out to ss.",
+            "A. Davis singled to shortstop; M. Dietz advanced to third.",
+            "B. Cutts grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "T. Roughen walked.",
+            "C. Giacomo grounded out to 2b; T. Roughen advanced to second.",
+            "M. Savage fouled out to 1b.",
+            "A. Peters homered to left center, 2 RBI; T. Roughen scored.",
+            "M. Dietz reached first on an error by 3b.",
+            "F. Teubert singled to left center; M. Dietz advanced to second.",
+            "J. Johnson doubled to left center, 2 RBI; F. Teubert scored, unearned; M. Dietz scored, unearned.",
+            "A. Davis walked.",
+            "B. Cutts flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Roughen flied out to rf.",
+            "C. Giacomo struck out swinging.",
+            "M. Savage singled up the middle.",
+            "T. Lynch pinch ran for M. Savage.",
+            "A. Peters walked; T. Lynch advanced to second.",
+            "M. Dietz doubled to shortstop, RBI; A. Peters advanced to third; T. Lynch scored.",
+            "A. Robbins pinch ran for M. Dietz.",
+            "F. Teubert fouled out to c."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. DeMeyer to ss.",
+            "J. Johnson walked.",
+            "G. Volkening pinch ran for J. Johnson.",
+            "A. Davis reached on a fielder's choice; G. Volkening out at second 3b to 2b.",
+            "B. Cutts struck out swinging.",
+            "T. Roughen grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Grayczyk pinch hit for C. Giacomo.",
+            "A. Grayczyk struck out swinging.",
+            "M. Savage pinch hit for T. Lynch.",
+            "M. Savage walked.",
+            "M. Hoffman pinch ran for M. Savage.",
+            "A. Peters reached first on an error by p; M. Hoffman advanced to second.",
+            "L. Salerno pinch ran for A. Peters.",
+            "M. Dietz reached on a fielder's choice; L. Salerno advanced to second; M. Hoffman out at third ss to 3b.",
+            "F. Teubert singled to right field, advanced to second on an error by rf, RBI; M. Dietz advanced to third; L. Salerno scored, unearned.",
+            "J. Johnson singled to right field, 2 RBI; F. Teubert scored, unearned; M. Dietz scored, unearned.",
+            "E. Crowe to p.",
+            "/  for B. Vangruens.",
+            "A. Davis walked; J. Johnson advanced to second.",
+            "M. Erickson walked; A. Davis advanced to second; J. Johnson advanced to third.",
+            "T. Roughen walked, RBI; M. Erickson advanced to second; A. Davis advanced to third; J. Johnson scored, unearned."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-stout/boxscore/6945",
+      "date": "4/16/2025",
+      "opponent": "Uw Stout",
+      "pitchers": [
+        "Dusterhoft, Alexa",
+        "Duggan, Lindsey",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "P. Dolecki singled, bunt.",
+            "E. Muehlenbe popped up to rf.",
+            "D. D'Addabbo walked; P. Dolecki advanced to second.",
+            "S. Kuhn singled to left field; D. D'Addabbo advanced to second; P. Dolecki advanced to third.",
+            "R. Bresnahan singled up the middle, RBI; S. Kuhn advanced to second; D. D'Addabbo advanced to third; P. Dolecki scored.",
+            "L. Rohl fouled out to c.",
+            "A. Dusterhof reached first on an error by ss; R. Bresnahan advanced to second; S. Kuhn advanced to third; D. D'Addabbo scored, unearned.",
+            "S. Noreen fouled out to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Anderson grounded out to 3b.",
+            "P. Dolecki singled through the left side.",
+            "E. Muehlenbe walked; P. Dolecki advanced to second.",
+            "D. D'Addabbo walked; E. Muehlenbe advanced to second; P. Dolecki advanced to third.",
+            "L. Duggan to p for A. Dusterhof.",
+            "S. Kuhn walked, RBI; D. D'Addabbo advanced to second; E. Muehlenbe advanced to third; P. Dolecki scored.",
+            "R. Bresnahan struck out swinging.",
+            "L. Rohl popped up to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "A. Dusterhof grounded out to 1b unassisted.",
+            "S. Noreen out at first p to 2b, bunt.",
+            "A. Anderson grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Effertz to 1b for K. Hall.",
+            "P. Dolecki grounded out to ss.",
+            "E. Muehlenbe struck out swinging.",
+            "D. D'Addabbo grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Kuhn flied out to cf.",
+            "R. Bresnahan walked.",
+            "L. Rohl reached on a fielder's choice; R. Bresnahan out at second ss to 2b.",
+            "A. Dusterhof popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Noreen doubled to right center.",
+            "E. Holden pinch hit for A. Anderson.",
+            "E. Holden reached on a fielder's choice; S. Noreen out at third ss to 2b.",
+            "P. Dolecki walked; E. Holden advanced to second.",
+            "E. Muehlenbe struck out swinging.",
+            "D. D'Addabbo singled up the middle, RBI; P. Dolecki advanced to third; E. Holden scored.",
+            "S. Kuhn singled to right field, RBI; D. D'Addabbo advanced to second; P. Dolecki scored.",
+            "S. Kuhn advanced to second; D. D'Addabbo advanced to third on a wild pitch.",
+            "R. Bresnahan walked.",
+            "B. Vangruens to p for L. Duggan.",
+            "L. Rohl popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Dusterhof singled to left field.",
+            "E. Fortier pinch ran for A. Dusterhof.",
+            "S. Noreen reached on a fielder's choice; E. Fortier out at second ss unassisted.",
+            "A. Anderson struck out looking.",
+            "P. Dolecki grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-stout/boxscore/6946",
+      "date": "4/16/2025",
+      "opponent": "Uw Stout",
+      "pitchers": ["VanGruensven, Brooklyn", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "P. Dolecki grounded out to p.",
+            "E. Muehlenbe lined out to ss.",
+            "D. D'Addabbo grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Kuhn grounded out to 1b unassisted.",
+            "R. Bresnahan walked.",
+            "E. Holden struck out swinging.",
+            "G. Vowell doubled to center field, advanced to third on an error by ss, RBI; R. Bresnahan scored.",
+            "L. Rohl singled to center field, RBI; G. Vowell scored.",
+            "A. Anderson flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "P. Dolecki singled to left field.",
+            "E. Muehlenbe reached on a fielder's choice; P. Dolecki out at second ss to 2b.",
+            "D. D'Addabbo singled to shortstop; E. Muehlenbe advanced to second.",
+            "S. Kuhn grounded out to ss; D. D'Addabbo advanced to second; E. Muehlenbe advanced to third.",
+            "R. Bresnahan singled to right field, RBI; D. D'Addabbo advanced to third, out at home rf to c; E. Muehlenbe scored."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Duggan to p for B. Vangruens.",
+            "A. Hughes to dp.",
+            "E. Holden struck out swinging.",
+            "G. Vowell popped up to 2b.",
+            "L. Rohl walked.",
+            "L. Rohl stole second.",
+            "A. Anderson walked.",
+            "P. Dolecki struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Muehlenbe struck out looking.",
+            "D. D'Addabbo grounded out to p.",
+            "S. Kuhn struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Bresnahan popped up to 2b.",
+            "E. Holden doubled to left center.",
+            "G. Vowell fouled out to lf.",
+            "L. Rohl reached first on an error by 2b; E. Holden scored, unearned.",
+            "B. Vangruens to p for L. Duggan.",
+            "A. Anderson grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "P. Dolecki grounded out to 3b.",
+            "E. Muehlenbe doubled down the lf line.",
+            "D. D'Addabbo grounded out to p; E. Muehlenbe advanced to third.",
+            "S. Kuhn reached first on an error by 1b, advanced to second on the throw; E. Muehlenbe scored, unearned.",
+            "R. Bresnahan grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-oshkosh/boxscore/6947",
+      "date": "4/19/2025",
+      "opponent": "Uw Oshkosh",
+      "pitchers": [
+        "Dusterhoft, Alexa",
+        "Duggan, Lindsey",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Rau tripled to right field.",
+            "C. Divito singled down the lf line, RBI; S. Rau scored.",
+            "M. Rau flied out to rf.",
+            "A. Martineck struck out looking.",
+            "M. Quaid grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Wery grounded out to p.",
+            "S. Hammerton singled through the left side.",
+            "S. Hammerton stole second.",
+            "H. Wittman struck out swinging.",
+            "A. Garceau singled down the rf line, RBI; S. Hammerton scored.",
+            "S. Rau grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Duggan to p for A. Dusterhof.",
+            "C. Divito lined out to rf.",
+            "M. Rau flied out to rf.",
+            "A. Martineck popped up to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Quaid flied out to rf.",
+            "S. Wery grounded out to p.",
+            "S. Hammerton flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "H. Wittman grounded out to 3b.",
+            "A. Garceau singled to right field.",
+            "A. Garceau stole second.",
+            "S. Rau walked.",
+            "B. Vangruens to p for L. Duggan.",
+            "C. Divito grounded out to 1b unassisted; S. Rau advanced to second; A. Garceau advanced to third.",
+            "M. Rau popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Martineck grounded out to ss.",
+            "M. Quaid struck out swinging.",
+            "S. Wery grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Hammerton grounded out to 3b.",
+            "H. Wittman flied out to cf.",
+            "A. Garceau grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-oshkosh/boxscore/6948",
+      "date": "4/19/2025",
+      "opponent": "Uw Oshkosh",
+      "pitchers": ["Duggan, Lindsey", "VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Garceau walked.",
+            "S. Rau walked; A. Garceau advanced to second.",
+            "C. Divito out at first p to 2b, bunt; S. Rau advanced to second; A. Garceau advanced to third.",
+            "S. Hammerton out at first p to 2b, bunt, SAC, RBI; S. Rau advanced to third; A. Garceau scored.",
+            "M. Rau walked; S. Rau scored on a passed ball, unearned.",
+            "O. Ullman singled to left field; M. Rau advanced to second.",
+            "A. Martineck fouled out to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Wery grounded out to 3b.",
+            "H. Wittman lined out to lf.",
+            "A. Garceau doubled to left center.",
+            "B. Vangruens to p for L. Duggan.",
+            "S. Rau walked.",
+            "C. Divito reached on a fielder's choice; S. Rau advanced to second; A. Garceau out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Hammerton grounded out to p.",
+            "M. Rau flied out to cf.",
+            "O. Ullman doubled to left center.",
+            "A. Martineck grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Wery grounded out p to 2b to 1b.",
+            "H. Wittman flied out to rf.",
+            "A. Garceau grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Kressel to c for A. Hughes.",
+            "S. Rau grounded out to 2b, bunt.",
+            "C. Divito reached first on an error by 3b.",
+            "M. Quaid pinch hit for S. Hammerton.",
+            "M. Quaid singled to left center; C. Divito advanced to second.",
+            "M. Rau walked; M. Quaid advanced to second; C. Divito advanced to third.",
+            "S. Hammerton pinch ran for M. Quaid.",
+            "O. Ullman singled to left field, RBI; M. Rau advanced to second; S. Hammerton advanced to third; C. Divito scored, unearned.",
+            "L. Duggan to p for B. Vangruens.",
+            "A. Martineck reached on a fielder's choice; O. Ullman advanced to second; M. Rau advanced to third; S. Hammerton out at home 3b to c.",
+            "S. Wery struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Effertz to 1b for K. Hall.",
+            "H. Wittman grounded out to 3b.",
+            "A. Garceau singled to left field.",
+            "S. Rau popped up to 3b, bunt.",
+            "C. Divito fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "S. Hammerton singled to center field.",
+            "M. Rau out at first 1b to 2b, SAC, bunt; S. Hammerton advanced to second.",
+            "O. Ullman lined out to ss.",
+            "A. Martineck walked.",
+            "S. Wery popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-la-crosse/boxscore/6949",
+      "date": "4/22/2025",
+      "opponent": "Uw La Crosse",
+      "pitchers": [
+        "Dusterhoft, Alexa",
+        "Duggan, Lindsey",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Howard singled to right field.",
+            "C. Casey tripled to left field, RBI; B. Howard scored.",
+            "K. Lard struck out looking.",
+            "M. Bornbach flied out to lf, sacrifice fly, RBI; C. Casey scored.",
+            "A. Bosch struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Steien struck out looking.",
+            "A. Gonzalez doubled to center field.",
+            "M. Pease grounded out to ss.",
+            "C. Gross reached first on a fielding error by 1b, advanced to second on the throw; A. Gonzalez advanced to third, scored on the throw, unearned.",
+            "B. Howard popped up to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman to 3b for M. Hasapopou.",
+            "L. Duggan to p for A. Dusterhof.",
+            "C. Casey singled up the middle.",
+            "C. Casey out at second c to ss, caught stealing.",
+            "K. Lard walked.",
+            "M. Bornbach struck out looking.",
+            "A. Bosch singled to center field; K. Lard advanced to second.",
+            "L. Steien flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Gonzalez flied out to lf.",
+            "M. Pease singled up the middle.",
+            "C. Gross singled to third base; M. Pease advanced to second.",
+            "B. Howard struck out swinging.",
+            "C. Casey struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Vangruens to p for L. Duggan.",
+            "K. Lard lined out to cf.",
+            "N. Zoellner pinch hit for M. Bornbach.",
+            "N. Zoellner struck out swinging.",
+            "A. Bosch singled to shortstop.",
+            "A. Langrehr pinch hit for L. Steien.",
+            "A. Langrehr struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Burinda to rf for K. Hall.",
+            "A. Gonzalez grounded out to 2b unassisted.",
+            "M. Pease grounded out to ss.",
+            "C. Gross singled up the middle.",
+            "A. Jaehnke pinch hit for B. Howard.",
+            "A. Jaehnke struck out looking."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-la-crosse/boxscore/6950",
+      "date": "4/22/2025",
+      "opponent": "Uw La Crosse",
+      "pitchers": ["Duggan, Lindsey", "VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Howard singled up the middle.",
+            "C. Casey out at first 3b to 2b, SAC, bunt; B. Howard advanced to second.",
+            "K. Lard grounded out to 2b; B. Howard advanced to third.",
+            "A. Bosch walked.",
+            "A. Gonzalez walked; A. Bosch advanced to second.",
+            "N. Zoellner fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Steien grounded out to 2b.",
+            "A. Jaehnke struck out looking.",
+            "C. Gross flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Howard lined out to 1b.",
+            "C. Casey grounded out to ss.",
+            "K. Lard doubled to right field.",
+            "A. Bosch lined out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Kressel to c for A. Hughes.",
+            "A. Gonzalez doubled to center field, advanced to third on an error by cf.",
+            "N. Zoellner grounded out to 3b.",
+            "J. Flom pinch hit for L. Steien.",
+            "J. Flom struck out looking.",
+            "A. Jaehnke lined out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Vangruens to p for L. Duggan.",
+            "C. Gross grounded out to 2b.",
+            "B. Howard tripled to right center.",
+            "C. Casey reached on a fielder's choice to pitcher.",
+            "C. Casey stole second; B. Howard scored on a fielding error by 2b.",
+            "K. Lard singled through the left side; C. Casey advanced to third.",
+            "K. Lard stole second.",
+            "A. Bosch struck out looking.",
+            "A. Gonzalez grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Pease pinch hit for N. Zoellner.",
+            "M. Pease grounded out to ss.",
+            "L. Steien grounded out to 1b unassisted.",
+            "A. Jaehnke grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-stevens-point/boxscore/6951",
+      "date": "4/27/2025",
+      "opponent": "Uw Stevens Point",
+      "pitchers": [
+        "Dusterhoft, Alexa",
+        "Duggan, Lindsey",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Thompson doubled to right field.",
+            "J. Klicker singled to center field; H. Thompson advanced to third.",
+            "K. Roberts walked; J. Klicker advanced to second.",
+            "S. Holberg popped up to 3b.",
+            "E. Smith lined out to cf.",
+            "R. Baker fouled out to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Cibrario walked.",
+            "T. Otto struck out swinging.",
+            "P. Zipperer struck out looking.",
+            "E. Cibrario stole second.",
+            "H. Thompson struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Duggan to p for A. Dusterhof.",
+            "J. Klicker walked.",
+            "K. Roberts walked; J. Klicker advanced to second.",
+            "S. Holberg reached on a fielder's choice; K. Roberts advanced to second; J. Klicker out at third p to 3b.",
+            "S. Holberg advanced to second; K. Roberts advanced to third on a passed ball.",
+            "E. Smith lined out to rf.",
+            "A. Brinkman pinch ran for S. Holberg.",
+            "R. Baker walked.",
+            "E. Cibrario struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Otto walked.",
+            "P. Zipperer struck out swinging.",
+            "H. Thompson lined out to lf.",
+            "J. Klicker walked; T. Otto advanced to second.",
+            "K. Roberts walked; J. Klicker advanced to second; T. Otto advanced to third.",
+            "B. Vangruens to p for L. Duggan.",
+            "S. Holberg to dp for A. Brinkman.",
+            "S. Holberg walked, RBI; K. Roberts advanced to second; J. Klicker advanced to third; T. Otto scored.",
+            "E. Smith struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Kressel to c for K. Hall.",
+            "R. Baker flied out to cf.",
+            "E. Cibrario walked.",
+            "T. Otto grounded out to p, bunt; E. Cibrario advanced to second.",
+            "S. Schmidt pinch hit for P. Zipperer.",
+            "K. Rizzo pinch ran for E. Cibrario.",
+            "S. Schmidt grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Thompson walked.",
+            "J. Klicker popped up to 2b.",
+            "K. Roberts lined out to ss.",
+            "S. Holberg flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Smith out at first 1b to 2b.",
+            "R. Baker walked.",
+            "E. Cibrario fouled out to 1b.",
+            "R. Baker stole second.",
+            "H. Roepke pinch hit for T. Otto.",
+            "H. Roepke grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-stevens-point/boxscore/6952",
+      "date": "4/27/2025",
+      "opponent": "Uw Stevens Point",
+      "pitchers": ["Dusterhoft, Alexa"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Thompson lined out to 3b.",
+            "J. Klicker flied out to rf.",
+            "K. Roberts struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Holberg flied out to rf.",
+            "E. Smith grounded out to 1b unassisted.",
+            "R. Baker walked.",
+            "R. Baker out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Cibrario grounded out to ss.",
+            "T. Otto struck out looking.",
+            "P. Zipperer grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Thompson grounded out to 3b.",
+            "J. Klicker singled to right field.",
+            "K. Roberts popped up to ss.",
+            "S. Holberg flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Smith popped up to 2b.",
+            "R. Baker flied out to rf.",
+            "E. Cibrario singled to right field.",
+            "S. Schmidt pinch hit for T. Otto.",
+            "S. Schmidt grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Roepke pinch hit for P. Zipperer.",
+            "H. Roepke doubled to left field.",
+            "P. Zipperer pinch ran for H. Roepke.",
+            "H. Thompson lined out to 3b.",
+            "J. Klicker flied out to rf.",
+            "K. Roberts lined out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Kressel to c for K. Hall.",
+            "S. Holberg grounded out to 3b.",
+            "E. Smith lined out to 1b.",
+            "R. Baker reached first on an error by ss.",
+            "E. Cibrario reached first on an error by cf, advanced to second; R. Baker scored, unearned.",
+            "T. Otto grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/bethel/boxscore/6937",
+      "date": "4/29/2025",
+      "opponent": "Bethel",
+      "pitchers": ["Dusterhoft, Alexa", "Crowe, Emily", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Otterness popped up to cf.",
+            "A. Earney grounded out to 3b.",
+            "M. Girard singled to right field.",
+            "S. Bartels singled to shortstop; M. Girard advanced to second.",
+            "E. Baker singled, advanced to second on the throw, RBI; S. Bartels advanced to third; M. Girard scored.",
+            "J. Helget fouled out to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O. Weinberg singled to center field.",
+            "M. Closser out at first 3b to 2b, SAC, bunt; O. Weinberg advanced to second.",
+            "M. Franks reached first on an error by lf, advanced to second; O. Weinberg advanced to third.",
+            "A. Otterness struck out looking.",
+            "A. Earney grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Crowe to p for A. Dusterhof.",
+            "M. Girard grounded out to 2b.",
+            "S. Bartels singled to center field.",
+            "E. Baker struck out swinging.",
+            "S. Bartels stole second.",
+            "J. Helget flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "O. Weinberg grounded out to 3b.",
+            "M. Closser grounded out to 3b.",
+            "M. Franks grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Aultman to 3b for A. Hughes.",
+            "A. Pitts to lf.",
+            "A. Otterness grounded out to p.",
+            "A. Earney flied out to rf.",
+            "M. Girard grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Duggan to p for E. Crowe.",
+            "S. Bartels walked.",
+            "E. Baker singled to left center; S. Bartels out at second cf to 2b.",
+            "J. Helget struck out looking.",
+            "O. Weinberg reached first on an error by ss; E. Baker advanced to second.",
+            "M. Closser struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Franks singled to center field.",
+            "A. Otterness walked; M. Franks advanced to second.",
+            "A. Earney singled to right center; A. Otterness advanced to second; M. Franks advanced to third.",
+            "A. Dusterhof to p for L. Duggan.",
+            "M. Girard lined out to 2b; A. Otterness out at third 2b unassisted.",
+            "A. Earney stole second.",
+            "S. Bartels reached first on an error by lf, advanced to second; A. Earney advanced to third; M. Franks scored.",
+            "E. Baker doubled to right field, 2 RBI; S. Bartels scored, unearned; A. Earney scored.",
+            "F. Tverberg pinch ran for E. Baker.",
+            "J. Helget singled to left center; F. Tverberg advanced to third.",
+            "J. Helget stole second.",
+            "O. Weinberg walked.",
+            "C. Thurow pinch hit for M. Closser.",
+            "C. Thurow grounded out to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "M. Franks M. Closser placed on second.",
+            "M. Franks grounded out to c, SAC, bunt; M. Closser advanced to third.",
+            "A. Otterness singled to shortstop, RBI; M. Closser scored.",
+            "A. Earney flied out to rf.",
+            "A. Otterness stole second.",
+            "M. Girard grounded out to ss."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "H. Effertz to 1b for N. Burinda.",
+            "S. Bartels M. Girard placed on second.",
+            "S. Bartels out at first p to 2b, SAC, bunt; M. Girard advanced to third.",
+            "E. Baker pinch hit for F. Tverberg.",
+            "E. Baker grounded out to 3b, RBI; M. Girard scored.",
+            "J. Helget grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/bethel/boxscore/6938",
+      "date": "4/29/2025",
+      "opponent": "Bethel",
+      "pitchers": ["Duggan, Lindsey", "Crowe, Emily"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Gardner to 2b for E. Crowe.",
+            "C. Kressel to dp for G. Gardner.",
+            "K. Aultman to 3b for C. Kressel.",
+            "K. Dolan to cf for K. Aultman.",
+            "H. Effertz to 1b for K. Dolan.",
+            "T. Peterson to c for A. Pitts.",
+            "A. Pitts to lf for A. DeMeyer.",
+            "A. DeMeyer to ss for H. Effertz.",
+            "E. Baker to 3b.",
+            "O. Weinberg to dp.",
+            "A. Otterness doubled to center field.",
+            "A. Earney flied out to rf.",
+            "M. Girard singled to left field; A. Otterness advanced to third.",
+            "M. Girard stole second.",
+            "S. Bartels singled to left field, RBI; M. Girard advanced to third; A. Otterness scored.",
+            "S. Bartels stole second.",
+            "S. Bartels advanced to third; M. Girard scored on a wild pitch.",
+            "E. Baker walked.",
+            "E. Baker stole second.",
+            "J. Helget grounded out to 3b, SAC, bunt, RBI; E. Baker advanced to third; S. Bartels scored.",
+            "O. Weinberg singled to second base, RBI; E. Baker scored.",
+            "C. Thurow doubled to left center, RBI; O. Weinberg scored.",
+            "M. Franks homered to left center, 2 RBI; C. Thurow scored.",
+            "E. Crowe to p for L. Duggan.",
+            "A. Otterness flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Earney grounded out to ss.",
+            "M. Girard flied out to cf.",
+            "S. Bartels flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Baker singled to center field.",
+            "J. Helget singled up the middle; E. Baker advanced to second.",
+            "O. Weinberg grounded into double play 3b to 1b; J. Helget advanced to second; E. Baker out on the play.",
+            "C. Thurow grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Franks tripled to right center.",
+            "A. Otterness walked.",
+            "A. Otterness stole second.",
+            "A. Earney struck out looking.",
+            "M. Girard grounded out to 2b, RBI; A. Otterness advanced to third; M. Franks scored.",
+            "S. Bartels walked.",
+            "S. Bartels stole second.",
+            "E. Baker struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Helget singled to right field.",
+            "B. Tix pinch hit for O. Weinberg.",
+            "B. Tix lined into double play rf to 1b; J. Helget out on the play.",
+            "C. Thurow grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Burinda to lf for A. Pitts.",
+            "M. Franks grounded out to ss.",
+            "A. Otterness struck out swinging.",
+            "A. Earney doubled to left center.",
+            "M. Girard singled to right field, RBI; A. Earney scored.",
+            "S. Bartels singled up the middle; M. Girard advanced to second.",
+            "S. Bartels advanced to second; M. Girard advanced to third on a passed ball.",
+            "E. Baker flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. DeMeyer to ss for M. Koch.",
+            "K. Frenette pinch hit for J. Helget.",
+            "K. Frenette grounded out to p.",
+            "B. Tix struck out swinging.",
+            "C. Thurow struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-eau-claire/boxscore/6953",
+      "date": "4/30/2025",
+      "opponent": "Uw Eau Claire",
+      "pitchers": ["Dusterhoft, Alexa", "Crowe, Emily", "Duggan, Lindsey"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Strunsee singled to second base.",
+            "P. Lathrop doubled to right center, RBI; K. Strunsee scored.",
+            "M. Marquardt reached on a fielder's choice; P. Lathrop out at third p to 3b to ss to p.",
+            "C. Beck popped up to ss.",
+            "H. Hagedorn grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Kutnink doubled to left field.",
+            "M. Patterson singled to shortstop; N. Kutnink advanced to third.",
+            "E. Olson pinch ran for M. Patterson.",
+            "M. Gernander singled, advanced to second on the throw, bunt, RBI; E. Olson advanced to third on the throw; N. Kutnink scored.",
+            "B. Swanepoel grounded out to p, bunt.",
+            "K. Strunsee grounded out to p, SAC, bunt, RBI; M. Gernander advanced to third; E. Olson scored.",
+            "P. Lathrop grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Marquardt doubled to center field.",
+            "B. Florio pinch ran for M. Marquardt.",
+            "C. Beck popped up to c.",
+            "H. Hagedorn doubled to left field; B. Florio advanced to third.",
+            "E. Crowe to p for A. Dusterhof.",
+            "N. Kutnink tripled to left field, 2 RBI; H. Hagedorn scored; B. Florio scored.",
+            "M. Patterson singled to left field, RBI; N. Kutnink scored.",
+            "M. Gernander singled through the right side; M. Patterson advanced to second.",
+            "B. Swanepoel singled, bunt; M. Gernander advanced to second; M. Patterson advanced to third.",
+            "K. Strunsee singled through the right side, RBI; B. Swanepoel advanced to second; M. Gernander advanced to third; M. Patterson scored.",
+            "P. Lathrop struck out looking.",
+            "M. Marquardt pinch hit for B. Florio.",
+            "M. Marquardt doubled to center field, 3 RBI; K. Strunsee scored; B. Swanepoel scored; M. Gernander scored.",
+            "L. Duggan to p for E. Crowe.",
+            "M. Marquardt advanced to third on a passed ball.",
+            "C. Beck walked.",
+            "M. Pieper pinch ran for C. Beck.",
+            "H. Hagedorn flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Kutnink flied out to cf.",
+            "M. Patterson flied out to cf.",
+            "M. Gernander grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-eau-claire/boxscore/6954",
+      "date": "4/30/2025",
+      "opponent": "Uw Eau Claire",
+      "pitchers": ["Duggan, Lindsey", "VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Kressel to c for A. Hughes.",
+            "K. Strunsee walked.",
+            "K. Strunsee stole second.",
+            "P. Lathrop singled through the left side; K. Strunsee advanced to third.",
+            "K. Strunsee stole home.",
+            "P. Lathrop stole second.",
+            "M. Marquardt grounded into double play 2b unassisted; P. Lathrop out on the play.",
+            "C. Beck popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Effertz to 1b for M. Hasapopou.",
+            "H. Hagedorn struck out looking.",
+            "M. Gernander walked.",
+            "M. Patterson flied out to cf.",
+            "E. Raikowski struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Swanepoel walked.",
+            "K. Strunsee popped up to 2b.",
+            "B. Swanepoel stole second.",
+            "P. Lathrop singled, bunt; B. Swanepoel advanced to third.",
+            "P. Lathrop stole second.",
+            "M. Marquardt doubled to right center, 2 RBI; P. Lathrop scored; B. Swanepoel scored.",
+            "C. Beck lined out to ss.",
+            "H. Hagedorn reached first on an error by rf, advanced to second, RBI; M. Marquardt scored, unearned.",
+            "M. Gernander singled up the middle, RBI; H. Hagedorn scored, unearned.",
+            "M. Patterson struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Springer pinch hit for E. Raikowski.",
+            "B. Vangruens to p for L. Duggan.",
+            "S. Springer doubled to center field.",
+            "E. Olson pinch ran for S. Springer.",
+            "B. Swanepoel walked.",
+            "K. Strunsee singled, bunt; B. Swanepoel advanced to second; E. Olson advanced to third.",
+            "P. Lathrop doubled to right center, RBI; K. Strunsee advanced to third; B. Swanepoel scored; E. Olson scored.",
+            "M. Marquardt reached on a fielder's choice; P. Lathrop advanced to third; K. Strunsee out at home 3b to c.",
+            "B. Florio pinch ran for M. Marquardt.",
+            "C. Beck struck out looking.",
+            "B. Florio stole second.",
+            "H. Hagedorn walked.",
+            "M. Gernander struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Patterson doubled to center field.",
+            "B. Blanchard pinch ran for M. Patterson.",
+            "E. Raikowski singled, bunt, RBI; B. Blanchard scored.",
+            "B. Swanepoel singled, bunt; E. Raikowski advanced to second.",
+            "K. Strunsee walked; B. Swanepoel advanced to second; E. Raikowski advanced to third.",
+            "P. Lathrop flied out to lf, RBI; B. Swanepoel advanced to third; E. Raikowski scored.",
+            "K. Strunsee stole second; B. Swanepoel stole home.",
+            "M. Marquardt doubled to right center, RBI; K. Strunsee scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-whitewater/boxscore/6955",
+      "date": "5/3/2025",
+      "opponent": "Uw Whitewater",
+      "pitchers": ["Duggan, Lindsey", "VanGruensven, Brooklyn"],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Eggert grounded out to ss.",
+            "K. Kostroski walked.",
+            "E. Giese struck out swinging.",
+            "G. Wickman flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Peshia reached first on an error by ss.",
+            "A. Roberson out at first 3b to 2b, SAC, bunt; D. Peshia advanced to second.",
+            "C. Kohnle lined out to 2b.",
+            "A. Dietz pinch hit for J. Jakosalem.",
+            "A. Dietz singled up the middle; D. Peshia advanced to third.",
+            "E. Grimsley pinch ran for A. Dietz.",
+            "E. Grimsley out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Weidemann lined out to 2b.",
+            "B. Eggert grounded out to p, bunt.",
+            "K. Kostroski homered to left field, RBI.",
+            "E. Giese grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Duggan to p.",
+            "G. Wickman flied out to cf.",
+            "D. Peshia grounded out to 3b.",
+            "A. Roberson flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Kohnle walked.",
+            "J. Jakosalem out at first 3b to 2b, SAC, bunt; C. Kohnle advanced to second.",
+            "K. Weidemann grounded out to p; C. Kohnle advanced to third.",
+            "B. Vangruens to p for L. Duggan.",
+            "B. Eggert grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Kostroski fouled out to 1b.",
+            "E. Giese lined out to 3b.",
+            "G. Wickman grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Peshia doubled to left center.",
+            "B. Lapacek pinch ran for D. Peshia.",
+            "M. Ward pinch hit for A. Roberson.",
+            "M. Ward out at first 3b to 2b, SAC, bunt; B. Lapacek advanced to third.",
+            "C. Kohnle singled through the left side, RBI; B. Lapacek scored.",
+            "T. Koehler pinch hit for J. Jakosalem.",
+            "T. Koehler struck out swinging.",
+            "K. Weidemann grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "K. Dolan to cf for A. Hughes.",
+            "H. Effertz to 1b for K. Hall.",
+            "M. Koch to rf for A. Pitts.",
+            "B. Eggert reached first on an error by ss.",
+            "B. Eggert advanced to second on a wild pitch.",
+            "K. Kostroski popped up to ss.",
+            "E. Giese reached on a fielder's choice; B. Eggert advanced to third on an error by 3b.",
+            "G. Wickman popped up to 2b.",
+            "T. Koehler to dp for D. Peshia.",
+            "D. Peshia to c for B. Lapacek.",
+            "D. Peshia doubled to left center, 2 RBI; E. Giese scored; B. Eggert scored, unearned.",
+            "A. Roberson flied out to lf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2025/uw-whitewater/boxscore/6956",
+      "date": "5/3/2025",
+      "opponent": "Uw Whitewater",
+      "pitchers": [
+        "Duggan, Lindsey",
+        "Crowe, Emily",
+        "VanGruensven, Brooklyn",
+        "Dusterhoft, Alexa"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Eggert singled through the left side.",
+            "K. Kostroski lined into double play rf to 1b; B. Eggert out on the play.",
+            "E. Giese popped up to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Kressel to c for M. Hasapopou.",
+            "G. Wickman singled up the middle.",
+            "D. Peshia popped up to 2b.",
+            "M. Ward lined out to rf.",
+            "C. Kohnle walked; G. Wickman advanced to second.",
+            "A. Roberson flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Weidemann singled through the right side.",
+            "B. Eggert reached on a fielder's choice, bunt; K. Weidemann out at second 3b to cf.",
+            "K. Kostroski grounded out to p; B. Eggert advanced to second.",
+            "E. Giese doubled to right center, RBI; B. Eggert scored.",
+            "G. Wickman singled through the left side, advanced to second on the throw; E. Giese advanced to third.",
+            "D. Peshia doubled to left center, 2 RBI; G. Wickman scored; E. Giese scored.",
+            "E. Crowe to p for L. Duggan.",
+            "M. Ward singled to third base; D. Peshia advanced to third.",
+            "C. Kohnle flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Roberson singled up the middle.",
+            "K. Weidemann walked; A. Roberson advanced to second.",
+            "A. Roberson out at second 2b unassisted, runner left early.",
+            "B. Eggert reached first on an error by lf; K. Weidemann advanced to second.",
+            "K. Kostroski reached on a fielder's choice; B. Eggert advanced to second; K. Weidemann out at third ss to 3b.",
+            "E. Giese singled up the middle, RBI; K. Kostroski advanced to second; B. Eggert scored, unearned.",
+            "G. Wickman doubled to left center, 2 RBI; E. Giese scored; K. Kostroski scored.",
+            "B. Vangruens to p for E. Crowe.",
+            "E. Grimsley pinch ran for G. Wickman.",
+            "D. Peshia flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Ward flied out to rf.",
+            "C. Kohnle flied out to cf.",
+            "L. Ybarra pinch hit for A. Roberson.",
+            "L. Ybarra struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Burinda to lf.",
+            "K. Hall to rf for A. Dusterhof.",
+            "A. Dusterhof to p for B. Vangruens.",
+            "A. Hughes to cf for K. Dolan.",
+            "B. Mangler pinch hit for K. Weidemann.",
+            "B. Mangler flied out to cf.",
+            "B. Eggert lined out to 3b.",
+            "K. Kostroski doubled down the lf line.",
+            "E. Giese doubled to left center, RBI; K. Kostroski scored, unearned.",
+            "G. Wickman grounded out to p."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Hall to rf.",
+            "D. Peshia popped up to 2b.",
+            "M. Ward tripled to right center.",
+            "K. Jarrett pinch hit for C. Kohnle.",
+            "K. Jarrett flied out to cf, sacrifice fly, RBI; M. Ward scored.",
+            "L. Ybarra doubled to right field.",
+            "B. Mangler singled to left center, RBI; L. Ybarra scored.",
+            "A. Dietz pinch hit for B. Eggert.",
+            "A. Dietz grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2025
+    }
+  ]
+}
