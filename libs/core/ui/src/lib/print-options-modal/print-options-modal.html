@@ -7,7 +7,7 @@
 
 <!-- Modal -->
 <div
-  class="bg-surface-card border-line-strong fixed inset-0 z-50 m-auto flex h-fit w-[340px] flex-col gap-5 rounded-2xl border p-6 shadow-2xl"
+  class="bg-surface-card border-line-strong fixed inset-0 z-50 m-auto flex h-fit max-w-[800px] flex-col gap-5 rounded-2xl border p-6 shadow-2xl transition-all duration-200"
   style="
     animation: modal-enter 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
     box-shadow:
@@ -84,6 +84,22 @@
       </div>
     </button>
   </div>
+
+  @if (players().length > 0) {
+    <div class="flex flex-col gap-2">
+      <div class="border-line-strong border-t pt-3">
+        <span
+          class="text-content-dim text-xs font-medium tracking-wide uppercase"
+        >
+          Player Order
+        </span>
+      </div>
+      <ws-spray-coach-sort-panel
+        [players]="players()"
+        (orderChange)="onCoachSortChange($event)"
+      />
+    </div>
+  }
 
   <!-- Actions -->
   <div class="flex justify-end gap-2">

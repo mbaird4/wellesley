@@ -1,0 +1,92 @@
+<div class="flex items-center gap-2">
+  <span class="text-content-dim text-xs font-medium">Sort</span>
+  <ws-button-toggle
+    [options]="sortOptions"
+    [value]="sortMode()"
+    mode="single"
+    (valueChange)="onSortChange($event)"
+  />
+  @if (sortMode() === 'custom') {
+    <span class="text-content-dim text-[10px] italic">Custom order</span>
+  }
+</div>
+
+<!-- Column headers -->
+<div
+  class="text-content-empty flex items-center gap-2 px-2.5 text-[10px] font-medium tracking-wide uppercase"
+>
+  <span class="w-5"></span>
+  <span class="w-6"></span>
+  <span class="flex-1"></span>
+  <span class="w-10 text-right">PA</span>
+  <span class="w-10 text-right">wOBA</span>
+  <span class="w-10 text-right">AVG</span>
+</div>
+
+<div
+  cdkDropList
+  (cdkDropListDropped)="onDrop($event)"
+  class="flex max-h-64 flex-col gap-0.5 overflow-y-auto rounded-lg"
+>
+  @for (row of displayRows(); track row.player.name) {
+    <div
+      cdkDrag
+      class="sort-row bg-surface-elevated hover:bg-surface-hover flex cursor-grab items-center gap-2 rounded-lg px-2.5 py-1.5 transition-colors active:cursor-grabbing"
+    >
+      <!-- Placeholder: shows where the item will land -->
+      <div
+        *cdkDragPlaceholder
+        class="sort-row-placeholder border-brand-lighter/40 bg-brand-bg/25 flex h-[34px] items-center rounded-lg border border-dashed"
+      >
+        <span class="bg-brand-lighter/60 ml-1 h-4 w-0.5 rounded-full"></span>
+      </div>
+
+      <i
+        class="fa-solid fa-grip-vertical text-content-empty w-5 text-[10px]"
+      ></i>
+      <span class="text-content-dim w-6 text-xs tabular-nums">
+        {{ row.player.jersey }}
+      </span>
+      <span class="text-content-bright flex-1 text-sm font-medium">
+        {{ row.player.name }}
+      </span>
+      <span
+        class="w-10 text-right text-xs tabular-nums"
+        [class]="row.pa.cls"
+        [style.opacity]="row.pa.intensity"
+      >
+        {{ row.pa.value }}
+      </span>
+      <span
+        class="w-10 text-right text-xs tabular-nums"
+        [class]="row.woba.cls"
+        [style.opacity]="row.woba.intensity"
+      >
+        {{ row.woba.value }}
+      </span>
+      <span
+        class="w-10 text-right text-xs tabular-nums"
+        [class]="row.avg.cls"
+        [style.opacity]="row.avg.intensity"
+      >
+        {{ row.avg.value }}
+      </span>
+
+      <!-- Preview: the element floating under the cursor -->
+      <div
+        *cdkDragPreview
+        class="sort-row-preview flex items-center gap-2 rounded-lg px-2.5 py-1.5"
+      >
+        <i
+          class="fa-solid fa-grip-vertical text-brand-text/50 w-5 text-[10px]"
+        ></i>
+        <span class="text-content-dim w-6 text-xs tabular-nums">
+          {{ row.player.jersey }}
+        </span>
+        <span class="text-content-bright text-sm font-medium">
+          {{ row.player.name }}
+        </span>
+      </div>
+    </div>
+  }
+</div>

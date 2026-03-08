@@ -52,10 +52,7 @@ const DEFAULT_BAR_COLOR = 'bg-chart-muted';
 @Component({
   selector: 'ws-play-type-chart',
   standalone: true,
-  imports: [
-    DecimalPipe,
-    FormatPlayTypePipe,
-  ],
+  imports: [DecimalPipe, FormatPlayTypePipe],
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

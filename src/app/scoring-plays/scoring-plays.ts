@@ -58,11 +58,7 @@ const SITUATION_ORDER: BaseSituation[] = [
 @Component({
   selector: 'ws-scoring-plays',
   standalone: true,
-  imports: [
-    ByGameTab,
-    ByPlayerTab,
-    SummaryTab,
-  ],
+  imports: [ByGameTab, ByPlayerTab, SummaryTab],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

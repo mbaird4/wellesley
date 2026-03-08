@@ -19,7 +19,7 @@
     <div [class]="printPreview() ? 'print-preview' : ''">
       @if (printDugout()) {
         <ws-spray-chart-print-view
-          [players]="allPlayerSummaries()"
+          [players]="printPlayers()"
           [title]="printTitle()"
           [subtitle]="printSubtitle()"
         />
@@ -27,7 +27,7 @@
 
       @if (printCoach()) {
         <ws-spray-chart-coach-print-view
-          [players]="allPlayerSummaries()"
+          [players]="printPlayers()"
           [title]="printTitle()"
           [subtitle]="printSubtitle()"
           [years]="selectedYears()"
@@ -38,6 +38,7 @@
     <!-- Print options modal -->
     @if (showPrintModal()) {
       <ws-print-options-modal
+        [players]="allPlayerSummaries()"
         (confirmed)="onPrintConfirm($event)"
         (dismissed)="onPrintCancel()"
       />

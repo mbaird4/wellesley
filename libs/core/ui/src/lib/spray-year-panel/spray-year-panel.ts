@@ -12,7 +12,10 @@ import { SprayLegend } from '../spray-legend/spray-legend';
 @Component({
   selector: 'ws-spray-year-panel',
   standalone: true,
-  imports: [SprayField, SprayLegend],
+  imports: [
+    SprayField,
+    SprayLegend,
+  ],
   templateUrl: './spray-year-panel.html',
   host: { class: 'flex flex-col gap-1' },
   changeDetection: ChangeDetectionStrategy.OnPush,

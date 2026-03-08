@@ -28,6 +28,7 @@ import {
   PrintOptionsModal,
 } from '../print-options-modal/print-options-modal';
 import { SprayChartCoachPrintView } from '../spray-chart-coach-print-view/spray-chart-coach-print-view';
+import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 import { SprayChartPrintView } from '../spray-chart-print-view/spray-chart-print-view';
 import { SprayField } from '../spray-field/spray-field';
 import {
@@ -58,6 +59,16 @@ const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
   value: String(y),
   label: String(y),
 }));
+
+function latestSeasonPa(team: Team | null, jersey: number): number {
+  const rp = team?.players.find((p) => p.jerseyNumber === jersey);
+
+  if (!rp?.seasons.length) {
+    return 0;
+  }
+
+  return rp.seasons.reduce((best, s) => (s.year > best.year ? s : best)).pa;
+}
 
 @Component({
   selector: 'ws-spray-chart-viewer',
@@ -118,6 +129,12 @@ export class SprayChartViewer {
   readonly printCoach = signal(true);
   readonly printPreview = signal(false);
   readonly isDev = isDevMode();
+  readonly printSortedPlayers = signal<PrintPlayerSummary[]>([]);
+  readonly printPlayers = computed(() => {
+    const sorted = this.printSortedPlayers();
+
+    return sorted.length > 0 ? sorted : this.allPlayerSummaries();
+  });
 
   readonly hasNonDefaultFilters = computed(() => {
     const f = this.filters();
@@ -195,14 +212,18 @@ export class SprayChartViewer {
 
   readonly rosteredPlayers = computed(() => {
     const map = this.jerseyMap();
+    const team = this.teamData();
 
-    if (this.includeUnmatchedRoster()) {
-      return Object.keys(map).sort((a, b) => map[a] - map[b]);
-    }
+    const players = this.includeUnmatchedRoster()
+      ? Object.keys(map)
+      : this.players().filter((p) => map[p] !== undefined);
 
-    return this.players()
-      .filter((p) => map[p] !== undefined)
-      .sort((a, b) => map[a] - map[b]);
+    return players.sort((a, b) => {
+      const paA = latestSeasonPa(team, map[a]);
+      const paB = latestSeasonPa(team, map[b]);
+
+      return paB - paA || map[a] - map[b];
+    });
   });
 
   private readonly effectiveFilters = computed(() =>
@@ -328,6 +349,11 @@ export class SprayChartViewer {
   onPrintConfirm(opts: PrintOptions): void {
     this.printDugout.set(opts.dugout);
     this.printCoach.set(opts.coach);
+
+    if (opts.coachPlayers?.length) {
+      this.printSortedPlayers.set(opts.coachPlayers);
+    }
+
     this.showPrintModal.set(false);
     setTimeout(() => this.executePrint(), 0);
   }

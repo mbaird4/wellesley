@@ -5,19 +5,25 @@ import {
   DestroyRef,
   ElementRef,
   inject,
+  input,
   output,
   Renderer2,
   signal,
 } from '@angular/core';
 
+import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
+import { SprayCoachSortPanel } from '../spray-coach-sort-panel/spray-coach-sort-panel';
+
 export interface PrintOptions {
   dugout: boolean;
   coach: boolean;
+  coachPlayers?: PrintPlayerSummary[];
 }
 
 @Component({
   selector: 'ws-print-options-modal',
   standalone: true,
+  imports: [SprayCoachSortPanel],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'contents' },
   templateUrl: './print-options-modal.html',
@@ -27,8 +33,11 @@ export class PrintOptionsModal {
   private readonly renderer = inject(Renderer2);
   private readonly destroyRef = inject(DestroyRef);
 
+  readonly players = input<PrintPlayerSummary[]>([]);
+
   readonly dugout = signal(true);
   readonly coach = signal(true);
+  readonly coachPlayers = signal<PrintPlayerSummary[]>([]);
 
   readonly confirmed = output<PrintOptions>();
   readonly dismissed = output<void>();
@@ -53,7 +62,15 @@ export class PrintOptionsModal {
     });
   }
 
+  onCoachSortChange(players: PrintPlayerSummary[]): void {
+    this.coachPlayers.set(players);
+  }
+
   onPrint(): void {
-    this.confirmed.emit({ dugout: this.dugout(), coach: this.coach() });
+    this.confirmed.emit({
+      dugout: this.dugout(),
+      coach: this.coach(),
+      coachPlayers: this.coachPlayers(),
+    });
   }
 }
