@@ -89,16 +89,16 @@
   </div>
 
   <!-- Interactive content (hidden in print) -->
-  <div class="flex flex-1 flex-col gap-3 overflow-hidden print:hidden">
+  <div class="flex flex-col gap-3 print:hidden">
     @if (viewMode() === 'split') {
       <!-- SPLIT MODE -->
       @if (bp.gtSm()) {
         <!-- Desktop: player sidebar + year panels -->
-        <div class="flex min-h-0 flex-1">
+        <div class="flex">
           <ng-container *ngTemplateOutlet="playerNav" />
 
           @if (filters().playerName) {
-            <div class="flex min-h-0 min-w-0 flex-1 gap-2">
+            <div class="stagger-children flex min-w-0 flex-1 gap-2">
               @for (year of activeYears(); track year) {
                 <ws-spray-year-panel
                   class="min-w-0 basis-1/3"
@@ -118,7 +118,7 @@
       } @else {
         <!-- Mobile: stacked vertically -->
         @if (filters().playerName) {
-          <div class="flex flex-col gap-6">
+          <div class="stagger-children flex flex-col gap-6">
             @for (year of activeYears(); track year) {
               <ws-spray-year-panel
                 [year]="year"
@@ -147,24 +147,14 @@
 
       @if (bp.gtSm()) {
         <!-- Desktop: player sidebar + field -->
-        <div class="flex min-h-0 flex-1">
+        <div class="flex">
           <ng-container *ngTemplateOutlet="playerNav" />
 
           @if (filters().playerName) {
-            <div class="mx-auto flex min-h-0 max-w-5xl flex-1 flex-col gap-2">
-              <ws-spray-field
-                [zones]="combinedSummary().zones"
-                [highlightZone]="highlightZone()"
-                (zoneHover)="onZoneHover($event)"
-                (zoneClick)="onZoneClick($event)"
-              />
-
-              <div class="flex items-center justify-center gap-4">
-                <ws-spray-legend />
-                <span class="text-content-muted text-xs">
-                  {{ combinedSummary().totalContact }} batted balls
-                </span>
-              </div>
+            <div
+              class="stagger-children mx-auto flex max-w-5xl flex-1 flex-col gap-2"
+            >
+              <ng-container *ngTemplateOutlet="combinedContent" />
             </div>
           } @else {
             <ng-container *ngTemplateOutlet="selectPlayerMsg" />
@@ -173,20 +163,8 @@
       } @else {
         <!-- Mobile: field only (no sidebar) -->
         @if (filters().playerName) {
-          <div class="mx-auto flex max-w-5xl flex-col gap-2">
-            <ws-spray-field
-              [zones]="combinedSummary().zones"
-              [highlightZone]="highlightZone()"
-              (zoneHover)="onZoneHover($event)"
-              (zoneClick)="onZoneClick($event)"
-            />
-
-            <div class="flex items-center justify-center gap-4">
-              <ws-spray-legend />
-              <span class="text-content-muted text-xs">
-                {{ combinedSummary().totalContact }} batted balls
-              </span>
-            </div>
+          <div class="stagger-children mx-auto flex max-w-5xl flex-col gap-2">
+            <ng-container *ngTemplateOutlet="combinedContent" />
           </div>
         } @else {
           <ng-container *ngTemplateOutlet="selectPlayerMsg" />
@@ -196,9 +174,29 @@
   </div>
 }
 
+<!-- Shared combined-mode content (hero + field + legend) -->
+<ng-template #combinedContent>
+  <ws-spray-player-hero
+    [name]="filters().playerName!"
+    [jersey]="jerseyMap()[filters().playerName!]"
+    [summary]="combinedSummary()"
+  />
+  <ws-spray-field
+    [zones]="combinedSummary().zones"
+    [highlightZone]="highlightZone()"
+    (zoneHover)="onZoneHover($event)"
+    (zoneClick)="onZoneClick($event)"
+  />
+  <div class="flex items-center justify-center gap-4">
+    <ws-spray-legend />
+  </div>
+</ng-template>
+
 <!-- Shared player sidebar nav -->
 <ng-template #playerNav>
-  <nav class="flex w-40 shrink-0 flex-col gap-0.5 overflow-y-auto print:hidden">
+  <nav
+    class="sticky top-20 flex max-h-[70vh] w-40 shrink-0 flex-col gap-0.5 self-start overflow-y-auto print:hidden"
+  >
     @for (player of rosteredPlayers(); track player) {
       <button
         (click)="onPlayerChange(player)"

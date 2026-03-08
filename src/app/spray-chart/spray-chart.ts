@@ -22,7 +22,7 @@ import { catchError, forkJoin, of } from 'rxjs';
       [error]="error()"
     />
   `,
-  host: { class: 'flex flex-1 flex-col overflow-hidden' },
+  host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayChart {

@@ -40,6 +40,7 @@ import {
   type SprayFilterState,
 } from '../spray-filters/spray-filters';
 import { SprayLegend } from '../spray-legend/spray-legend';
+import { SprayPlayerHero } from '../spray-player-hero/spray-player-hero';
 import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
 
 export const CURRENT_YEAR = new Date().getFullYear();
@@ -70,12 +71,13 @@ const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
     SprayField,
     SprayFilters,
     SprayLegend,
+    SprayPlayerHero,
     SprayYearPanel,
   ],
   templateUrl: './spray-chart-viewer.html',
   host: {
     class:
-      'flex flex-1 flex-col gap-3 overflow-hidden print:block print:overflow-visible',
+      'flex flex-col gap-3 print:block print:overflow-visible stagger-children',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
