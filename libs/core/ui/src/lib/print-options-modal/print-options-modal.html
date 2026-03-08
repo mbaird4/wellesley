@@ -1,44 +1,109 @@
+<!-- Backdrop -->
 <button
   aria-label="Close modal"
-  class="absolute inset-0 cursor-default border-none bg-black/50"
+  class="fixed inset-0 z-50 cursor-default border-none bg-black/70"
   (click)="dismissed.emit()"
 ></button>
 
-<div class="relative flex flex-col gap-4 rounded-xl bg-white p-6 shadow-xl">
-  <h3 class="text-lg font-bold text-gray-900">Print Options</h3>
-
-  <div class="flex flex-col gap-2">
-    <label class="flex items-center gap-2 text-sm text-gray-700">
-      <input
-        type="checkbox"
-        [checked]="dugout()"
-        (change)="dugout.set(!dugout())"
-      />
-      Dugout Sheet
-    </label>
-
-    <label class="flex items-center gap-2 text-sm text-gray-700">
-      <input
-        type="checkbox"
-        [checked]="coach()"
-        (change)="coach.set(!coach())"
-      />
-      Coach Scouting Report
-    </label>
+<!-- Modal -->
+<div
+  class="bg-surface-card border-line-strong fixed inset-0 z-50 m-auto flex h-fit w-[340px] flex-col gap-5 rounded-2xl border p-6 shadow-2xl"
+  style="
+    animation: modal-enter 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.04),
+      0 24px 48px rgba(0, 0, 0, 0.5),
+      0 0 80px var(--color-brand-glow);
+  "
+>
+  <!-- Header -->
+  <div class="flex flex-col gap-1">
+    <h3 class="text-content-heading m-0 text-lg font-semibold tracking-tight">
+      Print Options
+    </h3>
+    <p class="text-content-dim m-0 text-sm">Choose which reports to generate</p>
   </div>
 
+  <!-- Options -->
+  <div class="flex flex-col gap-2">
+    <button
+      class="border-line flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition-all duration-150"
+      [class]="
+        dugout()
+          ? 'bg-brand-bg border-brand-lighter/30'
+          : 'bg-surface-elevated hover:bg-surface-hover'
+      "
+      (click)="dugout.set(!dugout())"
+    >
+      <span
+        class="flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-all duration-150"
+        [class]="
+          dugout()
+            ? 'bg-brand-light border-brand-lighter text-white'
+            : 'border-line-strong bg-surface-elevated text-transparent'
+        "
+      >
+        <i class="fa-solid fa-check text-[10px]"></i>
+      </span>
+      <div class="flex flex-col items-start gap-0.5">
+        <span class="text-content-bright text-sm font-medium">
+          Dugout Sheet
+        </span>
+        <span class="text-content-dim text-xs">
+          Quick-reference card for the bench
+        </span>
+      </div>
+    </button>
+
+    <button
+      class="border-line flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 transition-all duration-150"
+      [class]="
+        coach()
+          ? 'bg-brand-bg border-brand-lighter/30'
+          : 'bg-surface-elevated hover:bg-surface-hover'
+      "
+      (click)="coach.set(!coach())"
+    >
+      <span
+        class="flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition-all duration-150"
+        [class]="
+          coach()
+            ? 'bg-brand-light border-brand-lighter text-white'
+            : 'border-line-strong bg-surface-elevated text-transparent'
+        "
+      >
+        <i class="fa-solid fa-check text-[10px]"></i>
+      </span>
+      <div class="flex flex-col items-start gap-0.5">
+        <span class="text-content-bright text-sm font-medium">
+          Coach Scouting Report
+        </span>
+        <span class="text-content-dim text-xs">
+          Detailed breakdown with zone analysis
+        </span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Actions -->
   <div class="flex justify-end gap-2">
     <button
-      class="cursor-pointer rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+      class="text-content-muted hover:text-content-bright hover:bg-surface-hover cursor-pointer rounded-lg border-none bg-transparent px-4 py-2 text-sm font-medium transition-colors duration-150"
       (click)="dismissed.emit()"
     >
       Cancel
     </button>
     <button
-      class="cursor-pointer rounded-lg border-none bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+      class="cursor-pointer rounded-lg border-none px-5 py-2 text-sm font-semibold text-white transition-all duration-150 disabled:opacity-40 disabled:saturate-0"
+      [class]="
+        !dugout() && !coach()
+          ? 'bg-brand-light/50'
+          : 'bg-brand-light hover:bg-brand-lighter shadow-[0_2px_12px_var(--color-brand-glow)]'
+      "
       [disabled]="!dugout() && !coach()"
       (click)="onPrint()"
     >
+      <i class="fa-solid fa-print mr-1.5"></i>
       Print
     </button>
   </div>
