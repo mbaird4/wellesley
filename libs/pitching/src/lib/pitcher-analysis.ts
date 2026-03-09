@@ -80,7 +80,8 @@ export class PitcherAnalysis {
     const roster = this.rosterNames();
     const latestYear = Object.keys(data.pitchingStatsByYear)
       .map(Number)
-      .sort((a, b) => b - a)[0];
+      .sort((a, b) => b - a)
+      .find((y) => (data.pitchingStatsByYear[String(y)]?.length ?? 0) > 0);
 
     if (latestYear === undefined) {
       return [];

@@ -1,6 +1,6 @@
 <div class="flex flex-row flex-wrap items-center gap-x-4 gap-y-1">
   <h3
-    class="text-content-bright stuck:text-lg stuck:flex m-0 hidden items-baseline gap-1.5 text-base leading-none font-semibold transition-[font-size] duration-100"
+    class="text-content-bright stuck:text-lg m-0 flex items-baseline gap-1.5 text-base leading-none font-semibold transition-[font-size] duration-100"
   >
     @if (jerseyNumber() !== null) {
       <span class="text-content-dim font-normal">#{{ jerseyNumber() }}</span>
@@ -8,7 +8,7 @@
     <span>{{ name() }}</span>
     @if (subtitle()) {
       <span
-        class="text-content-muted stuck:text-xs stuck:inline hidden text-xs font-normal"
+        class="text-content-muted text-xs font-normal"
       >
         {{ subtitle() }}
       </span>
