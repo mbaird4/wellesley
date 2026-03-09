@@ -1,37 +1,37 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-08T11:15:47.624Z",
+  "scrapedAt": "2026-03-09T11:30:45.449Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "De La Rosa, Sofia",
-      "w": 1,
+      "w": 2,
       "l": 0,
       "era": 0,
-      "app": 1,
-      "gs": 1,
-      "ip": 7,
-      "h": 2,
+      "app": 2,
+      "gs": 2,
+      "ip": 14,
+      "h": 6,
       "r": 0,
       "er": 0,
-      "bb": 0,
-      "so": 12,
+      "bb": 1,
+      "so": 22,
       "hr": 0
     },
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 0,
-      "app": 1,
-      "gs": 1,
-      "ip": 7,
-      "h": 5,
-      "r": 0,
-      "er": 0,
-      "bb": 1,
-      "so": 5,
+      "era": 1,
+      "app": 2,
+      "gs": 2,
+      "ip": 14,
+      "h": 11,
+      "r": 2,
+      "er": 2,
+      "bb": 2,
+      "so": 10,
       "hr": 0
     }
   ],
@@ -174,6 +174,167 @@
             "Maeve Hickok flied out to cf (2-2 BSFBFF).",
             "Corinne Vasvary flied out to cf (0-0).",
             "Leah Knight struck out swinging (2-2 KBBSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/ohio-northern-university/boxscore/10114",
+      "date": "3/8/2026",
+      "opponent": "Ohio Northern University",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Allie Wilson popped up to ss (3-2 BKSBB).",
+            "Carlie Schroeder singled through the left side (0-1 K).",
+            "Carlie Schroeder out at second c to ss, caught stealing.",
+            "Lillie Marker singled to left field (2-1 KBB).",
+            "Kylie Pytlak struck out swinging (2-2 BKBSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ashley Simko struck out swinging (2-2 BSFBFS).",
+            "Kyla Fry popped up to 1b (3-1 BBBS).",
+            "Molly Goudy reached first on a fielding error by ss (2-2 BBKK).",
+            "Clare Flory struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alyssa Hochstetler out at first 3b to 2b, bunt (0-0).",
+            "Allie Wilson struck out swinging (3-2 BSBFBS).",
+            "Carlie Schroeder singled through the left side (0-1 K).",
+            "Lillie Marker flied out to lf (3-1 FBBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kylie Pytlak struck out swinging (2-2 BBFSFS).",
+            "Ashley Simko flied out to cf (2-2 KFBB).",
+            "Kyla Fry struck out swinging (3-2 BBBKFFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Molly Goudy struck out looking (1-2 FFBK).",
+            "Clare Flory struck out (0-0).",
+            "Alyssa Hochstetler grounded out to ss (0-2 FFFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Dolan to c for Lauren Kelley.",
+            "Julia Miller to lf for Lexi Falcioni.",
+            "Ellie Mason pinch hit for Allie Wilson.",
+            "Ellie Mason struck out swinging (2-2 FSBBS).",
+            "Carlie Schroeder popped up to ss (0-0).",
+            "Lillie Marker popped up to c (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kylie Pytlak walked (3-1 KBBBB).",
+            "Mackenzie Hannahs pinch ran for Kylie Pytlak.",
+            "Ashley Simko reached on a fielder's choice (0-0); Mackenzie Hannahs out at second ss to 2b.",
+            "Alexa Ray singled to center field (1-0 B); Ashley Simko advanced to second.",
+            "Molly Goudy struck out swinging (3-2 BBKFBFFFS).",
+            "Clare Flory grounded out to p (3-2 BBBKFF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/montclair-state-university/boxscore/10115",
+      "date": "3/8/2026",
+      "opponent": "Montclair State University",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sophia Alonso struck out looking (1-2 FBFFK).",
+            "Liz Mullen flied out to cf (0-1 K).",
+            "Carlee Iannone lined out to cf (3-2 FFBBBFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jordyn Hester grounded out to 3b (2-2 FBBKF).",
+            "Katie Brunner struck out looking (1-2 FFBK).",
+            "Juliana Casillas grounded out to p (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Molly Colligan popped up to p (0-0).",
+            "Leah Monschein struck out swinging (3-2 KBBBFS).",
+            "Ashley Palmieri singled to right field (1-2 BFF).",
+            "Sophia Alonso grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Dolan to c for Mary Claire McClintock.",
+            "Liz Mullen flied out to lf (1-0 B).",
+            "Carlee Iannone grounded out to 3b (0-0).",
+            "Jordyn Hester singled up the middle (1-2 BKK).",
+            "Zoe Turner pinch ran for Jordyn Hester.",
+            "Katie Brunner doubled down the lf line (0-0); Zoe Turner advanced to third.",
+            "Marialys Ricourt pinch hit for Juliana Casillas.",
+            "Marialys Ricourt popped up to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Lauren Kelley.",
+            "Jayla Vasquez pinch hit for Molly Colligan.",
+            "Jayla Vasquez singled to third base, out at second p to ss (0-0).",
+            "Emma DePeppo pinch hit for Leah Monschein.",
+            "Emma DePeppo struck out swinging (0-2 FFS).",
+            "Ashley Palmieri grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sophia Alonso singled to second base (3-2 BSKBB).",
+            "Sophia Alonso stole second.",
+            "Liz Mullen hit by pitch (1-1 FH).",
+            "Carlee Iannone singled to right field (2-2 FBBKF); Liz Mullen advanced to second; Sophia Alonso advanced to third.",
+            "Mia Rider pinch ran for Carlee Iannone.",
+            "Jordyn Hester lined out to lf, sacrifice fly, RBI (3-2 BFBBS); Mia Rider advanced to second on the throw; Liz Mullen advanced to third on the throw; Sophia Alonso scored.",
+            "Katie Brunner walked (3-1 BKBBB).",
+            "Juliana Casillas flied out to cf, sacrifice fly, RBI (2-1 BKB); Katie Brunner advanced to second on the throw; Mia Rider advanced to third on the throw; Liz Mullen scored.",
+            "Molly Colligan struck out swinging (2-2 KBFFFFFBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kathryn Copperthite to 1b for Brittany Dost.",
+            "Dylan Boles pinch hit for Leah Monschein.",
+            "Dylan Boles flied out to cf (2-0 BB).",
+            "Ashley Palmieri popped up to ss (0-0).",
+            "Sophia Alonso grounded out to ss (3-2 BBKBS)."
           ]
         }
       ],

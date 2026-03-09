@@ -1,37 +1,37 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-08T11:18:36.783Z",
+  "scrapedAt": "2026-03-09T11:31:34.106Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "era": 0,
-      "app": 1,
-      "gs": 0,
-      "ip": 1,
-      "h": 1,
+      "app": 2,
+      "gs": 1,
+      "ip": 7,
+      "h": 5,
       "r": 0,
       "er": 0,
-      "bb": 0,
-      "so": 2,
+      "bb": 3,
+      "so": 12,
       "hr": 0
     },
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 1,
-      "era": 5.6,
-      "app": 1,
-      "gs": 1,
-      "ip": 5,
-      "h": 8,
-      "r": 5,
-      "er": 4,
-      "bb": 4,
-      "so": 4,
+      "l": 2,
+      "era": 3.82,
+      "app": 2,
+      "gs": 2,
+      "ip": 11,
+      "h": 13,
+      "r": 9,
+      "er": 6,
+      "bb": 7,
+      "so": 5,
       "hr": 0
     }
   ],
@@ -111,6 +111,150 @@
             "Cadence Rieg tripled (0-2 FK).",
             "Keagan Cooper struck out swinging (2-2 KBSBS).",
             "Makayla Cox struck out swinging (1-2 BFSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/fitchburg-state-college/boxscore/4309",
+      "date": "3/8/2026",
+      "opponent": "Fitchburg State College",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carolyn Brodeur reached first on a throwing error by 3b, advanced to second (0-0).",
+            "Chloe Bafundo walked (0-0).",
+            "Jessica Mueller struck out swinging (0-0); Chloe Bafundo advanced to second on a wild pitch; Carolyn Brodeur advanced to third.",
+            "Priscilla Dillon struck out swinging (0-0).",
+            "Shaelyn Burns struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kiley Connors struck out swinging (0-0).",
+            "Amaya Carrion grounded out to 3b (0-0).",
+            "Emily Bennett struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauren Ahearn walked (0-0).",
+            "Carolyn Brodeur singled to center field (0-0); Lauren Ahearn advanced to second.",
+            "Chloe Bafundo struck out swinging (0-0).",
+            "Jessica Mueller singled to second base (0-0); Carolyn Brodeur advanced to second; Lauren Ahearn out at third 2b to 3b.",
+            "Priscilla Dillon grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Shaelyn Burns flied out to cf (0-0).",
+            "Kiley Connors popped up to 1b (0-0).",
+            "Amaya Carrion struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Bennett struck out swinging (0-0).",
+            "Lauren Ahearn grounded out to ss (0-0).",
+            "Carolyn Brodeur singled to center field (0-0).",
+            "Chloe Bafundo walked (0-0); Carolyn Brodeur advanced to second.",
+            "Jessica Mueller reached on a fielder's choice (0-0); Chloe Bafundo advanced to second; Carolyn Brodeur out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Priscilla Dillon struck out looking (0-0).",
+            "Julia Cooper pinch hit for Shaelyn Burns.",
+            "Julia Cooper singled up the middle (0-0).",
+            "Kiley Connors struck out swinging (0-0).",
+            "Danika Quinn pinch hit for Amaya Carrion.",
+            "Danika Quinn popped up to 1b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/wisconsin-lutheran-college/boxscore/4310",
+      "date": "3/8/2026",
+      "opponent": "Wisconsin Lutheran College",
+      "pitchers": [
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Krull singled to center field.",
+            "Crutcher reached on a fielder's choice to shortstop; Krull out at second ss unassisted.",
+            "Bracke popped into double play 2b to 1b; Crutcher out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alloy lined out to cf.",
+            "Ruth walked.",
+            "Reddeman grounded out to p, bunt, SAC; Ruth advanced to second.",
+            "Stellmacher singled to right center, RBI; Ruth scored.",
+            "Stellmacher stole second.",
+            "Wheeler grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Heller walked.",
+            "Heller stole second.",
+            "Krull grounded out to 3b; Heller advanced to third.",
+            "Crutcher flied out to rf, SF, RBI; Heller scored.",
+            "Bracke flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alloy singled to right field.",
+            "Ruth struck out swinging.",
+            "Reddeman grounded out to 2b; Alloy advanced to second.",
+            "Stellmacher grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gaston pinch hit for Wheeler.",
+            "Gaston walked.",
+            "Wheeler to ss for Gaston.",
+            "Morgese pinch hit for Heller.",
+            "Wheeler advanced to second on a passed ball.",
+            "Morgese grounded out to 3b; Wheeler advanced to third.",
+            "Krull flied out to rf, SF, RBI; Wheeler scored, unearned.",
+            "Crutcher grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kate Regan to p for Tessa Burros.",
+            "Bracke lined out to lf.",
+            "Alloy singled to right center.",
+            "Klein pinch ran for Alloy.",
+            "Jordan pinch hit for Ruth.",
+            "Jordan reached on a fielder's choice to shortstop; Klein advanced to second on a muffed throw by 2b.",
+            "Reddeman singled down the rf line; Jordan advanced to second; Klein advanced to third.",
+            "Stellmacher grounded out to 2b, RBI; Reddeman advanced to second; Jordan advanced to third; Klein scored, unearned.",
+            "Wheeler grounded out to ss."
           ]
         }
       ],
