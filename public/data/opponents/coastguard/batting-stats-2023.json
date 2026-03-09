@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-07T00:50:52.448Z",
+  "scrapedAt": "2026-03-09T17:28:09.071Z",
   "year": 2023,
   "teamGames": 42,
   "players": [
@@ -76,41 +76,6 @@
       }
     },
     {
-      "name": "Emma Behel",
-      "jerseyNumber": 8,
-      "classYear": "Senior",
-      "position": "RHP, 1B",
-      "bats": "L",
-      "season": {
-        "year": 2023,
-        "name": "Behel, Emma",
-        "avg": 0.179,
-        "ops": 0.522,
-        "gp": 18,
-        "gs": 9,
-        "ab": 28,
-        "r": 3,
-        "h": 5,
-        "doubles": 0,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 1,
-        "tb": 5,
-        "slg": 0.179,
-        "bb": 5,
-        "hbp": 2,
-        "so": 5,
-        "gdp": 0,
-        "obp": 0.343,
-        "sf": 0,
-        "sh": 0,
-        "sb": 0,
-        "sbAtt": 0,
-        "woba": 0.229,
-        "pa": 35
-      }
-    },
-    {
       "name": "Bridget Bartz",
       "jerseyNumber": 10,
       "classYear": "Senior",
@@ -143,6 +108,41 @@
         "sbAtt": 0,
         "woba": 0.202,
         "pa": 95
+      }
+    },
+    {
+      "name": "Emma Behel",
+      "jerseyNumber": 8,
+      "classYear": "Senior",
+      "position": "RHP, 1B",
+      "bats": "L",
+      "season": {
+        "year": 2023,
+        "name": "Behel, Emma",
+        "avg": 0.179,
+        "ops": 0.522,
+        "gp": 18,
+        "gs": 9,
+        "ab": 28,
+        "r": 3,
+        "h": 5,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 1,
+        "tb": 5,
+        "slg": 0.179,
+        "bb": 5,
+        "hbp": 2,
+        "so": 5,
+        "gdp": 0,
+        "obp": 0.343,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0.229,
+        "pa": 35
       }
     }
   ]
