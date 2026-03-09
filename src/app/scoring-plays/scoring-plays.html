@@ -282,6 +282,11 @@
           </table>
         </div>
       }
+
+      <ws-baserunning-section
+        [stolenBaseSummary]="stolenBaseSummary"
+        [runnerConversions]="runnerConversions"
+      />
     }
     @if (activeTab === 'by-game') {
       <h2>Scoring Plays by Game — {{ selectedYear }}</h2>

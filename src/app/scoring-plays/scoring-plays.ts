@@ -10,8 +10,10 @@ import { SoftballStatsService } from '@ws/core/data';
 import type {
   BaseSituation,
   GameScoringPlays,
+  RunnerConversionRow,
   SacBuntSummary,
   ScoringPlaySummary,
+  StolenBaseSummary,
 } from '@ws/core/models';
 import {
   FormatOutsPipe,
@@ -19,6 +21,8 @@ import {
   FormatSituationPipe,
   IsEmptyPipe,
 } from '@ws/core/ui';
+
+import { BaserunningSection } from './baserunning-section/baserunning-section';
 
 interface PlayerScoringBreakdown {
   name: string;
@@ -38,6 +42,7 @@ interface PlayerScoringBreakdown {
     FormatPlayTypePipe,
     FormatSituationPipe,
     IsEmptyPipe,
+    BaserunningSection,
   ],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
@@ -61,6 +66,8 @@ export class ScoringPlays {
   gameScoringPlays: GameScoringPlays[] = [];
   playerBreakdowns: PlayerScoringBreakdown[] = [];
   sacBuntSummary: SacBuntSummary | null = null;
+  stolenBaseSummary: StolenBaseSummary | null = null;
+  runnerConversions: RunnerConversionRow[] = [];
   expandedGame: number | null = null;
   typesWithCounts: { type: string; count: number; pct: number }[] = [];
   sortedRunners: { name: string; count: number }[] = [];
@@ -107,6 +114,8 @@ export class ScoringPlays {
     this.gameScoringPlays = [];
     this.playerBreakdowns = [];
     this.sacBuntSummary = null;
+    this.stolenBaseSummary = null;
+    this.runnerConversions = [];
     this.expandedGame = null;
 
     this.statsService.getStats(this.selectedYear).subscribe({
@@ -114,6 +123,8 @@ export class ScoringPlays {
         this.seasonSummary = stats.seasonScoringPlays;
         this.gameScoringPlays = stats.gameScoringPlays;
         this.sacBuntSummary = stats.sacBuntSummary;
+        this.stolenBaseSummary = stats.stolenBaseSummary;
+        this.runnerConversions = stats.runnerConversions;
         this.buildTypesWithCounts();
         this.buildSortedRunners();
         this.buildSortedBatters();

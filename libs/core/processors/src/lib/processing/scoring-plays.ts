@@ -1,11 +1,15 @@
 import type {
   BaseRunners,
+  BaseSituation,
   PlaySnapshot,
+  RunnerConversionRow,
   SacBuntOutcome,
   SacBuntSummary,
   ScoringPlay,
   ScoringPlaySummary,
   ScoringPlayType,
+  StolenBaseOutcome,
+  StolenBaseSummary,
 } from '@ws/core/models';
 
 import { parseBatterAction, parseRunnerSubEvent } from '../parsing/parse-play';
@@ -356,6 +360,197 @@ export function summarizeSacBuntOutcomes(
       totalRunnersOnBase > 0 ? totalRunnersScored / totalRunnersOnBase : 0,
     outcomes,
   };
+}
+
+/**
+ * For each stolen base in the game, tracks whether the runner eventually
+ * scored in the same inning. Follows the same pattern as computeSacBuntOutcomes.
+ */
+export function computeStolenBaseOutcomes(
+  snapshots: PlaySnapshot[],
+  opponent: string,
+  url: string
+): StolenBaseOutcome[] {
+  const outcomes: StolenBaseOutcome[] = [];
+
+  snapshots.forEach((snap, i) => {
+    if (snap.playType !== 'stolen_base') {
+      return;
+    }
+
+    const subEvents = snap.playText
+      .replace(/\.$/, '')
+      .split(';')
+      .map((s) => s.trim());
+
+    // Parse each sub-event for stolen base actions
+    subEvents.forEach((sub) => {
+      const lower = sub.toLowerCase();
+      const nameMatch = sub.match(/^([A-Z]\.\s*\w+)/);
+
+      if (!nameMatch) {
+        return;
+      }
+
+      const runnerName = nameMatch[1].replace(/\s+/g, ' ');
+
+      let stolenTo: 'second' | 'third' | 'home' | null = null;
+
+      if (lower.includes('stole home')) {
+        stolenTo = 'home';
+      } else if (lower.includes('stole third')) {
+        stolenTo = 'third';
+      } else if (lower.includes('stole second')) {
+        stolenTo = 'second';
+      }
+
+      if (!stolenTo) {
+        return;
+      }
+
+      // If stole home, they scored directly
+      if (stolenTo === 'home') {
+        outcomes.push({
+          opponent,
+          url,
+          inning: snap.inning,
+          runnerName,
+          stolenTo,
+          eventuallyScored: true,
+          playText: snap.playText,
+        });
+
+        return;
+      }
+
+      // Check if runner eventually scored in the remainder of this inning
+      let eventuallyScored = false;
+
+      // Uses for...of with break — needs to stop at inning boundary
+      for (const future of snapshots.slice(i)) {
+        if (future.inning !== snap.inning) {
+          break;
+        }
+
+        if (future.scoringPlays.some((sp) => sp.runnerName === runnerName)) {
+          eventuallyScored = true;
+          break;
+        }
+      }
+
+      outcomes.push({
+        opponent,
+        url,
+        inning: snap.inning,
+        runnerName,
+        stolenTo,
+        eventuallyScored,
+        playText: snap.playText,
+      });
+    });
+  });
+
+  return outcomes;
+}
+
+export function summarizeStolenBaseOutcomes(
+  outcomes: StolenBaseOutcome[]
+): StolenBaseSummary {
+  const bases: ('second' | 'third' | 'home')[] = ['second', 'third', 'home'];
+  const byBase = bases.map((base) => {
+    const matching = outcomes.filter((o) => o.stolenTo === base);
+
+    return {
+      base,
+      total: matching.length,
+      scored: matching.filter((o) => o.eventuallyScored).length,
+    };
+  });
+
+  const totalScored = outcomes.filter((o) => o.eventuallyScored).length;
+
+  return {
+    totalStolenBases: outcomes.length,
+    byBase,
+    overallScoringRate: outcomes.length > 0 ? totalScored / outcomes.length : 0,
+    outcomes,
+  };
+}
+
+/**
+ * For each PA snapshot, counts how many runners were on base before
+ * and how many of them eventually scored on that play.
+ * Aggregates by base situation and out count.
+ */
+export function computeRunnerConversions(
+  snapshots: PlaySnapshot[]
+): RunnerConversionRow[] {
+  const map = new Map<
+    BaseSituation,
+    {
+      totalRunners: number;
+      runnersScored: number;
+      byOuts: [number, number, number, number, number, number];
+    }
+  >();
+
+  snapshots
+    .filter((snap) => snap.isPlateAppearance)
+    .forEach((snap) => {
+      const situation = classifyBaseSituation(snap.basesBefore);
+
+      if (situation === 'empty') {
+        return;
+      }
+
+      const runners = (['first', 'second', 'third'] as const)
+        .filter((base) => snap.basesBefore[base])
+        .map((base) => snap.basesBefore[base]!);
+
+      const scored = runners.filter((runner) =>
+        snap.scoringPlays.some((sp) => sp.runnerName === runner)
+      );
+
+      const entry = map.get(situation) ?? {
+        totalRunners: 0,
+        runnersScored: 0,
+        byOuts: [0, 0, 0, 0, 0, 0], // [total0, scored0, total1, scored1, total2, scored2]
+      };
+
+      entry.totalRunners += runners.length;
+      entry.runnersScored += scored.length;
+      entry.byOuts[snap.outsBefore * 2] += runners.length;
+      entry.byOuts[snap.outsBefore * 2 + 1] += scored.length;
+
+      map.set(situation, entry);
+    });
+
+  const sitOrder: BaseSituation[] = [
+    'first',
+    'second',
+    'third',
+    'first_second',
+    'first_third',
+    'second_third',
+    'loaded',
+  ];
+
+  return sitOrder
+    .filter((sit) => map.has(sit))
+    .map((sit) => {
+      const entry = map.get(sit)!;
+
+      return {
+        situation: sit,
+        totalRunners: entry.totalRunners,
+        runnersScored: entry.runnersScored,
+        byOuts: [0, 1, 2].map((outs) => ({
+          outs,
+          totalRunners: entry.byOuts[outs * 2],
+          runnersScored: entry.byOuts[outs * 2 + 1],
+        })),
+      };
+    });
 }
 
 /**

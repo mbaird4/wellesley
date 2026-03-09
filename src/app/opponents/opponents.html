@@ -50,6 +50,7 @@
       </div>
 
       @if (activeTab() === 'woba') {
+        <ws-woba-legend class="mb-4" />
         <ng-container *ngTemplateOutlet="statusTpl" />
 
         @if ((regulars().length > 0 || reserves().length > 0) && !loading()) {
@@ -125,6 +126,7 @@
   </div>
 
   @if (activeTab() === 'woba') {
+    <ws-woba-legend class="mb-4" />
     <ng-container *ngTemplateOutlet="statusTpl" />
 
     @if ((regulars().length > 0 || reserves().length > 0) && !loading()) {

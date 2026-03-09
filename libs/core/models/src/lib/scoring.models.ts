@@ -59,3 +59,31 @@ export interface SacBuntSummary {
   scoringRate: number;
   outcomes: SacBuntOutcome[];
 }
+
+export interface StolenBaseOutcome {
+  opponent: string;
+  url: string;
+  inning: string;
+  runnerName: string;
+  stolenTo: 'second' | 'third' | 'home';
+  eventuallyScored: boolean;
+  playText: string;
+}
+
+export interface StolenBaseSummary {
+  totalStolenBases: number;
+  byBase: {
+    base: 'second' | 'third' | 'home';
+    total: number;
+    scored: number;
+  }[];
+  overallScoringRate: number;
+  outcomes: StolenBaseOutcome[];
+}
+
+export interface RunnerConversionRow {
+  situation: BaseSituation;
+  totalRunners: number;
+  runnersScored: number;
+  byOuts: { outs: number; totalRunners: number; runnersScored: number }[];
+}

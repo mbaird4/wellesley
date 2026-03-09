@@ -23,6 +23,7 @@ import {
   type YearPitchingData,
 } from '@ws/core/models';
 import { calculateWoba } from '@ws/core/processors';
+import { WobaLegend } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
@@ -45,6 +46,7 @@ export type OpponentTab = 'woba' | 'spray' | 'pitching';
     PlayerCardList,
     OpponentSprayChart,
     PitcherAnalysis,
+    WobaLegend,
   ],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',

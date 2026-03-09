@@ -1,0 +1,87 @@
+@if (stolenBaseSummary(); as sb) {
+  @if (sb.totalStolenBases > 0) {
+    <h3 class="section-heading-sm">Stolen Base Scoring</h3>
+    <div class="mt-3">
+      <div class="mb-4 flex flex-wrap gap-4">
+        <div
+          class="bg-surface-card border-line p-card min-w-[100px] rounded-[10px] border text-center"
+        >
+          <div class="text-content-bright text-2xl font-bold tabular-nums">
+            {{ sb.totalStolenBases }}
+          </div>
+          <div class="text-content-dim mt-0.5 text-[0.85rem]">Stolen Bases</div>
+        </div>
+        <div
+          class="bg-surface-card border-line p-card min-w-[100px] rounded-[10px] border text-center"
+        >
+          <div class="text-content-bright text-2xl font-bold tabular-nums">
+            {{ sb.overallScoringRate * 100 | number: '1.1-1' }}%
+          </div>
+          <div class="text-content-dim mt-0.5 text-[0.85rem]">
+            Eventually Scored
+          </div>
+        </div>
+      </div>
+
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Base Stolen To</th>
+            <th>Total</th>
+            <th>Scored</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of filteredByBase(); track row.base) {
+            <tr>
+              <td class="capitalize">{{ row.base }}</td>
+              <td>{{ row.total }}</td>
+              <td>{{ row.scored }}</td>
+              <td>
+                {{
+                  row.total > 0
+                    ? ((row.scored / row.total) * 100 | number: '1.1-1') + '%'
+                    : '—'
+                }}
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+}
+
+@if (runnerConversions().length > 0) {
+  <h3 class="section-heading-sm">Runner Conversion by Situation</h3>
+  <div class="mt-3">
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>Situation</th>
+          <th>Runners</th>
+          <th>Scored</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of runnerConversions(); track row.situation) {
+          <tr>
+            <td>{{ row.situation | formatSituation }}</td>
+            <td>{{ row.totalRunners }}</td>
+            <td>{{ row.runnersScored }}</td>
+            <td>
+              {{
+                row.totalRunners > 0
+                  ? ((row.runnersScored / row.totalRunners) * 100
+                      | number: '1.1-1') + '%'
+                  : '—'
+              }}
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

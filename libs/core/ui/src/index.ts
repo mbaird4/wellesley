@@ -11,3 +11,4 @@ export * from './lib/spray-legend/spray-legend';
 export * from './lib/spray-year-panel/spray-year-panel';
 export * from './lib/sticky-player-header/sticky-player-header';
 export * from './lib/woba-badge/woba-badge';
+export * from './lib/woba-legend/woba-legend';

@@ -16,6 +16,7 @@ import {
   tierClass,
   wobaGradientStyle,
 } from '@ws/core/processors';
+import { WobaLegend } from '@ws/core/ui';
 
 export interface TeamGameColumn {
   date: string;
@@ -37,7 +38,11 @@ export interface TeamPlayerRow {
 @Component({
   selector: 'ws-woba',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    WobaLegend,
+  ],
   host: {
     class: 'block stats-section',
   },
@@ -56,7 +61,7 @@ export class Woba {
     2011,
   ];
 
-  activeTab: 'players' | 'team' = 'players';
+  activeTab: 'players' | 'team' = 'team';
 
   playerWobas: PlayerWoba[] = [];
   cumulativeWobas: PlayerCumulativeWoba[] = [];
