@@ -15,7 +15,7 @@ Live at: [https://mbaird.github.io/wellesley/](https://mbaird.github.io/wellesle
 # 1. Install dependencies
 npm install
 
-# 2. Start the dev server (runs on http://localhost:4200)
+# 2. Start the dev server (runs on http://localhost:4201)
 npx nx serve
 ```
 
@@ -25,7 +25,7 @@ In both dev and production, the app reads from pre-generated static JSON files i
 
 | Command                                         | What it does                                     |
 | ----------------------------------------------- | ------------------------------------------------ |
-| `npx nx serve`                                  | Dev server on `:4200` with hot reload            |
+| `npx nx serve`                                  | Dev server on `:4201` with hot reload            |
 | `npx nx build`                                  | Production build to `dist/wellesley/`            |
 | `npx nx test`                                   | Run Jest unit tests                              |
 | `npx nx lint`                                   | Run ESLint                                       |

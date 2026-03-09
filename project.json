@@ -50,7 +50,9 @@
     "serve": {
       "continuous": true,
       "executor": "@angular/build:dev-server",
-      "options": {},
+      "options": {
+        "port": 4201
+      },
       "configurations": {
         "production": {
           "buildTarget": "wellesley:build:production"

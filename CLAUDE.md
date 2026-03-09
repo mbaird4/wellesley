@@ -88,7 +88,7 @@ NEVER use `for`, `for...in`, `for...of`, or `while` loops. Use array methods (`f
 ## Build & Dev Commands
 
 ```bash
-npx nx serve              # Dev server on :4200 (Vite + Tailwind watch)
+npx nx serve              # Dev server on :4201 (Vite + Tailwind watch)
 npx nx build              # Production build → dist/wellesley/
 npx nx test               # Jest unit tests
 npx nx lint               # ESLint
