@@ -15,17 +15,46 @@ import * as path from 'path';
 
 // ── Teams ──
 
-const TEAMS: Record<string, string> = {
-  wpi: 'athletics.wpi.edu',
-  wheaton: 'wheatoncollegelyons.com',
-  springfield: 'springfieldcollegepride.com',
-  smith: 'gosmithbears.com',
-  salve: 'salveathletics.com',
-  mit: 'mitathletics.com',
-  emerson: 'emersonlions.com',
-  coastguard: 'coastguardathletics.com',
-  clark: 'clarkathletics.com',
-  babson: 'babsonathletics.com',
+interface TeamConfig {
+  domain: string;
+  /** Output subdirectory under public/data/opponents/ (defaults to slug) */
+  outDir?: string;
+  /** Sport slug in URL (defaults to 'softball') */
+  sportSlug?: string;
+}
+
+const TEAMS: Record<string, TeamConfig> = {
+  // NEWMAC
+  wpi: { domain: 'athletics.wpi.edu' },
+  wheaton: { domain: 'wheatoncollegelyons.com' },
+  springfield: { domain: 'springfieldcollegepride.com' },
+  smith: { domain: 'gosmithbears.com' },
+  salve: { domain: 'salveathletics.com' },
+  mit: { domain: 'mitathletics.com' },
+  emerson: { domain: 'emersonlions.com' },
+  coastguard: { domain: 'coastguardathletics.com' },
+  clark: { domain: 'clarkathletics.com' },
+  babson: { domain: 'babsonathletics.com' },
+  // Florida trip opponents
+  brockport: { domain: 'gobrockport.com', outDir: 'florida/brockport' },
+  ecsu: { domain: 'gowarriorathletics.com', outDir: 'florida/ecsu' },
+  macalester: {
+    domain: 'athletics.macalester.edu',
+    outDir: 'florida/macalester',
+  },
+  uwrf: { domain: 'uwrfsports.com', outDir: 'florida/uwrf' },
+  uww: { domain: 'uwwsports.com', outDir: 'florida/uww' },
+  wesleyan: { domain: 'athletics.wesleyan.edu', outDir: 'florida/wesleyan' },
+  framingham: {
+    domain: 'www.fsurams.com',
+    outDir: 'florida/framingham',
+    sportSlug: 'sball',
+  },
+  salemstate: {
+    domain: 'salemstatevikings.com',
+    outDir: 'florida/salemstate',
+    sportSlug: 'sball',
+  },
 };
 
 const HEADERS = {
@@ -514,27 +543,27 @@ async function main(): Promise<void> {
   const teamArg = parseTeamArg();
   const year = parseYearArg();
 
-  const teamsToScrape = teamArg ? { [teamArg]: TEAMS[teamArg] } : TEAMS;
-
   if (teamArg && !TEAMS[teamArg]) {
     console.error(`Unknown team: ${teamArg}`);
     process.exit(1);
   }
 
+  const teamsToScrape = teamArg ? { [teamArg]: TEAMS[teamArg] } : TEAMS;
   const outDir = path.resolve(__dirname, '../public/data/opponents');
 
-  Object.entries(teamsToScrape).forEach(([slug]) => {
-    const teamDir = path.join(outDir, slug);
+  Object.entries(teamsToScrape).forEach(([slug, config]) => {
+    const teamDir = path.join(outDir, config.outDir ?? slug);
 
     if (!fs.existsSync(teamDir)) {
       fs.mkdirSync(teamDir, { recursive: true });
     }
   });
 
-  for (const [slug, domain] of Object.entries(teamsToScrape)) {
+  for (const [slug, config] of Object.entries(teamsToScrape)) {
     console.log(`\n── ${slug} (${year}) ──`);
 
-    const url = `https://${domain}/sports/softball/stats/${year}`;
+    const sport = config.sportSlug ?? 'softball';
+    const url = `https://${config.domain}/sports/${sport}/stats/${year}`;
     const html = await fetchPage(url);
 
     if (!html) {
@@ -553,7 +582,7 @@ async function main(): Promise<void> {
 
     const output = {
       slug,
-      domain,
+      domain: config.domain,
       scrapedAt: new Date().toISOString(),
       year,
       hitting,
@@ -561,7 +590,7 @@ async function main(): Promise<void> {
       fielding,
     };
 
-    const teamDir = path.join(outDir, slug);
+    const teamDir = path.join(outDir, config.outDir ?? slug);
     const filename =
       year === new Date().getFullYear()
         ? 'season-stats.json'

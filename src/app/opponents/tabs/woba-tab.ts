@@ -9,7 +9,11 @@ import { PlayerTable } from '../player-table/player-table';
 @Component({
   selector: 'ws-woba-tab',
   standalone: true,
-  imports: [PlayerTable, PlayerCardList, WobaLegend],
+  imports: [
+    PlayerTable,
+    PlayerCardList,
+    WobaLegend,
+  ],
   host: { class: 'flex flex-col gap-4' },
   template: `
     <ws-woba-legend />

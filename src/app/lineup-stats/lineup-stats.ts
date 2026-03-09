@@ -19,7 +19,12 @@ import { BaseRunnerTable, GameViewer } from '@ws/core/ui';
 @Component({
   selector: 'ws-lineup-stats',
   standalone: true,
-  imports: [BaseRunnerTable, CommonModule, FormsModule, GameViewer],
+  imports: [
+    BaseRunnerTable,
+    CommonModule,
+    FormsModule,
+    GameViewer,
+  ],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

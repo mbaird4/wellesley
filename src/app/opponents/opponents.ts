@@ -8,7 +8,10 @@ import { FLORIDA_TEAMS, OPPONENT_TEAMS } from './teams';
 @Component({
   selector: 'ws-opponents',
   standalone: true,
-  imports: [RouterOutlet, TeamSelector],
+  imports: [
+    RouterOutlet,
+    TeamSelector,
+  ],
   host: { class: 'block stats-section' },
   templateUrl: './opponents.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

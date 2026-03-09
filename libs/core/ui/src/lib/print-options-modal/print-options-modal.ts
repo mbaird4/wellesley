@@ -34,6 +34,7 @@ export class PrintOptionsModal {
   private readonly destroyRef = inject(DestroyRef);
 
   readonly players = input<PrintPlayerSummary[]>([]);
+  readonly years = input<string[]>([]);
 
   readonly dugout = signal(true);
   readonly coach = signal(true);

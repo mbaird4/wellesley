@@ -131,12 +131,16 @@ export class OpponentDataService {
         })
       );
 
-      const playerTeamGames = sortedSeasons.reduce(
-        (sum, s) => sum + (gpByYear[String(s.year)] ?? 0),
-        0
-      );
+      // Use the most recent season's PA rate for tier classification
+      // so early-season players aren't penalized by accumulated historical games
+      const latestSeason = sortedSeasons[sortedSeasons.length - 1] as
+        | (typeof sortedSeasons)[number]
+        | undefined;
+      const latestTeamGames = latestSeason
+        ? (gpByYear[String(latestSeason.year)] ?? 0)
+        : 0;
       const paPerGame =
-        playerTeamGames > 0 ? player.career.pa / playerTeamGames : 0;
+        latestTeamGames > 0 ? latestSeason!.pa / latestTeamGames : 0;
       const tier: PlayerTier = paPerGame >= 2 ? 'regular' : 'reserve';
 
       return {
@@ -194,11 +198,7 @@ export class OpponentDataService {
   });
 
   readonly empty = computed(
-    () =>
-      this.regulars().length === 0 &&
-      this.reserves().length === 0 &&
-      !this.loading() &&
-      !this.error()
+    () => this.displayRows().length === 0 && !this.loading() && !this.error()
   );
 
   constructor() {

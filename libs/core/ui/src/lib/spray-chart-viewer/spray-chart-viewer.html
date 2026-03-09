@@ -14,7 +14,7 @@
     {{ emptyMessage() }}
   </div>
 } @else {
-  @if (teamData()) {
+  @if (teamData() && viewMode() === 'combined') {
     <!-- Print views (visible in print, or when preview toggled in dev) -->
     <div [class]="printPreview() ? 'print-preview' : ''">
       @if (printDugout()) {
@@ -39,6 +39,7 @@
     @if (showPrintModal()) {
       <ws-print-options-modal
         [players]="allPlayerSummaries()"
+        [years]="selectedYears()"
         (confirmed)="onPrintConfirm($event)"
         (dismissed)="onPrintCancel()"
       />
@@ -64,7 +65,7 @@
       class="shrink-0"
     />
 
-    @if (teamData()) {
+    @if (teamData() && viewMode() === 'combined') {
       <button
         class="border-line-strong bg-surface-elevated text-content-muted cursor-pointer rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors hover:text-white print:hidden"
         (click)="onPrint()"

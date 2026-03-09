@@ -16,7 +16,12 @@ import type {
   SprayZone,
   Team,
 } from '@ws/core/models';
-import { buildDisplayJerseyMap, computeSprayZones } from '@ws/core/processors';
+import type { RosterPlayer } from '@ws/core/models';
+import {
+  buildDisplayJerseyMap,
+  calculateWoba,
+  computeSprayZones,
+} from '@ws/core/processors';
 import { BreakpointService } from '@ws/core/util';
 
 import {
@@ -68,6 +73,62 @@ function latestSeasonPa(team: Team | null, jersey: number): number {
   }
 
   return rp.seasons.reduce((best, s) => (s.year > best.year ? s : best)).pa;
+}
+
+function aggregateStats(
+  rp: RosterPlayer,
+  years: number[]
+): {
+  avg: number;
+  woba: number;
+  pa: number;
+  sb: number;
+  gp: number;
+  sh: number;
+} {
+  const seasons = rp.seasons.filter((s) => years.includes(s.year));
+
+  if (seasons.length === 0) {
+    return { avg: 0, woba: 0, pa: 0, sb: 0, gp: 0, sh: 0 };
+  }
+
+  const t = seasons.reduce(
+    (a, s) => ({
+      ab: a.ab + s.ab,
+      h: a.h + s.h,
+      doubles: a.doubles + s.doubles,
+      triples: a.triples + s.triples,
+      hr: a.hr + s.hr,
+      bb: a.bb + s.bb,
+      hbp: a.hbp + s.hbp,
+      sf: a.sf + s.sf,
+      sh: a.sh + s.sh,
+      sb: a.sb + s.sb,
+      gp: a.gp + s.gp,
+    }),
+    {
+      ab: 0,
+      h: 0,
+      doubles: 0,
+      triples: 0,
+      hr: 0,
+      bb: 0,
+      hbp: 0,
+      sf: 0,
+      sh: 0,
+      sb: 0,
+      gp: 0,
+    }
+  );
+
+  return {
+    avg: t.ab > 0 ? t.h / t.ab : 0,
+    woba: calculateWoba(t),
+    pa: t.ab + t.bb + t.hbp + t.sf + t.sh,
+    sb: t.sb,
+    gp: t.gp,
+    sh: t.sh,
+  };
 }
 
 @Component({
@@ -257,18 +318,17 @@ export class SprayChartViewer {
   );
 
   readonly allPlayerSummaries = computed(() => {
-    const allData = this.selectedYears().flatMap(
-      (y) => this.dataByYear().get(Number(y)) ?? []
-    );
+    const years = this.selectedYears().map(Number);
+    const allData = years.flatMap((y) => this.dataByYear().get(y) ?? []);
     const ef = this.effectiveFilters();
     const team = this.teamData();
-
     const jerseyMap = this.jerseyMap();
 
     return this.rosteredPlayers()
       .map((name) => {
         const jersey = jerseyMap[name];
         const rp = team?.players.find((p) => p.jerseyNumber === jersey);
+        const stats = rp ? aggregateStats(rp, years) : null;
 
         return {
           name,
@@ -276,12 +336,12 @@ export class SprayChartViewer {
           summary: computeSprayZones(allData, { ...ef, playerName: name }),
           bats: rp?.bats,
           position: rp?.position,
-          avg: rp?.career.avg,
-          woba: rp?.career.woba,
-          pa: rp?.career.pa,
-          sb: rp?.career.sb,
-          gp: rp?.career.gp,
-          sh: rp?.career.sh,
+          avg: stats?.avg,
+          woba: stats?.woba,
+          pa: stats?.pa,
+          sb: stats?.sb,
+          gp: stats?.gp,
+          sh: stats?.sh,
         };
       })
       .filter((p) => p.summary.totalContact > 0);

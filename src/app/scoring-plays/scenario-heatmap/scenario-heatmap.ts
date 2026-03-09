@@ -63,7 +63,11 @@ function intensityClass(count: number, maxCount: number): string {
 @Component({
   selector: 'ws-scenario-heatmap',
   standalone: true,
-  imports: [DecimalPipe, FormatSituationPipe, FormatOutsPipe],
+  imports: [
+    DecimalPipe,
+    FormatSituationPipe,
+    FormatOutsPipe,
+  ],
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

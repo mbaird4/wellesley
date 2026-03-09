@@ -8,7 +8,7 @@ import { SeasonStats } from '../season-stats/season-stats';
   standalone: true,
   imports: [SeasonStats],
   host: { class: 'block' },
-  template: `<ws-season-stats [slug]="data.slug()" />`,
+  template: `<ws-season-stats [slug]="data.dataDir()" />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StatsTab {
