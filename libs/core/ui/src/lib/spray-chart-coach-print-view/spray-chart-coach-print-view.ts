@@ -101,7 +101,7 @@ export class SprayChartCoachPrintView {
     return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
   });
 
-  readonly noteLines = Array.from({ length: 6 }, (_, i) => i + 1);
+  readonly noteLines = Array.from({ length: 4 }, (_, i) => i + 1);
 
   readonly rows = computed<CoachRow[]>(() =>
     this.players().map((p) => {
@@ -144,7 +144,8 @@ export class SprayChartCoachPrintView {
           avg: z.battingAvg.toFixed(3).replace(/^0/, ''),
           pct: `${(z.pct * 100).toFixed(0)}%`,
         };
-      });
+      })
+      .slice(0, 5);
   }
 
   private buildStats(p: PrintPlayerSummary): StatCell[] {
@@ -189,6 +190,16 @@ export class SprayChartCoachPrintView {
         label: 'RBI',
         value: p.rbi !== undefined ? String(p.rbi) : '—',
         flagged: hasRates && rbiRate >= HIGH_RBI_RATE,
+      },
+      {
+        label: 'SB',
+        value:
+          p.sb !== undefined && p.sbAtt !== undefined
+            ? `${p.sb}/${p.sbAtt}`
+            : p.sb !== undefined
+              ? String(p.sb)
+              : '—',
+        flagged: false,
       },
     ];
   }
@@ -272,6 +283,6 @@ export class SprayChartCoachPrintView {
       });
     }
 
-    return callouts;
+    return callouts.slice(0, 5);
   }
 }

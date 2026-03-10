@@ -83,6 +83,7 @@ function aggregateStats(
   woba: number;
   pa: number;
   sb: number;
+  sbAtt: number;
   gp: number;
   sh: number;
   slg: number;
@@ -114,6 +115,7 @@ function aggregateStats(
       doubles: 0,
       triples: 0,
       hr: 0,
+      sbAtt: 0,
     };
   }
 
@@ -129,6 +131,7 @@ function aggregateStats(
       sf: a.sf + s.sf,
       sh: a.sh + s.sh,
       sb: a.sb + s.sb,
+      sbAtt: a.sbAtt + s.sbAtt,
       gp: a.gp + s.gp,
       so: a.so + s.so,
       rbi: a.rbi + s.rbi,
@@ -144,6 +147,7 @@ function aggregateStats(
       sf: 0,
       sh: 0,
       sb: 0,
+      sbAtt: 0,
       gp: 0,
       so: 0,
       rbi: 0,
@@ -157,6 +161,7 @@ function aggregateStats(
     woba: calculateWoba(t),
     pa: t.ab + t.bb + t.hbp + t.sf + t.sh,
     sb: t.sb,
+    sbAtt: t.sbAtt,
     gp: t.gp,
     sh: t.sh,
     slg: t.ab > 0 ? tb / t.ab : 0,
@@ -380,6 +385,7 @@ export class SprayChartViewer {
           woba: stats?.woba,
           pa: stats?.pa,
           sb: stats?.sb,
+          sbAtt: stats?.sbAtt,
           gp: stats?.gp,
           sh: stats?.sh,
           slg: stats?.slg,

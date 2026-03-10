@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="grid grid-cols-2 gap-x-6 gap-y-2">
+<div class="grid grid-cols-2 gap-x-4 gap-y-2">
   @for (row of rows(); track row.name) {
     <div
       class="flex min-h-64 break-inside-avoid flex-col justify-between gap-1.5 pb-3 text-[13px] print:text-black"
@@ -52,49 +52,53 @@
         </div>
 
         <!-- Body: spray chart left, zones + notable right -->
-        <div class="flex gap-3">
+        <div class="flex gap-2">
           <!-- Spray chart -->
-          <div class="w-56 shrink-0">
+          <div class="w-40 shrink-0">
             <ws-spray-field
               [zones]="row.summary.zones"
               [highlightZone]="null"
             />
           </div>
 
-          <!-- Zones side-by-side with Notable -->
-          <div class="flex min-w-0 flex-1 gap-4 text-xs">
-            <!-- Spray zones -->
-            <div class="flex flex-1 flex-col">
-              <span
-                class="text-[11px] font-semibold tracking-wide text-gray-400 uppercase"
-              >
-                Zones (3+ BIP)
-              </span>
-              @for (z of row.zones; track z.label) {
-                <span class="font-medium tabular-nums">
-                  {{ z.label }}: {{ z.total }} BIP · {{ z.hard }} hard,
-                  {{ z.weak }} weak · {{ z.avg }} AVG
+          <!-- Zones stacked with Notable -->
+          <div class="flex min-w-0 flex-1 flex-col gap-0.5 text-xs">
+            @if (row.zones.length > 0) {
+              <!-- Spray zones -->
+              <div class="flex flex-col">
+                <span
+                  class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+                >
+                  Zones (3+ BIP)
                 </span>
-              }
-            </div>
+                @for (z of row.zones; track z.label) {
+                  <span class="font-medium tabular-nums">
+                    {{ z.label }}: {{ z.total }} BIP · {{ z.hard }} hard,
+                    {{ z.weak }} weak · {{ z.avg }} AVG
+                  </span>
+                }
+              </div>
+            }
 
             <!-- Notable -->
-            <div class="flex flex-1 flex-col">
-              <span
-                class="text-[11px] font-semibold tracking-wide text-gray-400 uppercase"
-              >
-                Notable
-              </span>
-              @for (c of row.callouts; track c.text) {
-                <span class="font-medium">{{ c.icon }} {{ c.text }}</span>
-              }
-            </div>
+            @if (row.callouts.length > 0) {
+              <div class="flex flex-col">
+                <span
+                  class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+                >
+                  Notable
+                </span>
+                @for (c of row.callouts; track c.text) {
+                  <span class="font-medium">{{ c.icon }} {{ c.text }}</span>
+                }
+              </div>
+            }
           </div>
         </div>
       </div>
 
       <!-- Notes area for handwriting -->
-      <div class="flex flex-col gap-4 pt-1">
+      <div class="flex flex-col gap-3 pt-1">
         <span
           class="text-[11px] font-semibold tracking-wide text-gray-400 uppercase"
         >

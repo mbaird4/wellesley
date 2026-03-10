@@ -14,6 +14,7 @@ export interface PrintPlayerSummary {
   woba?: number;
   pa?: number;
   sb?: number;
+  sbAtt?: number;
   gp?: number;
   sh?: number;
   slg?: number;

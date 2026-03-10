@@ -804,7 +804,9 @@
 
   /* Dev-only: visual boundary for print preview */
   .print-preview {
-    @apply rounded-lg border-2 border-dashed border-amber-400 bg-white p-4;
+    @apply mx-auto rounded-lg border-2 border-dashed border-amber-400 bg-white p-4;
+    /* Match actual print page width: 8.5in - 2×0.3in margins */
+    width: 7.9in;
   }
 
   /* ── CDK Drag & Drop ── */
