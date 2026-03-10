@@ -30,6 +30,7 @@ const ZONE_LABELS: Record<SprayZone, string> = {
 };
 
 const MIN_ZONE_BALLS = 3;
+const MIN_PA_FOR_CALLOUTS = 12;
 const MIN_PA_FOR_RATES = 20;
 const SB_THREAT_RATE = 0.3;
 const BUNTER_MIN_SH = 3;
@@ -194,6 +195,11 @@ export class SprayChartCoachPrintView {
 
   private buildCallouts(p: PrintPlayerSummary): Callout[] {
     const pa = p.pa ?? 0;
+
+    if (pa < MIN_PA_FOR_CALLOUTS) {
+      return [];
+    }
+
     const gp = p.gp ?? 0;
     const hasRates = pa >= MIN_PA_FOR_RATES;
     const callouts: Callout[] = [];
