@@ -16,7 +16,15 @@
 } @else {
   @if (teamData() && viewMode() === 'combined') {
     <!-- Print views (visible in print, or when preview toggled in dev) -->
-    <div [class]="printPreview() ? 'print-preview' : ''">
+    <div class="relative" [class]="printPreview() ? 'print-preview' : ''">
+      @if (printPreview()) {
+        <button
+          class="absolute top-0 right-0 text-2xl text-[black]"
+          (click)="printPreview.set(false)"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      }
       @if (printDugout()) {
         <ws-spray-chart-print-view
           [players]="printPlayers()"
