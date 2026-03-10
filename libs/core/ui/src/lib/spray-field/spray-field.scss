@@ -42,10 +42,8 @@
 }
 
 @media print {
-  .foul-line,
-  .field-line,
   .divider {
-    stroke: #333 !important;
+    opacity: 1;
   }
 }
 

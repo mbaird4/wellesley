@@ -81,18 +81,18 @@
     class="home-plate"
   />
 
-  <!-- Outfield zone labels -->
+  <!-- Outfield zone labels (always show name, count/detail only when data) -->
   @for (z of ofZones; track z.zone) {
+    <text
+      [attr.x]="z.labelX"
+      [attr.y]="z.labelY - 10"
+      [attr.fill]="zoneLabelFill(z.zone)"
+      [attr.text-anchor]="zoneLabelAnchor(z.zone)"
+      class="zone-label"
+    >
+      {{ zoneLabel(z.zone) }}
+    </text>
     @if (zoneCount(z.zone)) {
-      <text
-        [attr.x]="z.labelX"
-        [attr.y]="z.labelY - 10"
-        [attr.fill]="zoneLabelFill(z.zone)"
-        [attr.text-anchor]="zoneLabelAnchor(z.zone)"
-        class="zone-label"
-      >
-        {{ zoneLabel(z.zone) }}
-      </text>
       <text
         [attr.x]="z.labelX"
         [attr.y]="z.labelY + 6"
@@ -114,17 +114,17 @@
     }
   }
 
-  <!-- Infield zone labels -->
+  <!-- Infield zone labels (always show name) -->
   @for (z of ifZones; track z.zone) {
+    <text
+      [attr.x]="z.labelX"
+      [attr.y]="z.labelY - 4"
+      [attr.fill]="zoneLabelFill(z.zone)"
+      class="zone-label zone-label-sm"
+    >
+      {{ zoneLabel(z.zone) }}
+    </text>
     @if (zoneCount(z.zone)) {
-      <text
-        [attr.x]="z.labelX"
-        [attr.y]="z.labelY - 4"
-        [attr.fill]="zoneLabelFill(z.zone)"
-        class="zone-label zone-label-sm"
-      >
-        {{ zoneLabel(z.zone) }}
-      </text>
       <text
         [attr.x]="z.labelX"
         [attr.y]="z.labelY + 10"
@@ -136,7 +136,7 @@
     }
   }
 
-  <!-- Plate zone labels (count only) -->
+  <!-- Plate zone labels (count only when data) -->
   @for (z of plateZones; track z.zone) {
     @if (zoneCount(z.zone)) {
       <text
