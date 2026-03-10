@@ -1,7 +1,7 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-09T17:27:59.093Z",
+  "scrapedAt": "2026-03-10T11:28:05.086Z",
   "year": 2026,
   "teamGames": 4,
   "players": [
@@ -216,41 +216,6 @@
       }
     },
     {
-      "name": "Kayla Nuehlen",
-      "jerseyNumber": 8,
-      "classYear": "Senior",
-      "position": "Infielder",
-      "bats": "R",
-      "season": {
-        "year": 2026,
-        "name": "Nuehlen, Kayla",
-        "avg": 0,
-        "ops": 0,
-        "gp": 4,
-        "gs": 3,
-        "ab": 5,
-        "r": 0,
-        "h": 0,
-        "doubles": 0,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 0,
-        "tb": 0,
-        "slg": 0,
-        "bb": 0,
-        "hbp": 0,
-        "so": 3,
-        "gdp": 0,
-        "obp": 0,
-        "sf": 0,
-        "sh": 1,
-        "sb": 0,
-        "sbAtt": 0,
-        "woba": 0,
-        "pa": 6
-      }
-    },
-    {
       "name": "Casey Yacovelli",
       "jerseyNumber": 17,
       "classYear": "First Year",
@@ -388,6 +353,41 @@
         "sbAtt": 0,
         "woba": 0.077,
         "pa": 13
+      }
+    },
+    {
+      "name": "Kayla Nuehlen",
+      "jerseyNumber": 8,
+      "classYear": "Senior",
+      "position": "Infielder",
+      "bats": "R",
+      "season": {
+        "year": 2026,
+        "name": "Nuehlen, Kayla",
+        "avg": 0,
+        "ops": 0,
+        "gp": 4,
+        "gs": 3,
+        "ab": 5,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 3,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 1,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 6
       }
     }
   ]
