@@ -16,7 +16,7 @@
 <div class="grid grid-cols-2 gap-x-6 gap-y-2">
   @for (row of rows(); track row.name) {
     <div
-      class="flex min-h-64 break-inside-avoid flex-col gap-1.5 pb-3 text-[13px] print:text-black justify-between"
+      class="flex min-h-64 break-inside-avoid flex-col justify-between gap-1.5 pb-3 text-[13px] print:text-black"
     >
       <div class="flex flex-col">
         <!-- Player header -->
@@ -55,7 +55,10 @@
         <div class="flex gap-3">
           <!-- Spray chart -->
           <div class="w-56 shrink-0">
-            <ws-spray-field [zones]="row.summary.zones" [highlightZone]="null" />
+            <ws-spray-field
+              [zones]="row.summary.zones"
+              [highlightZone]="null"
+            />
           </div>
 
           <!-- Zones side-by-side with Notable -->

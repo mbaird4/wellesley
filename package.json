@@ -67,6 +67,7 @@
     "jest-environment-jsdom": "^30.0.2",
     "jest-preset-angular": "~16.0.0",
     "jest-util": "^30.0.2",
+    "lint-staged": "^16.3.3",
     "nx": "22.5.1",
     "prettier": "~3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.2",
@@ -76,6 +77,10 @@
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0"
+  },
+  "lint-staged": {
+    "*.{ts,html,json,scss,css,md}": "prettier --write",
+    "*.ts": "eslint --fix"
   },
   "nx": {
     "includedScripts": []
