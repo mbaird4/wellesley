@@ -67,6 +67,14 @@ export class SoftballDataService {
     return from(this.fetchResolvedBattingData(year));
   }
 
+  getScrapedAt(year: number): Observable<string> {
+    return from(
+      this.fetchJson<{ scrapedAt: string }>(dataPath('batting-stats', year))
+        .then((d) => d.scrapedAt ?? '')
+        .catch(() => '')
+    );
+  }
+
   /** Cached game data fetch — used by both getGameData and getRoster. */
   fetchGameDataCached(year: number): Promise<GameData[]> {
     let cached = this.gameDataCache.get(year);

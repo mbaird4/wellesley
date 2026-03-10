@@ -18,6 +18,11 @@
       {{ year }}
     </button>
   }
+  @if (scrapedAt()) {
+    <span class="text-content-dim ml-1 text-xs">
+      {{ scrapedAt() | lastUpdated }}
+    </span>
+  }
 </div>
 
 @if (error()) {

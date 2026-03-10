@@ -11,6 +11,7 @@ import {
   toJerseyMap,
   type YearPitchingData,
 } from '@ws/core/models';
+import { LastUpdatedPipe } from '@ws/core/ui';
 import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
@@ -21,7 +22,10 @@ const YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 @Component({
   selector: 'ws-pitching',
   standalone: true,
-  imports: [PitcherAnalysis],
+  imports: [
+    LastUpdatedPipe,
+    PitcherAnalysis,
+  ],
   host: { class: 'block stats-section' },
   templateUrl: './pitching.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

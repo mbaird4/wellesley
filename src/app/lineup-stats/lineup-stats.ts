@@ -14,7 +14,7 @@ import type {
   GameWithSnapshots,
   ResultRow,
 } from '@ws/core/models';
-import { BaseRunnerTable, GameViewer } from '@ws/core/ui';
+import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-lineup-stats',
@@ -24,6 +24,7 @@ import { BaseRunnerTable, GameViewer } from '@ws/core/ui';
     CommonModule,
     FormsModule,
     GameViewer,
+    LastUpdatedPipe,
   ],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
@@ -40,6 +41,7 @@ export class LineupStats {
   expandedGame: number | null = null;
   loading = false;
   error: string | null = null;
+  scrapedAt: string | null = null;
   totalPlateAppearances = 0;
   selectedYear = 2025;
   availableYears: number[] = [];
@@ -60,10 +62,12 @@ export class LineupStats {
     this.baseRunnerStats = [];
     this.baseRunnerStatsAtBatStart = [];
     this.expandedGame = null;
+    this.scrapedAt = null;
     this.totalPlateAppearances = 0;
 
     this.statsService.getStats(this.selectedYear).subscribe({
       next: (stats) => {
+        this.scrapedAt = stats.scrapedAt || null;
         this.results = stats.totals;
         this.games = stats.games;
         this.baseRunnerStats = stats.baseRunnerStats;

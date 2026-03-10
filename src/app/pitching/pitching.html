@@ -1,3 +1,11 @@
+@if (pitchingData()?.scrapedAt; as scrapedAt) {
+  <div class="mb-2 flex">
+    <span class="text-content-dim text-xs">
+      {{ scrapedAt | lastUpdated }}
+    </span>
+  </div>
+}
+
 <ws-pitcher-analysis
   [pitchingData]="pitchingData()"
   [rosterNames]="rosterNames()"

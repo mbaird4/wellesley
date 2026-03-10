@@ -16,7 +16,7 @@ import {
   tierClass,
   wobaGradientStyle,
 } from '@ws/core/processors';
-import { WobaLegend } from '@ws/core/ui';
+import { LastUpdatedPipe, WobaLegend } from '@ws/core/ui';
 
 export interface TeamGameColumn {
   date: string;
@@ -38,7 +38,12 @@ export interface TeamPlayerRow {
 @Component({
   selector: 'ws-woba',
   standalone: true,
-  imports: [CommonModule, FormsModule, WobaLegend],
+  imports: [
+    CommonModule,
+    FormsModule,
+    LastUpdatedPipe,
+    WobaLegend,
+  ],
   host: {
     class: 'block stats-section',
   },
@@ -51,6 +56,7 @@ export class Woba {
 
   loading = false;
   error: string | null = null;
+  scrapedAt: string | null = null;
   selectedYear = 2025;
   availableYears = [
     2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
@@ -80,11 +86,13 @@ export class Woba {
     this.cumulativeWobas = [];
     this.cumulativeByName = new Map();
     this.expandedPlayer = null;
+    this.scrapedAt = null;
     this.teamGameColumns = [];
     this.teamPlayerRows = [];
 
     this.dataService.getWellesleyBattingData(this.selectedYear).subscribe({
       next: (data) => {
+        this.scrapedAt = data.scrapedAt ?? null;
         const seasonStats = data.players.map((p) => p.season);
         const boxscores = data.boxscores ?? [];
         this.playerWobas = computePlayerSeasonWobas(seasonStats);

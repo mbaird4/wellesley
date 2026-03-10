@@ -16,6 +16,11 @@
       <option [value]="year">{{ year }}</option>
     }
   </select>
+  @if (scrapedAt) {
+    <span class="text-content-dim text-xs">
+      {{ scrapedAt | lastUpdated }}
+    </span>
+  }
 </div>
 
 @if (error) {

@@ -14,7 +14,7 @@ import type {
   ScoringPlaySummary,
   StolenBaseSummary,
 } from '@ws/core/models';
-import { SITUATION_LABELS } from '@ws/core/ui';
+import { LastUpdatedPipe, SITUATION_LABELS } from '@ws/core/ui';
 
 import { ByGameTab } from './by-game-tab/by-game-tab';
 import { ByPlayerTab } from './by-player-tab/by-player-tab';
@@ -61,6 +61,7 @@ const SITUATION_ORDER: BaseSituation[] = [
   imports: [
     ByGameTab,
     ByPlayerTab,
+    LastUpdatedPipe,
     SummaryTab,
   ],
   templateUrl: './scoring-plays.html',
@@ -72,6 +73,7 @@ export class ScoringPlays {
 
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
+  readonly scrapedAt = signal<string | null>(null);
   readonly selectedYear = signal(2025);
   readonly activeTab = signal<ScoringTab>('summary');
 
@@ -229,6 +231,7 @@ export class ScoringPlays {
   loadData(): void {
     this.loading.set(true);
     this.error.set(null);
+    this.scrapedAt.set(null);
     this.seasonSummary.set(null);
     this.gameScoringPlays.set([]);
     this.sacBuntSummary.set(null);
@@ -238,6 +241,7 @@ export class ScoringPlays {
 
     this.statsService.getStats(this.selectedYear()).subscribe({
       next: (stats) => {
+        this.scrapedAt.set(stats.scrapedAt || null);
         this.seasonSummary.set(stats.seasonScoringPlays);
         this.gameScoringPlays.set(stats.gameScoringPlays);
         this.sacBuntSummary.set(stats.sacBuntSummary);
