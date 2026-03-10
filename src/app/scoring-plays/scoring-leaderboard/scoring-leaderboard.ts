@@ -1,10 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 
 export interface LeaderboardRow {
   name: string;
@@ -39,10 +33,7 @@ const DEFAULT_VISIBLE = 10;
       <tbody>
         @for (row of visibleRows(); track row.name; let i = $index) {
           <tr>
-            <td
-              class="w-8 text-center text-xs"
-              [class]="row.isLeader ? 'text-brand-text' : 'text-content-dim'"
-            >
+            <td class="w-8 text-center text-xs" [class]="row.isLeader ? 'text-brand-text' : 'text-content-dim'">
               {{ i + 1 }}
             </td>
             <td [class]="row.isLeader ? 'text-content-heading' : ''">
@@ -59,10 +50,7 @@ const DEFAULT_VISIBLE = 10;
     </table>
 
     @if (hasMore()) {
-      <button
-        class="text-content-dim hover:text-content-muted mt-2 cursor-pointer border-none bg-transparent text-sm font-medium transition-colors"
-        (click)="toggleShowAll()"
-      >
+      <button class="text-content-dim hover:text-content-muted mt-2 cursor-pointer border-none bg-transparent text-sm font-medium transition-colors" (click)="toggleShowAll()">
         @if (showAll()) {
           Show fewer
         } @else {

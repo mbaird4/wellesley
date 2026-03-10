@@ -18,15 +18,7 @@ export interface PlaySnapshot {
   scoringPlays: ScoringPlay[];
 }
 
-export type BaseSituation =
-  | 'empty'
-  | 'first'
-  | 'second'
-  | 'third'
-  | 'first_second'
-  | 'first_third'
-  | 'second_third'
-  | 'loaded';
+export type BaseSituation = 'empty' | 'first' | 'second' | 'third' | 'first_second' | 'first_third' | 'second_third' | 'loaded';
 
 /** [0-out count, 1-out count, 2-out count] */
 export type OutBreakdown = [number, number, number];

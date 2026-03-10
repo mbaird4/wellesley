@@ -1,20 +1,7 @@
-import type {
-  BaseRunners,
-  GameData,
-  GameState,
-  GameWithSnapshots,
-  PlaySnapshot,
-} from '@ws/core/models';
+import type { BaseRunners, GameData, GameState, GameWithSnapshots, PlaySnapshot } from '@ws/core/models';
 
-import {
-  classifyPlay,
-  getPlayerNameFromText,
-  processPlay,
-} from '../parsing/parse-play';
-import {
-  computeBaseRunnerStats,
-  computeBaseRunnerStatsAtBatStart,
-} from './base-runner-stats';
+import { classifyPlay, getPlayerNameFromText, processPlay } from '../parsing/parse-play';
+import { computeBaseRunnerStats, computeBaseRunnerStatsAtBatStart } from './base-runner-stats';
 import { extractScoringPlays } from './scoring-plays';
 
 function cloneBases(bases: BaseRunners): BaseRunners {
@@ -70,10 +57,7 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
         const isPA = playType === 'plate_appearance';
         const batterName = isPA ? getPlayerNameFromText(playText) : null;
         // If it was a PA, the batterIndex was incremented by processPlay
-        const lineupSlot =
-          isPA && gameState.batterIndex > batterIndexBefore
-            ? (batterIndexBefore % 9) + 1
-            : null;
+        const lineupSlot = isPA && gameState.batterIndex > batterIndexBefore ? (batterIndexBefore % 9) + 1 : null;
 
         // Learn batter names from PAs
         if (isPA && batterName) {
@@ -83,17 +67,7 @@ export function processGameWithSnapshots(game: GameData): GameWithSnapshots {
         const basesAfter = cloneBases(gameState.baseRunners);
         const outsAfter = gameState.outs;
 
-        const scoringPlays = extractScoringPlays(
-          playText,
-          playType,
-          basesBefore,
-          basesAfter,
-          outsBefore,
-          outsAfter,
-          inning.inning,
-          batterName,
-          lineupSlot
-        );
+        const scoringPlays = extractScoringPlays(playText, playType, basesBefore, basesAfter, outsBefore, outsAfter, inning.inning, batterName, lineupSlot);
 
         snapshots.push({
           playIndex,

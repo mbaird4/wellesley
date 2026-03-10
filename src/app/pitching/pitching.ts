@@ -1,16 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-  type OnInit,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, type OnInit, signal } from '@angular/core';
 import { mergePitchingYears, SoftballDataService } from '@ws/core/data';
-import {
-  type PitchingData,
-  toJerseyMap,
-  type YearPitchingData,
-} from '@ws/core/models';
+import { type PitchingData, toJerseyMap, type YearPitchingData } from '@ws/core/models';
 import { LastUpdatedPipe } from '@ws/core/ui';
 import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
@@ -44,11 +34,7 @@ export class Pitching implements OnInit {
   }
 
   private loadPitchingData(): void {
-    const requests = YEARS.map((year) =>
-      this.dataService
-        .getWellesleyPitchingData(year)
-        .pipe(catchError(() => of(null)))
-    );
+    const requests = YEARS.map((year) => this.dataService.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
 
     forkJoin(requests).subscribe({
       next: (results) => {

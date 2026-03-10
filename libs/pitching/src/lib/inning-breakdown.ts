@@ -1,23 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { PitcherInningStats } from '@ws/core/models';
-import {
-  battingAvgAgainst,
-  inningToNumber,
-  wobaAgainst,
-  wobaColorStyle,
-} from '@ws/core/processors';
+import { battingAvgAgainst, inningToNumber, wobaAgainst, wobaColorStyle } from '@ws/core/processors';
 import { SlideToggle } from '@ws/core/ui';
 
-import type {
-  InningsTableRow,
-  InningsTotalsRow,
-} from './pitcher-innings-table';
+import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 const EMPTY_STYLE: Record<string, string> = {};
@@ -45,9 +31,7 @@ export class InningBreakdown {
 
   readonly inningRows = computed<InningsTableRow[]>(() => {
     const showColors = this.colorCoding();
-    const entries = Array.from(this.byInning().values()).sort(
-      (a, b) => inningToNumber(a.inning) - inningToNumber(b.inning)
-    );
+    const entries = Array.from(this.byInning().values()).sort((a, b) => inningToNumber(a.inning) - inningToNumber(b.inning));
 
     return entries.map((inn) => {
       const avg = battingAvgAgainst(inn);

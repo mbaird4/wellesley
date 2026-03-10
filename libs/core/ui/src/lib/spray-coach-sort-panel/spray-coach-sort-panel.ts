@@ -1,25 +1,8 @@
 import type { CdkDragDrop } from '@angular/cdk/drag-drop';
-import {
-  CdkDrag,
-  CdkDragPlaceholder,
-  CdkDragPreview,
-  CdkDropList,
-  moveItemInArray,
-} from '@angular/cdk/drag-drop';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  effect,
-  input,
-  output,
-  signal,
-} from '@angular/core';
+import { CdkDrag, CdkDragPlaceholder, CdkDragPreview, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
+import { ChangeDetectionStrategy, Component, computed, effect, input, output, signal } from '@angular/core';
 
-import {
-  ButtonToggle,
-  type ToggleOption,
-} from '../button-toggle/button-toggle';
+import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 
 export type CoachSortMode = 'pa' | 'woba' | 'avg' | 'number';
@@ -31,22 +14,18 @@ const SORT_OPTIONS: ToggleOption[] = [
   { value: 'number', label: '#' },
 ];
 
-const SORT_FNS: Record<
-  CoachSortMode,
-  (a: PrintPlayerSummary, b: PrintPlayerSummary) => number
-> = {
+const SORT_FNS: Record<CoachSortMode, (a: PrintPlayerSummary, b: PrintPlayerSummary) => number> = {
   pa: (a, b) => (b.pa ?? 0) - (a.pa ?? 0),
   woba: (a, b) => (b.woba ?? 0) - (a.woba ?? 0),
   avg: (a, b) => (b.avg ?? 0) - (a.avg ?? 0),
   number: (a, b) => a.jersey - b.jersey,
 };
 
-const STAT_SORT_KEYS: Partial<Record<CoachSortMode, keyof PrintPlayerSummary>> =
-  {
-    pa: 'pa',
-    woba: 'woba',
-    avg: 'avg',
-  };
+const STAT_SORT_KEYS: Partial<Record<CoachSortMode, keyof PrintPlayerSummary>> = {
+  pa: 'pa',
+  woba: 'woba',
+  avg: 'avg',
+};
 
 interface StatCell {
   value: string;
@@ -127,11 +106,7 @@ export class SprayCoachSortPanel {
 
     return sorted.map((p) => ({
       player: p,
-      pa: cell(
-        p.pa !== undefined ? String(p.pa) : '—',
-        mode === 'pa',
-        p.pa ?? 0
-      ),
+      pa: cell(p.pa !== undefined ? String(p.pa) : '—', mode === 'pa', p.pa ?? 0),
       woba: cell(fmtAvg(p.woba), mode === 'woba', p.woba ?? 0),
       avg: cell(fmtAvg(p.avg), mode === 'avg', p.avg ?? 0),
     }));

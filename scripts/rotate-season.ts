@@ -41,8 +41,7 @@ const DELAY_MS = 500;
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities ──
@@ -154,10 +153,7 @@ function parseOpponentRoster($: cheerio.CheerioAPI): Record<string, number> {
     const lastName = nameParts.slice(1).join(' ') || '';
     const normalized = normalizeName(`${lastName}, ${firstName}`);
 
-    const jerseyText = $el
-      .find('.sidearm-roster-player-jersey-number')
-      .text()
-      .trim();
+    const jerseyText = $el.find('.sidearm-roster-player-jersey-number').text().trim();
     const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
     if (jerseyNumber !== null) {
@@ -180,9 +176,7 @@ async function main(): Promise<void> {
 
   console.log(`Season rotation: ${prevYear} → ${newYear}`);
   console.log(`4-year window: ${newYear - 3}–${newYear}`);
-  console.log(
-    `Oldest to keep: ${newYear - 3} (deleting ${oldestYear} and older)`
-  );
+  console.log(`Oldest to keep: ${newYear - 3} (deleting ${oldestYear} and older)`);
 
   if (dryRun) {
     console.log('DRY RUN — no files will be modified\n');
@@ -190,27 +184,11 @@ async function main(): Promise<void> {
 
   // 1. Rotate Wellesley data
   console.log('\n=== Rotating Wellesley data ===');
-  renameIfExists(
-    path.join(dataDir, 'gamedata.json'),
-    path.join(dataDir, `gamedata-${prevYear}.json`),
-    dryRun
-  );
-  renameIfExists(
-    path.join(dataDir, 'wobadata.json'),
-    path.join(dataDir, `wobadata-${prevYear}.json`),
-    dryRun
-  );
-  renameIfExists(
-    path.join(dataDir, 'pitching.json'),
-    path.join(dataDir, `pitching-${prevYear}.json`),
-    dryRun
-  );
+  renameIfExists(path.join(dataDir, 'gamedata.json'), path.join(dataDir, `gamedata-${prevYear}.json`), dryRun);
+  renameIfExists(path.join(dataDir, 'wobadata.json'), path.join(dataDir, `wobadata-${prevYear}.json`), dryRun);
+  renameIfExists(path.join(dataDir, 'pitching.json'), path.join(dataDir, `pitching-${prevYear}.json`), dryRun);
   writeFile(path.join(dataDir, 'gamedata.json'), '[]', dryRun);
-  writeFile(
-    path.join(dataDir, 'wobadata.json'),
-    JSON.stringify({ seasonStats: [], boxscores: [] }),
-    dryRun
-  );
+  writeFile(path.join(dataDir, 'wobadata.json'), JSON.stringify({ seasonStats: [], boxscores: [] }), dryRun);
   writeFile(
     path.join(dataDir, 'pitching.json'),
     JSON.stringify({
@@ -238,21 +216,9 @@ async function main(): Promise<void> {
     console.log(`\n  --- ${slug} ---`);
 
     // Archive current files
-    renameIfExists(
-      path.join(teamDir, 'batting-stats.json'),
-      path.join(teamDir, `batting-stats-${prevYear}.json`),
-      dryRun
-    );
-    renameIfExists(
-      path.join(teamDir, 'pitching.json'),
-      path.join(teamDir, `pitching-${prevYear}.json`),
-      dryRun
-    );
-    renameIfExists(
-      path.join(teamDir, 'gamedata.json'),
-      path.join(teamDir, `gamedata-${prevYear}.json`),
-      dryRun
-    );
+    renameIfExists(path.join(teamDir, 'batting-stats.json'), path.join(teamDir, `batting-stats-${prevYear}.json`), dryRun);
+    renameIfExists(path.join(teamDir, 'pitching.json'), path.join(teamDir, `pitching-${prevYear}.json`), dryRun);
+    renameIfExists(path.join(teamDir, 'gamedata.json'), path.join(teamDir, `gamedata-${prevYear}.json`), dryRun);
 
     // Create empty current-year files (per-year format)
     writeFile(
@@ -300,16 +266,12 @@ async function main(): Promise<void> {
       const $ = cheerio.load(wellesleyHtml);
       const roster = parseWellesleyRoster($);
       const rosterPath = path.join(dataDir, 'roster.json');
-      const existingRoster: Record<string, number> = fs.existsSync(rosterPath)
-        ? JSON.parse(fs.readFileSync(rosterPath, 'utf-8'))
-        : {};
+      const existingRoster: Record<string, number> = fs.existsSync(rosterPath) ? JSON.parse(fs.readFileSync(rosterPath, 'utf-8')) : {};
       const existingCount = Object.keys(existingRoster).length;
       const newCount = Object.keys(roster).length;
 
       fs.writeFileSync(rosterPath, JSON.stringify(roster));
-      console.log(
-        `  Wrote ${rosterPath} (${newCount} players, was ${existingCount})`
-      );
+      console.log(`  Wrote ${rosterPath} (${newCount} players, was ${existingCount})`);
 
       if (newCount !== existingCount) {
         console.log('  ↑ Roster appears updated');
@@ -338,9 +300,7 @@ async function main(): Promise<void> {
       fs.mkdirSync(teamDir, { recursive: true });
       const rosterPath = path.join(teamDir, 'roster.json');
       fs.writeFileSync(rosterPath, JSON.stringify(roster));
-      console.log(
-        `    Wrote ${rosterPath} (${Object.keys(roster).length} players)`
-      );
+      console.log(`    Wrote ${rosterPath} (${Object.keys(roster).length} players)`);
     }
   }
 

@@ -1,21 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  inject,
-  input,
-  signal,
-} from '@angular/core';
-import type {
-  PitcherGameLog,
-  PitcherSeasonSummary,
-  PitchingData,
-} from '@ws/core/models';
-import {
-  computePitcherGameLog,
-  computePitcherSeasonSummary,
-  trackPitcherPerformance,
-} from '@ws/core/processors';
+import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
+import type { PitcherGameLog, PitcherSeasonSummary, PitchingData } from '@ws/core/models';
+import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
 import { StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 
@@ -90,12 +75,7 @@ export class PitcherAnalysis {
     const pitchers = data.pitchingStatsByYear[String(latestYear)] ?? [];
 
     // Filter to only pitchers still on the roster (if roster data available)
-    const filtered =
-      roster.size > 0
-        ? pitchers.filter((p) =>
-            roster.has(p.name.toLowerCase().replace(/\./g, ''))
-          )
-        : pitchers;
+    const filtered = roster.size > 0 ? pitchers.filter((p) => roster.has(p.name.toLowerCase().replace(/\./g, ''))) : pitchers;
 
     return filtered.map((p) => ({
       name: p.name,
@@ -153,9 +133,7 @@ export class PitcherAnalysis {
     }
 
     // "all" — aggregate stats across all years
-    const yearEntries = Object.values(data.pitchingStatsByYear).flatMap(
-      (stats) => stats.filter((p) => p.name === pitcher)
-    );
+    const yearEntries = Object.values(data.pitchingStatsByYear).flatMap((stats) => stats.filter((p) => p.name === pitcher));
 
     if (yearEntries.length === 0) {
       return null;
@@ -202,8 +180,7 @@ export class PitcherAnalysis {
       return acc + whole * 3 + frac;
     }, 0);
     const trueIp = totalThirds / 3;
-    const era =
-      trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
+    const era = trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
     const displayIp = Math.floor(totalThirds / 3) + (totalThirds % 3) * 0.1;
 
     return {
@@ -225,8 +202,7 @@ export class PitcherAnalysis {
     }
 
     // Filter games by selected year
-    const games =
-      year === 'all' ? data.games : data.games.filter((g) => g.year === year);
+    const games = year === 'all' ? data.games : data.games.filter((g) => g.year === year);
 
     // Track pitcher performance across filtered games
     const allGameLogs: PitcherGameLog[] = [];

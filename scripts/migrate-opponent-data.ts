@@ -14,23 +14,10 @@ import * as path from 'path';
 
 const CURRENT_YEAR = new Date().getFullYear();
 
-const TEAMS = [
-  'babson',
-  'clark',
-  'coastguard',
-  'emerson',
-  'mit',
-  'salve',
-  'smith',
-  'springfield',
-  'wheaton',
-  'wpi',
-];
+const TEAMS = ['babson', 'clark', 'coastguard', 'emerson', 'mit', 'salve', 'smith', 'springfield', 'wheaton', 'wpi'];
 
 function battingFilename(year: number): string {
-  return year === CURRENT_YEAR
-    ? 'batting-stats.json'
-    : `batting-stats-${year}.json`;
+  return year === CURRENT_YEAR ? 'batting-stats.json' : `batting-stats-${year}.json`;
 }
 
 function pitchingFilename(year: number): string {

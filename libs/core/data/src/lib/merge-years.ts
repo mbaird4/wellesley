@@ -1,16 +1,4 @@
-import type {
-  BatHand,
-  CareerStats,
-  GamePbP,
-  PitchingData,
-  PitchingStats,
-  Roster,
-  RosterPlayer,
-  SeasonStats,
-  Team,
-  YearBattingData,
-  YearPitchingData,
-} from '@ws/core/models';
+import type { BatHand, CareerStats, GamePbP, PitchingData, PitchingStats, Roster, RosterPlayer, SeasonStats, Team, YearBattingData, YearPitchingData } from '@ws/core/models';
 import { calculateWoba } from '@ws/core/processors';
 
 /**
@@ -45,10 +33,7 @@ function displayNameToRosterKey(name: string): string {
  * If a roster is provided, players on the roster but missing from batting data
  * are included with empty stats so the full team is visible.
  */
-export function mergeBattingYears(
-  years: YearBattingData[],
-  roster?: Roster | null
-): Team {
+export function mergeBattingYears(years: YearBattingData[], roster?: Roster | null): Team {
   if (years.length === 0 && !roster) {
     return { slug: '', domain: '', scrapedAt: '', players: [] };
   }
@@ -99,9 +84,7 @@ export function mergeBattingYears(
 
   // Add roster players missing from batting data
   if (roster) {
-    const existingKeys = new Set(
-      Array.from(playerMap.keys()).map(displayNameToRosterKey)
-    );
+    const existingKeys = new Set(Array.from(playerMap.keys()).map(displayNameToRosterKey));
 
     Object.entries(roster).forEach(([rosterKey, entry]) => {
       if (!existingKeys.has(rosterKey)) {
@@ -118,17 +101,15 @@ export function mergeBattingYears(
   }
 
   // Build players with computed career stats
-  const players: RosterPlayer[] = Array.from(playerMap.entries()).map(
-    ([name, data]) => ({
-      name,
-      jerseyNumber: data.jerseyNumber,
-      classYear: data.classYear,
-      position: data.position,
-      bats: data.bats,
-      seasons: data.seasons,
-      career: computeCareerStats(data.seasons),
-    })
-  );
+  const players: RosterPlayer[] = Array.from(playerMap.entries()).map(([name, data]) => ({
+    name,
+    jerseyNumber: data.jerseyNumber,
+    classYear: data.classYear,
+    position: data.position,
+    bats: data.bats,
+    seasons: data.seasons,
+    career: computeCareerStats(data.seasons),
+  }));
 
   // Sort by career wOBA descending
   players.sort((a, b) => b.career.woba - a.career.woba);
@@ -191,18 +172,9 @@ export function computeCareerStats(seasons: SeasonStats[]): CareerStats {
 
   const pa = totals.ab + totals.bb + totals.sf + totals.sh + totals.hbp;
   const woba = calculateWoba(totals);
-  const avg =
-    totals.ab > 0 ? Math.round((totals.h / totals.ab) * 1000) / 1000 : 0;
-  const slg =
-    totals.ab > 0 ? Math.round((totals.tb / totals.ab) * 1000) / 1000 : 0;
-  const obp =
-    pa > 0
-      ? Math.round(
-          ((totals.h + totals.bb + totals.hbp) /
-            (totals.ab + totals.bb + totals.hbp + totals.sf)) *
-            1000
-        ) / 1000
-      : 0;
+  const avg = totals.ab > 0 ? Math.round((totals.h / totals.ab) * 1000) / 1000 : 0;
+  const slg = totals.ab > 0 ? Math.round((totals.tb / totals.ab) * 1000) / 1000 : 0;
+  const obp = pa > 0 ? Math.round(((totals.h + totals.bb + totals.hbp) / (totals.ab + totals.bb + totals.hbp + totals.sf)) * 1000) / 1000 : 0;
   const ops = Math.round((slg + obp) * 1000) / 1000;
 
   return {

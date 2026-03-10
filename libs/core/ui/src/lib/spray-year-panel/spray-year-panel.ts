@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  input,
-  output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import type { SprayZone, ZoneAggregate } from '@ws/core/models';
 
 import { SprayField } from '../spray-field/spray-field';

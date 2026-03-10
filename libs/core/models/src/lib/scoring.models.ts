@@ -1,22 +1,6 @@
 import type { BaseSituation } from './snapshot.models';
 
-export type ScoringPlayType =
-  | 'homer'
-  | 'triple'
-  | 'double'
-  | 'single'
-  | 'bunt_single'
-  | 'sac_fly'
-  | 'sac_bunt'
-  | 'walk'
-  | 'hbp'
-  | 'wild_pitch'
-  | 'passed_ball'
-  | 'stolen_base'
-  | 'fielders_choice'
-  | 'error'
-  | 'productive_out'
-  | 'unknown';
+export type ScoringPlayType = 'homer' | 'triple' | 'double' | 'single' | 'bunt_single' | 'sac_fly' | 'sac_bunt' | 'walk' | 'hbp' | 'wild_pitch' | 'passed_ball' | 'stolen_base' | 'fielders_choice' | 'error' | 'productive_out' | 'unknown';
 
 export interface ScoringPlay {
   runnerName: string | null;

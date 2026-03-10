@@ -233,8 +233,7 @@ const DEFAULT_YEARS = [2026, 2025, 2024, 2023];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities (same as prefetch-data.ts) ──
@@ -255,41 +254,27 @@ async function fetchPage(url: string): Promise<string | null> {
     });
     const html = response.data;
     if (!html || html.length < 500) {
-      console.warn(
-        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
-      );
+      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
+
       return null;
     }
+
     return html;
   } catch (error: any) {
     console.warn(`  Failed to fetch ${url}: ${error.message}`);
+
     return null;
   }
 }
 
 // ── wOBA calculation (inlined from src/lib/woba.ts) ──
 
-function calculateWoba(stats: {
-  ab: number;
-  h: number;
-  doubles: number;
-  triples: number;
-  hr: number;
-  bb: number;
-  hbp: number;
-  sf: number;
-  sh: number;
-}): number {
+function calculateWoba(stats: { ab: number; h: number; doubles: number; triples: number; hr: number; bb: number; hbp: number; sf: number; sh: number }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
   if (denominator === 0) return 0;
-  const numerator =
-    0.5 * stats.bb +
-    0.5 * stats.hbp +
-    0.9 * singles +
-    1.2 * stats.doubles +
-    1.7 * stats.triples +
-    2.5 * stats.hr;
+  const numerator = 0.5 * stats.bb + 0.5 * stats.hbp + 0.9 * singles + 1.2 * stats.doubles + 1.7 * stats.triples + 2.5 * stats.hr;
+
   return numerator / denominator;
 }
 
@@ -310,10 +295,7 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
     const firstName = nameParts[0] || '';
     const lastName = nameParts.slice(1).join(' ') || '';
 
-    const jerseyText = $el
-      .find('.sidearm-roster-player-jersey-number')
-      .text()
-      .trim();
+    const jerseyText = $el.find('.sidearm-roster-player-jersey-number').text().trim();
     const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
     // Two .sidearm-roster-player-academic-year elements: abbreviated ("Sr.") and full ("Senior")
@@ -328,37 +310,21 @@ function parseRoster($: cheerio.CheerioAPI): RosterPlayer[] {
 
     // Position — teams customize which selector is used.
     // Some templates nest long/short variants; grab the most specific match first.
-    const posText =
-      $el.find('.rp_position_short').first().text().trim() ||
-      $el
-        .find('.sidearm-roster-player-position-long-short')
-        .first()
-        .text()
-        .trim() ||
-      $el
-        .find('.sidearm-roster-player-position span.text-bold')
-        .first()
-        .text()
-        .trim() ||
-      $el.find('.sidearm-roster-player-position').first().text().trim();
+    const posText = $el.find('.rp_position_short').first().text().trim() || $el.find('.sidearm-roster-player-position-long-short').first().text().trim() || $el.find('.sidearm-roster-player-position span.text-bold').first().text().trim() || $el.find('.sidearm-roster-player-position').first().text().trim();
     const position = posText || null;
 
     // B/T — teams customize which element holds this; try multiple selectors.
     // Use .first() because some templates duplicate the element (abbreviated + full rows).
     let bats: BatHand | null = null;
     let throws: 'L' | 'R' | null = null;
-    const btText =
-      $el.find('[data-custom-label="B/T:"]').first().text().trim() ||
-      $el.find('[data-custom-label="B-T:"]').first().text().trim() ||
-      $el.find('.sidearm-roster-player-custom1').first().text().trim() ||
-      $el.find('.sidearm-roster-player-custom2').first().text().trim() ||
-      $el.find('.sidearm-roster-player-custom3').first().text().trim();
-    if (btText && /[LRS]\s*[\/\-]\s*[LR]/i.test(btText)) {
-      const btParts = btText.split(/[\/\-]/);
+    const btText = $el.find('[data-custom-label="B/T:"]').first().text().trim() || $el.find('[data-custom-label="B-T:"]').first().text().trim() || $el.find('.sidearm-roster-player-custom1').first().text().trim() || $el.find('.sidearm-roster-player-custom2').first().text().trim() || $el.find('.sidearm-roster-player-custom3').first().text().trim();
+    if (btText && /[LRS]\s*[/-]\s*[LR]/i.test(btText)) {
+      const btParts = btText.split(/[/-]/);
       const batChar = btParts[0]?.trim().toUpperCase();
       if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
         bats = batChar;
       }
+
       const throwChar = btParts[1]?.trim().toUpperCase();
       if (throwChar === 'L' || throwChar === 'R') {
         throws = throwChar;
@@ -390,6 +356,7 @@ function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
     const caption = $(table).find('caption').text();
     if (caption.includes('Individual Overall Batting Statistics')) {
       targetTable = $(table);
+
       return false;
     }
   });
@@ -399,25 +366,19 @@ function parseStatsTable($: cheerio.CheerioAPI): BattingStats[] {
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const nameCell = $row.find('th[scope="row"]');
-    const name =
-      nameCell.find('a.hide-on-medium-down').text().trim() ||
-      nameCell.find('a').first().text().trim() ||
-      nameCell.text().trim();
+    const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
-    if (
-      !name ||
-      name.toLowerCase() === 'totals' ||
-      name.toLowerCase() === 'opponents'
-    )
-      return;
+    if (!name || name.toLowerCase() === 'totals' || name.toLowerCase() === 'opponents') return;
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
     const pct = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseFloat(cell.text().trim()) || 0;
     };
 
@@ -473,6 +434,7 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
     const caption = $(table).find('caption').text();
     if (caption.includes('Individual Overall Pitching Statistics')) {
       targetTable = $(table);
+
       return false;
     }
   });
@@ -482,26 +444,19 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const nameCell = $row.find('th[scope="row"]');
-    const name =
-      nameCell.find('a.hide-on-medium-down').text().trim() ||
-      nameCell.find('a').first().text().trim() ||
-      nameCell.text().trim();
+    const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
-    if (
-      !name ||
-      name.toLowerCase() === 'totals' ||
-      name.toLowerCase() === 'opponents' ||
-      !/[a-zA-Z]/.test(name)
-    )
-      return;
+    if (!name || name.toLowerCase() === 'totals' || name.toLowerCase() === 'opponents' || !/[a-zA-Z]/.test(name)) return;
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
     const pct = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseFloat(cell.text().trim()) || 0;
     };
 
@@ -549,6 +504,7 @@ function parseTeamGames($: cheerio.CheerioAPI): number | null {
     const caption = $(table).find('caption').text();
     if (caption.includes('Individual Overall Batting Statistics')) {
       targetTable = $(table);
+
       return false;
     }
   });
@@ -559,15 +515,13 @@ function parseTeamGames($: cheerio.CheerioAPI): number | null {
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const nameCell = $row.find('th[scope="row"]');
-    const name =
-      nameCell.find('a.hide-on-medium-down').text().trim() ||
-      nameCell.find('a').first().text().trim() ||
-      nameCell.text().trim();
+    const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
     if (name.toLowerCase() === 'totals') {
       const gpGsCell = $row.find('td[data-label="GP-GS"]').text().trim();
       const gpGsMatch = gpGsCell.match(/^(\d+)-(\d+)$/);
       teamGp = gpGsMatch ? parseInt(gpGsMatch[1], 10) : null;
+
       return false;
     }
   });
@@ -595,12 +549,14 @@ function lastNameOnly(key: string): string {
 function parseTeamArg(): string | null {
   const idx = process.argv.indexOf('--team');
   if (idx === -1 || idx + 1 >= process.argv.length) return null;
+
   return process.argv[idx + 1].trim().toLowerCase();
 }
 
 function parseYearsArg(): number[] {
   const idx = process.argv.indexOf('--years');
   if (idx === -1 || idx + 1 >= process.argv.length) return DEFAULT_YEARS;
+
   return process.argv[idx + 1]
     .split(',')
     .map((s) => parseInt(s.trim(), 10))
@@ -630,9 +586,7 @@ function gamedataFilename(year: number): string {
 }
 
 function battingFilename(year: number): string {
-  return year === CURRENT_YEAR
-    ? 'batting-stats.json'
-    : `batting-stats-${year}.json`;
+  return year === CURRENT_YEAR ? 'batting-stats.json' : `batting-stats-${year}.json`;
 }
 
 function pitchingFilename(year: number): string {
@@ -689,9 +643,7 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI, domain: string): string[] {
       return;
     }
 
-    const fullUrl = href.startsWith('http')
-      ? href
-      : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
+    const fullUrl = href.startsWith('http') ? href : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
     urls.push(fullUrl);
   });
 
@@ -731,9 +683,7 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 
     // Extract team name and inning from caption
     // Format: "TeamName - Top/Bottom of 1st" or similar
-    const teamName = caption
-      .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
-      .trim();
+    const teamName = caption.replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '').trim();
 
     const inningMatch = caption.match(/(?:Top|Bottom)\s+of\s+(.+)/i);
     const inning = inningMatch ? inningMatch[1].trim() : '';
@@ -754,22 +704,14 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const firstCell = $row.find('td').first();
-      const originalText =
-        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (
-        !originalText ||
-        text.includes('play description') ||
-        text.length < 5
-      ) {
+      if (!originalText || text.includes('play description') || text.length < 5) {
         return;
       }
 
-      if (
-        text.includes('inning summary') ||
-        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
-      ) {
+      if (text.includes('inning summary') || text.match(/^\d+(st|nd|rd|th)\s+inning/i)) {
         return;
       }
 
@@ -785,10 +727,7 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 }
 
 /** Parse all pitchers from the boxscore pitching table, in appearance order */
-function parseTeamPitchers(
-  $: cheerio.CheerioAPI,
-  teamAliases: string[]
-): string[] {
+function parseTeamPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string[] {
   const pitchers: string[] = [];
 
   $('table').each((_, table) => {
@@ -822,10 +761,7 @@ function parseTeamPitchers(
 // ── Gamedata parsing (lineup + play-by-play for opponent teams) ──
 
 /** Parse batting lineup for a specific team (adapted from prefetch-data.ts parseLineup) */
-function parseTeamLineup(
-  $: cheerio.CheerioAPI,
-  teamAliases: string[]
-): [number, string[]][] {
+function parseTeamLineup($: cheerio.CheerioAPI, teamAliases: string[]): [number, string[]][] {
   const lineup = new Map<number, string[]>();
 
   $('table').each((_, table) => {
@@ -838,12 +774,7 @@ function parseTeamLineup(
 
     // Skip pitching tables and play-by-play tables
     const lower = caption.toLowerCase();
-    if (
-      lower.includes('pitching') ||
-      caption.includes('Top of') ||
-      caption.includes('Bottom of') ||
-      caption.includes('Scoring Summary')
-    ) {
+    if (lower.includes('pitching') || caption.includes('Top of') || caption.includes('Bottom of') || caption.includes('Scoring Summary')) {
       return;
     }
 
@@ -862,10 +793,7 @@ function parseTeamLineup(
       const playerText = $playerLink.text().trim() || '';
       const rawText = $nameCell.text() || '';
 
-      const isSubstitution =
-        cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') ||
-        /^(&nbsp;){4,}/.test(cellHtml) ||
-        /^(\u00A0|\s){4,}/.test(rawText);
+      const isSubstitution = cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') || /^(&nbsp;){4,}/.test(cellHtml) || /^(\u00A0|\s){4,}/.test(rawText);
 
       // Extract player name: strip leading position text (e.g. "cf Emily Smith" → "Emily Smith")
       const nameMatch = playerText.match(/^[a-z/]+ (.+)$/i);
@@ -897,10 +825,7 @@ function parseTeamLineup(
 }
 
 /** Parse play-by-play for both halves, labeling each as offense or defense */
-function parseTeamPlayByPlay(
-  $: cheerio.CheerioAPI,
-  teamAliases: string[]
-): GamedataPlayByPlayInning[] {
+function parseTeamPlayByPlay($: cheerio.CheerioAPI, teamAliases: string[]): GamedataPlayByPlayInning[] {
   const allInnings = parseAllPlayByPlay($);
 
   return allInnings.map((inn) => ({
@@ -936,19 +861,11 @@ function parseGameDate($: cheerio.CheerioAPI, url: string): string {
 function parseOpponentFromUrl(url: string): string {
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
 
-  return opponentMatch
-    ? opponentMatch[1]
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase())
-    : 'Unknown';
+  return opponentMatch ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'Unknown';
 }
 
 /** Parse a single boxscore for pitching data (year added by caller) */
-function parseBoxscorePitching(
-  $: cheerio.CheerioAPI,
-  url: string,
-  teamAliases: string[]
-): Omit<GamePitchingData, 'year'> | null {
+function parseBoxscorePitching($: cheerio.CheerioAPI, url: string, teamAliases: string[]): Omit<GamePitchingData, 'year'> | null {
   const allInnings = parseAllPlayByPlay($);
 
   if (allInnings.length === 0) {
@@ -960,9 +877,7 @@ function parseBoxscorePitching(
 
   // Separate innings: team's fielding innings are when the OTHER team bats
   // The other team's batting innings = innings where caption team does NOT match our team
-  const opponentBattingInnings = allInnings.filter(
-    (inn) => !captionMatchesTeam(inn.teamName, teamAliases)
-  );
+  const opponentBattingInnings = allInnings.filter((inn) => !captionMatchesTeam(inn.teamName, teamAliases));
 
   // Authoritative pitcher list from the pitching table (in appearance order)
   const pitchers = parseTeamPitchers($, teamAliases);
@@ -984,18 +899,12 @@ function parseBoxscorePitching(
 
 // ── Per-team batting scraping ──
 
-async function scrapeTeam(
-  slug: string,
-  domain: string,
-  years: number[]
-): Promise<TeamOutput> {
+async function scrapeTeam(slug: string, domain: string, years: number[]): Promise<TeamOutput> {
   console.log(`\n=== ${slug} (${domain}) ===`);
 
   // 1. Fetch roster
   console.log('  Fetching roster...');
-  const rosterHtml = await fetchPage(
-    `https://${domain}/sports/softball/roster`
-  );
+  const rosterHtml = await fetchPage(`https://${domain}/sports/softball/roster`);
   const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
   console.log(`  Found ${roster.length} roster players`);
 
@@ -1005,9 +914,7 @@ async function scrapeTeam(
   for (const year of years) {
     await delay(DELAY_MS);
     console.log(`  Fetching ${year} stats...`);
-    const statsHtml = await fetchPage(
-      `https://${domain}/sports/softball/stats/${year}`
-    );
+    const statsHtml = await fetchPage(`https://${domain}/sports/softball/stats/${year}`);
     if (statsHtml) {
       const $stats = cheerio.load(statsHtml);
       const stats = parseStatsTable($stats);
@@ -1049,10 +956,7 @@ async function scrapeTeam(
   }));
 
   // Pass 1: exact matches
-  const matchResults = new Map<
-    (typeof roster)[number],
-    Map<number, BattingStats>
-  >();
+  const matchResults = new Map<(typeof roster)[number], Map<number, BattingStats>>();
   const claimedStatsKeys = new Set<string>();
   for (const { rp, rosterKey } of rosterWithKeys) {
     const exact = statsLookup.get(rosterKey);
@@ -1068,13 +972,11 @@ async function scrapeTeam(
     const rosterLastName = lastNameOnly(rosterKey);
     const unclaimed: { key: string; yearMap: Map<number, BattingStats> }[] = [];
     for (const [statsKey, yearMap] of statsLookup) {
-      if (
-        !claimedStatsKeys.has(statsKey) &&
-        lastNameOnly(statsKey) === rosterLastName
-      ) {
+      if (!claimedStatsKeys.has(statsKey) && lastNameOnly(statsKey) === rosterLastName) {
         unclaimed.push({ key: statsKey, yearMap });
       }
     }
+
     if (unclaimed.length === 1) {
       matchResults.set(rp, unclaimed[0].yearMap);
       claimedStatsKeys.add(unclaimed[0].key);
@@ -1102,6 +1004,7 @@ async function scrapeTeam(
       });
       continue;
     }
+
     matched++;
 
     // Build season entries
@@ -1196,34 +1099,13 @@ async function scrapeTeam(
       continue;
     }
 
-    const careerPa =
-      careerTotals.ab +
-      careerTotals.bb +
-      careerTotals.sf +
-      careerTotals.sh +
-      careerTotals.hbp;
+    const careerPa = careerTotals.ab + careerTotals.bb + careerTotals.sf + careerTotals.sh + careerTotals.hbp;
     const careerWoba = calculateWoba(careerTotals);
 
     // Compute career rate stats from totals
-    const careerAvg =
-      careerTotals.ab > 0
-        ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000
-        : 0;
-    const careerSlg =
-      careerTotals.ab > 0
-        ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000
-        : 0;
-    const careerObp =
-      careerPa > 0
-        ? Math.round(
-            ((careerTotals.h + careerTotals.bb + careerTotals.hbp) /
-              (careerTotals.ab +
-                careerTotals.bb +
-                careerTotals.hbp +
-                careerTotals.sf)) *
-              1000
-          ) / 1000
-        : 0;
+    const careerAvg = careerTotals.ab > 0 ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000 : 0;
+    const careerSlg = careerTotals.ab > 0 ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000 : 0;
+    const careerObp = careerPa > 0 ? Math.round(((careerTotals.h + careerTotals.bb + careerTotals.hbp) / (careerTotals.ab + careerTotals.bb + careerTotals.hbp + careerTotals.sf)) * 1000) / 1000 : 0;
     const careerOps = Math.round((careerSlg + careerObp) * 1000) / 1000;
 
     players.push({
@@ -1248,9 +1130,7 @@ async function scrapeTeam(
   // Sort by career wOBA descending
   players.sort((a, b) => b.career.woba - a.career.woba);
 
-  console.log(
-    `  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`
-  );
+  console.log(`  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`);
 
   // Convert teamGpByYear map to plain object for JSON
   const teamGamesByYear: Record<string, number> = {};
@@ -1269,11 +1149,7 @@ async function scrapeTeam(
 
 // ── Per-team pitching scraping ──
 
-async function scrapeTeamPitching(
-  slug: string,
-  domain: string,
-  years: number[]
-): Promise<PitchingOutput> {
+async function scrapeTeamPitching(slug: string, domain: string, years: number[]): Promise<PitchingOutput> {
   const teamAliases = TEAM_ALIASES[slug] || [slug];
   console.log(`\n  --- Pitching scrape for ${slug} ---`);
 
@@ -1285,9 +1161,7 @@ async function scrapeTeamPitching(
     // but we re-fetch here since pitching is opt-in and may run independently)
     console.log(`  Fetching ${year} pitching stats...`);
     await delay(DELAY_MS);
-    const statsHtml = await fetchPage(
-      `https://${domain}/sports/softball/stats/${year}`
-    );
+    const statsHtml = await fetchPage(`https://${domain}/sports/softball/stats/${year}`);
 
     if (statsHtml) {
       const $stats = cheerio.load(statsHtml);
@@ -1299,9 +1173,7 @@ async function scrapeTeamPitching(
     // Fetch schedule to get boxscore URLs
     console.log(`  Fetching ${year} schedule...`);
     await delay(DELAY_MS);
-    const scheduleHtml = await fetchPage(
-      `https://${domain}/sports/softball/schedule/${year}`
-    );
+    const scheduleHtml = await fetchPage(`https://${domain}/sports/softball/schedule/${year}`);
 
     if (!scheduleHtml) {
       console.log(`    No schedule page for ${year}`);
@@ -1315,9 +1187,7 @@ async function scrapeTeamPitching(
     // Fetch each boxscore and extract pitching data
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
-      console.log(
-        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
-      );
+      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
       await delay(DELAY_MS);
 
       const html = await fetchPage(url);
@@ -1334,9 +1204,7 @@ async function scrapeTeamPitching(
     }
   }
 
-  console.log(
-    `  Pitching scrape complete: ${allGames.length} games with play-by-play`
-  );
+  console.log(`  Pitching scrape complete: ${allGames.length} games with play-by-play`);
 
   return {
     slug,
@@ -1349,11 +1217,7 @@ async function scrapeTeamPitching(
 
 // ── Per-team gamedata scraping ──
 
-async function scrapeTeamGamedata(
-  slug: string,
-  domain: string,
-  years: number[]
-): Promise<GamedataOutput> {
+async function scrapeTeamGamedata(slug: string, domain: string, years: number[]): Promise<GamedataOutput> {
   const teamAliases = TEAM_ALIASES[slug] || [slug];
   console.log(`\n  --- Gamedata scrape for ${slug} ---`);
 
@@ -1362,9 +1226,7 @@ async function scrapeTeamGamedata(
   for (const year of years) {
     console.log(`  Fetching ${year} schedule...`);
     await delay(DELAY_MS);
-    const scheduleHtml = await fetchPage(
-      `https://${domain}/sports/softball/schedule/${year}`
-    );
+    const scheduleHtml = await fetchPage(`https://${domain}/sports/softball/schedule/${year}`);
 
     if (!scheduleHtml) {
       console.log(`    No schedule page for ${year}`);
@@ -1379,9 +1241,7 @@ async function scrapeTeamGamedata(
 
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
-      console.log(
-        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
-      );
+      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
       await delay(DELAY_MS);
 
       const html = await fetchPage(url);
@@ -1409,10 +1269,7 @@ async function scrapeTeamGamedata(
     console.log(`    ${year}: ${games.length} games with gamedata`);
   }
 
-  const totalGames = Object.values(gamesByYear).reduce(
-    (sum, g) => sum + g.length,
-    0
-  );
+  const totalGames = Object.values(gamesByYear).reduce((sum, g) => sum + g.length, 0);
   console.log(`  Gamedata scrape complete: ${totalGames} total games`);
 
   return {
@@ -1433,9 +1290,7 @@ async function main(): Promise<void> {
   const rosterOnly = parseRosterOnlyFlag();
   const florida = parseFloridaFlag();
   const baseOutputDir = path.resolve(__dirname, '../public/data/opponents');
-  const outputDir = florida
-    ? path.join(baseOutputDir, 'florida')
-    : baseOutputDir;
+  const outputDir = florida ? path.join(baseOutputDir, 'florida') : baseOutputDir;
   fs.mkdirSync(outputDir, { recursive: true });
 
   const activeTeams = florida ? FLORIDA_SIDEARM_TEAMS : TEAMS;
@@ -1447,20 +1302,17 @@ async function main(): Promise<void> {
     Object.assign(TEAM_ALIASES, activeAliases);
   }
 
-  const teamsToScrape = teamFilter
-    ? { [teamFilter]: activeTeams[teamFilter] }
-    : activeTeams;
+  const teamsToScrape = teamFilter ? { [teamFilter]: activeTeams[teamFilter] } : activeTeams;
 
   if (teamFilter && !activeTeams[teamFilter]) {
-    console.error(
-      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(activeTeams).join(', ')}`
-    );
+    console.error(`Unknown team slug: "${teamFilter}". Available: ${Object.keys(activeTeams).join(', ')}`);
     process.exit(1);
   }
 
   if (florida) {
     console.log('Mode: FLORIDA SIDEARM teams');
   }
+
   console.log(`Teams: ${Object.keys(teamsToScrape).join(', ')}`);
   console.log(`Output directory: ${outputDir}`);
 
@@ -1470,9 +1322,7 @@ async function main(): Promise<void> {
     for (const [slug, domain] of Object.entries(teamsToScrape)) {
       console.log(`\n=== ${slug} (${domain}) ===`);
       console.log('  Fetching roster...');
-      const rosterHtml = await fetchPage(
-        `https://${domain}/sports/softball/roster`
-      );
+      const rosterHtml = await fetchPage(`https://${domain}/sports/softball/roster`);
       const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
       const teamDir = path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
@@ -1500,9 +1350,7 @@ async function main(): Promise<void> {
         }
       });
       fs.writeFileSync(rosterOutPath, JSON.stringify(enrichedRoster));
-      console.log(
-        `  Wrote ${rosterOutPath} (${Object.keys(enrichedRoster).length} players)`
-      );
+      console.log(`  Wrote ${rosterOutPath} (${Object.keys(enrichedRoster).length} players)`);
 
       if (Object.keys(teamsToScrape).length > 1) {
         await delay(DELAY_MS);
@@ -1578,9 +1426,7 @@ async function main(): Promise<void> {
         };
         const outPath = path.join(teamDir, pitchingFilename(year));
         fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
-        console.log(
-          `  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`
-        );
+        console.log(`  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`);
       });
     }
 
@@ -1589,10 +1435,7 @@ async function main(): Promise<void> {
       const gamedataResult = await scrapeTeamGamedata(slug, domain, years);
 
       Object.entries(gamedataResult.gamesByYear).forEach(([year, games]) => {
-        const gamedataOutPath = path.join(
-          teamDir,
-          gamedataFilename(Number(year))
-        );
+        const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));
         fs.writeFileSync(gamedataOutPath, JSON.stringify(games, null, 2));
         console.log(`  Wrote ${gamedataOutPath} (${games.length} games)`);
       });

@@ -1,11 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  output,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 import type { SprayZone, ZoneAggregate } from '@ws/core/models';
 
 export interface ZoneTooltipData {
@@ -111,39 +104,19 @@ function ifSectorPath(startAngle: number, endAngle: number): string {
   const [ix1, iy1] = polarToXY(startAngle, PLATE_RADIUS);
   const largeArc = Math.abs(endAngle - startAngle) > 180 ? 1 : 0;
 
-  return [
-    `M ${ix1} ${iy1}`,
-    `L ${ox1} ${oy1}`,
-    `A ${IF_RADIUS} ${IF_RADIUS} 0 ${largeArc} 0 ${ox2} ${oy2}`,
-    `L ${ix2} ${iy2}`,
-    'Z',
-  ].join(' ');
+  return [`M ${ix1} ${iy1}`, `L ${ox1} ${oy1}`, `A ${IF_RADIUS} ${IF_RADIUS} 0 ${largeArc} 0 ${ox2} ${oy2}`, `L ${ix2} ${iy2}`, 'Z'].join(' ');
 }
 
 /** Pie-slice wedge from home plate to an outer arc */
-function wedgePath(
-  startAngle: number,
-  endAngle: number,
-  radius: number
-): string {
+function wedgePath(startAngle: number, endAngle: number, radius: number): string {
   const [x1, y1] = polarToXY(startAngle, radius);
   const [x2, y2] = polarToXY(endAngle, radius);
   const largeArc = Math.abs(endAngle - startAngle) > 180 ? 1 : 0;
 
-  return [
-    `M ${HOME_X} ${HOME_Y}`,
-    `L ${x1} ${y1}`,
-    `A ${radius} ${radius} 0 ${largeArc} 0 ${x2} ${y2}`,
-    'Z',
-  ].join(' ');
+  return [`M ${HOME_X} ${HOME_Y}`, `L ${x1} ${y1}`, `A ${radius} ${radius} 0 ${largeArc} 0 ${x2} ${y2}`, 'Z'].join(' ');
 }
 
-function zoneMidpoint(
-  startAngle: number,
-  endAngle: number,
-  innerRadius: number,
-  outerRadius: number
-): [number, number] {
+function zoneMidpoint(startAngle: number, endAngle: number, innerRadius: number, outerRadius: number): [number, number] {
   const midAngle = (startAngle + endAngle) / 2;
   const midRadius = (innerRadius + outerRadius) / 2;
 
@@ -171,15 +144,7 @@ function makePlateZone(start: number, end: number): Omit<ZonePathData, 'zone'> {
   return { path: wedgePath(start, end, PLATE_RADIUS), labelX: lx, labelY: ly };
 }
 
-const OF_ZONE_IDS: SprayZone[] = [
-  'rf_line',
-  'rf',
-  'rf_cf',
-  'cf',
-  'lf_cf',
-  'lf',
-  'lf_line',
-];
+const OF_ZONE_IDS: SprayZone[] = ['rf_line', 'rf', 'rf_cf', 'cf', 'lf_cf', 'lf', 'lf_line'];
 const IF_ZONE_IDS: SprayZone[] = ['if_1b', 'if_2b', 'if_p', 'if_ss', 'if_3b'];
 const PL_ZONE_IDS: SprayZone[] = ['plate_1b', 'plate_p', 'plate_3b'];
 
@@ -225,20 +190,10 @@ const FOUL_LINE_RF_PATH = makeFoulLine(FOUL_RF);
 const FOUL_LINE_LF_PATH = makeFoulLine(FOUL_LF);
 
 // Radial dividers — auto-derived from zone boundaries, one per ring
-const DIVIDERS: string[] = [
-  ...OF_B.slice(1, -1).map((a) => makeDivider(a, IF_RADIUS, OF_RADIUS)),
-  ...IF_B.slice(1, -1).map((a) => makeDivider(a, PLATE_RADIUS, IF_RADIUS)),
-  ...PL_B.slice(1, -1).map((a) => makeDivider(a, 0, PLATE_RADIUS)),
-];
+const DIVIDERS: string[] = [...OF_B.slice(1, -1).map((a) => makeDivider(a, IF_RADIUS, OF_RADIUS)), ...IF_B.slice(1, -1).map((a) => makeDivider(a, PLATE_RADIUS, IF_RADIUS)), ...PL_B.slice(1, -1).map((a) => makeDivider(a, 0, PLATE_RADIUS))];
 
-const ALL_ZONE_PATHS: ZonePathData[] = [
-  ...OF_ZONES,
-  ...IF_ZONES,
-  ...PLATE_ZONES,
-];
-const ZONE_PATH_MAP = new Map<SprayZone, ZonePathData>(
-  ALL_ZONE_PATHS.map((z) => [z.zone, z])
-);
+const ALL_ZONE_PATHS: ZonePathData[] = [...OF_ZONES, ...IF_ZONES, ...PLATE_ZONES];
+const ZONE_PATH_MAP = new Map<SprayZone, ZonePathData>(ALL_ZONE_PATHS.map((z) => [z.zone, z]));
 
 const ZONE_LABEL_MAP: Record<SprayZone, string> = {
   rf_line: 'RF Line',

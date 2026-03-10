@@ -6,6 +6,12 @@
   "useTabs": false,
   "overrides": [
     {
+      "files": "*.ts",
+      "options": {
+        "printWidth": 9999
+      }
+    },
+    {
       "files": "*.html",
       "options": {
         "parser": "angular",

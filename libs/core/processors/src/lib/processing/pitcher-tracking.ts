@@ -1,11 +1,6 @@
 import type { PitcherTrackedPlay } from '@ws/core/models';
 
-import {
-  classifyPlay,
-  getPlayerNameFromText,
-  parseBatterAction,
-  parseRunnerSubEvent,
-} from '../parsing/parse-play';
+import { classifyPlay, getPlayerNameFromText, parseBatterAction, parseRunnerSubEvent } from '../parsing/parse-play';
 
 interface BattingInning {
   inning: string;
@@ -33,10 +28,7 @@ function extractLastName(name: string): string {
  * Pitcher changes are detected by checking if the play text contains
  * the next expected relief pitcher's last name (from the ordered pitchers list).
  */
-export function trackPitcherPerformance(
-  battingInnings: BattingInning[],
-  pitchers: string[]
-): PitcherTrackedPlay[] {
+export function trackPitcherPerformance(battingInnings: BattingInning[], pitchers: string[]): PitcherTrackedPlay[] {
   const tracked: PitcherTrackedPlay[] = [];
   let activePitcher = pitchers[0] ?? 'Unknown';
 
@@ -51,10 +43,7 @@ export function trackPitcherPerformance(
         const nextRelief = reliefQueue[reliefIdx];
         const lastName = extractLastName(nextRelief);
 
-        if (
-          lastName &&
-          playText.toLowerCase().includes(lastName.toLowerCase())
-        ) {
+        if (lastName && playText.toLowerCase().includes(lastName.toLowerCase())) {
           activePitcher = nextRelief;
           reliefIdx++;
         }
@@ -85,11 +74,7 @@ export function trackPitcherPerformance(
         const action = parseBatterAction(batterSubEvent);
         batterResult = action.result;
 
-        if (
-          ['single', 'bunt_single', 'double', 'triple', 'homer'].includes(
-            action.result
-          )
-        ) {
+        if (['single', 'bunt_single', 'double', 'triple', 'homer'].includes(action.result)) {
           hitsOnPlay = 1;
         }
       }

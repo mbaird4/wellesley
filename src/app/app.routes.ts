@@ -8,8 +8,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'lineup',
-    loadComponent: () =>
-      import('./lineup-stats/lineup-stats').then((m) => m.LineupStats),
+    loadComponent: () => import('./lineup-stats/lineup-stats').then((m) => m.LineupStats),
   },
   {
     path: 'woba',
@@ -17,44 +16,33 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'scoring',
-    loadComponent: () =>
-      import('./scoring-plays/scoring-plays').then((m) => m.ScoringPlays),
+    loadComponent: () => import('./scoring-plays/scoring-plays').then((m) => m.ScoringPlays),
   },
   {
     path: 'opponents',
-    loadComponent: () =>
-      import('./opponents/opponents').then((m) => m.Opponents),
+    loadComponent: () => import('./opponents/opponents').then((m) => m.Opponents),
     children: [
       { path: '', redirectTo: 'babson', pathMatch: 'full' },
       {
         path: ':slug',
-        loadComponent: () =>
-          import('./opponents/opponent-detail/opponent-detail').then(
-            (m) => m.OpponentDetail
-          ),
+        loadComponent: () => import('./opponents/opponent-detail/opponent-detail').then((m) => m.OpponentDetail),
         children: [
           { path: '', redirectTo: 'spray', pathMatch: 'full' },
           {
             path: 'spray',
-            loadComponent: () =>
-              import('./opponents/tabs/spray-tab').then((m) => m.SprayTab),
+            loadComponent: () => import('./opponents/tabs/spray-tab').then((m) => m.SprayTab),
           },
           {
             path: 'woba',
-            loadComponent: () =>
-              import('./opponents/tabs/woba-tab').then((m) => m.WobaTab),
+            loadComponent: () => import('./opponents/tabs/woba-tab').then((m) => m.WobaTab),
           },
           {
             path: 'pitching',
-            loadComponent: () =>
-              import('./opponents/tabs/pitching-tab').then(
-                (m) => m.PitchingTab
-              ),
+            loadComponent: () => import('./opponents/tabs/pitching-tab').then((m) => m.PitchingTab),
           },
           {
             path: 'stats',
-            loadComponent: () =>
-              import('./opponents/tabs/stats-tab').then((m) => m.StatsTab),
+            loadComponent: () => import('./opponents/tabs/stats-tab').then((m) => m.StatsTab),
           },
         ],
       },
@@ -66,8 +54,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'spray-chart',
-    loadComponent: () =>
-      import('./spray-chart/spray-chart').then((m) => m.SprayChart),
+    loadComponent: () => import('./spray-chart/spray-chart').then((m) => m.SprayChart),
   },
 
   { path: '**', redirectTo: '' },

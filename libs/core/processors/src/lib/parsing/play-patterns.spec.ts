@@ -2,11 +2,7 @@ import type { ScoringPlayType } from '@ws/core/models';
 
 import { mapBatterResultToScoringType } from '../processing/scoring-plays';
 import expectations from '../test-data/play-pattern-expectations.json';
-import {
-  classifyPlay,
-  parseBatterAction,
-  parseRunnerSubEvent,
-} from './parse-play';
+import { classifyPlay, parseBatterAction, parseRunnerSubEvent } from './parse-play';
 
 interface RunnerSubEventExpectation {
   playerName: string | null;
@@ -33,12 +29,7 @@ interface Expectation {
 
 const entries = expectations as Expectation[];
 
-function deriveScoringType(
-  playType: string,
-  batterResult: string | null,
-  sub: string,
-  batterSubEvent: string
-): ScoringPlayType {
+function deriveScoringType(playType: string, batterResult: string | null, sub: string, batterSubEvent: string): ScoringPlayType {
   const lower = sub.toLowerCase();
 
   if (playType === 'plate_appearance' && batterResult) {
@@ -89,9 +80,7 @@ describe('Play pattern expectations', () => {
           }
 
           if (entry.batterAction!.batterAlsoOut !== undefined) {
-            expect(result.batterAlsoOut).toBe(
-              entry.batterAction!.batterAlsoOut
-            );
+            expect(result.batterAlsoOut).toBe(entry.batterAction!.batterAlsoOut);
           }
         });
       }
@@ -119,12 +108,7 @@ describe('Play pattern expectations', () => {
             }
 
             if (expected.scoringType !== undefined) {
-              const scoringType = deriveScoringType(
-                entry.playType,
-                entry.batterAction?.result ?? null,
-                runnerSubs[i],
-                subEvents[0]
-              );
+              const scoringType = deriveScoringType(entry.playType, entry.batterAction?.result ?? null, runnerSubs[i], subEvents[0]);
               expect(scoringType).toBe(expected.scoringType);
             }
           }

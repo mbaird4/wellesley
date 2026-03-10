@@ -1,20 +1,7 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  output,
-} from '@angular/core';
-import type {
-  BaseRunnerMode,
-  BaseRunnerRow,
-  BaseSituation,
-} from '@ws/core/models';
+import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import type { BaseRunnerMode, BaseRunnerRow, BaseSituation } from '@ws/core/models';
 
-import {
-  ButtonToggle,
-  type ToggleOption,
-} from '../button-toggle/button-toggle';
+import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
 
 const SITUATIONS: { key: BaseSituation; label: string }[] = [
   { key: 'empty', label: 'No one on' },
@@ -53,7 +40,5 @@ export class BaseRunnerTable {
   readonly situations = SITUATIONS;
   readonly modeOptions = MODE_OPTIONS;
 
-  readonly activeRows = computed(() =>
-    this.mode() === 'at-bat-start' ? this.rowsAtBatStart() : this.rows()
-  );
+  readonly activeRows = computed(() => (this.mode() === 'at-bat-start' ? this.rowsAtBatStart() : this.rows()));
 }

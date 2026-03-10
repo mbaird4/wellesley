@@ -1,16 +1,4 @@
-import type {
-  BaseRunners,
-  BaseSituation,
-  PlaySnapshot,
-  RunnerConversionRow,
-  SacBuntOutcome,
-  SacBuntSummary,
-  ScoringPlay,
-  ScoringPlaySummary,
-  ScoringPlayType,
-  StolenBaseOutcome,
-  StolenBaseSummary,
-} from '@ws/core/models';
+import type { BaseRunners, BaseSituation, PlaySnapshot, RunnerConversionRow, SacBuntOutcome, SacBuntSummary, ScoringPlay, ScoringPlaySummary, ScoringPlayType, StolenBaseOutcome, StolenBaseSummary } from '@ws/core/models';
 
 import { parseBatterAction, parseRunnerSubEvent } from '../parsing/parse-play';
 import { classifyBaseSituation } from './base-runner-stats';
@@ -19,17 +7,7 @@ import { classifyBaseSituation } from './base-runner-stats';
  * Pure function: given a play's before/after state, extracts all scoring plays.
  * A "scoring play" = any event where a runner crosses home plate.
  */
-export function extractScoringPlays(
-  playText: string,
-  playType: string,
-  basesBefore: BaseRunners,
-  basesAfter: BaseRunners,
-  outsBefore: number,
-  outsAfter: number,
-  inning: string,
-  batterName: string | null,
-  lineupSlot: number | null
-): ScoringPlay[] {
+export function extractScoringPlays(playText: string, playType: string, basesBefore: BaseRunners, basesAfter: BaseRunners, outsBefore: number, outsAfter: number, inning: string, batterName: string | null, lineupSlot: number | null): ScoringPlay[] {
   const plays: ScoringPlay[] = [];
   const baseSituation = classifyBaseSituation(basesBefore);
 
@@ -81,11 +59,7 @@ export function extractScoringPlays(
       const result = parseRunnerSubEvent(sub);
 
       if (result.scored && result.playerName) {
-        let type = mapBatterResultToScoringType(
-          batterAction.result,
-          sub,
-          subEvents[0]
-        );
+        let type = mapBatterResultToScoringType(batterAction.result, sub, subEvents[0]);
 
         // Runner sub-event explicitly mentions error → override to 'error'
         if (sub.toLowerCase().includes('error')) {
@@ -106,16 +80,9 @@ export function extractScoringPlays(
     });
 
     // Walk/HBP with bases loaded: batter forces a run even if text doesn't have "scored" for the runner
-    if (
-      (batterAction.result === 'walk' || batterAction.result === 'hbp') &&
-      basesBefore.first &&
-      basesBefore.second &&
-      basesBefore.third
-    ) {
+    if ((batterAction.result === 'walk' || batterAction.result === 'hbp') && basesBefore.first && basesBefore.second && basesBefore.third) {
       // Check if we already captured the forced run from third
-      const alreadyCapturedThird = plays.some(
-        (p) => p.runnerName === basesBefore.third
-      );
+      const alreadyCapturedThird = plays.some((p) => p.runnerName === basesBefore.third);
       if (!alreadyCapturedThird) {
         plays.push({
           runnerName: basesBefore.third,
@@ -145,10 +112,7 @@ export function extractScoringPlays(
 
       if (result.playerName && result.isOut) {
         outRunners.add(result.playerName);
-      } else if (
-        result.playerName &&
-        (result.scored || lower.includes('stole home'))
-      ) {
+      } else if (result.playerName && (result.scored || lower.includes('stole home'))) {
         scoredRunners.add(result.playerName);
         plays.push({
           runnerName: result.playerName,
@@ -173,10 +137,7 @@ export function extractScoringPlays(
       })
       .forEach((base) => {
         const runner = basesBefore[base]!;
-        const stillOnBase =
-          basesAfter.first === runner ||
-          basesAfter.second === runner ||
-          basesAfter.third === runner;
+        const stillOnBase = basesAfter.first === runner || basesAfter.second === runner || basesAfter.third === runner;
 
         if (!stillOnBase) {
           plays.push({
@@ -201,9 +162,7 @@ export function extractScoringPlays(
 
       if (result.scored && result.playerName) {
         const lower = playText.toLowerCase();
-        const type: ScoringPlayType = lower.includes('passed ball')
-          ? 'passed_ball'
-          : 'wild_pitch';
+        const type: ScoringPlayType = lower.includes('passed ball') ? 'passed_ball' : 'wild_pitch';
         plays.push({
           runnerName: result.playerName,
           scoringPlayType: type,
@@ -223,11 +182,7 @@ export function extractScoringPlays(
   return plays;
 }
 
-export function mapBatterResultToScoringType(
-  batterResult: string,
-  runnerSubEvent: string,
-  batterSubEvent?: string
-): ScoringPlayType {
+export function mapBatterResultToScoringType(batterResult: string, runnerSubEvent: string, batterSubEvent?: string): ScoringPlayType {
   switch (batterResult) {
     case 'triple':
       return 'triple';
@@ -269,11 +224,7 @@ export function mapBatterResultToScoringType(
  * For each sac bunt in the game, tracks whether the runners already on base
  * eventually scored in the same inning.
  */
-export function computeSacBuntOutcomes(
-  snapshots: PlaySnapshot[],
-  opponent: string,
-  url: string
-): SacBuntOutcome[] {
+export function computeSacBuntOutcomes(snapshots: PlaySnapshot[], opponent: string, url: string): SacBuntOutcome[] {
   const outcomes: SacBuntOutcome[] = [];
 
   snapshots.forEach((snap, i) => {
@@ -293,9 +244,7 @@ export function computeSacBuntOutcomes(
     }
 
     // Who was on base before the bunt?
-    const runnersOnBase = (['first', 'second', 'third'] as const)
-      .filter((base) => snap.basesBefore[base])
-      .map((base) => snap.basesBefore[base]!);
+    const runnersOnBase = (['first', 'second', 'third'] as const).filter((base) => snap.basesBefore[base]).map((base) => snap.basesBefore[base]!);
 
     if (runnersOnBase.length === 0) {
       return;
@@ -310,14 +259,7 @@ export function computeSacBuntOutcomes(
         break;
       }
 
-      future.scoringPlays
-        .filter(
-          (sp) =>
-            sp.runnerName &&
-            runnersOnBase.includes(sp.runnerName) &&
-            !runnersScored.includes(sp.runnerName)
-        )
-        .forEach((sp) => runnersScored.push(sp.runnerName!));
+      future.scoringPlays.filter((sp) => sp.runnerName && runnersOnBase.includes(sp.runnerName) && !runnersScored.includes(sp.runnerName)).forEach((sp) => runnersScored.push(sp.runnerName!));
     }
 
     outcomes.push({
@@ -333,31 +275,19 @@ export function computeSacBuntOutcomes(
   return outcomes;
 }
 
-export function mergeSacBuntOutcomes(
-  a: SacBuntOutcome[],
-  b: SacBuntOutcome[]
-): SacBuntOutcome[] {
+export function mergeSacBuntOutcomes(a: SacBuntOutcome[], b: SacBuntOutcome[]): SacBuntOutcome[] {
   return [...a, ...b];
 }
 
-export function summarizeSacBuntOutcomes(
-  outcomes: SacBuntOutcome[]
-): SacBuntSummary {
-  const totalRunnersOnBase = outcomes.reduce(
-    (s, o) => s + o.runnersOnBase.length,
-    0
-  );
-  const totalRunnersScored = outcomes.reduce(
-    (s, o) => s + o.runnersScored.length,
-    0
-  );
+export function summarizeSacBuntOutcomes(outcomes: SacBuntOutcome[]): SacBuntSummary {
+  const totalRunnersOnBase = outcomes.reduce((s, o) => s + o.runnersOnBase.length, 0);
+  const totalRunnersScored = outcomes.reduce((s, o) => s + o.runnersScored.length, 0);
 
   return {
     totalSacBunts: outcomes.length,
     totalRunnersOnBase,
     totalRunnersScored,
-    scoringRate:
-      totalRunnersOnBase > 0 ? totalRunnersScored / totalRunnersOnBase : 0,
+    scoringRate: totalRunnersOnBase > 0 ? totalRunnersScored / totalRunnersOnBase : 0,
     outcomes,
   };
 }
@@ -366,11 +296,7 @@ export function summarizeSacBuntOutcomes(
  * For each stolen base in the game, tracks whether the runner eventually
  * scored in the same inning. Follows the same pattern as computeSacBuntOutcomes.
  */
-export function computeStolenBaseOutcomes(
-  snapshots: PlaySnapshot[],
-  opponent: string,
-  url: string
-): StolenBaseOutcome[] {
+export function computeStolenBaseOutcomes(snapshots: PlaySnapshot[], opponent: string, url: string): StolenBaseOutcome[] {
   const outcomes: StolenBaseOutcome[] = [];
 
   snapshots.forEach((snap, i) => {
@@ -453,9 +379,7 @@ export function computeStolenBaseOutcomes(
   return outcomes;
 }
 
-export function summarizeStolenBaseOutcomes(
-  outcomes: StolenBaseOutcome[]
-): StolenBaseSummary {
+export function summarizeStolenBaseOutcomes(outcomes: StolenBaseOutcome[]): StolenBaseSummary {
   const bases: ('second' | 'third' | 'home')[] = ['second', 'third', 'home'];
   const byBase = bases.map((base) => {
     const matching = outcomes.filter((o) => o.stolenTo === base);
@@ -482,9 +406,7 @@ export function summarizeStolenBaseOutcomes(
  * and how many of them eventually scored on that play.
  * Aggregates by base situation and out count.
  */
-export function computeRunnerConversions(
-  snapshots: PlaySnapshot[]
-): RunnerConversionRow[] {
+export function computeRunnerConversions(snapshots: PlaySnapshot[]): RunnerConversionRow[] {
   const map = new Map<
     BaseSituation,
     {
@@ -503,13 +425,9 @@ export function computeRunnerConversions(
         return;
       }
 
-      const runners = (['first', 'second', 'third'] as const)
-        .filter((base) => snap.basesBefore[base])
-        .map((base) => snap.basesBefore[base]!);
+      const runners = (['first', 'second', 'third'] as const).filter((base) => snap.basesBefore[base]).map((base) => snap.basesBefore[base]!);
 
-      const scored = runners.filter((runner) =>
-        snap.scoringPlays.some((sp) => sp.runnerName === runner)
-      );
+      const scored = runners.filter((runner) => snap.scoringPlays.some((sp) => sp.runnerName === runner));
 
       const entry = map.get(situation) ?? {
         totalRunners: 0,
@@ -525,15 +443,7 @@ export function computeRunnerConversions(
       map.set(situation, entry);
     });
 
-  const sitOrder: BaseSituation[] = [
-    'first',
-    'second',
-    'third',
-    'first_second',
-    'first_third',
-    'second_third',
-    'loaded',
-  ];
+  const sitOrder: BaseSituation[] = ['first', 'second', 'third', 'first_second', 'first_third', 'second_third', 'loaded'];
 
   return sitOrder
     .filter((sit) => map.has(sit))
@@ -556,9 +466,7 @@ export function computeRunnerConversions(
 /**
  * Aggregates an array of ScoringPlays into a summary.
  */
-export function computeScoringPlaySummary(
-  plays: ScoringPlay[]
-): ScoringPlaySummary {
+export function computeScoringPlaySummary(plays: ScoringPlay[]): ScoringPlaySummary {
   const byType: Record<string, number> = {};
   const byRunner: Record<string, number> = {};
   const byBatter: Record<string, number> = {};

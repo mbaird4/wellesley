@@ -1,20 +1,10 @@
 import { inject, Injectable } from '@angular/core';
-import type {
-  GameData,
-  PlayByPlayInning,
-  Roster,
-  YearBattingData,
-  YearPitchingData,
-} from '@ws/core/models';
+import type { GameData, PlayByPlayInning, Roster, YearBattingData, YearPitchingData } from '@ws/core/models';
 import type { Observable } from 'rxjs';
 import { from } from 'rxjs';
 
 import { DataContextService } from './data-context.service';
-import {
-  resolveGameData,
-  resolveRoster,
-  resolveYearBattingData,
-} from './data-resolve';
+import { resolveGameData, resolveRoster, resolveYearBattingData } from './data-resolve';
 
 export type { GameData, PlayByPlayInning };
 
@@ -24,9 +14,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 const RESOLVE_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 
 function dataPath(base: string, year: number): string {
-  return year === CURRENT_YEAR
-    ? `data/${base}.json`
-    : `data/${base}-${year}.json`;
+  return year === CURRENT_YEAR ? `data/${base}.json` : `data/${base}-${year}.json`;
 }
 
 @Injectable({
@@ -41,10 +29,7 @@ export class SoftballDataService {
   }
 
   getOpponentGameData(dataDir: string, year: number): Observable<GameData[]> {
-    const file =
-      year === CURRENT_YEAR
-        ? `data/opponents/${dataDir}/gamedata.json`
-        : `data/opponents/${dataDir}/gamedata-${year}.json`;
+    const file = year === CURRENT_YEAR ? `data/opponents/${dataDir}/gamedata.json` : `data/opponents/${dataDir}/gamedata-${year}.json`;
 
     return from(this.fetchGameJson(file));
   }
@@ -54,9 +39,7 @@ export class SoftballDataService {
   }
 
   getOpponentRoster(dataDir: string): Observable<Roster> {
-    return from(
-      this.fetchJson<Roster>(`data/opponents/${dataDir}/roster.json`)
-    );
+    return from(this.fetchJson<Roster>(`data/opponents/${dataDir}/roster.json`));
   }
 
   getWellesleyPitchingData(year: number): Observable<YearPitchingData> {
@@ -107,12 +90,8 @@ export class SoftballDataService {
     return roster;
   }
 
-  private async fetchResolvedBattingData(
-    year: number
-  ): Promise<YearBattingData> {
-    const data = await this.fetchJson<YearBattingData>(
-      dataPath('batting-stats', year)
-    );
+  private async fetchResolvedBattingData(year: number): Promise<YearBattingData> {
+    const data = await this.fetchJson<YearBattingData>(dataPath('batting-stats', year));
 
     if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
       const games = await this.fetchGameDataCached(year);

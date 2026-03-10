@@ -1,10 +1,5 @@
 import { DecimalPipe } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { BaseSituation } from '@ws/core/models';
 import { FormatOutsPipe, FormatSituationPipe } from '@ws/core/ui';
 
@@ -27,16 +22,7 @@ interface HeatmapRow {
   total: number;
 }
 
-const SITUATION_ORDER: BaseSituation[] = [
-  'first',
-  'second',
-  'third',
-  'first_second',
-  'first_third',
-  'second_third',
-  'loaded',
-  'empty',
-];
+const SITUATION_ORDER: BaseSituation[] = ['first', 'second', 'third', 'first_second', 'first_third', 'second_third', 'loaded', 'empty'];
 
 function intensityClass(count: number, maxCount: number): string {
   if (count === 0) {
@@ -75,49 +61,32 @@ function intensityClass(count: number, maxCount: number): string {
       <table class="w-full border-separate" style="border-spacing: 3px">
         <thead>
           <tr>
-            <th
-              class="text-content-dim px-3 py-2 text-left text-xs font-medium tracking-widest uppercase"
-            ></th>
+            <th class="text-content-dim px-3 py-2 text-left text-xs font-medium tracking-widest uppercase"></th>
             @for (outs of outHeaders; track outs) {
-              <th
-                class="text-content-muted w-24 px-3 py-2 text-center text-xs font-semibold tracking-widest uppercase"
-              >
+              <th class="text-content-muted w-24 px-3 py-2 text-center text-xs font-semibold tracking-widest uppercase">
                 {{ outs | formatOuts }}
               </th>
             }
-            <th
-              class="text-content-dim w-16 px-3 py-2 text-center text-xs font-medium tracking-widest uppercase"
-            >
-              Total
-            </th>
+            <th class="text-content-dim w-16 px-3 py-2 text-center text-xs font-medium tracking-widest uppercase">Total</th>
           </tr>
         </thead>
         <tbody>
           @for (row of matrix(); track row.situation) {
             <tr>
-              <td
-                class="text-content-secondary px-3 py-2 text-sm font-medium whitespace-nowrap"
-              >
+              <td class="text-content-secondary px-3 py-2 text-sm font-medium whitespace-nowrap">
                 {{ row.situation | formatSituation }}
               </td>
               @for (cell of row.cells; track $index) {
-                <td
-                  class="rounded-lg px-3 py-2.5 text-center text-sm font-semibold tabular-nums transition-colors"
-                  [class]="cell.colorClass"
-                >
+                <td class="rounded-lg px-3 py-2.5 text-center text-sm font-semibold tabular-nums transition-colors" [class]="cell.colorClass">
                   @if (cell.count > 0) {
                     <span class="text-content-bright">{{ cell.count }}</span>
-                    <span class="text-content-dim ml-1 text-xs font-normal">
-                      {{ cell.pct | number: '1.0-0' }}%
-                    </span>
+                    <span class="text-content-dim ml-1 text-xs font-normal"> {{ cell.pct | number: '1.0-0' }}% </span>
                   } @else {
                     <span class="text-content-empty">—</span>
                   }
                 </td>
               }
-              <td
-                class="text-content-muted px-3 py-2 text-center text-sm tabular-nums"
-              >
+              <td class="text-content-muted px-3 py-2 text-center text-sm tabular-nums">
                 {{ row.total }}
               </td>
             </tr>
@@ -133,11 +102,8 @@ export class ScenarioHeatmap {
 
   readonly matrix = computed<HeatmapRow[]>(() => {
     const scenarios = this.data();
-    const lookup = new Map(
-      scenarios.map((s) => [`${s.situation}|${s.outs}`, s])
-    );
-    const maxCount =
-      scenarios.length > 0 ? Math.max(...scenarios.map((s) => s.count)) : 1;
+    const lookup = new Map(scenarios.map((s) => [`${s.situation}|${s.outs}`, s]));
+    const maxCount = scenarios.length > 0 ? Math.max(...scenarios.map((s) => s.count)) : 1;
 
     return SITUATION_ORDER.map((situation) => {
       const cells = [0, 1, 2].map((outs) => {

@@ -4,37 +4,13 @@ import { extractScoringPlays } from './scoring-plays';
 
 // --- Helpers ---
 
-function makeBases(
-  first: string | null = null,
-  second: string | null = null,
-  third: string | null = null
-): BaseRunners {
+function makeBases(first: string | null = null, second: string | null = null, third: string | null = null): BaseRunners {
   return { first, second, third };
 }
 
 /** Shorthand to call extractScoringPlays with defaults */
-function extract(opts: {
-  playText: string;
-  playType: string;
-  basesBefore?: BaseRunners;
-  basesAfter?: BaseRunners;
-  outsBefore?: number;
-  outsAfter?: number;
-  inning?: string;
-  batterName?: string | null;
-  lineupSlot?: number | null;
-}): ScoringPlay[] {
-  return extractScoringPlays(
-    opts.playText,
-    opts.playType,
-    opts.basesBefore ?? makeBases(),
-    opts.basesAfter ?? makeBases(),
-    opts.outsBefore ?? 0,
-    opts.outsAfter ?? 0,
-    opts.inning ?? '1st',
-    opts.batterName ?? 'A. Batter',
-    opts.lineupSlot ?? 1
-  );
+function extract(opts: { playText: string; playType: string; basesBefore?: BaseRunners; basesAfter?: BaseRunners; outsBefore?: number; outsAfter?: number; inning?: string; batterName?: string | null; lineupSlot?: number | null }): ScoringPlay[] {
+  return extractScoringPlays(opts.playText, opts.playType, opts.basesBefore ?? makeBases(), opts.basesAfter ?? makeBases(), opts.outsBefore ?? 0, opts.outsAfter ?? 0, opts.inning ?? '1st', opts.batterName ?? 'A. Batter', opts.lineupSlot ?? 1);
 }
 
 // ============================================================
@@ -243,8 +219,7 @@ describe('extractScoringPlays — sac fly', () => {
 
   it('K2: sac fly with runner advance + scoring', () => {
     const plays = extract({
-      playText:
-        'A. Batter flied out to rf, SAC; B. Runner scored; C. Other advanced to third.',
+      playText: 'A. Batter flied out to rf, SAC; B. Runner scored; C. Other advanced to third.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, 'C. Other', 'B. Runner'),
       basesAfter: makeBases(null, null, 'C. Other'),
@@ -269,8 +244,7 @@ describe('extractScoringPlays — sac fly', () => {
 
   it('K4: sac fly with runner thrown out + another scoring', () => {
     const plays = extract({
-      playText:
-        'A. Batter flied out to cf, SAC; B. Runner scored; C. Other out at third cf to 3b.',
+      playText: 'A. Batter flied out to cf, SAC; B. Runner scored; C. Other out at third cf to 3b.',
       playType: 'plate_appearance',
       basesBefore: makeBases('C. Other', null, 'B. Runner'),
       basesAfter: makeBases(),
@@ -289,8 +263,7 @@ describe('extractScoringPlays — sac fly', () => {
 describe('extractScoringPlays — sac bunt', () => {
   it('L1: sac bunt with RBI → type sac_bunt', () => {
     const plays = extract({
-      playText:
-        'A. Batter grounded out to p, SAC, bunt, RBI; B. Runner scored.',
+      playText: 'A. Batter grounded out to p, SAC, bunt, RBI; B. Runner scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases(),
@@ -392,8 +365,7 @@ describe('extractScoringPlays — productive out', () => {
 
   it('O2: 2 runners scoring on a ground out → 2 productive_out plays', () => {
     const plays = extract({
-      playText:
-        'A. Batter grounded out to 1b; B. Runner scored; C. Other scored.',
+      playText: 'A. Batter grounded out to 1b; B. Runner scored; C. Other scored.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, 'C. Other', 'B. Runner'),
       basesAfter: makeBases(),
@@ -405,8 +377,7 @@ describe('extractScoringPlays — productive out', () => {
 
   it('O3: RBI + runner also out → 1 productive_out (out runner not scored)', () => {
     const plays = extract({
-      playText:
-        'A. Batter grounded out to ss; B. Runner scored; C. Other out at third ss to 3b.',
+      playText: 'A. Batter grounded out to ss; B. Runner scored; C. Other out at third ss to 3b.',
       playType: 'plate_appearance',
       basesBefore: makeBases('C. Other', null, 'B. Runner'),
       basesAfter: makeBases(),
@@ -419,8 +390,7 @@ describe('extractScoringPlays — productive out', () => {
 
   it('O4: double play RBI → type productive_out', () => {
     const plays = extract({
-      playText:
-        'A. Batter grounded into double play ss to 2b to 1b; B. Runner scored; C. Other out at second ss to 2b.',
+      playText: 'A. Batter grounded into double play ss to 2b to 1b; B. Runner scored; C. Other out at second ss to 2b.',
       playType: 'plate_appearance',
       basesBefore: makeBases('C. Other', null, 'B. Runner'),
       basesAfter: makeBases(),
@@ -449,8 +419,7 @@ describe("extractScoringPlays — fielder's choice", () => {
 
   it('P2: FC with error in runner sub-event → overridden to error', () => {
     const plays = extract({
-      playText:
-        "A. Batter reached on a fielder's choice; B. Runner scored on an error by ss.",
+      playText: "A. Batter reached on a fielder's choice; B. Runner scored on an error by ss.",
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -468,8 +437,7 @@ describe("extractScoringPlays — fielder's choice", () => {
 describe('extractScoringPlays — error', () => {
   it('Q1: reached on error with scoring runner → type error', () => {
     const plays = extract({
-      playText:
-        'A. Batter reached first on an error by ss; B. Runner scored, unearned.',
+      playText: 'A. Batter reached first on an error by ss; B. Runner scored, unearned.',
       playType: 'plate_appearance',
       basesBefore: makeBases(null, null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -516,8 +484,7 @@ describe('extractScoringPlays — wild pitch', () => {
 
   it('R2: multiple runners scoring on wild pitch', () => {
     const plays = extract({
-      playText:
-        'B. Runner scored on a wild pitch; C. Other scored on a wild pitch.',
+      playText: 'B. Runner scored on a wild pitch; C. Other scored on a wild pitch.',
       playType: 'wild_pitch',
       basesBefore: makeBases(null, 'C. Other', 'B. Runner'),
       basesAfter: makeBases(),
@@ -633,8 +600,7 @@ describe('extractScoringPlays — stolen base', () => {
 describe('extractScoringPlays — mixed scenarios', () => {
   it('U1: FC + error scoring in runner sub-event → error', () => {
     const plays = extract({
-      playText:
-        "A. Batter reached on a fielder's choice; B. Runner scored on an error by ss; C. Other out at second.",
+      playText: "A. Batter reached on a fielder's choice; B. Runner scored on an error by ss; C. Other out at second.",
       playType: 'plate_appearance',
       basesBefore: makeBases('C. Other', null, 'B. Runner'),
       basesAfter: makeBases('A. Batter'),
@@ -650,8 +616,7 @@ describe('extractScoringPlays — mixed scenarios', () => {
     // the WP handler uses the full playText to determine type (wild_pitch vs passed_ball)
     // and doesn't check individual sub-events for "error"
     const plays = extract({
-      playText:
-        'A. Batter reached first on an error by ss; B. Runner scored on an error by ss; C. Other scored on a wild pitch.',
+      playText: 'A. Batter reached first on an error by ss; B. Runner scored on an error by ss; C. Other scored on a wild pitch.',
       playType: 'wild_pitch', // classifyPlay would return this due to "wild pitch" in text
       basesBefore: makeBases(null, 'C. Other', 'B. Runner'),
       basesAfter: makeBases('A. Batter'),

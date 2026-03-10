@@ -1,12 +1,6 @@
 import type { BreakpointState } from '@angular/cdk/layout';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import {
-  computed,
-  DestroyRef,
-  inject,
-  Injectable,
-  signal,
-} from '@angular/core';
+import { computed, DestroyRef, inject, Injectable, signal } from '@angular/core';
 
 import { StyleReader } from './style-reader.utils';
 
@@ -68,17 +62,11 @@ export class BreakpointService {
     ];
 
     const queries = this.breakpoints.map((bp) => bp.query);
-    const sub = this.observer
-      .observe(queries)
-      .subscribe((state: BreakpointState) => {
-        const matching = this.breakpoints.filter(
-          (bp) => state.breakpoints[bp.query]
-        );
-        const largest = matching.length
-          ? matching[matching.length - 1].label
-          : null;
-        this.activeBreakpoint.set(largest);
-      });
+    const sub = this.observer.observe(queries).subscribe((state: BreakpointState) => {
+      const matching = this.breakpoints.filter((bp) => state.breakpoints[bp.query]);
+      const largest = matching.length ? matching[matching.length - 1].label : null;
+      this.activeBreakpoint.set(largest);
+    });
 
     this.destroyRef.onDestroy(() => sub.unsubscribe());
   }
@@ -89,10 +77,7 @@ export class BreakpointService {
       return false;
     }
 
-    return (
-      LABELS.indexOf(active as (typeof LABELS)[number]) >=
-      LABELS.indexOf(label as (typeof LABELS)[number])
-    );
+    return LABELS.indexOf(active as (typeof LABELS)[number]) >= LABELS.indexOf(label as (typeof LABELS)[number]);
   }
 
   gt(label: string): boolean {
@@ -107,9 +92,6 @@ export class BreakpointService {
       return true;
     }
 
-    return (
-      LABELS.indexOf(active as (typeof LABELS)[number]) <
-      LABELS.indexOf(label as (typeof LABELS)[number])
-    );
+    return LABELS.indexOf(active as (typeof LABELS)[number]) < LABELS.indexOf(label as (typeof LABELS)[number]);
   }
 }

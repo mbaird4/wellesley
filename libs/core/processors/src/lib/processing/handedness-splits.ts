@@ -1,20 +1,7 @@
 import type { BatHand, PitcherTrackedPlay } from '@ws/core/models';
 
 /** NEWMAC conference teams */
-const NEWMAC_TEAMS = [
-  'babson',
-  'clark',
-  'coast guard',
-  'emerson',
-  'mit',
-  'mount holyoke',
-  'smith',
-  'springfield',
-  'wellesley',
-  'wheaton',
-  'wpi',
-  'uscga',
-];
+const NEWMAC_TEAMS = ['babson', 'clark', 'coast guard', 'emerson', 'mit', 'mount holyoke', 'smith', 'springfield', 'wellesley', 'wheaton', 'wpi', 'uscga'];
 
 export interface HandednessSplitStats {
   hand: BatHand;
@@ -47,10 +34,7 @@ export function isConferenceGame(opponentName: string): boolean {
  * @param conferenceOnly - If true, only include plays from conference games
  * @param gameOpponents - Map of play index ranges to opponent names (for conference filtering)
  */
-export function computeHandednessSplits(
-  plays: PitcherTrackedPlay[],
-  handednessMap: Map<string, BatHand>
-): Map<BatHand, HandednessSplitStats> {
+export function computeHandednessSplits(plays: PitcherTrackedPlay[], handednessMap: Map<string, BatHand>): Map<BatHand, HandednessSplitStats> {
   const splits = new Map<BatHand, HandednessSplitStats>();
 
   const getOrCreate = (hand: BatHand): HandednessSplitStats => {
@@ -76,10 +60,7 @@ export function computeHandednessSplits(
   plays
     .filter((p) => p.isPlateAppearance && p.batterName)
     .forEach((play) => {
-      const normalizedName = (play.batterName ?? '')
-        .replace(/\./g, '')
-        .trim()
-        .toLowerCase();
+      const normalizedName = (play.batterName ?? '').replace(/\./g, '').trim().toLowerCase();
       const hand = handednessMap.get(normalizedName);
 
       if (!hand) {
@@ -129,10 +110,7 @@ export function computeHandednessSplits(
           break;
       }
 
-      if (
-        play.batterResult === 'out' &&
-        play.playText.toLowerCase().includes('struck out')
-      ) {
+      if (play.batterResult === 'out' && play.playText.toLowerCase().includes('struck out')) {
         stats.strikeouts += 1;
       }
     });

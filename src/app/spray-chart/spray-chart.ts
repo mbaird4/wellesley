@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { SoftballDataService, SoftballStatsService } from '@ws/core/data';
 import { type Roster, type SprayDataPoint } from '@ws/core/models';
 import { canonicalizeSprayNames, parseSprayData } from '@ws/core/processors';
@@ -25,12 +20,7 @@ import { catchError, forkJoin, of } from 'rxjs';
         </span>
       </div>
     }
-    <ws-spray-chart-viewer
-      [dataByYear]="dataByYear()"
-      [roster]="roster()"
-      [loading]="loading()"
-      [error]="error()"
-    />
+    <ws-spray-chart-viewer [dataByYear]="dataByYear()" [roster]="roster()" [loading]="loading()" [error]="error()" />
   `,
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -56,17 +46,9 @@ export class SprayChart {
     const currentYear = SPRAY_YEARS[0];
 
     forkJoin({
-      roster: this.dataService
-        .getRoster()
-        .pipe(catchError(() => of({} as Roster))),
-      scrapedAt: this.dataService
-        .getScrapedAt(currentYear)
-        .pipe(catchError(() => of(''))),
-      years: forkJoin(
-        SPRAY_YEARS.map((year) =>
-          this.statsService.getStats(year).pipe(catchError(() => of(null)))
-        )
-      ),
+      roster: this.dataService.getRoster().pipe(catchError(() => of({} as Roster))),
+      scrapedAt: this.dataService.getScrapedAt(currentYear).pipe(catchError(() => of(''))),
+      years: forkJoin(SPRAY_YEARS.map((year) => this.statsService.getStats(year).pipe(catchError(() => of(null))))),
     }).subscribe({
       next: ({ roster, scrapedAt, years }) => {
         this.scrapedAt.set(scrapedAt || null);
@@ -80,9 +62,7 @@ export class SprayChart {
 
           map.set(
             SPRAY_YEARS[i],
-            stats.games.flatMap((game, gi) =>
-              parseSprayData(game.snapshots, gi)
-            )
+            stats.games.flatMap((game, gi) => parseSprayData(game.snapshots, gi))
           );
         });
 
@@ -91,9 +71,7 @@ export class SprayChart {
         this.loading.set(false);
       },
       error: (err) => {
-        this.error.set(
-          err.message || 'An error occurred while loading spray chart data'
-        );
+        this.error.set(err.message || 'An error occurred while loading spray chart data');
         this.loading.set(false);
       },
     });

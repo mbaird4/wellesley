@@ -3,13 +3,7 @@ import type { ESLintUtils } from '@typescript-eslint/utils';
 type MessageIds = 'propertiesOnOneLine' | 'arrayElementsOnOneLine';
 type RuleModule = ESLintUtils.RuleModule<MessageIds>;
 
-const DECORATOR_NAMES = new Set([
-  'Component',
-  'Directive',
-  'Pipe',
-  'NgModule',
-  'Injectable',
-]);
+const DECORATOR_NAMES = new Set(['Component', 'Directive', 'Pipe', 'NgModule', 'Injectable']);
 const ARRAY_PROPERTIES = new Set(['imports', 'providers', 'exports']);
 
 function getDecoratorName(node: any): string | null {
@@ -37,16 +31,13 @@ const rule: RuleModule = {
   meta: {
     type: 'layout',
     docs: {
-      description:
-        'Enforce Angular decorator metadata properties and array elements each on their own line',
+      description: 'Enforce Angular decorator metadata properties and array elements each on their own line',
     },
     fixable: 'whitespace',
     schema: [],
     messages: {
-      propertiesOnOneLine:
-        'Angular decorator metadata properties must each be on their own line.',
-      arrayElementsOnOneLine:
-        'Angular decorator array "{{ property }}" with 2+ elements must have each element on its own line.',
+      propertiesOnOneLine: 'Angular decorator metadata properties must each be on their own line.',
+      arrayElementsOnOneLine: 'Angular decorator array "{{ property }}" with 2+ elements must have each element on its own line.',
     },
   },
 
@@ -68,8 +59,7 @@ const rule: RuleModule = {
 
         const openBrace = sourceCode.getFirstToken(node)!;
         const firstProp = properties[0];
-        const objectIsSingleLine =
-          openBrace.loc!.end.line === firstProp.loc!.start.line;
+        const objectIsSingleLine = openBrace.loc!.end.line === firstProp.loc!.start.line;
 
         // Check 1: Decorator properties on same line as {
         if (objectIsSingleLine) {
@@ -88,10 +78,7 @@ const rule: RuleModule = {
               });
               const replacement = `{\n${propTexts.join('\n')}\n${baseIndent}}`;
 
-              return fixer.replaceTextRange(
-                [openBrace.range![0], closeBrace.range![1]],
-                replacement
-              );
+              return fixer.replaceTextRange([openBrace.range![0], closeBrace.range![1]], replacement);
             },
           });
 
@@ -105,8 +92,7 @@ const rule: RuleModule = {
             return;
           }
 
-          const propName =
-            prop.key.type === 'Identifier' ? prop.key.name : null;
+          const propName = prop.key.type === 'Identifier' ? prop.key.name : null;
 
           if (!propName || !ARRAY_PROPERTIES.has(propName)) {
             return;
@@ -114,21 +100,14 @@ const rule: RuleModule = {
 
           const arrayNode = prop.value;
 
-          if (
-            !arrayNode ||
-            arrayNode.type !== 'ArrayExpression' ||
-            arrayNode.elements.length < 2
-          ) {
+          if (!arrayNode || arrayNode.type !== 'ArrayExpression' || arrayNode.elements.length < 2) {
             return;
           }
 
           const openBracket = sourceCode.getFirstToken(arrayNode)!;
           const firstElement = arrayNode.elements[0];
 
-          if (
-            !firstElement ||
-            openBracket.loc!.end.line !== firstElement.loc!.start.line
-          ) {
+          if (!firstElement || openBracket.loc!.end.line !== firstElement.loc!.start.line) {
             return;
           }
 
@@ -142,15 +121,10 @@ const rule: RuleModule = {
               const elementIndent = `${baseIndent}  `;
 
               const elements = arrayNode.elements.filter(Boolean);
-              const elementsText = elements
-                .map((el: any) => `${elementIndent}${sourceCode.getText(el)},`)
-                .join('\n');
+              const elementsText = elements.map((el: any) => `${elementIndent}${sourceCode.getText(el)},`).join('\n');
               const replacement = `[\n${elementsText}\n${baseIndent}]`;
 
-              return fixer.replaceTextRange(
-                [openBracket.range![0], closeBracket.range![1]],
-                replacement
-              );
+              return fixer.replaceTextRange([openBracket.range![0], closeBracket.range![1]], replacement);
             },
           });
         });

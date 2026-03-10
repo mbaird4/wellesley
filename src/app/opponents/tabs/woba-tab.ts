@@ -19,9 +19,7 @@ import { PlayerTable } from '../player-table/player-table';
     <ws-woba-legend />
 
     @if (data.error()) {
-      <div
-        class="bg-error-bg text-error py-cell px-card border-error-border rounded-[10px] border text-[1.05rem]"
-      >
+      <div class="bg-error-bg text-error py-cell px-card border-error-border rounded-[10px] border text-[1.05rem]">
         {{ data.error() }}
       </div>
     }
@@ -32,40 +30,14 @@ import { PlayerTable } from '../player-table/player-table';
       </div>
     }
     @if (data.empty()) {
-      <div
-        class="py-section px-card text-content-dim text-center text-[1.05rem]"
-      >
-        No scouting data for this team yet.
-      </div>
+      <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No scouting data for this team yet.</div>
     }
 
-    @if (
-      (data.regulars().length > 0 || data.reserves().length > 0) &&
-      !data.loading()
-    ) {
+    @if ((data.regulars().length > 0 || data.reserves().length > 0) && !data.loading()) {
       @if (bp.gtSm()) {
-        <ws-player-table
-          [regulars]="data.regulars()"
-          [reserves]="data.reserves()"
-          [allYears]="data.allYears()"
-          [expandedPlayer]="data.expandedPlayer()"
-          [sortKey]="data.sortKey()"
-          [sortDir]="data.sortDir()"
-          [yearSortYear]="data.yearSortYear()"
-          (playerToggled)="data.togglePlayer($event)"
-          (sortChanged)="data.sort($event)"
-          (yearSortChanged)="data.sortByYear($event)"
-        />
+        <ws-player-table [regulars]="data.regulars()" [reserves]="data.reserves()" [allYears]="data.allYears()" [expandedPlayer]="data.expandedPlayer()" [sortKey]="data.sortKey()" [sortDir]="data.sortDir()" [yearSortYear]="data.yearSortYear()" (playerToggled)="data.togglePlayer($event)" (sortChanged)="data.sort($event)" (yearSortChanged)="data.sortByYear($event)" />
       } @else {
-        <ws-player-card-list
-          [regulars]="data.regulars()"
-          [reserves]="data.reserves()"
-          [expandedPlayer]="data.expandedPlayer()"
-          [sortKey]="data.sortKey()"
-          [sortDir]="data.sortDir()"
-          (playerToggled)="data.togglePlayer($event)"
-          (sortChanged)="data.sort($event)"
-        />
+        <ws-player-card-list [regulars]="data.regulars()" [reserves]="data.reserves()" [expandedPlayer]="data.expandedPlayer()" [sortKey]="data.sortKey()" [sortDir]="data.sortDir()" (playerToggled)="data.togglePlayer($event)" (sortChanged)="data.sort($event)" />
       }
     }
   `,

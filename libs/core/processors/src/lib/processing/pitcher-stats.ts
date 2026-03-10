@@ -1,9 +1,4 @@
-import type {
-  PitcherGameLog,
-  PitcherInningStats,
-  PitcherSeasonSummary,
-  PitcherTrackedPlay,
-} from '@ws/core/models';
+import type { PitcherGameLog, PitcherInningStats, PitcherSeasonSummary, PitcherTrackedPlay } from '@ws/core/models';
 
 /** Parse inning string to sortable number: "1st"→1, "2nd"→2, "3rd"→3, "4th"→4, etc. */
 export function inningToNumber(inning: string): number {
@@ -32,10 +27,7 @@ function emptyInningStats(inning: string): PitcherInningStats {
 }
 
 /** Classify a batter result into counting stat categories */
-function accumulateResult(
-  stats: PitcherInningStats,
-  play: PitcherTrackedPlay
-): void {
+function accumulateResult(stats: PitcherInningStats, play: PitcherTrackedPlay): void {
   if (!play.isPlateAppearance) {
     // Non-PA events (wild pitch, stolen base) can still score runs
     stats.runs += play.runsScored;
@@ -104,10 +96,7 @@ function accumulateResult(
 }
 
 /** Merge two inning stats objects (used for cross-game aggregation) */
-function mergeInningStats(
-  target: PitcherInningStats,
-  source: PitcherInningStats
-): void {
+function mergeInningStats(target: PitcherInningStats, source: PitcherInningStats): void {
   target.battersFaced += source.battersFaced;
   target.ab += source.ab;
   target.hits += source.hits;
@@ -125,9 +114,7 @@ function mergeInningStats(
 /**
  * Group tracked plays by pitcher and inning, producing per-inning stats.
  */
-export function computePitcherInningStats(
-  plays: PitcherTrackedPlay[]
-): Map<string, PitcherInningStats[]> {
+export function computePitcherInningStats(plays: PitcherTrackedPlay[]): Map<string, PitcherInningStats[]> {
   // Group by pitcher → inning
   const byPitcher = new Map<string, Map<string, PitcherInningStats>>();
 
@@ -150,9 +137,7 @@ export function computePitcherInningStats(
   const result = new Map<string, PitcherInningStats[]>();
 
   byPitcher.forEach((inningMap, pitcher) => {
-    const innings = Array.from(inningMap.values()).sort(
-      (a, b) => inningToNumber(a.inning) - inningToNumber(b.inning)
-    );
+    const innings = Array.from(inningMap.values()).sort((a, b) => inningToNumber(a.inning) - inningToNumber(b.inning));
     result.set(pitcher, innings);
   });
 
@@ -171,10 +156,7 @@ function sumInnings(innings: PitcherInningStats[]): PitcherInningStats {
 /**
  * Compute a single-game pitcher log from tracked plays.
  */
-export function computePitcherGameLog(
-  plays: PitcherTrackedPlay[],
-  gameInfo: { date: string; opponent: string; url: string }
-): PitcherGameLog[] {
+export function computePitcherGameLog(plays: PitcherTrackedPlay[], gameInfo: { date: string; opponent: string; url: string }): PitcherGameLog[] {
   const byPitcher = computePitcherInningStats(plays);
   const logs: PitcherGameLog[] = [];
 
@@ -195,9 +177,7 @@ export function computePitcherGameLog(
 /**
  * Aggregate multiple game logs into a season summary per pitcher.
  */
-export function computePitcherSeasonSummary(
-  gameLogs: PitcherGameLog[]
-): PitcherSeasonSummary[] {
+export function computePitcherSeasonSummary(gameLogs: PitcherGameLog[]): PitcherSeasonSummary[] {
   const byPitcher = new Map<string, PitcherGameLog[]>();
 
   gameLogs.forEach((log) => {
@@ -220,15 +200,12 @@ export function computePitcherSeasonSummary(
           byInning.set(inn.inning, emptyInningStats(inn.inning));
         }
 
-        const existing =
-          byInning.get(inn.inning) ?? emptyInningStats(inn.inning);
+        const existing = byInning.get(inn.inning) ?? emptyInningStats(inn.inning);
         mergeInningStats(existing, inn);
       });
     });
 
-    const allInnings = Array.from(byInning.values()).sort(
-      (a, b) => inningToNumber(a.inning) - inningToNumber(b.inning)
-    );
+    const allInnings = Array.from(byInning.values()).sort((a, b) => inningToNumber(a.inning) - inningToNumber(b.inning));
 
     summaries.push({
       pitcher,
@@ -268,13 +245,7 @@ export function wobaAgainst(stats: PitcherInningStats): number {
     return 0;
   }
 
-  const numerator =
-    0.5 * stats.walks +
-    0.5 * stats.hbp +
-    0.9 * stats.singles +
-    1.2 * stats.doubles +
-    1.7 * stats.triples +
-    2.5 * stats.hr;
+  const numerator = 0.5 * stats.walks + 0.5 * stats.hbp + 0.9 * stats.singles + 1.2 * stats.doubles + 1.7 * stats.triples + 2.5 * stats.hr;
 
   return numerator / denominator;
 }

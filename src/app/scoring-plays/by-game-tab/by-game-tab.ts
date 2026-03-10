@@ -1,17 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { GameScoringPlays } from '@ws/core/models';
-import {
-  BoxscoreUrlPipe,
-  BuntRelatedPipe,
-  FormatPlayTypePipe,
-  FormatSituationPipe,
-} from '@ws/core/ui';
+import { BoxscoreUrlPipe, BuntRelatedPipe, FormatPlayTypePipe, FormatSituationPipe } from '@ws/core/ui';
 
 interface DisplayGame {
   game: GameScoringPlays;
@@ -41,8 +30,7 @@ export class ByGameTab {
 
   readonly displayGames = computed<DisplayGame[]>(() => {
     const games = this.games();
-    const maxRuns =
-      games.length > 0 ? Math.max(...games.map((g) => g.summary.totalRuns)) : 1;
+    const maxRuns = games.length > 0 ? Math.max(...games.map((g) => g.summary.totalRuns)) : 1;
 
     const opponentCounts = new Map<string, number>();
     games.forEach((g) => {

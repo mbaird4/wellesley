@@ -160,17 +160,7 @@ const WOBA_WEIGHT_2B = 1.2;
 const WOBA_WEIGHT_3B = 1.7;
 const WOBA_WEIGHT_HR = 2.5;
 
-function calculateWoba(stats: {
-  ab: number;
-  h: number;
-  doubles: number;
-  triples: number;
-  hr: number;
-  bb: number;
-  hbp: number;
-  sf: number;
-  sh: number;
-}): number {
+function calculateWoba(stats: { ab: number; h: number; doubles: number; triples: number; hr: number; bb: number; hbp: number; sf: number; sh: number }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
 
@@ -178,13 +168,7 @@ function calculateWoba(stats: {
     return 0;
   }
 
-  const numerator =
-    WOBA_WEIGHT_BB * stats.bb +
-    WOBA_WEIGHT_HBP * stats.hbp +
-    WOBA_WEIGHT_1B * singles +
-    WOBA_WEIGHT_2B * stats.doubles +
-    WOBA_WEIGHT_3B * stats.triples +
-    WOBA_WEIGHT_HR * stats.hr;
+  const numerator = WOBA_WEIGHT_BB * stats.bb + WOBA_WEIGHT_HBP * stats.hbp + WOBA_WEIGHT_1B * singles + WOBA_WEIGHT_2B * stats.doubles + WOBA_WEIGHT_3B * stats.triples + WOBA_WEIGHT_HR * stats.hr;
 
   return Math.round((numerator / denominator) * 1000) / 1000;
 }
@@ -193,15 +177,11 @@ function calculateWoba(stats: {
 
 const BASE_URL = 'https://wellesleyblue.com';
 const DELAY_MS = 300;
-const DEFAULT_YEARS = [
-  2026, 2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
-  2011,
-];
+const DEFAULT_YEARS = [2026, 2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities ──
@@ -215,7 +195,8 @@ function normalizeName(name: string): string {
 }
 
 function extractPlayerName(cellText: string): string {
-  const match = cellText.match(/^[a-z\/]+ (.+)$/i);
+  const match = cellText.match(/^[a-z/]+ (.+)$/i);
+
   return match ? match[1].trim() : cellText.trim();
 }
 
@@ -228,9 +209,7 @@ async function fetchPage(url: string): Promise<string | null> {
     const html = response.data;
 
     if (!html || html.length < 1000) {
-      console.warn(
-        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
-      );
+      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
 
       return null;
     }
@@ -238,6 +217,7 @@ async function fetchPage(url: string): Promise<string | null> {
     return html;
   } catch (error: any) {
     console.warn(`  Failed to fetch ${url}: ${error.message}`);
+
     return null;
   }
 }
@@ -284,10 +264,9 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI): string[] {
     if (!href) {
       return;
     }
+
     // Resolve to full URL
-    const fullUrl = href.startsWith('http')
-      ? href
-      : `${BASE_URL}${href.startsWith('/') ? '' : '/'}${href}`;
+    const fullUrl = href.startsWith('http') ? href : `${BASE_URL}${href.startsWith('/') ? '' : '/'}${href}`;
     urls.push(fullUrl);
   });
 
@@ -322,10 +301,7 @@ function parseLineup($: cheerio.CheerioAPI): Map<number, string[]> {
       const playerText = $playerLink.text().trim() || '';
       const rawText = $nameCell.text() || '';
 
-      const isSubstitution =
-        cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') ||
-        /^(&nbsp;){4,}/.test(cellHtml) ||
-        /^(\u00A0|\s){4,}/.test(rawText);
+      const isSubstitution = cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') || /^(&nbsp;){4,}/.test(cellHtml) || /^(\u00A0|\s){4,}/.test(rawText);
 
       const playerName = extractPlayerName(playerText);
 
@@ -370,35 +346,26 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
       return;
     }
 
-    const inningKey = caption
-      .replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '')
-      .trim();
+    const inningKey = caption.replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '').trim();
 
     if (processedInnings.has(inningKey)) {
       return;
     }
+
     processedInnings.add(inningKey);
 
     const plays: string[] = [];
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const firstCell = $row.find('td').first();
-      const originalText =
-        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (
-        !originalText ||
-        text.includes('play description') ||
-        text.length < 5
-      ) {
+      if (!originalText || text.includes('play description') || text.length < 5) {
         return;
       }
 
-      if (
-        text.includes('inning summary') ||
-        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
-      ) {
+      if (text.includes('inning summary') || text.match(/^\d+(st|nd|rd|th)\s+inning/i)) {
         return;
       }
 
@@ -413,19 +380,12 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
   return innings;
 }
 
-function extractGameData(
-  $: cheerio.CheerioAPI,
-  url: string
-): SerializedGameData {
+function extractGameData($: cheerio.CheerioAPI, url: string): SerializedGameData {
   const lineup = parseLineup($);
   const playByPlay = parsePlayByPlay($);
 
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
-  const opponent = opponentMatch
-    ? opponentMatch[1]
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase())
-    : 'Unknown';
+  const opponent = opponentMatch ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'Unknown';
 
   return {
     url,
@@ -437,10 +397,7 @@ function extractGameData(
 
 // ── wOBA data extraction ──
 
-function parseStatsTable(
-  $: cheerio.CheerioAPI,
-  year: number
-): { players: SeasonStats[]; teamGames: number } {
+function parseStatsTable($: cheerio.CheerioAPI, year: number): { players: SeasonStats[]; teamGames: number } {
   const players: SeasonStats[] = [];
   let teamGames = 0;
 
@@ -461,10 +418,7 @@ function parseStatsTable(
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const nameCell = $row.find('th[scope="row"]');
-    const name =
-      nameCell.find('a.hide-on-medium-down').text().trim() ||
-      nameCell.find('a').first().text().trim() ||
-      nameCell.text().trim();
+    const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
     if (!name || name.toLowerCase() === 'opponents') {
       return;
@@ -562,14 +516,12 @@ function parseStatsTable(
   return { players, teamGames };
 }
 
-function parseGameInfo(
-  $: cheerio.CheerioAPI,
-  url: string
-): { date: string; opponent: string } {
+function parseGameInfo($: cheerio.CheerioAPI, url: string): { date: string; opponent: string } {
   let date = '';
   $('dt').each((_, el) => {
     if ($(el).text().trim() === 'Date') {
       date = $(el).next('dd').text().trim();
+
       return false;
     }
   });
@@ -583,11 +535,7 @@ function parseGameInfo(
   }
 
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
-  const opponent = opponentMatch
-    ? opponentMatch[1]
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase())
-    : 'Unknown';
+  const opponent = opponentMatch ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'Unknown';
 
   return { date, opponent };
 }
@@ -596,10 +544,7 @@ function parseGameInfo(
  * Match a stats-page player name (e.g. "Smith, Jane") to a roster key (e.g. "smith, jane").
  * Returns the matching roster key or null.
  */
-function matchStatNameToRoster(
-  statName: string,
-  roster: Roster
-): string | null {
+function matchStatNameToRoster(statName: string, roster: Roster): string | null {
   const normalized = normalizeName(statName);
 
   // Exact match
@@ -622,14 +567,11 @@ function matchStatNameToRoster(
 function lastNameMatch(a: string, b: string): boolean {
   const lastA = a.split(',')[0].trim();
   const lastB = b.split(',')[0].trim();
+
   return lastA.length > 2 && lastA === lastB;
 }
 
-function attributeStatToPlayers(
-  text: string,
-  playerMap: Map<string, GameBattingStats>,
-  field: 'doubles' | 'triples' | 'hr' | 'hbp' | 'sf' | 'sh'
-): void {
+function attributeStatToPlayers(text: string, playerMap: Map<string, GameBattingStats>, field: 'doubles' | 'triples' | 'hr' | 'hbp' | 'sf' | 'sh'): void {
   const playerRegex = /([\w][\w\s,.'"-]+?)\s*\((\d+)\)/g;
   let match;
   while ((match = playerRegex.exec(text)) !== null) {
@@ -651,10 +593,7 @@ function attributeStatToPlayers(
   }
 }
 
-function parseSupplementaryStats(
-  $: cheerio.CheerioAPI,
-  playerMap: Map<string, GameBattingStats>
-): void {
+function parseSupplementaryStats($: cheerio.CheerioAPI, playerMap: Map<string, GameBattingStats>): void {
   const dtDdStats: Array<{
     label: string;
     field: 'doubles' | 'triples' | 'hr' | 'sf' | 'sh';
@@ -701,10 +640,7 @@ function parseSupplementaryStats(
   });
 }
 
-function extractBoxscoreBatting(
-  $: cheerio.CheerioAPI,
-  url: string
-): BoxscoreData | null {
+function extractBoxscoreBatting($: cheerio.CheerioAPI, url: string): BoxscoreData | null {
   const { date, opponent } = parseGameInfo($, url);
   const playerStats: GameBattingStats[] = [];
   const playerMap = new Map<string, GameBattingStats>();
@@ -712,14 +648,9 @@ function extractBoxscoreBatting(
   let wellesleyTable: any = null;
   $('table').each((_, table) => {
     const caption = $(table).find('caption').text();
-    if (
-      caption.includes('Wellesley') &&
-      !caption.toLowerCase().includes('pitching') &&
-      !caption.includes('Top of') &&
-      !caption.includes('Bottom of') &&
-      !caption.includes('Scoring Summary')
-    ) {
+    if (caption.includes('Wellesley') && !caption.toLowerCase().includes('pitching') && !caption.includes('Top of') && !caption.includes('Bottom of') && !caption.includes('Scoring Summary')) {
       wellesleyTable = $(table);
+
       return false;
     }
   });
@@ -745,6 +676,7 @@ function extractBoxscoreBatting(
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
@@ -780,6 +712,7 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
     const caption = $(table).find('caption').text();
     if (caption.includes('Individual Overall Pitching Statistics')) {
       targetTable = $(table);
+
       return false;
     }
   });
@@ -791,27 +724,21 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
   targetTable.find('tbody tr').each((_: number, row: any) => {
     const $row = $(row);
     const nameCell = $row.find('th[scope="row"]');
-    const name =
-      nameCell.find('a.hide-on-medium-down').text().trim() ||
-      nameCell.find('a').first().text().trim() ||
-      nameCell.text().trim();
+    const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
-    if (
-      !name ||
-      name.toLowerCase() === 'totals' ||
-      name.toLowerCase() === 'opponents' ||
-      !/[a-zA-Z]/.test(name)
-    ) {
+    if (!name || name.toLowerCase() === 'totals' || name.toLowerCase() === 'opponents' || !/[a-zA-Z]/.test(name)) {
       return;
     }
 
     const num = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseInt(cell.text().trim(), 10) || 0;
     };
 
     const pct = (label: string): number => {
       const cell = $row.find(`td[data-label="${label}"]`);
+
       return parseFloat(cell.text().trim()) || 0;
     };
 
@@ -872,9 +799,7 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
       return;
     }
 
-    const teamName = caption
-      .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
-      .trim();
+    const teamName = caption.replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '').trim();
 
     const inningMatch = caption.match(/(?:Top|Bottom)\s+of\s+(.+)/i);
     const inning = inningMatch ? inningMatch[1].trim() : '';
@@ -895,22 +820,14 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const firstCell = $row.find('td').first();
-      const originalText =
-        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (
-        !originalText ||
-        text.includes('play description') ||
-        text.length < 5
-      ) {
+      if (!originalText || text.includes('play description') || text.length < 5) {
         return;
       }
 
-      if (
-        text.includes('inning summary') ||
-        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
-      ) {
+      if (text.includes('inning summary') || text.match(/^\d+(st|nd|rd|th)\s+inning/i)) {
         return;
       }
 
@@ -926,15 +843,11 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 }
 
 /** Filter play-by-play to only innings where opponents bat (against Wellesley pitchers) */
-function parseDefensiveInnings(
-  $: cheerio.CheerioAPI
-): { inning: string; plays: string[] }[] {
+function parseDefensiveInnings($: cheerio.CheerioAPI): { inning: string; plays: string[] }[] {
   const allInnings = parseAllPlayByPlay($);
 
   // Non-Wellesley batting innings = when opponents bat against Wellesley pitchers
-  return allInnings
-    .filter((inn) => !captionMatchesWellesley(inn.teamName))
-    .map((inn) => ({ inning: inn.inning, plays: inn.plays }));
+  return allInnings.filter((inn) => !captionMatchesWellesley(inn.teamName)).map((inn) => ({ inning: inn.inning, plays: inn.plays }));
 }
 
 /** Extract Wellesley's pitchers from the boxscore pitching table, in appearance order */
@@ -976,11 +889,10 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
 
   // 1. Fetch schedule page to get boxscore URLs
   console.log(`  Fetching schedule page...`);
-  const scheduleHtml = await fetchPage(
-    `${BASE_URL}/sports/softball/schedule/${year}`
-  );
+  const scheduleHtml = await fetchPage(`${BASE_URL}/sports/softball/schedule/${year}`);
   if (!scheduleHtml) {
     console.log(`  No schedule page for ${year}, skipping`);
+
     return;
   }
 
@@ -990,22 +902,17 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
 
   if (boxscoreUrls.length === 0) {
     console.log(`  No boxscores for ${year}, skipping`);
+
     return;
   }
 
   // 2. Fetch stats page for season totals
   console.log(`  Fetching stats page...`);
   await delay(DELAY_MS);
-  const statsHtml = await fetchPage(
-    `${BASE_URL}/sports/softball/stats/${year}`
-  );
+  const statsHtml = await fetchPage(`${BASE_URL}/sports/softball/stats/${year}`);
   const $stats = statsHtml ? cheerio.load(statsHtml) : null;
-  const { players: seasonStats, teamGames } = $stats
-    ? parseStatsTable($stats, year)
-    : { players: [], teamGames: 0 };
-  console.log(
-    `  Parsed ${seasonStats.length} players from stats table (${teamGames} team GP)`
-  );
+  const { players: seasonStats, teamGames } = $stats ? parseStatsTable($stats, year) : { players: [], teamGames: 0 };
+  console.log(`  Parsed ${seasonStats.length} players from stats table (${teamGames} team GP)`);
   const pitchingStats = $stats ? parsePitchingStatsTable($stats) : [];
   console.log(`  Parsed ${pitchingStats.length} pitchers from stats table`);
 
@@ -1082,10 +989,7 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     };
   });
 
-  const battingStatsPath = path.join(
-    outputDir,
-    dataFilename('batting-stats', year)
-  );
+  const battingStatsPath = path.join(outputDir, dataFilename('batting-stats', year));
   const battingData: YearBattingData = {
     slug: 'wellesley',
     domain: 'wellesleyblue.com',
@@ -1096,9 +1000,7 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     boxscores: boxscoreDataList,
   };
   fs.writeFileSync(battingStatsPath, JSON.stringify(battingData));
-  console.log(
-    `  Wrote ${battingStatsPath} (${yearPlayers.length} players, ${boxscoreDataList.length} boxscores)`
-  );
+  console.log(`  Wrote ${battingStatsPath} (${yearPlayers.length} players, ${boxscoreDataList.length} boxscores)`);
 
   const pitchingPath = path.join(outputDir, dataFilename('pitching', year));
   const pitchingOutput: PitchingOutput = {
@@ -1110,9 +1012,7 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     games: pitchingGameList,
   };
   fs.writeFileSync(pitchingPath, JSON.stringify(pitchingOutput));
-  console.log(
-    `  Wrote ${pitchingPath} (${pitchingStats.length} pitchers, ${pitchingGameList.length} games)`
-  );
+  console.log(`  Wrote ${pitchingPath} (${pitchingStats.length} pitchers, ${pitchingGameList.length} games)`);
 }
 
 // ── Roster scraping (jersey numbers) ──
@@ -1126,16 +1026,10 @@ function parseRoster($: cheerio.CheerioAPI): Roster {
   // We also use <tr> with .sidearm-table-player-name for the reliable name + jersey.
 
   // Card view: extract class year and B/T by name
-  const cardData = new Map<
-    string,
-    { classYear: string; bats: BatHand | null; throws: 'L' | 'R' | null }
-  >();
+  const cardData = new Map<string, { classYear: string; bats: BatHand | null; throws: 'L' | 'R' | null }>();
   $('li.sidearm-list-card-item').each((_, el) => {
     const $el = $(el);
-    const firstName = $el
-      .find('.sidearm-roster-player-first-name')
-      .text()
-      .trim();
+    const firstName = $el.find('.sidearm-roster-player-first-name').text().trim();
     const lastName = $el.find('.sidearm-roster-player-last-name').text().trim();
 
     if (!firstName || !lastName) {
@@ -1154,22 +1048,15 @@ function parseRoster($: cheerio.CheerioAPI): Roster {
     // B/T (bats/throws)
     let bats: BatHand | null = null;
     let throws: 'L' | 'R' | null = null;
-    const btSelectors = [
-      '[data-custom-label="B/T:"]',
-      '[data-custom-label="B-T:"]',
-      '.sidearm-roster-player-custom2',
-      '.sidearm-roster-player-custom3',
-    ];
+    const btSelectors = ['[data-custom-label="B/T:"]', '[data-custom-label="B-T:"]', '.sidearm-roster-player-custom2', '.sidearm-roster-player-custom3'];
     btSelectors.some((sel) => {
       const text = $el.find(sel).text().trim();
-      const btMatch = text.match(/([LRS])\s*[/\-]\s*([LR])/i);
+      const btMatch = text.match(/([LRS])\s*[/-]\s*([LR])/i);
 
       if (btMatch) {
         const b = btMatch[1].toUpperCase();
         const t = btMatch[2].toUpperCase();
-        bats = (
-          b === 'L' || b === 'R' || b === 'S' ? b : null
-        ) as BatHand | null;
+        bats = (b === 'L' || b === 'R' || b === 'S' ? b : null) as BatHand | null;
         throws = (t === 'L' || t === 'R' ? t : null) as 'L' | 'R' | null;
 
         return true;
@@ -1185,15 +1072,8 @@ function parseRoster($: cheerio.CheerioAPI): Roster {
   const positionByJersey = new Map<number, string>();
   $('li.sidearm-roster-player').each((_, el) => {
     const $el = $(el);
-    const jn = parseInt(
-      $el.find('.sidearm-roster-player-jersey-number').text().trim(),
-      10
-    );
-    const pos =
-      $el
-        .find('.sidearm-roster-player-position span.text-bold')
-        .text()
-        .trim() || $el.find('.sidearm-roster-player-position').text().trim();
+    const jn = parseInt($el.find('.sidearm-roster-player-jersey-number').text().trim(), 10);
+    const pos = $el.find('.sidearm-roster-player-position span.text-bold').text().trim() || $el.find('.sidearm-roster-player-position').text().trim();
 
     if (!isNaN(jn) && pos) {
       positionByJersey.set(jn, pos);

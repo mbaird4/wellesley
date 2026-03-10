@@ -1,19 +1,8 @@
 import { CommonModule } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  inject,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/core/data';
-import type {
-  BaseRunnerMode,
-  BaseRunnerRow,
-  GameWithSnapshots,
-  ResultRow,
-} from '@ws/core/models';
+import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, ResultRow } from '@ws/core/models';
 import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
 
 @Component({
@@ -72,10 +61,7 @@ export class LineupStats {
         this.games = stats.games;
         this.baseRunnerStats = stats.baseRunnerStats;
         this.baseRunnerStatsAtBatStart = stats.baseRunnerStatsAtBatStart;
-        this.totalPlateAppearances = stats.totals.reduce(
-          (sum, r) => sum + r.totalPA,
-          0
-        );
+        this.totalPlateAppearances = stats.totals.reduce((sum, r) => sum + r.totalPA, 0);
         this.loading = false;
         this.cdr.markForCheck();
       },

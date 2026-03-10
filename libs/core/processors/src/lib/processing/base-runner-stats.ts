@@ -1,26 +1,9 @@
-import type {
-  BaseRunnerRow,
-  BaseRunners,
-  BaseSituation,
-  OutBreakdown,
-  PlaySnapshot,
-} from '@ws/core/models';
+import type { BaseRunnerRow, BaseRunners, BaseSituation, OutBreakdown, PlaySnapshot } from '@ws/core/models';
 
-const ALL_SITUATIONS: BaseSituation[] = [
-  'empty',
-  'first',
-  'second',
-  'third',
-  'first_second',
-  'first_third',
-  'second_third',
-  'loaded',
-];
+const ALL_SITUATIONS: BaseSituation[] = ['empty', 'first', 'second', 'third', 'first_second', 'first_third', 'second_third', 'loaded'];
 
 function emptyRow(slot: number): BaseRunnerRow {
-  const situations = Object.fromEntries(
-    ALL_SITUATIONS.map((s) => [s, [0, 0, 0] as OutBreakdown])
-  ) as Record<BaseSituation, OutBreakdown>;
+  const situations = Object.fromEntries(ALL_SITUATIONS.map((s) => [s, [0, 0, 0] as OutBreakdown])) as Record<BaseSituation, OutBreakdown>;
 
   return { lineupSlot: slot, situations };
 }
@@ -61,9 +44,7 @@ export function classifyBaseSituation(bases: BaseRunners): BaseSituation {
   return 'loaded';
 }
 
-export function computeBaseRunnerStats(
-  snapshots: PlaySnapshot[]
-): BaseRunnerRow[] {
+export function computeBaseRunnerStats(snapshots: PlaySnapshot[]): BaseRunnerRow[] {
   const rows = new Map<number, BaseRunnerRow>();
 
   snapshots
@@ -99,9 +80,7 @@ export function computeBaseRunnerStats(
  * "Start of AB" bases = basesAfter of the most recent previous PA in the same
  * inning, or empty bases if it's the first PA of the inning.
  */
-export function computeBaseRunnerStatsAtBatStart(
-  snapshots: PlaySnapshot[]
-): BaseRunnerRow[] {
+export function computeBaseRunnerStatsAtBatStart(snapshots: PlaySnapshot[]): BaseRunnerRow[] {
   const rows = new Map<number, BaseRunnerRow>();
   const emptyBases: BaseRunners = { first: null, second: null, third: null };
   let lastPABasesAfter: BaseRunners = { ...emptyBases };
@@ -145,19 +124,14 @@ export function computeBaseRunnerStatsAtBatStart(
   return Array.from(rows.values()).sort((a, b) => a.lineupSlot - b.lineupSlot);
 }
 
-export function mergeBaseRunnerStats(
-  a: BaseRunnerRow[],
-  b: BaseRunnerRow[]
-): BaseRunnerRow[] {
+export function mergeBaseRunnerStats(a: BaseRunnerRow[], b: BaseRunnerRow[]): BaseRunnerRow[] {
   const map = new Map<number, BaseRunnerRow>();
 
   a.forEach((row) => {
     map.set(row.lineupSlot, {
       lineupSlot: row.lineupSlot,
       situations: {
-        ...Object.fromEntries(
-          ALL_SITUATIONS.map((s) => [s, [...row.situations[s]] as OutBreakdown])
-        ),
+        ...Object.fromEntries(ALL_SITUATIONS.map((s) => [s, [...row.situations[s]] as OutBreakdown])),
       } as Record<BaseSituation, OutBreakdown>,
     });
   });

@@ -1,19 +1,10 @@
 import type { ElementRef } from '@angular/core';
-import {
-  type AfterViewInit,
-  ChangeDetectionStrategy,
-  Component,
-  DestroyRef,
-  inject,
-  signal,
-  viewChild,
-} from '@angular/core';
+import { type AfterViewInit, ChangeDetectionStrategy, Component, DestroyRef, inject, signal, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DataContextService } from '@ws/core/data';
 
-const PASSWORD_HASH =
-  '0d3e8d6bfcf410ae73561671871f8b258d64529620c2dad88b5c46dbe4790af6';
+const PASSWORD_HASH = '0d3e8d6bfcf410ae73561671871f8b258d64529620c2dad88b5c46dbe4790af6';
 
 @Component({
   imports: [
@@ -30,9 +21,7 @@ export class App implements AfterViewInit {
   private readonly headerRef = viewChild<ElementRef<HTMLElement>>('headerEl');
 
   protected title = 'Wellesley Softball Stats Hub';
-  protected authenticated =
-    !this.context.isAuthRequired() ||
-    sessionStorage.getItem('wellesley-auth') === 'true';
+  protected authenticated = !this.context.isAuthRequired() || sessionStorage.getItem('wellesley-auth') === 'true';
 
   protected readonly scrolled = signal(false);
   protected password = '';
@@ -45,9 +34,7 @@ export class App implements AfterViewInit {
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    this.destroyRef.onDestroy(() =>
-      window.removeEventListener('scroll', onScroll)
-    );
+    this.destroyRef.onDestroy(() => window.removeEventListener('scroll', onScroll));
   }
 
   ngAfterViewInit(): void {
@@ -58,10 +45,7 @@ export class App implements AfterViewInit {
     const el = this.headerRef()?.nativeElement;
 
     if (el) {
-      document.documentElement.style.setProperty(
-        '--header-height',
-        `${el.offsetHeight}px`
-      );
+      document.documentElement.style.setProperty('--header-height', `${el.offsetHeight}px`);
     }
   }
 

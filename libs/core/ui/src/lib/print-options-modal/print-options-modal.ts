@@ -1,15 +1,4 @@
-import {
-  afterNextRender,
-  ChangeDetectionStrategy,
-  Component,
-  DestroyRef,
-  ElementRef,
-  inject,
-  input,
-  output,
-  Renderer2,
-  signal,
-} from '@angular/core';
+import { afterNextRender, ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, input, output, Renderer2, signal } from '@angular/core';
 
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 import { SprayCoachSortPanel } from '../spray-coach-sort-panel/spray-coach-sort-panel';

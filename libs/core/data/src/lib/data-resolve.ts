@@ -100,9 +100,7 @@ function resolvePlayText(text: string, nameMap: NameMap): string {
   });
 
   // Sort by length descending so longer names match first
-  const playNames = [...playFormatMap.keys()].sort(
-    (a, b) => b.length - a.length
-  );
+  const playNames = [...playFormatMap.keys()].sort((a, b) => b.length - a.length);
 
   // Build prefix lookup: for each known name, also register truncated forms
   // E.g., "A. Mulhern" registers prefixes "A. Mulher", "A. Mulhe", etc. (min 4 chars)
@@ -126,9 +124,7 @@ function resolvePlayText(text: string, nameMap: NameMap): string {
 
   // Build combined regex from all registered patterns (longest first)
   const allPatterns = [...prefixMap.keys()].sort((a, b) => b.length - a.length);
-  const escaped = allPatterns.map((p) =>
-    p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  );
+  const escaped = allPatterns.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   const regex = new RegExp(escaped.join('|'), 'g');
 
   return text.replace(regex, (match) => {
@@ -173,10 +169,7 @@ export function resolveGameData(games: GameData[], year: number): GameData[] {
   }));
 }
 
-function resolveLineup(
-  lineup: Map<number, string[]>,
-  nameMap: NameMap
-): Map<number, string[]> {
+function resolveLineup(lineup: Map<number, string[]>, nameMap: NameMap): Map<number, string[]> {
   const resolved = new Map<number, string[]>();
 
   lineup.forEach((players, slot) => {
@@ -193,11 +186,7 @@ function resolveLineup(
  * Resolves YearBattingData by shuffling player names in season stats and boxscores.
  * Uses the same name mapping as gamedata for the same year.
  */
-export function resolveYearBattingData(
-  data: YearBattingData,
-  games: GameData[],
-  year: number
-): YearBattingData {
+export function resolveYearBattingData(data: YearBattingData, games: GameData[], year: number): YearBattingData {
   const names = collectPlayerNames(games);
 
   if (names.length < 2) {
@@ -210,10 +199,7 @@ export function resolveYearBattingData(
   const capitalNameMap = new Map<string, string>();
 
   nameMap.forEach((toName, fromName) => {
-    capitalNameMap.set(
-      capitalizeFullName(fromName),
-      capitalizeFullName(toName)
-    );
+    capitalNameMap.set(capitalizeFullName(fromName), capitalizeFullName(toName));
   });
 
   return {
@@ -240,11 +226,7 @@ export function resolveYearBattingData(
  * Resolves roster by shuffling name → entry assignments.
  * Uses the current year's mapping.
  */
-export function resolveRoster(
-  roster: Roster,
-  games: GameData[],
-  year: number
-): Roster {
+export function resolveRoster(roster: Roster, games: GameData[], year: number): Roster {
   const names = collectPlayerNames(games);
 
   if (names.length < 2) {

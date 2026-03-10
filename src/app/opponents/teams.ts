@@ -64,7 +64,4 @@ export const FLORIDA_TEAMS: TeamEntry[] = [
   },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
-export const ALL_OPPONENT_TEAMS: TeamEntry[] = [
-  ...OPPONENT_TEAMS,
-  ...FLORIDA_TEAMS,
-];
+export const ALL_OPPONENT_TEAMS: TeamEntry[] = [...OPPONENT_TEAMS, ...FLORIDA_TEAMS];

@@ -33,12 +33,7 @@ export interface PlayerGameStats {
 
 // ── wOBA display/computation types ──
 
-export type WobaTier =
-  | 'excellent'
-  | 'great'
-  | 'above_average'
-  | 'average'
-  | 'below_average';
+export type WobaTier = 'excellent' | 'great' | 'above_average' | 'average' | 'below_average';
 
 /** Computed season wOBA with components */
 export interface PlayerWoba {

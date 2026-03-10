@@ -1,14 +1,5 @@
 import type { PlaySnapshot } from '@ws/core/models';
-import type {
-  ContactQuality,
-  ContactType,
-  SprayChartSummary,
-  SprayDataPoint,
-  SprayFilters,
-  SprayOutcome,
-  SprayZone,
-  ZoneAggregate,
-} from '@ws/core/models';
+import type { ContactQuality, ContactType, SprayChartSummary, SprayDataPoint, SprayFilters, SprayOutcome, SprayZone, ZoneAggregate } from '@ws/core/models';
 
 import { type BatterResult, parseBatterAction } from '../parsing/parse-play';
 
@@ -156,11 +147,7 @@ export function classifyContactType(playText: string): ContactType {
 // --- Contact quality ---
 
 export function getContactQuality(contactType: ContactType): ContactQuality {
-  if (
-    contactType === 'hit' ||
-    contactType === 'line_out' ||
-    contactType === 'bunt'
-  ) {
+  if (contactType === 'hit' || contactType === 'line_out' || contactType === 'bunt') {
     return 'hard';
   }
 
@@ -199,10 +186,7 @@ export function parseSprayDirection(playText: string): {
 // --- Bunt zone parsing ---
 
 /** Maps a fielder position to a plate bunt zone */
-const FIELDER_TO_PLATE_ZONE: Record<
-  string,
-  { zone: SprayZone; angle: number }
-> = {
+const FIELDER_TO_PLATE_ZONE: Record<string, { zone: SprayZone; angle: number }> = {
   '3b': { zone: 'plate_3b', angle: 150 },
   ss: { zone: 'plate_3b', angle: 150 },
   p: { zone: 'plate_p', angle: 90 },
@@ -226,9 +210,7 @@ export function parseBuntZone(playText: string): {
   const batterAction = playText.split(';')[0];
 
   // "out at first XX to YY" — XX is the fielder, not YY
-  const outAtFirstMatch = batterAction.match(
-    /\bout at first\s+(p|c|1b|2b|3b|ss)\b/i
-  );
+  const outAtFirstMatch = batterAction.match(/\bout at first\s+(p|c|1b|2b|3b|ss)\b/i);
 
   if (outAtFirstMatch) {
     const fielder = outAtFirstMatch[1].toLowerCase();
@@ -274,17 +256,7 @@ export function parseBuntZone(playText: string): {
 // --- Outcome classification ---
 
 /** Results that represent ball-in-play contact with meaningful direction */
-const CONTACT_RESULTS: BatterResult[] = [
-  'out',
-  'double_play',
-  'single',
-  'bunt_single',
-  'double',
-  'triple',
-  'homer',
-  'sac_bunt',
-  'sac_fly',
-];
+const CONTACT_RESULTS: BatterResult[] = ['out', 'double_play', 'single', 'bunt_single', 'double', 'triple', 'homer', 'sac_bunt', 'sac_fly'];
 
 const HIT_RESULTS: BatterResult[] = ['single', 'double', 'triple', 'homer'];
 
@@ -325,10 +297,7 @@ function classifyHitType(result: BatterResult): string {
  * Uses parseBatterAction from the core parse-play pipeline to classify
  * batter results, then filters to contact plays with directional info.
  */
-export function parseSprayData(
-  snapshots: PlaySnapshot[],
-  gameIndex: number
-): SprayDataPoint[] {
+export function parseSprayData(snapshots: PlaySnapshot[], gameIndex: number): SprayDataPoint[] {
   return snapshots
     .filter((snap) => snap.isPlateAppearance && snap.batterName)
     .map((snap): SprayDataPoint | null => {
@@ -349,18 +318,11 @@ export function parseSprayData(
       const baseContactType = classifyContactType(snap.playText);
       // Hits don't have contact info in the play text (just "singled to cf"),
       // so classify them as 'hit' — unless it's a bunt for a hit.
-      const contactType =
-        HIT_RESULTS.includes(result) && baseContactType !== 'bunt'
-          ? 'hit'
-          : baseContactType;
+      const contactType = HIT_RESULTS.includes(result) && baseContactType !== 'bunt' ? 'hit' : baseContactType;
 
       const situational = {
         outsBefore: snap.outsBefore,
-        runnersOnBase: !!(
-          snap.basesBefore.first ||
-          snap.basesBefore.second ||
-          snap.basesBefore.third
-        ),
+        runnersOnBase: !!(snap.basesBefore.first || snap.basesBefore.second || snap.basesBefore.third),
         risp: !!(snap.basesBefore.second || snap.basesBefore.third),
       };
 
@@ -411,33 +373,13 @@ export function parseSprayData(
 
 // --- Zone aggregation ---
 
-const ALL_ZONES: SprayZone[] = [
-  'lf_line',
-  'lf',
-  'lf_cf',
-  'cf',
-  'rf_cf',
-  'rf',
-  'rf_line',
-  'if_3b',
-  'if_ss',
-  'if_2b',
-  'if_1b',
-  'if_p',
-  'if_c',
-  'plate_3b',
-  'plate_p',
-  'plate_1b',
-];
+const ALL_ZONES: SprayZone[] = ['lf_line', 'lf', 'lf_cf', 'cf', 'rf_cf', 'rf', 'rf_line', 'if_3b', 'if_ss', 'if_2b', 'if_1b', 'if_p', 'if_c', 'plate_3b', 'plate_p', 'plate_1b'];
 
 /**
  * Aggregates spray data points into zone-level statistics.
  * Optionally filters by player, outcome, and contact type.
  */
-export function computeSprayZones(
-  dataPoints: SprayDataPoint[],
-  filters?: SprayFilters
-): SprayChartSummary {
+export function computeSprayZones(dataPoints: SprayDataPoint[], filters?: SprayFilters): SprayChartSummary {
   let filtered = dataPoints;
 
   if (filters?.playerName) {
@@ -449,15 +391,11 @@ export function computeSprayZones(
   }
 
   if (filters?.contactTypes) {
-    filtered = filtered.filter((p) =>
-      filters.contactTypes!.includes(p.contactType)
-    );
+    filtered = filtered.filter((p) => filters.contactTypes!.includes(p.contactType));
   }
 
   if (filters?.contactQualities) {
-    filtered = filtered.filter((p) =>
-      filters.contactQualities!.includes(getContactQuality(p.contactType))
-    );
+    filtered = filtered.filter((p) => filters.contactQualities!.includes(getContactQuality(p.contactType)));
   }
 
   if (filters?.outCount) {

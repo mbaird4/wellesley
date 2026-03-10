@@ -1,21 +1,9 @@
 import { CommonModule } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  inject,
-} from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
-import {
-  computePlayerCumulativeWobas,
-  computePlayerSeasonWobas,
-  formatWoba,
-  getWobaTier,
-  tierClass,
-  wobaGradientStyle,
-} from '@ws/core/processors';
+import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
 import { LastUpdatedPipe, WobaLegend } from '@ws/core/ui';
 
 export interface TeamGameColumn {
@@ -58,10 +46,7 @@ export class Woba {
   error: string | null = null;
   scrapedAt: string | null = null;
   selectedYear = 2025;
-  availableYears = [
-    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
-    2011,
-  ];
+  availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
 
   activeTab: 'players' | 'team' = 'team';
 
@@ -97,9 +82,7 @@ export class Woba {
         const boxscores = data.boxscores ?? [];
         this.playerWobas = computePlayerSeasonWobas(seasonStats);
         this.cumulativeWobas = computePlayerCumulativeWobas(boxscores);
-        this.cumulativeByName = new Map(
-          this.cumulativeWobas.map((c) => [c.name.toLowerCase(), c])
-        );
+        this.cumulativeByName = new Map(this.cumulativeWobas.map((c) => [c.name.toLowerCase(), c]));
         this.buildTeamGrid();
         this.loading = false;
         this.cdr.markForCheck();
@@ -161,16 +144,9 @@ export class Woba {
 
     // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
     this.teamPlayerRows = this.cumulativeWobas.map((player) => {
-      const gameMap = new Map(
-        player.games.map((g) => [
-          `${g.date}|${g.opponent}`,
-          { gameWoba: g.gameWoba, cumulativeWoba: g.cumulativeWoba },
-        ])
-      );
+      const gameMap = new Map(player.games.map((g) => [`${g.date}|${g.opponent}`, { gameWoba: g.gameWoba, cumulativeWoba: g.cumulativeWoba }]));
 
-      const seasonPlayer = this.playerWobas.find(
-        (p) => p.name.toLowerCase() === player.name.toLowerCase()
-      );
+      const seasonPlayer = this.playerWobas.find((p) => p.name.toLowerCase() === player.name.toLowerCase());
 
       return {
         name: player.name,

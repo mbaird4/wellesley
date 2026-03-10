@@ -1,11 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, signal } from '@angular/core';
 import { SoftballDataService, SoftballProcessorService } from '@ws/core/data';
 import { type Roster, type SprayDataPoint, type Team } from '@ws/core/models';
 import { canonicalizeSprayNames, parseSprayData } from '@ws/core/processors';
@@ -16,18 +9,7 @@ import { catchError, forkJoin, of } from 'rxjs';
   selector: 'ws-opponent-spray-chart',
   standalone: true,
   imports: [SprayChartViewer],
-  template: `
-    <ws-spray-chart-viewer
-      [dataByYear]="dataByYear()"
-      [roster]="roster()"
-      [teamData]="teamData()"
-      [loading]="loading()"
-      [error]="error()"
-      [includeUnmatchedRoster]="true"
-      [printTitle]="teamName()"
-      emptyMessage="No spray chart data available for this team."
-    />
-  `,
+  template: ` <ws-spray-chart-viewer [dataByYear]="dataByYear()" [roster]="roster()" [teamData]="teamData()" [loading]="loading()" [error]="error()" [includeUnmatchedRoster]="true" [printTitle]="teamName()" emptyMessage="No spray chart data available for this team." /> `,
   host: {
     class: 'block',
   },
@@ -62,27 +44,16 @@ export class OpponentSprayChart {
     this.roster.set({});
 
     forkJoin({
-      roster: this.dataService
-        .getOpponentRoster(dir)
-        .pipe(catchError(() => of({} as Roster))),
-      years: forkJoin(
-        SPRAY_YEARS.map((year) =>
-          this.dataService
-            .getOpponentGameData(dir, year)
-            .pipe(catchError(() => of([])))
-        )
-      ),
+      roster: this.dataService.getOpponentRoster(dir).pipe(catchError(() => of({} as Roster))),
+      years: forkJoin(SPRAY_YEARS.map((year) => this.dataService.getOpponentGameData(dir, year).pipe(catchError(() => of([]))))),
     }).subscribe({
       next: ({ roster, years }) => {
         this.roster.set(roster);
 
         const map = new Map<number, SprayDataPoint[]>();
         years.forEach((games, i) => {
-          const processed =
-            this.processorService.processGamesWithSnapshots(games);
-          const points = processed.games.flatMap((game, gi) =>
-            parseSprayData(game.snapshots, gi)
-          );
+          const processed = this.processorService.processGamesWithSnapshots(games);
+          const points = processed.games.flatMap((game, gi) => parseSprayData(game.snapshots, gi));
           map.set(SPRAY_YEARS[i], points);
         });
 

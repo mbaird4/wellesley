@@ -79,8 +79,11 @@
     "typescript-eslint": "^8.40.0"
   },
   "lint-staged": {
-    "*.{ts,html,json,scss,css,md}": "prettier --write",
-    "*.ts": "eslint --fix"
+    "*.{html,json,scss,css,md}": "prettier --write",
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix --quiet"
+    ]
   },
   "nx": {
     "includedScripts": []

@@ -60,8 +60,7 @@ const DEFAULT_YEARS = [CURRENT_YEAR];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities ──
@@ -75,7 +74,7 @@ function normalizeName(name: string): string {
 }
 
 function extractPlayerName(cellText: string): string {
-  const match = cellText.match(/^[a-z\/]+ (.+)$/i);
+  const match = cellText.match(/^[a-z/]+ (.+)$/i);
 
   return match ? match[1].trim() : cellText.trim();
 }
@@ -89,9 +88,7 @@ async function fetchPage(url: string): Promise<string | null> {
     const html = response.data;
 
     if (!html || html.length < 500) {
-      console.warn(
-        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
-      );
+      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
 
       return null;
     }
@@ -151,9 +148,7 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI, baseUrl: string): string[] {
       return;
     }
 
-    const fullUrl = href.startsWith('http')
-      ? href
-      : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
+    const fullUrl = href.startsWith('http') ? href : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
     urls.push(fullUrl);
   });
 
@@ -169,10 +164,7 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI, baseUrl: string): string[] {
  * which cleanly separates the team name from the inning info. This is more reliable
  * than batting table captions which append the score (e.g. "Babson 5").
  */
-function discoverTeamName(
-  $: cheerio.CheerioAPI,
-  domain: string
-): string | null {
+function discoverTeamName($: cheerio.CheerioAPI, domain: string): string | null {
   const pbpTab = $('#play-by-play');
   const teamNames = new Set<string>();
   const domainSlug = domain.split('.')[0].toLowerCase();
@@ -198,10 +190,7 @@ function discoverTeamName(
   const domainMatch = unique.find((name) => {
     const lower = name.toLowerCase().replace(/\s+/g, '');
 
-    return (
-      lower.includes(domainSlug) ||
-      domainSlug.includes(lower.replace(/[^a-z]/g, '').slice(0, 6))
-    );
+    return lower.includes(domainSlug) || domainSlug.includes(lower.replace(/[^a-z]/g, '').slice(0, 6));
   });
 
   if (domainMatch) {
@@ -214,10 +203,7 @@ function discoverTeamName(
 
 // ── Game data extraction (lineup + play-by-play) — parameterized by team name ──
 
-function parseLineup(
-  $: cheerio.CheerioAPI,
-  teamName: string
-): Map<number, string[]> {
+function parseLineup($: cheerio.CheerioAPI, teamName: string): Map<number, string[]> {
   const lineup = new Map<number, string[]>();
   const teamLower = teamName.toLowerCase();
 
@@ -230,12 +216,7 @@ function parseLineup(
     }
 
     // Skip pitching, play-by-play, scoring tables
-    if (
-      header.includes('pitching') ||
-      header.includes('top of') ||
-      header.includes('bottom of') ||
-      header.includes('scoring')
-    ) {
+    if (header.includes('pitching') || header.includes('top of') || header.includes('bottom of') || header.includes('scoring')) {
       return;
     }
 
@@ -254,10 +235,7 @@ function parseLineup(
       const playerText = $playerLink.text().trim() || '';
       const rawText = $nameCell.text() || '';
 
-      const isSubstitution =
-        cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') ||
-        /^(&nbsp;){4,}/.test(cellHtml) ||
-        /^(\u00A0|\s){4,}/.test(rawText);
+      const isSubstitution = cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') || /^(&nbsp;){4,}/.test(cellHtml) || /^(\u00A0|\s){4,}/.test(rawText);
 
       const playerName = extractPlayerName(playerText);
 
@@ -284,10 +262,7 @@ function parseLineup(
   return lineup;
 }
 
-function parsePlayByPlay(
-  $: cheerio.CheerioAPI,
-  teamName: string
-): PlayByPlayInning[] {
+function parsePlayByPlay($: cheerio.CheerioAPI, teamName: string): PlayByPlayInning[] {
   const innings: PlayByPlayInning[] = [];
   const pbpTab = $('#play-by-play');
   const teamLower = teamName.toLowerCase();
@@ -306,38 +281,26 @@ function parsePlayByPlay(
       return;
     }
 
-    const inningKey = caption
-      .replace(
-        new RegExp(`${teamName}\\s*-\\s*(Top|Bottom)\\s+of\\s*`, 'gi'),
-        ''
-      )
-      .trim();
+    const inningKey = caption.replace(new RegExp(`${teamName}\\s*-\\s*(Top|Bottom)\\s+of\\s*`, 'gi'), '').trim();
 
     if (processedInnings.has(inningKey)) {
       return;
     }
+
     processedInnings.add(inningKey);
 
     const plays: string[] = [];
     $table.find('tbody tr').each((_, row) => {
       const $row = $(row);
       const firstCell = $row.find('td').first();
-      const originalText =
-        (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+      const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
       const text = originalText.toLowerCase();
 
-      if (
-        !originalText ||
-        text.includes('play description') ||
-        text.length < 5
-      ) {
+      if (!originalText || text.includes('play description') || text.length < 5) {
         return;
       }
 
-      if (
-        text.includes('inning summary') ||
-        text.match(/^\d+(st|nd|rd|th)\s+inning/i)
-      ) {
+      if (text.includes('inning summary') || text.match(/^\d+(st|nd|rd|th)\s+inning/i)) {
         return;
       }
 
@@ -352,21 +315,13 @@ function parsePlayByPlay(
   return innings;
 }
 
-function extractGameData(
-  $: cheerio.CheerioAPI,
-  url: string,
-  teamName: string
-): SerializedGameData {
+function extractGameData($: cheerio.CheerioAPI, url: string, teamName: string): SerializedGameData {
   const lineup = parseLineup($, teamName);
   const playByPlay = parsePlayByPlay($, teamName);
 
   // Extract opponent name from URL or page content
   const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
-  const opponent = opponentMatch
-    ? opponentMatch[1]
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase())
-    : 'Unknown';
+  const opponent = opponentMatch ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'Unknown';
 
   return {
     url,
@@ -400,11 +355,7 @@ function parseRoster($: cheerio.CheerioAPI): Record<string, number> {
   return jerseyMap;
 }
 
-async function scrapeRoster(
-  slug: string,
-  domain: string,
-  outputDir: string
-): Promise<void> {
+async function scrapeRoster(slug: string, domain: string, outputDir: string): Promise<void> {
   console.log(`  Fetching roster...`);
   const html = await fetchPage(`https://${domain}/sports/softball/roster`);
 
@@ -421,9 +372,7 @@ async function scrapeRoster(
   const outPath = path.join(teamDir, 'roster.json');
 
   if (Object.keys(jerseyMap).length === 0 && fs.existsSync(outPath)) {
-    console.log(
-      `  Roster parse returned 0 players, keeping existing ${outPath}`
-    );
+    console.log(`  Roster parse returned 0 players, keeping existing ${outPath}`);
 
     return;
   }
@@ -434,19 +383,13 @@ async function scrapeRoster(
 
 // ── Per-team scraping ──
 
-async function scrapeTeamBoxscores(
-  slug: string,
-  domain: string,
-  year: number
-): Promise<SerializedGameData[]> {
+async function scrapeTeamBoxscores(slug: string, domain: string, year: number): Promise<SerializedGameData[]> {
   const baseUrl = `https://${domain}`;
   console.log(`\n=== ${slug} / ${year} (${domain}) ===`);
 
   // 1. Fetch schedule page to get boxscore URLs
   console.log('  Fetching schedule page...');
-  const scheduleHtml = await fetchPage(
-    `${baseUrl}/sports/softball/schedule/${year}`
-  );
+  const scheduleHtml = await fetchPage(`${baseUrl}/sports/softball/schedule/${year}`);
 
   if (!scheduleHtml) {
     console.log(`  No schedule page for ${year}, skipping`);
@@ -490,9 +433,7 @@ async function scrapeTeamBoxscores(
   const gameDataList: SerializedGameData[] = [];
   const firstGame = extractGameData($first, boxscoreUrls[0], teamName);
   gameDataList.push(firstGame);
-  console.log(
-    `  Parsed boxscore 1/${boxscoreUrls.length}: ${firstGame.playByPlay.length} innings, ${firstGame.lineup.length} lineup slots`
-  );
+  console.log(`  Parsed boxscore 1/${boxscoreUrls.length}: ${firstGame.playByPlay.length} innings, ${firstGame.lineup.length} lineup slots`);
 
   // 4. Fetch remaining boxscores
   for (let i = 1; i < boxscoreUrls.length; i++) {
@@ -509,16 +450,12 @@ async function scrapeTeamBoxscores(
     const $ = cheerio.load(html);
     const gameData = extractGameData($, url, teamName);
     gameDataList.push(gameData);
-    console.log(
-      `    ${gameData.playByPlay.length} innings, ${gameData.lineup.length} lineup slots`
-    );
+    console.log(`    ${gameData.playByPlay.length} innings, ${gameData.lineup.length} lineup slots`);
   }
 
   // Filter out games with no play-by-play data
   const validGames = gameDataList.filter((g) => g.playByPlay.length > 0);
-  console.log(
-    `  ${validGames.length}/${gameDataList.length} games have play-by-play data`
-  );
+  console.log(`  ${validGames.length}/${gameDataList.length} games have play-by-play data`);
 
   return validGames;
 }
@@ -530,21 +467,15 @@ async function main(): Promise<void> {
   const years = parseYearsArg();
   const florida = parseFloridaFlag();
   const baseOutputDir = path.resolve(__dirname, '../public/data/opponents');
-  const outputDir = florida
-    ? path.join(baseOutputDir, 'florida')
-    : baseOutputDir;
+  const outputDir = florida ? path.join(baseOutputDir, 'florida') : baseOutputDir;
   fs.mkdirSync(outputDir, { recursive: true });
 
   const activeTeams = florida ? FLORIDA_SIDEARM_TEAMS : TEAMS;
 
-  const teamsToScrape = teamFilter
-    ? { [teamFilter]: activeTeams[teamFilter] }
-    : activeTeams;
+  const teamsToScrape = teamFilter ? { [teamFilter]: activeTeams[teamFilter] } : activeTeams;
 
   if (teamFilter && !activeTeams[teamFilter]) {
-    console.error(
-      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(activeTeams).join(', ')}`
-    );
+    console.error(`Unknown team slug: "${teamFilter}". Available: ${Object.keys(activeTeams).join(', ')}`);
     process.exit(1);
   }
 
@@ -565,8 +496,7 @@ async function main(): Promise<void> {
 
       const teamDir = path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
-      const filename =
-        year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
+      const filename = year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
       const outPath = path.join(teamDir, filename);
       fs.writeFileSync(outPath, JSON.stringify(games));
       console.log(`  Wrote ${outPath} (${games.length} games)`);

@@ -6,12 +6,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '1st',
-          plays: [
-            'A. Batter grounded out to ss.',
-            'B. Batter singled to lf.',
-            'C. Batter struck out swinging.',
-            'D. Batter flied out to cf.',
-          ],
+          plays: ['A. Batter grounded out to ss.', 'B. Batter singled to lf.', 'C. Batter struck out swinging.', 'D. Batter flied out to cf.'],
         },
       ],
       ['J. Pitcher']
@@ -36,12 +31,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '3rd',
-          plays: [
-            'A. Batter singled to cf.',
-            'B. Smith to p.',
-            'C. Batter grounded out to 2b.',
-            'D. Batter struck out looking.',
-          ],
+          plays: ['A. Batter singled to cf.', 'B. Smith to p.', 'C. Batter grounded out to 2b.', 'D. Batter struck out looking.'],
         },
       ],
       ['J. Starter', 'B. Smith']
@@ -61,28 +51,15 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '1st',
-          plays: [
-            'A. Batter walked.',
-            'B. Batter struck out swinging.',
-            'C. Batter grounded into double play.',
-          ],
+          plays: ['A. Batter walked.', 'B. Batter struck out swinging.', 'C. Batter grounded into double play.'],
         },
         {
           inning: '2nd',
-          plays: [
-            'D. Batter flied out to rf.',
-            'E. Relief to p.',
-            'F. Batter singled to ss.',
-            'G. Batter popped up to 1b.',
-          ],
+          plays: ['D. Batter flied out to rf.', 'E. Relief to p.', 'F. Batter singled to ss.', 'G. Batter popped up to 1b.'],
         },
         {
           inning: '3rd',
-          plays: [
-            'H. Closer to p for E. Relief.',
-            'I. Batter homered to lf.',
-            'J. Batter grounded out to 3b.',
-          ],
+          plays: ['H. Closer to p for E. Relief.', 'I. Batter homered to lf.', 'J. Batter grounded out to 3b.'],
         },
       ],
       ['A. Starter', 'E. Relief', 'H. Closer']
@@ -113,9 +90,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '1st',
-          plays: [
-            'A. Batter doubled to lf; B. Runner scored; C. Runner scored.',
-          ],
+          plays: ['A. Batter doubled to lf; B. Runner scored; C. Runner scored.'],
         },
       ],
       ['J. Pitcher']
@@ -132,9 +107,7 @@ describe('trackPitcherPerformance', () => {
       [
         {
           inning: '5th',
-          plays: [
-            'A. Batter homered to cf; B. Runner scored; C. Runner scored.',
-          ],
+          plays: ['A. Batter homered to cf; B. Runner scored; C. Runner scored.'],
         },
       ],
       ['J. Pitcher']

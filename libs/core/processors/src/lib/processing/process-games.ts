@@ -1,28 +1,9 @@
-import type {
-  BaseRunnerRow,
-  GameData,
-  GameResult,
-  GameScoringPlays,
-  GameState,
-  GameWithSnapshots,
-  ResultRow,
-  RunnerConversionRow,
-  SacBuntSummary,
-  ScoringPlaySummary,
-  StolenBaseSummary,
-} from '@ws/core/models';
+import type { BaseRunnerRow, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 
 import { processPlay } from '../parsing/parse-play';
 import { mergeBaseRunnerStats } from './base-runner-stats';
 import { processGameWithSnapshots } from './process-game-snapshots';
-import {
-  computeRunnerConversions,
-  computeSacBuntOutcomes,
-  computeScoringPlaySummary,
-  computeStolenBaseOutcomes,
-  summarizeSacBuntOutcomes,
-  summarizeStolenBaseOutcomes,
-} from './scoring-plays';
+import { computeRunnerConversions, computeSacBuntOutcomes, computeScoringPlaySummary, computeStolenBaseOutcomes, summarizeSacBuntOutcomes, summarizeStolenBaseOutcomes } from './scoring-plays';
 
 export interface ProcessedStats {
   totals: ResultRow[];
@@ -110,9 +91,7 @@ export function processGames(games: GameData[]): ProcessedStats {
 /**
  * Like processGames but also captures PlaySnapshot[] per game for the field visualization.
  */
-export function processGamesWithSnapshots(
-  games: GameData[]
-): ProcessedStatsWithSnapshots {
+export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWithSnapshots {
   const globalCounts = new Map<number, [number, number, number]>();
   const gameResults: GameWithSnapshots[] = [];
   let seasonBaseRunnerStats: BaseRunnerRow[] = [];
@@ -134,15 +113,9 @@ export function processGamesWithSnapshots(
       });
 
       // Aggregate base-runner stats
-      seasonBaseRunnerStats = mergeBaseRunnerStats(
-        seasonBaseRunnerStats,
-        result.baseRunnerStats
-      );
+      seasonBaseRunnerStats = mergeBaseRunnerStats(seasonBaseRunnerStats, result.baseRunnerStats);
 
-      seasonBaseRunnerStatsAtBatStart = mergeBaseRunnerStats(
-        seasonBaseRunnerStatsAtBatStart,
-        result.baseRunnerStatsAtBatStart
-      );
+      seasonBaseRunnerStatsAtBatStart = mergeBaseRunnerStats(seasonBaseRunnerStatsAtBatStart, result.baseRunnerStatsAtBatStart);
     });
 
   const totals = Array.from(globalCounts.entries())
@@ -171,16 +144,12 @@ export function processGamesWithSnapshots(
   const seasonScoringPlays = computeScoringPlaySummary(allScoringPlays);
 
   // Aggregate sac bunt outcomes across all games
-  const allSacBuntOutcomes = gameResults.flatMap((game) =>
-    computeSacBuntOutcomes(game.snapshots, game.opponent, game.url)
-  );
+  const allSacBuntOutcomes = gameResults.flatMap((game) => computeSacBuntOutcomes(game.snapshots, game.opponent, game.url));
 
   const sacBuntSummary = summarizeSacBuntOutcomes(allSacBuntOutcomes);
 
   // Aggregate stolen base outcomes across all games
-  const allStolenBaseOutcomes = gameResults.flatMap((game) =>
-    computeStolenBaseOutcomes(game.snapshots, game.opponent, game.url)
-  );
+  const allStolenBaseOutcomes = gameResults.flatMap((game) => computeStolenBaseOutcomes(game.snapshots, game.opponent, game.url));
 
   const stolenBaseSummary = summarizeStolenBaseOutcomes(allStolenBaseOutcomes);
 

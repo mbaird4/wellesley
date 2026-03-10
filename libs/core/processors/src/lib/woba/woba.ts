@@ -1,10 +1,4 @@
-import type {
-  BoxscoreData,
-  PlayerCumulativeWoba,
-  PlayerSeasonStats,
-  PlayerWoba,
-  WobaTier,
-} from '@ws/core/models';
+import type { BoxscoreData, PlayerCumulativeWoba, PlayerSeasonStats, PlayerWoba, WobaTier } from '@ws/core/models';
 
 // wOBA linear weights
 export const WOBA_WEIGHT_BB = 0.5;
@@ -20,30 +14,14 @@ export const WOBA_TIER_GREAT = 0.35;
 export const WOBA_TIER_ABOVE_AVERAGE = 0.32;
 export const WOBA_TIER_AVERAGE = 0.29;
 
-export function calculateWoba(stats: {
-  ab: number;
-  h: number;
-  doubles: number;
-  triples: number;
-  hr: number;
-  bb: number;
-  hbp: number;
-  sf: number;
-  sh: number;
-}): number {
+export function calculateWoba(stats: { ab: number; h: number; doubles: number; triples: number; hr: number; bb: number; hbp: number; sf: number; sh: number }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
   if (denominator === 0) {
     return 0;
   }
 
-  const numerator =
-    WOBA_WEIGHT_BB * stats.bb +
-    WOBA_WEIGHT_HBP * stats.hbp +
-    WOBA_WEIGHT_1B * singles +
-    WOBA_WEIGHT_2B * stats.doubles +
-    WOBA_WEIGHT_3B * stats.triples +
-    WOBA_WEIGHT_HR * stats.hr;
+  const numerator = WOBA_WEIGHT_BB * stats.bb + WOBA_WEIGHT_HBP * stats.hbp + WOBA_WEIGHT_1B * singles + WOBA_WEIGHT_2B * stats.doubles + WOBA_WEIGHT_3B * stats.triples + WOBA_WEIGHT_HR * stats.hr;
 
   return numerator / denominator;
 }
@@ -68,9 +46,7 @@ export function getWobaTier(woba: number): WobaTier {
   return 'below_average';
 }
 
-export function computePlayerSeasonWobas(
-  players: PlayerSeasonStats[]
-): PlayerWoba[] {
+export function computePlayerSeasonWobas(players: PlayerSeasonStats[]): PlayerWoba[] {
   return players
     .map((p) => {
       const woba = calculateWoba(p);
@@ -93,9 +69,7 @@ export function computePlayerSeasonWobas(
     .sort((a, b) => b.woba - a.woba);
 }
 
-export function computePlayerCumulativeWobas(
-  boxscores: BoxscoreData[]
-): PlayerCumulativeWoba[] {
+export function computePlayerCumulativeWobas(boxscores: BoxscoreData[]): PlayerCumulativeWoba[] {
   // Accumulate stats per player across games in order
   const playerAccum = new Map<
     string,

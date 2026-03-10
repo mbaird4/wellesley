@@ -1,19 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, signal } from '@angular/core';
 import type { SeasonStatsData } from '@ws/core/models';
 
-import {
-  FIELDING_COLUMNS,
-  HITTING_COLUMNS,
-  PITCHING_COLUMNS,
-} from './stat-column';
+import { FIELDING_COLUMNS, HITTING_COLUMNS, PITCHING_COLUMNS } from './stat-column';
 import { StatsTable } from './stats-table';
 
 export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
@@ -27,15 +16,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
   template: `
     <div class="flex gap-1">
       @for (cat of categories; track cat.key) {
-        <button
-          (click)="activeCategory.set(cat.key)"
-          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-[color,background] duration-150"
-          [class]="
-            activeCategory() === cat.key
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-        >
+        <button (click)="activeCategory.set(cat.key)" class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-[color,background] duration-150" [class]="activeCategory() === cat.key ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'">
           {{ cat.label }}
         </button>
       }
@@ -54,37 +35,16 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
         {{ error() }}
       </div>
     } @else if (data()) {
-      <div
-        class="bg-surface-card border-line overflow-hidden rounded-xl border"
-      >
+      <div class="bg-surface-card border-line overflow-hidden rounded-xl border">
         @switch (activeCategory()) {
           @case ('hitting') {
-            <ws-stats-table
-              [columns]="hittingColumns"
-              [players]="data()!.hitting.players"
-              [totals]="data()!.hitting.totals"
-              [opponents]="data()!.hitting.opponents"
-              defaultSortKey="avg"
-            />
+            <ws-stats-table [columns]="hittingColumns" [players]="data()!.hitting.players" [totals]="data()!.hitting.totals" [opponents]="data()!.hitting.opponents" defaultSortKey="avg" />
           }
           @case ('pitching') {
-            <ws-stats-table
-              [columns]="pitchingColumns"
-              [players]="data()!.pitching.players"
-              [totals]="data()!.pitching.totals"
-              [opponents]="data()!.pitching.opponents"
-              defaultSortKey="era"
-              defaultSortDir="asc"
-            />
+            <ws-stats-table [columns]="pitchingColumns" [players]="data()!.pitching.players" [totals]="data()!.pitching.totals" [opponents]="data()!.pitching.opponents" defaultSortKey="era" defaultSortDir="asc" />
           }
           @case ('fielding') {
-            <ws-stats-table
-              [columns]="fieldingColumns"
-              [players]="data()!.fielding.players"
-              [totals]="data()!.fielding.totals"
-              [opponents]="data()!.fielding.opponents"
-              defaultSortKey="fldPct"
-            />
+            <ws-stats-table [columns]="fieldingColumns" [players]="data()!.fielding.players" [totals]="data()!.fielding.totals" [opponents]="data()!.fielding.opponents" defaultSortKey="fldPct" />
           }
         }
       </div>
@@ -126,17 +86,15 @@ export class SeasonStats {
 
     const base = document.querySelector('base')?.getAttribute('href') || '/';
 
-    this.http
-      .get<SeasonStatsData>(`${base}data/opponents/${slug}/season-stats.json`)
-      .subscribe({
-        next: (data) => {
-          this.data.set(data);
-          this.loading.set(false);
-        },
-        error: () => {
-          this.error.set('No season stats available for this team.');
-          this.loading.set(false);
-        },
-      });
+    this.http.get<SeasonStatsData>(`${base}data/opponents/${slug}/season-stats.json`).subscribe({
+      next: (data) => {
+        this.data.set(data);
+        this.loading.set(false);
+      },
+      error: () => {
+        this.error.set('No season stats available for this team.');
+        this.loading.set(false);
+      },
+    });
   }
 }

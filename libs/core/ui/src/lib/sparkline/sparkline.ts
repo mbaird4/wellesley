@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
 const TIER_COLORS: Record<string, string> = {
   excellent: '#4ade80',
@@ -19,37 +14,16 @@ const TIER_COLORS: Record<string, string> = {
   host: { class: 'inline-flex items-center' },
   template: `
     @if (points().length > 1) {
-      <svg
-        [attr.width]="width()"
-        [attr.height]="height()"
-        [attr.viewBox]="viewBox()"
-        class="overflow-visible"
-      >
+      <svg [attr.width]="width()" [attr.height]="height()" [attr.viewBox]="viewBox()" class="overflow-visible">
         <defs>
           <linearGradient [attr.id]="gradientId()" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" [attr.stop-color]="color()" stop-opacity="0.3" />
-            <stop
-              offset="100%"
-              [attr.stop-color]="color()"
-              stop-opacity="0.02"
-            />
+            <stop offset="100%" [attr.stop-color]="color()" stop-opacity="0.02" />
           </linearGradient>
         </defs>
         <path [attr.d]="fillPath()" [attr.fill]="gradientUrl()" />
-        <polyline
-          [attr.points]="polylinePoints()"
-          fill="none"
-          [attr.stroke]="color()"
-          stroke-width="1.5"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-        />
-        <circle
-          [attr.cx]="lastPoint().x"
-          [attr.cy]="lastPoint().y"
-          r="2"
-          [attr.fill]="color()"
-        />
+        <polyline [attr.points]="polylinePoints()" fill="none" [attr.stroke]="color()" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+        <circle [attr.cx]="lastPoint().x" [attr.cy]="lastPoint().y" r="2" [attr.fill]="color()" />
       </svg>
     }
   `,

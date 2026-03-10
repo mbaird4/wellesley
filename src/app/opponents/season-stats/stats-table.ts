@@ -1,11 +1,4 @@
-import {
-  afterNextRender,
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { afterNextRender, ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import { CellValuePipe } from '@ws/core/ui';
 
 import type { StatColumn } from './stat-column';
@@ -25,48 +18,25 @@ const SORTED_HEADER = 'bg-brand-bg';
   host: { class: 'block overflow-x-auto' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table
-      class="stats-table season-stats-table mb-0! w-full rounded-none! border-0!"
-    >
+    <table class="stats-table season-stats-table mb-0! w-full rounded-none! border-0!">
       <thead>
         <tr>
-          <th
-            class="sticky-col hover:text-content-bright cursor-pointer select-none"
-            [class]="sortKey() === '#' ? SORTED_HEADER : ''"
-            (click)="sortBy('#')"
-          >
+          <th class="sticky-col hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === '#' ? SORTED_HEADER : ''" (click)="sortBy('#')">
             #
-            <span
-              class="inline-block w-[0.6rem] text-center text-[0.6rem]"
-              [class.invisible]="sortKey() !== '#'"
-            >
+            <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== '#'">
               {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
             </span>
           </th>
-          <th
-            class="sticky-col-name hover:text-content-bright cursor-pointer select-none"
-            [class]="sortKey() === 'name' ? SORTED_HEADER : ''"
-            (click)="sortBy('name')"
-          >
+          <th class="sticky-col-name hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === 'name' ? SORTED_HEADER : ''" (click)="sortBy('name')">
             Name
-            <span
-              class="inline-block w-[0.6rem] text-center text-[0.6rem]"
-              [class.invisible]="sortKey() !== 'name'"
-            >
+            <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== 'name'">
               {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
             </span>
           </th>
           @for (col of columns(); track col.key) {
-            <th
-              class="hover:text-content-bright cursor-pointer select-none"
-              [class]="sortKey() === col.key ? SORTED_HEADER : ''"
-              (click)="sortBy(col.key)"
-            >
+            <th class="hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === col.key ? SORTED_HEADER : ''" (click)="sortBy(col.key)">
               {{ col.label }}
-              <span
-                class="inline-block w-[0.6rem] text-center text-[0.6rem]"
-                [class.invisible]="sortKey() !== col.key"
-              >
+              <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== col.key">
                 {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
               </span>
             </th>
@@ -76,16 +46,10 @@ const SORTED_HEADER = 'bg-brand-bg';
       <tbody>
         @for (row of sortedPlayers(); track row['name']) {
           <tr>
-            <td
-              class="sticky-col text-content-dim text-xs"
-              [class]="sortKey() === '#' ? SORTED_COL : ''"
-            >
+            <td class="sticky-col text-content-dim text-xs" [class]="sortKey() === '#' ? SORTED_COL : ''">
               {{ row['jerseyNumber'] ?? '' }}
             </td>
-            <td
-              class="sticky-col-name whitespace-nowrap"
-              [class]="sortKey() === 'name' ? SORTED_COL : ''"
-            >
+            <td class="sticky-col-name whitespace-nowrap" [class]="sortKey() === 'name' ? SORTED_COL : ''">
               {{ row['name'] }}
             </td>
             @for (col of columns(); track col.key) {
@@ -160,16 +124,11 @@ export class StatsTable {
     const mult = dir === 'asc' ? 1 : -1;
 
     if (key === 'name') {
-      return rows.sort(
-        (a, b) => mult * String(a['name']).localeCompare(String(b['name']))
-      );
+      return rows.sort((a, b) => mult * String(a['name']).localeCompare(String(b['name'])));
     }
 
     if (key === '#') {
-      return rows.sort(
-        (a, b) =>
-          mult * ((a['jerseyNumber'] ?? 999) - (b['jerseyNumber'] ?? 999))
-      );
+      return rows.sort((a, b) => mult * ((a['jerseyNumber'] ?? 999) - (b['jerseyNumber'] ?? 999)));
     }
 
     return rows.sort((a, b) => {

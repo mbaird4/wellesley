@@ -1,10 +1,5 @@
 import { NgStyle, NgTemplateOutlet } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  input,
-  output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import type { DisplayRow, SortDir, SortKey } from '@ws/core/models';
 import { formatWoba, wobaGradientStyle } from '@ws/core/processors';
 import { ClassYearPipe, SeasonWobasPipe, Sparkline } from '@ws/core/ui';

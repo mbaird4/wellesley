@@ -1,11 +1,5 @@
 import { DecimalPipe } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { RunnerConversionRow, StolenBaseSummary } from '@ws/core/models';
 import { SITUATION_LABELS } from '@ws/core/ui';
 
@@ -76,8 +70,7 @@ export class BaserunningSection {
         barWidthPct: 0,
       }));
 
-    const maxRate =
-      withRate.length > 0 ? Math.max(...withRate.map((r) => r.rate)) : 1;
+    const maxRate = withRate.length > 0 ? Math.max(...withRate.map((r) => r.rate)) : 1;
 
     withRate.forEach((r) => {
       r.barWidthPct = (r.rate / maxRate) * 100;
@@ -87,11 +80,7 @@ export class BaserunningSection {
     withRate.sort((a, b) => {
       switch (key) {
         case 'situation':
-          return (
-            mult *
-            ((SITUATION_ORDER[a.situation] ?? 99) -
-              (SITUATION_ORDER[b.situation] ?? 99))
-          );
+          return mult * ((SITUATION_ORDER[a.situation] ?? 99) - (SITUATION_ORDER[b.situation] ?? 99));
         case 'runners':
           return mult * (a.totalRunners - b.totalRunners);
         case 'scored':

@@ -1,18 +1,10 @@
 import type { PitcherInningStats, PitcherTrackedPlay } from '@ws/core/models';
 
-import {
-  battingAvgAgainst,
-  computePitcherGameLog,
-  computePitcherInningStats,
-  computePitcherSeasonSummary,
-  inningToNumber,
-} from './pitcher-stats';
+import { battingAvgAgainst, computePitcherGameLog, computePitcherInningStats, computePitcherSeasonSummary, inningToNumber } from './pitcher-stats';
 
 // ── Helpers ──
 
-function makePlay(
-  overrides: Partial<PitcherTrackedPlay> = {}
-): PitcherTrackedPlay {
+function makePlay(overrides: Partial<PitcherTrackedPlay> = {}): PitcherTrackedPlay {
   return {
     activePitcher: 'J. Pitcher',
     inning: '1st',
@@ -47,11 +39,7 @@ describe('inningToNumber', () => {
 
 describe('computePitcherInningStats', () => {
   it('groups plays by pitcher and inning', () => {
-    const plays: PitcherTrackedPlay[] = [
-      makePlay({ inning: '1st', batterResult: 'out' }),
-      makePlay({ inning: '1st', batterResult: 'single', hitsOnPlay: 1 }),
-      makePlay({ inning: '2nd', batterResult: 'walk' }),
-    ];
+    const plays: PitcherTrackedPlay[] = [makePlay({ inning: '1st', batterResult: 'out' }), makePlay({ inning: '1st', batterResult: 'single', hitsOnPlay: 1 }), makePlay({ inning: '2nd', batterResult: 'walk' })];
 
     const result = computePitcherInningStats(plays);
     const pitcherStats = result.get('J. Pitcher') ?? [];
@@ -90,12 +78,7 @@ describe('computePitcherInningStats', () => {
   });
 
   it('counts hit types correctly', () => {
-    const plays: PitcherTrackedPlay[] = [
-      makePlay({ batterResult: 'single', hitsOnPlay: 1 }),
-      makePlay({ batterResult: 'double', hitsOnPlay: 1 }),
-      makePlay({ batterResult: 'triple', hitsOnPlay: 1 }),
-      makePlay({ batterResult: 'homer', hitsOnPlay: 1, runsScored: 1 }),
-    ];
+    const plays: PitcherTrackedPlay[] = [makePlay({ batterResult: 'single', hitsOnPlay: 1 }), makePlay({ batterResult: 'double', hitsOnPlay: 1 }), makePlay({ batterResult: 'triple', hitsOnPlay: 1 }), makePlay({ batterResult: 'homer', hitsOnPlay: 1, runsScored: 1 })];
 
     const result = computePitcherInningStats(plays);
     const stats = (result.get('J. Pitcher') ?? [])[0];
@@ -132,10 +115,7 @@ describe('computePitcherInningStats', () => {
   });
 
   it('handles sac bunt and sac fly (not counted as AB)', () => {
-    const plays: PitcherTrackedPlay[] = [
-      makePlay({ batterResult: 'sac_bunt' }),
-      makePlay({ batterResult: 'sac_fly' }),
-    ];
+    const plays: PitcherTrackedPlay[] = [makePlay({ batterResult: 'sac_bunt' }), makePlay({ batterResult: 'sac_fly' })];
 
     const result = computePitcherInningStats(plays);
     const stats = (result.get('J. Pitcher') ?? [])[0];
@@ -146,9 +126,7 @@ describe('computePitcherInningStats', () => {
   });
 
   it('handles double play — 2 outs, 1 AB', () => {
-    const plays: PitcherTrackedPlay[] = [
-      makePlay({ batterResult: 'double_play' }),
-    ];
+    const plays: PitcherTrackedPlay[] = [makePlay({ batterResult: 'double_play' })];
 
     const result = computePitcherInningStats(plays);
     const stats = (result.get('J. Pitcher') ?? [])[0];
@@ -180,14 +158,7 @@ describe('computePitcherInningStats', () => {
 
 describe('computePitcherGameLog', () => {
   it('produces a game log with totals', () => {
-    const plays: PitcherTrackedPlay[] = [
-      makePlay({ inning: '1st', batterResult: 'out' }),
-      makePlay({ inning: '1st', batterResult: 'single', hitsOnPlay: 1 }),
-      makePlay({ inning: '1st', batterResult: 'out' }),
-      makePlay({ inning: '2nd', batterResult: 'out' }),
-      makePlay({ inning: '2nd', batterResult: 'out' }),
-      makePlay({ inning: '2nd', batterResult: 'out' }),
-    ];
+    const plays: PitcherTrackedPlay[] = [makePlay({ inning: '1st', batterResult: 'out' }), makePlay({ inning: '1st', batterResult: 'single', hitsOnPlay: 1 }), makePlay({ inning: '1st', batterResult: 'out' }), makePlay({ inning: '2nd', batterResult: 'out' }), makePlay({ inning: '2nd', batterResult: 'out' }), makePlay({ inning: '2nd', batterResult: 'out' })];
 
     const logs = computePitcherGameLog(plays, {
       date: '3/15/2025',

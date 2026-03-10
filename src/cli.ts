@@ -24,18 +24,12 @@ async function fetchBoxscoreUrls(year: number): Promise<string[]> {
   $('.sidearm-schedule-game-links-boxscore a').each((_i, el) => {
     const href = $(el).attr('href');
     if (href) {
-      urls.push(
-        href.startsWith('http')
-          ? href
-          : `${BASE_URL}/${href.replace(/^\//, '')}`
-      );
+      urls.push(href.startsWith('http') ? href : `${BASE_URL}/${href.replace(/^\//, '')}`);
     }
   });
 
   const unique = [...new Set(urls)];
-  console.log(
-    `Found ${unique.length} unique boxscore URLs (${urls.length} total)`
-  );
+  console.log(`Found ${unique.length} unique boxscore URLs (${urls.length} total)`);
 
   return unique;
 }
@@ -67,9 +61,7 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
       return;
     }
 
-    const inningKey = caption
-      .replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '')
-      .trim();
+    const inningKey = caption.replace(/Wellesley\s*-\s*(Top|Bottom)\s+of\s*/gi, '').trim();
     if (processed.has(inningKey)) {
       return;
     }
@@ -80,13 +72,7 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
     $table.find('tbody tr').each((_rowIndex, row) => {
       const text = $(row).text().trim();
       const lower = text.toLowerCase();
-      if (
-        !text ||
-        lower.includes('play description') ||
-        text.length < 5 ||
-        lower.includes('inning summary') ||
-        /^\d+(st|nd|rd|th)\s+inning/i.test(lower)
-      ) {
+      if (!text || lower.includes('play description') || text.length < 5 || lower.includes('inning summary') || /^\d+(st|nd|rd|th)\s+inning/i.test(lower)) {
         return;
       }
 
@@ -132,23 +118,10 @@ async function main() {
 
   const { totals } = processGames(games);
 
-  console.log(
-    `${
-      'Slot'.padEnd(6) +
-      '0-Out'.padEnd(8) +
-      '1-Out'.padEnd(8) +
-      '2-Out'.padEnd(8)
-    }Total`
-  );
+  console.log(`${'Slot'.padEnd(6) + '0-Out'.padEnd(8) + '1-Out'.padEnd(8) + '2-Out'.padEnd(8)}Total`);
   console.log('-'.repeat(35));
   totals.forEach((r) => {
-    console.log(
-      String(r.lineupSlot).padEnd(6) +
-        String(r.paWith0Outs).padEnd(8) +
-        String(r.paWith1Out).padEnd(8) +
-        String(r.paWith2Outs).padEnd(8) +
-        String(r.totalPA)
-    );
+    console.log(String(r.lineupSlot).padEnd(6) + String(r.paWith0Outs).padEnd(8) + String(r.paWith1Out).padEnd(8) + String(r.paWith2Outs).padEnd(8) + String(r.totalPA));
   });
 
   const totalPA = totals.reduce((s, r) => s + r.totalPA, 0);

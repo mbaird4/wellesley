@@ -1,12 +1,5 @@
 import { CommonModule } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  effect,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, input, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import type { BaseRunners, PlaySnapshot } from '@ws/core/models';
 
@@ -65,13 +58,9 @@ export class GameViewer {
     return this.played() ? snap.outsAfter : snap.outsBefore;
   });
 
-  displayedBatter = computed(() =>
-    this.played() ? null : (this.currentSnapshot()?.currentBatterName ?? null)
-  );
+  displayedBatter = computed(() => (this.played() ? null : (this.currentSnapshot()?.currentBatterName ?? null)));
 
-  displayedSlot = computed(() =>
-    this.played() ? null : (this.currentSnapshot()?.currentBatterSlot ?? null)
-  );
+  displayedSlot = computed(() => (this.played() ? null : (this.currentSnapshot()?.currentBatterSlot ?? null)));
 
   totalFiltered = computed(() => this.filteredSnapshots().length);
 

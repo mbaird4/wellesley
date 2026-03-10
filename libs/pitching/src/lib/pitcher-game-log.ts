@@ -1,16 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/core/models';
-import {
-  battingAvgAgainst,
-  wobaAgainst,
-  wobaColorStyle,
-} from '@ws/core/processors';
+import { battingAvgAgainst, wobaAgainst, wobaColorStyle } from '@ws/core/processors';
 import { SlideToggle } from '@ws/core/ui';
 
 import type { InningsTableRow } from './pitcher-innings-table';
@@ -29,10 +19,7 @@ function fmtIP(outs: number): string {
   return rem === 0 ? `${full}.0` : `${full}.${rem}`;
 }
 
-function buildInningView(
-  inn: PitcherInningStats,
-  showColors: boolean
-): InningsTableRow {
+function buildInningView(inn: PitcherInningStats, showColors: boolean): InningsTableRow {
   const avg = battingAvgAgainst(inn);
   const woba = wobaAgainst(inn);
 

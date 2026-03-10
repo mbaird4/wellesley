@@ -59,8 +59,7 @@ const TEAMS: Record<string, TeamConfig> = {
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 const DELAY_MS = 500;
@@ -80,9 +79,7 @@ async function fetchPage(url: string): Promise<string | null> {
     const html = response.data;
 
     if (!html || html.length < 500) {
-      console.warn(
-        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
-      );
+      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
 
       return null;
     }
@@ -97,10 +94,7 @@ async function fetchPage(url: string): Promise<string | null> {
 
 // ── Generic table helpers ──
 
-function findTable(
-  $: cheerio.CheerioAPI,
-  captionMatch: string
-): cheerio.Cheerio<any> | null {
+function findTable($: cheerio.CheerioAPI, captionMatch: string): cheerio.Cheerio<any> | null {
   let found: cheerio.Cheerio<any> | null = null;
 
   $('table').each((_, table) => {
@@ -116,30 +110,21 @@ function findTable(
   return found;
 }
 
-function parsePlayerName(
-  $: cheerio.CheerioAPI,
-  $row: cheerio.Cheerio<any>
-): { name: string; jerseyNumber: number | null } | null {
+function parsePlayerName($: cheerio.CheerioAPI, $row: cheerio.Cheerio<any>): { name: string; jerseyNumber: number | null } | null {
   const nameCell = $row.find('th[scope="row"]');
-  const name =
-    nameCell.find('a.hide-on-medium-down').text().trim() ||
-    nameCell.find('a').first().text().trim() ||
-    nameCell.text().trim();
+  const name = nameCell.find('a.hide-on-medium-down').text().trim() || nameCell.find('a').first().text().trim() || nameCell.text().trim();
 
   if (!name) {
     return null;
   }
 
   // Jersey number is in a preceding td or in a mobile span
-  const jerseyText =
-    $row.find('td.text-center.hide-on-medium-down').first().text().trim() ||
-    $row.find('.mobile-jersey-number').first().text().trim();
+  const jerseyText = $row.find('td.text-center.hide-on-medium-down').first().text().trim() || $row.find('.mobile-jersey-number').first().text().trim();
   const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
   return {
     name,
-    jerseyNumber:
-      jerseyNumber !== null && !isNaN(jerseyNumber) ? jerseyNumber : null,
+    jerseyNumber: jerseyNumber !== null && !isNaN(jerseyNumber) ? jerseyNumber : null,
   };
 }
 
@@ -155,10 +140,7 @@ function pct($row: cheerio.Cheerio<any>, label: string): number {
   return parseFloat(cell.text().trim()) || 0;
 }
 
-function parseDashPair(
-  $row: cheerio.Cheerio<any>,
-  label: string
-): [number, number] {
+function parseDashPair($row: cheerio.Cheerio<any>, label: string): [number, number] {
   const text = $row.find(`td[data-label="${label}"]`).text().trim();
   const match = text.match(/^(\d+)-(\d+)$/);
 
@@ -166,16 +148,11 @@ function parseDashPair(
 }
 
 /** Extract row name from a tfoot row — handles both <th scope="row"> and plain <td> */
-function tfootRowName(
-  $: cheerio.CheerioAPI,
-  $row: cheerio.Cheerio<any>
-): string {
+function tfootRowName($: cheerio.CheerioAPI, $row: cheerio.Cheerio<any>): string {
   const thCell = $row.find('th[scope="row"]');
 
   if (thCell.length) {
-    return (
-      thCell.find('a').first().text().trim() || thCell.text().trim()
-    ).toLowerCase();
+    return (thCell.find('a').first().text().trim() || thCell.text().trim()).toLowerCase();
   }
 
   // Fielding tfoot uses <td>Totals</td> instead of <th>
@@ -278,11 +255,7 @@ function parseHittingTable($: cheerio.CheerioAPI): {
     const $row = $(row);
     const player = parsePlayerName($, $row);
 
-    if (
-      !player ||
-      player.name.toLowerCase() === 'totals' ||
-      player.name.toLowerCase() === 'opponents'
-    ) {
+    if (!player || player.name.toLowerCase() === 'totals' || player.name.toLowerCase() === 'opponents') {
       return;
     }
 
@@ -300,15 +273,9 @@ function parseHittingTable($: cheerio.CheerioAPI): {
     const name = tfootRowName($, $row);
 
     if (name === 'totals') {
-      totals = parseHittingRow($, $row) as Omit<
-        HittingRow,
-        'name' | 'jerseyNumber'
-      >;
+      totals = parseHittingRow($, $row) as Omit<HittingRow, 'name' | 'jerseyNumber'>;
     } else if (name === 'opponents') {
-      opponents = parseHittingRow($, $row) as Omit<
-        HittingRow,
-        'name' | 'jerseyNumber'
-      >;
+      opponents = parseHittingRow($, $row) as Omit<HittingRow, 'name' | 'jerseyNumber'>;
     }
   });
 
@@ -347,10 +314,7 @@ interface PitchingRow {
   sha: number;
 }
 
-function parsePitchingRow(
-  $: cheerio.CheerioAPI,
-  $row: cheerio.Cheerio<any>
-): Omit<PitchingRow, 'name' | 'jerseyNumber'> {
+function parsePitchingRow($: cheerio.CheerioAPI, $row: cheerio.Cheerio<any>): Omit<PitchingRow, 'name' | 'jerseyNumber'> {
   const [w, l] = parseDashPair($row, 'W-L');
   const [app, gs] = parseDashPair($row, 'APP-GS');
   const ipText = $row.find('td[data-label="IP"]').text().trim();
@@ -401,11 +365,7 @@ function parsePitchingTable($: cheerio.CheerioAPI): {
     const $row = $(row);
     const player = parsePlayerName($, $row);
 
-    if (
-      !player ||
-      player.name.toLowerCase() === 'totals' ||
-      player.name.toLowerCase() === 'opponents'
-    ) {
+    if (!player || player.name.toLowerCase() === 'totals' || player.name.toLowerCase() === 'opponents') {
       return;
     }
 
@@ -449,10 +409,7 @@ interface FieldingRow {
   ci: number;
 }
 
-function parseFieldingRow(
-  $: cheerio.CheerioAPI,
-  $row: cheerio.Cheerio<any>
-): Omit<FieldingRow, 'name' | 'jerseyNumber'> {
+function parseFieldingRow($: cheerio.CheerioAPI, $row: cheerio.Cheerio<any>): Omit<FieldingRow, 'name' | 'jerseyNumber'> {
   return {
     tc: num($row, 'TC'),
     po: num($row, 'PO'),
@@ -484,11 +441,7 @@ function parseFieldingTable($: cheerio.CheerioAPI): {
     const $row = $(row);
     const player = parsePlayerName($, $row);
 
-    if (
-      !player ||
-      player.name.toLowerCase() === 'totals' ||
-      player.name.toLowerCase() === 'opponents'
-    ) {
+    if (!player || player.name.toLowerCase() === 'totals' || player.name.toLowerCase() === 'opponents') {
       return;
     }
 
@@ -576,9 +529,7 @@ async function main(): Promise<void> {
     const pitching = parsePitchingTable($);
     const fielding = parseFieldingTable($);
 
-    console.log(
-      `  Hitting: ${hitting.players.length} players, Pitching: ${pitching.players.length}, Fielding: ${fielding.players.length}`
-    );
+    console.log(`  Hitting: ${hitting.players.length} players, Pitching: ${pitching.players.length}, Fielding: ${fielding.players.length}`);
 
     const output = {
       slug,
@@ -591,10 +542,7 @@ async function main(): Promise<void> {
     };
 
     const teamDir = path.join(outDir, config.outDir ?? slug);
-    const filename =
-      year === new Date().getFullYear()
-        ? 'season-stats.json'
-        : `season-stats-${year}.json`;
+    const filename = year === new Date().getFullYear() ? 'season-stats.json' : `season-stats-${year}.json`;
     const filePath = path.join(teamDir, filename);
 
     fs.writeFileSync(filePath, JSON.stringify(output, null, 2));

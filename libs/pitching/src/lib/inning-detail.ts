@@ -1,23 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/core/models';
-import {
-  battingAvgAgainst,
-  inningToNumber,
-  wobaAgainst,
-  wobaColorStyle,
-} from '@ws/core/processors';
+import { battingAvgAgainst, inningToNumber, wobaAgainst, wobaColorStyle } from '@ws/core/processors';
 import { ButtonToggle, type ToggleOption } from '@ws/core/ui';
 
-import type {
-  InningsTableRow,
-  InningsTotalsRow,
-} from './pitcher-innings-table';
+import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'AVG' | 'wOBA';
@@ -45,12 +31,7 @@ const COUNT_COLOR_MAP: Record<string, number[]> = {
 };
 
 /** Standalone K color ramp — 0 = muted dash, 1 = purple, 2 = teal, 3+ = green */
-const K_COLORS: Record<string, string>[] = [
-  { color: 'hsl(0, 0%, 35%)' },
-  { color: 'hsl(270, 70%, 65%)' },
-  { color: 'hsl(180, 75%, 52%)' },
-  { color: 'hsl(140, 70%, 65%)' },
-];
+const K_COLORS: Record<string, string>[] = [{ color: 'hsl(0, 0%, 35%)' }, { color: 'hsl(270, 70%, 65%)' }, { color: 'hsl(180, 75%, 52%)' }, { color: 'hsl(140, 70%, 65%)' }];
 
 function fmtStat(value: number): string {
   return value.toFixed(3).replace(/^0/, '');
@@ -82,10 +63,7 @@ function countStatColor(stat: string, count: number): Record<string, string> {
 }
 
 /** Get the color style for a rate stat cell */
-function rateStatColor(
-  stat: MatrixStat,
-  innStats: PitcherInningStats
-): Record<string, string> {
+function rateStatColor(stat: MatrixStat, innStats: PitcherInningStats): Record<string, string> {
   if (stat === 'AVG') {
     const avg = battingAvgAgainst(innStats);
 
@@ -156,10 +134,7 @@ function kRateColor(innStats: PitcherInningStats): Record<string, string> {
 }
 
 /** Get the color style for a cell */
-function cellColor(
-  stat: MatrixStat,
-  innStats: PitcherInningStats
-): Record<string, string> {
+function cellColor(stat: MatrixStat, innStats: PitcherInningStats): Record<string, string> {
   if (stat === 'AVG' || stat === 'wOBA') {
     return rateStatColor(stat, innStats);
   }
@@ -168,10 +143,7 @@ function cellColor(
 }
 
 /** Get the color style for a total cell (uses rate for K) */
-function totalCellColor(
-  stat: MatrixStat,
-  innStats: PitcherInningStats
-): Record<string, string> {
+function totalCellColor(stat: MatrixStat, innStats: PitcherInningStats): Record<string, string> {
   if (stat === 'K') {
     return kRateColor(innStats);
   }
@@ -258,15 +230,7 @@ export class InningDetail {
 
   readonly statOptions = STAT_OPTIONS;
   readonly selectedStat = signal<string>('R');
-  readonly selectedInnings = signal<string[]>([
-    '1st',
-    '2nd',
-    '3rd',
-    '4th',
-    '5th',
-    '6th',
-    '7th',
-  ]);
+  readonly selectedInnings = signal<string[]>(['1st', '2nd', '3rd', '4th', '5th', '6th', '7th']);
 
   readonly expandedUrl = signal<string | null>(null);
 
@@ -278,9 +242,7 @@ export class InningDetail {
   });
 
   /** Toggle options derived from available innings */
-  readonly inningToggleOptions = computed<ToggleOption[]>(() =>
-    this.availableInnings().map((inn) => ({ value: inn, label: inn }))
-  );
+  readonly inningToggleOptions = computed<ToggleOption[]>(() => this.availableInnings().map((inn) => ({ value: inn, label: inn })));
 
   /** Effective visible inning columns — all when none selected */
   readonly effectiveInnings = computed<string[]>(() => {
@@ -311,10 +273,7 @@ export class InningDetail {
       }
 
       // When filtering to specific innings, skip games with no data in any of them
-      if (
-        filtered &&
-        !innings.some((inn) => log.innings.find((i) => i.inning === inn))
-      ) {
+      if (filtered && !innings.some((inn) => log.innings.find((i) => i.inning === inn))) {
         return;
       }
 

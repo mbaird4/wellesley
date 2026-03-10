@@ -1,19 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  inject,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { SoftballStatsService } from '@ws/core/data';
-import type {
-  BaseSituation,
-  GameScoringPlays,
-  RunnerConversionRow,
-  SacBuntSummary,
-  ScoringPlaySummary,
-  StolenBaseSummary,
-} from '@ws/core/models';
+import type { BaseSituation, GameScoringPlays, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 import { LastUpdatedPipe, SITUATION_LABELS } from '@ws/core/ui';
 
 import { ByGameTab } from './by-game-tab/by-game-tab';
@@ -25,35 +12,9 @@ import { SummaryTab } from './summary-tab/summary-tab';
 
 type ScoringTab = 'summary' | 'by-game' | 'by-player';
 
-const TYPE_ORDER: string[] = [
-  'homer',
-  'triple',
-  'double',
-  'single',
-  'bunt_single',
-  'sac_fly',
-  'sac_bunt',
-  'walk',
-  'hbp',
-  'wild_pitch',
-  'passed_ball',
-  'stolen_base',
-  'fielders_choice',
-  'error',
-  'productive_out',
-  'unknown',
-];
+const TYPE_ORDER: string[] = ['homer', 'triple', 'double', 'single', 'bunt_single', 'sac_fly', 'sac_bunt', 'walk', 'hbp', 'wild_pitch', 'passed_ball', 'stolen_base', 'fielders_choice', 'error', 'productive_out', 'unknown'];
 
-const SITUATION_ORDER: BaseSituation[] = [
-  'empty',
-  'first',
-  'second',
-  'third',
-  'first_second',
-  'first_third',
-  'second_third',
-  'loaded',
-];
+const SITUATION_ORDER: BaseSituation[] = ['empty', 'first', 'second', 'third', 'first_second', 'first_third', 'second_third', 'loaded'];
 
 @Component({
   selector: 'ws-scoring-plays',
@@ -77,10 +38,7 @@ export class ScoringPlays {
   readonly selectedYear = signal(2025);
   readonly activeTab = signal<ScoringTab>('summary');
 
-  readonly availableYears = [
-    2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
-    2011,
-  ];
+  readonly availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
 
   readonly seasonSummary = signal<ScoringPlaySummary | null>(null);
   readonly gameScoringPlays = signal<GameScoringPlays[]>([]);
@@ -176,14 +134,8 @@ export class ScoringPlays {
 
   readonly playerBreakdowns = computed(() => {
     const games = this.gameScoringPlays();
-    const runnerMap = new Map<
-      string,
-      { runsScored: number; byType: Record<string, number> }
-    >();
-    const batterMap = new Map<
-      string,
-      { rbis: number; byType: Record<string, number> }
-    >();
+    const runnerMap = new Map<string, { runsScored: number; byType: Record<string, number> }>();
+    const batterMap = new Map<string, { rbis: number; byType: Record<string, number> }>();
 
     games
       .flatMap((game) => game.plays)
@@ -194,16 +146,14 @@ export class ScoringPlays {
             byType: {},
           };
           r.runsScored++;
-          r.byType[play.scoringPlayType] =
-            (r.byType[play.scoringPlayType] || 0) + 1;
+          r.byType[play.scoringPlayType] = (r.byType[play.scoringPlayType] || 0) + 1;
           runnerMap.set(play.runnerName, r);
         }
 
         if (play.batterName) {
           const b = batterMap.get(play.batterName) || { rbis: 0, byType: {} };
           b.rbis++;
-          b.byType[play.scoringPlayType] =
-            (b.byType[play.scoringPlayType] || 0) + 1;
+          b.byType[play.scoringPlayType] = (b.byType[play.scoringPlayType] || 0) + 1;
           batterMap.set(play.batterName, b);
         }
       });
@@ -250,9 +200,7 @@ export class ScoringPlays {
         this.loading.set(false);
       },
       error: (err) => {
-        this.error.set(
-          err.message || 'An error occurred while loading scoring data'
-        );
+        this.error.set(err.message || 'An error occurred while loading scoring data');
         this.loading.set(false);
         console.error('Error loading scoring data:', err);
       },

@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  input,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { SprayZone } from '@ws/core/models';
 import { getContactQuality } from '@ws/core/processors';
 
@@ -130,9 +125,7 @@ export class SprayChartCoachPrintView {
       .sort((a, b) => b.total - a.total)
       .map((z) => {
         const zonePoints = dataPoints.filter((dp) => dp.zone === z.zone);
-        const hard = zonePoints.filter(
-          (dp) => getContactQuality(dp.contactType) === 'hard'
-        ).length;
+        const hard = zonePoints.filter((dp) => getContactQuality(dp.contactType) === 'hard').length;
 
         return {
           label: ZONE_LABELS[z.zone],
@@ -158,8 +151,7 @@ export class SprayChartCoachPrintView {
     const gp = p.gp ?? 0;
     const rbiRate = gp > 0 ? (p.rbi ?? 0) / gp : 0;
 
-    const fmtAvg = (v?: number): string =>
-      v !== undefined ? v.toFixed(3).replace(/^0/, '') : '—';
+    const fmtAvg = (v?: number): string => (v !== undefined ? v.toFixed(3).replace(/^0/, '') : '—');
 
     return [
       { label: 'AVG', value: fmtAvg(p.avg), flagged: false },
@@ -193,12 +185,7 @@ export class SprayChartCoachPrintView {
       },
       {
         label: 'SB',
-        value:
-          p.sb !== undefined && p.sbAtt !== undefined
-            ? `${p.sb}/${p.sbAtt}`
-            : p.sb !== undefined
-              ? String(p.sb)
-              : '—',
+        value: p.sb !== undefined && p.sbAtt !== undefined ? `${p.sb}/${p.sbAtt}` : p.sb !== undefined ? String(p.sb) : '—',
         flagged: false,
       },
     ];

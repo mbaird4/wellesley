@@ -8,14 +8,7 @@ import { OpponentSprayChart } from '../opponent-spray-chart/opponent-spray-chart
   standalone: true,
   imports: [OpponentSprayChart],
   host: { class: 'block' },
-  template: `
-    <ws-opponent-spray-chart
-      [slug]="data.slug()"
-      [dataDir]="data.dataDir()"
-      [teamName]="data.selectedTeamName()"
-      [teamData]="data.teamData()"
-    />
-  `,
+  template: ` <ws-opponent-spray-chart [slug]="data.slug()" [dataDir]="data.dataDir()" [teamName]="data.selectedTeamName()" [teamData]="data.teamData()" /> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SprayTab {

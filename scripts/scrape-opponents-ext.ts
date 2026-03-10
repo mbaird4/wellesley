@@ -161,8 +161,7 @@ const DEFAULT_YEARS = [2026, 2025, 2024, 2023];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent':
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
 // ── Utilities ──
@@ -196,9 +195,7 @@ async function fetchPage(url: string): Promise<string | null> {
     const html = response.data;
 
     if (!html || html.length < 500) {
-      console.warn(
-        `  Skipping ${url}: response too short (${html?.length ?? 0} chars)`
-      );
+      console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
 
       return null;
     }
@@ -213,17 +210,7 @@ async function fetchPage(url: string): Promise<string | null> {
 
 // ── wOBA calculation (inlined from src/lib/woba.ts) ──
 
-function calculateWoba(stats: {
-  ab: number;
-  h: number;
-  doubles: number;
-  triples: number;
-  hr: number;
-  bb: number;
-  hbp: number;
-  sf: number;
-  sh: number;
-}): number {
+function calculateWoba(stats: { ab: number; h: number; doubles: number; triples: number; hr: number; bb: number; hbp: number; sf: number; sh: number }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
 
@@ -231,13 +218,7 @@ function calculateWoba(stats: {
     return 0;
   }
 
-  const numerator =
-    0.5 * stats.bb +
-    0.5 * stats.hbp +
-    0.9 * singles +
-    1.2 * stats.doubles +
-    1.7 * stats.triples +
-    2.5 * stats.hr;
+  const numerator = 0.5 * stats.bb + 0.5 * stats.hbp + 0.9 * singles + 1.2 * stats.doubles + 1.7 * stats.triples + 2.5 * stats.hr;
 
   return numerator / denominator;
 }
@@ -319,9 +300,7 @@ function gamedataFilename(year: number): string {
 }
 
 function battingFilename(year: number): string {
-  return year === CURRENT_YEAR
-    ? 'batting-stats.json'
-    : `batting-stats-${year}.json`;
+  return year === CURRENT_YEAR ? 'batting-stats.json' : `batting-stats-${year}.json`;
 }
 
 function pitchingFilename(year: number): string {
@@ -353,19 +332,11 @@ function buildPrestoRosterUrl(domain: string, season: string): string {
   return `https://${domain}/sports/sball/${season}/roster`;
 }
 
-function buildPrestoStatsUrl(
-  domain: string,
-  season: string,
-  teamSlug: string
-): string {
+function buildPrestoStatsUrl(domain: string, season: string, teamSlug: string): string {
   return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?view=lineup`;
 }
 
-function buildPrestoPitchingStatsUrl(
-  domain: string,
-  season: string,
-  teamSlug: string
-): string {
+function buildPrestoPitchingStatsUrl(domain: string, season: string, teamSlug: string): string {
   return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?view=pitching`;
 }
 
@@ -385,30 +356,17 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
 
     // Check if this looks like a roster table
     const hasNo = headers.some((h) => h === 'no.' || h === '#' || h === 'no');
-    const hasName = headers.some(
-      (h) => h === 'name' || h === 'player' || h === 'full name'
-    );
+    const hasName = headers.some((h) => h === 'name' || h === 'player' || h === 'full name');
 
     if (!hasNo && !hasName) {
       return;
     }
 
-    const noIdx = headers.findIndex(
-      (h) => h === 'no.' || h === '#' || h === 'no'
-    );
-    const nameIdx = headers.findIndex(
-      (h) => h === 'name' || h === 'player' || h === 'full name'
-    );
-    const posIdx = headers.findIndex(
-      (h) => h === 'pos.' || h === 'pos' || h === 'position'
-    );
-    const clIdx = headers.findIndex(
-      (h) =>
-        h === 'cl.' || h === 'cl' || h === 'yr.' || h === 'yr' || h === 'class'
-    );
-    const btIdx = headers.findIndex(
-      (h) => h === 'b/t' || h === 'b-t' || h === 'bat/thr'
-    );
+    const noIdx = headers.findIndex((h) => h === 'no.' || h === '#' || h === 'no');
+    const nameIdx = headers.findIndex((h) => h === 'name' || h === 'player' || h === 'full name');
+    const posIdx = headers.findIndex((h) => h === 'pos.' || h === 'pos' || h === 'position');
+    const clIdx = headers.findIndex((h) => h === 'cl.' || h === 'cl' || h === 'yr.' || h === 'yr' || h === 'class');
+    const btIdx = headers.findIndex((h) => h === 'b/t' || h === 'b-t' || h === 'bat/thr');
 
     $table.find('tbody tr').each((_, row) => {
       const cells = $(row).find('td');
@@ -420,11 +378,7 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
       const jerseyText = noIdx >= 0 ? $(cells[noIdx]).text().trim() : '';
       const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
-      const fullName =
-        nameIdx >= 0
-          ? $(cells[nameIdx]).find('a').text().trim() ||
-            $(cells[nameIdx]).text().trim()
-          : '';
+      const fullName = nameIdx >= 0 ? $(cells[nameIdx]).find('a').text().trim() || $(cells[nameIdx]).text().trim() : '';
 
       if (!fullName) {
         return;
@@ -444,8 +398,7 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
         lastName = parts.slice(1).join(' ') || '';
       }
 
-      const position =
-        posIdx >= 0 ? $(cells[posIdx]).text().trim() || null : null;
+      const position = posIdx >= 0 ? $(cells[posIdx]).text().trim() || null : null;
       const classYear = clIdx >= 0 ? $(cells[clIdx]).text().trim() : '';
 
       let bats: BatHand | null = null;
@@ -454,8 +407,8 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
       if (btIdx >= 0) {
         const btText = $(cells[btIdx]).text().trim();
 
-        if (btText && /[LRS]\s*[\/\-]\s*[LR]/i.test(btText)) {
-          const btParts = btText.split(/[\/\-]/);
+        if (btText && /[LRS]\s*[/-]\s*[LR]/i.test(btText)) {
+          const btParts = btText.split(/[/-]/);
           const batChar = btParts[0]?.trim().toUpperCase();
 
           if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
@@ -475,8 +428,7 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
         name,
         firstName,
         lastName,
-        jerseyNumber:
-          jerseyNumber !== null && !isNaN(jerseyNumber) ? jerseyNumber : null,
+        jerseyNumber: jerseyNumber !== null && !isNaN(jerseyNumber) ? jerseyNumber : null,
         classYear,
         position,
         bats,
@@ -513,8 +465,7 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
       return;
     }
 
-    const col = (label: string): number =>
-      headers.findIndex((h) => h === label.toLowerCase());
+    const col = (label: string): number => headers.findIndex((h) => h === label.toLowerCase());
 
     const nameCol = col('name') >= 0 ? col('name') : col('player');
     const gpCol = col('gp');
@@ -547,18 +498,9 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
         return;
       }
 
-      const rawName =
-        nameCol >= 0
-          ? $(cells[nameCol]).find('a').text().trim() ||
-            $(cells[nameCol]).text().trim()
-          : '';
+      const rawName = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
 
-      if (
-        !rawName ||
-        rawName.toLowerCase() === 'totals' ||
-        rawName.toLowerCase() === 'total' ||
-        rawName.toLowerCase() === 'opponents'
-      ) {
+      if (!rawName || rawName.toLowerCase() === 'totals' || rawName.toLowerCase() === 'total' || rawName.toLowerCase() === 'opponents') {
         return;
       }
 
@@ -674,9 +616,7 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
 
 // ── Presto pitching stats parsing ──
 
-function parsePrestoPitchingStatsTable(
-  $: cheerio.CheerioAPI
-): PitchingStatsRow[] {
+function parsePrestoPitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
   const pitchers: PitchingStatsRow[] = [];
 
   $('table').each((_, table) => {
@@ -695,8 +635,7 @@ function parsePrestoPitchingStatsTable(
       return;
     }
 
-    const col = (label: string): number =>
-      headers.findIndex((h) => h === label.toLowerCase());
+    const col = (label: string): number => headers.findIndex((h) => h === label.toLowerCase());
 
     const nameCol = col('name') >= 0 ? col('name') : col('player');
     const wCol = col('w');
@@ -719,18 +658,9 @@ function parsePrestoPitchingStatsTable(
         return;
       }
 
-      const rawName =
-        nameCol >= 0
-          ? $(cells[nameCol]).find('a').text().trim() ||
-            $(cells[nameCol]).text().trim()
-          : '';
+      const rawName = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
 
-      if (
-        !rawName ||
-        rawName.toLowerCase() === 'totals' ||
-        rawName.toLowerCase() === 'total' ||
-        rawName.toLowerCase() === 'opponents'
-      ) {
+      if (!rawName || rawName.toLowerCase() === 'totals' || rawName.toLowerCase() === 'total' || rawName.toLowerCase() === 'opponents') {
         return;
       }
 
@@ -841,10 +771,7 @@ function parsePrestoTeamGames($: cheerio.CheerioAPI): number | null {
     $table.find('tbody tr, tfoot tr').each((_, row) => {
       const cells = $(row).find('td, th');
       const nameCol = headers.findIndex((h) => h === 'name' || h === 'player');
-      const nameText =
-        nameCol >= 0
-          ? $(cells[nameCol]).text().trim().toLowerCase()
-          : $(cells[0]).text().trim().toLowerCase();
+      const nameText = nameCol >= 0 ? $(cells[nameCol]).text().trim().toLowerCase() : $(cells[0]).text().trim().toLowerCase();
 
       if (nameText === 'totals' || nameText === 'total') {
         const gpText = gpCol >= 0 ? $(cells[gpCol]).text().trim() : '';
@@ -865,10 +792,7 @@ function parsePrestoTeamGames($: cheerio.CheerioAPI): number | null {
 
 // ── Presto boxscore URL extraction ──
 
-function extractPrestoBoxscoreUrls(
-  $: cheerio.CheerioAPI,
-  domain: string
-): string[] {
+function extractPrestoBoxscoreUrls($: cheerio.CheerioAPI, domain: string): string[] {
   const baseUrl = `https://${domain}`;
   const urls: string[] = [];
 
@@ -896,9 +820,7 @@ function extractPrestoBoxscoreUrls(
       return;
     }
 
-    const fullUrl = href.startsWith('http')
-      ? href
-      : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
+    const fullUrl = href.startsWith('http') ? href : `${baseUrl}${href.startsWith('/') ? '' : '/'}${href}`;
     urls.push(fullUrl);
   });
 
@@ -927,9 +849,7 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
   // followed by play text in various formats (tables, divs, or paragraph elements)
   $('h3, h4').each((_, heading) => {
     const text = $(heading).text().trim();
-    const match = text.match(
-      /^(.+?)\s+(Top|Bottom)\s+of\s+(\d+(?:st|nd|rd|th))\s+Inning/i
-    );
+    const match = text.match(/^(.+?)\s+(Top|Bottom)\s+of\s+(\d+(?:st|nd|rd|th))\s+Inning/i);
 
     if (!match) {
       return;
@@ -963,12 +883,7 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
         $next.find('tr').each((_, row) => {
           const rowText = $(row).text().trim();
 
-          if (
-            rowText &&
-            rowText.length >= 5 &&
-            !rowText.toLowerCase().includes('inning summary') &&
-            !rowText.toLowerCase().includes('play description')
-          ) {
+          if (rowText && rowText.length >= 5 && !rowText.toLowerCase().includes('inning summary') && !rowText.toLowerCase().includes('play description')) {
             plays.push(rowText);
           }
         });
@@ -976,11 +891,7 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
         // PBP may be in div/p elements
         const playText = $next.text().trim();
 
-        if (
-          playText &&
-          playText.length >= 5 &&
-          !playText.toLowerCase().includes('inning summary')
-        ) {
+        if (playText && playText.length >= 5 && !playText.toLowerCase().includes('inning summary')) {
           // Split on newlines in case multiple plays are in one element
           playText.split('\n').forEach((line) => {
             const trimmed = line.trim();
@@ -1013,9 +924,7 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
           return;
         }
 
-        const teamName = caption
-          .replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '')
-          .trim();
+        const teamName = caption.replace(/\s*-\s*(Top|Bottom)\s+of\s+.*/i, '').trim();
         const inningMatch = caption.match(/(?:Top|Bottom)\s+of\s+(.+)/i);
         const inning = inningMatch ? inningMatch[1].trim() : '';
 
@@ -1036,17 +945,10 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
         $table.find('tbody tr').each((_, row) => {
           const $row = $(row);
           const firstCell = $row.find('td').first();
-          const originalText =
-            (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
+          const originalText = (firstCell.length ? firstCell.text() : $row.text()).trim() || '';
           const lowerText = originalText.toLowerCase();
 
-          if (
-            !originalText ||
-            lowerText.includes('play description') ||
-            originalText.length < 5 ||
-            lowerText.includes('inning summary') ||
-            lowerText.match(/^\d+(st|nd|rd|th)\s+inning/i)
-          ) {
+          if (!originalText || lowerText.includes('play description') || originalText.length < 5 || lowerText.includes('inning summary') || lowerText.match(/^\d+(st|nd|rd|th)\s+inning/i)) {
             return;
           }
 
@@ -1065,10 +967,7 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 
 // ── Presto lineup parsing ──
 
-function parsePrestoLineup(
-  $: cheerio.CheerioAPI,
-  teamAliases: string[]
-): [number, string[]][] {
+function parsePrestoLineup($: cheerio.CheerioAPI, teamAliases: string[]): [number, string[]][] {
   const lineup = new Map<number, string[]>();
 
   // Try to find batting lineup tables — look for tables with "batting" context
@@ -1078,10 +977,7 @@ function parsePrestoLineup(
 
     // Check caption or preceding heading for team name
     const caption = $table.find('caption').text() || '';
-    const prevHeading =
-      $table.prev('h3, h4, h2').text() ||
-      $table.parent().find('h3, h4').first().text() ||
-      '';
+    const prevHeading = $table.prev('h3, h4, h2').text() || $table.parent().find('h3, h4').first().text() || '';
     const context = `${caption} ${prevHeading}`;
 
     if (!captionMatchesTeam(context, teamAliases)) {
@@ -1091,11 +987,7 @@ function parsePrestoLineup(
     // Skip pitching tables
     const lower = context.toLowerCase();
 
-    if (
-      lower.includes('pitching') ||
-      lower.includes('top of') ||
-      lower.includes('bottom of')
-    ) {
+    if (lower.includes('pitching') || lower.includes('top of') || lower.includes('bottom of')) {
       return;
     }
 
@@ -1140,10 +1032,7 @@ function parsePrestoLineup(
       // Check for substitution — indentation or different visual indicator
       const cellHtml = $(cells[1]).html() || '';
       const rawText = $(cells[1]).text() || '';
-      const isSubstitution =
-        cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') ||
-        /^(&nbsp;){4,}/.test(cellHtml) ||
-        /^(\u00A0|\s){4,}/.test(rawText);
+      const isSubstitution = cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') || /^(&nbsp;){4,}/.test(cellHtml) || /^(\u00A0|\s){4,}/.test(rawText);
 
       if (isSubstitution) {
         const previousSlot = slot - 1;
@@ -1169,10 +1058,7 @@ function parsePrestoLineup(
 
 // ── Presto pitchers parsing ──
 
-function parsePrestoPitchers(
-  $: cheerio.CheerioAPI,
-  teamAliases: string[]
-): string[] {
+function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string[] {
   const pitchers: string[] = [];
 
   $('table').each((_, table) => {
@@ -1192,8 +1078,7 @@ function parsePrestoPitchers(
       .find('tbody tr')
       .each((_, row) => {
         const link = $(row).find('a').first();
-        const name =
-          link.text().trim() || $(row).find('td').first().text().trim();
+        const name = link.text().trim() || $(row).find('td').first().text().trim();
 
         if (name && name.toLowerCase() !== 'totals') {
           pitchers.push(name);
@@ -1241,7 +1126,7 @@ function parsePrestoGameDate($: cheerio.CheerioAPI, url: string): string {
 function parseOpponentFromUrl(url: string): string {
   // Try multiple URL patterns
   const patterns = [
-    /\/(\d{4})\-\d{2}\/([^/]+)\//, // Presto format
+    /\/(\d{4})-\d{2}\/([^/]+)\//, // Presto format
     /stats\/\d{4}\/([^/]+)\//,
     /boxscore.*?vs[._-]?([^/._]+)/i,
   ];
@@ -1255,9 +1140,7 @@ function parseOpponentFromUrl(url: string): string {
     const slug = match ? match[match.length - 1] : null;
 
     if (slug) {
-      return slug
-        .replace(/[-_]/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase());
+      return slug.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     }
 
     return result;
@@ -1266,12 +1149,7 @@ function parseOpponentFromUrl(url: string): string {
 
 // ── Per-team scraping ──
 
-async function scrapeTeam(
-  slug: string,
-  config: TeamConfig,
-  years: number[],
-  aliases: string[]
-): Promise<TeamOutput> {
+async function scrapeTeam(slug: string, config: TeamConfig, years: number[], aliases: string[]): Promise<TeamOutput> {
   console.log(`\n=== ${slug} (${config.domain}) ===`);
 
   // 1. Fetch roster from most recent year
@@ -1290,11 +1168,7 @@ async function scrapeTeam(
     await delay(DELAY_MS);
     const season = prestoYearFormat(year);
     console.log(`  Fetching ${year} (${season}) stats...`);
-    const statsUrl = buildPrestoStatsUrl(
-      config.domain,
-      season,
-      config.teamSlug
-    );
+    const statsUrl = buildPrestoStatsUrl(config.domain, season, config.teamSlug);
     const statsHtml = await fetchPage(statsUrl);
 
     if (statsHtml) {
@@ -1343,10 +1217,7 @@ async function scrapeTeam(
   }));
 
   // Pass 1: exact matches
-  const matchResults = new Map<
-    (typeof roster)[number],
-    Map<number, BattingStats>
-  >();
+  const matchResults = new Map<(typeof roster)[number], Map<number, BattingStats>>();
   const claimedStatsKeys = new Set<string>();
 
   rosterWithKeys.forEach(({ rp, rosterKey }) => {
@@ -1368,10 +1239,7 @@ async function scrapeTeam(
     const unclaimed: { key: string; yearMap: Map<number, BattingStats> }[] = [];
 
     statsLookup.forEach((yearMap, statsKey) => {
-      if (
-        !claimedStatsKeys.has(statsKey) &&
-        lastNameOnly(statsKey) === rosterLastName
-      ) {
+      if (!claimedStatsKeys.has(statsKey) && lastNameOnly(statsKey) === rosterLastName) {
         unclaimed.push({ key: statsKey, yearMap });
       }
     });
@@ -1500,32 +1368,11 @@ async function scrapeTeam(
       return;
     }
 
-    const careerPa =
-      careerTotals.ab +
-      careerTotals.bb +
-      careerTotals.sf +
-      careerTotals.sh +
-      careerTotals.hbp;
+    const careerPa = careerTotals.ab + careerTotals.bb + careerTotals.sf + careerTotals.sh + careerTotals.hbp;
     const careerWoba = calculateWoba(careerTotals);
-    const careerAvg =
-      careerTotals.ab > 0
-        ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000
-        : 0;
-    const careerSlg =
-      careerTotals.ab > 0
-        ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000
-        : 0;
-    const careerObp =
-      careerPa > 0
-        ? Math.round(
-            ((careerTotals.h + careerTotals.bb + careerTotals.hbp) /
-              (careerTotals.ab +
-                careerTotals.bb +
-                careerTotals.hbp +
-                careerTotals.sf)) *
-              1000
-          ) / 1000
-        : 0;
+    const careerAvg = careerTotals.ab > 0 ? Math.round((careerTotals.h / careerTotals.ab) * 1000) / 1000 : 0;
+    const careerSlg = careerTotals.ab > 0 ? Math.round((careerTotals.tb / careerTotals.ab) * 1000) / 1000 : 0;
+    const careerObp = careerPa > 0 ? Math.round(((careerTotals.h + careerTotals.bb + careerTotals.hbp) / (careerTotals.ab + careerTotals.bb + careerTotals.hbp + careerTotals.sf)) * 1000) / 1000 : 0;
     const careerOps = Math.round((careerSlg + careerObp) * 1000) / 1000;
 
     players.push({
@@ -1550,9 +1397,7 @@ async function scrapeTeam(
   // Sort by career wOBA descending
   players.sort((a, b) => b.career.woba - a.career.woba);
 
-  console.log(
-    `  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`
-  );
+  console.log(`  Matched: ${matched}, Unmatched roster players (no stats): ${unmatched}`);
 
   const teamGamesByYear: Record<string, number> = {};
 
@@ -1592,11 +1437,7 @@ async function scrapeTeamPitching(
     const season = prestoYearFormat(year);
     console.log(`  Fetching ${year} (${season}) pitching stats...`);
     await delay(DELAY_MS);
-    const statsUrl = buildPrestoPitchingStatsUrl(
-      config.domain,
-      season,
-      config.teamSlug
-    );
+    const statsUrl = buildPrestoPitchingStatsUrl(config.domain, season, config.teamSlug);
     const statsHtml = await fetchPage(statsUrl);
 
     if (statsHtml) {
@@ -1624,9 +1465,7 @@ async function scrapeTeamPitching(
     // Fetch each boxscore and extract pitching data
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
-      console.log(
-        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
-      );
+      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
       await delay(DELAY_MS);
 
       const html = await fetchPage(url);
@@ -1646,9 +1485,7 @@ async function scrapeTeamPitching(
       const opponent = parseOpponentFromUrl(url);
 
       // Separate: opponent batting innings = innings where caption team does NOT match
-      const opponentBattingInnings = allInnings.filter(
-        (inn) => !captionMatchesTeam(inn.teamName, aliases)
-      );
+      const opponentBattingInnings = allInnings.filter((inn) => !captionMatchesTeam(inn.teamName, aliases));
 
       const pitchers = parsePrestoPitchers($, aliases);
 
@@ -1663,9 +1500,7 @@ async function scrapeTeamPitching(
     }
   }
 
-  console.log(
-    `  Pitching scrape complete: ${allGames.length} games with play-by-play`
-  );
+  console.log(`  Pitching scrape complete: ${allGames.length} games with play-by-play`);
 
   return {
     slug,
@@ -1713,9 +1548,7 @@ async function scrapeTeamGamedata(
 
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
-      console.log(
-        `    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`
-      );
+      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
       await delay(DELAY_MS);
 
       const html = await fetchPage(url);
@@ -1750,10 +1583,7 @@ async function scrapeTeamGamedata(
     console.log(`    ${year}: ${games.length} games with gamedata`);
   }
 
-  const totalGames = Object.values(gamesByYear).reduce(
-    (sum, g) => sum + g.length,
-    0
-  );
+  const totalGames = Object.values(gamesByYear).reduce((sum, g) => sum + g.length, 0);
   console.log(`  Gamedata scrape complete: ${totalGames} total games`);
 
   return {
@@ -1789,14 +1619,10 @@ async function main(): Promise<void> {
   const teams = PRESTO_TEAMS;
   const aliases = PRESTO_ALIASES;
 
-  const teamsToScrape = teamFilter
-    ? { [teamFilter]: teams[teamFilter] }
-    : teams;
+  const teamsToScrape = teamFilter ? { [teamFilter]: teams[teamFilter] } : teams;
 
   if (teamFilter && !teams[teamFilter]) {
-    console.error(
-      `Unknown team slug: "${teamFilter}". Available: ${Object.keys(teams).join(', ')}`
-    );
+    console.error(`Unknown team slug: "${teamFilter}". Available: ${Object.keys(teams).join(', ')}`);
     process.exit(1);
   }
 
@@ -1828,13 +1654,7 @@ async function main(): Promise<void> {
 
     result.players.forEach((p) => {
       if (p.jerseyNumber !== null) {
-        const key = normalizeName(
-          p.name.includes(',')
-            ? p.name
-            : p.name.split(/\s+/).length >= 2
-              ? `${p.name.split(/\s+/).slice(1).join(' ')}, ${p.name.split(/\s+/)[0]}`
-              : p.name
-        );
+        const key = normalizeName(p.name.includes(',') ? p.name : p.name.split(/\s+/).length >= 2 ? `${p.name.split(/\s+/).slice(1).join(' ')}, ${p.name.split(/\s+/)[0]}` : p.name);
         enrichedRoster[key] = {
           jersey: p.jerseyNumber,
           classYear: p.classYear,
@@ -1847,9 +1667,7 @@ async function main(): Promise<void> {
 
     const rosterOutPath = path.join(teamDir, 'roster.json');
     fs.writeFileSync(rosterOutPath, JSON.stringify(enrichedRoster));
-    console.log(
-      `  Wrote ${rosterOutPath} (${Object.keys(enrichedRoster).length} players)`
-    );
+    console.log(`  Wrote ${rosterOutPath} (${Object.keys(enrichedRoster).length} players)`);
 
     // Write per-year batting files
     const scrapedAt = result.scrapedAt;
@@ -1885,12 +1703,7 @@ async function main(): Promise<void> {
 
     // Optionally scrape pitching
     if (withPitching) {
-      const pitchingResult = await scrapeTeamPitching(
-        slug,
-        config,
-        years,
-        teamAliases
-      );
+      const pitchingResult = await scrapeTeamPitching(slug, config, years, teamAliases);
 
       years.forEach((year) => {
         const stats = pitchingResult.pitchingStatsByYear[String(year)] ?? [];
@@ -1910,26 +1723,16 @@ async function main(): Promise<void> {
         };
         const outPath = path.join(teamDir, pitchingFilename(year));
         fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
-        console.log(
-          `  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`
-        );
+        console.log(`  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`);
       });
     }
 
     // Optionally scrape gamedata
     if (withGamedata) {
-      const gamedataResult = await scrapeTeamGamedata(
-        slug,
-        config,
-        years,
-        teamAliases
-      );
+      const gamedataResult = await scrapeTeamGamedata(slug, config, years, teamAliases);
 
       Object.entries(gamedataResult.gamesByYear).forEach(([year, games]) => {
-        const gamedataOutPath = path.join(
-          teamDir,
-          gamedataFilename(Number(year))
-        );
+        const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));
         fs.writeFileSync(gamedataOutPath, JSON.stringify(games, null, 2));
         console.log(`  Wrote ${gamedataOutPath} (${games.length} games)`);
       });

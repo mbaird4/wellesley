@@ -1,14 +1,4 @@
-import {
-  type AfterViewInit,
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  DestroyRef,
-  ElementRef,
-  inject,
-  input,
-  signal,
-} from '@angular/core';
+import { type AfterViewInit, ChangeDetectionStrategy, Component, computed, DestroyRef, ElementRef, inject, input, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { asyncScheduler, fromEvent, throttleTime } from 'rxjs';
 
@@ -17,8 +7,7 @@ import { asyncScheduler, fromEvent, throttleTime } from 'rxjs';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class:
-      'sticky-player-header sticky z-20 block transition-[background-color,box-shadow,width,margin-left,padding,top] duration-150 w-auto stuck:w-screen stuck:py-2',
+    class: 'sticky-player-header sticky z-20 block transition-[background-color,box-shadow,width,margin-left,padding,top] duration-150 w-auto stuck:w-screen stuck:py-2',
     '[attr.data-state]': 'state()',
     '[style.top]': '"var(--header-height, 0px)"',
     '[style.margin-left.px]': 'isStuck() ? -leftOffset() : null',
@@ -48,25 +37,14 @@ export class StickyPlayerHeader implements AfterViewInit {
     requestAnimationFrame(() => this.handleScroll());
 
     fromEvent(window, 'scroll', { passive: true })
-      .pipe(
-        throttleTime(10, asyncScheduler, { leading: true, trailing: true }),
-        takeUntilDestroyed(this.destroyRef)
-      )
+      .pipe(throttleTime(10, asyncScheduler, { leading: true, trailing: true }), takeUntilDestroyed(this.destroyRef))
       .subscribe(() => this.handleScroll());
   }
 
   private handleScroll(): void {
-    const scrollY = Math.max(
-      window.scrollY || 0,
-      document.documentElement.scrollTop || 0
-    );
-    const headerHeight = parseFloat(
-      getComputedStyle(document.documentElement).getPropertyValue(
-        '--header-height'
-      ) || '0'
-    );
-    const newState =
-      scrollY + headerHeight >= this.originalTop ? 'stuck' : 'default';
+    const scrollY = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0);
+    const headerHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height') || '0');
+    const newState = scrollY + headerHeight >= this.originalTop ? 'stuck' : 'default';
 
     if (newState !== this.scrollState()) {
       this.scrollState.set(newState);

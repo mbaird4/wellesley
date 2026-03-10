@@ -1,15 +1,6 @@
 import type { BaseRunners, GameState } from '@ws/core/models';
 
-import {
-  classifyPlay,
-  clearBases,
-  getPlayerNameFromText,
-  parseBatterAction,
-  parseRunnerSubEvent,
-  placeOnBase,
-  processPlay,
-  removeFromBases,
-} from './parse-play';
+import { classifyPlay, clearBases, getPlayerNameFromText, parseBatterAction, parseRunnerSubEvent, placeOnBase, processPlay, removeFromBases } from './parse-play';
 
 // --- Helper ---
 
@@ -23,11 +14,7 @@ function makeGameState(overrides?: Partial<GameState>): GameState {
   };
 }
 
-function makeBases(
-  first: string | null = null,
-  second: string | null = null,
-  third: string | null = null
-): BaseRunners {
+function makeBases(first: string | null = null, second: string | null = null, third: string | null = null): BaseRunners {
   return { first, second, third };
 }
 
@@ -37,15 +24,11 @@ function makeBases(
 
 describe('getPlayerNameFromText', () => {
   it('A1: parses initial + last name ("A. Delgado")', () => {
-    expect(getPlayerNameFromText('A. Delgado singled to cf.')).toBe(
-      'A. Delgado'
-    );
+    expect(getPlayerNameFromText('A. Delgado singled to cf.')).toBe('A. Delgado');
   });
 
   it('A2: parses full first + last name ("Andrea Delgado")', () => {
-    expect(getPlayerNameFromText('Andrea Delgado struck out.')).toBe(
-      'Andrea Delgado'
-    );
+    expect(getPlayerNameFromText('Andrea Delgado struck out.')).toBe('Andrea Delgado');
   });
 
   it('A3: parses two-word name ("Giana Jones")', () => {
@@ -53,9 +36,7 @@ describe('getPlayerNameFromText', () => {
   });
 
   it('A4: parses hyphenated last name ("M. Jo-Laudat")', () => {
-    expect(getPlayerNameFromText('M. Jo-Laudat doubled to lf.')).toBe(
-      'M. Jo-Laudat'
-    );
+    expect(getPlayerNameFromText('M. Jo-Laudat doubled to lf.')).toBe('M. Jo-Laudat');
   });
 
   it('A5: finds name in middle of text ("/ for C. Chung")', () => {
@@ -72,9 +53,7 @@ describe('getPlayerNameFromText', () => {
   });
 
   it('A8: parses multi-word last names ("A. De La Cruz")', () => {
-    expect(getPlayerNameFromText('A. De La Cruz singled.')).toBe(
-      'A. De La Cruz'
-    );
+    expect(getPlayerNameFromText('A. De La Cruz singled.')).toBe('A. De La Cruz');
   });
 
   it('A9: returns null for empty string', () => {
@@ -94,15 +73,11 @@ describe('classifyPlay', () => {
   // --- B1: Substitutions ---
   describe('substitutions', () => {
     it('B1a: pinch hit for', () => {
-      expect(classifyPlay('L. Smith pinch hit for K. Jones.')).toBe(
-        'substitution'
-      );
+      expect(classifyPlay('L. Smith pinch hit for K. Jones.')).toBe('substitution');
     });
 
     it('B1b: pinch ran for', () => {
-      expect(classifyPlay('A. Runner pinch ran for B. Walker.')).toBe(
-        'substitution'
-      );
+      expect(classifyPlay('A. Runner pinch ran for B. Walker.')).toBe('substitution');
     });
   });
 
@@ -113,9 +88,7 @@ describe('classifyPlay', () => {
     });
 
     it('B2b: "to 1b for" with replacement', () => {
-      expect(classifyPlay('E. Kulhanek to 1b for S. Wicker.')).toBe(
-        'defensive_change'
-      );
+      expect(classifyPlay('E. Kulhanek to 1b for S. Wicker.')).toBe('defensive_change');
     });
 
     it('B2c: "to ss" position', () => {
@@ -146,15 +119,11 @@ describe('classifyPlay', () => {
     });
 
     it('B3c: "flied out to cf" is not a defensive change', () => {
-      expect(classifyPlay('A. Batter flied out to cf.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter flied out to cf.')).toBe('plate_appearance');
     });
 
     it('B3d: "walked" with "to p" position text is not a defensive change', () => {
-      expect(
-        classifyPlay('A. Batter walked; B. Runner advanced to second.')
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter walked; B. Runner advanced to second.')).toBe('plate_appearance');
     });
 
     it('B3e: standalone "advanced to second" → wild_pitch (runner movement, no PA)', () => {
@@ -182,81 +151,53 @@ describe('classifyPlay', () => {
     });
 
     it('B4d: double steal', () => {
-      expect(
-        classifyPlay('A. Runner stole second; B. Other stole third.')
-      ).toBe('stolen_base');
+      expect(classifyPlay('A. Runner stole second; B. Other stole third.')).toBe('stolen_base');
     });
 
     it('B4e: caught stealing → stolen_base', () => {
-      expect(
-        classifyPlay('A. Runner out at second c to ss, caught stealing.')
-      ).toBe('stolen_base');
+      expect(classifyPlay('A. Runner out at second c to ss, caught stealing.')).toBe('stolen_base');
     });
   });
 
   // --- B5: Wild pitch / passed ball ---
   describe('wild pitch and passed ball', () => {
     it('B5a: wild pitch advance', () => {
-      expect(
-        classifyPlay('A. Runner advanced to second on a wild pitch.')
-      ).toBe('wild_pitch');
+      expect(classifyPlay('A. Runner advanced to second on a wild pitch.')).toBe('wild_pitch');
     });
 
     it('B5b: wild pitch scoring', () => {
-      expect(classifyPlay('A. Runner scored on a wild pitch.')).toBe(
-        'wild_pitch'
-      );
+      expect(classifyPlay('A. Runner scored on a wild pitch.')).toBe('wild_pitch');
     });
 
     it('B5c: passed ball advance', () => {
-      expect(
-        classifyPlay('A. Runner advanced to second on a passed ball.')
-      ).toBe('wild_pitch');
+      expect(classifyPlay('A. Runner advanced to second on a passed ball.')).toBe('wild_pitch');
     });
 
     it('B5d: passed ball scoring', () => {
-      expect(classifyPlay('A. Runner scored on a passed ball.')).toBe(
-        'wild_pitch'
-      );
+      expect(classifyPlay('A. Runner scored on a passed ball.')).toBe('wild_pitch');
     });
 
     it('B5e: walk + wild pitch → plate_appearance (walk is primary PA)', () => {
-      expect(
-        classifyPlay(
-          'A. Batter walked; B. Runner advanced to third on a wild pitch.'
-        )
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter walked; B. Runner advanced to third on a wild pitch.')).toBe('plate_appearance');
     });
 
     it('B5f: struck out + wild pitch → plate_appearance (strikeout is primary PA)', () => {
-      expect(
-        classifyPlay(
-          'A. Batter struck out swinging; B. Runner scored on a wild pitch.'
-        )
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter struck out swinging; B. Runner scored on a wild pitch.')).toBe('plate_appearance');
     });
 
     it('B5g: singled + wild pitch → plate_appearance (single is primary PA)', () => {
-      expect(
-        classifyPlay(
-          'A. Batter singled to cf; B. Runner advanced to third on a wild pitch.'
-        )
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter singled to cf; B. Runner advanced to third on a wild pitch.')).toBe('plate_appearance');
     });
   });
 
   // --- B6: Tiebreaker ---
   describe('tiebreaker', () => {
     it('B6a: placed on second', () => {
-      expect(classifyPlay('A. Batter G. Runner placed on second.')).toBe(
-        'tiebreaker'
-      );
+      expect(classifyPlay('A. Batter G. Runner placed on second.')).toBe('tiebreaker');
     });
 
     it('B6b: placed on 2nd', () => {
-      expect(classifyPlay('A. Batter G. Runner placed on 2nd.')).toBe(
-        'tiebreaker'
-      );
+      expect(classifyPlay('A. Batter G. Runner placed on 2nd.')).toBe('tiebreaker');
     });
   });
 
@@ -291,9 +232,7 @@ describe('classifyPlay', () => {
     });
 
     it('B8e: struck out', () => {
-      expect(classifyPlay('A. Batter struck out swinging.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter struck out swinging.')).toBe('plate_appearance');
     });
 
     it('B8f: walked', () => {
@@ -305,62 +244,42 @@ describe('classifyPlay', () => {
     });
 
     it('B8h: reached on error', () => {
-      expect(classifyPlay('A. Batter reached first on an error by ss.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter reached first on an error by ss.')).toBe('plate_appearance');
     });
 
     it('B8i: grounded out', () => {
-      expect(classifyPlay('A. Batter grounded out to 2b.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter grounded out to 2b.')).toBe('plate_appearance');
     });
 
     it('B8j: flied out', () => {
-      expect(classifyPlay('A. Batter flied out to cf.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter flied out to cf.')).toBe('plate_appearance');
     });
 
     it('B8k: lined out', () => {
-      expect(classifyPlay('A. Batter lined out to ss.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter lined out to ss.')).toBe('plate_appearance');
     });
 
     it('B8l: popped up', () => {
-      expect(classifyPlay('A. Batter popped up to 2b.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter popped up to 2b.')).toBe('plate_appearance');
     });
 
     it('B8m: fouled out', () => {
-      expect(classifyPlay('A. Batter fouled out to 1b.')).toBe(
-        'plate_appearance'
-      );
+      expect(classifyPlay('A. Batter fouled out to 1b.')).toBe('plate_appearance');
     });
 
     it("B8n: fielder's choice", () => {
-      expect(
-        classifyPlay(
-          "A. Batter reached on a fielder's choice; B. Runner out at second."
-        )
-      ).toBe('plate_appearance');
+      expect(classifyPlay("A. Batter reached on a fielder's choice; B. Runner out at second.")).toBe('plate_appearance');
     });
 
     it('B8o: grounded into double play', () => {
-      expect(
-        classifyPlay('A. Batter grounded into double play ss to 2b to 1b.')
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter grounded into double play ss to 2b to 1b.')).toBe('plate_appearance');
     });
   });
 
   // --- B9: Strikeout + stolen base ---
   describe('strikeout + stolen base', () => {
     it('B9a: struck out + stole second → plate_appearance (strikeout is primary PA)', () => {
-      expect(
-        classifyPlay('A. Batter struck out swinging; B. Runner stole second.')
-      ).toBe('plate_appearance');
+      expect(classifyPlay('A. Batter struck out swinging; B. Runner stole second.')).toBe('plate_appearance');
     });
   });
 });
@@ -373,27 +292,19 @@ describe('parseBatterAction', () => {
   // --- C1: Simple outs ---
   describe('simple outs', () => {
     it('C1a: struck out swinging', () => {
-      expect(parseBatterAction('A. Batter struck out swinging').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter struck out swinging').result).toBe('out');
     });
 
     it('C1b: struck out looking', () => {
-      expect(parseBatterAction('A. Batter struck out looking').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter struck out looking').result).toBe('out');
     });
 
     it('C1c: grounded out to 2b', () => {
-      expect(parseBatterAction('A. Batter grounded out to 2b').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter grounded out to 2b').result).toBe('out');
     });
 
     it('C1d: grounded out to p', () => {
-      expect(parseBatterAction('A. Batter grounded out to p').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter grounded out to p').result).toBe('out');
     });
 
     it('C1e: flied out to cf', () => {
@@ -421,9 +332,7 @@ describe('parseBatterAction', () => {
     });
 
     it('C1k: fouled out to 1b', () => {
-      expect(parseBatterAction('A. Batter fouled out to 1b').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter fouled out to 1b').result).toBe('out');
     });
 
     it('C1l: fouled out to c', () => {
@@ -435,18 +344,14 @@ describe('parseBatterAction', () => {
     });
 
     it('C1n: infield fly to ss → out', () => {
-      expect(parseBatterAction('A. Batter infield fly to ss').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter infield fly to ss').result).toBe('out');
     });
   });
 
   // --- C2: Sac bunts ---
   describe('sac bunts', () => {
     it('C2a: "SAC, bunt" with grounded out', () => {
-      const result = parseBatterAction(
-        'A. Batter grounded out to 3b, SAC, bunt'
-      );
+      const result = parseBatterAction('A. Batter grounded out to 3b, SAC, bunt');
       expect(result.result).toBe('sac_bunt');
     });
 
@@ -456,9 +361,7 @@ describe('parseBatterAction', () => {
     });
 
     it('C2c: SAC bunt with RBI', () => {
-      const result = parseBatterAction(
-        'A. Batter grounded out to p, SAC, bunt, RBI'
-      );
+      const result = parseBatterAction('A. Batter grounded out to p, SAC, bunt, RBI');
       expect(result.result).toBe('sac_bunt');
     });
   });
@@ -466,70 +369,50 @@ describe('parseBatterAction', () => {
   // --- C3: SAC without bunt/fly ---
   describe('SAC without bunt or fly', () => {
     it('C3a: "grounded out, SAC" → sac_bunt (infield default)', () => {
-      expect(
-        parseBatterAction('A. Batter grounded out to 3b, SAC').result
-      ).toBe('sac_bunt');
+      expect(parseBatterAction('A. Batter grounded out to 3b, SAC').result).toBe('sac_bunt');
     });
 
     it('C3b: "lined out to ss, SAC" → sac_bunt (ss is infield)', () => {
-      expect(
-        parseBatterAction('A. Batter lined out to ss, SAC, RBI').result
-      ).toBe('sac_bunt');
+      expect(parseBatterAction('A. Batter lined out to ss, SAC, RBI').result).toBe('sac_bunt');
     });
 
     it('C3c: "fouled out to 1b, SAC, RBI" → sac_bunt (1b is infield)', () => {
-      expect(
-        parseBatterAction('A. Batter fouled out to 1b, SAC, RBI').result
-      ).toBe('sac_bunt');
+      expect(parseBatterAction('A. Batter fouled out to 1b, SAC, RBI').result).toBe('sac_bunt');
     });
 
     it('C3d: "grounded out, SAC, RBI" → sac_bunt (ground ball sacrifice)', () => {
-      expect(
-        parseBatterAction('A. Batter grounded out to p, SAC, RBI').result
-      ).toBe('sac_bunt');
+      expect(parseBatterAction('A. Batter grounded out to p, SAC, RBI').result).toBe('sac_bunt');
     });
   });
 
   // --- C4: Sac flies ---
   describe('sac flies', () => {
     it('C4a: "SAC" + flied out → sac_fly', () => {
-      expect(
-        parseBatterAction('A. Batter flied out to cf, SAC, RBI').result
-      ).toBe('sac_fly');
+      expect(parseBatterAction('A. Batter flied out to cf, SAC, RBI').result).toBe('sac_fly');
     });
 
     it('C4b: "sacrifice fly" keyword → sac_fly', () => {
-      expect(parseBatterAction('A. Batter sacrifice fly to rf').result).toBe(
-        'sac_fly'
-      );
+      expect(parseBatterAction('A. Batter sacrifice fly to rf').result).toBe('sac_fly');
     });
 
     it('C4c: "sac fly" keyword → sac_fly', () => {
-      expect(parseBatterAction('A. Batter sac fly to cf').result).toBe(
-        'sac_fly'
-      );
+      expect(parseBatterAction('A. Batter sac fly to cf').result).toBe('sac_fly');
     });
 
     it('C4d: "SAC" + popped out → sac_fly', () => {
-      expect(
-        parseBatterAction('A. Batter popped out to c, SAC, RBI').result
-      ).toBe('sac_fly');
+      expect(parseBatterAction('A. Batter popped out to c, SAC, RBI').result).toBe('sac_fly');
     });
 
     it('C4e: "SAC" + popped up → sac_fly', () => {
       // "popped" is matched by the /flied out|popped/ regex
-      expect(parseBatterAction('A. Batter popped up to 2b, SAC').result).toBe(
-        'sac_fly'
-      );
+      expect(parseBatterAction('A. Batter popped up to 2b, SAC').result).toBe('sac_fly');
     });
   });
 
   // --- C5: "out at first" pattern ---
   describe('"out at first"', () => {
     it('C5a: "out at first 1b to p" → out', () => {
-      expect(parseBatterAction('A. Batter out at first 1b to p').result).toBe(
-        'out'
-      );
+      expect(parseBatterAction('A. Batter out at first 1b to p').result).toBe('out');
     });
   });
 
@@ -546,17 +429,13 @@ describe('parseBatterAction', () => {
     });
 
     it('C6c: bunt single with advancedTo', () => {
-      const result = parseBatterAction(
-        'A. Batter singled, bunt, advanced to second'
-      );
+      const result = parseBatterAction('A. Batter singled, bunt, advanced to second');
       expect(result.result).toBe('bunt_single');
       expect(result.advancedTo).toBe('second');
     });
 
     it('C6d: bunt single with batterAlsoOut', () => {
-      const result = parseBatterAction(
-        'A. Batter singled, bunt, out at second c to ss'
-      );
+      const result = parseBatterAction('A. Batter singled, bunt, out at second c to ss');
       expect(result.result).toBe('bunt_single');
       expect(result.batterAlsoOut).toBe(true);
     });
@@ -571,43 +450,31 @@ describe('parseBatterAction', () => {
     });
 
     it('C7b: singled to lf', () => {
-      expect(parseBatterAction('A. Batter singled to lf').result).toBe(
-        'single'
-      );
+      expect(parseBatterAction('A. Batter singled to lf').result).toBe('single');
     });
 
     it('C7c: singled to rf', () => {
-      expect(parseBatterAction('A. Batter singled to rf').result).toBe(
-        'single'
-      );
+      expect(parseBatterAction('A. Batter singled to rf').result).toBe('single');
     });
 
     it('C7d: singled to ss', () => {
-      expect(parseBatterAction('A. Batter singled to ss').result).toBe(
-        'single'
-      );
+      expect(parseBatterAction('A. Batter singled to ss').result).toBe('single');
     });
 
     it('C7e: singled with advancedTo second', () => {
-      const result = parseBatterAction(
-        'A. Batter singled to lf, advanced to second'
-      );
+      const result = parseBatterAction('A. Batter singled to lf, advanced to second');
       expect(result.result).toBe('single');
       expect(result.advancedTo).toBe('second');
     });
 
     it('C7f: singled with advancedTo third', () => {
-      const result = parseBatterAction(
-        'A. Batter singled to cf, advanced to third'
-      );
+      const result = parseBatterAction('A. Batter singled to cf, advanced to third');
       expect(result.result).toBe('single');
       expect(result.advancedTo).toBe('third');
     });
 
     it('C7g: singled with batterAlsoOut', () => {
-      const result = parseBatterAction(
-        'A. Batter singled to lf, out at second lf to ss'
-      );
+      const result = parseBatterAction('A. Batter singled to lf, out at second lf to ss');
       expect(result.result).toBe('single');
       expect(result.batterAlsoOut).toBe(true);
     });
@@ -622,15 +489,11 @@ describe('parseBatterAction', () => {
     });
 
     it('C8b: doubled to cf', () => {
-      expect(parseBatterAction('A. Batter doubled to cf').result).toBe(
-        'double'
-      );
+      expect(parseBatterAction('A. Batter doubled to cf').result).toBe('double');
     });
 
     it('C8c: doubled with advancedTo third', () => {
-      const result = parseBatterAction(
-        'A. Batter doubled to rf, advanced to third'
-      );
+      const result = parseBatterAction('A. Batter doubled to rf, advanced to third');
       expect(result.result).toBe('double');
       expect(result.advancedTo).toBe('third');
     });
@@ -641,9 +504,7 @@ describe('parseBatterAction', () => {
     });
 
     it('C8e: doubled with batterAlsoOut', () => {
-      const result = parseBatterAction(
-        'A. Batter doubled to lf, out at third lf to 3b'
-      );
+      const result = parseBatterAction('A. Batter doubled to lf, out at third lf to 3b');
       expect(result.result).toBe('double');
       expect(result.batterAlsoOut).toBe(true);
     });
@@ -657,15 +518,11 @@ describe('parseBatterAction', () => {
     });
 
     it('C9b: tripled to cf', () => {
-      expect(parseBatterAction('A. Batter tripled to cf').result).toBe(
-        'triple'
-      );
+      expect(parseBatterAction('A. Batter tripled to cf').result).toBe('triple');
     });
 
     it('C9c: tripled with batterAlsoOut', () => {
-      const result = parseBatterAction(
-        'A. Batter tripled to rf, out on the play'
-      );
+      const result = parseBatterAction('A. Batter tripled to rf, out on the play');
       expect(result.result).toBe('triple');
       expect(result.batterAlsoOut).toBe(true);
     });
@@ -686,9 +543,7 @@ describe('parseBatterAction', () => {
     });
 
     it('C10d: homered with RBI count', () => {
-      expect(parseBatterAction('A. Batter homered to lf (2-run)').result).toBe(
-        'homer'
-      );
+      expect(parseBatterAction('A. Batter homered to lf (2-run)').result).toBe('homer');
     });
   });
 
@@ -709,49 +564,37 @@ describe('parseBatterAction', () => {
   // --- C13: Reached on error ---
   describe('reached on error', () => {
     it('C13a: reached first on an error by ss', () => {
-      const result = parseBatterAction(
-        'A. Batter reached first on an error by ss'
-      );
+      const result = parseBatterAction('A. Batter reached first on an error by ss');
       expect(result.result).toBe('reached');
     });
 
     it('C13b: reached on an error', () => {
-      expect(
-        parseBatterAction('A. Batter reached on an error by 3b').result
-      ).toBe('reached');
+      expect(parseBatterAction('A. Batter reached on an error by 3b').result).toBe('reached');
     });
   });
 
   // --- C14: Fielder's choice ---
   describe("fielder's choice", () => {
     it("C14a: reached on a fielder's choice (default advancedTo first)", () => {
-      const result = parseBatterAction(
-        "A. Batter reached on a fielder's choice"
-      );
+      const result = parseBatterAction("A. Batter reached on a fielder's choice");
       expect(result.result).toBe('reached');
       expect(result.advancedTo).toBe('first');
     });
 
     it('C14b: FC with advanced to second', () => {
-      const result = parseBatterAction(
-        "A. Batter reached on a fielder's choice, advanced to second"
-      );
+      const result = parseBatterAction("A. Batter reached on a fielder's choice, advanced to second");
       expect(result.result).toBe('reached');
       expect(result.advancedTo).toBe('second');
     });
 
     it('C14c: FC with advanced to third', () => {
-      const result = parseBatterAction(
-        "A. Batter reached on a fielder's choice, advanced to third"
-      );
+      const result = parseBatterAction("A. Batter reached on a fielder's choice, advanced to third");
       expect(result.result).toBe('reached');
       expect(result.advancedTo).toBe('third');
     });
 
     it('C14d: fielders choice (no apostrophe)', () => {
-      const result = parseBatterAction(
-        'A. Batter reached on a fielders choice'
-      );
+      const result = parseBatterAction('A. Batter reached on a fielders choice');
       expect(result.result).toBe('reached');
       expect(result.advancedTo).toBe('first');
     });
@@ -759,9 +602,7 @@ describe('parseBatterAction', () => {
     // BUG: batterAlsoOut not tracked for 'reached' result
     it('C14e: FC with out on the play → reached but no batterAlsoOut (BUG)', () => {
       // BUG: 'reached' doesn't check batterAlsoOut — the batter is out but not tracked
-      const result = parseBatterAction(
-        "A. Batter reached on a fielder's choice, out at second"
-      );
+      const result = parseBatterAction("A. Batter reached on a fielder's choice, out at second");
       expect(result.result).toBe('reached');
       // batterAlsoOut is NOT set for 'reached' results
       expect(result.batterAlsoOut).toBeUndefined();
@@ -771,50 +612,33 @@ describe('parseBatterAction', () => {
   // --- C15: Grounded into double play ---
   describe('grounded into double play', () => {
     it('C15a: grounded into double play', () => {
-      expect(
-        parseBatterAction('A. Batter grounded into double play ss to 2b to 1b')
-          .result
-      ).toBe('double_play');
+      expect(parseBatterAction('A. Batter grounded into double play ss to 2b to 1b').result).toBe('double_play');
     });
   });
 
   // --- C16: Non-grounded double plays ---
   describe('non-grounded double plays', () => {
     it('C16a: lined into double play → out', () => {
-      expect(
-        parseBatterAction('A. Batter lined into double play ss to 2b').result
-      ).toBe('out');
+      expect(parseBatterAction('A. Batter lined into double play ss to 2b').result).toBe('out');
     });
 
     it('C16b: flied into double play → out', () => {
-      expect(
-        parseBatterAction('A. Batter flied into double play cf to 1b').result
-      ).toBe('out');
+      expect(parseBatterAction('A. Batter flied into double play cf to 1b').result).toBe('out');
     });
 
     it('C16c: popped into double play → out', () => {
-      expect(
-        parseBatterAction('A. Batter popped into double play 2b to 1b').result
-      ).toBe('out');
+      expect(parseBatterAction('A. Batter popped into double play 2b to 1b').result).toBe('out');
     });
   });
 
   // --- C17: Strikeout reached first (dropped third strike) ---
   describe('strikeout reached first', () => {
     it('C17a: struck out + reached first on wild pitch → reached', () => {
-      expect(
-        parseBatterAction(
-          'A. Batter struck out swinging, reached first on a wild pitch'
-        ).result
-      ).toBe('reached');
+      expect(parseBatterAction('A. Batter struck out swinging, reached first on a wild pitch').result).toBe('reached');
     });
 
     it('C17b: struck out + reached first on error → reached', () => {
-      expect(
-        parseBatterAction(
-          'A. Batter struck out swinging, reached first on an error by c'
-        ).result
-      ).toBe('reached');
+      expect(parseBatterAction('A. Batter struck out swinging, reached first on an error by c').result).toBe('reached');
     });
   });
 
@@ -825,9 +649,7 @@ describe('parseBatterAction', () => {
     });
 
     it('C18b: gibberish', () => {
-      expect(parseBatterAction('something weird happened').result).toBe(
-        'unknown'
-      );
+      expect(parseBatterAction('something weird happened').result).toBe('unknown');
     });
   });
 
@@ -835,9 +657,7 @@ describe('parseBatterAction', () => {
   describe('dropped foul ball', () => {
     it('C19a: dropped foul ball → unknown (BUG)', () => {
       // BUG: should be 'out' or some recognized result
-      expect(parseBatterAction('Dropped foul ball, A. Batter').result).toBe(
-        'unknown'
-      );
+      expect(parseBatterAction('Dropped foul ball, A. Batter').result).toBe('unknown');
     });
   });
 });
@@ -938,17 +758,13 @@ describe('parseRunnerSubEvent', () => {
   describe('combined events — out takes priority over scored', () => {
     it('D4a: "out at home" takes priority (out checked before scored)', () => {
       // "out at" is checked before "scored"
-      const result = parseRunnerSubEvent(
-        'B. Runner advanced to third, out at home c to p'
-      );
+      const result = parseRunnerSubEvent('B. Runner advanced to third, out at home c to p');
       expect(result.isOut).toBe(true);
       expect(result.scored).toBe(false);
     });
 
     it('D4b: "scored on error" → scored (no out keyword)', () => {
-      const result = parseRunnerSubEvent(
-        'B. Runner advanced to third, scored on error'
-      );
+      const result = parseRunnerSubEvent('B. Runner advanced to third, scored on error');
       // No "out at" / "caught stealing" / etc → falls to "scored" check
       expect(result.scored).toBe(true);
       expect(result.isOut).toBe(false);
@@ -1058,10 +874,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. Runner'),
     });
-    processPlay(
-      'A. Batter grounded out to 3b, SAC, bunt; B. Runner advanced to second.',
-      state
-    );
+    processPlay('A. Batter grounded out to 3b, SAC, bunt; B. Runner advanced to second.', state);
     expect(state.outs).toBe(1);
     expect(state.baseRunners.first).toBeNull();
     expect(state.baseRunners.second).toBe('B. Runner');
@@ -1084,10 +897,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. Runner'),
     });
-    processPlay(
-      'A. Batter grounded into double play ss to 2b to 1b; B. Runner out at second ss to 2b.',
-      state
-    );
+    processPlay('A. Batter grounded into double play ss to 2b to 1b; B. Runner out at second ss to 2b.', state);
     // 1 from double_play + 1 from runner sub-event
     expect(state.outs).toBe(2);
     expect(state.baseRunners.first).toBeNull();
@@ -1098,10 +908,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. Runner'),
     });
-    processPlay(
-      "A. Batter reached on a fielder's choice; B. Runner out at second ss to 2b.",
-      state
-    );
+    processPlay("A. Batter reached on a fielder's choice; B. Runner out at second ss to 2b.", state);
     expect(state.baseRunners.first).toBe('A. Batter');
     expect(state.outs).toBe(1);
     expect(state.batterIndex).toBe(1);
@@ -1237,10 +1044,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. Runner'),
     });
-    processPlay(
-      'A. Batter struck out swinging; B. Runner out at second c to ss, caught stealing.',
-      state
-    );
+    processPlay('A. Batter struck out swinging; B. Runner out at second c to ss, caught stealing.', state);
     expect(state.batterIndex).toBe(1);
     expect(state.outs).toBe(2); // 1 strikeout + 1 runner out
     expect(state.baseRunners.first).toBeNull();
@@ -1251,10 +1055,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. Runner'),
     });
-    processPlay(
-      'A. Batter struck out swinging; B. Runner stole second.',
-      state
-    );
+    processPlay('A. Batter struck out swinging; B. Runner stole second.', state);
     expect(state.batterIndex).toBe(1);
     expect(state.outs).toBe(1);
     expect(state.baseRunners.second).toBe('B. Runner');
@@ -1340,10 +1141,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases('B. First', 'C. Second'),
     });
-    processPlay(
-      'A. Batter singled to cf; B. First advanced to second; C. Second scored.',
-      state
-    );
+    processPlay('A. Batter singled to cf; B. First advanced to second; C. Second scored.', state);
     expect(state.baseRunners.first).toBe('A. Batter');
     expect(state.baseRunners.second).toBe('B. First');
     expect(state.baseRunners.third).toBeNull();
@@ -1355,10 +1153,7 @@ describe('processPlay', () => {
     const state = makeGameState({
       baseRunners: makeBases(null, 'B. Runner'),
     });
-    processPlay(
-      'A. Batter walked; B. Runner advanced to third on a wild pitch.',
-      state
-    );
+    processPlay('A. Batter walked; B. Runner advanced to third on a wild pitch.', state);
     expect(state.batterIndex).toBe(1);
     expect(state.baseRunners.first).toBe('A. Batter');
     expect(state.baseRunners.third).toBe('B. Runner');

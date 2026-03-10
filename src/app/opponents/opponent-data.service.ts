@@ -3,20 +3,7 @@ import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { mergeBattingYears, mergePitchingYears } from '@ws/core/data';
-import {
-  type DisplayRow,
-  type PitchingData,
-  type PlayerTier,
-  type Roster,
-  type SortDir,
-  type SortKey,
-  type Team,
-  type TeamEntry,
-  toJerseyMap,
-  type YearBattingData,
-  type YearData,
-  type YearPitchingData,
-} from '@ws/core/models';
+import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
 import { calculateWoba } from '@ws/core/processors';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
@@ -30,10 +17,7 @@ export class OpponentDataService {
 
   readonly teams: TeamEntry[] = ALL_OPPONENT_TEAMS;
 
-  readonly slug = toSignal(
-    this.route.paramMap.pipe(map((params) => params.get('slug') ?? '')),
-    { initialValue: '' }
-  );
+  readonly slug = toSignal(this.route.paramMap.pipe(map((params) => params.get('slug') ?? '')), { initialValue: '' });
 
   readonly teamData = signal<Team | null>(null);
   readonly pitchingData = signal<PitchingData | null>(null);
@@ -47,9 +31,7 @@ export class OpponentDataService {
   readonly rosterNames = signal<Set<string>>(new Set());
   readonly roster = signal<Roster | null>(null);
 
-  readonly selectedTeamName = computed(
-    () => this.teams.find((t) => t.slug === this.slug())?.name ?? ''
-  );
+  readonly selectedTeamName = computed(() => this.teams.find((t) => t.slug === this.slug())?.name ?? '');
 
   readonly dataDir = computed(() => {
     const team = this.teams.find((t) => t.slug === this.slug());
@@ -64,9 +46,7 @@ export class OpponentDataService {
       return [];
     }
 
-    const yearSet = new Set(
-      data.players.flatMap((player) => player.seasons.map((s) => s.year))
-    );
+    const yearSet = new Set(data.players.flatMap((player) => player.seasons.map((s) => s.year)));
 
     return Array.from(yearSet).sort((a, b) => b - a);
   });
@@ -115,10 +95,7 @@ export class OpponentDataService {
       const yearData = new Map<number, YearData>(
         sortedSeasons.map((s, i) => {
           const cum = cumulativeByYear[i];
-          const label =
-            i === 0
-              ? `${s.year}`
-              : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
+          const label = i === 0 ? `${s.year}` : `${cumulativeByYear[0].year}\u2013${String(s.year).slice(2)}`;
 
           return [
             s.year,
@@ -133,14 +110,9 @@ export class OpponentDataService {
 
       // Use the most recent season's PA rate for tier classification
       // so early-season players aren't penalized by accumulated historical games
-      const latestSeason = sortedSeasons[sortedSeasons.length - 1] as
-        | (typeof sortedSeasons)[number]
-        | undefined;
-      const latestTeamGames = latestSeason
-        ? (gpByYear[String(latestSeason.year)] ?? 0)
-        : 0;
-      const paPerGame =
-        latestTeamGames > 0 ? latestSeason!.pa / latestTeamGames : 0;
+      const latestSeason = sortedSeasons[sortedSeasons.length - 1] as (typeof sortedSeasons)[number] | undefined;
+      const latestTeamGames = latestSeason ? (gpByYear[String(latestSeason.year)] ?? 0) : 0;
+      const paPerGame = latestTeamGames > 0 ? latestSeason!.pa / latestTeamGames : 0;
       const tier: PlayerTier = paPerGame >= 2 ? 'regular' : 'reserve';
 
       return {
@@ -179,13 +151,9 @@ export class OpponentDataService {
     return rows;
   });
 
-  readonly regulars = computed(() =>
-    this.displayRows().filter((r) => r.tier === 'regular')
-  );
+  readonly regulars = computed(() => this.displayRows().filter((r) => r.tier === 'regular'));
 
-  readonly reserves = computed(() =>
-    this.displayRows().filter((r) => r.tier === 'reserve')
-  );
+  readonly reserves = computed(() => this.displayRows().filter((r) => r.tier === 'reserve'));
 
   readonly jerseyMap = computed<Record<string, number> | null>(() => {
     const roster = this.roster();
@@ -197,9 +165,7 @@ export class OpponentDataService {
     return toJerseyMap(roster);
   });
 
-  readonly empty = computed(
-    () => this.displayRows().length === 0 && !this.loading() && !this.error()
-  );
+  readonly empty = computed(() => this.displayRows().length === 0 && !this.loading() && !this.error());
 
   constructor() {
     effect(() => {
@@ -244,12 +210,9 @@ export class OpponentDataService {
     const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
     const requests = years.map((year) => {
-      const file =
-        year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
+      const file = year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
 
-      return this.http
-        .get<YearPitchingData>(`${base}data/opponents/${dataDir}/${file}`)
-        .pipe(catchError(() => of(null)));
+      return this.http.get<YearPitchingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
     });
 
     forkJoin(requests).subscribe({
@@ -276,19 +239,12 @@ export class OpponentDataService {
     const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
     const requests = years.map((year) => {
-      const file =
-        year === currentYear
-          ? 'batting-stats.json'
-          : `batting-stats-${year}.json`;
+      const file = year === currentYear ? 'batting-stats.json' : `batting-stats-${year}.json`;
 
-      return this.http
-        .get<YearBattingData>(`${base}data/opponents/${dataDir}/${file}`)
-        .pipe(catchError(() => of(null)));
+      return this.http.get<YearBattingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
     });
 
-    const rosterRequest = this.http
-      .get<Roster>(`${base}data/opponents/${dataDir}/roster.json`)
-      .pipe(catchError(() => of(null)));
+    const rosterRequest = this.http.get<Roster>(`${base}data/opponents/${dataDir}/roster.json`).pipe(catchError(() => of(null)));
 
     forkJoin([forkJoin(requests), rosterRequest]).subscribe({
       next: ([results, roster]) => {
@@ -299,9 +255,7 @@ export class OpponentDataService {
         this.roster.set(roster);
 
         // Default sort by most recent year with data
-        const maxYear = team.players
-          .flatMap((p) => p.seasons.map((s) => s.year))
-          .reduce((max, y) => Math.max(max, y), 0);
+        const maxYear = team.players.flatMap((p) => p.seasons.map((s) => s.year)).reduce((max, y) => Math.max(max, y), 0);
 
         if (maxYear > 0) {
           this.yearSortYear.set(maxYear);

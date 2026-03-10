@@ -25,10 +25,7 @@ export function wobaGradientStyle(woba: number): Record<string, string> {
   ];
 
   const w = Math.max(0, Math.min(0.55, woba));
-  const i = stops.reduce(
-    (acc, [threshold], idx) => (threshold <= w ? idx : acc),
-    0
-  );
+  const i = stops.reduce((acc, [threshold], idx) => (threshold <= w ? idx : acc), 0);
 
   const [w0, h0, s0, l0] = stops[i];
   const [w1, h1, s1, l1] = stops[Math.min(i + 1, stops.length - 1)];
@@ -69,10 +66,7 @@ export function wobaColorStyle(woba: number): Record<string, string> {
   ];
 
   const w = Math.max(0, Math.min(0.55, woba));
-  const i = stops.reduce(
-    (acc, [threshold], idx) => (threshold <= w ? idx : acc),
-    0
-  );
+  const i = stops.reduce((acc, [threshold], idx) => (threshold <= w ? idx : acc), 0);
 
   const [w0, h0, s0, l0] = stops[i];
   const [w1, h1, s1, l1] = stops[Math.min(i + 1, stops.length - 1)];
