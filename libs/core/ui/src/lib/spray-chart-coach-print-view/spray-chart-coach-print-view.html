@@ -1,107 +1,115 @@
-<div class="flex items-baseline justify-between pt-1 pb-2">
+<div class="flex items-baseline justify-between pt-1 pb-3">
   <div class="flex flex-col">
-    <h2 class="text-lg font-bold print:text-black">
+    <h2 class="text-xl font-bold print:text-black">
       {{ title() }} — Coach Scouting Report
     </h2>
     @if (subtitle(); as sub) {
-      <p class="text-[10px] print:text-gray-600">{{ sub }}</p>
+      <p class="text-xs print:text-gray-600">{{ sub }}</p>
     }
   </div>
-  <div class="flex flex-col items-end text-[10px] text-gray-500">
+  <div class="flex flex-col items-end text-xs text-gray-500">
     <span>{{ yearsLabel() }}</span>
     <span>Printed {{ printDate() }}</span>
   </div>
 </div>
 
-<div class="grid grid-cols-1 gap-x-5 gap-y-3">
+<div class="grid grid-cols-2 gap-x-6 gap-y-2">
   @for (row of rows(); track row.name) {
     <div
-      class="flex break-inside-avoid gap-1 border-b border-gray-200 pb-2 text-[10px] print:text-black"
+      class="flex break-inside-avoid flex-col gap-1 pb-3 text-xs print:text-black"
     >
       <!-- Player header -->
-      <div class="flex flex-col">
-        <div class="flex items-baseline gap-1.5">
-          <span class="text-xs font-bold">
-            #{{ row.jersey }} {{ row.name }}
+      <div class="flex items-baseline gap-2">
+        <span class="text-base font-bold">
+          #{{ row.jersey }} {{ row.name }}
+        </span>
+        @if (row.batsLabel) {
+          <span
+            class="rounded bg-gray-200 px-1.5 py-0.5 text-[11px] font-medium text-gray-600"
+          >
+            {{ row.batsLabel }}
           </span>
-          @if (row.batsLabel) {
-            <span
-              class="rounded bg-gray-200 px-1 py-px text-[9px] font-medium text-gray-600"
-            >
-              {{ row.batsLabel }}
-            </span>
+        }
+        @if (row.posLabel) {
+          <span class="text-[11px] text-gray-400">{{ row.posLabel }}</span>
+        }
+      </div>
+
+      <!-- Stats bar -->
+      <div class="flex flex-wrap gap-x-2 text-[11px] tabular-nums">
+        @for (stat of row.stats; track stat.label) {
+          <span
+            class="whitespace-nowrap"
+            [class]="stat.flagged ? 'font-bold underline' : 'text-gray-600'"
+          >
+            {{ stat.value }} {{ stat.label }}
+          </span>
+          @if (!$last) {
+            <span class="text-gray-300">·</span>
           }
-          @if (row.posLabel) {
-            <span class="text-[9px] text-gray-400">{{ row.posLabel }}</span>
-          }
-        </div>
-        <div class="flex gap-1.5 text-[9px] text-gray-600 tabular-nums">
-          <span>{{ row.avgLabel }} AVG</span>
-          <span>·</span>
-          <span>{{ row.wobaLabel }} wOBA</span>
-          <span>·</span>
-          <span>{{ row.paLabel }} PA</span>
-        </div>
-        <div class="w-40 shrink-0">
+        }
+      </div>
+
+      <!-- Body: spray chart left, zones + notable stacked right -->
+      <div class="flex gap-3">
+        <!-- Spray chart -->
+        <div class="w-56 shrink-0">
           <ws-spray-field [zones]="row.summary.zones" [highlightZone]="null" />
+        </div>
+
+        <!-- Zones + Notable stacked -->
+        <div class="flex min-w-0 flex-1 flex-col gap-2 text-[11px]">
+          @if (row.zones.length > 0) {
+            <!-- Spray zones -->
+            <div class="flex flex-col">
+              <span
+                class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+              >
+                Zones (3+ BIP)
+              </span>
+              <div
+                class="grid grid-cols-[min-content_min-content] gap-x-2 gap-y-0 tabular-nums"
+              >
+                @for (z of row.zones; track z.label) {
+                  <span class="font-medium whitespace-nowrap">
+                      {{ z.label }}
+                    </span>
+                  <span class="whitespace-nowrap">
+                      {{ z.total }}
+                    ({{ z.hits }}H/{{ z.outs }}O) {{ z.hard }}h/{{ z.weak }}w
+                    {{ z.avg }}
+                    </span>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- Notable -->
+          @if (row.callouts.length > 0) {
+            <div class="flex flex-col">
+              <span
+                class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+              >
+                Notable
+              </span>
+              @for (c of row.callouts; track c.text) {
+                <span class="font-medium">{{ c.icon }} {{ c.text }}</span>
+              }
+            </div>
+          }
         </div>
       </div>
 
-      <!-- Main content: field + two data columns + notes -->
-      <div class="flex w-full gap-2">
-        <!-- Spray field -->
-
-        <!-- Spray zones column -->
-        <div class="flex min-w-0 flex-1 flex-col text-[9px]">
-          <span
-            class="mb-0.5 text-[8px] font-semibold tracking-wide text-gray-400 uppercase"
-          >
-            Zones (3+ BIP)
-          </span>
-          @if (row.zones.length > 0) {
-            <div
-              class="grid grid-cols-[min-content_min-content] gap-x-2 gap-y-0.5 tabular-nums"
-            >
-              @for (z of row.zones; track z.label) {
-                <span class="font-medium whitespace-nowrap">{{ z.label }}</span>
-                <span class="whitespace-nowrap">
-                  {{ z.total }}
-                  ({{ z.hits }}H/{{ z.outs }}O) {{ z.hard }}h/{{ z.weak }}w
-                  {{ z.avg }}
-                </span>
-              }
-            </div>
-          } @else {
-            <span class="text-gray-400 italic">No zones with 3+ BIP</span>
-          }
-        </div>
-
-        <!-- Notable stats column -->
-        <div class="flex min-w-0 flex-1 flex-col text-[9px]">
-          <span
-            class="mb-0.5 text-[8px] font-semibold tracking-wide text-gray-400 uppercase"
-          >
-            Notable
-          </span>
-          @if (row.sbCallout) {
-            <span class="font-medium">⚡ {{ row.sbCallout }}</span>
-          }
-          @if (row.buntCallout) {
-            <span class="font-medium">📋 {{ row.buntCallout }}</span>
-          }
-          @if (!row.sbCallout && !row.buntCallout) {
-            <span class="text-gray-400 italic">None</span>
-          }
-        </div>
-
-        <!-- Notes column (empty, for handwriting) -->
-        <div class="flex min-w-0 flex-1 flex-col text-[9px]">
-          <span
-            class="mb-0.5 text-[8px] font-semibold tracking-wide text-gray-400 uppercase"
-          >
-            Notes
-          </span>
-        </div>
+      <!-- Notes area for handwriting -->
+      <div class="flex flex-col gap-2 pt-1">
+        <span
+          class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+        >
+          Notes
+        </span>
+        @for (line of noteLines; track line) {
+          <div class="border-b border-dashed border-gray-300"></div>
+        }
       </div>
     </div>
   }

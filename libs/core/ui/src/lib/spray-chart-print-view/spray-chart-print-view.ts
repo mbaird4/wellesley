@@ -16,6 +16,15 @@ export interface PrintPlayerSummary {
   sb?: number;
   gp?: number;
   sh?: number;
+  slg?: number;
+  so?: number;
+  rbi?: number;
+  h?: number;
+  bb?: number;
+  ab?: number;
+  doubles?: number;
+  triples?: number;
+  hr?: number;
 }
 
 @Component({

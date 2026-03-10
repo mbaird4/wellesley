@@ -85,11 +85,36 @@ function aggregateStats(
   sb: number;
   gp: number;
   sh: number;
+  slg: number;
+  so: number;
+  rbi: number;
+  h: number;
+  bb: number;
+  ab: number;
+  doubles: number;
+  triples: number;
+  hr: number;
 } {
   const seasons = rp.seasons.filter((s) => years.includes(s.year));
 
   if (seasons.length === 0) {
-    return { avg: 0, woba: 0, pa: 0, sb: 0, gp: 0, sh: 0 };
+    return {
+      avg: 0,
+      woba: 0,
+      pa: 0,
+      sb: 0,
+      gp: 0,
+      sh: 0,
+      slg: 0,
+      so: 0,
+      rbi: 0,
+      h: 0,
+      bb: 0,
+      ab: 0,
+      doubles: 0,
+      triples: 0,
+      hr: 0,
+    };
   }
 
   const t = seasons.reduce(
@@ -105,6 +130,8 @@ function aggregateStats(
       sh: a.sh + s.sh,
       sb: a.sb + s.sb,
       gp: a.gp + s.gp,
+      so: a.so + s.so,
+      rbi: a.rbi + s.rbi,
     }),
     {
       ab: 0,
@@ -118,8 +145,12 @@ function aggregateStats(
       sh: 0,
       sb: 0,
       gp: 0,
+      so: 0,
+      rbi: 0,
     }
   );
+
+  const tb = t.h + t.doubles + 2 * t.triples + 3 * t.hr;
 
   return {
     avg: t.ab > 0 ? t.h / t.ab : 0,
@@ -128,6 +159,15 @@ function aggregateStats(
     sb: t.sb,
     gp: t.gp,
     sh: t.sh,
+    slg: t.ab > 0 ? tb / t.ab : 0,
+    so: t.so,
+    rbi: t.rbi,
+    h: t.h,
+    bb: t.bb,
+    ab: t.ab,
+    doubles: t.doubles,
+    triples: t.triples,
+    hr: t.hr,
   };
 }
 
@@ -342,6 +382,15 @@ export class SprayChartViewer {
           sb: stats?.sb,
           gp: stats?.gp,
           sh: stats?.sh,
+          slg: stats?.slg,
+          so: stats?.so,
+          rbi: stats?.rbi,
+          h: stats?.h,
+          bb: stats?.bb,
+          ab: stats?.ab,
+          doubles: stats?.doubles,
+          triples: stats?.triples,
+          hr: stats?.hr,
         };
       })
       .filter((p) => p.summary.totalContact > 0);
