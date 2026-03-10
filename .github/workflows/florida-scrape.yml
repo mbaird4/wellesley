@@ -3,9 +3,9 @@ name: Florida Trip Scrape
 on:
   schedule:
     # 4x daily: midnight, 8am, 2pm ET (UTC-4 during DST)
-    - cron: '0 4,12,18 12-21 3 *'
+    - cron: '0 4,12,18 10-21 3 *'
     # 8pm ET wraps to next UTC day
-    - cron: '0 0 13-22 3 *'
+    - cron: '0 0 11-22 3 *'
   workflow_dispatch:
 
 permissions:
