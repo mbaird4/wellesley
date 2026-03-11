@@ -8,6 +8,9 @@ export interface PitchingStats {
   era: number;
   app: number;
   gs: number;
+  cg: number;
+  sho: number;
+  sv: number;
   ip: number;
   h: number;
   r: number;
@@ -15,6 +18,16 @@ export interface PitchingStats {
   bb: number;
   so: number;
   hr: number;
+  whip: number;
+  doubles: number;
+  triples: number;
+  ab: number;
+  bAvg: number;
+  wp: number;
+  hbp: number;
+  bk: number;
+  sfa: number;
+  sha: number;
 }
 
 /** Per-game play-by-play */

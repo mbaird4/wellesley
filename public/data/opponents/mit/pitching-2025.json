@@ -1,7 +1,7 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-02T22:26:19.976Z",
+  "scrapedAt": "2026-03-11T01:13:26.662Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.01,
       "app": 24,
       "gs": 20,
+      "cg": 14,
+      "sho": 4,
+      "sv": 0,
       "ip": 139.1,
       "h": 115,
       "r": 45,
       "er": 40,
       "bb": 52,
       "so": 88,
-      "hr": 3
+      "hr": 3,
+      "whip": 1.2,
+      "doubles": 35,
+      "triples": 5,
+      "ab": 502,
+      "bAvg": 0.229,
+      "wp": 1,
+      "hbp": 5,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 20
     },
     {
       "name": "Katsuyama, Katie",
@@ -26,13 +39,26 @@
       "era": 3.3,
       "app": 16,
       "gs": 12,
+      "cg": 3,
+      "sho": 0,
+      "sv": 0,
       "ip": 53,
       "h": 51,
       "r": 38,
       "er": 25,
       "bb": 40,
       "so": 27,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.72,
+      "doubles": 9,
+      "triples": 2,
+      "ab": 197,
+      "bAvg": 0.259,
+      "wp": 6,
+      "hbp": 5,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 7
     },
     {
       "name": "Blackett, Sarah",
@@ -41,13 +67,26 @@
       "era": 2.97,
       "app": 12,
       "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 33,
       "h": 27,
       "r": 20,
       "er": 14,
       "bb": 29,
       "so": 30,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.7,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 123,
+      "bAvg": 0.22,
+      "wp": 5,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Doering, Nicole",
@@ -56,13 +95,26 @@
       "era": 5.47,
       "app": 11,
       "gs": 6,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 24.1,
       "h": 27,
       "r": 25,
       "er": 19,
       "bb": 33,
       "so": 16,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.47,
+      "doubles": 8,
+      "triples": 0,
+      "ab": 97,
+      "bAvg": 0.278,
+      "wp": 12,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     },
     {
       "name": "Huang, Sharona",
@@ -71,13 +123,26 @@
       "era": 6.13,
       "app": 9,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 16,
       "h": 19,
       "r": 17,
       "er": 14,
       "bb": 13,
       "so": 5,
-      "hr": 0
+      "hr": 0,
+      "whip": 2,
+      "doubles": 1,
+      "triples": 2,
+      "ab": 67,
+      "bAvg": 0.284,
+      "wp": 2,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "O'Connor, Becca",
@@ -86,13 +151,26 @@
       "era": 9,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 2.1,
       "h": 6,
       "r": 3,
       "er": 3,
       "bb": 3,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 3.86,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 11,
+      "bAvg": 0.545,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     }
   ],
   "games": [
@@ -100,7 +178,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/simmons-university/boxscore/11361",
       "date": "3/12/2025",
       "opponent": "Simmons University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -182,7 +262,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/simmons-university/boxscore/11362",
       "date": "3/12/2025",
       "opponent": "Simmons University",
-      "pitchers": ["Doering, Nicole", "Blackett, Sarah"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -352,7 +435,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/new-york-university/boxscore/11832",
       "date": "3/15/2025",
       "opponent": "New York University",
-      "pitchers": ["Doering, Nicole", "Huang, Sharona"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -452,7 +538,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/susquehanna-university/boxscore/11833",
       "date": "3/16/2025",
       "opponent": "Susquehanna University",
-      "pitchers": ["Blackett, Sarah", "Huang, Sharona"],
+      "pitchers": [
+        "Blackett, Sarah",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -541,7 +630,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/muhlenberg-college/boxscore/11834",
       "date": "3/16/2025",
       "opponent": "Muhlenberg College",
-      "pitchers": ["Katsuyama, Katie"],
+      "pitchers": [
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -617,7 +708,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wentworth-institute-of-technology/boxscore/11364",
       "date": "3/19/2025",
       "opponent": "Wentworth Institute Of Technology",
-      "pitchers": ["Katsuyama, Katie"],
+      "pitchers": [
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -676,7 +769,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wentworth-institute-of-technology/boxscore/11365",
       "date": "3/19/2025",
       "opponent": "Wentworth Institute Of Technology",
-      "pitchers": ["Doering, Nicole", "Langmeyer, Caroline", "Huang, Sharona"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Langmeyer, Caroline",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -739,7 +836,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/stevens/boxscore/11623",
       "date": "3/24/2025",
       "opponent": "Stevens",
-      "pitchers": ["Katsuyama, Katie", "Doering, Nicole"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -802,7 +902,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/stevens/boxscore/11624",
       "date": "3/24/2025",
       "opponent": "Stevens",
-      "pitchers": ["Langmeyer, Caroline", "Huang, Sharona"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -888,7 +991,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/11366",
       "date": "3/28/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Katsuyama, Katie", "Doering, Nicole", "Blackett, Sarah"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Doering, Nicole",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -974,7 +1081,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/11367",
       "date": "3/28/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1069,7 +1178,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/endicott-college/boxscore/11368",
       "date": "4/2/2025",
       "opponent": "Endicott College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1147,7 +1258,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/endicott-college/boxscore/11369",
       "date": "4/2/2025",
       "opponent": "Endicott College",
-      "pitchers": ["Blackett, Sarah", "Doering, Nicole", "Huang, Sharona"],
+      "pitchers": [
+        "Blackett, Sarah",
+        "Doering, Nicole",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1228,7 +1343,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/babson-college/boxscore/11370",
       "date": "4/9/2025",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1307,7 +1424,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/babson-college/boxscore/11371",
       "date": "4/9/2025",
       "opponent": "Babson College",
-      "pitchers": ["Katsuyama, Katie", "Blackett, Sarah", "Doering, Nicole"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Blackett, Sarah",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1394,7 +1515,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/11375",
       "date": "4/11/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Langmeyer, Caroline", "Huang, Sharona"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1449,7 +1573,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/11376",
       "date": "4/11/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Katsuyama, Katie", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1534,7 +1661,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/springfield-college/boxscore/11377",
       "date": "4/13/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1605,7 +1734,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/springfield-college/boxscore/11396",
       "date": "4/13/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Katsuyama, Katie", "Huang, Sharona", "Doering, Nicole"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Huang, Sharona",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1688,7 +1821,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/tufts-university/boxscore/11379",
       "date": "4/16/2025",
       "opponent": "Tufts University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1761,7 +1896,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/tufts-university/boxscore/11380",
       "date": "4/16/2025",
       "opponent": "Tufts University",
-      "pitchers": ["Doering, Nicole", "Blackett, Sarah"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1845,7 +1983,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/salve-regina/boxscore/11381",
       "date": "4/18/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1914,7 +2054,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/salve-regina/boxscore/11382",
       "date": "4/18/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Doering, Nicole", "Blackett, Sarah"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1973,7 +2116,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/11383",
       "date": "4/19/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2040,7 +2186,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/11384",
       "date": "4/19/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Katsuyama, Katie", "Blackett, Sarah"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2122,7 +2271,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/brandeis-university/boxscore/11374",
       "date": "4/23/2025",
       "opponent": "Brandeis University",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2217,7 +2369,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/emerson-college/boxscore/11385",
       "date": "4/25/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2293,7 +2447,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/emerson-college/boxscore/11386",
       "date": "4/25/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Katsuyama, Katie"],
+      "pitchers": [
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2364,7 +2520,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/clark-university/boxscore/11391",
       "date": "5/1/2025",
       "opponent": "Clark University",
-      "pitchers": ["Katsuyama, Katie", "Blackett, Sarah"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Blackett, Sarah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2428,7 +2587,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/clark-university/boxscore/11392",
       "date": "5/1/2025",
       "opponent": "Clark University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2481,7 +2642,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/11389",
       "date": "5/2/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2542,7 +2705,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/11390",
       "date": "5/2/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Doering, Nicole", "Blackett, Sarah", "O'Connor, Becca"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Blackett, Sarah",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2631,7 +2798,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/11393",
       "date": "5/7/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2708,7 +2877,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/babson-college/boxscore/11394",
       "date": "5/8/2025",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2782,7 +2953,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/babson-college/boxscore/11988",
       "date": "5/11/2025",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2858,7 +3031,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/ramapo-college/boxscore/11437",
       "date": "5/15/2025",
       "opponent": "Ramapo College",
-      "pitchers": ["Katsuyama, Katie", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2940,7 +3116,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/gettysburg-college/boxscore/11991",
       "date": "5/16/2025",
       "opponent": "Gettysburg College",
-      "pitchers": ["Langmeyer, Caroline", "Huang, Sharona"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3031,7 +3210,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2025/ramapo-college/boxscore/11994",
       "date": "5/17/2025",
       "opponent": "Ramapo College",
-      "pitchers": ["Katsuyama, Katie", "Huang, Sharona", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Huang, Sharona",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

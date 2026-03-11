@@ -1,7 +1,7 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-11T11:28:08.014Z",
+  "scrapedAt": "2026-03-11T01:10:57.698Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 0,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 7,
       "h": 5,
       "r": 2,
       "er": 0,
       "bb": 1,
       "so": 6,
-      "hr": 0
+      "hr": 0,
+      "whip": 0.86,
+      "doubles": 1,
+      "triples": 1,
+      "ab": 24,
+      "bAvg": 0.208,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 0
     },
     {
       "name": "Rimshnick, Julia",
@@ -26,13 +39,26 @@
       "era": 3,
       "app": 2,
       "gs": 2,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 7,
       "h": 9,
       "r": 3,
       "er": 3,
       "bb": 0,
       "so": 2,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.29,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 30,
+      "bAvg": 0.3,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [

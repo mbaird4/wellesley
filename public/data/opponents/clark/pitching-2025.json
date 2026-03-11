@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-02T22:33:01.540Z",
+  "scrapedAt": "2026-03-11T01:16:18.531Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 4.06,
       "app": 22,
       "gs": 16,
+      "cg": 10,
+      "sho": 1,
+      "sv": 1,
       "ip": 110.1,
       "h": 148,
       "r": 79,
       "er": 64,
       "bb": 25,
       "so": 84,
-      "hr": 5
+      "hr": 5,
+      "whip": 1.57,
+      "doubles": 29,
+      "triples": 10,
+      "ab": 471,
+      "bAvg": 0.314,
+      "wp": 6,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 7,
+      "sha": 9
     },
     {
       "name": "Dube, Megan",
@@ -26,13 +39,26 @@
       "era": 4.81,
       "app": 23,
       "gs": 19,
+      "cg": 10,
+      "sho": 3,
+      "sv": 0,
       "ip": 103.1,
       "h": 141,
       "r": 90,
       "er": 71,
       "bb": 40,
       "so": 75,
-      "hr": 7
+      "hr": 7,
+      "whip": 1.75,
+      "doubles": 29,
+      "triples": 3,
+      "ab": 439,
+      "bAvg": 0.321,
+      "wp": 17,
+      "hbp": 6,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 12
     },
     {
       "name": "Albano, Jennifer",
@@ -41,13 +67,26 @@
       "era": 0,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Wagstaff, Hannah",
@@ -56,13 +95,26 @@
       "era": 5.64,
       "app": 12,
       "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 22.1,
       "h": 41,
       "r": 19,
       "er": 18,
       "bb": 10,
       "so": 11,
-      "hr": 1
+      "hr": 1,
+      "whip": 2.28,
+      "doubles": 5,
+      "triples": 0,
+      "ab": 106,
+      "bAvg": 0.387,
+      "wp": 4,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     },
     {
       "name": "Griffin, Merry",
@@ -71,13 +123,26 @@
       "era": 15.75,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 1.1,
       "h": 3,
       "r": 3,
       "er": 3,
       "bb": 3,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 4.5,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 6,
+      "bAvg": 0.5,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -85,7 +150,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/simmons-university/boxscore/18856",
       "date": "3/1/2025",
       "opponent": "Simmons University",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -160,7 +227,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/johnson-wales-university/boxscore/18860",
       "date": "3/2/2025",
       "opponent": "Johnson Wales University",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -239,7 +308,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/neumann-university/boxscore/18857",
       "date": "3/3/2025",
       "opponent": "Neumann University",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -316,7 +387,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/chatham-university/boxscore/18889",
       "date": "3/3/2025",
       "opponent": "Chatham University",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -390,7 +463,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/saint-vincent-college/boxscore/18858",
       "date": "3/4/2025",
       "opponent": "Saint Vincent College",
-      "pitchers": ["Buzzeo, Brooke", "Griffin, Merry", "Dube, Megan"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Griffin, Merry",
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -494,7 +571,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/emmanuel-college-mass-/boxscore/18859",
       "date": "3/4/2025",
       "opponent": "Emmanuel College Mass ",
-      "pitchers": ["Dube, Megan", "Wagstaff, Hannah", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Dube, Megan",
+        "Wagstaff, Hannah",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -584,7 +665,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/north-central-university-mn-/boxscore/18861",
       "date": "3/6/2025",
       "opponent": "North Central University Mn ",
-      "pitchers": ["Wagstaff, Hannah", "Dube, Megan"],
+      "pitchers": [
+        "Wagstaff, Hannah",
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -649,7 +733,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/gustavus-adolphus-college/boxscore/18890",
       "date": "3/6/2025",
       "opponent": "Gustavus Adolphus College",
-      "pitchers": ["Buzzeo, Brooke", "Dube, Megan"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -730,7 +817,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/eastern-university/boxscore/18862",
       "date": "3/7/2025",
       "opponent": "Eastern University",
-      "pitchers": ["Dube, Megan", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Dube, Megan",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -803,7 +893,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/adrian-college/boxscore/18863",
       "date": "3/7/2025",
       "opponent": "Adrian College",
-      "pitchers": ["Dube, Megan", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Dube, Megan",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -890,7 +983,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/regis-college/boxscore/18895",
       "date": "3/22/2025",
       "opponent": "Regis College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -968,7 +1063,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/regis-college/boxscore/18896",
       "date": "3/22/2025",
       "opponent": "Regis College",
-      "pitchers": ["Dube, Megan", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Dube, Megan",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1054,7 +1152,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/worcester-state-university/boxscore/18788",
       "date": "3/25/2025",
       "opponent": "Worcester State University",
-      "pitchers": ["Buzzeo, Brooke", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1128,7 +1229,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/worcester-state-university/boxscore/18789",
       "date": "3/25/2025",
       "opponent": "Worcester State University",
-      "pitchers": ["Dube, Megan", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Dube, Megan",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1208,7 +1312,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/18790",
       "date": "3/28/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1293,7 +1399,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/18791",
       "date": "3/28/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Dube, Megan", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Dube, Megan",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1357,7 +1466,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/fitchburg-state-college/boxscore/18792",
       "date": "4/1/2025",
       "opponent": "Fitchburg State College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1412,7 +1523,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/fitchburg-state-college/boxscore/18793",
       "date": "4/1/2025",
       "opponent": "Fitchburg State College",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1466,7 +1579,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/18794",
       "date": "4/4/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Buzzeo, Brooke", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1548,7 +1664,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/18795",
       "date": "4/4/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1621,7 +1739,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/18796",
       "date": "4/6/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1698,7 +1818,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/18797",
       "date": "4/6/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1764,7 +1886,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/salve-regina/boxscore/18800",
       "date": "4/15/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1856,7 +1980,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/emerson-college/boxscore/18804",
       "date": "4/18/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1936,7 +2062,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/emerson-college/boxscore/18805",
       "date": "4/18/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Buzzeo, Brooke", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1995,7 +2124,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/smith-college/boxscore/18806",
       "date": "4/19/2025",
       "opponent": "Smith College",
-      "pitchers": ["Dube, Megan", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Dube, Megan",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2076,7 +2208,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/smith-college/boxscore/18807",
       "date": "4/19/2025",
       "opponent": "Smith College",
-      "pitchers": ["Wagstaff, Hannah", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Wagstaff, Hannah",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2155,7 +2290,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/nichols-college/boxscore/18798",
       "date": "4/22/2025",
       "opponent": "Nichols College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2235,7 +2372,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/nichols-college/boxscore/18799",
       "date": "4/22/2025",
       "opponent": "Nichols College",
-      "pitchers": ["Wagstaff, Hannah", "Dube, Megan"],
+      "pitchers": [
+        "Wagstaff, Hannah",
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2307,7 +2447,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/salve-regina/boxscore/18801",
       "date": "4/23/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Dube, Megan", "Albano, Jennifer", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Dube, Megan",
+        "Albano, Jennifer",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2398,7 +2542,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/18808",
       "date": "4/25/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Dube, Megan", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Dube, Megan",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2461,7 +2608,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/18809",
       "date": "4/25/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2543,7 +2692,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/springfield-college/boxscore/18810",
       "date": "4/27/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2621,7 +2772,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/springfield-college/boxscore/18811",
       "date": "4/27/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2696,7 +2849,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/babson-college/boxscore/18812",
       "date": "4/30/2025",
       "opponent": "Babson College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2781,7 +2936,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/babson-college/boxscore/18813",
       "date": "4/30/2025",
       "opponent": "Babson College",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2854,7 +3011,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/18814",
       "date": "5/1/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Buzzeo, Brooke", "Wagstaff, Hannah"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Wagstaff, Hannah"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2926,7 +3086,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/18815",
       "date": "5/1/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Dube, Megan"],
+      "pitchers": [
+        "Dube, Megan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

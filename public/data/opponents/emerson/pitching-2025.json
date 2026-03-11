@@ -1,7 +1,7 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-02T22:28:23.865Z",
+  "scrapedAt": "2026-03-11T01:14:16.639Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.96,
       "app": 20,
       "gs": 16,
+      "cg": 11,
+      "sho": 2,
+      "sv": 0,
       "ip": 111,
       "h": 93,
       "r": 52,
       "er": 47,
       "bb": 44,
       "so": 134,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.23,
+      "doubles": 5,
+      "triples": 5,
+      "ab": 417,
+      "bAvg": 0.223,
+      "wp": 21,
+      "hbp": 17,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 10
     },
     {
       "name": "Gomez, Jessica",
@@ -26,13 +39,26 @@
       "era": 3.35,
       "app": 19,
       "gs": 13,
+      "cg": 7,
+      "sho": 2,
+      "sv": 1,
       "ip": 87.2,
       "h": 97,
       "r": 53,
       "er": 42,
       "bb": 16,
       "so": 42,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.29,
+      "doubles": 27,
+      "triples": 3,
+      "ab": 344,
+      "bAvg": 0.282,
+      "wp": 3,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 10
     },
     {
       "name": "Regan, Kate",
@@ -41,13 +67,26 @@
       "era": 4.43,
       "app": 12,
       "gs": 5,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 30,
       "h": 41,
       "r": 24,
       "er": 19,
       "bb": 13,
       "so": 15,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.8,
+      "doubles": 7,
+      "triples": 1,
+      "ab": 132,
+      "bAvg": 0.311,
+      "wp": 6,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Holden, Sofia",
@@ -56,13 +95,26 @@
       "era": 4.85,
       "app": 3,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 4.1,
       "h": 10,
       "r": 7,
       "er": 3,
       "bb": 3,
       "so": 2,
-      "hr": 0
+      "hr": 0,
+      "whip": 3,
+      "doubles": 0,
+      "triples": 1,
+      "ab": 24,
+      "bAvg": 0.417,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -70,7 +122,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/concordia-minn-/boxscore/4006",
       "date": "3/8/2025",
       "opponent": "Concordia Minn ",
-      "pitchers": ["Gomez, Jessica", "Regan, Kate"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -161,7 +216,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/anna-maria/boxscore/4007",
       "date": "3/8/2025",
       "opponent": "Anna Maria",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -242,7 +299,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/marietta/boxscore/4008",
       "date": "3/9/2025",
       "opponent": "Marietta",
-      "pitchers": ["Sheehan, Caleigh", "Regan, Kate", "Gomez, Jessica"],
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -350,7 +411,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/nebraska-wesleyan/boxscore/4009",
       "date": "3/9/2025",
       "opponent": "Nebraska Wesleyan",
-      "pitchers": ["Gomez, Jessica", "Holden, Sofia", "Regan, Kate"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Holden, Sofia",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -423,7 +488,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/monmouth-college/boxscore/4010",
       "date": "3/11/2025",
       "opponent": "Monmouth College",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -488,7 +555,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/baldwin-wallace/boxscore/4011",
       "date": "3/11/2025",
       "opponent": "Baldwin Wallace",
-      "pitchers": ["Sheehan, Caleigh", "Regan, Kate"],
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -566,7 +636,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/webster/boxscore/4012",
       "date": "3/12/2025",
       "opponent": "Webster",
-      "pitchers": ["Gomez, Jessica", "Sheehan, Caleigh"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -632,7 +705,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/wheaton-ill-/boxscore/4013",
       "date": "3/11/2025",
       "opponent": "Wheaton Ill ",
-      "pitchers": ["Regan, Kate"],
+      "pitchers": [
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -688,7 +763,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/emmanuel-mass-/boxscore/4014",
       "date": "3/20/2025",
       "opponent": "Emmanuel Mass ",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -765,7 +842,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/emmanuel-mass-/boxscore/4015",
       "date": "3/20/2025",
       "opponent": "Emmanuel Mass ",
-      "pitchers": ["Regan, Kate", "Holden, Sofia"],
+      "pitchers": [
+        "Regan, Kate",
+        "Holden, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -837,7 +917,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/suffolk/boxscore/4016",
       "date": "3/23/2025",
       "opponent": "Suffolk",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -909,7 +991,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/suffolk/boxscore/4017",
       "date": "3/23/2025",
       "opponent": "Suffolk",
-      "pitchers": ["Regan, Kate", "Gomez, Jessica"],
+      "pitchers": [
+        "Regan, Kate",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -992,7 +1077,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/lasell/boxscore/4018",
       "date": "3/27/2025",
       "opponent": "Lasell",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1069,7 +1156,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/lasell/boxscore/4019",
       "date": "3/27/2025",
       "opponent": "Lasell",
-      "pitchers": ["Holden, Sofia", "Gomez, Jessica"],
+      "pitchers": [
+        "Holden, Sofia",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1147,7 +1237,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/springfield/boxscore/4020",
       "date": "3/29/2025",
       "opponent": "Springfield",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1228,7 +1320,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/springfield/boxscore/4021",
       "date": "3/29/2025",
       "opponent": "Springfield",
-      "pitchers": ["Regan, Kate", "Gomez, Jessica", "Sheehan, Caleigh"],
+      "pitchers": [
+        "Regan, Kate",
+        "Gomez, Jessica",
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1308,7 +1404,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/4022",
       "date": "4/3/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1387,7 +1485,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/4023",
       "date": "4/3/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Gomez, Jessica", "Regan, Kate"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1459,7 +1560,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/salve-regina/boxscore/4026",
       "date": "4/11/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1537,7 +1640,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/salve-regina/boxscore/4027",
       "date": "4/11/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Gomez, Jessica", "Sheehan, Caleigh"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1623,7 +1729,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/smith/boxscore/4028",
       "date": "4/14/2025",
       "opponent": "Smith",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1700,7 +1808,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/smith/boxscore/4029",
       "date": "4/14/2025",
       "opponent": "Smith",
-      "pitchers": ["Regan, Kate", "Gomez, Jessica"],
+      "pitchers": [
+        "Regan, Kate",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1780,7 +1891,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/clark-university/boxscore/4030",
       "date": "4/18/2025",
       "opponent": "Clark University",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1860,7 +1973,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/clark-university/boxscore/4031",
       "date": "4/18/2025",
       "opponent": "Clark University",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1912,7 +2027,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/babson/boxscore/4032",
       "date": "4/19/2025",
       "opponent": "Babson",
-      "pitchers": ["Sheehan, Caleigh", "Regan, Kate"],
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1991,7 +2109,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/babson/boxscore/4033",
       "date": "4/19/2025",
       "opponent": "Babson",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2061,7 +2181,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/coast-guard-academy/boxscore/4024",
       "date": "4/22/2025",
       "opponent": "Coast Guard Academy",
-      "pitchers": ["Sheehan, Caleigh", "Gomez, Jessica"],
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2147,7 +2270,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/coast-guard-academy/boxscore/4025",
       "date": "4/22/2025",
       "opponent": "Coast Guard Academy",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2226,7 +2351,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/4034",
       "date": "4/25/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Sheehan, Caleigh", "Regan, Kate"],
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2321,7 +2449,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/4035",
       "date": "4/25/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2403,7 +2533,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/wellesley/boxscore/4038",
       "date": "5/2/2025",
       "opponent": "Wellesley",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2475,7 +2607,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/wellesley/boxscore/4039",
       "date": "5/2/2025",
       "opponent": "Wellesley",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2579,7 +2713,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/wheaton-mass-/boxscore/4040",
       "date": "5/3/2025",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Sheehan, Caleigh"],
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2658,7 +2794,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/wheaton-mass-/boxscore/4041",
       "date": "5/3/2025",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2735,7 +2873,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2025/coast-guard/boxscore/4050",
       "date": "5/5/2025",
       "opponent": "Coast Guard",
-      "pitchers": ["Gomez, Jessica", "Sheehan, Caleigh"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Sheehan, Caleigh"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

@@ -3,6 +3,7 @@ export * from './lib/button-toggle/button-toggle';
 export * from './lib/diamond/diamond';
 export * from './lib/game-viewer/game-viewer';
 export * from './lib/pipes';
+export * from './lib/pitcher-scouting-print-view/pitcher-scouting-print-view';
 export * from './lib/print-options-modal/print-options-modal';
 export * from './lib/slide-toggle/slide-toggle';
 export * from './lib/sparkline/sparkline';

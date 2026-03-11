@@ -1,0 +1,123 @@
+@for (card of pitcherCards(); track card.name; let idx = $index) {
+  @if (idx % 2 === 0) {
+    <!-- Page header (every 2 cards) -->
+    <div
+      class="flex items-baseline justify-between pb-2"
+      [class.break-before-page]="idx > 0"
+    >
+      <h2 class="text-lg font-bold print:text-black">
+        {{ title() }} — Pitcher Scouting
+      </h2>
+      <span class="text-xs text-gray-500">Printed {{ printDate() }}</span>
+    </div>
+  }
+
+  <!-- Pitcher card -->
+  <div
+    class="flex gap-4 border border-gray-400 p-3 text-[13px] print:text-black"
+    [class.mb-4]="idx % 2 === 0"
+  >
+    <!-- Left: Name + stats -->
+    <div class="flex w-44 shrink-0 flex-col gap-2">
+      <!-- Name header -->
+      <div class="flex flex-col">
+        <div class="flex items-baseline gap-2">
+          <span
+            class="border-b border-dashed border-gray-400 text-base font-bold"
+          >
+            {{ card.name }}
+          </span>
+          @if (card.jersey !== null) {
+            <span class="font-mono text-sm font-semibold">
+              #{{ card.jersey }}
+            </span>
+          }
+        </div>
+        <span class="text-xs font-medium text-gray-500">
+          {{ card.throwsLabel }}
+        </span>
+      </div>
+
+      <!-- Year stat columns -->
+      <div class="flex gap-3">
+        <!-- Previous year -->
+        <div class="flex flex-1 flex-col gap-0.5">
+          <span
+            class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+          >
+            {{ card.prevYear }}
+          </span>
+          @for (stat of card.stats; track stat.label) {
+            <div class="flex justify-between tabular-nums">
+              <span class="text-xs text-gray-500">{{ stat.label }}:</span>
+              <span class="text-xs font-medium">{{ stat.prevValue }}</span>
+            </div>
+          }
+        </div>
+
+        <!-- Current year -->
+        <div class="flex flex-1 flex-col gap-0.5">
+          <span
+            class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+          >
+            {{ card.currYear }}
+          </span>
+          @for (stat of card.stats; track stat.label) {
+            <div class="flex justify-between tabular-nums">
+              <span class="text-xs text-gray-500">{{ stat.label }}:</span>
+              <span class="text-xs font-medium">{{ stat.currValue }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Pitch types + notes -->
+    <div class="flex min-w-0 flex-1 flex-col gap-2">
+      <!-- Pitch type headers -->
+      <div class="flex flex-wrap gap-x-3 gap-y-1">
+        @for (pitch of pitchTypes; track pitch) {
+          <span
+            class="border-b border-dashed border-gray-400 px-1 text-xs font-medium"
+          >
+            {{ pitch }}
+          </span>
+        }
+      </div>
+
+      <!-- Best Pitch(es) -->
+      <div class="flex flex-col gap-1">
+        <span
+          class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+        >
+          Best Pitch(es)
+        </span>
+        <div class="border-b border-dashed border-gray-300"></div>
+      </div>
+
+      <!-- Notes -->
+      <div class="flex flex-col gap-1">
+        <span
+          class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+        >
+          Notes
+        </span>
+        @for (line of noteLines; track line) {
+          <div class="border-b border-dashed border-gray-300"></div>
+        }
+      </div>
+
+      <!-- Our Strategy -->
+      <div class="flex flex-col gap-1">
+        <span
+          class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
+        >
+          Our Strategy
+        </span>
+        @for (line of strategyLines; track line) {
+          <div class="border-b border-dashed border-gray-300"></div>
+        }
+      </div>
+    </div>
+  </div>
+}

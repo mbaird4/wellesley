@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-02T23:25:23.536Z",
+  "scrapedAt": "2026-03-11T01:17:26.951Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1.76,
       "app": 20,
       "gs": 18,
+      "cg": 10,
+      "sho": 0,
+      "sv": 2,
       "ip": 111.1,
       "h": 86,
       "r": 45,
       "er": 28,
       "bb": 36,
       "so": 124,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.1,
+      "doubles": 16,
+      "triples": 3,
+      "ab": 415,
+      "bAvg": 0.207,
+      "wp": 5,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 10
     },
     {
       "name": "Whiteford, Cameron",
@@ -26,13 +39,26 @@
       "era": 1.83,
       "app": 22,
       "gs": 16,
+      "cg": 14,
+      "sho": 5,
+      "sv": 0,
       "ip": 126.1,
       "h": 93,
       "r": 48,
       "er": 33,
       "bb": 39,
       "so": 126,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.04,
+      "doubles": 17,
+      "triples": 3,
+      "ab": 472,
+      "bAvg": 0.197,
+      "wp": 12,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 15
     },
     {
       "name": "Vlacich, Katie",
@@ -41,13 +67,26 @@
       "era": 2.79,
       "app": 12,
       "gs": 7,
+      "cg": 4,
+      "sho": 1,
+      "sv": 1,
       "ip": 37.2,
       "h": 32,
       "r": 23,
       "er": 15,
       "bb": 23,
       "so": 39,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.46,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 146,
+      "bAvg": 0.219,
+      "wp": 8,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 8
     }
   ],
   "games": [
@@ -55,7 +94,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/clarkson/boxscore/14557",
       "date": "3/15/2025",
       "opponent": "Clarkson",
-      "pitchers": ["Vlacich, Katie", "Whiteford, Cameron"],
+      "pitchers": [
+        "Vlacich, Katie",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -109,7 +151,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/ramapo/boxscore/14556",
       "date": "3/15/2025",
       "opponent": "Ramapo",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -190,7 +234,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/university-of-new-england/boxscore/14558",
       "date": "3/16/2025",
       "opponent": "University Of New England",
-      "pitchers": ["Vlacich, Katie", "O'Reilly, Moira"],
+      "pitchers": [
+        "Vlacich, Katie",
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -276,7 +323,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wisconsin-river-falls/boxscore/14559",
       "date": "3/16/2025",
       "opponent": "Wisconsin River Falls",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -328,7 +377,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/st-lawrence/boxscore/14560",
       "date": "3/17/2025",
       "opponent": "St Lawrence",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -400,7 +451,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wesleyan/boxscore/14561",
       "date": "3/17/2025",
       "opponent": "Wesleyan",
-      "pitchers": ["O'Reilly, Moira", "Vlacich, Katie"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -489,7 +543,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/new-paltz/boxscore/14562",
       "date": "3/19/2025",
       "opponent": "New Paltz",
-      "pitchers": ["O'Reilly, Moira", "Vlacich, Katie"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -589,7 +646,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/-4-rowan/boxscore/14563",
       "date": "3/19/2025",
       "opponent": " 4 Rowan",
-      "pitchers": ["Whiteford, Cameron", "Vlacich, Katie"],
+      "pitchers": [
+        "Whiteford, Cameron",
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -656,7 +716,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/farmingdale-state/boxscore/14564",
       "date": "3/20/2025",
       "opponent": "Farmingdale State",
-      "pitchers": ["Vlacich, Katie"],
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -725,7 +787,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wisconsin-la-crosse/boxscore/14565",
       "date": "3/20/2025",
       "opponent": "Wisconsin La Crosse",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -825,7 +889,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/mcdaniel/boxscore/14566",
       "date": "3/21/2025",
       "opponent": "Mcdaniel",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -894,7 +960,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/coast-guard/boxscore/14526",
       "date": "3/29/2025",
       "opponent": "Coast Guard",
-      "pitchers": ["O'Reilly, Moira", "Vlacich, Katie"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -974,7 +1043,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/coast-guard/boxscore/14527",
       "date": "3/29/2025",
       "opponent": "Coast Guard",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1051,7 +1122,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/springfield/boxscore/14528",
       "date": "4/4/2025",
       "opponent": "Springfield",
-      "pitchers": ["O'Reilly, Moira", "Vlacich, Katie"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1127,7 +1201,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/springfield/boxscore/14529",
       "date": "4/4/2025",
       "opponent": "Springfield",
-      "pitchers": ["Vlacich, Katie", "Whiteford, Cameron"],
+      "pitchers": [
+        "Vlacich, Katie",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1211,7 +1288,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/mit/boxscore/14530",
       "date": "4/9/2025",
       "opponent": "Mit",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1295,7 +1374,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/mit/boxscore/14531",
       "date": "4/9/2025",
       "opponent": "Mit",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1371,7 +1452,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/smith/boxscore/14534",
       "date": "4/11/2025",
       "opponent": "Smith",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1446,7 +1529,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/smith/boxscore/14535",
       "date": "4/11/2025",
       "opponent": "Smith",
-      "pitchers": ["Vlacich, Katie"],
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1512,7 +1597,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wheaton/boxscore/14536",
       "date": "4/14/2025",
       "opponent": "Wheaton",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1595,7 +1682,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wheaton/boxscore/14537",
       "date": "4/14/2025",
       "opponent": "Wheaton",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1670,7 +1759,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/trinity/boxscore/14538",
       "date": "4/16/2025",
       "opponent": "Trinity",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1748,7 +1839,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/trinity/boxscore/14539",
       "date": "4/16/2025",
       "opponent": "Trinity",
-      "pitchers": ["Vlacich, Katie"],
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1824,7 +1917,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wellesley/boxscore/14540",
       "date": "4/18/2025",
       "opponent": "Wellesley",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1895,7 +1990,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wellesley/boxscore/14541",
       "date": "4/18/2025",
       "opponent": "Wellesley",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1972,7 +2069,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/emerson/boxscore/14542",
       "date": "4/19/2025",
       "opponent": "Emerson",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2049,7 +2148,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/emerson/boxscore/14543",
       "date": "4/19/2025",
       "opponent": "Emerson",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2120,7 +2221,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/tufts/boxscore/14544",
       "date": "4/22/2025",
       "opponent": "Tufts",
-      "pitchers": ["O'Reilly, Moira", "Whiteford, Cameron"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2191,7 +2295,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/bates/boxscore/14545",
       "date": "4/24/2025",
       "opponent": "Bates",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2280,7 +2386,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/bates/boxscore/14546",
       "date": "4/24/2025",
       "opponent": "Bates",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2350,7 +2458,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/salve-regina/boxscore/14547",
       "date": "4/27/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2431,7 +2541,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/salve-regina/boxscore/14549",
       "date": "4/27/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2504,7 +2616,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/endicott/boxscore/14550",
       "date": "4/29/2025",
       "opponent": "Endicott",
-      "pitchers": ["Vlacich, Katie"],
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2574,7 +2688,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/clark/boxscore/14552",
       "date": "4/30/2025",
       "opponent": "Clark",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2655,7 +2771,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/clark/boxscore/14553",
       "date": "4/30/2025",
       "opponent": "Clark",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2713,7 +2831,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wpi/boxscore/14554",
       "date": "5/1/2025",
       "opponent": "Wpi",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2791,7 +2911,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wpi/boxscore/14555",
       "date": "5/1/2025",
       "opponent": "Wpi",
-      "pitchers": ["Whiteford, Cameron"],
+      "pitchers": [
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2874,7 +2996,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/springfield/boxscore/15584",
       "date": "5/7/2025",
       "opponent": "Springfield",
-      "pitchers": ["O'Reilly, Moira", "Whiteford, Cameron"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2975,7 +3100,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/mit/boxscore/15586",
       "date": "5/8/2025",
       "opponent": "Mit",
-      "pitchers": ["O'Reilly, Moira", "Whiteford, Cameron"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3052,7 +3180,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/wheaton/boxscore/15587",
       "date": "5/10/2025",
       "opponent": "Wheaton",
-      "pitchers": ["Whiteford, Cameron", "O'Reilly, Moira"],
+      "pitchers": [
+        "Whiteford, Cameron",
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3130,7 +3261,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2025/mit/boxscore/15588",
       "date": "5/11/2025",
       "opponent": "Mit",
-      "pitchers": ["O'Reilly, Moira", "Whiteford, Cameron"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Whiteford, Cameron"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

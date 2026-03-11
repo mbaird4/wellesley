@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
-import type { PitcherGameLog, PitcherSeasonSummary, PitchingData } from '@ws/core/models';
+import type { PitcherGameLog, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
 import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
-import { StickyPlayerHeader } from '@ws/core/ui';
+import { PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 
 import { InningBreakdown } from './inning-breakdown';
@@ -22,6 +22,7 @@ import { PitcherSelector } from './pitcher-selector';
     InningBreakdown,
     InningDetail,
     PitcherGameLogComponent,
+    PitcherScoutingPrintView,
   ],
   host: { class: 'block' },
   templateUrl: './pitcher-analysis.html',
@@ -32,6 +33,7 @@ export class PitcherAnalysis {
 
   readonly pitchingData = input.required<PitchingData | null>();
   readonly rosterNames = input<Set<string>>(new Set());
+  readonly roster = input<Roster | null>(null);
   readonly jerseyMap = input<Record<string, number> | null>(null);
   readonly loading = input<boolean>(false);
   readonly teamName = input<string>('');
@@ -149,6 +151,9 @@ export class PitcherAnalysis {
         l: acc.l + s.l,
         app: acc.app + s.app,
         gs: acc.gs + s.gs,
+        cg: acc.cg + s.cg,
+        sho: acc.sho + s.sho,
+        sv: acc.sv + s.sv,
         ip: acc.ip + s.ip,
         h: acc.h + s.h,
         r: acc.r + s.r,
@@ -156,12 +161,23 @@ export class PitcherAnalysis {
         bb: acc.bb + s.bb,
         so: acc.so + s.so,
         hr: acc.hr + s.hr,
+        doubles: acc.doubles + s.doubles,
+        triples: acc.triples + s.triples,
+        ab: acc.ab + s.ab,
+        wp: acc.wp + s.wp,
+        hbp: acc.hbp + s.hbp,
+        bk: acc.bk + s.bk,
+        sfa: acc.sfa + s.sfa,
+        sha: acc.sha + s.sha,
       }),
       {
         w: 0,
         l: 0,
         app: 0,
         gs: 0,
+        cg: 0,
+        sho: 0,
+        sv: 0,
         ip: 0,
         h: 0,
         r: 0,
@@ -169,6 +185,14 @@ export class PitcherAnalysis {
         bb: 0,
         so: 0,
         hr: 0,
+        doubles: 0,
+        triples: 0,
+        ab: 0,
+        wp: 0,
+        hbp: 0,
+        bk: 0,
+        sfa: 0,
+        sha: 0,
       }
     );
 
@@ -181,6 +205,8 @@ export class PitcherAnalysis {
     }, 0);
     const trueIp = totalThirds / 3;
     const era = trueIp > 0 ? Math.round(((totals.er * 7) / trueIp) * 100) / 100 : 0;
+    const whip = trueIp > 0 ? Math.round(((totals.bb + totals.h) / trueIp) * 100) / 100 : 0;
+    const bAvg = totals.ab > 0 ? Math.round((totals.h / totals.ab) * 1000) / 1000 : 0;
     const displayIp = Math.floor(totalThirds / 3) + (totalThirds % 3) * 0.1;
 
     return {
@@ -188,6 +214,8 @@ export class PitcherAnalysis {
       ...totals,
       ip: Math.round(displayIp * 10) / 10,
       era,
+      whip,
+      bAvg,
     };
   });
 
@@ -231,5 +259,9 @@ export class PitcherAnalysis {
 
   selectYear(year: number | 'all'): void {
     this.selectedYear.set(year);
+  }
+
+  onPrint(): void {
+    window.print();
   }
 }

@@ -117,6 +117,9 @@ interface PitchingStatsRow {
   era: number;
   app: number;
   gs: number;
+  cg: number;
+  sho: number;
+  sv: number;
   ip: number;
   h: number;
   r: number;
@@ -124,6 +127,16 @@ interface PitchingStatsRow {
   bb: number;
   so: number;
   hr: number;
+  whip: number;
+  doubles: number;
+  triples: number;
+  ab: number;
+  bAvg: number;
+  wp: number;
+  hbp: number;
+  bk: number;
+  sfa: number;
+  sha: number;
 }
 
 interface SeasonStats extends BattingStats {
@@ -483,6 +496,9 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
       era: pct('ERA'),
       app,
       gs,
+      cg: num('CG'),
+      sho: num('SHO'),
+      sv: num('SV'),
       ip,
       h: num('H'),
       r: num('R'),
@@ -490,6 +506,16 @@ function parsePitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[] {
       bb: num('BB'),
       so: num('SO'),
       hr: num('HR'),
+      whip: pct('WHIP'),
+      doubles: num('2B'),
+      triples: num('3B'),
+      ab: num('AB'),
+      bAvg: pct('B/AVG'),
+      wp: num('WP'),
+      hbp: num('HBP'),
+      bk: num('BK'),
+      sfa: num('SFA'),
+      sha: num('SHA'),
     });
   });
 

@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-11T11:27:47.177Z",
+  "scrapedAt": "2026-03-11T01:08:51.661Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1,
       "app": 1,
       "gs": 1,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 7,
       "h": 7,
       "r": 2,
       "er": 1,
       "bb": 1,
       "so": 5,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.14,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 26,
+      "bAvg": 0.269,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Merchant, Abby",
@@ -26,13 +39,26 @@
       "era": 2,
       "app": 1,
       "gs": 1,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 7,
       "h": 5,
       "r": 2,
       "er": 2,
       "bb": 0,
       "so": 6,
-      "hr": 0
+      "hr": 0,
+      "whip": 0.71,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 24,
+      "bAvg": 0.208,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     }
   ],
   "games": [

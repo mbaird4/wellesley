@@ -1,7 +1,7 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-02T22:20:51.051Z",
+  "scrapedAt": "2026-03-11T01:12:01.746Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 4.79,
       "app": 27,
       "gs": 22,
+      "cg": 11,
+      "sho": 0,
+      "sv": 0,
       "ip": 130,
       "h": 163,
       "r": 107,
       "er": 89,
       "bb": 52,
       "so": 98,
-      "hr": 7
+      "hr": 7,
+      "whip": 1.65,
+      "doubles": 30,
+      "triples": 8,
+      "ab": 541,
+      "bAvg": 0.301,
+      "wp": 21,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 11,
+      "sha": 14
     },
     {
       "name": "Gray, Bailey",
@@ -26,13 +39,26 @@
       "era": 5.66,
       "app": 11,
       "gs": 7,
+      "cg": 3,
+      "sho": 0,
+      "sv": 1,
       "ip": 55.2,
       "h": 70,
       "r": 58,
       "er": 45,
       "bb": 17,
       "so": 41,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.56,
+      "doubles": 7,
+      "triples": 5,
+      "ab": 238,
+      "bAvg": 0.294,
+      "wp": 4,
+      "hbp": 6,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 7
     },
     {
       "name": "Bennett, Lindsay",
@@ -41,13 +67,26 @@
       "era": 11.45,
       "app": 18,
       "gs": 7,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 40.1,
       "h": 91,
       "r": 73,
       "er": 66,
       "bb": 24,
       "so": 12,
-      "hr": 3
+      "hr": 3,
+      "whip": 2.85,
+      "doubles": 16,
+      "triples": 3,
+      "ab": 216,
+      "bAvg": 0.421,
+      "wp": 16,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 6,
+      "sha": 2
     },
     {
       "name": "Knutson, Ally",
@@ -56,13 +95,26 @@
       "era": 0,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -70,7 +122,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/macalester-college/boxscore/9448",
       "date": "3/16/2025",
       "opponent": "Macalester College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -148,7 +202,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/bates-college/boxscore/9447",
       "date": "3/16/2025",
       "opponent": "Bates College",
-      "pitchers": ["Gray, Bailey", "Bennett, Lindsay"],
+      "pitchers": [
+        "Gray, Bailey",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -243,7 +300,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/wesleyan-university/boxscore/9449",
       "date": "3/17/2025",
       "opponent": "Wesleyan University",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -307,7 +366,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/bowdoin-college/boxscore/9450",
       "date": "3/17/2025",
       "opponent": "Bowdoin College",
-      "pitchers": ["Gray, Bailey"],
+      "pitchers": [
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -383,7 +444,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/nazareth-university/boxscore/9452",
       "date": "3/18/2025",
       "opponent": "Nazareth University",
-      "pitchers": ["Gray, Bailey"],
+      "pitchers": [
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -445,7 +508,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/cortland/boxscore/9451",
       "date": "3/18/2025",
       "opponent": "Cortland",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -546,7 +612,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/ripon-college/boxscore/9453",
       "date": "3/20/2025",
       "opponent": "Ripon College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -638,7 +706,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/kalamazoo-college/boxscore/9454",
       "date": "3/20/2025",
       "opponent": "Kalamazoo College",
-      "pitchers": ["Gray, Bailey"],
+      "pitchers": [
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -737,7 +807,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/trinity-college-conn-/boxscore/9456",
       "date": "3/21/2025",
       "opponent": "Trinity College Conn ",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -828,7 +901,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/suny-geneseo/boxscore/9455",
       "date": "3/21/2025",
       "opponent": "Suny Geneseo",
-      "pitchers": ["Bennett, Lindsay", "Gray, Bailey"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -905,7 +981,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/keene-state/boxscore/9334",
       "date": "3/28/2025",
       "opponent": "Keene State",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -987,7 +1065,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/keene-state/boxscore/9337",
       "date": "3/28/2025",
       "opponent": "Keene State",
-      "pitchers": ["Gray, Bailey", "Bennett, Lindsay"],
+      "pitchers": [
+        "Gray, Bailey",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1075,7 +1156,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/westfield-state-university/boxscore/9339",
       "date": "4/2/2025",
       "opponent": "Westfield State University",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1162,7 +1246,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/westfield-state-university/boxscore/9340",
       "date": "4/2/2025",
       "opponent": "Westfield State University",
-      "pitchers": ["Bennett, Lindsay"],
+      "pitchers": [
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1227,7 +1313,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/9341",
       "date": "4/4/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1312,7 +1401,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/wheaton-college-mass-/boxscore/9342",
       "date": "4/4/2025",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Bennett, Lindsay", "Doty, Emilie"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1386,7 +1478,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/salve-regina/boxscore/9343",
       "date": "4/6/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1469,7 +1564,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/salve-regina/boxscore/9344",
       "date": "4/6/2025",
       "opponent": "Salve Regina",
-      "pitchers": ["Bennett, Lindsay", "Doty, Emilie"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1551,7 +1649,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/amherst-college/boxscore/9345",
       "date": "4/9/2025",
       "opponent": "Amherst College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1633,7 +1733,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/babson-college/boxscore/9347",
       "date": "4/11/2025",
       "opponent": "Babson College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1701,7 +1803,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/babson-college/boxscore/9348",
       "date": "4/11/2025",
       "opponent": "Babson College",
-      "pitchers": ["Gray, Bailey", "Bennett, Lindsay"],
+      "pitchers": [
+        "Gray, Bailey",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1788,7 +1893,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/emerson-college/boxscore/9349",
       "date": "4/14/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1870,7 +1977,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/emerson-college/boxscore/9350",
       "date": "4/14/2025",
       "opponent": "Emerson College",
-      "pitchers": ["Bennett, Lindsay", "Doty, Emilie"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1965,7 +2075,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/9351",
       "date": "4/18/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2032,7 +2145,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/worcester-polytechnic-institute/boxscore/9352",
       "date": "4/18/2025",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Bennett, Lindsay", "Doty, Emilie"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2129,7 +2245,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/clark-university/boxscore/9353",
       "date": "4/19/2025",
       "opponent": "Clark University",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2202,7 +2320,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/clark-university/boxscore/9354",
       "date": "4/19/2025",
       "opponent": "Clark University",
-      "pitchers": ["Bennett, Lindsay", "Doty, Emilie", "Knutson, Ally"],
+      "pitchers": [
+        "Bennett, Lindsay",
+        "Doty, Emilie",
+        "Knutson, Ally"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2284,7 +2406,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/williams-college/boxscore/9355",
       "date": "4/23/2025",
       "opponent": "Williams College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2355,7 +2479,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/wellesley-college/boxscore/9357",
       "date": "4/25/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Doty, Emilie", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2438,7 +2565,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/wellesley-college/boxscore/9358",
       "date": "4/25/2025",
       "opponent": "Wellesley College",
-      "pitchers": ["Doty, Emilie", "Gray, Bailey"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2516,7 +2646,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/9359",
       "date": "4/27/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2589,7 +2721,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/massachusetts-institute-of-technology/boxscore/9360",
       "date": "4/27/2025",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Doty, Emilie", "Gray, Bailey", "Bennett, Lindsay"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Gray, Bailey",
+        "Bennett, Lindsay"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2674,7 +2810,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/9363",
       "date": "5/1/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2749,7 +2887,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/united-states-coast-guard-academy/boxscore/9364",
       "date": "5/1/2025",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Doty, Emilie", "Gray, Bailey"],
+      "pitchers": [
+        "Doty, Emilie",
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2833,7 +2974,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/springfield-college/boxscore/9361",
       "date": "5/2/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Doty, Emilie"],
+      "pitchers": [
+        "Doty, Emilie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2920,7 +3063,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2025/springfield-college/boxscore/9362",
       "date": "5/2/2025",
       "opponent": "Springfield College",
-      "pitchers": ["Gray, Bailey"],
+      "pitchers": [
+        "Gray, Bailey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

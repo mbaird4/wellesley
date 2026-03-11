@@ -47,6 +47,13 @@
                   {{ year }}
                 </button>
               }
+              <button
+                class="filter-btn print:hidden"
+                (click)="onPrint()"
+                title="Print pitcher scouting sheets"
+              >
+                <i class="fa-solid fa-print"></i>
+              </button>
             </div>
           }
         </ws-sticky-player-header>
@@ -122,4 +129,11 @@
       }
     </div>
   }
+
+  <ws-pitcher-scouting-print-view
+    [pitchingData]="pitchingData()"
+    [roster]="roster()"
+    [rosterNames]="rosterNames()"
+    [title]="teamName()"
+  />
 }

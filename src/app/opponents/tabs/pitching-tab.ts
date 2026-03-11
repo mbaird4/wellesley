@@ -8,7 +8,7 @@ import { OpponentDataService } from '../opponent-data.service';
   standalone: true,
   imports: [PitcherAnalysis],
   host: { class: 'block' },
-  template: ` <ws-pitcher-analysis [pitchingData]="data.pitchingData()" [rosterNames]="data.rosterNames()" [jerseyMap]="data.jerseyMap()" [loading]="data.pitchingLoading()" [teamName]="data.selectedTeamName()" /> `,
+  template: ` <ws-pitcher-analysis [pitchingData]="data.pitchingData()" [rosterNames]="data.rosterNames()" [roster]="data.roster()" [jerseyMap]="data.jerseyMap()" [loading]="data.pitchingLoading()" [teamName]="data.selectedTeamName()" /> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PitchingTab {
