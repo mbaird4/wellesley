@@ -1,53 +1,92 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-11T12:56:50.649Z",
+  "scrapedAt": "2026-03-11T18:52:27.708Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gigante, Whitney",
-      "w": 1,
+      "w": 2,
       "l": 0,
       "era": 0,
-      "app": 1,
+      "app": 3,
       "gs": 1,
-      "ip": 3,
-      "h": 5,
-      "r": 4,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4.2,
+      "h": 9,
+      "r": 7,
       "er": 0,
-      "bb": 3,
-      "so": 1,
-      "hr": 0
+      "bb": 4,
+      "so": 3,
+      "hr": 0,
+      "whip": 2.79,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 25,
+      "bAvg": 0.36,
+      "wp": 1,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "DeCrescenzo, Ella",
       "w": 0,
       "l": 0,
-      "era": 3.5,
-      "app": 1,
-      "gs": 0,
-      "ip": 2,
-      "h": 3,
-      "r": 1,
-      "er": 1,
-      "bb": 2,
-      "so": 1,
-      "hr": 0
+      "era": 2.63,
+      "app": 2,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 8,
+      "h": 11,
+      "r": 3,
+      "er": 3,
+      "bb": 5,
+      "so": 5,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 36,
+      "bAvg": 0.306,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Lees, Jacelyn",
-      "w": 0,
+      "w": 1,
       "l": 1,
-      "era": 5.53,
-      "app": 2,
-      "gs": 1,
-      "ip": 6.1,
-      "h": 10,
-      "r": 5,
-      "er": 5,
+      "era": 3.87,
+      "app": 3,
+      "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 12.2,
+      "h": 14,
+      "r": 7,
+      "er": 7,
       "bb": 3,
-      "so": 2,
-      "hr": 0
+      "so": 4,
+      "hr": 0,
+      "whip": 1.34,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 48,
+      "bAvg": 0.292,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 4
     },
     {
       "name": "Baker, Kelly",
@@ -56,13 +95,26 @@
       "era": 10.5,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0.2,
       "h": 0,
       "r": 1,
       "er": 1,
       "bb": 3,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 4.5,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 2,
+      "bAvg": 0,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -237,6 +289,189 @@
             "Marley Rodriguez doubled to left field (0-2 KS).",
             "Olivia Lugo doubled to center field, RBI (1-2 BFKF); Marley Rodriguez scored.",
             "Payton McDaniel grounded out to ss (0-2 KF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/carthage/boxscore/27441",
+      "date": "3/11/2026",
+      "opponent": "Carthage",
+      "pitchers": [
+        "Lees, Jacelyn",
+        "Gigante, Whitney"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clare Rettler popped up to 1b, bunt (0-1 K).",
+            "Rylee Boyd struck out swinging (3-2 BBKFBS).",
+            "Gwen Hendrick grounded out to p (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Olivia Hristov grounded out to p (0-0).",
+            "Rachael Setterstrom grounded out to 2b (0-1 F).",
+            "Peyton Kryza lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Isabel Bates flied out to cf (0-1 K).",
+            "Hana Adler popped up to 2b (1-0 B).",
+            "Leiah Cardona out at first 3b to 2b, bunt (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jacelyn Lees to p for Katie Foley.",
+            "Clare Rettler singled to right field (0-0).",
+            "Clare Rettler stole second.",
+            "Rylee Boyd doubled to left field, RBI (2-1 BBK); Clare Rettler scored.",
+            "Gwen Hendrick singled to center field, RBI (0-1 K); Rylee Boyd scored.",
+            "Olivia Hristov flied out to rf (1-0 B).",
+            "Gwen Hendrick stole second.",
+            "Rachael Setterstrom flied out to cf (2-1 KBB).",
+            "Peyton Kryza popped up to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Whitney Gigante to p.",
+            "Jacelyn Lees to dp.",
+            "Isabel Bates singled to center field (2-1 BSB).",
+            "Hana Adler reached first on a fielding error by 2b (0-0); Isabel Bates advanced to second.",
+            "Leiah Cardona reached on a fielder's choice to shortstop (0-2 FK); Hana Adler advanced to second; Isabel Bates out at third ss to 3b.",
+            "Clare Rettler singled to catcher, bunt (1-0 B); Leiah Cardona advanced to second; Hana Adler advanced to third.",
+            "Rylee Boyd hit by pitch, RBI (1-0 H); Clare Rettler advanced to second; Leiah Cardona advanced to third; Hana Adler scored, unearned.",
+            "Gwen Hendrick struck out swinging (3-2 BBKBFS).",
+            "Olivia Hristov singled to center field, 2 RBI (1-0 B); Rylee Boyd advanced to second; Clare Rettler scored, unearned; Leiah Cardona scored, unearned.",
+            "Rachael Setterstrom hit by pitch (2-1 BKH); Olivia Hristov advanced to second; Rylee Boyd advanced to third.",
+            "Whitney Gigante to dp.",
+            "Jacelyn Lees to p.",
+            "Peyton Kryza flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Isabel Bates flied out to cf (1-1 BK).",
+            "Hana Adler flied out to rf (1-0 B).",
+            "Leiah Cardona popped up to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Cassel-Siskind to cf for Kelly Baker.",
+            "Sam Chappell to lf.",
+            "Naomi Tesoriere to rf.",
+            "Clare Rettler grounded out to 2b (2-0 BB).",
+            "Rylee Boyd struck out swinging (0-2 KFS).",
+            "Gwen Hendrick singled to right field (0-0).",
+            "Olivia Hristov popped up to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/nichols/boxscore/27442",
+      "date": "3/11/2026",
+      "opponent": "Nichols",
+      "pitchers": [
+        "DeCrescenzo, Ella",
+        "Gigante, Whitney"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sydney Hicks singled to shortstop (3-1 BSBB).",
+            "Sydney Hicks stole second.",
+            "Sydney Hicks stole third.",
+            "Sydney Hicks scored on a wild pitch.",
+            "Ava Slavinsky lined out to 3b (3-1 BKBB).",
+            "Sydney Manzione singled to left field (1-1 BK).",
+            "Allie Silliman reached first on a fielding error by 3b (1-2 BFK); Sydney Manzione advanced to second.",
+            "Alyssa Pericello struck out looking (2-2 BBFSK).",
+            "Kyla Felicani struck out swinging (1-2 FBSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Chartier flied out to lf (0-0).",
+            "Bailey Littlefield singled to third base (3-2 BSBBK).",
+            "Emily Iannuccilli popped up to 3b (0-1 K).",
+            "Sydney Hicks popped up to 1b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Slavinsky flied out to cf (0-0).",
+            "Sydney Manzione struck out swinging (0-2 KFS).",
+            "Allie Silliman walked (3-2 FBBSFBB).",
+            "Alyssa Pericello doubled to left field (1-1 FB); Allie Silliman advanced to third.",
+            "Kyla Felicani grounded out to ss (2-2 BBFSF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Chartier singled to center field (3-1 KBBB).",
+            "Bailey Littlefield lined out to ss (2-2 BFBF).",
+            "Emily Iannuccilli singled to pitcher, bunt (1-0 B); Riley Chartier advanced to second.",
+            "Sydney Hicks reached on a fielder's choice to shortstop (2-2 KBBK); Emily Iannuccilli advanced to second; Riley Chartier out at third ss to 3b.",
+            "Ava Slavinsky reached on a fielder's choice to shortstop (0-0); Sydney Hicks out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sydney Manzione struck out swinging (1-2 KSBS).",
+            "Allie Silliman fouled out to 3b (0-1 F).",
+            "Alyssa Pericello doubled to left field (3-1 BFBB).",
+            "Kyla Felicani flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Chartier lined out to 3b (0-1 K).",
+            "Bailey Littlefield walked (3-1 BBBKB).",
+            "Peyton Blackinton pinch ran for Bailey Littlefield.",
+            "Emily Iannuccilli fouled out to 1b (0-0).",
+            "Sydney Hicks singled through the left side (0-0); Peyton Blackinton advanced to second.",
+            "Ava Slavinsky popped up to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ella DeCrescenzo to p for Lucia Zaremba.",
+            "Sydney Manzione walked (3-1 BBFBB).",
+            "Whitney Gigante to p.",
+            "Ella DeCrescenzo to dp.",
+            "Madison Scribner pinch ran for Sydney Manzione.",
+            "Allie Silliman singled to catcher, bunt (0-0); Madison Scribner advanced to second.",
+            "Alyssa Pericello flied out to lf (1-2 FBF).",
+            "Kyla Felicani hit by pitch (2-0 BH); Allie Silliman advanced to second; Madison Scribner advanced to third.",
+            "Michaela Fortier pinch hit for Riley Chartier.",
+            "Michaela Fortier walked, RBI (3-1 BBBKB); Kyla Felicani advanced to second; Allie Silliman advanced to third; Madison Scribner scored.",
+            "Riley Chartier pinch ran for Michaela Fortier.",
+            "Avery Casavant pinch ran for Kyla Felicani.",
+            "Bailey Littlefield struck out swinging (1-2 KKBS).",
+            "Samantha Lombardi pinch hit for Emily Iannuccilli.",
+            "Samantha Lombardi popped up to 2b (0-2 SS)."
           ]
         }
       ],
