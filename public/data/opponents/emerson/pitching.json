@@ -1,41 +1,143 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-10T11:28:10.549Z",
+  "scrapedAt": "2026-03-11T11:28:39.293Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 1,
-      "l": 1,
-      "era": 2.21,
-      "app": 3,
-      "gs": 1,
-      "ip": 12.2,
-      "h": 13,
-      "r": 9,
-      "er": 4,
-      "bb": 8,
-      "so": 18,
+      "l": 2,
+      "era": 1.78,
+      "app": 5,
+      "gs": 3,
+      "ip": 19.2,
+      "h": 23,
+      "r": 13,
+      "er": 5,
+      "bb": 10,
+      "so": 22,
       "hr": 0
     },
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 2,
-      "era": 3.97,
-      "app": 3,
-      "gs": 2,
-      "ip": 12.1,
-      "h": 16,
-      "r": 11,
-      "er": 7,
-      "bb": 7,
-      "so": 7,
+      "l": 3,
+      "era": 3.63,
+      "app": 4,
+      "gs": 3,
+      "ip": 17.1,
+      "h": 24,
+      "r": 15,
+      "er": 9,
+      "bb": 9,
+      "so": 9,
       "hr": 0
     }
   ],
   "games": [
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/concordia-college-minn-/boxscore/4307",
+      "date": "3/7/2026",
+      "opponent": "Concordia College Minn ",
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kailee Falconer singled to center field (0-0).",
+            "Kailee Falconer stole second, advanced to third on a throwing error by c, scored, unearned.",
+            "Morgan Guggisberg struck out swinging (0-0).",
+            "Reese Hauck struck out swinging (0-0).",
+            "Megan Guggisberg walked (0-0).",
+            "Jocelyn Maki struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Gulbranson walked (0-0).",
+            "Kate Gulbranson advanced to second on a wild pitch.",
+            "Charlotte Bertram walked (0-0).",
+            "Olivia Olberding lined out to cf (0-0).",
+            "Lily Heskin singled to left field (0-0); Charlotte Bertram advanced to second; Kate Gulbranson advanced to third.",
+            "Kailee Falconer popped into double play c to 3b (0-0); Kate Gulbranson out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Morgan Guggisberg tripled down the rf line (0-0).",
+            "Reese Hauck struck out swinging (0-0).",
+            "Morgan Guggisberg scored on a wild pitch.",
+            "Megan Guggisberg struck out, reached first on a wild pitch (0-0).",
+            "Jocelyn Maki popped up to 2b (0-0).",
+            "Kate Gulbranson grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charlotte Bertram grounded out to 2b (0-0).",
+            "Olivia Olberding reached first on a fielding error by 3b (0-0).",
+            "Lily Heskin popped up to ss (0-0).",
+            "Olivia Olberding advanced to second on a wild pitch.",
+            "Kailee Falconer singled to right field (0-0); Olivia Olberding advanced to third, out at home rf to c."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Fasteau to 1b.",
+            "Morgan Guggisberg singled to left field (0-0).",
+            "Reese Hauck reached first on a fielding error by 3b, SAC, bunt (0-0); Morgan Guggisberg advanced to second.",
+            "Megan Guggisberg grounded out to 1b unassisted (0-0); Reese Hauck advanced to second; Morgan Guggisberg advanced to third.",
+            "Jocelyn Maki singled to center field, RBI (0-0); Reese Hauck advanced to third; Morgan Guggisberg scored.",
+            "Kate Gulbranson reached first on a fielding error by ss (0-0); Jocelyn Maki advanced to third; Reese Hauck scored, unearned.",
+            "Bailey Plante pinch hit for Charlotte Bertram.",
+            "Kate Gulbranson advanced to second.",
+            "Bailey Plante out at first 1b to 2b (0-0).",
+            "Olivia Olberding doubled to left field, 2 RBI (0-0); Kate Gulbranson scored, unearned; Jocelyn Maki scored, unearned.",
+            "Lily Heskin reached first on a fielding error by ss (0-0); Olivia Olberding advanced to third.",
+            "Olivia Olberding scored on a passed ball.",
+            "Kailee Falconer grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Morgan Guggisberg grounded out to 2b (0-0).",
+            "Reese Hauck singled to center field (0-0).",
+            "Reese Hauck stole second.",
+            "Reese Hauck advanced to third on a passed ball.",
+            "Megan Guggisberg walked (0-0).",
+            "Megan Guggisberg advanced to second; Reese Hauck scored on a passed ball, unearned.",
+            "Megan Guggisberg advanced to third on a wild pitch.",
+            "Jocelyn Maki struck out looking (0-0).",
+            "Megan Guggisberg scored on a wild pitch, unearned.",
+            "Kate Gulbranson walked (0-0).",
+            "Kate Regan to p for Cal Sheehan.",
+            "Charlotte Bertram reached on a fielder's choice (0-0); Kate Gulbranson out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Olivia Olberding singled to right field (0-0).",
+            "Lily Heskin singled to center field (0-0); Olivia Olberding advanced to second.",
+            "Kailee Falconer struck out swinging (0-0).",
+            "Lily Heskin advanced to second; Olivia Olberding advanced to third on a passed ball.",
+            "Morgan Guggisberg singled to right field, 2 RBI (0-0); Lily Heskin scored, unearned; Olivia Olberding scored.",
+            "Reese Hauck struck out looking (0-0).",
+            "Megan Guggisberg grounded out to ss (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
     {
       "url": "https://emersonlions.com/sports/softball/stats/2026/shenandoah-university/boxscore/4308",
       "date": "3/7/2026",
@@ -255,6 +357,166 @@
             "Reddeman singled down the rf line; Jordan advanced to second; Klein advanced to third.",
             "Stellmacher grounded out to 2b, RBI; Reddeman advanced to second; Jordan advanced to third; Klein scored, unearned.",
             "Wheeler grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/messiah-university/boxscore/4311",
+      "date": "3/10/2026",
+      "opponent": "Messiah University",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Brielle Rosario flied out to rf (0-0).",
+            "Ava Fair struck out swinging (0-0).",
+            "Fallon Feaser struck out, out at first c to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Allie Book grounded out to 2b (0-0).",
+            "Rebekah Wiley reached first on a throwing error by 3b, advanced to second (0-0).",
+            "Lucy Murphy struck out swinging (0-0).",
+            "Josi Tolentino grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kelli Durbin struck out swinging (0-0).",
+            "Ashley Bryant walked (0-0).",
+            "Brielle Rosario reached on a fielder's choice (0-0); Ashley Bryant advanced to second on a fielding error by ss.",
+            "Ava Fair singled up the middle (0-0); Brielle Rosario advanced to second; Ashley Bryant advanced to third.",
+            "Fallon Feaser singled to second base, RBI (0-0); Ava Fair advanced to second; Brielle Rosario advanced to third; Ashley Bryant scored, unearned.",
+            "Allie Book reached on a fielder's choice, RBI (0-0); Fallon Feaser out at second 2b unassisted; Ava Fair advanced to third; Brielle Rosario scored, unearned.",
+            "Rebekah Wiley grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lucy Murphy grounded out to p (0-0).",
+            "Josi Tolentino hit by pitch (0-0).",
+            "Kelli Durbin grounded out to 2b (0-0); Josi Tolentino advanced to second.",
+            "Ashley Bryant grounded out 1b to 2b to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brielle Rosario singled to shortstop (0-0).",
+            "Ava Fair singled to shortstop (0-0); Brielle Rosario advanced to second.",
+            "Fallon Feaser singled, bunt (0-0); Ava Fair advanced to second; Brielle Rosario advanced to third.",
+            "Allie Book reached on a fielder's choice, RBI (0-0); Fallon Feaser out at second ss to 2b; Ava Fair advanced to third; Brielle Rosario scored.",
+            "Allie Book advanced to second.",
+            "Rebekah Wiley popped up to ss (0-0).",
+            "Lucy Murphy grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Josi Tolentino singled through the left side (0-0).",
+            "Kelli Durbin reached on a fielder's choice (0-0); Josi Tolentino out at second 2b unassisted.",
+            "Ashley Bryant singled, bunt (0-0); Kelli Durbin advanced to second.",
+            "Brielle Rosario singled to center field (0-0); Ashley Bryant advanced to second; Kelli Durbin advanced to third.",
+            "Ava Fair singled to shortstop, RBI (0-0); Brielle Rosario advanced to second; Ashley Bryant advanced to third; Kelli Durbin scored.",
+            "Fallon Feaser lined out to p (0-0).",
+            "Allie Book flied out to lf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/saint-marys-college-in-/boxscore/4312",
+      "date": "3/10/2026",
+      "opponent": "Saint Marys College In ",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Talia Jorgensen singled to shortstop (2-0 BB).",
+            "Allie Moss reached on a fielder's choice (1-0 B); Talia Jorgensen out at second ss to 2b.",
+            "Gia Schiavone popped up to 2b (1-0 B).",
+            "Allie Moss stole second.",
+            "Isabelle Hochmuth walked (3-0 BBBB).",
+            "Hunter St. Peter popped up to 2b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maggie Voliva singled to right field (2-2 SBFB).",
+            "Emma Luther flied out to rf (1-1 SB).",
+            "Ashlyn Yeo struck out swinging (2-2 SSBBS).",
+            "Lydia Hinga grounded out to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Talia Jorgensen walked (3-2 BBSBSB).",
+            "Talia Jorgensen stole second.",
+            "Allie Moss flied out to rf (1-1 SB).",
+            "Talia Jorgensen stole third.",
+            "Gia Schiavone popped up to ss (1-0 B).",
+            "Isabelle Hochmuth reached first on a fielding error by 1b (1-0 B); Talia Jorgensen scored, unearned.",
+            "Isabelle Hochmuth stole second.",
+            "Hunter St. Peter singled to left field, advanced to second on the throw (1-0 B); Isabelle Hochmuth advanced to third.",
+            "Maggie Voliva flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Luther singled to left field (2-2 BFFB).",
+            "Mary Gamble pinch ran for Emma Luther.",
+            "Ashlyn Yeo struck out swinging (1-2 BSFS).",
+            "Lydia Hinga singled up the middle (1-1 SB); Mary Gamble advanced to second.",
+            "Talia Jorgensen reached on a fielder's choice (2-0 BB); Lydia Hinga out at second 2b unassisted; Mary Gamble advanced to third.",
+            "Allie Moss singled to right field, RBI (0-0); Talia Jorgensen advanced to third; Mary Gamble scored.",
+            "Allie Moss stole second.",
+            "Gia Schiavone grounded out to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Isabelle Hochmuth lined out to 2b (1-0 B).",
+            "Hunter St. Peter singled up the middle (1-0 B).",
+            "Hunter St. Peter stole second.",
+            "Maggie Voliva grounded out to ss (1-1 SB); Hunter St. Peter advanced to third.",
+            "Emma Luther grounded out to ss (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sam Mikitka reached first on a throwing error by 3b (2-1 BFB).",
+            "Lydia Hinga singled to first base (1-0 B); Sam Mikitka advanced to second.",
+            "Ella Kucala pinch hit for Talia Jorgensen.",
+            "Cal Sheehan to p.",
+            "Kate Regan to dp.",
+            "Lydia Hinga advanced to second on a wild pitch; Sam Mikitka advanced to third on a wild pitch.",
+            "Ella Kucala flied out to cf, sacrifice fly, RBI (1-2 SFB); Sam Mikitka scored, unearned.",
+            "Lydia Hinga advanced to third on a wild pitch.",
+            "Allie Moss grounded out to 2b, RBI (1-0 B); Lydia Hinga scored.",
+            "Molly Ryan pinch hit for Gia Schiavone.",
+            "Molly Ryan doubled down the lf line (1-0 B).",
+            "Isabelle Hochmuth walked (3-2 SBFFBBB); Molly Ryan stole third.",
+            "Hunter St. Peter reached on a fielder's choice (0-0); Isabelle Hochmuth out at second 2b to ss."
           ]
         }
       ],

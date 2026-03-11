@@ -11,19 +11,19 @@
       [
         1,
         [
-          "mccoy, aislinn"
+          "luciano, valentina"
         ]
       ],
       [
         2,
         [
-          "fasteau, riley"
+          "sorensen, kari"
         ]
       ],
       [
         3,
         [
-          "kuperman, avi"
+          "caiazza, riley"
         ]
       ],
       [
@@ -35,37 +35,212 @@
       [
         5,
         [
-          "caiazza, riley"
+          "sheehan, caleigh",
+          "regan, kate"
         ]
       ],
       [
         6,
         [
-          "luciano, valentina"
+          "kuperman, avi"
         ]
       ],
       [
         7,
         [
+          "fasteau, riley",
           "burosso, tessa"
         ]
       ],
       [
         8,
         [
-          "sorensen, kari"
+          "nuehlen, kayla"
         ]
       ],
       [
         9,
         [
-          "nuehlen, kayla",
-          "sheehan, caleigh",
-          "regan, kate"
+          "mccoy, aislinn"
         ]
       ]
     ],
-    "playByPlay": []
+    "playByPlay": [
+      {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Kailee Falconer singled to center field (0-0).",
+          "Kailee Falconer stole second, advanced to third on a throwing error by c, scored, unearned.",
+          "Morgan Guggisberg struck out swinging (0-0).",
+          "Reese Hauck struck out swinging (0-0).",
+          "Megan Guggisberg walked (0-0).",
+          "Jocelyn Maki struck out swinging (0-0)."
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano singled to left field (0-0).",
+          "Kari Sorensen singled to third base (0-0); Valentina Luciano advanced to second.",
+          "Riley Caiazza grounded out to 2b (0-0); Kari Sorensen advanced to second; Valentina Luciano advanced to third.",
+          "Casey Yacovelli popped up to 1b (0-0).",
+          "Cal Sheehan popped up to 1b (0-0)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Kate Gulbranson walked (0-0).",
+          "Kate Gulbranson advanced to second on a wild pitch.",
+          "Charlotte Bertram walked (0-0).",
+          "Olivia Olberding lined out to cf (0-0).",
+          "Lily Heskin singled to left field (0-0); Charlotte Bertram advanced to second; Kate Gulbranson advanced to third.",
+          "Kailee Falconer popped into double play c to 3b (0-0); Kate Gulbranson out on the play."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
+        "plays": [
+          "Avi Kuperman grounded out to ss (0-0).",
+          "Riley Fasteau flied out to rf (0-0).",
+          "Kayla Nuehlen flied out to cf (0-0)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Morgan Guggisberg tripled down the rf line (0-0).",
+          "Reese Hauck struck out swinging (0-0).",
+          "Morgan Guggisberg scored on a wild pitch.",
+          "Megan Guggisberg struck out, reached first on a wild pitch (0-0).",
+          "Jocelyn Maki popped up to 2b (0-0).",
+          "Kate Gulbranson grounded out to 1b unassisted (0-0)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
+        "plays": [
+          "Aislinn McCoy flied out to cf (0-0).",
+          "Valentina Luciano singled to center field (0-0).",
+          "Kari Sorensen singled to left field (0-0); Valentina Luciano advanced to second.",
+          "Kari Sorensen advanced to second; Valentina Luciano advanced to third on a passed ball.",
+          "Riley Caiazza singled to right field, advanced to second on the throw, 2 RBI (0-0); Kari Sorensen scored; Valentina Luciano scored.",
+          "Casey Yacovelli struck out swinging (0-0).",
+          "Cal Sheehan singled to center field, RBI (0-0); Riley Caiazza scored.",
+          "Avi Kuperman grounded out to 3b (0-0)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Charlotte Bertram grounded out to 2b (0-0).",
+          "Olivia Olberding reached first on a fielding error by 3b (0-0).",
+          "Lily Heskin popped up to ss (0-0).",
+          "Olivia Olberding advanced to second on a wild pitch.",
+          "Kailee Falconer singled to right field (0-0); Olivia Olberding advanced to third, out at home rf to c."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
+        "plays": [
+          "Riley Fasteau reached first on a fielding error by ss (0-0).",
+          "Tessa Burroso pinch ran for Riley Fasteau.",
+          "Kayla Nuehlen out at first 3b to 2b, SAC, bunt (0-0); Tessa Burroso advanced to second.",
+          "Aislinn McCoy reached first on a fielding error by 3b (0-0); Tessa Burroso advanced to third.",
+          "Riley Fasteau pinch ran for Tessa Burroso.",
+          "Valentina Luciano reached on a fielder's choice, RBI (0-0); Aislinn McCoy out at second 3b to 2b; Riley Fasteau scored, unearned.",
+          "Kari Sorensen flied out to rf (0-0)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Riley Fasteau to 1b.",
+          "Morgan Guggisberg singled to left field (0-0).",
+          "Reese Hauck reached first on a fielding error by 3b, SAC, bunt (0-0); Morgan Guggisberg advanced to second.",
+          "Megan Guggisberg grounded out to 1b unassisted (0-0); Reese Hauck advanced to second; Morgan Guggisberg advanced to third.",
+          "Jocelyn Maki singled to center field, RBI (0-0); Reese Hauck advanced to third; Morgan Guggisberg scored.",
+          "Kate Gulbranson reached first on a fielding error by ss (0-0); Jocelyn Maki advanced to third; Reese Hauck scored, unearned.",
+          "Bailey Plante pinch hit for Charlotte Bertram.",
+          "Kate Gulbranson advanced to second.",
+          "Bailey Plante out at first 1b to 2b (0-0).",
+          "Olivia Olberding doubled to left field, 2 RBI (0-0); Kate Gulbranson scored, unearned; Jocelyn Maki scored, unearned.",
+          "Lily Heskin reached first on a fielding error by ss (0-0); Olivia Olberding advanced to third.",
+          "Olivia Olberding scored on a passed ball.",
+          "Kailee Falconer grounded out to 2b (0-0)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "offense",
+        "plays": [
+          "Charlotte Bertram to 1b for Bailey Plante.",
+          "Riley Caiazza lined out to rf (0-0).",
+          "Casey Yacovelli lined out to rf (0-0).",
+          "Cal Sheehan singled to right field (0-0).",
+          "Avi Kuperman grounded out to 3b (0-0)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "Morgan Guggisberg grounded out to 2b (0-0).",
+          "Reese Hauck singled to center field (0-0).",
+          "Reese Hauck stole second.",
+          "Reese Hauck advanced to third on a passed ball.",
+          "Megan Guggisberg walked (0-0).",
+          "Megan Guggisberg advanced to second; Reese Hauck scored on a passed ball, unearned.",
+          "Megan Guggisberg advanced to third on a wild pitch.",
+          "Jocelyn Maki struck out looking (0-0).",
+          "Megan Guggisberg scored on a wild pitch, unearned.",
+          "Kate Gulbranson walked (0-0).",
+          "Kate Regan to p for Cal Sheehan.",
+          "Charlotte Bertram reached on a fielder's choice (0-0); Kate Gulbranson out at second ss unassisted."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "offense",
+        "plays": [
+          "Riley Fasteau grounded out to ss (0-0).",
+          "Kayla Nuehlen flied out to lf (0-0).",
+          "Aislinn McCoy grounded out to p (0-0)."
+        ]
+      },
+      {
+        "inning": "7th",
+        "half": "defense",
+        "plays": [
+          "Olivia Olberding singled to right field (0-0).",
+          "Lily Heskin singled to center field (0-0); Olivia Olberding advanced to second.",
+          "Kailee Falconer struck out swinging (0-0).",
+          "Lily Heskin advanced to second; Olivia Olberding advanced to third on a passed ball.",
+          "Morgan Guggisberg singled to right field, 2 RBI (0-0); Lily Heskin scored, unearned; Olivia Olberding scored.",
+          "Reese Hauck struck out looking (0-0).",
+          "Megan Guggisberg grounded out to ss (0-0)."
+        ]
+      },
+      {
+        "inning": "7th",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano struck out swinging (0-0).",
+          "Kari Sorensen popped up to ss (0-0).",
+          "Riley Caiazza struck out looking (0-0).",
+          "Charlotte Bertram to 1b for Kaydence Bertram."
+        ]
+      }
+    ]
   },
   {
     "year": 2026,
@@ -714,6 +889,456 @@
           "Casey Yacove struck out swinging.",
           "Avi Kuperman flied out to cf, SF, RBI; Valentina Lu scored.",
           "Riley Fastea popped up to ss."
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "url": "https://emersonlions.com/sports/softball/stats/2026/messiah-university/boxscore/4311",
+    "opponent": "Messiah University",
+    "pitchers": [
+      "sheehan, caleigh"
+    ],
+    "lineup": [
+      [
+        1,
+        [
+          "luciano, valentina"
+        ]
+      ],
+      [
+        2,
+        [
+          "sorensen, kari"
+        ]
+      ],
+      [
+        3,
+        [
+          "caiazza, riley"
+        ]
+      ],
+      [
+        4,
+        [
+          "yacovelli, casey"
+        ]
+      ],
+      [
+        5,
+        [
+          "kuperman, avi"
+        ]
+      ],
+      [
+        6,
+        [
+          "sheehan, caleigh"
+        ]
+      ],
+      [
+        7,
+        [
+          "fasteau, riley"
+        ]
+      ],
+      [
+        8,
+        [
+          "mccoy, aislinn"
+        ]
+      ],
+      [
+        9,
+        [
+          "cardinale, malena"
+        ]
+      ],
+      [
+        10,
+        [
+          "nuehlen, kayla"
+        ]
+      ]
+    ],
+    "playByPlay": [
+      {
+        "inning": "1st",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano grounded out to 2b (0-0).",
+          "Kari Sorensen singled through the right side (0-0).",
+          "Riley Caiazza reached on a fielder's choice (0-0); Kari Sorensen out at second 2b to ss.",
+          "Casey Yacovelli fouled out to 1b (0-0)."
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Brielle Rosario flied out to rf (0-0).",
+          "Ava Fair struck out swinging (0-0).",
+          "Fallon Feaser struck out, out at first c to 1b (0-0)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
+        "plays": [
+          "Avi Kuperman grounded out to ss (0-0).",
+          "Cal Sheehan walked (0-0).",
+          "Riley Fasteau reached on a fielder's choice (0-0); Cal Sheehan advanced to second on a throwing error by p.",
+          "Aislinn McCoy struck out looking (0-0).",
+          "Riley Fasteau advanced to second; Cal Sheehan advanced to third on a wild pitch.",
+          "Malena Cardinale grounded out to 2b (0-0)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Allie Book grounded out to 2b (0-0).",
+          "Rebekah Wiley reached first on a throwing error by 3b, advanced to second (0-0).",
+          "Lucy Murphy struck out swinging (0-0).",
+          "Josi Tolentino grounded out to 2b (0-0)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano grounded out to 2b (0-0).",
+          "Kari Sorensen grounded out to ss (0-0).",
+          "Riley Caiazza walked (0-0).",
+          "Casey Yacovelli reached on a fielder's choice (0-0); Riley Caiazza out at second ss to 2b."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Kelli Durbin struck out swinging (0-0).",
+          "Ashley Bryant walked (0-0).",
+          "Brielle Rosario reached on a fielder's choice (0-0); Ashley Bryant advanced to second on a fielding error by ss.",
+          "Ava Fair singled up the middle (0-0); Brielle Rosario advanced to second; Ashley Bryant advanced to third.",
+          "Fallon Feaser singled to second base, RBI (0-0); Ava Fair advanced to second; Brielle Rosario advanced to third; Ashley Bryant scored, unearned.",
+          "Allie Book reached on a fielder's choice, RBI (0-0); Fallon Feaser out at second 2b unassisted; Ava Fair advanced to third; Brielle Rosario scored, unearned.",
+          "Rebekah Wiley grounded out to 2b (0-0)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
+        "plays": [
+          "Avi Kuperman doubled to center field, ground-rule (0-0).",
+          "Cal Sheehan popped up to ss (0-0).",
+          "Riley Fasteau grounded out to 1b unassisted (0-0); Avi Kuperman advanced to third.",
+          "Aislinn McCoy struck out swinging (0-0)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Lucy Murphy grounded out to p (0-0).",
+          "Josi Tolentino hit by pitch (0-0).",
+          "Kelli Durbin grounded out to 2b (0-0); Josi Tolentino advanced to second.",
+          "Ashley Bryant grounded out 1b to 2b to 1b (0-0)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "offense",
+        "plays": [
+          "Malena Cardinale singled up the middle (0-0).",
+          "Malena Cardinale stole second.",
+          "Valentina Luciano grounded out to 3b (0-0); Malena Cardinale advanced to third.",
+          "Kari Sorensen doubled to left field, RBI (0-0); Malena Cardinale scored.",
+          "Riley Caiazza grounded out p to 2b to 1b (0-0); Kari Sorensen advanced to third.",
+          "Casey Yacovelli grounded out to 3b (0-0)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Brielle Rosario singled to shortstop (0-0).",
+          "Ava Fair singled to shortstop (0-0); Brielle Rosario advanced to second.",
+          "Fallon Feaser singled, bunt (0-0); Ava Fair advanced to second; Brielle Rosario advanced to third.",
+          "Allie Book reached on a fielder's choice, RBI (0-0); Fallon Feaser out at second ss to 2b; Ava Fair advanced to third; Brielle Rosario scored.",
+          "Allie Book advanced to second.",
+          "Rebekah Wiley popped up to ss (0-0).",
+          "Lucy Murphy grounded out to p (0-0)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "offense",
+        "plays": [
+          "Avi Kuperman hit by pitch (0-0).",
+          "Cal Sheehan singled up the middle (0-0); Avi Kuperman advanced to second.",
+          "Riley Fasteau out at first c to 2b, SAC, bunt (0-0); Cal Sheehan advanced to second; Avi Kuperman advanced to third.",
+          "Aislinn McCoy grounded out to 2b (0-0); Avi Kuperman scored on a dropped fly by ss, assist by 1b.",
+          "Malena Cardinale flied out to rf (0-0)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "Josi Tolentino singled through the left side (0-0).",
+          "Kelli Durbin reached on a fielder's choice (0-0); Josi Tolentino out at second 2b unassisted.",
+          "Ashley Bryant singled, bunt (0-0); Kelli Durbin advanced to second.",
+          "Brielle Rosario singled to center field (0-0); Ashley Bryant advanced to second; Kelli Durbin advanced to third.",
+          "Ava Fair singled to shortstop, RBI (0-0); Brielle Rosario advanced to second; Ashley Bryant advanced to third; Kelli Durbin scored.",
+          "Fallon Feaser lined out to p (0-0).",
+          "Allie Book flied out to lf (0-0)."
+        ]
+      },
+      {
+        "inning": "7th",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano grounded out to p (0-0).",
+          "Kari Sorensen struck out swinging (0-0).",
+          "Riley Caiazza grounded out to 3b (0-0)."
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "url": "https://emersonlions.com/sports/softball/stats/2026/saint-marys-college-in-/boxscore/4312",
+    "opponent": "Saint Marys College In ",
+    "pitchers": [
+      "regan, kate",
+      "sheehan, caleigh"
+    ],
+    "lineup": [
+      [
+        1,
+        [
+          "luciano, valentina"
+        ]
+      ],
+      [
+        2,
+        [
+          "sorensen, kari"
+        ]
+      ],
+      [
+        3,
+        [
+          "caiazza, riley"
+        ]
+      ],
+      [
+        4,
+        [
+          "kuperman, avi"
+        ]
+      ],
+      [
+        5,
+        [
+          "yacovelli, casey"
+        ]
+      ],
+      [
+        6,
+        [
+          "sheehan, caleigh"
+        ]
+      ],
+      [
+        7,
+        [
+          "fasteau, riley"
+        ]
+      ],
+      [
+        8,
+        [
+          "mccoy, aislinn"
+        ]
+      ],
+      [
+        9,
+        [
+          "cardinale, malena"
+        ]
+      ],
+      [
+        10,
+        [
+          "regan, kate"
+        ]
+      ]
+    ],
+    "playByPlay": [
+      {
+        "inning": "1st",
+        "half": "offense",
+        "plays": [
+          "Valentina Luciano grounded out to p (2-0 BB).",
+          "Kari Sorensen flied out to cf (0-0).",
+          "Riley Caiazza lined out to ss (2-1 BBS)."
+        ]
+      },
+      {
+        "inning": "1st",
+        "half": "defense",
+        "plays": [
+          "Talia Jorgensen singled to shortstop (2-0 BB).",
+          "Allie Moss reached on a fielder's choice (1-0 B); Talia Jorgensen out at second ss to 2b.",
+          "Gia Schiavone popped up to 2b (1-0 B).",
+          "Allie Moss stole second.",
+          "Isabelle Hochmuth walked (3-0 BBBB).",
+          "Hunter St. Peter popped up to 2b (1-1 FB)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "offense",
+        "plays": [
+          "Avi Kuperman doubled to left center (0-2 SFF).",
+          "Casey Yacovelli struck out swinging (0-2 SFS).",
+          "Cal Sheehan struck out swinging (1-2 BSFS).",
+          "Riley Fasteau singled to third base (3-1 BBBS); Avi Kuperman advanced to third.",
+          "Riley Fasteau advanced to second on a wild pitch.",
+          "Aislinn McCoy grounded out to 2b (2-1 BBF)."
+        ]
+      },
+      {
+        "inning": "2nd",
+        "half": "defense",
+        "plays": [
+          "Maggie Voliva singled to right field (2-2 SBFB).",
+          "Emma Luther flied out to rf (1-1 SB).",
+          "Ashlyn Yeo struck out swinging (2-2 SSBBS).",
+          "Lydia Hinga grounded out to 2b (0-1 S)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "offense",
+        "plays": [
+          "Malena Cardinale singled through the left side (1-2 SFB).",
+          "Valentina Luciano reached on a fielder's choice (0-1 S); Malena Cardinale out at second 2b unassisted.",
+          "Valentina Luciano stole second.",
+          "Kari Sorensen popped out to 2b (2-1 BBF); Valentina Luciano advanced to third.",
+          "Riley Caiazza reached first on a throwing error by ss (1-1 SB); Valentina Luciano scored, unearned.",
+          "Avi Kuperman singled through the left side (1-0 B); Riley Caiazza advanced to second.",
+          "Casey Yacovelli flied out to lf (2-2 BBFS)."
+        ]
+      },
+      {
+        "inning": "3rd",
+        "half": "defense",
+        "plays": [
+          "Talia Jorgensen walked (3-2 BBSBSB).",
+          "Talia Jorgensen stole second.",
+          "Allie Moss flied out to rf (1-1 SB).",
+          "Talia Jorgensen stole third.",
+          "Gia Schiavone popped up to ss (1-0 B).",
+          "Isabelle Hochmuth reached first on a fielding error by 1b (1-0 B); Talia Jorgensen scored, unearned.",
+          "Isabelle Hochmuth stole second.",
+          "Hunter St. Peter singled to left field, advanced to second on the throw (1-0 B); Isabelle Hochmuth advanced to third.",
+          "Maggie Voliva flied out to cf (0-0)."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "offense",
+        "plays": [
+          "Cal Sheehan grounded out to 3b (1-0 B).",
+          "Riley Fasteau singled up the middle (2-1 BBS).",
+          "Aislinn McCoy singled up the middle (0-0); Riley Fasteau advanced to second.",
+          "Malena Cardinale singled to right field (1-0 B); Aislinn McCoy advanced to second; Riley Fasteau advanced to third.",
+          "Valentina Luciano flied out to lf (0-1 F).",
+          "Kari Sorensen reached on a fielder's choice (1-0 B); Malena Cardinale advanced to second; Aislinn McCoy out at third 3b unassisted."
+        ]
+      },
+      {
+        "inning": "4th",
+        "half": "defense",
+        "plays": [
+          "Emma Luther singled to left field (2-2 BFFB).",
+          "Mary Gamble pinch ran for Emma Luther.",
+          "Ashlyn Yeo struck out swinging (1-2 BSFS).",
+          "Lydia Hinga singled up the middle (1-1 SB); Mary Gamble advanced to second.",
+          "Talia Jorgensen reached on a fielder's choice (2-0 BB); Lydia Hinga out at second 2b unassisted; Mary Gamble advanced to third.",
+          "Allie Moss singled to right field, RBI (0-0); Talia Jorgensen advanced to third; Mary Gamble scored.",
+          "Allie Moss stole second.",
+          "Gia Schiavone grounded out to p (2-0 BB)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "offense",
+        "plays": [
+          "Emma Luther to 1b for Mary Gamble.",
+          "Sam Mikitka to p for Ashlyn Yeo.",
+          "Riley Caiazza grounded out to 3b (1-2 SBSF).",
+          "Avi Kuperman homered to left field, RBI (2-1 SBB).",
+          "Casey Yacovelli grounded out to ss (2-2 BFBSF).",
+          "Cal Sheehan grounded out to ss (0-1 S)."
+        ]
+      },
+      {
+        "inning": "5th",
+        "half": "defense",
+        "plays": [
+          "Isabelle Hochmuth lined out to 2b (1-0 B).",
+          "Hunter St. Peter singled up the middle (1-0 B).",
+          "Hunter St. Peter stole second.",
+          "Maggie Voliva grounded out to ss (1-1 SB); Hunter St. Peter advanced to third.",
+          "Emma Luther grounded out to ss (1-1 SB)."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "offense",
+        "plays": [
+          "Riley Fasteau singled to shortstop (0-2 SF).",
+          "Aislinn McCoy flied out to cf (0-0).",
+          "Malena Cardinale grounded into double play 2b to ss to 1b (1-1 BF); Riley Fasteau out on the play."
+        ]
+      },
+      {
+        "inning": "6th",
+        "half": "defense",
+        "plays": [
+          "Sam Mikitka reached first on a throwing error by 3b (2-1 BFB).",
+          "Lydia Hinga singled to first base (1-0 B); Sam Mikitka advanced to second.",
+          "Ella Kucala pinch hit for Talia Jorgensen.",
+          "Cal Sheehan to p.",
+          "Kate Regan to dp.",
+          "Lydia Hinga advanced to second on a wild pitch; Sam Mikitka advanced to third on a wild pitch.",
+          "Ella Kucala flied out to cf, sacrifice fly, RBI (1-2 SFB); Sam Mikitka scored, unearned.",
+          "Lydia Hinga advanced to third on a wild pitch.",
+          "Allie Moss grounded out to 2b, RBI (1-0 B); Lydia Hinga scored.",
+          "Molly Ryan pinch hit for Gia Schiavone.",
+          "Molly Ryan doubled down the lf line (1-0 B).",
+          "Isabelle Hochmuth walked (3-2 SBFFBBB); Molly Ryan stole third.",
+          "Hunter St. Peter reached on a fielder's choice (0-0); Isabelle Hochmuth out at second 2b to ss."
+        ]
+      },
+      {
+        "inning": "7th",
+        "half": "offense",
+        "plays": [
+          "Ella Kucala to 2b.",
+          "Molly Ryan to lf.",
+          "Valentina Luciano walked (3-2 BSBSBB).",
+          "Kari Sorensen grounded out to 3b (0-1 S); Valentina Luciano advanced to second.",
+          "Valentina Luciano advanced to third on a wild pitch.",
+          "Riley Caiazza singled to first base, RBI (1-2 SFFBFF); Valentina Luciano scored.",
+          "Riley Caiazza advanced to second on a wild pitch.",
+          "Avi Kuperman struck out swinging (3-2 BBSBSS).",
+          "Casey Yacovelli flied out to cf (0-1 F)."
         ]
       }
     ]

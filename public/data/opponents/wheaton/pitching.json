@@ -1,37 +1,52 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-10T11:27:23.196Z",
+  "scrapedAt": "2026-03-11T11:27:57.583Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "De La Rosa, Sofia",
-      "w": 2,
+      "name": "Blankenheim-Brown, Peyton",
+      "w": 3,
       "l": 0,
-      "era": 0,
-      "app": 2,
-      "gs": 2,
-      "ip": 14,
-      "h": 6,
-      "r": 0,
-      "er": 0,
-      "bb": 1,
-      "so": 22,
+      "era": 1,
+      "app": 3,
+      "gs": 3,
+      "ip": 21,
+      "h": 16,
+      "r": 3,
+      "er": 3,
+      "bb": 2,
+      "so": 14,
       "hr": 0
     },
     {
-      "name": "Blankenheim-Brown, Peyton",
+      "name": "De La Rosa, Sofia",
       "w": 2,
+      "l": 1,
+      "era": 2.37,
+      "app": 3,
+      "gs": 3,
+      "ip": 20.2,
+      "h": 19,
+      "r": 8,
+      "er": 7,
+      "bb": 4,
+      "so": 31,
+      "hr": 1
+    },
+    {
+      "name": "Dost, Brittany",
+      "w": 0,
       "l": 0,
-      "era": 1,
-      "app": 2,
-      "gs": 2,
-      "ip": 14,
-      "h": 11,
-      "r": 2,
-      "er": 2,
-      "bb": 2,
-      "so": 10,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "ip": 0.1,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 0,
+      "so": 0,
       "hr": 0
     }
   ],
@@ -335,6 +350,174 @@
             "Dylan Boles flied out to cf (2-0 BB).",
             "Ashley Palmieri popped up to ss (0-0).",
             "Sophia Alonso grounded out to ss (3-2 BBKBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/washington-and-jefferson-college/boxscore/10116",
+      "date": "3/10/2026",
+      "opponent": "Washington And Jefferson College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Julia DiPietro-Harvey lined out to ss (3-2 FBSBBFFF).",
+            "Sydney VanNess popped up to ss (2-2 BFFB).",
+            "Deanna Gratton singled up the middle (1-2 BFSFFF).",
+            "Hannah Allen grounded out to p (1-2 FBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Anna Luxenberger flied out to lf (0-2 FF).",
+            "Maddie Luxenberger grounded out to 3b (0-0).",
+            "Kaylee Witner lined out to ss (1-2 SFBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Michelle Jellison struck out swinging (0-2 KSS).",
+            "Savannah Bodnar grounded out to 3b (0-0).",
+            "Julia DiPietro-Harvey struck out swinging (2-2 SBFFBFFFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sydney VanNess fouled out to 1b (0-1 F).",
+            "Deanna Gratton flied out to lf (0-0).",
+            "Hannah Allen singled to center field (1-2 FBFF).",
+            "Anna Luxenberger singled to right field (0-0); Hannah Allen advanced to second.",
+            "Maddie Luxenberger singled down the rf line, RBI (1-2 BSF); Anna Luxenberger advanced to third; Hannah Allen scored.",
+            "Braelyn Altman popped up to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Michelle Jellison struck out swinging (0-2 FKS).",
+            "Savannah Bodnar popped up to lf (0-1 K).",
+            "Julia DiPietro-Harvey grounded out to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p.",
+            "Alli Wisnouskas to dp for Peyton Blankenheim-Brown.",
+            "Sydney VanNess grounded out to p (0-1 K).",
+            "Deanna Gratton grounded out to ss (2-2 FBFFFBF).",
+            "Hannah Allen flied out to rf (1-2 FFBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Anna Luxenberger popped up to 1b (1-1 BF).",
+            "Maddie Luxenberger grounded out to 2b (1-1 FB).",
+            "Kaylee Witner pinch hit for Olivia Dyer.",
+            "Kaylee Witner singled to left field (3-2 BSBFBFF).",
+            "Mirranda Rinehart pinch hit for Michelle Jellison.",
+            "Mirranda Rinehart struck out swinging (1-2 SKFHFFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/loras-college/boxscore/10117",
+      "date": "3/10/2026",
+      "opponent": "Loras College",
+      "pitchers": [
+        "De La Rosa, Sofia",
+        "Dost, Brittany"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Katherine Svigelj hit by pitch (0-0).",
+            "Ava Franklin out at first 1b to 2b, SAC (0-0); Katherine Svigelj advanced to second.",
+            "Kaili Henning struck out swinging (0-0).",
+            "Katherine Svigelj advanced to third on a passed ball.",
+            "Dana Skorich popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kiya Steger walked (0-0).",
+            "Alyson Krogman struck out looking (0-0).",
+            "Gillian Jones walked (0-0); Kiya Steger advanced to second.",
+            "Bailey Welu struck out swinging (0-0).",
+            "Ellie Baker walked (0-0); Gillian Jones advanced to second; Kiya Steger advanced to third.",
+            "Katherine Svigelj reached first on an error by ss, RBI (0-0); Ellie Baker advanced to second; Gillian Jones advanced to third; Kiya Steger scored, unearned.",
+            "Ava Franklin flied out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kaili Henning flied out to cf (0-0).",
+            "Dana Skorich singled up the middle (0-0).",
+            "Kiya Steger struck out swinging (0-0).",
+            "Alyson Krogman struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gillian Jones doubled to left center (0-0).",
+            "Bailey Welu struck out swinging (0-0).",
+            "Ellie Baker popped up to 3b (0-0).",
+            "Katherine Svigelj popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ava Franklin singled (0-0).",
+            "Kaili Henning singled to second base (0-0); Ava Franklin advanced to second.",
+            "Dana Skorich popped up to ss (0-0).",
+            "Kiya Steger homered, 3 RBI (0-0); Kaili Henning scored; Ava Franklin scored.",
+            "Ashli Bossom pinch hit for Alyson Krogman.",
+            "Ashli Bossom grounded out to p (0-0).",
+            "Gillian Jones singled to left field (0-0).",
+            "Bailey Welu struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ellie Baker struck out swinging (0-0).",
+            "Katherine Svigelj singled (0-0).",
+            "Ava Franklin flied out to 2b (0-0).",
+            "Kaili Henning singled to right center (0-0); Katherine Svigelj advanced to third.",
+            "Dana Skorich flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kiya Steger struck out looking (0-0).",
+            "Alyson Krogman singled to center field (0-0).",
+            "Gillian Jones flied out to lf (0-0).",
+            "Abigail Cortez pinch hit for Bailey Welu.",
+            "Abigail Cortez doubled to right center, RBI (0-0); Alyson Krogman scored.",
+            "Bailey Welu pinch ran for Abigail Cortez.",
+            "Ellie Baker singled to shortstop (0-0); Bailey Welu advanced to third.",
+            "Ellie Baker stole second.",
+            "Katherine Svigelj singled up the middle, advanced to second on the throw, RBI (0-0); Ellie Baker scored; Bailey Welu scored.",
+            "Ava Franklin singled to center field, RBI (0-0); Katherine Svigelj scored.",
+            "Brittany Dost to p for Sofia DeLaRosa.",
+            "Kaili Henning popped up to 2b (0-0)."
           ]
         }
       ],
