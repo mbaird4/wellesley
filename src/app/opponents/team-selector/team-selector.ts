@@ -17,4 +17,5 @@ export class TeamSelector {
   readonly teams = input.required<TeamEntry[]>();
   readonly floridaTeams = input<TeamEntry[]>([]);
   readonly layout = input<'horizontal' | 'vertical'>('vertical');
+  readonly activeTab = input<string>('vs-wellesley');
 }

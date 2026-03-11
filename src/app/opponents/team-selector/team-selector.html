@@ -2,7 +2,7 @@
   <nav class="flex w-40 shrink-0 flex-col gap-0.5">
     @for (team of teams(); track team.slug) {
       <a
-        [routerLink]="[team.slug]"
+        [routerLink]="[team.slug, activeTab()]"
         routerLinkActive
         #rla="routerLinkActive"
         class="rounded-lg px-3 py-2 text-left text-sm font-medium no-underline transition-colors"
@@ -25,7 +25,7 @@
 
       @for (team of floridaTeams(); track team.slug) {
         <a
-          [routerLink]="[team.slug]"
+          [routerLink]="[team.slug, activeTab()]"
           routerLinkActive
           #rla="routerLinkActive"
           class="rounded-lg px-3 py-2 text-left text-sm font-medium no-underline transition-colors"
@@ -44,7 +44,7 @@
   <nav class="scrollbar-none -mx-2 flex gap-1.5 overflow-x-auto px-2 pb-2">
     @for (team of teams(); track team.slug) {
       <a
-        [routerLink]="[team.slug]"
+        [routerLink]="[team.slug, activeTab()]"
         routerLinkActive
         #rla="routerLinkActive"
         class="shrink-0 rounded-full px-3 py-1.5 text-sm font-medium whitespace-nowrap no-underline transition-colors"
@@ -63,7 +63,7 @@
 
       @for (team of floridaTeams(); track team.slug) {
         <a
-          [routerLink]="[team.slug]"
+          [routerLink]="[team.slug, activeTab()]"
           routerLinkActive
           #rla="routerLinkActive"
           class="shrink-0 rounded-full px-3 py-1.5 text-sm font-medium whitespace-nowrap no-underline transition-colors"
