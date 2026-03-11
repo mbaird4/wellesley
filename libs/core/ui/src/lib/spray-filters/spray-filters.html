@@ -1,35 +1,41 @@
 <!-- Outcome toggles -->
-<div class="filter-group">
-  <span class="filter-group-label">Result</span>
-  <ws-button-toggle
-    [options]="outcomeOptions"
-    [value]="outcomeValue()"
-    [disabledValues]="disabledOutcomes()"
-    (valueChange)="onOutcomeChange($event)"
-  />
-</div>
+@if (!hiddenGroups().has('outcome')) {
+  <div class="filter-group">
+    <span class="filter-group-label">Result</span>
+    <ws-button-toggle
+      [options]="outcomeOptions"
+      [value]="outcomeValue()"
+      [disabledValues]="disabledOutcomes()"
+      (valueChange)="onOutcomeChange($event)"
+    />
+  </div>
+}
 
 <!-- Contact type toggles -->
-<div class="filter-group">
-  <span class="filter-group-label">Contact</span>
-  <ws-button-toggle
-    [options]="contactOptions"
-    [value]="contactValue()"
-    [disabledValues]="disabledContactTypes()"
-    (valueChange)="onContactChange($event)"
-  />
-</div>
+@if (!hiddenGroups().has('contact')) {
+  <div class="filter-group">
+    <span class="filter-group-label">Contact</span>
+    <ws-button-toggle
+      [options]="contactOptions"
+      [value]="contactValue()"
+      [disabledValues]="disabledContactTypes()"
+      (valueChange)="onContactChange($event)"
+    />
+  </div>
+}
 
 <!-- Contact quality toggles -->
-<div class="filter-group">
-  <span class="filter-group-label">Quality</span>
-  <ws-button-toggle
-    [options]="qualityOptions"
-    [value]="qualityValue()"
-    [disabledValues]="disabledQualities()"
-    (valueChange)="onQualityChange($event)"
-  />
-</div>
+@if (!hiddenGroups().has('quality')) {
+  <div class="filter-group">
+    <span class="filter-group-label">Quality</span>
+    <ws-button-toggle
+      [options]="qualityOptions"
+      [value]="qualityValue()"
+      [disabledValues]="disabledQualities()"
+      (valueChange)="onQualityChange($event)"
+    />
+  </div>
+}
 
 <!-- Out count toggles -->
 <div class="filter-group">

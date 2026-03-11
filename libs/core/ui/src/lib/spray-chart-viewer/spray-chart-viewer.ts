@@ -22,6 +22,7 @@ export const SPRAY_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i)
 const VIEW_MODE_OPTIONS: ToggleOption[] = [
   { value: 'combined', label: 'Combined' },
   { value: 'split', label: 'Split' },
+  { value: 'contact', label: 'Contact' },
 ];
 
 const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
@@ -173,7 +174,7 @@ export class SprayChartViewer {
   readonly includeUnmatchedRoster = input(false);
   readonly printTitle = input('');
 
-  readonly viewMode = signal<'split' | 'combined'>('combined');
+  readonly viewMode = signal<'split' | 'combined' | 'contact'>('combined');
   readonly selectedYears = signal<string[]>([String(CURRENT_YEAR)]);
   readonly viewModeOptions = VIEW_MODE_OPTIONS;
   readonly yearOptions = YEAR_OPTIONS;
@@ -199,6 +200,20 @@ export class SprayChartViewer {
     const sorted = this.printSortedPlayers();
 
     return sorted.length > 0 ? sorted : this.allPlayerSummaries();
+  });
+
+  readonly filterHiddenGroups = computed(() => (this.viewMode() === 'contact' ? new Set(['outcome', 'contact', 'quality']) : new Set<string>()));
+
+  readonly contactPanels = computed(() => {
+    const data = this.selectedYears().flatMap((y) => this.dataByYear().get(Number(y)) ?? []);
+    const f = this.filters();
+    const base = { playerName: f.playerName, outCount: f.outCount, risp: f.risp ?? undefined };
+
+    return [
+      { label: 'Hard Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['hard'] }) },
+      { label: 'Weak Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['weak'] }) },
+      { label: 'All Contact', summary: computeSprayZones(data, base) },
+    ];
   });
 
   readonly hasNonDefaultFilters = computed(() => {
@@ -361,7 +376,16 @@ export class SprayChartViewer {
   }
 
   onViewModeChange(value: string[] | string): void {
-    this.viewMode.set(value as 'split' | 'combined');
+    const mode = value as 'split' | 'combined' | 'contact';
+    this.viewMode.set(mode);
+
+    // Reset outcome/contact/quality filters when switching to or from contact mode
+    this.filters.update((f) => ({
+      ...f,
+      outcomes: [...ALL_OUTCOMES],
+      contactTypes: [...ALL_CONTACT_TYPES],
+      contactQualities: [...ALL_CONTACT_QUALITIES],
+    }));
   }
 
   onYearChange(values: string[] | string): void {

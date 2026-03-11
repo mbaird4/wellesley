@@ -116,6 +116,7 @@ export function computeEffectiveFilters(f: SprayFilterState): SprayFilterOptions
 export class SprayFilters {
   players = input.required<string[]>();
   filters = input.required<SprayFilterState>();
+  hiddenGroups = input<Set<string>>(new Set());
 
   filterChange = output<SprayFilterState>();
 
