@@ -40,13 +40,43 @@
         <tr>
           <td class="sticky-col">{{ row.lineupSlot }}</td>
           @for (sit of situations; track sit.key) {
-            <td>{{ row.situations[sit.key][0] }}</td>
-            <td>{{ row.situations[sit.key][1] }}</td>
-            <td [class]="showTotals() ? '' : 'last-in-group'">
+            <td
+              [class]="
+                outlierMap() | outlierClass: row.lineupSlot : sit.key : 0
+              "
+            >
+              {{ row.situations[sit.key][0] }}
+            </td>
+            <td
+              [class]="
+                outlierMap() | outlierClass: row.lineupSlot : sit.key : 1
+              "
+            >
+              {{ row.situations[sit.key][1] }}
+            </td>
+            <td
+              [class]="
+                outlierMap()
+                  | outlierClass
+                    : row.lineupSlot
+                    : sit.key
+                    : 2
+                    : (showTotals() ? '' : 'last-in-group')
+              "
+            >
               {{ row.situations[sit.key][2] }}
             </td>
             @if (showTotals()) {
-              <td class="last-in-group">
+              <td
+                [class]="
+                  outlierMap()
+                    | outlierClass
+                      : row.lineupSlot
+                      : sit.key
+                      : 'total'
+                      : 'last-in-group'
+                "
+              >
                 {{
                   row.situations[sit.key][0] +
                     row.situations[sit.key][1] +

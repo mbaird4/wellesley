@@ -576,6 +576,25 @@
     box-shadow: inset 0 0 12px rgba(239, 68, 68, 0.08);
   }
 
+  /* ── Outlier highlighting (base-runner table) ── */
+  .outlier-high-strong {
+    background: rgba(34, 197, 94, 0.18);
+    color: rgb(134, 239, 172);
+  }
+
+  .outlier-high-mild {
+    background: rgba(34, 197, 94, 0.08);
+  }
+
+  .outlier-low-strong {
+    background: rgba(239, 68, 68, 0.18);
+    color: rgb(252, 165, 165);
+  }
+
+  .outlier-low-mild {
+    background: rgba(239, 68, 68, 0.08);
+  }
+
   /* ── Woba player table (hover states requiring nesting) ── */
   .woba-table .player-row {
     @apply cursor-pointer;

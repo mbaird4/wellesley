@@ -1,6 +1,7 @@
 export * from './lib/parsing/parse-play';
 export * from './lib/processing/base-runner-stats';
 export * from './lib/processing/handedness-splits';
+export * from './lib/processing/outlier-stats';
 export * from './lib/processing/pitcher-stats';
 export * from './lib/processing/pitcher-tracking';
 export * from './lib/processing/process-game-snapshots';

@@ -1,7 +1,9 @@
 import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { BaseRunnerMode, BaseRunnerRow, BaseSituation } from '@ws/core/models';
+import { computeOutlierMap } from '@ws/core/processors';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
+import { OutlierClassPipe } from '../pipes/outlier-class.pipe';
 
 const SITUATIONS: { key: BaseSituation; label: string }[] = [
   { key: 'empty', label: 'No one on' },
@@ -22,7 +24,10 @@ const MODE_OPTIONS: ToggleOption[] = [
 @Component({
   selector: 'ws-base-runner-table',
   standalone: true,
-  imports: [ButtonToggle],
+  imports: [
+    ButtonToggle,
+    OutlierClassPipe,
+  ],
   templateUrl: './base-runner-table.html',
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -41,4 +46,5 @@ export class BaseRunnerTable {
   readonly modeOptions = MODE_OPTIONS;
 
   readonly activeRows = computed(() => (this.mode() === 'at-bat-start' ? this.rowsAtBatStart() : this.rows()));
+  readonly outlierMap = computed(() => computeOutlierMap(this.activeRows()));
 }
