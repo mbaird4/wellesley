@@ -8,7 +8,7 @@ import { VsWellesleyView } from '../vs-wellesley/vs-wellesley-view';
   standalone: true,
   imports: [VsWellesleyView],
   host: { class: 'block' },
-  template: ` <ws-vs-wellesley-view [data]="data.vsWellesleyData()" [loading]="data.vsWellesleyLoading()" [teamName]="data.selectedTeamName()" [wellesleyRosterNames]="data.wellesleyRosterNames()" /> `,
+  template: ` <ws-vs-wellesley-view [data]="data.vsWellesleyData()" [loading]="data.vsWellesleyLoading()" [teamName]="data.selectedTeamName()" [wellesleyRosterNames]="data.wellesleyRosterNames()" [pitcherOrder]="data.wellesleyPitcherOrder()" /> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VsWellesleyTab {

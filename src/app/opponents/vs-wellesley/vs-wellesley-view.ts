@@ -26,9 +26,8 @@ import { VsWellesleyTable } from './vs-wellesley-table';
         </div>
 
         <div class="flex flex-wrap gap-1.5">
-          <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="selectedPitcher() === null ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(null)">All</button>
           @for (pitcher of filteredPitchers(); track pitcher) {
-            <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="selectedPitcher() === pitcher ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(pitcher)">
+            <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="activePitcher() === pitcher ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(pitcher)">
               {{ pitcher }}
             </button>
           }
@@ -48,23 +47,27 @@ export class VsWellesleyView {
   readonly loading = input(false);
   readonly teamName = input('');
   readonly wellesleyRosterNames = input<Set<string>>(new Set());
+  readonly pitcherOrder = input<string[]>([]);
 
   readonly selectedPitcher = signal<string | null>(null);
 
   readonly filteredPitchers = computed<string[]>(() => {
     const d = this.data();
     const roster = this.wellesleyRosterNames();
+    const order = this.pitcherOrder();
 
     if (!d) {
       return [];
     }
 
-    if (roster.size === 0) {
-      return d.wellesleyPitchers;
-    }
+    const pitchers = roster.size === 0 ? d.wellesleyPitchers : d.wellesleyPitchers.filter((p) => roster.has(p.toLowerCase().replace(/\./g, '')));
 
-    return d.wellesleyPitchers.filter((p) => roster.has(p.toLowerCase().replace(/\./g, '')));
+    const pitcherSet = new Set(pitchers);
+
+    return order.filter((p) => pitcherSet.has(p));
   });
+
+  readonly activePitcher = computed<string | null>(() => this.selectedPitcher() ?? this.filteredPitchers()[0] ?? null);
 
   readonly displayStats = computed<BatterVsStats[]>(() => {
     const d = this.data();
@@ -73,7 +76,7 @@ export class VsWellesleyView {
       return [];
     }
 
-    const pitcher = this.selectedPitcher();
+    const pitcher = this.activePitcher();
 
     if (pitcher === null) {
       return d.overall;

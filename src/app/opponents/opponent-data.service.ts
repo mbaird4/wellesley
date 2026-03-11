@@ -34,6 +34,7 @@ export class OpponentDataService {
   readonly vsWellesleyData = signal<VsWellesleyData | null>(null);
   readonly vsWellesleyLoading = signal(false);
   readonly wellesleyRosterNames = signal<Set<string>>(new Set());
+  readonly wellesleyPitcherOrder = signal<string[]>([]);
 
   readonly selectedTeamName = computed(() => this.teams.find((t) => t.slug === this.slug())?.name ?? '');
 
@@ -262,6 +263,23 @@ export class OpponentDataService {
         const valid = results.filter((r): r is YearPitchingData => r !== null);
         const merged = mergePitchingYears(valid);
         this.vsWellesleyData.set(computeVsWellesleyStats(merged.games, opponentNames));
+
+        // Compute career BF per pitcher from stats page totals
+        if (this.wellesleyPitcherOrder().length === 0) {
+          const bfByPitcher = new Map<string, number>();
+          Object.values(merged.pitchingStatsByYear).forEach((stats) => {
+            stats.forEach((s) => {
+              const bf = s.ab + s.bb + s.hbp + s.sfa + s.sha;
+              bfByPitcher.set(s.name, (bfByPitcher.get(s.name) ?? 0) + bf);
+            });
+          });
+          this.wellesleyPitcherOrder.set(
+            Array.from(bfByPitcher.entries())
+              .sort((a, b) => b[1] - a[1])
+              .map(([name]) => name)
+          );
+        }
+
         this.vsWellesleyLoading.set(false);
       },
       error: () => {
