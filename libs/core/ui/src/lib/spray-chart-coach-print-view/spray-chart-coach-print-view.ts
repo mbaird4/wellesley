@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { SprayZone } from '@ws/core/models';
 import { getContactQuality } from '@ws/core/processors';
+import { range } from '@ws/core/util';
 
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 import { SprayField } from '../spray-field/spray-field';
@@ -96,7 +97,7 @@ export class SprayChartCoachPrintView {
     return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
   });
 
-  readonly noteLines = Array.from({ length: 4 }, (_, i) => i + 1);
+  readonly noteLines = range(4);
 
   readonly rows = computed<CoachRow[]>(() =>
     this.players().map((p) => {

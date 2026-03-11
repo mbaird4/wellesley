@@ -12,52 +12,107 @@
     No pitchers found in data.
   </div>
 } @else {
-  @if (bp.gtSm()) {
-    <!-- Desktop: sidebar pitcher list + stats panels -->
-    <div class="flex gap-6">
+  @if (!bp.printing()) {
+    @if (bp.gtSm()) {
+      <!-- Desktop: sidebar pitcher list + stats panels -->
+      <div class="flex gap-6">
+        <ws-pitcher-selector
+          layout="vertical"
+          [pitchers]="pitcherList()"
+          [jerseyMap]="jerseyMap()"
+          [selectedPitcher]="effectivePitcher()"
+          (pitcherSelected)="selectPitcher($event)"
+        />
+
+        <div class="flex min-w-0 flex-1 flex-col gap-4">
+          <ws-sticky-player-header
+            [name]="effectivePitcher()!"
+            [jerseyNumber]="jerseyNumber()"
+            [subtitle]="teamName()"
+          >
+            @if (availableYears().length >= 1) {
+              <div class="flex flex-wrap items-center gap-1.5">
+                <button
+                  class="filter-btn"
+                  [class.active]="selectedYear() === 'all'"
+                  (click)="selectYear('all')"
+                >
+                  Career
+                </button>
+                @for (year of availableYears(); track year) {
+                  <button
+                    class="filter-btn"
+                    [class.active]="selectedYear() === year"
+                    (click)="selectYear(year)"
+                  >
+                    {{ year }}
+                  </button>
+                }
+                <button
+                  class="filter-btn print:hidden"
+                  (click)="onPrint()"
+                  title="Print pitcher scouting sheets"
+                >
+                  <i class="fa-solid fa-print"></i>
+                </button>
+              </div>
+            }
+          </ws-sticky-player-header>
+
+          <ws-pitcher-overview [data]="rawStats()" />
+
+          @if (seasonSummary(); as summary) {
+            <ws-inning-breakdown
+              [byInning]="summary.byInning"
+              [totals]="summary.totals"
+            />
+
+            <ws-inning-detail
+              [gameLogs]="summary.gameLogs"
+              [byInning]="summary.byInning"
+            />
+
+            <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
+          }
+        </div>
+      </div>
+    } @else {
+      <!-- Mobile: stacked layout -->
       <ws-pitcher-selector
-        layout="vertical"
-        [pitchers]="pitcherList()"
+        layout="horizontal"
         [jerseyMap]="jerseyMap()"
+        [pitchers]="pitcherList()"
         [selectedPitcher]="effectivePitcher()"
         (pitcherSelected)="selectPitcher($event)"
       />
 
-      <div class="flex min-w-0 flex-1 flex-col gap-4">
-        <ws-sticky-player-header
-          [name]="effectivePitcher()!"
-          [jerseyNumber]="jerseyNumber()"
-          [subtitle]="teamName()"
-        >
-          @if (availableYears().length >= 1) {
-            <div class="flex flex-wrap items-center gap-1.5">
+      <ws-sticky-player-header
+        [name]="effectivePitcher()!"
+        [jerseyNumber]="jerseyNumber()"
+      >
+        @if (availableYears().length > 1) {
+          <div class="flex flex-wrap items-center gap-1.5">
+            <button
+              class="filter-btn"
+              [class.active]="selectedYear() === 'all'"
+              (click)="selectYear('all')"
+            >
+              All
+            </button>
+            @for (year of availableYears(); track year) {
               <button
                 class="filter-btn"
-                [class.active]="selectedYear() === 'all'"
-                (click)="selectYear('all')"
+                [class.active]="selectedYear() === year"
+                (click)="selectYear(year)"
               >
-                Career
+                {{ year }}
               </button>
-              @for (year of availableYears(); track year) {
-                <button
-                  class="filter-btn"
-                  [class.active]="selectedYear() === year"
-                  (click)="selectYear(year)"
-                >
-                  {{ year }}
-                </button>
-              }
-              <button
-                class="filter-btn print:hidden"
-                (click)="onPrint()"
-                title="Print pitcher scouting sheets"
-              >
-                <i class="fa-solid fa-print"></i>
-              </button>
-            </div>
-          }
-        </ws-sticky-player-header>
+            }
+          </div>
+        }
+      </ws-sticky-player-header>
 
+      <div class="flex flex-col gap-3">
         <ws-pitcher-overview [data]="rawStats()" />
 
         @if (seasonSummary(); as summary) {
@@ -74,60 +129,7 @@
           <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
         }
       </div>
-    </div>
-  } @else {
-    <!-- Mobile: stacked layout -->
-    <ws-pitcher-selector
-      layout="horizontal"
-      [jerseyMap]="jerseyMap()"
-      [pitchers]="pitcherList()"
-      [selectedPitcher]="effectivePitcher()"
-      (pitcherSelected)="selectPitcher($event)"
-    />
-
-    <ws-sticky-player-header
-      [name]="effectivePitcher()!"
-      [jerseyNumber]="jerseyNumber()"
-    >
-      @if (availableYears().length > 1) {
-        <div class="flex flex-wrap items-center gap-1.5">
-          <button
-            class="filter-btn"
-            [class.active]="selectedYear() === 'all'"
-            (click)="selectYear('all')"
-          >
-            All
-          </button>
-          @for (year of availableYears(); track year) {
-            <button
-              class="filter-btn"
-              [class.active]="selectedYear() === year"
-              (click)="selectYear(year)"
-            >
-              {{ year }}
-            </button>
-          }
-        </div>
-      }
-    </ws-sticky-player-header>
-
-    <div class="flex flex-col gap-3">
-      <ws-pitcher-overview [data]="rawStats()" />
-
-      @if (seasonSummary(); as summary) {
-        <ws-inning-breakdown
-          [byInning]="summary.byInning"
-          [totals]="summary.totals"
-        />
-
-        <ws-inning-detail
-          [gameLogs]="summary.gameLogs"
-          [byInning]="summary.byInning"
-        />
-
-        <ws-pitcher-game-log [gameLogs]="summary.gameLogs" />
-      }
-    </div>
+    }
   }
 
   <ws-pitcher-scouting-print-view

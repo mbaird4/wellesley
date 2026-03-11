@@ -264,6 +264,12 @@ export class PitcherAnalysis {
   }
 
   onPrint(): void {
-    window.print();
+    this.bp.printing.set(true);
+
+    // Wait a tick so Angular renders the print view before the browser captures it
+    setTimeout(() => {
+      window.print();
+      this.bp.printing.set(false);
+    });
   }
 }

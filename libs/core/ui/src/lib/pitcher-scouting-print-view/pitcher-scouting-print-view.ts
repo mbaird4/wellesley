@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { PitchingData, PitchingStats, Roster } from '@ws/core/models';
+import { range } from '@ws/core/util';
 
+const CARDS_PER_PAGE = 3;
 const PITCH_TYPES = ['Fast', 'Change', 'Screw', 'Curve', 'Drop', 'Rise', 'Crop', 'Scrize'];
 
 const STAT_DEFS: { key: keyof PitchingStats; label: string }[] = [
@@ -31,7 +33,7 @@ function formatStatValue(stats: PitchingStats | null, key: keyof PitchingStats):
     return '___';
   }
 
-  const val = stats[key];
+  const val = stats[key] ?? 0;
 
   if (key === 'era') {
     return (val as number).toFixed(2);
@@ -44,7 +46,7 @@ function formatStatValue(stats: PitchingStats | null, key: keyof PitchingStats):
   selector: 'ws-pitcher-scouting-print-view',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'hidden print:block print:text-black print:bg-white break-before-page' },
+  host: { class: 'block text-black bg-white' },
   templateUrl: './pitcher-scouting-print-view.html',
 })
 export class PitcherScoutingPrintView {
@@ -54,8 +56,8 @@ export class PitcherScoutingPrintView {
   readonly title = input('');
 
   readonly pitchTypes = PITCH_TYPES;
-  readonly noteLines = [1, 2, 3];
-  readonly strategyLines = [1, 2, 3];
+  readonly noteLines = range(6);
+  readonly strategyLines = range(6);
 
   readonly printDate = computed(() => {
     const d = new Date();
@@ -93,7 +95,7 @@ export class PitcherScoutingPrintView {
       }
     });
 
-    return names.map((name) => {
+    return names.map<PitcherCard>((name) => {
       const key = name.toLowerCase().replace(/\./g, '');
       const rosterEntry = roster ? Object.entries(roster).find(([k]) => k === key)?.[1] : null;
       const prev = prevStats.find((p) => p.name === name) ?? null;
@@ -114,5 +116,12 @@ export class PitcherScoutingPrintView {
         stats,
       };
     });
+  });
+
+  readonly pages = computed<PitcherCard[][]>(() => {
+    const cards = this.pitcherCards();
+    const pageCount = Math.ceil(cards.length / CARDS_PER_PAGE);
+
+    return Array.from({ length: pageCount }, (_, i) => cards.slice(i * CARDS_PER_PAGE, (i + 1) * CARDS_PER_PAGE));
   });
 }

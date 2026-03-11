@@ -21,6 +21,9 @@ export class BreakpointService {
   /** Current largest matching breakpoint */
   readonly activeBreakpoint = signal<string | null>(null);
 
+  /** True when in print media (print preview or actual printing) */
+  readonly printing = signal(false);
+
   readonly xs = computed(() => this.activeBreakpoint() === 'xs');
   readonly sm = computed(() => this.activeBreakpoint() === 'sm');
   readonly md = computed(() => this.activeBreakpoint() === 'md');

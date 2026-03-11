@@ -7,7 +7,7 @@ import { asyncScheduler, fromEvent, throttleTime } from 'rxjs';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'sticky-player-header sticky z-20 block transition-[background-color,box-shadow,width,margin-left,padding,top] duration-150 w-auto stuck:w-screen stuck:py-2',
+    class: 'sticky-player-header sticky z-20 block transition-[background-color,box-shadow,width,margin-left,padding,top] duration-150 w-auto stuck:w-screen stuck:py-2 print:hidden!',
     '[attr.data-state]': 'state()',
     '[style.top]': '"var(--header-height, 0px)"',
     '[style.margin-left.px]': 'isStuck() ? -leftOffset() : null',
