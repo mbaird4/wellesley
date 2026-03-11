@@ -1,0 +1,242 @@
+@if (bp.gtSm()) {
+  <div class="bg-surface-card border-line overflow-hidden rounded-xl border">
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse text-sm">
+        <thead>
+          <!-- Group headers -->
+          <tr class="border-line border-b">
+            <th
+              class="border-line text-content-dim border-r py-1.5 pr-3 pl-4 text-left text-[10px] font-semibold tracking-widest uppercase"
+              colspan="3"
+            ></th>
+            <th
+              class="border-line text-brand-text/70 border-r py-1.5 text-center text-[10px] font-semibold tracking-widest uppercase"
+              colspan="6"
+            >
+              Reached Base
+            </th>
+            <th
+              class="border-line text-content-dim border-r py-1.5 text-center text-[10px] font-semibold tracking-widest uppercase"
+              colspan="5"
+            >
+              Outs
+            </th>
+            <th
+              class="text-content-dim py-1.5 text-center text-[10px] font-semibold tracking-widest uppercase"
+              colspan="3"
+            >
+              Other
+            </th>
+          </tr>
+          <!-- Column headers -->
+          <tr class="border-line border-b">
+            <th
+              class="text-content-muted py-2 pr-3 pl-4 text-left text-xs font-medium"
+            >
+              Batter
+            </th>
+            <th
+              class="text-content-muted px-2 py-2 text-center text-xs font-medium"
+            >
+              PA
+            </th>
+            <th
+              class="border-line text-content-muted border-r px-2 py-2 text-center text-xs font-medium"
+            >
+              AVG
+            </th>
+            @for (col of reachingCols; track col.key) {
+              <th
+                class="text-content-muted px-2 py-2 text-center text-xs font-medium"
+                [class.border-r]="$last"
+                [class.border-line]="$last"
+              >
+                {{ col.label }}
+              </th>
+            }
+            @for (col of outCols; track col.key) {
+              <th
+                class="text-content-muted px-2 py-2 text-center text-xs font-medium"
+                [class.border-r]="$last"
+                [class.border-line]="$last"
+              >
+                {{ col.label }}
+              </th>
+            }
+            @for (col of miscCols; track col.key) {
+              <th
+                class="text-content-muted px-2 py-2 text-center text-xs font-medium"
+              >
+                {{ col.label }}
+              </th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of rows(); track row.name) {
+            <ng-container
+              *ngTemplateOutlet="desktopRow; context: { $implicit: row }"
+            />
+          }
+        </tbody>
+        @if (totals(); as t) {
+          <tfoot>
+            <ng-container
+              *ngTemplateOutlet="desktopRow; context: { $implicit: t }"
+            />
+          </tfoot>
+        }
+      </table>
+    </div>
+  </div>
+} @else {
+  <!-- Mobile cards -->
+  <div class="flex flex-col gap-3">
+    @for (row of rows(); track row.name) {
+      <div class="bg-surface-card border-line p-card rounded-xl border">
+        <!-- Header: name + PA + AVG -->
+        <div class="flex items-baseline justify-between gap-2">
+          <span class="text-content-bright font-semibold">
+            {{ row.name }}
+          </span>
+          <div class="flex items-baseline gap-3 tabular-nums">
+            <span class="text-content-dim text-xs">{{ row.avg }} AVG</span>
+            <span class="text-content-muted text-xs font-medium">
+              {{ row.pa }} PA
+            </span>
+          </div>
+        </div>
+
+        <!-- Reaching -->
+        @if (row.hits > 0 || row.walks > 0 || row.hbp > 0) {
+          <div class="flex flex-col gap-1 pt-2">
+            <span
+              class="text-brand-text/70 text-[10px] font-semibold tracking-widest uppercase"
+            >
+              Reached
+            </span>
+            <div class="flex flex-wrap gap-1.5">
+              @for (col of reachingCols; track col.key) {
+                @if (row[col.key]) {
+                  <span
+                    class="bg-brand-bg-subtle text-brand-text rounded-md px-2 py-0.5 text-xs font-medium tabular-nums"
+                  >
+                    {{ row[col.key] }} {{ col.label }}
+                  </span>
+                }
+              }
+            </div>
+          </div>
+        }
+
+        <!-- Outs -->
+        @if (row.outs > 0) {
+          <div class="flex flex-col gap-1 pt-2">
+            <span
+              class="text-content-dim text-[10px] font-semibold tracking-widest uppercase"
+            >
+              Outs
+            </span>
+            <div class="flex flex-wrap gap-1.5">
+              @for (col of outCols; track col.key) {
+                @if (row[col.key]) {
+                  <span
+                    class="bg-surface-elevated text-content-secondary rounded-md px-2 py-0.5 text-xs font-medium tabular-nums"
+                  >
+                    {{ row[col.key] }} {{ col.label }}
+                  </span>
+                }
+              }
+              @if (row.doublePlays) {
+                <span
+                  class="bg-surface-elevated text-content-secondary rounded-md px-2 py-0.5 text-xs font-medium tabular-nums"
+                >
+                  {{ row.doublePlays }} DP
+                </span>
+              }
+            </div>
+          </div>
+        }
+
+        <!-- Sac -->
+        @if (row.sacFlies || row.sacBunts) {
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            @if (row.sacFlies) {
+              <span
+                class="bg-surface-elevated text-content-muted rounded-md px-2 py-0.5 text-xs tabular-nums"
+              >
+                {{ row.sacFlies }} SF
+              </span>
+            }
+            @if (row.sacBunts) {
+              <span
+                class="bg-surface-elevated text-content-muted rounded-md px-2 py-0.5 text-xs tabular-nums"
+              >
+                {{ row.sacBunts }} SH
+              </span>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+}
+
+<!-- Shared desktop row template -->
+<ng-template #desktopRow let-row>
+  <tr
+    class="border-line border-b transition-colors"
+    [class]="
+      row.isTotals
+        ? 'bg-surface-overlay font-semibold'
+        : 'hover:bg-surface-elevated'
+    "
+  >
+    <td
+      class="py-2.5 pr-3 pl-4 font-medium"
+      [class]="row.isTotals ? 'text-content-bright' : 'text-content-secondary'"
+    >
+      {{ row.name }}
+    </td>
+    <td
+      class="text-content-bright px-2 py-2.5 text-center font-bold tabular-nums"
+    >
+      {{ row.pa }}
+    </td>
+    <td
+      class="border-line text-content-bright border-r px-2 py-2.5 text-center font-medium tabular-nums"
+    >
+      {{ row.avg }}
+    </td>
+    @for (col of reachingCols; track col.key) {
+      <td
+        class="px-2 py-2.5 text-center tabular-nums"
+        [class.border-r]="$last"
+        [class.border-line]="$last"
+        [class]="
+          row[col.key] ? 'text-brand-text font-medium' : 'text-content-empty'
+        "
+      >
+        {{ row[col.key] || '·' }}
+      </td>
+    }
+    @for (col of outCols; track col.key) {
+      <td
+        class="px-2 py-2.5 text-center tabular-nums"
+        [class.border-r]="$last"
+        [class.border-line]="$last"
+        [class]="row[col.key] ? 'text-content-secondary' : 'text-content-empty'"
+      >
+        {{ row[col.key] || '·' }}
+      </td>
+    }
+    @for (col of miscCols; track col.key) {
+      <td
+        class="px-2 py-2.5 text-center tabular-nums"
+        [class]="row[col.key] ? 'text-content-muted' : 'text-content-empty'"
+      >
+        {{ row[col.key] || '·' }}
+      </td>
+    }
+  </tr>
+</ng-template>

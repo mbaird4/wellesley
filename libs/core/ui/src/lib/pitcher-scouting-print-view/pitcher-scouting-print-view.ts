@@ -71,7 +71,7 @@ export class PitcherScoutingPrintView {
     const roster = this.roster();
     const rosterNames = this.rosterNames();
 
-    if (!data) {
+    if (!data || rosterNames.size === 0) {
       return [];
     }
 
@@ -87,7 +87,7 @@ export class PitcherScoutingPrintView {
     allPitchers.forEach((p) => {
       const key = p.name.toLowerCase().replace(/\./g, '');
 
-      if (!seen.has(key) && (rosterNames.size === 0 || rosterNames.has(key))) {
+      if (!seen.has(key) && rosterNames.has(key)) {
         seen.add(key);
         names.push(p.name);
       }

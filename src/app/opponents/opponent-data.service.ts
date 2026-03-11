@@ -33,6 +33,7 @@ export class OpponentDataService {
   readonly roster = signal<Roster | null>(null);
   readonly vsWellesleyData = signal<VsWellesleyData | null>(null);
   readonly vsWellesleyLoading = signal(false);
+  readonly wellesleyRosterNames = signal<Set<string>>(new Set());
 
   readonly selectedTeamName = computed(() => this.teams.find((t) => t.slug === this.slug())?.name ?? '');
 
@@ -171,6 +172,12 @@ export class OpponentDataService {
   readonly empty = computed(() => this.displayRows().length === 0 && !this.loading() && !this.error());
 
   constructor() {
+    this.softballData.getRoster().subscribe({
+      next: (roster) => {
+        this.wellesleyRosterNames.set(new Set(Object.keys(roster)));
+      },
+    });
+
     effect(() => {
       const slug = this.slug();
       if (!slug) {

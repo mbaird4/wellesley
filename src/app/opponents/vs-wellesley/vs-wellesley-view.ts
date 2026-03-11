@@ -27,7 +27,7 @@ import { VsWellesleyTable } from './vs-wellesley-table';
 
         <div class="flex flex-wrap gap-1.5">
           <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="selectedPitcher() === null ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(null)">All</button>
-          @for (pitcher of d.wellesleyPitchers; track pitcher) {
+          @for (pitcher of filteredPitchers(); track pitcher) {
             <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="selectedPitcher() === pitcher ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(pitcher)">
               {{ pitcher }}
             </button>
@@ -47,8 +47,24 @@ export class VsWellesleyView {
   readonly data = input<VsWellesleyData | null>(null);
   readonly loading = input(false);
   readonly teamName = input('');
+  readonly wellesleyRosterNames = input<Set<string>>(new Set());
 
   readonly selectedPitcher = signal<string | null>(null);
+
+  readonly filteredPitchers = computed<string[]>(() => {
+    const d = this.data();
+    const roster = this.wellesleyRosterNames();
+
+    if (!d) {
+      return [];
+    }
+
+    if (roster.size === 0) {
+      return d.wellesleyPitchers;
+    }
+
+    return d.wellesleyPitchers.filter((p) => roster.has(p.toLowerCase().replace(/\./g, '')));
+  });
 
   readonly displayStats = computed<BatterVsStats[]>(() => {
     const d = this.data();

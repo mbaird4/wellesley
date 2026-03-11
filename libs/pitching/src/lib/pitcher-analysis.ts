@@ -56,7 +56,7 @@ export class PitcherAnalysis {
       .sort((a, b) => b - a);
   });
 
-  /** Pitcher names from the most recent year, filtered to current roster */
+  /** Pitcher names across all years, filtered to current roster */
   readonly pitcherList = computed<PitcherOption[]>(() => {
     const data = this.pitchingData();
 
@@ -65,24 +65,26 @@ export class PitcherAnalysis {
     }
 
     const roster = this.rosterNames();
-    const latestYear = Object.keys(data.pitchingStatsByYear)
+
+    // Collect unique pitcher names across all years (most recent year first)
+    const seen = new Set<string>();
+    const pitchers: PitcherOption[] = [];
+
+    Object.keys(data.pitchingStatsByYear)
       .map(Number)
       .sort((a, b) => b - a)
-      .find((y) => (data.pitchingStatsByYear[String(y)]?.length ?? 0) > 0);
+      .forEach((year) => {
+        (data.pitchingStatsByYear[String(year)] ?? []).forEach((p) => {
+          const key = p.name.toLowerCase().replace(/\./g, '');
 
-    if (latestYear === undefined) {
-      return [];
-    }
+          if (!seen.has(key) && (roster.size === 0 || roster.has(key))) {
+            seen.add(key);
+            pitchers.push({ name: p.name, label: p.name });
+          }
+        });
+      });
 
-    const pitchers = data.pitchingStatsByYear[String(latestYear)] ?? [];
-
-    // Filter to only pitchers still on the roster (if roster data available)
-    const filtered = roster.size > 0 ? pitchers.filter((p) => roster.has(p.name.toLowerCase().replace(/\./g, ''))) : pitchers;
-
-    return filtered.map((p) => ({
-      name: p.name,
-      label: p.name,
-    }));
+    return pitchers;
   });
 
   /** Auto-select first pitcher when list changes */
