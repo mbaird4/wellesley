@@ -1,7 +1,7 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-02T22:26:19.976Z",
+  "scrapedAt": "2026-03-11T15:35:07.991Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1.64,
       "app": 33,
       "gs": 24,
+      "cg": 17,
+      "sho": 7,
+      "sv": 4,
       "ip": 170.2,
       "h": 134,
       "r": 50,
       "er": 40,
       "bb": 69,
       "so": 170,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.19,
+      "doubles": 22,
+      "triples": 5,
+      "ab": 624,
+      "bAvg": 0.215,
+      "wp": 7,
+      "hbp": 6,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 20
     },
     {
       "name": "O'Connor, Becca",
@@ -26,13 +39,26 @@
       "era": 2.92,
       "app": 20,
       "gs": 16,
+      "cg": 9,
+      "sho": 3,
+      "sv": 1,
       "ip": 91,
       "h": 100,
       "r": 38,
       "er": 38,
       "bb": 12,
       "so": 36,
-      "hr": 5
+      "hr": 5,
+      "whip": 1.23,
+      "doubles": 13,
+      "triples": 2,
+      "ab": 366,
+      "bAvg": 0.273,
+      "wp": 1,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 4
     },
     {
       "name": "Torres, Deb",
@@ -41,13 +67,26 @@
       "era": 4.1,
       "app": 10,
       "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 27.1,
       "h": 30,
       "r": 17,
       "er": 16,
       "bb": 11,
       "so": 4,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.5,
+      "doubles": 5,
+      "triples": 1,
+      "ab": 111,
+      "bAvg": 0.27,
+      "wp": 1,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 0
     },
     {
       "name": "Doering, Nicole",
@@ -56,13 +95,26 @@
       "era": 16.8,
       "app": 2,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 1.2,
       "h": 2,
       "r": 4,
       "er": 4,
       "bb": 8,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 6,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 6,
+      "bAvg": 0.333,
+      "wp": 4,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Katsuyama, Katie",
@@ -71,13 +123,26 @@
       "era": 18.37,
       "app": 2,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 2.2,
       "h": 9,
       "r": 8,
       "er": 7,
       "bb": 3,
       "so": 2,
-      "hr": 1
+      "hr": 1,
+      "whip": 4.5,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 17,
+      "bAvg": 0.529,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -85,7 +150,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/salve-regina/boxscore/9839",
       "date": "3/10/2023",
       "opponent": "Salve Regina",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -161,7 +228,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/salve-regina/boxscore/9840",
       "date": "3/10/2022",
       "opponent": "Salve Regina",
-      "pitchers": ["Torres, Deb", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Torres, Deb",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -241,7 +311,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/colby-college/boxscore/9841",
       "date": "3/11/2023",
       "opponent": "Colby College",
-      "pitchers": ["Langmeyer, Caroline", "Torres, Deb"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Torres, Deb"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -326,7 +399,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/colby-college/boxscore/9842",
       "date": "3/11/2023",
       "opponent": "Colby College",
-      "pitchers": ["Katsuyama, Katie", "Torres, Deb", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "Torres, Deb",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -402,7 +479,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/thomas-college/boxscore/10011",
       "date": "3/18/2023",
       "opponent": "Thomas College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -457,7 +536,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/thomas-college/boxscore/10012",
       "date": "3/18/2023",
       "opponent": "Thomas College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -518,7 +599,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/muhlenberg-college/boxscore/9845",
       "date": "3/26/2023",
       "opponent": "Muhlenberg College",
-      "pitchers": ["Langmeyer, Caroline", "Torres, Deb"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Torres, Deb"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -604,7 +688,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/muhlenberg-college/boxscore/9846",
       "date": "3/26/2023",
       "opponent": "Muhlenberg College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -681,7 +767,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/moravian-university/boxscore/9844",
       "date": "3/27/2023",
       "opponent": "Moravian University",
-      "pitchers": ["Langmeyer, Caroline", "O'Connor, Becca"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -772,7 +861,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/haverford-college/boxscore/9847",
       "date": "3/28/2023",
       "opponent": "Haverford College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -855,7 +946,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/haverford-college/boxscore/9848",
       "date": "3/28/2023",
       "opponent": "Haverford College",
-      "pitchers": ["Doering, Nicole", "Torres, Deb"],
+      "pitchers": [
+        "Doering, Nicole",
+        "Torres, Deb"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -940,7 +1034,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/stockton-university/boxscore/9849",
       "date": "3/29/2023",
       "opponent": "Stockton University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1018,7 +1114,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/stockton-university/boxscore/9850",
       "date": "3/29/2023",
       "opponent": "Stockton University",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1091,7 +1189,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/wellesley-college/boxscore/9851",
       "date": "4/2/2023",
       "opponent": "Wellesley College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1164,7 +1264,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/wellesley-college/boxscore/9852",
       "date": "4/2/2023",
       "opponent": "Wellesley College",
-      "pitchers": ["O'Connor, Becca", "Torres, Deb", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Torres, Deb",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1238,7 +1342,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/emerson-college/boxscore/9853",
       "date": "4/7/2023",
       "opponent": "Emerson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1310,7 +1416,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/emerson-college/boxscore/9854",
       "date": "4/7/2023",
       "opponent": "Emerson College",
-      "pitchers": ["O'Connor, Becca", "Katsuyama, Katie", "Torres, Deb"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Katsuyama, Katie",
+        "Torres, Deb"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1397,7 +1507,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/clark-university/boxscore/9855",
       "date": "4/8/2023",
       "opponent": "Clark University",
-      "pitchers": ["Langmeyer, Caroline", "Doering, Nicole"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1458,7 +1571,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/clark-university/boxscore/9856",
       "date": "4/8/2023",
       "opponent": "Clark University",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1537,7 +1652,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/no-8-tufts-university/boxscore/9857",
       "date": "4/11/2023",
       "opponent": "No 8 Tufts University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1621,7 +1738,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/no-8-tufts-university/boxscore/9858",
       "date": "4/11/2023",
       "opponent": "No 8 Tufts University",
-      "pitchers": ["O'Connor, Becca", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1712,7 +1832,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/worcester-polytechnic-institute/boxscore/9859",
       "date": "4/14/2023",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1800,7 +1922,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/worcester-polytechnic-institute/boxscore/9860",
       "date": "4/14/2023",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["O'Connor, Becca", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1887,7 +2012,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/springfield-college/boxscore/9861",
       "date": "4/15/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1960,7 +2087,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/springfield-college/boxscore/9862",
       "date": "4/15/2023",
       "opponent": "Springfield College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2021,7 +2150,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/endicott-college/boxscore/9989",
       "date": "4/18/2023",
       "opponent": "Endicott College",
-      "pitchers": ["Langmeyer, Caroline", "O'Connor, Becca"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2102,7 +2234,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/endicott-college/boxscore/9990",
       "date": "4/18/2023",
       "opponent": "Endicott College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2173,7 +2307,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/wheaton-college-mass-/boxscore/9863",
       "date": "4/21/2023",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2264,7 +2400,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/wheaton-college-mass-/boxscore/9864",
       "date": "4/21/2023",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2340,7 +2478,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/babson-college/boxscore/9867",
       "date": "4/28/2023",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2418,7 +2558,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/babson-college/boxscore/9868",
       "date": "4/28/2023",
       "opponent": "Babson College",
-      "pitchers": ["O'Connor, Becca", "Torres, Deb", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Torres, Deb",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2504,7 +2648,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/united-states-coast-guard-academy/boxscore/9869",
       "date": "5/1/2023",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2583,7 +2729,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/united-states-coast-guard-academy/boxscore/9870",
       "date": "5/1/2023",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2632,7 +2780,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/babson-college/boxscore/9871",
       "date": "5/5/2023",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2702,7 +2852,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/springfield-college/boxscore/10109",
       "date": "5/6/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2780,7 +2932,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/springfield-college/boxscore/10110",
       "date": "5/7/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2855,7 +3009,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/simmons-university/boxscore/10115",
       "date": "5/18/2023",
       "opponent": "Simmons University",
-      "pitchers": ["O'Connor, Becca", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2925,7 +3082,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/endicott-college/boxscore/10105",
       "date": "5/19/2023",
       "opponent": "Endicott College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3000,7 +3159,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/simmons-university/boxscore/10113",
       "date": "5/20/2023",
       "opponent": "Simmons University",
-      "pitchers": ["Langmeyer, Caroline", "O'Connor, Becca"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3078,7 +3240,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/moravian-university/boxscore/10116",
       "date": "5/26/2023",
       "opponent": "Moravian University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3160,7 +3324,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/moravian-university/boxscore/10117",
       "date": "5/27/2023",
       "opponent": "Moravian University",
-      "pitchers": ["Langmeyer, Caroline", "O'Connor, Becca"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3237,7 +3404,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2023/moravian-university/boxscore/10120",
       "date": "5/27/2023",
       "opponent": "Moravian University",
-      "pitchers": ["O'Connor, Becca", "Torres, Deb", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Torres, Deb",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

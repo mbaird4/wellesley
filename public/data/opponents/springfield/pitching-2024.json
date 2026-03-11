@@ -1,7 +1,7 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-02T22:18:37.793Z",
+  "scrapedAt": "2026-03-11T15:27:35.390Z",
   "year": 2024,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1.79,
       "app": 20,
       "gs": 18,
+      "cg": 13,
+      "sho": 2,
+      "sv": 0,
       "ip": 109.2,
       "h": 113,
       "r": 46,
       "er": 28,
       "bb": 38,
       "so": 45,
-      "hr": 3
+      "hr": 3,
+      "whip": 1.38,
+      "doubles": 13,
+      "triples": 4,
+      "ab": 437,
+      "bAvg": 0.259,
+      "wp": 4,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 7
     },
     {
       "name": "DeRosa, Amelia",
@@ -26,13 +39,26 @@
       "era": 1.86,
       "app": 24,
       "gs": 20,
+      "cg": 16,
+      "sho": 6,
+      "sv": 1,
       "ip": 131.2,
       "h": 125,
       "r": 51,
       "er": 35,
       "bb": 14,
       "so": 42,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.06,
+      "doubles": 24,
+      "triples": 0,
+      "ab": 499,
+      "bAvg": 0.251,
+      "wp": 3,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 8,
+      "sha": 13
     },
     {
       "name": "Gell, Emily",
@@ -41,13 +67,26 @@
       "era": 2.28,
       "app": 6,
       "gs": 1,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 15.1,
       "h": 7,
       "r": 8,
       "er": 5,
       "bb": 13,
       "so": 18,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.3,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 55,
+      "bAvg": 0.127,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Puskas, Lucy",
@@ -56,13 +95,26 @@
       "era": 3.23,
       "app": 1,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 4.1,
       "h": 8,
       "r": 3,
       "er": 2,
       "bb": 3,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.54,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 18,
+      "bAvg": 0.444,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 2
     }
   ],
   "games": [
@@ -70,7 +122,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/fredonia/boxscore/8681",
       "date": "3/10/2024",
       "opponent": "Fredonia",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -124,7 +178,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/haverford/boxscore/8682",
       "date": "3/10/2024",
       "opponent": "Haverford",
-      "pitchers": ["Pugliese, Ashley", "Gell, Emily"],
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -205,7 +262,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wesleyan-conn-/boxscore/8683",
       "date": "3/11/2024",
       "opponent": "Wesleyan Conn ",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -264,7 +323,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/saint-josephs-maine-/boxscore/8684",
       "date": "3/11/2024",
       "opponent": "Saint Josephs Maine ",
-      "pitchers": ["Gell, Emily"],
+      "pitchers": [
+        "Gell, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -329,7 +390,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/lasell/boxscore/8685",
       "date": "3/12/2024",
       "opponent": "Lasell",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -410,7 +473,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/hope-college/boxscore/8686",
       "date": "3/12/2024",
       "opponent": "Hope College",
-      "pitchers": ["DeRosa, Amelia", "Gell, Emily"],
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -487,7 +553,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/mount-saint-mary-ny-/boxscore/8687",
       "date": "3/14/2024",
       "opponent": "Mount Saint Mary Ny ",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -546,7 +614,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/montclair-state/boxscore/8688",
       "date": "3/14/2024",
       "opponent": "Montclair State",
-      "pitchers": ["DeRosa, Amelia", "Gell, Emily"],
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -623,7 +694,11 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/cortland/boxscore/8689",
       "date": "3/15/2024",
       "opponent": "Cortland",
-      "pitchers": ["DeRosa, Amelia", "Gell, Emily", "Pugliese, Ashley"],
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Gell, Emily",
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -713,7 +788,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/beloit/boxscore/8690",
       "date": "3/15/2024",
       "opponent": "Beloit",
-      "pitchers": ["Pugliese, Ashley", "DeRosa, Amelia"],
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -793,7 +871,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/eastern-connecticut/boxscore/8166",
       "date": "3/22/2024",
       "opponent": "Eastern Connecticut",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -881,7 +961,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/eastern-connecticut/boxscore/8167",
       "date": "3/22/2024",
       "opponent": "Eastern Connecticut",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -962,7 +1044,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/keene-state/boxscore/8168",
       "date": "3/27/2024",
       "opponent": "Keene State",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1023,7 +1107,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/keene-state/boxscore/8169",
       "date": "3/27/2024",
       "opponent": "Keene State",
-      "pitchers": ["Pugliese, Ashley", "Gell, Emily"],
+      "pitchers": [
+        "Pugliese, Ashley",
+        "Gell, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1107,7 +1194,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/emerson/boxscore/8170",
       "date": "3/30/2024",
       "opponent": "Emerson",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1176,7 +1265,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/emerson/boxscore/8171",
       "date": "3/30/2024",
       "opponent": "Emerson",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1252,7 +1343,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8174",
       "date": "4/5/2024",
       "opponent": "Babson",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1323,7 +1416,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8175",
       "date": "4/5/2024",
       "opponent": "Babson",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1400,7 +1495,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wellesley/boxscore/8176",
       "date": "4/6/2024",
       "opponent": "Wellesley",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1485,7 +1582,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wellesley/boxscore/8177",
       "date": "4/6/2024",
       "opponent": "Wellesley",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1566,7 +1665,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/-25-mit/boxscore/8180",
       "date": "4/13/2024",
       "opponent": " 25 Mit",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1637,7 +1738,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/-25-mit/boxscore/8181",
       "date": "4/13/2024",
       "opponent": " 25 Mit",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1717,7 +1820,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8178",
       "date": "4/14/2024",
       "opponent": "Wpi",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1795,7 +1900,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8179",
       "date": "4/14/2024",
       "opponent": "Wpi",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1876,7 +1983,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/western-new-england/boxscore/8172",
       "date": "4/16/2024",
       "opponent": "Western New England",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1946,7 +2055,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/amherst/boxscore/8182",
       "date": "4/17/2024",
       "opponent": "Amherst",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2006,7 +2117,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/amherst/boxscore/8183",
       "date": "4/17/2024",
       "opponent": "Amherst",
-      "pitchers": ["Puskas, Lucy", "DeRosa, Amelia"],
+      "pitchers": [
+        "Puskas, Lucy",
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2086,7 +2200,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/coast-guard/boxscore/8184",
       "date": "4/20/2024",
       "opponent": "Coast Guard",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2161,7 +2277,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/coast-guard/boxscore/8185",
       "date": "4/20/2024",
       "opponent": "Coast Guard",
-      "pitchers": ["Pugliese, Ashley", "DeRosa, Amelia"],
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2259,7 +2378,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8188",
       "date": "4/26/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2341,7 +2462,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8189",
       "date": "4/26/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2396,7 +2519,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/clark-university/boxscore/8190",
       "date": "4/27/2024",
       "opponent": "Clark University",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2476,7 +2601,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/clark-university/boxscore/8191",
       "date": "4/27/2024",
       "opponent": "Clark University",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2558,7 +2685,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/smith/boxscore/8192",
       "date": "5/3/2024",
       "opponent": "Smith",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2636,7 +2765,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/smith/boxscore/8193",
       "date": "5/3/2024",
       "opponent": "Smith",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2709,7 +2840,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/salve-regina/boxscore/8194",
       "date": "5/4/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2764,7 +2897,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/salve-regina/boxscore/8195",
       "date": "5/4/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Pugliese, Ashley"],
+      "pitchers": [
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2834,7 +2969,9 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/babson/boxscore/8781",
       "date": "5/7/2024",
       "opponent": "Babson",
-      "pitchers": ["DeRosa, Amelia"],
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2909,7 +3046,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8786",
       "date": "5/9/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Pugliese, Ashley", "DeRosa, Amelia"],
+      "pitchers": [
+        "Pugliese, Ashley",
+        "DeRosa, Amelia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2993,7 +3133,10 @@
       "url": "https://springfieldcollegepride.com/sports/softball/stats/2024/wpi/boxscore/8787",
       "date": "5/9/2024",
       "opponent": "Wpi",
-      "pitchers": ["DeRosa, Amelia", "Pugliese, Ashley"],
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Pugliese, Ashley"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

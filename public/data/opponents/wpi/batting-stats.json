@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-11T01:07:38.515Z",
+  "scrapedAt": "2026-03-11T15:19:33.277Z",
   "year": 2026,
   "teamGames": 2,
   "players": [
@@ -76,41 +76,6 @@
       }
     },
     {
-      "name": "Riley O'Brien",
-      "jerseyNumber": 18,
-      "classYear": "Junior",
-      "position": "MI",
-      "bats": "R",
-      "season": {
-        "year": 2026,
-        "name": "O'Brien, Riley",
-        "avg": 0,
-        "ops": 0,
-        "gp": 2,
-        "gs": 2,
-        "ab": 7,
-        "r": 0,
-        "h": 0,
-        "doubles": 0,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 0,
-        "tb": 0,
-        "slg": 0,
-        "bb": 0,
-        "hbp": 0,
-        "so": 1,
-        "gdp": 0,
-        "obp": 0,
-        "sf": 0,
-        "sh": 0,
-        "sb": 0,
-        "sbAtt": 0,
-        "woba": 0,
-        "pa": 7
-      }
-    },
-    {
       "name": "Emma Nagy",
       "jerseyNumber": 10,
       "classYear": "Senior",
@@ -178,6 +143,41 @@
         "sbAtt": 1,
         "woba": 0.375,
         "pa": 8
+      }
+    },
+    {
+      "name": "Riley O'Brien",
+      "jerseyNumber": 18,
+      "classYear": "Junior",
+      "position": "MI",
+      "bats": "R",
+      "season": {
+        "year": 2026,
+        "name": "O'Brien, Riley",
+        "avg": 0,
+        "ops": 0,
+        "gp": 2,
+        "gs": 2,
+        "ab": 7,
+        "r": 0,
+        "h": 0,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 0,
+        "slg": 0,
+        "bb": 0,
+        "hbp": 0,
+        "so": 1,
+        "gdp": 0,
+        "obp": 0,
+        "sf": 0,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0,
+        "pa": 7
       }
     },
     {

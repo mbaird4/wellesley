@@ -1,7 +1,7 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-02T22:28:23.865Z",
+  "scrapedAt": "2026-03-11T15:37:15.659Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.66,
       "app": 23,
       "gs": 14,
+      "cg": 12,
+      "sho": 3,
+      "sv": 2,
       "ip": 129,
       "h": 134,
       "r": 60,
       "er": 49,
       "bb": 48,
       "so": 106,
-      "hr": 7
+      "hr": 7,
+      "whip": 1.41,
+      "doubles": 40,
+      "triples": 1,
+      "ab": 521,
+      "bAvg": 0.257,
+      "wp": 3,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 6,
+      "sha": 11
     },
     {
       "name": "Zenga, Kit",
@@ -26,13 +39,26 @@
       "era": 4.7,
       "app": 13,
       "gs": 9,
+      "cg": 3,
+      "sho": 0,
+      "sv": 0,
       "ip": 61,
       "h": 87,
       "r": 47,
       "er": 41,
       "bb": 23,
       "so": 24,
-      "hr": 6
+      "hr": 6,
+      "whip": 1.8,
+      "doubles": 18,
+      "triples": 2,
+      "ab": 263,
+      "bAvg": 0.331,
+      "wp": 9,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 10
     },
     {
       "name": "Mazzolini, Jules",
@@ -41,13 +67,26 @@
       "era": 0,
       "app": 5,
       "gs": 5,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Rice, Mackenzie",
@@ -56,13 +95,26 @@
       "era": 0,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Beaulieu, Grace",
@@ -71,13 +123,26 @@
       "era": 6.07,
       "app": 11,
       "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 30,
       "h": 33,
       "r": 28,
       "er": 26,
       "bb": 21,
       "so": 11,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.8,
+      "doubles": 10,
+      "triples": 0,
+      "ab": 120,
+      "bAvg": 0.275,
+      "wp": 5,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 2
     },
     {
       "name": "Gage, Victoria",
@@ -86,13 +151,26 @@
       "era": 8.02,
       "app": 9,
       "gs": 5,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 18.1,
       "h": 36,
       "r": 23,
       "er": 21,
       "bb": 11,
       "so": 5,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.56,
+      "doubles": 6,
+      "triples": 1,
+      "ab": 87,
+      "bAvg": 0.414,
+      "wp": 3,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 3
     }
   ],
   "games": [
@@ -100,7 +178,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/rutgers-newark/boxscore/3246",
       "date": "3/13/2023",
       "opponent": "Rutgers Newark",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -166,7 +246,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wm-paterson/boxscore/3247",
       "date": "3/13/2023",
       "opponent": "Wm Paterson",
-      "pitchers": ["Mazzolini, Jules", "Gage, Victoria", "Beaulieu, Grace"],
+      "pitchers": [
+        "Mazzolini, Jules",
+        "Gage, Victoria",
+        "Beaulieu, Grace"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -267,7 +351,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/brockport/boxscore/3248",
       "date": "3/14/2023",
       "opponent": "Brockport",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -342,7 +428,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/st-elizabeth/boxscore/3249",
       "date": "3/14/2023",
       "opponent": "St Elizabeth",
-      "pitchers": ["Mazzolini, Jules", "Zenga, Kit"],
+      "pitchers": [
+        "Mazzolini, Jules",
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -420,7 +509,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/westfield-st-/boxscore/3250",
       "date": "3/16/2023",
       "opponent": "Westfield St ",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -498,7 +589,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/lesley/boxscore/3251",
       "date": "3/16/2023",
       "opponent": "Lesley",
-      "pitchers": ["Zenga, Kit"],
+      "pitchers": [
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -574,7 +667,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/westconn/boxscore/3252",
       "date": "3/17/2023",
       "opponent": "Westconn",
-      "pitchers": ["Mazzolini, Jules", "Gomez, Jessica"],
+      "pitchers": [
+        "Mazzolini, Jules",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -651,7 +747,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/nazareth/boxscore/3253",
       "date": "3/17/2023",
       "opponent": "Nazareth",
-      "pitchers": ["Gage, Victoria", "Zenga, Kit"],
+      "pitchers": [
+        "Gage, Victoria",
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -728,7 +827,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/emmanuel-mass-/boxscore/3254",
       "date": "3/21/2023",
       "opponent": "Emmanuel Mass ",
-      "pitchers": ["Mazzolini, Jules", "Gomez, Jessica"],
+      "pitchers": [
+        "Mazzolini, Jules",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -804,7 +906,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/emmanuel-mass-/boxscore/3255",
       "date": "3/21/2023",
       "opponent": "Emmanuel Mass ",
-      "pitchers": ["Zenga, Kit", "Gage, Victoria"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Gage, Victoria"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -897,7 +1002,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/suffolk/boxscore/3256",
       "date": "3/24/2023",
       "opponent": "Suffolk",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -965,7 +1072,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/suffolk/boxscore/3257",
       "date": "3/24/2023",
       "opponent": "Suffolk",
-      "pitchers": ["Gage, Victoria", "Beaulieu, Grace", "Gomez, Jessica"],
+      "pitchers": [
+        "Gage, Victoria",
+        "Beaulieu, Grace",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1052,7 +1163,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/northern-vermont-lyndon/boxscore/3258",
       "date": "3/26/2023",
       "opponent": "Northern Vermont Lyndon",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1124,7 +1237,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/northern-vermont-lyndon/boxscore/3259",
       "date": "3/26/2023",
       "opponent": "Northern Vermont Lyndon",
-      "pitchers": ["Zenga, Kit"],
+      "pitchers": [
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1205,7 +1320,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/springfield/boxscore/3260",
       "date": "4/2/2023",
       "opponent": "Springfield",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1277,7 +1394,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/springfield/boxscore/3261",
       "date": "4/2/2023",
       "opponent": "Springfield",
-      "pitchers": ["Gage, Victoria", "Beaulieu, Grace", "Rice, Mackenzie"],
+      "pitchers": [
+        "Gage, Victoria",
+        "Beaulieu, Grace",
+        "Rice, Mackenzie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1356,7 +1477,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/mass-boston/boxscore/3262",
       "date": "4/3/2023",
       "opponent": "Mass Boston",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1427,7 +1550,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/mass-boston/boxscore/3263",
       "date": "4/3/2023",
       "opponent": "Mass Boston",
-      "pitchers": ["Beaulieu, Grace", "Zenga, Kit"],
+      "pitchers": [
+        "Beaulieu, Grace",
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1501,7 +1627,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/mit/boxscore/3264",
       "date": "4/7/2023",
       "opponent": "Mit",
-      "pitchers": ["Gage, Victoria", "Gomez, Jessica"],
+      "pitchers": [
+        "Gage, Victoria",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1581,7 +1710,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/mit/boxscore/3265",
       "date": "4/7/2023",
       "opponent": "Mit",
-      "pitchers": ["Zenga, Kit", "Beaulieu, Grace", "Gage, Victoria"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Beaulieu, Grace",
+        "Gage, Victoria"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1678,7 +1811,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/coast-guard/boxscore/3266",
       "date": "4/8/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Gomez, Jessica", "Beaulieu, Grace"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Beaulieu, Grace"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1755,7 +1891,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/coast-guard/boxscore/3267",
       "date": "4/8/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1840,7 +1978,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/regis-mass-/boxscore/3268",
       "date": "4/11/2023",
       "opponent": "Regis Mass ",
-      "pitchers": ["Gage, Victoria", "Gomez, Jessica"],
+      "pitchers": [
+        "Gage, Victoria",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1917,7 +2058,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/regis-mass-/boxscore/3269",
       "date": "4/11/2023",
       "opponent": "Regis Mass ",
-      "pitchers": ["Beaulieu, Grace", "Zenga, Kit"],
+      "pitchers": [
+        "Beaulieu, Grace",
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1982,7 +2126,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/babson/boxscore/3270",
       "date": "4/14/2023",
       "opponent": "Babson",
-      "pitchers": ["Mazzolini, Jules", "Gomez, Jessica"],
+      "pitchers": [
+        "Mazzolini, Jules",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2066,7 +2213,11 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/babson/boxscore/3271",
       "date": "4/14/2023",
       "opponent": "Babson",
-      "pitchers": ["Zenga, Kit", "Beaulieu, Grace", "Gomez, Jessica"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Beaulieu, Grace",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2157,7 +2308,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wpi/boxscore/3272",
       "date": "4/15/2023",
       "opponent": "Wpi",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2241,7 +2394,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wpi/boxscore/3273",
       "date": "4/15/2023",
       "opponent": "Wpi",
-      "pitchers": ["Zenga, Kit", "Beaulieu, Grace"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Beaulieu, Grace"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2340,7 +2496,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/clark-university/boxscore/3274",
       "date": "4/21/2023",
       "opponent": "Clark University",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2416,7 +2574,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/clark-university/boxscore/3275",
       "date": "4/21/2023",
       "opponent": "Clark University",
-      "pitchers": ["Beaulieu, Grace", "Gage, Victoria"],
+      "pitchers": [
+        "Beaulieu, Grace",
+        "Gage, Victoria"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2506,7 +2667,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wheaton-mass-/boxscore/3276",
       "date": "4/22/2023",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Zenga, Kit", "Gomez, Jessica"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2590,7 +2754,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wheaton-mass-/boxscore/3277",
       "date": "4/22/2023",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Gomez, Jessica", "Beaulieu, Grace"],
+      "pitchers": [
+        "Gomez, Jessica",
+        "Beaulieu, Grace"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2673,7 +2840,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/smith/boxscore/3278",
       "date": "4/27/2023",
       "opponent": "Smith",
-      "pitchers": ["Zenga, Kit"],
+      "pitchers": [
+        "Zenga, Kit"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2744,7 +2913,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/smith/boxscore/3279",
       "date": "4/27/2023",
       "opponent": "Smith",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2827,7 +2998,10 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wellesley/boxscore/3280",
       "date": "4/28/2023",
       "opponent": "Wellesley",
-      "pitchers": ["Zenga, Kit", "Gomez, Jessica"],
+      "pitchers": [
+        "Zenga, Kit",
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2914,7 +3088,9 @@
       "url": "https://emersonlions.com/sports/softball/stats/2023/wellesley/boxscore/3281",
       "date": "4/28/2023",
       "opponent": "Wellesley",
-      "pitchers": ["Gomez, Jessica"],
+      "pitchers": [
+        "Gomez, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

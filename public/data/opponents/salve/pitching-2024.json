@@ -1,7 +1,7 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-03-02T22:23:19.298Z",
+  "scrapedAt": "2026-03-11T15:32:16.598Z",
   "year": 2024,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 4.07,
       "app": 16,
       "gs": 14,
+      "cg": 7,
+      "sho": 2,
+      "sv": 0,
       "ip": 86,
       "h": 101,
       "r": 63,
       "er": 50,
       "bb": 22,
       "so": 77,
-      "hr": 6
+      "hr": 6,
+      "whip": 1.43,
+      "doubles": 19,
+      "triples": 3,
+      "ab": 351,
+      "bAvg": 0.288,
+      "wp": 1,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 9
     },
     {
       "name": "Peterson, Caroline",
@@ -26,13 +39,26 @@
       "era": 4.57,
       "app": 15,
       "gs": 10,
+      "cg": 5,
+      "sho": 1,
+      "sv": 0,
       "ip": 72,
       "h": 106,
       "r": 64,
       "er": 47,
       "bb": 41,
       "so": 43,
-      "hr": 3
+      "hr": 3,
+      "whip": 2.04,
+      "doubles": 22,
+      "triples": 5,
+      "ab": 314,
+      "bAvg": 0.338,
+      "wp": 2,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 8
     },
     {
       "name": "Wicklund, Skylar",
@@ -41,13 +67,26 @@
       "era": 4.4,
       "app": 7,
       "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
       "ip": 14.1,
       "h": 19,
       "r": 13,
       "er": 9,
       "bb": 9,
       "so": 5,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.95,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 64,
+      "bAvg": 0.297,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Cronin, Emily",
@@ -56,13 +95,26 @@
       "era": 7.15,
       "app": 7,
       "gs": 6,
+      "cg": 2,
+      "sho": 1,
+      "sv": 0,
       "ip": 30.1,
       "h": 50,
       "r": 40,
       "er": 31,
       "bb": 21,
       "so": 30,
-      "hr": 3
+      "hr": 3,
+      "whip": 2.34,
+      "doubles": 11,
+      "triples": 1,
+      "ab": 142,
+      "bAvg": 0.352,
+      "wp": 4,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 2
     },
     {
       "name": "Gendron, Sophia",
@@ -71,13 +123,26 @@
       "era": 7.56,
       "app": 9,
       "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 16.2,
       "h": 23,
       "r": 25,
       "er": 18,
       "bb": 17,
       "so": 13,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.4,
+      "doubles": 5,
+      "triples": 1,
+      "ab": 72,
+      "bAvg": 0.319,
+      "wp": 2,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 1
     },
     {
       "name": "Murphy, Shea",
@@ -86,13 +151,26 @@
       "era": 14,
       "app": 5,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 5,
       "h": 9,
       "r": 10,
       "er": 10,
       "bb": 5,
       "so": 3,
-      "hr": 2
+      "hr": 2,
+      "whip": 2.8,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 26,
+      "bAvg": 0.346,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -100,7 +178,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/eastern-conn-st-/boxscore/9662",
       "date": "3/10/2024",
       "opponent": "Eastern Conn St ",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -172,7 +252,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/webster/boxscore/9663",
       "date": "3/10/2024",
       "opponent": "Webster",
-      "pitchers": ["Gendron, Sophia", "Peterson, Caroline"],
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -268,7 +351,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/dickinson/boxscore/9664",
       "date": "3/11/2024",
       "opponent": "Dickinson",
-      "pitchers": ["Cronin, Emily"],
+      "pitchers": [
+        "Cronin, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -341,7 +426,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/hartford/boxscore/9665",
       "date": "3/11/2024",
       "opponent": "Hartford",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -419,7 +506,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/st-catherine/boxscore/9666",
       "date": "3/12/2024",
       "opponent": "St Catherine",
-      "pitchers": ["Murphy, Shea", "Peterson, Caroline"],
+      "pitchers": [
+        "Murphy, Shea",
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -524,7 +614,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/sul-ross-st-/boxscore/9667",
       "date": "3/12/2024",
       "opponent": "Sul Ross St ",
-      "pitchers": ["Wicklund, Skylar", "Gendron, Sophia"],
+      "pitchers": [
+        "Wicklund, Skylar",
+        "Gendron, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -599,7 +692,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wis-la-crosse/boxscore/9668",
       "date": "3/14/2024",
       "opponent": "Wis La Crosse",
-      "pitchers": ["Gendron, Sophia", "Wicklund, Skylar"],
+      "pitchers": [
+        "Gendron, Sophia",
+        "Wicklund, Skylar"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -683,7 +779,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/franklin-marshall/boxscore/9669",
       "date": "3/14/2024",
       "opponent": "Franklin Marshall",
-      "pitchers": ["Cronin, Emily", "Wicklund, Skylar"],
+      "pitchers": [
+        "Cronin, Emily",
+        "Wicklund, Skylar"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -751,7 +850,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/texas-dallas/boxscore/9670",
       "date": "3/15/2024",
       "opponent": "Texas Dallas",
-      "pitchers": ["Peterson, Caroline"],
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -835,7 +936,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/-22-central-ia-/boxscore/9671",
       "date": "3/15/2024",
       "opponent": " 22 Central Ia ",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -924,7 +1027,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/rhode-island-col-/boxscore/9672",
       "date": "3/26/2024",
       "opponent": "Rhode Island Col ",
-      "pitchers": ["Kelly, Alex", "Wicklund, Skylar"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Wicklund, Skylar"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1000,7 +1106,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/rhode-island-col-/boxscore/9673",
       "date": "3/26/2024",
       "opponent": "Rhode Island Col ",
-      "pitchers": ["Wicklund, Skylar", "Cronin, Emily"],
+      "pitchers": [
+        "Wicklund, Skylar",
+        "Cronin, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1075,7 +1184,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wheaton-mass-/boxscore/9674",
       "date": "3/30/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Peterson, Caroline"],
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1162,7 +1273,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wheaton-mass-/boxscore/9675",
       "date": "3/30/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Cronin, Emily", "Kelly, Alex"],
+      "pitchers": [
+        "Cronin, Emily",
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1258,7 +1372,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wellesley/boxscore/9676",
       "date": "4/5/2024",
       "opponent": "Wellesley",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1332,7 +1448,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wellesley/boxscore/9677",
       "date": "4/5/2024",
       "opponent": "Wellesley",
-      "pitchers": ["Peterson, Caroline", "Wicklund, Skylar"],
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1414,7 +1533,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/smith/boxscore/9678",
       "date": "4/6/2024",
       "opponent": "Smith",
-      "pitchers": ["Cronin, Emily", "Peterson, Caroline"],
+      "pitchers": [
+        "Cronin, Emily",
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1472,7 +1594,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/smith/boxscore/9679",
       "date": "4/6/2024",
       "opponent": "Smith",
-      "pitchers": ["Kelly, Alex", "Peterson, Caroline"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1548,7 +1673,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/mitchell/boxscore/9680",
       "date": "4/10/2024",
       "opponent": "Mitchell",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1618,7 +1745,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/mitchell/boxscore/9681",
       "date": "4/10/2024",
       "opponent": "Mitchell",
-      "pitchers": ["Peterson, Caroline"],
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1694,7 +1823,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/emerson/boxscore/9682",
       "date": "4/12/2024",
       "opponent": "Emerson",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1770,7 +1901,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/emerson/boxscore/9683",
       "date": "4/12/2024",
       "opponent": "Emerson",
-      "pitchers": ["Peterson, Caroline", "Wicklund, Skylar"],
+      "pitchers": [
+        "Peterson, Caroline",
+        "Wicklund, Skylar"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1852,7 +1986,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/clark-university/boxscore/9684",
       "date": "4/13/2024",
       "opponent": "Clark University",
-      "pitchers": ["Cronin, Emily", "Kelly, Alex"],
+      "pitchers": [
+        "Cronin, Emily",
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1937,7 +2074,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/clark-university/boxscore/9685",
       "date": "4/13/2024",
       "opponent": "Clark University",
-      "pitchers": ["Kelly, Alex", "Murphy, Shea"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Murphy, Shea"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2004,7 +2144,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/johnson-amp-wales-ri-/boxscore/9686",
       "date": "4/16/2024",
       "opponent": "Johnson Amp Wales Ri ",
-      "pitchers": ["Peterson, Caroline"],
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2083,7 +2225,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/johnson-amp-wales-ri-/boxscore/9687",
       "date": "4/16/2024",
       "opponent": "Johnson Amp Wales Ri ",
-      "pitchers": ["Kelly, Alex", "Murphy, Shea"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Murphy, Shea"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2163,7 +2308,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/mit/boxscore/9688",
       "date": "4/19/2024",
       "opponent": "Mit",
-      "pitchers": ["Peterson, Caroline"],
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2240,7 +2387,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/mit/boxscore/9689",
       "date": "4/19/2024",
       "opponent": "Mit",
-      "pitchers": ["Cronin, Emily"],
+      "pitchers": [
+        "Cronin, Emily"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2332,7 +2481,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wpi/boxscore/9690",
       "date": "4/20/2024",
       "opponent": "Wpi",
-      "pitchers": ["Peterson, Caroline", "Murphy, Shea"],
+      "pitchers": [
+        "Peterson, Caroline",
+        "Murphy, Shea"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2400,7 +2552,9 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/wpi/boxscore/9691",
       "date": "4/20/2024",
       "opponent": "Wpi",
-      "pitchers": ["Kelly, Alex"],
+      "pitchers": [
+        "Kelly, Alex"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2470,7 +2624,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/coast-guard/boxscore/9692",
       "date": "4/26/2024",
       "opponent": "Coast Guard",
-      "pitchers": ["Kelly, Alex", "Gendron, Sophia"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Gendron, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2552,7 +2709,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/coast-guard/boxscore/9693",
       "date": "4/26/2024",
       "opponent": "Coast Guard",
-      "pitchers": ["Peterson, Caroline", "Gendron, Sophia"],
+      "pitchers": [
+        "Peterson, Caroline",
+        "Gendron, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2630,7 +2790,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/babson/boxscore/9694",
       "date": "4/27/2024",
       "opponent": "Babson",
-      "pitchers": ["Peterson, Caroline", "Gendron, Sophia"],
+      "pitchers": [
+        "Peterson, Caroline",
+        "Gendron, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2715,7 +2878,11 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/babson/boxscore/9695",
       "date": "4/27/2024",
       "opponent": "Babson",
-      "pitchers": ["Kelly, Alex", "Gendron, Sophia", "Murphy, Shea"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Gendron, Sophia",
+        "Murphy, Shea"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2791,7 +2958,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/springfield/boxscore/9696",
       "date": "5/4/2024",
       "opponent": "Springfield",
-      "pitchers": ["Kelly, Alex", "Gendron, Sophia"],
+      "pitchers": [
+        "Kelly, Alex",
+        "Gendron, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2845,7 +3015,10 @@
       "url": "https://salveathletics.com/sports/softball/stats/2024/springfield/boxscore/9697",
       "date": "5/4/2024",
       "opponent": "Springfield",
-      "pitchers": ["Gendron, Sophia", "Peterson, Caroline"],
+      "pitchers": [
+        "Gendron, Sophia",
+        "Peterson, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

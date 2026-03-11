@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-02T22:30:46.047Z",
+  "scrapedAt": "2026-03-11T15:39:47.168Z",
   "year": 2024,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.98,
       "app": 22,
       "gs": 17,
+      "cg": 15,
+      "sho": 0,
+      "sv": 1,
       "ip": 122,
       "h": 146,
       "r": 74,
       "er": 52,
       "bb": 34,
       "so": 69,
-      "hr": 3
+      "hr": 3,
+      "whip": 1.48,
+      "doubles": 16,
+      "triples": 0,
+      "ab": 523,
+      "bAvg": 0.279,
+      "wp": 11,
+      "hbp": 5,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 5
     },
     {
       "name": "Shroyer, Isabelle",
@@ -26,13 +39,26 @@
       "era": 5.9,
       "app": 14,
       "gs": 12,
+      "cg": 6,
+      "sho": 1,
+      "sv": 0,
       "ip": 59.1,
       "h": 79,
       "r": 60,
       "er": 50,
       "bb": 32,
       "so": 23,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.87,
+      "doubles": 15,
+      "triples": 3,
+      "ab": 256,
+      "bAvg": 0.309,
+      "wp": 5,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 3
     },
     {
       "name": "Hare, Gracie",
@@ -41,13 +67,26 @@
       "era": 0,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Murphy, Maura",
@@ -56,13 +95,26 @@
       "era": 4,
       "app": 1,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 7,
       "h": 9,
       "r": 5,
       "er": 4,
       "bb": 4,
       "so": 4,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.86,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 27,
+      "bAvg": 0.333,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     },
     {
       "name": "Bartz, Bridget",
@@ -71,13 +123,26 @@
       "era": 7,
       "app": 1,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 2,
       "h": 2,
       "r": 3,
       "er": 2,
       "bb": 0,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 1,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 7,
+      "bAvg": 0.286,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Behel, Emma",
@@ -86,13 +151,26 @@
       "era": 7.08,
       "app": 9,
       "gs": 4,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 28.2,
       "h": 49,
       "r": 34,
       "er": 29,
       "bb": 13,
       "so": 10,
-      "hr": 2
+      "hr": 2,
+      "whip": 2.16,
+      "doubles": 6,
+      "triples": 0,
+      "ab": 130,
+      "bAvg": 0.377,
+      "wp": 3,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 0
     }
   ],
   "games": [
@@ -100,7 +178,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/rowan/boxscore/8150",
       "date": "3/10/2024",
       "opponent": "Rowan",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -187,7 +267,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/case-western-reserve/boxscore/8206",
       "date": "3/10/2024",
       "opponent": "Case Western Reserve",
-      "pitchers": ["Shroyer, Isabelle", "Walker, Dana"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -274,7 +357,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/juniata/boxscore/8207",
       "date": "3/11/2024",
       "opponent": "Juniata",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -345,7 +430,11 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/lake-forest/boxscore/8208",
       "date": "3/11/2024",
       "opponent": "Lake Forest",
-      "pitchers": ["Shroyer, Isabelle", "Behel, Emma", "Walker, Dana"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -432,7 +521,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/bowdoin/boxscore/8209",
       "date": "3/13/2024",
       "opponent": "Bowdoin",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -719,7 +810,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/swarthmore/boxscore/8212",
       "date": "3/14/2024",
       "opponent": "Swarthmore",
-      "pitchers": ["Behel, Emma"],
+      "pitchers": [
+        "Behel, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -794,7 +887,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/roger-williams/boxscore/8137",
       "date": "3/20/2024",
       "opponent": "Roger Williams",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -878,7 +973,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/roger-williams/boxscore/8138",
       "date": "3/20/2024",
       "opponent": "Roger Williams",
-      "pitchers": ["Behel, Emma", "Shroyer, Isabelle"],
+      "pitchers": [
+        "Behel, Emma",
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -963,7 +1061,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/babson/boxscore/8143",
       "date": "3/30/2024",
       "opponent": "Babson",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1034,7 +1134,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/babson/boxscore/8145",
       "date": "3/30/2024",
       "opponent": "Babson",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1124,7 +1226,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/emerson/boxscore/8160",
       "date": "4/6/2024",
       "opponent": "Emerson",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1191,7 +1295,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/emerson/boxscore/8162",
       "date": "4/6/2024",
       "opponent": "Emerson",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1267,7 +1373,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/clark/boxscore/8156",
       "date": "4/10/2024",
       "opponent": "Clark",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1344,7 +1452,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/clark/boxscore/8157",
       "date": "4/10/2024",
       "opponent": "Clark",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1425,7 +1535,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wellesley/boxscore/8168",
       "date": "4/14/2024",
       "opponent": "Wellesley",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1524,7 +1636,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wellesley/boxscore/8167",
       "date": "4/14/2024",
       "opponent": "Wellesley",
-      "pitchers": ["Walker, Dana", "Hare, Gracie"],
+      "pitchers": [
+        "Walker, Dana",
+        "Hare, Gracie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1614,7 +1729,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wesleyan/boxscore/8170",
       "date": "4/16/2024",
       "opponent": "Wesleyan",
-      "pitchers": ["Shroyer, Isabelle", "Behel, Emma"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Behel, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1684,7 +1802,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wesleyan/boxscore/8171",
       "date": "4/16/2024",
       "opponent": "Wesleyan",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1764,7 +1884,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/springfield/boxscore/8175",
       "date": "4/20/2024",
       "opponent": "Springfield",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1833,7 +1955,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/springfield/boxscore/8176",
       "date": "4/20/2024",
       "opponent": "Springfield",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1929,7 +2053,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8173",
       "date": "4/23/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Shroyer, Isabelle", "Walker, Dana"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2017,7 +2144,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wheaton-mass-/boxscore/8174",
       "date": "4/23/2024",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2094,7 +2223,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/umass-dartmouth/boxscore/8177",
       "date": "4/24/2024",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["Behel, Emma", "Shroyer, Isabelle"],
+      "pitchers": [
+        "Behel, Emma",
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2194,7 +2326,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/umass-dartmouth/boxscore/8178",
       "date": "4/24/2024",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2278,7 +2412,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/salve-regina/boxscore/8179",
       "date": "4/26/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Shroyer, Isabelle", "Walker, Dana"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2372,7 +2509,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/salve-regina/boxscore/8180",
       "date": "4/26/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2450,7 +2589,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wpi/boxscore/8182",
       "date": "4/27/2024",
       "opponent": "Wpi",
-      "pitchers": ["Shroyer, Isabelle"],
+      "pitchers": [
+        "Shroyer, Isabelle"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2511,7 +2652,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wpi/boxscore/8183",
       "date": "4/27/2024",
       "opponent": "Wpi",
-      "pitchers": ["Walker, Dana", "Behel, Emma"],
+      "pitchers": [
+        "Walker, Dana",
+        "Behel, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2598,7 +2742,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/mit/boxscore/8184",
       "date": "5/3/2024",
       "opponent": "Mit",
-      "pitchers": ["Shroyer, Isabelle", "Behel, Emma"],
+      "pitchers": [
+        "Shroyer, Isabelle",
+        "Behel, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2655,7 +2802,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/mit/boxscore/8185",
       "date": "5/3/2024",
       "opponent": "Mit",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2735,7 +2884,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/smith/boxscore/8186",
       "date": "5/4/2024",
       "opponent": "Smith",
-      "pitchers": ["Behel, Emma", "Walker, Dana"],
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2816,7 +2968,9 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/smith/boxscore/8187",
       "date": "5/4/2024",
       "opponent": "Smith",
-      "pitchers": ["Walker, Dana"],
+      "pitchers": [
+        "Walker, Dana"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2890,7 +3044,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2024/wpi/boxscore/8188",
       "date": "5/6/2024",
       "opponent": "Wpi",
-      "pitchers": ["Walker, Dana", "Behel, Emma"],
+      "pitchers": [
+        "Walker, Dana",
+        "Behel, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

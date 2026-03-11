@@ -1,7 +1,7 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-11T01:13:37.822Z",
+  "scrapedAt": "2026-03-11T15:35:15.949Z",
   "year": 2025,
   "teamGames": 35,
   "players": [
@@ -146,41 +146,6 @@
       }
     },
     {
-      "name": "Kate Regan",
-      "jerseyNumber": 20,
-      "classYear": "Junior",
-      "position": "Pitcher",
-      "bats": "R",
-      "season": {
-        "year": 2025,
-        "name": "Regan, Kate",
-        "avg": 0.25,
-        "ops": 0.5,
-        "gp": 13,
-        "gs": 6,
-        "ab": 4,
-        "r": 0,
-        "h": 1,
-        "doubles": 0,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 0,
-        "tb": 1,
-        "slg": 0.25,
-        "bb": 0,
-        "hbp": 0,
-        "so": 1,
-        "gdp": 0,
-        "obp": 0.25,
-        "sf": 0,
-        "sh": 0,
-        "sb": 1,
-        "sbAtt": 1,
-        "woba": 0.225,
-        "pa": 4
-      }
-    },
-    {
       "name": "Kayla Nuehlen",
       "jerseyNumber": 8,
       "classYear": "Senior",
@@ -213,6 +178,41 @@
         "sbAtt": 0,
         "woba": 0.205,
         "pa": 22
+      }
+    },
+    {
+      "name": "Kate Regan",
+      "jerseyNumber": 20,
+      "classYear": "Junior",
+      "position": "Pitcher",
+      "bats": "R",
+      "season": {
+        "year": 2025,
+        "name": "Regan, Kate",
+        "avg": 0.25,
+        "ops": 0.5,
+        "gp": 13,
+        "gs": 6,
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 1,
+        "slg": 0.25,
+        "bb": 0,
+        "hbp": 0,
+        "so": 1,
+        "gdp": 0,
+        "obp": 0.25,
+        "sf": 0,
+        "sh": 0,
+        "sb": 1,
+        "sbAtt": 1,
+        "woba": 0.225,
+        "pa": 4
       }
     },
     {

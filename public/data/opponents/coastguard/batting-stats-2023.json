@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-09T17:28:09.071Z",
+  "scrapedAt": "2026-03-11T15:37:25.455Z",
   "year": 2023,
   "teamGames": 42,
   "players": [
@@ -41,41 +41,6 @@
       }
     },
     {
-      "name": "Maura Murphy",
-      "jerseyNumber": 4,
-      "classYear": "Senior",
-      "position": "Outfield",
-      "bats": "R",
-      "season": {
-        "year": 2023,
-        "name": "Murphy, Maura",
-        "avg": 0.184,
-        "ops": 0.547,
-        "gp": 26,
-        "gs": 21,
-        "ab": 49,
-        "r": 6,
-        "h": 9,
-        "doubles": 3,
-        "triples": 0,
-        "hr": 1,
-        "rbi": 11,
-        "tb": 15,
-        "slg": 0.306,
-        "bb": 4,
-        "hbp": 0,
-        "so": 14,
-        "gdp": 0,
-        "obp": 0.241,
-        "sf": 1,
-        "sh": 0,
-        "sb": 0,
-        "sbAtt": 0,
-        "woba": 0.233,
-        "pa": 54
-      }
-    },
-    {
       "name": "Bridget Bartz",
       "jerseyNumber": 10,
       "classYear": "Senior",
@@ -108,6 +73,41 @@
         "sbAtt": 0,
         "woba": 0.202,
         "pa": 95
+      }
+    },
+    {
+      "name": "Maura Murphy",
+      "jerseyNumber": 4,
+      "classYear": "Senior",
+      "position": "Outfield",
+      "bats": "R",
+      "season": {
+        "year": 2023,
+        "name": "Murphy, Maura",
+        "avg": 0.184,
+        "ops": 0.547,
+        "gp": 26,
+        "gs": 21,
+        "ab": 49,
+        "r": 6,
+        "h": 9,
+        "doubles": 3,
+        "triples": 0,
+        "hr": 1,
+        "rbi": 11,
+        "tb": 15,
+        "slg": 0.306,
+        "bb": 4,
+        "hbp": 0,
+        "so": 14,
+        "gdp": 0,
+        "obp": 0.241,
+        "sf": 1,
+        "sh": 0,
+        "sb": 0,
+        "sbAtt": 0,
+        "woba": 0.233,
+        "pa": 54
       }
     },
     {

@@ -1,7 +1,7 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-02T22:15:56.656Z",
+  "scrapedAt": "2026-03-11T15:24:44.396Z",
   "year": 2024,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.15,
       "app": 7,
       "gs": 5,
+      "cg": 3,
+      "sho": 1,
+      "sv": 0,
       "ip": 39,
       "h": 47,
       "r": 18,
       "er": 12,
       "bb": 6,
       "so": 27,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.36,
+      "doubles": 9,
+      "triples": 0,
+      "ab": 167,
+      "bAvg": 0.281,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     },
     {
       "name": "Knopf, Sofia",
@@ -26,13 +39,26 @@
       "era": 2.23,
       "app": 19,
       "gs": 19,
+      "cg": 13,
+      "sho": 4,
+      "sv": 0,
       "ip": 106.2,
       "h": 105,
       "r": 45,
       "er": 34,
       "bb": 29,
       "so": 70,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.26,
+      "doubles": 23,
+      "triples": 1,
+      "ab": 410,
+      "bAvg": 0.256,
+      "wp": 3,
+      "hbp": 12,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 11
     },
     {
       "name": "Arcand, Amber",
@@ -41,13 +67,26 @@
       "era": 3.58,
       "app": 17,
       "gs": 12,
+      "cg": 8,
+      "sho": 2,
+      "sv": 1,
       "ip": 76.1,
       "h": 94,
       "r": 48,
       "er": 39,
       "bb": 18,
       "so": 35,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.47,
+      "doubles": 18,
+      "triples": 3,
+      "ab": 328,
+      "bAvg": 0.287,
+      "wp": 3,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 5
     },
     {
       "name": "Burt, Ashlyn",
@@ -56,13 +95,26 @@
       "era": 0,
       "app": 2,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 3.2,
       "h": 1,
       "r": 1,
       "er": 0,
       "bb": 4,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.36,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 12,
+      "bAvg": 0.083,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "De La Rosa, Sofia",
@@ -71,13 +123,26 @@
       "era": 3,
       "app": 3,
       "gs": 3,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 11.2,
       "h": 8,
       "r": 5,
       "er": 5,
       "bb": 5,
       "so": 5,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.11,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 41,
+      "bAvg": 0.195,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Dost, Brittany",
@@ -86,13 +151,26 @@
       "era": 4.76,
       "app": 8,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
       "ip": 25,
       "h": 46,
       "r": 22,
       "er": 17,
       "bb": 4,
       "so": 7,
-      "hr": 2
+      "hr": 2,
+      "whip": 2,
+      "doubles": 7,
+      "triples": 0,
+      "ab": 119,
+      "bAvg": 0.387,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     }
   ],
   "games": [
@@ -100,7 +178,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/wentworth-institute-of-technology/boxscore/8800",
       "date": "3/9/2024",
       "opponent": "Wentworth Institute Of Technology",
-      "pitchers": ["Knopf, Sofia", "Arcand, Amber"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -180,7 +261,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/arcadia-university/boxscore/8801",
       "date": "3/9/2024",
       "opponent": "Arcadia University",
-      "pitchers": ["Blankenheim-Brown, Peyton", "Arcand, Amber"],
+      "pitchers": [
+        "Blankenheim-Brown, Peyton",
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -265,7 +349,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/plymouth-state-university/boxscore/8802",
       "date": "3/10/2024",
       "opponent": "Plymouth State University",
-      "pitchers": ["Knopf, Sofia", "Dost, Brittany"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -345,7 +432,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/catholic-university/boxscore/8803",
       "date": "3/10/2024",
       "opponent": "Catholic University",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -415,7 +504,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/loras-college/boxscore/8804",
       "date": "3/11/2024",
       "opponent": "Loras College",
-      "pitchers": ["Blankenheim-Brown, Peyton"],
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -498,7 +589,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/simpson-college/boxscore/8805",
       "date": "3/11/2024",
       "opponent": "Simpson College",
-      "pitchers": ["Arcand, Amber", "Dost, Brittany"],
+      "pitchers": [
+        "Arcand, Amber",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -592,7 +686,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/rowan-university/boxscore/8807",
       "date": "3/13/2024",
       "opponent": "Rowan University",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -676,7 +772,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/arcadia-university/boxscore/8808",
       "date": "3/13/2024",
       "opponent": "Arcadia University",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -741,7 +839,11 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/suffolk-university/boxscore/8809",
       "date": "3/14/2024",
       "opponent": "Suffolk University",
-      "pitchers": ["De La Rosa, Sofia", "Burt, Ashlyn", "Arcand, Amber"],
+      "pitchers": [
+        "De La Rosa, Sofia",
+        "Burt, Ashlyn",
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -826,7 +928,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/suny-geneseo/boxscore/8810",
       "date": "3/14/2024",
       "opponent": "Suny Geneseo",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -890,7 +994,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/umass-dartmouth/boxscore/8811",
       "date": "3/22/2024",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -970,7 +1076,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/umass-dartmouth/boxscore/8812",
       "date": "3/22/2024",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1051,7 +1159,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/bridgewater-state-university/boxscore/8813",
       "date": "3/26/2024",
       "opponent": "Bridgewater State University",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1121,7 +1231,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/salve-regina/boxscore/8817",
       "date": "3/30/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1310,7 +1422,11 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/johnson-wales-university/boxscore/8815",
       "date": "4/2/2024",
       "opponent": "Johnson Wales University",
-      "pitchers": ["Knopf, Sofia", "Arcand, Amber", "Dost, Brittany"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Arcand, Amber",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1375,7 +1491,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/johnson-wales-university/boxscore/8816",
       "date": "4/2/2024",
       "opponent": "Johnson Wales University",
-      "pitchers": ["De La Rosa, Sofia", "Blankenheim-Brown, Peyton"],
+      "pitchers": [
+        "De La Rosa, Sofia",
+        "Blankenheim-Brown, Peyton"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1451,7 +1570,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/smith-college/boxscore/8819",
       "date": "4/5/2024",
       "opponent": "Smith College",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1505,7 +1626,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/smith-college/boxscore/8820",
       "date": "4/5/2024",
       "opponent": "Smith College",
-      "pitchers": ["Blankenheim-Brown, Peyton"],
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1583,7 +1706,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/clark-university/boxscore/8821",
       "date": "4/7/2024",
       "opponent": "Clark University",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1656,7 +1781,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/clark-university/boxscore/8822",
       "date": "4/7/2024",
       "opponent": "Clark University",
-      "pitchers": ["De La Rosa, Sofia"],
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1730,7 +1857,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/babson-college/boxscore/8825",
       "date": "4/13/2024",
       "opponent": "Babson College",
-      "pitchers": ["Knopf, Sofia", "Dost, Brittany"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1814,7 +1944,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/babson-college/boxscore/8826",
       "date": "4/13/2024",
       "opponent": "Babson College",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1893,7 +2025,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/massachusetts-institute-of-technology/boxscore/8823",
       "date": "4/15/2024",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1977,7 +2111,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/massachusetts-institute-of-technology/boxscore/8824",
       "date": "4/15/2024",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2056,7 +2192,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/emmanuel-college-mass-/boxscore/8827",
       "date": "4/16/2024",
       "opponent": "Emmanuel College Mass ",
-      "pitchers": ["Blankenheim-Brown, Peyton"],
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2127,7 +2265,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/emmanuel-college-mass-/boxscore/8828",
       "date": "4/16/2024",
       "opponent": "Emmanuel College Mass ",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2210,7 +2350,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/united-states-coast-guard-academy/boxscore/8829",
       "date": "4/23/2024",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Knopf, Sofia", "Dost, Brittany"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2285,7 +2428,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/united-states-coast-guard-academy/boxscore/8830",
       "date": "4/23/2024",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2363,7 +2508,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/springfield-college/boxscore/8831",
       "date": "4/26/2024",
       "opponent": "Springfield College",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2451,7 +2598,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/springfield-college/boxscore/8832",
       "date": "4/26/2024",
       "opponent": "Springfield College",
-      "pitchers": ["Arcand, Amber", "Dost, Brittany"],
+      "pitchers": [
+        "Arcand, Amber",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2521,7 +2671,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/wellesley-college/boxscore/8833",
       "date": "4/27/2024",
       "opponent": "Wellesley College",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2602,7 +2754,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/wellesley-college/boxscore/8835",
       "date": "4/27/2024",
       "opponent": "Wellesley College",
-      "pitchers": ["Blankenheim-Brown, Peyton", "Arcand, Amber"],
+      "pitchers": [
+        "Blankenheim-Brown, Peyton",
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2682,7 +2837,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/worcester-polytechnic-institute/boxscore/8836",
       "date": "5/3/2024",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2755,7 +2912,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/worcester-polytechnic-institute/boxscore/8837",
       "date": "5/3/2024",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Arcand, Amber", "Dost, Brittany"],
+      "pitchers": [
+        "Arcand, Amber",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2837,7 +2997,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/emerson-college/boxscore/8838",
       "date": "5/4/2024",
       "opponent": "Emerson College",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2914,7 +3076,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/emerson-college/boxscore/8839",
       "date": "5/4/2024",
       "opponent": "Emerson College",
-      "pitchers": ["Arcand, Amber"],
+      "pitchers": [
+        "Arcand, Amber"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2984,7 +3148,9 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/massachusetts-institute-of-technology/boxscore/8945",
       "date": "5/7/2024",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Knopf, Sofia"],
+      "pitchers": [
+        "Knopf, Sofia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3061,7 +3227,10 @@
       "url": "https://wheatoncollegelyons.com/sports/softball/stats/2024/springfield-college/boxscore/8947",
       "date": "5/9/2024",
       "opponent": "Springfield College",
-      "pitchers": ["Knopf, Sofia", "Dost, Brittany"],
+      "pitchers": [
+        "Knopf, Sofia",
+        "Dost, Brittany"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

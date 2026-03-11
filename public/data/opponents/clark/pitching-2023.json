@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-02T22:33:01.540Z",
+  "scrapedAt": "2026-03-11T15:42:10.504Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 3.91,
       "app": 19,
       "gs": 8,
+      "cg": 4,
+      "sho": 0,
+      "sv": 0,
       "ip": 57.1,
       "h": 88,
       "r": 62,
       "er": 32,
       "bb": 16,
       "so": 18,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.81,
+      "doubles": 14,
+      "triples": 4,
+      "ab": 269,
+      "bAvg": 0.327,
+      "wp": 7,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 4
     },
     {
       "name": "Buzzeo, Brooke",
@@ -26,13 +39,26 @@
       "era": 4.49,
       "app": 19,
       "gs": 13,
+      "cg": 7,
+      "sho": 1,
+      "sv": 1,
       "ip": 82.2,
       "h": 125,
       "r": 87,
       "er": 53,
       "bb": 22,
       "so": 37,
-      "hr": 3
+      "hr": 3,
+      "whip": 1.78,
+      "doubles": 37,
+      "triples": 7,
+      "ab": 376,
+      "bAvg": 0.332,
+      "wp": 4,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 6
     },
     {
       "name": "Sardilli, Jessica",
@@ -41,13 +67,26 @@
       "era": 5.39,
       "app": 12,
       "gs": 6,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 36.1,
       "h": 70,
       "r": 47,
       "er": 28,
       "bb": 18,
       "so": 9,
-      "hr": 4
+      "hr": 4,
+      "whip": 2.42,
+      "doubles": 9,
+      "triples": 3,
+      "ab": 181,
+      "bAvg": 0.387,
+      "wp": 3,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     },
     {
       "name": "Barthel, Magdalena",
@@ -56,13 +95,26 @@
       "era": 0,
       "app": 1,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0,
       "h": 0,
       "r": 0,
       "er": 0,
       "bb": 0,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 0,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Buckley, Nicole",
@@ -71,13 +123,26 @@
       "era": 8.85,
       "app": 12,
       "gs": 6,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 34,
       "h": 88,
       "r": 73,
       "er": 43,
       "bb": 20,
       "so": 10,
-      "hr": 1
+      "hr": 1,
+      "whip": 3.18,
+      "doubles": 16,
+      "triples": 10,
+      "ab": 181,
+      "bAvg": 0.486,
+      "wp": 6,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 7
     },
     {
       "name": "Gibson, Kaylee",
@@ -86,13 +151,26 @@
       "era": 10.5,
       "app": 2,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 0.2,
       "h": 0,
       "r": 2,
       "er": 1,
       "bb": 1,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.5,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 3,
+      "bAvg": 0,
+      "wp": 3,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -171,7 +249,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/alverno-college/boxscore/17860",
       "date": "3/5/2023",
       "opponent": "Alverno College",
-      "pitchers": ["Buzzeo, Brooke", "Langus, Keira"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -269,7 +350,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/john-carroll/boxscore/17861",
       "date": "3/6/2023",
       "opponent": "John Carroll",
-      "pitchers": ["Gibson, Kaylee", "Buckley, Nicole"],
+      "pitchers": [
+        "Gibson, Kaylee",
+        "Buckley, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -355,7 +439,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/potsdam/boxscore/17862",
       "date": "3/6/2023",
       "opponent": "Potsdam",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -428,7 +514,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/grove-city/boxscore/17863",
       "date": "3/7/2023",
       "opponent": "Grove City",
-      "pitchers": ["Langus, Keira", "Buckley, Nicole", "Sardilli, Jessica"],
+      "pitchers": [
+        "Langus, Keira",
+        "Buckley, Nicole",
+        "Sardilli, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -516,7 +606,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/anna-maria/boxscore/17864",
       "date": "3/7/2023",
       "opponent": "Anna Maria",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -596,7 +688,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/western-connecticut-state/boxscore/17865",
       "date": "3/9/2023",
       "opponent": "Western Connecticut State",
-      "pitchers": ["Buckley, Nicole", "Langus, Keira"],
+      "pitchers": [
+        "Buckley, Nicole",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -669,7 +764,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/drew-university/boxscore/17866",
       "date": "3/9/2023",
       "opponent": "Drew University",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -767,7 +864,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/john-jay/boxscore/17867",
       "date": "3/10/2023",
       "opponent": "John Jay",
-      "pitchers": ["Langus, Keira"],
+      "pitchers": [
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -844,7 +943,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/haverford/boxscore/17868",
       "date": "3/10/2023",
       "opponent": "Haverford",
-      "pitchers": ["Sardilli, Jessica", "Buzzeo, Brooke", "Gibson, Kaylee"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Buzzeo, Brooke",
+        "Gibson, Kaylee"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -940,7 +1043,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/anna-maria/boxscore/17871",
       "date": "3/21/2023",
       "opponent": "Anna Maria",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1021,7 +1126,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/worcester-state/boxscore/17874",
       "date": "3/28/2023",
       "opponent": "Worcester State",
-      "pitchers": ["Buckley, Nicole", "Langus, Keira"],
+      "pitchers": [
+        "Buckley, Nicole",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1102,7 +1210,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/worcester-state/boxscore/17875",
       "date": "3/28/2023",
       "opponent": "Worcester State",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1171,7 +1281,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wheaton-college/boxscore/17876",
       "date": "4/2/2023",
       "opponent": "Wheaton College",
-      "pitchers": ["Buckley, Nicole", "Langus, Keira"],
+      "pitchers": [
+        "Buckley, Nicole",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1249,7 +1362,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wheaton-college/boxscore/17877",
       "date": "4/2/2023",
       "opponent": "Wheaton College",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1323,7 +1438,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/fitchburg-state/boxscore/17878",
       "date": "4/4/2023",
       "opponent": "Fitchburg State",
-      "pitchers": ["Buzzeo, Brooke", "Buckley, Nicole"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Buckley, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1409,7 +1527,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/fitchburg-state/boxscore/17879",
       "date": "4/4/2023",
       "opponent": "Fitchburg State",
-      "pitchers": ["Langus, Keira", "Buckley, Nicole"],
+      "pitchers": [
+        "Langus, Keira",
+        "Buckley, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1504,7 +1625,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/springfield-college/boxscore/17880",
       "date": "4/7/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Buckley, Nicole", "Sardilli, Jessica"],
+      "pitchers": [
+        "Buckley, Nicole",
+        "Sardilli, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1586,7 +1710,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/springfield-college/boxscore/17881",
       "date": "4/7/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Buzzeo, Brooke", "Langus, Keira"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1655,7 +1782,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/mit/boxscore/17882",
       "date": "4/8/2023",
       "opponent": "Mit",
-      "pitchers": ["Buckley, Nicole"],
+      "pitchers": [
+        "Buckley, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1712,7 +1841,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/mit/boxscore/17883",
       "date": "4/8/2023",
       "opponent": "Mit",
-      "pitchers": ["Buzzeo, Brooke", "Langus, Keira", "Sardilli, Jessica"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Langus, Keira",
+        "Sardilli, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1798,7 +1931,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/nichols-college/boxscore/17884",
       "date": "4/11/2023",
       "opponent": "Nichols College",
-      "pitchers": ["Sardilli, Jessica", "Langus, Keira"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1868,7 +2004,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/nichols-college/boxscore/17885",
       "date": "4/11/2023",
       "opponent": "Nichols College",
-      "pitchers": ["Buzzeo, Brooke", "Langus, Keira"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1942,7 +2081,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/coast-guard-academy/boxscore/17886",
       "date": "4/14/2023",
       "opponent": "Coast Guard Academy",
-      "pitchers": ["Langus, Keira", "Buckley, Nicole", "Sardilli, Jessica"],
+      "pitchers": [
+        "Langus, Keira",
+        "Buckley, Nicole",
+        "Sardilli, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2024,7 +2167,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/coast-guard-academy/boxscore/17887",
       "date": "4/14/2023",
       "opponent": "Coast Guard Academy",
-      "pitchers": ["Buzzeo, Brooke"],
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2101,7 +2246,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wellesley-college/boxscore/17888",
       "date": "4/15/2023",
       "opponent": "Wellesley College",
-      "pitchers": ["Sardilli, Jessica", "Langus, Keira"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2187,7 +2335,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wellesley-college/boxscore/17889",
       "date": "4/15/2023",
       "opponent": "Wellesley College",
-      "pitchers": ["Buckley, Nicole", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Buckley, Nicole",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2257,7 +2408,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/emerson-college/boxscore/17890",
       "date": "4/21/2023",
       "opponent": "Emerson College",
-      "pitchers": ["Sardilli, Jessica", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2330,7 +2484,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/emerson-college/boxscore/17891",
       "date": "4/21/2023",
       "opponent": "Emerson College",
-      "pitchers": ["Langus, Keira"],
+      "pitchers": [
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2410,7 +2566,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wpi/boxscore/17892",
       "date": "4/22/2023",
       "opponent": "Wpi",
-      "pitchers": ["Buzzeo, Brooke", "Sardilli, Jessica"],
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Sardilli, Jessica"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2496,7 +2655,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/wpi/boxscore/17893",
       "date": "4/22/2023",
       "opponent": "Wpi",
-      "pitchers": ["Langus, Keira"],
+      "pitchers": [
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2573,7 +2734,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/smith-college/boxscore/17894",
       "date": "4/28/2023",
       "opponent": "Smith College",
-      "pitchers": ["Langus, Keira", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Langus, Keira",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2664,7 +2828,11 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/smith-college/boxscore/17895",
       "date": "4/28/2023",
       "opponent": "Smith College",
-      "pitchers": ["Sardilli, Jessica", "Langus, Keira", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Langus, Keira",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2756,7 +2924,10 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/babson-college/boxscore/17896",
       "date": "4/29/2023",
       "opponent": "Babson College",
-      "pitchers": ["Sardilli, Jessica", "Buzzeo, Brooke"],
+      "pitchers": [
+        "Sardilli, Jessica",
+        "Buzzeo, Brooke"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2851,7 +3022,9 @@
       "url": "https://clarkathletics.com/sports/softball/stats/2023/babson-college/boxscore/17897",
       "date": "4/29/2023",
       "opponent": "Babson College",
-      "pitchers": ["Langus, Keira"],
+      "pitchers": [
+        "Langus, Keira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

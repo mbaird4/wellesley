@@ -1,7 +1,7 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-02T22:20:51.051Z",
+  "scrapedAt": "2026-03-11T15:29:42.554Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 3.6,
       "app": 26,
       "gs": 15,
+      "cg": 5,
+      "sho": 3,
+      "sv": 0,
       "ip": 95.1,
       "h": 92,
       "r": 75,
       "er": 49,
       "bb": 60,
       "so": 81,
-      "hr": 6
+      "hr": 6,
+      "whip": 1.59,
+      "doubles": 17,
+      "triples": 1,
+      "ab": 388,
+      "bAvg": 0.237,
+      "wp": 23,
+      "hbp": 8,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 8
     },
     {
       "name": "Fletcher, Abigail",
@@ -26,13 +39,26 @@
       "era": 5.11,
       "app": 21,
       "gs": 14,
+      "cg": 6,
+      "sho": 1,
+      "sv": 1,
       "ip": 76.2,
       "h": 124,
       "r": 76,
       "er": 56,
       "bb": 20,
       "so": 19,
-      "hr": 5
+      "hr": 5,
+      "whip": 1.88,
+      "doubles": 25,
+      "triples": 2,
+      "ab": 352,
+      "bAvg": 0.352,
+      "wp": 2,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 6
     },
     {
       "name": "Lavery, Aislinn",
@@ -41,13 +67,26 @@
       "era": 3.5,
       "app": 5,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 4,
       "h": 5,
       "r": 2,
       "er": 2,
       "bb": 2,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 1.75,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 17,
+      "bAvg": 0.294,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Beals, Kaitlen",
@@ -56,13 +95,26 @@
       "era": 5.58,
       "app": 14,
       "gs": 4,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 21.1,
       "h": 37,
       "r": 31,
       "er": 17,
       "bb": 17,
       "so": 14,
-      "hr": 1
+      "hr": 1,
+      "whip": 2.53,
+      "doubles": 5,
+      "triples": 0,
+      "ab": 99,
+      "bAvg": 0.374,
+      "wp": 6,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 2
     },
     {
       "name": "Osmond, Maegan",
@@ -71,13 +123,26 @@
       "era": 7.35,
       "app": 5,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 13.1,
       "h": 17,
       "r": 20,
       "er": 14,
       "bb": 7,
       "so": 11,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.8,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 62,
+      "bAvg": 0.274,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -85,7 +150,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/st-josephs-college-long-island/boxscore/8917",
       "date": "3/12/2023",
       "opponent": "St Josephs College Long Island",
-      "pitchers": ["Helms, Lucy"],
+      "pitchers": [
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -147,7 +214,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/rutgers-camden/boxscore/8905",
       "date": "3/12/2023",
       "opponent": "Rutgers Camden",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -201,7 +270,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/salve-regina/boxscore/8906",
       "date": "3/13/2023",
       "opponent": "Salve Regina",
-      "pitchers": ["Fletcher, Abigail", "Helms, Lucy"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -296,7 +368,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/wesleyan-university/boxscore/8907",
       "date": "3/13/2023",
       "opponent": "Wesleyan University",
-      "pitchers": ["Beals, Kaitlen", "Osmond, Maegan", "Helms, Lucy"],
+      "pitchers": [
+        "Beals, Kaitlen",
+        "Osmond, Maegan",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -381,7 +457,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/nichols-college/boxscore/8908",
       "date": "3/14/2023",
       "opponent": "Nichols College",
-      "pitchers": ["Fletcher, Abigail", "Helms, Lucy", "Beals, Kaitlen"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Helms, Lucy",
+        "Beals, Kaitlen"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -579,7 +659,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/college-of-st-scholastica/boxscore/8910",
       "date": "3/16/2023",
       "opponent": "College Of St Scholastica",
-      "pitchers": ["Helms, Lucy", "Fletcher, Abigail"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -682,7 +765,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/hamilton-college/boxscore/8911",
       "date": "3/16/2023",
       "opponent": "Hamilton College",
-      "pitchers": ["Helms, Lucy", "Beals, Kaitlen", "Osmond, Maegan"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Beals, Kaitlen",
+        "Osmond, Maegan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -772,7 +859,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/kalamazoo-college/boxscore/8912",
       "date": "3/17/2023",
       "opponent": "Kalamazoo College",
-      "pitchers": ["Helms, Lucy", "Fletcher, Abigail"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -953,7 +1043,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/westfield-state-university/boxscore/8843",
       "date": "3/29/2023",
       "opponent": "Westfield State University",
-      "pitchers": ["Beals, Kaitlen", "Helms, Lucy"],
+      "pitchers": [
+        "Beals, Kaitlen",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1029,7 +1122,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/westfield-state-university/boxscore/8844",
       "date": "3/29/2023",
       "opponent": "Westfield State University",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1100,7 +1195,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/united-states-coast-guard-academy/boxscore/8845",
       "date": "4/2/2023",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Helms, Lucy"],
+      "pitchers": [
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1183,7 +1280,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/united-states-coast-guard-academy/boxscore/8846",
       "date": "4/2/2023",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Fletcher, Abigail", "Beals, Kaitlen", "Helms, Lucy"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Beals, Kaitlen",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1272,7 +1373,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/keene-state/boxscore/8849",
       "date": "4/4/2023",
       "opponent": "Keene State",
-      "pitchers": ["Helms, Lucy", "Beals, Kaitlen"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Beals, Kaitlen"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1342,7 +1446,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/keene-state/boxscore/8850",
       "date": "4/4/2023",
       "opponent": "Keene State",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1416,7 +1522,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/babson-college/boxscore/8853",
       "date": "4/8/2023",
       "opponent": "Babson College",
-      "pitchers": ["Helms, Lucy"],
+      "pitchers": [
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1482,7 +1590,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/babson-college/boxscore/8854",
       "date": "4/8/2023",
       "opponent": "Babson College",
-      "pitchers": ["Helms, Lucy", "Fletcher, Abigail"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1557,7 +1668,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/williams-college/boxscore/8855",
       "date": "4/12/2023",
       "opponent": "Williams College",
-      "pitchers": ["Helms, Lucy"],
+      "pitchers": [
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1631,7 +1744,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/williams-college/boxscore/8856",
       "date": "4/12/2023",
       "opponent": "Williams College",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1702,7 +1817,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/springfield-college/boxscore/8857",
       "date": "4/14/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Helms, Lucy", "Beals, Kaitlen"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Beals, Kaitlen"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1794,7 +1912,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/springfield-college/boxscore/8858",
       "date": "4/14/2023",
       "opponent": "Springfield College",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1853,7 +1973,9 @@
         },
         {
           "inning": "6th",
-          "plays": ["C. Alaniz to 3b for K. Beals."]
+          "plays": [
+            "C. Alaniz to 3b for K. Beals."
+          ]
         }
       ],
       "year": 2023
@@ -1862,7 +1984,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/wheaton-college-mass-/boxscore/8859",
       "date": "4/15/2023",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Helms, Lucy", "Beals, Kaitlen", "Lavery, Aislinn"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Beals, Kaitlen",
+        "Lavery, Aislinn"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1941,7 +2067,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/wheaton-college-mass-/boxscore/8860",
       "date": "4/15/2023",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Helms, Lucy", "Fletcher, Abigail"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2029,7 +2158,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/elms-college/boxscore/8920",
       "date": "4/18/2023",
       "opponent": "Elms College",
-      "pitchers": ["Helms, Lucy", "Lavery, Aislinn"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Lavery, Aislinn"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2088,7 +2220,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/elms-college/boxscore/8921",
       "date": "4/18/2023",
       "opponent": "Elms College",
-      "pitchers": ["Fletcher, Abigail", "Osmond, Maegan"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Osmond, Maegan"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2145,7 +2280,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/worcester-polytechnic-institute/boxscore/8863",
       "date": "4/21/2023",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Fletcher, Abigail", "Helms, Lucy"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2218,7 +2356,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/worcester-polytechnic-institute/boxscore/8864",
       "date": "4/21/2023",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Fletcher, Abigail", "Beals, Kaitlen"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Beals, Kaitlen"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2319,7 +2460,10 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/massachusetts-institute-of-technology/boxscore/8865",
       "date": "4/22/2023",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Helms, Lucy", "Beals, Kaitlen"],
+      "pitchers": [
+        "Helms, Lucy",
+        "Beals, Kaitlen"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2404,7 +2548,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/massachusetts-institute-of-technology/boxscore/8866",
       "date": "4/22/2023",
       "opponent": "Massachusetts Institute Of Technology",
-      "pitchers": ["Fletcher, Abigail"],
+      "pitchers": [
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2479,7 +2625,9 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/emerson-college/boxscore/8871",
       "date": "4/27/2023",
       "opponent": "Emerson College",
-      "pitchers": ["Helms, Lucy"],
+      "pitchers": [
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2551,7 +2699,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/emerson-college/boxscore/8872",
       "date": "4/27/2023",
       "opponent": "Emerson College",
-      "pitchers": ["Fletcher, Abigail", "Beals, Kaitlen", "Helms, Lucy"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Beals, Kaitlen",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2639,7 +2791,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/clark-university/boxscore/8869",
       "date": "4/28/2023",
       "opponent": "Clark University",
-      "pitchers": ["Lavery, Aislinn", "Helms, Lucy", "Fletcher, Abigail"],
+      "pitchers": [
+        "Lavery, Aislinn",
+        "Helms, Lucy",
+        "Fletcher, Abigail"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2737,7 +2893,11 @@
       "url": "https://gosmithbears.com/sports/softball/stats/2023/clark-university/boxscore/8870",
       "date": "4/28/2023",
       "opponent": "Clark University",
-      "pitchers": ["Fletcher, Abigail", "Beals, Kaitlen", "Helms, Lucy"],
+      "pitchers": [
+        "Fletcher, Abigail",
+        "Beals, Kaitlen",
+        "Helms, Lucy"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

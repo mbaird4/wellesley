@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-02T22:13:10.421Z",
+  "scrapedAt": "2026-03-11T15:21:52.442Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 2.9,
       "app": 31,
       "gs": 23,
+      "cg": 11,
+      "sho": 2,
+      "sv": 1,
       "ip": 125.1,
       "h": 125,
       "r": 61,
       "er": 52,
       "bb": 33,
       "so": 66,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.26,
+      "doubles": 20,
+      "triples": 4,
+      "ab": 496,
+      "bAvg": 0.252,
+      "wp": 6,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 6
     },
     {
       "name": "Pritchard, Kelly",
@@ -26,13 +39,26 @@
       "era": 4.02,
       "app": 25,
       "gs": 3,
+      "cg": 1,
+      "sho": 1,
+      "sv": 2,
       "ip": 61,
       "h": 79,
       "r": 50,
       "er": 35,
       "bb": 27,
       "so": 38,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.74,
+      "doubles": 8,
+      "triples": 1,
+      "ab": 265,
+      "bAvg": 0.298,
+      "wp": 16,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 4
     },
     {
       "name": "Nagy, Emma",
@@ -41,13 +67,26 @@
       "era": 4.79,
       "app": 19,
       "gs": 14,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
       "ip": 73,
       "h": 101,
       "r": 68,
       "er": 50,
       "bb": 32,
       "so": 25,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.82,
+      "doubles": 17,
+      "triples": 0,
+      "ab": 311,
+      "bAvg": 0.325,
+      "wp": 13,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 13
     }
   ],
   "games": [
@@ -55,7 +94,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/occidental-ca-/boxscore/10988",
       "date": "3/5/2023",
       "opponent": "Occidental Ca ",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -140,7 +182,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/occidental-ca-/boxscore/10989",
       "date": "3/5/2023",
       "opponent": "Occidental Ca ",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -227,7 +272,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/chapman-ca-/boxscore/10990",
       "date": "3/6/2023",
       "opponent": "Chapman Ca ",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -305,7 +353,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/chapman-ca-/boxscore/10991",
       "date": "3/6/2023",
       "opponent": "Chapman Ca ",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -384,7 +435,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/pomona-pitzer-ca-/boxscore/10992",
       "date": "3/8/2023",
       "opponent": "Pomona Pitzer Ca ",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -458,7 +512,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/pomona-pitzer-ca-/boxscore/10993",
       "date": "3/8/2023",
       "opponent": "Pomona Pitzer Ca ",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -537,7 +595,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/la-verne-ca-/boxscore/10994",
       "date": "3/9/2023",
       "opponent": "La Verne Ca ",
-      "pitchers": ["Togneri, Sophia", "Nagy, Emma"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -613,7 +674,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/la-verne-ca-/boxscore/10995",
       "date": "3/9/2023",
       "opponent": "La Verne Ca ",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly", "Nagy, Emma"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly",
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -703,7 +768,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/johnson-amp-wales/boxscore/10998",
       "date": "03/18/23",
       "opponent": "Johnson Amp Wales",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -785,7 +853,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/johnson-amp-wales/boxscore/10999",
       "date": "03/18/23",
       "opponent": "Johnson Amp Wales",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -887,7 +959,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/amherst/boxscore/11000",
       "date": "3/22/2023",
       "opponent": "Amherst",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -974,7 +1049,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/amherst/boxscore/11001",
       "date": "3/22/2023",
       "opponent": "Amherst",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1068,7 +1147,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/eastern-connecticut/boxscore/11002",
       "date": "3/26/2023",
       "opponent": "Eastern Connecticut",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1159,7 +1241,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/eastern-connecticut/boxscore/11003",
       "date": "3/26/2023",
       "opponent": "Eastern Connecticut",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1216,7 +1300,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/worcester-state/boxscore/11004",
       "date": "3/29/2023",
       "opponent": "Worcester State",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1298,7 +1385,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/worcester-state/boxscore/11005",
       "date": "3/29/2023",
       "opponent": "Worcester State",
-      "pitchers": ["Togneri, Sophia", "Nagy, Emma"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1365,7 +1455,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11006",
       "date": "4/2/2023",
       "opponent": "Babson",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1437,7 +1529,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11007",
       "date": "4/2/2023",
       "opponent": "Babson",
-      "pitchers": ["Togneri, Sophia", "Nagy, Emma"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1531,7 +1626,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11008",
       "date": "4/7/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1596,7 +1693,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11009",
       "date": "4/7/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1673,7 +1773,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wheaton-mass-/boxscore/11010",
       "date": "4/8/2023",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1743,7 +1845,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wheaton-mass-/boxscore/11011",
       "date": "4/8/2023",
       "opponent": "Wheaton Mass ",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1834,7 +1940,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/mit/boxscore/11012",
       "date": "4/14/2023",
       "opponent": "Mit",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1920,7 +2028,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/mit/boxscore/11013",
       "date": "4/14/2023",
       "opponent": "Mit",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2013,7 +2125,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/emerson/boxscore/11014",
       "date": "4/15/2023",
       "opponent": "Emerson",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2084,7 +2198,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/emerson/boxscore/11015",
       "date": "4/15/2023",
       "opponent": "Emerson",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2156,7 +2273,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/bridgewater-state/boxscore/11016",
       "date": "4/18/2023",
       "opponent": "Bridgewater State",
-      "pitchers": ["Nagy, Emma"],
+      "pitchers": [
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2214,7 +2333,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/bridgewater-state/boxscore/11017",
       "date": "4/18/2023",
       "opponent": "Bridgewater State",
-      "pitchers": ["Pritchard, Kelly"],
+      "pitchers": [
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2276,7 +2397,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/smith/boxscore/11018",
       "date": "4/21/2023",
       "opponent": "Smith",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2353,7 +2476,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/smith/boxscore/11019",
       "date": "4/21/2023",
       "opponent": "Smith",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2449,7 +2576,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/clark/boxscore/11020",
       "date": "4/22/2023",
       "opponent": "Clark",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2536,7 +2666,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/clark/boxscore/11021",
       "date": "4/22/2023",
       "opponent": "Clark",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2611,7 +2743,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/brandeis/boxscore/11022",
       "date": "4/26/2023",
       "opponent": "Brandeis",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2684,7 +2818,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/brandeis/boxscore/11023",
       "date": "4/26/2023",
       "opponent": "Brandeis",
-      "pitchers": ["Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2762,7 +2899,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/springfield/boxscore/11024",
       "date": "4/28/2023",
       "opponent": "Springfield",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2832,7 +2971,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/springfield/boxscore/11025",
       "date": "4/28/2023",
       "opponent": "Springfield",
-      "pitchers": ["Pritchard, Kelly", "Nagy, Emma"],
+      "pitchers": [
+        "Pritchard, Kelly",
+        "Nagy, Emma"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2915,7 +3057,9 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wellesley/boxscore/11026",
       "date": "4/29/2023",
       "opponent": "Wellesley",
-      "pitchers": ["Togneri, Sophia"],
+      "pitchers": [
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3001,7 +3145,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/wellesley/boxscore/11027",
       "date": "4/29/2023",
       "opponent": "Wellesley",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3086,7 +3233,10 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/babson/boxscore/11028",
       "date": "5/5/2023",
       "opponent": "Babson",
-      "pitchers": ["Togneri, Sophia", "Pritchard, Kelly"],
+      "pitchers": [
+        "Togneri, Sophia",
+        "Pritchard, Kelly"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3187,7 +3337,11 @@
       "url": "https://athletics.wpi.edu/sports/softball/stats/2023/coast-guard/boxscore/11029",
       "date": "5/6/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Nagy, Emma", "Pritchard, Kelly", "Togneri, Sophia"],
+      "pitchers": [
+        "Nagy, Emma",
+        "Pritchard, Kelly",
+        "Togneri, Sophia"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

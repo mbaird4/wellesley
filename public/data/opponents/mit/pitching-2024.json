@@ -1,7 +1,7 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-02T22:26:19.976Z",
+  "scrapedAt": "2026-03-11T15:35:07.991Z",
   "year": 2024,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1.8,
       "app": 30,
       "gs": 25,
+      "cg": 20,
+      "sho": 4,
+      "sv": 1,
       "ip": 167,
       "h": 145,
       "r": 56,
       "er": 43,
       "bb": 57,
       "so": 162,
-      "hr": 4
+      "hr": 4,
+      "whip": 1.21,
+      "doubles": 27,
+      "triples": 6,
+      "ab": 631,
+      "bAvg": 0.23,
+      "wp": 9,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 16
     },
     {
       "name": "O'Connor, Becca",
@@ -26,13 +39,26 @@
       "era": 4.74,
       "app": 17,
       "gs": 12,
+      "cg": 3,
+      "sho": 0,
+      "sv": 0,
       "ip": 65,
       "h": 101,
       "r": 56,
       "er": 44,
       "bb": 19,
       "so": 19,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.85,
+      "doubles": 19,
+      "triples": 3,
+      "ab": 296,
+      "bAvg": 0.341,
+      "wp": 2,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 6
     },
     {
       "name": "Doering, Nicole",
@@ -41,13 +67,26 @@
       "era": 3.99,
       "app": 14,
       "gs": 6,
+      "cg": 2,
+      "sho": 0,
+      "sv": 0,
       "ip": 40.1,
       "h": 32,
       "r": 29,
       "er": 23,
       "bb": 45,
       "so": 25,
-      "hr": 1
+      "hr": 1,
+      "whip": 1.91,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 153,
+      "bAvg": 0.209,
+      "wp": 16,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     },
     {
       "name": "Katsuyama, Katie",
@@ -56,13 +95,26 @@
       "era": 4,
       "app": 8,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 14,
       "h": 23,
       "r": 12,
       "er": 8,
       "bb": 9,
       "so": 12,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.29,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 65,
+      "bAvg": 0.354,
+      "wp": 6,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 1
     },
     {
       "name": "Huang, Sharona",
@@ -71,13 +123,26 @@
       "era": 7,
       "app": 2,
       "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 2,
       "h": 5,
       "r": 5,
       "er": 2,
       "bb": 1,
       "so": 0,
-      "hr": 0
+      "hr": 0,
+      "whip": 3,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 13,
+      "bAvg": 0.385,
+      "wp": 4,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -85,7 +150,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/brandeis-university/boxscore/10562",
       "date": "3/19/2024",
       "opponent": "Brandeis University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -167,7 +234,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/brandeis-university/boxscore/10563",
       "date": "3/19/2024",
       "opponent": "Brandeis University",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -246,7 +315,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/colby-college/boxscore/10564",
       "date": "3/24/2024",
       "opponent": "Colby College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -325,7 +396,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/elmhurst-university/boxscore/10878",
       "date": "3/24/2024",
       "opponent": "Elmhurst University",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -384,7 +458,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/kalamazoo-college/boxscore/10879",
       "date": "3/25/2024",
       "opponent": "Kalamazoo College",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie", "Huang, Sharona"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -456,7 +534,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/colby-college/boxscore/10880",
       "date": "3/25/2024",
       "opponent": "Colby College",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -552,7 +634,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/kalamazoo-college/boxscore/10881",
       "date": "3/27/2024",
       "opponent": "Kalamazoo College",
-      "pitchers": ["Katsuyama, Katie", "O'Connor, Becca"],
+      "pitchers": [
+        "Katsuyama, Katie",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -633,7 +718,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/gustavus-adolphus-college/boxscore/10882",
       "date": "3/27/2024",
       "opponent": "Gustavus Adolphus College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -708,7 +795,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/colby-college/boxscore/10883",
       "date": "3/28/2024",
       "opponent": "Colby College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -767,7 +856,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/gustavus-adolphus-college/boxscore/10884",
       "date": "3/28/2024",
       "opponent": "Gustavus Adolphus College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -840,7 +931,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/worcester-polytechnic-institute/boxscore/10565",
       "date": "3/30/2024",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -918,7 +1011,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/worcester-polytechnic-institute/boxscore/10566",
       "date": "3/30/2024",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1021,7 +1118,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/babson-college/boxscore/10567",
       "date": "4/6/2024",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1083,7 +1182,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/babson-college/boxscore/10568",
       "date": "4/6/2024",
       "opponent": "Babson College",
-      "pitchers": ["O'Connor, Becca"],
+      "pitchers": [
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1158,7 +1259,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/simmons-university/boxscore/10569",
       "date": "4/10/2024",
       "opponent": "Simmons University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1227,7 +1330,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/simmons-university/boxscore/10570",
       "date": "4/10/2024",
       "opponent": "Simmons University",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1306,7 +1412,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/springfield-college/boxscore/10573",
       "date": "4/13/2024",
       "opponent": "Springfield College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1386,7 +1494,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/springfield-college/boxscore/10574",
       "date": "4/13/2024",
       "opponent": "Springfield College",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1477,7 +1588,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/wheaton-college-mass-/boxscore/10926",
       "date": "4/15/2024",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1550,7 +1663,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/wheaton-college-mass-/boxscore/10927",
       "date": "4/15/2024",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole", "Katsuyama, Katie"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1636,7 +1753,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/no-15-tufts-university/boxscore/10575",
       "date": "4/17/2024",
       "opponent": "No 15 Tufts University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1703,7 +1822,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/no-15-tufts-university/boxscore/10576",
       "date": "4/17/2024",
       "opponent": "No 15 Tufts University",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1776,7 +1898,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/salve-regina/boxscore/10577",
       "date": "4/19/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1843,7 +1967,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/salve-regina/boxscore/10578",
       "date": "4/19/2024",
       "opponent": "Salve Regina",
-      "pitchers": ["Doering, Nicole", "O'Connor, Becca", "Langmeyer, Caroline"],
+      "pitchers": [
+        "Doering, Nicole",
+        "O'Connor, Becca",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1938,7 +2066,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/wellesley-college/boxscore/10579",
       "date": "4/20/2024",
       "opponent": "Wellesley College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2020,7 +2150,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/wellesley-college/boxscore/10580",
       "date": "4/20/2024",
       "opponent": "Wellesley College",
-      "pitchers": ["Doering, Nicole"],
+      "pitchers": [
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2092,7 +2224,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/emerson-college/boxscore/10581",
       "date": "4/26/2024",
       "opponent": "Emerson College",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2169,7 +2304,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/emerson-college/boxscore/10582",
       "date": "4/26/2024",
       "opponent": "Emerson College",
-      "pitchers": ["Doering, Nicole"],
+      "pitchers": [
+        "Doering, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2227,7 +2364,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/endicott-college/boxscore/10585",
       "date": "5/1/2024",
       "opponent": "Endicott College",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2321,7 +2461,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/endicott-college/boxscore/10586",
       "date": "5/1/2024",
       "opponent": "Endicott College",
-      "pitchers": ["Doering, Nicole", "O'Connor, Becca"],
+      "pitchers": [
+        "Doering, Nicole",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2406,7 +2549,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/united-states-coast-guard-academy/boxscore/10587",
       "date": "5/3/2024",
       "opponent": "United States Coast Guard Academy",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2553,7 +2698,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/clark-university/boxscore/10589",
       "date": "5/4/2024",
       "opponent": "Clark University",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2633,7 +2780,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/clark-university/boxscore/10590",
       "date": "5/4/2024",
       "opponent": "Clark University",
-      "pitchers": ["O'Connor, Becca", "Huang, Sharona"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Huang, Sharona"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2707,7 +2857,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/worcester-polytechnic-institute/boxscore/10591",
       "date": "5/7/2024",
       "opponent": "Worcester Polytechnic Institute",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2791,7 +2943,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/wheaton-college-mass-/boxscore/10931",
       "date": "5/7/2024",
       "opponent": "Wheaton College Mass ",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2864,7 +3018,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/babson-college/boxscore/10933",
       "date": "5/9/2024",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2947,7 +3103,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/babson-college/boxscore/10935",
       "date": "5/11/2024",
       "opponent": "Babson College",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3019,7 +3177,9 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/new-paltz/boxscore/10592",
       "date": "5/16/2024",
       "opponent": "New Paltz",
-      "pitchers": ["Langmeyer, Caroline"],
+      "pitchers": [
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3098,7 +3258,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/no-15-rowan-university/boxscore/10940",
       "date": "5/17/2024",
       "opponent": "No 15 Rowan University",
-      "pitchers": ["Langmeyer, Caroline", "Katsuyama, Katie"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "Katsuyama, Katie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3183,7 +3346,11 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/new-paltz/boxscore/10942",
       "date": "5/17/2024",
       "opponent": "New Paltz",
-      "pitchers": ["O'Connor, Becca", "Doering, Nicole", "Langmeyer, Caroline"],
+      "pitchers": [
+        "O'Connor, Becca",
+        "Doering, Nicole",
+        "Langmeyer, Caroline"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3263,7 +3430,10 @@
       "url": "https://mitathletics.com/sports/softball/stats/2024/no-15-rowan-university/boxscore/10945",
       "date": "5/18/2024",
       "opponent": "No 15 Rowan University",
-      "pitchers": ["Langmeyer, Caroline", "O'Connor, Becca"],
+      "pitchers": [
+        "Langmeyer, Caroline",
+        "O'Connor, Becca"
+      ],
       "battingInnings": [
         {
           "inning": "1st",

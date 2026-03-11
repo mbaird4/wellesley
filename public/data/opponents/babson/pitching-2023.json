@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-02T23:25:23.536Z",
+  "scrapedAt": "2026-03-11T15:45:04.791Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -11,13 +11,26 @@
       "era": 1.83,
       "app": 27,
       "gs": 27,
+      "cg": 21,
+      "sho": 5,
+      "sv": 0,
       "ip": 176.1,
       "h": 130,
       "r": 56,
       "er": 46,
       "bb": 46,
       "so": 244,
-      "hr": 4
+      "hr": 4,
+      "whip": 1,
+      "doubles": 16,
+      "triples": 6,
+      "ab": 656,
+      "bAvg": 0.198,
+      "wp": 0,
+      "hbp": 14,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 13
     },
     {
       "name": "Sestito, Nicole",
@@ -26,13 +39,26 @@
       "era": 4.11,
       "app": 17,
       "gs": 9,
+      "cg": 4,
+      "sho": 1,
+      "sv": 0,
       "ip": 64.2,
       "h": 96,
       "r": 58,
       "er": 38,
       "bb": 24,
       "so": 16,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.86,
+      "doubles": 10,
+      "triples": 2,
+      "ab": 289,
+      "bAvg": 0.332,
+      "wp": 7,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 6
     },
     {
       "name": "Taubenheim, Natasha",
@@ -41,13 +67,26 @@
       "era": 3.5,
       "app": 13,
       "gs": 5,
+      "cg": 2,
+      "sho": 1,
+      "sv": 0,
       "ip": 40,
       "h": 45,
       "r": 31,
       "er": 20,
       "bb": 24,
       "so": 23,
-      "hr": 2
+      "hr": 2,
+      "whip": 1.73,
+      "doubles": 5,
+      "triples": 2,
+      "ab": 161,
+      "bAvg": 0.28,
+      "wp": 8,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 6
     },
     {
       "name": "DeStefano, Alyssa",
@@ -56,13 +95,26 @@
       "era": 9.55,
       "app": 3,
       "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
       "ip": 3.2,
       "h": 8,
       "r": 6,
       "er": 5,
       "bb": 3,
       "so": 2,
-      "hr": 0
+      "hr": 0,
+      "whip": 3,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 19,
+      "bAvg": 0.421,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Gabler, Andi",
@@ -71,13 +123,26 @@
       "era": 9.63,
       "app": 3,
       "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
       "ip": 8,
       "h": 18,
       "r": 11,
       "er": 11,
       "bb": 4,
       "so": 1,
-      "hr": 0
+      "hr": 0,
+      "whip": 2.75,
+      "doubles": 6,
+      "triples": 1,
+      "ab": 38,
+      "bAvg": 0.474,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 0
     }
   ],
   "games": [
@@ -85,7 +150,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/schreiner/boxscore/13455",
       "date": "2/24/2023",
       "opponent": "Schreiner",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -261,7 +328,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/texas-lutheran/boxscore/13457",
       "date": "2/25/2023",
       "opponent": "Texas Lutheran",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -342,7 +411,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/texas-lutheran/boxscore/13458",
       "date": "2/25/2023",
       "opponent": "Texas Lutheran",
-      "pitchers": ["Gabler, Andi", "Sestito, Nicole"],
+      "pitchers": [
+        "Gabler, Andi",
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -422,7 +494,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/trinity-texas-/boxscore/13459",
       "date": "2/26/2023",
       "opponent": "Trinity Texas ",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -503,7 +577,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/trinity-texas-/boxscore/13460",
       "date": "2/26/2023",
       "opponent": "Trinity Texas ",
-      "pitchers": ["Sestito, Nicole"],
+      "pitchers": [
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -580,7 +656,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/lebanon-valley/boxscore/13461",
       "date": "3/11/2023",
       "opponent": "Lebanon Valley",
-      "pitchers": ["O'Reilly, Moira", "DeStefano, Alyssa"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "DeStefano, Alyssa"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -670,7 +749,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/ramapo/boxscore/13462",
       "date": "3/11/2023",
       "opponent": "Ramapo",
-      "pitchers": ["Sestito, Nicole", "DeStefano, Alyssa"],
+      "pitchers": [
+        "Sestito, Nicole",
+        "DeStefano, Alyssa"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -748,7 +830,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/hamilton/boxscore/13463",
       "date": "3/12/2023",
       "opponent": "Hamilton",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -835,7 +919,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/endicott/boxscore/13464",
       "date": "3/12/2023",
       "opponent": "Endicott",
-      "pitchers": ["Gabler, Andi", "Taubenheim, Natasha"],
+      "pitchers": [
+        "Gabler, Andi",
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -915,7 +1002,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/ohio-northern/boxscore/13465",
       "date": "3/13/2023",
       "opponent": "Ohio Northern",
-      "pitchers": ["O'Reilly, Moira", "DeStefano, Alyssa"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "DeStefano, Alyssa"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -993,7 +1083,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/case-western-reserve/boxscore/13466",
       "date": "3/13/2023",
       "opponent": "Case Western Reserve",
-      "pitchers": ["Sestito, Nicole", "Taubenheim, Natasha"],
+      "pitchers": [
+        "Sestito, Nicole",
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1081,7 +1174,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wisconsin-stout/boxscore/13467",
       "date": "3/14/2023",
       "opponent": "Wisconsin Stout",
-      "pitchers": ["Taubenheim, Natasha"],
+      "pitchers": [
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1160,7 +1255,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/geneseo/boxscore/13468",
       "date": "3/14/2023",
       "opponent": "Geneseo",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1344,7 +1441,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/chicago/boxscore/13470",
       "date": "3/16/2023",
       "opponent": "Chicago",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1406,7 +1505,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/umass-dartmouth/boxscore/13471",
       "date": "3/29/2023",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1486,7 +1587,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/umass-dartmouth/boxscore/13472",
       "date": "3/29/2023",
       "opponent": "Umass Dartmouth",
-      "pitchers": ["Taubenheim, Natasha", "Sestito, Nicole"],
+      "pitchers": [
+        "Taubenheim, Natasha",
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1548,7 +1652,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wpi/boxscore/13473",
       "date": "4/2/2023",
       "opponent": "Wpi",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1710,7 +1816,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wheaton/boxscore/13475",
       "date": "4/7/2023",
       "opponent": "Wheaton",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1799,7 +1907,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wheaton/boxscore/13476",
       "date": "4/7/2023",
       "opponent": "Wheaton",
-      "pitchers": ["Taubenheim, Natasha", "Sestito, Nicole"],
+      "pitchers": [
+        "Taubenheim, Natasha",
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1885,7 +1996,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/smith/boxscore/13477",
       "date": "4/8/2023",
       "opponent": "Smith",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -1952,7 +2065,11 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/smith/boxscore/13478",
       "date": "4/8/2023",
       "opponent": "Smith",
-      "pitchers": ["O'Reilly, Moira", "Sestito, Nicole", "DeStefano, Alyssa"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Sestito, Nicole",
+        "DeStefano, Alyssa"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2037,7 +2154,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/framingham-state/boxscore/13479",
       "date": "4/11/2023",
       "opponent": "Framingham State",
-      "pitchers": ["O'Reilly, Moira", "DeStefano, Alyssa"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "DeStefano, Alyssa"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2108,7 +2228,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/framingham-state/boxscore/13480",
       "date": "4/11/2023",
       "opponent": "Framingham State",
-      "pitchers": ["DeStefano, Alyssa", "Taubenheim, Natasha"],
+      "pitchers": [
+        "DeStefano, Alyssa",
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2200,7 +2323,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/emerson/boxscore/13481",
       "date": "4/14/2023",
       "opponent": "Emerson",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2374,7 +2499,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/coast-guard/boxscore/13483",
       "date": "4/15/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2466,7 +2593,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/coast-guard/boxscore/13484",
       "date": "4/15/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["Sestito, Nicole", "Taubenheim, Natasha"],
+      "pitchers": [
+        "Sestito, Nicole",
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2536,7 +2666,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/tufts/boxscore/13485",
       "date": "4/19/2023",
       "opponent": "Tufts",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2611,7 +2743,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wellesley/boxscore/13486",
       "date": "4/21/2023",
       "opponent": "Wellesley",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2680,7 +2814,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wellesley/boxscore/13487",
       "date": "4/21/2023",
       "opponent": "Wellesley",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2746,7 +2882,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/springfield/boxscore/13488",
       "date": "4/22/2023",
       "opponent": "Springfield",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2829,7 +2967,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/springfield/boxscore/13489",
       "date": "4/22/2023",
       "opponent": "Springfield",
-      "pitchers": ["Sestito, Nicole", "Taubenheim, Natasha"],
+      "pitchers": [
+        "Sestito, Nicole",
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2900,7 +3041,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/endicott/boxscore/13490",
       "date": "4/25/2023",
       "opponent": "Endicott",
-      "pitchers": ["Sestito, Nicole"],
+      "pitchers": [
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -2967,7 +3110,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/mit/boxscore/13491",
       "date": "4/28/23",
       "opponent": "Mit",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3037,7 +3182,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/mit/boxscore/13492",
       "date": "4/28/23",
       "opponent": "Mit",
-      "pitchers": ["Sestito, Nicole"],
+      "pitchers": [
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3125,7 +3272,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/clark/boxscore/13493",
       "date": "4/29/2023",
       "opponent": "Clark",
-      "pitchers": ["Taubenheim, Natasha"],
+      "pitchers": [
+        "Taubenheim, Natasha"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3208,7 +3357,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/clark/boxscore/13494",
       "date": "4/29/2023",
       "opponent": "Clark",
-      "pitchers": ["Sestito, Nicole"],
+      "pitchers": [
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3281,7 +3432,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wpi/boxscore/13495",
       "date": "5/5/2023",
       "opponent": "Wpi",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3372,7 +3525,10 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/mit/boxscore/13496",
       "date": "5/5/2023",
       "opponent": "Mit",
-      "pitchers": ["O'Reilly, Moira", "Sestito, Nicole"],
+      "pitchers": [
+        "O'Reilly, Moira",
+        "Sestito, Nicole"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3440,7 +3596,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/wheaton/boxscore/13497",
       "date": "5/6/2023",
       "opponent": "Wheaton",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3501,7 +3659,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/coast-guard/boxscore/13498",
       "date": "5/6/2023",
       "opponent": "Coast Guard",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -3569,7 +3729,9 @@
       "url": "https://babsonathletics.com/sports/softball/stats/2023/springfield/boxscore/13499",
       "date": "5/7/2023",
       "opponent": "Springfield",
-      "pitchers": ["O'Reilly, Moira"],
+      "pitchers": [
+        "O'Reilly, Moira"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
