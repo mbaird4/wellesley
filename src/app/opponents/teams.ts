@@ -65,3 +65,29 @@ export const FLORIDA_TEAMS: TeamEntry[] = [
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const ALL_OPPONENT_TEAMS: TeamEntry[] = [...OPPONENT_TEAMS, ...FLORIDA_TEAMS];
+
+/**
+ * Maps opponent slugs to full institutional names used in Wellesley pitching JSON.
+ * Matching is case-insensitive + trimmed to handle quirks like trailing spaces.
+ */
+export const SLUG_TO_OPPONENT_NAMES: Record<string, string[]> = {
+  babson: ['Babson', 'Babson College'],
+  clark: ['Clark', 'Clark University'],
+  coastguard: ['Coast Guard', 'United States Coast Guard Academy'],
+  emerson: ['Emerson', 'Emerson College'],
+  mit: ['Mit', 'Massachusetts Institute Of Technology'],
+  salve: ['Salve Regina'],
+  smith: ['Smith', 'Smith College'],
+  springfield: ['Springfield', 'Springfield College'],
+  wheaton: ['Wheaton', 'Wheaton College Mass'],
+  wpi: ['Wpi', 'Worcester Polytechnic Institute'],
+  // Florida trip teams
+  wesleyan: ['Wesleyan Conn'],
+  uwrf: ['University Of Wisconsin River Falls'],
+  brockport: ['Suny Brockport', 'SUNY Brockport'],
+  macalester: ['Macalester', 'Macalester College'],
+  ecsu: ['Eastern Connecticut', 'Eastern Connecticut State'],
+  uww: ['Wis Whitewater', 'University Of Wisconsin Whitewater'],
+  framingham: ['Framingham St', 'Framingham State'],
+  salemstate: ['Salem State'],
+};

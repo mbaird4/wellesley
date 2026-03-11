@@ -27,7 +27,11 @@ export const appRoutes: Route[] = [
         path: ':slug',
         loadComponent: () => import('./opponents/opponent-detail/opponent-detail').then((m) => m.OpponentDetail),
         children: [
-          { path: '', redirectTo: 'spray', pathMatch: 'full' },
+          { path: '', redirectTo: 'vs-wellesley', pathMatch: 'full' },
+          {
+            path: 'vs-wellesley',
+            loadComponent: () => import('./opponents/tabs/vs-wellesley-tab').then((m) => m.VsWellesleyTab),
+          },
           {
             path: 'spray',
             loadComponent: () => import('./opponents/tabs/spray-tab').then((m) => m.SprayTab),

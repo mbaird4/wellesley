@@ -2,18 +2,19 @@ import { HttpClient } from '@angular/common/http';
 import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { mergeBattingYears, mergePitchingYears } from '@ws/core/data';
-import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
-import { calculateWoba } from '@ws/core/processors';
+import { mergeBattingYears, mergePitchingYears, SoftballDataService } from '@ws/core/data';
+import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type VsWellesleyData, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
+import { calculateWoba, computeVsWellesleyStats } from '@ws/core/processors';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { ALL_OPPONENT_TEAMS } from './teams';
+import { ALL_OPPONENT_TEAMS, SLUG_TO_OPPONENT_NAMES } from './teams';
 
 @Injectable()
 export class OpponentDataService {
   private http = inject(HttpClient);
   private route = inject(ActivatedRoute);
+  private softballData = inject(SoftballDataService);
 
   readonly teams: TeamEntry[] = ALL_OPPONENT_TEAMS;
 
@@ -30,6 +31,8 @@ export class OpponentDataService {
   readonly yearSortYear = signal<number | null>(null);
   readonly rosterNames = signal<Set<string>>(new Set());
   readonly roster = signal<Roster | null>(null);
+  readonly vsWellesleyData = signal<VsWellesleyData | null>(null);
+  readonly vsWellesleyLoading = signal(false);
 
   readonly selectedTeamName = computed(() => this.teams.find((t) => t.slug === this.slug())?.name ?? '');
 
@@ -175,6 +178,7 @@ export class OpponentDataService {
       }
 
       this.pitchingData.set(null);
+      this.vsWellesleyData.set(null);
       this.loadTeam(this.dataDir());
     });
   }
@@ -224,6 +228,38 @@ export class OpponentDataService {
       error: () => {
         this.pitchingData.set(null);
         this.pitchingLoading.set(false);
+      },
+    });
+  }
+
+  loadVsWellesley(slug: string): void {
+    if (this.vsWellesleyData() || this.vsWellesleyLoading()) {
+      return;
+    }
+
+    const opponentNames = SLUG_TO_OPPONENT_NAMES[slug];
+
+    if (!opponentNames) {
+      return;
+    }
+
+    this.vsWellesleyLoading.set(true);
+
+    const currentYear = new Date().getFullYear();
+    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
+
+    const requests = years.map((year) => this.softballData.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
+
+    forkJoin(requests).subscribe({
+      next: (results) => {
+        const valid = results.filter((r): r is YearPitchingData => r !== null);
+        const merged = mergePitchingYears(valid);
+        this.vsWellesleyData.set(computeVsWellesleyStats(merged.games, opponentNames));
+        this.vsWellesleyLoading.set(false);
+      },
+      error: () => {
+        this.vsWellesleyData.set(null);
+        this.vsWellesleyLoading.set(false);
       },
     });
   }
