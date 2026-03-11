@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
 import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
-import { LastUpdatedPipe, WobaLegend } from '@ws/core/ui';
+import { ButtonToggle, LastUpdatedPipe, type ToggleOption, WobaLegend } from '@ws/core/ui';
 
 export interface TeamGameColumn {
   date: string;
@@ -28,7 +27,7 @@ export interface TeamPlayerRow {
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule,
+    ButtonToggle,
     LastUpdatedPipe,
     WobaLegend,
   ],
@@ -46,7 +45,11 @@ export class Woba {
   error: string | null = null;
   scrapedAt: string | null = null;
   selectedYear = 2025;
-  availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+  selectedYearStr = String(this.selectedYear);
+  yearOptions: ToggleOption[] = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011].map((y) => ({
+    value: String(y),
+    label: String(y),
+  }));
 
   activeTab: 'players' | 'team' = 'team';
 
@@ -94,6 +97,12 @@ export class Woba {
         this.cdr.markForCheck();
       },
     });
+  }
+
+  onYearChange(value: string | string[]): void {
+    this.selectedYear = Number(value);
+    this.selectedYearStr = String(this.selectedYear);
+    this.loadData();
   }
 
   togglePlayer(name: string): void {

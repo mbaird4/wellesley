@@ -1,21 +1,15 @@
 <div class="mb-6 flex flex-wrap items-center gap-3">
-  <label
-    for="woba-year-select"
+  <span
     class="text-content-muted text-base font-medium tracking-[0.05em] uppercase"
   >
     Season:
-  </label>
-  <select
-    id="woba-year-select"
-    [(ngModel)]="selectedYear"
-    (ngModelChange)="loadData()"
-    [disabled]="loading"
-    class="year-select"
-  >
-    @for (year of availableYears; track year) {
-      <option [value]="year">{{ year }}</option>
-    }
-  </select>
+  </span>
+  <ws-button-toggle
+    [options]="yearOptions"
+    [value]="selectedYearStr"
+    mode="single"
+    (valueChange)="onYearChange($event)"
+  />
   @if (scrapedAt) {
     <span class="text-content-dim text-xs">
       {{ scrapedAt | lastUpdated }}
