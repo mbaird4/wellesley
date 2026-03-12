@@ -48,3 +48,10 @@ export interface SprayFilters {
   outCount?: number[];
   risp?: boolean;
 }
+
+export interface SprayTrend {
+  type: 'pull_shift' | 'oppo_shift' | 'center_shift' | 'more_hard' | 'more_weak';
+  label: string;
+  direction: 'up' | 'down';
+  magnitude: number;
+}

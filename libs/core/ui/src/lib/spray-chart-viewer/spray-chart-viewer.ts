@@ -1,20 +1,16 @@
-import { NgTemplateOutlet } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, effect, inject, input, isDevMode, signal } from '@angular/core';
-import type { Roster, SprayChartSummary, SprayDataPoint, SprayZone, Team } from '@ws/core/models';
-import type { RosterPlayer } from '@ws/core/models';
-import { buildDisplayJerseyMap, calculateWoba, computeSprayZones } from '@ws/core/processors';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal, viewChild } from '@angular/core';
+import type { Roster, RosterPlayer, SprayDataPoint, SprayTrend, SprayZone, Team } from '@ws/core/models';
+import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
 import { BreakpointService } from '@ws/core/util';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
-import { type PrintOptions, PrintOptionsModal } from '../print-options-modal/print-options-modal';
-import { SprayChartCoachPrintView } from '../spray-chart-coach-print-view/spray-chart-coach-print-view';
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
-import { SprayChartPrintView } from '../spray-chart-print-view/spray-chart-print-view';
-import { SprayField } from '../spray-field/spray-field';
 import { ALL_CONTACT_QUALITIES, ALL_CONTACT_TYPES, ALL_OUT_COUNTS, ALL_OUTCOMES, computeEffectiveFilters, SprayFilters, type SprayFilterState } from '../spray-filters/spray-filters';
-import { SprayLegend } from '../spray-legend/spray-legend';
-import { SprayPlayerHero } from '../spray-player-hero/spray-player-hero';
-import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
+import { SprayPrintOrchestrator, type ViewMode } from '../spray-print-orchestrator/spray-print-orchestrator';
+import { SprayViewCombined } from '../spray-view-combined/spray-view-combined';
+import { SprayViewContact } from '../spray-view-contact/spray-view-contact';
+import { SprayViewScouting } from '../spray-view-scouting/spray-view-scouting';
+import { SprayViewSplit } from '../spray-view-split/spray-view-split';
 
 export const CURRENT_YEAR = new Date().getFullYear();
 export const SPRAY_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
@@ -23,6 +19,7 @@ const VIEW_MODE_OPTIONS: ToggleOption[] = [
   { value: 'combined', label: 'Combined' },
   { value: 'split', label: 'Split' },
   { value: 'contact', label: 'Contact' },
+  { value: 'scouting', label: 'Scouting' },
 ];
 
 const YEAR_OPTIONS: ToggleOption[] = SPRAY_YEARS.map((y) => ({
@@ -145,16 +142,13 @@ function aggregateStats(
   selector: 'ws-spray-chart-viewer',
   standalone: true,
   imports: [
-    NgTemplateOutlet,
     ButtonToggle,
-    PrintOptionsModal,
-    SprayChartCoachPrintView,
-    SprayChartPrintView,
-    SprayField,
     SprayFilters,
-    SprayLegend,
-    SprayPlayerHero,
-    SprayYearPanel,
+    SprayPrintOrchestrator,
+    SprayViewCombined,
+    SprayViewContact,
+    SprayViewScouting,
+    SprayViewSplit,
   ],
   templateUrl: './spray-chart-viewer.html',
   host: {
@@ -174,8 +168,8 @@ export class SprayChartViewer {
   readonly includeUnmatchedRoster = input(false);
   readonly printTitle = input('');
 
-  readonly viewMode = signal<'split' | 'combined' | 'contact'>('combined');
-  readonly selectedYears = signal<string[]>([String(CURRENT_YEAR)]);
+  readonly viewMode = signal<ViewMode>('combined');
+  readonly selectedYears = signal<string[]>(SPRAY_YEARS.map(String));
   readonly viewModeOptions = VIEW_MODE_OPTIONS;
   readonly yearOptions = YEAR_OPTIONS;
   readonly disabledYears = computed(() => SPRAY_YEARS.filter((y) => (this.dataByYear().get(y)?.length ?? 0) === 0).map(String));
@@ -190,31 +184,9 @@ export class SprayChartViewer {
   });
 
   readonly highlightZone = signal<SprayZone | null>(null);
-  readonly showPrintModal = signal(false);
-  readonly printDugout = signal(true);
-  readonly printCoach = signal(true);
-  readonly printPreview = signal(false);
-  readonly isDev = isDevMode();
-  readonly printSortedPlayers = signal<PrintPlayerSummary[]>([]);
-  readonly printPlayers = computed(() => {
-    const sorted = this.printSortedPlayers();
-
-    return sorted.length > 0 ? sorted : this.allPlayerSummaries();
-  });
+  readonly printOrch = viewChild<SprayPrintOrchestrator>('printOrch');
 
   readonly filterHiddenGroups = computed(() => (this.viewMode() === 'contact' ? new Set(['outcome', 'contact', 'quality']) : new Set<string>()));
-
-  readonly contactPanels = computed(() => {
-    const data = this.selectedYears().flatMap((y) => this.dataByYear().get(Number(y)) ?? []);
-    const f = this.filters();
-    const base = { playerName: f.playerName, outCount: f.outCount, risp: f.risp ?? undefined };
-
-    return [
-      { label: 'Hard Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['hard'] }) },
-      { label: 'Weak Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['weak'] }) },
-      { label: 'All Contact', summary: computeSprayZones(data, base) },
-    ];
-  });
 
   readonly hasNonDefaultFilters = computed(() => {
     const f = this.filters();
@@ -286,7 +258,7 @@ export class SprayChartViewer {
     });
   });
 
-  private readonly effectiveFilters = computed(() => computeEffectiveFilters(this.filters()));
+  readonly effectiveFilters = computed(() => computeEffectiveFilters(this.filters()));
 
   readonly summaryByYear = computed(() => {
     const map = this.dataByYear();
@@ -297,12 +269,37 @@ export class SprayChartViewer {
 
   readonly activeYears = computed(() => SPRAY_YEARS.filter((y) => (this.summaryByYear().get(y)?.totalContact ?? 0) > 0));
 
-  readonly combinedSummary = computed<SprayChartSummary>(() =>
+  readonly combinedSummary = computed(() =>
     computeSprayZones(
       this.selectedYears().flatMap((y) => this.dataByYear().get(Number(y)) ?? []),
       this.effectiveFilters()
     )
   );
+
+  readonly contactPanels = computed(() => {
+    const data = this.selectedYears().flatMap((y) => this.dataByYear().get(Number(y)) ?? []);
+    const f = this.filters();
+    const base = { playerName: f.playerName, outCount: f.outCount, risp: f.risp ?? undefined };
+
+    return [
+      { label: 'Hard Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['hard'] }) },
+      { label: 'Weak Contact', summary: computeSprayZones(data, { ...base, contactQualities: ['weak'] }) },
+      { label: 'All Contact', summary: computeSprayZones(data, base) },
+    ];
+  });
+
+  readonly playerTrends = computed<SprayTrend[]>(() => {
+    const name = this.filters().playerName;
+
+    if (!name) {
+      return [];
+    }
+
+    const thisYearData = (this.dataByYear().get(CURRENT_YEAR) ?? []).filter((d) => d.playerName === name);
+    const lastYearData = (this.dataByYear().get(CURRENT_YEAR - 1) ?? []).filter((d) => d.playerName === name);
+
+    return detectSprayTrends(thisYearData, lastYearData);
+  });
 
   readonly allPlayerSummaries = computed(() => {
     const years = this.selectedYears().map(Number);
@@ -345,14 +342,12 @@ export class SprayChartViewer {
   });
 
   constructor() {
-    // Auto-select the most recent year with data (falls back to current year)
     effect(() => {
       const map = this.dataByYear();
-      const firstWithData = SPRAY_YEARS.find((y) => (map.get(y)?.length ?? 0) > 0);
+      const yearsWithData = SPRAY_YEARS.filter((y) => (map.get(y)?.length ?? 0) > 0);
 
-      this.selectedYears.set([String(firstWithData ?? CURRENT_YEAR)]);
+      this.selectedYears.set(yearsWithData.length > 0 ? yearsWithData.map(String) : [String(CURRENT_YEAR)]);
 
-      // Reset filters when data changes
       this.filters.set({
         playerName: null,
         outcomes: [...ALL_OUTCOMES],
@@ -376,10 +371,9 @@ export class SprayChartViewer {
   }
 
   onViewModeChange(value: string[] | string): void {
-    const mode = value as 'split' | 'combined' | 'contact';
+    const mode = value as ViewMode;
     this.viewMode.set(mode);
 
-    // Reset outcome/contact/quality filters when switching to or from contact mode
     this.filters.update((f) => ({
       ...f,
       outcomes: [...ALL_OUTCOMES],
@@ -396,59 +390,14 @@ export class SprayChartViewer {
     this.highlightZone.set(zone);
   }
 
-  onZoneClick(_zone: SprayZone): void {
-    // Future: could show zone detail panel
-  }
-
-  onPrint(): void {
-    if (this.teamData()) {
-      this.showPrintModal.set(true);
-
-      return;
-    }
-
-    this.executePrint();
-  }
-
-  onPrintConfirm(opts: PrintOptions): void {
-    this.printDugout.set(opts.dugout);
-    this.printCoach.set(opts.coach);
-
-    if (opts.coachPlayers?.length) {
-      this.printSortedPlayers.set(opts.coachPlayers);
-    }
-
-    this.showPrintModal.set(false);
-    setTimeout(() => this.executePrint(), 0);
-  }
-
-  onPrintCancel(): void {
-    this.showPrintModal.set(false);
-  }
-
-  private executePrint(): void {
-    if (!this.hasNonDefaultFilters()) {
-      window.print();
-
-      return;
-    }
-
-    const msg = `Filters are applied: ${this.printSubtitle()}\n\nOK = print with filters\nCancel = reset to all contact and print`;
-
-    if (confirm(msg)) {
-      window.print();
-    } else {
-      this.filters.set({
-        playerName: this.filters().playerName,
-        outcomes: [...ALL_OUTCOMES],
-        contactTypes: [...ALL_CONTACT_TYPES],
-        contactQualities: [...ALL_CONTACT_QUALITIES],
-        outCount: [...ALL_OUT_COUNTS],
-        risp: null,
-      });
-
-      // Allow a tick for the filter reset to propagate before printing
-      setTimeout(() => window.print(), 0);
-    }
+  onFiltersReset(): void {
+    this.filters.set({
+      playerName: this.filters().playerName,
+      outcomes: [...ALL_OUTCOMES],
+      contactTypes: [...ALL_CONTACT_TYPES],
+      contactQualities: [...ALL_CONTACT_QUALITIES],
+      outCount: [...ALL_OUT_COUNTS],
+      risp: null,
+    });
   }
 }

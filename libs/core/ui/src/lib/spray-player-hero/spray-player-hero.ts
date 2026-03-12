@@ -1,18 +1,17 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { SprayChartSummary, SprayZone } from '@ws/core/models';
+import type { SprayChartSummary, SprayTrend, SprayZone } from '@ws/core/models';
+import { CENTER_ZONES, LEFT_ZONES, RIGHT_ZONES } from '@ws/core/processors';
 
 import { FormatStatPipe } from '../pipes/format-stat.pipe';
-
-const LEFT_ZONES: Set<SprayZone> = new Set(['lf_line', 'lf', 'lf_cf', 'if_3b', 'if_ss', 'plate_3b']);
-
-const CENTER_ZONES: Set<SprayZone> = new Set(['cf', 'if_p', 'plate_p']);
-
-const RIGHT_ZONES: Set<SprayZone> = new Set(['rf_cf', 'rf', 'rf_line', 'if_1b', 'if_2b', 'plate_1b']);
+import { SprayTrendBadge } from '../spray-trend-badge/spray-trend-badge';
 
 @Component({
   selector: 'ws-spray-player-hero',
   standalone: true,
-  imports: [FormatStatPipe],
+  imports: [
+    FormatStatPipe,
+    SprayTrendBadge,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-1' },
   template: `
@@ -46,12 +45,20 @@ const RIGHT_ZONES: Set<SprayZone> = new Set(['rf_cf', 'rf', 'rf_line', 'if_1b', 
       <span>&middot;</span>
       <span>Right {{ rightPct() }}%</span>
     </div>
+    @if (trends().length > 0) {
+      <div class="flex flex-wrap gap-1.5 pt-0.5">
+        @for (trend of trends(); track trend.type) {
+          <ws-spray-trend-badge [trend]="trend" />
+        }
+      </div>
+    }
   `,
 })
 export class SprayPlayerHero {
   readonly name = input.required<string>();
   readonly jersey = input<number>();
   readonly summary = input.required<SprayChartSummary>();
+  readonly trends = input<SprayTrend[]>([]);
 
   readonly totalContact = computed(() => this.summary().totalContact);
 

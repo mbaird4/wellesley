@@ -6,6 +6,7 @@ import { SprayCoachSortPanel } from '../spray-coach-sort-panel/spray-coach-sort-
 export interface PrintOptions {
   dugout: boolean;
   coach: boolean;
+  quickRef?: boolean;
   coachPlayers?: PrintPlayerSummary[];
 }
 
@@ -27,6 +28,7 @@ export class PrintOptionsModal {
 
   readonly dugout = signal(true);
   readonly coach = signal(true);
+  readonly quickRef = signal(false);
   readonly coachPlayers = signal<PrintPlayerSummary[]>([]);
 
   readonly confirmed = output<PrintOptions>();
@@ -60,6 +62,7 @@ export class PrintOptionsModal {
     this.confirmed.emit({
       dugout: this.dugout(),
       coach: this.coach(),
+      quickRef: this.quickRef(),
       coachPlayers: this.coachPlayers(),
     });
   }
