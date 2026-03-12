@@ -1,64 +1,92 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-11T15:21:52.442Z",
+  "scrapedAt": "2026-03-12T11:27:32.495Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Boldebuck, Naomi",
       "w": 1,
       "l": 0,
-      "era": 1,
-      "app": 1,
-      "gs": 1,
+      "era": 1.5,
+      "app": 2,
+      "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 7,
-      "r": 2,
-      "er": 1,
-      "bb": 1,
-      "so": 5,
+      "ip": 9.1,
+      "h": 8,
+      "r": 3,
+      "er": 2,
+      "bb": 5,
+      "so": 6,
       "hr": 0,
-      "whip": 1.14,
+      "whip": 1.39,
       "doubles": 0,
       "triples": 0,
-      "ab": 26,
-      "bAvg": 0.269,
+      "ab": 32,
+      "bAvg": 0.25,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Merchant, Abby",
-      "w": 1,
+      "w": 3,
       "l": 0,
-      "era": 2,
-      "app": 1,
+      "era": 1.54,
+      "app": 3,
       "gs": 1,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 5,
-      "r": 2,
-      "er": 2,
-      "bb": 0,
-      "so": 6,
+      "ip": 13.2,
+      "h": 11,
+      "r": 3,
+      "er": 3,
+      "bb": 1,
+      "so": 14,
       "hr": 0,
-      "whip": 0.71,
+      "whip": 0.88,
       "doubles": 0,
       "triples": 0,
-      "ab": 24,
-      "bAvg": 0.208,
+      "ab": 51,
+      "bAvg": 0.216,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
       "sha": 1
+    },
+    {
+      "name": "Barr, Kaitlyn",
+      "w": 0,
+      "l": 0,
+      "era": 7,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 3,
+      "h": 4,
+      "r": 3,
+      "er": 3,
+      "bb": 3,
+      "so": 0,
+      "hr": 0,
+      "whip": 2.33,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 13,
+      "bAvg": 0.308,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 0
     }
   ],
   "games": [
@@ -217,6 +245,162 @@
             "Dylan Boles grounded out to 3b (3-2 KBFFBBF).",
             "Juliana Casillas fouled out to c (0-1 K).",
             "Callie Kozeniewski struck out swinging (2-2 BBKSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/aurora/boxscore/16842",
+      "date": "3/11/2026",
+      "opponent": "Aurora",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Aubrey Ortiz grounded out to 2b (0-0).",
+            "Mia Rivera doubled down the lf line (0-0).",
+            "Nina Richards fouled out to 3b (0-0).",
+            "Stephani Debise grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Angie Delgado singled up the middle (0-0).",
+            "Lily Komperda singled to left field (0-0); Angie Delgado advanced to second.",
+            "Lily Komperda advanced to second on a wild pitch; Angie Delgado advanced to third on a wild pitch.",
+            "Carly Clemens walked (0-0).",
+            "Kelsey Oviatt flied out to cf, sacrifice fly, RBI (0-0); Angie Delgado scored.",
+            "Tristin Woods singled to first base (0-0); Carly Clemens advanced to second; Lily Komperda advanced to third.",
+            "Aubrey Ortiz flied out to ss (0-0).",
+            "Mia Rivera walked, RBI (0-0); Tristin Woods advanced to second; Carly Clemens advanced to third; Lily Komperda scored.",
+            "Nina Richards hit by pitch, RBI (0-0); Mia Rivera advanced to second; Tristin Woods advanced to third; Carly Clemens scored.",
+            "Stephani Debise grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Angie Delgado reached first on an error by 2b (0-0).",
+            "Lily Komperda fouled out to 1b (0-0).",
+            "Carly Clemens flied out to 1b (0-0).",
+            "Angie Delgado advanced to second on a passed ball.",
+            "Erin Young pinch ran for Angie Delgado.",
+            "Erin Young stole third.",
+            "Kelsey Oviatt walked (0-0).",
+            "Tristin Woods grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Merchant to p for Kaitlyn Barr.",
+            "Mia Francisco to 2b for Riley O'Brien.",
+            "Aubrey Ortiz grounded out to 2b (0-0).",
+            "Mia Rivera singled to second base (0-0).",
+            "Nina Richards reached first on a fielding error by p (0-0); Mia Rivera advanced to second.",
+            "Stephani Debise flied out to lf (0-0).",
+            "Nina Richards stole second; Mia Rivera stole third.",
+            "Tyler Frost pinch ran for Nina Richards.",
+            "Angie Delgado flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ava Laughlin to lf.",
+            "Reese Pozen pinch hit for Lily Komperda.",
+            "Suzannah Figler to c for Ali Chalovich.",
+            "Reese Pozen flied out to 1b (0-0).",
+            "Holly Smith singled to left field (0-0).",
+            "Kayla Korey singled to center field (0-0); Holly Smith advanced to second.",
+            "Alyssa Gale lined out to rf (0-0).",
+            "Mia Malczyk singled to center field, advanced to second, RBI (0-0); Kayla Korey advanced to third; Holly Smith scored.",
+            "Mia Rivera popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/penn-state-berks-pa-/boxscore/16843",
+      "date": "3/11/2026",
+      "opponent": "Penn State Berks Pa ",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Haylie Mauger grounded out to 2b (0-0).",
+            "Shayna Morales walked (0-0).",
+            "Emma Infantino grounded into double play ss to 1b (0-0); Shayna Morales out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Natasha Hornung walked (0-0).",
+            "Samantha Harple grounded out to 3b, SAC (0-0); Natasha Hornung advanced to third.",
+            "Ana Lawrence walked (0-0).",
+            "Maura Gorman singled down the rf line, RBI (0-0); Ana Lawrence advanced to second; Natasha Hornung scored.",
+            "Mallory Johnson grounded out to 1b unassisted (0-0); Maura Gorman advanced to second; Ana Lawrence advanced to third.",
+            "Autumn Weil struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Haylie Mauger popped up to 2b (0-0).",
+            "Shayna Morales walked (0-0).",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Emma Infantino reached on a fielder's choice (0-0); Shayna Morales out at second 2b to ss.",
+            "Natasha Hornung singled through the left side (0-0); Emma Infantino advanced to second.",
+            "Samantha Harple struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ana Lawrence popped up to 3b (0-0).",
+            "Maura Gorman grounded out to 3b (0-0).",
+            "Mallory Johnson struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Autumn Weil struck out swinging (0-0).",
+            "Haylie Mauger flied out to rf (0-0).",
+            "Shayna Morales flied out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b.",
+            "Emma Infantino struck out swinging, out at first c to 1b (0-0).",
+            "Natasha Hornung singled to left field (0-0).",
+            "Mackenzie Davis pinch hit for Samantha Harple.",
+            "Mackenzie Davis struck out swinging (0-0).",
+            "Ana Lawrence struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maura Gorman walked (0-0).",
+            "Alexa Burkey reached on a fielder's choice (0-0); Maura Gorman out at second ss to 2b.",
+            "Mia Kennedy pinch hit for Autumn Weil.",
+            "Mia Kennedy struck out swinging (0-0).",
+            "Haylie Mauger struck out swinging (0-0)."
           ]
         }
       ],

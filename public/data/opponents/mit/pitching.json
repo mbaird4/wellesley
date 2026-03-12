@@ -1,0 +1,288 @@
+{
+  "slug": "mit",
+  "domain": "mitathletics.com",
+  "scrapedAt": "2026-03-12T11:28:20.476Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Watson, Emily",
+      "w": 1,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 3,
+      "h": 4,
+      "r": 0,
+      "er": 0,
+      "bb": 3,
+      "so": 1,
+      "hr": 0,
+      "whip": 2.33,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 11,
+      "bAvg": 0.364,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Johnston, Nicole",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
+      "ip": 2,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 1,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 6,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Huang, Sharona",
+      "w": 0,
+      "l": 0,
+      "era": 3.5,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 5,
+      "r": 3,
+      "er": 2,
+      "bb": 3,
+      "so": 2,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 17,
+      "bAvg": 0.294,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Blackett, Sarah",
+      "w": 1,
+      "l": 0,
+      "era": 5.25,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 4,
+      "r": 3,
+      "er": 3,
+      "bb": 4,
+      "so": 3,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 16,
+      "bAvg": 0.25,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/endicott-college/boxscore/12745",
+      "date": "3/11/2026",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mia Mitchell doubled to center field (0-1 K).",
+            "Abby McClaflin singled to left field (1-1 FB); Mia Mitchell advanced to third.",
+            "Ella Tower popped up to 2b (1-1 KB).",
+            "Abby McClaflin stole second; Mia Mitchell stole home.",
+            "Elyse Saccoccio grounded out to 3b (2-2 BBFFF); Abby McClaflin advanced to third.",
+            "Ava Kelley singled to left field, RBI (1-2 FBF); Abby McClaflin scored.",
+            "Kylyn McLaren grounded out to 3b (2-2 FSBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Vania Moniz struck out swinging (1-2 BKKS).",
+            "Catherine Seay singled to left field (1-2 BFFF).",
+            "Caroline Cummings grounded out to 3b (0-2 FF); Catherine Seay advanced to second.",
+            "Mia Mitchell flied out to rf (3-1 KBBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby McClaflin walked (3-2 BBFBFB).",
+            "Ella Tower reached first on an error by p (0-0); Abby McClaflin advanced to third.",
+            "Elyse Saccoccio grounded into double play 1b to c (2-1 BFB); Ella Tower advanced to third; Abby McClaflin out on the play.",
+            "Ava Kelley grounded out to 3b (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kylyn McLaren reached first on an error by ss (0-0).",
+            "Vania Moniz grounded out to 3b, SAC, bunt (0-0); Kylyn McLaren advanced to second.",
+            "Catherine Seay singled to shortstop (1-2 BKF).",
+            "Caroline Cummings flied out to lf (0-0).",
+            "Mia Mitchell walked (3-0 BBBB); Catherine Seay advanced to second; Kylyn McLaren advanced to third.",
+            "Abby McClaflin walked, RBI (3-1 FBBBB); Mia Mitchell advanced to second; Catherine Seay advanced to third; Kylyn McLaren scored, unearned.",
+            "Ella Tower struck out swinging (1-2 FBSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Watson to p for Sharona Huang.",
+            "Elyse Saccoccio walked (3-1 FBBBB).",
+            "Ava Kelley singled to shortstop (0-2 FFF); Elyse Saccoccio advanced to second.",
+            "Kylyn McLaren out at first p to 2b, SAC, bunt (0-0); Ava Kelley advanced to second; Elyse Saccoccio advanced to third.",
+            "Vania Moniz struck out swinging (2-2 BFFBS).",
+            "Catherine Seay flied out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Mattiace to 1b for Nicole Johnston.",
+            "Caroline Cummings walked (3-0 BBBB).",
+            "Mia Mitchell reached on a fielder's choice (1-1 BK); Caroline Cummings out at second ss to 2b.",
+            "Mia Mitchell advanced to second on a wild pitch.",
+            "Abby McClaflin walked (3-1 BKBBB).",
+            "Ella Tower flied out to cf (1-1 BF).",
+            "Elyse Saccoccio singled to second base (2-1 BBK); Abby McClaflin advanced to third; Mia Mitchell advanced to third, out at home 2b to c."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ava Kelley popped up to 2b (0-0).",
+            "Kylyn McLaren fouled out to 2b (0-1 K).",
+            "Alexa Gillis pinch hit for Vania Moniz.",
+            "Alexa Gillis singled to center field (2-2 SBBKF).",
+            "Catherine Seay singled to left field (1-2 BKF); Alexa Gillis advanced to second.",
+            "Kyla Story pinch hit for Caroline Cummings.",
+            "Kyla Story flied out to cf (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/endicott-college/boxscore/12746",
+      "date": "3/11/2026",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Blackett, Sarah",
+        "Johnston, Nicole"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mia Mitchell singled to pitcher (3-2 BBKKB).",
+            "Abby McClaflin doubled down the lf line, RBI (2-1 BBF); Mia Mitchell scored.",
+            "Ella Tower flied out to rf (0-0).",
+            "Elyse Saccoccio doubled to right center, RBI (3-2 BFBFFB); Abby McClaflin scored.",
+            "Catherine Seay walked (3-0 BBBB).",
+            "Kyla Story struck out swinging (0-2 SFS).",
+            "Maddie Beeley hit by pitch (1-0 H); Catherine Seay advanced to second; Elyse Saccoccio advanced to third.",
+            "Kylyn McLaren struck out looking (0-2 SSK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alexa Gillis lined out to ss (0-1 K).",
+            "Mia Mitchell flied out to rf (3-2 BBBKK).",
+            "Abby McClaflin grounded out to 3b (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Tower popped up to 3b (1-0 B).",
+            "Elyse Saccoccio lined out to ss (0-0).",
+            "Catherine Seay singled to center field (1-1 SB).",
+            "Kyla Story popped up to 1b (3-2 BKBFFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Beeley flied out to rf (0-2 FF).",
+            "Kylyn McLaren walked (3-1 BBBKB).",
+            "Alexa Gillis walked (3-1 FBBBB); Kylyn McLaren advanced to second.",
+            "Mia Mitchell reached on a fielder's choice (2-1 BBK); Alexa Gillis out at second 2b to ss; Kylyn McLaren advanced to third.",
+            "Mia Mitchell advanced to second on a wild pitch; Kylyn McLaren scored on a wild pitch.",
+            "Abby McClaflin walked (3-1 FBBBB).",
+            "Ella Tower struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Pearl Mitchell to dp.",
+            "Olivia Scarpaci to c.",
+            "Nicole Johnston to p for Sarah Blackett.",
+            "Lauren Sundquist to 1b.",
+            "Elyse Saccoccio grounded out to ss (2-0 BB).",
+            "Catherine Seay walked (3-1 BBKBB).",
+            "Kyla Story reached on a fielder's choice (0-0); Catherine Seay out at second 3b to 1b.",
+            "Maddie Beeley grounded out to ss (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Caracciolo pinch hit for Kylyn McLaren.",
+            "Emma Caracciolo grounded out to ss (3-1 BBSB).",
+            "Alexa Gillis grounded out to ss (2-1 FBB).",
+            "Mia Mitchell walked (3-1 BKBBB).",
+            "Abby McClaflin grounded out to ss (3-1 BBFB)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

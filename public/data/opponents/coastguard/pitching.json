@@ -1,31 +1,31 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-11T15:39:47.168Z",
+  "scrapedAt": "2026-03-12T11:28:49.263Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 2,
+      "w": 3,
       "l": 1,
-      "era": 0,
-      "app": 3,
-      "gs": 3,
-      "cg": 2,
+      "era": 0.32,
+      "app": 4,
+      "gs": 4,
+      "cg": 3,
       "sho": 1,
       "sv": 0,
-      "ip": 14.2,
-      "h": 18,
-      "r": 10,
-      "er": 0,
-      "bb": 1,
-      "so": 16,
+      "ip": 21.2,
+      "h": 22,
+      "r": 11,
+      "er": 1,
+      "bb": 2,
+      "so": 23,
       "hr": 0,
-      "whip": 1.3,
-      "doubles": 1,
+      "whip": 1.11,
+      "doubles": 3,
       "triples": 0,
-      "ab": 66,
-      "bAvg": 0.273,
+      "ab": 91,
+      "bAvg": 0.242,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Lynn, Zoey",
-      "w": 0,
+      "w": 1,
       "l": 0,
-      "era": 1.11,
-      "app": 2,
-      "gs": 0,
-      "cg": 0,
+      "era": 0.62,
+      "app": 3,
+      "gs": 1,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 6.1,
-      "h": 2,
-      "r": 1,
+      "ip": 11.1,
+      "h": 5,
+      "r": 2,
       "er": 1,
-      "bb": 2,
-      "so": 2,
+      "bb": 3,
+      "so": 6,
       "hr": 0,
-      "whip": 0.63,
+      "whip": 0.71,
       "doubles": 1,
       "triples": 0,
-      "ab": 22,
-      "bAvg": 0.091,
+      "ab": 41,
+      "bAvg": 0.122,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Reilly, Hayden",
@@ -329,7 +329,10 @@
       "url": "https://coastguardathletics.com/sports/softball/stats/2026/covenant/boxscore/9335",
       "date": "3/9/2026",
       "opponent": "Covenant",
-      "pitchers": [],
+      "pitchers": [
+        "Reilly, Hayden",
+        "Lynn, Zoey"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
@@ -390,6 +393,148 @@
             "Kallie Branum doubled to left center (2-2 FFBB).",
             "Emma Baltzersen pinch ran for Kallie Branum.",
             "Megan Porras lined out to 3b (1-1 KB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/lancaster-bible/boxscore/9336",
+      "date": "3/11/2026",
+      "opponent": "Lancaster Bible",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kendall Jackman grounded out to ss (3-1 BBSB).",
+            "Keira Price struck out swinging (0-2 SFS).",
+            "Rebekah Hoover struck out looking, out at first c to 1b (1-2 KFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ava Stern doubled to right field (0-1 K).",
+            "Maddison Atkins grounded out to p (1-1 BS); Ava Stern advanced to third.",
+            "Carleigh Cleland grounded out to ss, RBI (0-0); Ava Stern scored.",
+            "KariAnn Mecke grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Amanda Hoover grounded out to ss (0-0).",
+            "Ila Rowatti flied out to cf (0-0).",
+            "Kendall Jackman grounded out to 2b (2-2 FKBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lauren Ragonese to 2b for Emma Behel.",
+            "Keira Price flied out to cf (3-1 KBBB).",
+            "Rebekah Hoover struck out swinging (1-2 BFSFS).",
+            "Ava Stern grounded out p to ss to 1b (2-2 KBSB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maura Murphy to rf for Olivia Garcia.",
+            "Maddison Atkins singled up the middle (0-2 FS).",
+            "Carleigh Cleland grounded out to 2b (0-1 F); Maddison Atkins advanced to second.",
+            "KariAnn Mecke struck out swinging (2-2 BKBFS).",
+            "Amanda Hoover grounded out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ila Rowatti walked (3-2 BKBKFBB).",
+            "Kendall Jackman singled to left center (0-0); Ila Rowatti advanced to second.",
+            "Keira Price struck out swinging (0-2 KSFS).",
+            "Rebekah Hoover struck out looking (3-2 BKFBBK).",
+            "Ava Stern grounded out p to 2b to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Abby Steele to 3b for Zoey Cascio.",
+            "Maddison Atkins lined out to lf (2-0 BB).",
+            "Carleigh Cleland flied out to lf to left center (1-0 B).",
+            "KariAnn Mecke doubled to right field (2-2 KKBB).",
+            "Amanda Hoover to 2b for Grace Goodman.",
+            "Grace Goodman to dp for Amanda Hoover.",
+            "Grace Goodman struck out swinging (1-2 BSSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/psu-beaver/boxscore/9337",
+      "date": "3/11/2026",
+      "opponent": "Psu Beaver",
+      "pitchers": [
+        "Lynn, Zoey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jaiden Patterson struck out looking (0-0).",
+            "Kierstyn Mays grounded out to 3b (0-0).",
+            "Reza Benson grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mackenzie Boyd walked (0-0).",
+            "Cheyenne Duhl grounded out to ss (0-0); Mackenzie Boyd advanced to second.",
+            "Haley Cook flied out to lf (0-0).",
+            "Mia Gomez lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Charlie Cutcher struck out looking (0-0).",
+            "Haydan Baucan grounded out to ss (0-0).",
+            "Jaiden Patterson reached first on an error by 1b (0-0).",
+            "Kierstyn Mays singled (0-0); Jaiden Patterson advanced to second.",
+            "Reza Benson grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caitlynn Gib to 1b.",
+            "Ella Stolarz to 1b for Caitlynn Gib.",
+            "Mackenzie Boyd reached first on an error by cf (0-0).",
+            "Cheyenne Duhl reached on catcher's interference (0-0); Mackenzie Boyd advanced to third.",
+            "Reese Riordan pinch ran for Cheyenne Duhl.",
+            "Haley Cook singled, RBI (0-0); Reese Riordan advanced to second; Mackenzie Boyd scored, unearned.",
+            "Mia Gomez grounded out to 3b, SAC, bunt (0-0); Haley Cook advanced to second; Reese Riordan advanced to third.",
+            "Charlie Cutcher struck out looking (0-0).",
+            "Haydan Baucan struck out (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maura Murphy to rf for Olivia Garci.",
+            "Abby Steele to 3b for Sage Svalest.",
+            "Madeline Kib to c for Zoey Cascio.",
+            "Jaiden Patterson grounded out to p (0-0).",
+            "Kierstyn Mays singled (0-0).",
+            "Sammi Melendez pinch ran for Kierstyn Mays.",
+            "Reza Benson flied out to cf (0-0).",
+            "Mackenzie Boyd grounded out to 2b (0-0)."
           ]
         }
       ],

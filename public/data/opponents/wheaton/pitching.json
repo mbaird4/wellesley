@@ -1,87 +1,87 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-11T15:24:44.396Z",
+  "scrapedAt": "2026-03-12T11:27:47.638Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 3,
+      "w": 4,
       "l": 0,
-      "era": 1,
-      "app": 3,
-      "gs": 3,
-      "cg": 3,
-      "sho": 1,
+      "era": 0.72,
+      "app": 4,
+      "gs": 4,
+      "cg": 4,
+      "sho": 2,
       "sv": 0,
-      "ip": 21,
-      "h": 16,
+      "ip": 29,
+      "h": 23,
       "r": 3,
       "er": 3,
       "bb": 2,
-      "so": 14,
+      "so": 20,
       "hr": 0,
       "whip": 0.86,
       "doubles": 1,
       "triples": 0,
-      "ab": 73,
-      "bAvg": 0.219,
+      "ab": 101,
+      "bAvg": 0.228,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 2,
-      "sha": 2
+      "sha": 5
     },
     {
       "name": "De La Rosa, Sofia",
       "w": 2,
-      "l": 1,
-      "era": 2.37,
-      "app": 3,
-      "gs": 3,
+      "l": 2,
+      "era": 2.51,
+      "app": 4,
+      "gs": 4,
       "cg": 2,
       "sho": 2,
       "sv": 0,
-      "ip": 20.2,
-      "h": 19,
-      "r": 8,
-      "er": 7,
-      "bb": 4,
+      "ip": 22.1,
+      "h": 22,
+      "r": 15,
+      "er": 8,
+      "bb": 7,
       "so": 31,
       "hr": 1,
-      "whip": 1.11,
+      "whip": 1.3,
       "doubles": 2,
       "triples": 0,
-      "ab": 81,
-      "bAvg": 0.235,
+      "ab": 90,
+      "bAvg": 0.244,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 1
     },
     {
       "name": "Dost, Brittany",
       "w": 0,
       "l": 0,
-      "era": 0,
-      "app": 1,
+      "era": 10.5,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 0.1,
-      "h": 0,
-      "r": 0,
-      "er": 0,
-      "bb": 0,
-      "so": 0,
+      "ip": 2.2,
+      "h": 6,
+      "r": 4,
+      "er": 4,
+      "bb": 2,
+      "so": 2,
       "hr": 0,
-      "whip": 0,
-      "doubles": 0,
+      "whip": 3,
+      "doubles": 1,
       "triples": 0,
-      "ab": 1,
-      "bAvg": 0,
+      "ab": 14,
+      "bAvg": 0.429,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -557,6 +557,157 @@
             "Ava Franklin singled to center field, RBI (0-0); Katherine Svigelj scored.",
             "Brittany Dost to p for Sofia DeLaRosa.",
             "Kaili Henning popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/penn-state-brandywine/boxscore/10118",
+      "date": "3/11/2026",
+      "opponent": "Penn State Brandywine",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lexi Bussenger struck out swinging (2-2 BBKKFS).",
+            "Emma McElroy singled to shortstop (0-1 K).",
+            "Kaylee Mushinski reached on a fielder's choice to shortstop (1-2 FFFBFFFF); Emma McElroy out at second ss unassisted.",
+            "Ava Craddock grounded out to 2b (1-2 KSB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ava Rodgers singled to left field (1-2 KFFB).",
+            "Shelby DeCillis grounded out to 1b unassisted, SAC, bunt (0-1 F); Ava Rodgers advanced to second.",
+            "Madie Culbertson flied out to lf (0-1 K).",
+            "Jordan DuBois singled to center field (2-2 BKSB); Ava Rodgers advanced to third.",
+            "Naya Rivera struck out swinging (1-2 KKBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lexi Bussenger popped up to 3b, bunt (3-0 BBB).",
+            "Emma McElroy grounded out to 3b (0-1 K).",
+            "Kaylee Mushinski struck out looking (2-2 BBKFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ava Craddock flied out to cf (0-0).",
+            "Ava Rodgers struck out swinging (1-2 KFBS).",
+            "Shelby DeCillis grounded out to 2b (2-2 KFBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madie Culbertson reached first on an error by 3b (1-1 BK).",
+            "Jordan DuBois grounded out to p, bunt, SAC (0-0); Madie Culbertson advanced to second.",
+            "Naya Rivera struck out swinging (2-2 FSBBS).",
+            "Lexi Bussenger singled to right field (0-1 K); Madie Culbertson advanced to third, out at home rf to c."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma McElroy grounded out to ss (1-2 BFF).",
+            "Kaylee Mushinski flied out to cf (0-0).",
+            "Ava Craddock singled to first base (2-1 BBF).",
+            "Ava Rodgers singled to center field (3-2 BFFBB); Ava Craddock advanced to third.",
+            "Shelby DeCillis flied out to rf (2-2 BBKFF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley Dolan to c for Alexandra Anquillare.",
+            "Madie Culbertson flied out to lf (0-0).",
+            "Jordan DuBois singled to left field (0-0).",
+            "Mila Gorres pinch hit for Naya Rivera.",
+            "Valentina Capra pinch ran for Jordan DuBois.",
+            "Mila Gorres struck out looking (2-2 KBBFK).",
+            "Lexi Bussenger popped up to ss (3-2 BBBKK)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Amber Arcand to rf for Taylor Barry.",
+            "Emma McElroy Lexi Bussenger placed on second (0-0).",
+            "Emma McElroy grounded out to p, SAC, bunt (0-0); Lexi Bussenger advanced to third.",
+            "Kaylee Mushinski flied out to rf (0-1 K).",
+            "Ava Craddock grounded out to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/benedictine-university/boxscore/10119",
+      "date": "3/11/2026",
+      "opponent": "Benedictine University",
+      "pitchers": [
+        "De La Rosa, Sofia",
+        "Dost, Brittany"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Morgan Bruno singled (0-0).",
+            "Lauren Bogard popped up to c (0-0).",
+            "Haley Barnes flied out to rf (0-0).",
+            "Alyssa Perkins grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Taylor Oppenhuis flied out to rf (0-0).",
+            "Jasmine Lozano walked (0-0).",
+            "Victoria Duszynski reached first on an error by ss, advanced to second (0-0); Jasmine Lozano advanced to third.",
+            "Jenna Bartke reached first on an error by rf, sacrifice fly, RBI (0-0); Victoria Duszynski advanced to third; Jasmine Lozano scored.",
+            "Lauryn Olson walked (0-0); Jenna Bartke advanced to second.",
+            "Morgan Bruno singled, advanced to second on the throw, 2 RBI (0-0); Lauryn Olson advanced to third; Jenna Bartke scored, unearned; Victoria Duszynski scored, unearned.",
+            "Lauren Bogard walked (0-0).",
+            "Haley Barnes popped up to 2b (0-0).",
+            "Alyssa Perkins singled, advanced to second on the throw, 2 RBI (0-0); Lauren Bogard advanced to third; Morgan Bruno scored, unearned; Lauryn Olson scored, unearned.",
+            "Brittany Dost to p.",
+            "Kathryn Copperthite to 1b for Sofia DeLaRosa.",
+            "Taylor Oppenhuis doubled, 2 RBI (0-0); Alyssa Perkins scored, unearned; Lauren Bogard scored, unearned.",
+            "Jasmine Lozano flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Mia Giammarese struck out looking (0-0).",
+            "Jenna Bartke grounded out to ss (0-0).",
+            "Lauryn Olson singled (0-0).",
+            "Morgan Bruno singled, advanced to second on the throw (0-0); Lauryn Olson advanced to third.",
+            "Lauren Bogard walked (0-0).",
+            "Haley Barnes singled, 2 RBI (0-0); Lauren Bogard advanced to second; Morgan Bruno scored; Lauryn Olson scored.",
+            "Autumn Adamik pinch hit for Alyssa Perkins.",
+            "Autumn Adamik singled, RBI (0-0); Haley Barnes advanced to third; Lauren Bogard scored.",
+            "Taylor Oppenhuis singled, RBI (0-0); Autumn Adamik advanced to second; Haley Barnes scored.",
+            "Jasmine Lozano reached on a fielder's choice (0-0); Taylor Oppenhuis out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mia Giammarese grounded out to ss (0-0).",
+            "Carlene Berta pinch hit for Jenna Bartke.",
+            "Carlene Berta struck out looking (0-0).",
+            "Lauryn Olson walked (0-0).",
+            "Morgan Bruno lined out to 1b (0-0)."
           ]
         }
       ],
