@@ -1,99 +1,99 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-13T12:55:41.100Z",
+  "scrapedAt": "2026-03-13T18:39:28.238Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gigante, Whitney",
-      "w": 2,
+      "w": 3,
       "l": 0,
       "era": 0,
-      "app": 3,
-      "gs": 1,
+      "app": 4,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4.2,
-      "h": 9,
-      "r": 7,
+      "ip": 10.1,
+      "h": 10,
+      "r": 9,
       "er": 0,
-      "bb": 4,
-      "so": 3,
+      "bb": 7,
+      "so": 6,
       "hr": 0,
-      "whip": 2.79,
-      "doubles": 0,
+      "whip": 1.65,
+      "doubles": 1,
       "triples": 0,
-      "ab": 25,
-      "bAvg": 0.36,
+      "ab": 46,
+      "bAvg": 0.217,
       "wp": 1,
-      "hbp": 3,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "DeCrescenzo, Ella",
-      "w": 0,
-      "l": 0,
-      "era": 2.63,
-      "app": 2,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 8,
-      "h": 11,
-      "r": 3,
-      "er": 3,
-      "bb": 5,
-      "so": 5,
-      "hr": 0,
-      "whip": 2,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 36,
-      "bAvg": 0.306,
-      "wp": 1,
-      "hbp": 0,
+      "hbp": 4,
       "bk": 0,
       "sfa": 0,
       "sha": 0
     },
     {
       "name": "Lees, Jacelyn",
-      "w": 1,
+      "w": 2,
       "l": 1,
-      "era": 3.87,
+      "era": 2.49,
+      "app": 4,
+      "gs": 3,
+      "cg": 1,
+      "sho": 1,
+      "sv": 0,
+      "ip": 19.2,
+      "h": 20,
+      "r": 7,
+      "er": 7,
+      "bb": 5,
+      "so": 8,
+      "hr": 0,
+      "whip": 1.27,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 75,
+      "bAvg": 0.267,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 5
+    },
+    {
+      "name": "DeCrescenzo, Ella",
+      "w": 0,
+      "l": 0,
+      "era": 2.52,
       "app": 3,
-      "gs": 2,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 12.2,
-      "h": 14,
-      "r": 7,
-      "er": 7,
-      "bb": 3,
-      "so": 4,
+      "ip": 8.1,
+      "h": 11,
+      "r": 3,
+      "er": 3,
+      "bb": 5,
+      "so": 5,
       "hr": 0,
-      "whip": 1.34,
-      "doubles": 4,
+      "whip": 1.92,
+      "doubles": 2,
       "triples": 0,
-      "ab": 48,
-      "bAvg": 0.292,
-      "wp": 0,
+      "ab": 37,
+      "bAvg": 0.297,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
-      "sfa": 1,
-      "sha": 4
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Baker, Kelly",
       "w": 0,
       "l": 0,
       "era": 10.5,
-      "app": 1,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
@@ -102,15 +102,15 @@
       "h": 0,
       "r": 1,
       "er": 1,
-      "bb": 3,
+      "bb": 5,
       "so": 0,
       "hr": 0,
-      "whip": 4.5,
+      "whip": 7.5,
       "doubles": 0,
       "triples": 0,
       "ab": 2,
       "bAvg": 0,
-      "wp": 1,
+      "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -472,6 +472,170 @@
             "Bailey Littlefield struck out swinging (1-2 KKBS).",
             "Samantha Lombardi pinch hit for Emily Iannuccilli.",
             "Samantha Lombardi popped up to 2b (0-2 SS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/hiram/boxscore/27443",
+      "date": "3/13/2026",
+      "opponent": "Hiram",
+      "pitchers": [
+        "Gigante, Whitney",
+        "Baker, Kelly",
+        "DeCrescenzo, Ella"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ari Torres flied out to rf (0-1 K).",
+            "Danielle Robles struck out swinging (3-2 BBBKSFFS).",
+            "Lola Thomas grounded out to 3b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Moser grounded out to p (0-1 K).",
+            "Kayla Prigge reached first on an error by p (2-1 KBB).",
+            "Daynna Mekaru walked (3-1 BBKBB); Kayla Prigge advanced to second.",
+            "Hannah Marlow reached on a fielder's choice to third base (0-0); Daynna Mekaru advanced to second; Kayla Prigge advanced to third.",
+            "Haven Papineau reached on a fielder's choice to third base (1-1 BF); Hannah Marlow advanced to second; Daynna Mekaru advanced to third; Kayla Prigge out at home 3b to c.",
+            "Avery Contini reached on a fielder's choice to shortstop (0-1 K); Haven Papineau advanced to second; Hannah Marlow out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ari Torres grounded out to 3b (0-1 K).",
+            "Danielle Robles walked (3-2 SBBBKFB).",
+            "Lola Thomas hit by pitch (3-1 BBKH); Danielle Robles advanced to second.",
+            "Megan Moser flied out to cf (1-1 KB); Danielle Robles advanced to third.",
+            "Kayla Prigge walked (3-1 BBBKB); Lola Thomas advanced to second.",
+            "Daynna Mekaru struck out looking (3-2 KKBBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Whitney Gigante to p for Katie Foley.",
+            "Hannah Marlow grounded out to ss (1-0 B).",
+            "Haven Papineau grounded out to ss (1-2 FBS).",
+            "Avery Contini grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ari Torres flied out to cf (3-2 FBKBFBF).",
+            "Danielle Robles struck out swinging (3-2 FFBBFFBFS).",
+            "Lola Thomas out at first 3b to 2b, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Moser reached first on an error by 3b (0-0).",
+            "Kayla Prigge reached on a fielder's choice to second base (1-0 B); Megan Moser out at second 2b to ss.",
+            "Emrie Fink pinch hit for Daynna Mekaru.",
+            "Kayla Prigge advanced to second on a passed ball.",
+            "Emrie Fink grounded out to 1b unassisted (3-2 BBKBKFFF); Kayla Prigge advanced to third.",
+            "Hannah Marlow doubled to left field, RBI (0-0); Kayla Prigge scored, unearned.",
+            "Jordynn Killion to 3b for Whitney Gigante.",
+            "Kelly Baker to p.",
+            "Zeanna Cyrus pinch hit for Haven Papineau.",
+            "Tristen Gonzalez pinch ran for Hannah Marlow.",
+            "Tristen Gonzalez advanced to third on a wild pitch.",
+            "Zeanna Cyrus walked (3-1 BBBKB).",
+            "Haven Papineau pinch ran for Zeanna Cyrus.",
+            "Haven Papineau advanced to second; Tristen Gonzalez scored on a wild pitch, unearned.",
+            "Avery Contini walked (3-0 BBBB).",
+            "Ella DeCrescenzo to p.",
+            "Sam Chappell to lf for Kelly Baker.",
+            "Ari Torres popped up to 1b (2-0 BB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/swarthmore/boxscore/27444",
+      "date": "3/13/2026",
+      "opponent": "Swarthmore",
+      "pitchers": [
+        "Lees, Jacelyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Iris Barone singled to center field (3-2 BBKBK).",
+            "Regan Valenzuela reached first on a fielding error by 3b (0-0); Iris Barone advanced to second.",
+            "Emilee Espinoza out at first 3b to 2b, SAC, bunt (0-0); Regan Valenzuela advanced to second; Iris Barone advanced to third.",
+            "Avery McClure popped up to 2b (0-2 KK).",
+            "Linnaea Rasmussen popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lia Fong grounded out to ss (1-1 BK).",
+            "Eva Szap walked (3-1 BBKBB).",
+            "Ava Babcock struck out swinging (2-2 BKKBS).",
+            "Elisabeth O'Connor singled to center field (2-2 BKFB); Eva Szap advanced to second.",
+            "Iris Barone struck out swinging (2-2 FBKBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Regan Valenzuela grounded out to ss (0-0).",
+            "Emilee Espinoza flied out to cf (1-2 KFFB).",
+            "Avery McClure grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Linnaea Rasmussen singled to second base (1-1 KB).",
+            "Lia Fong flied out to cf (1-2 FKB).",
+            "Eva Szap reached on a fielder's choice to third base (1-0 B); Linnaea Rasmussen out at second 3b to 2b.",
+            "Ava Babcock walked (3-2 KFBFBFFBB); Eva Szap advanced to second.",
+            "Elisabeth O'Connor struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Iris Barone lined out to cf (0-0).",
+            "Regan Valenzuela popped up to ss (0-2 FK).",
+            "Emilee Espinoza lined out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avery McClure struck out swinging (0-2 KKS).",
+            "Linnaea Rasmussen singled to right field (0-0).",
+            "Lia Fong flied out to lf (0-0).",
+            "Eva Szap flied out to lf (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jordynn Killion to 3b for Leila Campbell.",
+            "Jacelyn Lees to p for Cameron Maloney.",
+            "Sam Chappell to lf for Lucia Zaremba.",
+            "Ava Babcock hit by pitch (1-0 H).",
+            "Kate Borza pinch hit for Elisabeth O'Connor.",
+            "Kate Borza popped up to p (2-2 KBKB).",
+            "Iris Barone singled to second base (1-2 FKFB); Ava Babcock advanced to second.",
+            "Regan Valenzuela singled to center field (0-1 F); Iris Barone advanced to second; Ava Babcock advanced to third.",
+            "Emilee Espinoza fouled out to 1b (0-1 K).",
+            "Avery McClure reached on a fielder's choice to shortstop (0-0); Regan Valenzuela advanced to second; Iris Barone out at third ss to 3b."
           ]
         }
       ],
