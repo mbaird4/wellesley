@@ -161,7 +161,8 @@ const DEFAULT_YEARS = [2026, 2025, 2024, 2023];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+  'Accept-Language': 'en-US,en;q=0.9',
 };
 
 // ── Utilities ──
@@ -295,6 +296,20 @@ function parseWithGamedataFlag(): boolean {
   return process.argv.includes('--with-gamedata');
 }
 
+function parseNonConferenceFlag(): boolean {
+  return process.argv.includes('--non-conference');
+}
+
+function parseOutputDirArg(): string | null {
+  const idx = process.argv.indexOf('--output-dir');
+
+  if (idx === -1 || idx + 1 >= process.argv.length) {
+    return null;
+  }
+
+  return process.argv[idx + 1].trim();
+}
+
 function gamedataFilename(year: number): string {
   return year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
 }
@@ -319,6 +334,16 @@ const PRESTO_ALIASES: Record<string, string[]> = {
   salemstate: ['Salem State', 'Salem St', 'Salem'],
 };
 
+const NON_CONFERENCE_PRESTO_TEAMS: Record<string, TeamConfig> = {
+  curry: { domain: 'www.curryathletics.com', teamSlug: 'curry' },
+  endicott: { domain: 'www.ecgulls.com', teamSlug: 'endicott' },
+};
+
+const NON_CONFERENCE_PRESTO_ALIASES: Record<string, string[]> = {
+  curry: ['Curry', 'Curry College'],
+  endicott: ['Endicott', 'Endicott College'],
+};
+
 /** Convert year (e.g. 2026) to Presto Sports format (e.g. "2025-26") */
 function prestoYearFormat(year: number): string {
   return `${year - 1}-${String(year).slice(2)}`;
@@ -333,79 +358,116 @@ function buildPrestoRosterUrl(domain: string, season: string): string {
 }
 
 function buildPrestoStatsUrl(domain: string, season: string, teamSlug: string): string {
-  return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?view=lineup`;
+  // Use monospace print template which always includes individual player stats
+  return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h`;
 }
 
 function buildPrestoPitchingStatsUrl(domain: string, season: string, teamSlug: string): string {
-  return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?view=pitching`;
+  // Pitching stats are also in the monospace template, but use the pitching view as fallback
+  return `https://${domain}/sports/sball/${season}/teams/${teamSlug}?tmpl=teaminfo-network-monospace-template&sort=ab&pos=h`;
+}
+
+/**
+ * Some Presto sites load player stats via AJAX. Detect this and extract the URL.
+ * Looks for a `tabbed-ajax-content` div whose data-url contains `view=lineup` and `pos=h` (hitters).
+ */
+function extractPrestoAjaxStatsUrl($: cheerio.CheerioAPI, domain: string): string | null {
+  let ajaxUrl: string | null = null;
+
+  $('div.tabbed-ajax-content').each((_, el) => {
+    const dataUrl = $(el).attr('data-url') || '';
+
+    if (dataUrl.includes('view=lineup') && dataUrl.includes('pos=h')) {
+      ajaxUrl = dataUrl.startsWith('http') ? dataUrl : `https://${domain}${dataUrl}`;
+
+      return false; // stop after first match
+    }
+  });
+
+  return ajaxUrl;
+}
+
+/**
+ * Extract the AJAX URL for pitching stats from a Presto page.
+ */
+function extractPrestoAjaxPitchingUrl($: cheerio.CheerioAPI, domain: string): string | null {
+  let ajaxUrl: string | null = null;
+
+  $('div.tabbed-ajax-content').each((_, el) => {
+    const dataUrl = $(el).attr('data-url') || '';
+
+    if (dataUrl.includes('pos=p') && dataUrl.includes('view=lineup')) {
+      ajaxUrl = dataUrl.startsWith('http') ? dataUrl : `https://${domain}${dataUrl}`;
+
+      return false;
+    }
+  });
+
+  return ajaxUrl;
 }
 
 // ── Presto roster parsing ──
 
-function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
+/**
+ * Newer Presto sites use `data-field` attributes on cells (td/th) instead of
+ * positional column indices. Detect this and parse using field-based lookup.
+ */
+function parsePrestoRosterByField($: cheerio.CheerioAPI): RosterPlayer[] {
   const players: RosterPlayer[] = [];
 
-  // Presto rosters use standard table rows with columns: No., Name, Pos., Cl., B/T
   $('table').each((_, table) => {
     const $table = $(table);
-    const headers: string[] = [];
 
-    $table.find('thead th, thead td').each((_, th) => {
-      headers.push($(th).text().trim().toLowerCase());
-    });
+    // Check if this table uses data-field attributes
+    const firstFieldCell = $table.find('tbody tr:first-child [data-field]');
 
-    // Check if this looks like a roster table
-    const hasNo = headers.some((h) => h === 'no.' || h === '#' || h === 'no');
-    const hasName = headers.some((h) => h === 'name' || h === 'player' || h === 'full name');
-
-    if (!hasNo && !hasName) {
+    if (firstFieldCell.length === 0) {
       return;
     }
 
-    const noIdx = headers.findIndex((h) => h === 'no.' || h === '#' || h === 'no');
-    const nameIdx = headers.findIndex((h) => h === 'name' || h === 'player' || h === 'full name');
-    const posIdx = headers.findIndex((h) => h === 'pos.' || h === 'pos' || h === 'position');
-    const clIdx = headers.findIndex((h) => h === 'cl.' || h === 'cl' || h === 'yr.' || h === 'yr' || h === 'class');
-    const btIdx = headers.findIndex((h) => h === 'b/t' || h === 'b-t' || h === 'bat/thr');
-
     $table.find('tbody tr').each((_, row) => {
-      const cells = $(row).find('td');
+      const $row = $(row);
 
-      if (cells.length < 2) {
-        return;
-      }
-
-      const jerseyText = noIdx >= 0 ? $(cells[noIdx]).text().trim() : '';
-      const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
-
-      const fullName = nameIdx >= 0 ? $(cells[nameIdx]).find('a').text().trim() || $(cells[nameIdx]).text().trim() : '';
+      // Name: uses data-field containing "name" (e.g. "first_name: :last_name")
+      const nameCell = $row.find('[data-field*="name"]');
+      const fullName = nameCell.find('a').first().text().replace(/\s+/g, ' ').trim();
 
       if (!fullName) {
         return;
       }
 
-      // Presto names are typically "First Last" or "Last, First"
-      let firstName = '';
-      let lastName = '';
+      // Jersey number
+      const jerseyCell = $row.find('[data-field="number"]');
+      const jerseyText = jerseyCell.text().trim();
+      const jerseyNumber = jerseyText ? parseInt(jerseyText, 10) : null;
 
-      if (fullName.includes(',')) {
-        const parts = fullName.split(',');
-        lastName = parts[0].trim();
-        firstName = (parts[1] || '').trim();
-      } else {
-        const parts = fullName.split(/\s+/);
-        firstName = parts[0] || '';
-        lastName = parts.slice(1).join(' ') || '';
-      }
+      // Position
+      const posCell = $row.find('[data-field="position"]');
+      const position =
+        posCell.length > 0
+          ? posCell
+              .text()
+              .replace(/Pos\.?:?\s*/i, '')
+              .trim() || null
+          : null;
 
-      const position = posIdx >= 0 ? $(cells[posIdx]).text().trim() || null : null;
-      const classYear = clIdx >= 0 ? $(cells[clIdx]).text().trim() : '';
+      // Class year
+      const yearCell = $row.find('[data-field="year"]');
+      const classYear =
+        yearCell.length > 0
+          ? yearCell
+              .text()
+              .replace(/Cl\.?:?\s*/i, '')
+              .trim()
+          : '';
 
+      // B/T
+      const btCell = $row.find('[data-field*="bat"], [data-field*="throw"], [data-field*="b_t"], [data-field*="b/t"]');
       let bats: BatHand | null = null;
       let throws: 'L' | 'R' | null = null;
 
-      if (btIdx >= 0) {
-        const btText = $(cells[btIdx]).text().trim();
+      if (btCell.length > 0) {
+        const btText = btCell.text().trim();
 
         if (btText && /[LRS]\s*[/-]\s*[LR]/i.test(btText)) {
           const btParts = btText.split(/[/-]/);
@@ -421,6 +483,20 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
             throws = throwChar;
           }
         }
+      }
+
+      // Parse name: "First Last" or "Last, First"
+      let firstName = '';
+      let lastName = '';
+
+      if (fullName.includes(',')) {
+        const parts = fullName.split(',');
+        lastName = parts[0].trim();
+        firstName = (parts[1] || '').trim();
+      } else {
+        const parts = fullName.split(/\s+/);
+        firstName = parts[0] || '';
+        lastName = parts.slice(1).join(' ') || '';
       }
 
       const name = `${firstName} ${lastName}`.trim();
@@ -444,10 +520,16 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
   return players;
 }
 
-// ── Presto batting stats parsing ──
+function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
+  // Try field-based parsing first (newer Presto sites)
+  const fieldPlayers = parsePrestoRosterByField($);
 
-function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
-  const players: BattingStats[] = [];
+  if (fieldPlayers.length > 0) {
+    return fieldPlayers;
+  }
+
+  // Fallback: header-based positional parsing (older Presto sites)
+  const players: RosterPlayer[] = [];
 
   $('table').each((_, table) => {
     const $table = $(table);
@@ -456,6 +538,209 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
     $table.find('thead th, thead td').each((_, th) => {
       headers.push($(th).text().trim().toLowerCase());
     });
+
+    // Check if this looks like a roster table
+    const hasNo = headers.some((h) => h === 'no.' || h === '#' || h === 'no');
+    const hasName = headers.some((h) => h === 'name' || h === 'player' || h === 'full name');
+
+    if (!hasNo && !hasName) {
+      return;
+    }
+
+    const noIdx = headers.findIndex((h) => h === 'no.' || h === '#' || h === 'no');
+    const nameIdx = headers.findIndex((h) => h === 'name' || h === 'player' || h === 'full name');
+    const posIdx = headers.findIndex((h) => h === 'pos.' || h === 'pos' || h === 'position');
+    const clIdx = headers.findIndex((h) => h === 'cl.' || h === 'cl' || h === 'yr.' || h === 'yr' || h === 'class');
+    const btIdx = headers.findIndex((h) => h === 'b/t' || h === 'b-t' || h === 'bat/thr');
+
+    $table.find('tbody tr').each((_, row) => {
+      // Use td + th to capture name cells that are <th scope="row">
+      const cells = $(row).find('td, th[scope="row"]');
+
+      if (cells.length < 2) {
+        return;
+      }
+
+      // Extract jersey from the visible jersey cell (skip mobile-only duplicates)
+      let jerseyNumber: number | null = null;
+
+      if (noIdx >= 0) {
+        // Try positional first, but also look for .jersey-number cells
+        const jerseyCell = $(row).find('.jersey-number').filter(':not(.d-md-none)').first();
+        const jerseyText = jerseyCell.length > 0 ? jerseyCell.text().trim() : $(cells[noIdx]).text().trim();
+        const parsed = parseInt(jerseyText.replace(/\D/g, ''), 10);
+        jerseyNumber = !isNaN(parsed) ? parsed : null;
+      }
+
+      // Extract name from <a> link (most reliable across Presto versions)
+      const nameLink = $(row)
+        .find('th a, td a')
+        .filter((_, el) => {
+          const href = $(el).attr('href') || '';
+
+          return href.includes('/bios/') || href.includes('/players/');
+        })
+        .first();
+      const fullName = nameLink.length > 0 ? nameLink.text().replace(/\s+/g, ' ').trim() : nameIdx >= 0 ? $(cells[nameIdx]).text().replace(/\s+/g, ' ').trim() : '';
+
+      if (!fullName) {
+        return;
+      }
+
+      // Presto names are typically "First Last" or "Last, First"
+      let firstName = '';
+      let lastName = '';
+
+      if (fullName.includes(',')) {
+        const parts = fullName.split(',');
+        lastName = parts[0].trim();
+        firstName = (parts[1] || '').trim();
+      } else {
+        const parts = fullName.split(/\s+/);
+        firstName = parts[0] || '';
+        lastName = parts.slice(1).join(' ') || '';
+      }
+
+      // Extract position and class year using label spans (newer Presto) or positional indices
+      let position: string | null = null;
+      let classYear = '';
+      let bats: BatHand | null = null;
+      let throws: 'L' | 'R' | null = null;
+
+      // Try label-based extraction first (works for newer Presto with inline labels)
+      $(row)
+        .find('td')
+        .each((_, cell) => {
+          const label = $(cell).find('.label').text().trim().toLowerCase();
+          const value = $(cell)
+            .text()
+            .replace(/^.*?:\s*/, '')
+            .trim();
+
+          if (label.includes('pos') && !position) {
+            position = value || null;
+          } else if (label.includes('cl') && !classYear) {
+            classYear = value;
+          } else if ((label.includes('b/t') || label.includes('b-t')) && !bats) {
+            if (value && /[LRS]\s*[/-]\s*[LR]/i.test(value)) {
+              const btParts = value.split(/[/-]/);
+              const batChar = btParts[0]?.trim().toUpperCase();
+
+              if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
+                bats = batChar;
+              }
+
+              const throwChar = btParts[1]?.trim().toUpperCase();
+
+              if (throwChar === 'L' || throwChar === 'R') {
+                throws = throwChar;
+              }
+            }
+          }
+        });
+
+      // Fallback to positional indices if label-based extraction didn't work
+      if (!position && posIdx >= 0 && posIdx < cells.length) {
+        position = $(cells[posIdx]).text().trim() || null;
+      }
+
+      if (!classYear && clIdx >= 0 && clIdx < cells.length) {
+        classYear = $(cells[clIdx]).text().trim();
+      }
+
+      if (!bats && btIdx >= 0 && btIdx < cells.length) {
+        const btText = $(cells[btIdx]).text().trim();
+
+        if (btText && /[LRS]\s*[/-]\s*[LR]/i.test(btText)) {
+          const btParts = btText.split(/[/-]/);
+          const batChar = btParts[0]?.trim().toUpperCase();
+
+          if (batChar === 'L' || batChar === 'R' || batChar === 'S') {
+            bats = batChar;
+          }
+
+          const throwChar = btParts[1]?.trim().toUpperCase();
+
+          if (throwChar === 'L' || throwChar === 'R') {
+            throws = throwChar;
+          }
+        }
+      }
+
+      const name = `${firstName} ${lastName}`.trim();
+      players.push({
+        name,
+        firstName,
+        lastName,
+        jerseyNumber,
+        classYear,
+        position,
+        bats,
+        throws,
+      });
+    });
+
+    if (players.length > 0) {
+      return false; // stop after first matching table
+    }
+  });
+
+  return players;
+}
+
+// ── Presto table helpers ──
+
+/**
+ * Extract headers and data rows from a Presto table.
+ * Handles both thead/tbody tables and headerless tables (first row = headers).
+ */
+function extractPrestoTableParts($: cheerio.CheerioAPI, $table: ReturnType<cheerio.CheerioAPI>): { headers: string[]; rows: ReturnType<cheerio.CheerioAPI> } {
+  const headers: string[] = [];
+
+  // Try thead first
+  $table.find('thead th, thead td').each((_, th) => {
+    headers.push($(th).text().trim().toLowerCase());
+  });
+
+  if (headers.length > 0) {
+    return { headers, rows: $table.find('tbody tr') };
+  }
+
+  // Fallback: first <tr> is the header row (monospace template)
+  const allRows = $table.find('tr');
+
+  if (allRows.length < 2) {
+    return { headers: [], rows: $('__empty__') };
+  }
+
+  $(allRows[0])
+    .find('th, td')
+    .each((_, cell) => {
+      headers.push($(cell).text().trim().toLowerCase());
+    });
+
+  // Return remaining rows (skip header + any empty spacer rows)
+  const dataRows = allRows.filter((i) => {
+    if (i === 0) {
+      return false;
+    }
+
+    const text = $(allRows[i]).text().trim();
+
+    return text.length > 0;
+  });
+
+  return { headers, rows: dataRows };
+}
+
+// ── Presto batting stats parsing ──
+
+function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
+  const players: BattingStats[] = [];
+
+  $('table').each((_, table) => {
+    const $table = $(table);
+    const { headers, rows } = extractPrestoTableParts($, $table);
 
     // Look for table with batting-like columns (AB, H, AVG, etc.)
     const hasAb = headers.some((h) => h === 'ab');
@@ -481,24 +766,27 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
     const bbCol = col('bb');
     const hbpCol = col('hbp');
     const soCol = col('k') >= 0 ? col('k') : col('so'); // Presto uses "K"
-    const gdpCol = col('gdp') >= 0 ? col('gdp') : col('gidp');
+    const gdpCol = col('gdp') >= 0 ? col('gdp') : col('gidp') >= 0 ? col('gidp') : col('hdp');
     const sfCol = col('sf');
     const shCol = col('sh') >= 0 ? col('sh') : col('sac');
     const sbCol = col('sb');
     const sbAttCol = col('sb-att') >= 0 ? col('sb-att') : col('att');
+    const csCol = col('cs');
     const avgCol = col('avg') >= 0 ? col('avg') : col('ba');
     const obpCol = col('obp') >= 0 ? col('obp') : col('ob%');
     const slgCol = col('slg') >= 0 ? col('slg') : col('slg%');
     const opsCol = col('ops');
 
-    $table.find('tbody tr').each((_, row) => {
+    rows.each((_, row) => {
       const cells = $(row).find('td');
 
       if (cells.length < 3) {
         return;
       }
 
-      const rawName = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
+      const rawNameRaw = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
+      // Strip trailing dots (monospace template padding) and collapse whitespace
+      const rawName = rawNameRaw.replace(/\.+$/, '').replace(/\s+/g, ' ').trim();
 
       if (!rawName || rawName.toLowerCase() === 'totals' || rawName.toLowerCase() === 'total' || rawName.toLowerCase() === 'opponents') {
         return;
@@ -547,7 +835,7 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
       const obp = obpCol >= 0 ? pct(obpCol) : pa > 0 ? (h + bb + hbp) / pa : 0;
       const ops = opsCol >= 0 ? pct(opsCol) : slg + obp;
 
-      // Handle SB - may be a single column or sb-att format
+      // Handle SB - may be a single column, sb-att combined, or sb + cs separate columns
       let sb = 0;
       let sbAtt = 0;
 
@@ -560,7 +848,8 @@ function parsePrestoStatsTable($: cheerio.CheerioAPI): BattingStats[] {
           sbAtt = parseInt(sbMatch[2], 10);
         } else {
           sb = parseInt(sbText, 10) || 0;
-          sbAtt = sbAttCol >= 0 ? num(sbAttCol) : sb;
+          const cs = csCol >= 0 ? num(csCol) : 0;
+          sbAtt = sbAttCol >= 0 ? num(sbAttCol) : sb + cs;
         }
       }
 
@@ -621,11 +910,7 @@ function parsePrestoPitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[
 
   $('table').each((_, table) => {
     const $table = $(table);
-    const headers: string[] = [];
-
-    $table.find('thead th, thead td').each((_, th) => {
-      headers.push($(th).text().trim().toLowerCase());
-    });
+    const { headers, rows } = extractPrestoTableParts($, $table);
 
     // Look for pitching-like columns (IP, ERA, etc.)
     const hasIp = headers.some((h) => h === 'ip');
@@ -651,14 +936,15 @@ function parsePrestoPitchingStatsTable($: cheerio.CheerioAPI): PitchingStatsRow[
     const soCol = col('k') >= 0 ? col('k') : col('so');
     const hrCol = col('hr');
 
-    $table.find('tbody tr').each((_, row) => {
+    rows.each((_, row) => {
       const cells = $(row).find('td');
 
       if (cells.length < 3) {
         return;
       }
 
-      const rawName = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
+      const rawNameRaw = nameCol >= 0 ? $(cells[nameCol]).find('a').text().trim() || $(cells[nameCol]).text().trim() : '';
+      const rawName = rawNameRaw.replace(/\.+$/, '').replace(/\s+/g, ' ').trim();
 
       if (!rawName || rawName.toLowerCase() === 'totals' || rawName.toLowerCase() === 'total' || rawName.toLowerCase() === 'opponents') {
         return;
@@ -753,11 +1039,7 @@ function parsePrestoTeamGames($: cheerio.CheerioAPI): number | null {
 
   $('table').each((_, table) => {
     const $table = $(table);
-    const headers: string[] = [];
-
-    $table.find('thead th, thead td').each((_, th) => {
-      headers.push($(th).text().trim().toLowerCase());
-    });
+    const { headers, rows } = extractPrestoTableParts($, $table);
 
     const hasAb = headers.some((h) => h === 'ab');
     const hasGp = headers.some((h) => h === 'gp');
@@ -768,7 +1050,10 @@ function parsePrestoTeamGames($: cheerio.CheerioAPI): number | null {
 
     const gpCol = headers.findIndex((h) => h === 'gp');
 
-    $table.find('tbody tr, tfoot tr').each((_, row) => {
+    // Also check tfoot for totals row (thead/tbody tables)
+    const allRows = $table.find('tfoot tr').length > 0 ? rows.add($table.find('tfoot tr')) : rows;
+
+    allRows.each((_, row) => {
       const cells = $(row).find('td, th');
       const nameCol = headers.findIndex((h) => h === 'name' || h === 'player');
       const nameText = nameCol >= 0 ? $(cells[nameCol]).text().trim().toLowerCase() : $(cells[0]).text().trim().toLowerCase();
@@ -867,43 +1152,52 @@ function parsePrestoPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 
     const plays: string[] = [];
 
-    // Look at sibling elements until we hit another heading or section break
-    let $next = $(heading).next();
+    // Newer Presto: <h3> is inside a <td> within a <table>, plays are in sibling <tr> rows
+    const parentTable = $(heading).closest('table');
 
-    while ($next.length > 0) {
-      const tag = $next.prop('tagName')?.toLowerCase() || '';
-
-      // Stop at next heading or horizontal rule
-      if (['h3', 'h4', 'h2', 'hr'].includes(tag)) {
-        break;
-      }
-
-      if (tag === 'table') {
-        // PBP may be in a table
-        $next.find('tr').each((_, row) => {
-          const rowText = $(row).text().trim();
-
-          if (rowText && rowText.length >= 5 && !rowText.toLowerCase().includes('inning summary') && !rowText.toLowerCase().includes('play description')) {
-            plays.push(rowText);
-          }
-        });
-      } else {
-        // PBP may be in div/p elements
-        const playText = $next.text().trim();
+    if (parentTable.length > 0) {
+      parentTable.find('td.text').each((_, td) => {
+        const playText = $(td).text().replace(/\s+/g, ' ').trim();
 
         if (playText && playText.length >= 5 && !playText.toLowerCase().includes('inning summary')) {
-          // Split on newlines in case multiple plays are in one element
-          playText.split('\n').forEach((line) => {
-            const trimmed = line.trim();
+          plays.push(playText);
+        }
+      });
+    } else {
+      // Fallback: look at sibling elements until we hit another heading
+      let $next = $(heading).next();
 
-            if (trimmed.length >= 5) {
-              plays.push(trimmed);
+      while ($next.length > 0) {
+        const tag = $next.prop('tagName')?.toLowerCase() || '';
+
+        if (['h3', 'h4', 'h2', 'hr'].includes(tag)) {
+          break;
+        }
+
+        if (tag === 'table') {
+          $next.find('tr').each((_, row) => {
+            const rowText = $(row).text().trim();
+
+            if (rowText && rowText.length >= 5 && !rowText.toLowerCase().includes('inning summary') && !rowText.toLowerCase().includes('play description')) {
+              plays.push(rowText);
             }
           });
-        }
-      }
+        } else {
+          const playText = $next.text().trim();
 
-      $next = $next.next();
+          if (playText && playText.length >= 5 && !playText.toLowerCase().includes('inning summary')) {
+            playText.split('\n').forEach((line) => {
+              const trimmed = line.trim();
+
+              if (trimmed.length >= 5) {
+                plays.push(trimmed);
+              }
+            });
+          }
+        }
+
+        $next = $next.next();
+      }
     }
 
     if (plays.length > 0) {
@@ -987,7 +1281,7 @@ function parsePrestoLineup($: cheerio.CheerioAPI, teamAliases: string[]): [numbe
     // Skip pitching tables
     const lower = context.toLowerCase();
 
-    if (lower.includes('pitching') || lower.includes('top of') || lower.includes('bottom of')) {
+    if (lower.includes('pitching') || lower.includes('pitcher') || lower.includes('top of') || lower.includes('bottom of')) {
       return;
     }
 
@@ -997,24 +1291,35 @@ function parsePrestoLineup($: cheerio.CheerioAPI, teamAliases: string[]): [numbe
       const $row = $(row);
       const cells = $row.find('td');
 
-      if (cells.length < 2) {
-        return;
+      // Try to find player name — first check <a> with player-name class or bio/player link
+      let playerText = '';
+      const playerLink = $row
+        .find('a.player-name, th a, td a')
+        .filter((_, el) => {
+          const href = $(el).attr('href') || '';
+
+          return $(el).hasClass('player-name') || href.includes('/players') || href.includes('/bios/');
+        })
+        .first();
+
+      if (playerLink.length > 0) {
+        playerText = playerLink.text().replace(/\s+/g, ' ').trim();
       }
 
-      // Try to find player name — look for a link or the name cell
-      let playerText = '';
-
-      cells.each((_, cell) => {
-        const link = $(cell).find('a').first();
-
-        if (link.length > 0 && link.text().trim()) {
-          playerText = link.text().trim();
-
-          return false;
-        }
-      });
-
       if (!playerText) {
+        // Fallback: look for links in td cells
+        cells.each((_, cell) => {
+          const link = $(cell).find('a').first();
+
+          if (link.length > 0 && link.text().trim()) {
+            playerText = link.text().trim();
+
+            return false;
+          }
+        });
+      }
+
+      if (!playerText && cells.length >= 2) {
         // Fallback: use second cell text
         playerText = $(cells[1]).text().trim();
       }
@@ -1030,8 +1335,9 @@ function parsePrestoLineup($: cheerio.CheerioAPI, teamAliases: string[]): [numbe
       const normalized = normalizeName(playerName);
 
       // Check for substitution — indentation or different visual indicator
-      const cellHtml = $(cells[1]).html() || '';
-      const rawText = $(cells[1]).text() || '';
+      const nameCell = $row.find('th[scope="row"], td').eq(cells.length >= 2 ? 1 : 0);
+      const cellHtml = nameCell.html() || '';
+      const rawText = nameCell.text() || '';
       const isSubstitution = cellHtml.startsWith('&nbsp;&nbsp;&nbsp;&nbsp;') || /^(&nbsp;){4,}/.test(cellHtml) || /^(\u00A0|\s){4,}/.test(rawText);
 
       if (isSubstitution) {
@@ -1066,7 +1372,9 @@ function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): stri
     const prevHeading = $(table).prev('h3, h4, h2').text() || '';
     const context = `${caption} ${prevHeading}`;
 
-    if (!context.toLowerCase().includes('pitching')) {
+    const lower = context.toLowerCase();
+
+    if (!lower.includes('pitching') && !lower.includes('pitcher')) {
       return;
     }
 
@@ -1077,10 +1385,17 @@ function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): stri
     $(table)
       .find('tbody tr')
       .each((_, row) => {
-        const link = $(row).find('a').first();
-        const name = link.text().trim() || $(row).find('td').first().text().trim();
+        // Skip totals rows
+        const thText = $(row).find('th').text().replace(/\s+/g, ' ').trim().toLowerCase();
 
-        if (name && name.toLowerCase() !== 'totals') {
+        if (thText === 'totals') {
+          return;
+        }
+
+        const playerLink = $(row).find('a.player-name, th a, td a').first();
+        const name = playerLink.length > 0 ? playerLink.text().replace(/\s+/g, ' ').trim() : '';
+
+        if (name) {
           pitchers.push(name);
         }
       });
@@ -1173,7 +1488,23 @@ async function scrapeTeam(slug: string, config: TeamConfig, years: number[], ali
 
     if (statsHtml) {
       const $stats = cheerio.load(statsHtml);
-      const stats = parsePrestoStatsTable($stats);
+      let stats = parsePrestoStatsTable($stats);
+
+      // Fallback: some Presto sites load stats via AJAX
+      if (stats.length === 0) {
+        const ajaxUrl = extractPrestoAjaxStatsUrl($stats, config.domain);
+
+        if (ajaxUrl) {
+          console.log(`    Stats loaded via AJAX, fetching...`);
+          await delay(DELAY_MS);
+          const ajaxHtml = await fetchPage(ajaxUrl);
+
+          if (ajaxHtml) {
+            stats = parsePrestoStatsTable(cheerio.load(ajaxHtml));
+          }
+        }
+      }
+
       statsByYear.set(year, stats);
       console.log(`    Parsed ${stats.length} players`);
 
@@ -1427,10 +1758,14 @@ async function scrapeTeamPitching(
   scrapedAt: string;
   pitchingStatsByYear: Record<string, PitchingStatsRow[]>;
   games: GamePitchingData[];
+  boxscoreUrlsByYear: Record<string, string[]>;
+  boxscoreHtmlCache: Record<string, string>;
 }> {
   console.log(`\n  --- Pitching scrape for ${slug} ---`);
 
   const pitchingStatsByYear: Record<string, PitchingStatsRow[]> = {};
+  const boxscoreUrlsByYear: Record<string, string[]> = {};
+  const boxscoreHtmlCache: Record<string, string> = {};
   const allGames: GamePitchingData[] = [];
 
   for (const year of years) {
@@ -1442,7 +1777,23 @@ async function scrapeTeamPitching(
 
     if (statsHtml) {
       const $stats = cheerio.load(statsHtml);
-      const pitchingStats = parsePrestoPitchingStatsTable($stats);
+      let pitchingStats = parsePrestoPitchingStatsTable($stats);
+
+      // Fallback: some Presto sites load pitching stats via AJAX
+      if (pitchingStats.length === 0) {
+        const ajaxUrl = extractPrestoAjaxPitchingUrl($stats, config.domain);
+
+        if (ajaxUrl) {
+          console.log(`    Pitching stats loaded via AJAX, fetching...`);
+          await delay(DELAY_MS);
+          const ajaxHtml = await fetchPage(ajaxUrl);
+
+          if (ajaxHtml) {
+            pitchingStats = parsePrestoPitchingStatsTable(cheerio.load(ajaxHtml));
+          }
+        }
+      }
+
       pitchingStatsByYear[String(year)] = pitchingStats;
       console.log(`    Parsed ${pitchingStats.length} pitchers`);
     }
@@ -1460,6 +1811,7 @@ async function scrapeTeamPitching(
 
     const $schedule = cheerio.load(scheduleHtml);
     const boxscoreUrls = extractPrestoBoxscoreUrls($schedule, config.domain);
+    boxscoreUrlsByYear[String(year)] = boxscoreUrls;
     console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
 
     // Fetch each boxscore and extract pitching data
@@ -1473,6 +1825,9 @@ async function scrapeTeamPitching(
       if (!html) {
         continue;
       }
+
+      // Cache HTML for gamedata reuse (avoids WAF rate limiting)
+      boxscoreHtmlCache[url] = html;
 
       const $ = cheerio.load(html);
       const allInnings = parsePrestoPlayByPlay($);
@@ -1508,6 +1863,8 @@ async function scrapeTeamPitching(
     scrapedAt: new Date().toISOString(),
     pitchingStatsByYear,
     games: allGames,
+    boxscoreUrlsByYear,
+    boxscoreHtmlCache,
   };
 }
 
@@ -1517,7 +1874,9 @@ async function scrapeTeamGamedata(
   slug: string,
   config: TeamConfig,
   years: number[],
-  aliases: string[]
+  aliases: string[],
+  cachedBoxscoreUrls?: Record<string, string[]>,
+  cachedHtml?: Record<string, string>
 ): Promise<{
   slug: string;
   domain: string;
@@ -1530,28 +1889,49 @@ async function scrapeTeamGamedata(
 
   for (const year of years) {
     const season = prestoYearFormat(year);
-    console.log(`  Fetching ${year} (${season}) schedule...`);
-    await delay(DELAY_MS);
-    const scheduleUrl = buildPrestoScheduleUrl(config.domain, season);
-    const scheduleHtml = await fetchPage(scheduleUrl);
+    const cached = cachedBoxscoreUrls?.[String(year)];
 
-    if (!scheduleHtml) {
-      console.log(`    No schedule page for ${year}`);
-      continue;
+    let boxscoreUrls: string[];
+
+    if (cached && cached.length > 0) {
+      boxscoreUrls = cached;
+      console.log(`  Using ${boxscoreUrls.length} cached boxscore URLs for ${year}`);
+    } else {
+      console.log(`  Fetching ${year} (${season}) schedule...`);
+      await delay(DELAY_MS);
+      const scheduleUrl = buildPrestoScheduleUrl(config.domain, season);
+      const scheduleHtml = await fetchPage(scheduleUrl);
+
+      if (!scheduleHtml) {
+        console.log(`    No schedule page for ${year}`);
+        continue;
+      }
+
+      const $schedule = cheerio.load(scheduleHtml);
+      boxscoreUrls = extractPrestoBoxscoreUrls($schedule, config.domain);
     }
 
-    const $schedule = cheerio.load(scheduleHtml);
-    const boxscoreUrls = extractPrestoBoxscoreUrls($schedule, config.domain);
     console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
 
     const games: GamedataSerializedGame[] = [];
 
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
-      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
-      await delay(DELAY_MS);
+      const cached = cachedHtml?.[url];
 
-      const html = await fetchPage(url);
+      let html: string | null;
+
+      if (cached) {
+        html = cached;
+
+        if (i === 0) {
+          console.log(`    Using cached HTML for ${boxscoreUrls.length} boxscores`);
+        }
+      } else {
+        console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
+        await delay(DELAY_MS);
+        html = await fetchPage(url);
+      }
 
       if (!html) {
         continue;
@@ -1571,7 +1951,9 @@ async function scrapeTeamGamedata(
         continue;
       }
 
-      const opponent = parseOpponentFromUrl(url);
+      // Extract opponent name from PBP innings (the team that doesn't match our aliases)
+      const opponentInning = allInnings.find((inn) => !captionMatchesTeam(inn.teamName, aliases));
+      const opponent = opponentInning ? opponentInning.teamName : parseOpponentFromUrl(url);
       const pitchers = parsePrestoPitchers($, aliases).map(normalizeName);
       games.push({ year, url, opponent, pitchers, lineup, playByPlay });
     }
@@ -1613,11 +1995,13 @@ async function main(): Promise<void> {
   const years = parseYearsArg();
   const withPitching = parseWithPitchingFlag();
   const withGamedata = parseWithGamedataFlag();
-  const outputDir = path.resolve(__dirname, '../public/data/opponents/florida');
+  const nonConference = parseNonConferenceFlag();
+  const outputDirOverride = parseOutputDirArg();
+  const outputDir = outputDirOverride ? path.resolve(outputDirOverride) : path.resolve(__dirname, '../public/data/opponents/florida');
   fs.mkdirSync(outputDir, { recursive: true });
 
-  const teams = PRESTO_TEAMS;
-  const aliases = PRESTO_ALIASES;
+  const teams = nonConference ? NON_CONFERENCE_PRESTO_TEAMS : PRESTO_TEAMS;
+  const aliases = nonConference ? NON_CONFERENCE_PRESTO_ALIASES : PRESTO_ALIASES;
 
   const teamsToScrape = teamFilter ? { [teamFilter]: teams[teamFilter] } : teams;
 
@@ -1635,7 +2019,7 @@ async function main(): Promise<void> {
 
   for (const [slug, config] of Object.entries(teamsToScrape)) {
     const teamAliases = aliases[slug] || [slug];
-    const teamDir = path.join(outputDir, slug);
+    const teamDir = outputDirOverride ? outputDir : path.join(outputDir, slug);
     fs.mkdirSync(teamDir, { recursive: true });
 
     const result = await scrapeTeam(slug, config, years, teamAliases);
@@ -1702,8 +2086,13 @@ async function main(): Promise<void> {
     });
 
     // Optionally scrape pitching
+    let cachedBoxscoreUrls: Record<string, string[]> | undefined;
+    let cachedBoxscoreHtml: Record<string, string> | undefined;
+
     if (withPitching) {
       const pitchingResult = await scrapeTeamPitching(slug, config, years, teamAliases);
+      cachedBoxscoreUrls = pitchingResult.boxscoreUrlsByYear;
+      cachedBoxscoreHtml = pitchingResult.boxscoreHtmlCache;
 
       years.forEach((year) => {
         const stats = pitchingResult.pitchingStatsByYear[String(year)] ?? [];
@@ -1729,7 +2118,7 @@ async function main(): Promise<void> {
 
     // Optionally scrape gamedata
     if (withGamedata) {
-      const gamedataResult = await scrapeTeamGamedata(slug, config, years, teamAliases);
+      const gamedataResult = await scrapeTeamGamedata(slug, config, years, teamAliases, cachedBoxscoreUrls, cachedBoxscoreHtml);
 
       Object.entries(gamedataResult.gamesByYear).forEach(([year, games]) => {
         const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));

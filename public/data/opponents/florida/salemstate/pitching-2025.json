@@ -1,0 +1,1249 @@
+{
+  "slug": "salemstate",
+  "domain": "salemstatevikings.com",
+  "scrapedAt": "2026-03-13T19:20:05.617Z",
+  "year": 2025,
+  "pitchingStats": [
+    {
+      "name": "Roberge, Sula",
+      "w": 3,
+      "l": 4,
+      "era": 3.22,
+      "app": 15,
+      "gs": 6,
+      "ip": 45.2,
+      "h": 49,
+      "r": 30,
+      "er": 21,
+      "bb": 38,
+      "so": 17,
+      "hr": 0
+    },
+    {
+      "name": "Toledano, Alanis",
+      "w": 4,
+      "l": 5,
+      "era": 4.18,
+      "app": 15,
+      "gs": 14,
+      "ip": 60.1,
+      "h": 49,
+      "r": 38,
+      "er": 36,
+      "bb": 41,
+      "so": 41,
+      "hr": 3
+    },
+    {
+      "name": "Martineau, Gracie",
+      "w": 10,
+      "l": 7,
+      "era": 4.35,
+      "app": 21,
+      "gs": 14,
+      "ip": 95,
+      "h": 134,
+      "r": 86,
+      "er": 59,
+      "bb": 25,
+      "so": 37,
+      "hr": 1
+    },
+    {
+      "name": "Breault, Mady",
+      "w": 0,
+      "l": 1,
+      "era": 6.63,
+      "app": 8,
+      "gs": 1,
+      "ip": 19,
+      "h": 34,
+      "r": 23,
+      "er": 18,
+      "bb": 11,
+      "so": 8,
+      "hr": 3
+    },
+    {
+      "name": "Perryman, Tara",
+      "w": 1,
+      "l": 2,
+      "era": 7.64,
+      "app": 3,
+      "gs": 2,
+      "ip": 14.2,
+      "h": 22,
+      "r": 17,
+      "er": 16,
+      "bb": 8,
+      "so": 4,
+      "hr": 1
+    },
+    {
+      "name": "Souza, Paige",
+      "w": 0,
+      "l": 0,
+      "era": 14.7,
+      "app": 4,
+      "gs": 1,
+      "ip": 3.1,
+      "h": 3,
+      "r": 9,
+      "er": 7,
+      "bb": 7,
+      "so": 3,
+      "hr": 0
+    }
+  ],
+  "games": [
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250309_mw83.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. McNally singled to left field.",
+            "E. McNally advanced to second on a wild pitch.",
+            "S. Kauffman grounded out to ss; E. McNally advanced to third. (1 out)",
+            "Z. Stewart grounded out to ss. (2 out)",
+            "G. Walsh grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Bucholz grounded out to ss. (1 out)",
+            "A. Doughty walked.",
+            "S. Bryant struck out looking. (2 out)",
+            "M. Carney popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Cotta fouled out to 1b. (1 out)",
+            "E. McNally grounded out to 2b. (2 out)",
+            "S. Kauffman struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Z. Stewart struck out swinging. (1 out)",
+            "G. Walsh singled to center field.",
+            "M. Bucholz grounded out to 3b. (2 out)",
+            "A. Doughty struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Perrotti to lf.",
+            "T. McDermott to 3b for I. Besser.",
+            "S. Bryant grounded out to ss. (1 out)",
+            "M. Carney grounded out to 3b. (2 out)",
+            "C. Cotta singled to center field.",
+            "E. McNally lined out to cf. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250309_srlu.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Sula Roberge"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. McNally popped up to 2b. (1 out)",
+            "Z. Stewart grounded out to ss. (2 out)",
+            "G. Walsh grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Kauffman grounded out to 2b. (1 out)",
+            "M. Bucholz struck out swinging. (2 out)",
+            "A. VonKadich walked.",
+            "A. Doughty struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Eisnor to 1b for I. Besser.",
+            "E. Otto struck out looking. (1 out)",
+            "M. Landeen struck out looking. (2 out)",
+            "E. McNally grounded out to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Frost to cf for G. Fowler.",
+            "Z. Stewart doubled to center field.",
+            "G. Walsh walked.",
+            "S. Kauffman reached on a fielder's choice; G. Walsh advanced to second; Z. Stewart out at third p to 3b.",
+            "M. Bucholz reached on a fielder's choice; S. Kauffman advanced to second; G. Walsh out at third ss to 3b.",
+            "A. VonKadich walked; M. Bucholz advanced to second; S. Kauffman advanced to third.",
+            "A. Doughty grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Thomas to rf.",
+            "E. Otto struck out swinging. (1 out)",
+            "M. Landeen walked.",
+            "E. McNally struck out swinging. (2 out)",
+            "M. Landeen advanced to second on a wild pitch.",
+            "Z. Stewart walked.",
+            "G. Walsh flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Carbonnea to 1b.",
+            "S. Roberge to p for A. Toledano.",
+            "S. Kauffman singled to right field.",
+            "M. Bucholz grounded out to 3b, SAC, bunt; S. Kauffman advanced to second. (1 out)",
+            "A. VonKadich popped up to ss. (2 out)",
+            "S. Kauffman advanced to third on a wild pitch.",
+            "S. Kauffman scored on an error by c, on the throw, unearned.",
+            "A. Doughty walked.",
+            "A. Doughty out at second c to ss, caught stealing. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250317_z22d.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Mikolajcz tripled to center field.",
+            "A. Alper struck out swinging. (1 out)",
+            "K. Rogers singled to center field, RBI; T. Mikolajcz scored.",
+            "E. Goddard reached on a fielder's choice; K. Rogers out at second ss unassisted. (2 out)",
+            "M. O'Brien grounded out to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Valentine to lf.",
+            "E. Steed grounded out to 2b. (1 out)",
+            "L. Nelson reached first on an error by ss.",
+            "L. Nelson stole second.",
+            "I. Calagna singled to center field; L. Nelson advanced to third.",
+            "M. True grounded out to p, RBI; I. Calagna advanced to second; L. Nelson scored, unearned.",
+            "T. Mikolajcz grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Eisnor to 1b for A. Thomas.",
+            "A. Alper grounded out to 2b. (1 out)",
+            "K. Rogers hit by pitch.",
+            "E. Goddard reached on a fielder's choice; K. Rogers out at second p to ss. (2 out)",
+            "M. O'Brien reached first on an error by 2b; E. Goddard advanced to second.",
+            "E. Steed walked; M. O'Brien advanced to second; E. Goddard advanced to third.",
+            "L. Nelson singled to right field, 2 RBI; E. Steed advanced to third; M. O'Brien scored, unearned; E. Goddard scored, unearned.",
+            "I. Calagna singled, 2 RBI; L. Nelson scored, unearned; E. Steed scored, unearned.",
+            "M. True lined out to 1b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "I. Perrotti to lf.",
+            "T. Mikolajcz singled to center field.",
+            "A. Alper reached first on an error by ss; T. Mikolajcz advanced to third.",
+            "A. Alper stole second, advanced to third on an error by c; T. Mikolajcz scored, unearned.",
+            "K. Rogers reached first on an error by p; A. Alper scored, unearned.",
+            "E. Goddard lined out to cf. (1 out)",
+            "M. O'Brien reached first on an error by 3b; K. Rogers advanced to second.",
+            "E. Steed flied out to cf. (2 out)",
+            "L. Nelson popped up to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Calagna flied out to rf. (1 out)",
+            "M. True grounded out to p. (2 out)",
+            "T. Mikolajcz walked.",
+            "A. Alper singled to third base; T. Mikolajcz advanced to second.",
+            "K. Rogers doubled to right field, 2 RBI; A. Alper scored; T. Mikolajcz scored.",
+            "E. Goddard singled to right field, RBI; K. Rogers scored.",
+            "M. O'Brien reached first on an error by 2b; E. Goddard advanced to second.",
+            "E. Steed grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Richardso to 2b.",
+            "S. Roberge to rf.",
+            "A. Toledano to lf.",
+            "L. Nelson grounded out to ss. (1 out)",
+            "I. Calagna grounded out to p. (2 out)",
+            "M. True reached first on an error by rf.",
+            "T. Mikolajcz singled to shortstop; M. True advanced to third.",
+            "T. Mikolajcz stole second.",
+            "A. Alper lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Eisnor to 1b for I. Besser.",
+            "P. Souza to 2b.",
+            "H. Ano to lf.",
+            "K. Rogers fouled out to 1b. (1 out)",
+            "E. Goddard singled to right field.",
+            "M. O'Brien reached on a fielder's choice; E. Goddard out at second ss to 2b. (2 out)",
+            "E. Steed reached on a fielder's choice; M. O'Brien out at second ss unassisted. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250317_s3tg.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Sula Roberge",
+        "Paige Souza"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Picard walked (3-2 KBFBBB).",
+            "E. Picard out at second c to ss, caught stealing. (1 out)",
+            "K. Halvorsen popped up to ss (2-1 SBB). (2 out)",
+            "L. Whittier walked (3-2 BKBBKB).",
+            "A. Weiterman singled down the lf line (3-1 BBSB); L. Whittier advanced to third.",
+            "A. Monkevicz singled to left field, RBI (1-2 KSB); A. Weiterman advanced to second; L. Whittier scored.",
+            "M. Murray walked (3-0 BBBB); A. Monkevicz advanced to second; A. Weiterman advanced to third.",
+            "M. Rodrigues walked, RBI (3-2 BBKKBB); M. Murray advanced to second; A. Monkevicz advanced to third; A. Weiterman scored.",
+            "K. Keyser walked, RBI (3-2 BFBFBB); M. Rodrigues advanced to second; M. Murray advanced to third; A. Monkevicz scored.",
+            "C. Miller walked, RBI (3-0 BBBB); K. Keyser advanced to second; M. Rodrigues advanced to third; M. Murray scored.",
+            "S. Roberge to p for A. Toledano.",
+            "E. Picard walked, RBI (3-0 BBBB); C. Miller advanced to second; K. Keyser advanced to third; M. Rodrigues scored.",
+            "E. Picard advanced to second on a wild pitch; C. Miller advanced to third on a wild pitch; K. Keyser scored on a wild pitch.",
+            "K. Halvorsen struck out swinging (2-2 BBKKS). (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Whittier singled up the middle (1-2 KFB).",
+            "A. Weiterman reached on a fielding error by 3b (1-1 KB); L. Whittier advanced to second.",
+            "A. Monkevicz reached on a fielder's choice (0-1 K); A. Weiterman advanced to second; L. Whittier out at third ss to 3b.",
+            "M. Murray singled to third base, bunt (0-0); A. Monkevicz advanced to second; A. Weiterman advanced to third.",
+            "M. Rodrigues walked, RBI (3-1 BFBBB); M. Murray advanced to second; A. Monkevicz advanced to third; A. Weiterman scored, unearned.",
+            "K. Keyser reached on a fielder's choice (1-0 B); M. Rodrigues advanced to second; M. Murray advanced to third; A. Monkevicz out at home p to c.",
+            "C. Miller popped up to ss (0-0). (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Donovan to c for C. Valentine.",
+            "G. Fowler to dp.",
+            "E. Picard doubled to left center (3-2 FBBFB).",
+            "A. Adams pinch hit for K. Halvorsen.",
+            "A. Adams reached on a fielding error by rf (1-1 KB); E. Picard advanced to third.",
+            "L. Whittier grounded out to ss, RBI (1-0 B); A. Adams advanced to second; E. Picard scored.",
+            "A. Weiterman flied out to cf (0-1 K). (2 out)",
+            "A. Monkevicz walked (3-1 BBBKB).",
+            "A. Monkevicz advanced to second on a wild pitch; A. Adams advanced to third on a wild pitch.",
+            "M. Murray walked (3-2 BFBKBB).",
+            "C. Chordas pinch hit for M. Rodrigues.",
+            "C. Chordas struck out looking (0-2 KKK). (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Keyser hit by pitch (2-2 BKBF).",
+            "E. Chenette pinch ran for K. Keyser.",
+            "E. Chenette out at second c to ss, caught stealing. (1 out)",
+            "O. Crawford grounded out to ss (2-1 KBB). (2 out)",
+            "E. Picard singled to shortstop (2-2 KBBFFF).",
+            "E. Picard stole second.",
+            "A. Adams struck out looking (1-2 KKBK). (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Whittier lined out to 2b (3-2 FBSBB). (1 out)",
+            "A. Weiterman popped up to 2b (1-0 B). (2 out)",
+            "A. Monkevicz grounded out to ss (1-1 KB). (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "I. Perrotti to lf for Carbonneau.",
+            "M. Murray singled up the middle (3-1 BBBF).",
+            "M. Murray stole second.",
+            "C. Chordas walked (3-1 BBBFB).",
+            "Richardson to 2b for A. Giuliano.",
+            "P. Souza to p.",
+            "S. Roberge to rf.",
+            "K. Keyser popped up to 1b (0-1 K). (1 out)",
+            "C. Chordas advanced to second on a wild pitch; M. Murray advanced to third on a wild pitch.",
+            "O. Crawford walked (3-0 BBBB); C. Chordas advanced to third on a wild pitch; M. Murray scored on a wild pitch.",
+            "O. Crawford stole second.",
+            "E. Picard flied out to cf, SF, RBI (2-1 BBK); C. Chordas scored.",
+            "A. Adams singled to right field, advanced to second on the throw, RBI (0-1 K); O. Crawford scored."
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250318_mvfp.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Tara Perryman",
+        "Sula Roberge"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Loffswold, Kya lined out to p. (1 out)",
+            "Draper, Allie doubled to right center.",
+            "Hebert, Olivia walked.",
+            "Ott, Grace singled to right center; Hebert, Olivia advanced to second; Draper, Allie advanced to third.",
+            "Halfman, Gracie flied out to rf, sacrifice fly, RBI; Draper, Allie scored.",
+            "Fields, Natalie singled to left field, RBI; Ott, Grace advanced to second; Hebert, Olivia scored.",
+            "Mabs, Lily lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Shepherd, Camden singled to second base.",
+            "McLaughlin, Chloe out at first 3b to 2b, SAC, bunt; Shepherd, Camden advanced to second. (1 out)",
+            "Loffswold, Kya singled through the right side, RBI; Shepherd, Camden scored.",
+            "Draper, Allie flied out to cf. (2 out)",
+            "Loffswold, Kya stole second.",
+            "Hebert, Olivia flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Dawn Eisnor to 1b for Allison Thomas.",
+            "Ott, Grace grounded out to 3b. (1 out)",
+            "Halfman, Gracie walked.",
+            "Fields, Natalie reached on a fielder's choice; Halfman, Gracie advanced to second.",
+            "Fields, Natalie stole second; Halfman, Gracie stole third.",
+            "Mabs, Lily walked.",
+            "Shepherd, Camden reached on a fielder's choice; Mabs, Lily advanced to second; Fields, Natalie advanced to third; Halfman, Gracie out at home p to c.",
+            "McLaughlin, Chloe flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Loffswold, Kya grounded out to 2b. (1 out)",
+            "Draper, Allie grounded out to 3b, bunt. (2 out)",
+            "Hebert, Olivia lined out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Tara Perryman to p for Isabelle Besser.",
+            "Ott, Grace flied out to rf. (1 out)",
+            "Halfman, Gracie flied out to lf. (2 out)",
+            "Fields, Natalie popped up to p, bunt. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mabs, Lily doubled down the lf line.",
+            "Miller, Mackenzie pinch hit for Shepherd, Camden.",
+            "Miller, Mackenzie struck out swinging. (1 out)",
+            "McLaughlin, Chloe walked.",
+            "Dubree, Bean pinch hit for Loffswold, Kya.",
+            "McLaughlin, Chloe advanced to second; Mabs, Lily advanced to third on a wild pitch.",
+            "Dubree, Bean singled through the left side, RBI; McLaughlin, Chloe advanced to third; Mabs, Lily scored.",
+            "Loffswold, Kya to lf for Dubree, Bean.",
+            "Draper, Allie reached on a fielder's choice, RBI; Loffswold, Kya out at second ss to 2b; McLaughlin, Chloe scored.",
+            "Draper, Allie out at second c to ss, caught stealing. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Sula Roberge to p for Alaina Giuliano.",
+            "Tara Perryman to rf.",
+            "Isabella Perrotti to lf.",
+            "Hebert, Olivia struck out swinging. (1 out)",
+            "Ott, Grace walked.",
+            "Baugnet, Grace pinch ran for Ott, Grace.",
+            "Halfman, Gracie flied out to rf. (2 out)",
+            "Baugnet, Grace stole second.",
+            "Fields, Natalie flied out to lf. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250318_d42l.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Gracie Martineau",
+        "Sula Roberge"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Eggert grounded out to p. (1 out)",
+            "K. Kostroski fouled out to lf. (2 out)",
+            "E. Giese lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Wickman popped up to ss. (1 out)",
+            "D. Peshia walked.",
+            "B. Mangler walked; D. Peshia advanced to second.",
+            "K. Jarrett doubled to left center, RBI; B. Mangler advanced to third; D. Peshia scored.",
+            "L. Ybarra grounded out to 2b, RBI; K. Jarrett advanced to third; B. Mangler scored.",
+            "B. Lapacek lined out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Eggert singled to pitcher, bunt.",
+            "B. Eggert stole second.",
+            "K. Kostroski walked.",
+            "E. Giese struck out swinging. (1 out)",
+            "G. Wickman flied into double play lf to 2b; B. Eggert out on the play. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Perryman to c for I. Besser.",
+            "D. Peshia popped up to ss. (1 out)",
+            "B. Mangler singled to center field.",
+            "K. Jarrett singled to right center; B. Mangler advanced to third.",
+            "M. Ward pinch ran for K. Jarrett.",
+            "L. Ybarra tripled to right field, 2 RBI; M. Ward scored; B. Mangler scored.",
+            "G. Martineau to p for A. Toledano.",
+            "B. Lapacek singled to second base, RBI; L. Ybarra scored.",
+            "B. Eggert singled to center field; B. Lapacek advanced to second.",
+            "K. Kostroski flied out to rf. (2 out)",
+            "B. Eggert advanced to second; B. Lapacek advanced to third on a wild pitch.",
+            "E. Giese grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Perryman to rf.",
+            "I. Gillis to c for E. Henning.",
+            "E. Grimsley pinch hit for J. Jakosalem.",
+            "E. Grimsley struck out swinging. (1 out)",
+            "D. Peshia grounded out to ss. (2 out)",
+            "B. Mangler flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Eisnor to 1b for A. Thomas.",
+            "K. Weidemann singled to second base.",
+            "L. Ybarra reached on a fielder's choice; K. Weidemann out at second 2b to 1b. (1 out)",
+            "B. Lapacek singled to third base; L. Ybarra advanced to second.",
+            "B. Eggert singled to left field; B. Lapacek advanced to second; L. Ybarra advanced to third.",
+            "K. Kostroski doubled to center field, 3 RBI; B. Eggert scored; B. Lapacek scored; L. Ybarra scored.",
+            "S. Roberge to p for G. Martineau.",
+            "E. Giese grounded out to 3b. (2 out)",
+            "E. Grimsley to dp.",
+            "E. Grimsley singled to pitcher, bunt; K. Kostroski advanced to third.",
+            "D. Peshia struck out looking. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250319_72v9.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Gracie Martineau",
+        "Mady Breault"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Carroll singled to shortstop.",
+            "C. Viola grounded out to 2b; K. Carroll advanced to second. (1 out)",
+            "O. Scholes singled up the middle; K. Carroll advanced to third.",
+            "O. Scholes stole second.",
+            "J. Westphal flied out to cf, sacrifice fly, RBI; K. Carroll scored.",
+            "M. Lont singled up the middle, RBI; O. Scholes scored.",
+            "U. Corcoran singled, bunt; M. Lont advanced to second.",
+            "O. Schultz popped up to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Thomas to dp.",
+            "D. Eisnor to 1b for C. Valentine.",
+            "K. Dever grounded out to ss. (1 out)",
+            "S. Hausman singled through the left side.",
+            "K. Carroll walked; S. Hausman advanced to second.",
+            "C. Viola singled through the left side; K. Carroll advanced to second; S. Hausman advanced to third.",
+            "O. Scholes grounded out to p, RBI; C. Viola advanced to second; K. Carroll advanced to third; S. Hausman scored.",
+            "J. Westphal walked.",
+            "C. Viola advanced to third; K. Carroll scored on a wild pitch.",
+            "M. Lont reached on a fielder's choice to shortstop; J. Westphal out at second ss unassisted. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "U. Corcoran singled through the left side.",
+            "U. Corcoran stole second.",
+            "O. Schultz grounded out to 3b; U. Corcoran advanced to third. (1 out)",
+            "K. Dever grounded out to 2b, RBI; U. Corcoran scored.",
+            "S. Hausman singled through the right side.",
+            "K. Carroll singled up the middle; S. Hausman advanced to second.",
+            "C. Viola grounded out to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Carbonnea to 1b for D. Eisnor.",
+            "O. Scholes singled to pitcher.",
+            "J. Westphal struck out swinging. (1 out)",
+            "M. Lont walked; O. Scholes advanced to second.",
+            "U. Corcoran reached on a fielder's choice to third base; M. Lont advanced to second; O. Scholes out at third 3b unassisted.",
+            "O. Schultz singled through the right side, RBI; U. Corcoran advanced to third; M. Lont scored.",
+            "K. Dever reached first on an error by 1b, RBI; O. Schultz advanced to third; U. Corcoran scored, unearned.",
+            "S. Hausman grounded out to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Donovan to c for A. Toledano.",
+            "M. Breault to p for G. Martineau.",
+            "K. Carroll singled, bunt.",
+            "K. Carroll stole second.",
+            "C. Viola singled down the rf line, RBI; K. Carroll scored.",
+            "O. Scholes singled to right center; C. Viola advanced to second.",
+            "J. Westphal grounded out to 3b; O. Scholes advanced to second; C. Viola advanced to third. (1 out)",
+            "M. Lont walked.",
+            "U. Corcoran struck out swinging. (2 out)",
+            "O. Schultz singled, 2 RBI; M. Lont advanced to second; O. Scholes scored; C. Viola scored.",
+            "A. Carbonnea to 1b for A. Richardso."
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250319_kl8o.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Sula Roberge",
+        "Paige Souza"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Johnson walked.",
+            "L. Cherena popped up to 2b. (1 out)",
+            "L.Drolsbaugh singled to center field; S. Johnson advanced to second.",
+            "K. Bond infield fly to 2b. (2 out)",
+            "O. Wascher popped up to 1b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Tara Perryma to dh for Isabelle Bes.",
+            "Isabelle Bes to c.",
+            "O. Taufu'i fouled out to 1b. (1 out)",
+            "A. Sisemore grounded out to ss. (2 out)",
+            "A. Pothorski walked.",
+            "Gomez-Zepeda popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alaina Giuli to lf for Mady Breault.",
+            "Tara Perryma to dh for Isabelle Bes.",
+            "Isabelle Bes to c.",
+            "S. Johnson flied out to lf. (1 out)",
+            "L. Cherena flied out to lf. (2 out)",
+            "L.Drolsbaugh grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Bond fouled out to c. (1 out)",
+            "O. Wascher grounded out to ss. (2 out)",
+            "O. Taufu'i fouled out to c. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Isabella Per to lf.",
+            "Tara Perryma to dh for Isabelle Bes.",
+            "Paige Souza to p for Sula Roberge.",
+            "Cassandra Va to rf.",
+            "Gianna Fowle to c.",
+            "A. Sisemore hit by pitch.",
+            "A. Correia struck out swinging. (1 out)",
+            "K. Cogswell pinch hit for Gomez-Zepeda.",
+            "K. Cogswell reached on a throwing error by 3b, bunt, advanced to second; A. Sisemore scored on the throw, unearned.",
+            "S. Johnson singled to left field; K. Cogswell advanced to third.",
+            "S. Johnson stole second.",
+            "L. Cherena struck out swinging. (2 out)",
+            "L.Drolsbaugh reached on a fielding error by 3b; S. Johnson advanced to third; K. Cogswell scored, unearned.",
+            "L.Drolsbaugh stole second.",
+            "K. Bond fouled out to 3b. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250320_i4q4.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Tara Perryman",
+        "Mady Breault",
+        "Paige Souza"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Fisher singled to left center.",
+            "B. Fisher stole second.",
+            "L. Fridsma doubled to left field, RBI; B. Fisher scored.",
+            "J. Wesaw flied out to lf. (1 out)",
+            "B. Caza singled up the middle, RBI; L. Fridsma scored.",
+            "E. Newlove homered to left field, 2 RBI; B. Caza scored.",
+            "E. Neumann walked.",
+            "M. Ward flied out to lf. (2 out)",
+            "J. Rider lined out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Toledano to dp for S. Roberge.",
+            "L. Wilks fouled out to 1b. (1 out)",
+            "B. Fisher lined out to 3b. (2 out)",
+            "L. Fridsma singled through the left side.",
+            "L. Fridsma stole second.",
+            "J. Wesaw doubled to left center, RBI; L. Fridsma scored.",
+            "B. Caza flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Newlove walked.",
+            "E. Neumann struck out swinging. (1 out)",
+            "M. Ward reached on a fielder's choice; E. Newlove out at second cf to 2b. (2 out)",
+            "J. Rider lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Wilks struck out swinging, reached first on a passed ball.",
+            "L. Wilks stole second.",
+            "B. Fisher singled to left field.",
+            "L. Fridsma singled to center field; B. Fisher advanced to second; L. Wilks advanced to third.",
+            "J. Wesaw doubled to left center, 3 RBI; L. Fridsma scored; B. Fisher scored; L. Wilks scored, unearned.",
+            "M. Breault to p for T. Perryman.",
+            "A. Richardso to 2b for P. Souza.",
+            "T. Perryman to rf for E. Henning.",
+            "B. Caza doubled to right center, RBI; J. Wesaw scored.",
+            "A. Hinkley pinch ran for B. Caza.",
+            "A. Hinkley stole third.",
+            "E. Newlove walked.",
+            "E. Newlove stole second.",
+            "E. Neumann homered to left center, 3 RBI; E. Newlove scored; A. Hinkley scored.",
+            "M. Ward singled up the middle.",
+            "J. Rider hit by pitch; M. Ward advanced to second.",
+            "J. Rider advanced to second on a wild pitch; M. Ward advanced to third on a wild pitch.",
+            "L. Wilks popped up to 2b. (1 out)",
+            "B. Fisher struck out swinging. (2 out)",
+            "L. Fridsma walked.",
+            "J. Wesaw reached first on a fielding error by 3b; L. Fridsma advanced to second; J. Rider advanced to third; M. Ward scored, team unearned.",
+            "P. Souza to p for M. Breault.",
+            "A. Hinkley pinch hit.",
+            "A. Hinkley grounded out to 3b. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250320_qyby.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Perryman to c.",
+            "A. Schultz popped up to 3b. (1 out)",
+            "K. Jenz popped up to 2b. (2 out)",
+            "M. Heisler singled to pitcher.",
+            "K. Cruz lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Kasuboski walked.",
+            "M. Hablewitz struck out looking. (1 out)",
+            "S. Swanson grounded out to c, SAC, bunt; E. Kasuboski advanced to second. (2 out)",
+            "E. Kasuboski out at third c to 3b, caught stealing. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Markus struck out swinging. (1 out)",
+            "N. Huizar grounded out to 3b. (2 out)",
+            "A. Schultz flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Toledano to p for I. Besser.",
+            "D. Eisnor to 1b for A. Thomas.",
+            "K. Jenz walked.",
+            "M. Heisler singled to third base; K. Jenz advanced to second.",
+            "G. Martineau to p for A. Toledano.",
+            "K. Cruz singled, bunt; M. Heisler advanced to second; K. Jenz advanced to third.",
+            "E. Kasuboski struck out looking. (1 out)",
+            "M. Hablewitz flied out to cf. (2 out)",
+            "K. Jenz stole home.",
+            "S. Swanson struck out looking. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Eisnor to 1b for M. Breault.",
+            "J. Markus singled to third base.",
+            "N. Huizar singled to shortstop; J. Markus advanced to second.",
+            "A. Schultz walked; N. Huizar advanced to second; J. Markus advanced to third.",
+            "K. Jenz singled to left field, RBI; A. Schultz advanced to second; N. Huizar advanced to third; J. Markus scored.",
+            "M. Heisler flied out to rf, sacrifice fly, RBI; A. Schultz advanced to third; N. Huizar scored.",
+            "K. Cruz popped up to ss. (2 out)",
+            "E. Kasuboski flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Hablewitz lined out to 2b. (1 out)",
+            "S. Swanson singled to left field.",
+            "J. Markus reached on a fielder's choice; S. Swanson out at second ss to 2b. (2 out)",
+            "N. Huizar reached on a fielder's choice; J. Markus out at second ss to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Schultz grounded out to ss. (1 out)",
+            "K. Jenz singled to left field.",
+            "M. Heisler popped up to 2b. (2 out)",
+            "K. Cruz singled to left field; K. Jenz advanced to second.",
+            "E. Kasuboski singled to center field, RBI; K. Cruz advanced to third; K. Jenz scored.",
+            "M. Hablewitz singled to left field, RBI; E. Kasuboski advanced to second; K. Cruz scored.",
+            "S. Swanson singled to center field, RBI; M. Hablewitz advanced to second, out at third cf to 3b; E. Kasuboski scored."
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250321_csg4.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Sula Roberge",
+        "Alanis Toledano"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Manalo struck out swinging. (1 out)",
+            "M. Stork grounded out to 3b. (2 out)",
+            "S. Isaacs singled to right field, advanced to third on an error by rf.",
+            "B. Toleman doubled to center field, RBI; S. Isaacs scored.",
+            "M. Pillus struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Deo singled up the middle.",
+            "A. Hemingway flied out to lf. (1 out)",
+            "M. DeFina struck out swinging. (2 out)",
+            "M. Pappas walked; E. Deo advanced to second.",
+            "M. Manalo grounded out to 1b unassisted. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Stork grounded out to ss. (1 out)",
+            "S. Isaacs singled up the middle.",
+            "B. Toleman flied out to lf. (2 out)",
+            "M. Pillus grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Deo struck out swinging, out at first c to p to 1b. (1 out)",
+            "A. Hemingway walked.",
+            "S. Milyko pinch hit for M. DeFina.",
+            "S. Milyko walked; A. Hemingway advanced to second.",
+            "M. Pappas grounded into double play 3b to 1b; S. Milyko advanced to second; A. Hemingway out on the play. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Eisnor to 1b for A. Thomas.",
+            "A. Giuliano to rf.",
+            "P. Souza to 2b.",
+            "I. Perrotti to lf.",
+            "M. Manalo grounded out to p, bunt. (1 out)",
+            "M. Stork singled to right center.",
+            "S. Isaacs singled to left field; M. Stork advanced to second.",
+            "B. Toleman fouled out to lf. (2 out)",
+            "C. Wheat pinch hit for M. Pillus.",
+            "C. Wheat walked; S. Isaacs advanced to second; M. Stork advanced to third.",
+            "E. Deo popped up to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Toledano to p for S. Roberge.",
+            "A. Hemingway popped up to ss. (1 out)",
+            "M. DeFina flied out to lf. (2 out)",
+            "M. Pappas flied out to rf. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250321_pvgr.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Yen grounded out to p. (1 out)",
+            "E. Maher grounded out to p. (2 out)",
+            "Z. Anderson singled to shortstop.",
+            "I. Bettencou doubled to left center, RBI; Z. Anderson scored.",
+            "S. Pietrasie lined out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Roberge to rf for A. Giuliano.",
+            "G. Householt singled up the middle.",
+            "S. Garber reached on a fielder's choice to pitcher; G. Householt advanced to second on a throwing error by p.",
+            "D. Rankin lined out to 3b. (1 out)",
+            "M. Lee flied out to lf. (2 out)",
+            "E. Yen lined out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Maher grounded out to 3b. (1 out)",
+            "Z. Anderson grounded out to 3b. (2 out)",
+            "I. Bettencou singled to center field.",
+            "S. Pietrasie walked; I. Bettencou advanced to second.",
+            "G. Householt flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Giuliano to rf.",
+            "S. Garber grounded out to 1b unassisted. (1 out)",
+            "D. Rankin lined out to cf. (2 out)",
+            "M. Lee grounded out to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Yen singled up the middle.",
+            "E. Maher walked; E. Yen advanced to second.",
+            "Z. Anderson popped up to 2b. (1 out)",
+            "I. Bettencou flied out to cf. (2 out)",
+            "S. Pietrasie reached on a fielder's choice to third base; E. Maher advanced to second; E. Yen out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Martineau to p for A. Thomas.",
+            "I. Perrotti to lf for G. Fowler.",
+            "G. Householt grounded out to ss. (1 out)",
+            "S. Garber grounded out to 2b. (2 out)",
+            "D. Rankin flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "T. Perryman to c for I. Besser.",
+            "D. Eisnor to 1b.",
+            "M. Lee singled through the left side.",
+            "E. Yen doubled to left center, RBI; M. Lee scored.",
+            "E. Maher grounded out to 1b unassisted; E. Yen advanced to third. (1 out)",
+            "Z. Anderson reached on a fielder's choice to third base, RBI; E. Yen scored.",
+            "Z. Anderson advanced to second on a wild pitch.",
+            "I. Bettencou singled to third base; Z. Anderson advanced to third.",
+            "S. Pietrasie grounded out to p; I. Bettencou advanced to second. (2 out)",
+            "G. Householt struck out swinging, out at first c to 1b. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250325_lvno.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry struck out swinging. (1 out)",
+            "M. Cole struck out looking. (2 out)",
+            "O. DeCicco grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Whitmarsh singled, advanced to second on an error by rf, advanced to third.",
+            "C. Housley popped up to ss. (1 out)",
+            "E. LaBreck grounded out to ss. (2 out)",
+            "K. Drago walked.",
+            "E. Reynolds flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Roman grounded out to p. (1 out)",
+            "G. Landry lined out to ss. (2 out)",
+            "M. Cole grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "O. DeCicco singled to shortstop.",
+            "B. Whitmarsh doubled to center field, ground-rule; O. DeCicco advanced to third.",
+            "C. Housley grounded out to 1b unassisted, RBI; B. Whitmarsh advanced to third; O. DeCicco scored.",
+            "E. LaBreck grounded out to p. (2 out)",
+            "K. Drago grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Reynolds singled to right field.",
+            "C. Roman grounded out to p, SAC, bunt; E. Reynolds advanced to second. (1 out)",
+            "G. Landry grounded out to ss; E. Reynolds advanced to third. (2 out)",
+            "M. Cole flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "O. DeCicco grounded out p to ss to 1b. (1 out)",
+            "B. Whitmarsh grounded out to ss. (2 out)",
+            "C. Housley doubled to right center.",
+            "E. LaBreck grounded out to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Eisnor to 1b for I. Besser.",
+            "K. Drago grounded out to 2b. (1 out)",
+            "E. Reynolds grounded out to 2b. (2 out)",
+            "C. Roman singled to center field.",
+            "G. Landry flied out to cf. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://salemstatevikings.com/sports/sball/2024-25/boxscores/20250325_px2k.xml",
+      "date": "",
+      "opponent": "Boxscores",
+      "pitchers": [
+        "Alanis Toledano",
+        "Sula Roberge"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry singled to center field.",
+            "M. Cole fouled out to 3b. (1 out)",
+            "O. DeCicco walked; G. Landry advanced to second.",
+            "B. Whitmarsh reached on a fielder's choice; O. DeCicco out at second 3b to 2b; G. Landry advanced to third. (2 out)",
+            "C. Housley doubled to center field, RBI; B. Whitmarsh advanced to third; G. Landry scored.",
+            "B. Clancy struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. LaBreck reached first on an error by 1b.",
+            "E. Reynolds grounded out to p, SAC, bunt; E. LaBreck advanced to second. (1 out)",
+            "K. Drago struck out swinging. (2 out)",
+            "G. Landry fouled out to 1b. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Cole flied out to lf. (1 out)",
+            "O. DeCicco walked.",
+            "B. Whitmarsh popped up to 2b. (2 out)",
+            "C. Housley popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Clancy flied out to cf. (1 out)",
+            "E. LaBreck popped up to rf. (2 out)",
+            "E. Reynolds popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Drago struck out swinging. (1 out)",
+            "G. Landry walked.",
+            "B. Taylor pinch hit for M. Cole.",
+            "B. Taylor struck out looking. (2 out)",
+            "O. DeCicco flied out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Giuliano to rf for M. Breault.",
+            "B. Whitmarsh flied out to cf. (1 out)",
+            "C. Housley lined out to cf. (2 out)",
+            "B. Clancy flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Roberge to p for I. Besser.",
+            "C. Roman to 3b for K. Drago.",
+            "K. Drago to dp for E. LaBreck.",
+            "K. Drago singled.",
+            "N. Hudson pinch hit for E. Reynolds.",
+            "N. Hudson grounded into double play ss to 2b to 1b; K. Drago out on the play. (2 out)",
+            "C. Roman flied out to rf. (3 out)"
+          ]
+        }
+      ]
+    }
+  ]
+}
