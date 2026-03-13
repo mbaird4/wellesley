@@ -1,59 +1,59 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-12T11:28:49.263Z",
+  "scrapedAt": "2026-03-13T11:26:29.804Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 0.32,
-      "app": 4,
-      "gs": 4,
-      "cg": 3,
+      "era": 0.73,
+      "app": 5,
+      "gs": 5,
+      "cg": 4,
       "sho": 1,
       "sv": 0,
-      "ip": 21.2,
-      "h": 22,
-      "r": 11,
-      "er": 1,
-      "bb": 2,
-      "so": 23,
+      "ip": 28.2,
+      "h": 26,
+      "r": 13,
+      "er": 3,
+      "bb": 4,
+      "so": 29,
       "hr": 0,
-      "whip": 1.11,
+      "whip": 1.05,
       "doubles": 3,
       "triples": 0,
-      "ab": 91,
-      "bAvg": 0.242,
+      "ab": 117,
+      "bAvg": 0.222,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Lynn, Zoey",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 0.62,
-      "app": 3,
-      "gs": 1,
-      "cg": 1,
+      "era": 0.81,
+      "app": 4,
+      "gs": 2,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 11.1,
-      "h": 5,
-      "r": 2,
-      "er": 1,
+      "ip": 17.1,
+      "h": 10,
+      "r": 4,
+      "er": 2,
       "bb": 3,
-      "so": 6,
+      "so": 11,
       "hr": 0,
-      "whip": 0.71,
+      "whip": 0.75,
       "doubles": 1,
       "triples": 0,
-      "ab": 41,
-      "bAvg": 0.122,
+      "ab": 65,
+      "bAvg": 0.154,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -535,6 +535,156 @@
             "Sammi Melendez pinch ran for Kierstyn Mays.",
             "Reza Benson flied out to cf (0-0).",
             "Mackenzie Boyd grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/psu-harrisburg/boxscore/9338",
+      "date": "3/12/2026",
+      "opponent": "Psu Harrisburg",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mackenzie Fisher walked (3-2 BKBBKB).",
+            "Ava Allison grounded out to p, SAC (0-1 K); Mackenzie Fisher advanced to second.",
+            "Aspen Walker grounded out to 2b (0-1 F); Mackenzie Fisher advanced to third.",
+            "Emily Cutman grounded out to ss (3-2 BKKBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sierra Sims grounded out to 3b (2-2 KBFFBF).",
+            "Madisen Minney singled down the rf line (0-2 FF).",
+            "Lillian Feltenberger reached on a fielder's choice to shortstop (2-1 BKB); Madisen Minney out at second ss to 2b.",
+            "Kierstyn Smith struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Fallon McFadden grounded out to p (0-0).",
+            "Mackenzie Fisher reached first on an error by 3b (1-1 BF).",
+            "Ava Allison reached on a fielder's choice to second base (1-2 KBS); Mackenzie Fisher advanced to second on an error by 2b.",
+            "Aspen Walker grounded out to ss (0-0); Ava Allison advanced to second; Mackenzie Fisher advanced to third.",
+            "Emily Cutman struck out swinging (3-2 KKBBBFFFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sierra Sims lined out to 2b (1-2 FBF).",
+            "Madisen Minney singled to third base (1-0 B).",
+            "Lillian Feltenberger grounded out to ss (0-2 KS); Madisen Minney advanced to third.",
+            "Kierstyn Smith struck out swinging (0-2 SFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Fallon McFadden singled up the middle (2-0 BB).",
+            "Mackenzie Fisher walked (3-2 BBKKFBB); Fallon McFadden advanced to second.",
+            "Ava Allison grounded out to 3b (0-1 F); Mackenzie Fisher advanced to second; Fallon McFadden advanced to third.",
+            "Aspen Walker popped up to ss, RBI (1-2 FFFBF); Fallon McFadden scored.",
+            "Emily Cutman singled up the middle, RBI, advanced to second on the throw (1-0 B); Mackenzie Fisher scored.",
+            "Elaina Gates pinch ran for Emily Cutman.",
+            "Sierra Sims popped up to 2b (1-2 KKFBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madeline Kibler to c for Zoey Cascio.",
+            "Madisen Minney flied out to rf (0-0).",
+            "Lillian Feltenberger struck out swinging (1-2 BKSS).",
+            "Rylee Martinez pinch hit for Kierstyn Smith.",
+            "Rylee Martinez grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Fallon McFadden struck out swinging (1-2 KBFS).",
+            "Mackenzie Fisher struck out swinging (1-2 BFFS).",
+            "Ava Allison grounded out to 2b (0-2 KK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/psu-scranton/boxscore/9339",
+      "date": "3/12/2026",
+      "opponent": "Psu Scranton",
+      "pitchers": [
+        "Lynn, Zoey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Moyles flied out to lf (0-0).",
+            "Maddie Kelsch singled (0-0).",
+            "Genevieve Moyles grounded into double play 2b to 1b (0-0); Maddie Kelsch out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Natalie Charles grounded out to p (0-0).",
+            "Kaleena Lukasewicz grounded out to 3b (0-0).",
+            "Abby Colleran struck out swinging (1-2 BSSFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Weaver grounded out to ss (2-1 BBF).",
+            "Elena Davis reached first on an error by ss (0-0).",
+            "Vanessa Hodges singled to left field (1-1 BS); Elena Davis advanced to second.",
+            "Emily Moyles singled to center field (1-2 BFS); Vanessa Hodges advanced to second; Elena Davis advanced to third.",
+            "Maddie Kelsch singled to center field, RBI (1-0 B); Emily Moyles advanced to second; Vanessa Hodges advanced to third; Elena Davis scored, unearned.",
+            "Genevieve Moyles grounded into double play 2b to c to 1b (0-0); Vanessa Hodges out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caitlynn Gibson to lf.",
+            "Ainsley Hololob to 3b.",
+            "Abriana Schmutz to cf.",
+            "Natalie Charles flied out to cf (0-0).",
+            "Kaleena Lukasewicz struck out swinging (0-2 KFS).",
+            "Abby Colleran grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bridget Bartz to 2b for Emma Behel.",
+            "B. Weaver grounded out to p (0-1 K).",
+            "Elena Davis grounded out to 3b (0-2 FF).",
+            "Vanessa Hodges struck out swinging (2-2 SSFBBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mack Murnane to ss for Sage Svalestad.",
+            "Maura Murphy to rf for Olivia Garcia.",
+            "Zoey Lynn to p for Lauren Ragonese.",
+            "Emily Moyles singled through the left side (0-0).",
+            "Maddie Kelsch reached first on an error by 2b (1-0 B); Emily Moyles advanced to second.",
+            "Maddie Langdon struck out swinging (1-2 BFFS).",
+            "Natalie Charles struck out looking (1-2 KBFK).",
+            "Kaleena Lukasewicz reached first on an error by p (3-1 BBKB); Maddie Kelsch advanced to second on the error; Emily Moyles scored on the error.",
+            "Abby Colleran lined out to ss (3-1 BBKB)."
           ]
         }
       ],

@@ -1,7 +1,7 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-12T11:27:47.638Z",
+  "scrapedAt": "2026-03-13T11:25:26.458Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,26 +34,26 @@
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 2,
+      "w": 3,
       "l": 2,
-      "era": 2.51,
-      "app": 4,
-      "gs": 4,
-      "cg": 2,
-      "sho": 2,
+      "era": 2.05,
+      "app": 5,
+      "gs": 5,
+      "cg": 3,
+      "sho": 3,
       "sv": 0,
-      "ip": 22.1,
-      "h": 22,
+      "ip": 27.1,
+      "h": 25,
       "r": 15,
       "er": 8,
       "bb": 7,
-      "so": 31,
+      "so": 37,
       "hr": 1,
-      "whip": 1.3,
+      "whip": 1.17,
       "doubles": 2,
       "triples": 0,
-      "ab": 90,
-      "bAvg": 0.244,
+      "ab": 108,
+      "bAvg": 0.231,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -708,6 +708,69 @@
             "Carlene Berta struck out looking (0-0).",
             "Lauryn Olson walked (0-0).",
             "Morgan Bruno lined out to 1b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/carlow-university-pa-/boxscore/10120",
+      "date": "3/12/2026",
+      "opponent": "Carlow University Pa ",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kamyia Morris grounded out to 3b (2-1 BFB).",
+            "Lexi Berta struck out swinging (1-2 FBSS).",
+            "Mackenzie Egley popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Tatum Wiggs popped up to ss (1-2 BSF).",
+            "Gianna Ferrieri grounded out to 1b unassisted (1-2 SKB).",
+            "Taylor Egley struck out swinging (1-2 KBFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Barry to 2b.",
+            "Deborah Garza struck out swinging (3-2 BKKBBS).",
+            "Erica Keeley pinch hit for Cailyn Lucas.",
+            "Erica Keeley struck out swinging (0-2 KFFFS).",
+            "Carrah Scardina grounded out to 1b unassisted (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alexandra Anquillare to rf.",
+            "Kathryn Copperthite to 1b.",
+            "Riley Dolan to c for Lucy Gray.",
+            "Mary Claire McClintock to lf.",
+            "Gabby Reinbold to cf for Sam Puma.",
+            "Kamyia Morris grounded out to 2b (0-1 F).",
+            "Lexi Berta grounded out to p (0-0).",
+            "Mackenzie Egley singled down the lf line (0-1 K).",
+            "Tatum Wiggs singled to right center (0-2 FF); Mackenzie Egley advanced to second.",
+            "Gianna Ferrieri grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lexi Falcioni to ss.",
+            "Taylor Egley struck out looking (2-2 BKBSK).",
+            "Deborah Garza singled up the middle (2-1 BFB).",
+            "Erica Keeley pinch hit for Cailyn Lucas.",
+            "Erica Keeley struck out swinging (3-2 BBKBKFS).",
+            "Carrah Scardina popped up to ss (1-2 BKS)."
           ]
         }
       ],

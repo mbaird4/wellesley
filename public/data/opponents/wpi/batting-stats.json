@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-12T11:27:27.055Z",
+  "scrapedAt": "2026-03-13T11:25:06.260Z",
   "year": 2026,
   "teamGames": 4,
   "players": [
@@ -34,8 +34,8 @@
         "obp": 0.615,
         "sf": 0,
         "sh": 0,
-        "sb": 0,
-        "sbAtt": 0,
+        "sb": 1,
+        "sbAtt": 1,
         "woba": 0.662,
         "pa": 13
       }
@@ -132,8 +132,8 @@
         "rbi": 3,
         "tb": 4,
         "slg": 0.8,
-        "bb": 2,
-        "hbp": 1,
+        "bb": 1,
+        "hbp": 2,
         "so": 2,
         "gdp": 0,
         "obp": 0.5,
