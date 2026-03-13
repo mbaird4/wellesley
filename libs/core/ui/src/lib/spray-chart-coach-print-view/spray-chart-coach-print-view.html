@@ -1,129 +1,110 @@
-<div class="flex items-baseline justify-between pt-1 pb-3">
-  <div class="flex flex-col">
-    <h2 class="text-xl font-bold print:text-black">
-      {{ title() }} — Coach Scouting Report
-    </h2>
-    @if (subtitle(); as sub) {
-      <p class="text-xs print:text-gray-600">{{ sub }}</p>
-    }
-  </div>
-  <div class="flex flex-col items-end text-xs text-gray-500">
-    <span>{{ yearsLabel() }}</span>
-    <span>Printed {{ printDate() }}</span>
-  </div>
-</div>
-
-<div class="grid grid-cols-2 gap-x-4 gap-y-2">
-  @for (row of rows(); track row.name) {
-    <div
-      class="flex min-h-64 break-inside-avoid flex-col justify-between gap-1.5 pb-3 text-[13px] print:text-black"
-    >
+@for (page of pages(); track $index; let pageIdx = $index) {
+  <div
+    class="grid grid-cols-2 gap-x-4 gap-y-1"
+    [class.break-before-page]="pageIdx > 0 || needsPageBreak()"
+  >
+    <!-- Page header -->
+    <div class="col-span-2 flex items-baseline justify-between pb-1">
       <div class="flex flex-col">
+        <h2 class="text-lg font-bold print:text-black">
+          {{ title() }} — Coach Scouting
+        </h2>
+        @if (subtitle(); as sub) {
+          <p class="text-[9px] print:text-gray-600">{{ sub }}</p>
+        }
+      </div>
+      <div class="flex flex-col items-end text-[9px] text-gray-500">
+        <span>{{ yearsLabel() }}</span>
+        <span>Printed {{ printDate() }}</span>
+      </div>
+    </div>
+
+    @for (row of page; track row.name) {
+      <div
+        class="flex break-inside-avoid flex-col gap-0.5 pb-2 text-[11px] print:text-black"
+      >
         <!-- Player header -->
-        <div class="flex items-baseline gap-2">
-          <span class="text-base font-bold">
+        <div class="flex items-baseline gap-1.5">
+          <span class="text-sm font-bold">
             #{{ row.jersey }} {{ row.name }}
           </span>
           @if (row.batsLabel) {
             <span
-              class="rounded bg-gray-200 px-1.5 py-0.5 text-xs font-medium text-gray-600"
+              class="rounded bg-gray-200 px-1 py-px text-[9px] font-medium text-gray-600"
             >
               {{ row.batsLabel }}
             </span>
           }
           @if (row.posLabel) {
-            <span class="text-xs text-gray-400">{{ row.posLabel }}</span>
+            <span class="text-[9px] text-gray-400">{{ row.posLabel }}</span>
           }
         </div>
 
-        <!-- Stats bar -->
-        <div class="flex flex-wrap gap-x-2 text-xs tabular-nums">
-          @for (stat of row.stats; track stat.label) {
+        <!-- Body: stacked sprays left, stat columns right -->
+        <div class="flex justify-between gap-2">
+          <!-- Spray charts -->
+          <div class="flex w-40 shrink-0 flex-col items-center justify-center">
             <span
-              class="whitespace-nowrap"
-              [class]="stat.flagged ? 'font-bold underline' : 'text-gray-600'"
+              class="text-[8px] font-semibold tracking-wide text-gray-500 uppercase"
             >
-              {{ stat.value }} {{ stat.label }}
+              {{ row.currentYearLabel }}
             </span>
-            @if (!$last) {
-              <span class="text-gray-300">·</span>
-            }
-          }
-        </div>
-
-        <!-- Body: spray chart left, zones + notable right -->
-        <div class="flex gap-2">
-          <!-- Spray chart -->
-          <div class="w-40 shrink-0">
             <ws-spray-field
-              [zones]="row.summary.zones"
+              [zones]="row.currentYearSummary.zones"
               [highlightZone]="null"
             />
-          </div>
-
-          <!-- Zones stacked with Notable -->
-          <div class="flex min-w-0 flex-1 flex-col gap-0.5 text-xs">
-            @if (row.zones.length > 0) {
-              <!-- Spray zones -->
-              <div class="flex flex-col">
-                <span
-                  class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
-                >
-                  Zones (3+ BIP)
-                </span>
-                @for (z of row.zones; track z.label) {
-                  <span class="font-medium tabular-nums">
-                    {{ z.label }}: {{ z.total }} BIP · {{ z.hard }} hard,
-                    {{ z.weak }} weak · {{ z.avg }} AVG
-                  </span>
-                }
-              </div>
-            }
-
-            <!-- Notable -->
-            @if (row.callouts.length > 0) {
-              <div class="flex flex-col">
-                <span
-                  class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
-                >
-                  Notable
-                </span>
-                @for (c of row.callouts; track c.text) {
-                  <span class="font-medium">{{ c.icon }} {{ c.text }}</span>
-                }
-              </div>
-            }
-
-            <!-- Trends -->
-            @if (row.trends.length > 0) {
-              <div class="flex flex-col">
-                <span
-                  class="text-[10px] font-semibold tracking-wide text-gray-400 uppercase"
-                >
-                  Trends
-                </span>
-                @for (t of row.trends; track t.type) {
-                  <span class="font-medium">
-                    {{ t.direction === 'up' ? '↑' : '↓' }} {{ t.label }}
-                  </span>
-                }
-              </div>
+            @if (!row.isFirstYear) {
+              <span
+                class="pt-0.5 text-[8px] font-semibold tracking-wide text-gray-500 uppercase"
+              >
+                {{ row.careerLabel }}
+              </span>
+              <ws-spray-field
+                [zones]="row.careerSummary.zones"
+                [highlightZone]="null"
+              />
             }
           </div>
+
+          <!-- Stats table (year columns like pitcher view) -->
+          <table class="border-collapse text-[10px]">
+            <thead>
+              <tr>
+                <th class="pr-3 pb-0.5 text-left font-semibold"></th>
+                @for (col of row.yearColumns; track col.year) {
+                  <th class="pb-0.5 pl-3 text-right font-semibold">
+                    {{ col.year }}
+                  </th>
+                }
+              </tr>
+            </thead>
+            <tbody>
+              @for (label of statLabels; track label; let i = $index) {
+                <tr>
+                  <td class="py-px pr-3 font-medium">{{ label }}</td>
+                  @for (col of row.yearColumns; track col.year) {
+                    <td class="py-px pl-3 text-right tabular-nums">
+                      {{ col.values[i] }}
+                    </td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Notes -->
+        <div class="flex flex-col gap-1.5 pt-0.5">
+          <span
+            class="text-[8px] font-semibold tracking-wide text-gray-400 uppercase"
+          >
+            Notes
+          </span>
+          @for (line of noteLines; track line) {
+            <div class="border-b border-dashed border-gray-300"></div>
+          }
         </div>
       </div>
-
-      <!-- Notes area for handwriting -->
-      <div class="flex flex-col gap-3 pt-1">
-        <span
-          class="text-[11px] font-semibold tracking-wide text-gray-400 uppercase"
-        >
-          Notes
-        </span>
-        @for (line of noteLines; track line) {
-          <div class="border-b border-dashed border-gray-300"></div>
-        }
-      </div>
-    </div>
-  }
-</div>
+    }
+  </div>
+}

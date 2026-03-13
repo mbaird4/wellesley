@@ -31,7 +31,7 @@ export type ViewMode = 'split' | 'combined' | 'contact' | 'scouting';
         <ws-spray-chart-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" />
       }
       @if (printCoach()) {
-        <ws-spray-chart-coach-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" [years]="selectedYears()" [viewMode]="viewMode()" [dataByYear]="dataByYear()" />
+        <ws-spray-chart-coach-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" [years]="selectedYears()" [viewMode]="viewMode()" [dataByYear]="dataByYear()" [teamData]="teamData()" [needsPageBreak]="printDugout()" />
       }
       @if (printQuickRef()) {
         <ws-spray-packet-quick-ref [players]="printPlayers()" [title]="printTitle()" />

@@ -37,7 +37,7 @@ function latestSeasonPa(team: Team | null, jersey: number): number {
   return rp.seasons.reduce((best, s) => (s.year > best.year ? s : best)).pa;
 }
 
-function aggregateStats(
+export function aggregateStats(
   rp: RosterPlayer,
   years: number[]
 ): {
