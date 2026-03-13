@@ -1,0 +1,3735 @@
+{
+  "slug": "nichols",
+  "domain": "nicholsathletics.com",
+  "scrapedAt": "2026-03-13T15:53:41.267Z",
+  "year": 2025,
+  "pitchingStats": [
+    {
+      "name": "Indyk, Chelsea",
+      "w": 22,
+      "l": 6,
+      "era": 1.58,
+      "app": 30,
+      "gs": 24,
+      "cg": 20,
+      "sho": 5,
+      "sv": 1,
+      "ip": 177,
+      "h": 142,
+      "r": 50,
+      "er": 40,
+      "bb": 37,
+      "so": 139,
+      "hr": 3,
+      "whip": 1.01,
+      "doubles": 23,
+      "triples": 4,
+      "ab": 653,
+      "bAvg": 0.217,
+      "wp": 3,
+      "hbp": 15,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 20
+    },
+    {
+      "name": "Medor, Molly",
+      "w": 7,
+      "l": 7,
+      "era": 2.9,
+      "app": 22,
+      "gs": 21,
+      "cg": 10,
+      "sho": 2,
+      "sv": 0,
+      "ip": 103.2,
+      "h": 94,
+      "r": 54,
+      "er": 43,
+      "bb": 40,
+      "so": 71,
+      "hr": 7,
+      "whip": 1.29,
+      "doubles": 22,
+      "triples": 1,
+      "ab": 382,
+      "bAvg": 0.246,
+      "wp": 7,
+      "hbp": 13,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 18
+    },
+    {
+      "name": "McNamee, Ally",
+      "w": 3,
+      "l": 0,
+      "era": 4.71,
+      "app": 11,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 32.2,
+      "h": 48,
+      "r": 26,
+      "er": 22,
+      "bb": 19,
+      "so": 15,
+      "hr": 0,
+      "whip": 2.05,
+      "doubles": 9,
+      "triples": 0,
+      "ab": 146,
+      "bAvg": 0.329,
+      "wp": 5,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
+    }
+  ],
+  "games": [
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/carthage-college/boxscore/11123",
+      "date": "3/9/2025",
+      "opponent": "Carthage College",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Rettler grounded out to 3b.",
+            "K. Chronos hit by pitch.",
+            "K. Gaiser grounded out to 3b; K. Chronos advanced to second.",
+            "I. Hernandez flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Hendrick doubled to left field.",
+            "M. Conway hit by pitch.",
+            "P. Kryza out at first 3b to 2b, SAC, bunt; M. Conway advanced to second; G. Hendrick advanced to third.",
+            "H. Adler reached first on a fielding error by ss, RBI; M. Conway advanced to third; G. Hendrick scored, unearned.",
+            "I. Stombres walked; H. Adler advanced to second.",
+            "C. Rettler walked, RBI; I. Stombres advanced to second; H. Adler advanced to third; M. Conway scored, unearned.",
+            "K. Chronos flied out to rf.",
+            "K. Gaiser grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "I. Hernandez flied out to rf.",
+            "G. Hendrick lined out to 3b.",
+            "M. Conway struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "P. Kryza grounded out to 2b.",
+            "H. Adler singled to right field.",
+            "I. Stombres reached on a fielder's choice; H. Adler out at second ss to 2b.",
+            "I. Stombres stole second.",
+            "C. Rettler singled, advanced to second on a fielding error by lf, RBI; I. Stombres scored, unearned.",
+            "K. Chronos struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Gaiser grounded out to 2b.",
+            "I. Hernandez grounded out to ss.",
+            "G. Hendrick singled to center field.",
+            "G. Hendrick stole second.",
+            "M. Conway flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "P. Kryza singled to right field.",
+            "L. Cardona pinch ran for P. Kryza.",
+            "H. Adler singled, bunt; L. Cardona advanced to third.",
+            "T. Finegold pinch ran for H. Adler.",
+            "T. Finegold stole second.",
+            "I. Stombres grounded out to 3b.",
+            "C. Rettler singled, bunt, RBI; T. Finegold advanced to third; L. Cardona scored.",
+            "K. Chronos tripled to right field, 2 RBI; C. Rettler scored; T. Finegold scored.",
+            "K. Gaiser grounded out to 3b.",
+            "I. Hernandez grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/gettysburg-college/boxscore/11122",
+      "date": "3/9/2025",
+      "opponent": "Gettysburg College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Bergan singled through the right side.",
+            "J. Shaw struck out swinging.",
+            "R. Laczkowsk struck out swinging.",
+            "E. Hopple popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. O'Leary hit by pitch.",
+            "M. DeFreitas doubled to right field; L. O'Leary advanced to third.",
+            "A. Pelekis flied out to rf, sacrifice fly, RBI; L. O'Leary scored.",
+            "C. Goldstein struck out looking.",
+            "A. Gold singled through the right side.",
+            "M. DeFreitas out at third c to 2b to 3b to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Bergan grounded out to ss.",
+            "J. Shaw struck out looking.",
+            "R. Laczkowsk flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Hopple popped up to 1b.",
+            "L. O'Leary popped up to 2b.",
+            "M. DeFreitas singled through the left side.",
+            "A. Pelekis reached first on a fielding error by ss; M. DeFreitas advanced to second.",
+            "C. Goldstein flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Gold struck out looking.",
+            "A. Bergan struck out swinging.",
+            "J. Shaw walked.",
+            "R. Laczkowsk struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. Littlefie to c for H. Cozza.",
+            "E. Hopple popped up to ss.",
+            "L. O'Leary fouled out to 2b.",
+            "M. DeFreitas singled to right center.",
+            "A. Balewitz pinch ran for M. DeFreitas.",
+            "A. Pelekis flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Goldstein flied out to lf.",
+            "A. Gold flied out to lf.",
+            "A. Bergan singled through the left side.",
+            "J. Shaw grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/thomas-college/boxscore/11124",
+      "date": "3/10/2025",
+      "opponent": "Thomas College",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Morris walked.",
+            "C. Jarvais lined out to 3b.",
+            "K. Duhaime popped up to 1b.",
+            "M. Oberholze singled to left center; M. Morris advanced to second.",
+            "T. McLinden struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hickok struck out swinging.",
+            "L. Pickering flied out to rf.",
+            "L. Knight singled, bunt.",
+            "A. Farone singled to left field; L. Knight advanced to second.",
+            "M. Morris grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Jarvais lined out to ss.",
+            "K. Duhaime singled to left field.",
+            "M. Oberholze singled to left field; K. Duhaime advanced to second.",
+            "T. McLinden reached on a fielder's choice; M. Oberholze out at second 3b to 2b; K. Duhaime out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Manzione to 3b for C. Steiniger.",
+            "M. Hickok struck out swinging.",
+            "L. Pickering flied out to cf.",
+            "L. Knight singled up the middle.",
+            "A. Farone struck out swinging, reached first on an error by c, advanced to second; L. Knight advanced to third.",
+            "M. Morris singled to left field, RBI; A. Farone advanced to third; L. Knight scored, unearned.",
+            "C. Jarvais popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Duhaime struck out swinging.",
+            "B. Federico popped up to 1b.",
+            "T. McLinden struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Hickok singled to third base.",
+            "C. Vasvary pinch ran for M. Hickok.",
+            "L. Pickering hit by pitch; C. Vasvary advanced to second.",
+            "L. Knight reached on a fielder's choice up the middle; L. Pickering out at second ss to 2b; C. Vasvary advanced to third.",
+            "A. Farone flied out to lf, SAC, RBI; C. Vasvary scored.",
+            "M. Morris singled up the middle; L. Knight advanced to second.",
+            "C. Jarvais popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Duhaime popped up to 2b.",
+            "B. Federico grounded out to ss.",
+            "T. McLinden singled to right field.",
+            "M. Hickok flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/husson-university/boxscore/11125",
+      "date": "3/10/2025",
+      "opponent": "Husson University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. King singled through the right side.",
+            "C. King stole second.",
+            "T. Biamby singled, bunt; C. King advanced to third.",
+            "T. Biamby stole second.",
+            "B. McCabe struck out looking.",
+            "J. Gregoire reached first on an error by ss, RBI; C. King scored, unearned.",
+            "T. Exel singled to right field, RBI; J. Gregoire advanced to second; T. Biamby scored, unearned.",
+            "T. Watterson struck out looking; J. Gregoire stole third.",
+            "E. Dunbar struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Yates struck out looking.",
+            "E. Hosford struck out swinging.",
+            "C. King flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Biamby singled to center field.",
+            "B. McCabe doubled to left field, RBI; T. Biamby scored.",
+            "P. Kaler pinch ran for B. McCabe.",
+            "J. Gregoire walked.",
+            "L. Reed pinch ran for J. Gregoire.",
+            "T. Exel struck out swinging.",
+            "T. Watterson singled through the right side, RBI; L. Reed advanced to second; P. Kaler scored.",
+            "E. Dunbar popped up to 1b.",
+            "S. Yates flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Hosford grounded out to p, bunt.",
+            "C. King flied out to rf.",
+            "T. Biamby flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Yates tripled down the lf line.",
+            "J. Gregoire singled to right field, RBI; S. Yates scored.",
+            "T. Exel hit by pitch; J. Gregoire advanced to second.",
+            "T. Watterson out at first 1b to 2b, SAC, bunt; T. Exel advanced to second; J. Gregoire advanced to third.",
+            "E. Dunbar flied out to rf.",
+            "S. Yates grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Iannuccil to rf for H. Cozza.",
+            "E. Hosford walked.",
+            "C. King reached on a fielder's choice; E. Hosford out at second 3b to c to 2b.",
+            "C. King out at second c to ss, caught stealing.",
+            "T. Biamby flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Yates flied out to lf.",
+            "J. Gregoire grounded out to p.",
+            "T. Exel singled to left field.",
+            "T. Watterson popped up to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/bowdoin-college/boxscore/11126",
+      "date": "3/12/2025",
+      "opponent": "Bowdoin College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Ewert flied out to cf.",
+            "P. Fong-Pica lined out to 3b.",
+            "E. Siciliano flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Lang popped up to 1b.",
+            "C. Garcia struck out swinging.",
+            "J. Bradley grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Sullivan struck out swinging.",
+            "R. Parga struck out swinging.",
+            "R. Panenka flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Ewert grounded out to p.",
+            "P. Fong-Pica struck out looking.",
+            "E. Siciliano struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Lang lined out to p.",
+            "C. Garcia struck out swinging.",
+            "J. Bradley popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Sullivan struck out swinging.",
+            "R. Parga struck out swinging.",
+            "R. Panenka singled to right field.",
+            "E. Davies pinch ran for R. Panenka.",
+            "A. Ewert singled to shortstop, advanced to second on a throwing error by ss; E. Davies advanced to third.",
+            "P. Fong-Pica grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Manzione to dp.",
+            "B. Littlefie to c for S. Dupre.",
+            "E. Siciliano popped up to 3b.",
+            "S. Lang singled to left center.",
+            "C. Smith pinch ran for S. Lang.",
+            "C. Garcia popped up to ss.",
+            "J. Bradley singled to center field; C. Smith advanced to second.",
+            "E. Sullivan struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/the-college-of-st-scholastica/boxscore/11127",
+      "date": "3/12/2025",
+      "opponent": "The College Of St Scholastica",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "E. Bolin singled to left center.",
+            "S. Ernst struck out swinging.",
+            "V. Nelson popped up to ss.",
+            "L. Laviano singled up the middle; E. Bolin advanced to second.",
+            "M. Bussey struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Hackman struck out swinging.",
+            "J. Lind hit by pitch.",
+            "M. Glienke out at first 1b to 2b, SAC; J. Lind advanced to second.",
+            "A. Blumentha struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Bolin doubled down the lf line.",
+            "S. Ernst struck out swinging.",
+            "E. Bolin advanced to third on a wild pitch.",
+            "V. Nelson walked.",
+            "L. Laviano popped up to ss.",
+            "M. Bussey lined out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Hackman singled to center field.",
+            "K. Hackman stole second.",
+            "J. Lind flied out to lf.",
+            "M. Glienke struck out swinging.",
+            "A. Blumentha grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Bolin grounded out to p.",
+            "A. Breidenba pinch hit for S. Ernst.",
+            "A. Breidenba struck out swinging.",
+            "V. Nelson flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Laviano struck out swinging.",
+            "M. Bussey struck out swinging.",
+            "K. Hackman doubled to left field.",
+            "J. Lind flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Ewer pinch hit for M. Glienke.",
+            "L. Ewer walked.",
+            "P. Lang pinch ran for L. Ewer.",
+            "P. Lang advanced to second on a wild pitch.",
+            "A. Blumentha struck out looking.",
+            "E. Bolin grounded out to ss; P. Lang out at third 1b to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/regis-college/boxscore/11128",
+      "date": "3/13/2025",
+      "opponent": "Regis College",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Burke walked.",
+            "C. Beland grounded out to 3b, SAC, bunt; B. Burke advanced to second.",
+            "L. Kay singled down the rf line, RBI; B. Burke scored.",
+            "G. Blanchard struck out swinging.",
+            "A. Patles doubled, ground-rule; L. Kay advanced to third.",
+            "K. Galvin struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Gaspie struck out swinging.",
+            "G. Motto walked.",
+            "G. Motto stole second, advanced to third on a throwing error by c.",
+            "G. Motto scored on a passed ball, unearned.",
+            "S. Grund struck out swinging.",
+            "B. Burke popped up to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. McNamee to p for M. Medor.",
+            "S. Dupre to lf.",
+            "E. Gour to 2b.",
+            "S. Manzione to dp.",
+            "A. McNamee to p.",
+            "C. Beland flied out to rf.",
+            "L. Kay grounded out to ss.",
+            "G. Blanchard grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Patles singled down the rf line.",
+            "M. Rees pinch hit for K. Galvin.",
+            "A. Patles advanced to second on a passed ball.",
+            "M. Rees doubled to left field, RBI; A. Patles scored.",
+            "A. Erickson popped up to ss.",
+            "G. Motto grounded out to ss.",
+            "S. Grund struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Burke flied out to rf.",
+            "C. Beland doubled to left center.",
+            "L. Kay flied out to cf.",
+            "C. Beland advanced to third on a wild pitch.",
+            "G. Blanchard singled up the middle, RBI; C. Beland scored.",
+            "A. Patles struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/swarthmore-college/boxscore/11129",
+      "date": "3/13/2025",
+      "opponent": "Swarthmore College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Barone singled to left field.",
+            "I. Barone out at second c to ss, caught stealing.",
+            "J. Jackson walked.",
+            "A. McClure struck out swinging.",
+            "O. McClammy grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Bertrand lined out to ss.",
+            "S. Tinio singled up the middle.",
+            "C. Heflin struck out swinging.",
+            "E. O'Connor walked; S. Tinio advanced to second.",
+            "R. Valenzuel singled to right center, RBI; E. O'Connor advanced to second; S. Tinio scored.",
+            "I. Barone doubled down the lf line, RBI; R. Valenzuel advanced to third; E. O'Connor scored.",
+            "J. Jackson struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. McClure walked.",
+            "O. McClammy flied out to cf.",
+            "E. Bertrand hit by pitch; A. McClure advanced to second.",
+            "S. Tinio singled to left field; E. Bertrand advanced to second; A. McClure advanced to third.",
+            "C. Heflin struck out swinging.",
+            "A. Babcock pinch hit for E. O'Connor.",
+            "A. Babcock struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Valenzuel singled to left field.",
+            "I. Barone popped up to ss.",
+            "J. Jackson struck out looking.",
+            "A. McClure singled to third base; R. Valenzuel advanced to second.",
+            "O. McClammy walked; A. McClure advanced to second; R. Valenzuel advanced to third.",
+            "E. Bertrand lined out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Tinio struck out swinging.",
+            "G. Taylor flied out to rf.",
+            "E. O'Connor popped up to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Valenzuel popped up to 2b.",
+            "I. Barone flied out to lf.",
+            "J. Jackson popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. McClure tripled to left center.",
+            "O. McClammy flied out to cf.",
+            "E. Bertrand grounded out p to 2b to 1b, RBI; A. McClure scored.",
+            "S. Tinio flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/ohio-northern-university/boxscore/11131",
+      "date": "3/14/2025",
+      "opponent": "Ohio Northern University",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "J. Fansler flied out to cf.",
+            "L. Marker walked.",
+            "C. Rosser reached on a fielder's choice; L. Marker out at second p to 2b.",
+            "A. Lenser singled to right center; C. Rosser advanced to third.",
+            "A. Wilson doubled to center field, RBI; A. Lenser advanced to third; C. Rosser scored.",
+            "M. Hannahs hit by pitch.",
+            "C. Schroeder doubled to left center, 3 RBI; M. Hannahs scored; A. Wilson scored; A. Lenser scored.",
+            "A. McNamee to p for M. Medor.",
+            "A. Simko popped up to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Amann grounded out to 2b.",
+            "J. Fansler walked.",
+            "J. Fansler stole second.",
+            "L. Marker flied out to cf.",
+            "C. Rosser singled to center field, RBI; J. Fansler scored.",
+            "A. Lenser doubled to left field; C. Rosser advanced to third.",
+            "A. Wilson grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Hannahs singled up the middle.",
+            "M. Hannahs stole second.",
+            "M. Hannahs stole third.",
+            "C. Schroeder grounded out to ss.",
+            "A. Simko popped up to 1b, bunt.",
+            "M. Amann popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Fansler struck out swinging.",
+            "L. Marker flied out to lf.",
+            "C. Rosser singled through the right side.",
+            "C. Rosser stole second.",
+            "A. Lenser walked.",
+            "A. Wilson popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Hannahs singled through the left side.",
+            "M. Hannahs stole second.",
+            "C. Schroeder walked.",
+            "K. King pinch hit for A. Simko.",
+            "K. King walked; C. Schroeder advanced to second; M. Hannahs advanced to third.",
+            "C. Indyk to p for A. McNamee.",
+            "B. Littlefie to c for A. Pericello.",
+            "M. Amann reached on a fielder's choice, bunt; K. King advanced to second; C. Schroeder advanced to third; M. Hannahs out at home 3b to c.",
+            "J. Fansler singled to left field, RBI; M. Amann advanced to second; K. King advanced to third; C. Schroeder scored.",
+            "L. Marker struck out swinging.",
+            "C. Rosser popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Lenser grounded out to p.",
+            "A. Wilson struck out looking.",
+            "M. Hannahs singled to center field.",
+            "C. Schroeder popped up to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. King struck out swinging.",
+            "M. Amann fouled out to 3b.",
+            "J. Fansler singled to left field.",
+            "L. Marker doubled to left field; J. Fansler advanced to third.",
+            "C. Rosser doubled to right center, 2 RBI; L. Marker scored; J. Fansler scored.",
+            "A. Lenser singled down the rf line, RBI; C. Rosser scored.",
+            "A. Hochstetl pinch ran for A. Lenser.",
+            "A. Wilson grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/washington-college-md-/boxscore/11130",
+      "date": "3/14/2025",
+      "opponent": "Washington College Md ",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Trefz popped up to 2b.",
+            "G. Goforth struck out swinging.",
+            "L. Cook popped up to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Harper singled to left field.",
+            "N. Unzueta grounded out to p, SAC, bunt; J. Harper advanced to second.",
+            "J. Weglarz grounded out to 1b unassisted; J. Harper advanced to third.",
+            "J. Guzman singled, bunt, RBI; J. Harper scored.",
+            "B. Foulk grounded out to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Mavoides popped up to ss.",
+            "C. Trefz singled down the rf line.",
+            "G. Goforth popped up to c.",
+            "L. Cook walked; C. Trefz advanced to second.",
+            "J. Harper flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Unzueta singled to right field.",
+            "J. Weglarz grounded out to 3b, SAC, bunt; N. Unzueta advanced to second.",
+            "J. Guzman flied out to lf.",
+            "B. Foulk flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Mavoides out at first 1b to 2b, bunt.",
+            "C. Trefz singled down the rf line.",
+            "G. Goforth reached first on a fielding error by p; C. Trefz advanced to second.",
+            "L. Cook walked; G. Goforth advanced to second; C. Trefz advanced to third.",
+            "J. Harper flied out to rf; C. Trefz out at home rf to c."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Unzueta flied out to cf.",
+            "J. Weglarz walked.",
+            "J. Weglarz stole second.",
+            "J. Guzman struck out swinging.",
+            "J. Weglarz advanced to third on a wild pitch.",
+            "B. Foulk popped up to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Mavoides flied out to rf.",
+            "C. Trefz flied out to lf.",
+            "G. Goforth doubled to center field.",
+            "L. Cook grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/mitchell-college/boxscore/11012",
+      "date": "3/22/2025",
+      "opponent": "Mitchell College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry singled to right center.",
+            "M. Cole grounded out to c.",
+            "O. DeCicco grounded out to 1b unassisted; G. Landry advanced to second.",
+            "B. Whitmarsh struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. LaBreck popped up to ss.",
+            "B. Clancy struck out swinging.",
+            "K. Drago struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Hudson struck out swinging.",
+            "C. Roman singled, bunt.",
+            "G. Landry struck out swinging.",
+            "M. Cole popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "O. DeCicco popped up to 2b.",
+            "B. Whitmarsh doubled to left center.",
+            "E. LaBreck struck out looking.",
+            "B. Clancy struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Drago flied out to cf.",
+            "N. Hudson singled down the lf line.",
+            "C. Roman struck out swinging.",
+            "G. Landry lined out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Cole singled to left center.",
+            "O. DeCicco struck out swinging.",
+            "B. Whitmarsh reached on a fielder's choice; M. Cole out at second ss to 1b.",
+            "E. LaBreck popped up to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Littlefie to c for M. Jo-Laudat.",
+            "C. Housley to 1b for B. Clancy.",
+            "B. Taylor to rf for K. Drago.",
+            "C. Housley flied out to cf.",
+            "B. Taylor struck out swinging.",
+            "N. Hudson singled up the middle.",
+            "C. Roman struck out looking."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/mitchell-college/boxscore/11013",
+      "date": "3/22/2025",
+      "opponent": "Mitchell College",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "G. Landry singled to left field.",
+            "M. Cole struck out swinging.",
+            "O. DeCicco grounded out to 2b; G. Landry advanced to second.",
+            "B. Whitmarsh singled to right field, RBI; G. Landry scored, advanced on a fielding error by rf, unearned.",
+            "E. LaBreck walked; B. Whitmarsh advanced to second.",
+            "C. Housley homered, 3 RBI; E. LaBreck scored; B. Whitmarsh scored.",
+            "N. Hudson walked.",
+            "A. McNamee to p for M. Medor.",
+            "K. Drago walked; N. Hudson advanced to second.",
+            "C. Roman singled to center field; K. Drago advanced to second; N. Hudson advanced to third.",
+            "G. Landry singled to center field, 2 RBI; C. Roman advanced to second; K. Drago scored; N. Hudson scored.",
+            "M. Cole flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O. DeCicco flied out to cf.",
+            "B. Whitmarsh singled to left field.",
+            "E. LaBreck struck out swinging.",
+            "C. Housley grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Hudson singled, advanced to second on a fielding error by rf.",
+            "K. Drago flied out to lf.",
+            "C. Roman struck out swinging.",
+            "G. Landry walked.",
+            "M. Cole walked; G. Landry advanced to second; N. Hudson advanced to third.",
+            "O. DeCicco flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Whitmarsh flied out to cf.",
+            "E. LaBreck grounded out to p.",
+            "C. Housley popped up to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. West-Test to rf for H. Cozza.",
+            "N. Hudson singled to right center.",
+            "R. Chartier to cf.",
+            "A. Pericello to c.",
+            "A. McNamee to p.",
+            "K. Drago flied out to lf.",
+            "E. Reynolds singled through the right side; N. Hudson advanced to second.",
+            "G. Landry reached on a fielder's choice; E. Reynolds advanced to second; N. Hudson out at third ss to 3b.",
+            "M. Cole lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "O. DeCicco singled to pitcher.",
+            "O. DeCicco advanced to second on a passed ball.",
+            "B. Whitmarsh singled through the right side; O. DeCicco advanced to third.",
+            "B. Clancy pinch hit for E. LaBreck.",
+            "C. Indyk to p for A. McNamee.",
+            "B. Whitmarsh stole second.",
+            "B. Clancy struck out swinging.",
+            "C. Housley grounded out to ss, RBI; O. DeCicco scored.",
+            "N. Hudson grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Gour to 2b.",
+            "B. Taylor to 3b for K. Drago.",
+            "B. Taylor grounded out to ss.",
+            "E. Reynolds popped up to 1b.",
+            "G. Landry singled to center field.",
+            "M. Cole struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/11014",
+      "date": "3/26/2025",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern doubled to left field.",
+            "A. Rodriguez struck out looking.",
+            "R. Yang struck out swinging.",
+            "B. Mellady struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Jones struck out swinging.",
+            "D. Borrison doubled to right field.",
+            "E. Gaunce struck out swinging.",
+            "C. Chung singled to pitcher; D. Borrison advanced to third.",
+            "A. Delgado fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Mulhern popped up to 1b.",
+            "A. Rodriguez walked.",
+            "R. Yang flied out to rf.",
+            "A. Rodriguez stole second.",
+            "B. Mellady walked.",
+            "G. Jones struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Borrison flied out to cf.",
+            "E. Gaunce singled to shortstop.",
+            "C. Chung singled to pitcher; E. Gaunce advanced to second.",
+            "A. Delgado singled, bunt; C. Chung advanced to second; E. Gaunce advanced to third.",
+            "A. Mulhern popped up to 2b.",
+            "A. Rodriguez flied out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Yang grounded out to 3b.",
+            "B. Mellady singled to right field.",
+            "G. Jones out at first 3b to 2b, SAC, bunt; B. Mellady advanced to second.",
+            "D. Borrison walked.",
+            "E. Gaunce reached on a fielder's choice to third base; D. Borrison advanced to second; B. Mellady out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Chung popped up to 3b.",
+            "A. Delgado struck out swinging.",
+            "A. Mulhern popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Jo-Laudat to rf for S. Manzione.",
+            "A. Rodriguez grounded out to ss.",
+            "R. Yang reached first on a throwing error by ss.",
+            "B. Mellady flied out to cf.",
+            "G. Jones popped out to cf."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "D. Borrison G. Jones placed on second.",
+            "N. Nicol pinch ran for G. Jones.",
+            "D. Borrison out at first 1b to 2b, SAC, bunt; N. Nicol advanced to third.",
+            "E. Gaunce singled to center field, RBI; N. Nicol scored.",
+            "C. Chung grounded out to 1b unassisted; E. Gaunce advanced to second.",
+            "A. Delgado popped up to 1b."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "A. Mulhern A. Delgado placed on second.",
+            "A. Mulhern out at first c to 2b, SAC, bunt; A. Delgado advanced to third.",
+            "A. Rodriguez struck out swinging.",
+            "R. Yang grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/wellesley-college/boxscore/11015",
+      "date": "3/26/2025",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out swinging.",
+            "N. Nicol flied out to lf.",
+            "E. Gaunce struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Mellady struck out looking.",
+            "D. Borrison walked.",
+            "C. Chung singled, bunt; D. Borrison advanced to second.",
+            "E. Kulhanek reached on a fielder's choice to third base; C. Chung advanced to second; D. Borrison out at third 3b unassisted.",
+            "P. Penny grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado walked.",
+            "A. Mulhern out at first 3b to 2b, SAC, bunt; A. Delgado advanced to second.",
+            "N. Nicol fouled out to 1b.",
+            "E. Gaunce flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Mellady flied out to cf.",
+            "D. Borrison flied out to ss.",
+            "C. Chung walked.",
+            "E. Kulhanek singled to left center; C. Chung advanced to second.",
+            "P. Penny singled to left field; E. Kulhanek advanced to second; C. Chung advanced to third, out at home lf to 3b to c to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Delgado doubled to left center.",
+            "A. Mulhern singled to left center, advanced to second, RBI; A. Delgado scored.",
+            "N. Nicol out at first 3b to 2b, SAC, bunt; A. Mulhern advanced to third.",
+            "E. Gaunce flied out to rf, sacrifice fly, RBI; A. Mulhern scored.",
+            "B. Mellady lined out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Borrison flied out to cf.",
+            "C. Chung grounded out to ss.",
+            "E. Kulhanek grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/western-new-england-university/boxscore/11016",
+      "date": "3/31/2025",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Carrasqui popped up to 2b.",
+            "M. Rodriguez lined out to 3b.",
+            "R. Kane grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Salanto popped up to ss.",
+            "A. Ferriouol struck out swinging.",
+            "G. Hemstock walked.",
+            "K. Baumann popped up to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Barnhart fouled out to c.",
+            "S. McDaniel singled to right field.",
+            "A. Carrasqui doubled down the lf line, RBI; S. McDaniel scored.",
+            "M. Rodriguez struck out swinging.",
+            "R. Kane grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Salanto grounded out to ss.",
+            "A. Ferriouol lined out to 2b.",
+            "G. Hemstock popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Baumann popped up to 2b.",
+            "A. Barnhart flied out to cf.",
+            "S. McDaniel struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Carrasqui singled to left center.",
+            "M. Rodriguez reached first on a throwing error by 3b, bunt, advanced to second; A. Carrasqui advanced to third, scored on a throwing error by 1b, unearned.",
+            "R. Kane singled down the rf line; M. Rodriguez advanced to third.",
+            "B. Cardona pinch hit for N. Salanto.",
+            "B. Cardona struck out swinging.",
+            "A. Ferriouol doubled to left field, RBI; R. Kane advanced to third; M. Rodriguez scored.",
+            "G. Hemstock flied out to cf.",
+            "K. Bailey pinch hit for K. Baumann.",
+            "K. Bailey struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Barnhart popped up to 3b.",
+            "S. McDaniel doubled to right center.",
+            "A. Carrasqui singled down the lf line; S. McDaniel advanced to third.",
+            "A. Carrasqui stole second.",
+            "M. Rodriguez doubled to left field, RBI; A. Carrasqui advanced to third; S. McDaniel scored.",
+            "R. Kane hit by pitch.",
+            "N. Salanto flied out to lf, SAC, RBI; R. Kane advanced to second; M. Rodriguez advanced to third; A. Carrasqui scored.",
+            "A. Ferriouol doubled to right center, 2 RBI; R. Kane scored; M. Rodriguez scored.",
+            "G. Hemstock flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/western-new-england-university/boxscore/11017",
+      "date": "3/31/2025",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Carrasqui grounded out to 2b.",
+            "M. Rodriguez singled down the rf line.",
+            "R. Kane flied out to lf.",
+            "E. Picone grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Ferriouol singled through the right side.",
+            "G. Hemstock grounded out to 3b, SAC, bunt; A. Ferriouol advanced to second.",
+            "C. Salinas reached first on a dropped fly by ss, advanced to second; A. Ferriouol advanced to third.",
+            "K. Baumann fouled out to 3b.",
+            "S. McDaniel popped up to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Carrasqui popped up to 2b.",
+            "M. Rodriguez popped up to 2b.",
+            "R. Kane fouled out to c."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Picone lined out to ss.",
+            "A. Ferriouol lined out to 3b.",
+            "G. Hemstock popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Salinas flied out to lf.",
+            "K. Baumann doubled to left field.",
+            "S. McDaniel out at first 3b to 2b, SAC, bunt; K. Baumann advanced to third.",
+            "A. Carrasqui popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Rodriguez flied out to lf.",
+            "R. Kane struck out swinging.",
+            "E. Picone grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Ferriouol struck out swinging.",
+            "G. Hemstock struck out looking.",
+            "C. Salinas hit by pitch.",
+            "A. Poisson pinch ran for C. Salinas.",
+            "K. Baumann lined out to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "S. McDaniel K. Baumann placed on second.",
+            "K. Czarkowsk pinch ran for K. Baumann.",
+            "S. McDaniel grounded out to 3b, SAC, bunt; K. Czarkowsk advanced to third.",
+            "A. Carrasqui doubled down the lf line, RBI; K. Czarkowsk scored.",
+            "M. Rodriguez doubled to center field, RBI; A. Carrasqui scored.",
+            "R. Kane singled to left field; M. Rodriguez out at third lf to 3b.",
+            "K. Brooks pinch hit for E. Picone.",
+            "K. Brooks homered to left field, 2 RBI; R. Kane scored.",
+            "A. Ferriouol singled, advanced to second on a fielding error by rf, advanced to third.",
+            "A. McNamee to p for M. Medor.",
+            "G. Hemstock flied out to cf."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "K. Felicani to lf for H. Cozza.",
+            "M. Jo-Laudat to rf for A. Pericello.",
+            "C. Salinas G. Hemstock placed on second.",
+            "A. Gaudiosi pinch ran for G. Hemstock.",
+            "C. Salinas out at first p to 2b, SAC, bunt; A. Gaudiosi advanced to third.",
+            "K. Czarkowsk reached on a fielder's choice; A. Gaudiosi out at home 3b to c.",
+            "S. McDaniel grounded out to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/eastern-connecticut-state-university/boxscore/11020",
+      "date": "4/3/2025",
+      "opponent": "Eastern Connecticut State University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Laird popped up to 1b.",
+            "J. Boya struck out swinging.",
+            "Ma. Bowen struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Boone struck out swinging.",
+            "M. Rubeck struck out swinging, out at first c to 1b.",
+            "S. Healy homered, RBI.",
+            "M. Sauve doubled to left center.",
+            "T. Lathrop struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. Lalor struck out looking.",
+            "K. Laird singled to center field.",
+            "K. Laird stole second.",
+            "J. Boya fouled out to 3b.",
+            "Ma. Bowen flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Boone struck out swinging.",
+            "M. Rubeck popped up to 2b.",
+            "S. Healy walked.",
+            "M. Sauve flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Lathrop flied out to rf.",
+            "R. Lalor popped up to ss.",
+            "K. Laird reached first on an error by 2b.",
+            "K. Laird stole second.",
+            "K. Laird advanced to third on a wild pitch.",
+            "J. Boya popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Jo-Laudat to rf for S. Manzione.",
+            "Ma. Bowen grounded out to 2b.",
+            "J. Bennett struck out swinging.",
+            "M. Rubeck grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Healy lined out to lf.",
+            "M. Sauve grounded out to 3b.",
+            "E. Mitchell flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/eastern-connecticut-state-university/boxscore/11021",
+      "date": "4/3/2025",
+      "opponent": "Eastern Connecticut State University",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Laird walked.",
+            "R. Lalor out at first 1b to 2b, SAC; K. Laird advanced to second.",
+            "K. Laird stole third.",
+            "Ma. Bowen grounded out to ss, RBI; K. Laird scored.",
+            "E. Mitchell flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Healy doubled down the lf line.",
+            "M. Rubeck out at first 1b to 2b, SAC; S. Healy advanced to third.",
+            "M. Sauve out at first 1b to 2b, SAC, RBI; S. Healy scored.",
+            "C. LoPresto flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Bennett popped up to 3b.",
+            "K. Laird flied out to rf.",
+            "R. Lalor flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ma. Bowen grounded out to 2b.",
+            "E. Mitchell singled to left field.",
+            "S. Healy homered, 2 RBI; E. Mitchell scored.",
+            "A. McNamee to p for M. Medor.",
+            "M. Rubeck popped up to ss.",
+            "M. Sauve flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. LoPresto struck out swinging.",
+            "L. Kenefick to lf for J. Bennett.",
+            "L. Kenefick walked.",
+            "L. Kenefick advanced to second on a wild pitch.",
+            "K. Laird walked.",
+            "M. Pajak pinch hit for R. Lalor.",
+            "M. Pajak popped up to ss.",
+            "K. Laird advanced to second on a wild pitch; L. Kenefick advanced to third on a wild pitch.",
+            "Ma. Bowen singled up the middle, 2 RBI; K. Laird scored; L. Kenefick scored.",
+            "Ma. Bowen advanced to second on the throw.",
+            "T. Lathrop pinch ran for Ma. Bowen.",
+            "E. Mitchell popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Healy doubled to right field.",
+            "M. Rubeck popped up to 3b.",
+            "M. Sauve lined out to ss.",
+            "Mi. Bowen pinch hit for C. LoPresto.",
+            "Mi. Bowen singled to right center, RBI; S. Healy scored.",
+            "L. Kenefick grounded out to 1b unassisted."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/university-of-new-england/boxscore/11022",
+      "date": "4/4/2025",
+      "opponent": "University Of New England",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Irons struck out looking.",
+            "E. Michaud walked.",
+            "J. Kimball struck out swinging.",
+            "E. Michaud out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Whitten flied out to lf.",
+            "E. Connor doubled to left center.",
+            "A. Walsh out at first 1b to 2b, SAC, bunt; E. Connor advanced to third.",
+            "M. Durette popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Boutaugh walked.",
+            "H. Lappin out at first 3b to 2b, SAC, bunt; N. Boutaugh advanced to second.",
+            "H. Irons reached on a fielder's choice; N. Boutaugh out at third 3b unassisted.",
+            "E. Michaud lined out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Kimball popped up to 2b.",
+            "D. Whitten singled through the left side.",
+            "E. Connor popped up to 2b.",
+            "A. Walsh struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Durette flied out to lf.",
+            "N. Boutaugh struck out looking.",
+            "H. Lappin flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Irons grounded out to 2b.",
+            "E. Michaud walked.",
+            "J. Kimball lined into double play 3b to 1b; E. Michaud out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Whitten grounded out to p.",
+            "E. Connor flied out to cf.",
+            "A. Walsh popped up to p."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/university-of-new-england/boxscore/11023",
+      "date": "4/4/2025",
+      "opponent": "University Of New England",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "H. Irons flied out to cf.",
+            "E. Michaud grounded out to ss.",
+            "J. Kimball singled to right field.",
+            "D. Whitten grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Connor walked.",
+            "A. Prokey pinch ran for E. Connor.",
+            "A. Prokey out at first c to 2b, picked off.",
+            "F. Casey struck out swinging.",
+            "E. Koenig lined out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Riva struck out swinging.",
+            "H. Lappin flied out to rf.",
+            "H. Irons grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Michaud grounded out to 2b.",
+            "J. Kimball walked.",
+            "P. Dodge pinch ran for J. Kimball.",
+            "D. Whitten lined into double play ss to 1b; P. Dodge out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Connor struck out swinging.",
+            "F. Casey struck out looking.",
+            "E. Koenig struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Silliman to 1b for S. Dupre.",
+            "G. Riva struck out swinging.",
+            "H. Lappin fouled out to c.",
+            "H. Irons grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Michaud grounded out to ss.",
+            "J. Kimball struck out looking.",
+            "D. Whitten walked.",
+            "E. Connor popped up to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/wentworth-institute-of-technology/boxscore/11024",
+      "date": "4/6/2025",
+      "opponent": "Wentworth Institute Of Technology",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Howe struck out swinging.",
+            "K. Medalia struck out looking.",
+            "K. Igawa grounded out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Lefkowski popped up to 2b.",
+            "J. Rowe popped up to 3b.",
+            "L. Trostel grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Carlson flied out to cf.",
+            "K. Kranz popped up to c.",
+            "J. Roche fouled out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Howe flied out to lf.",
+            "K. Medalia singled through the left side.",
+            "K. Igawa singled to right center; K. Medalia advanced to second.",
+            "L. Lefkowski doubled to left field, RBI; K. Igawa advanced to third; K. Medalia scored.",
+            "J. Rowe grounded out to p.",
+            "L. Trostel struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Carlson fouled out to 3b.",
+            "K. Kranz struck out swinging.",
+            "J. Roche singled to right center.",
+            "K. Howe grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Medalia flied out to lf.",
+            "K. Igawa lined out to ss.",
+            "L. Lefkowski popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Rowe struck out looking.",
+            "S. Miccile pinch hit for L. Trostel.",
+            "S. Miccile popped up to ss.",
+            "L. Carlson grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/wentworth-institute-of-technology/boxscore/11025",
+      "date": "4/6/2025",
+      "opponent": "Wentworth Institute Of Technology",
+      "pitchers": [
+        "Medor, Molly",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Lefkowski flied out to cf.",
+            "K. Medalia flied out to cf.",
+            "K. Igawa flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Rowe flied out to lf.",
+            "L. Carlson walked.",
+            "J. Roche singled to right field; L. Carlson advanced to second.",
+            "K. Kranz flied out to cf; L. Carlson advanced to third.",
+            "B. Miller grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Howe singled to catcher.",
+            "L. Lefkowski singled to pitcher, bunt; K. Howe advanced to second.",
+            "K. Medalia flied out to cf.",
+            "K. Igawa reached on a fielder's choice to right center; L. Lefkowski out at second cf to 2b; K. Howe advanced to third.",
+            "J. Rowe grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Carlson lined out to 3b.",
+            "J. Roche struck out swinging.",
+            "K. Kranz walked.",
+            "B. Miller lined out to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Howe grounded out to 3b.",
+            "L. Lefkowski grounded out to 2b.",
+            "K. Medalia flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Igawa singled through the right side.",
+            "J. Rowe doubled to left field, RBI; K. Igawa scored.",
+            "C. Indyk to p for M. Medor.",
+            "L. Carlson struck out swinging.",
+            "J. Roche flied out to cf.",
+            "K. Kranz flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Miller flied out to rf.",
+            "K. Howe popped up to 3b.",
+            "L. Lefkowski tripled to right center, scored on a throwing error by 2b, unearned.",
+            "K. Medalia popped up to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "A. Silliman to 1b for M. Jo-Laudat.",
+            "K. Igawa K. Medalia placed on second.",
+            "K. Igawa grounded out to p, SAC, bunt; K. Medalia advanced to third.",
+            "J. Rowe popped up to 3b.",
+            "L. Carlson popped up to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/gordon-college/boxscore/11028",
+      "date": "4/10/2025",
+      "opponent": "Gordon College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Falco flied out to lf.",
+            "A. Rivera popped up to ss.",
+            "C. Wernsing singled to left center.",
+            "S. Perkins flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Graham singled to left center.",
+            "H. Conde singled to left field; E. Graham advanced to second.",
+            "L. DeRusha popped up to c, bunt; H. Conde scored, unearned; E. Graham scored on a throwing error by c, unearned.",
+            "Mad. Murray struck out swinging.",
+            "E. Peterson grounded out to c unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Falco grounded out to ss.",
+            "A. Rivera popped up to ss.",
+            "C. Wernsing walked.",
+            "S. Perkins grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Graham grounded out to ss.",
+            "H. Conde singled to left center.",
+            "Mac. Murray pinch ran for H. Conde.",
+            "L. DeRusha grounded out to p, SAC, bunt; Mac. Murray advanced to second.",
+            "P. Heitzman struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Peterson popped up to 3b.",
+            "M. Falco flied out to lf.",
+            "A. Rivera grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Wernsing flied out to cf.",
+            "S. Perkins flied out to lf.",
+            "E. Graham popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Conde singled to center field.",
+            "L. DeRusha fouled out to 3b down the lf line.",
+            "L. Parker flied out to cf.",
+            "E. Peterson flied out to cf to right center."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/gordon-college/boxscore/11029",
+      "date": "4/10/2025",
+      "opponent": "Gordon College",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Falco singled to left center.",
+            "M. Falco advanced to second on a wild pitch.",
+            "A. Rivera doubled to left field; M. Falco advanced to third.",
+            "C. Wernsing grounded out to 3b.",
+            "S. Perkins reached on a fielder's choice to pitcher, RBI, advanced to second; A. Rivera advanced to third; M. Falco scored.",
+            "E. Graham grounded out to 2b, RBI; S. Perkins advanced to third; A. Rivera scored.",
+            "S. Perkins scored on a wild pitch.",
+            "H. Conde walked.",
+            "A. McNamee to p for M. Medor.",
+            "L. DeRusha grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Parker grounded out to ss.",
+            "E. Peterson popped up to 1b, bunt.",
+            "M. Falco grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Rivera singled up the middle.",
+            "A. Rivera advanced to second on a wild pitch.",
+            "C. Wernsing walked.",
+            "S. Perkins reached on a fielder's choice to shortstop; C. Wernsing advanced to second; A. Rivera out at third ss to 3b.",
+            "K. Melendy grounded out to 2b; S. Perkins advanced to second; C. Wernsing advanced to third.",
+            "H. Conde struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. DeRusha grounded out to ss.",
+            "L. Parker grounded out to ss.",
+            "E. Peterson grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Falco singled down the rf line.",
+            "A. Rivera lined out to cf.",
+            "M. Vouriotis singled, bunt; M. Falco advanced to second.",
+            "M. Vouriotis advanced to second; M. Falco out at third c to 3b, caught stealing.",
+            "S. Perkins grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. West-Test to rf for H. Cozza.",
+            "K. Melendy grounded out to p.",
+            "H. Conde singled up the middle.",
+            "P. Heitzman pinch ran for H. Conde.",
+            "L. DeRusha singled to left center; P. Heitzman advanced to second.",
+            "L. Parker singled down the lf line, RBI; L. DeRusha advanced to second; P. Heitzman scored.",
+            "C. Indyk to p for A. McNamee.",
+            "Mac. Murray pinch ran for L. DeRusha.",
+            "Mad. Murray pinch ran for L. Parker.",
+            "E. Peterson lined out to 3b.",
+            "M. Falco grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Wernsing to rf for M. Vouriotis.",
+            "A. Rivera hit by pitch.",
+            "C. Wernsing struck out swinging.",
+            "S. Perkins popped up to 3b.",
+            "E. Graham singled up the middle; A. Rivera advanced to second.",
+            "H. Conde walked; E. Graham advanced to second; A. Rivera advanced to third.",
+            "L. DeRusha flied out to lf."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "B. Littlefie to c for S. Dupre.",
+            "L. Parker struck out swinging.",
+            "E. Peterson grounded out to 2b.",
+            "M. Falco lined out to lf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/curry-college/boxscore/11032",
+      "date": "4/15/2025",
+      "opponent": "Curry College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "R. Gonnevill doubled to left field.",
+            "N. O'Kleasky out at first c to 2b, SAC, bunt; R. Gonnevill advanced to third.",
+            "M. Barmash popped up to 1b.",
+            "J. Rogers struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Colburn flied out to lf.",
+            "K. Tobin struck out swinging.",
+            "G. Keyes grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Greene flied out to rf.",
+            "M. Rodrigues flied out to cf.",
+            "R. Gonnevill popped up to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. O'Kleasky singled down the lf line.",
+            "M. Barmash flied out to rf.",
+            "I. Monsanto struck out swinging.",
+            "S. Colburn flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Tobin struck out swinging.",
+            "G. Habib fouled out to 2b.",
+            "A. Greene struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Rodrigues flied out to rf.",
+            "R. Gonnevill popped up to ss.",
+            "N. O'Kleasky fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Capozzi to dp for S. Colburn.",
+            "M. Barmash lined out to cf.",
+            "I. Monsanto flied out to rf.",
+            "A. Capozzi struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/curry-college/boxscore/11035",
+      "date": "4/15/2025",
+      "opponent": "Curry College",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Goldman grounded out to ss.",
+            "R. Gonnevill walked.",
+            "N. O'Kleasky fouled out to c.",
+            "R. Gonnevill stole second.",
+            "M. Barmash flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Colburn struck out looking.",
+            "G. Habib struck out looking.",
+            "C. Wood struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. King hit by pitch.",
+            "A. Greene fouled out to 1b.",
+            "S. King advanced to second on a wild pitch.",
+            "T. Goldman walked.",
+            "M. Rodrigues to 1b for S. King.",
+            "R. Gonnevill out at first 1b to 2b, SAC, bunt; T. Goldman advanced to second; M. Rodrigues advanced to third.",
+            "N. O'Kleasky hit by pitch.",
+            "M. Barmash doubled down the lf line, 2 RBI; N. O'Kleasky advanced to third; T. Goldman scored; M. Rodrigues scored.",
+            "A. McNamee to p for M. Medor.",
+            "S. Colburn popped up to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Habib singled to center field.",
+            "A. Capozzi pinch ran for G. Habib.",
+            "A. Capozzi out at second c to ss, caught stealing.",
+            "C. Wood grounded out to ss.",
+            "S. King flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Greene walked.",
+            "T. Goldman struck out swinging.",
+            "A. Greene advanced to second on a passed ball.",
+            "R. Gonnevill reached on a fielder's choice, advanced to second on a throwing error by 3b, scored, unearned; A. Greene scored, unearned.",
+            "N. O'Kleasky struck out swinging.",
+            "M. Barmash doubled through the left side.",
+            "G. Keyes reached first on a fielding error by 3b.",
+            "G. Habib pinch hit for A. Capozzi.",
+            "G. Habib grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Rogers singled to center field.",
+            "S. King out at first 3b to 2b, SAC, bunt; J. Rogers advanced to second.",
+            "A. Greene singled up the middle; J. Rogers advanced to third.",
+            "T. Goldman struck out looking; A. Greene stole second.",
+            "R. Gonnevill walked.",
+            "N. O'Kleasky reached first on a fielding error by 3b; R. Gonnevill advanced to third; A. Greene scored, unearned; J. Rogers scored, unearned.",
+            "M. Barmash grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Keyes lined out to p.",
+            "G. Habib flied out to lf.",
+            "J. Rogers grounded out 1b to 2b to 1b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/university-of-hartford/boxscore/11018",
+      "date": "4/18/2025",
+      "opponent": "University Of Hartford",
+      "pitchers": [
+        "Indyk, Chelsea",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Sealey grounded out to 2b.",
+            "L. Lembo flied out to cf.",
+            "G. Miccio struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O. Wolk flied out to rf.",
+            "A. Beebe struck out looking.",
+            "S. Matz grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Fitch singled to shortstop.",
+            "K. Baran out at first 1b to 2b, SAC, bunt; T. Fitch advanced to second.",
+            "S. Serrano reached on a fielder's choice; T. Fitch out at third ss to 2b to 3b.",
+            "A. Sealey singled down the lf line; S. Serrano advanced to second.",
+            "L. Lembo grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Miccio flied out to cf.",
+            "O. Wolk singled, out at second 3b to ss to 2b.",
+            "A. Beebe popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Matz doubled to right field.",
+            "S. Matz stole third.",
+            "T. Fitch struck out swinging.",
+            "K. Baran walked.",
+            "K. Baran advanced to second on the throw; S. Matz scored on the throw.",
+            "S. Serrano doubled down the lf line, RBI; K. Baran scored.",
+            "A. McNamee to p for C. Indyk.",
+            "A. Sealey grounded out to 2b; S. Serrano advanced to third.",
+            "L. Lembo singled down the rf line, RBI; S. Serrano scored.",
+            "L. Lembo stole second.",
+            "G. Miccio struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "O. Wolk doubled to right field.",
+            "A. Beebe doubled to left field, RBI; O. Wolk scored.",
+            "H. Pruett pinch ran for A. Beebe.",
+            "S. Matz grounded out to c.",
+            "E. Zobel pinch hit for T. Fitch.",
+            "E. Zobel singled to left field; H. Pruett advanced to third.",
+            "E. Zobel stole second.",
+            "K. Baran grounded out to p.",
+            "S. Serrano singled to shortstop, RBI; E. Zobel advanced to third; H. Pruett scored.",
+            "S. Serrano advanced to second on a passed ball.",
+            "A. Sealey doubled to right center, RBI; S. Serrano scored; E. Zobel scored.",
+            "L. Lembo grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Littlefie to c for S. Manzione.",
+            "G. Miccio singled to left field.",
+            "O. Wolk singled up the middle; G. Miccio advanced to second.",
+            "T. Fitch to c for A. Beebe.",
+            "A. Beebe to dp for E. Zobel.",
+            "G. Miccio stole third.",
+            "O. Wolk stole second.",
+            "A. Beebe walked.",
+            "C. Indyk to p for A. McNamee.",
+            "A. Farkash singled to left field, RBI; A. Beebe advanced to second; O. Wolk advanced to third; G. Miccio scored.",
+            "E. Zobel pinch hit for T. Fitch.",
+            "A. Beebe to c.",
+            "E. Zobel to dp.",
+            "E. Zobel struck out swinging.",
+            "K. Baran singled through the right side, RBI; A. Farkash advanced to second; A. Beebe advanced to third; O. Wolk scored.",
+            "S. Serrano struck out swinging.",
+            "A. Sealey singled to shortstop, RBI; K. Baran advanced to second; A. Farkash advanced to third; A. Beebe scored.",
+            "L. Lembo fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/university-of-hartford/boxscore/11019",
+      "date": "4/18/2025",
+      "opponent": "University Of Hartford",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Sealey singled to left field.",
+            "A. Sealey stole second, advanced to third on a throwing error by c.",
+            "L. Lembo struck out looking.",
+            "G. Miccio walked.",
+            "G. Miccio stole second.",
+            "O. Wolk singled up the middle, RBI, advanced to second on the throw; G. Miccio advanced to third, out at home cf to c; A. Sealey scored.",
+            "E. Zobel fouled out to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Beebe lined out to rf.",
+            "A. Farkash walked.",
+            "A. Walker out at first 3b to 2b, SAC, bunt; A. Farkash advanced to second.",
+            "S. Serrano doubled to right field, RBI; A. Farkash scored.",
+            "A. Sealey flied out to lf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Lembo struck out looking.",
+            "G. Miccio popped up to 2b.",
+            "O. Wolk struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Zobel grounded out to ss.",
+            "A. Beebe flied out to cf.",
+            "A. Farkash flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Walker flied out to cf.",
+            "S. Serrano grounded out to ss.",
+            "A. Sealey singled to left field.",
+            "L. Lembo struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "G. Miccio fouled out to 1b.",
+            "O. Wolk flied out to cf.",
+            "E. Zobel grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Myers pinch hit for A. Beebe.",
+            "H. Myers grounded out to 3b.",
+            "A. Farkash grounded out to ss.",
+            "A. Walker struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/endicott-college/boxscore/11037",
+      "date": "4/19/2025",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Indyk, Chelsea",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Nowicki hit by pitch (0-0).",
+            "Mitchell walked (3-0 BBBB); Nowicki advanced to second.",
+            "Shapleigh struck out swinging (3-2 BBBKSS).",
+            "Gamache hit by pitch (1-0 B); Mitchell advanced to second; Nowicki advanced to third.",
+            "Berdos flied out to lf, SF, RBI (0-1 S); Nowicki scored.",
+            "McClaflin walked (3-1 KBBBB); Gamache advanced to second; Mitchell advanced to third.",
+            "Romero walked, RBI (3-1 BKBBB); McClaflin advanced to second; Gamache advanced to third; Mitchell scored.",
+            "Dropped foul ball, E5.",
+            "Lear struck out looking (1-2 BFFFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Cummings flied out to lf down the lf line (0-0).",
+            "Nowicki singled to shortstop (2-2 FBFFFB).",
+            "Mitchell popped up to 2b (0-1 F).",
+            "Shapleigh popped up to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gamache out at first 3b to 2b, bunt (0-0).",
+            "Berdos singled down the rf line (0-1 S).",
+            "Berdos stole second.",
+            "McClaflin homered to left center, 2 RBI (3-2 FFBBBFF); Berdos scored.",
+            "Romero flied out to cf to left center (0-1 K).",
+            "Lear popped up to c (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cummings grounded out to 2b (2-2 BBFF).",
+            "Nowicki grounded out to 3b (0-1 K).",
+            "Mitchell struck out swinging (0-2 FKFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Shapleigh flied out to rf (3-1 BBSB).",
+            "Gamache popped up to 1b (0-0).",
+            "Berdos popped up to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "McClaflin walked (3-1 BKBBB).",
+            "Romero out at first 3b to 2b, SAC, bunt (0-1 S); McClaflin advanced to second.",
+            "Saccoccio pinch hit for Lear.",
+            "Saccoccio hit by pitch (0-0).",
+            "Tower pinch hit for Cummings.",
+            "Tower hit by pitch (0-1 F); Saccoccio advanced to second; McClaflin advanced to third.",
+            "A. McNamee to p for C. Indyk.",
+            "Nowicki hit by pitch, RBI (1-0 B); Tower advanced to second; Saccoccio advanced to third; McClaflin scored.",
+            "Mitchell reached on a fielder's choice to pitcher (3-2 BBBKK); Nowicki advanced to second; Tower advanced to third, scored on a throwing error by c; Saccoccio out at home p to c.",
+            "Shapleigh doubled down the rf line, 2 RBI (1-1 FB); Mitchell scored; Nowicki scored."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/endicott-college/boxscore/11038",
+      "date": "4/19/2025",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Medor, Molly",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Nowicki grounded out to 2b (2-2 FBSB).",
+            "Mitchell struck out swinging (2-2 BKBKS).",
+            "Shapleigh walked (3-2 BKKBBB).",
+            "Saccoccio lined out to 2b (3-2 BKBSB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Berdos flied out to cf (1-0 B).",
+            "McClaflin lined out to 3b (1-1 BK).",
+            "Romero walked (3-2 BBBKFB).",
+            "Lear reached on a dropped fly by ss (0-1 F); Romero advanced to second.",
+            "Tower singled up the middle, RBI (0-0); Lear advanced to second, out at third c to 3b; Romero scored, unearned."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Nowicki singled to third base (1-1 KB).",
+            "Mitchell flied out to rf (0-2 FK).",
+            "Shapleigh struck out looking (3-2 BBFKBFK).",
+            "Saccoccio fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Berdos grounded out to p (1-2 BKF).",
+            "McClaflin grounded out to 3b (0-1 K).",
+            "Romero doubled to right field (3-2 BKFBB).",
+            "Lear lined out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Tower struck out looking (2-2 FBFFBFK).",
+            "Nowicki flied out to rf (2-1 BBS).",
+            "Mitchell walked (3-0 BBBB).",
+            "Shapleigh reached on a fielding error by 2b (2-1 KBB); Mitchell advanced to second on the error, advanced to third on the error.",
+            "Saccoccio homered to center field, unearned, 3 RBI (1-1 FB); Shapleigh scored, unearned; Mitchell scored, unearned.",
+            "Berdos grounded out to 1b unassisted (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "McClaflin singled to third base (0-0).",
+            "C. Indyk to p for M. Medor.",
+            "Romero out at first p to 2b, SAC, bunt (0-0); McClaflin advanced to second.",
+            "Story pinch hit for Lear.",
+            "Story flied out to lf (0-1 K).",
+            "Tower grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Nowicki singled to left field (0-0).",
+            "Mitchell struck out swinging (0-2 KSFFS).",
+            "Shapleigh hit by pitch (1-0 B); Nowicki advanced to second.",
+            "Saccoccio reached on a fielder's choice to shortstop (0-1 F); Shapleigh out at second ss unassisted; Nowicki advanced to third.",
+            "Berdos walked (3-2 BSBSFBB); Saccoccio advanced to second.",
+            "McClaflin grounded out to ss (2-2 BSSFB)."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/clark-university/boxscore/11217",
+      "date": "4/22/2025",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Medor, Molly",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Quigley walked.",
+            "A. Dillon doubled down the rf line, RBI; C. Quigley scored.",
+            "R. Mauro walked.",
+            "M. Dube fouled out to c.",
+            "A. Piana walked; R. Mauro advanced to second; A. Dillon advanced to third.",
+            "G. Castro reached on a fielder's choice; A. Piana advanced to second; R. Mauro advanced to third; A. Dillon out at home ss to c.",
+            "B. Buzzeo struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Andre walked.",
+            "A. McNamee to p for M. Medor.",
+            "E. Spence flied out to lf.",
+            "C. Quigley out at first 3b to 2b, SAC, bunt; C. Andre advanced to second.",
+            "A. Dillon lined out to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "R. Mauro walked.",
+            "M. Dube walked; R. Mauro advanced to second.",
+            "A. Piana grounded into double play ss to 2b to 1b; M. Dube out on the play; R. Mauro advanced to third.",
+            "G. Castro struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Buzzeo reached first on a fielding error by 2b.",
+            "C. Andre struck out swinging.",
+            "E. Spence grounded out to 3b; B. Buzzeo advanced to second.",
+            "C. Quigley singled to right center, RBI; B. Buzzeo scored, unearned.",
+            "A. Dillon popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "R. Mauro flied out to lf.",
+            "M. Dube walked.",
+            "A. Piana reached on a fielder's choice; M. Dube out at second ss to 1b.",
+            "G. Castro reached first on a fielding error by 3b; A. Piana advanced to second.",
+            "B. Buzzeo singled to left field; G. Castro advanced to second; A. Piana advanced to third.",
+            "C. Andre struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Spence singled to right field.",
+            "E. Spence stole second.",
+            "C. Quigley lined out to ss.",
+            "A. Dillon grounded out to p; E. Spence advanced to third on a fielder's choice.",
+            "R. Mauro singled up the middle, RBI; E. Spence scored.",
+            "M. Dube walked; R. Mauro advanced to second.",
+            "A. Piana singled up the middle, RBI; M. Dube advanced to second; R. Mauro scored.",
+            "G. Castro singled to right field; A. Piana advanced to second; M. Dube advanced to third.",
+            "B. Buzzeo flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Dupre to lf for C. Steiniger.",
+            "C. Andre struck out swinging.",
+            "E. Spence out at first c to 2b, bunt.",
+            "C. Quigley walked.",
+            "A. Dillon lined out to rf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/clark-university/boxscore/11027",
+      "date": "4/22/2025",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Quigley walked.",
+            "A. Dillon grounded out to 2b; C. Quigley advanced to second.",
+            "R. Mauro singled up the middle, RBI; C. Quigley scored.",
+            "M. Dube struck out swinging.",
+            "A. Piana struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "F. Salvati struck out swinging.",
+            "G. Castro struck out looking.",
+            "M. Dillon fouled out to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Spence grounded out to c unassisted.",
+            "C. Quigley struck out looking.",
+            "A. Dillon popped up to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Mauro singled up the middle.",
+            "M. Dube flied out to cf.",
+            "A. Piana flied out to rf.",
+            "F. Salvati struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "G. Castro lined out to ss.",
+            "M. Dillon popped up to ss.",
+            "E. Spence fouled out to c."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Quigley flied out to cf.",
+            "A. Dillon singled to right center.",
+            "R. Mauro fouled out to 3b.",
+            "M. Dube singled to center field, RBI; A. Dillon scored.",
+            "A. Piana struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Littlefie to c for M. Jo-Laudat.",
+            "S. Dupre to lf for M. Fortier.",
+            "M. Griffin pinch hit for F. Salvati.",
+            "M. Griffin grounded out to ss.",
+            "G. Castro struck out looking.",
+            "E. Traynor pinch hit for M. Dillon.",
+            "E. Traynor struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/umass-boston/boxscore/11039",
+      "date": "4/24/2025",
+      "opponent": "Umass Boston",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Richland singled up the middle.",
+            "H. Tilberry flied out to cf.",
+            "S. Richland stole second.",
+            "B. Melchiond struck out swinging.",
+            "S. Richland stole third, scored on an error by 3b, unearned.",
+            "H. Krockta flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Miner struck out swinging.",
+            "M. Matthews popped up to ss.",
+            "C. Zito struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Weinstein grounded out to ss.",
+            "E. Delisle walked.",
+            "S. Richland out at first p to 2b, SAC, bunt; E. Delisle advanced to second.",
+            "H. Tilberry flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Melchiond grounded out to ss.",
+            "H. Krockta grounded out to 2b.",
+            "L. Miner grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Matthews popped up to 3b.",
+            "C. Zito grounded out to 3b.",
+            "A. Weinstein singled to shortstop.",
+            "N. Fotopoulo popped up to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Richland singled to shortstop.",
+            "S. Richland stole second.",
+            "H. Tilberry walked.",
+            "B. Melchiond reached on a fielder's choice; H. Tilberry advanced to second; S. Richland out at third ss to 3b.",
+            "H. Krockta reached on a fielder's choice; B. Melchiond advanced to second; H. Tilberry out at third 3b unassisted.",
+            "L. Miner grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Cahill struck out looking.",
+            "C. Zito hit by pitch.",
+            "A. Weinstein popped up to 1b.",
+            "N. Fotopoulo singled to right center; C. Zito advanced to second.",
+            "S. Richland reached on a fielder's choice; N. Fotopoulo advanced to second; C. Zito out at third 3b unassisted."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/umass-boston/boxscore/11040",
+      "date": "4/24/2025",
+      "opponent": "Umass Boston",
+      "pitchers": [
+        "Medor, Molly",
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Richland fouled out to 3b.",
+            "H. Tilberry singled through the left side.",
+            "H. Tilberry stole second.",
+            "B. Melchiond walked.",
+            "L. Miner singled, bunt; B. Melchiond advanced to second; H. Tilberry advanced to third.",
+            "M. Matthews reached on a fielder's choice; L. Miner advanced to second; B. Melchiond advanced to third; H. Tilberry out at home 3b to c.",
+            "K. Gray struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Fotopoulo out at first 1b to 2b.",
+            "A. Rodriguez flied out to lf.",
+            "G. Granger flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Richland struck out swinging.",
+            "H. Tilberry flied out to rf.",
+            "B. Melchiond walked.",
+            "B. Melchiond advanced to second on a wild pitch.",
+            "L. Miner struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Matthews homered to left field, RBI.",
+            "K. Gray walked.",
+            "N. Fotopoulo walked; K. Gray advanced to second.",
+            "A. Rodriguez singled through the left side; N. Fotopoulo advanced to second; K. Gray advanced to third.",
+            "G. Granger flied out to rf, sacrifice fly, RBI; A. Rodriguez advanced to second; N. Fotopoulo advanced to third; K. Gray scored.",
+            "S. Richland grounded out to p, SAC, bunt, RBI; A. Rodriguez advanced to third; N. Fotopoulo scored.",
+            "H. Tilberry flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Melchiond grounded out to 2b.",
+            "L. Miner flied out to rf.",
+            "M. Matthews singled to left field.",
+            "M. Matthews advanced to second on a wild pitch.",
+            "K. Gray singled to shortstop; M. Matthews out at third ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Fotopoulo grounded out to ss.",
+            "A. Rodriguez struck out swinging, out at first c to 1b.",
+            "G. Granger singled to right field.",
+            "S. Richland lined out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "H. Tilberry walked, RBI.",
+            "B. Melchiond singled to shortstop; H. Tilberry advanced to second.",
+            "C. Indyk to p for M. Medor.",
+            "L. Miner out at first 3b to 2b, SAC, bunt; B. Melchiond advanced to second; H. Tilberry advanced to third.",
+            "M. Matthews popped up to ss, RBI; H. Tilberry stole home.",
+            "E. Delisle pinch hit for K. Gray.",
+            "E. Delisle hit by pitch.",
+            "N. Fotopoulo reached first on a fielding error by 3b; E. Delisle advanced to second; B. Melchiond advanced to third.",
+            "A. Rodriguez walked; N. Fotopoulo advanced to second; E. Delisle advanced to third; B. Melchiond scored.",
+            "G. Granger popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/suffolk-university/boxscore/11041",
+      "date": "4/25/2025",
+      "opponent": "Suffolk University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carignan flied out to lf (1-1 FB).",
+            "Gustafson popped up to ss (2-2 FBFFB).",
+            "Brandow flied out to cf (1-2 FKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Turnbull singled up the middle (0-1 F).",
+            "Newcomb pinch ran for Turnbull.",
+            "Mills popped up to ss (0-0).",
+            "Newcomb advanced to second on a wild pitch.",
+            "Newhall struck out swinging (3-2 BBBKFFFS).",
+            "Quintana flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Carvalho popped up to 2b (2-1 FBB).",
+            "Rucinski, D. popped up to 1b (2-2 BBSF).",
+            "Carignan singled to left field (0-0).",
+            "Gustafson popped up to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brandow popped up to ss (3-2 BBBKF).",
+            "Turnbull singled up the middle (0-1 F).",
+            "Mills flied out to rf (3-1 KBBB).",
+            "Newhall struck out looking (1-2 BSFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Quintana hit by pitch (1-1 K).",
+            "Carvalho flied out to cf (1-0 B).",
+            "Rucinski, D. fouled out to 2b.",
+            "Carignan singled to center field (1-0 B); Quintana advanced to second.",
+            "Gustafson singled to center field, RBI, advanced to second on an error by cf, advanced to third on the throw (0-0); Carignan advanced to second, scored on the error, unearned; Quintana scored.",
+            "Brandow popped up to 2b (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Turnbull grounded out to 2b (1-2 FBS).",
+            "Mills flied out to rf.",
+            "Newhall singled down the lf line (0-1 F).",
+            "Quintana flied out to rf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Carvalho walked (3-2 BBFFBB).",
+            "Rucinski, D. flied out to rf (0-0).",
+            "Carignan flied out to cf (0-1 F).",
+            "Gustafson struck out looking (2-2 BBFFK)."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/suffolk-university/boxscore/11043",
+      "date": "4/25/2025",
+      "opponent": "Suffolk University",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carignan doubled to center field (1-1 BF).",
+            "Gustafson out at first 1b to 2b, SAC, bunt (1-1 FB); Carignan advanced to third.",
+            "Brandow reached on an error by cf, SF, RBI (1-2 BSK); Carignan scored.",
+            "Doidge popped up to ss (2-1 BFB).",
+            "Mills grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Newhall popped up to 3b (0-1 K).",
+            "Quintana doubled to left field (1-0 B).",
+            "Carvalho out at first 1b to 2b, SAC, bunt (0-0); Quintana advanced to third.",
+            "Rucinski, D. popped up to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Carignan flied out to cf (1-0 B).",
+            "Gustafson grounded out to ss (1-0 B).",
+            "Brandow grounded out to 3b (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Doidge struck out looking (0-2 KSK).",
+            "Mills singled up the middle (1-2 KBK).",
+            "Mills stole second.",
+            "Newhall singled through the left side (3-1 BBSB); Mills advanced to third.",
+            "Quintana popped up to 3b (1-2 KBFF).",
+            "Carvalho singled up the middle, RBI (0-0); Newhall advanced to second; Mills scored.",
+            "Rucinski, D. lined out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carignan flied out to lf (2-2 BBKK).",
+            "Gustafson walked (3-2 BKBFFBB).",
+            "Brandow struck out swinging (1-2 KKBS); Gustafson stole second.",
+            "Doidge popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mills flied out to cf (2-0 BB).",
+            "Newhall popped up to 3b (2-2 KKBB).",
+            "Quintana grounded out to ss (1-2 BFF)."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/roger-williams-university/boxscore/11046",
+      "date": "4/27/2025",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Maurao singled down the rf line, advanced to second on a throwing error by rf.",
+            "S. Starratt doubled down the lf line, RBI; L. Maurao scored.",
+            "H. Williams walked.",
+            "V. Chamberli struck out swinging.",
+            "C. Thomas grounded out to 2b; H. Williams advanced to second; S. Starratt advanced to third.",
+            "K. O'Connor fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Klingberg out at first 3b to 2b, bunt.",
+            "C. Denovelli grounded out to 3b.",
+            "J. Wells hit by pitch.",
+            "J. Wells out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Maurao lined out to 3b.",
+            "S. Starratt flied out to lf.",
+            "H. Williams doubled to left field.",
+            "V. Chamberli grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Thomas flied out to lf.",
+            "K. O'Connor grounded out to p.",
+            "A. Klingberg singled through the left side.",
+            "C. Denovelli flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Wells walked.",
+            "L. Maurao out at first 1b to 2b, SAC, bunt; J. Wells advanced to second.",
+            "S. Starratt walked.",
+            "H. Williams flied out to rf; J. Wells advanced to third.",
+            "V. Chamberli lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Thomas walked.",
+            "K. O'Connor singled to right field; C. Thomas advanced to third.",
+            "K. O'Connor stole second.",
+            "A. Klingberg struck out swinging.",
+            "C. Denovelli doubled to right field, 2 RBI; K. O'Connor scored; C. Thomas scored.",
+            "M. Foley pinch ran for C. Denovelli.",
+            "J. Wells grounded into double play rf to ss; M. Foley out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. West-Test to rf for S. Manzione.",
+            "L. Maurao flied out to lf.",
+            "S. Starratt popped up to 2b.",
+            "H. Williams reached first on a fielding error by ss.",
+            "V. Chamberli struck out swinging."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/roger-williams-university/boxscore/11049",
+      "date": "4/27/2025",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Maurao hit by pitch.",
+            "S. Starratt singled through the right side; L. Maurao advanced to second.",
+            "H. Williams fouled out to 3b.",
+            "C. Denovelli flied out to cf; L. Maurao advanced to third.",
+            "C. Thomas struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. O'Connor reached first on a fielding error by ss.",
+            "K. Burr out at first 1b to 2b, SAC, bunt; K. O'Connor advanced to second.",
+            "J. Wells struck out swinging.",
+            "N. Fraser flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Maurao singled to left field.",
+            "S. Starratt homered to right center, 2 RBI; L. Maurao scored.",
+            "H. Williams flied out to lf.",
+            "C. Denovelli flied out to rf.",
+            "C. Thomas struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. O'Connor grounded out to ss.",
+            "K. Burr popped up to 2b.",
+            "J. Wells reached first on a fielding error by 1b.",
+            "N. Fraser reached on a fielder's choice; J. Wells out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Maurao grounded out to p.",
+            "S. Starratt grounded out to 3b.",
+            "H. Williams grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Denovelli popped up to 2b.",
+            "V. Chamberli grounded out to 3b.",
+            "K. O'Connor popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Merrow pinch hit for K. Burr.",
+            "S. Merrow grounded out to ss.",
+            "J. Wells flied out to cf.",
+            "N. Fraser popped up to 2b."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "L. Maurao N. Fraser placed on second.",
+            "A. Klingberg pinch ran for N. Fraser.",
+            "L. Maurao out at first 3b to 2b, SAC, bunt; A. Klingberg advanced to third.",
+            "S. Starratt popped up to 2b.",
+            "H. Williams fouled out to c."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/framingham-state-university/boxscore/11051",
+      "date": "4/29/2025",
+      "opponent": "Framingham State University",
+      "pitchers": [
+        "Indyk, Chelsea",
+        "McNamee, Ally"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Grassia hit by pitch.",
+            "E. Etemad-Gi out at first 3b to 2b, SAC, bunt; B. Grassia advanced to second.",
+            "M. Rooney struck out swinging.",
+            "J. Pepe tripled down the rf line, RBI; B. Grassia scored.",
+            "E. Carignan struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Behrikis fouled out to 3b.",
+            "I. MacDonald struck out looking.",
+            "M. Cadena reached first on a dropped fly by 2b.",
+            "G. Paolino walked; M. Cadena advanced to second.",
+            "B. Grassia reached on a fielder's choice; G. Paolino advanced to second; M. Cadena out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Etemad-Gi grounded out to ss.",
+            "M. Rooney fouled out to lf.",
+            "J. Pepe struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Carignan fouled out to 1b.",
+            "A. Behrikis reached first on a dropped fly by lf.",
+            "I. MacDonald popped up to 2b.",
+            "M. Cadena singled to shortstop; A. Behrikis advanced to second.",
+            "G. Paolino popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Eason to rf.",
+            "E. West-Test to dp.",
+            "A. McNamee to p for C. Indyk.",
+            "A. Gray to lf for E. Etemad-Gi.",
+            "A. Roche to ss for M. Rooney.",
+            "B. Grassia grounded out to ss.",
+            "A. Gray reached first on a fielding error by 1b.",
+            "A. Gray advanced to second on a wild pitch.",
+            "A. Roche singled to left field; A. Gray advanced to third.",
+            "K. Brodzinsk pinch hit for J. Pepe.",
+            "K. Brodzinsk singled to left field, RBI; A. Roche advanced to second; A. Gray scored.",
+            "H. Jensen pinch hit for E. Carignan.",
+            "H. Jensen singled up the middle; K. Brodzinsk advanced to second; A. Roche advanced to third.",
+            "C. Leger pinch hit for A. Behrikis.",
+            "C. Leger reached on a fielder's choice, RBI; H. Jensen out at second 2b unassisted; K. Brodzinsk advanced to third; A. Roche scored.",
+            "R. Eagan pinch hit for I. MacDonald.",
+            "R. Eagan walked; C. Leger advanced to second.",
+            "V. Connelly pinch hit for M. Cadena.",
+            "V. Connelly popped up to 3b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/framingham-state-university/boxscore/11053",
+      "date": "4/29/2025",
+      "opponent": "Framingham State University",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Grassia hit by pitch.",
+            "E. Etemad-Gi struck out swinging.",
+            "M. Rooney reached on a fielder's choice; B. Grassia out at second ss to 2b.",
+            "J. Pepe doubled to right field, RBI; M. Rooney scored.",
+            "E. Carignan struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Behrikis struck out looking.",
+            "M. Cadena struck out looking.",
+            "A. Sillings lined out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Paolino fouled out to c.",
+            "B. Grassia grounded out to ss.",
+            "E. Etemad-Gi singled to third base.",
+            "E. Etemad-Gi stole second.",
+            "M. Rooney walked.",
+            "J. Pepe grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Carignan fouled out to c.",
+            "A. Behrikis hit by pitch.",
+            "M. Cadena reached on a fielder's choice; A. Behrikis out at second 2b to ss.",
+            "A. Sillings struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Brodzinsk to rf for G. Paolino.",
+            "K. Brodzinsk hit by pitch.",
+            "B. Grassia singled to right center; K. Brodzinsk out at second rf to ss.",
+            "E. Etemad-Gi reached on a fielder's choice; B. Grassia out at second p to ss.",
+            "E. Etemad-Gi stole second.",
+            "M. Rooney struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Pepe struck out looking.",
+            "E. Carignan singled through the left side.",
+            "A. Behrikis flied out to cf.",
+            "M. Cadena struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Sillings flied out to rf.",
+            "I. MacDonald flied out to rf.",
+            "B. Grassia hit by pitch.",
+            "E. Etemad-Gi struck out looking."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/western-new-england-university/boxscore/11166",
+      "date": "5/7/2025",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Indyk, Chelsea",
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Rodriguez struck out swinging.",
+            "A. Carrasqui grounded out to 2b.",
+            "G. Hemstock flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Kane singled to left field.",
+            "A. Ferriouol flied out to cf.",
+            "N. Salanto grounded into double play ss to 2b to 1b; R. Kane out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Baumann flied out to cf.",
+            "A. Barnhart fouled out to 3b.",
+            "S. McDaniel struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Rodriguez singled to left field.",
+            "A. Carrasqui popped up to 3b.",
+            "G. Hemstock reached on a fielder's choice; M. Rodriguez out at second ss unassisted.",
+            "R. Kane grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Ferriouol homered to center field, RBI.",
+            "N. Salanto flied out to cf.",
+            "K. Baumann popped up to ss.",
+            "A. Barnhart flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. McDaniel grounded out to 3b.",
+            "M. Rodriguez grounded out to ss.",
+            "A. Carrasqui grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "G. Hemstock singled up the middle.",
+            "A. Poisson pinch ran for G. Hemstock.",
+            "R. Kane singled to left field; A. Poisson advanced to second.",
+            "M. Medor to p for C. Indyk.",
+            "A. Ferriouol struck out swinging.",
+            "N. Salanto doubled to left field, RBI; R. Kane advanced to third; A. Poisson scored.",
+            "K. Bouchard pinch ran for N. Salanto.",
+            "K. Baumann struck out looking.",
+            "A. Barnhart singled to right field, 2 RBI; K. Bouchard scored; R. Kane scored.",
+            "S. McDaniel lined out to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/suffolk-university/boxscore/11221",
+      "date": "5/8/2025",
+      "opponent": "Suffolk University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Carignan flied out to cf.",
+            "L. Gustafson struck out swinging.",
+            "J. Quintana struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Turnbull grounded out to ss.",
+            "J. Mills flied out to rf.",
+            "L. Newhall struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Brandow fouled out to 1b.",
+            "A. Carvalho singled through the left side.",
+            "D. Rucinski popped up to 2b.",
+            "C. Carignan fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Gustafson fouled out to 2b.",
+            "J. Quintana singled through the left side.",
+            "E. Turnbull singled to pitcher; J. Quintana advanced to second.",
+            "A. Barnaby pinch ran for E. Turnbull.",
+            "J. Mills reached on a fielder's choice; A. Barnaby out at second 2b unassisted; J. Quintana advanced to third.",
+            "L. Newhall flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Brandow flied out to cf.",
+            "A. Carvalho singled to left center.",
+            "D. Rucinski popped up to ss.",
+            "C. Carignan flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Gustafson flied out to lf.",
+            "J. Quintana flied out to cf.",
+            "E. Turnbull lined out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Mills singled to center field.",
+            "L. Newhall popped up to c.",
+            "A. Brandow popped up to 2b.",
+            "A. Carvalho singled to left center; J. Mills advanced to second.",
+            "D. Rucinski popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/roger-williams-university/boxscore/11223",
+      "date": "5/8/2025",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Medor, Molly"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Maurao grounded out to ss.",
+            "S. Starratt homered to left field, RBI.",
+            "H. Williams flied out to cf.",
+            "C. Denovelli flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "V. Chamberli flied out to cf.",
+            "C. Thomas popped up to ss.",
+            "A. Klingberg walked.",
+            "J. Wells flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. O'Connor walked.",
+            "L. Maurao flied out to cf.",
+            "S. Starratt doubled to left center; K. O'Connor advanced to third.",
+            "H. Williams grounded out to p.",
+            "C. Denovelli struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "V. Chamberli flied out to rf.",
+            "C. Thomas popped up to 3b.",
+            "A. Klingberg singled through the left side.",
+            "J. Wells struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. O'Connor flied out to cf.",
+            "L. Maurao flied out to rf.",
+            "S. Starratt fouled out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "H. Williams grounded out to ss.",
+            "C. Denovelli singled to center field.",
+            "V. Chamberli singled through the left side; C. Denovelli advanced to second.",
+            "M. Foley pinch ran for C. Denovelli.",
+            "C. Thomas to dp for A. Fairbanks.",
+            "A. Fairbanks to p for C. Thomas.",
+            "A. Fairbanks grounded out to 2b; V. Chamberli advanced to second; M. Foley advanced to third.",
+            "A. Klingberg singled to center field, RBI; V. Chamberli advanced to third; M. Foley scored.",
+            "J. Wells grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Burr pinch hit for K. O'Connor.",
+            "K. Burr flied out to rf.",
+            "L. Maurao grounded out to ss.",
+            "S. Starratt flied out to cf."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/endicott-college/boxscore/11224",
+      "date": "5/10/2025",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Mitchell singled to right field.",
+            "A. McClaflin popped up to 3b.",
+            "C. Shapleigh flied out to lf.",
+            "E. Saccoccio singled to catcher; M. Mitchell advanced to second.",
+            "P. Berdos struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Tower fouled out to 1b.",
+            "C. Romero popped up to ss.",
+            "D. Lear struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Nowicki struck out swinging.",
+            "M. Mitchell flied out to rf.",
+            "A. McClaflin popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Shapleigh walked.",
+            "E. Saccoccio out at first 3b to 2b, SAC, bunt; C. Shapleigh advanced to second.",
+            "C. Cummings pinch ran for C. Shapleigh.",
+            "P. Berdos singled to left field.",
+            "E. Tower struck out swinging.",
+            "C. Romero reached first on a throwing error by ss, advanced to second on the error; P. Berdos advanced to second on the error, advanced to third on the error; C. Cummings advanced to third on the error, scored on the error, unearned.",
+            "D. Lear grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Nowicki out at first p to 2b, bunt.",
+            "M. Mitchell singled through the right side.",
+            "A. McClaflin fouled out to 3b.",
+            "C. Shapleigh struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Saccoccio grounded out to 3b.",
+            "P. Berdos singled down the rf line.",
+            "E. Tower singled to shortstop; P. Berdos advanced to second.",
+            "C. Romero infield fly to 2b.",
+            "K. Story pinch hit for D. Lear.",
+            "K. Story popped up to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Nowicki struck out swinging.",
+            "M. Mitchell flied out to cf.",
+            "A. McClaflin popped up to ss."
+          ]
+        }
+      ],
+      "year": 2025
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2025/western-new-england-university/boxscore/11226",
+      "date": "5/11/2025",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Indyk, Chelsea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Rodriguez flied out to lf.",
+            "A. Carrasqui grounded out to ss.",
+            "G. Hemstock struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "R. Kane singled to left center.",
+            "A. Ferriouol flied out to lf.",
+            "N. Salanto singled, bunt; R. Kane advanced to second.",
+            "K. Baumann flied out to cf.",
+            "A. Barnhart struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. McDaniel lined out to 3b.",
+            "M. Rodriguez struck out swinging.",
+            "A. Carrasqui singled up the middle.",
+            "G. Hemstock reached first on a muffed throw by p; A. Carrasqui advanced to third.",
+            "R. Kane popped up to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Ferriouol struck out looking.",
+            "N. Salanto singled through the left side.",
+            "K. Bouchard pinch ran for N. Salanto.",
+            "K. Baumann out at first 3b to 2b, SAC, bunt; K. Bouchard advanced to second.",
+            "A. Barnhart struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. McDaniel flied out to lf.",
+            "M. Rodriguez singled up the middle.",
+            "A. Carrasqui popped up to 3b.",
+            "G. Hemstock reached first on a fielding error by ss; M. Rodriguez advanced to second.",
+            "R. Kane popped up to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Ferriouol struck out swinging.",
+            "N. Salanto popped up to 2b.",
+            "K. Baumann popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Barnhart struck out swinging.",
+            "S. McDaniel struck out swinging.",
+            "M. Rodriguez singled through the left side, advanced to second on a fielding error by lf.",
+            "A. Carrasqui grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "E. West-Test to rf for S. Manzione.",
+            "G. Hemstock singled to right field.",
+            "A. Poisson pinch ran for G. Hemstock.",
+            "R. Kane flied out to lf.",
+            "A. Ferriouol singled through the left side; A. Poisson advanced to second.",
+            "N. Salanto singled to center field; A. Ferriouol advanced to second; A. Poisson advanced to third.",
+            "K. Baumann popped up to 2b.",
+            "A. Barnhart singled to right center, RBI; N. Salanto advanced to second; A. Ferriouol advanced to third; A. Poisson scored."
+          ]
+        }
+      ],
+      "year": 2025
+    }
+  ]
+}
