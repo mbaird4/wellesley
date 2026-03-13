@@ -8,7 +8,7 @@ import { calculateWoba, computeVsWellesleyStats } from '@ws/core/processors';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { ALL_OPPONENT_TEAMS, SLUG_TO_OPPONENT_NAMES } from './teams';
+import { ALL_OPPONENT_TEAMS, NEXT_OPPONENT_DATA_PATH, type NextOpponentMeta, SLUG_TO_OPPONENT_NAMES } from './teams';
 
 @Injectable()
 export class OpponentDataService {
@@ -36,12 +36,28 @@ export class OpponentDataService {
   readonly wellesleyRosterNames = signal<Set<string>>(new Set());
   readonly wellesleyPitcherOrder = signal<string[]>([]);
 
-  readonly selectedTeamName = computed(() => this.teams.find((t) => t.slug === this.slug())?.name ?? '');
+  readonly nextOpponentName = signal<string>('');
+
+  readonly selectedTeamName = computed(() => {
+    const slug = this.slug();
+
+    if (slug === NEXT_OPPONENT_DATA_PATH) {
+      return this.nextOpponentName() || 'Next Opponent';
+    }
+
+    return this.teams.find((t) => t.slug === slug)?.name ?? '';
+  });
 
   readonly dataDir = computed(() => {
-    const team = this.teams.find((t) => t.slug === this.slug());
+    const slug = this.slug();
 
-    return team?.dataPath ?? this.slug();
+    if (slug === NEXT_OPPONENT_DATA_PATH) {
+      return NEXT_OPPONENT_DATA_PATH;
+    }
+
+    const team = this.teams.find((t) => t.slug === slug);
+
+    return team?.dataPath ?? slug;
   });
 
   readonly allYears = computed(() => {
@@ -181,12 +197,18 @@ export class OpponentDataService {
 
     effect(() => {
       const slug = this.slug();
+
       if (!slug) {
         return;
       }
 
       this.pitchingData.set(null);
       this.vsWellesleyData.set(null);
+
+      if (slug === NEXT_OPPONENT_DATA_PATH) {
+        this.loadNextOpponentMeta();
+      }
+
       this.loadTeam(this.dataDir());
     });
   }
@@ -240,12 +262,16 @@ export class OpponentDataService {
     });
   }
 
+  readonly nextOpponentSlug = signal<string>('');
+
   loadVsWellesley(slug: string): void {
     if (this.vsWellesleyData() || this.vsWellesleyLoading()) {
       return;
     }
 
-    const opponentNames = SLUG_TO_OPPONENT_NAMES[slug];
+    // For next-opponent, use the actual team slug from meta
+    const lookupSlug = slug === NEXT_OPPONENT_DATA_PATH ? this.nextOpponentSlug() : slug;
+    const opponentNames = SLUG_TO_OPPONENT_NAMES[lookupSlug];
 
     if (!opponentNames) {
       return;
@@ -285,6 +311,17 @@ export class OpponentDataService {
       error: () => {
         this.vsWellesleyData.set(null);
         this.vsWellesleyLoading.set(false);
+      },
+    });
+  }
+
+  private loadNextOpponentMeta(): void {
+    const base = document.querySelector('base')?.getAttribute('href') || '/';
+
+    this.http.get<NextOpponentMeta>(`${base}data/opponents/${NEXT_OPPONENT_DATA_PATH}/meta.json`).subscribe({
+      next: (meta) => {
+        this.nextOpponentName.set(meta.name);
+        this.nextOpponentSlug.set(meta.slug);
       },
     });
   }

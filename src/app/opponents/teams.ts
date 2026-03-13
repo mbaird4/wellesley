@@ -66,6 +66,18 @@ export const FLORIDA_TEAMS: TeamEntry[] = [
 
 export const ALL_OPPONENT_TEAMS: TeamEntry[] = [...OPPONENT_TEAMS, ...FLORIDA_TEAMS];
 
+export const NEXT_OPPONENT_DATA_PATH = 'next-opponent';
+
+export interface NextOpponentMeta {
+  slug: string;
+  name: string;
+  domain: string;
+  site: 'sidearm' | 'presto';
+  gameDate: string;
+  isHome: boolean;
+  scrapedAt: string;
+}
+
 /**
  * Maps opponent slugs to full institutional names used in Wellesley pitching JSON.
  * Matching is case-insensitive + trimmed to handle quirks like trailing spaces.
@@ -81,6 +93,11 @@ export const SLUG_TO_OPPONENT_NAMES: Record<string, string[]> = {
   springfield: ['Springfield', 'Springfield College'],
   wheaton: ['Wheaton', 'Wheaton College Mass'],
   wpi: ['Wpi', 'Worcester Polytechnic Institute'],
+  // Non-conference teams
+  curry: ['Curry', 'Curry College'],
+  endicott: ['Endicott', 'Endicott College'],
+  brandeis: ['Brandeis', 'Brandeis University'],
+  nichols: ['Nichols', 'Nichols College'],
   // Florida trip teams
   wesleyan: ['Wesleyan Conn'],
   uwrf: ['University Of Wisconsin River Falls'],

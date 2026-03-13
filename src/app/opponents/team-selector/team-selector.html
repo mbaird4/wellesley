@@ -39,6 +39,33 @@
         </a>
       }
     }
+
+    @if (nextOpponent(); as next) {
+      <span
+        class="text-content-dim mt-4 mb-1 px-3 text-[0.65rem] font-semibold tracking-widest uppercase"
+      >
+        Next Opponent
+      </span>
+
+      <a
+        [routerLink]="[next.slug, activeTab()]"
+        routerLinkActive
+        #rla="routerLinkActive"
+        class="flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left text-sm font-medium no-underline transition-colors"
+        [class]="
+          rla.isActive
+            ? 'bg-brand-bg text-brand-text'
+            : 'text-content-muted hover:text-content-bright hover:bg-surface-hover bg-transparent'
+        "
+      >
+        <span>{{ next.name }}</span>
+        @if (formattedDate()) {
+          <span class="text-content-dim text-[0.65rem] font-normal">
+            {{ formattedDate() }}
+          </span>
+        }
+      </a>
+    }
   </nav>
 } @else {
   <nav class="scrollbar-none -mx-2 flex gap-1.5 overflow-x-auto px-2 pb-2">
@@ -76,6 +103,29 @@
           {{ team.name }}
         </a>
       }
+    }
+
+    @if (nextOpponent(); as next) {
+      <span class="bg-surface-border mx-1 my-auto h-4 w-px shrink-0"></span>
+
+      <a
+        [routerLink]="[next.slug, activeTab()]"
+        routerLinkActive
+        #rla="routerLinkActive"
+        class="flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium whitespace-nowrap no-underline transition-colors"
+        [class]="
+          rla.isActive
+            ? 'bg-brand-bg text-brand-text'
+            : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+        "
+      >
+        {{ next.name }}
+        @if (formattedDate()) {
+          <span class="text-content-dim text-xs font-normal">
+            {{ formattedDate() }}
+          </span>
+        }
+      </a>
     }
   </nav>
 }

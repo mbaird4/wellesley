@@ -5,6 +5,8 @@
       layout="vertical"
       [teams]="teams"
       [floridaTeams]="floridaTeams"
+      [nextOpponent]="nextOpponentTeam()"
+      [nextOpponentDate]="nextOpponentDate()"
       [activeTab]="activeTab()"
       class="print:hidden"
     />
@@ -17,6 +19,8 @@
     layout="horizontal"
     [teams]="teams"
     [floridaTeams]="floridaTeams"
+    [nextOpponent]="nextOpponentTeam()"
+    [nextOpponentDate]="nextOpponentDate()"
     [activeTab]="activeTab()"
     class="print:hidden"
   />
