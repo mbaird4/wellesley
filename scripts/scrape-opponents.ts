@@ -49,6 +49,18 @@ const TEAM_ALIASES: Record<string, string[]> = {
   babson: ['Babson'],
 };
 
+// ── Non-Conference Sidearm Teams ──
+
+const NON_CONFERENCE_SIDEARM_TEAMS: Record<string, string> = {
+  brandeis: 'brandeisjudges.com',
+  nichols: 'nicholsathletics.com',
+};
+
+const NON_CONFERENCE_SIDEARM_ALIASES: Record<string, string[]> = {
+  brandeis: ['Brandeis', 'Brandeis University'],
+  nichols: ['Nichols', 'Nichols College'],
+};
+
 // ── Florida Sidearm Teams ──
 
 const FLORIDA_SIDEARM_TEAMS: Record<string, string> = {
@@ -603,6 +615,17 @@ function parseRosterOnlyFlag(): boolean {
 
 function parseFloridaFlag(): boolean {
   return process.argv.includes('--florida');
+}
+
+function parseNonConferenceFlag(): boolean {
+  return process.argv.includes('--non-conference');
+}
+
+function parseOutputDirArg(): string | null {
+  const idx = process.argv.indexOf('--output-dir');
+  if (idx === -1 || idx + 1 >= process.argv.length) return null;
+
+  return process.argv[idx + 1].trim();
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -1315,16 +1338,18 @@ async function main(): Promise<void> {
   const withGamedata = parseWithGamedataFlag();
   const rosterOnly = parseRosterOnlyFlag();
   const florida = parseFloridaFlag();
+  const nonConference = parseNonConferenceFlag();
+  const outputDirOverride = parseOutputDirArg();
   const baseOutputDir = path.resolve(__dirname, '../public/data/opponents');
-  const outputDir = florida ? path.join(baseOutputDir, 'florida') : baseOutputDir;
+  const outputDir = outputDirOverride ? path.resolve(outputDirOverride) : florida ? path.join(baseOutputDir, 'florida') : baseOutputDir;
   fs.mkdirSync(outputDir, { recursive: true });
 
-  const activeTeams = florida ? FLORIDA_SIDEARM_TEAMS : TEAMS;
-  const activeAliases = florida ? FLORIDA_SIDEARM_ALIASES : TEAM_ALIASES;
+  const activeTeams = nonConference ? NON_CONFERENCE_SIDEARM_TEAMS : florida ? FLORIDA_SIDEARM_TEAMS : TEAMS;
+  const activeAliases = nonConference ? NON_CONFERENCE_SIDEARM_ALIASES : florida ? FLORIDA_SIDEARM_ALIASES : TEAM_ALIASES;
 
-  // Merge florida aliases into TEAM_ALIASES temporarily so downstream
+  // Merge extra aliases into TEAM_ALIASES temporarily so downstream
   // functions (captionMatchesTeam, etc.) can find them
-  if (florida) {
+  if (florida || nonConference) {
     Object.assign(TEAM_ALIASES, activeAliases);
   }
 
@@ -1335,7 +1360,9 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  if (florida) {
+  if (nonConference) {
+    console.log('Mode: NON-CONFERENCE SIDEARM teams');
+  } else if (florida) {
     console.log('Mode: FLORIDA SIDEARM teams');
   }
 
@@ -1350,7 +1377,7 @@ async function main(): Promise<void> {
       console.log('  Fetching roster...');
       const rosterHtml = await fetchPage(`https://${domain}/sports/softball/roster`);
       const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
-      const teamDir = path.join(outputDir, slug);
+      const teamDir = outputDirOverride ? outputDir : path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
       const rosterOutPath = path.join(teamDir, 'roster.json');
       const enrichedRoster: Record<
@@ -1393,7 +1420,7 @@ async function main(): Promise<void> {
   console.log(`Full gamedata: ${withGamedata ? 'YES' : 'no'}`);
 
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
-    const teamDir = path.join(outputDir, slug);
+    const teamDir = outputDirOverride ? outputDir : path.join(outputDir, slug);
     fs.mkdirSync(teamDir, { recursive: true });
 
     const result = await scrapeTeam(slug, domain, years);

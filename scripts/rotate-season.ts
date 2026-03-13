@@ -255,6 +255,17 @@ async function main(): Promise<void> {
     });
   });
 
+  // 2b. Clear next-opponent data (will be re-scraped fresh for new season)
+  const nextOpponentDir = path.join(opponentsDir, 'next-opponent');
+
+  if (fs.existsSync(nextOpponentDir)) {
+    console.log('\n=== Clearing next-opponent data ===');
+
+    fs.readdirSync(nextOpponentDir).forEach((file) => {
+      deleteIfExists(path.join(nextOpponentDir, file), dryRun);
+    });
+  }
+
   // 3. Scrape fresh rosters
   if (dryRun) {
     console.log('\n=== [dry-run] Would scrape rosters ===');
