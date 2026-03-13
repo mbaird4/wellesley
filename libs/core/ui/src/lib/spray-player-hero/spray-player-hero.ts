@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { SprayChartSummary, SprayTrend, SprayZone } from '@ws/core/models';
+import type { BatHand, SprayChartSummary, SprayTrend, SprayZone } from '@ws/core/models';
 import { CENTER_ZONES, LEFT_ZONES, RIGHT_ZONES } from '@ws/core/processors';
 
 import { FormatStatPipe } from '../pipes/format-stat.pipe';
@@ -13,15 +13,21 @@ import { SprayTrendBadge } from '../spray-trend-badge/spray-trend-badge';
     SprayTrendBadge,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'flex flex-col gap-1' },
+  host: { class: 'flex flex-col gap-1 items-center' },
   template: `
-    <div class="flex items-baseline gap-3">
+    <span class="text-content-heading text-2xl font-bold">
+      {{ name() }}
+    </span>
+    <div class="text-content-dim flex items-center gap-2 text-sm">
       @if (jersey() !== undefined) {
-        <span class="text-content-dim text-sm font-medium">#{{ jersey() }}</span>
+        <span class="font-medium">#{{ jersey() }}</span>
       }
-      <span class="text-content-heading text-2xl font-bold">
-        {{ name() }}
-      </span>
+      @if (position()) {
+        <span>{{ position() }}</span>
+      }
+      @if (bats()) {
+        <span>Bats {{ batLabel() }}</span>
+      }
     </div>
     <div class="text-content-muted flex items-baseline gap-3 text-sm tabular-nums">
       <span>
@@ -57,8 +63,16 @@ import { SprayTrendBadge } from '../spray-trend-badge/spray-trend-badge';
 export class SprayPlayerHero {
   readonly name = input.required<string>();
   readonly jersey = input<number>();
+  readonly position = input<string | null>(null);
+  readonly bats = input<BatHand | null>(null);
   readonly summary = input.required<SprayChartSummary>();
   readonly trends = input<SprayTrend[]>([]);
+
+  readonly batLabel = computed(() => {
+    const map: Record<BatHand, string> = { L: 'Left', R: 'Right', S: 'Switch' };
+
+    return this.bats() ? map[this.bats()!] : null;
+  });
 
   readonly totalContact = computed(() => this.summary().totalContact);
 

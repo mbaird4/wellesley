@@ -1,6 +1,6 @@
 import { NgTemplateOutlet } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject, input, output } from '@angular/core';
-import type { SprayChartSummary, SprayTrend, SprayZone } from '@ws/core/models';
+import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
+import type { Roster, SprayChartSummary, SprayTrend, SprayZone } from '@ws/core/models';
 import { BreakpointService } from '@ws/core/util';
 
 import { SprayField } from '../spray-field/spray-field';
@@ -43,7 +43,7 @@ import { SprayPlayerNav } from '../spray-player-nav/spray-player-nav';
     }
 
     <ng-template #combinedContent>
-      <ws-spray-player-hero [name]="selectedPlayer()!" [jersey]="jerseyMap()[selectedPlayer()!]" [summary]="summary()" [trends]="trends()" />
+      <ws-spray-player-hero [name]="selectedPlayer()!" [jersey]="jerseyMap()[selectedPlayer()!]" [position]="selectedRosterEntry()?.position" [bats]="selectedRosterEntry()?.bats" [summary]="summary()" [trends]="trends()" />
       <ws-spray-field [zones]="summary().zones" [highlightZone]="highlightZone()" (zoneHover)="zoneHover.emit($event)" (zoneClick)="zoneClick.emit($event)" />
       <div class="flex items-center justify-center gap-4">
         <ws-spray-legend />
@@ -63,10 +63,21 @@ export class SprayViewCombined {
 
   readonly players = input.required<string[]>();
   readonly jerseyMap = input.required<Record<string, number>>();
+  readonly roster = input.required<Roster>();
   readonly selectedPlayer = input<string | null>(null);
   readonly summary = input.required<SprayChartSummary>();
   readonly highlightZone = input<SprayZone | null>(null);
   readonly trends = input<SprayTrend[]>([]);
+
+  readonly selectedRosterEntry = computed(() => {
+    const player = this.selectedPlayer();
+
+    if (!player) {
+      return null;
+    }
+
+    return this.roster()[player] ?? null;
+  });
 
   readonly playerChange = output<string>();
   readonly zoneHover = output<SprayZone | null>();
