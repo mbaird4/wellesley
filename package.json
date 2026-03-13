@@ -15,6 +15,7 @@
     "migrate-opponents": "ts-node --project tsconfig.scripts.json scripts/migrate-opponent-data.ts",
     "scrape-season-stats": "ts-node --project tsconfig.scripts.json scripts/scrape-season-stats.ts",
     "scrape-ext": "ts-node --project tsconfig.scripts.json scripts/scrape-opponents-ext.ts",
+    "scrape-next-opponent": "ts-node --project tsconfig.scripts.json scripts/scrape-next-opponent.ts",
     "format": "prettier --write .",
     "lint": "prettier --write . && nx run-many -t lint --fix"
   },
