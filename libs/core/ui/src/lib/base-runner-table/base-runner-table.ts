@@ -1,9 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 import type { BaseRunnerMode, BaseRunnerRow, BaseSituation } from '@ws/core/models';
 import { computeOutlierMap } from '@ws/core/processors';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
-import { OutlierClassPipe } from '../pipes/outlier-class.pipe';
+import { OutlierClassPipe, type OutlierLevel } from '../pipes/outlier-class.pipe';
 
 const SITUATIONS: { key: BaseSituation; label: string }[] = [
   { key: 'empty', label: 'No one on' },
@@ -19,6 +19,15 @@ const SITUATIONS: { key: BaseSituation; label: string }[] = [
 const MODE_OPTIONS: ToggleOption[] = [
   { value: 'at-bat-start', label: 'Start of AB' },
   { value: 'ball-in-play', label: 'Ball in Play' },
+];
+
+const ALL_OUTLIER_LEVELS: OutlierLevel[] = ['outlier-high-strong', 'outlier-high-mild', 'outlier-low-mild', 'outlier-low-strong'];
+
+const OUTLIER_LEGEND: { level: OutlierLevel; label: string }[] = [
+  { level: 'outlier-high-strong', label: 'Most often' },
+  { level: 'outlier-high-mild', label: 'More often' },
+  { level: 'outlier-low-mild', label: 'Less often' },
+  { level: 'outlier-low-strong', label: 'Least often' },
 ];
 
 @Component({
@@ -44,7 +53,26 @@ export class BaseRunnerTable {
 
   readonly situations = SITUATIONS;
   readonly modeOptions = MODE_OPTIONS;
+  readonly outlierLegend = OUTLIER_LEGEND;
 
   readonly activeRows = computed(() => (this.mode() === 'at-bat-start' ? this.rowsAtBatStart() : this.rows()));
   readonly outlierMap = computed(() => computeOutlierMap(this.activeRows()));
+  readonly visibleOutliers = signal<OutlierLevel[]>([...ALL_OUTLIER_LEVELS]);
+
+  readonly outlierActive = computed(() => {
+    const set = new Set(this.visibleOutliers());
+
+    return {
+      'outlier-high-strong': set.has('outlier-high-strong'),
+      'outlier-high-mild': set.has('outlier-high-mild'),
+      'outlier-low-mild': set.has('outlier-low-mild'),
+      'outlier-low-strong': set.has('outlier-low-strong'),
+    };
+  });
+
+  toggleOutlier(level: OutlierLevel): void {
+    const current = this.visibleOutliers();
+    const next = current.includes(level) ? current.filter((l) => l !== level) : [...current, level];
+    this.visibleOutliers.set(next);
+  }
 }

@@ -579,7 +579,7 @@
   /* ── Outlier highlighting (base-runner table) ── */
   .outlier-high-strong {
     background: rgba(34, 197, 94, 0.18);
-    color: rgb(134, 239, 172);
+    color: rgb(134, 239, 172) !important;
   }
 
   .outlier-high-mild {
@@ -588,11 +588,18 @@
 
   .outlier-low-strong {
     background: rgba(239, 68, 68, 0.18);
-    color: rgb(252, 165, 165);
+    color: rgb(252, 165, 165) !important;
   }
 
   .outlier-low-mild {
     background: rgba(239, 68, 68, 0.08);
+  }
+
+  /* Outlier legend toggles — inactive chips lose their color */
+  .outlier-toggle:not(.active) {
+    background: transparent;
+    color: var(--color-content-tertiary);
+    opacity: 0.5;
   }
 
   /* ── Woba player table (hover states requiring nesting) ── */

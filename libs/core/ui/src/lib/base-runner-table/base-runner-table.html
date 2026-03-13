@@ -1,6 +1,6 @@
 @if (showToggle()) {
-  <div class="flex items-center gap-4">
-    <h2>Base-Runner Situations (Season)</h2>
+  <div class="mb-4 flex items-center gap-4">
+    <h2 class="mb-0! leading-7.5">Base-Runner Situations (Season)</h2>
     <ws-button-toggle
       [options]="modeOptions"
       [value]="mode()"
@@ -10,7 +10,10 @@
   </div>
 }
 <div class="mb-4 overflow-x-auto">
-  <table class="stats-table base-runner-table" [class.game-table]="compact()">
+  <table
+    class="stats-table base-runner-table mb-2!"
+    [class.game-table]="compact()"
+  >
     <thead>
       <tr>
         <th rowspan="2" class="sticky-col">Slot</th>
@@ -42,14 +45,26 @@
           @for (sit of situations; track sit.key) {
             <td
               [class]="
-                outlierMap() | outlierClass: row.lineupSlot : sit.key : 0
+                outlierMap()
+                  | outlierClass
+                    : row.lineupSlot
+                    : sit.key
+                    : 0
+                    : ''
+                    : visibleOutliers()
               "
             >
               {{ row.situations[sit.key][0] }}
             </td>
             <td
               [class]="
-                outlierMap() | outlierClass: row.lineupSlot : sit.key : 1
+                outlierMap()
+                  | outlierClass
+                    : row.lineupSlot
+                    : sit.key
+                    : 1
+                    : ''
+                    : visibleOutliers()
               "
             >
               {{ row.situations[sit.key][1] }}
@@ -62,6 +77,7 @@
                     : sit.key
                     : 2
                     : (showTotals() ? '' : 'last-in-group')
+                    : visibleOutliers()
               "
             >
               {{ row.situations[sit.key][2] }}
@@ -75,6 +91,7 @@
                       : sit.key
                       : 'total'
                       : 'last-in-group'
+                      : visibleOutliers()
                 "
               >
                 {{
@@ -89,4 +106,37 @@
       }
     </tbody>
   </table>
+  <div
+    class="font-stat flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-white"
+  >
+    <span class="text-content-tertiary">
+      Colors compare lineup slots within each column:
+    </span>
+    @for (item of outlierLegend; track item.level) {
+      <button
+        class="outlier-toggle cursor-pointer rounded px-1.5 py-0.5"
+        [class]="item.level"
+        [class.active]="outlierActive()[item.level]"
+        (click)="toggleOutlier(item.level)"
+      >
+        <svg
+          class="inline-block h-3 shrink-0 overflow-hidden align-[-1px] transition-all duration-200"
+          [class]="
+            outlierActive()[item.level]
+              ? 'mr-0.5 w-3 opacity-100'
+              : 'w-0 opacity-0'
+          "
+          viewBox="0 0 12 12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="2.5 6 5 8.5 9.5 3.5" />
+        </svg>
+        {{ item.label }}
+      </button>
+    }
+  </div>
 </div>
