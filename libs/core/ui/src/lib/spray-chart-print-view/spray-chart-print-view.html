@@ -5,10 +5,10 @@
   }
 </div>
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 gap-8">
   @for (player of players(); track player.name) {
     <div class="flex break-inside-avoid flex-col items-center gap-1">
-      <h3 class="text-sm font-bold print:text-black">
+      <h3 class="mb-0 text-sm font-bold print:text-black">
         #{{ player.jersey }} {{ player.name }}
       </h3>
       <ws-spray-field [zones]="player.summary.zones" [highlightZone]="null" />
