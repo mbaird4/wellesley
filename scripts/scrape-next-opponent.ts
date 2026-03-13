@@ -265,18 +265,33 @@ async function main(): Promise<void> {
 
   // 4. Scrape the opponent data using the appropriate scraper
   const yearsArg = years.join(',');
+  const cwd = path.resolve(__dirname, '..');
 
   if (team.site === 'sidearm') {
     console.log(`\nScraping ${team.name} via Sidearm scraper...`);
     const cmd = `npm run scrape-opponents -- --non-conference --team ${slug} --years ${yearsArg} --with-pitching --with-gamedata --output-dir ${OUTPUT_DIR}`;
     console.log(`  ${cmd}\n`);
-    execSync(cmd, { stdio: 'inherit', cwd: path.resolve(__dirname, '..') });
+    execSync(cmd, { stdio: 'inherit', cwd });
   } else {
     console.log(`\nScraping ${team.name} via Presto scraper...`);
     const cmd = `npm run scrape-ext -- --site presto --non-conference --team ${slug} --years ${yearsArg} --with-pitching --with-gamedata --output-dir ${OUTPUT_DIR}`;
     console.log(`  ${cmd}\n`);
-    execSync(cmd, { stdio: 'inherit', cwd: path.resolve(__dirname, '..') });
+    execSync(cmd, { stdio: 'inherit', cwd });
   }
+
+  // 5. Scrape roster
+  if (team.site === 'sidearm') {
+    console.log(`\nScraping ${team.name} roster...`);
+    const rosterCmd = `npm run scrape-opponents -- --non-conference --team ${slug} --roster-only --output-dir ${OUTPUT_DIR}`;
+    console.log(`  ${rosterCmd}\n`);
+    execSync(rosterCmd, { stdio: 'inherit', cwd });
+  }
+
+  // 6. Scrape season stats
+  console.log(`\nScraping ${team.name} season stats...`);
+  const seasonStatsCmd = `npm run scrape-season-stats -- --team ${slug} --domain ${team.domain} --output-dir ${OUTPUT_DIR}`;
+  console.log(`  ${seasonStatsCmd}\n`);
+  execSync(seasonStatsCmd, { stdio: 'inherit', cwd });
 
   console.log('\nDone!');
 }

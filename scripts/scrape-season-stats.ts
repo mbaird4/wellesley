@@ -490,11 +490,53 @@ function parseYearArg(): number {
   return parseInt(process.argv[idx + 1].trim(), 10);
 }
 
+function parseDomainArg(): string | null {
+  const idx = process.argv.indexOf('--domain');
+
+  if (idx === -1 || idx + 1 >= process.argv.length) {
+    return null;
+  }
+
+  return process.argv[idx + 1].trim();
+}
+
+function parseSportSlugArg(): string | null {
+  const idx = process.argv.indexOf('--sport-slug');
+
+  if (idx === -1 || idx + 1 >= process.argv.length) {
+    return null;
+  }
+
+  return process.argv[idx + 1].trim();
+}
+
+function parseOutputDirArg(): string | null {
+  const idx = process.argv.indexOf('--output-dir');
+
+  if (idx === -1 || idx + 1 >= process.argv.length) {
+    return null;
+  }
+
+  return process.argv[idx + 1].trim();
+}
+
 // ── Main ──
 
 async function main(): Promise<void> {
   const teamArg = parseTeamArg();
   const year = parseYearArg();
+  const domainArg = parseDomainArg();
+  const sportSlugArg = parseSportSlugArg();
+  const outputDirArg = parseOutputDirArg();
+
+  // Ad-hoc mode: --team + --domain allows scraping teams not in the TEAMS list
+  if (teamArg && domainArg) {
+    const config: TeamConfig = { domain: domainArg, sportSlug: sportSlugArg ?? undefined };
+    const teamsToScrape = { [teamArg]: config };
+    const outDir = outputDirArg ? path.resolve(outputDirArg) : path.resolve(__dirname, '../public/data/opponents');
+
+    return scrapeTeams(teamsToScrape, outDir, year, !!outputDirArg);
+  }
 
   if (teamArg && !TEAMS[teamArg]) {
     console.error(`Unknown team: ${teamArg}`);
@@ -502,10 +544,14 @@ async function main(): Promise<void> {
   }
 
   const teamsToScrape = teamArg ? { [teamArg]: TEAMS[teamArg] } : TEAMS;
-  const outDir = path.resolve(__dirname, '../public/data/opponents');
+  const outDir = outputDirArg ? path.resolve(outputDirArg) : path.resolve(__dirname, '../public/data/opponents');
 
+  return scrapeTeams(teamsToScrape, outDir, year);
+}
+
+async function scrapeTeams(teamsToScrape: Record<string, TeamConfig>, outDir: string, year: number, flatOutput = false): Promise<void> {
   Object.entries(teamsToScrape).forEach(([slug, config]) => {
-    const teamDir = path.join(outDir, config.outDir ?? slug);
+    const teamDir = flatOutput ? outDir : path.join(outDir, config.outDir ?? slug);
 
     if (!fs.existsSync(teamDir)) {
       fs.mkdirSync(teamDir, { recursive: true });
@@ -541,7 +587,7 @@ async function main(): Promise<void> {
       fielding,
     };
 
-    const teamDir = path.join(outDir, config.outDir ?? slug);
+    const teamDir = flatOutput ? outDir : path.join(outDir, config.outDir ?? slug);
     const filename = year === new Date().getFullYear() ? 'season-stats.json' : `season-stats-${year}.json`;
     const filePath = path.join(teamDir, filename);
 
