@@ -1,23 +1,25 @@
-<div class="mb-6 flex flex-wrap items-center gap-3">
-  <label
-    for="year-select"
-    class="text-content-muted text-base font-medium tracking-[0.05em] uppercase"
+<div class="mb-6 flex flex-wrap items-center gap-2">
+  <span
+    class="text-content-muted mr-1 text-sm font-medium tracking-[0.05em] uppercase"
   >
-    Season:
-  </label>
-  <select
-    id="year-select"
-    [(ngModel)]="selectedYear"
-    (ngModelChange)="loadStats()"
-    [disabled]="loading"
-    class="year-select"
-  >
-    @for (year of availableYears; track year) {
-      <option [value]="year">{{ year }}</option>
-    }
-  </select>
+    Season
+  </span>
+  @for (year of availableYears; track year) {
+    <button
+      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-sm font-medium tabular-nums transition-[color,background] disabled:cursor-not-allowed disabled:opacity-40"
+      [class]="
+        selectedYear === year
+          ? 'bg-brand-bg text-brand-text'
+          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
+      "
+      [disabled]="loading"
+      (click)="setYear(year)"
+    >
+      {{ year }}
+    </button>
+  }
   @if (scrapedAt) {
-    <span class="text-content-dim text-xs">
+    <span class="text-content-dim ml-1 text-xs">
       {{ scrapedAt | lastUpdated }}
     </span>
   }

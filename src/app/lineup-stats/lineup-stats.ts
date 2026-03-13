@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { SoftballStatsService } from '@ws/core/data';
 import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, ResultRow } from '@ws/core/models';
 import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
@@ -11,7 +10,6 @@ import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
   imports: [
     BaseRunnerTable,
     CommonModule,
-    FormsModule,
     GameViewer,
     LastUpdatedPipe,
   ],
@@ -72,6 +70,11 @@ export class LineupStats {
         this.cdr.markForCheck();
       },
     });
+  }
+
+  setYear(year: number): void {
+    this.selectedYear = year;
+    this.loadStats();
   }
 
   toggleGame(index: number): void {
