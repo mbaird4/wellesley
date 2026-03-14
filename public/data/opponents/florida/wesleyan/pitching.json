@@ -1,7 +1,7 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-14T12:47:02.256Z",
+  "scrapedAt": "2026-03-14T18:37:02.651Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -9,28 +9,28 @@
       "w": 3,
       "l": 0,
       "era": 0,
-      "app": 4,
+      "app": 5,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 10.1,
-      "h": 10,
+      "ip": 14.1,
+      "h": 11,
       "r": 9,
       "er": 0,
       "bb": 7,
       "so": 6,
       "hr": 0,
-      "whip": 1.65,
-      "doubles": 1,
+      "whip": 1.26,
+      "doubles": 2,
       "triples": 0,
-      "ab": 46,
-      "bAvg": 0.217,
+      "ab": 58,
+      "bAvg": 0.19,
       "wp": 1,
       "hbp": 4,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Lees, Jacelyn",
@@ -63,30 +63,30 @@
     {
       "name": "DeCrescenzo, Ella",
       "w": 0,
-      "l": 0,
-      "era": 2.52,
-      "app": 3,
-      "gs": 1,
+      "l": 1,
+      "era": 4.74,
+      "app": 4,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 8.1,
-      "h": 11,
-      "r": 3,
-      "er": 3,
-      "bb": 5,
-      "so": 5,
+      "ip": 10.1,
+      "h": 18,
+      "r": 7,
+      "er": 7,
+      "bb": 7,
+      "so": 6,
       "hr": 0,
-      "whip": 1.92,
-      "doubles": 2,
+      "whip": 2.42,
+      "doubles": 5,
       "triples": 0,
-      "ab": 37,
-      "bAvg": 0.297,
+      "ab": 49,
+      "bAvg": 0.367,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Baker, Kelly",
@@ -636,6 +636,83 @@
             "Regan Valenzuela singled to center field (0-1 F); Iris Barone advanced to second; Ava Babcock advanced to third.",
             "Emilee Espinoza fouled out to 1b (0-1 K).",
             "Avery McClure reached on a fielder's choice to shortstop (0-0); Regan Valenzuela advanced to second; Iris Barone out at third ss to 3b."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/dominican-ill-/boxscore/27445",
+      "date": "3/14/2026",
+      "opponent": "Dominican Ill ",
+      "pitchers": [
+        "DeCrescenzo, Ella",
+        "Gigante, Whitney"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Isabella Olmos singled to third base (0-0).",
+            "Kayla Amormino grounded out to 1b unassisted (0-0); Isabella Olmos advanced to second.",
+            "Raegyn Davis struck out swinging (0-0).",
+            "Ryley Davis singled to left field, RBI (0-0); Isabella Olmos scored.",
+            "Kailee Diaz Randall doubled to center field, RBI (0-0); Ryley Davis scored.",
+            "Paytin Salfi singled to left field, RBI (0-0); Kailee Diaz Randall scored.",
+            "Emme Slavens grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madisen Butler walked (0-0).",
+            "Mariana Ponce pinch ran for Madisen Butler.",
+            "Sara Cornell out at first 3b to 2b, SAC (0-0); Mariana Ponce advanced to second.",
+            "Isabella Olmos doubled to center field (0-0); Mariana Ponce advanced to third.",
+            "Kayla Amormino reached on a fielder's choice, advanced to second (0-0); Isabella Olmos advanced to third; Mariana Ponce out at home ss to c to 3b.",
+            "Raegyn Davis grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ryley Davis doubled to right field (0-0).",
+            "Leilani Guzman pinch ran for Ryley Davis.",
+            "Kailee Diaz Randall walked (0-0).",
+            "Paytin Salfi singled to left field, RBI (0-0); Kailee Diaz Randall advanced to second; Leilani Guzman scored.",
+            "Whitney Gigante to p.",
+            "Ella DeCrescenzo to dp.",
+            "Emme Slavens popped up to p (0-0).",
+            "Madisen Butler reached on a fielder's choice (0-0); Paytin Salfi out at second ss to 2b; Kailee Diaz Randall advanced to third.",
+            "Sara Cornell flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Isabella Olmos grounded out to 2b (0-0).",
+            "Kayla Amormino grounded out to ss (0-0).",
+            "Raegyn Davis grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ryley Davis grounded out to 2b (0-0).",
+            "Kailee Diaz Randall flied out to rf (0-0).",
+            "Paytin Salfi lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Cassel-Siskind to cf.",
+            "Cat Palmer to 1b for Leila Campbell.",
+            "Emme Slavens doubled to left field (0-0).",
+            "Charlie Harris pinch ran for Emme Slavens.",
+            "Madisen Butler out at first p to 2b, SAC (0-0); Charlie Harris advanced to third.",
+            "Sara Cornell grounded out to 3b (0-0).",
+            "Isabella Olmos grounded out to p (0-0)."
           ]
         }
       ],
