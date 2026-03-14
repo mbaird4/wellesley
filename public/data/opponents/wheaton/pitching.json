@@ -1,31 +1,31 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-13T11:25:26.458Z",
+  "scrapedAt": "2026-03-14T11:18:00.766Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 4,
+      "w": 5,
       "l": 0,
-      "era": 0.72,
-      "app": 4,
-      "gs": 4,
-      "cg": 4,
-      "sho": 2,
+      "era": 0.62,
+      "app": 5,
+      "gs": 5,
+      "cg": 5,
+      "sho": 3,
       "sv": 0,
-      "ip": 29,
-      "h": 23,
+      "ip": 34,
+      "h": 24,
       "r": 3,
       "er": 3,
-      "bb": 2,
-      "so": 20,
+      "bb": 4,
+      "so": 22,
       "hr": 0,
-      "whip": 0.86,
+      "whip": 0.82,
       "doubles": 1,
       "triples": 0,
-      "ab": 101,
-      "bAvg": 0.228,
+      "ab": 118,
+      "bAvg": 0.203,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -771,6 +771,64 @@
             "Erica Keeley pinch hit for Cailyn Lucas.",
             "Erica Keeley struck out swinging (3-2 BBKBKFS).",
             "Carrah Scardina popped up to ss (1-2 BKS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/gordon-college/boxscore/10121",
+      "date": "3/12/2026",
+      "opponent": "Gordon College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Makayla Falco struck out swinging (2-2 BKBKS).",
+            "Isabella Rivera grounded out to ss (0-0).",
+            "Emily Hutchins walked (3-2 FBBBFFB).",
+            "Emilie Adelmann grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Lauren Kelley.",
+            "Caoimhe Wernsing popped up to ss (3-1 BBBK).",
+            "Peyton Heitzman flied out to rf (2-1 BKB).",
+            "Samantha Perkins singled to center field (3-1 BBKB).",
+            "Katie Melendy struck out looking (0-2 KSK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avie Hernandez grounded out to p (1-2 KFB).",
+            "Makayla Falco flied out to cf (3-2 KBBKBFF).",
+            "Isabella Rivera flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Alli Wisnouskas.",
+            "Emily Hutchins fouled out to 1b (0-0).",
+            "Zoey Moscato walked (3-2 BBFFBB).",
+            "Caoimhe Wernsing popped up to ss (1-2 KSB).",
+            "Peyton Heitzman flied out to cf (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Alli Wisnouskas.",
+            "Samantha Perkins grounded out to p (0-0).",
+            "Kassie Snowman grounded out to p (1-0 B).",
+            "Avie Hernandez reached first on an error by 1b (0-1 F).",
+            "Makayla Falco popped up to 3b (0-1 S)."
           ]
         }
       ],
