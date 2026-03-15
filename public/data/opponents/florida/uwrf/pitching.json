@@ -1,7 +1,7 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-15T12:50:38.933Z",
+  "scrapedAt": "2026-03-15T18:37:52.486Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -27,6 +27,62 @@
       "ab": 63,
       "bAvg": 0.365,
       "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Knutson, Lucy",
+      "w": 1,
+      "l": 1,
+      "era": 4.5,
+      "app": 5,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 9.1,
+      "h": 13,
+      "r": 12,
+      "er": 6,
+      "bb": 3,
+      "so": 11,
+      "hr": 0,
+      "whip": 1.71,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 45,
+      "bAvg": 0.289,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Kincaid, Hailey",
+      "w": 0,
+      "l": 0,
+      "era": 6.75,
+      "app": 5,
+      "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 9.1,
+      "h": 16,
+      "r": 10,
+      "er": 9,
+      "bb": 4,
+      "so": 7,
+      "hr": 2,
+      "whip": 2.14,
+      "doubles": 5,
+      "triples": 1,
+      "ab": 44,
+      "bAvg": 0.364,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -87,62 +143,6 @@
       "bk": 0,
       "sfa": 0,
       "sha": 0
-    },
-    {
-      "name": "Knutson, Lucy",
-      "w": 0,
-      "l": 1,
-      "era": 6.18,
-      "app": 4,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 5.2,
-      "h": 10,
-      "r": 11,
-      "er": 5,
-      "bb": 2,
-      "so": 6,
-      "hr": 0,
-      "whip": 2.12,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 31,
-      "bAvg": 0.323,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Kincaid, Hailey",
-      "w": 0,
-      "l": 0,
-      "era": 9.33,
-      "app": 4,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 6,
-      "h": 13,
-      "r": 8,
-      "er": 8,
-      "bb": 0,
-      "so": 3,
-      "hr": 2,
-      "whip": 2.17,
-      "doubles": 5,
-      "triples": 0,
-      "ab": 30,
-      "bAvg": 0.433,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
     }
   ],
   "games": [
@@ -831,6 +831,98 @@
             "O. Grefe pinch hit for J. Olson.",
             "O. Grefe struck out swinging.",
             "L. Pilon flied out to rf."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/manchester-university/boxscore/7893",
+      "date": "3/15/2026",
+      "opponent": "Manchester University",
+      "pitchers": [
+        "Kincaid, Hailey",
+        "Knutson, Lucy"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Rider reached first on an error by 1b (2-1 BBK).",
+            "K. Rider stole second.",
+            "L. Goodman struck out swinging (3-2 BKBFBS).",
+            "E. Singleton grounded out to 2b (0-2 KK); K. Rider advanced to third.",
+            "K. Rider scored on a wild pitch, unearned.",
+            "S. Leonard walked (3-2 BBKSBFB).",
+            "S. Leonard advanced to second on a passed ball.",
+            "C. Cooke walked (3-1 KBBBB).",
+            "M. Gilhooly grounded out to 2b unassisted, interference (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Miller walked (3-1 BBBKB).",
+            "K. Wentz struck out swinging (1-2 BKKS).",
+            "K. Miller advanced to second on a passed ball.",
+            "L. Willis struck out swinging, out at first c to 1b (2-2 BBKFS).",
+            "K. Rider singled to third base (1-2 KFB); K. Miller advanced to third.",
+            "K. Rider stole second.",
+            "L. Goodman walked (3-2 BBBKFB).",
+            "E. Singleton grounded out to p (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Leonard grounded out to 2b (0-2 KK).",
+            "C. Cooke singled to left center (2-2 BBKFF).",
+            "M. Gilhooly grounded out to 3b (1-1 KB); C. Cooke advanced to second.",
+            "C. Cooke stole third.",
+            "K. Miller tripled to right center, RBI (1-1 KB); C. Cooke scored.",
+            "K. Wentz struck out looking (2-2 BKFFBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Willis grounded out to ss (1-1 FB).",
+            "Lucy Knutson to p for Hailey Kincaid.",
+            "K. Rider reached first on an error by 2b (3-1 BBBK).",
+            "L. Goodman hit by pitch (2-0 BH); K. Rider advanced to second.",
+            "E. Singleton singled through the right side (0-2 KF); L. Goodman advanced to second; K. Rider advanced to third, out at home rf to c.",
+            "S. Leonard struck out looking (3-2 BBKKFBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hannah Effertz to 1b for Autumn Hughes.",
+            "C. Cooke flied out to rf (1-1 BK).",
+            "M. Gilhooly walked (3-2 BKBBSB).",
+            "K. Miller doubled to left center, RBI (3-2 BBSBSF); M. Gilhooly scored.",
+            "S. Thomas pinch hit for K. Wentz.",
+            "S. Thomas struck out swinging (1-2 KBFS).",
+            "L. Willis flied out to lf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Rider flied out to lf (1-1 FB).",
+            "L. Goodman struck out looking (3-2 KBKFBBK).",
+            "E. Singleton singled to right center (2-2 BKBK).",
+            "S. Leonard struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lacie Lilyquist to 3b for Ella Woida.",
+            "Alexa Dusterhoft to rf.",
+            "C. Cooke fouled out to 3b (1-2 SBK).",
+            "M. Gilhooly flied out to rf (0-1 K).",
+            "K. Miller struck out swinging (2-2 BKBSS)."
           ]
         }
       ],
