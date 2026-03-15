@@ -1,31 +1,31 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-15T02:03:16.492Z",
+  "scrapedAt": "2026-03-15T05:28:02.202Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gigante, Whitney",
       "w": 3,
       "l": 0,
-      "era": 0,
-      "app": 5,
+      "era": 0.44,
+      "app": 6,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 14.1,
-      "h": 11,
-      "r": 9,
-      "er": 0,
-      "bb": 7,
+      "ip": 16,
+      "h": 15,
+      "r": 10,
+      "er": 1,
+      "bb": 8,
       "so": 6,
       "hr": 0,
-      "whip": 1.26,
-      "doubles": 2,
+      "whip": 1.44,
+      "doubles": 3,
       "triples": 0,
-      "ab": 58,
-      "bAvg": 0.19,
+      "ab": 67,
+      "bAvg": 0.224,
       "wp": 1,
       "hbp": 4,
       "bk": 0,
@@ -35,25 +35,25 @@
     {
       "name": "Lees, Jacelyn",
       "w": 2,
-      "l": 1,
-      "era": 2.49,
-      "app": 4,
-      "gs": 3,
+      "l": 2,
+      "era": 3.6,
+      "app": 5,
+      "gs": 4,
       "cg": 1,
       "sho": 1,
       "sv": 0,
-      "ip": 19.2,
-      "h": 20,
-      "r": 7,
-      "er": 7,
-      "bb": 5,
-      "so": 8,
+      "ip": 23.1,
+      "h": 28,
+      "r": 12,
+      "er": 12,
+      "bb": 6,
+      "so": 11,
       "hr": 0,
-      "whip": 1.27,
-      "doubles": 4,
-      "triples": 0,
-      "ab": 75,
-      "bAvg": 0.267,
+      "whip": 1.46,
+      "doubles": 6,
+      "triples": 1,
+      "ab": 94,
+      "bAvg": 0.298,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "DeCrescenzo, Ella",
       "w": 0,
       "l": 1,
-      "era": 4.74,
-      "app": 4,
+      "era": 5.25,
+      "app": 5,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 10.1,
-      "h": 18,
-      "r": 7,
-      "er": 7,
-      "bb": 7,
-      "so": 6,
+      "ip": 12,
+      "h": 21,
+      "r": 10,
+      "er": 9,
+      "bb": 8,
+      "so": 7,
       "hr": 0,
       "whip": 2.42,
       "doubles": 5,
       "triples": 0,
-      "ab": 49,
-      "bAvg": 0.367,
+      "ab": 57,
+      "bAvg": 0.368,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
@@ -713,6 +713,105 @@
             "Madisen Butler out at first p to 2b, SAC (0-0); Charlie Harris advanced to third.",
             "Sara Cornell grounded out to 3b (0-0).",
             "Isabella Olmos grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/babson/boxscore/27446",
+      "date": "3/14/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Lees, Jacelyn",
+        "Gigante, Whitney",
+        "DeCrescenzo, Ella"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh grounded out to 1b unassisted (0-0).",
+            "Belle Dicampello lined out to p (0-0).",
+            "Lexi Sealy singled to right center (0-0).",
+            "Sophia Pak singled to center field (0-0); Lexi Sealy advanced to second.",
+            "Charlotte Raymond struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Charly Landow struck out swinging (0-0).",
+            "Samantha Skivo popped up to 2b (0-0).",
+            "Kay Laliberty popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maddy DeLong grounded out to 3b (0-0).",
+            "Emily Walsh doubled down the rf line (0-0).",
+            "Belle Dicampello flied out to lf (0-0).",
+            "Lexi Sealy doubled to right field, RBI (0-0); Emily Walsh scored.",
+            "Sophia Pak popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charlotte Raymond walked (0-0).",
+            "Izzy Burgess pinch ran for Charlotte Raymond.",
+            "Izzy Burgess advanced to second on a passed ball.",
+            "Charly Landow singled to center field (0-0); Izzy Burgess advanced to third.",
+            "Samantha Skivo popped up to ss (0-0).",
+            "Ruby Madia pinch hit for Kay Laliberty.",
+            "Charly Landow stole second.",
+            "Ruby Madia struck out swinging (0-0).",
+            "Maddy DeLong singled to left center, advanced to second on the throw, RBI (0-0); Charly Landow advanced to third; Izzy Burgess scored.",
+            "Emily Walsh singled to center field, 2 RBI (0-0); Maddy DeLong scored; Charly Landow scored.",
+            "Belle Dicampello tripled to right center, RBI (0-0); Emily Walsh scored.",
+            "Jacelyn Lees to dp.",
+            "Whitney Gigante to p.",
+            "Lexi Sealy popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Cameron Maloney to dp for Jacelyn Lees.",
+            "Sophia Pak singled to shortstop, advanced to second on a throwing error by ss (0-0).",
+            "Allie Cubberly pinch ran for Sophia Pak.",
+            "Charlotte Raymond to dp for Izzy Burgess.",
+            "Charlotte Raymond reached on a fielder's choice (0-0); Allie Cubberly out at third 3b to ss to 2b to 3b.",
+            "Charly Landow flied out to rf (0-0).",
+            "Samantha Skivo doubled to right center, RBI (0-0); Charlotte Raymond scored.",
+            "Kay Laliberty grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddy DeLong grounded out to ss (0-0).",
+            "Emily Walsh singled to shortstop, advanced to second on a throwing error by ss (0-0).",
+            "Belle Dicampello walked (0-0).",
+            "Nicole Petrillo pinch ran for Belle Dicampello.",
+            "Lexi Sealy singled to shortstop (0-0); Nicole Petrillo advanced to second; Emily Walsh advanced to third.",
+            "Ella DeCrescenzo to p for Whitney Gigante.",
+            "Allie Cubberly lined out to p (0-0).",
+            "Charlotte Raymond reached on a fielder's choice (0-0); Lexi Sealy advanced to second; Nicole Petrillo out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Charly Landow flied out to lf (0-0).",
+            "Samantha Skivo walked (0-0).",
+            "Kay Laliberty singled up the middle (0-0); Samantha Skivo advanced to second.",
+            "Maddy DeLong struck out looking (0-0).",
+            "Emily Walsh singled to right field, RBI (0-0); Kay Laliberty advanced to third; Samantha Skivo scored.",
+            "Belle Dicampello pinch hit for Nicole Petrillo.",
+            "Belle Dicampello singled to center field, advanced to second on a fielding error by cf, RBI (0-0); Emily Walsh advanced to third, scored on the error, unearned; Kay Laliberty scored.",
+            "Lexi Sealy grounded out to 2b (0-0)."
           ]
         }
       ],
