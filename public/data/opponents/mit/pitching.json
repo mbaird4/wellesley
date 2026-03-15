@@ -1,31 +1,87 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-14T11:18:34.265Z",
+  "scrapedAt": "2026-03-15T11:21:01.572Z",
   "year": 2026,
   "pitchingStats": [
+    {
+      "name": "Blackett, Sarah",
+      "w": 2,
+      "l": 0,
+      "era": 2.33,
+      "app": 2,
+      "gs": 2,
+      "cg": 1,
+      "sho": 1,
+      "sv": 0,
+      "ip": 9,
+      "h": 5,
+      "r": 3,
+      "er": 3,
+      "bb": 8,
+      "so": 9,
+      "hr": 0,
+      "whip": 1.44,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 32,
+      "bAvg": 0.156,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Huang, Sharona",
+      "w": 1,
+      "l": 0,
+      "era": 2.63,
+      "app": 2,
+      "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 8,
+      "h": 10,
+      "r": 4,
+      "er": 3,
+      "bb": 7,
+      "so": 2,
+      "hr": 0,
+      "whip": 2.13,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 33,
+      "bAvg": 0.303,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 1
+    },
     {
       "name": "Watson, Emily",
       "w": 1,
       "l": 0,
-      "era": 0,
-      "app": 1,
+      "era": 3.5,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3,
-      "h": 4,
-      "r": 0,
-      "er": 0,
-      "bb": 3,
-      "so": 1,
+      "ip": 4,
+      "h": 6,
+      "r": 2,
+      "er": 2,
+      "bb": 5,
+      "so": 3,
       "hr": 0,
-      "whip": 2.33,
-      "doubles": 0,
+      "whip": 2.75,
+      "doubles": 1,
       "triples": 0,
-      "ab": 11,
-      "bAvg": 0.364,
+      "ab": 16,
+      "bAvg": 0.375,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
@@ -56,62 +112,6 @@
       "bAvg": 0,
       "wp": 0,
       "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "Huang, Sharona",
-      "w": 0,
-      "l": 0,
-      "era": 3.5,
-      "app": 1,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 5,
-      "r": 3,
-      "er": 2,
-      "bb": 3,
-      "so": 2,
-      "hr": 0,
-      "whip": 2,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 17,
-      "bAvg": 0.294,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Blackett, Sarah",
-      "w": 1,
-      "l": 0,
-      "era": 5.25,
-      "app": 1,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 4,
-      "r": 3,
-      "er": 3,
-      "bb": 4,
-      "so": 3,
-      "hr": 0,
-      "whip": 2,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 16,
-      "bAvg": 0.25,
-      "wp": 1,
-      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -279,6 +279,141 @@
             "Alexa Gillis grounded out to ss (2-1 FBB).",
             "Mia Mitchell walked (3-1 BKBBB).",
             "Abby McClaflin grounded out to ss (3-1 BBFB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/simmons-university/boxscore/12747",
+      "date": "3/14/2026",
+      "opponent": "Simmons University",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Piper Kinney grounded out to 2b (1-1 KB).",
+            "Abigail Carvalho grounded out to 2b (0-0).",
+            "Zoe Soule walked (3-1 BBBKB).",
+            "Trinity Payne singled through the left side (1-0 B); Zoe Soule advanced to second.",
+            "Trinity Payne advanced to second; Zoe Soule advanced to third on a passed ball.",
+            "Nevaeh Eth grounded out to 3b (3-2 BSBBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Teagan Buckley singled to left center (0-0).",
+            "Emery Kreidel-Reimer popped up to rf (0-1 K).",
+            "Emma Soule singled down the lf line (0-0); Teagan Buckley advanced to second.",
+            "Emily Deleault infield fly to 3b (0-1 F).",
+            "Piper Kinney walked (3-0 BBBB); Emma Soule advanced to second; Teagan Buckley advanced to third.",
+            "Abigail Carvalho flied out to cf (1-2 BKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Zoe Soule singled through the left side (0-2 SS).",
+            "Trinity Payne popped up to 2b to right center (0-0).",
+            "Nevaeh Eth reached first on a fielding error by 2b (0-0); Zoe Soule advanced to third.",
+            "Teagan Buckley grounded out to p (1-1 FB); Nevaeh Eth advanced to second.",
+            "Emery Kreidel-Reimer grounded out to 3b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Soule walked (3-1 BSBBB).",
+            "Emily Deleault walked (3-1 BBKBB); Emma Soule advanced to second.",
+            "Piper Kinney reached on a fielder's choice to shortstop (1-1 BK); Emily Deleault out at second ss to 1b; Emma Soule advanced to third.",
+            "Abigail Carvalho flied out to cf, sacrifice fly, RBI (0-1 K); Emma Soule scored.",
+            "Zoe Soule singled up the middle (1-2 KBK); Piper Kinney advanced to second, out at third cf to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Layla Thiessen to lf for Amanda Huang.",
+            "Ava Ladd to 3b for Kaaya Mehta.",
+            "Lauren Sundquist to 2b.",
+            "Maggie Feng to dp.",
+            "Emily Watson to p for Sharona Huang.",
+            "Trinity Payne walked (3-1 BKBBB).",
+            "Nevaeh Eth struck out swinging (0-2 KSS).",
+            "Teagan Buckley doubled to left center (0-1 K); Trinity Payne advanced to third.",
+            "Emery Kreidel-Reimer singled up the middle, 2 RBI (1-1 BF); Teagan Buckley scored; Trinity Payne scored.",
+            "Emma Soule walked (3-1 BBBKB); Emery Kreidel-Reimer advanced to second.",
+            "Emily Deleault reached on a fielder's choice to third base (0-1 K); Emma Soule advanced to second; Emery Kreidel-Reimer out at third 3b unassisted.",
+            "Dakota Vaudreuil struck out swinging (2-2 FBFBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/simmons-university/boxscore/12748",
+      "date": "3/14/2026",
+      "opponent": "Simmons University",
+      "pitchers": [
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Trinity Payne to p.",
+            "Skyler Wessels to dp.",
+            "Piper Kinney struck out swinging (1-2 BFFS).",
+            "Abigail Carvalho flied out to rf (1-0 B).",
+            "Zoe Soule struck out looking (2-2 KBBSK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Trinity Payne struck out looking (0-2 KSK).",
+            "Teagan Buckley walked (3-1 FBBBB).",
+            "Emery Kreidel-Reimer fouled out to 1b (1-1 BS).",
+            "Emma Soule grounded out to 2b (2-2 KBBKF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Pearl Mitchell to c for Sienna Wilson.",
+            "Lizzi Sidler walked (3-2 SBBKBFB).",
+            "Lizzi Sidler stole second.",
+            "Emily Deleault flied out to cf (3-2 BBKKB).",
+            "Piper Kinney fouled out to 1b (1-2 BKK).",
+            "Abigail Carvalho grounded out to ss (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maggie Feng to ss.",
+            "Amanda Huang to 2b for Ellie Hasegawa.",
+            "Zoe Soule flied out to rf (0-0).",
+            "Trinity Payne walked (0-0).",
+            "Teagan Buckley struck out looking (0-0).",
+            "Isabel McLam struck out looking (1-2 KBSK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Sundquist to c for Kaaya Mehta.",
+            "Olivia Scarpaci to 1b for Pearl Mitchell.",
+            "Emma Soule walked (3-2 BBSSBB).",
+            "Lizzi Sidler struck out looking (0-2 SKK).",
+            "Emily Deleault singled to right center (0-2 KS); Emma Soule advanced to second.",
+            "Piper Kinney flied out to rf (1-1 BF); Emily Deleault advanced to second; Emma Soule advanced to third.",
+            "Jocelyn Harms grounded out to ss (2-2 BKSFBF)."
           ]
         }
       ],

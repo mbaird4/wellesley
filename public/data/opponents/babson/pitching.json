@@ -1,0 +1,294 @@
+{
+  "slug": "babson",
+  "domain": "babsonathletics.com",
+  "scrapedAt": "2026-03-15T11:22:08.528Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Ziccardi, Anna",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 5,
+      "h": 3,
+      "r": 3,
+      "er": 0,
+      "bb": 3,
+      "so": 1,
+      "hr": 1,
+      "whip": 1.2,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 19,
+      "bAvg": 0.158,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Sealey, Lexi",
+      "w": 0,
+      "l": 0,
+      "era": 2.33,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
+      "ip": 3,
+      "h": 4,
+      "r": 1,
+      "er": 1,
+      "bb": 1,
+      "so": 1,
+      "hr": 0,
+      "whip": 1.67,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 13,
+      "bAvg": 0.308,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Topel, Anna",
+      "w": 1,
+      "l": 0,
+      "era": 5.25,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 6,
+      "r": 4,
+      "er": 3,
+      "bb": 4,
+      "so": 1,
+      "hr": 1,
+      "whip": 2.5,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 16,
+      "bAvg": 0.375,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "Vlacich, Katie",
+      "w": 0,
+      "l": 1,
+      "era": 99,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 0,
+      "h": 5,
+      "r": 6,
+      "er": 6,
+      "bb": 3,
+      "so": 0,
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 5,
+      "bAvg": 1,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/dominican-ill-/boxscore/16077",
+      "date": "3/14/2026",
+      "opponent": "Dominican Ill ",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Ziccardi, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Isabella Olmos singled to third base (0-0).",
+            "Isabella Olmos stole second.",
+            "Kayla Amormino singled to pitcher (0-0); Isabella Olmos advanced to third.",
+            "Kayla Amormino stole second.",
+            "Kayla Amormino advanced to third on a wild pitch; Isabella Olmos scored on a wild pitch.",
+            "Raegyn Davis walked (0-0).",
+            "Raegyn Davis stole second.",
+            "Ryley Davis singled to center field, 2 RBI (0-0); Raegyn Davis scored; Kayla Amormino scored.",
+            "Kailee Diaz Randall singled to third base (0-0); Ryley Davis advanced to second.",
+            "Paytin Salfi walked (0-0); Kailee Diaz Randall advanced to second; Ryley Davis advanced to third.",
+            "Paytin Salfi advanced to second on a wild pitch; Kailee Diaz Randall advanced to third on a wild pitch; Ryley Davis scored on a wild pitch.",
+            "Emme Slavens walked (0-0).",
+            "Madisen Butler singled to center field, 2 RBI (0-0); Emme Slavens advanced to third; Paytin Salfi scored; Kailee Diaz Randall scored.",
+            "Anna Ziccardi to p for Katie Vlacich.",
+            "Sara Cornell popped up to 1b (0-0).",
+            "Isabella Olmos struck out swinging (0-0).",
+            "Kayla Amormino popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Raegyn Davis singled to right field (0-0).",
+            "Ryley Davis reached on a fielder's choice (0-0); Raegyn Davis out at second 3b to 2b.",
+            "Kailee Diaz Randall popped up to 1b (0-0).",
+            "Paytin Salfi reached on a fielder's choice (0-0); Ryley Davis out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emme Slavens walked (0-0).",
+            "Madisen Butler lined out to 3b (0-0).",
+            "Emme Slavens stole second.",
+            "Sara Cornell grounded out to 3b, SAC (0-0).",
+            "Isabella Olmos walked (0-0).",
+            "Kayla Amormino flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Raegyn Davis flied out to cf (0-0).",
+            "Ryley Davis reached first on an error by cf, advanced to second (0-0).",
+            "Kailee Diaz Randall grounded out to ss (0-0).",
+            "Paytin Salfi reached first on an error by rf (0-0); Ryley Davis scored, unearned.",
+            "Emme Slavens homered to left field, unearned, 2 RBI (0-0); Paytin Salfi scored, unearned.",
+            "Madisen Butler popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Tatyana Colon pinch hit for Sara Cornell.",
+            "Tatyana Colon walked (0-0).",
+            "Isabella Olmos lined out to cf (0-0).",
+            "Kayla Amormino singled to left field (0-0); Tatyana Colon advanced to second.",
+            "Raegyn Davis reached on a fielder's choice (0-0); Kayla Amormino advanced to second; Tatyana Colon out at third 3b unassisted.",
+            "Ryley Davis flied out to cf (0-0); Raegyn Davis advanced to second; Kayla Amormino advanced to third."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wesleyan/boxscore/16078",
+      "date": "3/14/2026",
+      "opponent": "Wesleyan",
+      "pitchers": [
+        "Topel, Anna",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Molly Lennon walked (0-0).",
+            "R. Cassel-Siskind out at first p to 2b, SAC, bunt (0-0); Molly Lennon advanced to second, out at third p to 2b to 3b.",
+            "Cat Palmer flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Whitney Gigante walked (0-0).",
+            "Jordynn Killion reached on a fielder's choice (0-0); Whitney Gigante out at second 2b to ss.",
+            "Waverly Smart flied out to lf (0-0).",
+            "Sam Chappell grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jacelyn Lees lined out to p (0-0).",
+            "Katie Foley singled to shortstop (0-0).",
+            "Molly Lennon homered to center field, 2 RBI (0-0); Katie Foley scored.",
+            "R. Cassel-Siskind doubled to center field (0-0).",
+            "Cat Palmer walked (0-0).",
+            "Whitney Gigante hit by pitch (0-0); Cat Palmer advanced to second; R. Cassel-Siskind advanced to third.",
+            "Jordynn Killion lined into double play lf to c (0-0); R. Cassel-Siskind out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kay Laliberty to 2b for Ruby Madia.",
+            "Waverly Smart singled up the middle (0-0).",
+            "Sam Chappell reached first on a fielding error by ss (0-0); Waverly Smart advanced to second.",
+            "Cameron Maloney pinch hit for Jacelyn Lees.",
+            "Cameron Maloney reached on a fielder's choice (0-0); Sam Chappell out at second 2b to ss; Waverly Smart advanced to third.",
+            "Cameron Maloney stole second.",
+            "Katie Foley singled through the right side, 2 RBI (0-0); Cameron Maloney scored; Waverly Smart scored, unearned.",
+            "Molly Lennon lined out to ss (0-0).",
+            "Nicole Celi pinch hit for R. Cassel-Siskind.",
+            "Nicole Celi walked (0-0); Katie Foley advanced to second.",
+            "Cat Palmer singled to shortstop (0-0); Nicole Celi advanced to second; Katie Foley advanced to third.",
+            "Whitney Gigante struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Anna Topel to eh.",
+            "Charlotte Raymond to 1b.",
+            "Lexi Sealy to p.",
+            "Jordynn Killion walked (0-0).",
+            "Waverly Smart reached on a fielder's choice (0-0); Jordynn Killion out at second ss to 2b.",
+            "Sam Chappell singled to right field (0-0); Waverly Smart advanced to third.",
+            "Sam Chappell stole second.",
+            "Cameron Maloney struck out swinging (0-0).",
+            "Katie Foley grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Molly Lennon singled to left field (0-0).",
+            "Nicole Celi grounded out to 1b unassisted (0-0); Molly Lennon advanced to second.",
+            "Cat Palmer popped up to 2b (0-0).",
+            "Ella DeCrescenzo lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jordynn Killion singled down the rf line (0-0).",
+            "Leila Campbell pinch ran for Jordynn Killion.",
+            "Waverly Smart reached on a fielder's choice (0-0); Leila Campbell out at second 2b to ss.",
+            "Sam Chappell singled up the middle (0-0); Waverly Smart advanced to third.",
+            "Sam Chappell stole second.",
+            "Naomi Tesoriere pinch hit for Cameron Maloney.",
+            "Naomi Tesoriere grounded out to ss, RBI (0-0); Sam Chappell advanced to third; Waverly Smart scored.",
+            "Katie Foley grounded out to ss (0-0).",
+            "Belle Dicampello to c.",
+            "Sophia Pak to cf for Allie Cubberly."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

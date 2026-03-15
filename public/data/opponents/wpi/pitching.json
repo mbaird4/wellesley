@@ -1,31 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-14T11:17:40.941Z",
+  "scrapedAt": "2026-03-15T11:20:02.968Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
       "w": 4,
       "l": 0,
-      "era": 1.07,
-      "app": 4,
+      "era": 0.97,
+      "app": 5,
       "gs": 1,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 19.2,
-      "h": 16,
+      "ip": 21.2,
+      "h": 17,
       "r": 3,
       "er": 3,
       "bb": 2,
       "so": 17,
       "hr": 0,
-      "whip": 0.92,
+      "whip": 0.88,
       "doubles": 1,
       "triples": 0,
-      "ab": 71,
-      "bAvg": 0.225,
+      "ab": 78,
+      "bAvg": 0.218,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -34,59 +34,59 @@
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 2,
+      "w": 3,
       "l": 0,
-      "era": 1.62,
-      "app": 4,
-      "gs": 4,
-      "cg": 2,
-      "sho": 0,
+      "era": 1.11,
+      "app": 5,
+      "gs": 5,
+      "cg": 3,
+      "sho": 1,
       "sv": 0,
-      "ip": 17.1,
-      "h": 19,
+      "ip": 25.1,
+      "h": 27,
       "r": 10,
       "er": 4,
       "bb": 8,
-      "so": 8,
+      "so": 14,
       "hr": 0,
-      "whip": 1.56,
+      "whip": 1.38,
       "doubles": 0,
       "triples": 0,
-      "ab": 67,
-      "bAvg": 0.284,
+      "ab": 97,
+      "bAvg": 0.278,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
       "sfa": 1,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "Barr, Kaitlyn",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "era": 7,
-      "app": 1,
-      "gs": 1,
+      "app": 2,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3,
-      "h": 4,
-      "r": 3,
-      "er": 3,
-      "bb": 3,
-      "so": 0,
+      "ip": 6,
+      "h": 10,
+      "r": 10,
+      "er": 6,
+      "bb": 6,
+      "so": 2,
       "hr": 0,
-      "whip": 2.33,
-      "doubles": 1,
+      "whip": 2.67,
+      "doubles": 2,
       "triples": 0,
-      "ab": 13,
-      "bAvg": 0.308,
-      "wp": 1,
-      "hbp": 1,
+      "ab": 29,
+      "bAvg": 0.345,
+      "wp": 2,
+      "hbp": 2,
       "bk": 0,
       "sfa": 1,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -251,9 +251,9 @@
       "year": 2026
     },
     {
-      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/aurora/boxscore/16842",
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/aurora-il-/boxscore/16842",
       "date": "3/11/2026",
-      "opponent": "Aurora",
+      "opponent": "Aurora Il ",
       "pitchers": [
         "Barr, Kaitlyn",
         "Merchant, Abby"
@@ -327,9 +327,9 @@
       "year": 2026
     },
     {
-      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/penn-state-berks-pa-/boxscore/16843",
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/penn-state-berks/boxscore/16843",
       "date": "3/11/2026",
-      "opponent": "Penn State Berks Pa ",
+      "opponent": "Penn State Berks",
       "pitchers": [
         "Boldebuck, Naomi",
         "Merchant, Abby"
@@ -567,6 +567,167 @@
             "Ava Slavinsky lined out to 1b (0-0).",
             "Allie Silliman flied out to rf (0-0).",
             "Sydney Manzione grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/loras-ia-/boxscore/16847",
+      "date": "3/14/2026",
+      "opponent": "Loras Ia ",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Katherine Svigelj singled to shortstop (1-0 B).",
+            "Ava Franklin struck out swinging (1-2 SFBFS).",
+            "Kaili Henning flied out to rf (0-2 FK).",
+            "Katherine Svigelj out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Dana Skorich grounded out to ss (0-0).",
+            "Kiya Steger flied out to cf (2-1 FBB).",
+            "Abigail Cortez grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gillian Jones singled to center field (0-1 K).",
+            "Alyson Krogman out at first 3b to 2b, SAC (0-0); Gillian Jones advanced to second.",
+            "Ellie Baker singled, bunt (0-0); Gillian Jones advanced to third.",
+            "Katherine Svigelj struck out looking (0-2 FFK).",
+            "Ava Franklin flied out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kaili Henning singled through the left side (3-2 FBBBF).",
+            "Dana Skorich reached on a fielder's choice (2-1 BBK); Kaili Henning out at second ss to 2b.",
+            "Kiya Steger flied out to 2b (0-0).",
+            "Abigail Cortez popped up to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gillian Jones popped up to 3b (1-2 KFFB).",
+            "Alyson Krogman struck out looking (0-2 KKK).",
+            "Ellie Baker struck out looking (2-2 BKBKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katherine Svigelj struck out swinging (1-2 FFBS).",
+            "Ava Franklin lined out to rf (3-2 KKBBB).",
+            "Kaili Henning singled to center field (0-2 FK).",
+            "Dana Skorich singled to shortstop (0-0); Kaili Henning advanced to second.",
+            "Colleen Mayer to lf for Elizabeth Jordan.",
+            "Keely Pilcher pinch ran for Dana Skorich.",
+            "Kiya Steger lined out to lf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley O'Brien to 2b for Stella Kozak.",
+            "Abigail Cortez grounded out to ss (0-1 K).",
+            "Gillian Jones singled to shortstop (1-0 B).",
+            "Alyson Krogman singled to right field (0-2 FF); Gillian Jones advanced to second.",
+            "Ellie Baker lined out to 3b (1-2 BFFF).",
+            "Katherine Svigelj struck out swinging (1-2 FFBFFS)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Destiny Lum to 3b for Suzannah Figler.",
+            "Ava Franklin Katherine Svigelj placed on second (0-0).",
+            "Ava Franklin reached on a fielder's choice (0-1 K); Katherine Svigelj out at third 2b to 3b.",
+            "Kaili Henning fouled out to c (0-0).",
+            "Dana Skorich grounded out to ss (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/alverno-wi-/boxscore/16848",
+      "date": "3/14/2026",
+      "opponent": "Alverno Wi ",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Giselle Moreno reached first on an error by p (1-0 B).",
+            "Giselle Moreno advanced to second on a wild pitch.",
+            "Nadya Hudson walked (3-0 BBBB).",
+            "Alyssa Hubli fouled out to 1b (1-1 KB).",
+            "Gianna Medrano grounded into double play p to ss to 1b (0-0); Nadya Hudson out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emily Anguiano grounded out to ss (2-1 BFB).",
+            "Mac Gardner walked (3-0 BBBB).",
+            "Bailey Gardner struck out swinging (1-2 FFBS).",
+            "Jaycee Reyes hit by pitch (2-1 BFH); Mac Gardner advanced to second.",
+            "Hailie Eschbach struck out looking (0-2 FFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Samantha Jeng to ss for Sandy Fairbairn.",
+            "Stella Kozak to 3b for Destiny Lum.",
+            "Grace Grant to 1b.",
+            "Mia Francisco to 2b for Riley O'Brien.",
+            "Colleen Mayer to cf for Meg Sherwood.",
+            "Giselle Moreno grounded out to ss (0-0).",
+            "Nadya Hudson doubled to right field (2-2 BKBS).",
+            "Alyssa Hubli flied out to rf (1-0 B); Nadya Hudson advanced to third.",
+            "Gianna Medrano walked (3-0 BBBB).",
+            "Emily Anguiano grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mac Gardner singled to third base (0-0).",
+            "Bailey Gardner singled to third base, bunt (0-0); Mac Gardner advanced to second.",
+            "Jaycee Reyes reached first on a throwing error by p, SAC, bunt, advanced to second on the error (0-0); Bailey Gardner advanced to third on the error; Mac Gardner scored on the error, unearned.",
+            "Hailie Eschbach singled up the middle, advanced to second on the throw, RBI (1-0 B); Jaycee Reyes advanced to third; Bailey Gardner scored.",
+            "Giselle Moreno reached on a fielder's choice to pitcher (0-0).",
+            "Nadya Hudson singled to center field, advanced to second on the throw, 2 RBI (0-1 F); Giselle Moreno advanced to third on the throw; Hailie Eschbach scored; Jaycee Reyes scored, unearned.",
+            "Alyssa Hubli singled to left field, RBI (1-0 B); Nadya Hudson advanced to third; Giselle Moreno scored.",
+            "Abby Merchant to p for Kaitlyn Barr.",
+            "Gianna Medrano popped up to 2b (0-1 K).",
+            "Emily Anguiano grounded out to 3b (0-1 K); Alyssa Hubli advanced to second.",
+            "Mac Gardner singled to right field, 2 RBI (0-1 S); Alyssa Hubli scored, unearned; Nadya Hudson scored, unearned.",
+            "Bailey Gardner fouled out to 3b (2-2 BKKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lucy Latour to rf.",
+            "Jaycee Reyes flied out to lf (0-0).",
+            "Hailie Eschbach grounded out to ss (0-0).",
+            "Giselle Moreno grounded out to 3b (1-0 B)."
           ]
         }
       ],
