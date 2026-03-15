@@ -1,7 +1,7 @@
 {
   "slug": "uww",
   "domain": "uwwsports.com",
-  "scrapedAt": "2026-03-14T18:38:00.226Z",
+  "scrapedAt": "2026-03-15T02:04:11.316Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -310,7 +310,9 @@
       "url": "https://uwwsports.com/sports/softball/stats/2026/rhodes-college/boxscore/23029",
       "date": "3/8/2026",
       "opponent": "Rhodes College",
-      "pitchers": [],
+      "pitchers": [
+        "Hammen, Josie"
+      ],
       "battingInnings": [
         {
           "inning": "1st",
