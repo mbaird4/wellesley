@@ -1,0 +1,206 @@
+{
+  "slug": "salemstate",
+  "domain": "salemstatevikings.com",
+  "scrapedAt": "2026-03-15T16:30:09.893Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Benesh, Charlie",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "ip": 2,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 0,
+      "so": 1,
+      "hr": 0
+    },
+    {
+      "name": "Martineau, Gracie",
+      "w": 1,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 1,
+      "ip": 3,
+      "h": 3,
+      "r": 0,
+      "er": 0,
+      "bb": 1,
+      "so": 3,
+      "hr": 0
+    },
+    {
+      "name": "Toledano, Alanis",
+      "w": 1,
+      "l": 0,
+      "era": 1.75,
+      "app": 1,
+      "gs": 1,
+      "ip": 4,
+      "h": 2,
+      "r": 1,
+      "er": 1,
+      "bb": 3,
+      "so": 4,
+      "hr": 0
+    },
+    {
+      "name": "Roberge, Sula",
+      "w": 0,
+      "l": 0,
+      "era": 3.5,
+      "app": 1,
+      "gs": 0,
+      "ip": 2,
+      "h": 2,
+      "r": 1,
+      "er": 1,
+      "bb": 2,
+      "so": 0,
+      "hr": 1
+    }
+  ],
+  "games": [
+    {
+      "year": 2026,
+      "url": "https://salemstatevikings.com/sports/sball/2025-26/boxscores/20260313_cyhr.xml",
+      "date": "",
+      "opponent": "Me.-Presque Isle",
+      "pitchers": [
+        "Gracie Martineau",
+        "Sula Roberge"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hailey Saylor flied out to ss (1-2 KKB). (1 out)",
+            "Zoe Stewart struck out swinging (2-2 BSBKS). (2 out)",
+            "Gracelyn Walsh doubled (0-0).",
+            "Megan Buchholz out at first 2b to p (0-0). (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alaina Giuliano to lf for Katie Sullivan.",
+            "Sabrina Kauffman singled (2-0 BB).",
+            "Avery Vonkadich singled (0-2 FS); Sabrina Kauffman advanced to second.",
+            "Avery Vonkadich advanced to second on a wild pitch; Sabrina Kauffman advanced to third on a wild pitch.",
+            "Abby Doughty walked (3-2 BFFBBB).",
+            "Madison Boynton struck out looking (2-2 BBKKFK). (1 out)",
+            "Michaela Carney struck out swinging (2-2 BKBSFS). (2 out)",
+            "Hailey Saylor grounded out to ss (0-0). (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Zoe Stewart grounded out to 3b (1-0 B). (1 out)",
+            "Gracelyn Walsh grounded out to 2b (0-1 K). (2 out)",
+            "Megan Buchholz grounded out to ss (3-1 BBBK). (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Isabelle Besser to c for Madison DeWitt.",
+            "Sula Roberge to p for Gracie Martineau.",
+            "Sabrina Kauffman walked (3-2 BFBFBB).",
+            "Avery Vonkadich walked (3-1 BBBKB); Sabrina Kauffman advanced to second.",
+            "Abby Doughty reached on a fielder's choice (0-1 K); Avery Vonkadich advanced to second; Sabrina Kauffman out at third p to 3b.",
+            "Madison Boynton singled (0-1 K); Abby Doughty advanced to second; Avery Vonkadich advanced to third.",
+            "Michaela Carney flied out to cf (1-0 B). (2 out)",
+            "Hailey Saylor grounded out to 2b (1-2 KSB). (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoe Stewart homered, RBI (2-1 BSB).",
+            "Keira Greene grounded out to 3b (3-2 BKBFB). (1 out)",
+            "Megan Buchholz popped up to ss (1-0 B). (2 out)",
+            "Sabrina Kauffman flied out to cf (3-1 BFBB). (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "url": "https://salemstatevikings.com/sports/sball/2025-26/boxscores/20260313_7xp5.xml",
+      "date": "",
+      "opponent": "Me.-Presque Isle",
+      "pitchers": [
+        "Alanis Toledano",
+        "Charlie Benesh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hailey Saylor popped up to 1b (1-2 FBF). (1 out)",
+            "Zoe Stewart walked (3-1 BBKBB).",
+            "Sabrina Kauffman grounded into double play ss to 2b to 1b (3-2 KSBBB); Zoe Stewart out on the play. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Buchholz grounded out to ss (3-1 FBBB). (1 out)",
+            "Avery Vonkadich walked (3-2 SBBBKB).",
+            "Briana Perez struck out swinging (0-2 SSS). (2 out)",
+            "Abby Doughty struck out swinging (1-2 BSSS). (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Keira Greene singled (3-1 BSBB).",
+            "Keira Greene stole second.",
+            "Madison Boynton struck out swinging (1-2 BSSS). (1 out)",
+            "Hailey Saylor singled, advanced to second on the throw (0-0); Keira Greene advanced to third, out at home lf to c. (2 out)",
+            "Zoe Stewart flied out to ss (3-2 BFBSFB). (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Tara Perryman to 1b.",
+            "Katie Sullivan to rf.",
+            "Charlie Benesh to dp.",
+            "Sabrina Kauffman walked (3-2 BBKBKB).",
+            "Megan Buchholz grounded out to p, SAC (0-0); Sabrina Kauffman advanced to second. (1 out)",
+            "Avery Vonkadich grounded out to 2b (1-2 SSB); Sabrina Kauffman advanced to third. (2 out)",
+            "Gracelyn Walsh pinch hit for Briana Perez.",
+            "Gracelyn Walsh reached first on an error by 1b, RBI (3-2 KFBFBB); Sabrina Kauffman scored on the error.",
+            "Abby Doughty struck out swinging (3-2 SBKBBS). (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Tara Perryman to dp.",
+            "Alanis Toledano to 1b.",
+            "Charlie Benesh to p.",
+            "Keira Greene grounded out to 3b (2-2 KFBB). (1 out)",
+            "Madison Boynton flied out to lf (1-2 SSBF). (2 out)",
+            "Hailey Saylor struck out swinging (0-2 SSS). (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zoe Stewart lined out to 1b (2-2 BBSS). (1 out)",
+            "Sabrina Kauffman grounded out to ss (1-2 SSB). (2 out)",
+            "Megan Buchholz grounded out to ss (1-2 FSB). (3 out)"
+          ]
+        }
+      ]
+    }
+  ]
+}

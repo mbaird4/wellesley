@@ -1,0 +1,846 @@
+{
+  "slug": "framingham",
+  "domain": "www.fsurams.com",
+  "scrapedAt": "2026-03-15T16:43:30.394Z",
+  "year": 2025,
+  "pitchingStats": [
+    {
+      "name": "Carignan, Eliza",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 2,
+      "gs": 0,
+      "ip": 1.2,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 2,
+      "so": 0,
+      "hr": 0
+    },
+    {
+      "name": "Gauthier, Audrey",
+      "w": 17,
+      "l": 7,
+      "era": 2.79,
+      "app": 30,
+      "gs": 20,
+      "ip": 145.1,
+      "h": 146,
+      "r": 88,
+      "er": 58,
+      "bb": 87,
+      "so": 163,
+      "hr": 5
+    },
+    {
+      "name": "Bednarz, Sydney",
+      "w": 6,
+      "l": 2,
+      "era": 3.27,
+      "app": 20,
+      "gs": 12,
+      "ip": 70.2,
+      "h": 78,
+      "r": 43,
+      "er": 33,
+      "bb": 32,
+      "so": 44,
+      "hr": 3
+    },
+    {
+      "name": "Chisholm, Julianna",
+      "w": 4,
+      "l": 6,
+      "era": 5.81,
+      "app": 18,
+      "gs": 10,
+      "ip": 53,
+      "h": 74,
+      "r": 53,
+      "er": 44,
+      "bb": 41,
+      "so": 28,
+      "hr": 3
+    }
+  ],
+  "games": [
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250311_2rtu.xml",
+      "date": "",
+      "opponent": "Hartford",
+      "pitchers": [
+        "Julianna Chisholm",
+        "Sydney Bednarz"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Sealey walked.",
+            "K. Baran popped up to 2b. (1 out)",
+            "E. Zobel singled to first base; A. Sealey advanced to second.",
+            "O. Wolk popped up to 2b. (2 out)",
+            "A. Beebe grounded out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Matz walked.",
+            "G. Miccio struck out looking; S. Matz stole second. (1 out)",
+            "S. Matz stole third.",
+            "A. Farkash flied into double play cf to c to 3b; S. Matz out on the play. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Serrano doubled to left field.",
+            "A. Sealey lined into double play ss to 2b; S. Serrano out on the play. (2 out)",
+            "K. Baran singled to second base.",
+            "E. Zobel popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "V. Connelly to lf for A. Behrikis.",
+            "O. Wolk grounded out to ss. (1 out)",
+            "A. Beebe walked.",
+            "A. Beebe advanced to second on a wild pitch.",
+            "S. Matz tripled, RBI; A. Beebe scored.",
+            "S. Matz scored on a wild pitch.",
+            "G. Miccio struck out swinging. (2 out)",
+            "A. Farkash lined out to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Bednarz to p for J. Chisholm.",
+            "S. Serrano popped up to ss. (1 out)",
+            "A. Sealey grounded out to ss. (2 out)",
+            "K. Baran popped up to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Zobel singled to center field.",
+            "H. Pruett pinch ran for E. Zobel.",
+            "O. Wolk struck out swinging. (1 out)",
+            "A. Beebe walked; H. Pruett advanced to second.",
+            "S. Matz reached on a fielder's choice; A. Beebe out at second 2b to ss; H. Pruett advanced to third. (2 out)",
+            "B. Bernard pinch hit for G. Miccio.",
+            "S. Matz out at second c to ss, caught stealing. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Bernard flied out to rf. (1 out)",
+            "L. Lembo singled.",
+            "S. Serrano struck out looking. (2 out)",
+            "A. Sealey walked; L. Lembo advanced to second.",
+            "H. Myers pinch hit for K. Baran.",
+            "H. Myers struck out looking. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250311_1pwr.xml",
+      "date": "",
+      "opponent": "Hartford",
+      "pitchers": [
+        "Audrey Gauthier",
+        "Sydney Bednarz"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Sealey singled to right field.",
+            "A. Walker out at first 1b to 2b, SAC, bunt; A. Sealey advanced to second. (1 out)",
+            "E. Zobel popped up to cf; A. Sealey advanced to third. (2 out)",
+            "O. Wolk popped up to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Matz out at first 1b to 2b. (1 out)",
+            "L. Lembo walked.",
+            "L. Lembo stole second.",
+            "T. Fitch singled to center field, RBI; L. Lembo scored.",
+            "A. Farkash walked; T. Fitch advanced to second.",
+            "A. Farkash advanced to second; T. Fitch advanced to third on a wild pitch.",
+            "S. Serrano walked.",
+            "A. Sealey singled to center field, RBI; S. Serrano advanced to second; A. Farkash advanced to third; T. Fitch scored.",
+            "A. Sealey advanced to second; S. Serrano advanced to third; A. Farkash scored on a passed ball.",
+            "A. Walker struck out swinging. (2 out)",
+            "E. Zobel fouled out to 1b. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Pepe to c.",
+            "A. Gray to dp.",
+            "A. Sillings to 1b.",
+            "O. Wolk reached first on an error by 3b.",
+            "S. Matz reached first on a fielding error by 3b; O. Wolk advanced to second.",
+            "L. Lembo out at first p to 2b, SAC, bunt; S. Matz advanced to second; O. Wolk advanced to third. (1 out)",
+            "T. Fitch struck out looking. (2 out)",
+            "A. Farkash walked; S. Matz advanced to third; O. Wolk scored on a wild pitch, unearned.",
+            "A. Farkash advanced to second; S. Matz scored on a wild pitch, unearned.",
+            "S. Serrano walked.",
+            "A. Sealey flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Cadena to rf.",
+            "A. Walker walked.",
+            "E. Zobel reached on a fielder's choice; A. Walker out at second ss to 2b. (1 out)",
+            "G. Miccio pinch ran for E. Zobel.",
+            "G. Miccio out at second c to ss, caught stealing. (2 out)",
+            "O. Wolk tripled to right field.",
+            "S. Matz walked.",
+            "S. Matz stole second.",
+            "S. Bednarz to p for A. Gauthier.",
+            "L. Lembo walked.",
+            "T. Fitch popped up to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Farkash singled to center field.",
+            "S. Serrano singled; A. Farkash advanced to second.",
+            "K. Baran pinch ran for A. Farkash.",
+            "A. Sealey lined into double play ss to 1b; S. Serrano out on the play. (2 out)",
+            "K. Baran advanced to third on a wild pitch.",
+            "A. Walker walked.",
+            "A. Walker Failed pickoff attempt; K. Baran scored on an error by 1b, unearned.",
+            "G. Miccio singled, advanced to second; A. Walker advanced to third.",
+            "O. Wolk tripled to right field, 2 RBI; G. Miccio scored, unearned; A. Walker scored, unearned.",
+            "S. Matz grounded out to p. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250316_5daz.xml",
+      "date": "",
+      "opponent": "Bates",
+      "pitchers": [
+        "Julianna Chisholm",
+        "Sydney Bednarz",
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Rooney to 3b.",
+            "A. Behrikis to ss.",
+            "E. Yen walked.",
+            "E. Maher out at first p to 2b, SAC, bunt; E. Yen advanced to second. (1 out)",
+            "S. Pietrasie grounded out to ss; E. Yen advanced to third. (2 out)",
+            "E. Yen scored on a wild pitch.",
+            "I. Bettencou doubled to left field.",
+            "I. Bettencou advanced to third on a wild pitch.",
+            "D. Rankin struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Z. Anderson walked.",
+            "Z. Anderson advanced to second on a wild pitch.",
+            "G. Householt singled to shortstop; Z. Anderson advanced to third.",
+            "G. Householt stole second; Z. Anderson stole home.",
+            "S. Garber struck out swinging. (1 out)",
+            "M. Hashiramo hit by pitch.",
+            "S. Bednarz to p for J. Chisholm.",
+            "E. Yen popped up to ss. (2 out)",
+            "E. Maher flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Pietrasie flied out to lf. (1 out)",
+            "I. Bettencou popped up to 2b. (2 out)",
+            "D. Rankin singled to third base.",
+            "Z. Anderson doubled to left field, RBI; D. Rankin scored.",
+            "G. Householt popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Garber grounded out to p. (1 out)",
+            "M. Hashiramo singled to left field.",
+            "E. Yen grounded out to p; M. Hashiramo advanced to second. (2 out)",
+            "E. Maher flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Pietrasie flied out to rf. (1 out)",
+            "I. Bettencou singled to right field.",
+            "D. Rankin popped up to 2b. (2 out)",
+            "Z. Anderson popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Rooney to ss.",
+            "K. Brodzinsk to 3b.",
+            "I. MacDonald to dp.",
+            "A. Gray to 1b.",
+            "A. Gauthier to p for S. Bednarz.",
+            "G. Householt flied out to cf. (1 out)",
+            "S. Garber grounded out to p. (2 out)",
+            "M. Hashiramo struck out swinging. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250316_c53x.xml",
+      "date": "",
+      "opponent": "Wis.-River Falls",
+      "pitchers": [
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Hughes reached first on an error by 3b.",
+            "E. Crowe grounded out to 2b; A. Hughes advanced to second. (1 out)",
+            "K. Aultman singled to center field, RBI; A. Hughes scored on the throw, unearned.",
+            "A. DeMeyer singled to shortstop; K. Aultman advanced to second.",
+            "A. Pitts struck out looking. (2 out)",
+            "N. Burinda singled to right center; A. DeMeyer advanced to second; K. Aultman advanced to third.",
+            "K. Hall flied out to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Peterson fouled out to 1b. (1 out)",
+            "E. Woida out at first 1b to 2b, bunt. (2 out)",
+            "A. Hughes walked.",
+            "A. Hughes stole second.",
+            "A. Hughes advanced to third on a wild pitch.",
+            "E. Crowe walked.",
+            "E. Crowe out at second c to ss, caught stealing. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Aultman doubled to center field.",
+            "G. Gardner pinch ran for K. Aultman.",
+            "A. DeMeyer out at first 1b to 2b, bunt, SAC; G. Gardner advanced to third. (1 out)",
+            "A. Pitts hit by pitch.",
+            "N. Burinda singled to pitcher, bunt, RBI; A. Pitts advanced to second; G. Gardner scored.",
+            "N. Burinda stole second; A. Pitts stole third.",
+            "K. Hall doubled to center field, 2 RBI; N. Burinda scored; A. Pitts scored.",
+            "T. Peterson struck out looking. (2 out)",
+            "E. Woida out at first p to 2b, bunt. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Sillings to 1b for A. Gray.",
+            "G. Paolino to cf for E. Etemad-Gi.",
+            "A. Hughes singled to left field.",
+            "A. Hughes out at second c to ss, caught stealing. (1 out)",
+            "L. Duggan singled to right field.",
+            "K. Dolan pinch ran for L. Duggan.",
+            "K. Aultman flied out to rf. (2 out)",
+            "A. DeMeyer struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "H. Effertz pinch hit for A. Pitts.",
+            "H. Effertz flied out to rf. (1 out)",
+            "N. Burinda struck out looking. (2 out)",
+            "K. Hall struck out looking. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "T. Peterson grounded out to 3b. (1 out)",
+            "E. Woida grounded out to 3b. (2 out)",
+            "A. Hughes singled to left field.",
+            "E. Crowe pinch hit for B. Vangruens.",
+            "A. Hughes stole second.",
+            "E. Crowe walked.",
+            "K. Aultman walked; E. Crowe advanced to second; A. Hughes advanced to third.",
+            "K. Aultman advanced to second on a passed ball; E. Crowe advanced to third on a passed ball; A. Hughes scored on a passed ball, unearned.",
+            "A. DeMeyer walked.",
+            "A. Pitts grounded out to ss. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250317_1ok8.xml",
+      "date": "",
+      "opponent": "Buffalo State",
+      "pitchers": [
+        "Sydney Bednarz",
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Jedrich struck out looking. (1 out)",
+            "E. Stewart singled to catcher.",
+            "M. Lucas singled to center field; E. Stewart advanced to second.",
+            "C. O'Hara fouled out to lf. (2 out)",
+            "L. Quagliana flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Hurley popped up to 2b. (1 out)",
+            "N. Burck hit by pitch.",
+            "D. Kellogg out at first 1b to 2b, SAC; N. Burck advanced to second. (2 out)",
+            "E. Mullen singled to left field, advanced to second; N. Burck advanced to third.",
+            "A. Jedrich struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Pepe to c.",
+            "A. Sillings to 1b.",
+            "E. Stewart homered, RBI.",
+            "M. Lucas doubled to center field.",
+            "C. O'Hara popped up to 1b. (1 out)",
+            "L. Quagliana tripled, RBI; M. Lucas scored.",
+            "M. Hurley struck out. (2 out)",
+            "N. Burck singled to left field, RBI; L. Quagliana scored.",
+            "D. Kellogg walked; N. Burck advanced to second.",
+            "E. Mullen struck out, reached first on a wild pitch; D. Kellogg advanced to second; N. Burck advanced to third.",
+            "A. Gauthier to p for S. Bednarz.",
+            "I. Pezdek pinch hit for A. Jedrich.",
+            "I. Pezdek struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Stewart grounded out to ss. (1 out)",
+            "M. Lucas singled up the middle.",
+            "C. O'Hara lined out to lf. (2 out)",
+            "L. Quagliana struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Hurley struck out looking. (1 out)",
+            "N. Burck singled up the middle.",
+            "D. Kellogg reached on a fielder's choice; N. Burck out at second cf to 2b. (2 out)",
+            "D. Kellogg out at second ss to c, caught stealing. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Pepe to 1b for E. Etemad-Gi.",
+            "E. Mullen struck out looking. (1 out)",
+            "A. Jedrich walked.",
+            "A. Jedrich stole second.",
+            "E. Stewart struck out. (2 out)",
+            "G. Martinez struck out, out at first c to 1b. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. O'Hara homered, RBI.",
+            "L. Quagliana doubled to left field.",
+            "G. Albano pinch hit for M. Hurley.",
+            "G. Albano popped up to 1b. (1 out)",
+            "N. Burck struck out swinging. (2 out)",
+            "D. Kellogg walked.",
+            "S. Graczyk pinch hit for E. Mullen.",
+            "S. Graczyk struck out looking. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250317_47g6.xml",
+      "date": "",
+      "opponent": "Fredonia",
+      "pitchers": [
+        "Sydney Bednarz",
+        "Julianna Chisholm"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Wandell grounded out to ss. (1 out)",
+            "M. Devore singled to center field.",
+            "M. Devore out at second c to ss, caught stealing. (2 out)",
+            "M. Lowe singled through the left side.",
+            "A. Hill hit by pitch; M. Lowe advanced to second.",
+            "A. Hill advanced to second on a passed ball; M. Lowe advanced to third on a passed ball.",
+            "M. Guidry walked.",
+            "K. Lajewski struck out looking. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Behrikis to ss.",
+            "M. Rooney to 3b.",
+            "M. Cadena to dp.",
+            "A. LeRouzes struck out looking. (1 out)",
+            "K. Lynn struck out swinging. (2 out)",
+            "E. Fisher grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Wandell grounded out to ss. (1 out)",
+            "M. Devore grounded out to 3b. (2 out)",
+            "M. Lowe flied out to rf. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Hill flied out to lf. (1 out)",
+            "M. Guidry grounded out to 3b. (2 out)",
+            "K. Lajewski doubled down the lf line, out at third lf to ss to 2b to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Gray to 1b for H. Jensen.",
+            "J. Chisholm to p for S. Bednarz.",
+            "A. LeRouzes grounded out to ss. (1 out)",
+            "K. Lynn walked.",
+            "C. Reccardi pinch hit for E. Fisher.",
+            "C. Reccardi grounded out 3b to ss to 1b; K. Lynn advanced to second. (2 out)",
+            "A. Wandell grounded out to p, bunt. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Devore doubled to left center.",
+            "M. Lowe flied out to cf. (1 out)",
+            "A. Hill popped up to c. (2 out)",
+            "M. Guidry lined out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "I. MacDonald to rf for C. Leger.",
+            "E. Tytler pinch hit for A. LeRouzes.",
+            "K. Lajewski struck out looking. (1 out)",
+            "E. Tytler singled to left field.",
+            "K. Lynn flied out to rf. (2 out)",
+            "C. Reccardi doubled down the lf line, RBI; E. Tytler scored.",
+            "A. Wandell popped up to 1b. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250318_jbs3.xml",
+      "date": "",
+      "opponent": "Middlebury",
+      "pitchers": [
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Carroll popped up to 1b. (1 out)",
+            "C. Viola popped up to 3b. (2 out)",
+            "O. Scholes singled up the middle.",
+            "J. Westphal singled to right field; O. Scholes advanced to third.",
+            "M. Lont grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O. Schultz walked.",
+            "N. Schroeder reached on a fielder's choice to second base; O. Schultz out at second 2b to ss. (1 out)",
+            "Al. Jankowsk struck out swinging. (2 out)",
+            "O. Fleming flied out to lf. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Carroll singled to third base.",
+            "C. Viola grounded out to 2b; K. Carroll advanced to second. (1 out)",
+            "O. Scholes homered to center field, 2 RBI; K. Carroll scored.",
+            "J. Westphal struck out swinging, out at first c to 1b. (2 out)",
+            "M. Lont singled through the left side.",
+            "O. Schultz popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Schroeder walked.",
+            "N. Schroeder to lf for S. Wong.",
+            "S. Wong pinch ran for N. Schroeder.",
+            "K. Dever to rf for Al. Jankowsk.",
+            "K. Dever struck out swinging. (1 out)",
+            "O. Fleming reached on a fielder's choice to shortstop; S. Wong out at second ss to 2b. (2 out)",
+            "K. Carroll struck out. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Viola flied out to cf. (1 out)",
+            "O. Scholes grounded out to ss. (2 out)",
+            "J. Westphal grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Sillings to 1b for H. Jensen.",
+            "M. Lont fouled out to 1b. (1 out)",
+            "O. Schultz struck out looking. (2 out)",
+            "N. Schroeder grounded out to 1b unassisted. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Dever singled through the left side.",
+            "C. Stanley pinch hit for O. Fleming.",
+            "C. Stanley hit by pitch; K. Dever advanced to second.",
+            "K. Carroll singled up the middle, advanced to second on the throw, RBI; C. Stanley advanced to third; K. Dever scored.",
+            "C. Viola singled to left field, RBI; K. Carroll advanced to third; C. Stanley scored.",
+            "K. Carroll stole home.",
+            "O. Scholes singled through the right side; C. Viola advanced to second.",
+            "J. Westphal struck out looking. (1 out)",
+            "M. Lont struck out looking. (2 out)",
+            "O. Schultz struck out swinging. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250318_6dm7.xml",
+      "date": "",
+      "opponent": "Bowdoin",
+      "pitchers": [
+        "Sydney Bednarz",
+        "Julianna Chisholm",
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Ewert walked.",
+            "A. Ewert stole second.",
+            "K. Fado out at first 3b to 2b, SAC, bunt; A. Ewert advanced to third. (1 out)",
+            "E. Siciliano grounded out to ss, RBI; A. Ewert scored.",
+            "S. Lang struck out. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Garcia homered, RBI.",
+            "R. Panenka reached first on an error by ss.",
+            "J. Bradley singled to shortstop; R. Panenka advanced to second.",
+            "M. Paschke struck out. (1 out)",
+            "J. Bradley stole second; R. Panenka stole third.",
+            "K. Gary grounded out to 2b, RBI; J. Bradley advanced to third; R. Panenka scored, unearned.",
+            "A. Ewert grounded out to p. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Fado flied out to cf. (1 out)",
+            "E. Siciliano grounded out to 2b. (2 out)",
+            "S. Lang grounded out to 3b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Chisholm to p for S. Bednarz.",
+            "E. Etemad-Gi to dp.",
+            "M. Cadena to rf for I. MacDonald.",
+            "C. Garcia popped up to ss. (1 out)",
+            "R. Panenka flied out to cf. (2 out)",
+            "J. Bradley hit by pitch.",
+            "M. Paschke popped up to ss. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Gary singled to shortstop.",
+            "K. Gary advanced to second on a wild pitch.",
+            "A. Ewert walked.",
+            "K. Fado popped up to ss. (1 out)",
+            "E. Siciliano singled to right field; A. Ewert advanced to second; K. Gary advanced to third.",
+            "S. Lang popped up to p. (2 out)",
+            "C. Garcia lined out to cf. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Behrikis to dp.",
+            "M. Rooney to ss.",
+            "J. Pepe to c.",
+            "E. Carignan to 3b.",
+            "V. Connelly to lf for H. Jensen.",
+            "A. Sillings to 1b for E. Etemad-Gi.",
+            "A. Gauthier to p for J. Chisholm.",
+            "R. Panenka grounded out to 2b. (1 out)",
+            "J. Bradley struck out. (2 out)",
+            "R. Parga pinch hit for M. Paschke.",
+            "R. Parga struck out. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Gary grounded out to ss. (1 out)",
+            "A. Ewert grounded out to ss. (2 out)",
+            "K. Fado struck out. (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "url": "https://www.fsurams.com/sports/sball/2024-25/boxscores/20250320_u8yz.xml",
+      "date": "",
+      "opponent": "Augsburg",
+      "pitchers": [
+        "Audrey Gauthier"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Gissler reached first on an error by ss.",
+            "M. Gissler advanced to second on a wild pitch.",
+            "O. Hennager flied out to 2b. (1 out)",
+            "M. Paaske fouled out to 3b. (2 out)",
+            "L. Pilon doubled to left field, RBI; M. Gissler scored, unearned.",
+            "Z. Johnson singled to left field; L. Pilon advanced to third.",
+            "O. Funk singled to center field, RBI; Z. Johnson advanced to second; L. Pilon scored, unearned.",
+            "G. Syson struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Olson reached first on an error by ss.",
+            "J. Evenson struck out swinging. (1 out)",
+            "M. Gissler lined out to cf. (2 out)",
+            "O. Hennager struck out looking. (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Paaske struck out looking. (1 out)",
+            "L. Pilon tripled to right field.",
+            "Z. Johnson struck out swinging. (2 out)",
+            "O. Funk popped up to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "G. Syson struck out swinging. (1 out)",
+            "J. Olson lined out to 1b. (2 out)",
+            "J. Evenson grounded out to 2b. (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Carignan to 3b for K. Brodzinsk.",
+            "M. Gissler lined out to lf. (1 out)",
+            "O. Hennager struck out swinging. (2 out)",
+            "M. Paaske singled to center field.",
+            "L. Pilon doubled to left field; M. Paaske advanced to third.",
+            "Z. Johnson struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "I. MacDonald to rf for G. Paolino.",
+            "V. Connelly to lf for M. Cadena.",
+            "O. Funk grounded out to ss. (1 out)",
+            "G. Syson flied out to rf. (2 out)",
+            "J. Olson singled to center field.",
+            "E. Schmidt pinch hit for J. Evenson.",
+            "E. Schmidt struck out swinging. (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Gissler reached first on a dropped fly by 3b.",
+            "O. Hennager doubled to center field, RBI; M. Gissler scored, unearned.",
+            "M. Paaske singled to left field; O. Hennager advanced to third.",
+            "T. Rehder pinch ran for M. Paaske.",
+            "L. Pilon doubled to center field, 2 RBI; T. Rehder scored; O. Hennager scored.",
+            "Z. Johnson popped up to 2b. (1 out)",
+            "O. Funk flied out to cf. (2 out)",
+            "G. Syson struck out looking. (3 out)"
+          ]
+        }
+      ]
+    }
+  ]
+}
