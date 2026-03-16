@@ -13,6 +13,7 @@
  *   npm run scrape-opponents -- --with-gamedata                   # include full gamedata
  *   npm run scrape-opponents -- --roster-only                     # rosters only, skip stats
  *   npm run scrape-opponents -- --team wpi --with-gamedata --years 2025
+ *   npm run scrape-opponents -- --with-pitching --force            # re-scrape all boxscores
  */
 
 import axios from 'axios';
@@ -200,6 +201,7 @@ interface TeamOutput {
   scrapedAt: string;
   players: PlayerOutput[];
   teamGamesByYear: Record<string, number>;
+  pitchingStatsByYear: Record<string, PitchingStatsRow[]>;
 }
 
 // ── Pitching scraping types ──
@@ -219,14 +221,6 @@ interface GamePitchingData {
   battingInnings: { inning: string; plays: string[] }[];
 }
 
-interface PitchingOutput {
-  slug: string;
-  domain: string;
-  scrapedAt: string;
-  pitchingStatsByYear: Record<string, PitchingStatsRow[]>;
-  games: GamePitchingData[];
-}
-
 // ── Gamedata scraping types ──
 
 interface GamedataPlayByPlayInning {
@@ -244,17 +238,11 @@ interface GamedataSerializedGame {
   playByPlay: GamedataPlayByPlayInning[];
 }
 
-interface GamedataOutput {
-  slug: string;
-  domain: string;
-  scrapedAt: string;
-  gamesByYear: Record<string, GamedataSerializedGame[]>;
-}
-
 // ── Constants ──
 
 const DELAY_MS = 500;
-const DEFAULT_YEARS = [2026, 2025, 2024, 2023];
+const CURRENT_YEAR = new Date().getFullYear();
+const DEFAULT_YEARS = [CURRENT_YEAR];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -628,7 +616,9 @@ function parseOutputDirArg(): string | null {
   return process.argv[idx + 1].trim();
 }
 
-const CURRENT_YEAR = new Date().getFullYear();
+function parseForceFlag(): boolean {
+  return process.argv.includes('--force');
+}
 
 function gamedataFilename(year: number): string {
   return year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
@@ -946,9 +936,51 @@ function parseBoxscorePitching($: cheerio.CheerioAPI, url: string, teamAliases: 
   };
 }
 
+// ── Incremental scraping: load already-scraped boxscore URLs from disk ──
+
+function loadExistingBoxscoreUrls(teamDir: string, years: number[]): Set<string> {
+  const urls = new Set<string>();
+
+  years.forEach((year) => {
+    const gdFile = path.join(teamDir, gamedataFilename(year));
+
+    if (fs.existsSync(gdFile)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(gdFile, 'utf-8'));
+        const games = Array.isArray(data) ? data : [];
+        games.forEach((g: { url?: string }) => {
+          if (g.url) {
+            urls.add(g.url);
+          }
+        });
+      } catch {
+        // ignore parse errors
+      }
+    }
+
+    const pFile = path.join(teamDir, pitchingFilename(year));
+
+    if (fs.existsSync(pFile)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(pFile, 'utf-8'));
+        const games = Array.isArray(data?.games) ? data.games : [];
+        games.forEach((g: { url?: string }) => {
+          if (g.url) {
+            urls.add(g.url);
+          }
+        });
+      } catch {
+        // ignore parse errors
+      }
+    }
+  });
+
+  return urls;
+}
+
 // ── Per-team batting scraping ──
 
-async function scrapeTeam(slug: string, domain: string, years: number[]): Promise<TeamOutput> {
+async function scrapeTeam(slug: string, domain: string, years: number[], withPitching: boolean): Promise<TeamOutput> {
   console.log(`\n=== ${slug} (${domain}) ===`);
 
   // 1. Fetch roster
@@ -957,9 +989,10 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
   const roster = rosterHtml ? parseRoster(cheerio.load(rosterHtml)) : [];
   console.log(`  Found ${roster.length} roster players`);
 
-  // 2. Fetch stats for each year
+  // 2. Fetch stats for each year (batting + optionally pitching from same page)
   const statsByYear = new Map<number, BattingStats[]>();
   const teamGpByYear = new Map<number, number>();
+  const pitchingStatsByYear: Record<string, PitchingStatsRow[]> = {};
   for (const year of years) {
     await delay(DELAY_MS);
     console.log(`  Fetching ${year} stats...`);
@@ -981,6 +1014,13 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
           teamGpByYear.set(year, maxGp);
           console.log(`    Team GP (fallback from max player GP): ${maxGp}`);
         }
+      }
+
+      // Parse pitching stats from same page (no extra fetch)
+      if (withPitching) {
+        const pitchingStats = parsePitchingStatsTable($stats);
+        pitchingStatsByYear[String(year)] = pitchingStats;
+        console.log(`    Parsed ${pitchingStats.length} pitchers (from same page)`);
       }
     } else {
       console.log(`    No stats page for ${year}`);
@@ -1193,86 +1233,31 @@ async function scrapeTeam(slug: string, domain: string, years: number[]): Promis
     scrapedAt: new Date().toISOString(),
     players,
     teamGamesByYear,
-  };
-}
-
-// ── Per-team pitching scraping ──
-
-async function scrapeTeamPitching(slug: string, domain: string, years: number[]): Promise<PitchingOutput> {
-  const teamAliases = TEAM_ALIASES[slug] || [slug];
-  console.log(`\n  --- Pitching scrape for ${slug} ---`);
-
-  const pitchingStatsByYear: Record<string, PitchingStatsRow[]> = {};
-  const allGames: GamePitchingData[] = [];
-
-  for (const year of years) {
-    // Fetch pitching stats from the same stats page (already fetched for batting,
-    // but we re-fetch here since pitching is opt-in and may run independently)
-    console.log(`  Fetching ${year} pitching stats...`);
-    await delay(DELAY_MS);
-    const statsHtml = await fetchPage(`https://${domain}/sports/softball/stats/${year}`);
-
-    if (statsHtml) {
-      const $stats = cheerio.load(statsHtml);
-      const pitchingStats = parsePitchingStatsTable($stats);
-      pitchingStatsByYear[String(year)] = pitchingStats;
-      console.log(`    Parsed ${pitchingStats.length} pitchers`);
-    }
-
-    // Fetch schedule to get boxscore URLs
-    console.log(`  Fetching ${year} schedule...`);
-    await delay(DELAY_MS);
-    const scheduleHtml = await fetchPage(`https://${domain}/sports/softball/schedule/${year}`);
-
-    if (!scheduleHtml) {
-      console.log(`    No schedule page for ${year}`);
-      continue;
-    }
-
-    const $schedule = cheerio.load(scheduleHtml);
-    const boxscoreUrls = extractBoxscoreUrls($schedule, domain);
-    console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
-
-    // Fetch each boxscore and extract pitching data
-    for (let i = 0; i < boxscoreUrls.length; i++) {
-      const url = boxscoreUrls[i];
-      console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
-      await delay(DELAY_MS);
-
-      const html = await fetchPage(url);
-      if (!html) {
-        continue;
-      }
-
-      const $ = cheerio.load(html);
-      const gameData = parseBoxscorePitching($, url, teamAliases);
-
-      if (gameData && gameData.battingInnings.length > 0) {
-        allGames.push({ ...gameData, year });
-      }
-    }
-  }
-
-  console.log(`  Pitching scrape complete: ${allGames.length} games with play-by-play`);
-
-  return {
-    slug,
-    domain,
-    scrapedAt: new Date().toISOString(),
     pitchingStatsByYear,
-    games: allGames,
   };
 }
 
-// ── Per-team gamedata scraping ──
+// ── Single-pass boxscore scraping (replaces separate pitching + gamedata scrapes) ──
 
-async function scrapeTeamGamedata(slug: string, domain: string, years: number[]): Promise<GamedataOutput> {
-  const teamAliases = TEAM_ALIASES[slug] || [slug];
-  console.log(`\n  --- Gamedata scrape for ${slug} ---`);
+async function scrapeTeamBoxscores(
+  slug: string,
+  domain: string,
+  years: number[],
+  teamAliases: string[],
+  teamDir: string,
+  opts: { pitching: boolean; gamedata: boolean; force: boolean }
+): Promise<{
+  scrapedAt: string;
+  pitchingGames: GamePitchingData[];
+  gamedataByYear: Record<string, GamedataSerializedGame[]>;
+}> {
+  console.log(`\n  --- Boxscore scrape for ${slug} (pitching: ${opts.pitching}, gamedata: ${opts.gamedata}) ---`);
 
-  const gamesByYear: Record<string, GamedataSerializedGame[]> = {};
+  const allPitchingGames: GamePitchingData[] = [];
+  const gamedataByYear: Record<string, GamedataSerializedGame[]> = {};
 
   for (const year of years) {
+    // Fetch schedule to get boxscore URLs (once per year)
     console.log(`  Fetching ${year} schedule...`);
     await delay(DELAY_MS);
     const scheduleHtml = await fetchPage(`https://${domain}/sports/softball/schedule/${year}`);
@@ -1283,49 +1268,66 @@ async function scrapeTeamGamedata(slug: string, domain: string, years: number[])
     }
 
     const $schedule = cheerio.load(scheduleHtml);
-    const boxscoreUrls = extractBoxscoreUrls($schedule, domain);
-    console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
+    const allBoxscoreUrls = extractBoxscoreUrls($schedule, domain);
 
-    const games: GamedataSerializedGame[] = [];
+    // Incremental: skip already-scraped boxscores
+    const existingUrls = opts.force ? new Set<string>() : loadExistingBoxscoreUrls(teamDir, [year]);
+    const boxscoreUrls = allBoxscoreUrls.filter((url) => !existingUrls.has(url));
+    const skipped = allBoxscoreUrls.length - boxscoreUrls.length;
+    console.log(`    Found ${allBoxscoreUrls.length} boxscore URLs (${skipped} already scraped, ${boxscoreUrls.length} new)`);
 
+    const gamedataGames: GamedataSerializedGame[] = [];
+
+    // Single pass: fetch each boxscore and extract everything we need
     for (let i = 0; i < boxscoreUrls.length; i++) {
       const url = boxscoreUrls[i];
       console.log(`    Fetching boxscore ${i + 1}/${boxscoreUrls.length}: ${url}`);
       await delay(DELAY_MS);
 
       const html = await fetchPage(url);
+
       if (!html) {
         continue;
       }
 
       const $ = cheerio.load(html);
-      const lineup = parseTeamLineup($, teamAliases);
-      const playByPlay = parseTeamPlayByPlay($, teamAliases);
 
-      if (lineup.length === 0 && playByPlay.length === 0) {
-        continue;
+      // Pitching: extract from this single Cheerio instance
+      if (opts.pitching) {
+        const gameData = parseBoxscorePitching($, url, teamAliases);
+
+        if (gameData && gameData.battingInnings.length > 0) {
+          allPitchingGames.push({ ...gameData, year });
+        }
       }
 
-      const opponent = parseOpponentFromUrl(url);
-      const pitchers = parseTeamPitchers($, teamAliases).map(normalizeName);
-      games.push({ year, url, opponent, pitchers, lineup, playByPlay });
+      // Gamedata: extract from this same Cheerio instance
+      if (opts.gamedata) {
+        const lineup = parseTeamLineup($, teamAliases);
+        const playByPlay = parseTeamPlayByPlay($, teamAliases);
+
+        if (lineup.length > 0 || playByPlay.length > 0) {
+          const opponent = parseOpponentFromUrl(url);
+          const pitchers = parseTeamPitchers($, teamAliases).map(normalizeName);
+          gamedataGames.push({ year, url, opponent, pitchers, lineup, playByPlay });
+        }
+      }
     }
 
-    if (games.length > 0) {
-      gamesByYear[String(year)] = games;
+    if (gamedataGames.length > 0) {
+      gamedataByYear[String(year)] = gamedataGames;
     }
 
-    console.log(`    ${year}: ${games.length} games with gamedata`);
+    const pitchingCount = allPitchingGames.filter((g) => g.year === year).length;
+    console.log(`    ${year}: ${pitchingCount} pitching games, ${gamedataGames.length} gamedata games`);
   }
 
-  const totalGames = Object.values(gamesByYear).reduce((sum, g) => sum + g.length, 0);
-  console.log(`  Gamedata scrape complete: ${totalGames} total games`);
+  console.log(`  Boxscore scrape complete: ${allPitchingGames.length} pitching games, ${Object.values(gamedataByYear).reduce((sum, g) => sum + g.length, 0)} gamedata games`);
 
   return {
-    slug,
-    domain,
     scrapedAt: new Date().toISOString(),
-    gamesByYear,
+    pitchingGames: allPitchingGames,
+    gamedataByYear,
   };
 }
 
@@ -1340,6 +1342,7 @@ async function main(): Promise<void> {
   const florida = parseFloridaFlag();
   const nonConference = parseNonConferenceFlag();
   const outputDirOverride = parseOutputDirArg();
+  const force = parseForceFlag();
   const baseOutputDir = path.resolve(__dirname, '../public/data/opponents');
   const outputDir = outputDirOverride ? path.resolve(outputDirOverride) : florida ? path.join(baseOutputDir, 'florida') : baseOutputDir;
   fs.mkdirSync(outputDir, { recursive: true });
@@ -1418,12 +1421,14 @@ async function main(): Promise<void> {
   console.log(`Scraping opponents for years: ${years.join(', ')}`);
   console.log(`Pitching play-by-play: ${withPitching ? 'YES' : 'no'}`);
   console.log(`Full gamedata: ${withGamedata ? 'YES' : 'no'}`);
+  console.log(`Force re-scrape: ${force ? 'YES' : 'no'}`);
 
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
     const teamDir = outputDirOverride ? outputDir : path.join(outputDir, slug);
     fs.mkdirSync(teamDir, { recursive: true });
 
-    const result = await scrapeTeam(slug, domain, years);
+    // Batting stats + pitching stats (from same stats page, no extra fetch)
+    const result = await scrapeTeam(slug, domain, years, withPitching);
 
     // Write per-year batting files
     const scrapedAt = result.scrapedAt;
@@ -1456,42 +1461,97 @@ async function main(): Promise<void> {
       console.log(`  Wrote ${outPath} (${yearPlayers.length} players)`);
     });
 
-    // Optionally scrape pitching play-by-play
-    if (withPitching) {
-      const pitchingResult = await scrapeTeamPitching(slug, domain, years);
-
-      // Write per-year pitching files
-      years.forEach((year) => {
-        const stats = pitchingResult.pitchingStatsByYear[String(year)] ?? [];
-        const games = pitchingResult.games.filter((g) => g.year === year);
-
-        if (stats.length === 0 && games.length === 0) {
-          return;
-        }
-
-        const yearData = {
-          slug,
-          domain,
-          scrapedAt: pitchingResult.scrapedAt,
-          year,
-          pitchingStats: stats,
-          games,
-        };
-        const outPath = path.join(teamDir, pitchingFilename(year));
-        fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
-        console.log(`  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`);
+    // Single-pass boxscore scraping (pitching + gamedata from same HTML)
+    if (withPitching || withGamedata) {
+      const teamAliases = TEAM_ALIASES[slug] || [slug];
+      const boxscoreResult = await scrapeTeamBoxscores(slug, domain, years, teamAliases, teamDir, {
+        pitching: withPitching,
+        gamedata: withGamedata,
+        force,
       });
-    }
 
-    // Optionally scrape full gamedata (lineup + play-by-play)
-    if (withGamedata) {
-      const gamedataResult = await scrapeTeamGamedata(slug, domain, years);
+      // Write pitching files (merge new games with existing)
+      if (withPitching) {
+        years.forEach((year) => {
+          const stats = result.pitchingStatsByYear[String(year)] ?? [];
+          const newGames = boxscoreResult.pitchingGames.filter((g) => g.year === year);
+          const outPath = path.join(teamDir, pitchingFilename(year));
 
-      Object.entries(gamedataResult.gamesByYear).forEach(([year, games]) => {
-        const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));
-        fs.writeFileSync(gamedataOutPath, JSON.stringify(games, null, 2));
-        console.log(`  Wrote ${gamedataOutPath} (${games.length} games)`);
-      });
+          // Merge new games with existing file
+          let mergedGames = newGames;
+
+          if (fs.existsSync(outPath) && !force) {
+            try {
+              const existing = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+              const existingGames: GamePitchingData[] = Array.isArray(existing?.games) ? existing.games : [];
+              const existingUrlSet = new Set(existingGames.map((g) => g.url));
+              const deduped = newGames.filter((g) => !existingUrlSet.has(g.url));
+              mergedGames = [...existingGames, ...deduped];
+
+              if (deduped.length > 0) {
+                console.log(`  Merging ${deduped.length} new pitching games with ${existingGames.length} existing`);
+              }
+            } catch {
+              // If parse fails, overwrite
+            }
+          }
+
+          // Use fresh stats (always re-fetched), fall back to existing if unavailable
+          const finalStats =
+            stats.length > 0
+              ? stats
+              : (() => {
+                  try {
+                    const existing = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+
+                    return Array.isArray(existing?.pitchingStats) ? existing.pitchingStats : [];
+                  } catch {
+                    return [];
+                  }
+                })();
+
+          if (finalStats.length === 0 && mergedGames.length === 0) {
+            return;
+          }
+
+          const yearData = {
+            slug,
+            domain,
+            scrapedAt: boxscoreResult.scrapedAt,
+            year,
+            pitchingStats: finalStats,
+            games: mergedGames,
+          };
+          fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
+          console.log(`  Wrote ${outPath} (${finalStats.length} pitchers, ${mergedGames.length} games)`);
+        });
+      }
+
+      // Write gamedata files (merge new games with existing)
+      if (withGamedata) {
+        Object.entries(boxscoreResult.gamedataByYear).forEach(([year, games]) => {
+          const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));
+          let combined = games;
+
+          if (fs.existsSync(gamedataOutPath) && !force) {
+            try {
+              const existing: GamedataSerializedGame[] = JSON.parse(fs.readFileSync(gamedataOutPath, 'utf-8'));
+              const existingUrlSet = new Set(existing.map((g) => g.url));
+              const newGames = games.filter((g) => !existingUrlSet.has(g.url));
+              combined = [...existing, ...newGames];
+
+              if (newGames.length > 0) {
+                console.log(`  Merging ${newGames.length} new gamedata games with ${existing.length} existing`);
+              }
+            } catch {
+              // If parse fails, overwrite
+            }
+          }
+
+          fs.writeFileSync(gamedataOutPath, JSON.stringify(combined, null, 2));
+          console.log(`  Wrote ${gamedataOutPath} (${combined.length} games)`);
+        });
+      }
     }
 
     // Be nice between teams

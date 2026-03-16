@@ -6,10 +6,11 @@
  * historical files keep year suffixes (gamedata-2025.json, etc.).
  *
  * Usage:
- *   npm run prefetch                          # all years
+ *   npm run prefetch                          # current year only
  *   npm run prefetch -- --years 2025          # single year
  *   npm run prefetch -- --years 2025,2024     # multiple years
  *   npm run prefetch -- --roster-only         # scrape roster only
+ *   npm run prefetch -- --force               # re-scrape all boxscores
  */
 
 import axios from 'axios';
@@ -190,7 +191,8 @@ function calculateWoba(stats: { ab: number; h: number; doubles: number; triples:
 
 const BASE_URL = 'https://wellesleyblue.com';
 const DELAY_MS = 300;
-const DEFAULT_YEARS = [2026, 2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+const CURRENT_YEAR = new Date().getFullYear();
+const DEFAULT_YEARS = [CURRENT_YEAR];
 
 const HEADERS = {
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -252,7 +254,9 @@ function parseRosterOnlyFlag(): boolean {
   return process.argv.includes('--roster-only');
 }
 
-const CURRENT_YEAR = new Date().getFullYear();
+function parseForceFlag(): boolean {
+  return process.argv.includes('--force');
+}
 
 function dataFilename(base: string, year: number): string {
   return year === CURRENT_YEAR ? `${base}.json` : `${base}-${year}.json`;
@@ -908,9 +912,49 @@ function parseWellesleyPitchers($: cheerio.CheerioAPI): string[] {
   return pitchers;
 }
 
+// ── Incremental scraping: load already-scraped boxscore URLs from disk ──
+
+function loadExistingBoxscoreUrls(outputDir: string, year: number): Set<string> {
+  const urls = new Set<string>();
+
+  const gdFile = path.join(outputDir, dataFilename('gamedata', year));
+
+  if (fs.existsSync(gdFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(gdFile, 'utf-8'));
+      const games = Array.isArray(data) ? data : [];
+      games.forEach((g: { url?: string }) => {
+        if (g.url) {
+          urls.add(g.url);
+        }
+      });
+    } catch {
+      // ignore parse errors
+    }
+  }
+
+  const pFile = path.join(outputDir, dataFilename('pitching', year));
+
+  if (fs.existsSync(pFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(pFile, 'utf-8'));
+      const games = Array.isArray(data?.games) ? data.games : [];
+      games.forEach((g: { url?: string }) => {
+        if (g.url) {
+          urls.add(g.url);
+        }
+      });
+    } catch {
+      // ignore parse errors
+    }
+  }
+
+  return urls;
+}
+
 // ── Main orchestration ──
 
-async function prefetchYear(year: number, outputDir: string): Promise<void> {
+async function prefetchYear(year: number, outputDir: string, force: boolean): Promise<void> {
   console.log(`\n=== Prefetching ${year} ===`);
 
   // 1. Fetch schedule page to get boxscore URLs
@@ -923,16 +967,21 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   }
 
   const $schedule = cheerio.load(scheduleHtml);
-  const boxscoreUrls = extractBoxscoreUrls($schedule);
-  console.log(`  Found ${boxscoreUrls.length} boxscore URLs`);
+  const allBoxscoreUrls = extractBoxscoreUrls($schedule);
 
-  if (boxscoreUrls.length === 0) {
+  if (allBoxscoreUrls.length === 0) {
     console.log(`  No boxscores for ${year}, skipping`);
 
     return;
   }
 
-  // 2. Fetch stats page for season totals
+  // Incremental: skip already-scraped boxscores
+  const existingUrls = force ? new Set<string>() : loadExistingBoxscoreUrls(outputDir, year);
+  const boxscoreUrls = allBoxscoreUrls.filter((url) => !existingUrls.has(url));
+  const skipped = allBoxscoreUrls.length - boxscoreUrls.length;
+  console.log(`  Found ${allBoxscoreUrls.length} boxscore URLs (${skipped} already scraped, ${boxscoreUrls.length} new)`);
+
+  // 2. Fetch stats page for season totals (always re-fetch — aggregates change every game)
   console.log(`  Fetching stats page...`);
   await delay(DELAY_MS);
   const statsHtml = await fetchPage(`${BASE_URL}/sports/softball/stats/${year}`);
@@ -942,7 +991,7 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
   const pitchingStats = $stats ? parsePitchingStatsTable($stats) : [];
   console.log(`  Parsed ${pitchingStats.length} pitchers from stats table`);
 
-  // 3. Fetch each boxscore and extract game data, woba batting data, and pitching data
+  // 3. Fetch each NEW boxscore and extract game data, woba batting data, and pitching data
   const gameDataList: SerializedGameData[] = [];
   const boxscoreDataList: BoxscoreData[] = [];
   const pitchingGameList: GamePitchingData[] = [];
@@ -986,10 +1035,27 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     }
   }
 
-  // 4. Write JSON files
+  // 4. Write JSON files (merge new data with existing for incremental runs)
   const gamedataPath = path.join(outputDir, dataFilename('gamedata', year));
-  fs.writeFileSync(gamedataPath, JSON.stringify(gameDataList));
-  console.log(`  Wrote ${gamedataPath} (${gameDataList.length} games)`);
+  let mergedGameData = gameDataList;
+
+  if (fs.existsSync(gamedataPath) && !force) {
+    try {
+      const existing: SerializedGameData[] = JSON.parse(fs.readFileSync(gamedataPath, 'utf-8'));
+      const existingUrlSet = new Set(existing.map((g) => g.url));
+      const newGames = gameDataList.filter((g) => !existingUrlSet.has(g.url));
+      mergedGameData = [...existing, ...newGames];
+
+      if (newGames.length > 0) {
+        console.log(`  Merging ${newGames.length} new gamedata with ${existing.length} existing`);
+      }
+    } catch {
+      // If parse fails, overwrite
+    }
+  }
+
+  fs.writeFileSync(gamedataPath, JSON.stringify(mergedGameData));
+  console.log(`  Wrote ${gamedataPath} (${mergedGameData.length} games)`);
 
   // Load roster for enriching player data
   const rosterPath = path.join(outputDir, 'roster.json');
@@ -1015,6 +1081,25 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     };
   });
 
+  // Merge boxscore batting data with existing
+  let mergedBoxscores = boxscoreDataList;
+
+  if (!force) {
+    const existingBattingPath = path.join(outputDir, dataFilename('batting-stats', year));
+
+    if (fs.existsSync(existingBattingPath)) {
+      try {
+        const existing = JSON.parse(fs.readFileSync(existingBattingPath, 'utf-8'));
+        const existingBoxscores: BoxscoreData[] = Array.isArray(existing?.boxscores) ? existing.boxscores : [];
+        const existingUrlSet = new Set(existingBoxscores.map((b) => b.url));
+        const newBoxscores = boxscoreDataList.filter((b) => !existingUrlSet.has(b.url));
+        mergedBoxscores = [...existingBoxscores, ...newBoxscores];
+      } catch {
+        // If parse fails, overwrite
+      }
+    }
+  }
+
   const battingStatsPath = path.join(outputDir, dataFilename('batting-stats', year));
   const battingData: YearBattingData = {
     slug: 'wellesley',
@@ -1023,22 +1108,41 @@ async function prefetchYear(year: number, outputDir: string): Promise<void> {
     year,
     teamGames,
     players: yearPlayers,
-    boxscores: boxscoreDataList,
+    boxscores: mergedBoxscores,
   };
   fs.writeFileSync(battingStatsPath, JSON.stringify(battingData));
-  console.log(`  Wrote ${battingStatsPath} (${yearPlayers.length} players, ${boxscoreDataList.length} boxscores)`);
+  console.log(`  Wrote ${battingStatsPath} (${yearPlayers.length} players, ${mergedBoxscores.length} boxscores)`);
 
+  // Merge pitching games with existing
+  let mergedPitchingGames = pitchingGameList;
   const pitchingPath = path.join(outputDir, dataFilename('pitching', year));
+
+  if (fs.existsSync(pitchingPath) && !force) {
+    try {
+      const existing = JSON.parse(fs.readFileSync(pitchingPath, 'utf-8'));
+      const existingGames: GamePitchingData[] = Array.isArray(existing?.games) ? existing.games : [];
+      const existingUrlSet = new Set(existingGames.map((g) => g.url));
+      const newGames = pitchingGameList.filter((g) => !existingUrlSet.has(g.url));
+      mergedPitchingGames = [...existingGames, ...newGames];
+
+      if (newGames.length > 0) {
+        console.log(`  Merging ${newGames.length} new pitching games with ${existingGames.length} existing`);
+      }
+    } catch {
+      // If parse fails, overwrite
+    }
+  }
+
   const pitchingOutput: PitchingOutput = {
     slug: 'wellesley',
     domain: 'wellesleyblue.com',
     scrapedAt: new Date().toISOString(),
     year,
     pitchingStats,
-    games: pitchingGameList,
+    games: mergedPitchingGames,
   };
   fs.writeFileSync(pitchingPath, JSON.stringify(pitchingOutput));
-  console.log(`  Wrote ${pitchingPath} (${pitchingStats.length} pitchers, ${pitchingGameList.length} games)`);
+  console.log(`  Wrote ${pitchingPath} (${pitchingStats.length} pitchers, ${mergedPitchingGames.length} games)`);
 }
 
 // ── Roster scraping (jersey numbers) ──
@@ -1156,10 +1260,12 @@ async function prefetchRoster(outputDir: string): Promise<void> {
 async function main(): Promise<void> {
   const years = parseYearsArg();
   const rosterOnly = parseRosterOnlyFlag();
+  const force = parseForceFlag();
   const outputDir = path.resolve(__dirname, '../public/data');
   fs.mkdirSync(outputDir, { recursive: true });
 
   console.log(`Output directory: ${outputDir}`);
+  console.log(`Force re-scrape: ${force ? 'YES' : 'no'}`);
 
   await prefetchRoster(outputDir);
 
@@ -1173,7 +1279,7 @@ async function main(): Promise<void> {
   console.log(`Prefetching data for years: ${years.join(', ')}`);
 
   for (const year of years) {
-    await prefetchYear(year, outputDir);
+    await prefetchYear(year, outputDir, force);
   }
 
   console.log('\nDone!');
