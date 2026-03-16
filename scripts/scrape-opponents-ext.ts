@@ -187,7 +187,65 @@ function lastNameOnly(key: string): string {
   return key.split(',')[0].trim();
 }
 
-async function fetchPage(url: string): Promise<string | null> {
+/** Extract game date from Presto boxscore URL (e.g. 20260308 → Date). */
+function extractDateFromBoxscoreUrl(url: string): Date | null {
+  const match = url.match(/\/boxscores\/(\d{8})/);
+
+  if (!match) {
+    return null;
+  }
+
+  const dateStr = match[1];
+  const year = parseInt(dateStr.slice(0, 4), 10);
+  const month = parseInt(dateStr.slice(4, 6), 10) - 1;
+  const day = parseInt(dateStr.slice(6, 8), 10);
+  const date = new Date(year, month, day);
+
+  return isNaN(date.getTime()) ? null : date;
+}
+
+/** Load boxscore URLs already scraped (from gamedata + pitching files on disk). */
+function loadExistingBoxscoreUrls(teamDir: string, years: number[]): Set<string> {
+  const urls = new Set<string>();
+
+  years.forEach((year) => {
+    const gdFile = path.join(teamDir, gamedataFilename(year));
+
+    if (fs.existsSync(gdFile)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(gdFile, 'utf-8'));
+        const games = Array.isArray(data) ? data : [];
+        games.forEach((g: { url?: string }) => {
+          if (g.url) {
+            urls.add(g.url);
+          }
+        });
+      } catch {
+        // ignore parse errors
+      }
+    }
+
+    const pFile = path.join(teamDir, pitchingFilename(year));
+
+    if (fs.existsSync(pFile)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(pFile, 'utf-8'));
+        const games = Array.isArray(data?.games) ? data.games : [];
+        games.forEach((g: { url?: string }) => {
+          if (g.url) {
+            urls.add(g.url);
+          }
+        });
+      } catch {
+        // ignore parse errors
+      }
+    }
+  });
+
+  return urls;
+}
+
+async function fetchPage(url: string, retries = 1): Promise<string | null> {
   try {
     const response = await axios.get(url, {
       responseType: 'text',
@@ -199,6 +257,17 @@ async function fetchPage(url: string): Promise<string | null> {
       console.warn(`  Skipping ${url}: response too short (${html?.length ?? 0} chars)`);
 
       return null;
+    }
+
+    // Detect rate-limited / challenge pages: large HTML but no table data.
+    // Small responses (<5000 chars) without tables are likely legitimate "no boxscore" pages.
+    const hasTable = html.includes('<table') || html.includes('<tbody');
+
+    if (!hasTable && html.length > 5000 && retries > 0) {
+      console.warn(`  Rate-limited? No <table> in ${html.length} chars from ${url} — retrying after 10s...`);
+      await delay(10000);
+
+      return fetchPage(url, retries - 1);
     }
 
     return html;
@@ -447,6 +516,7 @@ function parsePrestoRosterByField($: cheerio.CheerioAPI): RosterPlayer[] {
         posCell.length > 0
           ? posCell
               .text()
+              .replace(/\s+/g, ' ')
               .replace(/Pos\.?:?\s*/i, '')
               .trim() || null
           : null;
@@ -457,6 +527,7 @@ function parsePrestoRosterByField($: cheerio.CheerioAPI): RosterPlayer[] {
         yearCell.length > 0
           ? yearCell
               .text()
+              .replace(/\s+/g, ' ')
               .replace(/Cl\.?:?\s*/i, '')
               .trim()
           : '';
@@ -614,6 +685,7 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
           const label = $(cell).find('.label').text().trim().toLowerCase();
           const value = $(cell)
             .text()
+            .replace(/\s+/g, ' ')
             .replace(/^.*?:\s*/, '')
             .trim();
 
@@ -641,15 +713,25 @@ function parsePrestoRoster($: cheerio.CheerioAPI): RosterPlayer[] {
 
       // Fallback to positional indices if label-based extraction didn't work
       if (!position && posIdx >= 0 && posIdx < cells.length) {
-        position = $(cells[posIdx]).text().trim() || null;
+        position =
+          $(cells[posIdx])
+            .text()
+            .replace(/Pos\.?:?\s*/i, '')
+            .trim() || null;
       }
 
       if (!classYear && clIdx >= 0 && clIdx < cells.length) {
-        classYear = $(cells[clIdx]).text().trim();
+        classYear = $(cells[clIdx])
+          .text()
+          .replace(/Cl\.?:?\s*/i, '')
+          .trim();
       }
 
       if (!bats && btIdx >= 0 && btIdx < cells.length) {
-        const btText = $(cells[btIdx]).text().trim();
+        const btText = $(cells[btIdx])
+          .text()
+          .replace(/B\/?T:?\s*/i, '')
+          .trim();
 
         if (btText && /[LRS]\s*[/-]\s*[LR]/i.test(btText)) {
           const btParts = btText.split(/[/-]/);
@@ -1752,6 +1834,7 @@ async function scrapeTeamBoxscores(
   config: TeamConfig,
   years: number[],
   aliases: string[],
+  teamDir: string,
   opts: { pitching: boolean; gamedata: boolean }
 ): Promise<{
   slug: string;
@@ -1813,8 +1896,28 @@ async function scrapeTeamBoxscores(
     }
 
     const $schedule = cheerio.load(scheduleHtml);
-    const boxscoreUrls = extractPrestoBoxscoreUrls($schedule, config.domain);
-    console.log(`    Found ${boxscoreUrls.length} boxscore URLs`);
+    const allBoxscoreUrls = extractPrestoBoxscoreUrls($schedule, config.domain);
+    const existingUrls = loadExistingBoxscoreUrls(teamDir, [year]);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const boxscoreUrls = allBoxscoreUrls.filter((url) => {
+      if (existingUrls.has(url)) {
+        return false;
+      }
+
+      const gameDate = extractDateFromBoxscoreUrl(url);
+
+      if (gameDate && gameDate > today) {
+        return false;
+      }
+
+      return true;
+    });
+
+    const skippedExisting = allBoxscoreUrls.filter((u) => existingUrls.has(u)).length;
+    const skippedFuture = allBoxscoreUrls.length - boxscoreUrls.length - skippedExisting;
+    console.log(`    Found ${allBoxscoreUrls.length} boxscore URLs → ${boxscoreUrls.length} new (${skippedExisting} already scraped, ${skippedFuture} future)`);
 
     const gamedataGames: GamedataSerializedGame[] = [];
 
@@ -2001,7 +2104,7 @@ async function main(): Promise<void> {
 
     // Scrape boxscores (pitching + gamedata in a single pass)
     if (withPitching || withGamedata) {
-      const boxscoreResult = await scrapeTeamBoxscores(slug, config, years, teamAliases, {
+      const boxscoreResult = await scrapeTeamBoxscores(slug, config, years, teamAliases, teamDir, {
         pitching: withPitching,
         gamedata: withGamedata,
       });
@@ -2010,9 +2113,43 @@ async function main(): Promise<void> {
       if (withPitching) {
         years.forEach((year) => {
           const stats = boxscoreResult.pitchingStatsByYear[String(year)] ?? [];
-          const games = boxscoreResult.pitchingGames.filter((g) => g.year === year);
+          const newGames = boxscoreResult.pitchingGames.filter((g) => g.year === year);
+          const outPath = path.join(teamDir, pitchingFilename(year));
 
-          if (stats.length === 0 && games.length === 0) {
+          // Merge new games with existing file
+          let mergedGames = newGames;
+
+          if (fs.existsSync(outPath)) {
+            try {
+              const existing = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+              const existingGames: GamePitchingData[] = Array.isArray(existing?.games) ? existing.games : [];
+              const existingUrlSet = new Set(existingGames.map((g) => g.url));
+              const deduped = newGames.filter((g) => !existingUrlSet.has(g.url));
+              mergedGames = [...existingGames, ...deduped];
+
+              if (deduped.length > 0) {
+                console.log(`  Merging ${deduped.length} new pitching games with ${existingGames.length} existing`);
+              }
+            } catch {
+              // If parse fails, overwrite
+            }
+          }
+
+          // Use fresh stats if available, otherwise keep existing
+          const finalStats =
+            stats.length > 0
+              ? stats
+              : (() => {
+                  try {
+                    const existing = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+
+                    return Array.isArray(existing?.pitchingStats) ? existing.pitchingStats : [];
+                  } catch {
+                    return [];
+                  }
+                })();
+
+          if (finalStats.length === 0 && mergedGames.length === 0) {
             return;
           }
 
@@ -2021,12 +2158,11 @@ async function main(): Promise<void> {
             domain: config.domain,
             scrapedAt: boxscoreResult.scrapedAt,
             year,
-            pitchingStats: stats,
-            games,
+            pitchingStats: finalStats,
+            games: mergedGames,
           };
-          const outPath = path.join(teamDir, pitchingFilename(year));
           fs.writeFileSync(outPath, JSON.stringify(yearData, null, 2));
-          console.log(`  Wrote ${outPath} (${stats.length} pitchers, ${games.length} games)`);
+          console.log(`  Wrote ${outPath} (${finalStats.length} pitchers, ${mergedGames.length} games)`);
         });
       }
 
@@ -2034,15 +2170,32 @@ async function main(): Promise<void> {
       if (withGamedata) {
         Object.entries(boxscoreResult.gamedataByYear).forEach(([year, games]) => {
           const gamedataOutPath = path.join(teamDir, gamedataFilename(Number(year)));
-          fs.writeFileSync(gamedataOutPath, JSON.stringify(games, null, 2));
-          console.log(`  Wrote ${gamedataOutPath} (${games.length} games)`);
+          let combined = games;
+
+          if (fs.existsSync(gamedataOutPath)) {
+            try {
+              const existing: GamedataSerializedGame[] = JSON.parse(fs.readFileSync(gamedataOutPath, 'utf-8'));
+              const existingUrlSet = new Set(existing.map((g) => g.url));
+              const newGames = games.filter((g) => !existingUrlSet.has(g.url));
+              combined = [...existing, ...newGames];
+
+              if (newGames.length > 0) {
+                console.log(`  Merging ${newGames.length} new gamedata games with ${existing.length} existing`);
+              }
+            } catch {
+              // If parse fails, overwrite
+            }
+          }
+
+          fs.writeFileSync(gamedataOutPath, JSON.stringify(combined, null, 2));
+          console.log(`  Wrote ${gamedataOutPath} (${combined.length} games)`);
         });
       }
     }
 
-    // Be nice between teams
+    // Be nice between teams — Presto CDN rate-limits after ~35 requests
     if (Object.keys(teamsToScrape).length > 1) {
-      await delay(1000);
+      await delay(5000);
     }
   }
 
