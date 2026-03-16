@@ -44,6 +44,7 @@ export class Woba {
   loading = false;
   error: string | null = null;
   scrapedAt: string | null = null;
+  teamGames = 0;
   selectedYear = 2025;
   selectedYearStr = String(this.selectedYear);
   yearOptions: ToggleOption[] = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011].map((y) => ({
@@ -75,12 +76,14 @@ export class Woba {
     this.cumulativeByName = new Map();
     this.expandedPlayer = null;
     this.scrapedAt = null;
+    this.teamGames = 0;
     this.teamGameColumns = [];
     this.teamPlayerRows = [];
 
     this.dataService.getWellesleyBattingData(this.selectedYear).subscribe({
       next: (data) => {
         this.scrapedAt = data.scrapedAt ?? null;
+        this.teamGames = data.teamGames ?? 0;
         const seasonStats = data.players.map((p) => p.season);
         const boxscores = data.boxscores ?? [];
         this.playerWobas = computePlayerSeasonWobas(seasonStats);
@@ -107,6 +110,34 @@ export class Woba {
 
   togglePlayer(name: string): void {
     this.expandedPlayer = this.expandedPlayer === name ? null : name;
+  }
+
+  get minPa(): number {
+    return this.teamGames * 2;
+  }
+
+  get qualifiedPlayers(): PlayerWoba[] {
+    return this.playerWobas.filter((p) => p.pa >= this.minPa);
+  }
+
+  get unqualifiedPlayers(): PlayerWoba[] {
+    return this.playerWobas.filter((p) => p.pa < this.minPa);
+  }
+
+  get qualifiedTeamRows(): TeamPlayerRow[] {
+    return this.teamPlayerRows.filter((r) => {
+      const pw = this.playerWobas.find((p) => p.name.toLowerCase() === r.name.toLowerCase());
+
+      return pw ? pw.pa >= this.minPa : false;
+    });
+  }
+
+  get unqualifiedTeamRows(): TeamPlayerRow[] {
+    return this.teamPlayerRows.filter((r) => {
+      const pw = this.playerWobas.find((p) => p.name.toLowerCase() === r.name.toLowerCase());
+
+      return pw ? pw.pa < this.minPa : true;
+    });
   }
 
   tierClass = tierClass;

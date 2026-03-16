@@ -6,7 +6,7 @@
 </div>
 
 <div class="grid grid-cols-2 gap-8">
-  @for (player of players(); track player.name) {
+  @for (player of dugoutPlayers(); track player.name) {
     <div class="flex break-inside-avoid flex-col items-center gap-1">
       <h3 class="mb-0 text-sm font-bold print:text-black">
         #{{ player.jersey }} {{ player.name }}
@@ -15,6 +15,19 @@
       <span class="text-xs print:text-gray-600">
         {{ player.summary.totalContact }} batted balls
       </span>
+      @if (player.yearSbEntries.length > 0) {
+        <div
+          class="flex flex-wrap justify-center gap-x-3 gap-y-0.5 text-[10px] print:text-gray-700"
+        >
+          <span class="font-semibold">SB:</span>
+          @for (entry of player.yearSbEntries; track entry.year) {
+            <span class="tabular-nums">
+              {{ entry.year }}:
+              {{ entry.sbAtt > 0 ? entry.sb + '/' + entry.sbAtt : entry.sb }}
+            </span>
+          }
+        </div>
+      }
     </div>
   }
 </div>

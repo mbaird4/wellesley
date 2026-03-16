@@ -46,7 +46,7 @@ function formatStatValue(stats: PitchingStats | null, key: keyof PitchingStats):
   selector: 'ws-pitcher-scouting-print-view',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'block text-black bg-white' },
+  host: { class: 'hidden print:block text-black bg-white' },
   templateUrl: './pitcher-scouting-print-view.html',
 })
 export class PitcherScoutingPrintView {

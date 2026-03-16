@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, effect, inject, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
 import type { SeasonStatsData } from '@ws/core/models';
 
 import { FIELDING_COLUMNS, HITTING_COLUMNS, PITCHING_COLUMNS } from './stat-column';
@@ -38,7 +38,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
       <div class="bg-surface-card border-line overflow-hidden rounded-xl border">
         @switch (activeCategory()) {
           @case ('hitting') {
-            <ws-stats-table [columns]="hittingColumns" [players]="data()!.hitting.players" [totals]="data()!.hitting.totals" [opponents]="data()!.hitting.opponents" defaultSortKey="avg" />
+            <ws-stats-table [columns]="hittingColumns" [players]="data()!.hitting.players" [totals]="data()!.hitting.totals" [opponents]="data()!.hitting.opponents" defaultSortKey="avg" [minPa]="hittingMinPa()" />
           }
           @case ('pitching') {
             <ws-stats-table [columns]="pitchingColumns" [players]="data()!.pitching.players" [totals]="data()!.pitching.totals" [opponents]="data()!.pitching.opponents" defaultSortKey="era" defaultSortDir="asc" />
@@ -69,6 +69,13 @@ export class SeasonStats {
   readonly hittingColumns = HITTING_COLUMNS;
   readonly pitchingColumns = PITCHING_COLUMNS;
   readonly fieldingColumns = FIELDING_COLUMNS;
+
+  readonly hittingMinPa = computed(() => {
+    const d = this.data();
+    const teamGp = d?.hitting?.totals?.gp;
+
+    return teamGp ? teamGp * 2 : 0;
+  });
 
   constructor() {
     effect(() => {

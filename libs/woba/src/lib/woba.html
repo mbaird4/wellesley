@@ -66,8 +66,91 @@
           </tr>
         </thead>
         <tbody>
-          @for (player of playerWobas; track player.name) {
+          @for (player of qualifiedPlayers; track player.name) {
             <tr class="player-row" (click)="togglePlayer(player.name)">
+              <td class="flex items-center gap-2">
+                <span
+                  class="text-content-dim expand-arrow w-4 shrink-0 text-[0.65rem] transition-colors"
+                >
+                  {{ expandedPlayer === player.name ? '&#9660;' : '&#9654;' }}
+                </span>
+                {{ player.name }}
+              </td>
+              <td>{{ player.pa }}</td>
+              <td>{{ player.singles }}</td>
+              <td>{{ player.doubles }}</td>
+              <td>{{ player.triples }}</td>
+              <td>{{ player.hr }}</td>
+              <td>{{ player.bb }}</td>
+              <td>{{ player.hbp }}</td>
+              <td
+                class="text-center font-semibold tabular-nums"
+                [class]="tierClass(player.tier)"
+              >
+                {{ formatWoba(player.woba) }}
+              </td>
+            </tr>
+            @if (expandedPlayer === player.name) {
+              <tr class="cumulative-row">
+                <td colspan="9">
+                  @if (
+                    cumulativeByName.get(player.name.toLowerCase());
+                    as cumData
+                  ) {
+                    <table class="stats-table game-progression-table">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Opponent</th>
+                          <th>Game wOBA</th>
+                          <th>Cumulative wOBA</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (game of cumData.games; track $index) {
+                          <tr>
+                            <td>{{ game.date }}</td>
+                            <td>{{ game.opponent }}</td>
+                            <td
+                              class="text-center font-semibold tabular-nums"
+                              [class]="tierClass(getWobaTier(game.gameWoba))"
+                            >
+                              {{ formatWoba(game.gameWoba) }}
+                            </td>
+                            <td
+                              class="text-center font-semibold tabular-nums"
+                              [class]="tierClass(game.tier)"
+                            >
+                              {{ formatWoba(game.cumulativeWoba) }}
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  } @else {
+                    <div class="py-card text-content-dim text-center">
+                      No per-game data available for this player.
+                    </div>
+                  }
+                </td>
+              </tr>
+            }
+          }
+          @if (minPa > 0 && unqualifiedPlayers.length > 0) {
+            <tr class="pa-divider-row">
+              <td
+                colspan="9"
+                class="text-content-dim border-line border-t-2 py-2 text-center text-xs italic"
+              >
+                Min {{ minPa }} PA (2 per team game)
+              </td>
+            </tr>
+          }
+          @for (player of unqualifiedPlayers; track player.name) {
+            <tr
+              class="player-row opacity-60"
+              (click)="togglePlayer(player.name)"
+            >
               <td class="flex items-center gap-2">
                 <span
                   class="text-content-dim expand-arrow w-4 shrink-0 text-[0.65rem] transition-colors"
@@ -208,8 +291,61 @@
             </tr>
           </thead>
           <tbody>
-            @for (row of teamPlayerRows; track row.name) {
+            @for (row of qualifiedTeamRows; track row.name) {
               <tr>
+                <td class="sticky-col text-content-bright font-medium">
+                  {{ row.name }}
+                </td>
+                @for (cell of row.games; track $index) {
+                  @if (cell !== null) {
+                    <td
+                      class="dual-cell text-center font-semibold tabular-nums"
+                      [class]="tierClass(getWobaTier(cell.cumulativeWoba))"
+                    >
+                      <div class="flex items-baseline justify-center gap-1">
+                        <span class="text-[0.95rem] font-semibold">
+                          {{ formatWoba(cell.cumulativeWoba) }}
+                        </span>
+                        <span
+                          class="text-[0.75rem] font-semibold opacity-60"
+                          [class]="tierClass(getWobaTier(cell.gameWoba))"
+                        >
+                          {{ formatWoba(cell.gameWoba) }}
+                        </span>
+                      </div>
+                    </td>
+                  } @else {
+                    <td
+                      class="text-content-empty bg-transparent text-center font-semibold tabular-nums"
+                    >
+                      —
+                    </td>
+                  }
+                }
+                <td
+                  class="sticky-end text-center text-[1.1rem] font-bold font-semibold tabular-nums"
+                >
+                  <span [ngStyle]="wobaGradientStyle(row.seasonWoba)">
+                    {{ formatWoba(row.seasonWoba) }}
+                  </span>
+                </td>
+              </tr>
+            }
+            @if (minPa > 0 && unqualifiedTeamRows.length > 0) {
+              <tr class="pa-divider-row">
+                <td
+                  class="sticky-col text-content-dim border-line border-t-2 py-2 text-center text-xs italic"
+                >
+                  Min {{ minPa }} PA
+                </td>
+                <td
+                  [attr.colspan]="teamGameColumns.length + 1"
+                  class="border-line border-t-2"
+                ></td>
+              </tr>
+            }
+            @for (row of unqualifiedTeamRows; track row.name) {
+              <tr class="opacity-60">
                 <td class="sticky-col text-content-bright font-medium">
                   {{ row.name }}
                 </td>

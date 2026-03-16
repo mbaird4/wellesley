@@ -28,7 +28,7 @@ export type ViewMode = 'split' | 'combined' | 'contact' | 'scouting';
         </button>
       }
       @if (printDugout()) {
-        <ws-spray-chart-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" />
+        <ws-spray-chart-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" [teamData]="teamData()" />
       }
       @if (printCoach()) {
         <ws-spray-chart-coach-print-view [players]="printPlayers()" [title]="printTitle()" [subtitle]="printSubtitle()" [years]="selectedYears()" [viewMode]="viewMode()" [dataByYear]="dataByYear()" [teamData]="teamData()" [needsPageBreak]="printDugout()" />

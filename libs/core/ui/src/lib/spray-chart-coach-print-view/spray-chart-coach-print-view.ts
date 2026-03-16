@@ -9,7 +9,7 @@ import { SprayField } from '../spray-field/spray-field';
 
 const CARDS_PER_PAGE = 6;
 
-const STAT_LABELS = ['AVG', 'SLG', 'wOBA', 'PA', 'H', 'XBH', 'BB', 'K', 'RBI', 'SB'] as const;
+const STAT_LABELS = ['AVG', 'SLG', 'wOBA', 'PA', 'H', '1B', '2B', '3B', 'HR', 'BB', 'K', 'RBI', 'SB'] as const;
 
 interface YearColumn {
   year: number;
@@ -38,10 +38,11 @@ function formatYearStats(stats: ReturnType<typeof aggregateStats> | null): strin
   }
 
   const fmtAvg = (v: number): string => v.toFixed(3).replace(/^0/, '');
-  const xbh = stats.doubles + stats.triples + stats.hr;
+  const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const sb = stats.sbAtt > 0 ? `${stats.sb}/${stats.sbAtt}` : stats.sb > 0 ? String(stats.sb) : '—';
+  const fmtCount = (v: number): string => (v > 0 ? String(v) : '—');
 
-  return [fmtAvg(stats.avg), fmtAvg(stats.slg), fmtAvg(stats.woba), stats.pa > 0 ? String(stats.pa) : '—', stats.h > 0 ? String(stats.h) : '—', xbh > 0 ? String(xbh) : '—', stats.bb > 0 ? String(stats.bb) : '—', stats.so > 0 ? String(stats.so) : '—', stats.rbi > 0 ? String(stats.rbi) : '—', sb];
+  return [fmtAvg(stats.avg), fmtAvg(stats.slg), fmtAvg(stats.woba), fmtCount(stats.pa), fmtCount(stats.h), fmtCount(singles), fmtCount(stats.doubles), fmtCount(stats.triples), fmtCount(stats.hr), fmtCount(stats.bb), fmtCount(stats.so), fmtCount(stats.rbi), sb];
 }
 
 @Component({
@@ -93,7 +94,7 @@ export class SprayChartCoachPrintView {
 
       // Union of all years with any data
       const allYears = [...new Set([...playerSprayYears, ...statYears])].sort((a, b) => a - b);
-      const isFirstYear = allYears.length <= 1;
+      const isFirstYear = playerSprayYears.length <= 1;
 
       // Spray: current year only
       const currentYearData = (map.get(CURRENT_YEAR) ?? []).filter((d) => d.playerName === p.name);

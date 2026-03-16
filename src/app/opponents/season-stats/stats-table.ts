@@ -44,8 +44,29 @@ const SORTED_HEADER = 'bg-brand-bg';
         </tr>
       </thead>
       <tbody>
-        @for (row of sortedPlayers(); track row['name']) {
+        @for (row of qualifiedPlayers(); track row['name']) {
           <tr>
+            <td class="sticky-col text-content-dim text-xs" [class]="sortKey() === '#' ? SORTED_COL : ''">
+              {{ row['jerseyNumber'] ?? '' }}
+            </td>
+            <td class="sticky-col-name whitespace-nowrap" [class]="sortKey() === 'name' ? SORTED_COL : ''">
+              {{ row['name'] }}
+            </td>
+            @for (col of columns(); track col.key) {
+              <td [class]="sortKey() === col.key ? SORTED_COL : ''">
+                {{ row | cellValue: col }}
+              </td>
+            }
+          </tr>
+        }
+        @if (minPa() > 0 && unqualifiedPlayers().length > 0) {
+          <tr>
+            <td class="sticky-col border-line border-t-2"></td>
+            <td class="sticky-col-name text-content-dim border-line border-t-2 py-2 text-xs italic" [attr.colspan]="columns().length + 1">Min {{ minPa() }} PA (2 per team game)</td>
+          </tr>
+        }
+        @for (row of unqualifiedPlayers(); track row['name']) {
+          <tr class="opacity-60">
             <td class="sticky-col text-content-dim text-xs" [class]="sortKey() === '#' ? SORTED_COL : ''">
               {{ row['jerseyNumber'] ?? '' }}
             </td>
@@ -95,6 +116,8 @@ export class StatsTable {
   readonly defaultSortKey = input<string | null>(null);
   readonly defaultSortDir = input<SortDir>('desc');
 
+  readonly minPa = input(0);
+
   readonly sortKey = signal<string | null>(null);
   readonly sortDir = signal<SortDir>('desc');
 
@@ -138,6 +161,30 @@ export class StatsTable {
       return mult * (aVal - bVal);
     });
   });
+
+  readonly qualifiedPlayers = computed(() => {
+    const min = this.minPa();
+
+    if (min <= 0) {
+      return this.sortedPlayers();
+    }
+
+    return this.sortedPlayers().filter((r) => this.rowPa(r) >= min);
+  });
+
+  readonly unqualifiedPlayers = computed(() => {
+    const min = this.minPa();
+
+    if (min <= 0) {
+      return [];
+    }
+
+    return this.sortedPlayers().filter((r) => this.rowPa(r) < min);
+  });
+
+  private rowPa(row: StatRow): number {
+    return Number(row['ab'] ?? 0) + Number(row['bb'] ?? 0) + Number(row['hbp'] ?? 0) + Number(row['sf'] ?? 0) + Number(row['sh'] ?? 0);
+  }
 
   sortBy(key: string): void {
     if (this.sortKey() === key) {

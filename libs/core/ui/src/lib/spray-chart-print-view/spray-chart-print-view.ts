@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import type { SprayChartSummary } from '@ws/core/models';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import type { SprayChartSummary, Team } from '@ws/core/models';
 
 import { SprayField } from '../spray-field/spray-field';
 import { SprayLegend } from '../spray-legend/spray-legend';
@@ -28,6 +28,19 @@ export interface PrintPlayerSummary {
   hr?: number;
 }
 
+interface YearSbEntry {
+  year: number;
+  sb: number;
+  sbAtt: number;
+}
+
+interface DugoutPlayer {
+  name: string;
+  jersey: number;
+  summary: SprayChartSummary;
+  yearSbEntries: YearSbEntry[];
+}
+
 @Component({
   selector: 'ws-spray-chart-print-view',
   standalone: true,
@@ -43,4 +56,26 @@ export class SprayChartPrintView {
   readonly players = input.required<PrintPlayerSummary[]>();
   readonly title = input('');
   readonly subtitle = input('');
+  readonly teamData = input<Team | null>(null);
+
+  readonly dugoutPlayers = computed<DugoutPlayer[]>(() => {
+    const team = this.teamData();
+
+    return this.players().map((p) => {
+      const rp = team?.players.find((tp) => tp.jerseyNumber === p.jersey) ?? null;
+      const yearSbEntries: YearSbEntry[] = rp
+        ? rp.seasons
+            .filter((s) => s.sb > 0 || s.sbAtt > 0)
+            .map((s) => ({ year: s.year, sb: s.sb, sbAtt: s.sbAtt }))
+            .sort((a, b) => a.year - b.year)
+        : [];
+
+      return {
+        name: p.name,
+        jersey: p.jersey,
+        summary: p.summary,
+        yearSbEntries,
+      };
+    });
+  });
 }
