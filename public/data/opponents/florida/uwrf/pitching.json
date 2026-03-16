@@ -1,7 +1,7 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-15T18:37:52.486Z",
+  "scrapedAt": "2026-03-16T02:04:58.840Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -36,29 +36,57 @@
       "name": "Knutson, Lucy",
       "w": 1,
       "l": 1,
-      "era": 4.5,
-      "app": 5,
+      "era": 3.82,
+      "app": 6,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 9.1,
-      "h": 13,
+      "ip": 11,
+      "h": 14,
       "r": 12,
       "er": 6,
-      "bb": 3,
+      "bb": 6,
       "so": 11,
       "hr": 0,
-      "whip": 1.71,
+      "whip": 1.82,
       "doubles": 2,
       "triples": 0,
-      "ab": 45,
-      "bAvg": 0.289,
+      "ab": 47,
+      "bAvg": 0.298,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 1
+    },
+    {
+      "name": "VanGruensven, Brooklyn",
+      "w": 1,
+      "l": 2,
+      "era": 6.76,
+      "app": 7,
+      "gs": 4,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 19.2,
+      "h": 21,
+      "r": 19,
+      "er": 19,
+      "bb": 24,
+      "so": 17,
+      "hr": 0,
+      "whip": 2.29,
+      "doubles": 4,
+      "triples": 2,
+      "ab": 76,
+      "bAvg": 0.276,
+      "wp": 2,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 0
     },
     {
       "name": "Kincaid, Hailey",
@@ -89,60 +117,32 @@
       "sha": 1
     },
     {
-      "name": "VanGruensven, Brooklyn",
-      "w": 1,
-      "l": 1,
-      "era": 7.14,
-      "app": 6,
-      "gs": 3,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 16.2,
-      "h": 15,
-      "r": 17,
-      "er": 17,
-      "bb": 21,
-      "so": 14,
-      "hr": 0,
-      "whip": 2.16,
-      "doubles": 3,
-      "triples": 2,
-      "ab": 60,
-      "bAvg": 0.25,
-      "wp": 2,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 0
-    },
-    {
       "name": "Metzler, Randi",
       "w": 0,
       "l": 3,
-      "era": 8.75,
-      "app": 5,
+      "era": 9.75,
+      "app": 6,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 8,
-      "h": 9,
-      "r": 10,
-      "er": 10,
-      "bb": 9,
-      "so": 7,
+      "ip": 9.1,
+      "h": 10,
+      "r": 14,
+      "er": 13,
+      "bb": 12,
+      "so": 8,
       "hr": 1,
-      "whip": 2.25,
-      "doubles": 2,
+      "whip": 2.36,
+      "doubles": 3,
       "triples": 0,
-      "ab": 32,
-      "bAvg": 0.281,
-      "wp": 0,
+      "ab": 37,
+      "bAvg": 0.27,
+      "wp": 2,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -923,6 +923,99 @@
             "C. Cooke fouled out to 3b (1-2 SBK).",
             "M. Gilhooly flied out to rf (0-1 K).",
             "K. Miller struck out swinging (2-2 BKBSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/concordia-university-texas/boxscore/7930",
+      "date": "3/15/2026",
+      "opponent": "Concordia University Texas",
+      "pitchers": [
+        "VanGruensven, Brooklyn",
+        "Metzler, Randi",
+        "Knutson, Lucy"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malarie Mican flied out to lf (0-1 F).",
+            "Kylie Denaro walked (3-1 KBBBB).",
+            "Kylie Denaro stole second.",
+            "Kylie Kirk doubled to left field, RBI (3-2 KBBKFBF); Kylie Denaro scored.",
+            "Molly Olivarez walked (3-0 BBBB).",
+            "Mayson Post struck out swinging (1-2 KBFS).",
+            "Lilly Longoria struck out looking (2-2 BBFKK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lacie Lilyquist to 3b for Autumn Hughes.",
+            "Christian Everett singled to shortstop (3-2 BBKKBF).",
+            "Christian Everett stole second.",
+            "Madison Poe singled to left field, RBI (2-1 FBB); Christian Everett scored.",
+            "Katie Bethke flied out to cf (1-0 B).",
+            "Malarie Mican singled to second base (2-1 FBB); Madison Poe advanced to second.",
+            "Kylie Denaro singled, bunt (1-0 B); Malarie Mican advanced to second; Madison Poe advanced to third.",
+            "Kylie Kirk struck out swinging (2-2 BBFKS).",
+            "Molly Olivarez fouled out to 2b (3-2 BKBBFFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Mayson Post grounded out to ss (3-2 BKFBB).",
+            "Lilly Longoria walked (3-2 BBKSBB).",
+            "Lilly Longoria out at first c to 2b, picked off.",
+            "Christian Everett reached first on a throwing error by c (2-0 BB).",
+            "Madison Poe reached first on an error by 2b (1-0 B); Christian Everett advanced to second.",
+            "Katie Bethke singled, bunt (0-0); Madison Poe advanced to second; Christian Everett advanced to third.",
+            "Malarie Mican fouled out to c (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caitlyn Kressel to dp for Tessa Peterson.",
+            "Randi Metzler to p for Brooklyn Vangruensven.",
+            "Kylie Denaro doubled to left center, ground-rule (2-2 KBFB).",
+            "Kylie Denaro advanced to third on a wild pitch.",
+            "Kylie Kirk walked (3-1 BBFBB).",
+            "Kylie Kirk stole second.",
+            "Molly Olivarez struck out looking (1-2 BSFK).",
+            "Mayson Post out at first p to 2b, SAC, bunt, RBI (1-0 B); Kylie Kirk advanced to third; Kylie Denaro scored.",
+            "Lilly Longoria popped up to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Christian Everett popped up to 2b (3-1 BBBK).",
+            "Madison Poe walked (3-1 FBBBB).",
+            "Harley Drouillard pinch ran for Madison Poe.",
+            "Katie Bethke reached on a fielder's choice (1-1 KB); Harley Drouillard advanced to second.",
+            "Katie Bethke advanced to second on a wild pitch; Harley Drouillard advanced to third on a wild pitch.",
+            "Malarie Mican walked (3-1 BBKBB).",
+            "Lucy Knutson to p for Randi Metzler.",
+            "Kylie Denaro walked, RBI (3-1 BSBBB); Malarie Mican advanced to second; Katie Bethke advanced to third; Harley Drouillard scored.",
+            "Kylie Kirk flied out to 2b, sacrifice fly, RBI (1-2 KBK); Kylie Denaro advanced to second; Malarie Mican advanced to third; Katie Bethke scored.",
+            "Kamryn Kothman pinch hit for Molly Olivarez.",
+            "Kamryn Kothman walked, advanced to second on a passed ball, advanced to third, out at home p to ss (3-2 SFBBFBFFB); Kylie Denaro advanced to third; Malarie Mican scored, unearned."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mayson Post pinch hit for Mallory Mata.",
+            "Mayson Post walked (3-2 SBKBFFBB).",
+            "Marivel Reyes pinch ran for Mayson Post.",
+            "Lilly Longoria flied out to cf (0-0).",
+            "Marivel Reyes out at second c to ss, caught stealing.",
+            "Christian Everett singled through the left side (0-1 F).",
+            "Christian Everett out at second c to ss, caught stealing."
           ]
         }
       ],

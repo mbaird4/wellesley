@@ -1,36 +1,64 @@
 {
   "slug": "macalester",
   "domain": "athletics.macalester.edu",
-  "scrapedAt": "2026-03-15T18:38:13.187Z",
+  "scrapedAt": "2026-03-16T02:05:21.293Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Miller, Martha",
       "w": 2,
       "l": 2,
-      "era": 3.5,
-      "app": 5,
-      "gs": 3,
+      "era": 3.11,
+      "app": 6,
+      "gs": 4,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 24,
-      "h": 29,
-      "r": 19,
+      "ip": 27,
+      "h": 35,
+      "r": 22,
       "er": 12,
       "bb": 8,
-      "so": 24,
+      "so": 25,
       "hr": 2,
-      "whip": 1.54,
+      "whip": 1.59,
       "doubles": 3,
       "triples": 1,
-      "ab": 101,
-      "bAvg": 0.287,
-      "wp": 3,
-      "hbp": 3,
+      "ab": 115,
+      "bAvg": 0.304,
+      "wp": 4,
+      "hbp": 4,
       "bk": 0,
       "sfa": 0,
       "sha": 6
+    },
+    {
+      "name": "Bojorquez, Tess",
+      "w": 1,
+      "l": 1,
+      "era": 6.75,
+      "app": 4,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 9.1,
+      "h": 23,
+      "r": 11,
+      "er": 9,
+      "bb": 3,
+      "so": 2,
+      "hr": 0,
+      "whip": 2.79,
+      "doubles": 1,
+      "triples": 1,
+      "ab": 50,
+      "bAvg": 0.46,
+      "wp": 3,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Schultz, Paige",
@@ -112,34 +140,6 @@
       "bAvg": 0.286,
       "wp": 0,
       "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "Bojorquez, Tess",
-      "w": 0,
-      "l": 1,
-      "era": 9.19,
-      "app": 3,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 5.1,
-      "h": 15,
-      "r": 8,
-      "er": 7,
-      "bb": 2,
-      "so": 1,
-      "hr": 0,
-      "whip": 3.19,
-      "doubles": 1,
-      "triples": 1,
-      "ab": 30,
-      "bAvg": 0.5,
-      "wp": 0,
-      "hbp": 0,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -706,6 +706,101 @@
             "Clayton pinch hit for Strigel.",
             "Clayton reached on a fielder's choice.",
             "Weber singled to left field, RBI; Clayton advanced to second; Wagner scored."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/amherst-college/boxscore/10935",
+      "date": "3/15/2026",
+      "opponent": "Amherst College",
+      "pitchers": [
+        "Miller, Martha",
+        "Bojorquez, Tess"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz grounded out to 2b (2-2 FBFB).",
+            "May Mishima singled to left field (1-0 B).",
+            "Lulu Leppard flied out to lf (0-2 FK).",
+            "Abby Rebhan singled (2-1 BBF); May Mishima out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Dylan Briggs singled to center field (1-0 B).",
+            "Brooke Wild reached on a fielder's choice (1-2 SFB); Dylan Briggs out at second ss to 2b.",
+            "Lauren Ro singled through the left side (0-1 K); Brooke Wild advanced to second.",
+            "Abby Kong reached first on a fielding error by 2b, advanced to second on a throwing error by 2b (0-0); Lauren Ro advanced to third on the error; Brooke Wild scored on the error, unearned.",
+            "Heidi Li hit by pitch (2-0 BH).",
+            "Samantha Portz singled to right field, advanced to second on the throw, 2 RBI (0-2 FKF); Heidi Li advanced to second, advanced to third on the throw; Abby Kong scored, unearned; Lauren Ro scored, unearned.",
+            "May Mishima lined out to cf (0-2 FF); Heidi Li out at third 3b unassisted, runner left early."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lulu Leppard struck out looking (3-2 BBFFBK).",
+            "Abby Rebhan singled to left field (1-1 FB).",
+            "Dylan Briggs flied out to cf (3-2 FBBBKF).",
+            "Abby Rebhan advanced to second on a wild pitch.",
+            "Brooke Wild flied out to cf (2-2 BKFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elizabeth Welch to c.",
+            "Dylan Tapia to dp.",
+            "Tess Bojorquez to p.",
+            "Rebecca Heinze to 1b.",
+            "Martha Miller to ss.",
+            "Monica Montoya to rf.",
+            "Lauren Ro lined out to cf (0-0).",
+            "Laura Daniels pinch hit for Abby Kong.",
+            "Laura Daniels grounded out to 3b (1-0 B).",
+            "Heidi Li singled to shortstop (3-2 KBFBB).",
+            "Samantha Portz singled to pitcher (0-0); Heidi Li advanced to third.",
+            "May Mishima popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lulu Leppard singled to pitcher (2-2 KBFB).",
+            "Abby Rebhan reached on a fielder's choice (1-0 B); Lulu Leppard out at second 3b to 2b.",
+            "Annie Katuska flied out to cf (2-1 BFB).",
+            "Abby Rebhan advanced to second on a wild pitch.",
+            "Abby Rebhan advanced to third on a wild pitch.",
+            "Brooke Wild reached first on a fielding error by p (1-1 FB).",
+            "Lauren Ro singled through the left side, RBI (0-0); Brooke Wild advanced to second; Abby Rebhan scored, unearned.",
+            "Lauren Ro advanced to second on a wild pitch; Brooke Wild advanced to third on a wild pitch.",
+            "Laura Daniels grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Heidi Li singled to left field (0-0).",
+            "Samantha Portz grounded out to 1b unassisted (0-0); Heidi Li advanced to second.",
+            "May Mishima singled to center field (1-0 B); Heidi Li advanced to third.",
+            "Lulu Leppard singled through the right side, RBI (1-0 B); May Mishima advanced to third; Heidi Li scored.",
+            "Lulu Leppard stole second.",
+            "Abby Rebhan grounded out to ss, RBI (1-0 B); Lulu Leppard out at third 1b to 3b; May Mishima scored."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Annie Katuska walked (3-2 FKBBBB).",
+            "Brooke Wild fouled out to 1b (0-1 S).",
+            "Lauren Ro singled to shortstop (0-0); Annie Katuska advanced to second.",
+            "Laura Daniels flied out to cf (3-1 FBBB).",
+            "Heidi Li struck out swinging (0-2 KFS)."
           ]
         }
       ],
