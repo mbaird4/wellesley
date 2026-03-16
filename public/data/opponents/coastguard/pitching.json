@@ -1,9 +1,37 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-15T11:21:36.324Z",
+  "scrapedAt": "2026-03-16T11:42:51.917Z",
   "year": 2026,
   "pitchingStats": [
+    {
+      "name": "Lynn, Zoey",
+      "w": 2,
+      "l": 0,
+      "era": 0,
+      "app": 4,
+      "gs": 2,
+      "cg": 2,
+      "sho": 0,
+      "sv": 0,
+      "ip": 17.1,
+      "h": 10,
+      "r": 4,
+      "er": 0,
+      "bb": 3,
+      "so": 11,
+      "hr": 0,
+      "whip": 0.75,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 65,
+      "bAvg": 0.154,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
     {
       "name": "Walker, Dana",
       "w": 4,
@@ -24,41 +52,13 @@
       "whip": 1.05,
       "doubles": 3,
       "triples": 0,
-      "ab": 117,
-      "bAvg": 0.222,
+      "ab": 116,
+      "bAvg": 0.224,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 2
-    },
-    {
-      "name": "Lynn, Zoey",
-      "w": 2,
-      "l": 0,
-      "era": 0.81,
-      "app": 4,
-      "gs": 2,
-      "cg": 2,
-      "sho": 0,
-      "sv": 0,
-      "ip": 17.1,
-      "h": 10,
-      "r": 4,
-      "er": 2,
-      "bb": 3,
-      "so": 11,
-      "hr": 0,
-      "whip": 0.75,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 65,
-      "bAvg": 0.154,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
     },
     {
       "name": "Reilly, Hayden",
@@ -115,7 +115,7 @@
             "Claudia Maness singled down the rf line (1-1 FB).",
             "Kayden Dunlap struck out swinging (1-2 BKFS).",
             "Ashlyn Dixon reached first on an error by 3b (2-0 BB); Claudia Maness advanced to second.",
-            "Dani Crum singled to left center, advanced to second on the throw, 2 RBI (3-2 BFKBB); Ashlyn Dixon scored on an error by 1b, unearned; Claudia Maness scored, unearned.",
+            "Dani Crum singled to left center, advanced to second on the throw, RBI (3-2 BFKBB); Ashlyn Dixon scored on an error by 1b, unearned; Claudia Maness scored, unearned.",
             "Addison Johnson grounded out to ss (1-2 BKF)."
           ]
         },
@@ -139,8 +139,8 @@
             "Dani Crum grounded out to ss (2-2 BFFFBFF).",
             "Addison Johnson walked (3-0 BBBB).",
             "Addison Johnson stole second.",
-            "Addison Johnson advanced to third; Kayden Dunlap scored on a wild pitch, unearned.",
-            "Maddie Horn reached first on an error by 2b (3-0 BBB); Addison Johnson scored on the error, unearned.",
+            "Addison Johnson advanced to third on a wild pitch; Kayden Dunlap scored, unearned.",
+            "Maddie Horn reached first on an error by 2b (3-0 BBB); Addison Johnson scored, unearned.",
             "Harlee Quick popped up to c (2-1 KBB)."
           ]
         },
@@ -152,10 +152,10 @@
             "Claudia Maness reached on a fielder's choice to shortstop (0-2 FF); Kasey Lois advanced to second.",
             "Kayden Dunlap singled down the rf line (0-0); Claudia Maness advanced to second; Kasey Lois advanced to third.",
             "Ashlyn Dixon struck out swinging (0-2 KSS).",
-            "Dani Crum singled to right field, advanced to second on the throw, 3 RBI (1-1 KB); Kayden Dunlap advanced to third on the throw; Claudia Maness scored, unearned; Kasey Lois scored, unearned.",
-            "Addison Johnson reached first on an error by ss, RBI (1-0 B); Dani Crum scored, unearned; Kayden Dunlap scored, unearned.",
+            "Dani Crum singled to right field, advanced to second on the throw, 2 RBI (1-1 KB); Kayden Dunlap advanced to third; Claudia Maness scored, unearned; Kasey Lois scored, unearned.",
+            "Addison Johnson reached first on an error by ss (1-0 B); Dani Crum scored, unearned; Kayden Dunlap scored, unearned.",
             "Maddie Horn singled to left center, advanced to second on the throw (2-1 BKB); Addison Johnson advanced to third.",
-            "Maddie Horn advanced to third; Addison Johnson scored on a passed ball, unearned.",
+            "Maddie Horn advanced to third on a passed ball; Addison Johnson scored, unearned.",
             "Ainsley Hololob to ss for Abby Steele.",
             "Mack Murnane to 3b.",
             "Madeline Kibler to c.",
@@ -188,7 +188,7 @@
           "plays": [
             "Kiara Humann doubled down the rf line (3-0 BBB).",
             "Katelyn Rassat grounded out to p, SAC (1-1 KB); Kiara Humann advanced to third.",
-            "Kiara Humann scored on an error by c, unearned.",
+            "Kiara Humann scored on an error by c, failed pickoff attempt, unearned.",
             "Kaylee Pickering singled to center field (2-2 BBSKF).",
             "Chloe Berg singled to second base (1-0 B); Kaylee Pickering advanced to second.",
             "Keightan Rank singled to second base (1-0 B); Chloe Berg advanced to second; Kaylee Pickering advanced to third.",
@@ -223,7 +223,7 @@
             "Ella Stolarzyk to 1b for Caitlynn Gibson.",
             "Rachel McCaughna singled down the lf line (1-0 B).",
             "Emily Laupichler struck out looking (1-2 FBFK).",
-            "Sarah Yonkovich reached first on an error by p, bunt, advanced to second on the error (0-0); Rachel McCaughna scored on an error by p.",
+            "Sarah Yonkovich reached first on an error by p, bunt, advanced to second (0-0); Rachel McCaughna scored on the error, unearned.",
             "Kiara Humann popped up to 3b (1-1 BF).",
             "Katelyn Rassat flied out to rf (2-1 BKB)."
           ]
@@ -232,8 +232,8 @@
           "inning": "5th",
           "plays": [
             "Kaylee Pickering walked (3-1 KBBBB).",
-            "Chloe Berg flied out to cf (1-1 BS).",
-            "Keightan Rank flied out to cf (0-0).",
+            "Chloe Berg flied out to cf (1-1 BS); Kaylee Pickering did not advance.",
+            "Keightan Rank flied out to cf (0-0); Kaylee Pickering did not advance.",
             "Kierah Schultz popped up to 2b (1-1 BK)."
           ]
         },
@@ -591,7 +591,7 @@
             "Fallon McFadden singled up the middle (2-0 BB).",
             "Mackenzie Fisher walked (3-2 BBKKFBB); Fallon McFadden advanced to second.",
             "Ava Allison grounded out to 3b (0-1 F); Mackenzie Fisher advanced to second; Fallon McFadden advanced to third.",
-            "Aspen Walker popped up to ss, RBI (1-2 FFFBF); Fallon McFadden scored.",
+            "Aspen Walker popped up to ss, sacrifice fly, RBI (1-2 FFFBF); Fallon McFadden scored.",
             "Emily Cutman singled up the middle, RBI, advanced to second on the throw (1-0 B); Mackenzie Fisher scored.",
             "Elaina Gates pinch ran for Emily Cutman.",
             "Sierra Sims popped up to 2b (1-2 KKFBF)."
@@ -683,7 +683,7 @@
             "Maddie Kelsch reached first on an error by 2b (1-0 B); Emily Moyles advanced to second.",
             "Maddie Langdon struck out swinging (1-2 BFFS).",
             "Natalie Charles struck out looking (1-2 KBFK).",
-            "Kaleena Lukasewicz reached first on an error by p (3-1 BBKB); Maddie Kelsch advanced to second on the error; Emily Moyles scored on the error.",
+            "Kaleena Lukasewicz reached first on an error by p (3-1 BBKB); Maddie Kelsch advanced to second on the error; Emily Moyles scored, unearned.",
             "Abby Colleran lined out to ss (3-1 BBKB)."
           ]
         }

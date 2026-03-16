@@ -1,0 +1,252 @@
+{
+  "slug": "salve",
+  "domain": "salveathletics.com",
+  "scrapedAt": "2026-03-16T11:42:06.906Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Murphy, Shea",
+      "w": 0,
+      "l": 0,
+      "era": 4.2,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 5,
+      "h": 7,
+      "r": 4,
+      "er": 3,
+      "bb": 1,
+      "so": 0,
+      "hr": 0,
+      "whip": 1.6,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 21,
+      "bAvg": 0.333,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Cronin, Emily",
+      "w": 0,
+      "l": 1,
+      "era": 4.67,
+      "app": 1,
+      "gs": 1,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 6,
+      "h": 3,
+      "r": 4,
+      "er": 4,
+      "bb": 6,
+      "so": 5,
+      "hr": 1,
+      "whip": 1.5,
+      "doubles": 1,
+      "triples": 1,
+      "ab": 19,
+      "bAvg": 0.158,
+      "wp": 2,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Peterson, Caroline",
+      "w": 0,
+      "l": 1,
+      "era": 99,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 0,
+      "h": 1,
+      "r": 4,
+      "er": 4,
+      "bb": 4,
+      "so": 0,
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 1,
+      "bAvg": 1,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/western-connecticut-state-university/boxscore/11753",
+      "date": "3/15/2026",
+      "opponent": "Western Connecticut State University",
+      "pitchers": [
+        "Cronin, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jaycee Filancia walked (0-0).",
+            "Jaycee Filancia stole second.",
+            "Sera DeBaggis walked (0-0).",
+            "Kendall Allen struck out swinging (0-0).",
+            "Alexis Resto struck out swinging (0-0).",
+            "Sera DeBaggis stole second; Jaycee Filancia stole third.",
+            "Victoria Wiatrak walked (0-0).",
+            "Julia Valukis grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Serenity Ortega grounded out to p (0-0).",
+            "Alyvia Hogg hit by pitch (0-0).",
+            "Alyvia Hogg stole second.",
+            "Giulia Scibilia walked (0-0).",
+            "Jaycee Filancia tripled to right field, 2 RBI (0-0); Giulia Scibilia scored; Alyvia Hogg scored.",
+            "Sera DeBaggis struck out swinging (0-0).",
+            "Kendall Allen grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alexis Resto hit by pitch (0-0).",
+            "Lexi Winkler pinch ran for Alexis Resto.",
+            "Victoria Wiatrak grounded into double play ss to 2b to 1b (0-0); Lexi Winkler out on the play.",
+            "Julia Valukis grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Skylar Wicklund to rf for Madeleine Oswald.",
+            "Serenity Ortega flied out to cf (0-0).",
+            "Alyvia Hogg doubled to right center (0-0).",
+            "Giulia Scibilia struck out looking (0-0).",
+            "Alyvia Hogg advanced to third on a wild pitch.",
+            "Jaycee Filancia flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Angelina Avila pinch hit for Sera DeBaggis.",
+            "Angelina Avila fouled out to lf (0-0).",
+            "Kendall Allen struck out swinging (0-0).",
+            "Alexis Resto hit by pitch (0-0).",
+            "Alexis Resto out at first c to 1b to ss, picked off."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madeleine Oswald to c for Emily Moskal.",
+            "Victoria Wiatrak walked (0-0).",
+            "Lorelei Stancavage pinch ran for Victoria Wiatrak.",
+            "Julia Valukis reached on a fielder's choice (0-0); Lorelei Stancavage out at second 3b to 2b.",
+            "Serenity Ortega flied out to rf (0-0).",
+            "Deanna Reimo pinch ran for Julia Valukis.",
+            "Alyvia Hogg to rf for Madison Anderson.",
+            "Alyvia Hogg homered down the rf line, inside the park, 2 RBI (0-0); Deanna Reimo scored.",
+            "Giulia Scibilia walked (0-0).",
+            "Giulia Scibilia stole second.",
+            "Giulia Scibilia advanced to third on a wild pitch.",
+            "Jaycee Filancia grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/central-college/boxscore/11754",
+      "date": "3/15/2026",
+      "opponent": "Central College",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Rylee Dunkin walked (0-0).",
+            "Larissa Miller walked (0-0); Rylee Dunkin advanced to second.",
+            "Sarah Stufflebeam singled to left field (0-0); Larissa Miller advanced to second; Rylee Dunkin advanced to third.",
+            "Hannah Higgins walked, RBI (0-0); Sarah Stufflebeam advanced to second; Larissa Miller advanced to third; Rylee Dunkin scored.",
+            "Katelyn McCallum walked, RBI (0-0); Hannah Higgins advanced to second; Sarah Stufflebeam advanced to third; Larissa Miller scored.",
+            "Shea Murphy to p for Caroline Peterson.",
+            "Addi Starr doubled to right center, 2 RBI (0-0); Katelyn McCallum advanced to third; Hannah Higgins scored; Sarah Stufflebeam scored.",
+            "Addi Starr advanced to third; Katelyn McCallum out at home c to p.",
+            "Ali Henry grounded out to ss, RBI (0-0); Addi Starr scored.",
+            "Jadyn Huisman grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Carley Underwood singled, bunt (0-0).",
+            "Rylee Dunkin grounded out to p (0-0); Carley Underwood advanced to second.",
+            "Carley Underwood stole third.",
+            "Larissa Miller reached on a fielder's choice, RBI (0-0); Carley Underwood scored on an error by 3b, unearned.",
+            "Larissa Miller out at second c to ss, caught stealing.",
+            "Sarah Stufflebeam walked (0-0).",
+            "Hannah Higgins singled to shortstop (0-0); Sarah Stufflebeam advanced to second.",
+            "Katelyn McCallum grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Addi Starr singled to center field (0-0).",
+            "Morgan Mineart pinch ran for Addi Starr.",
+            "Ali Henry singled to center field (0-0); Morgan Mineart advanced to third.",
+            "Ali Henry stole second.",
+            "Jadyn Huisman fouled out to 1b (0-0).",
+            "Katie Bower pinch hit for Carley Underwood.",
+            "Katie Bower singled to right field, RBI, advanced to second (0-0); Ali Henry scored; Morgan Mineart scored.",
+            "Katie Bower stole third.",
+            "Rylee Dunkin reached on a fielder's choice (0-0); Katie Bower out at home 3b to c.",
+            "Rylee Dunkin stole second.",
+            "Larissa Miller grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sarah Stufflebeam grounded out to ss (0-0).",
+            "Hannah Higgins grounded out to 3b (0-0).",
+            "Katelyn McCallum singled up the middle (0-0).",
+            "Addi Starr reached on a fielder's choice (0-0); Katelyn McCallum out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elise Evans-Murphy pinch hit for Ali Henry.",
+            "Elise Evans-Murphy grounded out to 1b unassisted (0-0).",
+            "Ayla Hall pinch hit for Ella Morse.",
+            "Ayla Hall flied out to cf (0-0).",
+            "Carley Underwood grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

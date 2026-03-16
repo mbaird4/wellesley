@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-15T11:21:25.760Z",
+  "scrapedAt": "2026-03-16T11:42:42.148Z",
   "year": 2026,
   "teamGames": 8,
   "players": [
@@ -251,6 +251,41 @@
       }
     },
     {
+      "name": "Abriana Schmutz",
+      "jerseyNumber": 1,
+      "classYear": "Junior",
+      "position": "2B, OF",
+      "bats": "L",
+      "season": {
+        "year": 2026,
+        "name": "Schmutz, Abriana",
+        "avg": 0.407,
+        "ops": 0.874,
+        "gp": 8,
+        "gs": 8,
+        "ab": 27,
+        "r": 5,
+        "h": 11,
+        "doubles": 0,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 0,
+        "tb": 11,
+        "slg": 0.407,
+        "bb": 3,
+        "hbp": 0,
+        "so": 3,
+        "gdp": 0,
+        "obp": 0.467,
+        "sf": 0,
+        "sh": 1,
+        "sb": 2,
+        "sbAtt": 2,
+        "woba": 0.368,
+        "pa": 31
+      }
+    },
+    {
       "name": "Abby Steele",
       "jerseyNumber": 5,
       "classYear": "Freshman",
@@ -318,41 +353,6 @@
         "sbAtt": 1,
         "woba": 0.343,
         "pa": 30
-      }
-    },
-    {
-      "name": "Abriana Schmutz",
-      "jerseyNumber": 1,
-      "classYear": "Junior",
-      "position": "2B, OF",
-      "bats": "L",
-      "season": {
-        "year": 2026,
-        "name": "Schmutz, Abriana",
-        "avg": 0.37,
-        "ops": 0.803,
-        "gp": 8,
-        "gs": 8,
-        "ab": 27,
-        "r": 5,
-        "h": 10,
-        "doubles": 0,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 0,
-        "tb": 10,
-        "slg": 0.37,
-        "bb": 3,
-        "hbp": 0,
-        "so": 3,
-        "gdp": 0,
-        "obp": 0.433,
-        "sf": 0,
-        "sh": 1,
-        "sb": 2,
-        "sbAtt": 2,
-        "woba": 0.339,
-        "pa": 31
       }
     },
     {

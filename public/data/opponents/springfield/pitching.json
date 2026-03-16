@@ -1,63 +1,63 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-15T11:20:38.010Z",
+  "scrapedAt": "2026-03-16T11:41:49.715Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 0,
-      "l": 1,
-      "era": 0,
-      "app": 1,
-      "gs": 0,
+      "w": 1,
+      "l": 2,
+      "era": 4.67,
+      "app": 3,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 5,
-      "r": 2,
-      "er": 0,
-      "bb": 1,
-      "so": 6,
+      "ip": 15,
+      "h": 21,
+      "r": 12,
+      "er": 10,
+      "bb": 6,
+      "so": 10,
       "hr": 0,
-      "whip": 0.86,
-      "doubles": 1,
+      "whip": 1.8,
+      "doubles": 6,
       "triples": 1,
-      "ab": 24,
-      "bAvg": 0.208,
+      "ab": 63,
+      "bAvg": 0.333,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 0
     },
     {
       "name": "Rimshnick, Julia",
       "w": 1,
       "l": 0,
-      "era": 3,
-      "app": 2,
-      "gs": 2,
+      "era": 5.6,
+      "app": 4,
+      "gs": 3,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 9,
-      "r": 3,
-      "er": 3,
-      "bb": 0,
-      "so": 2,
+      "ip": 10,
+      "h": 14,
+      "r": 8,
+      "er": 8,
+      "bb": 2,
+      "so": 5,
       "hr": 0,
-      "whip": 1.29,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 30,
-      "bAvg": 0.3,
+      "whip": 1.6,
+      "doubles": 2,
+      "triples": 1,
+      "ab": 44,
+      "bAvg": 0.318,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 0
     }
   ],
@@ -222,6 +222,165 @@
             "Miya Fujimoto singled to shortstop (1-2 SFBF).",
             "Sidney Miller singled to left field, advanced to third, RBI (0-0); Miya Fujimoto scored.",
             "Katie Blanch popped up to p (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/-13-uw-whitewater/boxscore/14819",
+      "date": "3/15/2026",
+      "opponent": " 13 Uw Whitewater",
+      "pitchers": [
+        "DeRosa, Amelia",
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Eggert singled through the left side (1-1 BK).",
+            "Maggie Ward singled to catcher, bunt (3-1 BBBK); Bella Eggert advanced to second.",
+            "Grace Grabowy singled to center field (1-2 FBFF); Maggie Ward advanced to second; Bella Eggert advanced to third.",
+            "Dani Peshia doubled to left center, 3 RBI (2-0 BB); Grace Grabowy scored; Maggie Ward scored; Bella Eggert scored.",
+            "Emma Giese walked (3-2 BBBKFB).",
+            "Auburn Roberson lined out to ss (0-0).",
+            "Taylor Koehler struck out swinging (3-2 KKBFBFBFS).",
+            "Jj Jakosalem doubled to left field, 2 RBI (0-0); Emma Giese scored; Dani Peshia scored.",
+            "Kaitlyn Weidemann doubled to right center, RBI (1-1 BF); Jj Jakosalem scored.",
+            "Bella Eggert singled to third base (1-2 KFB); Kaitlyn Weidemann advanced to third.",
+            "Bella Eggert stole second.",
+            "Maggie Ward singled up the middle, RBI (1-2 KKB); Bella Eggert advanced to third; Kaitlyn Weidemann scored.",
+            "Grace Grabowy grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Dani Peshia walked (3-1 BBBKB).",
+            "Amelia DeRosa to dp.",
+            "Julia Rimshnick to p.",
+            "Belle Lapacek pinch ran for Dani Peshia.",
+            "Emma Giese reached on a fielder's choice (2-1 KBB); Belle Lapacek out at second ss to 2b.",
+            "Auburn Roberson walked (3-1 FBBBB); Emma Giese advanced to second.",
+            "Sierra Miller pinch ran for Emma Giese.",
+            "Taylor Koehler flied out to cf (1-1 BK).",
+            "Jj Jakosalem singled to left field, RBI (3-1 BBFB); Auburn Roberson advanced to second; Sierra Miller scored.",
+            "Kaitlyn Weidemann fouled out to rf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erin Grimsley pinch hit for Bella Eggert.",
+            "Erin Grimsley walked (3-0 BBBB).",
+            "Maggie Ward tripled to right center, RBI (1-0 B); Erin Grimsley scored.",
+            "Grace Grabowy singled up the middle, RBI (2-1 BFB); Maggie Ward scored.",
+            "Belle Lapacek singled, bunt (0-0); Grace Grabowy advanced to second.",
+            "Emma Giese doubled to left field, advanced to third on the throw, 2 RBI (1-2 FFFFB); Belle Lapacek scored; Grace Grabowy scored.",
+            "Liv Ybarra pinch hit for Auburn Roberson.",
+            "Liv Ybarra flied out to cf, sacrifice fly, RBI (0-0); Emma Giese scored.",
+            "Taylor Koehler struck out looking (2-2 BKSBFK).",
+            "Keira Jarrett pinch hit for Jj Jakosalem.",
+            "Keira Jarrett grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Pecchia to c for Madison King.",
+            "Addy Bohlander to lf for Christina Vlahakis.",
+            "Ariana Hammer to 3b for Emilia Santiago.",
+            "Amanda Turofsky pinch hit for Kaitlyn Weidemann.",
+            "Amanda Turofsky struck out swinging (0-2 KSS).",
+            "Erin Grimsley struck out swinging (3-2 BFBFFBS).",
+            "Payton Quest pinch hit for Maggie Ward.",
+            "Payton Quest reached first on an error by 2b (1-2 FBK).",
+            "Ellery Stoltz pinch ran for Payton Quest.",
+            "Rachel Radish flied out to rf (1-2 FKB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/southern-maine/boxscore/14820",
+      "date": "3/15/2026",
+      "opponent": "Southern Maine",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa to p.",
+            "Julia Rimshnick to dp.",
+            "Avery Moore grounded out to 2b (0-0).",
+            "Emily Wheeler struck out looking (0-0).",
+            "Olivia Levasseur grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella Bezanson struck out swinging (0-0).",
+            "Mackenzie Renner walked (0-0).",
+            "Aislin Davis singled to third base (0-0); Mackenzie Renner advanced to second.",
+            "Kristina Yebba doubled to center field, RBI (0-0); Aislin Davis advanced to third; Mackenzie Renner scored.",
+            "Gwen Christie walked (0-0).",
+            "Alana Delisle flied out to rf, SAC, RBI (0-0); Gwen Christie advanced to second; Kristina Yebba advanced to third; Aislin Davis scored.",
+            "Emma Ingalls pinch hit for Avery Moore.",
+            "Emma Ingalls popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emily Wheeler singled to third base, bunt (0-0).",
+            "Olivia Levasseur reached on a fielder's choice (0-0); Emily Wheeler out at second ss to 2b.",
+            "Ella Bezanson flied out to rf (0-0).",
+            "Mackenzie Renner singled to left field (0-0); Olivia Levasseur advanced to second.",
+            "Aislin Davis flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kristina Yebba struck out swinging (0-0).",
+            "Gwen Christie walked (0-0).",
+            "Alana Delisle popped up to ss (0-0).",
+            "Avery Moore lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Wheeler grounded out to 3b (0-0).",
+            "Olivia Levasseur singled to right field (0-0).",
+            "Ella Bezanson flied out to rf (0-0).",
+            "Mackenzie Renner doubled to center field (0-0); Olivia Levasseur advanced to third.",
+            "Aislin Davis grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kristina Yebba singled to center field (0-0).",
+            "Gwen Christie grounded out to 2b (0-0); Kristina Yebba advanced to second.",
+            "Alana Delisle flied out to cf (0-0).",
+            "Avery Moore singled up the middle (0-0); Kristina Yebba advanced to third.",
+            "Emily Wheeler flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Aurora Levesque to c for Carissa Pecchia.",
+            "Olivia Levasseur flied out to rf (0-0).",
+            "Ella Bezanson flied out to rf (0-0).",
+            "Mackenzie Renner flied out to cf (0-0)."
           ]
         }
       ],

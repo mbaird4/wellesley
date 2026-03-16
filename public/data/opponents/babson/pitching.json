@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-15T11:22:08.528Z",
+  "scrapedAt": "2026-03-16T11:43:26.067Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -33,84 +33,84 @@
       "sha": 1
     },
     {
+      "name": "Topel, Anna",
+      "w": 2,
+      "l": 0,
+      "era": 2.55,
+      "app": 2,
+      "gs": 2,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 11,
+      "h": 10,
+      "r": 5,
+      "er": 4,
+      "bb": 8,
+      "so": 4,
+      "hr": 1,
+      "whip": 1.64,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 40,
+      "bAvg": 0.25,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
+    },
+    {
       "name": "Sealey, Lexi",
       "w": 0,
       "l": 0,
-      "era": 2.33,
-      "app": 1,
+      "era": 9,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 3,
-      "h": 4,
-      "r": 1,
-      "er": 1,
-      "bb": 1,
-      "so": 1,
+      "ip": 4.2,
+      "h": 7,
+      "r": 6,
+      "er": 6,
+      "bb": 3,
+      "so": 2,
       "hr": 0,
-      "whip": 1.67,
+      "whip": 2.14,
       "doubles": 0,
       "triples": 0,
-      "ab": 13,
-      "bAvg": 0.308,
+      "ab": 21,
+      "bAvg": 0.333,
       "wp": 0,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
     },
     {
-      "name": "Topel, Anna",
-      "w": 1,
-      "l": 0,
-      "era": 5.25,
-      "app": 1,
-      "gs": 1,
+      "name": "Vlacich, Katie",
+      "w": 0,
+      "l": 2,
+      "era": 12.25,
+      "app": 2,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
       "ip": 4,
-      "h": 6,
-      "r": 4,
-      "er": 3,
+      "h": 9,
+      "r": 9,
+      "er": 7,
       "bb": 4,
-      "so": 1,
-      "hr": 1,
-      "whip": 2.5,
+      "so": 3,
+      "hr": 0,
+      "whip": 3.25,
       "doubles": 1,
       "triples": 0,
-      "ab": 16,
-      "bAvg": 0.375,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Vlacich, Katie",
-      "w": 0,
-      "l": 1,
-      "era": 99,
-      "app": 1,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 0,
-      "h": 5,
-      "r": 6,
-      "er": 6,
-      "bb": 3,
-      "so": 0,
-      "hr": 0,
-      "whip": 0,
-      "doubles": 0,
-      "triples": 0,
-      "ab": 5,
-      "bAvg": 1,
-      "wp": 2,
+      "ab": 22,
+      "bAvg": 0.409,
+      "wp": 4,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -285,6 +285,164 @@
             "Katie Foley grounded out to ss (0-0).",
             "Belle Dicampello to c.",
             "Sophia Pak to cf for Allie Cubberly."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/suny-geneseo/boxscore/16079",
+      "date": "3/15/2026",
+      "opponent": "Suny Geneseo",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Brooke Fraas grounded out to 2b (0-0).",
+            "Bella Nadzan grounded out to 3b (0-0).",
+            "Ray Schumacher flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Bieniek struck out swinging (0-0).",
+            "Molly Griffin flied out to lf (0-0).",
+            "Gabriella Smith grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sierra VanDerwarker flied out to cf (0-0).",
+            "Gabriella Petroski singled up the middle (0-0).",
+            "Claire Kubiak pinch ran for Gabriella Petroski.",
+            "Claire Kubiak advanced to second on a wild pitch.",
+            "Claire Kubiak advanced to third on a wild pitch.",
+            "Lauren Babich reached first on a fielding error by 2b, RBI (0-0); Claire Kubiak scored.",
+            "Brooke Fraas struck out swinging (0-0).",
+            "Bella Nadzan singled through the right side (0-0); Lauren Babich advanced to third.",
+            "Ray Schumacher doubled to right center, 2 RBI (0-0); Bella Nadzan scored, unearned; Lauren Babich scored, unearned.",
+            "Lauren Bieniek struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Molly Griffin singled to left field (0-0).",
+            "Gabriella Smith lined out to rf (0-0).",
+            "Sierra VanDerwarker popped up to 1b (0-0).",
+            "Molly Griffin advanced to second on a passed ball.",
+            "Gabriella Petroski walked (0-0).",
+            "Lauren Babich grounded out 3b to ss to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Lexi Sealy to p.",
+            "Brooke Fraas lined out to rf (0-0).",
+            "Bella Nadzan grounded out to 2b (0-0).",
+            "Ray Schumacher grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauren Bieniek walked (0-0).",
+            "Molly Griffin struck out swinging (0-0).",
+            "Gabriella Smith walked (0-0); Lauren Bieniek advanced to second.",
+            "Olivia Coons pinch hit for Sierra VanDerwarker.",
+            "Olivia Coons popped up to 1b (0-0).",
+            "Gabriella Petroski hit by pitch (0-0); Gabriella Smith advanced to second; Lauren Bieniek advanced to third.",
+            "Lauren Babich singled to right field, 2 RBI (0-0); Gabriella Petroski advanced to third; Gabriella Smith scored; Lauren Bieniek scored.",
+            "Brooke Fraas singled to right field, RBI (0-0); Lauren Babich advanced to third; Gabriella Petroski scored.",
+            "Bella Nadzan singled to second base, RBI (0-0); Brooke Fraas advanced to second, advanced to third on a throwing error by 2b, scored on the throw; Lauren Babich scored."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-13-wisconsin-whitewater/boxscore/16080",
+      "date": "3/15/2026",
+      "opponent": " 13 Wisconsin Whitewater",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Eggert reached first on an error by 2b (0-0).",
+            "Maggie Ward lined out to lf (3-2 BBBKF).",
+            "Grace Grabowy popped up to 2b (1-0 B).",
+            "Bella Eggert stole second.",
+            "Dani Peshia walked (3-2 KBBBKB).",
+            "Emma Giese grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Auburn Roberson walked (3-1 KBBBB).",
+            "Baley Berndt grounded out to 2b (1-1 KB); Auburn Roberson advanced to second.",
+            "Rachel Radish grounded out to ss (1-1 KB); Auburn Roberson advanced to third.",
+            "Kaitlyn Weidemann lined out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bella Eggert struck out swinging (1-2 BFFFS).",
+            "Maggie Ward fouled out to c, bunt (0-0).",
+            "Grace Grabowy grounded out to 2b (3-2 BBSKB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dani Peshia singled to center field (0-1 F).",
+            "Belle Lapacek pinch ran for Dani Peshia.",
+            "Emma Giese out at first c to 2b, bunt, SAC (1-1 BF); Belle Lapacek advanced to second.",
+            "Auburn Roberson popped up to ss (2-0 BB).",
+            "Baley Berndt struck out swinging (1-2 SBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kay Laliberty to 2b for Ruby Madia.",
+            "Rachel Radish grounded out to 2b (3-1 BBBK).",
+            "Kaitlyn Weidemann grounded out to ss (0-0).",
+            "Bella Eggert popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Belle Dicampello to c for Izzy Burgess.",
+            "Maggie Ward singled up the middle (0-0).",
+            "Grace Grabowy flied out to rf (0-2 FK).",
+            "Dani Peshia walked (3-2 BKBKBB); Maggie Ward advanced to second.",
+            "Emma Giese walked (3-0 BBBB); Dani Peshia advanced to second; Maggie Ward advanced to third.",
+            "Erin Grimsley pinch ran for Emma Giese.",
+            "Auburn Roberson singled to left field, RBI (1-1 BK); Erin Grimsley advanced to second; Dani Peshia advanced to third; Maggie Ward scored.",
+            "Baley Berndt struck out swinging (0-2 KKFS).",
+            "Rachel Radish grounded out to p (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kaitlyn Weidemann grounded out to 2b (1-0 B).",
+            "Bella Eggert singled to third base (1-0 B).",
+            "Maggie Ward lined into double play ss to 1b (0-2 KK); Bella Eggert out on the play."
           ]
         }
       ],
