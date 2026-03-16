@@ -89,6 +89,12 @@ export function computePlayerCumulativeWobas(boxscores: BoxscoreData[]): PlayerC
 
   boxscores.forEach((box) => {
     box.playerStats.forEach((ps) => {
+      const gamePa = ps.ab + ps.bb + ps.hbp + ps.sf + ps.sh;
+
+      if (gamePa === 0) {
+        return;
+      }
+
       let acc = playerAccum.get(ps.name);
 
       if (!acc) {

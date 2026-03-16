@@ -2,8 +2,8 @@ name: Refresh Current Season Data
 
 on:
   schedule:
-    # Daily at 6 AM ET (11 AM UTC) during softball season (Feb-May)
-    - cron: '0 11 * 2-5 *'
+    # Daily at 8 PM ET (midnight UTC) during softball season (Feb-May)
+    - cron: '0 0 * 2-6 *'
   workflow_dispatch:
 
 permissions:

@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { SoftballStatsService } from '@ws/core/data';
 import type { BaseSituation, GameScoringPlays, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 import { LastUpdatedPipe, SITUATION_LABELS } from '@ws/core/ui';
+import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { ByGameTab } from './by-game-tab/by-game-tab';
 import { ByPlayerTab } from './by-player-tab/by-player-tab';
@@ -35,10 +36,10 @@ export class ScoringPlays {
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
   readonly scrapedAt = signal<string | null>(null);
-  readonly selectedYear = signal(2025);
+  readonly selectedYear = signal(CURRENT_YEAR);
   readonly activeTab = signal<ScoringTab>('summary');
 
-  readonly availableYears = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011];
+  readonly availableYears = ALL_SEASON_YEARS;
 
   readonly seasonSummary = signal<ScoringPlaySummary | null>(null);
   readonly gameScoringPlays = signal<GameScoringPlays[]>([]);

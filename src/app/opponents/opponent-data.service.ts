@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { mergeBattingYears, mergePitchingYears, SoftballDataService } from '@ws/core/data';
 import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type VsWellesleyData, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
 import { calculateWoba, computeVsWellesleyStats } from '@ws/core/processors';
+import { CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -240,11 +241,9 @@ export class OpponentDataService {
     this.pitchingLoading.set(true);
 
     const base = document.querySelector('base')?.getAttribute('href') || '/';
-    const currentYear = new Date().getFullYear();
-    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
-    const requests = years.map((year) => {
-      const file = year === currentYear ? 'pitching.json' : `pitching-${year}.json`;
+    const requests = RECENT_YEARS.map((year) => {
+      const file = year === CURRENT_YEAR ? 'pitching.json' : `pitching-${year}.json`;
 
       return this.http.get<YearPitchingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
     });
@@ -279,10 +278,7 @@ export class OpponentDataService {
 
     this.vsWellesleyLoading.set(true);
 
-    const currentYear = new Date().getFullYear();
-    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
-
-    const requests = years.map((year) => this.softballData.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
+    const requests = RECENT_YEARS.map((year) => this.softballData.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
 
     forkJoin(requests).subscribe({
       next: (results) => {
@@ -333,11 +329,9 @@ export class OpponentDataService {
     this.yearSortYear.set(null);
 
     const base = document.querySelector('base')?.getAttribute('href') || '/';
-    const currentYear = new Date().getFullYear();
-    const years = Array.from({ length: 4 }, (_, i) => currentYear - i);
 
-    const requests = years.map((year) => {
-      const file = year === currentYear ? 'batting-stats.json' : `batting-stats-${year}.json`;
+    const requests = RECENT_YEARS.map((year) => {
+      const file = year === CURRENT_YEAR ? 'batting-stats.json' : `batting-stats-${year}.json`;
 
       return this.http.get<YearBattingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
     });

@@ -87,7 +87,7 @@
                 class="text-center font-semibold tabular-nums"
                 [class]="tierClass(player.tier)"
               >
-                {{ formatWoba(player.woba) }}
+                {{ player.woba | formatWoba: player.pa }}
               </td>
             </tr>
             @if (expandedPlayer === player.name) {
@@ -170,7 +170,7 @@
                 class="text-center font-semibold tabular-nums"
                 [class]="tierClass(player.tier)"
               >
-                {{ formatWoba(player.woba) }}
+                {{ player.woba | formatWoba: player.pa }}
               </td>
             </tr>
             @if (expandedPlayer === player.name) {

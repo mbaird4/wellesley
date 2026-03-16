@@ -6,6 +6,7 @@ export * from './format-outs.pipe';
 export * from './format-play-type.pipe';
 export * from './format-situation.pipe';
 export * from './format-stat.pipe';
+export * from './format-woba.pipe';
 export * from './is-empty.pipe';
 export * from './last-updated.pipe';
 export * from './outlier-class.pipe';

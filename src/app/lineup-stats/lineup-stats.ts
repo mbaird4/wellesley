@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal }
 import { SoftballStatsService } from '@ws/core/data';
 import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, ResultRow } from '@ws/core/models';
 import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
+import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 @Component({
   selector: 'ws-lineup-stats',
@@ -30,14 +31,12 @@ export class LineupStats {
   error: string | null = null;
   scrapedAt: string | null = null;
   totalPlateAppearances = 0;
-  selectedYear = 2025;
-  availableYears: number[] = [];
+  selectedYear = CURRENT_YEAR;
+  availableYears = ALL_SEASON_YEARS;
 
   readonly baseRunnerMode = signal<BaseRunnerMode>('at-bat-start');
 
   constructor() {
-    const currentYear = new Date().getFullYear();
-    this.availableYears = Array.from({ length: 5 }, (_, i) => currentYear - i);
     this.loadStats();
   }
 

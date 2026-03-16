@@ -2,12 +2,10 @@ import { ChangeDetectionStrategy, Component, inject, type OnInit, signal } from 
 import { mergePitchingYears, SoftballDataService } from '@ws/core/data';
 import { type PitchingData, toJerseyMap, type YearPitchingData } from '@ws/core/models';
 import { LastUpdatedPipe } from '@ws/core/ui';
+import { RECENT_YEARS } from '@ws/core/util';
 import { PitcherAnalysis } from '@ws/pitching';
 import { forkJoin, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-
-const CURRENT_YEAR = new Date().getFullYear();
-const YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
 
 @Component({
   selector: 'ws-pitching',
@@ -34,7 +32,7 @@ export class Pitching implements OnInit {
   }
 
   private loadPitchingData(): void {
-    const requests = YEARS.map((year) => this.dataService.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
+    const requests = RECENT_YEARS.map((year) => this.dataService.getWellesleyPitchingData(year).pipe(catchError(() => of(null))));
 
     forkJoin(requests).subscribe({
       next: (results) => {

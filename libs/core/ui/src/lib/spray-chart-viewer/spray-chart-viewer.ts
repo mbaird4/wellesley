@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal, viewChild } from '@angular/core';
 import type { Roster, RosterPlayer, SprayDataPoint, SprayTrend, SprayZone, Team } from '@ws/core/models';
 import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
-import { BreakpointService } from '@ws/core/util';
+import { BreakpointService, CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
@@ -12,8 +12,8 @@ import { SprayViewContact } from '../spray-view-contact/spray-view-contact';
 import { SprayViewScouting } from '../spray-view-scouting/spray-view-scouting';
 import { SprayViewSplit } from '../spray-view-split/spray-view-split';
 
-export const CURRENT_YEAR = new Date().getFullYear();
-export const SPRAY_YEARS = Array.from({ length: 4 }, (_, i) => CURRENT_YEAR - i);
+export { CURRENT_YEAR };
+export const SPRAY_YEARS = RECENT_YEARS;
 
 const VIEW_MODE_OPTIONS: ToggleOption[] = [
   { value: 'combined', label: 'Combined' },

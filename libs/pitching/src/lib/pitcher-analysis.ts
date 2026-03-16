@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, signal } f
 import type { PitcherGameLog, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
 import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
 import { PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
-import { BreakpointService } from '@ws/core/util';
+import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
 import { InningBreakdown } from './inning-breakdown';
 import { InningDetail } from './inning-detail';
@@ -39,7 +39,7 @@ export class PitcherAnalysis {
   readonly teamName = input<string>('');
 
   readonly selectedPitcher = signal<string | null>(null);
-  readonly selectedYear = signal<number | 'all'>('all');
+  readonly selectedYear = signal<number | 'all'>(CURRENT_YEAR);
 
   /** Available years where the selected pitcher has stats, sorted descending */
   readonly availableYears = computed<number[]>(() => {
@@ -50,10 +50,16 @@ export class PitcherAnalysis {
       return [];
     }
 
-    return Object.entries(data.pitchingStatsByYear)
+    const years = Object.entries(data.pitchingStatsByYear)
       .filter(([, stats]) => stats.some((p) => p.name === pitcher))
-      .map(([year]) => Number(year))
-      .sort((a, b) => b - a);
+      .map(([year]) => Number(year));
+
+    // Always include current year so the selector shows it even before data exists
+    if (!years.includes(CURRENT_YEAR)) {
+      years.push(CURRENT_YEAR);
+    }
+
+    return years.sort((a, b) => b - a);
   });
 
   /** Pitcher names across all years, filtered to current roster */

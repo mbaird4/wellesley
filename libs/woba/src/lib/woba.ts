@@ -3,7 +3,8 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@
 import { SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
 import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
-import { ButtonToggle, LastUpdatedPipe, type ToggleOption, WobaLegend } from '@ws/core/ui';
+import { ButtonToggle, FormatWobaPipe, LastUpdatedPipe, type ToggleOption, WobaLegend } from '@ws/core/ui';
+import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 export interface TeamGameColumn {
   date: string;
@@ -28,6 +29,7 @@ export interface TeamPlayerRow {
   imports: [
     CommonModule,
     ButtonToggle,
+    FormatWobaPipe,
     LastUpdatedPipe,
     WobaLegend,
   ],
@@ -45,9 +47,9 @@ export class Woba {
   error: string | null = null;
   scrapedAt: string | null = null;
   teamGames = 0;
-  selectedYear = 2025;
+  selectedYear = CURRENT_YEAR;
   selectedYearStr = String(this.selectedYear);
-  yearOptions: ToggleOption[] = [2025, 2024, 2023, 2022, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011].map((y) => ({
+  yearOptions: ToggleOption[] = ALL_SEASON_YEARS.map((y) => ({
     value: String(y),
     label: String(y),
   }));
