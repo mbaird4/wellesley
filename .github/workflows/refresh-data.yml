@@ -8,10 +8,14 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
     steps:
       - uses: actions/checkout@v4
 
@@ -29,13 +33,21 @@ jobs:
         run: npm run scrape-opponents -- --years $(date +%Y) --with-pitching --with-gamedata
 
       - name: Commit updated data if changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
           if git diff --cached --quiet; then
             echo "No data changes detected"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: refresh $(date +%Y) season data"
             git push
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
+
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.has_changes == 'true'
+    uses: ./.github/workflows/deploy.yml
