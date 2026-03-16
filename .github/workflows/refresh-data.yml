@@ -32,6 +32,9 @@ jobs:
       - name: Fetch opponent data (batting, pitching, gamedata)
         run: npm run scrape-opponents -- --years $(date +%Y) --with-pitching --with-gamedata
 
+      - name: Scrape season stats for all teams
+        run: npm run scrape-season-stats -- --year $(date +%Y)
+
       - name: Commit updated data if changed
         id: commit
         run: |

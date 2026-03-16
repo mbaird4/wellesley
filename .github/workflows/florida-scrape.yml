@@ -34,12 +34,15 @@ jobs:
       - name: Scrape Presto Sports teams
         run: npm run scrape-ext -- --site presto --years 2026 --with-pitching --with-gamedata
 
+      - name: Scrape season stats for all teams
+        run: npm run scrape-season-stats -- --year 2026
+
       - name: Commit updated data if changed
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/opponents/florida/
+          git add public/data/opponents/
           if git diff --cached --quiet; then
             echo "No data changes detected"
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
