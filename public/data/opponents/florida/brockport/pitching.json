@@ -1,0 +1,150 @@
+{
+  "slug": "brockport",
+  "domain": "gobrockport.com",
+  "scrapedAt": "2026-03-16T19:00:26.881Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Hart, Makenna",
+      "w": 0,
+      "l": 0,
+      "era": 4.67,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 3,
+      "h": 4,
+      "r": 2,
+      "er": 2,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 13,
+      "bAvg": 0.308,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Davis, Colleen",
+      "w": 0,
+      "l": 1,
+      "era": 11.67,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 3,
+      "h": 8,
+      "r": 5,
+      "er": 5,
+      "bb": 2,
+      "so": 1,
+      "hr": 0,
+      "whip": 3.33,
+      "doubles": 0,
+      "triples": 2,
+      "ab": 15,
+      "bAvg": 0.533,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    }
+  ],
+  "games": [
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/concordia-university-texas/boxscore/12505",
+      "date": "3/16/2026",
+      "opponent": "Concordia University Texas",
+      "pitchers": [
+        "Davis, Colleen",
+        "Hart, Makenna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malarie Mican singled up the middle (3-2 BBKSB).",
+            "Malarie Mican stole second.",
+            "Kylie Denaro struck out swinging (0-2 KKFFS).",
+            "Kamryn Kothman tripled down the rf line, RBI (0-0); Malarie Mican scored.",
+            "Molly Olivarez tripled to right field, RBI (2-0 BB); Kamryn Kothman scored.",
+            "Karlee Mathis out at first p to 2b, bunt, SAC, RBI (1-1 KB); Molly Olivarez scored.",
+            "Lilly Longoria grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mia Post singled to left field (1-0 B).",
+            "Christian Everett reached on a fielder's choice (3-2 BBKBF); Mia Post out at second ss to 2b.",
+            "Christian Everett stole second.",
+            "Harley Drouillard grounded out to p (1-2 KSB).",
+            "Malarie Mican singled to third base (2-2 KBBFF); Christian Everett advanced to third.",
+            "Malarie Mican stole second.",
+            "Kylie Denaro popped up to 3b (3-2 BBKBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kamryn Kothman walked (3-2 BBBKFFB).",
+            "Katie Bethke pinch ran for Kamryn Kothman.",
+            "Katie Bethke out at second c to ss, caught stealing.",
+            "Molly Olivarez walked (3-2 BSBBFB).",
+            "Karlee Mathis singled up the middle (1-0 B); Molly Olivarez advanced to second.",
+            "Morgan Holdren pinch ran for Molly Olivarez.",
+            "Lilly Longoria grounded out to p (0-0); Karlee Mathis advanced to second; Morgan Holdren advanced to third.",
+            "Mia Post singled to left field, RBI (2-2 FBBK); Karlee Mathis advanced to third; Morgan Holdren scored.",
+            "Christian Everett singled to shortstop, RBI (0-0); Mia Post advanced to second; Karlee Mathis scored.",
+            "Harley Drouillard grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Makenna Hart to p for Colleen Davis.",
+            "Malarie Mican singled, bunt (1-1 FB).",
+            "Malarie Mican stole second.",
+            "Kylie Denaro walked (3-2 BBFBFFB).",
+            "Kamryn Kothman flied out to rf (2-0 BB).",
+            "Molly Olivarez singled up the middle, 2 RBI (2-1 KBB); Kylie Denaro scored; Malarie Mican scored.",
+            "Karlee Mathis flied out to rf (0-0).",
+            "Lilly Longoria singled up the middle (1-0 B); Molly Olivarez advanced to second.",
+            "Mia Post grounded out to ss (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Christian Everett popped up to 2b (1-1 FB).",
+            "Harley Drouillard grounded out to 3b (0-0).",
+            "Malarie Mican singled, bunt (1-1 BS).",
+            "Malarie Mican stole second.",
+            "Kylie Denaro walked (3-0 BBBB).",
+            "Kamryn Kothman popped up to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Molly Olivarez flied out to lf (3-2 BKFBB).",
+            "Karlee Mathis grounded out to ss (2-1 BKB).",
+            "Lilly Longoria lined out to 1b (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}

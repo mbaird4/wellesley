@@ -1,0 +1,185 @@
+{
+  "slug": "ecsu",
+  "domain": "gowarriorathletics.com",
+  "scrapedAt": "2026-03-16T19:00:48.831Z",
+  "year": 2026,
+  "pitchingStats": [
+    {
+      "name": "Raymond, Julia",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 1,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 1,
+      "bAvg": 0,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 0
+    },
+    {
+      "name": "Chatfield, Leah",
+      "w": 1,
+      "l": 0,
+      "era": 5.25,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 8,
+      "r": 4,
+      "er": 3,
+      "bb": 2,
+      "so": 4,
+      "hr": 1,
+      "whip": 2.5,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 19,
+      "bAvg": 0.421,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Marchand, Hadley",
+      "w": 0,
+      "l": 0,
+      "era": 7,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 2,
+      "h": 3,
+      "r": 2,
+      "er": 2,
+      "bb": 2,
+      "so": 2,
+      "hr": 0,
+      "whip": 2.5,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 9,
+      "bAvg": 0.333,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    }
+  ],
+  "games": [
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/suny-fredonia/boxscore/7843",
+      "date": "3/16/2026",
+      "opponent": "Suny Fredonia",
+      "pitchers": [
+        "Chatfield, Leah",
+        "Raymond, Julia",
+        "Marchand, Hadley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madison DeVore grounded out to 3b (0-0).",
+            "Brooke Caldwell struck out swinging (0-0).",
+            "Madison Lowe singled up the middle (0-0).",
+            "Avery Hill singled to right field (0-0); Madison Lowe advanced to third.",
+            "Kirsten Lajewski walked (0-0); Avery Hill advanced to second.",
+            "Eva Gnadzinski singled to left field, RBI (0-0); Kirsten Lajewski advanced to second; Avery Hill advanced to third; Madison Lowe scored.",
+            "Kim Dorane struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Chloe Whittingham lined out to 2b (0-0).",
+            "Kayla Lynn singled through the left side (0-0).",
+            "Madison DeVore lined into double play lf to 1b (0-0); Kayla Lynn out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Brooke Caldwell singled up the middle (0-0).",
+            "Madison Lowe popped into double play ss to 1b (0-0); Brooke Caldwell out on the play.",
+            "Avery Hill homered to left center, RBI (0-0).",
+            "Kirsten Lajewski reached first on a fielding error by ss (0-0).",
+            "Eva Gnadzinski singled through the left side (0-0); Kirsten Lajewski advanced to second.",
+            "Kim Dorane flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mack Celauro pinch hit for Chloe Whittingham.",
+            "Mack Celauro struck out swinging (0-0).",
+            "Kayla Lynn struck out swinging (0-0).",
+            "Madison DeVore lined out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brooke Caldwell doubled down the lf line (0-0).",
+            "Madison Lowe walked (0-0).",
+            "Julia Raymond to p for Leah Chatfield.",
+            "Avery Hill walked (0-0); Madison Lowe advanced to second; Brooke Caldwell advanced to third.",
+            "Kirsten Lajewski flied out to cf, SAC, RBI (0-0); Brooke Caldwell scored.",
+            "Avery Hill advanced to second on a wild pitch; Madison Lowe advanced to third on a wild pitch.",
+            "Eva Gnadzinski walked (0-0).",
+            "Claire Reccardi pinch hit for Sophie Reed.",
+            "Claire Reccardi lined out to p (0-0); Eva Gnadzinski out at second 1b to 2b; Avery Hill advanced to third; Madison Lowe scored on a muffed throw by 1b, unearned."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Hadley Marchand to p for Julia Raymond.",
+            "Mack Celauro popped up to 2b (0-0).",
+            "Kayla Lynn singled, bunt (0-0).",
+            "Madison DeVore fouled out to 1b (0-0).",
+            "Brooke Caldwell walked (0-0); Kayla Lynn advanced to second.",
+            "Madison Lowe singled to left field, RBI (0-0); Brooke Caldwell advanced to second; Kayla Lynn scored.",
+            "Avery Hill struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kirsten Lajewski walked (0-0).",
+            "Kirsten Lajewski advanced to second on a wild pitch.",
+            "Eva Gnadzinski doubled down the lf line, RBI (0-0); Kirsten Lajewski scored.",
+            "Lily Foglia pinch ran for Eva Gnadzinski.",
+            "Kim Dorane fouled out to 1b (0-0).",
+            "Mack Celauro struck out swinging (0-0).",
+            "Kayla Lynn grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    }
+  ]
+}
