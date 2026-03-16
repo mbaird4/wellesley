@@ -1,7 +1,7 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-16T19:00:16.439Z",
+  "scrapedAt": "2026-03-16T21:36:03.383Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -91,27 +91,27 @@
     {
       "name": "Kincaid, Hailey",
       "w": 0,
-      "l": 0,
-      "era": 6.75,
-      "app": 5,
-      "gs": 2,
-      "cg": 0,
+      "l": 1,
+      "era": 7.33,
+      "app": 6,
+      "gs": 3,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 9.1,
-      "h": 16,
-      "r": 10,
-      "er": 9,
-      "bb": 4,
-      "so": 7,
+      "ip": 14.1,
+      "h": 22,
+      "r": 17,
+      "er": 15,
+      "bb": 7,
+      "so": 13,
       "hr": 2,
-      "whip": 2.14,
-      "doubles": 5,
-      "triples": 1,
-      "ab": 44,
-      "bAvg": 0.364,
-      "wp": 1,
-      "hbp": 0,
+      "whip": 2.02,
+      "doubles": 6,
+      "triples": 3,
+      "ab": 66,
+      "bAvg": 0.333,
+      "wp": 2,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
       "sha": 1
@@ -1016,6 +1016,73 @@
             "Marivel Reyes out at second c to ss, caught stealing.",
             "Christian Everett singled through the left side (0-1 F).",
             "Christian Everett out at second c to ss, caught stealing."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/bowdoin-college/boxscore/7933",
+      "date": "3/16/2026",
+      "opponent": "Bowdoin College",
+      "pitchers": [
+        "Kincaid, Hailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anika Ewert singled to shortstop (2-1 BKB).",
+            "Anika Ewert stole second.",
+            "P. Fong-Picariello singled through the right side, RBI (2-2 BFBF); Anika Ewert scored.",
+            "Reilly Parga reached on a fielder's choice (1-2 BFS); P. Fong-Picariello out at second 3b to 2b.",
+            "Maddie Paschke struck out looking (3-2 BFBBSK).",
+            "Elise Siciliano reached on a fielder's choice (1-1 KB); Reilly Parga out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Chloe Garcia hit by pitch (2-1 BKH).",
+            "Rosie Panenka walked (3-0 BBBB); Chloe Garcia advanced to second.",
+            "Rosie Panenka advanced to second on a wild pitch; Chloe Garcia advanced to third on a wild pitch.",
+            "Ellie Sullivan struck out swinging, out at first c to 1b (1-2 FKFBS).",
+            "Kaitlyn Fado reached on a fielder's choice, RBI (0-1 K); Rosie Panenka out at third ss to 2b; Chloe Garcia scored.",
+            "Kaitlyn Fado stole second.",
+            "Anika Ewert tripled to left field, RBI (1-1 BF); Kaitlyn Fado scored.",
+            "P. Fong-Picariello grounded out to 1b unassisted (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Reilly Parga reached first on an error by ss (1-2 FBF).",
+            "Maddie Paschke walked (3-1 BBFBB); Reilly Parga advanced to second.",
+            "Elise Siciliano doubled to left field, ground-rule, RBI (1-2 KKB); Maddie Paschke advanced to third; Reilly Parga scored, unearned.",
+            "Chloe Garcia tripled to right field, 2 RBI (2-2 BKSBF); Elise Siciliano scored; Maddie Paschke scored.",
+            "Rosie Panenka reached first on an error by ss, RBI (1-2 KFB); Chloe Garcia scored.",
+            "Ellie Sullivan struck out swinging (0-2 SKS).",
+            "Kaitlyn Fado struck out swinging (2-2 BFBKS).",
+            "Anika Ewert grounded out to 2b (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caitlyn Kressel to c for Autumn Hughes.",
+            "P. Fong-Picariello grounded out to ss (0-1 F).",
+            "Reilly Parga grounded out to 3b (0-0).",
+            "Maddie Paschke hit by pitch (2-0 BH).",
+            "Elise Siciliano walked (3-1 BBKBB); Maddie Paschke advanced to second.",
+            "Chloe Garcia struck out swinging (2-2 KFBFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rosie Panenka singled up the middle (1-2 KFB).",
+            "Ellie Sullivan struck out looking (2-2 FBFBFK).",
+            "Kaitlyn Fado grounded into double play ss to 1b (1-0 B); Rosie Panenka out on the play."
           ]
         }
       ],

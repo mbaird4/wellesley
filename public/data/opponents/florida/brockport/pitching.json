@@ -1,7 +1,7 @@
 {
   "slug": "brockport",
   "domain": "gobrockport.com",
-  "scrapedAt": "2026-03-16T19:00:26.881Z",
+  "scrapedAt": "2026-03-16T21:36:17.103Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -33,6 +33,34 @@
       "sha": 0
     },
     {
+      "name": "DeValder, Liana",
+      "w": 0,
+      "l": 1,
+      "era": 6.18,
+      "app": 1,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 5.2,
+      "h": 9,
+      "r": 7,
+      "er": 5,
+      "bb": 1,
+      "so": 9,
+      "hr": 0,
+      "whip": 1.76,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 26,
+      "bAvg": 0.346,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
       "name": "Davis, Colleen",
       "w": 0,
       "l": 1,
@@ -59,6 +87,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 1
+    },
+    {
+      "name": "Alguire, Hadley",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 1.1,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 0,
+      "so": 0,
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 5,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     }
   ],
   "games": [
@@ -141,6 +197,94 @@
             "Molly Olivarez flied out to lf (3-2 BKFBB).",
             "Karlee Mathis grounded out to ss (2-1 BKB).",
             "Lilly Longoria lined out to 1b (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/university-of-new-england/boxscore/12688",
+      "date": "3/16/2026",
+      "opponent": "University Of New England",
+      "pitchers": [
+        "DeValder, Liana",
+        "Alguire, Hadley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hannah Irons struck out swinging (0-0).",
+            "Emma Michaud struck out looking (3-2 BBBFFK).",
+            "Zofia Twarog struck out swinging (3-2 BBFBSFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lizzie Brytowski struck out swinging (1-2 BFKS).",
+            "Adrianna Carsetti grounded out to ss (0-0).",
+            "Fiona Casey walked (3-2 BFFFBBB).",
+            "Tess Bolduc doubled to center field, RBI (2-2 BFBS); Fiona Casey scored.",
+            "Emma Koenig struck out looking (3-2 BBBKFFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caitlyn Dailey to 2b for Isabella Moya.",
+            "Hannah Lappin grounded out to 3b (0-1 K).",
+            "Hannah Irons struck out swinging (1-2 BSKFS).",
+            "Emma Michaud singled to left field (0-2 KF).",
+            "Zofia Twarog struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ciara Olivo to rf.",
+            "Lizzie Brytowski struck out swinging (1-2 KBKS).",
+            "Adrianna Carsetti doubled to left field (1-1 BF).",
+            "Fiona Casey flied out to lf (1-1 BF); Adrianna Carsetti advanced to third.",
+            "Tess Bolduc reached first on an error by 3b (1-2 KFB); Adrianna Carsetti scored, unearned.",
+            "Emma Koenig popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hannah Lappin doubled to left field (0-1 K).",
+            "Hannah Irons out at first c to 2b, bunt, SAC (0-0); Hannah Lappin advanced to third.",
+            "Emma Michaud singled to right field, RBI (0-0); Hannah Lappin scored.",
+            "Emma Michaud advanced to second on a passed ball.",
+            "Zofia Twarog singled up the middle, RBI (0-2 KF); Emma Michaud scored, unearned.",
+            "Lizzie Brytowski lined into double play 2b (2-2 BFFB); Zofia Twarog out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Adrianna Carsetti singled (1-2 KFBF).",
+            "Fiona Casey reached on a fielder's choice (0-0); Adrianna Carsetti advanced to second.",
+            "Fiona Casey advanced to second; Adrianna Carsetti advanced to third on a wild pitch.",
+            "Tess Bolduc struck out looking (1-2 BKSFFK).",
+            "Emma Koenig singled to left field, RBI (0-2 FS); Fiona Casey advanced to third; Adrianna Carsetti scored.",
+            "Sam Kowalick pinch ran for Emma Koenig.",
+            "Hannah Lappin out on batter's interference (0-0).",
+            "Hannah Irons singled to right field, RBI (3-2 BSKFBFFFBF); Sam Kowalick advanced to third; Fiona Casey scored.",
+            "Hadley Alguire to p for Liana DeValder.",
+            "Sam Kowalick stole home.",
+            "Emma Michaud reached first on an error by 2b (1-1 KB); Hannah Irons advanced to second.",
+            "Zofia Twarog popped up to ss (0-2 SS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emily Harrington to c for Saylor Ayers.",
+            "Lizzie Brytowski lined out to rf (0-0).",
+            "Adrianna Carsetti popped up to 3b (2-1 BBK).",
+            "Fiona Casey grounded out to 3b (1-1 BK)."
           ]
         }
       ],

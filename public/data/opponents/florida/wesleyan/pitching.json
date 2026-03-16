@@ -1,32 +1,32 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-16T18:59:57.041Z",
+  "scrapedAt": "2026-03-16T21:35:37.450Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gigante, Whitney",
       "w": 3,
       "l": 0,
-      "era": 0.44,
-      "app": 6,
-      "gs": 2,
+      "era": 1.45,
+      "app": 7,
+      "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 16,
-      "h": 15,
-      "r": 10,
-      "er": 1,
-      "bb": 8,
-      "so": 6,
+      "ip": 19.1,
+      "h": 18,
+      "r": 13,
+      "er": 4,
+      "bb": 12,
+      "so": 9,
       "hr": 0,
-      "whip": 1.44,
-      "doubles": 3,
+      "whip": 1.55,
+      "doubles": 4,
       "triples": 0,
-      "ab": 67,
-      "bAvg": 0.224,
-      "wp": 1,
+      "ab": 80,
+      "bAvg": 0.225,
+      "wp": 3,
       "hbp": 4,
       "bk": 0,
       "sfa": 0,
@@ -62,31 +62,31 @@
     },
     {
       "name": "DeCrescenzo, Ella",
-      "w": 0,
+      "w": 1,
       "l": 1,
-      "era": 5.25,
-      "app": 5,
+      "era": 4.02,
+      "app": 6,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 12,
-      "h": 21,
+      "ip": 15.2,
+      "h": 25,
       "r": 10,
       "er": 9,
       "bb": 8,
       "so": 7,
       "hr": 0,
-      "whip": 2.42,
-      "doubles": 5,
+      "whip": 2.11,
+      "doubles": 6,
       "triples": 0,
-      "ab": 57,
-      "bAvg": 0.368,
-      "wp": 1,
-      "hbp": 0,
+      "ab": 69,
+      "bAvg": 0.362,
+      "wp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Baker, Kelly",
@@ -812,6 +812,99 @@
             "Belle Dicampello pinch hit for Nicole Petrillo.",
             "Belle Dicampello singled to center field, advanced to second on a fielding error by cf, RBI (0-0); Emily Walsh advanced to third, scored on the error, unearned; Kay Laliberty scored.",
             "Lexi Sealy grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/smith/boxscore/27448",
+      "date": "3/16/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Gigante, Whitney",
+        "DeCrescenzo, Ella"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson grounded out to ss (0-0).",
+            "Violet Peverly walked (3-2 BKKFBBB).",
+            "Violet Peverly stole second.",
+            "Elinor Washington struck out looking (1-2 SBFK).",
+            "Riley Veenstra walked (3-2 BSFBBFFB).",
+            "Alana Robinson walked (3-2 BKBBKB); Riley Veenstra advanced to second; Violet Peverly advanced to third.",
+            "Alana Robinson advanced to second; Riley Veenstra advanced to third; Violet Peverly scored on a wild pitch.",
+            "Bailey Gray flied out to cf (1-2 FBSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Taz Tamai flied out to lf (0-1 F).",
+            "Lily Hackett flied out to lf (1-0 B).",
+            "Sophie Hasegawa struck out swinging (0-2 KFFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ally Knutson doubled to left field (1-2 FBFF).",
+            "Violet Peverly popped up to 1b (0-0).",
+            "Elinor Washington lined out to cf (2-0 BB).",
+            "Riley Veenstra struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alana Robinson grounded out to p (0-0).",
+            "Bailey Gray singled to center field (3-1 BBBK).",
+            "Bailey Gray advanced to second on a wild pitch.",
+            "Taz Tamai singled to center field (3-2 BFBFB); Bailey Gray advanced to third.",
+            "Taz Tamai stole second.",
+            "Lily Hackett walked (3-1 BBKBB).",
+            "Katie Foley to lf.",
+            "Nicole Celi to rf for Whitney Gigante.",
+            "Ella DeCrescenzo to p.",
+            "Sophie Hasegawa popped up to 2b (1-1 KB).",
+            "Ally Knutson doubled to center field, 2 RBI (0-0); Lily Hackett advanced to third; Taz Tamai scored; Bailey Gray scored.",
+            "Violet Peverly hit by pitch (1-2 KFH).",
+            "Elinor Washington popped up to ss (2-2 BKSFBFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Veenstra grounded out to ss (0-0).",
+            "Gabbie Chinnis pinch hit for Alana Robinson.",
+            "Gabbie Chinnis hit by pitch (2-0 BH).",
+            "Gabbie Chinnis out at first 1b unassisted, runner left early.",
+            "Alexis Amante to c for Sophia Baez.",
+            "Bailey Gray flied out to lf (1-2 SSFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Taz Tamai hit by pitch (3-0 BBBH).",
+            "Lily Hackett out at first 3b to 2b, SAC, bunt (1-1 FB); Taz Tamai advanced to second.",
+            "Sophie Hasegawa flied out to lf (0-2 KF).",
+            "Taz Tamai advanced to third on a wild pitch.",
+            "Ally Knutson grounded out to 2b (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Violet Peverly singled to left field (0-0).",
+            "Violet Peverly out at second c to ss, caught stealing.",
+            "Elinor Washington popped up to ss (1-2 KKB).",
+            "Riley Veenstra singled to left field (0-0).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Gabbie Chinnis singled to center field (0-2 KK); Anna Gray advanced to second.",
+            "Bailey Gray reached on a fielder's choice to shortstop (1-0 B); Gabbie Chinnis advanced to second; Anna Gray out at third ss to 3b."
           ]
         }
       ],

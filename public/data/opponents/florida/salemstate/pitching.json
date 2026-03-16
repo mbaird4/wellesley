@@ -1,36 +1,21 @@
 {
   "slug": "salemstate",
   "domain": "salemstatevikings.com",
-  "scrapedAt": "2026-03-15T16:30:09.893Z",
+  "scrapedAt": "2026-03-16T21:37:54.019Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Benesh, Charlie",
       "w": 0,
-      "l": 0,
-      "era": 0,
-      "app": 1,
-      "gs": 0,
-      "ip": 2,
-      "h": 0,
-      "r": 0,
-      "er": 0,
-      "bb": 0,
-      "so": 1,
-      "hr": 0
-    },
-    {
-      "name": "Martineau, Gracie",
-      "w": 1,
-      "l": 0,
-      "era": 0,
-      "app": 1,
+      "l": 1,
+      "era": 1.75,
+      "app": 2,
       "gs": 1,
-      "ip": 3,
-      "h": 3,
-      "r": 0,
-      "er": 0,
-      "bb": 1,
+      "ip": 8,
+      "h": 9,
+      "r": 3,
+      "er": 2,
+      "bb": 3,
       "so": 3,
       "hr": 0
     },
@@ -48,6 +33,21 @@
       "bb": 3,
       "so": 4,
       "hr": 0
+    },
+    {
+      "name": "Martineau, Gracie",
+      "w": 1,
+      "l": 1,
+      "era": 3.5,
+      "app": 2,
+      "gs": 2,
+      "ip": 10,
+      "h": 12,
+      "r": 5,
+      "er": 5,
+      "bb": 4,
+      "so": 7,
+      "hr": 1
     },
     {
       "name": "Roberge, Sula",
@@ -198,6 +198,175 @@
             "Zoe Stewart lined out to 1b (2-2 BBSS). (1 out)",
             "Sabrina Kauffman grounded out to ss (1-2 SSB). (2 out)",
             "Megan Buchholz grounded out to ss (1-2 FSB). (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "url": "https://salemstatevikings.com/sports/sball/2025-26/boxscores/20260315_1ghl.xml",
+      "date": "",
+      "opponent": "Keene St.",
+      "pitchers": [
+        "Gracie Martineau"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anna Gostkowski singled (2-2 KFBBF).",
+            "Anna Gostkowski out at second c to ss, caught stealing. (1 out)",
+            "Kalle Halvorsen walked (3-1 BBSBB).",
+            "Elyse Picard grounded out to 3b (1-2 SKB); Kalle Halvorsen advanced to second. (2 out)",
+            "Abby Weiterman singled, advanced to second, RBI (1-1 BF); Kalle Halvorsen advanced to third, scored.",
+            "Abby Weiterman advanced to third on a passed ball.",
+            "Cainen Avery struck out swinging (2-2 BSBSS). (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jayme Kiley walked (3-1 BBKBB).",
+            "Abbie Monkevicz grounded out to 3b (1-2 SKBF); Jayme Kiley advanced to second. (1 out)",
+            "Callie Chordas struck out swinging (3-2 KSBBBS). (2 out)",
+            "Marina Gronbach singled (2-1 SBB); Jayme Kiley advanced to third.",
+            "Anna Gostkowski homered, 3 RBI (1-2 SFB); Marina Gronbach scored; Jayme Kiley scored.",
+            "Kalle Halvorsen tripled (0-0).",
+            "Elyse Picard flied out to cf (3-0 BBB). (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Weiterman singled (2-0 BB).",
+            "Cainen Avery flied out to cf (1-0 B). (1 out)",
+            "Jayme Kiley flied out to rf (2-0 BB). (2 out)",
+            "Abbie Monkevicz grounded out to p (0-1 K). (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Tara Perryman to c for Isabelle Besser.",
+            "Callie Chordas singled (0-0).",
+            "Marina Gronbach grounded out to p (2-1 BBF); Callie Chordas advanced to second. (1 out)",
+            "Anna Gostkowski singled, RBI (2-1 BKB); Callie Chordas scored.",
+            "Kalle Halvorsen reached on a fielder's choice (1-1 SB); Anna Gostkowski out at second 3b to 2b. (2 out)",
+            "Elyse Picard walked (3-1 BBBFB); Kalle Halvorsen advanced to second.",
+            "Abby Weiterman grounded out to ss (1-0 B). (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Katie Sullivan to lf for Alaina Giuliano.",
+            "Cainen Avery reached first on an error by rf, advanced to second (0-0).",
+            "Cainen Avery out at third rf to ss to 3b. (1 out)",
+            "Jayme Kiley grounded out to ss (2-2 SSBB). (2 out)",
+            "Gianna Garofola pinch hit for Abbie Monkevicz.",
+            "Gianna Garofola struck out swinging (2-2 SSFBBFS). (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abby Richardson to rf for Charlie Benesh.",
+            "Callie Chordas grounded out to 3b (1-1 SB). (1 out)",
+            "Marina Gronbach lined out to 1b (2-2 KBSFB). (2 out)",
+            "Anna Gostkowski grounded out to 1b unassisted (3-1 BBBK). (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kalle Halvorsen singled (1-1 BS).",
+            "Elyse Picard flied out to lf (0-2 FS). (1 out)",
+            "Abby Weiterman flied out to rf (0-0). (2 out)",
+            "Cainen Avery struck out swinging (0-2 KKS). (3 out)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "url": "https://salemstatevikings.com/sports/sball/2025-26/boxscores/20260316_guye.xml",
+      "date": "",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Charlie Benesh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern singled through the left side (0-0).",
+            "A. Mulhern stole second.",
+            "A. Delgado walked (3-2 FFBFBBFFB).",
+            "B. Awad lined out to ss (1-1 BS). (1 out)",
+            "J. Colgan lined out to ss (0-0). (2 out)",
+            "E. Gaunce grounded out to 2b (2-2 BFKFB). (3 out)"
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Rodriguez grounded out to ss (0-0). (1 out)",
+            "D. Borrison grounded out to ss (0-0). (2 out)",
+            "G. Jones walked (3-1 KBBBB).",
+            "S. Fredericks flied out to lf (0-2 FF). (3 out)"
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abigail LaClair to c for Kianny Mirabal-Nunez.",
+            "A. Mulhern singled through the left side (0-0).",
+            "A. Delgado reached first on a throwing error by c, SAC, bunt (0-1 F); A. Mulhern advanced to third on the throw.",
+            "A. Delgado stole second.",
+            "B. Awad singled through the left side, advanced to second on the throw, RBI (2-0 BB); A. Delgado advanced to third; A. Mulhern scored, unearned.",
+            "J. Colgan grounded out to 1b unassisted, RBI (0-1 K); B. Awad advanced to third; A. Delgado scored.",
+            "E. Gaunce reached on a fielder's choice to pitcher (0-0); B. Awad out at home p to c. (2 out)",
+            "A. Rodriguez grounded out to p (1-0 B). (3 out)"
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Borrison grounded out to ss (0-1 K). (1 out)",
+            "G. Jones grounded out to 3b (2-2 BFBF). (2 out)",
+            "S. Fredericks grounded out to p (0-1 K). (3 out)"
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Mulhern singled to third base (1-2 FBF).",
+            "A. Mulhern out at second c to 2b, caught stealing. (1 out)",
+            "A. Delgado grounded out to 2b (2-0 BB). (2 out)",
+            "B. Awad singled to shortstop (3-2 KBBFB).",
+            "J. Colgan singled to second base (0-0); B. Awad advanced to second.",
+            "E. Gaunce grounded out to p (1-1 BK). (3 out)"
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abby Richardson to lf for Katie Sullivan.",
+            "A. Rodriguez struck out swinging (2-2 FBKBS). (1 out)",
+            "D. Borrison struck out swinging (2-2 SKBBFS). (2 out)",
+            "G. Jones grounded out to 3b (1-2 FKB). (3 out)"
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Alanis Toledano to 1b for Isabelle Besser.",
+            "S. Wicker pinch hit for S. Fredericks.",
+            "S. Wicker doubled to right field (0-1 K).",
+            "S. Fredericks pinch ran for S. Wicker.",
+            "A. Mulhern singled up the middle, advanced to second on the throw (0-0); S. Fredericks advanced to third.",
+            "A. Delgado walked (3-1 FBBBB).",
+            "B. Awad singled to left field, RBI (2-1 KBB); A. Delgado advanced to second; A. Mulhern advanced to third; S. Fredericks scored."
           ]
         }
       ]
