@@ -96,6 +96,7 @@
         <ws-spray-view-split
           [players]="rosteredPlayers()"
           [jerseyMap]="jerseyMap()"
+          [disabledPlayers]="disabledPlayers()"
           [selectedPlayer]="filters().playerName"
           [activeYears]="activeYears()"
           [summaryByYear]="summaryByYear()"
@@ -109,6 +110,7 @@
         <ws-spray-view-contact
           [players]="rosteredPlayers()"
           [jerseyMap]="jerseyMap()"
+          [disabledPlayers]="disabledPlayers()"
           [selectedPlayer]="filters().playerName"
           [contactPanels]="contactPanels()"
           [highlightZone]="highlightZone()"
@@ -123,6 +125,7 @@
           [effectiveFilters]="effectiveFilters()"
           [players]="rosteredPlayers()"
           [jerseyMap]="jerseyMap()"
+          [disabledPlayers]="disabledPlayers()"
           [selectedPlayer]="filters().playerName"
           [highlightZone]="highlightZone()"
           (playerChange)="onPlayerChange($event)"
@@ -134,6 +137,7 @@
         <ws-spray-view-combined
           [players]="rosteredPlayers()"
           [jerseyMap]="jerseyMap()"
+          [disabledPlayers]="disabledPlayers()"
           [roster]="roster()"
           [selectedPlayer]="filters().playerName"
           [summary]="combinedSummary()"

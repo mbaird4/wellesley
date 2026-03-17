@@ -23,7 +23,7 @@ const LAST_YEAR = CURRENT_YEAR - 1;
   template: `
     @if (bp.gtSm()) {
       <div class="flex">
-        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
+        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [disabledPlayers]="disabledPlayers()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
         @if (selectedPlayer()) {
           <div class="stagger-children flex min-w-0 flex-1 gap-2">
             <ws-spray-year-panel class="min-w-0 basis-1/3" [label]="thisYearLabel" [zones]="thisYearSummary().zones" [totalContact]="thisYearSummary().totalContact" [highlightZone]="highlightZone()" (zoneHover)="zoneHover.emit($event)" (zoneClick)="zoneClick.emit($event)" />
@@ -61,6 +61,7 @@ export class SprayViewScouting {
   readonly effectiveFilters = input.required<SprayFilters>();
   readonly players = input.required<string[]>();
   readonly jerseyMap = input.required<Record<string, number>>();
+  readonly disabledPlayers = input<Set<string>>(new Set());
   readonly selectedPlayer = input<string | null>(null);
   readonly highlightZone = input<SprayZone | null>(null);
 

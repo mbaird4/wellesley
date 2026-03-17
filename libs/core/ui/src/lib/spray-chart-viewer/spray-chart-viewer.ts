@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal, viewChild } from '@angular/core';
-import type { Roster, RosterPlayer, SprayDataPoint, SprayTrend, SprayZone, Team } from '@ws/core/models';
-import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
+import type { JerseyMap, Roster, RosterPlayer, SprayDataPoint, SprayTrend, SprayZone, Team } from '@ws/core/models';
+import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends, normalizePlayerName } from '@ws/core/processors';
 import { BreakpointService, CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
@@ -165,7 +165,6 @@ export class SprayChartViewer {
   readonly loading = input(false);
   readonly error = input<string | null>(null);
   readonly emptyMessage = input('No spray chart data available.');
-  readonly includeUnmatchedRoster = input(false);
   readonly printTitle = input('');
 
   readonly viewMode = signal<ViewMode>('combined');
@@ -238,24 +237,72 @@ export class SprayChartViewer {
     return Array.from(new Set(SPRAY_YEARS.flatMap((y) => (map.get(y) ?? []).map((p) => p.playerName)))).sort();
   });
 
-  readonly jerseyMap = computed(() =>
-    buildDisplayJerseyMap(this.roster(), this.players(), {
-      includeUnmatched: this.includeUnmatchedRoster(),
-    })
-  );
-
-  readonly rosteredPlayers = computed(() => {
-    const map = this.jerseyMap();
+  readonly jerseyMap = computed(() => {
+    const sprayMap = buildDisplayJerseyMap(this.roster(), this.players());
     const team = this.teamData();
 
-    const players = this.includeUnmatchedRoster() ? Object.keys(map) : this.players().filter((p) => map[p] !== undefined);
+    if (!team) {
+      return sprayMap;
+    }
 
-    return players.sort((a, b) => {
-      const paA = latestSeasonPa(team, map[a]);
-      const paB = latestSeasonPa(team, map[b]);
+    // Add all teamData players so the jersey map is complete
+    const map: JerseyMap = { ...sprayMap };
+    const existingJerseys = new Set(Object.values(map));
 
-      return paB - paA || map[a] - map[b];
+    team.players.forEach((p) => {
+      if (p.jerseyNumber !== null && !existingJerseys.has(p.jerseyNumber)) {
+        map[normalizePlayerName(p.name)] = p.jerseyNumber;
+      }
     });
+
+    return map;
+  });
+
+  /** Jersey numbers that appear in actual spray data. */
+  private readonly sprayJerseys = computed(() => {
+    const sprayMap = buildDisplayJerseyMap(this.roster(), this.players());
+
+    return new Set(Object.values(sprayMap));
+  });
+
+  /** Players from teamData who have no spray data points. */
+  readonly disabledPlayers = computed(() => {
+    const team = this.teamData();
+
+    if (!team) {
+      return new Set<string>();
+    }
+
+    const hasData = this.sprayJerseys();
+
+    return new Set(team.players.filter((p) => p.jerseyNumber === null || !hasData.has(p.jerseyNumber)).map((p) => normalizePlayerName(p.name)));
+  });
+
+  readonly rosteredPlayers = computed(() => {
+    const team = this.teamData();
+    const map = this.jerseyMap();
+
+    if (!team) {
+      return this.players().filter((p) => map[p] !== undefined);
+    }
+
+    const hasData = this.sprayJerseys();
+
+    const withData: { name: string; jersey: number | null; pa: number }[] = [];
+    const withoutData: { name: string; jersey: number | null; pa: number }[] = [];
+
+    team.players.forEach((p) => {
+      const displayName = normalizePlayerName(p.name);
+      const pa = latestSeasonPa(team, p.jerseyNumber);
+      const bucket = p.jerseyNumber !== null && hasData.has(p.jerseyNumber) ? withData : withoutData;
+      bucket.push({ name: displayName, jersey: p.jerseyNumber, pa });
+    });
+
+    const sortFn = (a: (typeof withData)[0], b: (typeof withData)[0]) => b.pa - a.pa || (a.jersey ?? 0) - (b.jersey ?? 0);
+    withData.sort(sortFn);
+    withoutData.sort(sortFn);
+
+    return [...withData.map((p) => p.name), ...withoutData.map((p) => p.name)];
   });
 
   readonly effectiveFilters = computed(() => computeEffectiveFilters(this.filters()));

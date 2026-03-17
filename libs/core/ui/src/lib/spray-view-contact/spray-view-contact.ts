@@ -24,7 +24,7 @@ interface ContactPanel {
   template: `
     @if (bp.gtSm()) {
       <div class="flex">
-        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
+        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [disabledPlayers]="disabledPlayers()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
         @if (selectedPlayer()) {
           <div class="stagger-children flex min-w-0 flex-1 gap-2">
             @for (panel of contactPanels(); track panel.label) {
@@ -60,6 +60,7 @@ export class SprayViewContact {
 
   readonly players = input.required<string[]>();
   readonly jerseyMap = input.required<Record<string, number>>();
+  readonly disabledPlayers = input<Set<string>>(new Set());
   readonly selectedPlayer = input<string | null>(null);
   readonly contactPanels = input.required<ContactPanel[]>();
   readonly highlightZone = input<SprayZone | null>(null);

@@ -61,11 +61,8 @@ function matchJersey(displayName: string, rosterByKey: Map<string, RosterCandida
     return undefined;
   }
 
-  if (candidates.length === 1) {
-    return candidates[0].jersey;
-  }
-
-  // Multiple candidates share the same key — disambiguate with more of the last name
+  // Verify the last name actually matches (one must be a prefix of the other)
+  // Without this, "J. Leal" would falsely match roster entry "lees, jacelyn" via shared key "j-le"
   const best = candidates.find((c) => c.last.toLowerCase().startsWith(displayLast.toLowerCase()) || displayLast.toLowerCase().startsWith(c.last.toLowerCase()));
 
   return best?.jersey;
@@ -219,11 +216,24 @@ function mergeTruncatedNames(names: string[]): Map<string, string> {
       return;
     }
 
-    const canonical = group.reduce((a, b) => (b.length > a.length ? b : a));
+    // Only merge names where one surname is a prefix of another (actual truncation).
+    // E.g. "E. Santi" / "E. Santiago" merge, but "J. Lees" / "J. Leal" do not.
+    const getLast = (n: string) => n.split(/\s+/).slice(1).join(' ').toLowerCase();
 
     group.forEach((name) => {
-      if (name !== canonical) {
-        result.set(name, canonical);
+      const nameLast = getLast(name);
+      const longerMatch = group.find((other) => {
+        if (other === name || other.length <= name.length) {
+          return false;
+        }
+
+        const otherLast = getLast(other);
+
+        return otherLast.startsWith(nameLast);
+      });
+
+      if (longerMatch) {
+        result.set(name, longerMatch);
       }
     });
   });

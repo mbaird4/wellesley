@@ -19,7 +19,7 @@ import { SprayYearPanel } from '../spray-year-panel/spray-year-panel';
   template: `
     @if (bp.gtSm()) {
       <div class="flex">
-        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
+        <ws-spray-player-nav [players]="players()" [jerseyMap]="jerseyMap()" [disabledPlayers]="disabledPlayers()" [selectedPlayer]="selectedPlayer()" (playerChange)="playerChange.emit($event)" />
         @if (selectedPlayer()) {
           <div class="stagger-children flex min-w-0 flex-1 gap-2">
             @for (year of activeYears(); track year) {
@@ -55,6 +55,7 @@ export class SprayViewSplit {
 
   readonly players = input.required<string[]>();
   readonly jerseyMap = input.required<Record<string, number>>();
+  readonly disabledPlayers = input<Set<string>>(new Set());
   readonly selectedPlayer = input<string | null>(null);
   readonly activeYears = input.required<number[]>();
   readonly summaryByYear = input.required<Map<number, SprayChartSummary>>();
