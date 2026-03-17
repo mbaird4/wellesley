@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { PitcherInningStats } from '@ws/core/models';
+import type { InningsTableRow, InningsTotalsRow } from '@ws/core/models';
 import { battingAvgAgainst, inningToNumber, wobaAgainst, wobaColorStyle } from '@ws/core/processors';
 import { SlideToggle } from '@ws/core/ui';
 
-import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 const EMPTY_STYLE: Record<string, string> = {};

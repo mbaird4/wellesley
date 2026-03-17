@@ -71,3 +71,28 @@ export interface RunnerConversionRow {
   runnersScored: number;
   byOuts: { outs: number; totalRunners: number; runnersScored: number }[];
 }
+
+export interface PlayTypeRow {
+  type: string;
+  count: number;
+  pct: number;
+}
+
+export interface DistributionRow {
+  label: string;
+  count: number;
+  pct: number;
+}
+
+export interface ScenarioRow {
+  situation: BaseSituation;
+  outs: number;
+  count: number;
+  pct: number;
+}
+
+export interface LeaderboardRow {
+  name: string;
+  runsScored: number;
+  rbis: number;
+}

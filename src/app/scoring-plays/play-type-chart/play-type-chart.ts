@@ -1,12 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
+import type { PlayTypeRow } from '@ws/core/models';
 import { FormatPlayTypePipe } from '@ws/core/ui';
-
-export interface PlayTypeRow {
-  type: string;
-  count: number;
-  pct: number;
-}
 
 type SortKey = 'value' | 'count';
 

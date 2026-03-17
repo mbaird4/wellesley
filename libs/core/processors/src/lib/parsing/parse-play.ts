@@ -1,4 +1,4 @@
-import type { BaseRunners, GameState } from '@ws/core/models';
+import type { BaseRunners, BatterResult, GameState, PlayType } from '@ws/core/models';
 
 // Regex that handles initials ("A. Delgado"), full names ("Andrea Delgado"),
 // hyphenated names ("M. Jo-Laudat"), and multi-word last names
@@ -13,8 +13,6 @@ export function getPlayerNameFromText(text: string): string | null {
 }
 
 // --- Play classification ---
-
-export type PlayType = 'substitution' | 'defensive_change' | 'stolen_base' | 'wild_pitch' | 'tiebreaker' | 'no_play' | 'plate_appearance';
 
 export function classifyPlay(text: string): PlayType {
   const lower = text.toLowerCase();
@@ -79,8 +77,6 @@ export function classifyPlay(text: string): PlayType {
 }
 
 // --- Batter action parsing ---
-
-export type BatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'fielders_choice' | 'error' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
 
 export function parseBatterAction(subEvent: string): {
   result: BatterResult;
@@ -249,7 +245,7 @@ export function parseBatterAction(subEvent: string): {
 
 // --- Runner sub-event parsing ---
 
-export interface RunnerSubEventResult {
+interface RunnerSubEventResult {
   playerName: string | null;
   isOut: boolean;
   scored: boolean;

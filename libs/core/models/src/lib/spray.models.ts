@@ -55,3 +55,32 @@ export interface SprayTrend {
   direction: 'up' | 'down';
   magnitude: number;
 }
+
+export interface SprayCallout {
+  icon: string;
+  text: string;
+}
+
+export interface SprayPrintPlayerSummary {
+  name: string;
+  jersey: number;
+  summary: SprayChartSummary;
+  bats?: 'L' | 'R' | 'S' | null;
+  position?: string | null;
+  avg?: number;
+  woba?: number;
+  pa?: number;
+  sb?: number;
+  sbAtt?: number;
+  gp?: number;
+  sh?: number;
+  slg?: number;
+  so?: number;
+  rbi?: number;
+  h?: number;
+  bb?: number;
+  ab?: number;
+  doubles?: number;
+  triples?: number;
+  hr?: number;
+}

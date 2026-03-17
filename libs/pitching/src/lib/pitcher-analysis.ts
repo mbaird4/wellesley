@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
-import type { PitcherGameLog, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
+import type { PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
 import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
 import { PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
@@ -7,9 +7,7 @@ import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 import { InningBreakdown } from './inning-breakdown';
 import { InningDetail } from './inning-detail';
 import { PitcherGameLogComponent } from './pitcher-game-log';
-import type { PitcherOverviewData } from './pitcher-overview';
 import { PitcherOverview } from './pitcher-overview';
-import type { PitcherOption } from './pitcher-selector';
 import { PitcherSelector } from './pitcher-selector';
 
 @Component({

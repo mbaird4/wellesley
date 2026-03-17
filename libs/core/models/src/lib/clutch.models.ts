@@ -1,7 +1,5 @@
+import type { BatterResult } from './batter-result.models';
 import type { BaseSituation } from './snapshot.models';
-
-/** Mirrors BatterResult from processors — duplicated here to avoid circular dependency */
-export type ClutchBatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'fielders_choice' | 'error' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
 
 /** A single PA with runners on base */
 export interface ClutchEvent {
@@ -12,7 +10,7 @@ export interface ClutchEvent {
   baseSituation: BaseSituation;
   batterName: string;
   lineupSlot: number;
-  batterResult: ClutchBatterResult;
+  batterResult: BatterResult;
   isPinchHit: boolean;
   playText: string;
   runnersOn: RunnerOutcome[];
@@ -77,4 +75,17 @@ export interface PlayerClutchGame {
 export interface ClutchSummary {
   players: PlayerClutchSummary[];
   allEvents: ClutchEvent[];
+}
+
+export type ClutchMetric = 'woba' | 'avg';
+
+export interface TeamSummary {
+  totalEvents: number;
+  totalRunnersDrivenIn: number;
+  totalRunnersOn: number;
+  conversionRate: string;
+  elevators: number;
+  droppers: number;
+  topClutchName: string;
+  topClutchDelta: string;
 }

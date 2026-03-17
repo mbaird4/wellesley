@@ -1,18 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-
-export interface PitcherOverviewData {
-  name: string;
-  w: number;
-  l: number;
-  era: number;
-  app: number;
-  gs: number;
-  ip: number;
-  so: number;
-  bb: number;
-  h: number;
-  hr: number;
-}
+import type { PitcherOverviewData } from '@ws/core/models';
 
 @Component({
   selector: 'ws-pitcher-overview',

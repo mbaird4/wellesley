@@ -1,9 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
-
-export interface PitcherOption {
-  name: string;
-  label: string;
-}
+import type { PitcherOption } from '@ws/core/models';
 
 @Component({
   selector: 'ws-pitcher-selector',

@@ -1,11 +1,6 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
-
-export interface DistributionRow {
-  label: string;
-  count: number;
-  pct: number;
-}
+import type { DistributionRow } from '@ws/core/models';
 
 type SortKey = 'label' | 'count';
 

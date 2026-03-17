@@ -1,14 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { SoftballStatsService } from '@ws/core/data';
-import type { BaseSituation, GameScoringPlays, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
+import type { BaseSituation, DistributionRow, GameScoringPlays, PlayTypeRow, RunnerConversionRow, SacBuntSummary, ScenarioRow, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 import { LastUpdatedPipe, SITUATION_LABELS } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { ByGameTab } from './by-game-tab/by-game-tab';
 import { ByPlayerTab } from './by-player-tab/by-player-tab';
-import type { PlayTypeRow } from './play-type-chart/play-type-chart';
-import type { DistributionRow } from './run-distribution/run-distribution';
-import type { ScenarioRow } from './scenario-heatmap/scenario-heatmap';
 import { SummaryTab } from './summary-tab/summary-tab';
 
 type ScoringTab = 'summary' | 'by-game' | 'by-player';

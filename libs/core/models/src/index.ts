@@ -1,3 +1,4 @@
+export * from './lib/batter-result.models';
 export * from './lib/batting-types';
 export * from './lib/clutch.models';
 export * from './lib/game.models';
@@ -5,6 +6,8 @@ export * from './lib/lineup-position.models';
 export * from './lib/opponent.models';
 export * from './lib/pitching.models';
 export * from './lib/pitching-types';
+export * from './lib/play.models';
+export * from './lib/processed-stats.models';
 export * from './lib/scoring.models';
 export * from './lib/season-stats.models';
 export * from './lib/snapshot.models';

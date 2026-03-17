@@ -1,6 +1,5 @@
-import type { SprayZone, ZoneAggregate } from '@ws/core/models';
+import type { SprayCallout, SprayPrintPlayerSummary, SprayZone } from '@ws/core/models';
 
-import type { PrintPlayerSummary } from './spray-callout-types';
 import { getContactQuality } from './spray-chart';
 
 const ZONE_LABELS: Record<SprayZone, string> = {
@@ -35,18 +34,13 @@ const HIGH_BB_RATE = 0.12;
 const HIGH_RBI_RATE = 0.6;
 const MIN_XBH = 4;
 
-export interface StatCell {
+interface StatCell {
   label: string;
   value: string;
   flagged: boolean;
 }
 
-export interface Callout {
-  icon: string;
-  text: string;
-}
-
-export interface ZoneRow {
+interface SprayZoneRow {
   label: string;
   total: number;
   hits: number;
@@ -57,7 +51,7 @@ export interface ZoneRow {
   pct: string;
 }
 
-export function buildZones(p: PrintPlayerSummary): ZoneRow[] {
+export function buildZones(p: SprayPrintPlayerSummary): SprayZoneRow[] {
   const dataPoints = p.summary.dataPoints;
 
   return p.summary.zones
@@ -81,7 +75,7 @@ export function buildZones(p: PrintPlayerSummary): ZoneRow[] {
     .slice(0, 5);
 }
 
-export function buildStats(p: PrintPlayerSummary): StatCell[] {
+export function buildStats(p: SprayPrintPlayerSummary): StatCell[] {
   const pa = p.pa ?? 0;
   const hasRates = pa >= MIN_PA_FOR_RATES;
   const xbh = (p.doubles ?? 0) + (p.triples ?? 0) + (p.hr ?? 0);
@@ -111,7 +105,7 @@ export function buildStats(p: PrintPlayerSummary): StatCell[] {
   ];
 }
 
-export function buildCallouts(p: PrintPlayerSummary): Callout[] {
+export function buildCallouts(p: SprayPrintPlayerSummary): SprayCallout[] {
   const pa = p.pa ?? 0;
 
   if (pa < MIN_PA_FOR_CALLOUTS) {
@@ -120,7 +114,7 @@ export function buildCallouts(p: PrintPlayerSummary): Callout[] {
 
   const gp = p.gp ?? 0;
   const hasRates = pa >= MIN_PA_FOR_RATES;
-  const callouts: Callout[] = [];
+  const callouts: SprayCallout[] = [];
 
   const sbRate = gp > 0 ? (p.sb ?? 0) / gp : 0;
 

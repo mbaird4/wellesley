@@ -1,13 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RosterService, SoftballStatsService } from '@ws/core/data';
-import type { ClutchSummary, PbpBattingAccum, PlayerClutchSummary } from '@ws/core/models';
+import type { ClutchMetric, ClutchSummary, PbpBattingAccum, PlayerClutchSummary, TeamSummary } from '@ws/core/models';
 import { formatWoba, rebuildPlayerFromEvents } from '@ws/core/processors';
 import { LastUpdatedPipe } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { ClutchFilters } from './clutch-filters/clutch-filters';
 import { ClutchGameLog } from './clutch-game-log/clutch-game-log';
-import type { ClutchMetric } from './clutch-metric';
 import { ClutchPlayerTable } from './clutch-player-table/clutch-player-table';
 import { ClutchStranded } from './clutch-stranded/clutch-stranded';
 import { ClutchTeamSummary } from './clutch-team-summary/clutch-team-summary';
@@ -20,17 +19,6 @@ function calcAvg(stats: PbpBattingAccum): number {
 
 function formatAvgValue(value: number): string {
   return value.toFixed(3).replace(/^0/, '');
-}
-
-export interface TeamSummary {
-  totalEvents: number;
-  totalRunnersDrivenIn: number;
-  totalRunnersOn: number;
-  conversionRate: string;
-  elevators: number;
-  droppers: number;
-  topClutchName: string;
-  topClutchDelta: string;
 }
 
 const RISP_SITUATIONS = new Set(['second', 'third', 'first_second', 'first_third', 'second_third', 'loaded']);

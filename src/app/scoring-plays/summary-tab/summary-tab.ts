@@ -1,14 +1,13 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
-import type { RunnerConversionRow, SacBuntSummary, StolenBaseSummary } from '@ws/core/models';
+import type { DistributionRow, LeaderboardRow, PlayTypeRow, RunnerConversionRow, SacBuntSummary, ScenarioRow, StolenBaseSummary } from '@ws/core/models';
 import { BoxscoreUrlPipe } from '@ws/core/ui';
 
 import { BaserunningSection } from '../baserunning-section/baserunning-section';
-import { PlayTypeChart, type PlayTypeRow } from '../play-type-chart/play-type-chart';
-import type { DistributionRow } from '../run-distribution/run-distribution';
+import { PlayTypeChart } from '../play-type-chart/play-type-chart';
 import { RunDistribution } from '../run-distribution/run-distribution';
-import { ScenarioHeatmap, type ScenarioRow } from '../scenario-heatmap/scenario-heatmap';
-import { type LeaderboardRow, ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
+import { ScenarioHeatmap } from '../scenario-heatmap/scenario-heatmap';
+import { ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
 
 @Component({
   selector: 'ws-summary-tab',

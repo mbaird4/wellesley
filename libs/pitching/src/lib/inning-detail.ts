@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { PitcherGameLog, PitcherInningStats } from '@ws/core/models';
+import type { InningsTableRow, InningsTotalsRow } from '@ws/core/models';
 import { battingAvgAgainst, inningToNumber, wobaAgainst, wobaColorStyle } from '@ws/core/processors';
 import { ButtonToggle, type ToggleOption } from '@ws/core/ui';
 
-import type { InningsTableRow, InningsTotalsRow } from './pitcher-innings-table';
 import { PitcherInningsTable } from './pitcher-innings-table';
 
 type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'AVG' | 'wOBA';

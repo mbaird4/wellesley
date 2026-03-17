@@ -1,7 +1,6 @@
 import type { ClutchEvent, PbpBattingAccum, PlayerClutchSummary } from '@ws/core/models';
+import type { ClutchMetric } from '@ws/core/models';
 import { accumFromResult, calculateWoba, emptyAccum, formatWoba, wobaColorStyle } from '@ws/core/processors';
-
-import type { ClutchMetric } from '../clutch-metric';
 
 export interface SituationStat {
   label: string;

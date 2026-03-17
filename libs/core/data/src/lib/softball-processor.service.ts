@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
-import type { ProcessedStats, ProcessedStatsWithSnapshots } from '@ws/core/processors';
+import type { ProcessedStats, ProcessedStatsWithSnapshots } from '@ws/core/models';
 import { processGames, processGamesWithSnapshots } from '@ws/core/processors';
 
 import type { GameData } from './softball-data.service';
-
-export type { ProcessedStats, ProcessedStatsWithSnapshots } from '@ws/core/processors';
 
 @Injectable({
   providedIn: 'root',

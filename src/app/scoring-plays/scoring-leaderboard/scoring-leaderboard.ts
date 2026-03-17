@@ -1,10 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
-
-export interface LeaderboardRow {
-  name: string;
-  runsScored: number;
-  rbis: number;
-}
+import type { LeaderboardRow } from '@ws/core/models';
 
 interface DisplayRow extends LeaderboardRow {
   total: number;

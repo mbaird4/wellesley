@@ -1,4 +1,4 @@
-import type { ClutchBatterResult, ClutchEvent, ClutchSummary, GameWithSnapshots, PbpBattingAccum, PlayerClutchGame, PlayerClutchSummary, PlaySnapshot, RunnerOutcome } from '@ws/core/models';
+import type { BatterResult, ClutchEvent, ClutchSummary, GameWithSnapshots, PbpBattingAccum, PlayerClutchGame, PlayerClutchSummary, PlaySnapshot, RunnerOutcome } from '@ws/core/models';
 
 import { parseBatterAction } from '../parsing/parse-play';
 import { calculateWoba } from '../woba/woba';
@@ -10,7 +10,7 @@ export function emptyAccum(): PbpBattingAccum {
   return { pa: 0, ab: 0, h: 0, doubles: 0, triples: 0, hr: 0, bb: 0, hbp: 0, sf: 0, sh: 0 };
 }
 
-export function accumFromResult(result: ClutchBatterResult, accum: PbpBattingAccum): void {
+export function accumFromResult(result: BatterResult, accum: PbpBattingAccum): void {
   accum.pa++;
 
   switch (result) {

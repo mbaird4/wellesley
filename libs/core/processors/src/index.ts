@@ -11,7 +11,6 @@ export * from './lib/processing/process-games';
 export * from './lib/processing/scoring-plays';
 export * from './lib/processing/vs-wellesley-stats';
 export * from './lib/spray/name-normalization';
-export * from './lib/spray/spray-callout-types';
 export * from './lib/spray/spray-callouts';
 export * from './lib/spray/spray-chart';
 export * from './lib/spray/spray-trends';

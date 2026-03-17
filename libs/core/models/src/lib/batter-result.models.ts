@@ -1,0 +1,1 @@
+export type BatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'fielders_choice' | 'error' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';

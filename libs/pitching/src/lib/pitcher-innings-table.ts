@@ -1,29 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-
-export interface InningsTableRow {
-  inning: string;
-  battersFaced: number;
-  hits: number;
-  runs: number;
-  strikeouts: number;
-  walks: number;
-  formattedAvg: string;
-  formattedWoba: string;
-  avgStyle: Record<string, string>;
-  wobaStyle: Record<string, string>;
-}
-
-export interface InningsTotalsRow {
-  battersFaced: number;
-  hits: number;
-  runs: number;
-  strikeouts: number;
-  walks: number;
-  formattedAvg: string;
-  formattedWoba: string;
-  avgStyle: Record<string, string>;
-  wobaStyle: Record<string, string>;
-}
+import type { InningsTableRow, InningsTotalsRow } from '@ws/core/models';
 
 @Component({
   selector: 'ws-pitcher-innings-table',

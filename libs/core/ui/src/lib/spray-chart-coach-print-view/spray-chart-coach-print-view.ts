@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { SprayChartSummary, SprayDataPoint, SprayTrend, Team } from '@ws/core/models';
-import { buildCallouts, type Callout, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
+import type { SprayCallout, SprayChartSummary, SprayDataPoint, SprayTrend, Team } from '@ws/core/models';
+import { buildCallouts, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
 import { range } from '@ws/core/util';
 
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
@@ -28,7 +28,7 @@ interface CoachRow {
   yearColumns: YearColumn[];
   isFirstYear: boolean;
   // Kept for future use — not currently displayed
-  callouts: Callout[];
+  callouts: SprayCallout[];
   trends: SprayTrend[];
 }
 

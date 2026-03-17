@@ -3,7 +3,7 @@ import type { BatHand, PitcherTrackedPlay } from '@ws/core/models';
 /** NEWMAC conference teams */
 const NEWMAC_TEAMS = ['babson', 'clark', 'coast guard', 'emerson', 'mit', 'mount holyoke', 'smith', 'springfield', 'wellesley', 'wheaton', 'wpi', 'uscga'];
 
-export interface HandednessSplitStats {
+interface HandednessSplitStats {
   hand: BatHand;
   pa: number;
   ab: number;

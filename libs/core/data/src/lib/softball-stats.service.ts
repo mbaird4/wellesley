@@ -1,12 +1,12 @@
 import { inject, Injectable } from '@angular/core';
+import type { ProcessedStatsWithSnapshots } from '@ws/core/models';
 import type { Observable } from 'rxjs';
 import { forkJoin, map } from 'rxjs';
 
 import { SoftballDataService } from './softball-data.service';
-import type { ProcessedStatsWithSnapshots } from './softball-processor.service';
 import { SoftballProcessorService } from './softball-processor.service';
 
-export type StatsWithTimestamp = ProcessedStatsWithSnapshots & {
+type StatsWithTimestamp = ProcessedStatsWithSnapshots & {
   scrapedAt: string;
 };
 

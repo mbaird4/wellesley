@@ -1,7 +1,7 @@
-import type { PlaySnapshot } from '@ws/core/models';
+import type { BatterResult, PlaySnapshot } from '@ws/core/models';
 import type { ContactQuality, ContactType, SprayChartSummary, SprayDataPoint, SprayFilters, SprayOutcome, SprayZone, ZoneAggregate } from '@ws/core/models';
 
-import { type BatterResult, parseBatterAction } from '../parsing/parse-play';
+import { parseBatterAction } from '../parsing/parse-play';
 
 // --- Direction → Zone mapping ---
 

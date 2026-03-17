@@ -1,3 +1,47 @@
+export interface InningsTableRow {
+  inning: string;
+  battersFaced: number;
+  hits: number;
+  runs: number;
+  strikeouts: number;
+  walks: number;
+  formattedAvg: string;
+  formattedWoba: string;
+  avgStyle: Record<string, string>;
+  wobaStyle: Record<string, string>;
+}
+
+export interface InningsTotalsRow {
+  battersFaced: number;
+  hits: number;
+  runs: number;
+  strikeouts: number;
+  walks: number;
+  formattedAvg: string;
+  formattedWoba: string;
+  avgStyle: Record<string, string>;
+  wobaStyle: Record<string, string>;
+}
+
+export interface PitcherOverviewData {
+  name: string;
+  w: number;
+  l: number;
+  era: number;
+  app: number;
+  gs: number;
+  ip: number;
+  so: number;
+  bb: number;
+  h: number;
+  hr: number;
+}
+
+export interface PitcherOption {
+  name: string;
+  label: string;
+}
+
 /** Raw pitching stats scraped from the stats page */
 export interface RawPitchingStats {
   name: string;

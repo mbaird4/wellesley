@@ -1,14 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { BaseSituation } from '@ws/core/models';
+import type { BaseSituation, ScenarioRow } from '@ws/core/models';
 import { FormatOutsPipe, FormatSituationPipe } from '@ws/core/ui';
-
-export interface ScenarioRow {
-  situation: BaseSituation;
-  outs: number;
-  count: number;
-  pct: number;
-}
 
 interface HeatmapCell {
   count: number;

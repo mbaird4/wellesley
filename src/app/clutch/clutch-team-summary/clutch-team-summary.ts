@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-
-import type { TeamSummary } from '../clutch';
-import type { ClutchMetric } from '../clutch-metric';
+import type { ClutchMetric, TeamSummary } from '@ws/core/models';
 
 @Component({
   selector: 'ws-clutch-team-summary',

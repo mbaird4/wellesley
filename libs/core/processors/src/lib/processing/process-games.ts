@@ -1,4 +1,4 @@
-import type { BaseRunnerRow, ClutchSummary, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, PlayerLineupBreakdown, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
+import type { BaseRunnerRow, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, ProcessedStats, ProcessedStatsWithSnapshots } from '@ws/core/models';
 
 import { processPlay } from '../parsing/parse-play';
 import { mergeBaseRunnerStats } from './base-runner-stats';
@@ -6,25 +6,6 @@ import { computeClutchSummary } from './clutch-stats';
 import { computePlayerLineupStats } from './player-lineup-stats';
 import { processGameWithSnapshots } from './process-game-snapshots';
 import { computeRunnerConversions, computeSacBuntOutcomes, computeScoringPlaySummary, computeStolenBaseOutcomes, summarizeSacBuntOutcomes, summarizeStolenBaseOutcomes } from './scoring-plays';
-
-export interface ProcessedStats {
-  totals: ResultRow[];
-  games: GameResult[];
-}
-
-export interface ProcessedStatsWithSnapshots {
-  totals: ResultRow[];
-  games: GameWithSnapshots[];
-  baseRunnerStats: BaseRunnerRow[];
-  baseRunnerStatsAtBatStart: BaseRunnerRow[];
-  seasonScoringPlays: ScoringPlaySummary;
-  gameScoringPlays: GameScoringPlays[];
-  sacBuntSummary: SacBuntSummary;
-  stolenBaseSummary: StolenBaseSummary;
-  runnerConversions: RunnerConversionRow[];
-  clutchSummary: ClutchSummary;
-  playerLineupStats: PlayerLineupBreakdown[];
-}
 
 /**
  * Processes an array of games and returns PA counts by lineup slot at each out count.

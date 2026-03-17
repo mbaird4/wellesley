@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, effect, input, output, signal } from '@angular/core';
-import type { PlayerClutchSummary } from '@ws/core/models';
+import type { ClutchMetric, PlayerClutchSummary } from '@ws/core/models';
 
-import type { ClutchMetric } from '../clutch-metric';
 import type { DisplayCard } from './clutch-card.utils';
 import { buildContactBreakdown, buildDeltaArrow, buildDeltaLabel, buildDeltaPillClass, buildHeadline, buildRunnerLine, calcAvg, confidenceWeightedDelta, formatValue, getSituationValue, getValues, SITUATION_LABELS, valueColor } from './clutch-card.utils';
 
