@@ -4,6 +4,8 @@ on:
   schedule:
     # Daily at 8 PM ET (midnight UTC) during softball season (Feb-May)
     - cron: '0 0 * 2-6 *'
+    # Extra 4 PM ET run (9 PM UTC) Mar 17-21 — coaches checking frequently
+    - cron: '0 21 17-21 3 *'
   workflow_dispatch:
 
 permissions:
