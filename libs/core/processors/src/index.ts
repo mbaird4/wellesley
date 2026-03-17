@@ -5,6 +5,7 @@ export * from './lib/processing/handedness-splits';
 export * from './lib/processing/outlier-stats';
 export * from './lib/processing/pitcher-stats';
 export * from './lib/processing/pitcher-tracking';
+export * from './lib/processing/player-lineup-stats';
 export * from './lib/processing/process-game-snapshots';
 export * from './lib/processing/process-games';
 export * from './lib/processing/scoring-plays';

@@ -1,8 +1,9 @@
-import type { BaseRunnerRow, ClutchSummary, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
+import type { BaseRunnerRow, ClutchSummary, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, PlayerLineupBreakdown, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 
 import { processPlay } from '../parsing/parse-play';
 import { mergeBaseRunnerStats } from './base-runner-stats';
 import { computeClutchSummary } from './clutch-stats';
+import { computePlayerLineupStats } from './player-lineup-stats';
 import { processGameWithSnapshots } from './process-game-snapshots';
 import { computeRunnerConversions, computeSacBuntOutcomes, computeScoringPlaySummary, computeStolenBaseOutcomes, summarizeSacBuntOutcomes, summarizeStolenBaseOutcomes } from './scoring-plays';
 
@@ -22,6 +23,7 @@ export interface ProcessedStatsWithSnapshots {
   stolenBaseSummary: StolenBaseSummary;
   runnerConversions: RunnerConversionRow[];
   clutchSummary: ClutchSummary;
+  playerLineupStats: PlayerLineupBreakdown[];
 }
 
 /**
@@ -162,6 +164,9 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
   // Aggregate clutch stats across all games
   const clutchSummary = computeClutchSummary(gameResults);
 
+  // Compute per-player stats by batting order position
+  const playerLineupStats = computePlayerLineupStats(gameResults);
+
   return {
     totals,
     games: gameResults,
@@ -173,5 +178,6 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
     stolenBaseSummary,
     runnerConversions,
     clutchSummary,
+    playerLineupStats,
   };
 }

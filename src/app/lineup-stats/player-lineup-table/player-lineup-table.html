@@ -1,0 +1,215 @@
+<div class="mb-4 flex items-center gap-3">
+  <h2 class="m-0">Player by Lineup Position</h2>
+  <div class="flex gap-1">
+    @for (m of ['woba', 'avg']; track m) {
+      <button
+        class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-semibold tracking-wider uppercase transition-[color,background]"
+        [class]="
+          metric() === m
+            ? 'bg-brand-bg text-brand-text'
+            : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
+        "
+        (click)="metric.set($any(m))"
+      >
+        {{ m }}
+      </button>
+    }
+  </div>
+</div>
+
+@if (bp.gtSm()) {
+  <div class="overflow-x-auto">
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th class="text-left">Player</th>
+          @for (s of slots; track s) {
+            <th class="text-center">{{ s }}</th>
+          }
+          <th class="text-center">
+            {{ metric() === 'woba' ? 'wOBA' : 'AVG' }}
+          </th>
+          <th class="text-center">PA</th>
+          <th class="text-center">RBI</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of rows(); track row.player.name) {
+          <tr
+            class="cursor-pointer transition-colors"
+            [class]="
+              expandedPlayer() === row.player.name
+                ? 'bg-surface-card'
+                : 'hover:bg-surface-card/50'
+            "
+            (click)="togglePlayer(row.player.name)"
+          >
+            <td class="text-content-bright font-medium whitespace-nowrap">
+              {{ row.player.name }}
+            </td>
+            @for (cell of row.cells; track $index) {
+              <td class="font-stat text-center tabular-nums">
+                @if (cell.hasData) {
+                  <span
+                    [class]="
+                      'inline-block rounded px-1.5 py-0.5' +
+                      (cell.isMax ? ' ring-1 ring-emerald-500/40' : '') +
+                      (cell.isMin ? ' ring-1 ring-red-500/40' : '')
+                    "
+                    [style.color]="cell.color"
+                  >
+                    {{ cell.formatted }}
+                  </span>
+                } @else {
+                  <span class="text-content-muted">—</span>
+                }
+              </td>
+            }
+            <td class="font-stat text-center font-semibold tabular-nums">
+              <span [style.color]="row.overallCell.color">
+                {{ row.overallCell.formatted }}
+              </span>
+            </td>
+            <td class="font-stat text-content-dim text-center tabular-nums">
+              {{ row.player.totalPa }}
+            </td>
+            <td class="font-stat text-content-dim text-center tabular-nums">
+              {{ row.player.totalRbi }}
+            </td>
+          </tr>
+          @if (expandedPlayer() === row.player.name && expandedDetail()) {
+            <tr>
+              <td [attr.colspan]="13" class="p-0">
+                <div
+                  class="bg-surface-card/50 border-brand/20 border-t border-b px-4 py-3"
+                >
+                  <div class="overflow-x-auto">
+                    <table class="stats-table game-table mb-0">
+                      <thead>
+                        <tr>
+                          <th>Slot</th>
+                          <th>PA</th>
+                          <th>AB</th>
+                          <th>H</th>
+                          <th>1B</th>
+                          <th>2B</th>
+                          <th>3B</th>
+                          <th>HR</th>
+                          <th>BB</th>
+                          <th>HBP</th>
+                          <th>RBI</th>
+                          <th>AVG</th>
+                          <th>wOBA</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for (d of expandedDetail(); track d.slot) {
+                          <tr>
+                            <td class="font-semibold">{{ d.slot }}</td>
+                            <td class="font-stat tabular-nums">{{ d.pa }}</td>
+                            <td class="font-stat tabular-nums">{{ d.ab }}</td>
+                            <td class="font-stat tabular-nums">{{ d.h }}</td>
+                            <td class="font-stat tabular-nums">
+                              {{ d.singles }}
+                            </td>
+                            <td class="font-stat tabular-nums">
+                              {{ d.doubles }}
+                            </td>
+                            <td class="font-stat tabular-nums">
+                              {{ d.triples }}
+                            </td>
+                            <td class="font-stat tabular-nums">{{ d.hr }}</td>
+                            <td class="font-stat tabular-nums">{{ d.bb }}</td>
+                            <td class="font-stat tabular-nums">{{ d.hbp }}</td>
+                            <td class="font-stat tabular-nums">{{ d.rbi }}</td>
+                            <td class="font-stat tabular-nums">
+                              <span [style.color]="d.avgColor">
+                                {{ d.avgFormatted }}
+                              </span>
+                            </td>
+                            <td class="font-stat tabular-nums">
+                              <span [style.color]="d.wobaColor">
+                                {{ d.wobaFormatted }}
+                              </span>
+                            </td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          }
+        }
+      </tbody>
+    </table>
+  </div>
+} @else {
+  <div class="flex flex-col gap-3">
+    @for (row of rows(); track row.player.name) {
+      <div
+        class="bg-surface-card px-card py-cell cursor-pointer rounded-lg transition-[background] hover:bg-white/[.06]"
+        tabindex="0"
+        role="button"
+        (click)="togglePlayer(row.player.name)"
+        (keydown.enter)="togglePlayer(row.player.name)"
+      >
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-content-bright text-sm font-medium">
+            {{ row.player.name }}
+          </span>
+          <div class="flex items-center gap-3 text-xs">
+            <span
+              class="font-stat font-semibold tabular-nums"
+              [style.color]="row.overallCell.color"
+            >
+              {{ row.overallCell.formatted }}
+            </span>
+            <span class="text-content-muted">{{ row.player.totalPa }} PA</span>
+          </div>
+        </div>
+        @if (expandedPlayer() === row.player.name && expandedDetail()) {
+          <div class="mt-3 overflow-x-auto">
+            <table class="stats-table game-table mb-0">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>PA</th>
+                  <th>H</th>
+                  <th>HR</th>
+                  <th>BB</th>
+                  <th>RBI</th>
+                  <th>AVG</th>
+                  <th>wOBA</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (d of expandedDetail(); track d.slot) {
+                  <tr>
+                    <td class="font-semibold">{{ d.slot }}</td>
+                    <td class="font-stat tabular-nums">{{ d.pa }}</td>
+                    <td class="font-stat tabular-nums">{{ d.h }}</td>
+                    <td class="font-stat tabular-nums">{{ d.hr }}</td>
+                    <td class="font-stat tabular-nums">{{ d.bb }}</td>
+                    <td class="font-stat tabular-nums">{{ d.rbi }}</td>
+                    <td class="font-stat tabular-nums">
+                      <span [style.color]="d.avgColor">
+                        {{ d.avgFormatted }}
+                      </span>
+                    </td>
+                    <td class="font-stat tabular-nums">
+                      <span [style.color]="d.wobaColor">
+                        {{ d.wobaFormatted }}
+                      </span>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        }
+      </div>
+    }
+  </div>
+}

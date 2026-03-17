@@ -72,6 +72,7 @@ export class ClutchPlayerTable {
     const situation = this.situationFilter();
 
     return withValues.map(({ player: p, rob, empty, delta, robPa, emptyPa }) => {
+      console.log(p.name, p.overallStats);
       const overallVal = m === 'avg' ? calcAvg(p.overallStats) : p.overallWoba;
       const overallPa = m === 'avg' ? p.overallStats.ab : p.overallStats.pa;
 

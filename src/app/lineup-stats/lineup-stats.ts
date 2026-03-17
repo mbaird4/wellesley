@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal } from '@angular/core';
 import { SoftballStatsService } from '@ws/core/data';
-import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, ResultRow } from '@ws/core/models';
+import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, PlayerLineupBreakdown, ResultRow } from '@ws/core/models';
 import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
+
+import { PlayerLineupTable } from './player-lineup-table/player-lineup-table';
 
 @Component({
   selector: 'ws-lineup-stats',
@@ -13,6 +15,7 @@ import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
     CommonModule,
     GameViewer,
     LastUpdatedPipe,
+    PlayerLineupTable,
   ],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
@@ -26,6 +29,7 @@ export class LineupStats {
   games: GameWithSnapshots[] = [];
   baseRunnerStats: BaseRunnerRow[] = [];
   baseRunnerStatsAtBatStart: BaseRunnerRow[] = [];
+  playerLineupStats: PlayerLineupBreakdown[] = [];
   expandedGame: number | null = null;
   loading = false;
   error: string | null = null;
@@ -47,6 +51,7 @@ export class LineupStats {
     this.games = [];
     this.baseRunnerStats = [];
     this.baseRunnerStatsAtBatStart = [];
+    this.playerLineupStats = [];
     this.expandedGame = null;
     this.scrapedAt = null;
     this.totalPlateAppearances = 0;
@@ -58,6 +63,7 @@ export class LineupStats {
         this.games = stats.games;
         this.baseRunnerStats = stats.baseRunnerStats;
         this.baseRunnerStatsAtBatStart = stats.baseRunnerStatsAtBatStart;
+        this.playerLineupStats = stats.playerLineupStats;
         this.totalPlateAppearances = stats.totals.reduce((sum, r) => sum + r.totalPA, 0);
         this.loading = false;
         this.cdr.markForCheck();

@@ -80,7 +80,7 @@ export function classifyPlay(text: string): PlayType {
 
 // --- Batter action parsing ---
 
-export type BatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
+export type BatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'fielders_choice' | 'error' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
 
 export function parseBatterAction(subEvent: string): {
   result: BatterResult;
@@ -174,7 +174,7 @@ export function parseBatterAction(subEvent: string): {
       advancedTo = 'second';
     }
 
-    return { result: 'reached', advancedTo };
+    return { result: 'fielders_choice', advancedTo };
   }
 
   // Hits
@@ -235,8 +235,14 @@ export function parseBatterAction(subEvent: string): {
   }
 
   if (lower.includes('reached on') || lower.includes('reached first')) {
+    if (lower.includes('error')) {
+      return { result: 'error' };
+    }
+
     return { result: 'reached' };
   }
+
+  console.log('Unknown event: ', subEvent);
 
   return { result: 'unknown' };
 }
@@ -520,6 +526,8 @@ function handlePlateAppearance(playText: string, gameState: GameState): void {
 
     case 'walk':
     case 'hbp':
+    case 'fielders_choice':
+    case 'error':
     case 'reached':
       placeOnBase(gameState.baseRunners, batterName, batterResult.advancedTo || 'first');
       break;

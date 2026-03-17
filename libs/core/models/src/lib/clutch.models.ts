@@ -1,7 +1,7 @@
 import type { BaseSituation } from './snapshot.models';
 
 /** Mirrors BatterResult from processors — duplicated here to avoid circular dependency */
-export type ClutchBatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
+export type ClutchBatterResult = 'out' | 'double_play' | 'single' | 'bunt_single' | 'double' | 'triple' | 'homer' | 'walk' | 'hbp' | 'fielders_choice' | 'error' | 'reached' | 'sac_bunt' | 'sac_fly' | 'unknown';
 
 /** A single PA with runners on base */
 export interface ClutchEvent {

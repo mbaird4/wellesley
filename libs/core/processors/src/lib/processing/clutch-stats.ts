@@ -34,6 +34,10 @@ export function accumFromResult(result: ClutchBatterResult, accum: PbpBattingAcc
       accum.h++;
       accum.hr++;
       break;
+    case 'fielders_choice':
+    case 'error':
+      accum.ab++;
+      break;
     case 'walk':
       accum.bb++;
       break;

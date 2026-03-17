@@ -72,6 +72,10 @@
       </span>
     </div>
 
+    @if (playerLineupStats.length > 0) {
+      <ws-player-lineup-table [players]="playerLineupStats" />
+    }
+
     @if (baseRunnerStats.length > 0) {
       <ws-base-runner-table
         [rows]="baseRunnerStats"

@@ -1,6 +1,7 @@
 export * from './lib/batting-types';
 export * from './lib/clutch.models';
 export * from './lib/game.models';
+export * from './lib/lineup-position.models';
 export * from './lib/opponent.models';
 export * from './lib/pitching.models';
 export * from './lib/pitching-types';

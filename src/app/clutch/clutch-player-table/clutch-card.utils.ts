@@ -272,6 +272,14 @@ export function buildContactBreakdown(events: ClutchEvent[]): ContactItem[] {
     items.push({ label: 'SAC', count: counts['sac_bunt'] });
   }
 
+  if (counts['fielders_choice']) {
+    items.push({ label: 'FC', count: counts['fielders_choice'] });
+  }
+
+  if (counts['error']) {
+    items.push({ label: 'ROE', count: counts['error'] });
+  }
+
   if (counts['reached']) {
     items.push({ label: 'ROE', count: counts['reached'] });
   }
