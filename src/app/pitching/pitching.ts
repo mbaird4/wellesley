@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, type OnInit, signal } from '@angular/core';
-import { mergePitchingYears, SoftballDataService } from '@ws/core/data';
-import { type PitchingData, toJerseyMap, type YearPitchingData } from '@ws/core/models';
+import { mergePitchingYears, RosterService, SoftballDataService } from '@ws/core/data';
+import { type PitchingData, type YearPitchingData } from '@ws/core/models';
 import { LastUpdatedPipe } from '@ws/core/ui';
 import { RECENT_YEARS } from '@ws/core/util';
 import { PitcherAnalysis } from '@ws/pitching';
@@ -20,15 +20,15 @@ import { catchError } from 'rxjs/operators';
 })
 export class Pitching implements OnInit {
   private readonly dataService = inject(SoftballDataService);
+  private readonly rosterService = inject(RosterService);
 
   readonly pitchingData = signal<PitchingData | null>(null);
-  readonly rosterNames = signal<Set<string>>(new Set());
-  readonly jerseyMap = signal<Record<string, number> | null>(null);
+  readonly rosterNames = this.rosterService.wellesleyRosterNames;
+  readonly jerseyMap = this.rosterService.wellesleyJerseyMap;
   readonly loading = signal(true);
 
   ngOnInit(): void {
     this.loadPitchingData();
-    this.loadRoster();
   }
 
   private loadPitchingData(): void {
@@ -43,15 +43,6 @@ export class Pitching implements OnInit {
       error: () => {
         this.pitchingData.set(null);
         this.loading.set(false);
-      },
-    });
-  }
-
-  private loadRoster(): void {
-    this.dataService.getRoster().subscribe({
-      next: (roster) => {
-        this.rosterNames.set(new Set(Object.keys(roster)));
-        this.jerseyMap.set(toJerseyMap(roster));
       },
     });
   }

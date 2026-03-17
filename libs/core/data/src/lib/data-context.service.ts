@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { getBaseHref } from '@ws/core/util';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ export class DataContextService {
 
   async resolveProfile(): Promise<void> {
     try {
-      const base = document.querySelector('base')?.getAttribute('href') || '/';
+      const base = getBaseHref();
       const response = await fetch(`${base}data/dcfg.txt`);
 
       if (response.ok) {

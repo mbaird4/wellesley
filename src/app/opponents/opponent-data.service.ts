@@ -1,21 +1,20 @@
-import { HttpClient } from '@angular/common/http';
 import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { mergeBattingYears, mergePitchingYears, SoftballDataService } from '@ws/core/data';
+import { mergeBattingYears, mergePitchingYears, RosterService, SoftballDataService } from '@ws/core/data';
 import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type VsWellesleyData, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
 import { calculateWoba, computeVsWellesleyStats } from '@ws/core/processors';
-import { CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
+import { RECENT_YEARS } from '@ws/core/util';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { ALL_OPPONENT_TEAMS, NEXT_OPPONENT_DATA_PATH, type NextOpponentMeta, SLUG_TO_OPPONENT_NAMES } from './teams';
+import { ALL_OPPONENT_TEAMS, NEXT_OPPONENT_DATA_PATH, SLUG_TO_OPPONENT_NAMES } from './teams';
 
 @Injectable()
 export class OpponentDataService {
-  private http = inject(HttpClient);
   private route = inject(ActivatedRoute);
   private softballData = inject(SoftballDataService);
+  private rosterService = inject(RosterService);
 
   readonly teams: TeamEntry[] = ALL_OPPONENT_TEAMS;
 
@@ -34,7 +33,7 @@ export class OpponentDataService {
   readonly roster = signal<Roster | null>(null);
   readonly vsWellesleyData = signal<VsWellesleyData | null>(null);
   readonly vsWellesleyLoading = signal(false);
-  readonly wellesleyRosterNames = signal<Set<string>>(new Set());
+  readonly wellesleyRosterNames = this.rosterService.wellesleyRosterNames;
   readonly wellesleyPitcherOrder = signal<string[]>([]);
 
   readonly nextOpponentName = signal<string>('');
@@ -190,12 +189,6 @@ export class OpponentDataService {
   readonly empty = computed(() => this.displayRows().length === 0 && !this.loading() && !this.error());
 
   constructor() {
-    this.softballData.getRoster().subscribe({
-      next: (roster) => {
-        this.wellesleyRosterNames.set(new Set(Object.keys(roster)));
-      },
-    });
-
     effect(() => {
       const slug = this.slug();
 
@@ -240,13 +233,7 @@ export class OpponentDataService {
 
     this.pitchingLoading.set(true);
 
-    const base = document.querySelector('base')?.getAttribute('href') || '/';
-
-    const requests = RECENT_YEARS.map((year) => {
-      const file = year === CURRENT_YEAR ? 'pitching.json' : `pitching-${year}.json`;
-
-      return this.http.get<YearPitchingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
-    });
+    const requests = RECENT_YEARS.map((year) => this.softballData.getOpponentPitchingData(dataDir, year).pipe(catchError(() => of(null))));
 
     forkJoin(requests).subscribe({
       next: (results) => {
@@ -312,9 +299,7 @@ export class OpponentDataService {
   }
 
   private loadNextOpponentMeta(): void {
-    const base = document.querySelector('base')?.getAttribute('href') || '/';
-
-    this.http.get<NextOpponentMeta>(`${base}data/opponents/${NEXT_OPPONENT_DATA_PATH}/meta.json`).subscribe({
+    this.softballData.getOpponentMeta(NEXT_OPPONENT_DATA_PATH).subscribe({
       next: (meta) => {
         this.nextOpponentName.set(meta.name);
         this.nextOpponentSlug.set(meta.slug);
@@ -328,15 +313,9 @@ export class OpponentDataService {
     this.expandedPlayer.set(null);
     this.yearSortYear.set(null);
 
-    const base = document.querySelector('base')?.getAttribute('href') || '/';
+    const requests = RECENT_YEARS.map((year) => this.softballData.getOpponentBattingData(dataDir, year).pipe(catchError(() => of(null))));
 
-    const requests = RECENT_YEARS.map((year) => {
-      const file = year === CURRENT_YEAR ? 'batting-stats.json' : `batting-stats-${year}.json`;
-
-      return this.http.get<YearBattingData>(`${base}data/opponents/${dataDir}/${file}`).pipe(catchError(() => of(null)));
-    });
-
-    const rosterRequest = this.http.get<Roster>(`${base}data/opponents/${dataDir}/roster.json`).pipe(catchError(() => of(null)));
+    const rosterRequest = this.softballData.getOpponentRoster(dataDir).pipe(catchError(() => of(null)));
 
     forkJoin([forkJoin(requests), rosterRequest]).subscribe({
       next: ([results, roster]) => {

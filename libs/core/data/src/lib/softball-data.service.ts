@@ -1,10 +1,11 @@
 import { inject, Injectable } from '@angular/core';
-import type { GameData, PlayByPlayInning, Roster, YearBattingData, YearPitchingData } from '@ws/core/models';
+import type { GameData, NextOpponentMeta, PlayByPlayInning, Roster, SeasonStatsData, YearBattingData, YearPitchingData } from '@ws/core/models';
+import { getBaseHref } from '@ws/core/util';
 import type { Observable } from 'rxjs';
 import { from } from 'rxjs';
 
 import { DataContextService } from './data-context.service';
-import { resolveGameData, resolveRoster, resolveYearBattingData } from './data-resolve';
+import { resolveGameData, resolveYearBattingData } from './data-resolve';
 
 export type { GameData, PlayByPlayInning };
 
@@ -17,12 +18,17 @@ function dataPath(base: string, year: number): string {
   return year === CURRENT_YEAR ? `data/${base}.json` : `data/${base}-${year}.json`;
 }
 
+function opponentDataPath(dataDir: string, base: string, year: number): string {
+  return year === CURRENT_YEAR ? `data/opponents/${dataDir}/${base}.json` : `data/opponents/${dataDir}/${base}-${year}.json`;
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class SoftballDataService {
   private readonly context = inject(DataContextService);
   private readonly gameDataCache = new Map<number, Promise<GameData[]>>();
+  private readonly metaCache = new Map<string, Promise<NextOpponentMeta>>();
 
   getGameData(year: number): Observable<GameData[]> {
     return from(this.fetchGameDataCached(year));
@@ -34,12 +40,31 @@ export class SoftballDataService {
     return from(this.fetchGameJson(file));
   }
 
-  getRoster(): Observable<Roster> {
-    return from(this.fetchResolvedRoster());
-  }
-
   getOpponentRoster(dataDir: string): Observable<Roster> {
     return from(this.fetchJson<Roster>(`data/opponents/${dataDir}/roster.json`));
+  }
+
+  getOpponentBattingData(dataDir: string, year: number): Observable<YearBattingData> {
+    return from(this.fetchJson<YearBattingData>(opponentDataPath(dataDir, 'batting-stats', year)));
+  }
+
+  getOpponentPitchingData(dataDir: string, year: number): Observable<YearPitchingData> {
+    return from(this.fetchJson<YearPitchingData>(opponentDataPath(dataDir, 'pitching', year)));
+  }
+
+  getOpponentSeasonStats(dataDir: string): Observable<SeasonStatsData> {
+    return from(this.fetchJson<SeasonStatsData>(`data/opponents/${dataDir}/season-stats.json`));
+  }
+
+  getOpponentMeta(dataDir: string): Observable<NextOpponentMeta> {
+    let cached = this.metaCache.get(dataDir);
+
+    if (!cached) {
+      cached = this.fetchJson<NextOpponentMeta>(`data/opponents/${dataDir}/meta.json`);
+      this.metaCache.set(dataDir, cached);
+    }
+
+    return from(cached);
   }
 
   getWellesleyPitchingData(year: number): Observable<YearPitchingData> {
@@ -58,7 +83,7 @@ export class SoftballDataService {
     );
   }
 
-  /** Cached game data fetch — used by both getGameData and getRoster. */
+  /** Cached game data fetch — used by both getGameData and RosterService. */
   fetchGameDataCached(year: number): Promise<GameData[]> {
     let cached = this.gameDataCache.get(year);
 
@@ -76,20 +101,6 @@ export class SoftballDataService {
     return cached;
   }
 
-  private async fetchResolvedRoster(): Promise<Roster> {
-    const roster = await this.fetchJson<Roster>('data/roster.json');
-
-    if (!this.context.isVerified()) {
-      // Use the most recent year with data for the roster mapping
-      const year = RESOLVE_YEARS[RESOLVE_YEARS.length - 1];
-      const games = await this.fetchGameDataCached(year);
-
-      return resolveRoster(roster, games, year);
-    }
-
-    return roster;
-  }
-
   private async fetchResolvedBattingData(year: number): Promise<YearBattingData> {
     const data = await this.fetchJson<YearBattingData>(dataPath('batting-stats', year));
 
@@ -102,8 +113,8 @@ export class SoftballDataService {
     return data;
   }
 
-  private async fetchJson<T>(path: string): Promise<T> {
-    const base = document.querySelector('base')?.getAttribute('href') || '/';
+  async fetchJson<T>(path: string): Promise<T> {
+    const base = getBaseHref();
     const url = `${base}${path}`;
     const response = await fetch(url);
 

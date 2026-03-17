@@ -68,16 +68,6 @@ export const ALL_OPPONENT_TEAMS: TeamEntry[] = [...OPPONENT_TEAMS, ...FLORIDA_TE
 
 export const NEXT_OPPONENT_DATA_PATH = 'next-opponent';
 
-export interface NextOpponentMeta {
-  slug: string;
-  name: string;
-  domain: string;
-  site: 'sidearm' | 'presto';
-  gameDate: string;
-  isHome: boolean;
-  scrapedAt: string;
-}
-
 /**
  * Maps opponent slugs to full institutional names used in Wellesley pitching JSON.
  * Matching is case-insensitive + trimmed to handle quirks like trailing spaces.

@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
+import { SoftballDataService } from '@ws/core/data';
 import type { SeasonStatsData } from '@ws/core/models';
 
 import { FIELDING_COLUMNS, HITTING_COLUMNS, PITCHING_COLUMNS } from './stat-column';
@@ -52,7 +52,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
   `,
 })
 export class SeasonStats {
-  private readonly http = inject(HttpClient);
+  private readonly dataService = inject(SoftballDataService);
 
   readonly slug = input.required<string>();
   readonly data = signal<SeasonStatsData | null>(null);
@@ -91,9 +91,7 @@ export class SeasonStats {
     this.loading.set(true);
     this.error.set(null);
 
-    const base = document.querySelector('base')?.getAttribute('href') || '/';
-
-    this.http.get<SeasonStatsData>(`${base}data/opponents/${slug}/season-stats.json`).subscribe({
+    this.dataService.getOpponentSeasonStats(slug).subscribe({
       next: (data) => {
         this.data.set(data);
         this.loading.set(false);

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { SoftballDataService, SoftballStatsService } from '@ws/core/data';
-import { type Roster, type SprayDataPoint } from '@ws/core/models';
+import { RosterService, SoftballDataService, SoftballStatsService } from '@ws/core/data';
+import type { SprayDataPoint } from '@ws/core/models';
 import { canonicalizeSprayNames, parseSprayData } from '@ws/core/processors';
 import { LastUpdatedPipe, SPRAY_YEARS, SprayChartViewer } from '@ws/core/ui';
 import { catchError, forkJoin, of } from 'rxjs';
@@ -28,12 +28,13 @@ import { catchError, forkJoin, of } from 'rxjs';
 export class SprayChart {
   private statsService = inject(SoftballStatsService);
   private dataService = inject(SoftballDataService);
+  private rosterService = inject(RosterService);
 
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
   readonly scrapedAt = signal<string | null>(null);
   readonly dataByYear = signal<Map<number, SprayDataPoint[]>>(new Map());
-  readonly roster = signal<Roster>({});
+  readonly roster = this.rosterService.wellesleyRoster;
 
   constructor() {
     this.loadData();
@@ -46,14 +47,13 @@ export class SprayChart {
     const currentYear = SPRAY_YEARS[0];
 
     forkJoin({
-      roster: this.dataService.getRoster().pipe(catchError(() => of({} as Roster))),
       scrapedAt: this.dataService.getScrapedAt(currentYear).pipe(catchError(() => of(''))),
       years: forkJoin(SPRAY_YEARS.map((year) => this.statsService.getStats(year).pipe(catchError(() => of(null))))),
     }).subscribe({
-      next: ({ roster, scrapedAt, years }) => {
+      next: ({ scrapedAt, years }) => {
         this.scrapedAt.set(scrapedAt || null);
-        this.roster.set(roster);
 
+        const roster = this.rosterService.wellesleyRoster() ?? {};
         const map = new Map<number, SprayDataPoint[]>();
         years.forEach((stats, i) => {
           if (!stats) {

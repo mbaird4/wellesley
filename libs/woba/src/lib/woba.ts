@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
-import { SoftballDataService } from '@ws/core/data';
+import { RosterService, SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
 import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
 import { ButtonToggle, FormatWobaPipe, LastUpdatedPipe, type ToggleOption, WobaLegend } from '@ws/core/ui';
@@ -41,6 +41,7 @@ export interface TeamPlayerRow {
 })
 export class Woba {
   private dataService = inject(SoftballDataService);
+  private rosterService = inject(RosterService);
   private cdr = inject(ChangeDetectorRef);
 
   loading = false;
@@ -86,10 +87,15 @@ export class Woba {
       next: (data) => {
         this.scrapedAt = data.scrapedAt ?? null;
         this.teamGames = data.teamGames ?? 0;
-        const seasonStats = data.players.map((p) => p.season);
-        const boxscores = data.boxscores ?? [];
+        const rosterNames = this.rosterService.wellesleyRosterNames();
+        const onRoster = (name: string) => rosterNames.size === 0 || rosterNames.has(name.toLowerCase());
+        const seasonStats = data.players.filter((p) => onRoster(p.name)).map((p) => p.season);
+        const boxscores = (data.boxscores ?? []).map((bs) => ({
+          ...bs,
+          playerStats: bs.playerStats.filter((ps) => onRoster(ps.name)),
+        }));
         this.playerWobas = computePlayerSeasonWobas(seasonStats);
-        this.cumulativeWobas = computePlayerCumulativeWobas(boxscores);
+        this.cumulativeWobas = computePlayerCumulativeWobas(boxscores).filter((c) => onRoster(c.name));
         this.cumulativeByName = new Map(this.cumulativeWobas.map((c) => [c.name.toLowerCase(), c]));
         this.buildTeamGrid();
         this.loading = false;

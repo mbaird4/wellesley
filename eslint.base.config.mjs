@@ -33,7 +33,11 @@ export default [
             },
             {
               sourceTag: 'type:data',
-              onlyDependOnLibsWithTags: ['type:models', 'type:processors'],
+              onlyDependOnLibsWithTags: [
+                'type:models',
+                'type:processors',
+                'type:util',
+              ],
             },
             {
               sourceTag: 'type:ui',
