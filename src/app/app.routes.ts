@@ -60,6 +60,10 @@ export const appRoutes: Route[] = [
     path: 'spray-chart',
     loadComponent: () => import('./spray-chart/spray-chart').then((m) => m.SprayChart),
   },
+  {
+    path: 'clutch',
+    loadComponent: () => import('./clutch/clutch').then((m) => m.Clutch),
+  },
 
   { path: '**', redirectTo: '' },
 ];

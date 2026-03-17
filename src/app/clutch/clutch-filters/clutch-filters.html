@@ -1,0 +1,36 @@
+<div class="filter-group">
+  <span class="filter-group-label">Outs</span>
+  <ws-button-toggle
+    [options]="outsOptions"
+    [value]="outsFilter()"
+    (valueChange)="outsChanged.emit($any($event))"
+  />
+</div>
+
+<div class="filter-group">
+  <span class="filter-group-label">Innings</span>
+  <ws-button-toggle
+    [options]="inningOptions"
+    [value]="inningFilter()"
+    (valueChange)="inningChanged.emit($any($event))"
+  />
+</div>
+
+<div class="filter-group">
+  <span class="filter-group-label">Situation</span>
+  <ws-button-toggle
+    [options]="situationOptions"
+    [value]="situationFilter()"
+    mode="single"
+    (valueChange)="situationChanged.emit($any($event))"
+  />
+</div>
+
+<div class="filter-group">
+  <span class="filter-group-label">Pinch Hit</span>
+  <ws-slide-toggle
+    [checked]="pinchHitOnly()"
+    (checkedChange)="pinchHitToggled.emit($event)"
+    class="p-1"
+  />
+</div>

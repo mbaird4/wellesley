@@ -85,6 +85,10 @@ The only acceptable margin use is for asymmetric one-off offsets that `gap` can'
 
 NEVER use `for`, `for...in`, `for...of`, or `while` loops. Use array methods (`forEach`, `map`, `filter`, `reduce`, `find`, `some`, `every`, `flatMap`). Only exception: `for...of` when you genuinely need `break`/`continue` and `find`/`some` won't work.
 
+### Separate HTML template files
+
+Unless an Angular template is 1 line long, ALWAYS use a separate `.html` file with `templateUrl`. NEVER use inline `template` for multi-line templates.
+
 ## Build & Dev Commands
 
 ```bash

@@ -1,0 +1,111 @@
+<div class="mb-6 flex flex-wrap items-center gap-2">
+  <span
+    class="text-content-muted mr-1 text-sm font-medium tracking-[0.05em] uppercase"
+  >
+    Season
+  </span>
+  @for (year of availableYears; track year) {
+    <button
+      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-sm font-medium tabular-nums transition-[color,background] disabled:cursor-not-allowed disabled:opacity-40"
+      [class]="
+        selectedYear() === year
+          ? 'bg-brand-bg text-brand-text'
+          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
+      "
+      [disabled]="loading()"
+      (click)="setYear(year)"
+    >
+      {{ year }}
+    </button>
+  }
+  @if (scrapedAt()) {
+    <span class="text-content-dim ml-1 text-xs">
+      {{ scrapedAt() | lastUpdated }}
+    </span>
+  }
+</div>
+
+@if (error()) {
+  <div
+    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+  >
+    {{ error() }}
+  </div>
+}
+
+@if (loading()) {
+  <div class="loading-state">
+    <i class="fa-solid fa-baseball loading-spinner"></i>
+    Loading clutch data...
+  </div>
+}
+
+@if (clutchData() && !loading()) {
+  <div class="stagger-children mt-6 flex flex-col gap-6">
+    <div class="tabs">
+      <button
+        class="tab"
+        [class.active]="activeTab() === 'clutch'"
+        (click)="activeTab.set('clutch')"
+      >
+        Clutch
+      </button>
+      <button
+        class="tab"
+        [class.active]="activeTab() === 'stranded'"
+        (click)="activeTab.set('stranded')"
+      >
+        Runners Left On
+      </button>
+    </div>
+
+    <ws-clutch-filters
+      [outsFilter]="outsFilter()"
+      [situationFilter]="situationFilter()"
+      [inningFilter]="inningFilter()"
+      [pinchHitOnly]="pinchHitOnly()"
+      (outsChanged)="outsFilter.set($event)"
+      (situationChanged)="situationFilter.set($event)"
+      (inningChanged)="inningFilter.set($event)"
+      (pinchHitToggled)="pinchHitOnly.set($event)"
+    />
+
+    @if (activeTab() === 'clutch') {
+      @if (teamSummary()) {
+        <ws-clutch-team-summary
+          [summary]="teamSummary()!"
+          [metric]="metric()"
+          [filterContext]="filterContext()"
+        />
+      }
+
+      <ws-clutch-player-table
+        [players]="filteredPlayers()"
+        [situationFilter]="situationFilter()"
+        [selectedPlayer]="selectedPlayerName()"
+        (playerSelected)="selectPlayer($event)"
+        (metricChanged)="metric.set($event)"
+      />
+
+      @if (selectedPlayer()) {
+        <ws-clutch-game-log [player]="selectedPlayer()!" />
+      }
+    }
+
+    @if (activeTab() === 'stranded') {
+      <ws-clutch-stranded
+        [players]="filteredPlayers()"
+        [filterContext]="filterContext()"
+      />
+    }
+  </div>
+}
+
+@if (!clutchData() && !loading() && !error()) {
+  <div class="empty-state">
+    <div class="empty-state-icon">
+      <i class="fa-solid fa-baseball"></i>
+    </div>
+    Pick a season above to get started.
+  </div>
+}

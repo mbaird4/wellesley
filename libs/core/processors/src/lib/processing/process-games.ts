@@ -1,7 +1,8 @@
-import type { BaseRunnerRow, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
+import type { BaseRunnerRow, ClutchSummary, GameData, GameResult, GameScoringPlays, GameState, GameWithSnapshots, ResultRow, RunnerConversionRow, SacBuntSummary, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
 
 import { processPlay } from '../parsing/parse-play';
 import { mergeBaseRunnerStats } from './base-runner-stats';
+import { computeClutchSummary } from './clutch-stats';
 import { processGameWithSnapshots } from './process-game-snapshots';
 import { computeRunnerConversions, computeSacBuntOutcomes, computeScoringPlaySummary, computeStolenBaseOutcomes, summarizeSacBuntOutcomes, summarizeStolenBaseOutcomes } from './scoring-plays';
 
@@ -20,6 +21,7 @@ export interface ProcessedStatsWithSnapshots {
   sacBuntSummary: SacBuntSummary;
   stolenBaseSummary: StolenBaseSummary;
   runnerConversions: RunnerConversionRow[];
+  clutchSummary: ClutchSummary;
 }
 
 /**
@@ -157,6 +159,9 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
   const allSnapshots = gameResults.flatMap((game) => game.snapshots);
   const runnerConversions = computeRunnerConversions(allSnapshots);
 
+  // Aggregate clutch stats across all games
+  const clutchSummary = computeClutchSummary(gameResults);
+
   return {
     totals,
     games: gameResults,
@@ -167,5 +172,6 @@ export function processGamesWithSnapshots(games: GameData[]): ProcessedStatsWith
     sacBuntSummary,
     stolenBaseSummary,
     runnerConversions,
+    clutchSummary,
   };
 }

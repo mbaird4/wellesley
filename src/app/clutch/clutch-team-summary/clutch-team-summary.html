@@ -1,0 +1,44 @@
+<div class="flex flex-wrap gap-3">
+  <div class="stat-card">
+    <div class="stat-value">{{ summary().totalEvents }}</div>
+    <div class="stat-label">PAs</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{{ summary().totalRunnersDrivenIn }}</div>
+    <div class="stat-label">Runners Driven In</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{{ summary().conversionRate }}%</div>
+    <div class="stat-label">Conversion Rate</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value text-emerald-400">{{ summary().elevators }}</div>
+    <div class="stat-label">Elevate w/ ROB</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value text-red-400">{{ summary().droppers }}</div>
+    <div class="stat-label">Drop Off w/ ROB</div>
+  </div>
+</div>
+
+<p class="text-content-secondary text-sm leading-relaxed">
+  {{ contextCapitalized() }}, the team drove in
+  <span class="text-content-bright font-semibold tabular-nums">
+    {{ summary().totalRunnersDrivenIn }}
+  </span>
+  of
+  <span class="text-content-bright tabular-nums">
+    {{ summary().totalRunnersOn }}
+  </span>
+  runners ({{ summary().conversionRate }}%).
+  @if (summary().elevators > 0) {
+    <span class="text-content-bright font-semibold">
+      {{ summary().topClutchName }}
+    </span>
+    was the biggest clutch performer with a
+    <span class="font-semibold text-emerald-400 tabular-nums">
+      {{ summary().topClutchDelta }}
+    </span>
+    {{ metric() === 'avg' ? 'AVG' : 'wOBA' }} boost.
+  }
+</p>
