@@ -81,10 +81,10 @@
             <tr>
               <td [attr.colspan]="13" class="p-0">
                 <div
-                  class="bg-surface-card/50 border-brand/20 border-t border-b px-4 py-3"
+                  class="bg-surface-sunken border-y border-white/5 px-5 py-3"
                 >
                   <div class="overflow-x-auto">
-                    <table class="stats-table game-table mb-0">
+                    <table class="game-table nested-table mb-0 w-full">
                       <thead>
                         <tr>
                           <th>Slot</th>
@@ -170,7 +170,7 @@
           </div>
         </div>
         @if (expandedPlayer() === row.player.name && expandedDetail()) {
-          <div class="mt-3 overflow-x-auto">
+          <div class="border-brand/20 mt-3 overflow-x-auto border-t pt-3">
             <table class="stats-table game-table mb-0">
               <thead>
                 <tr>

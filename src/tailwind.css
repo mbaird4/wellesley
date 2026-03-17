@@ -388,6 +388,16 @@
     }
   }
 
+  .nested-table {
+    thead tr {
+      @apply bg-surface-card;
+    }
+    thead tr,
+    tbody tr {
+      @apply hover:bg-inherit!;
+    }
+  }
+
   .game-table {
     @apply mt-0 mb-2 rounded-t-none!;
 
