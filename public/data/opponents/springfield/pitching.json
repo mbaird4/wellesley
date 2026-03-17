@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-16T11:41:49.715Z",
+  "scrapedAt": "2026-03-17T01:49:01.928Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 1,
+      "w": 2,
       "l": 2,
-      "era": 4.67,
-      "app": 3,
+      "era": 3.18,
+      "app": 4,
       "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 15,
-      "h": 21,
+      "ip": 22,
+      "h": 27,
       "r": 12,
       "er": 10,
       "bb": 6,
-      "so": 10,
+      "so": 15,
       "hr": 0,
-      "whip": 1.8,
+      "whip": 1.5,
       "doubles": 6,
       "triples": 1,
-      "ab": 63,
-      "bAvg": 0.333,
+      "ab": 89,
+      "bAvg": 0.303,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -37,8 +37,8 @@
       "w": 1,
       "l": 0,
       "era": 5.6,
-      "app": 4,
-      "gs": 3,
+      "app": 5,
+      "gs": 4,
       "cg": 1,
       "sho": 0,
       "sv": 0,
@@ -381,6 +381,87 @@
             "Olivia Levasseur flied out to rf (0-0).",
             "Ella Bezanson flied out to rf (0-0).",
             "Mackenzie Renner flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/william-paterson/boxscore/14821",
+      "date": "3/16/2026",
+      "opponent": "William Paterson",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Brandi Shortway grounded out to 2b (1-1 KB).",
+            "Gianna Capone flied out to lf (1-1 FB).",
+            "Megan Tinger fouled out to 3b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Aubrey Miller singled through the left side (0-0).",
+            "Hailey Backo reached on a fielder's choice (3-2 BSBBFF); Aubrey Miller out at second p to 2b.",
+            "Kelsey Geurts struck out looking (2-2 KBKB).",
+            "Molly Cocco struck out swinging (2-2 KFBFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lilah Guthy singled to right center (0-1 K).",
+            "Taylor Palmieri reached on a fielder's choice (1-2 SFBF); Lilah Guthy out at second cf to 2b to ss.",
+            "Brandi Shortway reached on a fielder's choice (0-1 F); Taylor Palmieri out at second p to 2b.",
+            "Gianna Capone singled to pitcher (0-0); Brandi Shortway advanced to second.",
+            "Megan Tinger singled to left field (1-0 B); Gianna Capone advanced to second; Brandi Shortway advanced to third.",
+            "Aubrey Miller flied out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Pecchia to c for Ariana Hammer.",
+            "Hailey Backo singled through the left side (3-2 SBBSB).",
+            "Hailey Backo stole second.",
+            "Kelsey Geurts struck out looking (2-2 FBFB).",
+            "Molly Cocco struck out swinging (1-2 SSB).",
+            "Lilah Guthy grounded out to 2b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Palmieri singled up the middle (2-2 BKSB).",
+            "Brandi Shortway reached on a fielder's choice (1-1 BK); Taylor Palmieri out at second p to 2b.",
+            "Gianna Capone flied out to cf (0-0).",
+            "Brandi Shortway out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Rachel Powers to 2b for Madison Testo.",
+            "Megan Tinger struck out looking (0-2 KSFF).",
+            "Aubrey Miller pinch hit for Kylie Anthony.",
+            "Aubrey Miller flied out to 2b (0-0).",
+            "Hailey Backo lined out to p (0-2 FS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emilia Santiago to 3b for Tessa Spingola.",
+            "Katie Inglis pinch hit for Kelsey Geurts.",
+            "Katie Inglis grounded out to ss (2-2 BKFB).",
+            "Stephanie Ciravolo pinch hit for Molly Cocco.",
+            "Stephanie Ciravolo flied out to lf (1-0 B).",
+            "Lilah Guthy flied out to lf (1-0 B)."
           ]
         }
       ],

@@ -1,31 +1,59 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-16T11:41:58.843Z",
+  "scrapedAt": "2026-03-17T01:49:05.353Z",
   "year": 2026,
   "pitchingStats": [
     {
+      "name": "Gray, Bailey",
+      "w": 0,
+      "l": 0,
+      "era": 2.33,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 6,
+      "h": 3,
+      "r": 2,
+      "er": 2,
+      "bb": 2,
+      "so": 3,
+      "hr": 1,
+      "whip": 0.83,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 22,
+      "bAvg": 0.136,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
       "name": "Peverly, Violet",
       "w": 1,
-      "l": 0,
-      "era": 3.15,
-      "app": 2,
-      "gs": 1,
+      "l": 1,
+      "era": 3.65,
+      "app": 3,
+      "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 6.2,
-      "h": 7,
-      "r": 8,
-      "er": 3,
-      "bb": 5,
-      "so": 8,
+      "ip": 7.2,
+      "h": 9,
+      "r": 10,
+      "er": 4,
+      "bb": 10,
+      "so": 11,
       "hr": 0,
-      "whip": 1.8,
-      "doubles": 1,
+      "whip": 2.48,
+      "doubles": 2,
       "triples": 0,
-      "ab": 25,
-      "bAvg": 0.28,
+      "ab": 30,
+      "bAvg": 0.3,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
@@ -198,6 +226,97 @@
             "Mackenzie Roy walked, RBI (3-2 KFBBBB); Amanda Adamuska scored on a passed ball, unearned.",
             "Olivia Pirrotta struck out looking (3-2 BKBBKK).",
             "Cali Brouillard grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/wesleyan-university/boxscore/9741",
+      "date": "3/16/2026",
+      "opponent": "Wesleyan University",
+      "pitchers": [
+        "Peverly, Violet",
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Molly Lennon walked (3-1 KBBBB).",
+            "Molly Lennon stole second.",
+            "Katie Foley struck out swinging (1-2 BSFS).",
+            "Jordynn Killion struck out swinging (3-2 KBBBKFFS).",
+            "Cat Palmer walked (3-2 SBBFFBB).",
+            "Cat Palmer advanced to second; Molly Lennon advanced to third on a passed ball.",
+            "Whitney Gigante walked (3-1 BKBBB).",
+            "Waverly Smart struck out swinging (1-2 KSBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sam Chappell doubled to center field (3-2 BFBBS).",
+            "Kelly Baker singled to first base, bunt (0-0); Sam Chappell advanced to third.",
+            "Kelly Baker stole second.",
+            "Ella DeCrescenzo walked (3-2 KFFBFBFBB).",
+            "Molly Lennon walked, RBI (3-1 BFBBB); Ella DeCrescenzo advanced to second; Kelly Baker advanced to third; Sam Chappell scored.",
+            "Alana Robinson to 3b.",
+            "Bailey Gray to p.",
+            "Violet Peverly to 1b.",
+            "Sophie Hasegawa to lf.",
+            "Katie Foley lined into double play 2b to 1b (0-2 KFFFF); Molly Lennon out on the play.",
+            "Jordynn Killion walked (3-2 BKBBKB).",
+            "Cat Palmer reached first on a fielding error by 1b (1-0 B); Jordynn Killion advanced to second; Ella DeCrescenzo advanced to third, out at home 2b to c; Kelly Baker scored, unearned."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Whitney Gigante grounded out to 3b (2-0 BB).",
+            "Waverly Smart grounded out to 1b unassisted (0-0).",
+            "Sam Chappell lined out to 1b (3-2 BKBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kelly Baker struck out swinging (1-2 BKFS).",
+            "Ella DeCrescenzo grounded out to 3b (2-1 KBB).",
+            "Molly Lennon homered to center field, RBI (3-2 BBBKK).",
+            "Katie Foley singled to pitcher, bunt (0-0).",
+            "Katie Foley stole second.",
+            "Jordynn Killion singled to center field, RBI (3-2 BBBKK); Katie Foley scored.",
+            "Cat Palmer reached first on a fielding error by ss (1-0 B); Jordynn Killion advanced to second.",
+            "Whitney Gigante struck out swinging (1-2 SKBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Waverly Smart reached first on a throwing error by 3b (1-1 KB).",
+            "Waverly Smart stole second.",
+            "Sam Chappell grounded out to ss (0-0).",
+            "Kelly Baker grounded out to 1b unassisted (0-0); Waverly Smart advanced to third.",
+            "Ella DeCrescenzo flied out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gabbie Chinnis to 3b.",
+            "Molly Lennon walked (3-1 BBBKB).",
+            "Katie Foley fouled out to lf (1-0 B).",
+            "Jordynn Killion lined out to cf (0-1 K).",
+            "Cat Palmer grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Nicole Celi struck out swinging (1-2 KBFS).",
+            "Waverly Smart fouled out to 1b (0-1 F).",
+            "Sam Chappell flied out to rf (3-2 KSBFBB)."
           ]
         }
       ],
