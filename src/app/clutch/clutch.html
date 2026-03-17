@@ -81,6 +81,7 @@
 
       <ws-clutch-player-table
         [players]="filteredPlayers()"
+        [jerseyMap]="rosterService.wellesleyAbbrevJerseyMap()"
         [situationFilter]="situationFilter()"
         [selectedPlayer]="selectedPlayerName()"
         (playerSelected)="selectPlayer($event)"

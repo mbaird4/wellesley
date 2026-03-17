@@ -17,6 +17,7 @@ type SortKey = 'delta' | 'robValue' | 'drivenIn' | 'name';
 })
 export class ClutchPlayerTable {
   readonly players = input.required<PlayerClutchSummary[]>();
+  readonly jerseyMap = input<Record<string, number>>({});
   readonly situationFilter = input('runners-on');
   readonly selectedPlayer = input<string | null>(null);
   readonly playerSelected = output<PlayerClutchSummary>();
@@ -70,8 +71,9 @@ export class ClutchPlayerTable {
 
     const situation = this.situationFilter();
 
+    const jerseys = this.jerseyMap();
+
     return withValues.map(({ player: p, rob, empty, delta, robPa, emptyPa }) => {
-      console.log(p.name, p.overallStats);
       const overallVal = m === 'avg' ? calcAvg(p.overallStats) : p.overallWoba;
       const overallPa = m === 'avg' ? p.overallStats.ab : p.overallStats.pa;
 
@@ -86,6 +88,7 @@ export class ClutchPlayerTable {
 
       return {
         player: p,
+        jersey: jerseys[p.name] ?? null,
         headline: buildHeadline(delta, robPa, emptyPa, m, situation),
         deltaLabel: buildDeltaLabel(delta, robPa, emptyPa, m),
         deltaArrow: buildDeltaArrow(delta, robPa, emptyPa, m),

@@ -15,6 +15,7 @@ export interface ContactItem {
 
 export interface DisplayCard {
   player: PlayerClutchSummary;
+  jersey: number | null;
   headline: string;
   deltaLabel: string;
   deltaArrow: string;

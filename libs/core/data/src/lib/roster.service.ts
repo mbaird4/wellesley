@@ -30,6 +30,22 @@ export class RosterService {
     return roster ? new Set(Object.keys(roster)) : new Set<string>();
   });
 
+  /** Abbreviated name → jersey number map ("F. Last" → 7). */
+  readonly wellesleyAbbrevJerseyMap = computed<Record<string, number>>(() => {
+    const roster = this._wellesleyRoster();
+
+    if (!roster) {
+      return {};
+    }
+
+    const map: Record<string, number> = {};
+    Object.entries(roster).forEach(([key, entry]) => {
+      map[this.abbreviateName(key)] = entry.jersey;
+    });
+
+    return map;
+  });
+
   /** Abbreviated names ("F. Last") derived from roster keys ("last, first") for play-by-play matching. */
   readonly wellesleyRosterAbbrevNames = computed(() => {
     const roster = this._wellesleyRoster();

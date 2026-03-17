@@ -59,8 +59,8 @@ function inningBucket(inning: string): 'early' | 'middle' | 'late' {
   templateUrl: './clutch.html',
 })
 export class Clutch {
-  private statsService = inject(SoftballStatsService);
-  private rosterService = inject(RosterService);
+  private readonly statsService = inject(SoftballStatsService);
+  protected readonly rosterService = inject(RosterService);
 
   readonly loading = signal(false);
   readonly error = signal<string | null>(null);
