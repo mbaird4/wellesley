@@ -1,7 +1,7 @@
 <div class="flex items-center gap-2">
   <span class="text-content-dim text-xs font-medium">Sort</span>
   <ws-button-toggle
-    [options]="sortOptions"
+    [options]="sortOptions()"
     [value]="sortMode()"
     mode="single"
     (valueChange)="onSortChange($event)"
@@ -49,6 +49,11 @@
       </span>
       <span class="text-content-bright flex-1 text-sm font-medium">
         {{ row.player.name }}
+        @if (row.lineupSlot !== null) {
+          <span class="text-brand-text/60 ml-1 text-[10px] tabular-nums">
+            #{{ row.lineupSlot }}
+          </span>
+        }
       </span>
       <span
         class="w-10 text-right text-xs tabular-nums"

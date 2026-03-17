@@ -5,21 +5,37 @@ import { ChangeDetectionStrategy, Component, computed, effect, input, output, si
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 
-export type CoachSortMode = 'pa' | 'woba' | 'avg' | 'number';
+export type CoachSortMode = 'lineup' | 'pa' | 'woba' | 'avg' | 'number';
 
-const SORT_OPTIONS: ToggleOption[] = [
+const BASE_SORT_OPTIONS: ToggleOption[] = [
   { value: 'pa', label: 'PA' },
   { value: 'woba', label: 'wOBA' },
   { value: 'avg', label: 'AVG' },
   { value: 'number', label: '#' },
 ];
 
-const SORT_FNS: Record<CoachSortMode, (a: PrintPlayerSummary, b: PrintPlayerSummary) => number> = {
+const LINEUP_OPTION: ToggleOption = { value: 'lineup', label: 'Lineup' };
+
+const SORT_FNS: Record<Exclude<CoachSortMode, 'lineup'>, (a: PrintPlayerSummary, b: PrintPlayerSummary) => number> = {
   pa: (a, b) => (b.pa ?? 0) - (a.pa ?? 0),
   woba: (a, b) => (b.woba ?? 0) - (a.woba ?? 0),
   avg: (a, b) => (b.avg ?? 0) - (a.avg ?? 0),
   number: (a, b) => a.jersey - b.jersey,
 };
+
+function buildLineupSortFn(order: Record<string, number>): (a: PrintPlayerSummary, b: PrintPlayerSummary) => number {
+  return (a, b) => {
+    const aSlot = order[a.name] ?? 99;
+    const bSlot = order[b.name] ?? 99;
+
+    if (aSlot !== bSlot) {
+      return aSlot - bSlot;
+    }
+
+    // Tie-break: non-lineup players sorted by PA desc
+    return (b.pa ?? 0) - (a.pa ?? 0);
+  };
+}
 
 const STAT_SORT_KEYS: Partial<Record<CoachSortMode, keyof PrintPlayerSummary>> = {
   pa: 'pa',
@@ -35,6 +51,7 @@ interface StatCell {
 
 interface DisplayRow {
   player: PrintPlayerSummary;
+  lineupSlot: number | null;
   pa: StatCell;
   woba: StatCell;
   avg: StatCell;
@@ -60,9 +77,13 @@ function fmtAvg(val: number | undefined): string {
 })
 export class SprayCoachSortPanel {
   readonly players = input.required<PrintPlayerSummary[]>();
+  readonly lineupOrder = input<Record<string, number>>({});
   readonly orderChange = output<PrintPlayerSummary[]>();
 
-  readonly sortOptions = SORT_OPTIONS;
+  readonly hasLineup = computed(() => Object.keys(this.lineupOrder()).length > 0);
+
+  readonly sortOptions = computed(() => (this.hasLineup() ? [LINEUP_OPTION, ...BASE_SORT_OPTIONS] : BASE_SORT_OPTIONS));
+
   readonly sortMode = signal<CoachSortMode | 'custom'>('pa');
   readonly customOrder = signal<PrintPlayerSummary[]>([]);
 
@@ -73,12 +94,17 @@ export class SprayCoachSortPanel {
       return this.customOrder();
     }
 
+    if (mode === 'lineup') {
+      return [...this.players()].sort(buildLineupSortFn(this.lineupOrder()));
+    }
+
     return [...this.players()].sort(SORT_FNS[mode]);
   });
 
   readonly displayRows = computed<DisplayRow[]>(() => {
     const sorted = this.sortedPlayers();
     const mode = this.sortMode();
+    const lineup = this.lineupOrder();
     const key = STAT_SORT_KEYS[mode as CoachSortMode];
     const isCustom = mode === 'custom';
     const neutralCls = isCustom ? 'text-content-dim' : 'text-content-empty';
@@ -106,6 +132,7 @@ export class SprayCoachSortPanel {
 
     return sorted.map((p) => ({
       player: p,
+      lineupSlot: lineup[p.name] ?? null,
       pa: cell(p.pa !== undefined ? String(p.pa) : '—', mode === 'pa', p.pa ?? 0),
       woba: cell(fmtAvg(p.woba), mode === 'woba', p.woba ?? 0),
       avg: cell(fmtAvg(p.avg), mode === 'avg', p.avg ?? 0),
@@ -115,6 +142,13 @@ export class SprayCoachSortPanel {
   constructor() {
     effect(() => {
       this.customOrder.set([...this.players()]);
+    });
+
+    // Default to lineup sort when lineup data is available
+    effect(() => {
+      if (this.hasLineup()) {
+        this.sortMode.set('lineup');
+      }
     });
 
     effect(() => {

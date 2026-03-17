@@ -38,14 +38,15 @@ export class RosterService {
       return new Set<string>();
     }
 
-    return new Set(
-      Object.keys(roster).map((key) => {
-        const [last, first] = key.split(', ');
-
-        return `${(first?.[0] ?? '').toUpperCase()}. ${last.charAt(0).toUpperCase()}${last.slice(1)}`;
-      })
-    );
+    return new Set(Object.keys(roster).map((key) => this.abbreviateName(key)));
   });
+
+  /** Convert "last, first" → "F. Last" display format. */
+  abbreviateName(key: string): string {
+    const [last, first] = key.split(', ');
+
+    return `${(first?.[0] ?? '').toUpperCase()}. ${last.charAt(0).toUpperCase()}${last.slice(1)}`;
+  }
 
   async loadWellesleyRoster(): Promise<void> {
     const roster = await this.dataService.fetchJson<Roster>('data/roster.json');

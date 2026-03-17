@@ -162,6 +162,7 @@ export class SprayChartViewer {
   readonly dataByYear = input.required<Map<number, SprayDataPoint[]>>();
   readonly roster = input.required<Roster>();
   readonly teamData = input<Team | null>(null);
+  readonly lineupOrder = input<Record<string, number>>({});
   readonly loading = input(false);
   readonly error = input<string | null>(null);
   readonly emptyMessage = input('No spray chart data available.');

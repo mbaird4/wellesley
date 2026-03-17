@@ -39,13 +39,14 @@ export type ViewMode = 'split' | 'combined' | 'contact' | 'scouting';
     </div>
 
     @if (showPrintModal()) {
-      <ws-print-options-modal [players]="allPlayerSummaries()" [years]="selectedYears()" (confirmed)="onPrintConfirm($event)" (dismissed)="onPrintCancel()" />
+      <ws-print-options-modal [players]="allPlayerSummaries()" [lineupOrder]="lineupOrder()" [years]="selectedYears()" (confirmed)="onPrintConfirm($event)" (dismissed)="onPrintCancel()" />
     }
   `,
 })
 export class SprayPrintOrchestrator {
   readonly teamData = input<Team | null>(null);
   readonly allPlayerSummaries = input.required<PrintPlayerSummary[]>();
+  readonly lineupOrder = input<Record<string, number>>({});
   readonly printTitle = input('');
   readonly printSubtitle = input('');
   readonly selectedYears = input<string[]>([]);
