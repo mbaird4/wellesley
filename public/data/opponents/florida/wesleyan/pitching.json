@@ -1,7 +1,7 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-17T13:08:10.366Z",
+  "scrapedAt": "2026-03-17T19:00:38.136Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,30 +35,30 @@
     {
       "name": "Lees, Jacelyn",
       "w": 2,
-      "l": 2,
-      "era": 3.6,
-      "app": 5,
-      "gs": 4,
-      "cg": 1,
+      "l": 3,
+      "era": 3.82,
+      "app": 6,
+      "gs": 5,
+      "cg": 2,
       "sho": 1,
       "sv": 0,
-      "ip": 23.1,
-      "h": 28,
-      "r": 12,
-      "er": 12,
+      "ip": 29.1,
+      "h": 39,
+      "r": 17,
+      "er": 16,
       "bb": 6,
-      "so": 11,
+      "so": 12,
       "hr": 0,
-      "whip": 1.46,
-      "doubles": 6,
-      "triples": 1,
-      "ab": 94,
-      "bAvg": 0.298,
+      "whip": 1.53,
+      "doubles": 9,
+      "triples": 2,
+      "ab": 122,
+      "bAvg": 0.32,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "DeCrescenzo, Ella",
@@ -905,6 +905,81 @@
             "Anna Gray pinch ran for Riley Veenstra.",
             "Gabbie Chinnis singled to center field (0-2 KK); Anna Gray advanced to second.",
             "Bailey Gray reached on a fielder's choice to shortstop (1-0 B); Gabbie Chinnis advanced to second; Anna Gray out at third ss to 3b."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/no-14-wisconsin-whitewater/boxscore/27449",
+      "date": "3/17/2026",
+      "opponent": "No 14 Wisconsin Whitewater",
+      "pitchers": [
+        "Lees, Jacelyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Eggert grounded out to 2b (0-0).",
+            "Maggie Ward singled, bunt (0-0).",
+            "Grace Grabowy popped up to ss (0-0).",
+            "Dani Peshia flied out to rf (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Giese flied out to lf (1-0 B).",
+            "Auburn Roberson singled to left field (2-1 KBB).",
+            "Liv Ybarra singled to right center (1-1 FB); Auburn Roberson advanced to second.",
+            "Jj Jakosalem flied out to rf (1-2 BFK).",
+            "Kaitlyn Weidemann grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bella Eggert grounded out to 2b (0-0).",
+            "Maggie Ward popped up to 2b (1-0 B).",
+            "Grace Grabowy singled to right field (1-2 BFK).",
+            "Dani Peshia flied out to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Giese grounded out to ss (0-0).",
+            "Auburn Roberson doubled down the lf line (1-0 B).",
+            "Ellery Stoltz pinch ran for Auburn Roberson.",
+            "Liv Ybarra struck out swinging (1-2 BSFS).",
+            "Jj Jakosalem grounded out to 2b (2-2 BKKBFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kaitlyn Weidemann grounded out to 2b (2-2 FKBB).",
+            "Bella Eggert singled to third base, bunt (1-0 B).",
+            "Maggie Ward flied out to rf (1-1 BF).",
+            "Grace Grabowy singled to shortstop (1-1 SB); Bella Eggert advanced to second.",
+            "Dani Peshia doubled to right center, advanced to third on an error by 3b, 2 RBI (1-0 B); Grace Grabowy scored; Bella Eggert scored.",
+            "Emma Giese singled to third base, RBI (1-2 FKB); Dani Peshia scored, unearned.",
+            "Auburn Roberson grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kelly Baker to 3b.",
+            "Liv Ybarra doubled to left center (0-0).",
+            "Erin Grimsley pinch hit for Jj Jakosalem.",
+            "Erin Grimsley out at first 3b to 2b, bunt, SAC (0-1 F); Liv Ybarra advanced to third.",
+            "Kaitlyn Weidemann tripled to right field, RBI (0-0); Liv Ybarra scored.",
+            "Taylor Koehler pinch hit for Bella Eggert.",
+            "Taylor Koehler grounded out to 2b, RBI (3-2 KBKBBF); Kaitlyn Weidemann scored.",
+            "Baley Berndt pinch hit for Maggie Ward.",
+            "Baley Berndt flied out to cf (0-0)."
           ]
         }
       ],

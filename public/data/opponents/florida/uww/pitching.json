@@ -1,31 +1,31 @@
 {
   "slug": "uww",
   "domain": "uwwsports.com",
-  "scrapedAt": "2026-03-17T13:08:28.361Z",
+  "scrapedAt": "2026-03-17T19:00:57.572Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Hammen, Josie",
       "w": 3,
       "l": 1,
-      "era": 0.74,
-      "app": 4,
+      "era": 0.67,
+      "app": 5,
       "gs": 4,
       "cg": 3,
       "sho": 1,
-      "sv": 0,
-      "ip": 19,
-      "h": 13,
-      "r": 2,
+      "sv": 1,
+      "ip": 21,
+      "h": 15,
+      "r": 4,
       "er": 2,
-      "bb": 5,
-      "so": 17,
+      "bb": 6,
+      "so": 19,
       "hr": 0,
-      "whip": 0.95,
+      "whip": 1,
       "doubles": 4,
-      "triples": 0,
-      "ab": 67,
-      "bAvg": 0.194,
+      "triples": 1,
+      "ab": 76,
+      "bAvg": 0.197,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
@@ -34,82 +34,82 @@
     },
     {
       "name": "DeBennette, Madi",
-      "w": 1,
+      "w": 2,
       "l": 1,
-      "era": 1.91,
-      "app": 2,
+      "era": 1.7,
+      "app": 3,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 7.1,
-      "h": 14,
-      "r": 3,
-      "er": 2,
-      "bb": 2,
-      "so": 6,
+      "ip": 12.1,
+      "h": 21,
+      "r": 5,
+      "er": 3,
+      "bb": 3,
+      "so": 12,
       "hr": 0,
-      "whip": 2.18,
-      "doubles": 3,
+      "whip": 1.95,
+      "doubles": 4,
       "triples": 1,
-      "ab": 34,
-      "bAvg": 0.412,
+      "ab": 55,
+      "bAvg": 0.382,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Hock, Brooke",
-      "w": 0,
+      "w": 1,
       "l": 0,
-      "era": 2.62,
-      "app": 3,
-      "gs": 1,
+      "era": 1.79,
+      "app": 4,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 10.2,
-      "h": 14,
-      "r": 6,
+      "ip": 15.2,
+      "h": 15,
+      "r": 7,
       "er": 4,
-      "bb": 3,
-      "so": 8,
+      "bb": 5,
+      "so": 12,
       "hr": 1,
-      "whip": 1.59,
+      "whip": 1.28,
       "doubles": 2,
       "triples": 0,
-      "ab": 45,
-      "bAvg": 0.311,
+      "ab": 61,
+      "bAvg": 0.246,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Marsh, Kaitlyn",
       "w": 0,
       "l": 0,
       "era": 0,
-      "app": 2,
-      "gs": 0,
+      "app": 3,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2,
-      "h": 1,
+      "ip": 4,
+      "h": 4,
       "r": 0,
       "er": 0,
-      "bb": 1,
-      "so": 1,
+      "bb": 2,
+      "so": 3,
       "hr": 0,
-      "whip": 1,
+      "whip": 1.5,
       "doubles": 1,
       "triples": 0,
-      "ab": 7,
-      "bAvg": 0.143,
+      "ab": 15,
+      "bAvg": 0.267,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -671,6 +671,182 @@
             "Cali Brouillard flied out to cf (1-0 B).",
             "Emma Lapoint struck out swinging (0-2 KFS).",
             "Morgan Keefe flied out to lf (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/wesleyan-university/boxscore/23103",
+      "date": "3/17/2026",
+      "opponent": "Wesleyan University",
+      "pitchers": [
+        "Hock, Brooke",
+        "Hammen, Josie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Molly Lennon reached first on an error by 3b (0-2 KF).",
+            "Sam Chappell out at first 3b to 2b, bunt, SAC (1-0 B); Molly Lennon advanced to second.",
+            "Jordynn Killion struck out looking (2-2 KBFBK).",
+            "Cat Palmer lined out to p (2-2 SBBFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jacelyn Lees flied out to lf (2-0 BB).",
+            "Waverly Smart flied out to rf (1-0 B).",
+            "Whitney Gigante walked (3-2 BSKFBBFB).",
+            "Nicole Celi struck out looking (1-2 SFBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella DeCrescenzo flied out to 2b (2-2 SBFFB).",
+            "Molly Lennon flied out to cf (1-2 KBF).",
+            "Sam Chappell struck out swinging (1-2 KKBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jordynn Killion popped up to ss (3-2 KFBFBFB).",
+            "Cat Palmer struck out looking (1-2 FKBK).",
+            "Jacelyn Lees flied out to lf (2-1 SBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Auburn Roberson to rf for Ellery Stoltz.",
+            "Waverly Smart reached first on a muffed throw by 1b (2-0 BB).",
+            "Whitney Gigante walked (3-2 KFBBBB); Waverly Smart advanced to second.",
+            "Katie Foley pinch ran for Whitney Gigante.",
+            "Naomi Tesoriere pinch hit for Nicole Celi.",
+            "Naomi Tesoriere singled to left center, RBI (1-2 KKB); Katie Foley advanced to second; Waverly Smart scored, unearned.",
+            "Nicole Celi to rf for Naomi Tesoriere.",
+            "Ella DeCrescenzo popped into double play c to 2b, bunt (0-0); Nicole Celi out on the play.",
+            "Molly Lennon grounded out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Rachel Radish to 1b for Dani Peshia.",
+            "Josie Hammen to p for Brooke Hock.",
+            "Sam Chappell walked (3-1 FBBBB).",
+            "Jordynn Killion reached on a fielder's choice (0-1 K); Sam Chappell out at second ss to 2b.",
+            "Kelly Baker pinch ran for Jordynn Killion.",
+            "Cat Palmer grounded out to p (0-2 KFFF); Kelly Baker advanced to second.",
+            "Jacelyn Lees popped up to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bella Eggert to cf for Taylor Koehler.",
+            "Natalie Muellner to lf for Baley Berndt.",
+            "Jj Jakosalem to c for Erin Grimsley.",
+            "Waverly Smart reached first on an error by ss (1-0 B).",
+            "Cameron Maloney pinch hit for Katie Foley.",
+            "Cameron Maloney struck out swinging (0-2 SSS).",
+            "Leila Campbell pinch hit for Nicole Celi.",
+            "Leila Campbell struck out swinging (3-2 BBKFFBFS).",
+            "Ella DeCrescenzo singled to second base (2-0 BB); Waverly Smart advanced to second.",
+            "Molly Lennon tripled to right center, 2 RBI (0-0); Ella DeCrescenzo scored, unearned; Waverly Smart scored, unearned.",
+            "Sam Chappell flied out to cf (3-2 BKKBFB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/wellesley-college/boxscore/23104",
+      "date": "3/17/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Marsh, Kaitlyn",
+        "DeBennette, Madi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to lf (0-0).",
+            "J. Polski popped up to ss (0-0).",
+            "B. Awad grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan walked (3-1 BBKBB).",
+            "B. Mellady singled to right field (0-2 FK); J. Colgan advanced to second.",
+            "D. Borrison singled up the middle (0-1 F); B. Mellady advanced to second; J. Colgan advanced to third, out at home cf to c.",
+            "E. Kulhanek singled to right field (0-1 K); D. Borrison advanced to second; B. Mellady advanced to third.",
+            "N. Nicol struck out looking (1-2 FFBK).",
+            "A. Delgado struck out looking (1-2 FKBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Madi DeBennette to p for Kaitlyn Marsh.",
+            "A. Mulhern singled to left field (0-0).",
+            "J. Polski out at first 3b to 2b, SAC, bunt (0-1 F); A. Mulhern advanced to third on the throw.",
+            "B. Awad singled to right field, RBI (3-2 BFBBKF); A. Mulhern scored.",
+            "J. Colgan grounded out to p (2-2 BBFS); B. Awad advanced to second.",
+            "B. Mellady grounded out to ss (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Borrison reached first on an error by rf, advanced to second (1-2 FSB).",
+            "S. Fredericks pinch ran for D. Borrison.",
+            "E. Kulhanek struck out swinging (3-2 SFBBBS).",
+            "N. Nicol singled, bunt, advanced to second (0-0); S. Fredericks advanced to third.",
+            "A. Delgado singled to center field, RBI, advanced to second (2-1 BBK); N. Nicol advanced to third, out at home cf to c to 2b to c; S. Fredericks scored, unearned.",
+            "A. Mulhern singled to third base (1-0 B); A. Delgado advanced to third.",
+            "C. Lundin pinch hit for J. Polski.",
+            "C. Lundin struck out swinging (2-2 BSFBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Awad struck out looking (0-2 FFK).",
+            "J. Colgan doubled to right center (1-2 SBFF).",
+            "E. Gaunce pinch ran for J. Colgan.",
+            "B. Mellady struck out looking (2-2 KKFFBFBFK).",
+            "D. Borrison struck out swinging (1-2 KFBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Baley Berndt to 1b for Belle Lapacek.",
+            "Rachel Radish to 1b for Baley Berndt.",
+            "J. Colgan to p for E. Gaunce.",
+            "L. Seyller to dp for J. Colgan.",
+            "E. Kulhanek walked (3-2 BFBBSB).",
+            "N. Nicol singled, bunt (1-1 BK); E. Kulhanek advanced to second.",
+            "A. Delgado reached on a fielder's choice to shortstop (0-0); N. Nicol advanced to second; E. Kulhanek out at third ss to 3b.",
+            "A. Mulhern flied out to cf (1-0 B).",
+            "J. Polski struck out swinging (1-2 FFBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Auburn Roberson to rf for Sierra Miller.",
+            "B. Awad flied out to rf (0-1 K).",
+            "J. Colgan grounded out to ss (2-2 BSBF).",
+            "B. Mellady grounded out to 1b unassisted (0-0)."
           ]
         }
       ],
