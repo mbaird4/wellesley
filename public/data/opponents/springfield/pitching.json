@@ -1,32 +1,32 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-18T01:53:09.869Z",
+  "scrapedAt": "2026-03-18T21:41:02.535Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 2,
+      "w": 3,
       "l": 2,
-      "era": 3.18,
-      "app": 4,
+      "era": 3.5,
+      "app": 5,
       "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 22,
-      "h": 27,
-      "r": 12,
-      "er": 10,
-      "bb": 6,
-      "so": 15,
-      "hr": 0,
-      "whip": 1.5,
+      "ip": 30,
+      "h": 37,
+      "r": 18,
+      "er": 15,
+      "bb": 7,
+      "so": 18,
+      "hr": 2,
+      "whip": 1.47,
       "doubles": 6,
       "triples": 1,
-      "ab": 89,
-      "bAvg": 0.303,
-      "wp": 0,
+      "ab": 121,
+      "bAvg": 0.306,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
@@ -35,27 +35,27 @@
     {
       "name": "Rimshnick, Julia",
       "w": 1,
-      "l": 0,
-      "era": 5.6,
-      "app": 5,
-      "gs": 4,
-      "cg": 1,
+      "l": 1,
+      "era": 7,
+      "app": 7,
+      "gs": 6,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 10,
-      "h": 14,
-      "r": 8,
-      "er": 8,
-      "bb": 2,
-      "so": 5,
+      "ip": 14,
+      "h": 27,
+      "r": 21,
+      "er": 14,
+      "bb": 3,
+      "so": 8,
       "hr": 0,
-      "whip": 1.6,
-      "doubles": 2,
-      "triples": 1,
-      "ab": 44,
-      "bAvg": 0.318,
-      "wp": 0,
-      "hbp": 0,
+      "whip": 2.14,
+      "doubles": 4,
+      "triples": 4,
+      "ab": 71,
+      "bAvg": 0.38,
+      "wp": 1,
+      "hbp": 1,
       "bk": 0,
       "sfa": 1,
       "sha": 0
@@ -462,6 +462,178 @@
             "Stephanie Ciravolo pinch hit for Molly Cocco.",
             "Stephanie Ciravolo flied out to lf (1-0 B).",
             "Lilah Guthy flied out to lf (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/geneseo/boxscore/14823",
+      "date": "3/18/2026",
+      "opponent": "Geneseo",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa to p.",
+            "Julia Rimshnick to dp.",
+            "Brooke Fraas homered, inside the park, RBI (1-1 KB).",
+            "Emily Sylvanus struck out swinging (1-2 KFFBS).",
+            "Ray Schumacher flied out to rf (1-1 BK).",
+            "Molly Griffin popped up to 2b (2-2 FKFBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Babich homered to left field, RBI (3-2 BSFFBBFFF).",
+            "Sierra VanDerwarker flied out to rf (0-2 KK).",
+            "Bella Nadzan singled down the 1b line (1-0 B).",
+            "Olivia Coons struck out swinging (2-2 BKFBS).",
+            "Gabriella Smith fouled out to 1b (2-2 BSFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Brooke Fraas singled to right field (0-0).",
+            "Brooke Fraas stole second.",
+            "Emily Sylvanus grounded out to p (1-1 FB); Brooke Fraas advanced to third.",
+            "Brooke Fraas scored on a wild pitch.",
+            "Ray Schumacher singled (2-0 BB).",
+            "Ray Schumacher stole second.",
+            "Molly Griffin singled to left field, RBI (2-2 FSBFB); Ray Schumacher scored.",
+            "Lauren Babich reached on a fielder's choice (2-2 BFBS); Molly Griffin out at second 2b to ss.",
+            "Sierra VanDerwarker fouled out to 1b (0-2 FFFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Bella Nadzan popped up to 2b (1-1 BK).",
+            "Olivia Coons walked (3-2 BBSBKFB).",
+            "Gabriella Smith grounded into double play 2b to ss to 1b (2-2 KBBS); Olivia Coons out on the play, interference."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brooke Fraas flied out to lf (1-1 FB).",
+            "Emily Sylvanus grounded out to 2b (1-2 KBF).",
+            "Ray Schumacher singled up the middle (1-0 B).",
+            "Molly Griffin singled through the left side (0-1 F); Ray Schumacher advanced to second.",
+            "Lauren Babich singled to center field, RBI (0-2 FF); Molly Griffin advanced to second; Ray Schumacher scored.",
+            "Amanda Audia pinch hit for Sierra VanDerwarker.",
+            "Amanda Audia fouled out to 1b (3-2 BSBSB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Carissa Pecchia to c for Maddie Tse.",
+            "Bella Nadzan grounded out to 3b (1-2 FBS).",
+            "Gabriella Petroski pinch hit for Olivia Coons.",
+            "Gabriella Petroski grounded out to p (1-1 FB).",
+            "Gabriella Smith singled up the middle (0-2 KK).",
+            "Gabriella Smith out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brooke Fraas grounded out to 2b (2-1 BBF).",
+            "Emily Sylvanus struck out swinging, out at first c to 1b (1-2 KKBS).",
+            "Ray Schumacher grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Emilia Santiago to 3b for Tessa Spingola.",
+            "Molly Griffin Ray Schumacher placed on second (0-0).",
+            "Claire Kubiak pinch ran for Emily Sylvanus.",
+            "Molly Griffin reached first on a throwing error by 3b, advanced to second on the error (0-0); Ray Schumacher advanced to third, scored on the error, unearned.",
+            "Caelyn Koch pinch ran for Molly Griffin.",
+            "Lauren Babich lined out to 2b (0-0).",
+            "Amanda Audia grounded out to 3b (1-1 BF).",
+            "Caelyn Koch out at third c to 3b, caught stealing."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/-12-simpson/boxscore/14824",
+      "date": "3/18/2026",
+      "opponent": " 12 Simpson",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashlyn Steen reached first on an error by 1b (0-2 SF).",
+            "Ashlyn Steen stole second.",
+            "Megan Heidelbauer walked (3-2 BBFFBF).",
+            "Mackenzie James lined out to ss (1-2 FBF).",
+            "Katie Shaner doubled down the lf line, 2 RBI (1-2 KSB); Megan Heidelbauer scored; Ashlyn Steen scored, unearned.",
+            "Addison Gookin lined out to p (0-1 K).",
+            "Brielyn Ginnaty hit by pitch (2-0 BH).",
+            "Gracie Bruening struck out looking (3-2 FBFBBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Caelynn Obleton tripled to center field (0-0).",
+            "Brynn Ortlund singled to pitcher, advanced to third (2-2 BKSFBF); Caelynn Obleton scored.",
+            "Ashlyn Steen tripled down the rf line, RBI (0-0); Brynn Ortlund scored.",
+            "Megan Heidelbauer reached first on an error by 3b (0-0).",
+            "Megan Heidelbauer stole second; Ashlyn Steen scored on an error by 2b, unearned.",
+            "Mackenzie James doubled down the lf line, RBI (1-0 B); Megan Heidelbauer scored, unearned.",
+            "Katie Shaner singled to center field, advanced to second (2-1 BBF); Mackenzie James advanced to third.",
+            "Addison Gookin struck out swinging (1-2 BKK).",
+            "Brielyn Ginnaty grounded out to 3b (2-2 FBFB).",
+            "Gracie Bruening singled to left field, 2 RBI (1-2 FFBF); Katie Shaner scored, unearned; Mackenzie James scored, unearned.",
+            "Amanda Bauer pinch hit for Gracie Bruening.",
+            "Caelynn Obleton tripled down the rf line, RBI (1-1 KB); Amanda Bauer scored, unearned.",
+            "Brynn Ortlund singled to center field, RBI (0-2 KF); Caelynn Obleton scored, unearned.",
+            "Ashlyn Steen lined out to ss (1-2 FSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Megan Heidelbauer singled to left field (1-2 KSB).",
+            "Mackenzie James singled through the left side (1-2 BFK); Megan Heidelbauer advanced to second.",
+            "Katie Shaner singled to third base (0-2 KFF); Mackenzie James advanced to second; Megan Heidelbauer advanced to third.",
+            "Addison Gookin struck out swinging (3-2 BSBSBFF).",
+            "Brielyn Ginnaty popped up to ss (1-0 B).",
+            "Katie Shaner advanced to second on a wild pitch; Mackenzie James advanced to third on a wild pitch; Megan Heidelbauer scored on a wild pitch.",
+            "Gracie Bruening singled to left field, advanced to third, 2 RBI (3-2 BBKBF); Katie Shaner scored; Mackenzie James Mackenzie James.",
+            "Caelynn Obleton grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddison Pospeshil pinch hit for Brynn Ortlund.",
+            "Maddison Pospeshil popped up to 2b (0-2 KFF).",
+            "Ashlyn Steen flied out to lf (1-1 BK).",
+            "Lauren Ellwanger pinch hit for Megan Heidelbauer.",
+            "Lauren Ellwanger grounded out to ss (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Christina Vlahakis to lf.",
+            "Addy Bohlander to cf."
           ]
         }
       ],

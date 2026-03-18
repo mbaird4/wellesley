@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-18T01:53:42.376Z",
+  "scrapedAt": "2026-03-18T21:41:28.664Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,26 +35,26 @@
     {
       "name": "Topel, Anna",
       "w": 2,
-      "l": 1,
-      "era": 2.63,
-      "app": 3,
-      "gs": 3,
+      "l": 2,
+      "era": 3.57,
+      "app": 4,
+      "gs": 4,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 16,
-      "h": 17,
-      "r": 7,
-      "er": 6,
-      "bb": 12,
-      "so": 11,
+      "ip": 17.2,
+      "h": 21,
+      "r": 12,
+      "er": 9,
+      "bb": 18,
+      "so": 13,
       "hr": 1,
-      "whip": 1.81,
+      "whip": 2.21,
       "doubles": 2,
       "triples": 0,
-      "ab": 62,
-      "bAvg": 0.274,
-      "wp": 0,
+      "ab": 72,
+      "bAvg": 0.292,
+      "wp": 1,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
@@ -64,26 +64,26 @@
       "name": "Sealey, Lexi",
       "w": 0,
       "l": 0,
-      "era": 7.41,
-      "app": 3,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
+      "era": 3.94,
+      "app": 4,
+      "gs": 1,
+      "cg": 1,
+      "sho": 1,
       "sv": 1,
-      "ip": 5.2,
-      "h": 7,
+      "ip": 10.2,
+      "h": 10,
       "r": 6,
       "er": 6,
-      "bb": 3,
-      "so": 2,
+      "bb": 4,
+      "so": 3,
       "hr": 0,
-      "whip": 1.76,
+      "whip": 1.31,
       "doubles": 0,
       "triples": 0,
-      "ab": 23,
-      "bAvg": 0.304,
-      "wp": 0,
-      "hbp": 2,
+      "ab": 40,
+      "bAvg": 0.25,
+      "wp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -92,24 +92,24 @@
       "name": "Vlacich, Katie",
       "w": 0,
       "l": 2,
-      "era": 11.2,
-      "app": 3,
+      "era": 12.25,
+      "app": 4,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 5,
-      "h": 11,
-      "r": 10,
-      "er": 8,
-      "bb": 6,
-      "so": 6,
-      "hr": 0,
-      "whip": 3.4,
-      "doubles": 2,
+      "ip": 8,
+      "h": 17,
+      "r": 16,
+      "er": 14,
+      "bb": 8,
+      "so": 8,
+      "hr": 1,
+      "whip": 3.13,
+      "doubles": 3,
       "triples": 0,
-      "ab": 27,
-      "bAvg": 0.407,
+      "ab": 42,
+      "bAvg": 0.405,
       "wp": 5,
       "hbp": 0,
       "bk": 0,
@@ -619,6 +619,148 @@
             "Giana Johanson hit by pitch (2-0 BH).",
             "Paige Souza reached on a fielder's choice, out at second 2b to ss (0-0); Giana Johanson out at second p to ss.",
             "Abby Richardson fouled out to 1b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/ramapo/boxscore/16083",
+      "date": "3/18/2026",
+      "opponent": "Ramapo",
+      "pitchers": [
+        "Topel, Anna",
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Clay'le Correa - Vanness singled up the middle (0-1 K).",
+            "Clay'le Correa - Vanness stole second.",
+            "Avery Kontura singled through the left side, advanced to second on the throw (2-1 BSB); Clay'le Correa - Vanness advanced to third.",
+            "Kori Gargiulo reached first on a fielding error by 3b (0-0); Avery Kontura advanced to third; Clay'le Correa - Vanness scored, unearned.",
+            "Kori Gargiulo stole second.",
+            "Hannah Hensler walked (3-1 BBBKB).",
+            "Aimee Notaro walked, RBI (3-2 BBBKFB); Hannah Hensler advanced to second; Kori Gargiulo advanced to third; Avery Kontura scored.",
+            "Paley Sullivan popped up to ss (2-2 SBFFB).",
+            "Alex Hastings walked, RBI (3-2 KBBBKFFB); Aimee Notaro advanced to second; Hannah Hensler advanced to third; Kori Gargiulo scored, unearned.",
+            "Emily Ehrmann struck out swinging (1-2 BKFFS).",
+            "Lia Milsom singled through the left side, RBI (3-2 BFBKFB); Alex Hastings advanced to second; Aimee Notaro advanced to third; Hannah Hensler scored.",
+            "Clay'le Correa - Vanness flied out to rf (1-2 KSB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Kontura flied out to lf (1-0 B).",
+            "Kori Gargiulo singled to left field (0-0).",
+            "Hannah Hensler walked (3-0 BBBB); Kori Gargiulo advanced to second.",
+            "Aimee Notaro struck out swinging (0-2 KFS).",
+            "Hannah Hensler advanced to second; Kori Gargiulo advanced to third on a wild pitch.",
+            "Paley Sullivan walked (3-2 FBFBFBFB).",
+            "Alex Hastings walked, RBI (3-1 BFBBB); Paley Sullivan advanced to second; Hannah Hensler advanced to third; Kori Gargiulo scored.",
+            "Katie Vlacich to p for Anna Topel.",
+            "Emily Ehrmann popped up to ss (3-2 FBBKB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lia Milsom struck out swinging (3-2 FBBBKFS).",
+            "Clay'le Correa - Vanness singled down the lf line (1-1 BK).",
+            "Clay'le Correa - Vanness out at first 1b unassisted, runner left early.",
+            "Avery Kontura walked (3-2 SBSBBB).",
+            "Kori Gargiulo homered to left field, 2 RBI (2-2 SKFFBFFB); Avery Kontura scored.",
+            "Hannah Hensler singled to right field (3-2 BBBKF).",
+            "Aimee Notaro struck out swinging (2-2 BKKBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Paley Sullivan popped up to 1b (2-1 BBF).",
+            "Alex Hastings grounded out to 2b (2-2 KBBF).",
+            "Emily Ehrmann fouled out to 3b (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lia Milsom walked (3-0 BBBB).",
+            "Lia Milsom stole second.",
+            "Clay'le Correa - Vanness reached on a fielder's choice to shortstop (0-2 KK).",
+            "Clay'le Correa - Vanness stole second; Lia Milsom stole third.",
+            "Avery Kontura singled to left field, advanced to second on the throw, 2 RBI (1-0 B); Clay'le Correa - Vanness scored; Lia Milsom scored.",
+            "Kori Gargiulo doubled to left field, RBI (0-0); Avery Kontura scored.",
+            "Hannah Hensler grounded out to 3b (1-1 BK).",
+            "Aimee Notaro lined out to ss (3-2 BKSBB).",
+            "Paley Sullivan singled up the middle, RBI (0-0); Kori Gargiulo scored."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/university-of-new-england/boxscore/16084",
+      "date": "3/18/2026",
+      "opponent": "University Of New England",
+      "pitchers": [
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hannah Irons grounded out to ss (0-0).",
+            "Emma Michaud grounded out to p (0-0).",
+            "Zofia Twarog hit by pitch (0-0).",
+            "Zofia Twarog advanced to second on a wild pitch.",
+            "Delaney Whitten grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Tess Bolduc grounded out to 2b (0-0).",
+            "Adrianna Carsetti singled to shortstop (0-0).",
+            "Fiona Casey lined into double play p to 1b (0-0); Adrianna Carsetti out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sam Kowalick grounded out to 2b (0-0).",
+            "Hannah Lappin grounded out to 3b (0-0).",
+            "Hannah Irons grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Belle Dicampello to c for Bella Marchetti.",
+            "Maddy DeLong to ss for Nicole Petrillo.",
+            "Emma Michaud singled to right field (0-0).",
+            "Zofia Twarog grounded into double play 2b to ss to 1b (0-0); Emma Michaud out on the play.",
+            "Delaney Whitten singled down the lf line (0-0).",
+            "Tess Bolduc lined out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexa Young to c.",
+            "Sophia Pak to cf for Mia Hansen.",
+            "Charlotte Raymond to dp for Izzy Burgess.",
+            "Devin McCall to 3b for Mia Vittozzi.",
+            "Izzy Burgess to rf for Charlotte Raymond.",
+            "Adrianna Carsetti reached first on a fielding error by ss (0-0).",
+            "Fiona Casey reached on a fielder's choice (0-0); Adrianna Carsetti out at second 2b to ss.",
+            "Sam Kowalick struck out swinging (0-0).",
+            "Fiona Casey advanced to second on a passed ball.",
+            "Hannah Lappin walked (0-0).",
+            "Hannah Lappin advanced to second; Fiona Casey advanced to third on a wild pitch.",
+            "Hannah Irons flied out to cf (0-0)."
           ]
         }
       ],
