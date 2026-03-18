@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, effect, input, output, signal } from '@angular/core';
 import type { BattingMetric, PlayerClutchSummary } from '@ws/core/models';
-import { MetricToggle } from '@ws/core/ui';
+import { ExpandablePanel, MetricToggle } from '@ws/core/ui';
 
 import type { DisplayCard } from './clutch-card.utils';
 import { buildContactBreakdown, buildDeltaArrow, buildDeltaLabel, buildDeltaPillClass, buildHeadline, buildRunnerLine, calcAvg, confidenceWeightedDelta, formatValue, getSituationValue, getValues, SITUATION_LABELS, valueColor } from './clutch-card.utils';
@@ -10,7 +10,10 @@ type SortKey = 'delta' | 'robValue' | 'drivenIn' | 'name';
 @Component({
   selector: 'ws-clutch-player-table',
   standalone: true,
-  imports: [MetricToggle],
+  imports: [
+    ExpandablePanel,
+    MetricToggle,
+  ],
   host: { class: 'flex flex-col gap-3' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-player-table.html',

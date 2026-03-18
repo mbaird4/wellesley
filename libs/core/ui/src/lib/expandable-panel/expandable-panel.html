@@ -1,0 +1,8 @@
+<div
+  class="grid transition-[grid-template-rows] duration-300 ease-out"
+  [class]="open() ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'"
+>
+  <div class="overflow-hidden">
+    <ng-content />
+  </div>
+</div>

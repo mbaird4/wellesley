@@ -30,7 +30,7 @@
   </div>
 </div>
 
-@if (showInfo()) {
+<ws-expandable-panel [open]="showInfo()">
   <div
     class="bg-surface-card border-line flex flex-col gap-2.5 rounded-xl border px-4 py-3 text-sm"
   >
@@ -71,9 +71,14 @@
         weights the delta by sample size — small PA counts are pulled toward
         zero.
       </li>
+      <li>
+        The PA count reflects the number of PAs that match the filter criteria
+        (season, outs, innings, and situation). It does NOT include PAs where no
+        runners were on base.
+      </li>
     </ul>
   </div>
-}
+</ws-expandable-panel>
 
 <div class="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
   @for (card of cards(); track card.player.name) {

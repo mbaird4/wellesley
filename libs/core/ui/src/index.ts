@@ -1,6 +1,7 @@
 export * from './lib/base-runner-table/base-runner-table';
 export * from './lib/button-toggle/button-toggle';
 export * from './lib/diamond/diamond';
+export * from './lib/expandable-panel/expandable-panel';
 export * from './lib/game-viewer/game-viewer';
 export * from './lib/metric-toggle/metric-toggle';
 export * from './lib/pipes';
