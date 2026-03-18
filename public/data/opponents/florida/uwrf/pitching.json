@@ -1,87 +1,59 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-18T13:07:52.474Z",
+  "scrapedAt": "2026-03-18T18:58:18.151Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Dusterhoft, Alexa",
       "w": 1,
       "l": 1,
-      "era": 3.77,
-      "app": 4,
+      "era": 3.65,
+      "app": 5,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 13,
-      "h": 23,
-      "r": 11,
-      "er": 7,
-      "bb": 1,
-      "so": 10,
+      "ip": 15.1,
+      "h": 26,
+      "r": 12,
+      "er": 8,
+      "bb": 4,
+      "so": 11,
       "hr": 2,
-      "whip": 1.85,
+      "whip": 1.96,
       "doubles": 7,
       "triples": 1,
-      "ab": 63,
-      "bAvg": 0.365,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Knutson, Lucy",
-      "w": 1,
-      "l": 1,
-      "era": 3.82,
-      "app": 6,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 11,
-      "h": 14,
-      "r": 12,
-      "er": 6,
-      "bb": 6,
-      "so": 11,
-      "hr": 0,
-      "whip": 1.82,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 47,
-      "bAvg": 0.298,
-      "wp": 0,
+      "ab": 72,
+      "bAvg": 0.361,
+      "wp": 1,
       "hbp": 1,
       "bk": 0,
-      "sfa": 1,
-      "sha": 1
+      "sfa": 0,
+      "sha": 3
     },
     {
       "name": "VanGruensven, Brooklyn",
       "w": 1,
       "l": 2,
-      "era": 6.76,
-      "app": 7,
+      "era": 6.14,
+      "app": 8,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 19.2,
-      "h": 21,
+      "ip": 21.2,
+      "h": 23,
       "r": 19,
       "er": 19,
-      "bb": 24,
-      "so": 17,
+      "bb": 26,
+      "so": 18,
       "hr": 0,
-      "whip": 2.29,
+      "whip": 2.26,
       "doubles": 4,
       "triples": 2,
-      "ab": 76,
-      "bAvg": 0.276,
+      "ab": 84,
+      "bAvg": 0.274,
       "wp": 2,
       "hbp": 1,
       "bk": 0,
@@ -90,26 +62,26 @@
     },
     {
       "name": "Kincaid, Hailey",
-      "w": 0,
+      "w": 1,
       "l": 1,
-      "era": 7.33,
-      "app": 6,
-      "gs": 3,
+      "era": 6.2,
+      "app": 7,
+      "gs": 4,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 14.1,
-      "h": 22,
-      "r": 17,
-      "er": 15,
-      "bb": 7,
-      "so": 13,
+      "ip": 20.1,
+      "h": 29,
+      "r": 20,
+      "er": 18,
+      "bb": 11,
+      "so": 16,
       "hr": 2,
-      "whip": 2.02,
+      "whip": 1.97,
       "doubles": 6,
       "triples": 3,
-      "ab": 66,
-      "bAvg": 0.333,
+      "ab": 92,
+      "bAvg": 0.315,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -117,28 +89,56 @@
       "sha": 1
     },
     {
-      "name": "Metzler, Randi",
-      "w": 0,
-      "l": 3,
-      "era": 9.75,
-      "app": 6,
+      "name": "Knutson, Lucy",
+      "w": 1,
+      "l": 1,
+      "era": 3.5,
+      "app": 7,
       "gs": 0,
       "cg": 0,
       "sho": 0,
-      "sv": 0,
-      "ip": 9.1,
-      "h": 10,
-      "r": 14,
-      "er": 13,
-      "bb": 12,
-      "so": 8,
-      "hr": 1,
-      "whip": 2.36,
+      "sv": 1,
+      "ip": 12,
+      "h": 15,
+      "r": 12,
+      "er": 6,
+      "bb": 6,
+      "so": 13,
+      "hr": 0,
+      "whip": 1.75,
       "doubles": 3,
       "triples": 0,
-      "ab": 37,
-      "bAvg": 0.27,
-      "wp": 2,
+      "ab": 51,
+      "bAvg": 0.294,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 1
+    },
+    {
+      "name": "Metzler, Randi",
+      "w": 0,
+      "l": 4,
+      "era": 9.33,
+      "app": 7,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 12,
+      "h": 17,
+      "r": 18,
+      "er": 16,
+      "bb": 16,
+      "so": 11,
+      "hr": 1,
+      "whip": 2.75,
+      "doubles": 5,
+      "triples": 0,
+      "ab": 51,
+      "bAvg": 0.333,
+      "wp": 3,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
@@ -1083,6 +1083,202 @@
             "Rosie Panenka singled up the middle (1-2 KFB).",
             "Ellie Sullivan struck out looking (2-2 FBFBFK).",
             "Kaitlyn Fado grounded into double play ss to 1b (1-0 B); Rosie Panenka out on the play."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/suny-brockport/boxscore/7934",
+      "date": "3/18/2026",
+      "opponent": "Suny Brockport",
+      "pitchers": [
+        "Metzler, Randi",
+        "Dusterhoft, Alexa",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Liana DeValder struck out looking (2-2 BFBKK).",
+            "Caitlyn Dailey struck out swinging (2-2 KBFBS).",
+            "Aubrey Ennis doubled to left center (2-1 BBS).",
+            "Maeve Brannigan singled to center field, RBI (3-1 BBKB); Aubrey Ennis scored.",
+            "Colleen Davis singled down the lf line (1-1 KB); Maeve Brannigan advanced to second.",
+            "Paige Wentland walked (3-0 BBBB); Colleen Davis advanced to second; Maeve Brannigan advanced to third.",
+            "Teresa Cotty pinch hit for Erin Dougherty.",
+            "Teresa Cotty grounded out to p (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Caitlyn Kressel to c for Autumn Hughes.",
+            "Reagan Myers grounded out to 2b (2-2 BBKF).",
+            "Lila Lovgren walked (3-2 KBBKBFB).",
+            "Lila Lovgren advanced to second on a wild pitch.",
+            "Lila Lovgren advanced to third on a passed ball.",
+            "Lila Lovgren out at home 3b to c.",
+            "Liana DeValder walked (3-2 BBKBKFB).",
+            "Caitlyn Dailey singled to center field, advanced to second on the throw (2-0 BB); Liana DeValder advanced to third.",
+            "Aubrey Ennis walked (3-2 BBFFBB).",
+            "Maeve Brannigan flied out to rf (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Colleen Davis doubled to right field (1-0 B).",
+            "Paige Wentland popped up to 2b (2-1 BFB).",
+            "Erin Dougherty struck out looking (1-2 KSBK).",
+            "Reagan Myers singled to left field, advanced to second on the throw, RBI (3-2 BBKKBF); Colleen Davis scored.",
+            "Lila Lovgren singled to right field, advanced to second on the throw, RBI (0-0); Reagan Myers scored.",
+            "Alexa Dusterhoft to p for Randi Metzler.",
+            "Liana DeValder reached first on an error by 3b (1-0 B); Lila Lovgren advanced to third.",
+            "Liana DeValder advanced to second on a passed ball.",
+            "Caitlyn Dailey hit by pitch (3-2 KBBSH).",
+            "Aubrey Ennis walked, RBI (3-2 BBKBFB); Caitlyn Dailey advanced to second; Liana DeValder advanced to third; Lila Lovgren scored, unearned.",
+            "Maeve Brannigan struck out looking (2-2 KKFFBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Colleen Davis singled to center field (3-2 BBSBKF).",
+            "Isabella Moya pinch ran for Colleen Davis.",
+            "Paige Wentland out at first p to 2b, bunt, SAC (0-0); Isabella Moya advanced to second.",
+            "Erin Dougherty out at first p to 2b, bunt, SAC (0-0); Isabella Moya advanced to third.",
+            "Reagan Myers grounded out to 2b (3-2 BBBKK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lila Lovgren flied out to lf (3-2 BSKFBFB).",
+            "Liana DeValder walked (3-2 FFBBBFB).",
+            "/ to cf for Ciara Olivo.",
+            "Ciara Olivo pinch ran for Liana DeValder.",
+            "Caitlyn Dailey singled to center field (0-0); Ciara Olivo advanced to second.",
+            "Caitlyn Dailey advanced to second; Ciara Olivo advanced to third on a wild pitch.",
+            "Aubrey Ennis walked (3-2 BBKSBB).",
+            "Maeve Brannigan singled, RBI (0-0); Aubrey Ennis advanced to second; Caitlyn Dailey advanced to third; Ciara Olivo scored.",
+            "Colleen Davis reached on a fielder's choice (0-1 S); Maeve Brannigan advanced to second; Aubrey Ennis advanced to third; Caitlyn Dailey out at home ss to c.",
+            "Paige Wentland popped up to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Brooklyn Vangruensven to p for Alexa Dusterhoft.",
+            "Erin Dougherty struck out swinging (2-2 KBBSS).",
+            "Reagan Myers grounded out to 1b unassisted (1-0 B).",
+            "Lila Lovgren walked (3-1 BKBBB).",
+            "Liana DeValder walked (3-2 BBKKBFB); Lila Lovgren advanced to second.",
+            "Caitlyn Dailey grounded out to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Aubrey Ennis lined out to 2b (1-0 B).",
+            "Julia Hill popped up to 1b (2-1 BBK).",
+            "/  for Saylor Ayers.",
+            "Saylor Ayers to rf for Colleen Davis.",
+            "Saylor Ayers singled to left field (0-1 K).",
+            "Paige Wentland singled to left field (2-2 BFBF); Saylor Ayers advanced to second.",
+            "Erin Dougherty reached on a fielder's choice (1-1 FB); Paige Wentland advanced to second; Saylor Ayers out at third 3b unassisted."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/nazareth-university/boxscore/7935",
+      "date": "3/18/2026",
+      "opponent": "Nazareth University",
+      "pitchers": [
+        "Kincaid, Hailey",
+        "Knutson, Lucy"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bryanna Moroughan grounded out to 2b (2-2 KSBB).",
+            "Haleigh Suitor struck out swinging (1-2 BKSS).",
+            "Kaijah Alexander struck out swinging (1-2 KKFFFBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madison Hicks grounded out to ss (0-1 S).",
+            "Morgan Russo grounded out to p (1-2 KBF).",
+            "Ella Maloney grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maddy Spakoski popped up to 1b (1-2 BSSF).",
+            "Caitlyn Knapp walked (3-2 BBSKFBFB).",
+            "Ruby Marrapese struck out looking (3-2 BKBFBFK).",
+            "Bryanna Moroughan lined out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Haleigh Suitor grounded out to 3b (0-0).",
+            "Kaijah Alexander grounded out to ss (0-1 K).",
+            "Madison Hicks singled to left center (2-2 SBFFFB).",
+            "Morgan Russo singled to pitcher (1-0 B); Madison Hicks advanced to second.",
+            "Emma Maloney pinch ran for Madison Hicks.",
+            "Ella Maloney singled to right field, RBI (2-1 BBK); Morgan Russo advanced to third; Emma Maloney scored.",
+            "Ella Maloney advanced to second on the throw.",
+            "Maddy Spakoski walked (3-0 BBBB).",
+            "Caitlyn Knapp grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ruby Marrapese walked (3-2 BBBKKB).",
+            "Bryanna Moroughan grounded out to 2b unassisted (0-1 F); Ruby Marrapese advanced to second.",
+            "Haleigh Suitor singled to second base (2-0 BB); Ruby Marrapese advanced to third.",
+            "Haleigh Suitor stole second.",
+            "Kaijah Alexander popped up to 3b (1-0 B).",
+            "Madison Hicks singled to shortstop, RBI (2-1 KBB); Haleigh Suitor advanced to third; Ruby Marrapese scored.",
+            "Morgan Russo grounded out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Maloney pinch hit for Alexis Brown.",
+            "Ella Maloney grounded out to ss (0-0).",
+            "Madison Hicks pinch hit for Maddy Spakoski.",
+            "Madison Hicks grounded out to 2b (1-1 FB).",
+            "Caitlyn Knapp singled to shortstop (0-0).",
+            "Ruby Marrapese walked (3-1 BBBKB); Caitlyn Knapp advanced to second.",
+            "Julia Maciag pinch ran for Caitlyn Knapp.",
+            "Bryanna Moroughan singled to left field, RBI (2-1 KBB); Ruby Marrapese advanced to second; Julia Maciag scored.",
+            "Haleigh Suitor reached first on an error by ss (1-0 B); Bryanna Moroughan advanced to second; Ruby Marrapese advanced to third.",
+            "Kaijah Alexander reached on a fielder's choice (1-0 B); Haleigh Suitor out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ella Woida to cf for Amanda Holzhueter.",
+            "Lucy Knutson to p for Hailey Kincaid.",
+            "Amanda Linnenbrink doubled to right center (0-2 FS).",
+            "Raegan Sharp pinch ran for Madison Hicks.",
+            "Morgan Russo grounded out to 2b (2-2 SFBB); Amanda Linnenbrink advanced to third.",
+            "Ella Maloney struck out swinging (1-2 BKSS).",
+            "Maddy Spakoski pinch hit for Amanda Linnenbrink.",
+            "Maddy Spakoski struck out swinging (2-2 BFFBS)."
           ]
         }
       ],
