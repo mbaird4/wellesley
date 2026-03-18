@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
-import type { PlayerClutchSummary } from '@ws/core/models';
+import type { MetricScale, PlayerClutchSummary } from '@ws/core/models';
+import { getMetricTier, metricColorStyle, tierClass } from '@ws/core/processors';
 
 type SortKey = 'total' | 'third' | 'second' | 'first' | 'rate' | 'name';
 
@@ -13,7 +14,30 @@ interface StrandedRow {
   pa: number;
   strandRate: string;
   strandRateValue: number;
+  strandRateStyle: Record<string, string>;
+  strandRateTier: string;
 }
+
+const STRAND_RATE_SCALE: MetricScale = {
+  lowerIsBetter: true,
+  colorStops: [
+    [0, 155, 78, 52],
+    [10, 145, 72, 55],
+    [15, 130, 68, 58],
+    [20, 105, 72, 58],
+    [25, 85, 78, 58],
+    [30, 68, 82, 60],
+    [35, 42, 90, 64],
+    [45, 22, 88, 68],
+    [60, 0, 85, 72],
+  ],
+  tierBreakpoints: [
+    { threshold: 15, tier: 'excellent' },
+    { threshold: 20, tier: 'great' },
+    { threshold: 25, tier: 'above_average' },
+    { threshold: 30, tier: 'average' },
+  ],
+};
 
 function computeStrandedRow(player: PlayerClutchSummary): StrandedRow {
   let onFirst = 0;
@@ -51,6 +75,8 @@ function computeStrandedRow(player: PlayerClutchSummary): StrandedRow {
     pa: player.runnersOnPa,
     strandRate: strandRateValue.toFixed(0),
     strandRateValue,
+    strandRateStyle: metricColorStyle(strandRateValue, STRAND_RATE_SCALE),
+    strandRateTier: tierClass(getMetricTier(strandRateValue, STRAND_RATE_SCALE)),
   };
 }
 
@@ -114,7 +140,7 @@ export class ClutchStranded {
     const onSecond = rows.reduce((sum, r) => sum + r.onSecond, 0);
     const onThird = rows.reduce((sum, r) => sum + r.onThird, 0);
     const totalRunnersOn = this.players().reduce((sum, p) => sum + p.totalRunnersOn, 0);
-    const strandRate = totalRunnersOn > 0 ? ((total / totalRunnersOn) * 100).toFixed(0) : '0';
+    const strandRateValue = totalRunnersOn > 0 ? (total / totalRunnersOn) * 100 : 0;
 
     return {
       total,
@@ -122,7 +148,8 @@ export class ClutchStranded {
       onSecond,
       onThird,
       scoringPosStranded: onSecond + onThird,
-      strandRate,
+      strandRate: strandRateValue.toFixed(0),
+      strandRateStyle: metricColorStyle(strandRateValue, STRAND_RATE_SCALE),
     };
   });
 

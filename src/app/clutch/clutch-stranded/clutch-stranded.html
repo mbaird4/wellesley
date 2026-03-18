@@ -19,7 +19,9 @@
     <div class="stat-label">Stranded on 3rd</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">{{ teamTotals().strandRate }}%</div>
+    <div class="stat-value" [style]="teamTotals().strandRateStyle">
+      {{ teamTotals().strandRate }}%
+    </div>
     <div class="stat-label">Strand Rate</div>
   </div>
 </div>
@@ -88,7 +90,10 @@
       </div>
 
       <div class="flex flex-col items-center gap-0.5">
-        <span class="text-content-bright text-lg font-bold tabular-nums">
+        <span
+          class="text-lg font-bold tabular-nums"
+          [style]="row.strandRateStyle"
+        >
           {{ row.strandRate }}%
         </span>
         <span class="text-content-dim text-[0.65rem]">% Stranded</span>

@@ -1,15 +1,11 @@
-import type { WobaTier } from '@ws/core/models';
+import type { MetricScale } from '@ws/core/models';
 
-export function formatWoba(value: number): string {
-  return value.toFixed(3).replace(/^0/, '');
-}
+import { metricColorStyle, metricGradientStyle } from '../metric-display';
 
-export function tierClass(tier: WobaTier | string): string {
-  return `tier-${tier}`;
-}
+export { tierClass } from '../metric-display';
 
-export function wobaGradientStyle(woba: number): Record<string, string> {
-  const stops: [number, number, number, number][] = [
+export const WOBA_SCALE: MetricScale = {
+  colorStops: [
     [0.0, 0, 85, 72],
     [0.15, 10, 85, 70],
     [0.22, 22, 88, 68],
@@ -22,27 +18,21 @@ export function wobaGradientStyle(woba: number): Record<string, string> {
     [0.4, 130, 68, 58],
     [0.45, 145, 72, 55],
     [0.55, 155, 78, 52],
-  ];
+  ],
+  tierBreakpoints: [
+    { threshold: 0.4, tier: 'excellent' },
+    { threshold: 0.35, tier: 'great' },
+    { threshold: 0.32, tier: 'above_average' },
+    { threshold: 0.29, tier: 'average' },
+  ],
+};
 
-  const w = Math.max(0, Math.min(0.55, woba));
-  const i = stops.reduce((acc, [threshold], idx) => (threshold <= w ? idx : acc), 0);
+export function formatWoba(value: number): string {
+  return value.toFixed(3).replace(/^0/, '');
+}
 
-  const [w0, h0, s0, l0] = stops[i];
-  const [w1, h1, s1, l1] = stops[Math.min(i + 1, stops.length - 1)];
-  const t = w1 > w0 ? (w - w0) / (w1 - w0) : 0;
-  const h = h0 + t * (h1 - h0);
-  const s = s0 + t * (s1 - s0);
-  const l = l0 + t * (l1 - l0);
-
-  const topColor = `hsl(${h + 8}, ${s + 5}%, ${l + 14}%)`;
-  const bottomColor = `hsl(${h}, ${s}%, ${l}%)`;
-
-  return {
-    background: `linear-gradient(to bottom, ${topColor}, ${bottomColor})`,
-    '-webkit-background-clip': 'text',
-    'background-clip': 'text',
-    '-webkit-text-fill-color': 'transparent',
-  };
+export function wobaGradientStyle(woba: number): Record<string, string> {
+  return metricGradientStyle(woba, WOBA_SCALE);
 }
 
 /**
@@ -50,30 +40,5 @@ export function wobaGradientStyle(woba: number): Record<string, string> {
  * which has intermittent rendering bugs in lazily-rendered content.
  */
 export function wobaColorStyle(woba: number): Record<string, string> {
-  const stops: [number, number, number, number][] = [
-    [0.0, 0, 85, 72],
-    [0.15, 10, 85, 70],
-    [0.22, 22, 88, 68],
-    [0.26, 32, 90, 66],
-    [0.29, 42, 90, 64],
-    [0.31, 55, 88, 62],
-    [0.33, 68, 82, 60],
-    [0.35, 85, 78, 58],
-    [0.37, 105, 72, 58],
-    [0.4, 130, 68, 58],
-    [0.45, 145, 72, 55],
-    [0.55, 155, 78, 52],
-  ];
-
-  const w = Math.max(0, Math.min(0.55, woba));
-  const i = stops.reduce((acc, [threshold], idx) => (threshold <= w ? idx : acc), 0);
-
-  const [w0, h0, s0, l0] = stops[i];
-  const [w1, h1, s1, l1] = stops[Math.min(i + 1, stops.length - 1)];
-  const t = w1 > w0 ? (w - w0) / (w1 - w0) : 0;
-  const h = h0 + t * (h1 - h0);
-  const s = s0 + t * (s1 - s0);
-  const l = l0 + t * (l1 - l0);
-
-  return { color: `hsl(${h + 4}, ${s + 2}%, ${l + 7}%)` };
+  return metricColorStyle(woba, WOBA_SCALE);
 }

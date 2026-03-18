@@ -1,4 +1,7 @@
-import type { BoxscoreData, PlayerCumulativeWoba, PlayerSeasonStats, PlayerWoba, WobaTier } from '@ws/core/models';
+import type { BoxscoreData, MetricTier, PlayerCumulativeWoba, PlayerSeasonStats, PlayerWoba } from '@ws/core/models';
+
+import { getMetricTier } from '../metric-display';
+import { WOBA_SCALE } from './woba-display';
 
 // wOBA linear weights
 export const WOBA_WEIGHT_BB = 0.5;
@@ -8,15 +11,10 @@ export const WOBA_WEIGHT_2B = 1.2;
 export const WOBA_WEIGHT_3B = 1.7;
 export const WOBA_WEIGHT_HR = 2.5;
 
-// Tier thresholds
-export const WOBA_TIER_EXCELLENT = 0.4;
-export const WOBA_TIER_GREAT = 0.35;
-export const WOBA_TIER_ABOVE_AVERAGE = 0.32;
-export const WOBA_TIER_AVERAGE = 0.29;
-
 export function calculateWoba(stats: { ab: number; h: number; doubles: number; triples: number; hr: number; bb: number; hbp: number; sf: number; sh: number }): number {
   const singles = stats.h - stats.doubles - stats.triples - stats.hr;
   const denominator = stats.ab + stats.bb + stats.sf + stats.sh + stats.hbp;
+
   if (denominator === 0) {
     return 0;
   }
@@ -26,24 +24,8 @@ export function calculateWoba(stats: { ab: number; h: number; doubles: number; t
   return numerator / denominator;
 }
 
-export function getWobaTier(woba: number): WobaTier {
-  if (woba >= WOBA_TIER_EXCELLENT) {
-    return 'excellent';
-  }
-
-  if (woba >= WOBA_TIER_GREAT) {
-    return 'great';
-  }
-
-  if (woba >= WOBA_TIER_ABOVE_AVERAGE) {
-    return 'above_average';
-  }
-
-  if (woba >= WOBA_TIER_AVERAGE) {
-    return 'average';
-  }
-
-  return 'below_average';
+export function getWobaTier(woba: number): MetricTier {
+  return getMetricTier(woba, WOBA_SCALE);
 }
 
 export function computePlayerSeasonWobas(players: PlayerSeasonStats[]): PlayerWoba[] {

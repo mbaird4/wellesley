@@ -33,7 +33,10 @@ export interface PlayerGameStats {
 
 // ── wOBA display/computation types ──
 
-export type WobaTier = 'excellent' | 'great' | 'above_average' | 'average' | 'below_average';
+import type { MetricTier } from './metric-tier.models';
+
+/** @deprecated Use MetricTier instead */
+export type WobaTier = MetricTier;
 
 /** Computed season wOBA with components */
 export interface PlayerWoba {
