@@ -1,12 +1,12 @@
-<span class="text-[0.95rem] font-semibold">{{ formattedPrimary() }}</span>
+<span class="text-scale-[0.95] font-semibold">{{ formattedPrimary() }}</span>
 @if (secondary() > -1) {
   <span
-    class="text-[0.7rem] font-semibold opacity-60"
+    class="text-scale-[0.7] font-semibold opacity-60"
     [class]="secondaryTierClass()"
   >
     {{ formattedSecondary() }}
   </span>
 }
 @if (pa() > -1) {
-  <span class="text-[0.6rem] opacity-80">{{ pa() }}</span>
+  <span class="text-scale-[0.6] opacity-80">{{ pa() }}</span>
 }

@@ -19,7 +19,7 @@ const TREND_DESCRIPTIONS: Record<SprayTrend['type'], string> = {
       <i class="fa-solid text-[9px]" [class]="arrowClass()"></i>
       {{ trend().label }}
       <i class="fa-solid fa-circle-question text-[9px] opacity-40 transition-opacity group-hover:opacity-80"></i>
-      <span class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 w-52 -translate-x-1/2 rounded-lg bg-surface-card px-3 py-2 text-[13px] leading-snug font-normal text-content-secondary opacity-0 shadow-lg ring-1 ring-white/10 transition-opacity group-hover:opacity-100">
+      <span class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 w-52 -translate-x-1/2 rounded-lg bg-surface-card px-3 py-2 text-[15px] leading-snug font-normal text-content-secondary opacity-0 shadow-lg ring-1 ring-white/10 transition-opacity group-hover:opacity-100">
         {{ description() }}
       </span>
     </span>

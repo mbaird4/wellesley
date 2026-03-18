@@ -81,15 +81,19 @@
 
   /* Single-series bar fill */
   --color-chart-bar: rgba(91, 122, 230, 0.3);
+  --font-scale: 1;
 
-  /*--text-xs: 1rem;*/
-  /*--text-sm: 1.25rem;*/
-  /*--text-base: 1.5rem;*/
-  /*--text-lg: 1.75rem;*/
-  /*--text-xl: 1.875rem;*/
-  /*--text-2xl: 2rem;*/
-  /*--text-3xl: 3rem;*/
-  /*--text-5xl: 4rem;*/
+  /* ── Font scale ──
+     All sizes are multiples of their Tailwind default × --font-scale.
+     Change --font-scale on :root to uniformly scale everything. */
+  --text-xs: calc(0.75rem * var(--font-scale));
+  --text-sm: calc(0.875rem * var(--font-scale));
+  --text-base: calc(1rem * var(--font-scale));
+  --text-lg: calc(1.125rem * var(--font-scale));
+  --text-xl: calc(1.25rem * var(--font-scale));
+  --text-2xl: calc(1.5rem * var(--font-scale));
+  --text-3xl: calc(1.875rem * var(--font-scale));
+  --text-5xl: calc(3rem * var(--font-scale));
 }
 
 @page {
@@ -118,6 +122,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.18);
+}
+
+@utility text-scale-* {
+  font-size: calc(var(--text-base) * --value([number]));
 }
 
 @layer base {
@@ -162,14 +170,14 @@
 
   h2 {
     color: var(--color-content-heading);
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--font-scale));
     font-weight: 600;
     margin-bottom: 1rem;
   }
 
   h3 {
     color: var(--color-content-heading);
-    font-size: 1.15rem;
+    font-size: calc(1.15rem * var(--font-scale));
     font-weight: 600;
     margin-bottom: 0.75rem;
   }
@@ -306,7 +314,7 @@
 
   /* ── Select input (focus ring, option bg, disabled state) ── */
   .year-select {
-    @apply border-line-strong bg-surface-elevated text-content min-w-[100px] cursor-pointer rounded-lg border px-4 py-2 font-[inherit] text-[1.05rem] transition-[border-color,box-shadow];
+    @apply border-line-strong bg-surface-elevated text-content min-w-[100px] cursor-pointer rounded-lg border px-4 py-2 font-[inherit] text-scale-[1.05] transition-[border-color,box-shadow];
 
     &:disabled {
       @apply disabled;
@@ -412,7 +420,7 @@
 
     th,
     td {
-      @apply text-[0.95rem];
+      @apply text-scale-[0.95];
     }
   }
 
@@ -451,7 +459,7 @@
   }
 
   .game-link {
-    @apply text-link text-[0.95rem] font-medium whitespace-nowrap no-underline;
+    @apply text-link text-scale-[0.95] font-medium whitespace-nowrap no-underline;
 
     &:hover {
       @apply text-link-hover underline;
@@ -492,7 +500,7 @@
   }
 
   .header-title {
-    @apply text-[1.75rem] leading-none;
+    @apply text-scale-[1.75] leading-none;
     transition:
       font-size 250ms ease,
       opacity 200ms ease,
@@ -545,7 +553,7 @@
 
     th,
     td {
-      @apply min-w-9 px-2! py-1! text-[0.95rem];
+      @apply min-w-9 px-2! py-1! text-scale-[0.95];
     }
 
     .sticky-col {
@@ -650,13 +658,13 @@
     }
 
     td {
-      @apply px-3! py-1.5 text-[0.95rem];
+      @apply px-3! py-1.5 text-scale-[0.95];
     }
   }
 
   /* ── Legend swatches (first/last-child radius) ── */
   .legend-swatch {
-    @apply min-w-12 px-2 py-1 text-center text-[0.8rem] font-semibold tabular-nums;
+    @apply min-w-12 px-2 py-1 text-center text-scale-[0.8] font-semibold tabular-nums;
 
     &:first-child {
       @apply rounded-l-[5px];
@@ -673,7 +681,7 @@
 
     th,
     td {
-      @apply min-w-[4.5rem] px-2.5 py-2 text-center text-[0.95rem];
+      @apply min-w-[4.5rem] px-2.5 py-2 text-center text-scale-[0.95];
     }
 
     .sticky-col {
@@ -759,7 +767,7 @@
   }
 
   .inning-header {
-    @apply text-brand-text bg-surface-sticky-header border-line sticky top-0 z-1 border-b px-2 py-1 text-[0.7rem] font-bold;
+    @apply text-brand-text bg-surface-sticky-header border-line sticky top-0 z-1 border-b px-2 py-1 text-scale-[0.7] font-bold;
   }
 
   .play-row {
@@ -779,7 +787,7 @@
   }
 
   .slot-chip {
-    @apply bg-brand inline-block shrink-0 rounded px-1.5 py-0.5 text-[0.65rem] font-bold text-white;
+    @apply bg-brand inline-block shrink-0 rounded px-1.5 py-0.5 text-scale-[0.65] font-bold text-white;
   }
 
   .nav-btn {
@@ -804,7 +812,7 @@
   }
 
   .stat-card .stat-label {
-    @apply text-content-dim mt-0.5 text-[0.85rem];
+    @apply text-content-dim mt-0.5 text-scale-[0.85];
   }
 
   /* ── Season stats table — dual sticky columns ── */
@@ -831,7 +839,7 @@
 
   /* ── Empty state ── */
   .empty-state {
-    @apply py-section px-card text-content-dim text-center text-[1.05rem];
+    @apply py-section px-card text-content-dim text-center text-scale-[1.05];
 
     .empty-state-icon {
       @apply text-content-empty mb-2 text-3xl;
@@ -840,7 +848,7 @@
 
   /* ── Loading state ── */
   .loading-state {
-    @apply py-card px-card text-content-muted flex items-center gap-3 text-[1.05rem];
+    @apply py-card px-card text-content-muted flex items-center gap-3 text-scale-[1.05];
 
     .loading-spinner {
       @apply text-brand-text animate-spin text-lg;

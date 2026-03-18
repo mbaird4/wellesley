@@ -27,7 +27,7 @@
 
 @if (error) {
   <div
-    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+    class="bg-error-bg text-error py-cell px-card border-error-border text-scale-[1.05] mb-4 rounded-[10px] border"
   >
     {{ error }}
   </div>
@@ -64,7 +64,7 @@
       </tbody>
     </table>
     <div
-      class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text mb-6 flex items-baseline gap-2 rounded-[10px] border-l-[3px] text-[1.1rem]"
+      class="py-cell px-card bg-brand-bg-subtle border-l-brand text-brand-text text-scale-[1.1] mb-6 flex items-baseline gap-2 rounded-[10px] border-l-[3px]"
     >
       Total plate appearances:
       <span class="font-stat text-xl font-bold">
@@ -94,13 +94,13 @@
           [class.expanded]="expandedGame === i"
           (click)="toggleGame(i)"
         >
-          <span class="text-content-dim w-4 shrink-0 text-[0.65rem]">
+          <span class="text-content-dim text-scale-[0.65] w-4 shrink-0">
             {{ expandedGame === i ? '&#9660;' : '&#9654;' }}
           </span>
           <span class="text-content-bright grow font-medium">
             {{ game.opponent }}
           </span>
-          <span class="text-content-dim text-[0.95rem] whitespace-nowrap">
+          <span class="text-content-dim text-scale-[0.95] whitespace-nowrap">
             {{ game.totalPA }} PAs
           </span>
           <a

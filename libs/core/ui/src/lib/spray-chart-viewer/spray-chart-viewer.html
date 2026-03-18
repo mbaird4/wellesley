@@ -5,12 +5,14 @@
   </div>
 } @else if (error()) {
   <div
-    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
+    class="bg-error-bg text-error py-cell px-card border-error-border text-scale-[1.05] mb-4 rounded-[10px] border"
   >
     {{ error() }}
   </div>
 } @else if (players().length === 0) {
-  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+  <div
+    class="py-section px-card text-content-dim text-scale-[1.05] text-center"
+  >
     {{ emptyMessage() }}
   </div>
 } @else {

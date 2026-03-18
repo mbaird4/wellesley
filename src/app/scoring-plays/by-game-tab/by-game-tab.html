@@ -8,7 +8,7 @@
       [class.opacity-40]="dg.dimmed && expandedGame() !== $index"
       (click)="gameToggled.emit($index)"
     >
-      <span class="text-content-dim w-4 shrink-0 text-[0.65rem]">
+      <span class="text-content-dim text-scale-[0.65] w-4 shrink-0">
         {{ expandedGame() === $index ? '&#9660;' : '&#9654;' }}
       </span>
       <span class="text-content-bright grow font-medium">
@@ -20,7 +20,7 @@
         }
       </span>
       <span
-        class="text-[0.95rem] whitespace-nowrap tabular-nums"
+        class="text-scale-[0.95] whitespace-nowrap tabular-nums"
         [class]="dg.runsClass"
       >
         {{ dg.game.summary.totalRuns }} runs
@@ -70,7 +70,7 @@
                 </td>
                 <td>{{ play.batterName || '—' }}</td>
                 <td
-                  class="text-content-dim max-w-[300px] overflow-hidden text-[0.85rem] text-ellipsis whitespace-nowrap"
+                  class="text-content-dim text-scale-[0.85] max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap"
                 >
                   {{ play.playText }}
                 </td>

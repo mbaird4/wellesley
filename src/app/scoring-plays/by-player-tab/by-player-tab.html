@@ -28,7 +28,7 @@
               track badge.key
             ) {
               <span
-                class="bg-surface-elevated text-content-muted inline-block rounded-md border-l-2 px-2 py-[0.15rem] text-[0.75rem] whitespace-nowrap"
+                class="bg-surface-elevated text-content-muted inline-block rounded-md border-l-2 px-2 py-[0.15rem] text-xs whitespace-nowrap"
                 [class]="badge.colorClass"
               >
                 {{ badge.key | formatPlayType }}: {{ badge.value }}
@@ -36,7 +36,7 @@
             }
             @if (p.overflowCount > 0) {
               <button
-                class="text-content-dim hover:text-content-muted cursor-pointer border-none bg-transparent px-1 py-[0.15rem] text-[0.75rem] transition-colors"
+                class="text-content-dim hover:text-content-muted cursor-pointer border-none bg-transparent px-1 py-[0.15rem] text-xs transition-colors"
                 (click)="togglePlayer(p.name)"
               >
                 {{
@@ -45,7 +45,7 @@
               </button>
             }
             @if (p.topTypes.length === 0) {
-              <span class="text-content-empty text-[0.75rem]">—</span>
+              <span class="text-content-empty text-xs">—</span>
             }
           </div>
         </td>

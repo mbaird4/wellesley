@@ -23,20 +23,20 @@ const SORTED_HEADER = 'bg-brand-bg';
         <tr>
           <th class="sticky-col hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === '#' ? SORTED_HEADER : ''" (click)="sortBy('#')">
             #
-            <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== '#'">
+            <span class="inline-block w-[0.6rem] text-center text-scale-[0.6]" [class.invisible]="sortKey() !== '#'">
               {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
             </span>
           </th>
           <th class="sticky-col-name hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === 'name' ? SORTED_HEADER : ''" (click)="sortBy('name')">
             Name
-            <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== 'name'">
+            <span class="inline-block w-[0.6rem] text-center text-scale-[0.6]" [class.invisible]="sortKey() !== 'name'">
               {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
             </span>
           </th>
           @for (col of columns(); track col.key) {
             <th class="hover:text-content-bright cursor-pointer select-none" [class]="sortKey() === col.key ? SORTED_HEADER : ''" (click)="sortBy(col.key)">
               {{ col.label }}
-              <span class="inline-block w-[0.6rem] text-center text-[0.6rem]" [class.invisible]="sortKey() !== col.key">
+              <span class="inline-block w-[0.6rem] text-center text-scale-[0.6]" [class.invisible]="sortKey() !== col.key">
                 {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
               </span>
             </th>

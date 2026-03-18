@@ -7,13 +7,13 @@
     (valueChange)="onSortChange($event)"
   />
   @if (sortMode() === 'custom') {
-    <span class="text-content-dim text-[10px] italic">Custom order</span>
+    <span class="text-content-dim text-[11px] italic">Custom order</span>
   }
 </div>
 
 <!-- Column headers -->
 <div
-  class="text-content-empty flex items-center gap-2 px-2.5 text-[10px] font-medium tracking-wide uppercase"
+  class="text-content-empty flex items-center gap-2 px-2.5 text-[11px] font-medium tracking-wide uppercase"
 >
   <span class="w-5"></span>
   <span class="w-6"></span>
@@ -50,7 +50,7 @@
       <span class="text-content-bright flex-1 text-sm font-medium">
         {{ row.player.name }}
         @if (row.lineupSlot !== null) {
-          <span class="text-brand-text/60 ml-1 text-[10px] tabular-nums">
+          <span class="text-brand-text/60 ml-1 text-[11px] tabular-nums">
             #{{ row.lineupSlot }}
           </span>
         }
