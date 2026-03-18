@@ -1,36 +1,36 @@
 {
   "slug": "ecsu",
   "domain": "gowarriorathletics.com",
-  "scrapedAt": "2026-03-17T19:00:52.047Z",
+  "scrapedAt": "2026-03-18T01:56:07.398Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Raymond, Julia",
-      "w": 0,
+      "name": "Mitchell, Elizabeth",
+      "w": 2,
       "l": 0,
-      "era": 0,
-      "app": 1,
-      "gs": 0,
-      "cg": 0,
+      "era": 1.5,
+      "app": 2,
+      "gs": 2,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 1,
-      "h": 0,
-      "r": 0,
-      "er": 0,
-      "bb": 2,
-      "so": 0,
-      "hr": 0,
-      "whip": 2,
-      "doubles": 0,
+      "ip": 14,
+      "h": 18,
+      "r": 3,
+      "er": 3,
+      "bb": 4,
+      "so": 9,
+      "hr": 1,
+      "whip": 1.57,
+      "doubles": 4,
       "triples": 0,
-      "ab": 1,
-      "bAvg": 0,
-      "wp": 1,
-      "hbp": 0,
+      "ab": 61,
+      "bAvg": 0.295,
+      "wp": 0,
+      "hbp": 1,
       "bk": 0,
-      "sfa": 1,
-      "sha": 0
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Chatfield, Leah",
@@ -58,6 +58,34 @@
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Raymond, Julia",
+      "w": 0,
+      "l": 0,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 1,
+      "h": 0,
+      "r": 0,
+      "er": 0,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 2,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 1,
+      "bAvg": 0,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
       "sha": 0
     },
     {
@@ -176,6 +204,177 @@
             "Kim Dorane fouled out to 1b (0-0).",
             "Mack Celauro struck out swinging (0-0).",
             "Kayla Lynn grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/concordia-u-tx-/boxscore/7845",
+      "date": "3/17/2026",
+      "opponent": "Concordia U Tx ",
+      "pitchers": [
+        "Mitchell, Elizabeth"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malarie Mican grounded out to 3b (2-1 BBK).",
+            "Kylie Denaro singled to second base (0-0).",
+            "Kylie Kirk doubled to left field, RBI (1-2 KKB); Kylie Denaro scored.",
+            "Molly Olivarez grounded out to 1b unassisted (1-1 KB); Kylie Kirk advanced to third.",
+            "Kamryn Kothman popped up to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Karlee Mathis struck out looking (3-2 KKBBBK).",
+            "Mia Post grounded out to 2b (1-0 B).",
+            "Lilly Longoria singled to shortstop (0-0).",
+            "Christian Everett singled to left field (1-1 KB); Lilly Longoria advanced to second.",
+            "Malarie Mican singled to left field (0-1 K); Christian Everett advanced to second; Lilly Longoria advanced to third.",
+            "Kylie Denaro flied out to lf (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kylie Kirk flied out to cf (3-2 KKBBBF).",
+            "Molly Olivarez singled to third base (1-0 B).",
+            "Kamryn Kothman flied out to lf (0-0).",
+            "Karlee Mathis struck out looking (3-2 KKBBBFFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mia Post reached first on an error by ss (0-1 F).",
+            "Harley Drouillard pinch ran for Mia Post.",
+            "Lilly Longoria reached first on an error by ss (2-0 BB); Harley Drouillard advanced to second.",
+            "Christian Everett out at first 1b to 2b, SAC, bunt (1-2 FFB); Lilly Longoria advanced to second; Harley Drouillard advanced to third.",
+            "Malarie Mican lined into double play 3b (1-2 KKB); Harley Drouillard out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kylie Denaro grounded out to 3b (1-0 B).",
+            "Kylie Kirk doubled to center field (3-0 BBB).",
+            "Molly Olivarez walked (3-0 BBBB).",
+            "Kamryn Kothman lined out to 3b (0-0).",
+            "Karlee Mathis grounded out to 2b (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mia Post hit by pitch (2-0 BH).",
+            "Lilly Longoria struck out looking (1-2 KFBK).",
+            "Christian Everett flied out to cf (0-1 F).",
+            "Malarie Mican walked (3-2 KKBBBB); Mia Post advanced to second.",
+            "Kylie Denaro flied out to lf (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kylie Kirk singled to left field (0-0).",
+            "Molly Olivarez walked (3-2 KKBBBB); Kylie Kirk advanced to second.",
+            "Katie Bethke pinch ran for Molly Olivarez.",
+            "Kamryn Kothman grounded out to c (1-2 KKB); Katie Bethke advanced to second; Kylie Kirk advanced to third.",
+            "Karlee Mathis singled to left field, RBI (0-0); Katie Bethke advanced to third; Kylie Kirk scored.",
+            "Mia Post struck out looking (1-2 BFFK).",
+            "Lilly Longoria flied out to rf (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/macalester-college/boxscore/7841",
+      "date": "3/15/2026",
+      "opponent": "Macalester College",
+      "pitchers": [
+        "Mitchell, Elizabeth"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Safiya Butler grounded out to p (1-1 FB).",
+            "Ally Wolf lined out to rf (1-2 KKBF).",
+            "Elizabeth Welch lined out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Thompson to c for Jordan Bennett.",
+            "Dylan Tapia doubled to left field (1-0 B).",
+            "Callia Holland reached first on a dropped fly by rf (0-0); Dylan Tapia advanced to third.",
+            "Tess Bojorquez walked (3-2 BSBKFBFFB); Callia Holland advanced to second.",
+            "Rebecca Heinze popped up to 2b (0-0).",
+            "Alli Johnson fouled out to rf (0-2 SS).",
+            "Martha Miller struck out looking (2-2 BBKFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Safiya Butler singled to right center (2-2 FBBFF).",
+            "Safiya Butler stole second.",
+            "Ally Wolf grounded out to ss (1-1 BF); Safiya Butler advanced to third.",
+            "Elizabeth Welch struck out swinging (0-2 FKS).",
+            "Dylan Tapia grounded out to ss (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Callia Holland grounded out to ss (1-0 B).",
+            "Tess Bojorquez homered to center field, RBI (0-0).",
+            "Rebecca Heinze singled up the middle (2-0 BB).",
+            "Rebecca Heinze to 3b for Ainsley Sullivan.",
+            "Ainsley Sullivan pinch ran for Rebecca Heinze.",
+            "Alli Johnson popped up to p (0-0).",
+            "Martha Miller popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Safiya Butler singled to third base, bunt (0-1 S).",
+            "Ally Wolf struck out swinging (0-2 KFFS).",
+            "Safiya Butler stole second.",
+            "Elizabeth Welch grounded out to 3b (3-2 BKBKB); Safiya Butler advanced to third.",
+            "Dylan Tapia grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Callia Holland flied out to lf (3-2 SBSBB).",
+            "Tess Bojorquez doubled to right field (0-1 F).",
+            "Rebecca Heinze popped up to 1b (1-2 BFK).",
+            "Alli Johnson singled to center field (0-1 K); Tess Bojorquez advanced to third.",
+            "Martha Miller struck out swinging (2-2 KBBFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maddy Bowen to 1b for Jenna Maus.",
+            "Hadley Marchand to dp for Lily Kenefick.",
+            "Sam Healy to 3b for Taylor Lathrop.",
+            "Ashlyn Kenefick to rf for Madison Pajak.",
+            "Safiya Butler singled up the middle (0-0).",
+            "Ally Wolf grounded out to 2b (2-1 SBB); Safiya Butler advanced to second.",
+            "Elizabeth Welch lined out to 2b (1-1 BK).",
+            "Dylan Tapia singled to second base (1-0 B); Safiya Butler advanced to third.",
+            "Maya Thomas pinch ran for Dylan Tapia.",
+            "Callia Holland struck out swinging (0-2 KKS)."
           ]
         }
       ],

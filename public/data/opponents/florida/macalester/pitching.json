@@ -1,59 +1,59 @@
 {
   "slug": "macalester",
   "domain": "athletics.macalester.edu",
-  "scrapedAt": "2026-03-17T19:00:48.733Z",
+  "scrapedAt": "2026-03-18T01:56:02.750Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Miller, Martha",
       "w": 3,
-      "l": 2,
-      "era": 2.65,
-      "app": 7,
-      "gs": 5,
-      "cg": 2,
+      "l": 4,
+      "era": 3.53,
+      "app": 9,
+      "gs": 7,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 31.2,
-      "h": 37,
-      "r": 23,
-      "er": 12,
-      "bb": 11,
-      "so": 31,
+      "ip": 45.2,
+      "h": 54,
+      "r": 37,
+      "er": 23,
+      "bb": 16,
+      "so": 40,
       "hr": 2,
-      "whip": 1.52,
-      "doubles": 4,
-      "triples": 1,
-      "ab": 132,
-      "bAvg": 0.28,
-      "wp": 6,
-      "hbp": 6,
+      "whip": 1.53,
+      "doubles": 5,
+      "triples": 3,
+      "ab": 192,
+      "bAvg": 0.281,
+      "wp": 7,
+      "hbp": 8,
       "bk": 0,
-      "sfa": 0,
-      "sha": 7
+      "sfa": 1,
+      "sha": 9
     },
     {
       "name": "Bojorquez, Tess",
       "w": 1,
-      "l": 1,
-      "era": 6.75,
-      "app": 4,
-      "gs": 0,
+      "l": 2,
+      "era": 7.8,
+      "app": 5,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 9.1,
-      "h": 23,
-      "r": 11,
-      "er": 9,
-      "bb": 3,
-      "so": 2,
+      "ip": 11.2,
+      "h": 27,
+      "r": 17,
+      "er": 13,
+      "bb": 7,
+      "so": 4,
       "hr": 0,
-      "whip": 2.79,
-      "doubles": 1,
+      "whip": 2.91,
+      "doubles": 3,
       "triples": 1,
-      "ab": 50,
-      "bAvg": 0.46,
+      "ab": 62,
+      "bAvg": 0.435,
       "wp": 3,
       "hbp": 0,
       "bk": 0,
@@ -89,6 +89,34 @@
       "sha": 0
     },
     {
+      "name": "Sullivan, Ainsley",
+      "w": 0,
+      "l": 1,
+      "era": 6.77,
+      "app": 4,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 10.1,
+      "h": 13,
+      "r": 11,
+      "er": 10,
+      "bb": 8,
+      "so": 8,
+      "hr": 1,
+      "whip": 2.03,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 41,
+      "bAvg": 0.317,
+      "wp": 2,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
       "name": "Jensen, Kara",
       "w": 0,
       "l": 0,
@@ -112,34 +140,6 @@
       "bAvg": 0.333,
       "wp": 0,
       "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "Sullivan, Ainsley",
-      "w": 0,
-      "l": 1,
-      "era": 8.4,
-      "app": 3,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 6.2,
-      "h": 10,
-      "r": 9,
-      "er": 8,
-      "bb": 6,
-      "so": 7,
-      "hr": 1,
-      "whip": 2.4,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 27,
-      "bAvg": 0.37,
-      "wp": 1,
-      "hbp": 2,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -907,6 +907,272 @@
             "Natalie Antin walked (3-1 BBKBB).",
             "Marisa Lloveras pinch ran for Natalie Antin.",
             "Audrey Hui flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/keene-state/boxscore/11007",
+      "date": "3/17/2026",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Bojorquez, Tess",
+        "Sullivan, Ainsley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anna Gostkowski walked (3-1 BBKBB).",
+            "Kalle Halvorsen singled to shortstop (2-1 SBB); Anna Gostkowski advanced to second.",
+            "Elyse Picard doubled to left center, RBI, advanced to third on a throwing error by ss (3-2 FKFBBBF); Kalle Halvorsen scored; Anna Gostkowski scored.",
+            "Abby Weiterman grounded out to 3b (0-1 K).",
+            "Cainen Avery grounded out to 2b, RBI (3-2 KBBBK); Elyse Picard scored, unearned.",
+            "Abbie Monkevicz grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jayme Kiley popped up to 2b (1-1 SB).",
+            "Kalee Keyser grounded out to c (3-2 BSSFFBBF).",
+            "Ashley Connor walked (3-1 BBBKB).",
+            "Anna Gostkowski struck out looking (2-2 BKFBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kalle Halvorsen struck out swinging (3-2 KBBFFBS).",
+            "Elyse Picard singled to second base (3-2 FBBKB).",
+            "Abby Weiterman doubled down the lf line, RBI (1-2 FBF); Elyse Picard scored.",
+            "Cainen Avery walked (3-2 BKBFBB).",
+            "Abbie Monkevicz reached first on a fielding error by 3b (1-1 BK); Cainen Avery advanced to second; Abby Weiterman advanced to third.",
+            "Jayme Kiley walked, RBI (3-0 BBBB); Abbie Monkevicz advanced to second; Cainen Avery advanced to third; Abby Weiterman scored, unearned.",
+            "Ally Wolf to 3b.",
+            "Tess Bojorquez to 2b.",
+            "Rebecca Heinze to dp.",
+            "Alli Johnson to rf.",
+            "Martha Miller to ss.",
+            "Ainsley Sullivan to p.",
+            "Kalee Keyser hit by pitch, RBI (2-0 BH); Jayme Kiley advanced to second; Abbie Monkevicz advanced to third; Cainen Avery scored.",
+            "Ashley Connor struck out swinging (1-2 BKKS).",
+            "Anna Gostkowski lined out to 2b (1-2 BKF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Rebecca Heinze to dp for Ainsley Sullivan.",
+            "Ainsley Sullivan to p for Rebecca Heinze.",
+            "Kalle Halvorsen walked (3-2 KBBFBB).",
+            "Elyse Picard fouled out to c (0-0).",
+            "Abby Weiterman walked (3-0 BBBB); Kalle Halvorsen advanced to second.",
+            "Abby Weiterman advanced to second on a wild pitch; Kalle Halvorsen advanced to third on a wild pitch.",
+            "Cainen Avery reached on a fielder's choice to third base (0-0); Abby Weiterman advanced to third; Kalle Halvorsen out at home 3b to c.",
+            "Abbie Monkevicz flied out to cf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jayme Kiley flied out to cf (2-1 BKB).",
+            "Kalee Keyser singled through the left side (0-1 F).",
+            "Ashley Connor singled down the rf line (3-2 BFKBB); Kalee Keyser advanced to third.",
+            "Ashley Connor stole second.",
+            "Anna Gostkowski reached on a fielder's choice to third base (0-0); Kalee Keyser out at home 3b unassisted.",
+            "Kalle Halvorsen tripled down the rf line, 2 RBI (2-0 BB); Anna Gostkowski scored; Ashley Connor scored.",
+            "Elyse Picard flied out to cf (1-2 BKFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Monica Montoya to rf.",
+            "Abby Weiterman flied out to rf (2-1 KBB).",
+            "Cainen Avery popped up to 2b (2-2 BKFFB).",
+            "Abbie Monkevicz flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/bowdoin-college/boxscore/11008",
+      "date": "3/17/2026",
+      "opponent": "Bowdoin College",
+      "pitchers": [
+        "Miller, Martha"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anika Ewert singled to shortstop (1-1 BK).",
+            "Anika Ewert stole second.",
+            "P. Fong-Picariello singled to first base, RBI (1-2 KSB); Anika Ewert scored.",
+            "Sammie Wright singled through the right side (0-1 F); P. Fong-Picariello advanced to second.",
+            "M. Flannery-Goodman walked (3-0 BBBB); Sammie Wright advanced to second; P. Fong-Picariello advanced to third.",
+            "Chloe Garcia reached on a fielder's choice to second base (0-1 F); M. Flannery-Goodman advanced to second; Sammie Wright advanced to third; P. Fong-Picariello out at home 2b to c.",
+            "Baylie Wong reached on a fielder's choice to third base (0-1 F); Chloe Garcia advanced to second; M. Flannery-Goodman advanced to third; Sammie Wright out at home 3b to c.",
+            "Maddie Paschke struck out swinging (1-2 SSBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Liv Barrett flied out to rf (2-2 KSBBF).",
+            "Kaitlyn Fado grounded out to p, bunt (0-1 S).",
+            "Anika Ewert doubled down the lf line (1-0 B).",
+            "P. Fong-Picariello singled to right field, RBI (0-2 SF); Anika Ewert scored.",
+            "Sammie Wright flied out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Flannery-Goodman lined out to 2b (2-1 BBK).",
+            "Chloe Garcia flied out to lf (2-2 BKBS).",
+            "Baylie Wong lined out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Paschke hit by pitch (1-0 H).",
+            "Liv Barrett singled to right center (0-0); Maddie Paschke advanced to second.",
+            "Kaitlyn Fado reached on a fielder's choice to second base (0-0); Liv Barrett out at second 2b to 1b; Maddie Paschke advanced to third.",
+            "Kaitlyn Fado stole second.",
+            "Anika Ewert singled to left field, advanced to second on the throw, RBI (2-1 BFB); Kaitlyn Fado advanced to third; Maddie Paschke scored.",
+            "P. Fong-Picariello reached first on a fielding error by p (2-1 KBB).",
+            "Sammie Wright singled through the left side, 2 RBI (0-2 SK); P. Fong-Picariello advanced to second; Anika Ewert scored; Kaitlyn Fado scored.",
+            "M. Flannery-Goodman popped up to 2b (1-2 FBS).",
+            "Chloe Garcia grounded out to 2b (0-2 SFFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Baylie Wong grounded out to 3b (2-1 SBB).",
+            "Maddie Paschke struck out swinging (2-2 BBSKFS).",
+            "Liv Barrett struck out swinging (1-2 KKFBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kaitlyn Fado grounded out to ss (2-1 BKB).",
+            "Anika Ewert singled down the lf line (3-2 BBBKF).",
+            "Anika Ewert stole second.",
+            "P. Fong-Picariello walked (3-1 BFBBB).",
+            "Sammie Wright singled to second base (0-0); P. Fong-Picariello advanced to second; Anika Ewert advanced to third.",
+            "M. Flannery-Goodman singled to right field, 2 RBI (3-1 BBBK); Sammie Wright advanced to third; P. Fong-Picariello scored; Anika Ewert scored.",
+            "M. Flannery-Goodman stole second.",
+            "Chloe Garcia flied out to rf, sacrifice fly, RBI (0-1 K); M. Flannery-Goodman advanced to third; Sammie Wright scored.",
+            "Baylie Wong reached first on a dropped fly by lf, out at second lf to 2b (1-2 FBF); M. Flannery-Goodman scored, unearned."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Rebecca Heinze to 1b for Maya Thomas.",
+            "Maddie Paschke struck out swinging (1-2 BFKS).",
+            "Liv Barrett grounded out to ss (0-0).",
+            "Kaitlyn Fado grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/eastern-connecticut-state/boxscore/11060",
+      "date": "3/15/2026",
+      "opponent": "Eastern Connecticut State",
+      "pitchers": [
+        "Miller, Martha"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Elizabeth Mitchell tripled to right center (0-0).",
+            "Kaley Laird reached on a fielder's choice to first base (0-1 K).",
+            "Maddy Bowen grounded out to 3b, RBI (0-0); Kaley Laird advanced to second, advanced to third on the throw; Elizabeth Mitchell scored.",
+            "Hadley Marchand grounded out to 3b (0-0).",
+            "Sam Healy struck out swinging (2-2 KBSFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Thompson walked (3-2 BKBFBB).",
+            "Jordan Bennett pinch ran for Abby Thompson.",
+            "Ashlyn Kenefick out at first c to 2b, SAC, bunt (0-1 K); Jordan Bennett advanced to second, advanced to third on the throw.",
+            "Grace Jenkins hit by pitch (3-2 FBBKH).",
+            "Julia Boya reached on a fielder's choice to pitcher (0-0); Grace Jenkins advanced to second.",
+            "Elizabeth Mitchell reached on a fielder's choice to third base (0-1 K); Julia Boya advanced to second; Grace Jenkins advanced to third; Jordan Bennett out at home 3b to c.",
+            "Kaley Laird flied out to lf (3-2 BBKSFBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maddy Bowen lined out to rf (0-0).",
+            "Hadley Marchand flied out to cf (2-2 BFBS).",
+            "Sam Healy struck out swinging (2-2 FSBBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Thompson struck out swinging (1-2 KBKS).",
+            "Ashlyn Kenefick popped up to p, bunt (0-0).",
+            "Grace Jenkins popped up to 2b (0-2 SS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ally Wolf to 3b.",
+            "Elizabeth Welch to 2b.",
+            "Tess Bojorquez to ss.",
+            "Rebecca Heinze to 1b for Ainsley Sullivan.",
+            "Ainsley Sullivan to rf for Rebecca Heinze.",
+            "Julia Boya singled to third base (0-1 K).",
+            "Elizabeth Mitchell flied out to cf (0-0).",
+            "Kaley Laird popped up to ss (1-2 BKF).",
+            "Maddy Bowen singled to right field, advanced to second on a fielding error by rf, advanced to third (1-2 FBFFFF); Julia Boya scored, unearned.",
+            "Hadley Marchand fouled out to 1b (2-2 SBBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Monica Montoya to rf for Ainsley Sullivan.",
+            "Sam Healy popped up to 3b (0-0).",
+            "Abby Thompson singled through the right side (2-2 SBKB).",
+            "Ashlyn Kenefick out at first p to 2b, SAC, bunt (0-0); Abby Thompson advanced to second.",
+            "Grace Jenkins tripled to right center, RBI (2-2 BFBK); Abby Thompson scored.",
+            "Julia Boya walked (3-0 BBBB).",
+            "Julia Boya stole second; Grace Jenkins stole home.",
+            "Elizabeth Mitchell struck out swinging, reached first on an error by c (2-2 SBBFS); Julia Boya scored, unearned.",
+            "Kaley Laird out at first c to 2b, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jenna Maus pinch hit for Maddy Bowen.",
+            "Lily Kenefick to dp for Hadley Marchand.",
+            "Taylor Lathrop to 3b for Sam Healy.",
+            "Madison Pajak to rf for Ashlyn Kenefick.",
+            "Jenna Maus grounded out to ss (3-2 KKBBFBF).",
+            "Lily Kenefick grounded out to p (1-2 BKSF).",
+            "Taylor Lathrop walked (3-0 BBBB).",
+            "Taylor Lathrop advanced to second on a wild pitch.",
+            "Abby Thompson singled to pitcher (1-2 KBK); Taylor Lathrop advanced to third.",
+            "Madison Pajak struck out swinging (2-2 BKBKS)."
           ]
         }
       ],

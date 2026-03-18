@@ -1,36 +1,64 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-17T19:00:38.136Z",
+  "scrapedAt": "2026-03-18T01:55:52.646Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gigante, Whitney",
       "w": 3,
       "l": 0,
-      "era": 1.45,
+      "era": 1.85,
+      "app": 8,
+      "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 22.2,
+      "h": 20,
+      "r": 16,
+      "er": 6,
+      "bb": 14,
+      "so": 11,
+      "hr": 1,
+      "whip": 1.5,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 93,
+      "bAvg": 0.215,
+      "wp": 3,
+      "hbp": 4,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
+      "name": "DeCrescenzo, Ella",
+      "w": 1,
+      "l": 2,
+      "era": 3.26,
       "app": 7,
       "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
       "ip": 19.1,
-      "h": 18,
+      "h": 28,
       "r": 13,
-      "er": 4,
+      "er": 9,
       "bb": 12,
-      "so": 9,
+      "so": 10,
       "hr": 0,
-      "whip": 1.55,
-      "doubles": 4,
+      "whip": 2.07,
+      "doubles": 7,
       "triples": 0,
-      "ab": 80,
-      "bAvg": 0.225,
+      "ab": 82,
+      "bAvg": 0.341,
       "wp": 3,
-      "hbp": 4,
+      "hbp": 3,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 4
     },
     {
       "name": "Lees, Jacelyn",
@@ -59,34 +87,6 @@
       "bk": 0,
       "sfa": 1,
       "sha": 6
-    },
-    {
-      "name": "DeCrescenzo, Ella",
-      "w": 1,
-      "l": 1,
-      "era": 4.02,
-      "app": 6,
-      "gs": 2,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 15.2,
-      "h": 25,
-      "r": 10,
-      "er": 9,
-      "bb": 8,
-      "so": 7,
-      "hr": 0,
-      "whip": 2.11,
-      "doubles": 6,
-      "triples": 0,
-      "ab": 69,
-      "bAvg": 0.362,
-      "wp": 2,
-      "hbp": 3,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
     },
     {
       "name": "Baker, Kelly",
@@ -980,6 +980,99 @@
             "Taylor Koehler grounded out to 2b, RBI (3-2 KBKBBF); Kaitlyn Weidemann scored.",
             "Baley Berndt pinch hit for Maggie Ward.",
             "Baley Berndt flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/wellesley/boxscore/27450",
+      "date": "3/17/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "DeCrescenzo, Ella",
+        "Gigante, Whitney"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern grounded out to p (1-2 BKFF).",
+            "E. Gaunce grounded out to 2b (1-0 B).",
+            "B. Awad doubled down the rf line (3-1 BBBK).",
+            "S. Wicker grounded out to 3b (2-1 BBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Borrison struck out swinging (2-2 SKBBS).",
+            "A. Rodriguez lined out to ss (2-1 BKB).",
+            "G. Jones grounded out to 3b (1-2 FSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Fredericks walked (3-1 BBBKB).",
+            "S. Fredericks stole second.",
+            "A. Delgado out at first 3b to 2b, SAC, bunt (0-1 K); S. Fredericks advanced to third.",
+            "A. Mulhern grounded out to p (1-0 B).",
+            "E. Gaunce walked (3-2 FFBFBFBB).",
+            "E. Gaunce advanced to second on a wild pitch.",
+            "B. Awad walked (3-2 BKBBKFB).",
+            "S. Wicker struck out swinging (1-2 SBKFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Borrison walked (3-1 BBKBB).",
+            "N. Nicol pinch ran for D. Borrison.",
+            "A. Rodriguez singled through the left side (0-2 FF); N. Nicol advanced to second.",
+            "G. Jones struck out swinging (0-2 KFS).",
+            "S. Fredericks out at first 3b to 2b, SAC, bunt (0-0); A. Rodriguez advanced to second; N. Nicol advanced to third.",
+            "A. Delgado reached first on an error by p (2-2 BKKB); A. Rodriguez advanced to third; N. Nicol scored, unearned.",
+            "A. Delgado stole second.",
+            "A. Mulhern singled up the middle, 2 RBI (1-2 SFB); A. Delgado scored, unearned; A. Rodriguez scored, unearned.",
+            "Whitney Gigante to p for Ella DeCrescenzo.",
+            "E. Gaunce reached on a fielder's choice to second base (1-1 BF); A. Mulhern out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexis Amante to c for Malia Apor.",
+            "B. Awad struck out looking (2-2 KBFBK).",
+            "S. Wicker walked (3-2 BKBBKB).",
+            "J. Polski pinch ran for S. Wicker.",
+            "J. Polski stole second.",
+            "D. Borrison reached on a fielder's choice to third base, advanced to second on the throw (2-2 BBKFF); J. Polski out at third 3b to 2b to 3b to ss.",
+            "A. Rodriguez grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. Mellady pinch hit for G. Jones.",
+            "B. Mellady struck out looking (2-2 BKBKK).",
+            "S. Fredericks reached first on an error by ss (1-1 KB).",
+            "A. Delgado homered to right field, 2 RBI (1-2 BFK); S. Fredericks scored.",
+            "A. Mulhern grounded out to 2b (1-0 B).",
+            "E. Gaunce grounded out to 2b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Awad singled up the middle (0-1 S).",
+            "S. Wicker walked (3-0 BBBB); B. Awad advanced to second.",
+            "M. Abernethy pinch hit for D. Borrison.",
+            "M. Abernethy reached on a fielder's choice to shortstop (0-1 K); S. Wicker out at second ss to 2b; B. Awad advanced to third, scored on a throwing error by 2b, unearned.",
+            "T. Claybrook pinch hit for A. Rodriguez.",
+            "E. Kulhanek pinch ran for M. Abernethy.",
+            "T. Claybrook reached on a fielder's choice to shortstop (0-0); E. Kulhanek out at second ss to 2b.",
+            "G. Jones reached on a fielder's choice to second base (2-1 FBB); T. Claybrook out at second 2b to ss."
           ]
         }
       ],
