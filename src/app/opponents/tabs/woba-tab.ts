@@ -19,7 +19,7 @@ import { PlayerTable } from '../player-table/player-table';
     <ws-woba-legend />
 
     @if (data.error()) {
-      <div class="bg-error-bg text-error py-cell px-card border-error-border rounded-[10px] border text-scale-[1.05]">
+      <div class="bg-error-bg text-error py-cell px-card border-error-border rounded-[10px] border text-[1.05rem]">
         {{ data.error() }}
       </div>
     }
@@ -30,7 +30,7 @@ import { PlayerTable } from '../player-table/player-table';
       </div>
     }
     @if (data.empty()) {
-      <div class="py-section px-card text-content-dim text-center text-scale-[1.05]">No scouting data for this team yet.</div>
+      <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No scouting data for this team yet.</div>
     }
 
     @if ((data.regulars().length > 0 || data.reserves().length > 0) && !data.loading()) {

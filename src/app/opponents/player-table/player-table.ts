@@ -2,7 +2,7 @@ import { NgStyle, NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import type { DisplayRow, SortDir, SortKey } from '@ws/core/models';
 import { formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
-import { ClassYearPipe, SeasonWobasPipe, Sparkline, WobaBadge } from '@ws/core/ui';
+import { ClassYearPipe, WobaBadge } from '@ws/core/ui';
 
 import { PlayerDetail } from '../player-detail/player-detail';
 
@@ -13,8 +13,6 @@ import { PlayerDetail } from '../player-detail/player-detail';
     NgStyle,
     NgTemplateOutlet,
     ClassYearPipe,
-    SeasonWobasPipe,
-    Sparkline,
     WobaBadge,
     PlayerDetail,
   ],

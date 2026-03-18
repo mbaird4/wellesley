@@ -7,7 +7,7 @@
       >
         Player
         @if (sortKey() === 'name') {
-          <span class="text-scale-[0.6] ml-1 align-middle">
+          <span class="ml-1 align-middle text-[0.6rem]">
             {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
           </span>
         }
@@ -20,7 +20,7 @@
       >
         Career
         @if (sortKey() === 'career') {
-          <span class="text-scale-[0.6] ml-1 align-middle">
+          <span class="ml-1 align-middle text-[0.6rem]">
             {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
           </span>
         }
@@ -32,7 +32,7 @@
         >
           '{{ ('' + year).slice(2) }}
           @if (yearSortYear() === year) {
-            <span class="text-scale-[0.6] ml-1 align-middle">
+            <span class="ml-1 align-middle text-[0.6rem]">
               {{ sortDir() === 'asc' ? '&#9650;' : '&#9660;' }}
             </span>
           }
@@ -75,7 +75,7 @@
   <tr class="player-row" (click)="playerToggled.emit(row.name)">
     <td class="flex items-center gap-2">
       <span
-        class="text-content-dim expand-arrow text-scale-[0.65] w-4 shrink-0 transition-colors"
+        class="text-content-dim expand-arrow w-4 shrink-0 text-[0.65rem] transition-colors"
       >
         {{ expandedPlayer() === row.name ? '&#9660;' : '&#9654;' }}
       </span>
@@ -86,7 +86,7 @@
     </td>
     <td class="text-content-dim">{{ row.classYear | classYear }}</td>
     @if (row.seasons.length > 0) {
-      <td class="text-scale-[1.05] text-center font-bold tabular-nums">
+      <td class="text-center text-[1.05rem] font-bold tabular-nums">
         <span [ngStyle]="gradientStyle(row.career.woba)">
           {{ fmtWoba(row.career.woba) }}
         </span>

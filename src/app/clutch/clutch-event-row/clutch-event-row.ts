@@ -25,7 +25,7 @@ import { Diamond, FormatPlayTypePipe, FormatRunnerOutcomePipe, FormatSituationPi
       <span class="text-content-secondary text-sm">{{ event().baseSituation | formatSituation }}</span>
       <span class="text-sm font-medium">{{ event().batterResult | formatPlayType }}</span>
       @if (event().isPinchHit) {
-        <span class="bg-brand-bg text-brand-text rounded px-1.5 py-0.5 text-scale-[0.65] font-semibold uppercase tracking-wider"> PH </span>
+        <span class="bg-brand-bg text-brand-text rounded px-1.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider"> PH </span>
       }
     </div>
 

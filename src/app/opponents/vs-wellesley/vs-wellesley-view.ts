@@ -19,7 +19,7 @@ import { VsWellesleyTable } from './vs-wellesley-table';
 
     @if (data(); as d) {
       @if (d.overall.length === 0) {
-        <div class="py-section px-card text-content-dim text-center text-scale-[1.05]">No games vs Wellesley found for {{ teamName() }}.</div>
+        <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No games vs Wellesley found for {{ teamName() }}.</div>
       } @else {
         <div class="flex flex-col gap-1">
           <span class="text-content-dim text-sm"> {{ d.games.length }} {{ d.games.length === 1 ? 'game' : 'games' }} ({{ gameDates() }}) </span>
@@ -38,7 +38,7 @@ import { VsWellesleyTable } from './vs-wellesley-table';
     }
 
     @if (!data() && !loading()) {
-      <div class="py-section px-card text-content-dim text-center text-scale-[1.05]">No vs Wellesley data available for {{ teamName() }}.</div>
+      <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No vs Wellesley data available for {{ teamName() }}.</div>
     }
   `,
 })

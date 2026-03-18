@@ -4,15 +4,11 @@
     Loading pitching data...
   </div>
 } @else if (!pitchingData()) {
-  <div
-    class="py-section px-card text-content-dim text-scale-[1.05] text-center"
-  >
+  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
     No pitching data available for this team.
   </div>
 } @else if (pitcherList().length === 0) {
-  <div
-    class="py-section px-card text-content-dim text-scale-[1.05] text-center"
-  >
+  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
     No pitchers found in data.
   </div>
 } @else {

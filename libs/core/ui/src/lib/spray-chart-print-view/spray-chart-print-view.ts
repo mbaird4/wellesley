@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
 import type { SprayChartSummary, Team } from '@ws/core/models';
 
 import { SprayField } from '../spray-field/spray-field';
-import { SprayLegend } from '../spray-legend/spray-legend';
 
 export interface PrintPlayerSummary {
   name: string;
@@ -44,10 +43,7 @@ interface DugoutPlayer {
 @Component({
   selector: 'ws-spray-chart-print-view',
   standalone: true,
-  imports: [
-    SprayField,
-    SprayLegend,
-  ],
+  imports: [SprayField],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'hidden print:block' },
   templateUrl: './spray-chart-print-view.html',
