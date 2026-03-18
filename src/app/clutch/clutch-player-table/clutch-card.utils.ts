@@ -1,5 +1,5 @@
 import type { ClutchEvent, PbpBattingAccum, PlayerClutchSummary } from '@ws/core/models';
-import type { ClutchMetric } from '@ws/core/models';
+import type { BattingMetric } from '@ws/core/models';
 import { accumFromResult, calculateWoba, emptyAccum, formatWoba, wobaColorStyle } from '@ws/core/processors';
 
 export interface SituationStat {
@@ -53,7 +53,7 @@ function avgToColor(avg: number): string {
   return wobaColorStyle(mapped).color;
 }
 
-export function valueColor(value: number, pa: number, metric: ClutchMetric): string {
+export function valueColor(value: number, pa: number, metric: BattingMetric): string {
   if (pa === 0) {
     return '';
   }
@@ -61,7 +61,7 @@ export function valueColor(value: number, pa: number, metric: ClutchMetric): str
   return metric === 'avg' ? avgToColor(value) : wobaColorStyle(value).color;
 }
 
-export function getValues(p: PlayerClutchSummary, metric: ClutchMetric): { rob: number; empty: number; risp: number; delta: number; robPa: number; emptyPa: number; rispPa: number } {
+export function getValues(p: PlayerClutchSummary, metric: BattingMetric): { rob: number; empty: number; risp: number; delta: number; robPa: number; emptyPa: number; rispPa: number } {
   if (metric === 'avg') {
     const rob = calcAvg(p.runnersOnStats);
     const empty = calcAvg(p.basesEmptyStats);
@@ -104,7 +104,7 @@ const SITUATION_CONTEXT: Record<string, string> = {
   loaded: 'with bases loaded',
 };
 
-export function buildHeadline(delta: number, robPa: number, emptyPa: number, metric: ClutchMetric, situation: string): string {
+export function buildHeadline(delta: number, robPa: number, emptyPa: number, metric: BattingMetric, situation: string): string {
   const context = SITUATION_CONTEXT[situation] ?? 'with runners on base';
 
   if (robPa === 0 || emptyPa === 0) {
@@ -143,7 +143,7 @@ export function buildRunnerLine(p: PlayerClutchSummary): string {
   return parts.join(' · ');
 }
 
-export function getSituationValue(p: PlayerClutchSummary, situation: string, metric: ClutchMetric): { value: number; pa: number } {
+export function getSituationValue(p: PlayerClutchSummary, situation: string, metric: BattingMetric): { value: number; pa: number } {
   if (situation === 'runners-on') {
     if (metric === 'avg') {
       return { value: calcAvg(p.runnersOnStats), pa: p.runnersOnStats.ab };
@@ -175,7 +175,7 @@ export function getSituationValue(p: PlayerClutchSummary, situation: string, met
   return { value: 0, pa: 0 };
 }
 
-export function formatValue(value: number, pa: number, metric: ClutchMetric): string {
+export function formatValue(value: number, pa: number, metric: BattingMetric): string {
   if (pa === 0) {
     return '-';
   }
@@ -183,7 +183,7 @@ export function formatValue(value: number, pa: number, metric: ClutchMetric): st
   return metric === 'avg' ? formatAvg(value) : formatWoba(value);
 }
 
-export function buildDeltaLabel(delta: number, robPa: number, emptyPa: number, metric: ClutchMetric): string {
+export function buildDeltaLabel(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
   if (robPa === 0 || emptyPa === 0) {
     return '-';
   }
@@ -194,7 +194,7 @@ export function buildDeltaLabel(delta: number, robPa: number, emptyPa: number, m
   return `${sign}${formatted}`;
 }
 
-export function buildDeltaPillClass(delta: number, robPa: number, emptyPa: number, metric: ClutchMetric): string {
+export function buildDeltaPillClass(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
   if (robPa === 0 || emptyPa === 0) {
     return 'bg-white/5 text-content-dim';
   }
@@ -212,7 +212,7 @@ export function buildDeltaPillClass(delta: number, robPa: number, emptyPa: numbe
   return 'bg-white/5 text-content-secondary';
 }
 
-export function buildDeltaArrow(delta: number, robPa: number, emptyPa: number, metric: ClutchMetric): string {
+export function buildDeltaArrow(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
   if (robPa === 0 || emptyPa === 0) {
     return '';
   }

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { ClutchMetric, TeamSummary } from '@ws/core/models';
+import type { BattingMetric, TeamSummary } from '@ws/core/models';
 
 @Component({
   selector: 'ws-clutch-team-summary',
@@ -10,7 +10,7 @@ import type { ClutchMetric, TeamSummary } from '@ws/core/models';
 })
 export class ClutchTeamSummary {
   readonly summary = input.required<TeamSummary>();
-  readonly metric = input.required<ClutchMetric>();
+  readonly metric = input.required<BattingMetric>();
   readonly filterContext = input.required<string>();
 
   readonly contextCapitalized = computed(() => {

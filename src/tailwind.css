@@ -81,6 +81,15 @@
 
   /* Single-series bar fill */
   --color-chart-bar: rgba(91, 122, 230, 0.3);
+
+  /*--text-xs: 1rem;*/
+  /*--text-sm: 1.25rem;*/
+  /*--text-base: 1.5rem;*/
+  /*--text-lg: 1.75rem;*/
+  /*--text-xl: 1.875rem;*/
+  /*--text-2xl: 2rem;*/
+  /*--text-3xl: 3rem;*/
+  /*--text-5xl: 4rem;*/
 }
 
 @page {

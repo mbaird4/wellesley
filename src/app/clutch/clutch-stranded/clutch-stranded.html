@@ -1,0 +1,131 @@
+<!-- Team totals -->
+<div class="flex flex-wrap gap-3">
+  <div class="stat-card">
+    <div class="stat-value">{{ teamTotals().total }}</div>
+    <div class="stat-label">Total LOB</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value text-content-secondary">
+      {{ teamTotals().onFirst }}
+    </div>
+    <div class="stat-label">Stranded on 1st</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value text-amber-400">{{ teamTotals().onSecond }}</div>
+    <div class="stat-label">Stranded on 2nd</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value text-red-400">{{ teamTotals().onThird }}</div>
+    <div class="stat-label">Stranded on 3rd</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{{ teamTotals().strandRate }}%</div>
+    <div class="stat-label">Strand Rate</div>
+  </div>
+</div>
+
+<p class="text-content-secondary text-sm leading-relaxed">
+  <span class="text-content-bright font-semibold tabular-nums">
+    {{ teamTotals().total }}
+  </span>
+  runners stranded{{ filterContext() ? ' ' + filterContext() : '' }}.
+  <span class="text-content-bright tabular-nums">
+    {{ teamTotals().scoringPosStranded }}
+  </span>
+  in scoring position.
+  @if (worstOffender()) {
+    <span class="text-content-bright font-semibold">
+      {{ worstOffender()!.name }}
+    </span>
+    left the most on base (
+    <span class="tabular-nums">{{ worstOffender()!.total }}</span>
+    in {{ worstOffender()!.pa }} PA).
+  }
+</p>
+
+<!-- Sort -->
+<div class="flex items-center gap-2">
+  <span class="text-content-dim text-xs font-medium tracking-wider uppercase">
+    Sort
+  </span>
+  @for (opt of sortOptions; track opt.key) {
+    <button
+      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-medium transition-[color,background]"
+      [class]="
+        sort() === opt.key
+          ? 'bg-brand-bg text-brand-text'
+          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
+      "
+      (click)="sort.set(opt.key)"
+    >
+      {{ opt.label }}
+    </button>
+  }
+</div>
+
+<!-- Player rows -->
+<div class="flex flex-col gap-2">
+  @for (row of sortedRows(); track row.name) {
+    <div
+      class="bg-surface-card border-line px-card flex items-center gap-4 rounded-xl border py-3"
+    >
+      <!-- Name + totals -->
+      <div class="flex min-w-[160px] flex-col gap-0.5">
+        <span class="text-content-bright text-sm font-semibold">
+          {{ row.name }}
+        </span>
+        <span class="text-content-dim text-sm tabular-nums">
+          {{ row.pa }} PA
+        </span>
+      </div>
+
+      <!-- LOB total -->
+      <div class="flex flex-col items-center gap-0.5">
+        <span class="text-content-bright text-lg font-bold tabular-nums">
+          {{ row.total }}
+        </span>
+        <span class="text-content-dim text-[0.65rem]">LOB</span>
+      </div>
+
+      <div class="flex flex-col items-center gap-0.5">
+        <span class="text-content-bright text-lg font-bold tabular-nums">
+          {{ row.strandRate }}%
+        </span>
+        <span class="text-content-dim text-[0.65rem]">% Stranded</span>
+      </div>
+
+      <!-- Base breakdown as stacked bar -->
+      <div class="flex flex-1 items-center gap-3">
+        @if (row.onFirst > 0) {
+          <div class="flex items-center gap-1.5">
+            <span class="inline-block h-3 w-3 rounded-sm bg-white/20"></span>
+            <span class="text-content-secondary text-sm tabular-nums">
+              {{ row.onFirst }}
+            </span>
+            <span class="text-content-dim text-[0.65rem]">1st</span>
+          </div>
+        }
+        @if (row.onSecond > 0) {
+          <div class="flex items-center gap-1.5">
+            <span
+              class="inline-block h-3 w-3 rounded-sm bg-amber-400/70"
+            ></span>
+            <span class="text-sm text-amber-400 tabular-nums">
+              {{ row.onSecond }}
+            </span>
+            <span class="text-content-dim text-[0.65rem]">2nd</span>
+          </div>
+        }
+        @if (row.onThird > 0) {
+          <div class="flex items-center gap-1.5">
+            <span class="inline-block h-3 w-3 rounded-sm bg-red-400/70"></span>
+            <span class="text-sm text-red-400 tabular-nums">
+              {{ row.onThird }}
+            </span>
+            <span class="text-content-dim text-[0.65rem]">3rd</span>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

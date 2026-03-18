@@ -77,7 +77,7 @@ export interface ClutchSummary {
   allEvents: ClutchEvent[];
 }
 
-export type ClutchMetric = 'woba' | 'avg';
+export type BattingMetric = 'woba' | 'avg';
 
 export interface TeamSummary {
   totalEvents: number;

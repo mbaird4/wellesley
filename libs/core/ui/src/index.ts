@@ -2,6 +2,7 @@ export * from './lib/base-runner-table/base-runner-table';
 export * from './lib/button-toggle/button-toggle';
 export * from './lib/diamond/diamond';
 export * from './lib/game-viewer/game-viewer';
+export * from './lib/metric-toggle/metric-toggle';
 export * from './lib/pipes';
 export * from './lib/pitcher-scouting-print-view/pitcher-scouting-print-view';
 export * from './lib/print-options-modal/print-options-modal';

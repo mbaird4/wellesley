@@ -1,20 +1,6 @@
 <div class="mb-4 flex items-center gap-3">
   <h2 class="m-0">Player by Lineup Position</h2>
-  <div class="flex gap-1">
-    @for (m of ['woba', 'avg']; track m) {
-      <button
-        class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-semibold tracking-wider uppercase transition-[color,background]"
-        [class]="
-          metric() === m
-            ? 'bg-brand-bg text-brand-text'
-            : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-        "
-        (click)="metric.set($any(m))"
-      >
-        {{ m }}
-      </button>
-    }
-  </div>
+  <ws-metric-toggle [value]="metric()" (valueChange)="metric.set($event)" />
 </div>
 
 @if (bp.gtSm()) {

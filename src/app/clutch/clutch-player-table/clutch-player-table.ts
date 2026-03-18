@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component, computed, effect, input, output, signal } from '@angular/core';
-import type { ClutchMetric, PlayerClutchSummary } from '@ws/core/models';
+import type { BattingMetric, PlayerClutchSummary } from '@ws/core/models';
+import { MetricToggle } from '@ws/core/ui';
 
 import type { DisplayCard } from './clutch-card.utils';
 import { buildContactBreakdown, buildDeltaArrow, buildDeltaLabel, buildDeltaPillClass, buildHeadline, buildRunnerLine, calcAvg, confidenceWeightedDelta, formatValue, getSituationValue, getValues, SITUATION_LABELS, valueColor } from './clutch-card.utils';
-
-export { ClutchMetric };
 
 type SortKey = 'delta' | 'robValue' | 'drivenIn' | 'name';
 
 @Component({
   selector: 'ws-clutch-player-table',
   standalone: true,
+  imports: [MetricToggle],
   host: { class: 'flex flex-col gap-3' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-player-table.html',
@@ -21,10 +21,11 @@ export class ClutchPlayerTable {
   readonly situationFilter = input('runners-on');
   readonly selectedPlayer = input<string | null>(null);
   readonly playerSelected = output<PlayerClutchSummary>();
-  readonly metricChanged = output<ClutchMetric>();
+  readonly metricChanged = output<BattingMetric>();
 
-  readonly metric = signal<ClutchMetric>('woba');
+  readonly metric = signal<BattingMetric>('avg');
   readonly sort = signal<SortKey>('delta');
+  readonly showInfo = signal(false);
   constructor() {
     effect(() => {
       this.metricChanged.emit(this.metric());

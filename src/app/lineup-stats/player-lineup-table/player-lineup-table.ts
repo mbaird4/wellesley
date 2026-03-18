@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { RosterService } from '@ws/core/data';
-import type { PlayerLineupBreakdown } from '@ws/core/models';
+import type { BattingMetric, PlayerLineupBreakdown } from '@ws/core/models';
 import { wobaColorStyle } from '@ws/core/processors';
+import { MetricToggle } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 
 export interface SlotCell {
@@ -38,9 +39,7 @@ export interface DetailSlotRow {
   wobaColor: string;
 }
 
-type Metric = 'woba' | 'avg';
-
-function formatMetric(value: number, pa: number, metric: Metric): string {
+function formatMetric(value: number, pa: number, metric: BattingMetric): string {
   if (pa === 0) {
     return '—';
   }
@@ -48,7 +47,7 @@ function formatMetric(value: number, pa: number, metric: Metric): string {
   return metric === 'woba' ? value.toFixed(3).replace(/^0/, '') : value.toFixed(3).replace(/^0\./, '.');
 }
 
-function metricColor(value: number, pa: number, metric: Metric): string {
+function metricColor(value: number, pa: number, metric: BattingMetric): string {
   if (pa === 0) {
     return '';
   }
@@ -58,7 +57,7 @@ function metricColor(value: number, pa: number, metric: Metric): string {
   return wobaColorStyle(scaled).color;
 }
 
-function buildCell(value: number, pa: number, metric: Metric): SlotCell {
+function buildCell(value: number, pa: number, metric: BattingMetric): SlotCell {
   return {
     formatted: formatMetric(value, pa, metric),
     color: metricColor(value, pa, metric),
@@ -100,6 +99,7 @@ function tagMinMax(cells: SlotCell[]): void {
 @Component({
   selector: 'ws-player-lineup-table',
   standalone: true,
+  imports: [MetricToggle],
   templateUrl: './player-lineup-table.html',
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -108,7 +108,7 @@ export class PlayerLineupTable {
   readonly bp = inject(BreakpointService);
   private readonly roster = inject(RosterService);
   readonly players = input.required<PlayerLineupBreakdown[]>();
-  readonly metric = signal<Metric>('woba');
+  readonly metric = signal<BattingMetric>('avg');
   readonly expandedPlayer = signal<string | null>(null);
   readonly slots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 

@@ -20,30 +20,60 @@
     <span class="text-content-dim text-xs font-medium tracking-wider uppercase">
       Metric
     </span>
+    <ws-metric-toggle [value]="metric()" (valueChange)="metric.set($event)" />
     <button
-      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-medium transition-[color,background]"
-      [class]="
-        metric() === 'woba'
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-      "
-      (click)="metric.set('woba')"
+      class="text-content-dim hover:text-content-secondary ml-1 cursor-pointer border-none bg-transparent p-1 text-sm transition-colors"
+      (click)="showInfo.set(!showInfo())"
     >
-      wOBA
-    </button>
-    <button
-      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-medium transition-[color,background]"
-      [class]="
-        metric() === 'avg'
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-      "
-      (click)="metric.set('avg')"
-    >
-      AVG
+      <i class="fa-solid fa-circle-info"></i>
     </button>
   </div>
 </div>
+
+@if (showInfo()) {
+  <div
+    class="bg-surface-card border-line flex flex-col gap-2.5 rounded-xl border px-4 py-3 text-sm"
+  >
+    <div class="flex items-center justify-between">
+      <span
+        class="text-content-bright text-xs font-semibold tracking-wider uppercase"
+      >
+        How to read these cards
+      </span>
+      <button
+        class="text-content-dim hover:text-content-secondary cursor-pointer border-none bg-transparent p-0.5 text-xs transition-colors"
+        (click)="showInfo.set(false)"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul
+      class="text-content-secondary flex flex-col gap-1.5 pl-4 text-[0.8rem] leading-relaxed"
+    >
+      <li>
+        <span class="text-content-bright font-medium">Bases Empty</span>
+        reflects all plate appearances with no runners on base — it does not
+        change with filters.
+      </li>
+      <li>
+        The
+        <span class="text-content-bright font-medium">situation column</span>
+        (Runners On / RISP / Loaded) responds to the situation filter above.
+      </li>
+      <li>
+        The
+        <span class="text-content-bright font-medium">delta pill</span>
+        compares runners-on vs. bases-empty performance. Positive means the
+        batter elevates with runners on.
+      </li>
+      <li>
+        <span class="text-content-bright font-medium">Clutch Factor sort</span>
+        weights the delta by sample size — small PA counts are pulled toward
+        zero.
+      </li>
+    </ul>
+  </div>
+}
 
 <div class="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
   @for (card of cards(); track card.player.name) {

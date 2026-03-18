@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RosterService, SoftballStatsService } from '@ws/core/data';
-import type { ClutchMetric, ClutchSummary, PbpBattingAccum, PlayerClutchSummary, TeamSummary } from '@ws/core/models';
+import type { BattingMetric, ClutchSummary, PbpBattingAccum, PlayerClutchSummary, TeamSummary } from '@ws/core/models';
 import { formatWoba, rebuildPlayerFromEvents } from '@ws/core/processors';
 import { LastUpdatedPipe } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
@@ -69,7 +69,7 @@ export class Clutch {
   readonly clutchData = signal<ClutchSummary | null>(null);
   readonly selectedPlayerName = signal<string | null>(null);
   readonly activeTab = signal<ClutchTab>('clutch');
-  readonly metric = signal<ClutchMetric>('woba');
+  readonly metric = signal<BattingMetric>('woba');
 
   readonly availableYears = ALL_SEASON_YEARS;
 
