@@ -108,6 +108,7 @@ export function computeClutchEvents(snapshots: PlaySnapshot[], opponent: string,
 
     // Build runner outcomes
     const bases: ('first' | 'second' | 'third')[] = ['first', 'second', 'third'];
+    const inningEnded = snap.outsAfter === 0 && snap.outsBefore > 0;
     const runnersOn: RunnerOutcome[] = bases
       .filter((base) => snap.basesBefore[base])
       .map((base) => {
@@ -133,14 +134,14 @@ export function computeClutchEvents(snapshots: PlaySnapshot[], opponent: string,
           return { name, baseBefore: base, outcome: 'stranded' as const };
         }
 
-        // Runner is not on any base and didn't score — out on bases
-        const stillOnAnyBase = snap.basesAfter.first === name || snap.basesAfter.second === name || snap.basesAfter.third === name;
-
-        if (!stillOnAnyBase && !scored) {
-          return { name, baseBefore: base, outcome: 'out' as const };
+        // Runner disappeared from bases without scoring.
+        // If the inning just ended (outs reset to 0), the runner was
+        // left on base — stranded, not put out on the play.
+        if (inningEnded) {
+          return { name, baseBefore: base, outcome: 'stranded' as const };
         }
 
-        return { name, baseBefore: base, outcome: 'stranded' as const };
+        return { name, baseBefore: base, outcome: 'out' as const };
       });
 
     const runnersScored = runnersOn.filter((r) => r.outcome === 'scored').length;
