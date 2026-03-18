@@ -1,7 +1,7 @@
 {
   "slug": "ecsu",
   "domain": "gowarriorathletics.com",
-  "scrapedAt": "2026-03-18T01:56:07.398Z",
+  "scrapedAt": "2026-03-18T05:26:38.493Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,26 +34,26 @@
     },
     {
       "name": "Chatfield, Leah",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 5.25,
-      "app": 1,
-      "gs": 1,
-      "cg": 0,
+      "era": 4.9,
+      "app": 2,
+      "gs": 2,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 4,
-      "h": 8,
-      "r": 4,
-      "er": 3,
-      "bb": 2,
-      "so": 4,
-      "hr": 1,
-      "whip": 2.5,
+      "ip": 10,
+      "h": 16,
+      "r": 9,
+      "er": 7,
+      "bb": 4,
+      "so": 9,
+      "hr": 2,
+      "whip": 2,
       "doubles": 1,
       "triples": 0,
-      "ab": 19,
-      "bAvg": 0.421,
+      "ab": 47,
+      "bAvg": 0.34,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -375,6 +375,82 @@
             "Dylan Tapia singled to second base (1-0 B); Safiya Butler advanced to third.",
             "Maya Thomas pinch ran for Dylan Tapia.",
             "Callia Holland struck out swinging (0-2 KKS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/franklin-and-marshall-college/boxscore/7870",
+      "date": "3/17/2026",
+      "opponent": "Franklin And Marshall College",
+      "pitchers": [
+        "Chatfield, Leah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Morgan Risnychok walked (0-0).",
+            "Morgan Risnychok stole second.",
+            "Sara Hess singled, RBI (0-0); Morgan Risnychok scored.",
+            "Sara Hess stole second.",
+            "Gabby Mundy reached first on an error by p (0-0); Sara Hess advanced to third.",
+            "Lauren Steiner reached on a fielder's choice (0-0); Gabby Mundy advanced to second; Sara Hess out at home 3b unassisted.",
+            "Natalia Garza singled, RBI (0-0); Lauren Steiner advanced to second; Gabby Mundy scored, unearned.",
+            "Ellie Lopiccolo grounded out to ss (0-0); Natalia Garza advanced to second; Lauren Steiner advanced to third.",
+            "Erika Stewart grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jenna Maus to c for Reagan Lalor.",
+            "Catie Kozub struck out swinging (0-0).",
+            "Nora Sidorski struck out swinging (0-0).",
+            "Morgan Risnychok singled to right field (0-0).",
+            "Sara Hess grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gabby Mundy singled to right field (0-0).",
+            "Lauren Steiner grounded out to ss (0-0); Gabby Mundy advanced to second.",
+            "Natalia Garza walked (0-0).",
+            "Ellie Lopiccolo singled to center field, RBI (0-0); Natalia Garza advanced to second; Gabby Mundy scored.",
+            "Erika Stewart flied out to cf (0-0).",
+            "Catie Kozub reached first on a fielding error by 1b (0-0); Ellie Lopiccolo advanced to second; Natalia Garza scored.",
+            "Nora Sidorski struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Morgan Risnychok singled to right field (0-0).",
+            "Sara Hess grounded into double play ss to 2b to 1b (0-0); Morgan Risnychok out on the play.",
+            "Gabby Mundy grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Steiner homered to center field, RBI (0-0).",
+            "Natalia Garza struck out swinging (0-0).",
+            "Ellie Lopiccolo singled to left field (0-0).",
+            "Erika Stewart reached first on a throwing error by ss (0-0); Ellie Lopiccolo advanced to second.",
+            "Grace Header pinch ran for Ellie Lopiccolo.",
+            "Catie Kozub struck out looking (0-0).",
+            "Abby Favazza pinch hit for Nora Sidorski.",
+            "Abby Favazza grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Morgan Risnychok out at first p to 2b (0-0).",
+            "Sara Hess lined out to cf (0-0).",
+            "Gabby Mundy grounded out to 2b (0-0)."
           ]
         }
       ],
