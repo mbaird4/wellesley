@@ -23,16 +23,16 @@ In both dev and production, the app reads from pre-generated static JSON files i
 
 ## Commands
 
-| Command                                         | What it does                                     |
-| ----------------------------------------------- | ------------------------------------------------ |
-| `npx nx serve`                                  | Dev server on `:4201` with hot reload            |
-| `npx nx build`                                  | Production build to `dist/wellesley/`            |
-| `npx nx test`                                   | Run Jest unit tests                              |
-| `npx nx lint`                                   | Run ESLint                                       |
-| `npm run prefetch`                              | Pre-scrape Wellesley boxscores to `public/data/` |
-| `npm run scrape-opponents`                      | Scrape all 10 opponent teams' batting stats      |
-| `npm run scrape-opponents -- --team wpi`        | Scrape a single team                             |
-| `npm run scrape-opponents -- --years 2024,2025` | Override which years to scrape                   |
+| Command                                         | What it does                                |
+| ----------------------------------------------- | ------------------------------------------- |
+| `npx nx serve`                                  | Dev server on `:4201` with hot reload       |
+| `npx nx build`                                  | Production build to `dist/wellesley/`       |
+| `npx nx test`                                   | Run Jest unit tests                         |
+| `npx nx lint`                                   | Run ESLint                                  |
+| `npm run scrape-blue`                           | Scrape Wellesley data to `public/data/`     |
+| `npm run scrape-opponents`                      | Scrape all 10 opponent teams' batting stats |
+| `npm run scrape-opponents -- --team wpi`        | Scrape a single team                        |
+| `npm run scrape-opponents -- --years 2024,2025` | Override which years to scrape              |
 
 ## Project Structure
 
@@ -56,7 +56,7 @@ src/
     types.ts                    # All shared interfaces
   cli.ts                        # CLI entry point for running processing outside Angular
 scripts/
-  prefetch-data.ts              # Pre-scrape Wellesley boxscores
+  scrape-blue.ts                # Scrape Wellesley data
   scrape-opponents.ts           # Scrape opponent batting stats from Sidearm Sports sites
 public/
   data/opponents/               # Scraped opponent JSON files (checked in)
@@ -66,7 +66,7 @@ public/
 
 ### Wellesley Stats
 
-The app loads pre-generated static JSON from `public/data/`. These files are created by `npm run prefetch` and checked into the repo. A GitHub Actions cron job (`.github/workflows/refresh-data.yml`) runs daily at 6 AM ET during softball season (Feb-May) to re-scrape the current year's data and auto-commit any changes.
+The app loads pre-generated static JSON from `public/data/`. These files are created by `npm run scrape-blue` and checked into the repo. A GitHub Actions cron job (`.github/workflows/blue-scrape.yml`) runs daily at 8 PM ET during softball season (Feb-May) to re-scrape the current year's data and auto-commit any changes.
 
 **Processing pipeline (runs in-browser from the JSON):**
 

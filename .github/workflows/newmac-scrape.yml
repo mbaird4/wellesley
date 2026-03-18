@@ -1,11 +1,9 @@
-name: Refresh Florida Trip Data
+name: Refresh NEWMAC Opponent Data
 
 on:
   schedule:
-    # 4x daily: midnight, 8am, 2pm ET (UTC-4 during DST)
-    - cron: '0 4,12,18 10-21 3 *'
-    # 8pm ET wraps to next UTC day
-    - cron: '0 0 11-22 3 *'
+    # Daily at 8 PM ET (midnight UTC) during softball season (Feb-May)
+    - cron: '0 0 * 2-6 *'
   workflow_dispatch:
 
 permissions:
@@ -28,14 +26,11 @@ jobs:
 
       - run: npm ci
 
-      - name: Scrape Florida Sidearm teams
-        run: npm run scrape-opponents -- --florida --years 2026 --with-pitching --with-gamedata
+      - name: Scrape NEWMAC opponents (batting, pitching, gamedata)
+        run: npm run scrape-opponents -- --years $(date +%Y) --with-pitching --with-gamedata
 
-      - name: Scrape Presto Sports teams
-        run: npm run scrape-ext -- --site presto --years 2026 --with-pitching --with-gamedata
-
-      - name: Scrape season stats for Florida teams
-        run: npm run scrape-season-stats -- --year 2026
+      - name: Scrape season stats for NEWMAC teams
+        run: npm run scrape-season-stats -- --year $(date +%Y)
 
       - name: Commit updated data if changed
         id: commit
@@ -47,7 +42,7 @@ jobs:
             echo "No data changes detected"
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore: refresh florida trip opponent data"
+            git commit -m "chore: refresh NEWMAC opponent data"
             git push
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi

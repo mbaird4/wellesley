@@ -38,7 +38,31 @@ const FLORIDA_SIDEARM_TEAMS: Record<string, string> = {
   uww: 'uwwsports.com',
 };
 
-// ── Types (mirroring prefetch-data.ts) ──
+// ── Aliases for team name matching in boxscore captions ──
+
+const TEAM_ALIASES: Record<string, string[]> = {
+  wpi: ['WPI'],
+  wheaton: ['Wheaton'],
+  springfield: ['Springfield'],
+  smith: ['Smith'],
+  salve: ['Salve Regina'],
+  mit: ['MIT'],
+  emerson: ['Emerson'],
+  coastguard: ['Coast Guard'],
+  clark: ['Clark'],
+  babson: ['Babson'],
+};
+
+const FLORIDA_ALIASES: Record<string, string[]> = {
+  wesleyan: ['Wesleyan'],
+  uwrf: ['UW-River Falls', 'River Falls'],
+  brockport: ['Brockport', 'SUNY Brockport'],
+  macalester: ['Macalester'],
+  ecsu: ['Eastern Connecticut', 'Eastern Conn', 'ECSU', 'Eastern Conn. St.'],
+  uww: ['UW-Whitewater', 'Whitewater'],
+};
+
+// ── Types (mirroring scrape-blue.ts) ──
 
 interface PlayByPlayInning {
   inning: string;
@@ -164,7 +188,7 @@ function extractBoxscoreUrls($: cheerio.CheerioAPI, baseUrl: string): string[] {
  * which cleanly separates the team name from the inning info. This is more reliable
  * than batting table captions which append the score (e.g. "Babson 5").
  */
-function discoverTeamName($: cheerio.CheerioAPI, domain: string): string | null {
+function discoverTeamName($: cheerio.CheerioAPI, domain: string, aliases: string[] = []): string | null {
   const pbpTab = $('#play-by-play');
   const teamNames = new Set<string>();
   const domainSlug = domain.split('.')[0].toLowerCase();
@@ -186,7 +210,20 @@ function discoverTeamName($: cheerio.CheerioAPI, domain: string): string | null 
 
   const unique = [...teamNames];
 
-  // Pick the one matching the domain slug (not the opponent)
+  // 1. Match against known aliases (most reliable)
+  if (aliases.length > 0) {
+    const aliasMatch = unique.find((name) => {
+      const lower = name.toLowerCase();
+
+      return aliases.some((a) => lower.includes(a.toLowerCase()) || a.toLowerCase().includes(lower));
+    });
+
+    if (aliasMatch) {
+      return aliasMatch;
+    }
+  }
+
+  // 2. Match against domain slug
   const domainMatch = unique.find((name) => {
     const lower = name.toLowerCase().replace(/\s+/g, '');
 
@@ -356,6 +393,18 @@ function parseRoster($: cheerio.CheerioAPI): Record<string, number> {
 }
 
 async function scrapeRoster(slug: string, domain: string, outputDir: string): Promise<void> {
+  const teamDir = path.join(outputDir, slug);
+  fs.mkdirSync(teamDir, { recursive: true });
+  const outPath = path.join(teamDir, 'roster.json');
+
+  // Skip if a roster already exists — scrape-opponents.ts writes a richer format
+  // (with classYear, position, bats, throws) that downstream consumers depend on.
+  if (fs.existsSync(outPath)) {
+    console.log(`  Roster already exists, skipping (${outPath})`);
+
+    return;
+  }
+
   console.log(`  Fetching roster...`);
   const html = await fetchPage(`https://${domain}/sports/softball/roster`);
 
@@ -367,12 +416,9 @@ async function scrapeRoster(slug: string, domain: string, outputDir: string): Pr
 
   const $ = cheerio.load(html);
   const jerseyMap = parseRoster($);
-  const teamDir = path.join(outputDir, slug);
-  fs.mkdirSync(teamDir, { recursive: true });
-  const outPath = path.join(teamDir, 'roster.json');
 
-  if (Object.keys(jerseyMap).length === 0 && fs.existsSync(outPath)) {
-    console.log(`  Roster parse returned 0 players, keeping existing ${outPath}`);
+  if (Object.keys(jerseyMap).length === 0) {
+    console.log(`  Roster parse returned 0 players, skipping`);
 
     return;
   }
@@ -383,7 +429,7 @@ async function scrapeRoster(slug: string, domain: string, outputDir: string): Pr
 
 // ── Per-team scraping ──
 
-async function scrapeTeamBoxscores(slug: string, domain: string, year: number): Promise<SerializedGameData[]> {
+async function scrapeTeamBoxscores(slug: string, domain: string, year: number, aliases: string[] = []): Promise<SerializedGameData[]> {
   const baseUrl = `https://${domain}`;
   console.log(`\n=== ${slug} / ${year} (${domain}) ===`);
 
@@ -419,7 +465,7 @@ async function scrapeTeamBoxscores(slug: string, domain: string, year: number): 
   }
 
   const $first = cheerio.load(firstHtml);
-  const teamName = discoverTeamName($first, domain);
+  const teamName = discoverTeamName($first, domain, aliases);
 
   if (!teamName) {
     console.log('  Could not discover team name, skipping');
@@ -487,19 +533,41 @@ async function main(): Promise<void> {
   console.log(`Teams: ${Object.keys(teamsToScrape).join(', ')}`);
   console.log(`Output directory: ${outputDir}`);
 
+  const activeAliases = florida ? FLORIDA_ALIASES : TEAM_ALIASES;
+
   for (const [slug, domain] of Object.entries(teamsToScrape)) {
     await scrapeRoster(slug, domain, outputDir);
     await delay(DELAY_MS);
+    const aliases = activeAliases[slug] ?? [];
 
     for (const year of years) {
-      const games = await scrapeTeamBoxscores(slug, domain, year);
+      const games = await scrapeTeamBoxscores(slug, domain, year, aliases);
 
       const teamDir = path.join(outputDir, slug);
       fs.mkdirSync(teamDir, { recursive: true });
       const filename = year === CURRENT_YEAR ? 'gamedata.json' : `gamedata-${year}.json`;
       const outPath = path.join(teamDir, filename);
-      fs.writeFileSync(outPath, JSON.stringify(games));
-      console.log(`  Wrote ${outPath} (${games.length} games)`);
+
+      // Merge new games with existing file (dedupe by URL)
+      let combined = games;
+
+      if (fs.existsSync(outPath)) {
+        try {
+          const existing: SerializedGameData[] = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+          const existingUrlSet = new Set(existing.map((g) => g.url));
+          const newGames = games.filter((g) => !existingUrlSet.has(g.url));
+          combined = [...existing, ...newGames];
+
+          if (newGames.length > 0) {
+            console.log(`  Merging ${newGames.length} new games with ${existing.length} existing`);
+          }
+        } catch {
+          // If parse fails, overwrite
+        }
+      }
+
+      fs.writeFileSync(outPath, JSON.stringify(combined));
+      console.log(`  Wrote ${outPath} (${combined.length} games)`);
     }
 
     // Be nice between teams

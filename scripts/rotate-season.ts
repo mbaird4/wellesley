@@ -113,7 +113,7 @@ function deleteIfExists(filePath: string, dryRun: boolean): void {
   }
 }
 
-// ── Roster parsing (same as prefetch-data.ts) ──
+// ── Roster parsing (same as scrape-blue.ts) ──
 
 function parseWellesleyRoster($: cheerio.CheerioAPI): Record<string, number> {
   const jerseyMap: Record<string, number> = {};

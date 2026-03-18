@@ -1,4 +1,4 @@
-name: Refresh Current Season Data
+name: Refresh Wellesley Data
 
 on:
   schedule:
@@ -28,14 +28,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Fetch current season data
-        run: npm run prefetch -- --years $(date +%Y)
-
-      - name: Fetch opponent data (batting, pitching, gamedata)
-        run: npm run scrape-opponents -- --years $(date +%Y) --with-pitching --with-gamedata
-
-      - name: Scrape season stats for all teams
-        run: npm run scrape-season-stats -- --year $(date +%Y)
+      - name: Scrape Wellesley season data
+        run: npm run scrape-blue -- --years $(date +%Y)
 
       - name: Commit updated data if changed
         id: commit

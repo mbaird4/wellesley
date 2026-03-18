@@ -1,16 +1,16 @@
 /**
- * Pre-fetch script: fetches boxscore data directly from wellesleyblue.com
- * (no CORS proxy needed in Node.js) and writes static JSON to public/data/.
+ * Scrape Wellesley's own data from wellesleyblue.com and write static JSON
+ * to public/data/.
  *
  * Current-year files use unsuffixed names (gamedata.json, batting-stats.json);
  * historical files keep year suffixes (gamedata-2025.json, etc.).
  *
  * Usage:
- *   npm run prefetch                          # current year only
- *   npm run prefetch -- --years 2025          # single year
- *   npm run prefetch -- --years 2025,2024     # multiple years
- *   npm run prefetch -- --roster-only         # scrape roster only
- *   npm run prefetch -- --force               # re-scrape all boxscores
+ *   npm run scrape-blue                          # current year only
+ *   npm run scrape-blue -- --years 2025          # single year
+ *   npm run scrape-blue -- --years 2025,2024     # multiple years
+ *   npm run scrape-blue -- --roster-only         # scrape roster only
+ *   npm run scrape-blue -- --force               # re-scrape all boxscores
  */
 
 import axios from 'axios';
@@ -954,8 +954,8 @@ function loadExistingBoxscoreUrls(outputDir: string, year: number): Set<string> 
 
 // ── Main orchestration ──
 
-async function prefetchYear(year: number, outputDir: string, force: boolean): Promise<void> {
-  console.log(`\n=== Prefetching ${year} ===`);
+async function scrapeYear(year: number, outputDir: string, force: boolean): Promise<void> {
+  console.log(`\n=== Scraping ${year} ===`);
 
   // 1. Fetch schedule page to get boxscore URLs
   console.log(`  Fetching schedule page...`);
@@ -1240,7 +1240,7 @@ function parseRoster($: cheerio.CheerioAPI): Roster {
   return roster;
 }
 
-async function prefetchRoster(outputDir: string): Promise<void> {
+async function scrapeRoster(outputDir: string): Promise<void> {
   console.log('\n=== Fetching roster ===');
   const html = await fetchPage(`${BASE_URL}/sports/softball/roster`);
 
@@ -1267,19 +1267,17 @@ async function main(): Promise<void> {
   console.log(`Output directory: ${outputDir}`);
   console.log(`Force re-scrape: ${force ? 'YES' : 'no'}`);
 
-  await prefetchRoster(outputDir);
-
   if (rosterOnly) {
-    console.log('\n--roster-only: skipping game/woba data');
+    await scrapeRoster(outputDir);
     console.log('\nDone!');
 
     return;
   }
 
-  console.log(`Prefetching data for years: ${years.join(', ')}`);
+  console.log(`Scraping data for years: ${years.join(', ')}`);
 
   for (const year of years) {
-    await prefetchYear(year, outputDir, force);
+    await scrapeYear(year, outputDir, force);
   }
 
   console.log('\nDone!');

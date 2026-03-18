@@ -249,7 +249,7 @@ const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
 };
 
-// ── Utilities (same as prefetch-data.ts) ──
+// ── Utilities (same as scrape-blue.ts) ──
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -663,7 +663,7 @@ function emptyCareer(): CareerStats {
   };
 }
 
-// ── Boxscore URL extraction (same pattern as prefetch-data.ts) ──
+// ── Boxscore URL extraction (same pattern as scrape-blue.ts) ──
 
 function extractBoxscoreUrls($: cheerio.CheerioAPI, domain: string): string[] {
   const baseUrl = `https://${domain}`;
@@ -799,7 +799,7 @@ function parseTeamPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string
 
 // ── Gamedata parsing (lineup + play-by-play for opponent teams) ──
 
-/** Parse batting lineup for a specific team (adapted from prefetch-data.ts parseLineup) */
+/** Parse batting lineup for a specific team (adapted from scrape-blue.ts parseLineup) */
 function parseTeamLineup($: cheerio.CheerioAPI, teamAliases: string[]): [number, string[]][] {
   const lineup = new Map<number, string[]>();
 
