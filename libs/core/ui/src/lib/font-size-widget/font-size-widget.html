@@ -1,0 +1,62 @@
+<button
+  (click)="toggle()"
+  class="bg-brand-light border-brand-light/30 hover:bg-brand flex h-[2.4rem] w-[2.4rem] cursor-pointer items-center justify-center rounded-full border text-[0.95rem] shadow-lg transition-[background,font-size] duration-150 hover:text-[1.05rem]"
+  aria-label="Adjust text size"
+>
+  <span class="leading-none font-bold text-white">Aa</span>
+</button>
+
+@if (open()) {
+  <div
+    class="bg-surface-card border-line-medium absolute right-0 bottom-[2.8rem] flex w-[13em] flex-col gap-[0.75em] rounded-xl border p-[1em] shadow-xl"
+    style="
+      animation: fade-in-up 0.2s ease-out both;
+      font-size: var(--text-max-size);
+    "
+  >
+    <div
+      class="text-content-muted flex items-center justify-between text-[0.7em] font-semibold tracking-wider uppercase"
+    >
+      <span>Text Size</span>
+      <button
+        (click)="reset()"
+        class="text-brand-text cursor-pointer border-none bg-transparent text-[0.65em] font-semibold tracking-wider uppercase hover:underline"
+      >
+        Reset
+      </button>
+    </div>
+
+    <div class="flex items-center gap-[0.75em]">
+      <button
+        (click)="setSize(fontSize() - 1)"
+        [disabled]="fontSize() <= min"
+        class="bg-surface-elevated border-line-strong text-content hover:bg-surface-hover flex h-[1.75em] w-[1.75em] shrink-0 cursor-pointer items-center justify-center rounded-md border text-[0.85em] font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+      >
+        &minus;
+      </button>
+
+      <input
+        type="range"
+        [min]="min"
+        [max]="max"
+        [value]="fontSize()"
+        (input)="onSlider($event)"
+        class="accent-brand-light h-[3px] flex-1 cursor-pointer appearance-none rounded-full bg-white/10"
+      />
+
+      <button
+        (click)="setSize(fontSize() + 1)"
+        [disabled]="fontSize() >= max"
+        class="bg-surface-elevated border-line-strong text-content hover:bg-surface-hover flex h-[1.75em] w-[1.75em] shrink-0 cursor-pointer items-center justify-center rounded-md border text-[0.85em] font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+      >
+        +
+      </button>
+    </div>
+
+    <div
+      class="text-content-dim font-stat text-center text-[1rem] tabular-nums"
+    >
+      {{ fontSize() }}px
+    </div>
+  </div>
+}
