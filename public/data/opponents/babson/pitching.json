@@ -1,59 +1,59 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-17T01:49:26.879Z",
+  "scrapedAt": "2026-03-18T00:01:51.705Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Ziccardi, Anna",
-      "w": 0,
+      "w": 1,
       "l": 0,
-      "era": 0,
-      "app": 1,
-      "gs": 0,
-      "cg": 0,
+      "era": 1.17,
+      "app": 2,
+      "gs": 1,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 5,
-      "h": 3,
-      "r": 3,
-      "er": 0,
-      "bb": 3,
-      "so": 1,
+      "ip": 12,
+      "h": 10,
+      "r": 6,
+      "er": 2,
+      "bb": 6,
+      "so": 9,
       "hr": 1,
-      "whip": 1.2,
-      "doubles": 0,
+      "whip": 1.33,
+      "doubles": 1,
       "triples": 0,
-      "ab": 19,
-      "bAvg": 0.158,
+      "ab": 45,
+      "bAvg": 0.222,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Topel, Anna",
       "w": 2,
-      "l": 0,
-      "era": 2.55,
-      "app": 2,
-      "gs": 2,
+      "l": 1,
+      "era": 2.63,
+      "app": 3,
+      "gs": 3,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 11,
-      "h": 10,
-      "r": 5,
-      "er": 4,
-      "bb": 8,
-      "so": 4,
+      "ip": 16,
+      "h": 17,
+      "r": 7,
+      "er": 6,
+      "bb": 12,
+      "so": 11,
       "hr": 1,
-      "whip": 1.64,
-      "doubles": 1,
+      "whip": 1.81,
+      "doubles": 2,
       "triples": 0,
-      "ab": 40,
-      "bAvg": 0.25,
+      "ab": 62,
+      "bAvg": 0.274,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -64,26 +64,26 @@
       "name": "Sealey, Lexi",
       "w": 0,
       "l": 0,
-      "era": 9,
-      "app": 2,
+      "era": 7.41,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 4.2,
+      "ip": 5.2,
       "h": 7,
       "r": 6,
       "er": 6,
       "bb": 3,
       "so": 2,
       "hr": 0,
-      "whip": 2.14,
+      "whip": 1.76,
       "doubles": 0,
       "triples": 0,
-      "ab": 21,
-      "bAvg": 0.333,
+      "ab": 23,
+      "bAvg": 0.304,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -92,25 +92,25 @@
       "name": "Vlacich, Katie",
       "w": 0,
       "l": 2,
-      "era": 12.25,
-      "app": 2,
+      "era": 11.2,
+      "app": 3,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4,
-      "h": 9,
-      "r": 9,
-      "er": 7,
-      "bb": 4,
-      "so": 3,
+      "ip": 5,
+      "h": 11,
+      "r": 10,
+      "er": 8,
+      "bb": 6,
+      "so": 6,
       "hr": 0,
-      "whip": 3.25,
-      "doubles": 1,
+      "whip": 3.4,
+      "doubles": 2,
       "triples": 0,
-      "ab": 22,
-      "bAvg": 0.409,
-      "wp": 4,
+      "ab": 27,
+      "bAvg": 0.407,
+      "wp": 5,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -443,6 +443,182 @@
             "Kaitlyn Weidemann grounded out to 2b (1-0 B).",
             "Bella Eggert singled to third base (1-0 B).",
             "Maggie Ward lined into double play ss to 1b (0-2 KK); Bella Eggert out on the play."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/plymouth-state/boxscore/16081",
+      "date": "3/17/2026",
+      "opponent": "Plymouth State",
+      "pitchers": [
+        "Ziccardi, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kenzie Bessette grounded out to 1b unassisted (0-0).",
+            "Emily Bessette singled through the right side (0-0).",
+            "Avery Couch singled to shortstop (0-0); Emily Bessette advanced to second.",
+            "Abbey Nezuch struck out looking (0-0).",
+            "Kennedy Michaud grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kiera Larson singled to second base (0-0).",
+            "Eva Zuber out at first p to 2b, SAC, bunt (0-0); Kiera Larson advanced to second.",
+            "Sam Durrenberger pinch ran for Kiera Larson.",
+            "Keelie Wells struck out swinging (0-0).",
+            "Ariana Cray singled to center field (0-0); Sam Durrenberger advanced to third.",
+            "Ariana Cray stole second.",
+            "Kenzie Bessette doubled to center field, 2 RBI (0-0); Ariana Cray scored; Sam Durrenberger scored.",
+            "Emily Bessette walked (0-0).",
+            "Avery Couch struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abbey Nezuch grounded out to p (0-0).",
+            "Kennedy Michaud flied out to cf (0-0).",
+            "Kiera Larson to dp for Sam Durrenberger.",
+            "Kiera Larson struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Eva Zuber struck out swinging (0-0).",
+            "Keelie Wells grounded out to p (0-0).",
+            "Ariana Cray grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lexi Sealy to 1b for Allie Cubberly.",
+            "Kenzie Bessette singled, advanced to second on a fielding error by rf, scored, unearned (0-0).",
+            "Emily Bessette struck out looking (0-0).",
+            "Avery Couch singled to center field (0-0).",
+            "Abbey Nezuch grounded into double play p to ss to 1b (0-0); Avery Couch out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Devin McCall to 3b for Izzy Burgess.",
+            "Kennedy Michaud grounded out to ss (0-0).",
+            "Kiera Larson grounded out to p (0-0).",
+            "Eva Zuber grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Keelie Wells struck out swinging (0-0).",
+            "Ariana Cray walked (0-0).",
+            "Kenzie Bessette struck out swinging (0-0).",
+            "Emily Bessette walked (0-0); Ariana Cray advanced to second.",
+            "Avery Couch popped up to 3b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/salem-state/boxscore/16082",
+      "date": "3/17/2026",
+      "opponent": "Salem State",
+      "pitchers": [
+        "Topel, Anna",
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Allison Frost struck out looking (1-2 SBKK).",
+            "Samantha Gaona- Sullivan singled (1-1 KB).",
+            "Tara Perryman walked (3-2 KBKBBB); Samantha Gaona- Sullivan advanced to second.",
+            "Alanis Toledano flied out to lf (1-1 BF).",
+            "Abigail LaClair singled, RBI (3-2 KBFBFB); Tara Perryman advanced to third; Samantha Gaona- Sullivan scored.",
+            "Ellie Kleinheinz lined out to 1b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Giana Johanson walked (3-2 BBBKKB).",
+            "Paige Souza reached on a fielder's choice (0-1 K); Giana Johanson out at second ss to 2b.",
+            "Paige Souza stole second.",
+            "Alaina Giuliano struck out swinging (2-2 BSSBF); Paige Souza advanced to third.",
+            "Allison Frost out at first 1b to 2b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Samantha Gaona- Sullivan grounded out to p (3-2 BFBKBF).",
+            "Tara Perryman struck out looking (0-2 SSK).",
+            "Alanis Toledano singled (1-1 KB).",
+            "Abigail LaClair singled (1-0 B); Alanis Toledano advanced to second.",
+            "Ellie Kleinheinz struck out swinging (3-2 KBSBBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Giana Johanson struck out looking (2-2 FFBBK).",
+            "Paige Souza walked (3-1 BKBBB).",
+            "Alaina Giuliano singled (1-2 KFBF); Paige Souza advanced to second.",
+            "Allison Frost popped up to p (0-0).",
+            "Samantha Gaona- Sullivan struck out swinging (1-2 BKFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Tara Perryman struck out swinging (0-2 KSS).",
+            "Alanis Toledano doubled (1-1 BF).",
+            "Isabelle Besser pinch ran for Alanis Toledano.",
+            "Abigail LaClair popped up to 2b (2-0 BB).",
+            "Ellie Kleinheinz walked (3-2 KBBBKB).",
+            "Ellie Kleinheinz advanced to second on a passed ball; Isabelle Besser advanced to third on a passed ball.",
+            "Giana Johanson singled, advanced to second on the throw, RBI (3-2 FFBBB); Ellie Kleinheinz advanced to third; Isabelle Besser scored.",
+            "Paige Souza grounded out to 2b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katie Vlacich to p for Anna Topel.",
+            "Alaina Giuliano singled (0-2 SS).",
+            "Abby Richardson pinch ran for Alaina Giuliano.",
+            "Allison Frost struck out looking (3-2 BFBBFFFK); Abby Richardson stole second.",
+            "Samantha Gaona- Sullivan doubled, RBI (1-2 BSF); Abby Richardson scored.",
+            "Tara Perryman struck out swinging (0-2 SSS).",
+            "Alanis Toledano walked (3-0 BBBB).",
+            "Alanis Toledano advanced to second; Samantha Gaona- Sullivan advanced to third on a wild pitch.",
+            "Abigail LaClair walked (3-2 BBBKFB).",
+            "Sula Roberge pinch ran for Abigail LaClair.",
+            "Ellie Kleinheinz struck out looking (1-2 FBKK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lexi Sealy to p.",
+            "Charlotte Raymond to 1b.",
+            "Charly Landow to 3b for Anna Ziccardi.",
+            "/  for Katie Vlacich.",
+            "Giana Johanson hit by pitch (2-0 BH).",
+            "Paige Souza reached on a fielder's choice, out at second 2b to ss (0-0); Giana Johanson out at second p to ss.",
+            "Abby Richardson fouled out to 1b (0-0)."
           ]
         }
       ],

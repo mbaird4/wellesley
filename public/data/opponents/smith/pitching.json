@@ -1,31 +1,31 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-17T01:49:05.353Z",
+  "scrapedAt": "2026-03-18T00:01:19.577Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
-      "w": 0,
+      "w": 1,
       "l": 0,
-      "era": 2.33,
-      "app": 1,
+      "era": 1.62,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 6,
-      "h": 3,
+      "ip": 8.2,
+      "h": 6,
       "r": 2,
       "er": 2,
       "bb": 2,
       "so": 3,
       "hr": 1,
-      "whip": 0.83,
+      "whip": 0.92,
       "doubles": 0,
       "triples": 0,
-      "ab": 22,
-      "bAvg": 0.136,
+      "ab": 33,
+      "bAvg": 0.182,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -34,54 +34,82 @@
     },
     {
       "name": "Peverly, Violet",
-      "w": 1,
+      "w": 2,
       "l": 1,
-      "era": 3.65,
-      "app": 3,
-      "gs": 2,
-      "cg": 1,
+      "era": 2.56,
+      "app": 4,
+      "gs": 3,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 7.2,
-      "h": 9,
-      "r": 10,
-      "er": 4,
-      "bb": 10,
-      "so": 11,
+      "ip": 13.2,
+      "h": 11,
+      "r": 11,
+      "er": 5,
+      "bb": 13,
+      "so": 19,
       "hr": 0,
-      "whip": 2.48,
+      "whip": 1.76,
       "doubles": 2,
-      "triples": 0,
-      "ab": 30,
-      "bAvg": 0.3,
+      "triples": 1,
+      "ab": 51,
+      "bAvg": 0.216,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
+    },
+    {
+      "name": "Bennett, Lindsay",
+      "w": 0,
+      "l": 0,
+      "era": 8.4,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 3.1,
+      "h": 5,
+      "r": 4,
+      "er": 4,
+      "bb": 3,
+      "so": 1,
+      "hr": 0,
+      "whip": 2.4,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 15,
+      "bAvg": 0.333,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Robinson, Alana",
       "w": 0,
       "l": 1,
-      "era": 15,
-      "app": 1,
-      "gs": 1,
+      "era": 21,
+      "app": 2,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2.1,
-      "h": 9,
-      "r": 5,
-      "er": 5,
-      "bb": 3,
+      "ip": 3.1,
+      "h": 11,
+      "r": 10,
+      "er": 10,
+      "bb": 7,
       "so": 2,
       "hr": 0,
-      "whip": 5.14,
-      "doubles": 2,
+      "whip": 5.4,
+      "doubles": 3,
       "triples": 0,
-      "ab": 14,
-      "bAvg": 0.643,
+      "ab": 19,
+      "bAvg": 0.579,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
@@ -317,6 +345,169 @@
             "Nicole Celi struck out swinging (1-2 KBFS).",
             "Waverly Smart fouled out to 1b (0-1 F).",
             "Sam Chappell flied out to rf (3-2 KSBFBB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/mcdaniel-college/boxscore/9743",
+      "date": "3/17/2026",
+      "opponent": "Mcdaniel College",
+      "pitchers": [
+        "Robinson, Alana",
+        "Bennett, Lindsay",
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ryan Smith grounded out to 3b (1-1 BK).",
+            "Ally McBride walked (3-2 BBFBKB).",
+            "Caitlin Boden doubled down the lf line, RBI (0-1 K); Ally McBride scored.",
+            "Caitlin Boden advanced to third.",
+            "Keonna Gonzalez grounded out to 2b, RBI (1-0 B); Caitlin Boden scored.",
+            "Sariah Guevara grounded out to 2b (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma McPherson walked (3-1 KBBBB).",
+            "Riley Jackson singled to left field (2-2 BKKFB); Emma McPherson advanced to second.",
+            "Chloe Candeloro walked (3-2 KBBSFBFB); Riley Jackson advanced to second; Emma McPherson advanced to third.",
+            "Erin Thayer walked, RBI (3-2 KBBFBB); Chloe Candeloro advanced to second; Riley Jackson advanced to third; Emma McPherson scored.",
+            "Lindsay Bennett to p for Alana Robinson.",
+            "Ryan Smith struck out swinging (0-2 KKS).",
+            "Ally McBride walked, RBI (3-0 BBBB); Erin Thayer advanced to second; Chloe Candeloro advanced to third; Riley Jackson scored.",
+            "Caitlin Boden reached on a fielder's choice, RBI (2-1 FBB); Ally McBride advanced to second; Erin Thayer out at third 3b unassisted; Chloe Candeloro scored.",
+            "Keonna Gonzalez grounded out to 2b (2-2 FBBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sariah Guevara grounded out to p (1-2 BSKF).",
+            "Emma McPherson fouled out to 3b (1-1 BF).",
+            "Riley Jackson lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Chloe Candeloro grounded out to 3b (0-1 K).",
+            "Erin Thayer singled through the left side (2-1 BBS).",
+            "Ryan Smith singled through the left side (0-1 F); Erin Thayer advanced to second.",
+            "Ally McBride reached on a fielder's choice (1-0 B); Ryan Smith advanced to second; Erin Thayer out at third ss to 3b.",
+            "Caitlin Boden singled to left field, RBI (2-2 SFBFB); Ally McBride advanced to second; Ryan Smith scored.",
+            "Keonna Gonzalez grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sariah Guevara doubled down the rf line (0-0).",
+            "Emma McPherson lined out to cf (2-1 BBK).",
+            "Riley Jackson singled to shortstop (1-2 SSB); Sariah Guevara advanced to third.",
+            "Riley Jackson stole second.",
+            "Chloe Candeloro walked (3-0 BBBB).",
+            "Erin Thayer walked, RBI (3-2 BBFKFBB); Chloe Candeloro advanced to second; Riley Jackson advanced to third; Sariah Guevara scored.",
+            "Bailey Gray to p.",
+            "Lindsay Bennett to dp.",
+            "Ryan Smith grounded out to 2b, RBI (1-1 BK); Erin Thayer advanced to second; Chloe Candeloro advanced to third; Riley Jackson scored.",
+            "Ally McBride singled to shortstop, RBI (1-1 BK); Erin Thayer advanced to third; Chloe Candeloro scored.",
+            "Caitlin Boden grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gabbie Chinnis to ss.",
+            "Riley Veenstra to c for Anna Gray.",
+            "Taz Tamai to lf.",
+            "Keonna Gonzalez grounded out to ss (0-0).",
+            "Sariah Guevara lined out to rf (3-2 BSFBBF).",
+            "Emma McPherson singled to right center (1-1 BF).",
+            "Riley Jackson singled to shortstop (1-0 B); Emma McPherson advanced to second.",
+            "Chloe Candeloro grounded out to p (3-2 BBKSB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Rileigh Kitchin to 1b for Emma McPherson.",
+            "Erin Thayer grounded out to 3b (0-1 F).",
+            "Ryan Smith out at first p to 2b (3-1 BBBK).",
+            "Morgan Rogers grounded out to 2b (1-1 SB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/augsburg-university/boxscore/9742",
+      "date": "3/17/2026",
+      "opponent": "Augsburg University",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jayden Evenson walked (0-0).",
+            "Jaime Olson reached first on a fielding error by ss (0-0); Jayden Evenson advanced to second.",
+            "Lola Pilon grounded out to 1b unassisted (0-0); Jaime Olson advanced to second; Jayden Evenson advanced to third.",
+            "Kayla Shaffer reached on a fielder's choice to second base, RBI (0-0); Jaime Olson advanced to third; Jayden Evenson scored.",
+            "Kayla Shaffer advanced to second.",
+            "Aleia Johnston struck out swinging (0-0).",
+            "Olivia Grefe struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Nikolina Opp popped up to p (0-0).",
+            "Megan Gissler struck out swinging (0-0).",
+            "Teron Ormond-Miller grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jayden Evenson walked (0-0).",
+            "Jaime Olson grounded out to 1b unassisted (0-0); Jayden Evenson advanced to second.",
+            "Lola Pilon grounded out to 2b (0-0); Jayden Evenson advanced to third.",
+            "Kayla Shaffer flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Aleia Johnston struck out looking (0-0).",
+            "Olivia Grefe struck out swinging (0-0).",
+            "Nikolina Opp struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Megan Gissler singled to center field (0-0).",
+            "Teron Ormond-Miller grounded out c to 3b to 1b, SAC, bunt (0-0); Megan Gissler advanced to second.",
+            "Jayden Evenson walked (0-0).",
+            "Jaime Olson reached on a fielder's choice to shortstop (0-0); Jayden Evenson advanced to second; Megan Gissler out at third ss to 3b.",
+            "Lola Pilon popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kayla Shaffer tripled to right field (0-0).",
+            "Aleia Johnston grounded out to p (0-0).",
+            "Maddalyn Deal pinch hit for Olivia Grefe.",
+            "Maddalyn Deal struck out swinging (0-0).",
+            "Nikolina Opp struck out looking (0-0)."
           ]
         }
       ],
