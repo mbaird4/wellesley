@@ -22,12 +22,6 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
     .flatMap((game) => game.snapshots)
     .filter((snap) => snap.isPlateAppearance && snap.batterName !== null && snap.lineupSlot !== null)
     .forEach((snap) => {
-      const isAlina = snap.batterName?.toLowerCase().includes('mulhern');
-
-      if (isAlina) {
-        console.log(snap);
-      }
-
       const name = snap.batterName!;
       const slot = snap.lineupSlot!;
 
@@ -57,10 +51,6 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
       const slotData = player.bySlot.get(slot)!;
       accumFromResult(result, slotData.accum);
       slotData.rbi += rbi;
-
-      if (isAlina) {
-        console.log(result, 'pas: ', player.overall.accum.pa, ' abs: ', player.overall.accum.ab);
-      }
     });
 
   return Array.from(playerMap.entries())

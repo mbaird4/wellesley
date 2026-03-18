@@ -66,11 +66,14 @@ export function extractScoringPlays(playText: string, playType: string, basesBef
           type = 'error';
         }
 
+        // Error-caused runs don't credit an RBI — the error, not the batter's action, caused the run
+        const isErrorRun = type === 'error';
+
         plays.push({
           runnerName: result.playerName,
           scoringPlayType: type,
-          batterName,
-          lineupSlot,
+          batterName: isErrorRun ? null : batterName,
+          lineupSlot: isErrorRun ? null : lineupSlot,
           inning,
           outs: outsBefore,
           baseSituation,
@@ -200,6 +203,20 @@ export function mapBatterResultToScoringType(batterResult: string, runnerSubEven
       return 'sac_fly';
     case 'sac_bunt':
       return 'sac_bunt';
+    case 'fielders_choice': {
+      // Error in the batter sub-event (e.g., "FC, advanced to third on a throwing error by p")
+      // means the error — not the FC — caused the run
+      const runnerLower2 = runnerSubEvent.toLowerCase();
+      const batterLower2 = (batterSubEvent || '').toLowerCase();
+      if (runnerLower2.includes('error') || batterLower2.includes('error')) {
+        return 'error';
+      }
+
+      return 'fielders_choice';
+    }
+
+    case 'error':
+      return 'error';
     case 'reached': {
       // Error info is often in the batter sub-event ("reached first on an error by ss")
       // rather than the runner sub-event ("scored, unearned")

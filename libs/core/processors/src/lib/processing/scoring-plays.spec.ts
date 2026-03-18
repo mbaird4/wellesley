@@ -428,6 +428,27 @@ describe("extractScoringPlays — fielder's choice", () => {
     // Runner sub-event contains "error" → overrides to 'error'
     expect(plays[0].scoringPlayType).toBe('error');
   });
+
+  it('P3: FC with runner out at second, other runner advances and scores on throwing error → error type, no RBI', () => {
+    // Real play: M. Abernethy reached on FC; S. Wicker out at second; B. Awad advanced to third, scored on throwing error
+    const plays = extract({
+      playText: "M. Abernethy reached on a fielder's choice to shortstop (0-1 K); S. Wicker out at second ss to 2b; B. Awad advanced to third, scored on a throwing error by 2b, unearned.",
+      playType: 'plate_appearance',
+      basesBefore: makeBases('S. Wicker', 'B. Awad'),
+      basesAfter: makeBases('M. Abernethy'),
+      outsBefore: 1,
+      outsAfter: 2,
+      batterName: 'M. Abernethy',
+      lineupSlot: 7,
+    });
+    expect(plays).toHaveLength(1);
+    expect(plays[0].runnerName).toBe('B. Awad');
+    // Error caused the run, not the FC
+    expect(plays[0].scoringPlayType).toBe('error');
+    // No RBI credited — the error, not the batter's action, scored the runner
+    expect(plays[0].batterName).toBeNull();
+    expect(plays[0].lineupSlot).toBeNull();
+  });
 });
 
 // ============================================================

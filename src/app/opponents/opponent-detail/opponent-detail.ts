@@ -24,10 +24,10 @@ export class OpponentDetail {
   readonly bp = inject(BreakpointService);
 
   readonly tabs = [
-    { path: 'vs-wellesley', label: 'vs Wellesley', mobileLabel: 'vs WC' },
+    { path: 'spray', label: 'Spray Chart', mobileLabel: 'Spray Chart' },
     { path: 'pitching', label: 'Pitching', mobileLabel: 'Pitching' },
     { path: 'woba', label: 'wOBA', mobileLabel: 'wOBA Stats' },
-    { path: 'spray', label: 'Spray Chart', mobileLabel: 'Spray Chart' },
+    { path: 'vs-wellesley', label: 'vs Wellesley', mobileLabel: 'vs Blue' },
     { path: 'stats', label: 'Season Stats', mobileLabel: 'Stats' },
   ];
 }

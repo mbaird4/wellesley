@@ -238,8 +238,6 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'reached' };
   }
 
-  console.log('Unknown event: ', subEvent);
-
   return { result: 'unknown' };
 }
 

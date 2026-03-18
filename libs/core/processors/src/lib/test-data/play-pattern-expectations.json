@@ -449,7 +449,7 @@
     "example": "R. Yang reached first on an error by ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -560,7 +560,7 @@
     "example": "A. Mulhern reached first on an error by 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -804,7 +804,7 @@
     "example": "R. Yang reached on a fielder's choice; G. Jones out at second 2b to ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1059,7 +1059,7 @@
     "example": "N. Nicol reached on a fielder's choice; B. Mellady out at second ss to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1462,7 +1462,7 @@
     "example": "R. Yang reached on a fielder's choice; A. Delgado advanced to second; A. Mulhern out at third ss to 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1524,7 +1524,7 @@
     "example": "J. Colgan reached on a fielder's choice to second base; R. Yang out at second 2b to ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1560,7 +1560,7 @@
     "example": "S. Wicker reached on a fielder's choice to shortstop; A. Rodriguez out at second ss to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1720,7 +1720,7 @@
     "example": "R. Yang reached on a fielder's choice to third base; A. Rodriguez out at second 3b to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1816,7 +1816,7 @@
     "example": "E. Gaunce reached on a fielder's choice to third base; D. Borrison advanced to second; B. Mellady out at third 3b unassisted.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1858,7 +1858,7 @@
     "example": "D. Borrison reached on a fielder's choice; B. Mellady out at second 3b to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -1903,7 +1903,7 @@
     "example": "R. Yang reached first on an error by 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -2051,7 +2051,7 @@
     "example": "G. Jones reached on a fielder's choice; E. Kulhanek out at second ss unassisted.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -2069,7 +2069,7 @@
     "example": "E. Kulhanek reached first on a throwing error by 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -2109,7 +2109,7 @@
     "example": "A. Rodriguez reached on a fielder's choice; E. Kulhanek out at second 2b to ss; J. Colgan advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -2144,7 +2144,7 @@
     "example": "E. Kulhanek reached on a fielder's choice; J. Colgan out at second p to ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -2610,7 +2610,7 @@
     "example": "C. Lundin reached first on a throwing error by ss, advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -2639,7 +2639,7 @@
     "example": "R. Yang reached first on a throwing error by ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -2704,7 +2704,7 @@
     "example": "C. Chung reached first on a fielding error by ss; A. Mulhern advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -2770,7 +2770,7 @@
     "example": "A. Mulhern reached first on a fielding error by 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -2868,7 +2868,7 @@
     "example": "R. Yang reached first on an error by ss, RBI; G. Jones advanced to second; A. Mulhern scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -3042,7 +3042,7 @@
     "example": "G. Jones reached on a fielder's choice; J. Colgan out at second 2b unassisted.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -3087,7 +3087,7 @@
     "example": "A. Rodriguez reached on a fielder's choice; E. Kulhanek advanced to second; E. Gaunce out at third 3b unassisted.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -3223,7 +3223,7 @@
     "example": "S. Wicker reached on a fielder's choice; A. Mulhern advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -3403,7 +3403,7 @@
     "example": "J. Colgan reached on a fielder's choice; R. Yang advanced to second; A. Delgado advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -3556,7 +3556,7 @@
     "example": "C. Chung reached first on an error by 2b; E. Gaunce scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -3694,7 +3694,7 @@
     "example": "J. Colgan reached first on an error by 2b; A. Mulhern scored, unearned; C. Chung scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -3742,7 +3742,7 @@
     "example": "C. Chung reached on a fielder's choice, advanced to second, advanced to third on a throwing error by p; B. Mellady scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "third"
     },
     "runnerSubEvents": [
@@ -3879,7 +3879,7 @@
     "example": "D. Borrison reached first on an error by 1b, assist by 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -3998,7 +3998,7 @@
     "example": "M. Abernethy reached first on a throwing error by 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -4106,7 +4106,7 @@
     "example": "E. Kulhanek reached first on a throwing error by 2b, advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -4117,7 +4117,7 @@
     "example": "A. Rodriguez reached on a fielder's choice to second base; A. Mulhern out at second ss to 2b; A. Delgado advanced to third, scored on a throwing error by 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -4231,7 +4231,7 @@
     "example": "A. Delgado reached first on an error by 3b, advanced to second; E. Gaunce advanced to third; C. Chung scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -4769,7 +4769,7 @@
     "example": "J. Colgan reached on a fielder's choice; B. Mellady advanced to second; R. Yang out at third p to 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -4793,7 +4793,7 @@
     "example": "G. Jones reached on a fielder's choice to third base, RBI; A. Mulhern scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -4812,7 +4812,7 @@
     "example": "E. Kulhanek reached first on a fielding error by 3b, advanced to second; E. Gaunce advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -4830,7 +4830,7 @@
     "example": "N. Nicol reached first on an error by ss; E. Gaunce scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -4872,7 +4872,7 @@
     "example": "G. Jones reached on a fielder's choice to pitcher, RBI; A. Mulhern advanced to third; N. Nicol scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -4897,7 +4897,7 @@
     "example": "G. Jones reached on a fielder's choice to shortstop; S. Wicker advanced to second; J. Colgan out at third ss to 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -4955,7 +4955,7 @@
     "example": "E. Gaunce reached on a fielder's choice to shortstop; J. Colgan advanced to second; B. Mellady advanced to third; R. Yang out at home ss to c.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5120,7 +5120,7 @@
     "example": "E. Gaunce reached on a fielder's choice to shortstop, RBI; G. Jones advanced to third; E. Kulhanek scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5167,7 +5167,7 @@
     "example": "J. Colgan reached on a fielder's choice to shortstop; C. Chung out at second ss to 2b; A. Mulhern advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5317,7 +5317,7 @@
     "example": "A. Delgado reached first on an error by ss; E. Kulhanek advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -5358,7 +5358,7 @@
     "example": "J. Colgan reached on a fielder's choice, bunt; S. Wicker advanced to second, out at third 3b to lf.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5585,7 +5585,7 @@
     "example": "A. Delgado reached first on an error by p.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -5596,7 +5596,7 @@
     "example": "E. Kulhanek reached on a fielder's choice to shortstop.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [],
@@ -5608,7 +5608,7 @@
     "example": "C. Lundin reached on a fielder's choice to shortstop; E. Kulhanek advanced to second; A. Mulhern advanced to third on an error by ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5728,7 +5728,7 @@
     "example": "J. Colgan reached on a fielder's choice to shortstop, RBI; C. Chung scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -5868,7 +5868,7 @@
     "example": "C. Chung reached on a fielder's choice, advanced to second on the throw, RBI; A. Mulhern scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "second"
     },
     "runnerSubEvents": [
@@ -5976,7 +5976,7 @@
     "example": "A. Mulhern reached first on an error by 3b, advanced to second on the throw, RBI; A. Delgado scored, unearned; A. Rodriguez scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -6000,7 +6000,7 @@
     "example": "R. Yang reached on a fielder's choice; A. Mulhern out at third ss to 3b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -6096,7 +6096,7 @@
     "example": "G. Jones reached first on an error by 1b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -6148,7 +6148,7 @@
     "example": "A. Delgado reached first on an error by 3b, advanced to second.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -6315,7 +6315,7 @@
     "example": "E. Gaunce reached first on an error by cf.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -6647,7 +6647,7 @@
     "example": "D. Borrison reached first on an error by ss, out at second ss to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -6711,7 +6711,7 @@
     "example": "C. Lundin reached first on an error by ss, advanced to second; A. Delgado scored, unearned; P. Phillips scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -6795,7 +6795,7 @@
     "example": "A. Delgado reached first on an error by 1b; P. Phillips scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -6921,7 +6921,7 @@
     "example": "C. Chung reached on a fielder's choice; P. Phillips advanced to second; S. Wicker advanced to third on a throwing error by ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -6946,7 +6946,7 @@
     "example": "K. Parsons reached first on an error by ss, RBI; C. Chung advanced to second; P. Phillips advanced to third; S. Wicker scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -7372,7 +7372,7 @@
     "example": "L. Skolaris reached first on an error by p, bunt; G. Jones advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -7433,7 +7433,7 @@
     "example": "A. Rodriguez reached first on a fielding error by ss.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [],
     "status": "verified"
@@ -7550,7 +7550,7 @@
     "example": "J. Colgan reached on a fielder's choice; A. Mulhern out at second p to 2b.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -7598,7 +7598,7 @@
     "example": "J. Colgan reached on a fielder's choice, RBI; C. Chung scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -7738,7 +7738,7 @@
     "example": "A. Delgado reached on a fielder's choice, bunt; A. Mulhern advanced to third; P. Phillips out at home 3b to c.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -7892,7 +7892,7 @@
     "example": "E. DeCleene reached on a fielder's choice; A. Mulhern advanced to second; G. Jones advanced to third; P. Phillips out at home ss to c.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8000,7 +8000,7 @@
     "example": "C. Chung reached on a fielder's choice, RBI; J. Vargas advanced to second; E. Gaunce advanced to third; A. Rodriguez scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8168,7 +8168,7 @@
     "example": "G. Jones reached on a fielder's choice; J. Colgan advanced to third; E. DeCleene out at home 3b to c.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8192,7 +8192,7 @@
     "example": "S. Wicker reached first on an error by ss; G. Jones advanced to second; J. Colgan scored, team unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -8216,7 +8216,7 @@
     "example": "L. Young reached on a fielder's choice; A. Mulhern advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8271,7 +8271,7 @@
     "example": "A. Mulhern reached on a fielder's choice, bunt; P. Phillips out at home p to c.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8407,7 +8407,7 @@
     "example": "J. Vargas reached first on an error by ss, RBI; A. Rodriguez advanced to third; A. Mulhern scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -8733,7 +8733,7 @@
     "example": "E. Kulhan reached on a fielder's choice; E. Slibeck advanced to second; M. Abern advanced to third, out at home c to p; A. Mulher scored on an error by p, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "first"
     },
     "runnerSubEvents": [
@@ -8763,7 +8763,7 @@
     "example": "G. Jones reached first on an error by ss; E. Kulhan scored, unearned; E. Slibeck scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -8920,7 +8920,7 @@
     "example": "P. Penny reached on a fielder's choice, advanced to third, RBI; D. Borrison advanced to third, out at home p to c to 3b to ss; K. Parsons scored.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "third"
     },
     "runnerSubEvents": [
@@ -8944,7 +8944,7 @@
     "example": "J. Vargas reached first on a throwing error by 3b; A. Delgado scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -9011,7 +9011,7 @@
     "example": "E. Kulhanek reached on a fielder's choice, advanced to second on the throw, RBI; G. Jones advanced to third; J. Colgan advanced to third on a throwing error by ss, scored, unearned; J. Vargas J. Vargas, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached",
+      "result": "fielders_choice",
       "advancedTo": "second"
     },
     "runnerSubEvents": [
@@ -9124,7 +9124,7 @@
     "example": "S. Wicker reached first on a throwing error by c; A. Delgado advanced to third on the throw.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -9317,7 +9317,7 @@
     "example": "E. DeCleene reached first on a throwing error by 3b; P. Penny advanced to third; A. Rodriguez scored, unearned.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -9471,7 +9471,7 @@
     "example": "M. Abernethy reached first on a throwing error by ss; E. Kulhanek advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {
@@ -9489,7 +9489,7 @@
     "example": "C. Lundin reached first on an error by p; J. Colgan advanced to third.",
     "playType": "plate_appearance",
     "batterAction": {
-      "result": "reached"
+      "result": "error"
     },
     "runnerSubEvents": [
       {

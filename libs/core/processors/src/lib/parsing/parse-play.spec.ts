@@ -565,11 +565,11 @@ describe('parseBatterAction', () => {
   describe('reached on error', () => {
     it('C13a: reached first on an error by ss', () => {
       const result = parseBatterAction('A. Batter reached first on an error by ss');
-      expect(result.result).toBe('reached');
+      expect(result.result).toBe('error');
     });
 
     it('C13b: reached on an error', () => {
-      expect(parseBatterAction('A. Batter reached on an error by 3b').result).toBe('reached');
+      expect(parseBatterAction('A. Batter reached on an error by 3b').result).toBe('error');
     });
   });
 
@@ -577,35 +577,31 @@ describe('parseBatterAction', () => {
   describe("fielder's choice", () => {
     it("C14a: reached on a fielder's choice (default advancedTo first)", () => {
       const result = parseBatterAction("A. Batter reached on a fielder's choice");
-      expect(result.result).toBe('reached');
+      expect(result.result).toBe('fielders_choice');
       expect(result.advancedTo).toBe('first');
     });
 
     it('C14b: FC with advanced to second', () => {
       const result = parseBatterAction("A. Batter reached on a fielder's choice, advanced to second");
-      expect(result.result).toBe('reached');
+      expect(result.result).toBe('fielders_choice');
       expect(result.advancedTo).toBe('second');
     });
 
     it('C14c: FC with advanced to third', () => {
       const result = parseBatterAction("A. Batter reached on a fielder's choice, advanced to third");
-      expect(result.result).toBe('reached');
+      expect(result.result).toBe('fielders_choice');
       expect(result.advancedTo).toBe('third');
     });
 
     it('C14d: fielders choice (no apostrophe)', () => {
       const result = parseBatterAction('A. Batter reached on a fielders choice');
-      expect(result.result).toBe('reached');
+      expect(result.result).toBe('fielders_choice');
       expect(result.advancedTo).toBe('first');
     });
 
-    // BUG: batterAlsoOut not tracked for 'reached' result
-    it('C14e: FC with out on the play → reached but no batterAlsoOut (BUG)', () => {
-      // BUG: 'reached' doesn't check batterAlsoOut — the batter is out but not tracked
+    it('C14e: FC with out on the play', () => {
       const result = parseBatterAction("A. Batter reached on a fielder's choice, out at second");
-      expect(result.result).toBe('reached');
-      // batterAlsoOut is NOT set for 'reached' results
-      expect(result.batterAlsoOut).toBeUndefined();
+      expect(result.result).toBe('fielders_choice');
     });
   });
 
