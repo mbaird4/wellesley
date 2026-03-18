@@ -1,3 +1,9 @@
+---
+paths:
+  - 'src/**/*.{ts,html,scss,css}'
+  - 'libs/**/*.{ts,html,scss,css}'
+---
+
 # Frontend Aesthetics
 
 Claude tends toward safe, generic UI choices. These rules push for clean, minimal designs with subtle polish and a dash of whimsy — appropriate for a data-heavy dark-themed sports analytics app.
