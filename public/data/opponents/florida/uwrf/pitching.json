@@ -1,9 +1,37 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-19T13:01:28.535Z",
+  "scrapedAt": "2026-03-19T18:57:16.438Z",
   "year": 2026,
   "pitchingStats": [
+    {
+      "name": "Knutson, Lucy",
+      "w": 1,
+      "l": 2,
+      "era": 3.57,
+      "app": 8,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
+      "ip": 15.2,
+      "h": 21,
+      "r": 18,
+      "er": 8,
+      "bb": 7,
+      "so": 15,
+      "hr": 0,
+      "whip": 1.79,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 67,
+      "bAvg": 0.313,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 2
+    },
     {
       "name": "Dusterhoft, Alexa",
       "w": 1,
@@ -36,29 +64,29 @@
       "name": "VanGruensven, Brooklyn",
       "w": 1,
       "l": 2,
-      "era": 6.14,
-      "app": 8,
+      "era": 5.6,
+      "app": 9,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 21.2,
-      "h": 23,
-      "r": 19,
-      "er": 19,
-      "bb": 26,
-      "so": 18,
+      "ip": 25,
+      "h": 28,
+      "r": 20,
+      "er": 20,
+      "bb": 27,
+      "so": 21,
       "hr": 0,
-      "whip": 2.26,
-      "doubles": 4,
-      "triples": 2,
-      "ab": 84,
-      "bAvg": 0.274,
-      "wp": 2,
-      "hbp": 1,
+      "whip": 2.2,
+      "doubles": 6,
+      "triples": 3,
+      "ab": 98,
+      "bAvg": 0.286,
+      "wp": 3,
+      "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Kincaid, Hailey",
@@ -86,34 +114,6 @@
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Knutson, Lucy",
-      "w": 1,
-      "l": 1,
-      "era": 3.5,
-      "app": 7,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 1,
-      "ip": 12,
-      "h": 15,
-      "r": 12,
-      "er": 6,
-      "bb": 6,
-      "so": 13,
-      "hr": 0,
-      "whip": 1.75,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 51,
-      "bAvg": 0.294,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 1,
       "sha": 1
     },
     {
@@ -1279,6 +1279,97 @@
             "Ella Maloney struck out swinging (1-2 BKSS).",
             "Maddy Spakoski pinch hit for Amanda Linnenbrink.",
             "Maddy Spakoski struck out swinging (2-2 BFFBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/wellesley-college/boxscore/7936",
+      "date": "3/19/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Knutson, Lucy",
+        "VanGruensven, Brooklyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern singled up the middle (0-0).",
+            "A. Mulhern advanced to second on a wild pitch.",
+            "J. Colgan singled, bunt (2-0 BB); A. Mulhern advanced to third.",
+            "B. Awad flied out to rf, sacrifice fly, RBI (0-0); A. Mulhern scored.",
+            "B. Mellady struck out swinging (1-2 BFKS).",
+            "E. Kulhanek struck out looking (2-2 BFFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Gaunce singled to right center (3-2 BSBKBF).",
+            "G. Jones out at first 3b to 2b, SAC, bunt (2-0 BB); E. Gaunce advanced to second.",
+            "S. Fredericks fouled out to 1b (0-0).",
+            "A. Delgado singled to center field, RBI (3-2 BKBKB); E. Gaunce scored.",
+            "A. Mulhern popped up to c (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Colgan grounded out to ss (0-2 FF).",
+            "B. Awad flied out to lf (0-0).",
+            "B. Mellady flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caitlyn Kressel to c for Autumn Hughes.",
+            "E. Kulhanek singled to left center (0-1 K).",
+            "E. Gaunce reached on a fielder's choice to shortstop (2-2 BKFB); E. Kulhanek out at second 2b to ss.",
+            "G. Jones reached on a fielder's choice to second base (0-0); E. Gaunce out at second 2b to ss.",
+            "S. Fredericks walked (3-1 KBBBB); G. Jones advanced to second.",
+            "A. Delgado reached first on an error by ss, advanced to second (0-1 K); S. Fredericks advanced to third; G. Jones scored, unearned.",
+            "A. Mulhern singled up the middle, advanced to second, 2 RBI (0-0); A. Delgado scored, unearned; S. Fredericks scored, unearned.",
+            "Brooklyn Vangruensven to p for Lucy Knutson.",
+            "J. Colgan doubled to left center, RBI (0-1 K); A. Mulhern scored, unearned.",
+            "J. Colgan advanced to third on a wild pitch.",
+            "B. Awad grounded out to ss (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Mellady hit by pitch (2-1 FBH).",
+            "B. Mellady stole second.",
+            "E. Kulhanek walked (3-2 BKBBFB).",
+            "E. Gaunce out at first p to 2b, SAC, bunt (0-0); E. Kulhanek advanced to second; B. Mellady advanced to third.",
+            "G. Jones lined out to 3b (1-1 BK).",
+            "S. Fredericks grounded out to ss (2-2 KFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Delgado singled through the right side (0-2 FF).",
+            "A. Delgado out at second c to ss, caught stealing.",
+            "A. Mulhern doubled to left center (0-0).",
+            "J. Colgan tripled to left center, RBI (0-0); A. Mulhern scored.",
+            "B. Awad struck out swinging (1-2 FKBS).",
+            "B. Mellady grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Hannah Effertz to 1b for Ella Woida.",
+            "E. Kulhanek struck out swinging (3-2 KBSFBBS).",
+            "E. Gaunce singled to third base, advanced to second (0-0).",
+            "G. Jones struck out swinging (3-2 KFBBFBS).",
+            "C. Lundin pinch hit for S. Fredericks.",
+            "C. Lundin reached first on an error by 3b (1-2 BFK).",
+            "A. Delgado grounded out to p (0-2 FK)."
           ]
         }
       ],

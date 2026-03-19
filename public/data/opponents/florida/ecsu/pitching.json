@@ -1,99 +1,99 @@
 {
   "slug": "ecsu",
   "domain": "gowarriorathletics.com",
-  "scrapedAt": "2026-03-19T13:01:38.076Z",
+  "scrapedAt": "2026-03-19T18:57:30.436Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Mitchell, Elizabeth",
       "w": 2,
-      "l": 0,
-      "era": 1.5,
-      "app": 2,
-      "gs": 2,
+      "l": 1,
+      "era": 3,
+      "app": 3,
+      "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 14,
-      "h": 18,
-      "r": 3,
-      "er": 3,
-      "bb": 4,
-      "so": 9,
+      "ip": 21,
+      "h": 29,
+      "r": 11,
+      "er": 9,
+      "bb": 6,
+      "so": 12,
       "hr": 1,
-      "whip": 1.57,
+      "whip": 1.67,
       "doubles": 4,
       "triples": 0,
-      "ab": 61,
-      "bAvg": 0.295,
+      "ab": 90,
+      "bAvg": 0.322,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 3,
       "bk": 0,
-      "sfa": 0,
-      "sha": 1
+      "sfa": 1,
+      "sha": 4
     },
     {
       "name": "Chatfield, Leah",
       "w": 2,
-      "l": 0,
-      "era": 4.9,
-      "app": 2,
-      "gs": 2,
+      "l": 1,
+      "era": 5.02,
+      "app": 3,
+      "gs": 3,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 10,
-      "h": 16,
-      "r": 9,
-      "er": 7,
-      "bb": 4,
-      "so": 9,
+      "ip": 15.1,
+      "h": 20,
+      "r": 15,
+      "er": 11,
+      "bb": 8,
+      "so": 11,
       "hr": 2,
-      "whip": 2,
-      "doubles": 1,
+      "whip": 1.83,
+      "doubles": 2,
       "triples": 0,
-      "ab": 47,
-      "bAvg": 0.34,
+      "ab": 65,
+      "bAvg": 0.308,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
-      "sfa": 0,
-      "sha": 0
+      "sfa": 1,
+      "sha": 3
     },
     {
       "name": "Raymond, Julia",
       "w": 0,
       "l": 0,
       "era": 0,
-      "app": 1,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 1,
-      "h": 0,
+      "ip": 1.2,
+      "h": 1,
       "r": 0,
       "er": 0,
       "bb": 2,
       "so": 0,
       "hr": 0,
-      "whip": 2,
+      "whip": 1.8,
       "doubles": 0,
       "triples": 0,
-      "ab": 1,
-      "bAvg": 0,
+      "ab": 3,
+      "bAvg": 0.333,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Marchand, Hadley",
       "w": 0,
       "l": 0,
       "era": 7,
-      "app": 1,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
@@ -102,16 +102,16 @@
       "h": 3,
       "r": 2,
       "er": 2,
-      "bb": 2,
+      "bb": 3,
       "so": 2,
       "hr": 0,
-      "whip": 2.5,
+      "whip": 3,
       "doubles": 1,
       "triples": 0,
       "ab": 9,
       "bAvg": 0.333,
       "wp": 1,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -451,6 +451,189 @@
             "Morgan Risnychok out at first p to 2b (0-0).",
             "Sara Hess lined out to cf (0-0).",
             "Gabby Mundy grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/u-of-wisconsin-whitewater/boxscore/7847",
+      "date": "3/19/2026",
+      "opponent": "U Of Wisconsin Whitewater",
+      "pitchers": [
+        "Mitchell, Elizabeth",
+        "Marchand, Hadley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Eggert singled to center field (0-0).",
+            "Maggie Ward grounded out to p, SAC (0-0); Bella Eggert advanced to second.",
+            "Grace Grabowy reached first on an error by cf (0-0); Bella Eggert scored, unearned.",
+            "Dani Peshia popped up to ss (0-0).",
+            "Emma Giese struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Auburn Roberson grounded out to 3b (0-0).",
+            "Rachel Radish grounded out to 2b (0-0).",
+            "Jj Jakosalem popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kaitlyn Weidemann singled to left field (0-0).",
+            "Bella Eggert grounded out to p, SAC (0-0); Kaitlyn Weidemann advanced to second.",
+            "Kaitlyn Weidemann stole third.",
+            "Maggie Ward singled to second base, RBI (0-0); Kaitlyn Weidemann scored.",
+            "Grace Grabowy singled through the right side (0-0); Maggie Ward advanced to second.",
+            "Dani Peshia singled to right field (0-0); Grace Grabowy advanced to second; Maggie Ward advanced to third.",
+            "Emma Giese singled, RBI (0-0); Dani Peshia advanced to second; Grace Grabowy advanced to third; Maggie Ward scored.",
+            "Auburn Roberson struck out (0-0); Grace Grabowy scored, unearned.",
+            "Rachel Radish singled to right field (0-0); Emma Giese advanced to second; Dani Peshia advanced to third.",
+            "Jj Jakosalem hit by pitch, RBI (0-0); Rachel Radish advanced to second; Emma Giese advanced to third; Dani Peshia scored.",
+            "Kaitlyn Weidemann grounded out to 3b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lily Kenefick to 2b for Reagan Lalor.",
+            "Bella Eggert grounded out to 3b (0-0).",
+            "Maggie Ward popped up to ss (0-0).",
+            "Grace Grabowy flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dani Peshia singled through the left side (0-0).",
+            "Belle Lapacek pinch ran for Dani Peshia.",
+            "Emma Giese hit by pitch (0-0); Belle Lapacek advanced to second.",
+            "Sierra Miller pinch ran for Emma Giese.",
+            "Ellery Stoltz pinch hit for Auburn Roberson.",
+            "Ellery Stoltz singled (0-0); Sierra Miller advanced to second; Belle Lapacek advanced to third.",
+            "Baley Berndt pinch hit for Rachel Radish.",
+            "Baley Berndt flied out to cf, sacrifice fly, RBI (0-0); Belle Lapacek scored.",
+            "Liv Ybarra pinch hit for Jj Jakosalem.",
+            "Liv Ybarra reached on a fielder's choice (0-0); Ellery Stoltz out at second 2b to ss; Sierra Miller advanced to third.",
+            "Kaitlyn Weidemann grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bella Eggert singled to shortstop (0-0).",
+            "Erin Grimsley pinch hit for Maggie Ward.",
+            "Erin Grimsley grounded out to 3b, SAC (0-0); Bella Eggert advanced to second.",
+            "Grace Grabowy singled through the left side (0-0); Bella Eggert advanced to third.",
+            "Hadley Marchand to p.",
+            "Elizabeth Mitchell to dp.",
+            "Grace Grabowy stole second.",
+            "Belle Lapacek hit by pitch (0-0).",
+            "Emma Giese walked, RBI (0-0); Belle Lapacek advanced to second; Grace Grabowy advanced to third; Bella Eggert scored.",
+            "Elizabeth Mitchell to p for Hadley Marchand.",
+            "Dani Peshia pinch ran for Belle Lapacek.",
+            "Ellery Stoltz struck out (0-0); Emma Giese advanced to second; Dani Peshia advanced to third; Grace Grabowy scored.",
+            "Rachel Radish walked (0-0).",
+            "Jj Jakosalem flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Paige Abendroth pinch hit for Kaitlyn Weidemann.",
+            "Paige Abendroth grounded out to 2b (0-0).",
+            "Natalie Muellner pinch hit for Bella Eggert.",
+            "Natalie Muellner walked (0-0).",
+            "Bella Eggert pinch ran for Natalie Muellner.",
+            "Erin Grimsley grounded out to ss (0-0); Bella Eggert advanced to second.",
+            "Keira Jarrett pinch hit for Grace Grabowy.",
+            "Keira Jarrett popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/u-of-chicago/boxscore/7848",
+      "date": "3/19/2026",
+      "opponent": "U Of Chicago",
+      "pitchers": [
+        "Chatfield, Leah",
+        "Raymond, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madeline Murphy singled to left field (0-1 K).",
+            "Natalie Antin grounded out to p, SAC, bunt (3-1 BBFB); Madeline Murphy advanced to second.",
+            "Audrey Hui popped up to ss (2-2 KFFBB).",
+            "Mia Bocian singled to center field, RBI (1-1 KB); Madeline Murphy scored.",
+            "Nanako Schroth reached on a fielder's choice (3-2 BSBSB); Mia Bocian out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Eleanor Johnson reached first on an error by 2b (0-0).",
+            "Matilda Nelson popped into double play 2b to 1b (0-2 FF); Eleanor Johnson out on the play.",
+            "Olivia Cataldo popped up to 2b (2-1 BSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sedona Ding walked (3-2 BBBKFB).",
+            "Sedona Ding stole second, advanced to third on a throwing error by c.",
+            "Madeline Murphy doubled to left field, RBI (2-2 FFFFBB); Sedona Ding scored.",
+            "Natalie Antin flied out to lf (0-0).",
+            "Audrey Hui grounded out to 2b (1-0 B); Madeline Murphy advanced to third.",
+            "Mia Bocian grounded out to ss (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ashlee Boodoo pinch hit for Nanako Schroth.",
+            "Ashlee Boodoo walked (3-2 BBKBKFB).",
+            "Eleanor Johnson reached first on an error by 3b, SAC, bunt (1-0 B); Ashlee Boodoo advanced to second.",
+            "Matilda Nelson grounded out to 3b, SAC, bunt (0-0); Eleanor Johnson advanced to second; Ashlee Boodoo advanced to third.",
+            "Olivia Cataldo flied out to rf, sacrifice fly, RBI (1-0 B); Eleanor Johnson advanced to third; Ashlee Boodoo scored, unearned.",
+            "Sedona Ding grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Murphy flied out to rf (2-1 BFB).",
+            "Natalie Antin singled down the lf line (2-0 BB).",
+            "Brianna Leech pinch ran for Natalie Antin.",
+            "Brianna Leech stole second, advanced to third on a throwing error by c.",
+            "Audrey Hui reached on a fielder's choice, advanced to third on the throw (2-1 BBF); Brianna Leech scored, unearned.",
+            "Mia Bocian struck out swinging (1-2 FFBS).",
+            "Nanako Schroth grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddy Bowen to 1b for Reagan Lalor.",
+            "Jenna Maus to c for Abby Thompson.",
+            "Eleanor Johnson walked (3-2 BFBFBB).",
+            "Lakyn Wilkinson pinch ran for Eleanor Johnson.",
+            "Lakyn Wilkinson stole second.",
+            "Matilda Nelson struck out swinging (1-2 KSBS).",
+            "Olivia Cataldo walked (3-1 BFBBB).",
+            "Julia Raymond to p for Leah Chatfield.",
+            "Sedona Ding grounded out to p, SAC, bunt (0-0); Olivia Cataldo advanced to second; Lakyn Wilkinson advanced to third.",
+            "Madeline Murphy singled to right center, 2 RBI (1-0 B); Olivia Cataldo scored; Lakyn Wilkinson scored.",
+            "Natalie Antin flied out to rf (0-1 K)."
           ]
         }
       ],

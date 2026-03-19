@@ -1,58 +1,58 @@
 {
   "slug": "macalester",
   "domain": "athletics.macalester.edu",
-  "scrapedAt": "2026-03-19T13:01:34.705Z",
+  "scrapedAt": "2026-03-19T18:57:25.262Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Miller, Martha",
-      "w": 3,
+      "w": 4,
       "l": 4,
-      "era": 3.69,
-      "app": 10,
-      "gs": 8,
-      "cg": 4,
+      "era": 3.26,
+      "app": 12,
+      "gs": 10,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 49.1,
-      "h": 61,
-      "r": 40,
-      "er": 26,
-      "bb": 16,
-      "so": 42,
-      "hr": 2,
-      "whip": 1.56,
-      "doubles": 6,
-      "triples": 3,
-      "ab": 209,
-      "bAvg": 0.292,
-      "wp": 7,
-      "hbp": 8,
+      "ip": 62.1,
+      "h": 72,
+      "r": 47,
+      "er": 29,
+      "bb": 20,
+      "so": 61,
+      "hr": 3,
+      "whip": 1.48,
+      "doubles": 7,
+      "triples": 4,
+      "ab": 261,
+      "bAvg": 0.276,
+      "wp": 8,
+      "hbp": 9,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 9
     },
     {
       "name": "Sullivan, Ainsley",
       "w": 1,
       "l": 1,
-      "era": 5.12,
-      "app": 5,
+      "era": 6.2,
+      "app": 6,
       "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 13.2,
-      "h": 13,
-      "r": 11,
-      "er": 10,
-      "bb": 8,
-      "so": 12,
-      "hr": 1,
-      "whip": 1.54,
+      "ip": 14.2,
+      "h": 14,
+      "r": 14,
+      "er": 13,
+      "bb": 10,
+      "so": 14,
+      "hr": 2,
+      "whip": 1.64,
       "doubles": 3,
       "triples": 1,
-      "ab": 51,
+      "ab": 55,
       "bAvg": 0.255,
       "wp": 3,
       "hbp": 3,
@@ -1257,6 +1257,177 @@
             "Camden Heenan grounded out to ss (2-1 SBB).",
             "Anna Diggins pinch hit for Bailey Tammaro.",
             "Anna Diggins struck out swinging (1-2 SSBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/kalamazoo-college/boxscore/11009",
+      "date": "3/19/2026",
+      "opponent": "Kalamazoo College",
+      "pitchers": [
+        "Miller, Martha",
+        "Sullivan, Ainsley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Macy Ward struck out looking (2-2 KBBFK).",
+            "Alyssa Hinkley singled to right center (2-1 BKB).",
+            "Grace Rocco reached on a fielder's choice to second base (0-0); Alyssa Hinkley out at second 2b to ss.",
+            "Grace Rocco stole second.",
+            "Emma Newlove struck out swinging (3-2 SBBKBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elizabeth Jones struck out swinging (1-2 SSFBFS).",
+            "Maddie Potts struck out looking (3-2 KBSFBFBK).",
+            "Delaney Lee struck out looking (2-2 BSSBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Neumann reached first on a fielding error by ss, advanced to second (3-2 FBBBS).",
+            "Jaycee Rider doubled to right center (1-2 FBF); Ella Neumann advanced to third.",
+            "Macy Ward singled to third base, RBI (2-2 BKFFBFFF); Ella Neumann scored, unearned.",
+            "Alyssa Hinkley reached on a fielder's choice to shortstop (0-0); Macy Ward advanced to second; Jaycee Rider out at third ss to 3b.",
+            "Grace Rocco popped up to 2b (0-1 S).",
+            "Emma Newlove walked (3-2 BBBKSB); Alyssa Hinkley advanced to second; Macy Ward advanced to third.",
+            "Elizabeth Jones struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Potts grounded out to 3b (1-0 B).",
+            "Delaney Lee struck out swinging (0-2 KFFS).",
+            "Ella Neumann struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elizabeth Welch to 1b.",
+            "Tess Bojorquez to 2b.",
+            "Rebecca Heinze to dp.",
+            "Martha Miller to ss.",
+            "Ainsley Sullivan to p for Paige Schultz.",
+            "Jaycee Rider walked (3-0 BBBB).",
+            "Macy Ward walked (3-0 BBBB); Jaycee Rider advanced to second.",
+            "Alyssa Hinkley struck out swinging (0-2 KKS).",
+            "Grace Rocco struck out looking (2-2 BKFFFFBK).",
+            "Emma Newlove homered to left field, 3 RBI (2-2 KFBB); Macy Ward scored; Jaycee Rider scored.",
+            "Elizabeth Jones flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Elizabeth Welch to 2b.",
+            "Tess Bojorquez to ss.",
+            "Rebecca Heinze to 1b for Maya Thomas.",
+            "Martha Miller to p.",
+            "/  for Ainsley Sullivan.",
+            "Nadene Hubbard struck out swinging (0-2 KSS).",
+            "Delaney Lee struck out swinging (1-2 BKSS).",
+            "Ella Neumann struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jaycee Rider popped up to 2b (1-1 BK).",
+            "Macy Ward hit by pitch (3-0 BBH).",
+            "Alyssa Hinkley reached on a fielder's choice to third base, bunt (0-1 F); Macy Ward out at second 3b to 2b.",
+            "Grace Rocco homered to center field, 2 RBI (1-1 BS); Alyssa Hinkley scored.",
+            "Emma Newlove struck out swinging (0-2 FKS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/university-of-wisconsin-whitewater/boxscore/11010",
+      "date": "3/19/2026",
+      "opponent": "University Of Wisconsin Whitewater",
+      "pitchers": [
+        "Miller, Martha"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Eggert lined out to ss (1-0 B).",
+            "Maggie Ward walked (3-1 BBBKB).",
+            "Grace Grabowy struck out swinging (0-2 FKFS).",
+            "Dani Peshia walked (3-1 BBBKB); Maggie Ward advanced to second.",
+            "Emma Giese struck out swinging (2-2 FBSBFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ellery Stoltz struck out swinging (1-2 KBKS).",
+            "Taylor Koehler reached first on a fielding error by 3b (0-0).",
+            "Auburn Roberson flied out to cf (0-0).",
+            "Taylor Koehler advanced to second on a wild pitch.",
+            "Kaitlyn Weidemann singled to right field (2-2 BFFB); Taylor Koehler advanced to third.",
+            "Bella Eggert singled to catcher, bunt (0-1 K); Kaitlyn Weidemann advanced to second.",
+            "Maggie Ward popped up to ss (3-2 BKBBKF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Grace Grabowy singled up the middle (1-2 KFFFBF).",
+            "Dani Peshia struck out looking (1-2 SFBFFFK).",
+            "Emma Giese popped up to ss (0-0).",
+            "Ellery Stoltz struck out swinging (1-2 FFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Koehler reached first on a fielding error by ss, advanced to second (0-0).",
+            "Auburn Roberson walked (3-2 BBKSBFB).",
+            "Kaitlyn Weidemann struck out swinging (0-2 FSS).",
+            "Bella Eggert singled down the lf line (0-1 F); Auburn Roberson advanced to second; Taylor Koehler advanced to third.",
+            "Maggie Ward flied out to cf, sacrifice fly, RBI (1-1 SB); Bella Eggert advanced to second; Auburn Roberson advanced to third; Taylor Koehler scored, unearned.",
+            "Grace Grabowy singled to center field, 2 RBI (3-2 FBBFB); Bella Eggert scored, unearned; Auburn Roberson scored, unearned.",
+            "Dani Peshia popped up to 2b (1-2 FBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dylan Tapia to c for Maya Thomas.",
+            "Emma Giese grounded out to ss (0-1 S).",
+            "Rachel Radish tripled to right field (1-2 FKFB).",
+            "Taylor Koehler grounded out to 2b, RBI (0-1 K); Rachel Radish scored.",
+            "Auburn Roberson struck out looking (2-2 FBSBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kaitlyn Weidemann grounded out to p (1-2 BFK).",
+            "Bella Eggert grounded out to 2b (0-1 F).",
+            "Maggie Ward lined out to cf (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Grace Grabowy flied out to rf (0-1 F).",
+            "Dani Peshia grounded out to 3b (0-0).",
+            "Emma Giese singled to center field (1-0 B).",
+            "Belle Lapacek pinch ran for Emma Giese.",
+            "Rachel Radish popped up to 1b (0-0)."
           ]
         }
       ],

@@ -1,31 +1,31 @@
 {
   "slug": "uww",
   "domain": "uwwsports.com",
-  "scrapedAt": "2026-03-19T13:01:41.750Z",
+  "scrapedAt": "2026-03-19T18:57:34.664Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Hammen, Josie",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 0.67,
-      "app": 5,
-      "gs": 4,
-      "cg": 3,
+      "era": 0.75,
+      "app": 6,
+      "gs": 5,
+      "cg": 4,
       "sho": 1,
       "sv": 1,
-      "ip": 21,
-      "h": 15,
-      "r": 4,
-      "er": 2,
-      "bb": 6,
-      "so": 19,
-      "hr": 0,
-      "whip": 1,
+      "ip": 28,
+      "h": 20,
+      "r": 5,
+      "er": 3,
+      "bb": 9,
+      "so": 25,
+      "hr": 1,
+      "whip": 1.04,
       "doubles": 4,
       "triples": 1,
-      "ab": 76,
-      "bAvg": 0.197,
+      "ab": 100,
+      "bAvg": 0.2,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
@@ -33,59 +33,59 @@
       "sha": 0
     },
     {
-      "name": "DeBennette, Madi",
-      "w": 2,
-      "l": 1,
-      "era": 1.7,
-      "app": 3,
-      "gs": 2,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 12.1,
-      "h": 21,
-      "r": 5,
-      "er": 3,
-      "bb": 3,
-      "so": 12,
-      "hr": 0,
-      "whip": 1.95,
-      "doubles": 4,
-      "triples": 1,
-      "ab": 55,
-      "bAvg": 0.382,
-      "wp": 2,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
-    {
       "name": "Hock, Brooke",
       "w": 1,
       "l": 0,
-      "era": 1.79,
-      "app": 4,
+      "era": 1.67,
+      "app": 5,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 15.2,
-      "h": 15,
-      "r": 7,
-      "er": 4,
+      "ip": 21,
+      "h": 18,
+      "r": 8,
+      "er": 5,
       "bb": 5,
-      "so": 12,
-      "hr": 1,
-      "whip": 1.28,
+      "so": 15,
+      "hr": 2,
+      "whip": 1.1,
       "doubles": 2,
-      "triples": 0,
-      "ab": 61,
-      "bAvg": 0.246,
+      "triples": 1,
+      "ab": 79,
+      "bAvg": 0.228,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
+      "sha": 2
+    },
+    {
+      "name": "DeBennette, Madi",
+      "w": 2,
+      "l": 1,
+      "era": 4.1,
+      "app": 4,
+      "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 13.2,
+      "h": 26,
+      "r": 10,
+      "er": 8,
+      "bb": 5,
+      "so": 12,
+      "hr": 0,
+      "whip": 2.27,
+      "doubles": 5,
+      "triples": 1,
+      "ab": 63,
+      "bAvg": 0.413,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
       "sha": 2
     },
     {
@@ -121,23 +121,23 @@
       "w": 0,
       "l": 0,
       "era": 0,
-      "app": 2,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2,
+      "ip": 2.1,
       "h": 3,
       "r": 0,
       "er": 0,
-      "bb": 1,
+      "bb": 4,
       "so": 0,
       "hr": 0,
-      "whip": 2,
+      "whip": 3,
       "doubles": 0,
       "triples": 0,
-      "ab": 9,
-      "bAvg": 0.333,
+      "ab": 10,
+      "bAvg": 0.3,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -847,6 +847,183 @@
             "B. Awad flied out to rf (0-1 K).",
             "J. Colgan grounded out to ss (2-2 BSBF).",
             "B. Mellady grounded out to 1b unassisted (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/eastern-connecticut-state/boxscore/23106",
+      "date": "3/19/2026",
+      "opponent": "Eastern Connecticut State",
+      "pitchers": [
+        "Hammen, Josie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Grace Jenkins singled to right field (0-0).",
+            "Grace Jenkins out at second c to ss, caught stealing.",
+            "Kaley Laird flied out to rf (0-0).",
+            "Maddy Bowen walked (0-0).",
+            "Hadley Marchand struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elizabeth Mitchell homered to left field, RBI (0-0).",
+            "Abby Thompson flied out to lf (0-0).",
+            "Sam Healy walked (0-0).",
+            "Sam Healy advanced to second on a fielding error by lf.",
+            "Reagan Lalor struck out swinging (0-0).",
+            "Julia Boya struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Grace Jenkins flied out to rf (0-0).",
+            "Kaley Laird singled to second base (0-0).",
+            "Kaley Laird out at second 1b unassisted.",
+            "Maddy Bowen grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Hadley Marchand flied out to rf (0-0).",
+            "Elizabeth Mitchell grounded out to 1b unassisted (0-0).",
+            "Abby Thompson reached first on an error by p (0-0).",
+            "Sam Healy struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Giese to ss for Sierra Miller.",
+            "Ellery Stoltz to rf.",
+            "Rachel Radish to 1b for Baley Berndt.",
+            "Jj Jakosalem to c for Liv Ybarra.",
+            "Belle Lapacek to dp.",
+            "Lily Kenefick singled to right field (0-0).",
+            "Julia Boya singled (0-0); Lily Kenefick advanced to second.",
+            "Grace Jenkins grounded out to 2b (0-0); Julia Boya advanced to second; Lily Kenefick advanced to third.",
+            "Kaley Laird popped up to ss (0-0).",
+            "Maddy Bowen grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Erin Grimsley to rf.",
+            "Ellery Stoltz to lf.",
+            "Taylor Lathrop pinch hit for Elizabeth Mitchell.",
+            "Taylor Lathrop walked (0-0).",
+            "Elizabeth Mitchell lined into double play p to 1b (0-0); Taylor Lathrop out on the play.",
+            "Abby Thompson popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bella Eggert to cf.",
+            "Grace Grabowy to 3b for Keira Jarrett.",
+            "Dani Peshia to dp.",
+            "Kaitlyn Weidemann to 2b for Paige Abendroth.",
+            "Khaiyanna Maldonado pinch hit for Sam Healy.",
+            "Khaiyanna Maldonado flied out to rf (0-0).",
+            "Lily Kenefick struck out swinging (0-0).",
+            "Leah Chatfield pinch hit for Julia Boya.",
+            "Leah Chatfield struck out looking (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/macalester-college/boxscore/23105",
+      "date": "3/19/2026",
+      "opponent": "Macalester College",
+      "pitchers": [
+        "DeBennette, Madi",
+        "Perez, Olivia",
+        "Hock, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Safiya Butler walked (3-0 BBBB).",
+            "Ally Wolf fouled out to c, bunt (1-1 BK).",
+            "Safiya Butler stole second.",
+            "Elizabeth Welch walked (3-2 BFBBKB).",
+            "Dylan Tapia singled to second base, RBI (0-2 FF); Elizabeth Welch advanced to second; Safiya Butler scored.",
+            "Rebecca Heinze singled through the left side (1-1 KB); Dylan Tapia advanced to second; Elizabeth Welch advanced to third.",
+            "Tess Bojorquez flied out to rf (1-2 FFB); Dylan Tapia out at third rf to c to 1b to p to c to 3b; Elizabeth Welch scored on the throw."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Callia Holland popped up to p (2-2 KBBK).",
+            "Alli Johnson doubled to right center (1-0 B).",
+            "Martha Miller singled to right field (0-1 F); Alli Johnson advanced to third.",
+            "Martha Miller stole second.",
+            "Safiya Butler singled to third base, advanced to second, RBI (0-0); Martha Miller advanced to third; Alli Johnson scored.",
+            "Olivia Perez to p for Madi DeBennette.",
+            "Ally Wolf flied out to cf (0-2 KF).",
+            "Elizabeth Welch walked (3-2 BKKBBB).",
+            "Dylan Tapia walked, RBI (3-1 BBBKB); Elizabeth Welch advanced to second; Safiya Butler advanced to third; Martha Miller scored.",
+            "Rebecca Heinze walked, RBI (3-2 KKBBBB); Dylan Tapia advanced to second; Elizabeth Welch advanced to third; Safiya Butler scored.",
+            "Brooke Hock to p for Olivia Perez.",
+            "Tess Bojorquez struck out swinging (2-2 KKBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Callia Holland popped up to ss (2-1 BBK).",
+            "Alli Johnson popped up to ss (0-0).",
+            "Martha Miller flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Rachel Radish to 1b for Ellery Stoltz.",
+            "Taylor Koehler to dp.",
+            "Safiya Butler out at first 1b to 2b, bunt (2-1 BBK).",
+            "Ally Wolf struck out swinging (1-2 SBKS).",
+            "Elizabeth Welch flied out to cf (1-2 KKBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dylan Tapia singled to left field (2-2 SBFFB).",
+            "Maya Thomas pinch ran for Dylan Tapia.",
+            "Rebecca Heinze popped into double play p to 2b (0-0); Maya Thomas out on the play.",
+            "Tess Bojorquez lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Callia Holland homered to right center, RBI (2-2 FBFBF).",
+            "Alli Johnson tripled to right field (1-1 SB).",
+            "Martha Miller grounded out to p (0-0).",
+            "Safiya Butler popped up to 3b, bunt (0-1 F).",
+            "Ally Wolf struck out swinging (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Elizabeth Welch grounded out to 2b (0-0).",
+            "Dylan Tapia grounded out to 3b (0-1 F).",
+            "Rebecca Heinze grounded out to 3b (1-1 BK)."
           ]
         }
       ],

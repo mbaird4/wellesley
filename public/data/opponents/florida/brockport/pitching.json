@@ -1,36 +1,36 @@
 {
   "slug": "brockport",
   "domain": "gobrockport.com",
-  "scrapedAt": "2026-03-19T13:01:31.810Z",
+  "scrapedAt": "2026-03-19T18:57:21.282Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeValder, Liana",
-      "w": 0,
+      "w": 1,
       "l": 1,
-      "era": 7.22,
-      "app": 3,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
+      "era": 4.36,
+      "app": 4,
+      "gs": 2,
+      "cg": 1,
+      "sho": 1,
       "sv": 1,
-      "ip": 10.2,
-      "h": 16,
+      "ip": 17.2,
+      "h": 21,
       "r": 15,
       "er": 11,
-      "bb": 3,
-      "so": 12,
+      "bb": 4,
+      "so": 19,
       "hr": 0,
-      "whip": 1.78,
-      "doubles": 5,
+      "whip": 1.42,
+      "doubles": 7,
       "triples": 1,
-      "ab": 50,
-      "bAvg": 0.32,
+      "ab": 73,
+      "bAvg": 0.288,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Davis, Colleen",
@@ -61,34 +61,6 @@
       "sha": 1
     },
     {
-      "name": "Hart, Makenna",
-      "w": 0,
-      "l": 1,
-      "era": 10.5,
-      "app": 2,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 10,
-      "r": 9,
-      "er": 6,
-      "bb": 3,
-      "so": 1,
-      "hr": 0,
-      "whip": 3.25,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 24,
-      "bAvg": 0.417,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
       "name": "Alguire, Hadley",
       "w": 0,
       "l": 0,
@@ -110,6 +82,34 @@
       "triples": 0,
       "ab": 10,
       "bAvg": 0.3,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Hart, Makenna",
+      "w": 0,
+      "l": 1,
+      "era": 10.5,
+      "app": 2,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 10,
+      "r": 9,
+      "er": 6,
+      "bb": 3,
+      "so": 1,
+      "hr": 0,
+      "whip": 3.25,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 24,
+      "bAvg": 0.417,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -483,6 +483,82 @@
             "Katie Antonsiewicz singled to left field, RBI (1-0 B); Sarah Huang advanced to third; Emily Barbire scored.",
             "Makenna Hart to p for Colleen Davis.",
             "Keira D'Errico struck out swinging (0-2 KFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/plattsburgh-state/boxscore/12507",
+      "date": "3/19/2026",
+      "opponent": "Plattsburgh State",
+      "pitchers": [
+        "DeValder, Liana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gwen Noll singled to right field (2-2 KFBB).",
+            "Gwen Noll out at second c to ss, caught stealing.",
+            "Meghan Stork flied out to lf (2-2 KBSB).",
+            "Maya Weinerman doubled down the lf line (1-0 B).",
+            "Sara Isaacs flied out to lf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bella DeLorenzo lined out to cf (1-2 BFFF).",
+            "Megan Pillus struck out looking (1-2 BFSK).",
+            "Emma Deo struck out swinging (1-2 KBKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Allison Isaacs struck out swinging (1-2 BKSS).",
+            "Jaylyn Linderman lined out to lf (1-1 FB).",
+            "Gwen Noll popped up to 2b (2-2 BFFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Meghan Stork popped up to 3b (0-1 K).",
+            "Maya Weinerman struck out swinging (0-2 SSS).",
+            "Sara Isaacs struck out swinging (0-2 FFFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Teresa Cotty to dp for Ciara Olivo.",
+            "Ciara Olivo to cf.",
+            "Bella DeLorenzo doubled to left field (3-2 FBBBK).",
+            "Megan Pillus out at first p to 2b, bunt, SAC (0-0); Bella DeLorenzo advanced to third.",
+            "Emma Deo flied out to lf (2-1 BSB).",
+            "Allison Isaacs struck out looking (3-2 KBSBFBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Isabella Moya to lf for Maeve Brannigan.",
+            "Jaylyn Linderman popped up to 1b (0-0).",
+            "Gwen Noll grounded out to ss (0-2 KS).",
+            "Meghan Stork walked (3-1 BBKBB).",
+            "Maya Weinerman popped up to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Aubrey Ennis to 3b for Lila Lovgren.",
+            "Sara Isaacs flied out to lf (3-2 BBKBF).",
+            "Bella DeLorenzo singled to right center (1-1 FB).",
+            "Megan Pillus singled to right center (0-1 S); Bella DeLorenzo out at second 2b to ss.",
+            "Emma Deo struck out swinging (1-2 KFBS)."
           ]
         }
       ],
