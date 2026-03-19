@@ -23,6 +23,7 @@ function buildMatchKey(initial: string, lastName: string): string {
 interface RosterCandidate {
   jersey: number;
   last: string;
+  first: string;
 }
 
 /** Parse a "last, first" roster key into its parts. */
@@ -39,7 +40,7 @@ function buildRosterKeyMap(entries: { first: string; last: string; jersey: numbe
   entries.forEach(({ first, last, jersey }) => {
     const mk = buildMatchKey(first, last);
     const group = byKey.get(mk) ?? [];
-    group.push({ jersey, last });
+    group.push({ jersey, last, first });
     byKey.set(mk, group);
   });
 
@@ -49,6 +50,9 @@ function buildRosterKeyMap(entries: { first: string; last: string; jersey: numbe
 /**
  * Match a display name (e.g. "E. Santiago") against the roster key map.
  * Returns the jersey number if matched, or undefined.
+ *
+ * When multiple candidates share the same key (e.g. "Ma. Bowen" and "Mi. Bowen"
+ * for sisters on the same team), uses the full display prefix to disambiguate.
  */
 function matchJersey(displayName: string, rosterByKey: Map<string, RosterCandidate[]>): number | undefined {
   const parts = displayName.split(/\s+/);
@@ -63,14 +67,35 @@ function matchJersey(displayName: string, rosterByKey: Map<string, RosterCandida
 
   // Verify the last name actually matches (one must be a prefix of the other)
   // Without this, "J. Leal" would falsely match roster entry "lees, jacelyn" via shared key "j-le"
-  const best = candidates.find((c) => c.last.toLowerCase().startsWith(displayLast.toLowerCase()) || displayLast.toLowerCase().startsWith(c.last.toLowerCase()));
+  const lastNameMatches = candidates.filter((c) => c.last.toLowerCase().startsWith(displayLast.toLowerCase()) || displayLast.toLowerCase().startsWith(c.last.toLowerCase()));
 
-  return best?.jersey;
+  if (lastNameMatches.length === 0) {
+    return undefined;
+  }
+
+  if (lastNameMatches.length === 1) {
+    return lastNameMatches[0].jersey;
+  }
+
+  // Multiple candidates with matching last names (e.g. sisters "bowen, maddy" and "bowen, michaella").
+  // Use the full display prefix (e.g. "Ma" from "Ma.") to pick the correct one.
+  const displayPrefix = parts[0].replace(/\.$/, '').toLowerCase();
+
+  if (displayPrefix.length > 1) {
+    const prefixMatch = lastNameMatches.find((c) => c.first.toLowerCase().startsWith(displayPrefix));
+
+    if (prefixMatch) {
+      return prefixMatch.jersey;
+    }
+  }
+
+  return lastNameMatches[0].jersey;
 }
 
 /**
  * Normalize "Joe Smith" → "J. Smith" so multi-year names merge correctly.
- * Names already in initial format (e.g. "J. Smith") pass through unchanged.
+ * Names already abbreviated (ending with ".") pass through unchanged,
+ * including multi-char abbreviations like "Ma. Bowen" or "Mi. Bowen".
  */
 export function normalizePlayerName(name: string): string {
   const parts = name.split(/\s+/);
@@ -81,14 +106,69 @@ export function normalizePlayerName(name: string): string {
 
   const first = parts[0];
 
-  // Already initial format ("J." or "J")
-  if (first.length <= 2) {
+  // Already abbreviated — preserve as-is (handles "J.", "Ma.", "Mi.", etc.)
+  if (first.endsWith('.')) {
     return name;
   }
 
+  // Single letter without dot (e.g. "J Smith")
+  if (first.length === 1) {
+    return `${first}. ${parts.slice(1).join(' ')}`;
+  }
+
+  // Full first name — abbreviate to initial
   const rest = parts.slice(1).join(' ');
 
   return `${first[0]}. ${rest}`;
+}
+
+/**
+ * Normalize a batch of full player names, using extended prefixes to disambiguate
+ * when two names would collide (e.g. "Maddy Bowen" + "Michaella Bowen" → "Ma. Bowen" + "Mi. Bowen").
+ */
+export function normalizePlayerNames(names: string[]): Map<string, string> {
+  const result = new Map<string, string>();
+
+  // Group by what normalizePlayerName would produce
+  const groups = new Map<string, string[]>();
+
+  names.forEach((name) => {
+    const norm = normalizePlayerName(name);
+    const group = groups.get(norm) ?? [];
+    group.push(name);
+    groups.set(norm, group);
+  });
+
+  groups.forEach((group, normName) => {
+    if (group.length === 1) {
+      result.set(group[0], normName);
+
+      return;
+    }
+
+    // Collision — extend the prefix to disambiguate
+    for (let len = 2; len <= 10; len++) {
+      const prefixed = group.map((name) => {
+        const first = name.split(/\s+/)[0].replace(/\.$/, '');
+        const rest = name.split(/\s+/).slice(1).join(' ');
+
+        return { name, prefix: first.slice(0, len), rest };
+      });
+
+      if (new Set(prefixed.map((p) => p.prefix.toLowerCase())).size === group.length) {
+        prefixed.forEach(({ name, prefix, rest }) => {
+          result.set(name, `${prefix.charAt(0).toUpperCase()}${prefix.slice(1).toLowerCase()}. ${rest}`);
+        });
+
+        return;
+      }
+    }
+
+    // Fallback: use full names
+    group.forEach((name) => result.set(name, name));
+  });
+
+  return result;
 }
 
 /**
@@ -242,14 +322,89 @@ function mergeTruncatedNames(names: string[]): Map<string, string> {
 }
 
 /**
+ * Detect roster entries whose standard "F. Last" abbreviation would collide,
+ * and return a map from the ambiguous abbreviation to a resolution table.
+ *
+ * E.g. roster has "bowen, maddy" (#17) and "bowen, michaella" (#20) — both
+ * abbreviate to "M. Bowen". Returns: "M. Bowen" → Map{"maddy" → "Ma. Bowen", "michaella" → "Mi. Bowen"}.
+ */
+function buildRosterCollisionMap(roster: Roster): Map<string, Map<string, string>> {
+  const entries = Object.keys(roster).map((key) => {
+    const { first, last } = parseRosterKey(key);
+    const titleLast = last.charAt(0).toUpperCase() + last.slice(1);
+    const standard = `${first.charAt(0).toUpperCase()}. ${titleLast}`;
+
+    return { first, titleLast, standard };
+  });
+
+  // Group by standard abbreviation
+  const groups = new Map<string, typeof entries>();
+
+  entries.forEach((e) => {
+    const group = groups.get(e.standard) ?? [];
+    group.push(e);
+    groups.set(e.standard, group);
+  });
+
+  const result = new Map<string, Map<string, string>>();
+
+  groups.forEach((group, standard) => {
+    if (group.length <= 1) {
+      return;
+    }
+
+    for (let len = 2; len <= 10; len++) {
+      const prefixes = group.map((e) => e.first.slice(0, len).toLowerCase());
+
+      if (new Set(prefixes).size === group.length) {
+        const alts = new Map<string, string>();
+
+        group.forEach((e) => {
+          const prefix = e.first.slice(0, len);
+          const uniqueName = `${prefix.charAt(0).toUpperCase()}${prefix.slice(1).toLowerCase()}. ${e.titleLast}`;
+          alts.set(e.first.toLowerCase(), uniqueName);
+        });
+        result.set(standard, alts);
+
+        return;
+      }
+    }
+  });
+
+  return result;
+}
+
+/**
  * Canonicalize player names across multiple years of spray data in-place.
- * 1. Normalizes first names to initials ("Joe Smith" → "J. Smith").
+ * 1. Normalizes first names to initials ("Joe Smith" → "J. Smith"), using
+ *    extended prefixes when the roster has collisions ("Maddy Bowen" → "Ma. Bowen").
  * 2. Merges truncated variants via roster jersey numbers when available.
  * 3. Merges remaining truncated variants by (initial + first 2 chars of surname).
  */
 export function canonicalizeSprayNames(dataByYear: Map<number, SprayDataPoint[]>, years: number[], roster: Roster): void {
+  const collisions = Object.keys(roster).length > 0 ? buildRosterCollisionMap(roster) : new Map();
+
+  // Normalize player names, resolving collisions via roster when possible
   dataByYear.forEach((points) => {
-    points.forEach((p) => (p.playerName = normalizePlayerName(p.playerName)));
+    points.forEach((p) => {
+      const normalized = normalizePlayerName(p.playerName);
+      const alts = collisions.get(normalized);
+
+      if (alts) {
+        // This abbreviation is ambiguous — use the original name's first part to resolve
+        const rawFirst = p.playerName.split(/\s+/)[0].replace(/\.$/, '').toLowerCase();
+
+        for (const [rosterFirst, uniqueName] of alts) {
+          if (rosterFirst.startsWith(rawFirst) || rawFirst.startsWith(rosterFirst)) {
+            p.playerName = uniqueName;
+
+            return;
+          }
+        }
+      }
+
+      p.playerName = normalized;
+    });
   });
 
   const collectNames = () => [...new Set(years.flatMap((y) => (dataByYear.get(y) ?? []).map((p) => p.playerName)))];

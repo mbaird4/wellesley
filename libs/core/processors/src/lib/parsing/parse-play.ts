@@ -1,8 +1,8 @@
 import type { BaseRunners, BatterResult, GameState, PlayType } from '@ws/core/models';
 
-// Regex that handles initials ("A. Delgado"), full names ("Andrea Delgado"),
-// hyphenated names ("M. Jo-Laudat"), and multi-word last names
-const NAME_PATTERN = /([A-Z](?:\.|[a-zA-Z]+)\s+[A-Z][a-zA-Z]+(?:-[A-Za-z]+)*(?:\s+[A-Z][a-zA-Z]+(?:-[A-Za-z]+)*)*)/;
+// Regex that handles initials ("A. Delgado"), multi-char abbreviations ("Ma. Bowen"),
+// full names ("Andrea Delgado"), hyphenated names ("M. Jo-Laudat"), and multi-word last names
+const NAME_PATTERN = /([A-Z](?:[a-z]*\.|[a-zA-Z]+)\s+[A-Z][a-zA-Z]+(?:-[A-Za-z]+)*(?:\s+[A-Z][a-zA-Z]+(?:-[A-Za-z]+)*)*)/;
 
 // --- Name utilities ---
 

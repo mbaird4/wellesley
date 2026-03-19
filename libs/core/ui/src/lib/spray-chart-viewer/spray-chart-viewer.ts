@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal, viewChild } from '@angular/core';
 import type { JerseyMap, Roster, RosterPlayer, SprayDataPoint, SprayTrend, SprayZone, Team } from '@ws/core/models';
-import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends, normalizePlayerName } from '@ws/core/processors';
+import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends, normalizePlayerName, normalizePlayerNames } from '@ws/core/processors';
 import { BreakpointService, CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
 
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
@@ -246,13 +246,17 @@ export class SprayChartViewer {
       return sprayMap;
     }
 
-    // Add all teamData players so the jersey map is complete
+    // Add all teamData players so the jersey map is complete.
+    // Use collision-aware names to avoid overwriting when two players
+    // share the same initial + last name (e.g. "Maddy Bowen" / "Michaella Bowen").
     const map: JerseyMap = { ...sprayMap };
     const existingJerseys = new Set(Object.values(map));
+    const uniqueNames = normalizePlayerNames(team.players.map((p) => p.name));
 
     team.players.forEach((p) => {
       if (p.jerseyNumber !== null && !existingJerseys.has(p.jerseyNumber)) {
-        map[normalizePlayerName(p.name)] = p.jerseyNumber;
+        const displayName = uniqueNames.get(p.name) ?? normalizePlayerName(p.name);
+        map[displayName] = p.jerseyNumber;
       }
     });
 
@@ -275,8 +279,9 @@ export class SprayChartViewer {
     }
 
     const hasData = this.sprayJerseys();
+    const uniqueNames = normalizePlayerNames(team.players.map((p) => p.name));
 
-    return new Set(team.players.filter((p) => p.jerseyNumber === null || !hasData.has(p.jerseyNumber)).map((p) => normalizePlayerName(p.name)));
+    return new Set(team.players.filter((p) => p.jerseyNumber === null || !hasData.has(p.jerseyNumber)).map((p) => uniqueNames.get(p.name) ?? normalizePlayerName(p.name)));
   });
 
   readonly rosteredPlayers = computed(() => {
@@ -288,12 +293,13 @@ export class SprayChartViewer {
     }
 
     const hasData = this.sprayJerseys();
+    const uniqueNames = normalizePlayerNames(team.players.map((p) => p.name));
 
     const withData: { name: string; jersey: number | null; pa: number }[] = [];
     const withoutData: { name: string; jersey: number | null; pa: number }[] = [];
 
     team.players.forEach((p) => {
-      const displayName = normalizePlayerName(p.name);
+      const displayName = uniqueNames.get(p.name) ?? normalizePlayerName(p.name);
       const pa = latestSeasonPa(team, p.jerseyNumber);
       const bucket = p.jerseyNumber !== null && hasData.has(p.jerseyNumber) ? withData : withoutData;
       bucket.push({ name: displayName, jersey: p.jerseyNumber, pa });
