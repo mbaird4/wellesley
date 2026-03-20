@@ -1,0 +1,183 @@
+<div class="flex flex-wrap items-center justify-between gap-2 py-3">
+  <h3
+    class="text-content-bright mb-0 flex items-center gap-2 text-base font-semibold"
+  >
+    Pitch Counts
+    <button
+      class="text-content-dim hover:text-content-secondary cursor-pointer border-none bg-transparent p-1 text-sm transition-colors"
+      (click)="showInfo.set(!showInfo())"
+    >
+      <i class="fa-solid fa-circle-info"></i>
+    </button>
+  </h3>
+
+  @if (inningRows().length > 0) {
+    <div class="flex flex-wrap items-center gap-4">
+      <span class="control-label">
+        <ws-slide-toggle
+          [checked]="colorCoding()"
+          (checkedChange)="colorCoding.set($event)"
+        />
+        Color coding
+      </span>
+    </div>
+  }
+</div>
+
+<ws-expandable-panel [open]="showInfo()">
+  <div
+    class="bg-surface-card border-line text-content-secondary mb-3 flex flex-col gap-2.5 rounded-xl border px-4 py-3 text-sm leading-relaxed"
+  >
+    <div class="flex items-center justify-between">
+      <span
+        class="text-content-bright text-xs font-semibold tracking-wider uppercase"
+      >
+        About pitch sequence data
+      </span>
+      <button
+        class="text-content-dim hover:text-content-secondary cursor-pointer border-none bg-transparent p-0.5 text-xs transition-colors"
+        (click)="showInfo.set(false)"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <p>
+      Boxscores from 2026+ embed pitch-by-pitch data in the play text as a count
+      and sequence code, e.g.
+      <span class="text-content-bright font-mono">(3-2 KBSBFB)</span>
+      . Each letter is one pitch:
+    </p>
+    <ul class="flex flex-col gap-1 pl-4">
+      <li>
+        <span class="text-content-bright font-medium">B</span>
+        — Ball
+      </li>
+      <li>
+        <span class="text-content-bright font-medium">K</span>
+        — Called strike
+      </li>
+      <li>
+        <span class="text-content-bright font-medium">S</span>
+        — Swing and miss
+      </li>
+      <li>
+        <span class="text-content-bright font-medium">F</span>
+        — Foul
+      </li>
+      <li>
+        <span class="text-content-bright font-medium">H</span>
+        — Hit by pitch
+      </li>
+    </ul>
+    <p>
+      K, S, and F are counted as strikes. B and H are not. Games before 2026
+      have no pitch data — the section hides automatically.
+    </p>
+    <div>
+      <span
+        class="text-content-bright text-xs font-semibold tracking-wider uppercase"
+      >
+        Column abbreviations
+      </span>
+      <ul class="mt-1.5 flex flex-col gap-1 pl-4">
+        <li>
+          <span class="text-content-bright font-medium">P/PA</span>
+          — Average pitches per plate appearance
+        </li>
+        <li>
+          <span class="text-content-bright font-medium">Str%</span>
+          — Strike percentage (strikes / total pitches)
+        </li>
+        <li>
+          <span class="text-content-bright font-medium">1P K%</span>
+          — First pitch strike percentage
+        </li>
+        <li>
+          <span class="text-content-bright font-medium">1-2P K%</span>
+          - First or Second pitch strike percentage
+        </li>
+      </ul>
+    </div>
+  </div>
+</ws-expandable-panel>
+
+<div class="overflow-x-auto">
+  @if (inningRows().length > 0) {
+    <table class="stats-table mb-0!">
+      <thead>
+        <tr>
+          <th class="text-left">Inn</th>
+          <th class="text-left">PA</th>
+          <th class="text-left">Pitches</th>
+          <th class="text-left">P/PA</th>
+          <th class="text-left">Balls</th>
+          <th class="text-left">Strikes</th>
+          <th class="text-left">Str%</th>
+          <th class="text-left">1P K%</th>
+          <th class="text-left">1-2P K%</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of inningRows(); track row.inning) {
+          <tr>
+            <td>{{ row.inning }}</td>
+            <td class="text-left">{{ row.pa }}</td>
+            <td class="text-left">{{ row.pitches }}</td>
+            <td class="text-left">{{ row.pitchesPerPa }}</td>
+            <td class="text-left">{{ row.balls }}</td>
+            <td class="text-left">{{ row.strikes }}</td>
+            <td class="text-left font-medium" [style]="row.strikePctStyle">
+              {{ row.strikePct }}
+            </td>
+            <td
+              class="text-left font-medium"
+              [style]="row.firstPitchStrikePctStyle"
+            >
+              {{ row.firstPitchStrikePct }}
+            </td>
+            <td
+              class="text-left font-medium"
+              [style]="row.firstTwoPitchesStrikePctStyle"
+            >
+              {{ row.firstTwoPitchesStrikePct }}
+            </td>
+          </tr>
+        }
+      </tbody>
+      <tfoot>
+        @if (totalsRow(); as row) {
+          <tr>
+            <td class="border-b-0!">Total</td>
+            <td class="border-b-0! text-left">{{ row.pa }}</td>
+            <td class="border-b-0! text-left">{{ row.pitches }}</td>
+            <td class="border-b-0! text-left">{{ row.pitchesPerPa }}</td>
+            <td class="border-b-0! text-left">{{ row.balls }}</td>
+            <td class="border-b-0! text-left">{{ row.strikes }}</td>
+            <td
+              class="border-b-0! text-left font-medium"
+              [style]="row.strikePctStyle"
+            >
+              {{ row.strikePct }}
+            </td>
+            <td
+              class="border-b-0! text-left font-medium"
+              [style]="row.firstPitchStrikePctStyle"
+            >
+              {{ row.firstPitchStrikePct }}
+            </td>
+            <td
+              class="border-b-0! text-left font-medium"
+              [style]="row.firstTwoPitchesStrikePctStyle"
+            >
+              {{ row.firstTwoPitchesStrikePct }}
+            </td>
+          </tr>
+        }
+      </tfoot>
+    </table>
+  } @else {
+    <div class="text-content-dim px-card py-6 text-center text-sm">
+      No pitch sequence data available.
+    </div>
+  }
+</div>

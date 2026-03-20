@@ -64,6 +64,13 @@
               [totals]="summary.totals"
             />
 
+            @if (pitchCountData(); as pc) {
+              <ws-pitch-count-breakdown
+                [byInning]="pc.byInning"
+                [totals]="pc.totals"
+              />
+            }
+
             <ws-inning-detail
               [gameLogs]="summary.gameLogs"
               [byInning]="summary.byInning"
@@ -117,6 +124,13 @@
             [byInning]="summary.byInning"
             [totals]="summary.totals"
           />
+
+          @if (pitchCountData(); as pc) {
+            <ws-pitch-count-breakdown
+              [byInning]="pc.byInning"
+              [totals]="pc.totals"
+            />
+          }
 
           <ws-inning-detail
             [gameLogs]="summary.gameLogs"

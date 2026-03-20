@@ -1,7 +1,5 @@
 <div class="bg-surface-card overflow-hidden rounded-xl">
-  <div
-    class="border-line px-card flex items-center justify-between border-b py-3"
-  >
+  <div class="flex items-center justify-between py-3">
     <h3 class="text-content-bright text-base font-semibold">Game Log</h3>
 
     @if (gameLogViews().length > 0) {
@@ -18,7 +16,7 @@
   @if (gameLogViews().length === 0) {
     <p class="text-content-dim p-card text-sm">No game data available.</p>
   } @else {
-    <div class="p-card flex flex-col gap-1.5">
+    <div class="flex flex-col gap-1.5">
       @for (group of yearGroups(); track group.year) {
         @if (hasMultipleYears()) {
           <h4
@@ -29,9 +27,9 @@
         }
 
         @for (log of group.games; track log.url) {
-          <div>
+          <div class="border-line overflow-hidden rounded-[10px] border">
             <button
-              class="game-toggle"
+              class="game-toggle border-0"
               [class.rounded-b-none]="expandedUrl() === log.url"
               (click)="toggleExpand(log.url)"
             >
@@ -72,7 +70,10 @@
             </button>
 
             @if (expandedUrl() === log.url) {
-              <ws-pitcher-innings-table [rows]="log.innings" />
+              <ws-pitcher-innings-table
+                [rows]="log.innings"
+                [bordered]="false"
+              />
             }
           </div>
         }

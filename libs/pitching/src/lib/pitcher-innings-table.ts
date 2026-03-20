@@ -11,8 +11,8 @@ import type { InningsTableRow, InningsTotalsRow } from '@ws/core/models';
 export class PitcherInningsTable {
   readonly rows = input.required<InningsTableRow[]>();
   readonly totals = input<InningsTotalsRow | null>(null);
-  /** When false (default), table has its own border and rounded-t-none styling.
-   *  When true, border and rounding are suppressed — use when the table sits
+  /** When false, table has its own border and rounded-t-none styling.
+   *  When true (default), border and rounding are suppressed — use when the table sits
    *  inside a card container that provides its own visual chrome. */
   readonly bordered = input(true);
 }

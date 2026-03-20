@@ -19,7 +19,7 @@ function fmtStat(value: number): string {
     SlideToggle,
     PitcherInningsTable,
   ],
-  host: { class: 'block' },
+  host: { class: 'bg-surface-card overflow-hidden rounded-xl' },
   templateUrl: './inning-breakdown.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

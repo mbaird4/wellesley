@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
-import type { PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
-import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
+import type { PitchCountInningStats, PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
+import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
 import { LoadingState, PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
 import { InningBreakdown } from './inning-breakdown';
 import { InningDetail } from './inning-detail';
+import { PitchCountBreakdown } from './pitch-count-breakdown';
 import { PitcherGameLogComponent } from './pitcher-game-log';
 import { PitcherOverview } from './pitcher-overview';
 import { PitcherSelector } from './pitcher-selector';
@@ -17,6 +18,7 @@ import { PitcherSelector } from './pitcher-selector';
     InningBreakdown,
     InningDetail,
     LoadingState,
+    PitchCountBreakdown,
     PitcherGameLogComponent,
     PitcherOverview,
     PitcherScoutingPrintView,
@@ -258,6 +260,26 @@ export class PitcherAnalysis {
     const summaries = computePitcherSeasonSummary(allGameLogs);
 
     return summaries.find((s) => s.pitcher === pitcher) ?? null;
+  });
+
+  readonly pitchCountData = computed<{ byInning: Map<string, PitchCountInningStats>; totals: PitchCountInningStats } | null>(() => {
+    const data = this.pitchingData();
+    const pitcher = this.effectivePitcher();
+    const year = this.selectedYear();
+
+    if (!data || !pitcher) {
+      return null;
+    }
+
+    const games = year === 'all' ? data.games : data.games.filter((g) => g.year === year);
+    const records = buildWellesleyPitcherSequences(games);
+    const result = computePitchCountByInning(records, pitcher);
+
+    if (result.totals.pasWithSequence === 0) {
+      return null;
+    }
+
+    return result;
   });
 
   selectPitcher(name: string): void {
