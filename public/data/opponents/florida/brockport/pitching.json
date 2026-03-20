@@ -1,7 +1,7 @@
 {
   "slug": "brockport",
   "domain": "gobrockport.com",
-  "scrapedAt": "2026-03-19T18:57:21.282Z",
+  "scrapedAt": "2026-03-20T01:51:24.238Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,27 +35,27 @@
     {
       "name": "Davis, Colleen",
       "w": 1,
-      "l": 1,
-      "era": 10.5,
-      "app": 3,
-      "gs": 2,
+      "l": 2,
+      "era": 8.75,
+      "app": 4,
+      "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 8.2,
-      "h": 17,
-      "r": 15,
-      "er": 13,
-      "bb": 8,
+      "ip": 12,
+      "h": 23,
+      "r": 19,
+      "er": 15,
+      "bb": 9,
       "so": 6,
       "hr": 0,
-      "whip": 2.88,
-      "doubles": 1,
+      "whip": 2.67,
+      "doubles": 2,
       "triples": 2,
-      "ab": 42,
-      "bAvg": 0.405,
+      "ab": 59,
+      "bAvg": 0.39,
       "wp": 2,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 1
@@ -64,24 +64,24 @@
       "name": "Alguire, Hadley",
       "w": 0,
       "l": 0,
-      "era": 8.4,
-      "app": 2,
+      "era": 4.85,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 1.2,
-      "h": 3,
-      "r": 4,
-      "er": 2,
+      "ip": 4.1,
+      "h": 8,
+      "r": 5,
+      "er": 3,
       "bb": 0,
       "so": 0,
       "hr": 0,
-      "whip": 1.8,
+      "whip": 1.85,
       "doubles": 1,
       "triples": 0,
-      "ab": 10,
-      "bAvg": 0.3,
+      "ab": 23,
+      "bAvg": 0.348,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -559,6 +559,90 @@
             "Bella DeLorenzo singled to right center (1-1 FB).",
             "Megan Pillus singled to right center (0-1 S); Bella DeLorenzo out at second 2b to ss.",
             "Emma Deo struck out swinging (1-2 KFBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/wellesley-college/boxscore/12509",
+      "date": "3/19/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Davis, Colleen",
+        "Alguire, Hadley"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern walked (3-0 BBBB).",
+            "N. Nicol grounded out to p (0-2 FF); A. Mulhern advanced to second.",
+            "B. Awad grounded out to ss (0-0); A. Mulhern advanced to third.",
+            "D. Borrison flied out to lf (1-2 KBFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "S. Wicker grounded out to p (1-1 BF).",
+            "E. Gaunce grounded out to 2b (1-1 BK).",
+            "A. Rodriguez hit by pitch (1-0 H).",
+            "J. Polski flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado singled to third base (1-1 BF).",
+            "A. Mulhern singled to first base (0-2 KF); A. Delgado advanced to second.",
+            "N. Nicol singled up the middle, RBI (0-2 SF); A. Mulhern advanced to second; A. Delgado scored.",
+            "B. Awad reached on a fielder's choice to shortstop (0-1 K); N. Nicol advanced to second; A. Mulhern out at third ss to 3b.",
+            "D. Borrison flied out to rf (3-2 KBBBK).",
+            "S. Wicker grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Aubrey Ennis to 3b for Julia Hill.",
+            "Erin Dougherty to ss for Aurora Sabins.",
+            "E. Gaunce grounded out to 2b (3-2 BKFBB).",
+            "A. Rodriguez reached first on a throwing error by 2b (0-1 K).",
+            "J. Polski doubled to left center, RBI (0-2 FFF); A. Rodriguez scored, unearned.",
+            "A. Delgado singled to pitcher (1-0 B).",
+            "A. Mulhern singled up the middle, RBI (2-0 BB); A. Delgado advanced to third; J. Polski scored.",
+            "Hadley Alguire to p for Colleen Davis.",
+            "A. Mulhern stole second.",
+            "N. Nicol lined out to cf (3-2 KBSBBFF).",
+            "B. Awad singled to center field, RBI (1-0 B); A. Mulhern advanced to third; A. Delgado scored, unearned.",
+            "B. Awad stole second.",
+            "D. Borrison grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maeve Brannigan to 1b.",
+            "Emily Harrington to c.",
+            "E. Kulhanek to 1b for E. Gaunce.",
+            "S. Wicker flied out to cf (1-0 B).",
+            "E. Kulhanek grounded out to 3b (0-2 KSF).",
+            "A. Rodriguez singled through the left side (0-0).",
+            "J. Polski popped up to 1b (3-2 SBFBFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Delgado fouled out to 1b (1-0 B).",
+            "A. Mulhern grounded out to 2b (1-2 FBF).",
+            "N. Nicol singled to left field (0-2 FK).",
+            "B. Awad singled to second base (1-1 KB); N. Nicol advanced to second.",
+            "M. Abernethy pinch hit for D. Borrison.",
+            "M. Abernethy singled up the middle, RBI (0-0); B. Awad advanced to second; N. Nicol scored.",
+            "S. Fredericks pinch ran for M. Abernethy.",
+            "S. Wicker lined out to 3b (3-1 BBKB)."
           ]
         }
       ],
