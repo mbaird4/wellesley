@@ -13,35 +13,7 @@ import { VsWellesleyTable } from './vs-wellesley-table';
   ],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    @if (loading()) {
-      <ws-loading-state />
-    }
-
-    @if (data(); as d) {
-      @if (d.overall.length === 0) {
-        <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No games vs Wellesley found for {{ teamName() }}.</div>
-      } @else {
-        <div class="flex flex-col gap-1">
-          <span class="text-content-dim text-sm"> {{ d.games.length }} {{ d.games.length === 1 ? 'game' : 'games' }} ({{ gameDates() }}) </span>
-        </div>
-
-        <div class="flex flex-wrap gap-1.5">
-          @for (pitcher of filteredPitchers(); track pitcher) {
-            <button class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors" [class]="activePitcher() === pitcher ? 'bg-brand-bg text-brand-text' : 'bg-surface-elevated text-content-muted hover:text-content-bright'" (click)="selectedPitcher.set(pitcher)">
-              {{ pitcher }}
-            </button>
-          }
-        </div>
-
-        <ws-vs-wellesley-table [stats]="displayStats()" />
-      }
-    }
-
-    @if (!data() && !loading()) {
-      <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No vs Wellesley data available for {{ teamName() }}.</div>
-    }
-  `,
+  templateUrl: './vs-wellesley-view.html',
 })
 export class VsWellesleyView {
   readonly data = input<VsWellesleyData | null>(null);

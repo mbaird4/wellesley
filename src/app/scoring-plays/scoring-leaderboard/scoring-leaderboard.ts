@@ -14,46 +14,7 @@ const DEFAULT_VISIBLE = 10;
   standalone: true,
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <table class="stats-table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Player</th>
-          <th>Runs</th>
-          <th>RBI</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for (row of visibleRows(); track row.name; let i = $index) {
-          <tr>
-            <td class="w-8 text-center text-xs" [class]="row.isLeader ? 'text-brand-text' : 'text-content-dim'">
-              {{ i + 1 }}
-            </td>
-            <td [class]="row.isLeader ? 'text-content-heading' : ''">
-              {{ row.name }}
-            </td>
-            <td class="tabular-nums">{{ row.runsScored }}</td>
-            <td class="tabular-nums">{{ row.rbis }}</td>
-            <td class="text-brand-text font-semibold tabular-nums">
-              {{ row.total }}
-            </td>
-          </tr>
-        }
-      </tbody>
-    </table>
-
-    @if (hasMore()) {
-      <button class="text-content-dim hover:text-content-muted mt-2 cursor-pointer border-none bg-transparent text-sm font-medium transition-colors" (click)="toggleShowAll()">
-        @if (showAll()) {
-          Show fewer
-        } @else {
-          Show all {{ allRows().length }} players
-        }
-      </button>
-    }
-  `,
+  templateUrl: './scoring-leaderboard.html',
 })
 export class ScoringLeaderboard {
   readonly rows = input.required<LeaderboardRow[]>();

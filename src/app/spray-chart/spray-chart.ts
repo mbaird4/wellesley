@@ -12,16 +12,7 @@ import { catchError, forkJoin, of } from 'rxjs';
     LastUpdatedPipe,
     SprayChartViewer,
   ],
-  template: `
-    @if (scrapedAt()) {
-      <div class="mb-2 flex">
-        <span class="text-content-dim text-xs">
-          {{ scrapedAt() | lastUpdated }}
-        </span>
-      </div>
-    }
-    <ws-spray-chart-viewer [dataByYear]="dataByYear()" [roster]="roster()" [loading]="loading()" [error]="error()" />
-  `,
+  templateUrl: './spray-chart.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
