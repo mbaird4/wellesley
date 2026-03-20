@@ -1,22 +1,6 @@
-@if (bp.gtSm()) {
-  <!-- Desktop: sidebar + content -->
-  <div class="flex gap-6 print:block">
-    <ws-team-selector
-      layout="vertical"
-      [teams]="teams"
-      [floridaTeams]="floridaTeams"
-      [nextOpponent]="nextOpponentTeam()"
-      [nextOpponentDate]="nextOpponentDate()"
-      [activeTab]="activeTab()"
-      class="print:hidden"
-    />
-
-    <router-outlet />
-  </div>
-} @else {
-  <!-- Mobile: stacked layout -->
+<div class="flex gap-6 print:block" [class.flex-col]="!bp.gtSm()">
   <ws-team-selector
-    layout="horizontal"
+    [layout]="bp.gtSm() ? 'vertical' : 'horizontal'"
     [teams]="teams"
     [floridaTeams]="floridaTeams"
     [nextOpponent]="nextOpponentTeam()"
@@ -26,4 +10,4 @@
   />
 
   <router-outlet />
-}
+</div>

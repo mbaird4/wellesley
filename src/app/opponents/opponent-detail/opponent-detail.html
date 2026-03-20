@@ -1,35 +1,11 @@
-@if (bp.gtSm()) {
-  <div class="mb-4 flex flex-col gap-3 print:hidden">
-    <div class="flex items-baseline gap-3">
-      <h2 class="mb-0">{{ data.selectedTeamName() }}</h2>
-      @if (data.teamData()?.scrapedAt; as scrapedAt) {
-        <span class="text-content-dim text-xs">
-          {{ scrapedAt | lastUpdated }}
-        </span>
-      }
-    </div>
-
-    <nav class="flex gap-1">
-      @for (tab of tabs; track tab.path) {
-        <a
-          [routerLink]="tab.path"
-          routerLinkActive
-          #rla="routerLinkActive"
-          class="cursor-pointer rounded-lg border-none px-4 py-2 text-sm font-medium no-underline transition-colors"
-          [class]="
-            rla.isActive
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-        >
-          {{ tab.label }}
-        </a>
-      }
-    </nav>
-  </div>
-} @else {
-  <div class="mt-3 mb-2 flex items-baseline gap-2 print:hidden">
-    <h2 class="text-lg">{{ data.selectedTeamName() }}</h2>
+<div
+  class="flex items-baseline gap-2 print:hidden"
+  [class]="bp.gtSm() ? 'mb-4 flex-col gap-3' : 'mt-3 mb-2'"
+>
+  <div class="flex items-baseline gap-3">
+    <h2 [class]="bp.gtSm() ? 'mb-0' : 'text-lg'">
+      {{ data.selectedTeamName() }}
+    </h2>
     @if (data.teamData()?.scrapedAt; as scrapedAt) {
       <span class="text-content-dim text-xs">
         {{ scrapedAt | lastUpdated }}
@@ -37,7 +13,7 @@
     }
   </div>
 
-  <nav class="mb-3 flex gap-1 print:hidden">
+  <nav class="flex gap-1" [class.mb-3]="!bp.gtSm()">
     @for (tab of tabs; track tab.path) {
       <a
         [routerLink]="tab.path"
@@ -50,10 +26,10 @@
             : 'bg-surface-elevated text-content-muted hover:text-content-bright'
         "
       >
-        {{ tab.mobileLabel }}
+        {{ bp.gtSm() ? tab.label : tab.mobileLabel }}
       </a>
     }
   </nav>
-}
+</div>
 
 <router-outlet />
