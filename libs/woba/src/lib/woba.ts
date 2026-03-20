@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@
 import { RosterService, SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
 import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
-import { ButtonToggle, FormatWobaPipe, LastUpdatedPipe, type ToggleOption, WobaLegend } from '@ws/core/ui';
+import { ButtonToggle, EmptyState, ErrorBanner, FormatWobaPipe, LastUpdatedPipe, LoadingState, type ToggleOption, WobaLegend } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 export interface TeamGameColumn {
@@ -29,8 +29,11 @@ export interface TeamPlayerRow {
   imports: [
     CommonModule,
     ButtonToggle,
+    EmptyState,
+    ErrorBanner,
     FormatWobaPipe,
     LastUpdatedPipe,
+    LoadingState,
     WobaLegend,
   ],
   host: {

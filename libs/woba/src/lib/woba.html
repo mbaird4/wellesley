@@ -18,17 +18,10 @@
 </div>
 
 @if (error) {
-  <div
-    class="bg-error-bg text-error py-cell px-card border-error-border text-scale-[1.05] mb-4 rounded-[10px] border"
-  >
-    {{ error }}
-  </div>
+  <ws-error-banner [message]="error" />
 }
 @if (loading) {
-  <div class="loading-state">
-    <i class="fa-solid fa-baseball loading-spinner"></i>
-    Loading wOBA data...
-  </div>
+  <ws-loading-state message="Loading wOBA data..." />
 }
 @if (playerWobas.length > 0 && !loading) {
   <div class="mt-6">
@@ -391,10 +384,5 @@
   </div>
 }
 @if (playerWobas.length === 0 && !loading && !error) {
-  <div class="empty-state">
-    <div class="empty-state-icon">
-      <i class="fa-solid fa-baseball"></i>
-    </div>
-    Pick a season above to get started.
-  </div>
+  <ws-empty-state />
 }

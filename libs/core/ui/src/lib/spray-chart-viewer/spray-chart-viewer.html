@@ -1,14 +1,7 @@
 @if (loading()) {
-  <div class="loading-state">
-    <i class="fa-solid fa-baseball loading-spinner"></i>
-    Loading spray chart data...
-  </div>
+  <ws-loading-state message="Loading spray chart data..." />
 } @else if (error()) {
-  <div
-    class="bg-error-bg text-error py-cell px-card border-error-border mb-4 rounded-[10px] border text-[1.05rem]"
-  >
-    {{ error() }}
-  </div>
+  <ws-error-banner [message]="error()!" />
 } @else if (players().length === 0) {
   <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
     {{ emptyMessage() }}

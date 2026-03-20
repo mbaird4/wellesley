@@ -3,6 +3,8 @@ import type { JerseyMap, Roster, RosterPlayer, SprayDataPoint, SprayTrend, Spray
 import { buildDisplayJerseyMap, calculateWoba, computeSprayZones, detectSprayTrends, normalizePlayerName, normalizePlayerNames } from '@ws/core/processors';
 import { BreakpointService, CURRENT_YEAR, RECENT_YEARS } from '@ws/core/util';
 
+import { ErrorBanner } from '../async-states/error-banner';
+import { LoadingState } from '../async-states/loading-state';
 import { ButtonToggle, type ToggleOption } from '../button-toggle/button-toggle';
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 import { ALL_CONTACT_QUALITIES, ALL_CONTACT_TYPES, ALL_OUT_COUNTS, ALL_OUTCOMES, computeEffectiveFilters, SprayFilters, type SprayFilterState } from '../spray-filters/spray-filters';
@@ -143,6 +145,8 @@ export function aggregateStats(
   standalone: true,
   imports: [
     ButtonToggle,
+    ErrorBanner,
+    LoadingState,
     SprayFilters,
     SprayPrintOrchestrator,
     SprayViewCombined,

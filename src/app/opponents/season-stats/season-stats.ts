@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
 import { SoftballDataService } from '@ws/core/data';
 import type { SeasonStatsData } from '@ws/core/models';
+import { LoadingState } from '@ws/core/ui';
 
 import { FIELDING_COLUMNS, HITTING_COLUMNS, PITCHING_COLUMNS } from './stat-column';
 import { StatsTable } from './stats-table';
@@ -10,7 +11,10 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
 @Component({
   selector: 'ws-season-stats',
   standalone: true,
-  imports: [StatsTable],
+  imports: [
+    LoadingState,
+    StatsTable,
+  ],
   host: { class: 'flex flex-col gap-3' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -23,10 +27,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
     </div>
 
     @if (loading()) {
-      <div class="loading-state">
-        <i class="fa-solid fa-baseball loading-spinner"></i>
-        Loading season stats...
-      </div>
+      <ws-loading-state message="Loading season stats..." />
     } @else if (error()) {
       <div class="empty-state">
         <div class="empty-state-icon">

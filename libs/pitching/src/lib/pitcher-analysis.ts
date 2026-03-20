@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import type { PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
 import { computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
-import { PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
+import { LoadingState, PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
 import { InningBreakdown } from './inning-breakdown';
@@ -14,13 +14,14 @@ import { PitcherSelector } from './pitcher-selector';
   selector: 'ws-pitcher-analysis',
   standalone: true,
   imports: [
-    StickyPlayerHeader,
-    PitcherSelector,
-    PitcherOverview,
     InningBreakdown,
     InningDetail,
+    LoadingState,
     PitcherGameLogComponent,
+    PitcherOverview,
     PitcherScoutingPrintView,
+    PitcherSelector,
+    StickyPlayerHeader,
   ],
   host: { class: 'block' },
   templateUrl: './pitcher-analysis.html',

@@ -1,20 +1,21 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { BatterVsStats, VsWellesleyData } from '@ws/core/models';
+import { LoadingState } from '@ws/core/ui';
 
 import { VsWellesleyTable } from './vs-wellesley-table';
 
 @Component({
   selector: 'ws-vs-wellesley-view',
   standalone: true,
-  imports: [VsWellesleyTable],
+  imports: [
+    LoadingState,
+    VsWellesleyTable,
+  ],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (loading()) {
-      <div class="loading-state">
-        <i class="fa-solid fa-baseball loading-spinner"></i>
-        Loading...
-      </div>
+      <ws-loading-state />
     }
 
     @if (data(); as d) {

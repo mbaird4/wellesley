@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { WobaLegend } from '@ws/core/ui';
+import { ErrorBanner, LoadingState, WobaLegend } from '@ws/core/ui';
 import { BreakpointService } from '@ws/core/util';
 
 import { OpponentDataService } from '../opponent-data.service';
@@ -10,8 +10,10 @@ import { PlayerTable } from '../player-table/player-table';
   selector: 'ws-woba-tab',
   standalone: true,
   imports: [
-    PlayerTable,
+    ErrorBanner,
+    LoadingState,
     PlayerCardList,
+    PlayerTable,
     WobaLegend,
   ],
   host: { class: 'flex flex-col gap-4' },
@@ -19,15 +21,10 @@ import { PlayerTable } from '../player-table/player-table';
     <ws-woba-legend />
 
     @if (data.error()) {
-      <div class="bg-error-bg text-error py-cell px-card border-error-border rounded-[10px] border text-[1.05rem]">
-        {{ data.error() }}
-      </div>
+      <ws-error-banner [message]="data.error()!" />
     }
     @if (data.loading()) {
-      <div class="loading-state">
-        <i class="fa-solid fa-baseball loading-spinner"></i>
-        Loading...
-      </div>
+      <ws-loading-state />
     }
     @if (data.empty()) {
       <div class="py-section px-card text-content-dim text-center text-[1.05rem]">No scouting data for this team yet.</div>
