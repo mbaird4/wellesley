@@ -1,0 +1,9 @@
+@if (ready()) {
+  <div id="report-ready"></div>
+}
+
+<ws-spray-chart-print-view
+  [players]="allPlayerSummaries()"
+  [title]="data.selectedTeamName()"
+  [teamData]="data.teamData()"
+/>

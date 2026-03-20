@@ -1,0 +1,92 @@
+name: Scouting Email
+
+on:
+  # schedule:
+  #   # 8 PM ET nightly during softball season (Mar-May)
+  #   # UTC offset: ET is UTC-4 during DST, so 8 PM ET = midnight UTC
+  #   - cron: '0 0 * 3-5 *'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Opponent slug (e.g. babson) — overrides schedule check'
+        required: false
+        type: string
+      opponent_name:
+        description: 'Opponent display name (required when slug is provided)'
+        required: false
+        type: string
+
+jobs:
+  scouting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check schedule for tomorrow's game
+        id: schedule
+        if: ${{ !inputs.slug }}
+        run: |
+          RESULT=$(npx ts-node --project tsconfig.scripts.json scripts/check-schedule.ts)
+          echo "result=$RESULT" >> "$GITHUB_OUTPUT"
+          SLUG=$(echo "$RESULT" | jq -r '.slug // empty')
+          OPPONENT=$(echo "$RESULT" | jq -r '.opponent // empty')
+          DATE=$(echo "$RESULT" | jq -r '.date // empty')
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "opponent=$OPPONENT" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve inputs
+        id: resolve
+        run: |
+          if [ -n "${{ inputs.slug }}" ]; then
+            echo "slug=${{ inputs.slug }}" >> "$GITHUB_OUTPUT"
+            echo "opponent=${{ inputs.opponent_name || inputs.slug }}" >> "$GITHUB_OUTPUT"
+            echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          else
+            echo "slug=${{ steps.schedule.outputs.slug }}" >> "$GITHUB_OUTPUT"
+            echo "opponent=${{ steps.schedule.outputs.opponent }}" >> "$GITHUB_OUTPUT"
+            echo "date=${{ steps.schedule.outputs.date }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Exit if no game
+        if: ${{ !steps.resolve.outputs.slug }}
+        run: echo "No game found — skipping email"
+
+      - name: Build app
+        if: ${{ steps.resolve.outputs.slug }}
+        run: |
+          npx nx run wellesley:tailwind:build
+          npx nx build wellesley
+        env:
+          NODE_ENV: production
+
+      - name: Serve app and generate PDF
+        if: ${{ steps.resolve.outputs.slug }}
+        run: |
+          npx serve dist/wellesley/browser -s --listen 4200 &
+          sleep 3
+          npx ts-node --project tsconfig.scripts.json scripts/generate-scouting-pdf.ts \
+            --slug "${{ steps.resolve.outputs.slug }}" \
+            --output scouting-report.pdf \
+            --base-url http://localhost:4200
+          kill %1 || true
+
+      - name: Send email
+        if: ${{ steps.resolve.outputs.slug }}
+        run: |
+          npx ts-node --project tsconfig.scripts.json scripts/send-scouting-email.ts \
+            --opponent "${{ steps.resolve.outputs.opponent }}" \
+            --date "${{ steps.resolve.outputs.date }}" \
+            --pdf scouting-report.pdf
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SCOUTING_RECIPIENTS: ${{ secrets.SCOUTING_RECIPIENTS }}

@@ -48,6 +48,10 @@ export const appRoutes: Route[] = [
             path: 'stats',
             loadComponent: () => import('./opponents/tabs/stats-tab').then((m) => m.StatsTab),
           },
+          {
+            path: 'report',
+            loadComponent: () => import('./opponents/tabs/report-tab').then((m) => m.ReportTab),
+          },
         ],
       },
     ],
