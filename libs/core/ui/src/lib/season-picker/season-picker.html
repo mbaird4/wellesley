@@ -1,9 +1,5 @@
 <div class="mb-6 flex flex-wrap items-center gap-2">
-  <span
-    class="text-content-muted mr-1 text-sm font-medium tracking-[0.05em] uppercase"
-  >
-    Season
-  </span>
+  <span class="filter-label mr-1">Season</span>
   @for (year of availableYears(); track year) {
     <button
       class="cursor-pointer rounded-md border-none px-2.5 py-1 text-sm font-medium tabular-nums transition-[color,background] disabled:cursor-not-allowed disabled:opacity-40"

@@ -1,9 +1,5 @@
 <div class="flex flex-col gap-1">
-  <span
-    class="text-content-muted pl-0.5 text-sm font-semibold tracking-[0.05em] uppercase"
-  >
-    Outs
-  </span>
+  <span class="filter-label pl-0.5">Outs</span>
   <ws-button-toggle
     [options]="outsOptions"
     [value]="outsFilter()"
@@ -12,11 +8,7 @@
 </div>
 
 <div class="flex flex-col gap-1">
-  <span
-    class="text-content-muted pl-0.5 text-sm font-semibold tracking-[0.05em] uppercase"
-  >
-    Innings
-  </span>
+  <span class="filter-label pl-0.5">Innings</span>
   <ws-button-toggle
     [options]="inningOptions"
     [value]="inningFilter()"
@@ -25,11 +17,7 @@
 </div>
 
 <div class="flex flex-col gap-1">
-  <span
-    class="text-content-muted pl-0.5 text-sm font-semibold tracking-[0.05em] uppercase"
-  >
-    Situation
-  </span>
+  <span class="filter-label pl-0.5">Situation</span>
   <ws-button-toggle
     [options]="situationOptions"
     [value]="situationFilter()"
@@ -39,11 +27,7 @@
 </div>
 
 <div class="flex flex-col gap-1">
-  <span
-    class="text-content-muted pl-0.5 text-sm font-semibold tracking-[0.05em] uppercase"
-  >
-    Pinch Hit
-  </span>
+  <span class="filter-label pl-0.5">Pinch Hit</span>
   <ws-slide-toggle
     [checked]="pinchHitOnly()"
     (checkedChange)="pinchHitToggled.emit($event)"

@@ -227,6 +227,12 @@
 @utility font-stat {
   font-family: 'JetBrains Mono', monospace;
 }
+@utility filter-label {
+  @apply text-content-muted text-sm font-semibold tracking-[0.05em] uppercase;
+}
+@utility control-label {
+  @apply text-content-dim text-xs font-medium tracking-wider uppercase;
+}
 
 @keyframes modal-enter {
   from {
