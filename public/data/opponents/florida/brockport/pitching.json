@@ -1,7 +1,7 @@
 {
   "slug": "brockport",
   "domain": "gobrockport.com",
-  "scrapedAt": "2026-03-20T12:56:31.976Z",
+  "scrapedAt": "2026-03-20T18:46:17.630Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -31,6 +31,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 2
+    },
+    {
+      "name": "Hart, Makenna",
+      "w": 0,
+      "l": 2,
+      "era": 4.9,
+      "app": 3,
+      "gs": 2,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 10,
+      "h": 15,
+      "r": 11,
+      "er": 7,
+      "bb": 7,
+      "so": 4,
+      "hr": 0,
+      "whip": 2.2,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 47,
+      "bAvg": 0.319,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
     },
     {
       "name": "Davis, Colleen",
@@ -82,34 +110,6 @@
       "triples": 0,
       "ab": 23,
       "bAvg": 0.348,
-      "wp": 0,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "Hart, Makenna",
-      "w": 0,
-      "l": 1,
-      "era": 10.5,
-      "app": 2,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 10,
-      "r": 9,
-      "er": 6,
-      "bb": 3,
-      "so": 1,
-      "hr": 0,
-      "whip": 3.25,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 24,
-      "bAvg": 0.417,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -643,6 +643,85 @@
             "M. Abernethy singled up the middle, RBI (0-0); B. Awad advanced to second; N. Nicol scored.",
             "S. Fredericks pinch ran for M. Abernethy.",
             "S. Wicker lined out to 3b (3-1 BBKB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/bates-college/boxscore/12510",
+      "date": "3/20/2026",
+      "opponent": "Bates College",
+      "pitchers": [
+        "Hart, Makenna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maya Lee grounded out to ss (2-0 BB).",
+            "Ella Maher grounded out to 3b (3-1 BFBB).",
+            "Zariya Anderson fouled out to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Isabel Bettencourt flied out to lf (0-0).",
+            "Sienna Pietrasiewicz walked (3-1 BBBKB).",
+            "Sophie Garber popped up to ss (1-2 FBF).",
+            "Emily Kennedy singled to right field (2-2 KFBB); Sienna Pietrasiewicz advanced to third.",
+            "Emily Kennedy stole second; Sienna Pietrasiewicz stole home.",
+            "Maddy Miller popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Yen struck out swinging (2-2 BKBFFS).",
+            "Maya Lee walked (3-0 BBBB).",
+            "Ella Maher popped up to 3b (0-0).",
+            "Zariya Anderson grounded out to 2b (1-2 FBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Teresa Cotty to dp for Ciara Olivo.",
+            "Isabella Moya to lf.",
+            "Ciara Olivo to cf.",
+            "Isabel Bettencourt flied out to lf (2-0 BB).",
+            "Sienna Pietrasiewicz flied out to lf (0-0).",
+            "Sophie Garber grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Kennedy struck out swinging (2-2 FBSBS).",
+            "Maddy Miller singled to right field (2-2 BFKBF).",
+            "Emma Yen walked (3-2 FBBBFB); Maddy Miller advanced to second.",
+            "/  for Delaney Rankin.",
+            "Delaney Rankin pinch hit for Maya Lee.",
+            "Delaney Rankin struck out swinging (1-2 KFFBS).",
+            "Ella Maher flied out to lf (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zariya Anderson popped up to ss (1-0 B).",
+            "Isabel Bettencourt lined out to rf (0-0).",
+            "Sienna Pietrasiewicz walked (3-0 BBBB).",
+            "Sophie Garber grounded out to p (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emily Kennedy singled to second base (1-1 KB).",
+            "Maddy Miller singled to pitcher, bunt (0-0); Emily Kennedy advanced to second.",
+            "Emma Yen singled to third base, bunt (0-1 K); Maddy Miller advanced to second; Emily Kennedy advanced to third, scored on a throwing error by 3b, unearned."
           ]
         }
       ],

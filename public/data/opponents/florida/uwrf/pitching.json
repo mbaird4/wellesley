@@ -1,65 +1,9 @@
 {
   "slug": "uwrf",
   "domain": "uwrfsports.com",
-  "scrapedAt": "2026-03-20T12:56:28.141Z",
+  "scrapedAt": "2026-03-20T18:46:13.621Z",
   "year": 2026,
   "pitchingStats": [
-    {
-      "name": "Knutson, Lucy",
-      "w": 1,
-      "l": 2,
-      "era": 3.57,
-      "app": 8,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 1,
-      "ip": 15.2,
-      "h": 21,
-      "r": 18,
-      "er": 8,
-      "bb": 7,
-      "so": 15,
-      "hr": 0,
-      "whip": 1.79,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 67,
-      "bAvg": 0.313,
-      "wp": 1,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 2
-    },
-    {
-      "name": "Dusterhoft, Alexa",
-      "w": 1,
-      "l": 1,
-      "era": 3.65,
-      "app": 5,
-      "gs": 4,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 15.1,
-      "h": 26,
-      "r": 12,
-      "er": 8,
-      "bb": 4,
-      "so": 11,
-      "hr": 2,
-      "whip": 1.96,
-      "doubles": 7,
-      "triples": 1,
-      "ab": 72,
-      "bAvg": 0.361,
-      "wp": 1,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 3
-    },
     {
       "name": "Kincaid, Hailey",
       "w": 2,
@@ -118,31 +62,87 @@
     },
     {
       "name": "Metzler, Randi",
-      "w": 0,
+      "w": 1,
       "l": 4,
-      "era": 9.33,
-      "app": 7,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
+      "era": 6.59,
+      "app": 8,
+      "gs": 2,
+      "cg": 1,
+      "sho": 1,
       "sv": 0,
-      "ip": 12,
-      "h": 17,
+      "ip": 17,
+      "h": 18,
       "r": 18,
       "er": 16,
-      "bb": 16,
-      "so": 11,
+      "bb": 19,
+      "so": 18,
       "hr": 1,
-      "whip": 2.75,
+      "whip": 2.18,
       "doubles": 5,
       "triples": 0,
-      "ab": 51,
-      "bAvg": 0.333,
+      "ab": 65,
+      "bAvg": 0.277,
       "wp": 3,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 1
+    },
+    {
+      "name": "Knutson, Lucy",
+      "w": 1,
+      "l": 2,
+      "era": 3.57,
+      "app": 8,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 1,
+      "ip": 15.2,
+      "h": 21,
+      "r": 18,
+      "er": 8,
+      "bb": 7,
+      "so": 15,
+      "hr": 0,
+      "whip": 1.79,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 67,
+      "bAvg": 0.313,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 2
+    },
+    {
+      "name": "Dusterhoft, Alexa",
+      "w": 1,
+      "l": 1,
+      "era": 3.65,
+      "app": 5,
+      "gs": 4,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 15.1,
+      "h": 26,
+      "r": 12,
+      "er": 8,
+      "bb": 4,
+      "so": 11,
+      "hr": 2,
+      "whip": 1.96,
+      "doubles": 7,
+      "triples": 1,
+      "ab": 72,
+      "bAvg": 0.361,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     }
   ],
   "games": [
@@ -1432,6 +1432,68 @@
             "Naya Schubel out at first c to 2b, picked off.",
             "Sarah Huang singled up the middle (1-1 FB).",
             "Siena Kiefer struck out swinging (1-2 BKKS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwrfsports.com/sports/softball/stats/2026/suny-old-westbury/boxscore/7938",
+      "date": "3/20/2026",
+      "opponent": "Suny Old Westbury",
+      "pitchers": [
+        "Metzler, Randi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Caitlyn Kressel to c for Aubrey Musil.",
+            "Aliya Feerick walked (3-1 BBKBB).",
+            "Jessica Feerick lined into double play 2b to 1b (1-1 KB); Aliya Feerick out on the play.",
+            "Ashley Pierce singled to left center (1-2 KBF).",
+            "Camila Uribe struck out swinging (2-2 BBKFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Yelina Arias walked (3-0 BBBB).",
+            "Madison Muehling walked (3-1 BBKBB); Yelina Arias advanced to second.",
+            "Katie Knecht reached on a fielder's choice (0-1 S); Madison Muehling advanced to second; Yelina Arias out at third 1b to 3b.",
+            "Amanda Varela lined out to 3b (1-2 KFB).",
+            "Madison Muehling out at second c to 2b, picked off."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Christina Ravo struck out swinging (3-2 BFBFBS).",
+            "Aliya Feerick struck out swinging (1-2 KBFS).",
+            "Phylicia Cangemi grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Amanda Holzhueter to 3b.",
+            "Alexa Dusterhoft to rf for Hailey Kincaid.",
+            "Arianna Valle grounded out to 2b (0-1 K).",
+            "Caragh Doyle pinch hit for Camila Uribe.",
+            "Caragh Doyle struck out swinging (1-2 FKBS).",
+            "Gianna Pulsonetti struck out looking (0-2 FKK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Grace Gardner to ss.",
+            "Ella Woida to cf.",
+            "Faith Binaso struck out swinging (2-2 KSBBS).",
+            "Katie Knecht grounded out to ss (2-1 SBB).",
+            "Tessa Peterson to c for Caitlyn Kressel.",
+            "Samantha Ravo pinch hit for Amanda Varela.",
+            "Samantha Ravo struck out looking (2-2 BSFBK)."
           ]
         }
       ],

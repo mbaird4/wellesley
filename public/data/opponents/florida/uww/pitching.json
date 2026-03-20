@@ -1,31 +1,31 @@
 {
   "slug": "uww",
   "domain": "uwwsports.com",
-  "scrapedAt": "2026-03-20T12:56:41.238Z",
+  "scrapedAt": "2026-03-20T18:46:30.528Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Hammen, Josie",
-      "w": 4,
+      "w": 5,
       "l": 1,
-      "era": 0.75,
-      "app": 6,
-      "gs": 5,
+      "era": 0.84,
+      "app": 7,
+      "gs": 6,
       "cg": 4,
       "sho": 1,
       "sv": 1,
-      "ip": 28,
-      "h": 20,
-      "r": 5,
-      "er": 3,
-      "bb": 9,
-      "so": 25,
+      "ip": 33.1,
+      "h": 26,
+      "r": 7,
+      "er": 4,
+      "bb": 11,
+      "so": 29,
       "hr": 1,
-      "whip": 1.04,
-      "doubles": 4,
-      "triples": 1,
-      "ab": 100,
-      "bAvg": 0.2,
+      "whip": 1.11,
+      "doubles": 6,
+      "triples": 2,
+      "ab": 123,
+      "bAvg": 0.211,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
@@ -36,57 +36,57 @@
       "name": "Hock, Brooke",
       "w": 1,
       "l": 0,
-      "era": 1.67,
-      "app": 5,
+      "era": 1.91,
+      "app": 7,
       "gs": 2,
       "cg": 0,
       "sho": 0,
-      "sv": 1,
-      "ip": 21,
-      "h": 18,
-      "r": 8,
-      "er": 5,
-      "bb": 5,
-      "so": 15,
+      "sv": 2,
+      "ip": 25.2,
+      "h": 24,
+      "r": 10,
+      "er": 7,
+      "bb": 6,
+      "so": 19,
       "hr": 2,
-      "whip": 1.1,
-      "doubles": 2,
+      "whip": 1.17,
+      "doubles": 3,
       "triples": 1,
-      "ab": 79,
-      "bAvg": 0.228,
+      "ab": 97,
+      "bAvg": 0.247,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "DeBennette, Madi",
       "w": 2,
       "l": 1,
-      "era": 4.1,
-      "app": 4,
-      "gs": 3,
+      "era": 4.02,
+      "app": 5,
+      "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 13.2,
-      "h": 26,
-      "r": 10,
-      "er": 8,
-      "bb": 5,
+      "ip": 15.2,
+      "h": 31,
+      "r": 13,
+      "er": 9,
+      "bb": 6,
       "so": 12,
       "hr": 0,
-      "whip": 2.27,
-      "doubles": 5,
+      "whip": 2.36,
+      "doubles": 7,
       "triples": 1,
-      "ab": 63,
-      "bAvg": 0.413,
+      "ab": 74,
+      "bAvg": 0.419,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "Marsh, Kaitlyn",
@@ -118,31 +118,31 @@
     },
     {
       "name": "Perez, Olivia",
-      "w": 0,
+      "w": 1,
       "l": 0,
-      "era": 0,
-      "app": 3,
+      "era": 4.85,
+      "app": 4,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2.1,
-      "h": 3,
-      "r": 0,
-      "er": 0,
-      "bb": 4,
-      "so": 0,
+      "ip": 4.1,
+      "h": 7,
+      "r": 3,
+      "er": 3,
+      "bb": 5,
+      "so": 2,
       "hr": 0,
-      "whip": 3,
+      "whip": 2.77,
       "doubles": 0,
       "triples": 0,
-      "ab": 10,
-      "bAvg": 0.3,
+      "ab": 20,
+      "bAvg": 0.35,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -1024,6 +1024,188 @@
             "Elizabeth Welch grounded out to 2b (0-0).",
             "Dylan Tapia grounded out to 3b (0-1 F).",
             "Rebecca Heinze grounded out to 3b (1-1 BK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/simpson-college/boxscore/23108",
+      "date": "3/20/2026",
+      "opponent": "Simpson College",
+      "pitchers": [
+        "Hammen, Josie",
+        "Hock, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashlyn Steen singled through the left side (2-2 FBFBFFF).",
+            "Ashlyn Steen stole second.",
+            "Megan Heidelbauer struck out swinging (1-2 BSKS).",
+            "Mackenzie James walked (3-2 KFBFBBB).",
+            "Katie Shaner walked (3-0 BBBB); Mackenzie James advanced to second; Ashlyn Steen advanced to third.",
+            "Brielyn Ginnaty struck out swinging (1-2 BFFFFS).",
+            "Makayla Fowler grounded out to 2b (2-2 BFBSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Caelynn Obleton flied out to rf (1-2 FBF).",
+            "Cheyenne Jones lined out to ss (1-0 B).",
+            "Brynn Ortlund singled to left field (1-1 FB).",
+            "Ashlyn Steen reached first on a fielding error by ss (0-2 KF); Brynn Ortlund advanced to second.",
+            "Megan Heidelbauer singled to center field, advanced to second on the throw, RBI (0-0); Ashlyn Steen advanced to third; Brynn Ortlund scored, unearned.",
+            "Mackenzie James flied out to lf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bella Eggert to cf.",
+            "Katie Shaner tripled to right center (1-1 BK).",
+            "Brielyn Ginnaty fouled out to 3b (0-0).",
+            "Makayla Fowler struck out swinging (1-2 FKBS).",
+            "Caelynn Obleton grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cheyenne Jones grounded out to 1b unassisted (2-2 BBKK).",
+            "Brynn Ortlund out on batter's interference, out at first c unassisted (1-2 FSFB).",
+            "Ashlyn Steen lined out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jj Jakosalem to c for Belle Lapacek.",
+            "Megan Heidelbauer lined out to cf (0-0).",
+            "Mackenzie James grounded out to 3b (2-0 BB).",
+            "Katie Shaner doubled down the lf line (0-0).",
+            "Brielyn Ginnaty doubled to left center, RBI (1-2 KKB); Katie Shaner scored.",
+            "Rowen Fisk pinch ran for Brielyn Ginnaty.",
+            "Allison Schertz pinch hit for Makayla Fowler.",
+            "Allison Schertz struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Caelynn Obleton lined out to lf to left center (1-0 B).",
+            "Brooke Hock to p for Josie Hammen.",
+            "Cheyenne Jones singled up the middle (2-2 BFFFB).",
+            "Abigail Rouse pinch ran for Cheyenne Jones.",
+            "Brynn Ortlund out at first 3b to 2b, SAC, bunt (1-0 B); Abigail Rouse advanced to second.",
+            "Ashlyn Steen singled to third base, bunt (0-0); Abigail Rouse advanced to third.",
+            "Megan Heidelbauer doubled down the lf line, 2 RBI (1-0 B); Ashlyn Steen scored; Abigail Rouse scored.",
+            "Mackenzie James grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brielyn Ginnaty to dp for Rowen Fisk.",
+            "Katie Shaner singled through the left side (2-1 BBF).",
+            "Brielyn Ginnaty grounded out to 3b (3-2 KBBFBFF); Katie Shaner advanced to second.",
+            "Gracie Bruening pinch hit for Makayla Fowler.",
+            "Gracie Bruening grounded out to 3b (0-0).",
+            "Caelynn Obleton struck out swinging (1-2 BKFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/ithaca-college/boxscore/23107",
+      "date": "3/20/2026",
+      "opponent": "Ithaca College",
+      "pitchers": [
+        "DeBennette, Madi",
+        "Perez, Olivia",
+        "Hock, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Elise Waddington doubled down the lf line (1-1 BK).",
+            "Molly Gibson walked (3-0 BBBB).",
+            "Kailen Winkelblech reached on a fielder's choice (1-2 KFB); Molly Gibson out at second ss to 2b; Elise Waddington advanced to third.",
+            "Sydney Miranda singled up the middle, RBI (1-1 KB); Kailen Winkelblech advanced to second; Elise Waddington scored.",
+            "Anna Bello singled through the right side (1-2 BKF); Sydney Miranda advanced to second; Kailen Winkelblech advanced to third.",
+            "Isabella Maynard fouled out to lf (1-0 B).",
+            "Ava Rao reached on a fielder's choice (3-1 SBBB); Anna Bello out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Haley Petrucci singled up the middle (2-2 KBSBF).",
+            "Jessie Lopez out at first p to 2b, bunt, SAC (0-1 S); Haley Petrucci advanced to second.",
+            "Elise Waddington doubled to left field (0-0); Haley Petrucci advanced to third.",
+            "Molly Gibson lined out to 3b (3-1 BFBB).",
+            "Kailen Winkelblech reached first on an error by ss, advanced to second (0-1 F); Elise Waddington advanced to third, scored on a throwing error by ss, unearned; Haley Petrucci scored, unearned.",
+            "Sydney Miranda grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Perez to p for Madi DeBennette.",
+            "Anna Bello grounded out to 2b (2-1 BBK).",
+            "Isabella Maynard grounded out to 3b (2-0 BB).",
+            "Ava Rao struck out looking (3-2 BSBKBFFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Haley Petrucci singled through the left side (2-2 FBFB).",
+            "Jessie Lopez singled, bunt (1-0 B); Haley Petrucci advanced to second.",
+            "Elise Waddington out at first c to 2b, bunt, SAC (0-1 K); Jessie Lopez advanced to second; Haley Petrucci advanced to third.",
+            "Molly Gibson grounded out to 2b, RBI (2-2 BKBF); Jessie Lopez advanced to third; Haley Petrucci scored.",
+            "Kailen Winkelblech struck out swinging (1-2 BFFFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ellery Stoltz to lf.",
+            "Sydney Miranda walked (3-2 BSBFFBFB).",
+            "Anna Bello singled to center field (1-0 B); Sydney Miranda advanced to second.",
+            "Isabella Maynard singled, bunt (1-0 B); Anna Bello advanced to second; Sydney Miranda advanced to third.",
+            "Ava Rao reached first on an error by ss, RBI (0-2 FK); Isabella Maynard advanced to second; Anna Bello advanced to third; Sydney Miranda scored.",
+            "Brooke Hock to p for Olivia Perez.",
+            "M. Schoenenberger pinch ran for Ava Rao.",
+            "Haley Petrucci struck out swinging (0-2 KSS).",
+            "Jessie Lopez walked, RBI (3-0 BBBB); M. Schoenenberger advanced to second; Isabella Maynard advanced to third; Anna Bello scored.",
+            "Elise Waddington lined into double play ss to 3b (1-2 KFB); Isabella Maynard out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Giese to ss for Belle Lapacek.",
+            "Auburn Roberson to rf for Baley Berndt.",
+            "Liv Ybarra to dp.",
+            "Molly Gibson struck out swinging, out at first c to 1b (0-2 SKFS).",
+            "Kailen Winkelblech flied out to rf (1-1 BF).",
+            "Sydney Miranda grounded out to ss (3-2 KSBBBFF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Anna Bello flied out to cf (2-2 SFFBB).",
+            "Isabella Maynard singled down the lf line (0-2 KK).",
+            "Ava Rao singled through the left side (0-1 F); Isabella Maynard advanced to second.",
+            "Paige Cannon pinch ran for Ava Rao.",
+            "Haley Petrucci struck out looking (2-2 BSSBFFFK).",
+            "Jessie Lopez popped up to 1b (0-1 S)."
           ]
         }
       ],

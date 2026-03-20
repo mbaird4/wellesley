@@ -1,64 +1,36 @@
 {
   "slug": "macalester",
   "domain": "athletics.macalester.edu",
-  "scrapedAt": "2026-03-20T12:56:34.462Z",
+  "scrapedAt": "2026-03-20T18:46:21.513Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Miller, Martha",
-      "w": 4,
+      "w": 5,
       "l": 4,
-      "era": 3.26,
-      "app": 12,
-      "gs": 10,
+      "era": 3.06,
+      "app": 13,
+      "gs": 11,
       "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 62.1,
-      "h": 72,
-      "r": 47,
+      "ip": 66.1,
+      "h": 74,
+      "r": 48,
       "er": 29,
-      "bb": 20,
-      "so": 61,
+      "bb": 21,
+      "so": 68,
       "hr": 3,
-      "whip": 1.48,
-      "doubles": 7,
+      "whip": 1.43,
+      "doubles": 8,
       "triples": 4,
-      "ab": 261,
-      "bAvg": 0.276,
-      "wp": 8,
+      "ab": 276,
+      "bAvg": 0.268,
+      "wp": 10,
       "hbp": 9,
       "bk": 0,
       "sfa": 2,
       "sha": 9
-    },
-    {
-      "name": "Sullivan, Ainsley",
-      "w": 1,
-      "l": 1,
-      "era": 6.2,
-      "app": 6,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 14.2,
-      "h": 14,
-      "r": 14,
-      "er": 13,
-      "bb": 10,
-      "so": 14,
-      "hr": 2,
-      "whip": 1.64,
-      "doubles": 3,
-      "triples": 1,
-      "ab": 55,
-      "bAvg": 0.255,
-      "wp": 3,
-      "hbp": 3,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
     },
     {
       "name": "Schultz, Paige",
@@ -89,27 +61,55 @@
       "sha": 0
     },
     {
-      "name": "Bojorquez, Tess",
+      "name": "Sullivan, Ainsley",
       "w": 1,
-      "l": 2,
-      "era": 7.8,
-      "app": 5,
+      "l": 1,
+      "era": 6.2,
+      "app": 6,
       "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 11.2,
-      "h": 27,
+      "ip": 14.2,
+      "h": 14,
+      "r": 14,
+      "er": 13,
+      "bb": 10,
+      "so": 14,
+      "hr": 2,
+      "whip": 1.64,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 55,
+      "bAvg": 0.255,
+      "wp": 3,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Bojorquez, Tess",
+      "w": 1,
+      "l": 2,
+      "era": 6.66,
+      "app": 6,
+      "gs": 1,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 13.2,
+      "h": 29,
       "r": 17,
       "er": 13,
       "bb": 7,
-      "so": 4,
+      "so": 7,
       "hr": 0,
-      "whip": 2.91,
+      "whip": 2.63,
       "doubles": 3,
       "triples": 1,
-      "ab": 62,
-      "bAvg": 0.435,
+      "ab": 70,
+      "bAvg": 0.414,
       "wp": 3,
       "hbp": 0,
       "bk": 0,
@@ -1428,6 +1428,81 @@
             "Emma Giese singled to center field (1-0 B).",
             "Belle Lapacek pinch ran for Emma Giese.",
             "Rachel Radish popped up to 1b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/wellesley-college/boxscore/11011",
+      "date": "3/20/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Miller, Martha",
+        "Bojorquez, Tess"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out looking (2-2 KKBBK).",
+            "J. Colgan singled through the right side (0-1 F).",
+            "J. Colgan advanced to second on a wild pitch.",
+            "B. Awad walked (3-1 BBFBB).",
+            "B. Mellady reached first on a fielding error by ss (0-0); B. Awad advanced to second; J. Colgan advanced to third.",
+            "D. Borrison grounded into double play 2b to 1b (3-2 BBKBK); B. Mellady out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Gaunce popped up to ss (2-2 KFBB).",
+            "G. Jones grounded out to 3b (0-1 F).",
+            "S. Fredericks struck out swinging (2-2 SBSBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado grounded out to p (1-1 BK).",
+            "A. Mulhern reached first on a fielding error by 1b, advanced to second (0-2 SK).",
+            "A. Mulhern advanced to third on a wild pitch.",
+            "J. Colgan doubled to right center, RBI (2-1 BFB); A. Mulhern scored, unearned.",
+            "B. Awad struck out swinging (2-2 FKBBK).",
+            "B. Mellady struck out looking (1-2 KFBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Borrison struck out swinging (2-2 BBFSS).",
+            "E. Gaunce struck out swinging (0-2 FFS).",
+            "G. Jones struck out swinging (3-2 FSFBBBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dylan Tapia to c for Monica Montoya.",
+            "Rebecca Heinze to 1b for Maya Thomas.",
+            "Tess Bojorquez to p.",
+            "Martha Miller to ss.",
+            "S. Fredericks struck out swinging (0-2 FKS).",
+            "A. Delgado grounded out to 2b (1-1 KB).",
+            "A. Mulhern singled up the middle (0-0).",
+            "J. Colgan singled up the middle (1-2 SFFB); A. Mulhern advanced to second.",
+            "B. Awad grounded out to ss (3-2 KSBFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Safiya Butler to cf for Isabella Swanson.",
+            "Martha Miller to ss for Evie Greenwald.",
+            "M. Abernethy grounded out to p (0-0).",
+            "E. Kulhanek struck out swinging (2-2 KKBBS).",
+            "T. Claybrook pinch hit for E. Gaunce.",
+            "T. Claybrook struck out swinging (0-2 KSS)."
           ]
         }
       ],
