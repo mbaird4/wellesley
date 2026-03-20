@@ -1,7 +1,7 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-19T02:02:56.296Z",
+  "scrapedAt": "2026-03-20T01:57:04.569Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,29 +35,29 @@
     {
       "name": "Peverly, Violet",
       "w": 2,
-      "l": 1,
-      "era": 2.56,
-      "app": 4,
-      "gs": 3,
-      "cg": 2,
+      "l": 2,
+      "era": 3.2,
+      "app": 5,
+      "gs": 4,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 13.2,
-      "h": 11,
-      "r": 11,
-      "er": 5,
-      "bb": 13,
-      "so": 19,
+      "ip": 19.2,
+      "h": 18,
+      "r": 15,
+      "er": 9,
+      "bb": 14,
+      "so": 26,
       "hr": 0,
-      "whip": 1.76,
-      "doubles": 2,
+      "whip": 1.63,
+      "doubles": 3,
       "triples": 1,
-      "ab": 51,
-      "bAvg": 0.216,
+      "ab": 75,
+      "bAvg": 0.24,
       "wp": 2,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 2
     },
     {
@@ -508,6 +508,81 @@
             "Maddalyn Deal pinch hit for Olivia Grefe.",
             "Maddalyn Deal struck out swinging (0-0).",
             "Nikolina Opp struck out looking (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/plymouth-state-university/boxscore/9744",
+      "date": "3/19/2026",
+      "opponent": "Plymouth State University",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kenzie Bessette walked (3-2 BBKFBFB).",
+            "Kenzie Bessette stole second.",
+            "Emily Bessette struck out swinging (2-2 BSSBS).",
+            "Avery Couch flied out to cf (0-2 KF); Kenzie Bessette advanced to third.",
+            "Abbey Nezuch singled to center field, RBI (1-0 B); Kenzie Bessette scored.",
+            "Kennedy Michaud struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Addison Willett struck out swinging (1-2 KSFBS).",
+            "Kiera Larson singled to right field (0-0).",
+            "Eva Zuber struck out swinging (2-2 BKBFS).",
+            "Ariana Cray struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kenzie Bessette singled to third base, bunt (1-0 B).",
+            "Kenzie Bessette stole second.",
+            "Emily Bessette struck out swinging (3-2 KSBBBFS).",
+            "Avery Couch singled to left field (0-1 F); Kenzie Bessette advanced to third.",
+            "Avery Couch stole second.",
+            "Abbey Nezuch flied out to cf, sacrifice fly, RBI (2-2 KFBB); Avery Couch advanced to third; Kenzie Bessette scored.",
+            "Kennedy Michaud grounded out to 3b (2-2 KSBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Addison Willett lined out to 1b (0-2 FF).",
+            "Kiera Larson popped up to ss (3-2 FBBFBFFFF).",
+            "Eva Zuber hit by pitch (3-0 BBH).",
+            "Marisa Lizotte pinch ran for Eva Zuber.",
+            "Ariana Cray grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kenzie Bessette singled to catcher, bunt (0-0).",
+            "Kenzie Bessette stole second.",
+            "Emily Bessette flied out to cf (1-2 BFFF); Kenzie Bessette advanced to third.",
+            "Avery Couch struck out swinging (1-2 BFSS).",
+            "Abbey Nezuch singled to center field, RBI (1-1 BF); Kenzie Bessette scored.",
+            "Kennedy Michaud doubled down the lf line, RBI (2-2 BBKS); Abbey Nezuch scored.",
+            "Sam Durrenberger pinch ran for Kennedy Michaud.",
+            "Addison Willett grounded out to p (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Veenstra to dp for Anna Gray.",
+            "Kiera Larson popped up to 2b (2-2 BBKFF).",
+            "Eva Zuber flied out to cf to right center (1-0 B).",
+            "Ariana Cray grounded out to 2b (1-1 KB)."
           ]
         }
       ],

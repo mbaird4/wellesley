@@ -1,63 +1,63 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-19T02:02:53.593Z",
+  "scrapedAt": "2026-03-20T01:57:01.132Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 3,
+      "w": 4,
       "l": 2,
-      "era": 3.5,
-      "app": 5,
-      "gs": 1,
-      "cg": 0,
+      "era": 2.84,
+      "app": 6,
+      "gs": 2,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 30,
-      "h": 37,
-      "r": 18,
+      "ip": 37,
+      "h": 39,
+      "r": 20,
       "er": 15,
-      "bb": 7,
-      "so": 18,
+      "bb": 10,
+      "so": 21,
       "hr": 2,
-      "whip": 1.47,
-      "doubles": 6,
+      "whip": 1.32,
+      "doubles": 8,
       "triples": 1,
-      "ab": 121,
-      "bAvg": 0.306,
+      "ab": 145,
+      "bAvg": 0.269,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 1,
+      "w": 2,
       "l": 1,
-      "era": 7,
-      "app": 7,
-      "gs": 6,
-      "cg": 2,
+      "era": 5.33,
+      "app": 8,
+      "gs": 7,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 14,
-      "h": 27,
-      "r": 21,
-      "er": 14,
-      "bb": 3,
-      "so": 8,
+      "ip": 21,
+      "h": 32,
+      "r": 24,
+      "er": 16,
+      "bb": 8,
+      "so": 12,
       "hr": 0,
-      "whip": 2.14,
-      "doubles": 4,
+      "whip": 1.9,
+      "doubles": 5,
       "triples": 4,
-      "ab": 71,
-      "bAvg": 0.38,
+      "ab": 98,
+      "bAvg": 0.327,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 0
     }
   ],
@@ -634,6 +634,164 @@
           "plays": [
             "Christina Vlahakis to lf.",
             "Addy Bohlander to cf."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/-13-uw-oshkosh/boxscore/14825",
+      "date": "3/19/2026",
+      "opponent": " 13 Uw Oshkosh",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Olivia Ullman reached first on a fielding error by ss (0-0).",
+            "Olivia Baugnet grounded out to 3b, SAC, bunt (0-0); Olivia Ullman advanced to second.",
+            "Mary Kate Quaid struck out swinging (0-0).",
+            "Amanda Martineck struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Haylie Wittman flied out to rf (0-0).",
+            "Emma Bohn grounded out to p (0-0).",
+            "Sarah Hammerton lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Morgan Miller doubled to left center (0-0).",
+            "Brianne Lopez flied out to lf (0-0).",
+            "Olivia Ullman flied out to lf (0-0).",
+            "Olivia Baugnet grounded out to p, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mary Kate Quaid walked (0-0).",
+            "Autumn Freismuth pinch ran for Mary Kate Quaid.",
+            "Amanda Martineck reached on a fielder's choice to right field (0-0); Autumn Freismuth out at second rf to ss.",
+            "Haylie Wittman reached first on a fielding error by 3b (0-0); Amanda Martineck advanced to second.",
+            "Emma Bohn flied out to rf (0-0); Haylie Wittman advanced to second; Amanda Martineck advanced to third.",
+            "Sarah Hammerton doubled to left field, 2 RBI (0-0); Haylie Wittman scored, unearned; Amanda Martineck scored, unearned.",
+            "Morgan Miller walked (0-0).",
+            "Brianne Lopez walked (0-0); Morgan Miller advanced to second; Sarah Hammerton advanced to third.",
+            "Olivia Ullman reached on a fielder's choice to shortstop (0-0); Brianne Lopez out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Baugnet grounded out to p, bunt (0-0).",
+            "Mary Kate Quaid flied out to rf (0-0).",
+            "Amanda Martineck popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haylie Wittman struck out swinging, out at first c unassisted (0-0).",
+            "Emma Bohn grounded out to ss (0-0).",
+            "Sarah Hammerton grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Morgan Miller grounded out to 3b (0-0).",
+            "Brianne Lopez grounded out to p (0-0).",
+            "Olivia Ullman flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/keene-state/boxscore/14826",
+      "date": "3/19/2026",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anna Gostkowski singled up the middle (0-1 K).",
+            "Anna Gostkowski stole second.",
+            "Kalle Halvorsen lined out to rf (2-1 BBK).",
+            "Elyse Picard reached on a fielder's choice to shortstop (1-0 B).",
+            "Abby Weiterman singled to right field (1-0 B); Elyse Picard advanced to second; Anna Gostkowski advanced to third.",
+            "Cainen Avery lined out to 2b (2-0 BB).",
+            "Abbie Monkevicz struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jayme Kiley struck out looking (1-2 KFBK).",
+            "Kalee Keyser flied out to cf (2-0 BB).",
+            "Ashley Connor walked (3-2 BKBFFBB).",
+            "Anna Gostkowski reached on a fielder's choice to second base (3-2 BBKFB); Ashley Connor out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kalle Halvorsen reached first on a fielding error by ss (3-2 BKBBS).",
+            "Elyse Picard reached on a fielder's choice to second base (0-2 FK); Kalle Halvorsen out at second 2b to ss.",
+            "Abby Weiterman flied out to rf (1-1 KB).",
+            "Cainen Avery walked (3-2 KBBFBB); Elyse Picard advanced to second.",
+            "Abbie Monkevicz singled to center field, RBI (1-0 B); Cainen Avery advanced to third; Elyse Picard scored, unearned.",
+            "Jayme Kiley popped up to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Haley Ball to cf for Sammy Swords.",
+            "Kalee Keyser flied out to cf (1-1 FB).",
+            "Jaelyn Boretti grounded out to ss (0-1 K).",
+            "Anna Gostkowski singled to center field (0-1 K).",
+            "Kalle Halvorsen walked (3-2 FKBBBB); Anna Gostkowski advanced to second.",
+            "Elyse Picard out at first 1b to 2b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rachel Powers to 2b for Maddie Tse.",
+            "Abby Weiterman walked (3-1 KBBBB).",
+            "Cainen Avery doubled to left field, advanced to third on the throw, RBI (2-2 BKFFB); Abby Weiterman scored.",
+            "Abbie Monkevicz flied out to cf, sacrifice fly, RBI (0-1 K); Cainen Avery scored.",
+            "Jayme Kiley lined out to 2b (3-1 KBBB).",
+            "Gianna Garofola pinch hit for Kalee Keyser.",
+            "Gianna Garofola struck out looking (1-2 KBFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Strzegowski flied out to cf (2-0 BB).",
+            "Anna Gostkowski flied out to cf (2-1 BBK).",
+            "Kalle Halvorsen flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Elyse Picard walked (3-1 BBKBB).",
+            "Abby Weiterman struck out swinging (0-2 KFFS).",
+            "Cainen Avery flied out to rf (0-0).",
+            "Abbie Monkevicz lined out to rf (2-1 KBB)."
           ]
         }
       ],

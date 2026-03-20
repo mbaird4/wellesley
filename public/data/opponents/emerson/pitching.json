@@ -1,32 +1,32 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-19T02:03:07.527Z",
+  "scrapedAt": "2026-03-20T01:57:15.593Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
-      "w": 1,
+      "w": 2,
       "l": 4,
-      "era": 3.46,
-      "app": 7,
+      "era": 3.15,
+      "app": 8,
       "gs": 4,
       "cg": 2,
       "sho": 1,
       "sv": 0,
-      "ip": 28.1,
-      "h": 38,
-      "r": 25,
-      "er": 14,
-      "bb": 15,
-      "so": 30,
+      "ip": 33.1,
+      "h": 41,
+      "r": 28,
+      "er": 15,
+      "bb": 17,
+      "so": 41,
       "hr": 0,
-      "whip": 1.87,
-      "doubles": 3,
+      "whip": 1.74,
+      "doubles": 5,
       "triples": 5,
-      "ab": 126,
-      "bAvg": 0.302,
-      "wp": 11,
+      "ab": 145,
+      "bAvg": 0.283,
+      "wp": 12,
       "hbp": 3,
       "bk": 0,
       "sfa": 1,
@@ -37,8 +37,8 @@
       "w": 0,
       "l": 3,
       "era": 5.34,
-      "app": 6,
-      "gs": 4,
+      "app": 7,
+      "gs": 5,
       "cg": 1,
       "sho": 0,
       "sv": 0,
@@ -722,6 +722,74 @@
             "Carly Stuckmayer pinch ran for Kylie Hochsprung.",
             "Carly Stuckmayer out at first c unassisted, runner left early.",
             "Peyton Bennett fouled out to 1b (2-2 BKKB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/emmanuel-college-mass-/boxscore/4281",
+      "date": "3/19/2026",
+      "opponent": "Emmanuel College Mass ",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "/  for Kate Regan.",
+            "Cal Sheehan to p.",
+            "Francesca Pizzarella struck out swinging, out at first c to 1b (1-2 BFFS).",
+            "Mia Fernandes popped up to 2b (1-1 BS).",
+            "Grace Garon walked (3-1 BKBBB).",
+            "Sydney Taylor struck out swinging (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mekayla Poisson walked (3-0 BBBB).",
+            "Emely Rodriguez reached on a fielder's choice (1-0 B); Mekayla Poisson out at second ss to 2b.",
+            "Olivia DeMacedo struck out looking (3-2 BFSFBBK).",
+            "Jacqui Martineau struck out, reached first on a throwing error by c (1-2 KBFS); Emely Rodriguez advanced to second.",
+            "Jacqui Martineau stole second; Emely Rodriguez stole third.",
+            "Samantha Serio struck out swinging (1-2 SSBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Francesca Pizzarella struck out swinging (2-2 BBKFS).",
+            "Mia Fernandes grounded out to ss (1-0 B).",
+            "Grace Garon struck out looking (1-2 KSBFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sydney Taylor singled up the middle (0-0).",
+            "Lucy Weineck pinch ran for Sydney Taylor.",
+            "Lucy Weineck stole second.",
+            "Mekayla Poisson struck out looking (3-2 BKFBBFK).",
+            "Lucy Weineck advanced to third on a wild pitch.",
+            "Emely Rodriguez grounded out to 2b, RBI (3-2 BFBBK); Lucy Weineck scored.",
+            "Olivia DeMacedo struck out looking (2-2 FFBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Cal Sheehan to p for Tessa Burroso.",
+            "Jacqui Martineau struck out swinging (2-2 BFSBS).",
+            "Rylee Smith pinch hit for Samantha Serio.",
+            "Rylee Smith reached on catcher's interference (3-1 BBBK).",
+            "Francesca Pizzarella struck out swinging (1-2 BSFS).",
+            "Mia Fernandes doubled down the rf line (1-1 FB); Rylee Smith advanced to third.",
+            "Grace Garon doubled to center field, 2 RBI (1-0 B); Mia Fernandes scored, unearned; Rylee Smith scored, unearned.",
+            "Sydney Taylor pinch hit for Lucy Weineck.",
+            "Sydney Taylor flied out to cf (2-1 BKB)."
           ]
         }
       ],
