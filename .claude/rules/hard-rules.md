@@ -51,10 +51,6 @@ Before finishing any task, scan for duplicated code blocks:
 - **Repeated TypeScript logic** (same pattern in 2+ places) MUST be extracted into a shared utility, pipe, or service.
 - When you spot existing duplication while working nearby, flag it to the user (e.g., "I noticed these 3 components duplicate the stat-cell markup — want me to extract a shared component?").
 
-## Host classes over wrapper divs
-
-Apply layout/styling classes via the component's `host` metadata (e.g., `host: { class: 'flex justify-center items-center' }`) instead of adding wrapper `<div>` elements in templates. NEVER add a `<div>` solely for styling.
-
 ## No `[style]` bindings — use `[class]` with Tailwind
 
 Avoid `[style]` and `[style.X]` bindings. Almost all styling MUST be done via `[class]` bindings or static Tailwind classes. The only acceptable exception is truly dynamic values that Tailwind cannot express (e.g., a calculated pixel offset or a data-driven color from an API). If you think you need `[style]`, first try to solve it with Tailwind classes and `[class]` toggling.
@@ -82,11 +78,3 @@ GOOD:
 ```
 
 The only acceptable margin use is for asymmetric one-off offsets that `gap` can't express (e.g., a single element needing extra separation from the rest).
-
-## Array methods over loops
-
-NEVER use `for`, `for...in`, `for...of`, or `while` loops. Use array methods (`forEach`, `map`, `filter`, `reduce`, `find`, `some`, `every`, `flatMap`). Only exception: `for...of` when you genuinely need `break`/`continue` and `find`/`some` won't work.
-
-## Separate HTML template files
-
-Unless an Angular template is 1 line long, ALWAYS use a separate `.html` file with `templateUrl`. NEVER use inline `template` for multi-line templates.
