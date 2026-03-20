@@ -1,24 +1,23 @@
 <div class="flex flex-wrap gap-3">
-  <div class="stat-card">
-    <div class="stat-value">{{ summary().totalEvents }}</div>
-    <div class="stat-label">PAs</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{{ summary().totalRunnersDrivenIn }}</div>
-    <div class="stat-label">Runners Driven In</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value">{{ summary().conversionRate }}%</div>
-    <div class="stat-label">Conversion Rate</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value text-emerald-400">{{ summary().elevators }}</div>
-    <div class="stat-label">Elevate w/ ROB</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value text-red-400">{{ summary().droppers }}</div>
-    <div class="stat-label">Drop Off w/ ROB</div>
-  </div>
+  <ws-stat-card [value]="summary().totalEvents" label="PAs" />
+  <ws-stat-card
+    [value]="summary().totalRunnersDrivenIn"
+    label="Runners Driven In"
+  />
+  <ws-stat-card
+    [value]="summary().conversionRate + '%'"
+    label="Conversion Rate"
+  />
+  <ws-stat-card
+    [value]="summary().elevators"
+    label="Elevate w/ ROB"
+    valueClass="text-emerald-400"
+  />
+  <ws-stat-card
+    [value]="summary().droppers"
+    label="Drop Off w/ ROB"
+    valueClass="text-red-400"
+  />
 </div>
 
 <p class="text-content-secondary text-sm leading-relaxed">

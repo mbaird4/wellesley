@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import type { GameScoringPlays } from '@ws/core/models';
-import { BoxscoreUrlPipe, BuntRelatedPipe, FormatPlayTypePipe, FormatSituationPipe } from '@ws/core/ui';
+import { BoxscoreUrlPipe, BuntRelatedPipe, EmptyState, FormatPlayTypePipe, FormatSituationPipe } from '@ws/core/ui';
 
 interface DisplayGame {
   game: GameScoringPlays;
@@ -15,6 +15,7 @@ interface DisplayGame {
   imports: [
     BoxscoreUrlPipe,
     BuntRelatedPipe,
+    EmptyState,
     FormatPlayTypePipe,
     FormatSituationPipe,
   ],

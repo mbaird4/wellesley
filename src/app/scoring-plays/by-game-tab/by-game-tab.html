@@ -39,12 +39,7 @@
 
     @if (expandedGame() === $index) {
       @if (dg.game.plays.length === 0) {
-        <div class="empty-state">
-          <div class="empty-state-icon">
-            <i class="fa-solid fa-baseball"></i>
-          </div>
-          No scoring plays detected
-        </div>
+        <ws-empty-state message="No scoring plays detected" />
       } @else {
         <table class="stats-table game-plays-table">
           <thead>

@@ -55,24 +55,16 @@
       <h3 class="mb-0">Sac Bunt Effectiveness</h3>
 
       <div class="stagger-children flex flex-wrap gap-4">
-        <div class="stat-card">
-          <div class="stat-value">{{ sac.totalSacBunts }}</div>
-          <div class="stat-label">Sac Bunts</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">{{ sac.totalRunnersOnBase }}</div>
-          <div class="stat-label">Runners on Base</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">{{ sac.totalRunnersScored }}</div>
-          <div class="stat-label">Runners Scored</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">
-            {{ sac.scoringRate * 100 | number: '1.1-1' }}%
-          </div>
-          <div class="stat-label">Scoring Rate</div>
-        </div>
+        <ws-stat-card [value]="sac.totalSacBunts" label="Sac Bunts" />
+        <ws-stat-card
+          [value]="sac.totalRunnersOnBase"
+          label="Runners on Base"
+        />
+        <ws-stat-card [value]="sac.totalRunnersScored" label="Runners Scored" />
+        <ws-stat-card
+          [value]="(sac.scoringRate * 100 | number: '1.1-1') + '%'"
+          label="Scoring Rate"
+        />
       </div>
 
       <button

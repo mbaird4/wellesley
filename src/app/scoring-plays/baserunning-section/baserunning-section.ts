@@ -1,7 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { RunnerConversionRow, StolenBaseSummary } from '@ws/core/models';
-import { SITUATION_LABELS } from '@ws/core/ui';
+import { SITUATION_LABELS, StatCard } from '@ws/core/ui';
 
 type SortKey = 'situation' | 'runners' | 'scored' | 'rate';
 
@@ -27,7 +27,10 @@ interface ConversionDisplayRow {
 @Component({
   selector: 'ws-baserunning-section',
   standalone: true,
-  imports: [DecimalPipe],
+  imports: [
+    DecimalPipe,
+    StatCard,
+  ],
   templateUrl: './baserunning-section.html',
   host: { class: 'flex flex-col gap-6' },
   changeDetection: ChangeDetectionStrategy.OnPush,

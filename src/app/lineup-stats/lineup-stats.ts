@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal } from '@angular/core';
 import { SoftballStatsService } from '@ws/core/data';
 import type { BaseRunnerMode, BaseRunnerRow, GameWithSnapshots, PlayerLineupBreakdown, ResultRow } from '@ws/core/models';
-import { BaseRunnerTable, GameViewer, LastUpdatedPipe } from '@ws/core/ui';
+import { BaseRunnerTable, EmptyState, ErrorBanner, GameViewer, LoadingState, SeasonPicker } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { PlayerLineupTable } from './player-lineup-table/player-lineup-table';
@@ -13,9 +13,12 @@ import { PlayerLineupTable } from './player-lineup-table/player-lineup-table';
   imports: [
     BaseRunnerTable,
     CommonModule,
+    EmptyState,
+    ErrorBanner,
     GameViewer,
-    LastUpdatedPipe,
+    LoadingState,
     PlayerLineupTable,
+    SeasonPicker,
   ],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },

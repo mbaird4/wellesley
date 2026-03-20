@@ -1,20 +1,5 @@
 <div class="flex flex-wrap items-center gap-2">
-  <span class="text-content-dim text-xs font-medium tracking-wider uppercase">
-    Sort
-  </span>
-  @for (opt of sortOptions; track opt.key) {
-    <button
-      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-medium transition-[color,background]"
-      [class]="
-        sort() === opt.key
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-      "
-      (click)="sort.set(opt.key)"
-    >
-      {{ opt.label }}
-    </button>
-  }
+  <ws-sort-buttons [options]="sortOptions" [(value)]="sort" />
 
   <div class="ml-auto flex items-center gap-1.5">
     <span class="text-content-dim text-xs font-medium tracking-wider uppercase">

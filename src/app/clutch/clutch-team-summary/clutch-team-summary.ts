@@ -1,9 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { BattingMetric, TeamSummary } from '@ws/core/models';
+import { StatCard } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-clutch-team-summary',
   standalone: true,
+  imports: [StatCard],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-team-summary.html',

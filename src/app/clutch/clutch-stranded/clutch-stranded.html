@@ -1,29 +1,26 @@
 <!-- Team totals -->
 <div class="flex flex-wrap gap-3">
-  <div class="stat-card">
-    <div class="stat-value">{{ teamTotals().total }}</div>
-    <div class="stat-label">Total LOB</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value text-content-secondary">
-      {{ teamTotals().onFirst }}
-    </div>
-    <div class="stat-label">Stranded on 1st</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value text-amber-400">{{ teamTotals().onSecond }}</div>
-    <div class="stat-label">Stranded on 2nd</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value text-red-400">{{ teamTotals().onThird }}</div>
-    <div class="stat-label">Stranded on 3rd</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-value" [style]="teamTotals().strandRateStyle">
-      {{ teamTotals().strandRate }}%
-    </div>
-    <div class="stat-label">Strand Rate</div>
-  </div>
+  <ws-stat-card [value]="teamTotals().total" label="Total LOB" />
+  <ws-stat-card
+    [value]="teamTotals().onFirst"
+    label="Stranded on 1st"
+    valueClass="text-content-secondary"
+  />
+  <ws-stat-card
+    [value]="teamTotals().onSecond"
+    label="Stranded on 2nd"
+    valueClass="text-amber-400"
+  />
+  <ws-stat-card
+    [value]="teamTotals().onThird"
+    label="Stranded on 3rd"
+    valueClass="text-red-400"
+  />
+  <ws-stat-card
+    [value]="teamTotals().strandRate + '%'"
+    label="Strand Rate"
+    [valueStyle]="teamTotals().strandRateStyle"
+  />
 </div>
 
 <p class="text-content-secondary text-sm leading-relaxed">
@@ -46,24 +43,7 @@
 </p>
 
 <!-- Sort -->
-<div class="flex items-center gap-2">
-  <span class="text-content-dim text-xs font-medium tracking-wider uppercase">
-    Sort
-  </span>
-  @for (opt of sortOptions; track opt.key) {
-    <button
-      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-xs font-medium transition-[color,background]"
-      [class]="
-        sort() === opt.key
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-      "
-      (click)="sort.set(opt.key)"
-    >
-      {{ opt.label }}
-    </button>
-  }
-</div>
+<ws-sort-buttons [options]="sortOptions" [(value)]="sort" />
 
 <!-- Player rows -->
 <div class="flex flex-col gap-2">

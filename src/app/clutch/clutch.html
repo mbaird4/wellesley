@@ -1,43 +1,17 @@
-<div class="mb-6 flex flex-wrap items-center gap-2">
-  <span
-    class="text-content-muted mr-1 text-sm font-medium tracking-[0.05em] uppercase"
-  >
-    Season
-  </span>
-  @for (year of availableYears; track year) {
-    <button
-      class="cursor-pointer rounded-md border-none px-2.5 py-1 text-sm font-medium tabular-nums transition-[color,background] disabled:cursor-not-allowed disabled:opacity-40"
-      [class]="
-        selectedYear() === year
-          ? 'bg-brand-bg text-brand-text'
-          : 'text-content-dim hover:text-content-secondary hover:bg-surface-card bg-transparent'
-      "
-      [disabled]="loading()"
-      (click)="setYear(year)"
-    >
-      {{ year }}
-    </button>
-  }
-  @if (scrapedAt()) {
-    <span class="text-content-dim ml-1 text-xs">
-      {{ scrapedAt() | lastUpdated }}
-    </span>
-  }
-</div>
+<ws-season-picker
+  [selectedYear]="selectedYear()"
+  [availableYears]="availableYears"
+  [scrapedAt]="scrapedAt()"
+  [loading]="loading()"
+  (yearSelected)="setYear($event)"
+/>
 
 @if (error()) {
-  <div
-    class="bg-error-bg text-error py-cell px-card border-error-border text-scale-[1.05] mb-4 rounded-[10px] border"
-  >
-    {{ error() }}
-  </div>
+  <ws-error-banner [message]="error()!" />
 }
 
 @if (loading()) {
-  <div class="loading-state">
-    <i class="fa-solid fa-baseball loading-spinner"></i>
-    Loading clutch data...
-  </div>
+  <ws-loading-state message="Loading clutch data..." />
 }
 
 @if (clutchData() && !loading()) {
@@ -103,10 +77,5 @@
 }
 
 @if (!clutchData() && !loading() && !error()) {
-  <div class="empty-state">
-    <div class="empty-state-icon">
-      <i class="fa-solid fa-baseball"></i>
-    </div>
-    Pick a season above to get started.
-  </div>
+  <ws-empty-state />
 }

@@ -1,7 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { DistributionRow, LeaderboardRow, PlayTypeRow, RunnerConversionRow, SacBuntSummary, ScenarioRow, StolenBaseSummary } from '@ws/core/models';
-import { BoxscoreUrlPipe } from '@ws/core/ui';
+import { BoxscoreUrlPipe, StatCard } from '@ws/core/ui';
 
 import { BaserunningSection } from '../baserunning-section/baserunning-section';
 import { PlayTypeChart } from '../play-type-chart/play-type-chart';
@@ -20,6 +20,7 @@ import { ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
     RunDistribution,
     ScoringLeaderboard,
     ScenarioHeatmap,
+    StatCard,
   ],
   host: { class: 'flex flex-col gap-6' },
   templateUrl: './summary-tab.html',

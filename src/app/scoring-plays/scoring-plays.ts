@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { SoftballStatsService } from '@ws/core/data';
 import type { BaseSituation, DistributionRow, GameScoringPlays, PlayTypeRow, RunnerConversionRow, SacBuntSummary, ScenarioRow, ScoringPlaySummary, StolenBaseSummary } from '@ws/core/models';
-import { LastUpdatedPipe, SITUATION_LABELS } from '@ws/core/ui';
+import { EmptyState, ErrorBanner, LoadingState, SeasonPicker, SITUATION_LABELS } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { ByGameTab } from './by-game-tab/by-game-tab';
@@ -20,7 +20,10 @@ const SITUATION_ORDER: BaseSituation[] = ['empty', 'first', 'second', 'third', '
   imports: [
     ByGameTab,
     ByPlayerTab,
-    LastUpdatedPipe,
+    EmptyState,
+    ErrorBanner,
+    LoadingState,
+    SeasonPicker,
     SummaryTab,
   ],
   templateUrl: './scoring-plays.html',

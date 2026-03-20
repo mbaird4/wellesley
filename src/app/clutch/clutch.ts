@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { RosterService, SoftballStatsService } from '@ws/core/data';
 import type { BattingMetric, ClutchSummary, PbpBattingAccum, PlayerClutchSummary, TeamSummary } from '@ws/core/models';
 import { formatWoba, rebuildPlayerFromEvents } from '@ws/core/processors';
-import { LastUpdatedPipe } from '@ws/core/ui';
+import { EmptyState, ErrorBanner, LoadingState, SeasonPicker } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 import { ClutchFilters } from './clutch-filters/clutch-filters';
@@ -52,7 +52,10 @@ function inningBucket(inning: string): 'early' | 'middle' | 'late' {
     ClutchPlayerTable,
     ClutchStranded,
     ClutchTeamSummary,
-    LastUpdatedPipe,
+    EmptyState,
+    ErrorBanner,
+    LoadingState,
+    SeasonPicker,
   ],
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

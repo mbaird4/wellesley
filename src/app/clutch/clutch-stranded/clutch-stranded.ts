@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
 import type { MetricScale, PlayerClutchSummary } from '@ws/core/models';
 import { getMetricTier, metricColorStyle, tierClass } from '@ws/core/processors';
+import { SortButtons, StatCard } from '@ws/core/ui';
 
 type SortKey = 'total' | 'third' | 'second' | 'first' | 'rate' | 'name';
 
@@ -83,6 +84,10 @@ function computeStrandedRow(player: PlayerClutchSummary): StrandedRow {
 @Component({
   selector: 'ws-clutch-stranded',
   standalone: true,
+  imports: [
+    SortButtons,
+    StatCard,
+  ],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: 'clutch-stranded.html',

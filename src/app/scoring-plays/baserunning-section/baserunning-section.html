@@ -5,16 +5,11 @@
     >
       <h3 class="mb-0">Stolen Base Scoring</h3>
       <div class="stagger-children flex flex-wrap gap-4">
-        <div class="stat-card">
-          <div class="stat-value">{{ sb.totalStolenBases }}</div>
-          <div class="stat-label">Stolen Bases</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">
-            {{ sb.overallScoringRate * 100 | number: '1.1-1' }}%
-          </div>
-          <div class="stat-label">Eventually Scored</div>
-        </div>
+        <ws-stat-card [value]="sb.totalStolenBases" label="Stolen Bases" />
+        <ws-stat-card
+          [value]="(sb.overallScoringRate * 100 | number: '1.1-1') + '%'"
+          label="Eventually Scored"
+        />
       </div>
 
       <button
