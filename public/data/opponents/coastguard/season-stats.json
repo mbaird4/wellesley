@@ -1,7 +1,7 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-20T18:47:01.907Z",
+  "scrapedAt": "2026-03-21T01:45:55.173Z",
   "year": 2026,
   "hitting": {
     "players": [
@@ -270,7 +270,7 @@
         "jerseyNumber": 8,
         "avg": 0.667,
         "ops": 1.334,
-        "gp": 4,
+        "gp": 3,
         "gs": 0,
         "ab": 3,
         "r": 1,
@@ -483,7 +483,7 @@
       "doubles": 5,
       "triples": 1,
       "hr": 0,
-      "rbi": 10,
+      "rbi": 9,
       "tb": 48,
       "slg": 0.242,
       "bb": 7,
@@ -531,7 +531,7 @@
       {
         "name": "Walker, Dana",
         "jerseyNumber": 22,
-        "era": 0.73,
+        "era": 0.49,
         "whip": 1.05,
         "w": 4,
         "l": 1,
@@ -543,7 +543,7 @@
         "ip": 28.2,
         "h": 26,
         "r": 13,
-        "er": 3,
+        "er": 2,
         "bb": 4,
         "so": 29,
         "doubles": 3,
@@ -588,7 +588,7 @@
       }
     ],
     "totals": {
-      "era": 0.7,
+      "era": 0.56,
       "whip": 0.96,
       "w": 6,
       "l": 2,
@@ -600,7 +600,7 @@
       "ip": 50,
       "h": 41,
       "r": 19,
-      "er": 5,
+      "er": 4,
       "bb": 7,
       "so": 140,
       "doubles": 5,
@@ -771,20 +771,6 @@
         "ci": 0
       },
       {
-        "name": "Murnane, Mack",
-        "jerseyNumber": 15,
-        "tc": 24,
-        "po": 4,
-        "a": 18,
-        "e": 2,
-        "fldPct": 0.917,
-        "dp": 0,
-        "sba": 0,
-        "csb": 0,
-        "pb": 0,
-        "ci": 0
-      },
-      {
         "name": "Bartz, Bridget",
         "jerseyNumber": 10,
         "tc": 23,
@@ -793,6 +779,20 @@
         "e": 2,
         "fldPct": 0.913,
         "dp": 2,
+        "sba": 0,
+        "csb": 0,
+        "pb": 0,
+        "ci": 0
+      },
+      {
+        "name": "Murnane, Mack",
+        "jerseyNumber": 15,
+        "tc": 25,
+        "po": 4,
+        "a": 18,
+        "e": 3,
+        "fldPct": 0.88,
+        "dp": 0,
         "sba": 0,
         "csb": 0,
         "pb": 0,
@@ -884,11 +884,11 @@
       }
     ],
     "totals": {
-      "tc": 237,
+      "tc": 238,
       "po": 150,
       "a": 71,
-      "e": 16,
-      "fldPct": 0.932,
+      "e": 17,
+      "fldPct": 0.929,
       "dp": 3,
       "sba": 4,
       "csb": 0,

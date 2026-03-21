@@ -1,31 +1,31 @@
 {
   "slug": "brockport",
   "domain": "gobrockport.com",
-  "scrapedAt": "2026-03-20T18:46:17.630Z",
+  "scrapedAt": "2026-03-21T01:45:10.130Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeValder, Liana",
       "w": 1,
       "l": 1,
-      "era": 4.36,
-      "app": 4,
+      "era": 3.61,
+      "app": 5,
       "gs": 2,
       "cg": 1,
       "sho": 1,
       "sv": 1,
-      "ip": 17.2,
-      "h": 21,
+      "ip": 21.1,
+      "h": 25,
       "r": 15,
       "er": 11,
       "bb": 4,
       "so": 19,
       "hr": 0,
-      "whip": 1.42,
+      "whip": 1.36,
       "doubles": 7,
       "triples": 1,
-      "ab": 73,
-      "bAvg": 0.288,
+      "ab": 88,
+      "bAvg": 0.284,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
@@ -64,53 +64,53 @@
       "name": "Davis, Colleen",
       "w": 1,
       "l": 2,
-      "era": 8.75,
-      "app": 4,
+      "era": 10.23,
+      "app": 5,
       "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 12,
-      "h": 23,
-      "r": 19,
-      "er": 15,
-      "bb": 9,
+      "ip": 13,
+      "h": 27,
+      "r": 23,
+      "er": 19,
+      "bb": 11,
       "so": 6,
       "hr": 0,
-      "whip": 2.67,
-      "doubles": 2,
+      "whip": 2.92,
+      "doubles": 3,
       "triples": 2,
-      "ab": 59,
-      "bAvg": 0.39,
-      "wp": 2,
+      "ab": 64,
+      "bAvg": 0.422,
+      "wp": 3,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Alguire, Hadley",
       "w": 0,
-      "l": 0,
-      "era": 4.85,
-      "app": 3,
-      "gs": 0,
+      "l": 1,
+      "era": 6.3,
+      "app": 4,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4.1,
-      "h": 8,
-      "r": 5,
-      "er": 3,
-      "bb": 0,
-      "so": 0,
+      "ip": 6.2,
+      "h": 14,
+      "r": 8,
+      "er": 6,
+      "bb": 1,
+      "so": 2,
       "hr": 0,
-      "whip": 1.85,
-      "doubles": 1,
+      "whip": 2.25,
+      "doubles": 3,
       "triples": 0,
-      "ab": 23,
-      "bAvg": 0.348,
-      "wp": 0,
+      "ab": 35,
+      "bAvg": 0.4,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -722,6 +722,105 @@
             "Emily Kennedy singled to second base (1-1 KB).",
             "Maddy Miller singled to pitcher, bunt (0-0); Emily Kennedy advanced to second.",
             "Emma Yen singled to third base, bunt (0-1 K); Maddy Miller advanced to second; Emily Kennedy advanced to third, scored on a throwing error by 3b, unearned."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gobrockport.com/sports/softball/stats/2026/university-of-wisconsin-platteville/boxscore/12511",
+      "date": "3/20/2026",
+      "opponent": "University Of Wisconsin Platteville",
+      "pitchers": [
+        "Alguire, Hadley",
+        "Davis, Colleen",
+        "DeValder, Liana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Delila Liston singled to center field (2-2 BKFB).",
+            "Rylee Broshous struck out swinging (3-2 BBBKKS).",
+            "Allison Peters walked (3-2 BBKKBFB); Delila Liston advanced to second.",
+            "Delaney Johnson reached on a fielder's choice (1-0 B); Allison Peters advanced to second; Delila Liston out at third ss to 3b.",
+            "Peyton Murphy doubled to left center, RBI (2-0 BB); Delaney Johnson advanced to third; Allison Peters scored.",
+            "Mia Savage grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Tessa Britt popped up to 3b (0-0).",
+            "Caitlin Giacomo grounded out to 1b unassisted (2-2 BBKF).",
+            "Greta Volkening singled (3-2 BBKBK).",
+            "Greta Volkening stole second.",
+            "Greta Volkening advanced to third on a wild pitch.",
+            "Delila Liston singled, RBI (3-1 BBFB); Greta Volkening scored.",
+            "Delila Liston out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Rylee Broshous singled to center field (1-2 BKF).",
+            "Allison Peters struck out swinging (0-2 KSS).",
+            "Delaney Johnson doubled to center field (0-0); Rylee Broshous advanced to third.",
+            "Colleen Davis to p for Hadley Alguire.",
+            "Peyton Murphy singled to center field, advanced to second on the throw, RBI (0-2 FFF); Delaney Johnson advanced to third, out at home cf to 1b to c; Rylee Broshous scored.",
+            "Mia Savage singled to center field, RBI (0-0); Peyton Murphy scored.",
+            "Tessa Britt singled to center field (1-1 FB); Mia Savage advanced to second.",
+            "Caitlin Giacomo grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Reagan Myers to c for Lila Lovgren.",
+            "Maeve Brannigan to 1b for Aubrey Ennis.",
+            "Isabella Parente to rf for Saylor Ayers.",
+            "Greta Volkening walked (3-2 BBKBFB).",
+            "Greta Volkening advanced to second on a wild pitch.",
+            "Delila Liston out at first 1b to 2b, bunt, SAC (1-1 KB); Greta Volkening advanced to third.",
+            "Rylee Broshous walked (3-1 KBBBB).",
+            "Rylee Broshous stole second.",
+            "Allison Peters doubled to left field, 2 RBI (1-1 KB); Rylee Broshous scored; Greta Volkening scored.",
+            "Abigail Robbins pinch ran for Allison Peters.",
+            "Liana DeValder to p for Colleen Davis.",
+            "Delaney Johnson singled to left field (0-2 KFFF); Abigail Robbins advanced to third.",
+            "Peyton Murphy singled up the middle, RBI (1-1 BF); Delaney Johnson advanced to second; Abigail Robbins scored.",
+            "Mia Savage flied out to lf (0-2 FK).",
+            "Tessa Britt lined out to 3b (3-1 SBBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Salerno pinch hit for Caitlin Giacomo.",
+            "Lauren Salerno popped up to c (0-0).",
+            "Greta Volkening lined out to 3b (1-1 FB).",
+            "Delila Liston flied out to rf (3-2 BKKBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Rylee Broshous flied out to cf (0-0).",
+            "Allison Peters singled to left field (1-1 BF).",
+            "Delaney Johnson flied out to lf (1-0 B).",
+            "Allison Peters stole second.",
+            "Peyton Murphy popped up to p (2-2 SBKFFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Mia Savage flied out to lf (1-2 FFBF).",
+            "Tessa Britt singled to left field (3-2 SFBBFB).",
+            "Taylor Lynch pinch ran for Tessa Britt.",
+            "Caitlin Giacomo grounded out to p (1-1 BK); Taylor Lynch advanced to second.",
+            "Morgan Brummer pinch hit for Greta Volkening.",
+            "Morgan Brummer lined out to cf (0-0)."
           ]
         }
       ],

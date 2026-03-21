@@ -1,36 +1,36 @@
 {
   "slug": "macalester",
   "domain": "athletics.macalester.edu",
-  "scrapedAt": "2026-03-20T18:46:21.513Z",
+  "scrapedAt": "2026-03-21T01:45:15.169Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Miller, Martha",
       "w": 5,
-      "l": 4,
-      "era": 3.06,
-      "app": 13,
-      "gs": 11,
-      "cg": 5,
+      "l": 5,
+      "era": 3.23,
+      "app": 14,
+      "gs": 12,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 66.1,
-      "h": 74,
-      "r": 48,
-      "er": 29,
-      "bb": 21,
-      "so": 68,
-      "hr": 3,
-      "whip": 1.43,
+      "ip": 73.2,
+      "h": 86,
+      "r": 55,
+      "er": 34,
+      "bb": 24,
+      "so": 72,
+      "hr": 5,
+      "whip": 1.49,
       "doubles": 8,
       "triples": 4,
-      "ab": 276,
-      "bAvg": 0.268,
-      "wp": 10,
-      "hbp": 9,
+      "ab": 307,
+      "bAvg": 0.28,
+      "wp": 11,
+      "hbp": 10,
       "bk": 0,
       "sfa": 2,
-      "sha": 9
+      "sha": 11
     },
     {
       "name": "Schultz, Paige",
@@ -1503,6 +1503,109 @@
             "E. Kulhanek struck out swinging (2-2 KKBBS).",
             "T. Claybrook pinch hit for E. Gaunce.",
             "T. Claybrook struck out swinging (0-2 KSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.macalester.edu/sports/softball/stats/2026/simpson-college/boxscore/11012",
+      "date": "3/20/2026",
+      "opponent": "Simpson College",
+      "pitchers": [
+        "Miller, Martha"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashlyn Steen walked (3-2 FBFBFBFB).",
+            "Megan Heidelbauer popped up to 1b (0-0).",
+            "Ashlyn Steen stole second.",
+            "Mackenzie James singled to center field, advanced to second on the throw, RBI (2-2 BFFBF); Ashlyn Steen scored.",
+            "Katie Shaner flied out to lf (0-1 S).",
+            "Kenna Rollinger popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Addison Gookin singled through the left side (1-1 BS).",
+            "Caelynn Obleton flied out to rf (0-1 K).",
+            "Addison Gookin stole second.",
+            "Rowen Fisk struck out swinging (1-2 KBSS).",
+            "Brynn Ortlund singled up the middle (0-1 K); Addison Gookin advanced to third.",
+            "Brynn Ortlund stole second.",
+            "Ashlyn Steen grounded out to 2b (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Megan Heidelbauer singled to right field (0-1 S).",
+            "Megan Heidelbauer stole second.",
+            "Mackenzie James out at first 3b to 2b, SAC, bunt (0-1 K); Megan Heidelbauer advanced to third.",
+            "Katie Shaner singled to center field, RBI (1-0 B); Megan Heidelbauer scored.",
+            "Kenna Rollinger popped up to c (0-1 F).",
+            "Katie Shaner advanced to second on a wild pitch.",
+            "Addison Gookin struck out swinging (3-2 FBFBBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Caelynn Obleton flied out to cf (1-0 B).",
+            "Rowen Fisk popped up to p (1-1 BS).",
+            "Brynn Ortlund singled to left field (0-2 SFF).",
+            "Brynn Ortlund stole second.",
+            "Ashlyn Steen grounded out to 2b (2-2 BFBFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Megan Heidelbauer grounded out to 3b (1-2 BFKF).",
+            "Mackenzie James fouled out to lf (2-1 BBF).",
+            "Katie Shaner lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexis Voss pinch hit for Kenna Rollinger.",
+            "Alexis Voss flied out to lf (0-0).",
+            "Addison Gookin homered to left field, RBI (2-1 FBB).",
+            "Caelynn Obleton singled down the lf line (1-2 KFBF).",
+            "Abigail Rouse pinch hit for Rowen Fisk.",
+            "Caelynn Obleton stole second.",
+            "Abigail Rouse walked (3-1 BFBBB).",
+            "Brynn Ortlund reached on a fielder's choice (1-1 FB); Abigail Rouse advanced to second; Caelynn Obleton out at third lf to 3b.",
+            "Ashlyn Steen hit by pitch (1-0 H); Brynn Ortlund advanced to second; Abigail Rouse advanced to third.",
+            "Megan Heidelbauer singled to shortstop, RBI (0-2 FFF); Ashlyn Steen advanced to second, advanced to third on the error; Brynn Ortlund advanced to third, scored on a throwing error by ss, unearned; Abigail Rouse scored.",
+            "Megan Heidelbauer stole second.",
+            "Mackenzie James flied out to lf (3-2 BBFFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Katie Shaner homered to left field, RBI (3-1 BFBB).",
+            "Gracie Bruening pinch hit for Kenna Rollinger.",
+            "Gracie Bruening singled to left center (1-0 B).",
+            "Amanda Bauer pinch ran for Gracie Bruening.",
+            "Amanda Bauer out at second c to ss, caught stealing.",
+            "Addison Gookin walked (3-2 BKFBBB).",
+            "Addison Gookin stole second.",
+            "Caelynn Obleton struck out swinging (3-2 KBBFBFS).",
+            "Abigail Rouse struck out looking (0-2 SFFK)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Brynn Ortlund Abigail Rouse placed on second (0-0).",
+            "Brynn Ortlund out at first p to 2b, SAC, bunt (0-0); Abigail Rouse advanced to third.",
+            "Ashlyn Steen singled through the right side, RBI (0-0); Abigail Rouse scored."
           ]
         }
       ],

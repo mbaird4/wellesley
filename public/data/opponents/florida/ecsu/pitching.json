@@ -1,7 +1,7 @@
 {
   "slug": "ecsu",
   "domain": "gowarriorathletics.com",
-  "scrapedAt": "2026-03-20T18:46:26.156Z",
+  "scrapedAt": "2026-03-21T01:45:19.800Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -62,59 +62,59 @@
     },
     {
       "name": "Raymond, Julia",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "era": 0,
-      "app": 2,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 1.2,
-      "h": 1,
+      "ip": 5.2,
+      "h": 4,
       "r": 0,
       "er": 0,
-      "bb": 2,
-      "so": 0,
+      "bb": 3,
+      "so": 2,
       "hr": 0,
-      "whip": 1.8,
+      "whip": 1.24,
       "doubles": 0,
       "triples": 0,
-      "ab": 3,
-      "bAvg": 0.333,
+      "ab": 17,
+      "bAvg": 0.235,
       "wp": 1,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Marchand, Hadley",
       "w": 0,
       "l": 0,
-      "era": 7,
-      "app": 2,
-      "gs": 0,
+      "era": 4.2,
+      "app": 3,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2,
-      "h": 3,
-      "r": 2,
-      "er": 2,
-      "bb": 3,
-      "so": 2,
+      "ip": 5,
+      "h": 7,
+      "r": 3,
+      "er": 3,
+      "bb": 5,
+      "so": 3,
       "hr": 0,
-      "whip": 3,
+      "whip": 2.4,
       "doubles": 1,
       "triples": 0,
-      "ab": 9,
+      "ab": 21,
       "bAvg": 0.333,
-      "wp": 1,
+      "wp": 2,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -796,6 +796,99 @@
             "Molly Gibson flied out to rf (0-0); Anna Bello advanced to third.",
             "M. Schoenenberger pinch hit for Jessie Lopez.",
             "M. Schoenenberger grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gowarriorathletics.com/sports/softball/stats/2026/wellesley-college/boxscore/7850",
+      "date": "3/20/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Marchand, Hadley",
+        "Raymond, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern grounded out to 2b (0-0).",
+            "J. Colgan singled up the middle (3-2 BBKFB).",
+            "B. Awad walked (3-1 KBBBB); J. Colgan advanced to second.",
+            "A. Rodriguez grounded into double play 3b to 1b (0-0); J. Colgan out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "N. Nicol struck out swinging (0-2 FFS).",
+            "S. Wicker singled to center field (0-0).",
+            "E. Kulhanek reached on a fielder's choice to pitcher, bunt (0-0); S. Wicker out at second p to ss.",
+            "E. Kulhanek stole second.",
+            "E. Kulhanek advanced to third on a wild pitch.",
+            "J. Polski singled up the middle, RBI (3-2 KBBBK); E. Kulhanek scored.",
+            "A. Delgado flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Mulhern singled to third base (2-1 BKB).",
+            "J. Colgan grounded out to c, SAC, bunt (1-1 FB); A. Mulhern advanced to second.",
+            "B. Awad walked (3-1 BBSBB).",
+            "A. Rodriguez fouled out to 1b (0-0).",
+            "N. Nicol reached on a fielder's choice to shortstop (2-1 FBB); B. Awad advanced to second; A. Mulhern advanced to third.",
+            "S. Wicker grounded out to ss (3-1 BKBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddy Bowen to 1b for Jordan Bennett.",
+            "Julia Raymond to p for Hadley Marchand.",
+            "Ashlyn Kenefick to rf for Grace Jenkins.",
+            "Kaley Laird to ss.",
+            "Reagan Lalor to lf.",
+            "E. Kulhanek lined out to cf (1-0 B).",
+            "J. Polski grounded out to 2b (0-1 S).",
+            "A. Delgado lined out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Mulhern singled to center field (1-0 B).",
+            "J. Colgan grounded out to 3b, SAC, bunt (0-0); A. Mulhern advanced to second.",
+            "B. Awad reached first on an error by ss (2-2 FFBB); A. Mulhern advanced to third.",
+            "B. Awad advanced to second.",
+            "A. Rodriguez struck out swinging (0-2 SKS).",
+            "N. Nicol grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Elizabeth Mitchell to lf.",
+            "Jenna Maus to dp for Taylor Lathrop.",
+            "Abby Thompson to c.",
+            "S. Wicker grounded out to ss (1-2 KBK).",
+            "E. Kulhanek walked (3-2 BKBBKFFFB).",
+            "J. Polski hit by pitch (3-1 BBKH); E. Kulhanek advanced to second.",
+            "A. Delgado flied out to ss (1-1 BF).",
+            "A. Mulhern flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lily Kenefick to 2b.",
+            "J. Colgan singled to center field (1-2 KSB).",
+            "B. Awad lined into double play ss to 1b (0-0); J. Colgan out on the play.",
+            "C. Lundin pinch hit for A. Rodriguez.",
+            "C. Lundin singled down the rf line (1-0 B).",
+            "S. Fredericks pinch ran for C. Lundin.",
+            "N. Nicol struck out swinging (0-2 KKS)."
           ]
         }
       ],
