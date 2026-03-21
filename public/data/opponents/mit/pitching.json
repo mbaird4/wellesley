@@ -1,92 +1,64 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-20T01:57:11.877Z",
+  "scrapedAt": "2026-03-21T01:51:04.864Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Blackett, Sarah",
+      "name": "Huang, Sharona",
       "w": 2,
       "l": 0,
-      "era": 2.33,
-      "app": 2,
-      "gs": 2,
+      "era": 1.4,
+      "app": 3,
+      "gs": 3,
       "cg": 1,
-      "sho": 1,
-      "sv": 0,
-      "ip": 9,
-      "h": 5,
-      "r": 3,
-      "er": 3,
-      "bb": 8,
-      "so": 9,
-      "hr": 0,
-      "whip": 1.44,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 32,
-      "bAvg": 0.156,
-      "wp": 1,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
-      "name": "Huang, Sharona",
-      "w": 1,
-      "l": 0,
-      "era": 2.63,
-      "app": 2,
-      "gs": 2,
-      "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 8,
-      "h": 10,
-      "r": 4,
+      "ip": 15,
+      "h": 14,
+      "r": 7,
       "er": 3,
       "bb": 7,
-      "so": 2,
+      "so": 3,
       "hr": 0,
-      "whip": 2.13,
+      "whip": 1.4,
       "doubles": 1,
       "triples": 0,
-      "ab": 33,
-      "bAvg": 0.303,
-      "wp": 0,
+      "ab": 58,
+      "bAvg": 0.241,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
       "sha": 1
     },
     {
-      "name": "Watson, Emily",
-      "w": 1,
+      "name": "Blackett, Sarah",
+      "w": 3,
       "l": 0,
-      "era": 3.5,
-      "app": 2,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
+      "era": 1.5,
+      "app": 3,
+      "gs": 3,
+      "cg": 2,
+      "sho": 2,
       "sv": 0,
-      "ip": 4,
+      "ip": 14,
       "h": 6,
-      "r": 2,
-      "er": 2,
-      "bb": 5,
-      "so": 3,
+      "r": 3,
+      "er": 3,
+      "bb": 10,
+      "so": 19,
       "hr": 0,
-      "whip": 2.75,
-      "doubles": 1,
+      "whip": 1.14,
+      "doubles": 2,
       "triples": 0,
-      "ab": 16,
-      "bAvg": 0.375,
+      "ab": 48,
+      "bAvg": 0.125,
       "wp": 1,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 0
     },
     {
       "name": "Johnston, Nicole",
@@ -115,6 +87,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 0
+    },
+    {
+      "name": "Watson, Emily",
+      "w": 1,
+      "l": 0,
+      "era": 3.5,
+      "app": 2,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 4,
+      "h": 6,
+      "r": 2,
+      "er": 2,
+      "bb": 5,
+      "so": 3,
+      "hr": 0,
+      "whip": 2.75,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 16,
+      "bAvg": 0.375,
+      "wp": 1,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     }
   ],
   "games": [
@@ -414,6 +414,145 @@
             "Emily Deleault singled to right center (0-2 KS); Emma Soule advanced to second.",
             "Piper Kinney flied out to rf (1-1 BF); Emily Deleault advanced to second; Emma Soule advanced to third.",
             "Jocelyn Harms grounded out to ss (2-2 BKSFBF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/university-of-wisconsin-la-crosse/boxscore/12750",
+      "date": "3/20/2026",
+      "opponent": "University Of Wisconsin La Crosse",
+      "pitchers": [
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Gonzalez grounded out to p (1-0 B).",
+            "Lindsay Steien flied out to cf (1-0 B).",
+            "Brooke Howard grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kasey Brouchoud flied out to rf (0-1 S).",
+            "Marissa Pease grounded out to 3b (0-1 K).",
+            "Laci Heppell grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Josie Flom flied out to lf (2-1 BKB).",
+            "Ava Jaehnke fouled out to 1b (0-1 K).",
+            "Chloe Brown grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Amber Gonzalez grounded out to 2b (0-0).",
+            "Lindsay Steien singled to left field (0-0).",
+            "Lindsay Steien stole second, advanced to third on an error by c.",
+            "Brooke Howard singled to center field, RBI (1-1 BF); Lindsay Steien scored, unearned.",
+            "Kasey Brouchoud lined into double play 2b (1-0 B); Brooke Howard out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Julia Mattiace to 1b for Amanda Huang.",
+            "Marissa Pease flied out to rf (0-0).",
+            "Laci Heppell grounded out to ss (2-1 BKB).",
+            "Josie Flom singled to shortstop (2-2 SBSB).",
+            "Ava Jaehnke reached on a fielder's choice (0-0); Josie Flom out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Arianna Kumar to ss for Sienna Wilson.",
+            "Chloe Brown lined out to lf (3-1 BSBB).",
+            "Amber Gonzalez grounded out to ss (3-1 BBFB).",
+            "Lindsay Steien grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brooke Howard reached first on an error by lf, advanced to second (0-1 S).",
+            "Kasey Brouchoud singled to center field, RBI (0-0); Brooke Howard scored, unearned.",
+            "Carly Gross pinch ran for Kasey Brouchoud.",
+            "Carly Gross stole second.",
+            "Marissa Pease struck out swinging, out at first c to 1b (1-2 BFSS).",
+            "Laci Heppell grounded out to ss (1-0 B); Carly Gross advanced to third.",
+            "Carly Gross scored on a wild pitch, unearned.",
+            "Josie Flom flied out to rf (2-1 BBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/salem-state-university/boxscore/12749",
+      "date": "3/20/2026",
+      "opponent": "Salem State University",
+      "pitchers": [
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Allison Frost struck out looking (1-2 BSKFFFK).",
+            "Samantha Gaona- Sullivan struck out swinging (1-2 KFBS).",
+            "Tara Perryman grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alanis Toledano singled (0-0).",
+            "Emma Quinn pinch ran for Alanis Toledano.",
+            "Abigail LaClair walked (3-2 BSBBSB); Emma Quinn advanced to second.",
+            "Giana Johanson struck out swinging (1-2 BSKS).",
+            "Ellie Kleinheinz walked (3-2 BSBBSB); Abigail LaClair advanced to second; Emma Quinn advanced to third.",
+            "Paige Souza popped up to 1b (0-0).",
+            "Alaina Giuliano struck out swinging (1-2 KBSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Allison Frost popped up to 2b (0-1 S).",
+            "Samantha Gaona- Sullivan flied out to cf (2-2 SBBF).",
+            "Tara Perryman struck out swinging (2-2 BSSBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Layla Thiessen to dp.",
+            "Nicole Johnston to lf.",
+            "Delaney Benevides to cf for Ellie Hasegawa.",
+            "Emma Quinn struck out swinging (1-2 SBSS).",
+            "Madison DeWitt pinch hit for Abigail LaClair.",
+            "Madison DeWitt grounded out to 1b unassisted (1-2 BKSF).",
+            "Kianny Mirabal-Nunez pinch hit for Giana Johanson.",
+            "Kianny Mirabal-Nunez struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kaaya Mehta to 3b.",
+            "Ellie Kleinheinz struck out swinging (2-2 FBKBS).",
+            "Isabelle Besser pinch hit for Paige Souza.",
+            "Isabelle Besser struck out swinging (2-2 BBKFS).",
+            "Hailey Ano struck out swinging (0-2 FSS)."
           ]
         }
       ],

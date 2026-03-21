@@ -1,61 +1,33 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-20T01:57:26.390Z",
+  "scrapedAt": "2026-03-21T01:51:22.019Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Ziccardi, Anna",
       "w": 1,
-      "l": 0,
-      "era": 1.17,
-      "app": 2,
-      "gs": 1,
-      "cg": 1,
+      "l": 1,
+      "era": 1.56,
+      "app": 3,
+      "gs": 2,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 12,
-      "h": 10,
-      "r": 6,
-      "er": 2,
-      "bb": 6,
-      "so": 9,
+      "ip": 18,
+      "h": 17,
+      "r": 8,
+      "er": 4,
+      "bb": 8,
+      "so": 12,
       "hr": 1,
-      "whip": 1.33,
-      "doubles": 1,
+      "whip": 1.39,
+      "doubles": 5,
       "triples": 0,
-      "ab": 45,
-      "bAvg": 0.222,
+      "ab": 68,
+      "bAvg": 0.25,
       "wp": 0,
       "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
-    {
-      "name": "Topel, Anna",
-      "w": 2,
-      "l": 2,
-      "era": 3.57,
-      "app": 4,
-      "gs": 4,
-      "cg": 1,
-      "sho": 0,
-      "sv": 0,
-      "ip": 17.2,
-      "h": 21,
-      "r": 12,
-      "er": 9,
-      "bb": 18,
-      "so": 13,
-      "hr": 1,
-      "whip": 2.21,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 72,
-      "bAvg": 0.292,
-      "wp": 1,
-      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 2
@@ -64,29 +36,57 @@
       "name": "Sealey, Lexi",
       "w": 1,
       "l": 0,
-      "era": 3.94,
-      "app": 4,
+      "era": 3.32,
+      "app": 5,
       "gs": 1,
       "cg": 1,
       "sho": 1,
       "sv": 1,
-      "ip": 10.2,
-      "h": 10,
-      "r": 6,
+      "ip": 12.2,
+      "h": 13,
+      "r": 8,
       "er": 6,
       "bb": 4,
-      "so": 3,
+      "so": 4,
       "hr": 0,
-      "whip": 1.31,
+      "whip": 1.34,
       "doubles": 0,
       "triples": 0,
-      "ab": 40,
-      "bAvg": 0.25,
+      "ab": 50,
+      "bAvg": 0.26,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
+    },
+    {
+      "name": "Topel, Anna",
+      "w": 2,
+      "l": 3,
+      "era": 4.32,
+      "app": 5,
+      "gs": 5,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 22.2,
+      "h": 29,
+      "r": 17,
+      "er": 14,
+      "bb": 20,
+      "so": 15,
+      "hr": 1,
+      "whip": 2.16,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 95,
+      "bAvg": 0.305,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     },
     {
       "name": "Vlacich, Katie",
@@ -761,6 +761,174 @@
             "Hannah Lappin walked (0-0).",
             "Hannah Lappin advanced to second; Fiona Casey advanced to third on a wild pitch.",
             "Hannah Irons flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/coe/boxscore/16085",
+      "date": "3/20/2026",
+      "opponent": "Coe",
+      "pitchers": [
+        "Ziccardi, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Keirah Wiseman struck out swinging (0-0).",
+            "Grace McCarty flied out to cf (0-0).",
+            "Maddie Harris singled to left field (0-0).",
+            "Irelynd Cejka flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jessica Meisinger grounded out to ss (0-0).",
+            "Natalie Hitt grounded out to 3b (0-0).",
+            "Morgan Hewitt struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Hadyn Shoots walked (0-0).",
+            "Taylor Drayfahl reached on a fielder's choice (0-0); Hadyn Shoots out at second ss to 2b.",
+            "Taylor Drayfahl stole second.",
+            "Keirah Wiseman singled to pitcher, bunt (0-0); Taylor Drayfahl advanced to third.",
+            "Keirah Wiseman stole second.",
+            "Grace McCarty lined into double play ss (0-0); Keirah Wiseman out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Harris doubled to left center (0-0).",
+            "Irelynd Cejka grounded into double play ss to 1b (0-0); Maddie Harris out on the play.",
+            "Jessica Meisinger walked (0-0).",
+            "Natalie Hitt doubled to left center, RBI (0-0); Jessica Meisinger scored.",
+            "Morgan Hewitt popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hadyn Shoots flied out to cf (0-0).",
+            "Taylor Drayfahl popped up to ss (0-0).",
+            "Keirah Wiseman reached first on a dropped fly by cf, advanced to second (0-0).",
+            "Grace McCarty flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddie Harris doubled to left field (0-0).",
+            "Irelynd Cejka singled to center field, RBI (0-0); Maddie Harris scored.",
+            "Irelynd Cejka out at second c to ss, caught stealing.",
+            "Jessica Meisinger flied out to lf (0-0).",
+            "Natalie Hitt doubled to left field (0-0).",
+            "Katelyn Bladecki pinch hit for Morgan Hewitt.",
+            "Katelyn Bladecki struck out looking (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-13-wisconsin-oshkosh/boxscore/16086",
+      "date": "3/20/2026",
+      "opponent": " 13 Wisconsin Oshkosh",
+      "pitchers": [
+        "Topel, Anna",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Olivia Ullman singled up the middle (0-0).",
+            "Emma Bohn singled to center field (0-0); Olivia Ullman advanced to second.",
+            "Sarah Hammerton out at first 1b to 2b, SAC, bunt (0-0); Emma Bohn advanced to second; Olivia Ullman advanced to third.",
+            "Amanda Martineck singled up the middle, advanced to second on a throwing error by cf, 2 RBI (0-0); Emma Bohn scored; Olivia Ullman scored.",
+            "Morgan Miller grounded out to ss (0-0).",
+            "Brianne Lopez flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mary Kate Quaid doubled down the lf line (0-0).",
+            "Kaelin Adair pinch ran for Mary Kate Quaid.",
+            "Josie Rammer grounded out to 3b (0-0); Kaelin Adair advanced to third.",
+            "Haylie Wittman struck out looking (0-0).",
+            "Olivia Ullman grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Anna Ziccardi to dp for Nicole Petrillo.",
+            "Emma Bohn grounded out to 3b (0-0).",
+            "Sarah Hammerton grounded out to ss (0-0).",
+            "Amanda Martineck grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Olivia Baugnet singled to pitcher, bunt (0-0).",
+            "Brianne Lopez grounded out to 1b unassisted (0-0); Olivia Baugnet advanced to second.",
+            "Mary Kate Quaid lined out to p (0-0).",
+            "Josie Rammer walked (0-0).",
+            "Haylie Wittman struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Ullman singled to center field (0-0).",
+            "Emma Bohn walked (0-0); Olivia Ullman advanced to second.",
+            "Sarah Hammerton reached on a fielder's choice to third base (0-0); Emma Bohn advanced to second; Olivia Ullman out at third 3b unassisted.",
+            "Amanda Martineck singled down the rf line, RBI (0-0); Sarah Hammerton advanced to third; Emma Bohn scored.",
+            "Amanda Martineck stole second.",
+            "Olivia Baugnet reached on a fielder's choice to pitcher, advanced to second, RBI (0-0); Amanda Martineck advanced to third; Sarah Hammerton scored.",
+            "Brianne Lopez singled to left field, RBI (0-0); Olivia Baugnet advanced to third; Amanda Martineck scored.",
+            "Brianne Lopez stole second.",
+            "Mary Kate Quaid popped up to 2b (0-0).",
+            "Josie Rammer popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lexi Sealy to p.",
+            "Charlotte Raymond to 1b.",
+            "Allie Cubberly to 2b for Ruby Madia.",
+            "Samantha Skivo to rf for Anna Topel.",
+            "Skyler Calmes pinch hit for Haylie Wittman.",
+            "Skyler Calmes reached first on a throwing error by ss (0-0).",
+            "Haylie Wittman pinch ran for Skyler Calmes.",
+            "Olivia Ullman out at first p to 2b, SAC, bunt (0-0); Haylie Wittman advanced to second.",
+            "Emma Bohn singled to right field (0-0); Haylie Wittman advanced to third.",
+            "Emma Bohn stole second.",
+            "Sarah Hammerton grounded out to ss, RBI (0-0); Emma Bohn advanced to third; Haylie Wittman scored, unearned.",
+            "Amanda Martineck reached first on a fielding error by 1b (0-0); Emma Bohn scored, unearned.",
+            "Autumn Freismuth pinch ran for Amanda Martineck.",
+            "Olivia Baugnet out at first p to 2b, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Charlotte Raymond to 1b for Izzy Burgess.",
+            "Brianne Lopez singled to first base (0-0).",
+            "Maddie Crick pinch hit for Mary Kate Quaid.",
+            "Maddie Crick singled down the rf line (0-0); Brianne Lopez advanced to third.",
+            "Josie Rammer struck out swinging (0-0).",
+            "Haylie Wittman reached on a fielder's choice to third base (0-0); Maddie Crick advanced to second.",
+            "Olivia Ullman flied into double play cf to ss (0-0); Maddie Crick out on the play."
           ]
         }
       ],

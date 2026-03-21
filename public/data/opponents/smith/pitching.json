@@ -1,59 +1,59 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-20T01:57:04.569Z",
+  "scrapedAt": "2026-03-21T01:50:55.745Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 1.62,
-      "app": 2,
-      "gs": 0,
-      "cg": 0,
+      "era": 1.34,
+      "app": 3,
+      "gs": 1,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 8.2,
-      "h": 6,
-      "r": 2,
-      "er": 2,
-      "bb": 2,
-      "so": 3,
+      "ip": 15.2,
+      "h": 10,
+      "r": 6,
+      "er": 3,
+      "bb": 4,
+      "so": 6,
       "hr": 1,
-      "whip": 0.92,
+      "whip": 0.89,
       "doubles": 0,
       "triples": 0,
-      "ab": 33,
-      "bAvg": 0.182,
+      "ab": 59,
+      "bAvg": 0.169,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 0
     },
     {
       "name": "Peverly, Violet",
       "w": 2,
-      "l": 2,
-      "era": 3.2,
-      "app": 5,
-      "gs": 4,
+      "l": 3,
+      "era": 4.57,
+      "app": 6,
+      "gs": 5,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 19.2,
-      "h": 18,
-      "r": 15,
-      "er": 9,
-      "bb": 14,
-      "so": 26,
-      "hr": 0,
-      "whip": 1.63,
+      "ip": 23,
+      "h": 28,
+      "r": 21,
+      "er": 15,
+      "bb": 16,
+      "so": 28,
+      "hr": 1,
+      "whip": 1.91,
       "doubles": 3,
-      "triples": 1,
-      "ab": 75,
-      "bAvg": 0.24,
+      "triples": 2,
+      "ab": 95,
+      "bAvg": 0.295,
       "wp": 2,
       "hbp": 1,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 8.4,
-      "app": 1,
+      "era": 10,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3.1,
-      "h": 5,
-      "r": 4,
-      "er": 4,
-      "bb": 3,
-      "so": 1,
-      "hr": 0,
-      "whip": 2.4,
-      "doubles": 1,
+      "ip": 7,
+      "h": 13,
+      "r": 10,
+      "er": 10,
+      "bb": 4,
+      "so": 2,
+      "hr": 1,
+      "whip": 2.43,
+      "doubles": 5,
       "triples": 0,
-      "ab": 15,
-      "bAvg": 0.333,
+      "ab": 34,
+      "bAvg": 0.382,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -583,6 +583,183 @@
             "Kiera Larson popped up to 2b (2-2 BBKFF).",
             "Eva Zuber flied out to cf to right center (1-0 B).",
             "Ariana Cray grounded out to 2b (1-1 KB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/franklin-and-marshall-college/boxscore/9745",
+      "date": "3/19/2026",
+      "opponent": "Franklin And Marshall College",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sara Hess grounded out to 2b (1-0 B).",
+            "Natalia Garza struck out looking (2-2 KBBFFK).",
+            "Morgan Risnychok grounded out to ss (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Steiner grounded out to ss (3-2 BSBBF).",
+            "Abby Favazza walked (3-2 BFSBFBB).",
+            "Grace Header singled (0-0); Abby Favazza advanced to second.",
+            "Cate Shrader popped up to 1b (3-1 KBBB).",
+            "Madison Martin lined out to lf (3-2 BFSBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erika Stewart singled to right field (2-0 BB).",
+            "Erika Stewart stole second.",
+            "Sara Hess reached first on an error by ss, RBI (2-0 BB); Erika Stewart scored.",
+            "Natalia Garza walked (3-0 BBBB); Sara Hess advanced to second.",
+            "Morgan Risnychok reached first on an error by p (0-0); Natalia Garza advanced to second; Sara Hess advanced to third.",
+            "Lauren Steiner popped up to ss (1-0 B).",
+            "Abby Favazza lined out to rf, sacrifice fly, RBI (1-1 KB); Natalia Garza advanced to third; Sara Hess scored, unearned.",
+            "Morgan Risnychok stole second; Natalia Garza stole home, unearned.",
+            "Grace Header singled up the middle, advanced to second, RBI (0-2 KS); Morgan Risnychok scored, unearned.",
+            "Cate Shrader flied out to cf (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Madison Martin struck out swinging (0-2 KFS).",
+            "Erika Stewart popped up to 3b (0-1 S).",
+            "Sara Hess flied out to rf (0-2 SS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Natalia Garza grounded out to ss (1-2 BKF).",
+            "Morgan Risnychok lined out to p (2-0 BB).",
+            "Lauren Steiner struck out swinging (1-2 BKSS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abby Favazza grounded out to 3b (1-2 BKS).",
+            "Grace Header singled through the right side (2-2 SBBK).",
+            "Cate Shrader popped up to c (1-1 BF).",
+            "Grace Header stole second.",
+            "Madison Martin grounded out to 3b (1-2 SFFFBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taz Tamai to lf for Maya Patankar.",
+            "Ayla Steinberg reached first on an error by 3b (0-0).",
+            "Kaitlin Herrick lined into double play p to 1b (1-1 KB); Ayla Steinberg out on the play.",
+            "Natalia Garza lined out to 3b (0-1 K)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/colby-college/boxscore/9746",
+      "date": "3/20/2026",
+      "opponent": "Colby College",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carissa Cassidy tripled to left field (0-0).",
+            "Kathryne Clay struck out swinging (0-0).",
+            "Ella Wilcox grounded out to c unassisted (0-0).",
+            "Juliana Kiley lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Caroline DeSimone walked (0-0).",
+            "Caroline DeSimone stole second.",
+            "Victoria Ramirez grounded out to 2b (0-0); Caroline DeSimone advanced to third.",
+            "Emma Burnham singled to left field, RBI (0-0); Caroline DeSimone scored.",
+            "Kelsey Sullivan singled to center field (0-0); Emma Burnham advanced to second.",
+            "Julia Berry singled (0-0); Kelsey Sullivan advanced to second; Emma Burnham advanced to third.",
+            "Carissa Cassidy flied out to lf (0-0).",
+            "Kathryne Clay grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Wilcox homered, RBI (0-0).",
+            "Juliana Kiley grounded out to ss (0-0).",
+            "Caroline DeSimone walked (0-0).",
+            "Caroline DeSimone advanced to second on a passed ball.",
+            "Victoria Ramirez struck out swinging (0-0).",
+            "Emma Burnham grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kelsey Sullivan singled (0-0).",
+            "Julia Berry singled (0-0); Kelsey Sullivan advanced to second.",
+            "Carissa Cassidy grounded out to 3b (0-0); Julia Berry advanced to second; Kelsey Sullivan advanced to third.",
+            "Avery Lyman pinch hit for Kathryne Clay.",
+            "Avery Lyman singled to center field, RBI (0-0); Julia Berry advanced to third; Kelsey Sullivan scored.",
+            "Avery Lyman stole second.",
+            "Ella Wilcox singled to center field, RBI (0-0); Avery Lyman advanced to third; Julia Berry scored.",
+            "Juliana Kiley singled, 2 RBI (0-0); Ella Wilcox scored; Avery Lyman scored.",
+            "Violet Peverly to dp.",
+            "Riley Veenstra to c.",
+            "Lindsay Bennett to p for Ava Lansbury.",
+            "Caroline DeSimone flied out to 1b (0-0).",
+            "Victoria Ramirez reached on a fielder's choice, out at second ss to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Burnham homered, RBI (0-0).",
+            "Kelsey Sullivan flied out to 3b (0-0).",
+            "Julia Berry flied out to cf (0-0).",
+            "Carissa Cassidy singled to left field (0-0).",
+            "Kathryne Clay flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alana Robinson to 2b for Elinor Washington.",
+            "Lily Hackett to 1b for Malaya Sumii.",
+            "Ella Wilcox flied out to c (0-0).",
+            "Juliana Kiley doubled (0-0).",
+            "Caroline DeSimone flied out to cf (0-0).",
+            "Victoria Ramirez doubled, RBI (0-0); Juliana Kiley scored.",
+            "Emma Burnham flied out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kelsey Sullivan doubled (0-0).",
+            "Julia Berry flied out to c (0-0).",
+            "Carissa Cassidy singled (0-0); Kelsey Sullivan advanced to third.",
+            "Kathryne Clay walked (0-0); Carissa Cassidy advanced to second.",
+            "Ella Wilcox struck out swinging (0-0).",
+            "Juliana Kiley singled, RBI (0-0); Kathryne Clay advanced to second; Carissa Cassidy advanced to third; Kelsey Sullivan scored.",
+            "Caroline DeSimone doubled, 2 RBI (0-0); Juliana Kiley scored; Kathryne Clay scored; Carissa Cassidy scored.",
+            "Victoria Ramirez grounded out to 3b (0-0)."
           ]
         }
       ],
