@@ -1,7 +1,7 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-21T12:44:06.917Z",
+  "scrapedAt": "2026-03-21T18:34:23.601Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -36,25 +36,25 @@
       "name": "DeCrescenzo, Ella",
       "w": 1,
       "l": 2,
-      "era": 3.26,
-      "app": 7,
+      "era": 3.82,
+      "app": 8,
       "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 19.1,
-      "h": 28,
-      "r": 13,
-      "er": 9,
+      "ip": 22,
+      "h": 34,
+      "r": 16,
+      "er": 12,
       "bb": 12,
-      "so": 10,
+      "so": 11,
       "hr": 0,
-      "whip": 2.07,
-      "doubles": 7,
+      "whip": 2.09,
+      "doubles": 8,
       "triples": 0,
-      "ab": 82,
-      "bAvg": 0.341,
-      "wp": 3,
+      "ab": 96,
+      "bAvg": 0.354,
+      "wp": 4,
       "hbp": 3,
       "bk": 0,
       "sfa": 0,
@@ -63,25 +63,25 @@
     {
       "name": "Lees, Jacelyn",
       "w": 2,
-      "l": 3,
-      "era": 3.82,
-      "app": 6,
-      "gs": 5,
+      "l": 4,
+      "era": 4.79,
+      "app": 7,
+      "gs": 6,
       "cg": 2,
       "sho": 1,
       "sv": 0,
-      "ip": 29.1,
-      "h": 39,
-      "r": 17,
-      "er": 16,
-      "bb": 6,
+      "ip": 30.2,
+      "h": 46,
+      "r": 24,
+      "er": 21,
+      "bb": 8,
       "so": 12,
       "hr": 0,
-      "whip": 1.53,
-      "doubles": 9,
-      "triples": 2,
-      "ab": 122,
-      "bAvg": 0.32,
+      "whip": 1.76,
+      "doubles": 12,
+      "triples": 3,
+      "ab": 133,
+      "bAvg": 0.346,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -1073,6 +1073,71 @@
             "E. Kulhanek pinch ran for M. Abernethy.",
             "T. Claybrook reached on a fielder's choice to shortstop (0-0); E. Kulhanek out at second ss to 2b.",
             "G. Jones reached on a fielder's choice to second base (2-1 FBB); T. Claybrook out at second 2b to ss."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wesleyan.edu/sports/softball/stats/2026/bowdoin/boxscore/27330",
+      "date": "3/21/2026",
+      "opponent": "Bowdoin",
+      "pitchers": [
+        "Lees, Jacelyn",
+        "DeCrescenzo, Ella"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anika Ewert doubled down the lf line (2-2 BBKF).",
+            "P. Fong-Picariello tripled to right field, RBI (3-2 BKBKB); Anika Ewert scored.",
+            "Sammie Wright popped up to ss (0-0).",
+            "M. Flannery-Goodman singled to left field, RBI (2-2 BKBS); P. Fong-Picariello scored.",
+            "Reilly Parga doubled to left field, RBI (0-1 F); M. Flannery-Goodman scored.",
+            "Chloe Garcia grounded out to p (2-2 BBFS); Reilly Parga advanced to third.",
+            "Maddie Paschke singled to center field, RBI (1-0 B); Reilly Parga scored.",
+            "Liv Barrett walked (3-2 BBSBSB); Maddie Paschke advanced to second.",
+            "Baylie Wong popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Anika Ewert singled through the right side (2-1 BFB).",
+            "Anika Ewert stole second.",
+            "P. Fong-Picariello grounded out to 1b unassisted (3-1 KBBB); Anika Ewert advanced to third.",
+            "Sammie Wright walked (3-1 BBKBB).",
+            "Sammie Wright stole second, advanced to third; Anika Ewert scored on an error by c, unearned.",
+            "M. Flannery-Goodman doubled to left field, RBI (0-2 KK); Sammie Wright scored.",
+            "Jacelyn Lees to dp.",
+            "Ella DeCrescenzo to p.",
+            "M. Flannery-Goodman advanced to third on a wild pitch.",
+            "Reilly Parga reached first on an error by 2b, RBI (2-1 FBB); M. Flannery-Goodman scored, unearned.",
+            "Chloe Garcia doubled to center field, RBI (0-0); Reilly Parga scored.",
+            "Maddie Paschke grounded out to ss (0-1 K).",
+            "Liv Barrett struck out swinging (3-2 BFSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Baylie Wong singled (3-1 BSBB).",
+            "Anika Ewert singled to right field (0-1 K); Baylie Wong advanced to second.",
+            "P. Fong-Picariello grounded out to 2b (2-0 BB); Anika Ewert advanced to second; Baylie Wong advanced to third.",
+            "Sammie Wright popped up to 2b (2-2 SFBB).",
+            "M. Flannery-Goodman singled, RBI (2-2 BBKF); Anika Ewert advanced to third; Baylie Wong scored.",
+            "Reilly Parga singled to center field, RBI (1-0 B); M. Flannery-Goodman advanced to second; Anika Ewert scored.",
+            "Chloe Garcia lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddie Paschke singled (1-0 B).",
+            "Ella Davies pinch ran for Maddie Paschke.",
+            "Liv Barrett grounded out to p (1-0 B); Ella Davies advanced to second.",
+            "Baylie Wong lined into double play ss unassisted (1-1 FB); Ella Davies out on the play."
           ]
         }
       ],

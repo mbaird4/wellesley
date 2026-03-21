@@ -1,7 +1,7 @@
 {
   "slug": "uww",
   "domain": "uwwsports.com",
-  "scrapedAt": "2026-03-21T12:44:27.005Z",
+  "scrapedAt": "2026-03-21T18:34:44.709Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -62,26 +62,26 @@
     },
     {
       "name": "DeBennette, Madi",
-      "w": 2,
+      "w": 3,
       "l": 1,
-      "era": 4.02,
-      "app": 5,
-      "gs": 4,
+      "era": 3.2,
+      "app": 6,
+      "gs": 5,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 15.2,
-      "h": 31,
+      "ip": 19.2,
+      "h": 32,
       "r": 13,
       "er": 9,
       "bb": 6,
-      "so": 12,
+      "so": 16,
       "hr": 0,
-      "whip": 2.36,
-      "doubles": 7,
+      "whip": 1.93,
+      "doubles": 8,
       "triples": 1,
-      "ab": 74,
-      "bAvg": 0.419,
+      "ab": 87,
+      "bAvg": 0.368,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
@@ -89,27 +89,55 @@
       "sha": 3
     },
     {
-      "name": "Marsh, Kaitlyn",
+      "name": "Lepak, Aubrey",
       "w": 0,
       "l": 0,
       "era": 0,
-      "app": 3,
-      "gs": 1,
+      "app": 2,
+      "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4,
-      "h": 4,
+      "ip": 2,
+      "h": 0,
       "r": 0,
       "er": 0,
-      "bb": 2,
-      "so": 3,
+      "bb": 1,
+      "so": 1,
       "hr": 0,
-      "whip": 1.5,
+      "whip": 0.5,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 5,
+      "bAvg": 0,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Marsh, Kaitlyn",
+      "w": 1,
+      "l": 0,
+      "era": 1,
+      "app": 4,
+      "gs": 2,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 7,
+      "h": 6,
+      "r": 1,
+      "er": 1,
+      "bb": 4,
+      "so": 5,
+      "hr": 0,
+      "whip": 1.43,
       "doubles": 1,
       "triples": 0,
-      "ab": 15,
-      "bAvg": 0.267,
+      "ab": 26,
+      "bAvg": 0.231,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -120,24 +148,24 @@
       "name": "Perez, Olivia",
       "w": 1,
       "l": 0,
-      "era": 4.85,
-      "app": 4,
+      "era": 3.94,
+      "app": 5,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4.1,
+      "ip": 5.1,
       "h": 7,
       "r": 3,
       "er": 3,
-      "bb": 5,
-      "so": 2,
+      "bb": 6,
+      "so": 4,
       "hr": 0,
-      "whip": 2.77,
+      "whip": 2.44,
       "doubles": 0,
       "triples": 0,
-      "ab": 20,
-      "bAvg": 0.35,
+      "ab": 23,
+      "bAvg": 0.304,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -1206,6 +1234,143 @@
             "Paige Cannon pinch ran for Ava Rao.",
             "Haley Petrucci struck out looking (2-2 BSSBFFFK).",
             "Jessie Lopez popped up to 1b (0-1 S)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/kalamazoo-college/boxscore/23109",
+      "date": "3/21/2026",
+      "opponent": "Kalamazoo College",
+      "pitchers": [
+        "DeBennette, Madi",
+        "Lepak, Aubrey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Macy Ward fouled out to 1b (2-2 KBBK).",
+            "Alyssa Hinkley struck out looking (1-2 BFSFK).",
+            "Grace Rocco grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Newlove popped up to 2b (0-2 FF).",
+            "Ella Neumann doubled to center field (3-2 BFBFB).",
+            "Jaycee Rider reached on a fielder's choice to pitcher (2-2 BFBK); Ella Neumann advanced to third.",
+            "Jaycee Rider out at second c to 2b, caught stealing.",
+            "Lily Evans struck out looking (3-2 KBBFBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ellery Stoltz to cf for Paige Abendroth.",
+            "Natalie Muellner to lf.",
+            "Kaitlyn Berkery struck out looking (0-0).",
+            "Ava Domzalski popped up to ss (0-0).",
+            "Macy Ward struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alyssa Hinkley fouled out to 3b (0-0).",
+            "Grace Rocco fouled out to lf (0-0).",
+            "Emma Newlove lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jj Jakosalem to c for Auburn Roberson.",
+            "Emma Giese to ss for Baley Berndt.",
+            "Rachel Radish to 1b for Amanda Turofsky.",
+            "Erin Grimsley to rf for Liv Ybarra.",
+            "Sierra Miller to 2b.",
+            "Belle Lapacek to dp.",
+            "Aubrey Lepak to p for Madi DeBennette.",
+            "Ella Neumann popped up to 2b (0-0).",
+            "Jaycee Rider struck out swinging, out at first c to 1b (0-0).",
+            "Lily Evans lined out to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://uwwsports.com/sports/softball/stats/2026/farmingdale-state-college/boxscore/23110",
+      "date": "3/21/2026",
+      "opponent": "Farmingdale State College",
+      "pitchers": [
+        "Marsh, Kaitlyn",
+        "Perez, Olivia",
+        "Lepak, Aubrey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashley Toro grounded out to 2b (0-1 K).",
+            "Bailey Hammock flied out to rf (2-1 BKB).",
+            "Madison Sturtz struck out swinging (2-2 BFFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Samantha Stolfi singled to left field (2-1 SBB).",
+            "Samantha Stolfi to dp for Lauren Varagnolo.",
+            "Lauren Varagnolo to 2b for Samantha Stolfi.",
+            "Alexandra Pole popped up to 3b (1-1 KB).",
+            "Emily Lopez walked (3-2 KBBFBFB); Lauren Varagnolo advanced to second.",
+            "Isabella Marchini lined out to rf (0-0).",
+            "Kiara Kegel walked (3-2 BKBFFBB); Emily Lopez advanced to second; Lauren Varagnolo advanced to third.",
+            "Nikole Galgano singled to left field, RBI (2-2 KBFB); Kiara Kegel advanced to second; Emily Lopez advanced to third; Lauren Varagnolo scored.",
+            "Ashley Toro struck out looking (0-2 KSK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bailey Hammock flied out to rf (0-0).",
+            "Madison Sturtz fouled out to 3b (2-2 FFFBB).",
+            "Samantha Stolfi flied out to cf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ellery Stoltz to cf for Bella Eggert.",
+            "Rachel Radish to 3b.",
+            "Grace Grabowy to ss.",
+            "Dani Peshia to 1b.",
+            "Jj Jakosalem to c for Emma Giese.",
+            "Erin Grimsley to rf.",
+            "Olivia Perez to p for Kaitlyn Marsh.",
+            "Alexandra Pole grounded out to 2b (1-1 BS).",
+            "Emily Lopez walked (3-2 BBBKSB).",
+            "Isabella Marchini struck out swinging (3-2 BBBKFK).",
+            "Deanna Ebert struck out swinging (2-2 BBSSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rachel Radish to 3b for Sierra Miller.",
+            "Grace Grabowy to ss for Baley Berndt.",
+            "Paige Abendroth to 1b.",
+            "Natalie Muellner to dp.",
+            "Belle Lapacek to lf.",
+            "Kaitlyn Weidemann to 2b for Maggie Ward.",
+            "Aubrey Lepak to p for Olivia Perez.",
+            "Natalie McMichael walked (3-0 BBBB).",
+            "Charley Callahan grounded into double play 2b to ss to 1b (1-2 BKF); Natalie McMichael out on the play.",
+            "Michelle Segura grounded out to ss (2-1 BBS)."
           ]
         }
       ],
