@@ -1,7 +1,7 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-21T01:51:04.864Z",
+  "scrapedAt": "2026-03-22T02:02:53.672Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,31 +34,59 @@
     },
     {
       "name": "Blackett, Sarah",
-      "w": 3,
+      "w": 4,
       "l": 0,
-      "era": 1.5,
-      "app": 3,
+      "era": 2.1,
+      "app": 4,
       "gs": 3,
       "cg": 2,
       "sho": 2,
       "sv": 0,
-      "ip": 14,
-      "h": 6,
-      "r": 3,
-      "er": 3,
-      "bb": 10,
-      "so": 19,
-      "hr": 0,
-      "whip": 1.14,
-      "doubles": 2,
+      "ip": 20,
+      "h": 17,
+      "r": 10,
+      "er": 6,
+      "bb": 11,
+      "so": 22,
+      "hr": 2,
+      "whip": 1.4,
+      "doubles": 3,
       "triples": 0,
-      "ab": 48,
-      "bAvg": 0.125,
-      "wp": 1,
+      "ab": 78,
+      "bAvg": 0.218,
+      "wp": 3,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
+    },
+    {
+      "name": "Watson, Emily",
+      "w": 2,
+      "l": 0,
+      "era": 6.42,
+      "app": 4,
+      "gs": 2,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 12,
+      "h": 21,
+      "r": 11,
+      "er": 11,
+      "bb": 9,
+      "so": 5,
+      "hr": 0,
+      "whip": 2.5,
+      "doubles": 5,
+      "triples": 0,
+      "ab": 53,
+      "bAvg": 0.396,
+      "wp": 2,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     },
     {
       "name": "Johnston, Nicole",
@@ -87,34 +115,6 @@
       "bk": 0,
       "sfa": 0,
       "sha": 0
-    },
-    {
-      "name": "Watson, Emily",
-      "w": 1,
-      "l": 0,
-      "era": 3.5,
-      "app": 2,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 6,
-      "r": 2,
-      "er": 2,
-      "bb": 5,
-      "so": 3,
-      "hr": 0,
-      "whip": 2.75,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 16,
-      "bAvg": 0.375,
-      "wp": 1,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
     }
   ],
   "games": [
@@ -553,6 +553,187 @@
             "Isabelle Besser pinch hit for Paige Souza.",
             "Isabelle Besser struck out swinging (2-2 BBKFS).",
             "Hailey Ano struck out swinging (0-2 FSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/amherst-college/boxscore/12751",
+      "date": "3/21/2026",
+      "opponent": "Amherst College",
+      "pitchers": [
+        "Watson, Emily",
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauren Ro singled to left field (1-0 B).",
+            "Lauren Ro advanced to second on a wild pitch.",
+            "May Mishima grounded out to 3b, SAC, bunt (2-0 BB); Lauren Ro advanced to third.",
+            "Lulu Leppard singled to left field, RBI (2-2 KBKBF); Lauren Ro scored.",
+            "Jayla Adkins reached on a fielder's choice, advanced to second on an error by 1b (0-0); Lulu Leppard out at second 3b to 2b.",
+            "Abby Moravek doubled to center field, RBI (0-1 F); Jayla Adkins scored.",
+            "Dylan Briggs singled to right field (1-1 KB); Abby Moravek advanced to third.",
+            "Dylan Briggs stole second.",
+            "Heidi Li walked (3-1 BBFBB).",
+            "Brooke Wild doubled to right field, 3 RBI (0-0); Heidi Li scored; Dylan Briggs scored; Abby Moravek scored.",
+            "Laura Daniels walked (3-2 BKKFBFBB).",
+            "Lauren Ro walked (3-2 BBFSBB); Laura Daniels advanced to second; Brooke Wild advanced to third.",
+            "May Mishima flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sarah Blackett to p for Emily Watson.",
+            "Lulu Leppard flied out to cf (0-1 K).",
+            "Jayla Adkins flied out to lf (1-1 FB).",
+            "Abby Moravek struck out looking (2-2 BBKKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Dylan Briggs flied out to lf (1-1 KB).",
+            "Heidi Li fouled out to 1b (3-1 BBBK).",
+            "Brooke Wild flied out to rf (2-2 BKBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Julia Mattiace to 1b for Amanda Huang.",
+            "Laura Daniels singled to third base (2-2 KBFBF).",
+            "Lauren Ro singled to left field (1-2 FFFFB); Laura Daniels advanced to second.",
+            "Lauren Ro advanced to second on a wild pitch; Laura Daniels advanced to third on a wild pitch.",
+            "May Mishima walked (3-1 BBKBB).",
+            "Lulu Leppard singled to center field, RBI (0-1 K); May Mishima advanced to second; Lauren Ro advanced to third; Laura Daniels scored.",
+            "Lulu Leppard advanced to second on a wild pitch; May Mishima advanced to third on a wild pitch; Lauren Ro out at home c to p.",
+            "Jayla Adkins struck out swinging (2-2 FBFBFS).",
+            "Abby Moravek flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dylan Briggs singled to left field (0-1 K).",
+            "Heidi Li popped up to ss (0-0).",
+            "Brooke Wild singled to center field (0-0); Dylan Briggs advanced to second.",
+            "Laura Daniels struck out swinging (0-2 SFFFFS).",
+            "Lauren Ro grounded out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "May Mishima singled to shortstop (2-2 BKBK).",
+            "Lulu Leppard popped up to ss (1-1 KB).",
+            "May Mishima stole second.",
+            "Jayla Adkins flied out to cf (2-2 BFBSFF).",
+            "Abby Moravek homered to right center, 2 RBI (3-2 FFBFBFBF); May Mishima scored.",
+            "Dylan Briggs doubled to left center (0-1 K).",
+            "Heidi Li flied out to cf (3-2 BFKBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brooke Wild singled to left field (1-1 BK).",
+            "Laura Daniels reached first on an error by cf (0-0); Brooke Wild advanced to second.",
+            "Lauren Ro lined out to 3b (0-0).",
+            "May Mishima fouled out to 1b (2-1 BBK).",
+            "Lulu Leppard singled to center field (1-2 KKB); Laura Daniels advanced to second; Brooke Wild advanced to third.",
+            "Jayla Adkins homered to center field, unearned, 4 RBI (1-1 FB); Lulu Leppard scored, unearned; Laura Daniels scored, unearned; Brooke Wild scored, unearned.",
+            "Abby Moravek reached first on an error by 2b (0-2 KF).",
+            "Julia O'Connell pinch ran for Abby Moravek.",
+            "Dylan Briggs flied out to cf (2-2 BFFB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/university-of-chicago/boxscore/12752",
+      "date": "3/21/2026",
+      "opponent": "University Of Chicago",
+      "pitchers": [
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madeline Murphy flied out to cf (1-1 KB).",
+            "Natalie Antin lined out to lf (3-1 BBFB).",
+            "Audrey Hui walked (3-1 BFBBB).",
+            "Mia Bocian struck out looking (1-2 KBFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Matilda Nelson singled to right field, out at second rf to ss (0-0).",
+            "Eleanor Johnson lined out to lf (2-2 BFKB).",
+            "Anna Jensen hit by pitch (2-0 BH).",
+            "Olivia Cataldo popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sedona Ding singled to left field (2-2 FBFB).",
+            "Madeline Murphy singled to left field (0-1 F); Sedona Ding advanced to second.",
+            "Natalie Antin flied out to lf (0-2 KF).",
+            "Audrey Hui singled to shortstop (0-1 K); Madeline Murphy advanced to second; Sedona Ding advanced to third.",
+            "Mia Bocian fouled out to 1b (0-0); Sedona Ding out at home p to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Matilda Nelson grounded out to p (0-2 KF).",
+            "Eleanor Johnson pinch hit for Marisa Lloveras.",
+            "Eleanor Johnson flied out to rf (0-0).",
+            "Anna Jensen flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Cataldo flied out to lf (1-1 FB).",
+            "Sedona Ding singled to left field (0-2 KF).",
+            "Madeline Murphy flied out to cf (1-0 B).",
+            "Natalie Antin doubled to left center, RBI (0-0); Sedona Ding scored.",
+            "Audrey Hui grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mia Bocian popped up to ss (3-2 BKBBS).",
+            "Matilda Nelson singled to left field (1-1 FB).",
+            "Ashlee Boodoo pinch ran for Matilda Nelson.",
+            "Eleanor Johnson popped up to ss (0-0).",
+            "Ashlee Boodoo stole second.",
+            "Anna Jensen singled to left center, advanced to second on the throw, RBI (3-2 KBBFB); Ashlee Boodoo scored.",
+            "Lakyn Wilkinson pinch ran for Anna Jensen.",
+            "Hannah Schwager pinch hit for Olivia Cataldo.",
+            "Hannah Schwager doubled to left field, RBI (0-2 KF); Lakyn Wilkinson scored.",
+            "Brianna Leech pinch ran for Hannah Schwager.",
+            "Sedona Ding singled, bunt, advanced to second, RBI (0-0); Brianna Leech scored.",
+            "Madeline Murphy flied out to cf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Natalie Antin fouled out to 3b (0-0).",
+            "Audrey Hui reached first on an error by p (1-0 B).",
+            "Mia Bocian flied out to rf (0-1 S).",
+            "Matilda Nelson struck out looking (2-2 KBSFBFFFK)."
           ]
         }
       ],

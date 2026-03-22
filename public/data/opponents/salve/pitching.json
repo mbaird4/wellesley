@@ -1,36 +1,36 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-03-21T01:50:59.048Z",
+  "scrapedAt": "2026-03-22T02:02:48.936Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 1,
-      "l": 0,
-      "era": 3.5,
-      "app": 3,
-      "gs": 1,
-      "cg": 1,
+      "l": 1,
+      "era": 2.74,
+      "app": 4,
+      "gs": 2,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 16,
-      "h": 19,
-      "r": 10,
-      "er": 8,
-      "bb": 2,
-      "so": 12,
+      "ip": 23,
+      "h": 21,
+      "r": 12,
+      "er": 9,
+      "bb": 4,
+      "so": 16,
       "hr": 0,
-      "whip": 1.31,
+      "whip": 1.09,
       "doubles": 2,
       "triples": 0,
-      "ab": 65,
-      "bAvg": 0.292,
+      "ab": 87,
+      "bAvg": 0.241,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Cronin, Emily",
@@ -63,25 +63,25 @@
     {
       "name": "Peterson, Caroline",
       "w": 0,
-      "l": 4,
-      "era": 9,
-      "app": 4,
-      "gs": 4,
-      "cg": 1,
+      "l": 5,
+      "era": 6.37,
+      "app": 5,
+      "gs": 5,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 11.2,
-      "h": 16,
-      "r": 21,
-      "er": 15,
-      "bb": 18,
-      "so": 15,
+      "ip": 18.2,
+      "h": 20,
+      "r": 23,
+      "er": 17,
+      "bb": 22,
+      "so": 20,
       "hr": 0,
-      "whip": 2.91,
-      "doubles": 3,
-      "triples": 1,
-      "ab": 49,
-      "bAvg": 0.327,
+      "whip": 2.25,
+      "doubles": 4,
+      "triples": 2,
+      "ab": 75,
+      "bAvg": 0.267,
       "wp": 8,
       "hbp": 1,
       "bk": 0,
@@ -612,6 +612,161 @@
             "Hannah Mitchem grounded out to 3b, SAC (0-0); Gabrielle Goonan advanced to third.",
             "Miranda Ranzoni grounded out to 1b, bunt unassisted (0-0).",
             "Nevaeh Lopez popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/bridgewater-state-university/boxscore/11755",
+      "date": "3/21/2026",
+      "opponent": "Bridgewater State University",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Angelina Lynch grounded out to ss (3-2 BKSBB).",
+            "Sydney Schaefer struck out swinging (0-0).",
+            "Makayla Ansell struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Aubrey Carberry struck out swinging (0-0).",
+            "Victoria Becker walked (0-0).",
+            "Victoria Becker stole second, advanced to third on a throwing error by c.",
+            "Olyvia Mendonca walked (0-0).",
+            "Isabel Bishop struck out swinging (0-0); Olyvia Mendonca stole second.",
+            "Emily Eastman fouled out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Staffier flied out to cf (0-0).",
+            "Angelina Lynch tripled to left field (0-0).",
+            "Sydney Schaefer doubled to left center, RBI (0-0); Angelina Lynch scored.",
+            "Makayla Ansell flied out to lf (0-0).",
+            "Aubrey Carberry fouled out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Victoria Becker popped up to ss (0-0).",
+            "Olyvia Mendonca lined out to 2b (0-0).",
+            "Isabel Bishop popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Eastman popped up to 1b (0-0).",
+            "Ella Staffier walked (0-0).",
+            "Ella Staffier stole second.",
+            "Angelina Lynch flied out to lf (0-0); Ella Staffier advanced to third.",
+            "Sydney Schaefer flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Makayla Ansell flied out to lf (0-0).",
+            "Aubrey Carberry grounded out to 3b (0-0).",
+            "Victoria Becker walked (0-0).",
+            "Victoria Becker stole second.",
+            "Olyvia Mendonca singled to right center, RBI (0-0); Victoria Becker scored.",
+            "Arihana Mercado pinch hit for Isabel Bishop.",
+            "Arihana Mercado singled to left center (0-0); Olyvia Mendonca advanced to second.",
+            "Emily Eastman reached on a fielder's choice (0-0); Arihana Mercado out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Skyla Oliveira to ss for Victoria Geisser.",
+            "Ella Staffier popped up to ss (0-0).",
+            "Angelina Lynch reached first on a fielding error by 3b (0-0).",
+            "Angelina Lynch stole second.",
+            "Sydney Schaefer grounded out to ss (0-0); Angelina Lynch advanced to third.",
+            "Makayla Ansell struck out looking (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/bridgewater-state-university/boxscore/11756",
+      "date": "3/21/2026",
+      "opponent": "Bridgewater State University",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Angelina Lynch flied out to lf (0-0).",
+            "Sydney Schaefer flied out to rf (0-0).",
+            "Makayla Ansell popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Aubrey Carberry grounded out to 3b (0-0).",
+            "Victoria Becker flied out to cf (0-0).",
+            "Olyvia Mendonca grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lily Gagnon lined out to 2b (0-0).",
+            "Isabel Bishop struck out swinging, out at first c to 1b (0-0).",
+            "Savanah Dubois struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Angelina Lynch walked (0-0).",
+            "Sydney Schaefer out at first 1b to 2b, SAC (0-0); Angelina Lynch advanced to second.",
+            "Makayla Ansell reached first on a fielding error by rf (0-0); Angelina Lynch advanced to third.",
+            "Makayla Ansell stole second.",
+            "Aubrey Carberry singled to left field, 2 RBI (0-0); Makayla Ansell scored, unearned; Angelina Lynch scored.",
+            "Aubrey Carberry out at second c to ss, caught stealing.",
+            "Victoria Becker singled to left field (0-0).",
+            "Olyvia Mendonca grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily Gagnon struck out swinging (0-0).",
+            "Isabel Bishop grounded out to 2b (0-0).",
+            "Savanah Dubois struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Angelina Lynch walked (0-0).",
+            "Sydney Schaefer fouled out to rf (0-0).",
+            "Makayla Ansell grounded out to 3b (0-0); Angelina Lynch advanced to second.",
+            "Aubrey Carberry flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Victoria Becker grounded out to 3b (0-0).",
+            "Olyvia Mendonca grounded out to 2b (0-0).",
+            "Lily Gagnon lined out to p (0-0)."
           ]
         }
       ],

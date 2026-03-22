@@ -1,31 +1,31 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-21T01:51:22.019Z",
+  "scrapedAt": "2026-03-22T02:03:07.088Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Ziccardi, Anna",
-      "w": 1,
+      "w": 2,
       "l": 1,
-      "era": 1.56,
-      "app": 3,
-      "gs": 2,
-      "cg": 2,
-      "sho": 0,
+      "era": 1.12,
+      "app": 4,
+      "gs": 3,
+      "cg": 3,
+      "sho": 1,
       "sv": 0,
-      "ip": 18,
-      "h": 17,
+      "ip": 25,
+      "h": 20,
       "r": 8,
       "er": 4,
-      "bb": 8,
-      "so": 12,
+      "bb": 11,
+      "so": 18,
       "hr": 1,
-      "whip": 1.39,
+      "whip": 1.24,
       "doubles": 5,
       "triples": 0,
-      "ab": 68,
-      "bAvg": 0.25,
+      "ab": 92,
+      "bAvg": 0.217,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -34,54 +34,54 @@
     },
     {
       "name": "Sealey, Lexi",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 3.32,
-      "app": 5,
+      "era": 3.96,
+      "app": 6,
       "gs": 1,
       "cg": 1,
       "sho": 1,
       "sv": 1,
-      "ip": 12.2,
-      "h": 13,
-      "r": 8,
-      "er": 6,
-      "bb": 4,
-      "so": 4,
+      "ip": 17.2,
+      "h": 25,
+      "r": 12,
+      "er": 10,
+      "bb": 6,
+      "so": 6,
       "hr": 0,
-      "whip": 1.34,
+      "whip": 1.75,
       "doubles": 0,
-      "triples": 0,
-      "ab": 50,
-      "bAvg": 0.26,
+      "triples": 1,
+      "ab": 75,
+      "bAvg": 0.333,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Topel, Anna",
       "w": 2,
       "l": 3,
-      "era": 4.32,
-      "app": 5,
-      "gs": 5,
+      "era": 4.26,
+      "app": 6,
+      "gs": 6,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 22.2,
-      "h": 29,
-      "r": 17,
-      "er": 14,
-      "bb": 20,
+      "ip": 24.2,
+      "h": 31,
+      "r": 18,
+      "er": 15,
+      "bb": 21,
       "so": 15,
       "hr": 1,
-      "whip": 2.16,
-      "doubles": 3,
+      "whip": 2.11,
+      "doubles": 4,
       "triples": 0,
-      "ab": 95,
-      "bAvg": 0.305,
+      "ab": 103,
+      "bAvg": 0.301,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
@@ -929,6 +929,182 @@
             "Josie Rammer struck out swinging (0-0).",
             "Haylie Wittman reached on a fielder's choice to third base (0-0); Maddie Crick advanced to second.",
             "Olivia Ullman flied into double play cf to ss (0-0); Maddie Crick out on the play."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/colby/boxscore/16087",
+      "date": "3/21/2026",
+      "opponent": "Colby",
+      "pitchers": [
+        "Topel, Anna",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lexi Sealy to p.",
+            "Anna Topel to dp.",
+            "Caroline DeSimone struck out swinging (0-0).",
+            "Carissa Cassidy tripled to left field (0-0).",
+            "Ella Wilcox singled to center field, RBI (0-0); Carissa Cassidy scored.",
+            "Juliana Kiley struck out swinging (0-0).",
+            "Victoria Ramirez singled to center field (0-0); Ella Wilcox advanced to second.",
+            "Emma Burnham singled to left field (0-0); Victoria Ramirez advanced to second; Ella Wilcox advanced to third.",
+            "Avery Lyman singled up the middle, 2 RBI (0-0); Emma Burnham advanced to second; Victoria Ramirez scored; Ella Wilcox scored.",
+            "Sophia Hammel reached on a fielder's choice (0-0); Avery Lyman advanced to second; Emma Burnham out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia Berry singled to shortstop (0-0).",
+            "Caroline DeSimone out at first 3b to 2b, SAC, bunt (0-0).",
+            "Carissa Cassidy lined out to p (0-0).",
+            "Ella Wilcox flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Devin McCall to 3b for Izzy Burgess.",
+            "Juliana Kiley grounded out to 3b (0-0).",
+            "Victoria Ramirez grounded out to ss (0-0).",
+            "Emma Burnham singled to left field (0-0).",
+            "Avery Lyman singled to center field (0-0); Emma Burnham advanced to second.",
+            "Sophia Hammel reached on a fielder's choice (0-0); Avery Lyman advanced to second; Emma Burnham out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Julia Berry singled to left field (0-0).",
+            "Caroline DeSimone singled to right field (0-0); Julia Berry out at second rf to ss.",
+            "Carissa Cassidy singled to third base, bunt (0-0); Caroline DeSimone advanced to second.",
+            "Ella Wilcox walked (0-0); Carissa Cassidy advanced to second; Caroline DeSimone advanced to third.",
+            "Juliana Kiley grounded out to ss, RBI (0-0); Ella Wilcox advanced to second; Carissa Cassidy advanced to third; Caroline DeSimone scored.",
+            "Victoria Ramirez grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Belle Dicampello to c for Nicole Petrillo.",
+            "Emma Burnham singled through the left side (0-0).",
+            "Avery Lyman grounded out to ss (0-0); Emma Burnham advanced to second.",
+            "Sophia Hammel flied out to cf (0-0).",
+            "Julia Berry walked (0-0).",
+            "Caroline DeSimone Dropped foul ball, E4 (0-0).",
+            "Caroline DeSimone flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Anna Topel to p.",
+            "Lexi Sealy to dp.",
+            "Carissa Cassidy lined out to cf (0-0).",
+            "Ella Wilcox singled to shortstop (0-0).",
+            "Juliana Kiley lined out to ss (0-0).",
+            "Victoria Ramirez doubled to left center, RBI (0-0); Ella Wilcox scored.",
+            "Emma Burnham walked (0-0).",
+            "Avery Lyman fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Sophia Hammel fouled out to c (0-0).",
+            "Julia Berry flied out to cf (0-0).",
+            "Caroline DeSimone popped up to ss (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/george-fox/boxscore/16088",
+      "date": "3/21/2026",
+      "opponent": "George Fox",
+      "pitchers": [
+        "Ziccardi, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Morgan Palmer struck out swinging (1-2 KBFS).",
+            "Corine Doran flied out to lf (1-0 B).",
+            "Tinley Taylor lined out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emily Benavidez flied out to rf (3-1 BBFB).",
+            "Makayla Noone popped up to 2b (0-0).",
+            "Kayla Mashino lined out to lf (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sami Stadtlander walked (3-1 BBBKB).",
+            "Mia Cantu struck out swinging (2-2 KBFBS).",
+            "Sami Stadtlander out at second c to 2b, caught stealing.",
+            "Kiley Harris walked (3-1 BBKBB).",
+            "Morgan Palmer grounded out to 1b unassisted (0-2 FS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Corine Doran singled to center field (2-1 BBK).",
+            "Tinley Taylor singled to left field (1-2 BFK); Corine Doran advanced to second.",
+            "Cami Nakamura pinch ran for Corine Doran.",
+            "Emily Benavidez struck out swinging (2-2 FBBKS).",
+            "Makayla Noone reached on a fielder's choice (2-2 SFBFBF); Tinley Taylor out at second ss to 2b; Cami Nakamura advanced to third.",
+            "Makayla Noone stole second.",
+            "Kayla Mashino struck out looking (1-2 KBFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sami Stadtlander walked (3-1 BBSBB).",
+            "Kylee Manibusan pinch hit for Mia Cantu.",
+            "Kylee Manibusan flied out to cf (0-1 F).",
+            "Kiley Harris flied out to cf (2-1 BKB).",
+            "Morgan Palmer struck out swinging, reached first on a passed ball (1-2 FSBS); Sami Stadtlander advanced to second.",
+            "Corine Doran reached on a fielder's choice (2-2 KBFFB); Morgan Palmer advanced to second; Sami Stadtlander out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Samantha Skivo to dp for Kay Laliberty.",
+            "Kay Laliberty to 2b for Samantha Skivo.",
+            "Tinley Taylor flied out to lf (3-2 BKBBF).",
+            "Emily Benavidez singled down the lf line (0-0).",
+            "Charlotte Brooke pinch hit for Makayla Noone.",
+            "Charlotte Brooke struck out looking (2-2 BKBFK).",
+            "Kayla Mashino popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maddy DeLong to ss for Nicole Petrillo.",
+            "Anna Ziccardi to p for Izzy Burgess.",
+            "Chrisilla Zagala pinch hit for Sami Stadtlander.",
+            "Chrisilla Zagala flied out to cf (0-0).",
+            "Bailey Hill pinch hit for Mia Cantu.",
+            "Bailey Hill flied out to cf (2-0 BB).",
+            "Gianna Baca pinch hit for Kiley Harris.",
+            "Gianna Baca flied out to cf (2-0 BB)."
           ]
         }
       ],
