@@ -1,92 +1,92 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-22T02:02:53.672Z",
+  "scrapedAt": "2026-03-23T02:04:12.884Z",
   "year": 2026,
   "pitchingStats": [
     {
+      "name": "Blackett, Sarah",
+      "w": 5,
+      "l": 0,
+      "era": 1.56,
+      "app": 5,
+      "gs": 4,
+      "cg": 3,
+      "sho": 3,
+      "sv": 0,
+      "ip": 27,
+      "h": 20,
+      "r": 10,
+      "er": 6,
+      "bb": 13,
+      "so": 29,
+      "hr": 2,
+      "whip": 1.22,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 101,
+      "bAvg": 0.198,
+      "wp": 3,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
       "name": "Huang, Sharona",
       "w": 2,
-      "l": 0,
-      "era": 1.4,
-      "app": 3,
-      "gs": 3,
+      "l": 1,
+      "era": 2.72,
+      "app": 4,
+      "gs": 4,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 15,
-      "h": 14,
-      "r": 7,
-      "er": 3,
-      "bb": 7,
+      "ip": 18,
+      "h": 21,
+      "r": 11,
+      "er": 7,
+      "bb": 8,
       "so": 3,
       "hr": 0,
-      "whip": 1.4,
+      "whip": 1.61,
       "doubles": 1,
       "triples": 0,
-      "ab": 58,
-      "bAvg": 0.241,
-      "wp": 1,
+      "ab": 74,
+      "bAvg": 0.284,
+      "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
       "sha": 1
     },
     {
-      "name": "Blackett, Sarah",
-      "w": 4,
-      "l": 0,
-      "era": 2.1,
-      "app": 4,
-      "gs": 3,
-      "cg": 2,
-      "sho": 2,
-      "sv": 0,
-      "ip": 20,
-      "h": 17,
-      "r": 10,
-      "er": 6,
-      "bb": 11,
-      "so": 22,
-      "hr": 2,
-      "whip": 1.4,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 78,
-      "bAvg": 0.218,
-      "wp": 3,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 0
-    },
-    {
       "name": "Watson, Emily",
       "w": 2,
       "l": 0,
-      "era": 6.42,
-      "app": 4,
+      "era": 5.69,
+      "app": 5,
       "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 12,
-      "h": 21,
-      "r": 11,
-      "er": 11,
-      "bb": 9,
+      "ip": 16,
+      "h": 27,
+      "r": 14,
+      "er": 13,
+      "bb": 10,
       "so": 5,
       "hr": 0,
-      "whip": 2.5,
-      "doubles": 5,
+      "whip": 2.31,
+      "doubles": 6,
       "triples": 0,
-      "ab": 53,
-      "bAvg": 0.396,
+      "ab": 68,
+      "bAvg": 0.397,
       "wp": 2,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
-      "sfa": 0,
-      "sha": 2
+      "sfa": 1,
+      "sha": 4
     },
     {
       "name": "Johnston, Nicole",
@@ -734,6 +734,176 @@
             "Audrey Hui reached first on an error by p (1-0 B).",
             "Mia Bocian flied out to rf (0-1 S).",
             "Matilda Nelson struck out looking (2-2 KBSFBFFFK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/the-college-of-wooster/boxscore/12754",
+      "date": "3/22/2026",
+      "opponent": "The College Of Wooster",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Tori Conner flied out to cf (1-1 BF).",
+            "Emma Hetkey lined out to 2b (0-0).",
+            "Julia Jennings singled to shortstop (0-2 KK).",
+            "Cate Barkdoll singled to shortstop (2-1 KBB); Julia Jennings advanced to second.",
+            "Ella Wolff grounded out to ss (3-2 FBSBFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella McCabe grounded out to 1b unassisted (1-2 KKB).",
+            "Peyton Nicholson popped up to 2b (1-2 FSB).",
+            "Jillian Meszaros flied out to rf (3-1 BBKB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Larken Koran singled to right field (0-0).",
+            "Tori Conner grounded out to 3b (0-1 K); Larken Koran advanced to second.",
+            "Emma Hetkey singled to pitcher (3-2 BBBKF); Larken Koran advanced to third.",
+            "Emma Hetkey stole second.",
+            "Julia Jennings singled up the middle, RBI (1-0 B); Emma Hetkey advanced to third; Larken Koran scored.",
+            "Cate Barkdoll singled up the middle, RBI (2-2 BKKB); Julia Jennings advanced to second; Emma Hetkey scored.",
+            "Ella Wolff grounded out to p (0-0); Cate Barkdoll advanced to second; Julia Jennings advanced to third.",
+            "Cate Barkdoll advanced to third; Julia Jennings scored on a wild pitch.",
+            "Ella McCabe singled up the middle, RBI (1-1 BF); Cate Barkdoll scored.",
+            "Ella McCabe stole second.",
+            "Peyton Nicholson walked (3-2 KKBFBBB).",
+            "Jillian Meszaros grounded out to 3b (2-2 BKBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lauren Sundquist to 1b.",
+            "Julia Mattiace to dp.",
+            "Emily Watson to p for Sharona Huang.",
+            "Larken Koran hit by pitch (1-1 SH).",
+            "Larken Koran out at first 1b unassisted, runner left early.",
+            "Tori Conner flied out to lf (3-1 BBKB).",
+            "Emma Hetkey walked (3-1 BFBBB).",
+            "Emma Hetkey stole second.",
+            "Julia Jennings singled through the left side (2-2 FFBB); Emma Hetkey advanced to third.",
+            "Cate Barkdoll singled through the left side, RBI (2-1 BBK); Julia Jennings advanced to second; Emma Hetkey scored.",
+            "Ella Wolff fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella McCabe flied out to cf (0-1 K).",
+            "Peyton Nicholson doubled to left field (1-2 KKB).",
+            "Sage Lammlein pinch hit for Jillian Meszaros.",
+            "Sage Lammlein flied out to rf (0-1 F).",
+            "Larken Koran fouled out to c (3-2 KBFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Tori Conner reached first on a fielding error by 3b (2-1 BFB).",
+            "Emma Hetkey out at first 3b to 2b, SAC, bunt (1-1 BF); Tori Conner advanced to second.",
+            "Julia Jennings flied out to cf (1-0 B).",
+            "Cate Barkdoll singled to center field, advanced to second on the throw, RBI (2-1 BKB); Tori Conner scored, unearned.",
+            "Ella Wolff popped up to 2b (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ella McCabe singled to center field (0-0).",
+            "Peyton Nicholson out at first 3b to 2b, SAC, bunt (1-0 B); Ella McCabe advanced to second.",
+            "Jasmine Mueller pinch hit for Jillian Meszaros.",
+            "Jasmine Mueller singled up the middle (1-1 BK); Ella McCabe advanced to third.",
+            "Larken Koran flied out to cf, sacrifice fly, RBI (0-0); Jasmine Mueller advanced to second on the throw; Ella McCabe scored.",
+            "Tori Conner popped up to 2b (0-1 K)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/university-of-wisconsin-oshkosh/boxscore/12753",
+      "date": "3/22/2026",
+      "opponent": "University Of Wisconsin Oshkosh",
+      "pitchers": [
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Olivia Ullman singled through the left side (0-0).",
+            "Emma Bohn out at first 3b to 2b, SAC, bunt (0-0); Olivia Ullman advanced to second.",
+            "Sarah Hammerton walked (0-0).",
+            "Amanda Martineck struck out swinging (0-0).",
+            "Morgan Miller fouled out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Brianne Lopez struck out swinging (0-0).",
+            "Mary Kate Quaid walked (0-0).",
+            "Autumn Freismuth pinch ran for Mary Kate Quaid.",
+            "Haylie Wittman struck out swinging (0-0).",
+            "Olivia Baugnet grounded out to 3b, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Ullman fouled out to 1b (0-0).",
+            "Emma Bohn grounded out to ss (0-0).",
+            "Sarah Hammerton popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Amanda Martineck struck out swinging (0-0).",
+            "Morgan Miller struck out swinging (0-0).",
+            "Brianne Lopez singled to first base (0-0).",
+            "Mary Kate Quaid popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Haylie Wittman flied out to rf (0-0).",
+            "Josie Rammer pinch hit for Olivia Baugnet.",
+            "Josie Rammer popped up to 2b (0-0).",
+            "Olivia Ullman doubled down the lf line (0-0).",
+            "Emma Bohn popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sarah Hammerton flied out to lf (0-0).",
+            "Amanda Martineck popped up to 2b (0-0).",
+            "Morgan Miller grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brianne Lopez struck out swinging (0-0).",
+            "Kendra Baumeister pinch hit for Mary Kate Quaid.",
+            "Kendra Baumeister grounded out to ss (0-0).",
+            "Maddie Crick pinch hit for Haylie Wittman.",
+            "Maddie Crick struck out swinging (0-0)."
           ]
         }
       ],

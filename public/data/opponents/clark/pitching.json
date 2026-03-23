@@ -1,31 +1,31 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-22T02:03:03.327Z",
+  "scrapedAt": "2026-03-23T02:04:24.592Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 2.27,
-      "app": 4,
-      "gs": 3,
-      "cg": 3,
+      "era": 2.65,
+      "app": 5,
+      "gs": 4,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 24.2,
-      "h": 27,
-      "r": 8,
-      "er": 8,
-      "bb": 5,
-      "so": 33,
+      "ip": 31.2,
+      "h": 35,
+      "r": 13,
+      "er": 12,
+      "bb": 9,
+      "so": 48,
       "hr": 2,
-      "whip": 1.3,
-      "doubles": 3,
+      "whip": 1.39,
+      "doubles": 5,
       "triples": 0,
-      "ab": 100,
-      "bAvg": 0.27,
+      "ab": 131,
+      "bAvg": 0.267,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
@@ -821,6 +821,101 @@
             "Bella Reuss struck out swinging (1-2 SBKS).",
             "Gabrielle Yamoah struck out swinging (1-2 SBFS).",
             "Madison Heimann flied out to lf (0-2 KK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/massachusetts-maritime-academy/boxscore/19236",
+      "date": "3/22/2026",
+      "opponent": "Massachusetts Maritime Academy",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reagan Kerecz singled to right center (0-2 KF).",
+            "Hannah Burton doubled to left center (0-2 KF); Reagan Kerecz advanced to third.",
+            "Kelsey Booker singled down the rf line, 2 RBI (0-1 S); Hannah Burton scored; Reagan Kerecz scored.",
+            "Ab'c'de Patane lined out to 2b (0-2 SF).",
+            "Abbey Doherty struck out swinging (0-2 SSS).",
+            "Carlee Hiddemen struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mikale Lemons struck out swinging (2-2 KSBBS).",
+            "Natalie Gale Dropped foul ball, E7 (0-2 SSF).",
+            "Natalie Gale struck out looking (0-2 SSFK).",
+            "Nyomi Simental struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Reagan Kerecz singled to left field (2-1 BFB).",
+            "Hannah Burton struck out swinging (1-2 KKBFS).",
+            "Kelsey Booker grounded out to ss (0-1 K); Reagan Kerecz advanced to second.",
+            "Reagan Kerecz advanced to third on a passed ball.",
+            "Ab'c'de Patane struck out swinging (1-2 SSBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abbey Doherty struck out swinging (2-2 SBSBS).",
+            "Carlee Hiddemen walked (3-2 FBKFBBB).",
+            "Kailyn Durham pinch ran for Carlee Hiddemen.",
+            "Mikale Lemons struck out swinging (2-2 KBSBS).",
+            "Camryn Whitman pinch hit for Natalie Gale.",
+            "Camryn Whitman struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jennifer Albano to cf for Erin Slavin.",
+            "Lexi LeBlanc pinch hit for Nyomi Simental.",
+            "Lexi LeBlanc walked (3-1 BBBKB).",
+            "Nyomi Simental pinch ran for Lexi LeBlanc.",
+            "Reagan Kerecz reached first on a fielding error by cf (0-0); Nyomi Simental advanced to second.",
+            "Hannah Burton reached on a fielder's choice (1-2 KBF); Reagan Kerecz advanced to second; Nyomi Simental out at third ss to 3b.",
+            "Kelsey Booker singled up the middle, RBI (1-2 SFFFB); Hannah Burton advanced to third; Reagan Kerecz scored, unearned.",
+            "Kelsey Booker stole second.",
+            "Ab'c'de Patane walked (3-2 FBBBFB).",
+            "Abbey Doherty struck out swinging (0-2 KSS).",
+            "Carlee Hiddemen pinch hit for Kailyn Durham.",
+            "Carlee Hiddemen struck out swinging (2-2 KBFBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Felicia Salvati to 1b for Gwen Castro.",
+            "Mikale Lemons singled to pitcher, bunt (0-0).",
+            "Natalie Gale flied out to lf (0-0).",
+            "Mikale Lemons stole second.",
+            "Mikale Lemons stole third.",
+            "Nyomi Simental struck out swinging (2-2 BFSBS).",
+            "Reagan Kerecz grounded out to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Hannah Burton singled to right field, advanced to second on an error by rf (3-2 BBFFFB).",
+            "Kelsey Booker reached first on a throwing error by ss (0-2 FK).",
+            "Eva Warren pinch ran for Kelsey Booker.",
+            "Ab'c'de Patane flied out to rf (0-1 S); Hannah Burton advanced to third.",
+            "Eva Warren advanced to second on the throw.",
+            "Abbey Doherty struck out looking (1-2 BKFK).",
+            "Carlee Hiddemen doubled to left field, ground-rule, 2 RBI (0-1 K); Eva Warren scored; Hannah Burton scored.",
+            "Mikale Lemons walked (3-2 KFBBBB).",
+            "Natalie Gale struck out swinging (0-2 SFFFS)."
           ]
         }
       ],
