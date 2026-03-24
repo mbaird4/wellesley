@@ -1,7 +1,7 @@
 {
   "slug": "wesleyan",
   "domain": "athletics.wesleyan.edu",
-  "scrapedAt": "2026-03-23T02:04:47.016Z",
+  "scrapedAt": "2026-03-24T01:56:23.636Z",
   "year": 2026,
   "hitting": {
     "players": [
@@ -36,7 +36,7 @@
         "jerseyNumber": 3,
         "avg": 0.4,
         "ops": 0.907,
-        "gp": 10,
+        "gp": 11,
         "gs": 8,
         "ab": 25,
         "r": 5,
@@ -908,11 +908,25 @@
       {
         "name": "Baker, Kelly",
         "jerseyNumber": 10,
-        "tc": 28,
-        "po": 8,
+        "tc": 27,
+        "po": 7,
         "a": 16,
         "e": 4,
-        "fldPct": 0.857,
+        "fldPct": 0.852,
+        "dp": 1,
+        "sba": 0,
+        "csb": 0,
+        "pb": 0,
+        "ci": 0
+      },
+      {
+        "name": "Killion, Jordynn",
+        "jerseyNumber": 3,
+        "tc": 25,
+        "po": 12,
+        "a": 8,
+        "e": 5,
+        "fldPct": 0.8,
         "dp": 1,
         "sba": 0,
         "csb": 0,
@@ -929,20 +943,6 @@
         "fldPct": 0.8,
         "dp": 0,
         "sba": 9,
-        "csb": 0,
-        "pb": 0,
-        "ci": 0
-      },
-      {
-        "name": "Killion, Jordynn",
-        "jerseyNumber": 3,
-        "tc": 24,
-        "po": 11,
-        "a": 8,
-        "e": 5,
-        "fldPct": 0.792,
-        "dp": 1,
-        "sba": 0,
         "csb": 0,
         "pb": 0,
         "ci": 0
