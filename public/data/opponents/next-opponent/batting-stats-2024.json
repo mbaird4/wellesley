@@ -1,7 +1,7 @@
 {
   "slug": "nichols",
   "domain": "nicholsathletics.com",
-  "scrapedAt": "2026-03-25T17:47:32.431Z",
+  "scrapedAt": "2026-03-25T23:23:21.439Z",
   "year": 2024,
   "teamGames": 44,
   "players": [
@@ -216,41 +216,6 @@
       }
     },
     {
-      "name": "Riley Chartier",
-      "jerseyNumber": 16,
-      "classYear": "Senior",
-      "position": "Outfield",
-      "bats": "R",
-      "season": {
-        "year": 2024,
-        "name": "Chartier, Riley",
-        "avg": 0.168,
-        "ops": 0.436,
-        "gp": 42,
-        "gs": 42,
-        "ab": 95,
-        "r": 13,
-        "h": 16,
-        "doubles": 4,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 5,
-        "tb": 20,
-        "slg": 0.211,
-        "bb": 7,
-        "hbp": 0,
-        "so": 21,
-        "gdp": 0,
-        "obp": 0.225,
-        "sf": 0,
-        "sh": 2,
-        "sb": 2,
-        "sbAtt": 2,
-        "woba": 0.184,
-        "pa": 104
-      }
-    },
-    {
       "name": "Hannah  Cozza",
       "jerseyNumber": 7,
       "classYear": "Junior",
@@ -283,6 +248,41 @@
         "sbAtt": 1,
         "woba": 0.191,
         "pa": 22
+      }
+    },
+    {
+      "name": "Riley Chartier",
+      "jerseyNumber": 16,
+      "classYear": "Senior",
+      "position": "Outfield",
+      "bats": "R",
+      "season": {
+        "year": 2024,
+        "name": "Chartier, Riley",
+        "avg": 0.168,
+        "ops": 0.436,
+        "gp": 42,
+        "gs": 42,
+        "ab": 95,
+        "r": 13,
+        "h": 16,
+        "doubles": 4,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 5,
+        "tb": 20,
+        "slg": 0.211,
+        "bb": 7,
+        "hbp": 0,
+        "so": 21,
+        "gdp": 0,
+        "obp": 0.225,
+        "sf": 0,
+        "sh": 2,
+        "sb": 2,
+        "sbAtt": 2,
+        "woba": 0.184,
+        "pa": 104
       }
     },
     {

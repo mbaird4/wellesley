@@ -1,36 +1,36 @@
 {
   "slug": "nichols",
   "domain": "nicholsathletics.com",
-  "scrapedAt": "2026-03-25T17:47:36.510Z",
+  "scrapedAt": "2026-03-25T23:23:26.056Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Pedro, Olivia",
       "w": 5,
       "l": 3,
-      "era": 3.29,
-      "app": 9,
-      "gs": 6,
+      "era": 3.44,
+      "app": 10,
+      "gs": 7,
       "cg": 4,
       "sho": 2,
       "sv": 0,
-      "ip": 38.1,
-      "h": 56,
-      "r": 33,
-      "er": 18,
+      "ip": 38.2,
+      "h": 58,
+      "r": 34,
+      "er": 19,
       "bb": 7,
       "so": 17,
       "hr": 1,
-      "whip": 1.64,
+      "whip": 1.68,
       "doubles": 11,
       "triples": 2,
-      "ab": 174,
-      "bAvg": 0.322,
+      "ab": 176,
+      "bAvg": 0.33,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "Medor, Molly",
@@ -63,30 +63,30 @@
     {
       "name": "Pericello, Alyssa",
       "w": 0,
-      "l": 0,
-      "era": 4.67,
-      "app": 4,
+      "l": 1,
+      "era": 1.45,
+      "app": 5,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3,
-      "h": 6,
-      "r": 3,
+      "ip": 9.2,
+      "h": 10,
+      "r": 4,
       "er": 2,
-      "bb": 4,
-      "so": 0,
+      "bb": 5,
+      "so": 1,
       "hr": 0,
-      "whip": 3.33,
-      "doubles": 2,
+      "whip": 1.55,
+      "doubles": 3,
       "triples": 0,
-      "ab": 14,
-      "bAvg": 0.429,
-      "wp": 0,
-      "hbp": 0,
+      "ab": 37,
+      "bAvg": 0.27,
+      "wp": 1,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "McNamee, Ally",
@@ -1156,6 +1156,90 @@
             "Charis Fenter pinch ran for Lily Newhall.",
             "Charis Fenter advanced to second on a wild pitch.",
             "Claire Basaldua grounded out to 2b (2-2 FBBKF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://nicholsathletics.com/sports/softball/stats/2026/wellesley-college-dh-/boxscore/11685",
+      "date": "3/25/2026",
+      "opponent": "Wellesley College Dh ",
+      "pitchers": [
+        "Pedro, Olivia",
+        "Pericello, Alyssa"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern singled to left center (2-2 SBFB).",
+            "A. Delgado grounded out to 3b, SAC (1-0 B); A. Mulhern advanced to second.",
+            "J. Colgan singled to center field, RBI (1-2 FBFF); A. Mulhern scored.",
+            "Alyssa Pericello to p.",
+            "Olivia Pedro to dp.",
+            "J. Colgan advanced to second on a wild pitch.",
+            "B. Awad flied out to cf (1-0 B); J. Colgan advanced to third.",
+            "N. Nicol flied out to rf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Kulhanek struck out swinging (2-2 KBBFS).",
+            "A. Rodriguez hit by pitch (2-1 BFH).",
+            "E. Gaunce grounded out to ss (0-0); A. Rodriguez advanced to second.",
+            "J. Polski popped up to 1b (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Mulhern flied out to rf (2-1 BBF).",
+            "A. Delgado singled to right field (3-2 BKBBF).",
+            "J. Colgan grounded out to 2b (0-0); A. Delgado advanced to second.",
+            "B. Awad grounded out to 1b unassisted (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Nicol doubled to left center (1-2 KSB).",
+            "E. Kulhanek reached first on a fielding error by 2b (0-1 F); N. Nicol scored, unearned.",
+            "A. Rodriguez popped up to ss (0-1 K).",
+            "E. Kulhanek stole second.",
+            "E. Gaunce reached on a fielder's choice (2-0 BB); E. Kulhanek advanced to third, out at home ss to 2b to c.",
+            "J. Polski popped up to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Mulhern walked (3-1 BFBBB).",
+            "A. Delgado grounded into double play 1b to 2b to ss (0-0); A. Mulhern out on the play.",
+            "J. Colgan flied out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "B. Awad grounded out to 2b (0-1 K).",
+            "N. Nicol grounded out to 3b (1-2 SBK).",
+            "E. Kulhanek singled to left field (3-1 KBBB).",
+            "M. Abernethy pinch hit for A. Rodriguez.",
+            "M. Abernethy grounded out to 3b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Sydney Manzione to 3b for Mary Jo-Laudati.",
+            "S. Wicker pinch hit for E. Gaunce.",
+            "S. Wicker singled up the middle (1-0 B).",
+            "E. Gaunce pinch ran for S. Wicker.",
+            "J. Polski out at first 1b to 2b, SAC (0-1 K); E. Gaunce advanced to second.",
+            "A. Mulhern grounded out to 2b (1-1 BF); E. Gaunce advanced to third.",
+            "A. Delgado flied out to cf (2-1 BBK)."
           ]
         }
       ],
