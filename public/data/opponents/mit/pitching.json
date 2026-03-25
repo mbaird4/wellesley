@@ -1,36 +1,36 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-24T01:55:47.960Z",
+  "scrapedAt": "2026-03-25T02:01:40.599Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blackett, Sarah",
       "w": 5,
       "l": 0,
-      "era": 1.56,
-      "app": 5,
-      "gs": 4,
+      "era": 2.16,
+      "app": 6,
+      "gs": 5,
       "cg": 3,
       "sho": 3,
       "sv": 0,
-      "ip": 27,
-      "h": 20,
-      "r": 10,
-      "er": 6,
-      "bb": 13,
-      "so": 29,
+      "ip": 32.1,
+      "h": 30,
+      "r": 14,
+      "er": 10,
+      "bb": 14,
+      "so": 34,
       "hr": 2,
-      "whip": 1.22,
-      "doubles": 4,
-      "triples": 0,
-      "ab": 101,
-      "bAvg": 0.198,
-      "wp": 3,
-      "hbp": 1,
+      "whip": 1.36,
+      "doubles": 6,
+      "triples": 1,
+      "ab": 125,
+      "bAvg": 0.24,
+      "wp": 4,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Huang, Sharona",
@@ -62,26 +62,26 @@
     },
     {
       "name": "Watson, Emily",
-      "w": 2,
+      "w": 3,
       "l": 0,
-      "era": 5.69,
-      "app": 5,
-      "gs": 2,
+      "era": 5.41,
+      "app": 6,
+      "gs": 3,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 16,
-      "h": 27,
-      "r": 14,
-      "er": 13,
-      "bb": 10,
-      "so": 5,
-      "hr": 0,
-      "whip": 2.31,
+      "ip": 22,
+      "h": 31,
+      "r": 18,
+      "er": 17,
+      "bb": 14,
+      "so": 7,
+      "hr": 1,
+      "whip": 2.05,
       "doubles": 6,
       "triples": 0,
-      "ab": 68,
-      "bAvg": 0.397,
+      "ab": 89,
+      "bAvg": 0.348,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -91,25 +91,25 @@
     {
       "name": "Johnston, Nicole",
       "w": 0,
-      "l": 0,
-      "era": 0,
-      "app": 1,
+      "l": 1,
+      "era": 3.82,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 2,
-      "h": 0,
-      "r": 0,
-      "er": 0,
-      "bb": 2,
+      "ip": 3.2,
+      "h": 4,
+      "r": 2,
+      "er": 2,
+      "bb": 4,
       "so": 0,
       "hr": 0,
-      "whip": 1,
-      "doubles": 0,
+      "whip": 2.18,
+      "doubles": 1,
       "triples": 0,
-      "ab": 6,
-      "bAvg": 0,
+      "ab": 15,
+      "bAvg": 0.267,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -904,6 +904,173 @@
             "Kendra Baumeister grounded out to ss (0-0).",
             "Maddie Crick pinch hit for Haylie Wittman.",
             "Maddie Crick struck out swinging (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/kalamazoo-college/boxscore/12755",
+      "date": "3/24/2026",
+      "opponent": "Kalamazoo College",
+      "pitchers": [
+        "Watson, Emily",
+        "Johnston, Nicole"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Landrie Fridsma walked (3-2 BBFSBFFB).",
+            "Landrie Fridsma stole second.",
+            "Jaycee Rider struck out looking (3-2 BBKBFFK).",
+            "Grace Rocco walked (3-1 BBKBB).",
+            "Ella Neumann singled to left field (0-2 FF); Grace Rocco advanced to second; Landrie Fridsma advanced to third.",
+            "Macy Ward infield fly to 2b (1-2 KBS).",
+            "Emma Newlove homered to center field, 4 RBI (3-2 KSBFBB); Ella Neumann scored; Grace Rocco scored; Landrie Fridsma scored.",
+            "Alyssa Hinkley lined out to lf (1-2 KBKF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Delaney Lee flied out to lf (2-1 BBK).",
+            "London Rabb popped up to 3b (0-0).",
+            "Landrie Fridsma struck out looking (1-2 FFBFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jaycee Rider flied out to rf (3-1 BFBB).",
+            "Grace Rocco popped up to 3b (2-1 BKB).",
+            "Ella Neumann popped up to ss (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Macy Ward grounded out to p, bunt (2-0 BB).",
+            "Emma Newlove walked (3-0 BBBB).",
+            "Alyssa Hinkley flied out to cf (0-0).",
+            "Delaney Lee flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "London Rabb singled to left field (0-1 F).",
+            "Landrie Fridsma flied out to cf (3-1 BKBB).",
+            "Jaycee Rider grounded into double play ss to 2b to 1b (0-1 K); London Rabb out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Grace Rocco walked (3-1 FBBBB).",
+            "Nadene Hubbard pinch ran for Grace Rocco.",
+            "Grace Rocco to dp for Nadene Hubbard.",
+            "Ella Neumann reached on a fielder's choice (2-2 FBFB); Grace Rocco out at second lf to 2b.",
+            "Lily Evans pinch hit for Macy Ward.",
+            "Lily Evans singled to left field (2-2 KBFFB); Ella Neumann advanced to second.",
+            "Emma Newlove lined out to 3b (1-1 FB).",
+            "Alyssa Hinkley reached on a fielder's choice (1-2 KKB); Lily Evans advanced to second; Ella Neumann out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maggie Feng to 2b for Amanda Huang.",
+            "Nicole Johnston to p for Emily Watson.",
+            "Delaney Lee flied out to rf (1-2 BKF).",
+            "London Rabb popped up to 2b (2-2 BSSBF).",
+            "Landrie Fridsma walked (3-1 BBBKB).",
+            "Jaycee Rider popped up to ss (0-1 K)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/colby-college/boxscore/12756",
+      "date": "3/24/2026",
+      "opponent": "Colby College",
+      "pitchers": [
+        "Blackett, Sarah",
+        "Johnston, Nicole"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carissa Cassidy doubled to left center (1-2 KKFB).",
+            "Emma Burnham singled, bunt, advanced to second (0-0); Carissa Cassidy advanced to third.",
+            "Ella Wilcox flied out to cf (0-0); Emma Burnham advanced to third; Carissa Cassidy out at home cf to 2b to 1b.",
+            "Juliana Kiley walked (3-1 BFBBB).",
+            "Juliana Kiley stole second.",
+            "Caroline DeSimone struck out looking (3-2 KBBBFFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Lyman grounded out to ss (2-2 BBKFF).",
+            "Victoria Ramirez hit by pitch (1-2 FFH).",
+            "Sophia Hammel struck out swinging (2-2 SFBFFBFS).",
+            "Julia Berry struck out looking (2-2 BBFKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Carissa Cassidy flied out to cf (0-2 FK).",
+            "Emma Burnham singled to left field (2-2 BKFB).",
+            "Ella Wilcox singled to center field (0-0); Emma Burnham advanced to second.",
+            "Juliana Kiley flied out to lf (0-0); Ella Wilcox advanced to second; Emma Burnham advanced to third.",
+            "Caroline DeSimone struck out looking (0-2 KFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Lyman singled to center field (0-0).",
+            "Victoria Ramirez out at first 3b to 2b, SAC, bunt (0-0); Avery Lyman advanced to second.",
+            "Kathryne Clay pinch hit for Sophia Hammel.",
+            "Avery Lyman advanced to third on a wild pitch.",
+            "Kathryne Clay struck out swinging (2-2 BFFFBFS).",
+            "Julia Berry flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Cassidy tripled to left field (1-1 BF).",
+            "Emma Burnham grounded out to ss, RBI (3-2 BKFBB); Carissa Cassidy scored.",
+            "Ella Wilcox fouled out to lf (2-0 BB).",
+            "Juliana Kiley singled to left field (2-2 BFKB).",
+            "Caroline DeSimone flied out to cf (3-2 FBBFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avery Lyman flied out to cf (2-2 BFBF).",
+            "Victoria Ramirez doubled to left field (1-1 BF).",
+            "Josephine Kim pinch ran for Victoria Ramirez.",
+            "Sophia Hammel singled to center field, advanced to second on the throw (0-0); Josephine Kim advanced to third.",
+            "Julia Berry singled to center field, advanced to second on the throw, RBI (1-0 B); Sophia Hammel advanced to third; Josephine Kim scored.",
+            "Nicole Johnston to p.",
+            "/  for Sarah Blackett.",
+            "Carissa Cassidy walked (3-0 BBBB).",
+            "Emma Burnham singled to left field, 2 RBI (0-2 FF); Carissa Cassidy advanced to second; Julia Berry scored; Sophia Hammel scored.",
+            "Ella Wilcox doubled to left center, RBI (0-0); Emma Burnham advanced to third; Carissa Cassidy scored.",
+            "Lauren Valji pinch ran for Ella Wilcox.",
+            "Juliana Kiley singled to left field, RBI (2-2 KBFB); Lauren Valji advanced to third; Emma Burnham scored.",
+            "Caroline DeSimone singled, bunt (1-0 B); Juliana Kiley advanced to second.",
+            "Avery Lyman popped up to ss (1-1 BK).",
+            "Kat Xiong pinch ran for Juliana Kiley.",
+            "Victoria Ramirez pinch hit for Josephine Kim.",
+            "Victoria Ramirez popped up to 3b (3-2 BSFBB)."
           ]
         }
       ],

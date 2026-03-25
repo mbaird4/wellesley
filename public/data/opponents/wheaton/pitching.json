@@ -1,64 +1,64 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-24T01:55:29.833Z",
+  "scrapedAt": "2026-03-25T02:01:24.295Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 5,
-      "l": 0,
-      "era": 0.62,
-      "app": 5,
-      "gs": 5,
-      "cg": 5,
+      "l": 1,
+      "era": 1.05,
+      "app": 6,
+      "gs": 6,
+      "cg": 6,
       "sho": 3,
       "sv": 0,
-      "ip": 34,
-      "h": 24,
-      "r": 3,
-      "er": 3,
+      "ip": 40,
+      "h": 33,
+      "r": 7,
+      "er": 6,
       "bb": 4,
-      "so": 22,
-      "hr": 0,
-      "whip": 0.82,
-      "doubles": 1,
+      "so": 25,
+      "hr": 2,
+      "whip": 0.93,
+      "doubles": 3,
       "triples": 0,
-      "ab": 118,
-      "bAvg": 0.203,
+      "ab": 143,
+      "bAvg": 0.231,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 5
+      "sha": 7
     },
     {
       "name": "De La Rosa, Sofia",
       "w": 3,
-      "l": 2,
-      "era": 2.05,
-      "app": 5,
-      "gs": 5,
-      "cg": 3,
+      "l": 3,
+      "era": 2.1,
+      "app": 6,
+      "gs": 6,
+      "cg": 4,
       "sho": 3,
       "sv": 0,
-      "ip": 27.1,
-      "h": 25,
-      "r": 15,
-      "er": 8,
-      "bb": 7,
-      "so": 37,
+      "ip": 33.1,
+      "h": 32,
+      "r": 21,
+      "er": 10,
+      "bb": 9,
+      "so": 42,
       "hr": 1,
-      "whip": 1.17,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 108,
-      "bAvg": 0.231,
+      "whip": 1.23,
+      "doubles": 5,
+      "triples": 2,
+      "ab": 135,
+      "bAvg": 0.237,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Dost, Brittany",
@@ -829,6 +829,152 @@
             "Kassie Snowman grounded out to p (1-0 B).",
             "Avie Hernandez reached first on an error by 1b (0-1 F).",
             "Makayla Falco popped up to 3b (0-1 S)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/rhode-island-college/boxscore/10009",
+      "date": "3/24/2026",
+      "opponent": "Rhode Island College",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Noelle Simmons struck out looking (2-2 KSBBK).",
+            "Sophia Crudale flied out to cf (1-2 BFF).",
+            "Joey Meyer grounded out to 2b (3-2 FBBKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Melanie Earley struck out swinging (2-2 BBSFS).",
+            "Jillian Guilfoyle reached first on a muffed throw by 1b, assist by ss (3-1 BBSB).",
+            "Lily Bell out at first p to 2b, SAC, bunt (2-0 BB); Jillian Guilfoyle advanced to second.",
+            "Gabrielle Sweeney doubled to left field, RBI (2-1 FBB); Jillian Guilfoyle scored, unearned.",
+            "Brianna Bailey reached first on a dropped fly by 2b, advanced to second (1-1 BK); Gabrielle Sweeney scored, unearned.",
+            "Sydney Duclos singled up the middle, RBI (0-2 KK); Brianna Bailey scored, unearned.",
+            "Noelle Simmons walked (3-2 BFBBSB); Sydney Duclos advanced to second.",
+            "Sophia Crudale grounded out to 1b unassisted (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Joey Meyer struck out looking (3-2 BBBKKK).",
+            "Melanie Earley doubled to left center (3-2 BBSBK).",
+            "Jillian Guilfoyle reached on a fielder's choice (1-0 B); Melanie Earley out at third ss unassisted, interference.",
+            "Lily Bell doubled to left center, RBI (0-0); Jillian Guilfoyle scored.",
+            "Gabrielle Sweeney struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brianna Bailey flied out to rf (1-1 KB).",
+            "Sydney Duclos grounded out to ss (1-2 KBF).",
+            "Noelle Simmons tripled to center field (0-2 FF).",
+            "Sophia Crudale flied out to rf (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Joey Meyer walked (3-2 KBSBBFFB).",
+            "Melanie Earley lined out to rf (0-0).",
+            "Jillian Guilfoyle reached first on a fielding error by ss (0-1 F); Joey Meyer advanced to second.",
+            "Rylie Forcier pinch ran for Jillian Guilfoyle.",
+            "Lily Bell singled to catcher, bunt (0-0); Rylie Forcier advanced to second; Joey Meyer advanced to third.",
+            "Gabrielle Sweeney reached on a fielder's choice, RBI (0-0); Lily Bell advanced to second; Rylie Forcier out at third 3b unassisted; Joey Meyer scored, unearned.",
+            "Brianna Bailey reached on a fielder's choice (0-1 K); Gabrielle Sweeney out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sydney Duclos struck out swinging (2-2 BKBFS).",
+            "Noelle Simmons tripled down the rf line (2-1 FBB).",
+            "Sophia Crudale grounded out to 2b, RBI (0-2 KF); Noelle Simmons scored.",
+            "Joey Meyer grounded out to 1b unassisted (3-2 BKBSBF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/rhode-island-college/boxscore/10010",
+      "date": "3/24/2026",
+      "opponent": "Rhode Island College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Noelle Simmons reached first on a throwing error by ss, advanced to second (1-0 B).",
+            "Sophia Crudale out at first 1b to 2b, SAC, bunt (0-0); Noelle Simmons advanced to third.",
+            "Joey Meyer grounded out to 3b, RBI (3-2 FBKBBF); Noelle Simmons scored, unearned.",
+            "Melanie Earley hit by pitch (1-0 H).",
+            "Melanie Earley out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jillian Guilfoyle singled through the left side (0-1 K).",
+            "Rylie Forcier pinch ran for Jillian Guilfoyle.",
+            "Lily Bell popped up to p, bunt (0-0).",
+            "Gabrielle Sweeney struck out swinging (1-2 FBSFFFFS).",
+            "Brianna Bailey singled to left field (0-0); Rylie Forcier advanced to second.",
+            "Sydney Duclos flied out to rf (3-2 BBKFBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Noelle Simmons homered to left field, RBI (2-0 BB).",
+            "Sophia Crudale singled up the middle (3-1 KBBBB).",
+            "Joey Meyer out at first p to 2b, SAC, bunt (0-0); Sophia Crudale advanced to second.",
+            "Melanie Earley grounded out to 2b (1-0 B); Sophia Crudale advanced to third.",
+            "Jillian Guilfoyle singled to pitcher, RBI (0-2 FKF); Sophia Crudale scored.",
+            "Lily Bell singled to second base (0-1 K); Jillian Guilfoyle advanced to third.",
+            "Alana DeLuties pinch hit for Gabrielle Sweeney.",
+            "Alana DeLuties grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brianna Bailey popped up to 2b (0-0).",
+            "Jillian Donnelly pinch hit for Sydney Duclos.",
+            "Jillian Donnelly doubled to right center (0-0).",
+            "Noelle Simmons fouled out to 3b (0-1 S).",
+            "Sophia Crudale struck out swinging (1-2 BKFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Joey Meyer grounded out to p (1-2 BKS).",
+            "Melanie Earley homered to left field, RBI (2-1 BKB).",
+            "Jillian Guilfoyle grounded out to 3b (3-2 KBBSFB).",
+            "Lily Bell fouled out to ss (3-2 BFBBFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amber Arcand to rf for Kathryn Copperthite.",
+            "Gabrielle Sweeney doubled to left center (2-1 BKB).",
+            "Brianna Bailey struck out swinging (1-2 SFFBS).",
+            "Sydney Duclos grounded out to ss (2-2 KFBB); Gabrielle Sweeney advanced to third.",
+            "Noelle Simmons flied out to cf (0-0)."
           ]
         }
       ],
