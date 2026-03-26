@@ -65,6 +65,10 @@
   --color-tier-below-avg-bg: rgba(239, 68, 68, 0.18);
   --color-tier-below-avg: #fca5a5;
 
+  --color-warning-bg: rgba(250, 204, 21, 0.12);
+  --color-warning: #fde047;
+  --color-warning-border: rgba(250, 204, 21, 0.2);
+
   --color-error-bg: rgba(239, 68, 68, 0.12);
   --color-error: #fca5a5;
   --color-error-border: rgba(239, 68, 68, 0.2);
