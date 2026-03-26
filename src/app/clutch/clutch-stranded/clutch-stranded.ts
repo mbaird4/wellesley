@@ -139,12 +139,54 @@ export class ClutchStranded {
   });
 
   readonly teamTotals = computed(() => {
-    const rows = this.rows();
-    const total = rows.reduce((sum, r) => sum + r.total, 0);
-    const onFirst = rows.reduce((sum, r) => sum + r.onFirst, 0);
-    const onSecond = rows.reduce((sum, r) => sum + r.onSecond, 0);
-    const onThird = rows.reduce((sum, r) => sum + r.onThird, 0);
-    const totalRunnersOn = this.players().reduce((sum, p) => sum + p.totalRunnersOn, 0);
+    const players = this.players();
+
+    // Group all events by game+inning, then deduplicate runners:
+    // only count each runner once per inning, using their final outcome.
+    const inningRunners = new Map<string, Map<string, { baseBefore: 'first' | 'second' | 'third'; outcome: string }>>();
+
+    players.forEach((player) => {
+      player.events.forEach((event) => {
+        const inningKey = `${event.url}|${event.inning}`;
+        let runners = inningRunners.get(inningKey);
+
+        if (!runners) {
+          runners = new Map();
+          inningRunners.set(inningKey, runners);
+        }
+
+        event.runnersOn.forEach((r) => {
+          runners!.set(r.name, { baseBefore: r.baseBefore, outcome: r.outcome });
+        });
+      });
+    });
+
+    let onFirst = 0;
+    let onSecond = 0;
+    let onThird = 0;
+
+    inningRunners.forEach((runners) => {
+      runners.forEach((r) => {
+        if (r.outcome !== 'stranded') {
+          return;
+        }
+
+        switch (r.baseBefore) {
+          case 'first':
+            onFirst++;
+            break;
+          case 'second':
+            onSecond++;
+            break;
+          case 'third':
+            onThird++;
+            break;
+        }
+      });
+    });
+
+    const total = onFirst + onSecond + onThird;
+    const totalRunnersOn = players.reduce((sum, p) => sum + p.totalRunnersOn, 0);
     const strandRateValue = totalRunnersOn > 0 ? (total / totalRunnersOn) * 100 : 0;
 
     return {
