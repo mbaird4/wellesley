@@ -880,9 +880,23 @@ function parseDefensiveInnings($: cheerio.CheerioAPI): { inning: string; plays: 
   return allInnings.filter((inn) => !captionMatchesWellesley(inn.teamName)).map((inn) => ({ inning: inn.inning, plays: inn.plays }));
 }
 
+interface BoxscorePitcherLine {
+  name: string;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hbp: number;
+  ab: number;
+  bf: number;
+}
+
 /** Extract Wellesley's pitchers from the boxscore pitching table, in appearance order */
-function parseWellesleyPitchers($: cheerio.CheerioAPI): string[] {
-  const pitchers: string[] = [];
+function parseWellesleyPitchers($: cheerio.CheerioAPI): { names: string[]; boxScore: BoxscorePitcherLine[] } {
+  const names: string[] = [];
+  const boxScore: BoxscorePitcherLine[] = [];
 
   $('table').each((_, table) => {
     const caption = $(table).find('caption').text() || '';
@@ -895,21 +909,56 @@ function parseWellesleyPitchers($: cheerio.CheerioAPI): string[] {
       return;
     }
 
+    const colMap = new Map<string, number>();
+
+    $(table)
+      .find('thead th')
+      .each((idx, th) => {
+        colMap.set($(th).text().trim().toLowerCase(), idx);
+      });
+
     $(table)
       .find('tbody tr')
       .each((_, row) => {
         const playerLink = $(row).find('.boxscore_player_link');
-        const name = playerLink.text().trim();
+        const rawName = playerLink.text().trim();
 
-        if (name) {
-          pitchers.push(name);
+        if (!rawName) {
+          return;
         }
+
+        const name = rawName.replace(/\s*\([WLS],?\s*[\d-]*\)\s*/g, '').trim();
+        names.push(name);
+
+        const cells = $(row).find('td');
+        const cell = (key: string): number => {
+          const idx = colMap.get(key);
+
+          if (idx === undefined) {
+            return 0;
+          }
+
+          return parseFloat($(cells[idx]).text().trim()) || 0;
+        };
+
+        boxScore.push({
+          name,
+          ip: cell('ip'),
+          h: cell('h'),
+          r: cell('r'),
+          er: cell('er'),
+          bb: cell('bb'),
+          so: cell('so'),
+          hbp: cell('hbp'),
+          ab: cell('ab'),
+          bf: cell('bf'),
+        });
       });
 
     return false; // stop after first matching pitching table
   });
 
-  return pitchers;
+  return { names, boxScore };
 }
 
 // ── Incremental scraping: load already-scraped boxscore URLs from disk ──
@@ -1019,7 +1068,7 @@ async function scrapeYear(year: number, outputDir: string, force: boolean): Prom
     }
 
     // Extract pitching data (Wellesley pitchers + opponent batting innings)
-    const wellesleyPitchers = parseWellesleyPitchers($);
+    const { names: wellesleyPitchers, boxScore } = parseWellesleyPitchers($);
     const defensiveInnings = parseDefensiveInnings($);
 
     if (wellesleyPitchers.length > 0 || defensiveInnings.length > 0) {
@@ -1031,6 +1080,7 @@ async function scrapeYear(year: number, outputDir: string, force: boolean): Prom
         opponent,
         pitchers: wellesleyPitchers,
         battingInnings: defensiveInnings,
+        ...(boxScore.length > 0 ? { pitcherBoxScore: boxScore } : {}),
       });
     }
   }

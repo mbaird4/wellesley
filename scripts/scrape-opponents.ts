@@ -212,6 +212,19 @@ interface PbPInning {
   plays: string[];
 }
 
+interface BoxscorePitcherLine {
+  name: string;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hbp: number;
+  ab: number;
+  bf: number;
+}
+
 interface GamePitchingData {
   year: number;
   url: string;
@@ -219,6 +232,7 @@ interface GamePitchingData {
   opponent: string;
   pitchers: string[];
   battingInnings: { inning: string; plays: string[] }[];
+  pitcherBoxScore?: BoxscorePitcherLine[];
 }
 
 // ── Gamedata scraping types ──
@@ -766,8 +780,9 @@ function parseAllPlayByPlay($: cheerio.CheerioAPI): PbPInning[] {
 }
 
 /** Parse all pitchers from the boxscore pitching table, in appearance order */
-function parseTeamPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string[] {
-  const pitchers: string[] = [];
+function parseTeamPitchers($: cheerio.CheerioAPI, teamAliases: string[]): { names: string[]; boxScore: BoxscorePitcherLine[] } {
+  const names: string[] = [];
+  const boxScore: BoxscorePitcherLine[] = [];
 
   $('table').each((_, table) => {
     const caption = $(table).find('caption').text() || '';
@@ -780,21 +795,58 @@ function parseTeamPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string
       return;
     }
 
+    // Build column index map from thead
+    const colMap = new Map<string, number>();
+
+    $(table)
+      .find('thead th')
+      .each((idx, th) => {
+        colMap.set($(th).text().trim().toLowerCase(), idx);
+      });
+
     $(table)
       .find('tbody tr')
       .each((_, row) => {
         const playerLink = $(row).find('.boxscore_player_link');
-        const name = playerLink.text().trim();
+        const rawName = playerLink.text().trim();
 
-        if (name) {
-          pitchers.push(name);
+        if (!rawName) {
+          return;
         }
+
+        // Strip win/loss/save annotations like "(W, 2-2)" or "(L, 0-1)"
+        const name = rawName.replace(/\s*\([WLS],?\s*[\d-]*\)\s*/g, '').trim();
+        names.push(name);
+
+        const cells = $(row).find('td');
+        const cell = (key: string): number => {
+          const idx = colMap.get(key);
+
+          if (idx === undefined) {
+            return 0;
+          }
+
+          return parseFloat($(cells[idx]).text().trim()) || 0;
+        };
+
+        boxScore.push({
+          name,
+          ip: cell('ip'),
+          h: cell('h'),
+          r: cell('r'),
+          er: cell('er'),
+          bb: cell('bb'),
+          so: cell('so'),
+          hbp: cell('hbp'),
+          ab: cell('ab'),
+          bf: cell('bf'),
+        });
       });
 
     return false; // stop after first matching pitching table
   });
 
-  return pitchers;
+  return { names, boxScore };
 }
 
 // ── Gamedata parsing (lineup + play-by-play for opponent teams) ──
@@ -918,8 +970,8 @@ function parseBoxscorePitching($: cheerio.CheerioAPI, url: string, teamAliases: 
   // The other team's batting innings = innings where caption team does NOT match our team
   const opponentBattingInnings = allInnings.filter((inn) => !captionMatchesTeam(inn.teamName, teamAliases));
 
-  // Authoritative pitcher list from the pitching table (in appearance order)
-  const pitchers = parseTeamPitchers($, teamAliases);
+  // Authoritative pitcher list and per-pitcher stats from the pitching table
+  const { names: pitchers, boxScore } = parseTeamPitchers($, teamAliases);
 
   // Build batting innings (plays against our team's pitcher)
   const battingInnings = opponentBattingInnings.map((inn) => ({
@@ -933,6 +985,7 @@ function parseBoxscorePitching($: cheerio.CheerioAPI, url: string, teamAliases: 
     opponent,
     pitchers,
     battingInnings,
+    pitcherBoxScore: boxScore.length > 0 ? boxScore : undefined,
   };
 }
 
@@ -1308,7 +1361,7 @@ async function scrapeTeamBoxscores(
 
         if (lineup.length > 0 || playByPlay.length > 0) {
           const opponent = parseOpponentFromUrl(url);
-          const pitchers = parseTeamPitchers($, teamAliases).map(normalizeName);
+          const pitchers = parseTeamPitchers($, teamAliases).names.map(normalizeName);
           gamedataGames.push({ year, url, opponent, pitchers, lineup, playByPlay });
         }
       }

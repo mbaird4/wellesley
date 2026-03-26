@@ -30,6 +30,20 @@ export interface PitchingStats {
   sha: number;
 }
 
+/** Per-pitcher line from the boxscore pitching table */
+export interface BoxscorePitcherLine {
+  name: string;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hbp: number;
+  ab: number;
+  bf: number;
+}
+
 /** Per-game play-by-play */
 export interface GamePbP {
   year: number;
@@ -38,6 +52,7 @@ export interface GamePbP {
   opponent: string;
   pitchers: string[];
   battingInnings: PbPInning[];
+  pitcherBoxScore?: BoxscorePitcherLine[];
 }
 
 export interface PbPInning {

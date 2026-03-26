@@ -1,4 +1,4 @@
-import type { PitcherGameLog, PitcherInningStats, PitcherSeasonSummary, PitcherTrackedPlay, PitchingStats } from '@ws/core/models';
+import type { BoxscorePitcherLine, PitcherGameLog, PitcherInningStats, PitcherSeasonSummary, PitcherTrackedPlay, PitchingStats } from '@ws/core/models';
 
 /** Parse inning string to sortable number: "1st"→1, "2nd"→2, "3rd"→3, "4th"→4, etc. */
 export function inningToNumber(inning: string): number {
@@ -176,6 +176,73 @@ export function computePitcherGameLog(plays: PitcherTrackedPlay[], gameInfo: { d
   });
 
   return logs;
+}
+
+/**
+ * Apply authoritative box score stats to game logs. Overrides per-game totals
+ * with the official pitching table data while preserving per-inning breakdowns.
+ *
+ * - Pitchers with IP > 0 in box score: totals replaced with box score values.
+ *   If play-by-play didn't detect the pitcher (no game log), one is created
+ *   with innings reassigned from IP=0 pitchers.
+ * - Pitchers with IP = 0 in box score: game log removed (they didn't pitch).
+ */
+export function applyBoxScoreToGameLogs(logs: PitcherGameLog[], boxScore: BoxscorePitcherLine[], gameInfo: { date: string; opponent: string; url: string }): PitcherGameLog[] {
+  const logByPitcher = new Map(logs.map((l) => [l.pitcher, l]));
+  const result: PitcherGameLog[] = [];
+
+  // Collect inning breakdowns from pitchers who have IP=0 in box score
+  // (misattributed plays that belong to someone else)
+  const orphanedInnings: PitcherInningStats[] = [];
+
+  boxScore
+    .filter((bs) => bs.ip === 0)
+    .forEach((bs) => {
+      const log = logByPitcher.get(bs.name);
+
+      if (log) {
+        orphanedInnings.push(...log.innings);
+      }
+    });
+
+  boxScore
+    .filter((bs) => bs.ip > 0)
+    .forEach((bs) => {
+      const existingLog = logByPitcher.get(bs.name);
+
+      // Use existing inning breakdown, or adopt orphaned innings if this pitcher
+      // had no game log (change wasn't detected in play-by-play)
+      const innings = existingLog ? existingLog.innings : orphanedInnings.length > 0 ? [...orphanedInnings] : [];
+
+      // Override totals with authoritative box score data
+      const totals = existingLog ? { ...existingLog.totals } : emptyInningStats('Total');
+      totals.hits = bs.h;
+      totals.runs = bs.r;
+      totals.walks = bs.bb;
+      totals.strikeouts = bs.so;
+      totals.hbp = bs.hbp;
+      totals.ab = bs.ab;
+      totals.battersFaced = bs.bf;
+
+      result.push({
+        ...gameInfo,
+        pitcher: bs.name,
+        innings,
+        totals,
+      });
+    });
+
+  // If no box score corrections applied, return original logs unchanged
+  if (result.length === 0) {
+    return logs;
+  }
+
+  // Clear orphaned innings after they've been reassigned
+  if (orphanedInnings.length > 0) {
+    orphanedInnings.length = 0;
+  }
+
+  return result;
 }
 
 /**

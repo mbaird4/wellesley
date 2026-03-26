@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import type { PitchCountInningStats, PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitcherValidationResult, PitchingData, Roster } from '@ws/core/models';
-import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, reconcileInheritedRuns, trackPitcherPerformance, validatePitcherStats } from '@ws/core/processors';
+import { applyBoxScoreToGameLogs, buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, reconcileInheritedRuns, trackPitcherPerformance, validatePitcherStats } from '@ws/core/processors';
 import { LoadingState, PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
@@ -248,12 +248,13 @@ export class PitcherAnalysis {
 
     games.forEach((game) => {
       const plays = trackPitcherPerformance(game.battingInnings, game.pitchers, data.nameAliases);
+      const gameInfo = { date: game.date, opponent: game.opponent, url: game.url };
 
-      const logs = computePitcherGameLog(plays, {
-        date: game.date,
-        opponent: game.opponent,
-        url: game.url,
-      });
+      let logs = computePitcherGameLog(plays, gameInfo);
+
+      if (game.pitcherBoxScore) {
+        logs = applyBoxScoreToGameLogs(logs, game.pitcherBoxScore, gameInfo);
+      }
 
       allGameLogs.push(...logs);
     });
