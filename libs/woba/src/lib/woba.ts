@@ -191,7 +191,9 @@ export class Woba {
       });
     });
 
-    this.teamGameColumns = Array.from(gameKeys.values());
+    this.teamGameColumns = Array.from(gameKeys.values()).sort((a, b) => {
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    });
 
     // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
     this.teamPlayerRows = this.cumulativeWobas.map((player) => {
