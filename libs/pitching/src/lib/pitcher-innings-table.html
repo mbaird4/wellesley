@@ -4,14 +4,15 @@
   [class.border-0]="!bordered()"
 >
   <colgroup>
-    <col class="w-[14%]" />
-    <col class="w-[10%]" />
-    <col class="w-[10%]" />
-    <col class="w-[10%]" />
-    <col class="w-[10%]" />
-    <col class="w-[10%]" />
-    <col class="w-[18%]" />
-    <col class="w-[18%]" />
+    <col class="w-[13%]" />
+    <col class="w-[9%]" />
+    <col class="w-[9%]" />
+    <col class="w-[9%]" />
+    <col class="w-[9%]" />
+    <col class="w-[9%]" />
+    <col class="w-[9%]" />
+    <col class="w-[16.5%]" />
+    <col class="w-[16.5%]" />
   </colgroup>
   <thead>
     <tr>
@@ -21,6 +22,7 @@
       <th class="text-left">R</th>
       <th class="text-left">K</th>
       <th class="text-left">BB</th>
+      <th class="text-left">HBP</th>
       <th class="text-left">AVG</th>
       <th class="text-left normal-case!">wOBA</th>
     </tr>
@@ -39,6 +41,7 @@
         </td>
         <td class="text-left">{{ row.strikeouts }}</td>
         <td class="text-left">{{ row.walks }}</td>
+        <td class="text-left">{{ row.hbp }}</td>
         <td class="text-left font-medium" [style]="row.avgStyle">
           {{ row.formattedAvg }}
         </td>
@@ -57,6 +60,7 @@
         <td class="border-b-0! text-left">{{ t.runs }}</td>
         <td class="border-b-0! text-left">{{ t.strikeouts }}</td>
         <td class="border-b-0! text-left">{{ t.walks }}</td>
+        <td class="border-b-0! text-left">{{ t.hbp }}</td>
         <td class="border-b-0! text-left font-medium" [style]="t.avgStyle">
           {{ t.formattedAvg }}
         </td>

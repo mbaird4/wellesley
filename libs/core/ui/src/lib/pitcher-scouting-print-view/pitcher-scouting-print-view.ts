@@ -10,6 +10,7 @@ const STAT_DEFS: { key: keyof PitchingStats; label: string }[] = [
   { key: 'ip', label: 'IP' },
   { key: 'bb', label: 'BB' },
   { key: 'so', label: 'SO' },
+  { key: 'hbp', label: 'HBP' },
   { key: 'wp', label: 'WP' },
 ];
 

@@ -30,6 +30,7 @@ function buildInningView(inn: PitcherInningStats, showColors: boolean): InningsT
     runs: inn.runs,
     strikeouts: inn.strikeouts,
     walks: inn.walks,
+    hbp: inn.hbp,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
     avgStyle: showColors ? wobaColorStyle(0.55 - avg * 1.2) : EMPTY_STYLE,

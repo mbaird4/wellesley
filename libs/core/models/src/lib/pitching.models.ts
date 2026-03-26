@@ -5,6 +5,7 @@ export interface InningsTableRow {
   runs: number;
   strikeouts: number;
   walks: number;
+  hbp: number;
   formattedAvg: string;
   formattedWoba: string;
   avgStyle: Record<string, string>;
@@ -17,6 +18,7 @@ export interface InningsTotalsRow {
   runs: number;
   strikeouts: number;
   walks: number;
+  hbp: number;
   formattedAvg: string;
   formattedWoba: string;
   avgStyle: Record<string, string>;
@@ -105,4 +107,20 @@ export interface PitcherSeasonSummary {
   byInning: Map<string, PitcherInningStats>;
   totals: PitcherInningStats;
   gameLogs: PitcherGameLog[];
+}
+
+export interface PitcherStatDiscrepancy {
+  stat: string;
+  raw: number;
+  computed: number;
+  delta: number;
+  severity: 'info' | 'warning' | 'error';
+}
+
+export interface PitcherValidationResult {
+  pitcher: string;
+  discrepancies: PitcherStatDiscrepancy[];
+  overallSeverity: 'ok' | 'info' | 'warning' | 'error';
+  gamesRaw: number;
+  gamesComputed: number;
 }

@@ -6,13 +6,14 @@ import { ButtonToggle, type ToggleOption } from '@ws/core/ui';
 
 import { PitcherInningsTable } from './pitcher-innings-table';
 
-type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'AVG' | 'wOBA';
+type MatrixStat = 'H' | 'R' | 'BB' | 'K' | 'HBP' | 'AVG' | 'wOBA';
 
 const STAT_OPTIONS: ToggleOption[] = [
   { value: 'H', label: 'H' },
   { value: 'R', label: 'R' },
   { value: 'BB', label: 'BB' },
   { value: 'K', label: 'K' },
+  { value: 'HBP', label: 'HBP' },
   { value: 'AVG', label: 'AVG' },
   { value: 'wOBA', label: 'wOBA' },
 ];
@@ -28,6 +29,7 @@ const COUNT_COLOR_MAP: Record<string, number[]> = {
   H: [0.55, 0.35, 0.15, 0.0],
   R: [0.55, 0.25, 0.0],
   BB: [0.55, 0.3, 0.0],
+  HBP: [0.55, 0.3, 0.0],
 };
 
 /** Standalone K color ramp — 0 = muted dash, 1 = purple, 2 = teal, 3+ = green */
@@ -86,6 +88,8 @@ function cellValue(stat: MatrixStat, innStats: PitcherInningStats): string {
       return String(innStats.walks);
     case 'K':
       return String(innStats.strikeouts);
+    case 'HBP':
+      return String(innStats.hbp);
     case 'AVG':
       return fmtStat(battingAvgAgainst(innStats));
     case 'wOBA':
@@ -104,6 +108,8 @@ function rawCount(stat: MatrixStat, innStats: PitcherInningStats): number {
       return innStats.walks;
     case 'K':
       return innStats.strikeouts;
+    case 'HBP':
+      return innStats.hbp;
     default:
       return 0;
   }
@@ -188,6 +194,7 @@ function buildInningView(inn: PitcherInningStats): InningsTableRow {
     runs: inn.runs,
     strikeouts: inn.strikeouts,
     walks: inn.walks,
+    hbp: inn.hbp,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
     avgStyle: wobaColorStyle(0.55 - avg * 1.2),
@@ -206,6 +213,7 @@ function buildTotalsView(totals: PitcherInningStats): InningsTotalsRow {
     runs: totals.runs,
     strikeouts: totals.strikeouts,
     walks: totals.walks,
+    hbp: totals.hbp,
     formattedAvg: fmtStat(avg),
     formattedWoba: fmtStat(woba),
     avgStyle: wobaColorStyle(0.55 - avg * 1.2),
