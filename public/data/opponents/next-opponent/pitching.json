@@ -1,120 +1,92 @@
 {
-  "slug": "nichols",
-  "domain": "nicholsathletics.com",
-  "scrapedAt": "2026-03-25T23:23:26.056Z",
+  "slug": "brandeis",
+  "domain": "brandeisjudges.com",
+  "scrapedAt": "2026-03-26T02:15:10.495Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Pedro, Olivia",
-      "w": 5,
-      "l": 3,
-      "era": 3.44,
+      "name": "Staub, Jamie",
+      "w": 3,
+      "l": 1,
+      "era": 3.46,
       "app": 10,
-      "gs": 7,
-      "cg": 4,
-      "sho": 2,
+      "gs": 2,
+      "cg": 1,
+      "sho": 0,
       "sv": 0,
-      "ip": 38.2,
-      "h": 58,
-      "r": 34,
-      "er": 19,
-      "bb": 7,
-      "so": 17,
+      "ip": 30.1,
+      "h": 27,
+      "r": 17,
+      "er": 15,
+      "bb": 8,
+      "so": 15,
       "hr": 1,
-      "whip": 1.68,
-      "doubles": 11,
-      "triples": 2,
-      "ab": 176,
-      "bAvg": 0.33,
-      "wp": 2,
+      "whip": 1.15,
+      "doubles": 7,
+      "triples": 0,
+      "ab": 121,
+      "bAvg": 0.223,
+      "wp": 4,
       "hbp": 2,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Jennings, Madeline",
+      "w": 2,
+      "l": 3,
+      "era": 4.77,
+      "app": 9,
+      "gs": 7,
+      "cg": 1,
+      "sho": 1,
+      "sv": 0,
+      "ip": 29.1,
+      "h": 49,
+      "r": 30,
+      "er": 20,
+      "bb": 8,
+      "so": 15,
+      "hr": 1,
+      "whip": 1.94,
+      "doubles": 1,
+      "triples": 2,
+      "ab": 140,
+      "bAvg": 0.35,
+      "wp": 5,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 3
     },
     {
-      "name": "Medor, Molly",
-      "w": 0,
-      "l": 4,
-      "era": 5.63,
-      "app": 7,
+      "name": "Kannan, Ragini",
+      "w": 4,
+      "l": 2,
+      "era": 5.11,
+      "app": 8,
       "gs": 6,
       "cg": 3,
-      "sho": 0,
-      "sv": 1,
-      "ip": 32.1,
-      "h": 41,
+      "sho": 1,
+      "sv": 0,
+      "ip": 38.1,
+      "h": 42,
       "r": 36,
-      "er": 26,
-      "bb": 21,
-      "so": 24,
-      "hr": 1,
-      "whip": 1.92,
-      "doubles": 9,
-      "triples": 2,
-      "ab": 121,
-      "bAvg": 0.339,
-      "wp": 5,
-      "hbp": 10,
-      "bk": 0,
-      "sfa": 3,
-      "sha": 5
-    },
-    {
-      "name": "Pericello, Alyssa",
-      "w": 0,
-      "l": 1,
-      "era": 1.45,
-      "app": 5,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 9.2,
-      "h": 10,
-      "r": 4,
-      "er": 2,
-      "bb": 5,
-      "so": 1,
-      "hr": 0,
-      "whip": 1.55,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 37,
-      "bAvg": 0.27,
-      "wp": 1,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
-    {
-      "name": "McNamee, Ally",
-      "w": 0,
-      "l": 0,
-      "era": 8.75,
-      "app": 3,
-      "gs": 0,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 4,
-      "h": 4,
-      "r": 6,
-      "er": 5,
-      "bb": 4,
-      "so": 2,
-      "hr": 0,
-      "whip": 2,
-      "doubles": 2,
+      "er": 28,
+      "bb": 17,
+      "so": 37,
+      "hr": 2,
+      "whip": 1.54,
+      "doubles": 7,
       "triples": 1,
-      "ab": 14,
+      "ab": 147,
       "bAvg": 0.286,
-      "wp": 3,
-      "hbp": 1,
+      "wp": 2,
+      "hbp": 2,
       "bk": 0,
-      "sfa": 0,
-      "sha": 1
+      "sfa": 5,
+      "sha": 6
     }
   ],
   "games": [
@@ -1240,6 +1212,1236 @@
             "J. Polski out at first 1b to 2b, SAC (0-1 K); E. Gaunce advanced to second.",
             "A. Mulhern grounded out to 2b (1-1 BF); E. Gaunce advanced to third.",
             "A. Delgado flied out to cf (2-1 BBK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/allegheny/boxscore/14905",
+      "date": "3/6/2026",
+      "opponent": "Allegheny",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abby Robinson singled to right field (0-0).",
+            "Samantha Phillips out at first 3b to 2b, SAC, bunt (0-0); Abby Robinson advanced to second.",
+            "Abby Robinson advanced to third on a wild pitch.",
+            "Jayla Jones grounded out to ss, RBI (1-0 B); Abby Robinson scored.",
+            "Rachel Seneca flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Morgan Kinney flied out to rf to right center (1-0 B).",
+            "Lauren Folino singled to shortstop (0-1 F).",
+            "Maisy Post reached on a fielder's choice to shortstop (0-1 F); Lauren Folino out at second ss to 2b.",
+            "Julia Perillo grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Madalyn Myers grounded out to p (1-0 B).",
+            "Abby Robinson singled through the left side (2-2 KBBF).",
+            "Samantha Phillips struck out looking (0-2 KFK).",
+            "Jayla Jones singled to shortstop (1-0 B); Abby Robinson advanced to second.",
+            "Rachel Seneca reached on a fielder's choice to shortstop (2-1 BBF); Jayla Jones advanced to second; Abby Robinson out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Morgan Kinney singled to center field (2-2 BBKS).",
+            "Lauren Folino out at first p to 2b, SAC, bunt (0-0); Morgan Kinney advanced to second.",
+            "Maisy Post singled to right field, RBI (0-2 SF); Morgan Kinney scored.",
+            "Julia Perillo reached on a fielder's choice to second base (1-1 KB); Maisy Post out at second 2b unassisted.",
+            "Julia Perillo advanced to second on a wild pitch.",
+            "Madalyn Myers tripled to left field, RBI (2-2 KBSB); Julia Perillo scored.",
+            "Abby Robinson walked (3-1 BFBBB); Madalyn Myers scored on a wild pitch.",
+            "Samantha Phillips grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maddie Manes to dp.",
+            "Taryn Rainey to c.",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Mary Doud to rf.",
+            "Jayla Jones popped up to 2b (0-0).",
+            "Rachel Seneca grounded out to 1b unassisted (0-0).",
+            "Morgan Kinney fouled out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauren Folino struck out swinging (1-2 FBKS).",
+            "Maisy Post popped up to 1b (0-0).",
+            "Julia Perillo popped up to 2b (1-1 FB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/emmanuel/boxscore/14966",
+      "date": "3/6/2026",
+      "opponent": "Emmanuel",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Fernandes, M flied out to cf.",
+            "Poisson, M struck out swinging.",
+            "Garon, G popped up to 1b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Taylor, S struck out looking.",
+            "Smith, R flied out to cf.",
+            "DeMacedo, O popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Rodriguez, E struck out swinging.",
+            "Venuti, C walked.",
+            "Weineck, L flied out to lf.",
+            "Fernandes, M reached on a fielder's choice; Venuti, C out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elle Ehrlich to dh.",
+            "Taryn Rainey to c.",
+            "Poisson, M grounded out to 1b unassisted.",
+            "Garon, G flied out to lf.",
+            "Taylor, S struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jamie Staub to 1b for Brooke Boehm.",
+            "Smith, R popped up to 3b.",
+            "DeMacedo, O popped up to ss.",
+            "Carnes, M pinch hit for Rodriguez, E.",
+            "Carnes, M grounded out to p."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/univ-of-northwestern/boxscore/14906",
+      "date": "3/7/2026",
+      "opponent": "Univ Of Northwestern",
+      "pitchers": [
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Schoper grounded out to ss.",
+            "K. Van Ess hit by pitch.",
+            "B. Anderson popped up to 1b.",
+            "E. Edwards flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Keith flied out to 2b.",
+            "K. Trump grounded out to ss.",
+            "A. Hansen walked.",
+            "E. Morrissey pinch ran for A. Hansen.",
+            "E. Morrissey stole second.",
+            "E. Westrate struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "H. Storey singled to left field.",
+            "H. Storey stole second.",
+            "L. Schoper reached on a fielder's choice to pitcher; H. Storey advanced to third.",
+            "L. Schoper stole second.",
+            "K. Van Ess walked.",
+            "B. Anderson popped up to ss.",
+            "E. Edwards popped up to p.",
+            "G. Keith walked; K. Van Ess advanced to second; L. Schoper advanced to third; H. Storey scored.",
+            "K. Trump lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Morrissey out at first 3b to 2b, bunt.",
+            "E. Westrate singled through the right side.",
+            "H. Storey reached on a fielder's choice; E. Westrate out at second ss to 2b, out on the play.",
+            "H. Storey out at second 2b to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Schoper lined out to cf.",
+            "K. Van Ess struck out looking.",
+            "B. Anderson flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddie Manes to rf for Mary Doud.",
+            "Mary Doud to rf for Maddie Manes.",
+            "E. Edwards flied out to lf.",
+            "G. Keith struck out looking.",
+            "K. Trump flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Morrissey grounded out to 1b unassisted.",
+            "E. Westrate popped up to 1b.",
+            "H. Storey lined out to ss."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/susquehanna/boxscore/14968",
+      "date": "3/7/2026",
+      "opponent": "Susquehanna",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maddy Devine grounded out to 2b (0-1 K).",
+            "Stevie Shaak walked (3-0 BBBB).",
+            "Savannah Patrone singled (0-1 K); Stevie Shaak advanced to second.",
+            "Katelyn Dugery singled, RBI (1-2 KSB); Savannah Patrone advanced to second; Stevie Shaak scored.",
+            "Sydney Perez lined out to 1b (0-1 F).",
+            "Isabella Sulesky reached first on an error by ss (1-1 BS); Katelyn Dugery advanced to second; Savannah Patrone advanced to third.",
+            "Mya Morales flied out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia LaRose grounded out to 3b (2-1 FBB).",
+            "Elle Walasavage reached first on an error by 2b (2-2 BFBK).",
+            "Maddy Devine struck out swinging (2-2 KKBBS).",
+            "Stevie Shaak grounded out to p (2-2 BBKFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Savannah Patrone reached first on an error by p, advanced to second (2-2 FBSB).",
+            "Grace Landis pinch ran for Savannah Patrone.",
+            "Katelyn Dugery grounded out to p (0-0); Grace Landis advanced to third.",
+            "Sydney Perez singled, RBI (0-1 F); Grace Landis scored, unearned.",
+            "Alyssa Mayorca pinch ran for Sydney Perez.",
+            "Isabella Sulesky flied out to cf (0-0).",
+            "Mya Morales singled (1-1 BF); Alyssa Mayorca advanced to second.",
+            "Julia LaRose struck out swinging (1-2 FKBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ragini Kannan to p for Madeline Jennings.",
+            "Elle Walasavage flied out to rf (1-2 KSB).",
+            "Maddy Devine pinch hit for Kaylee Smallen.",
+            "Maddy Devine flied out to rf (2-0 BB).",
+            "Stevie Shaak flied out to lf (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Grace Landis flied out to lf (0-0).",
+            "Katelyn Dugery struck out swinging (1-2 KBS).",
+            "Sydney Perez hit by pitch (1-2 KFB).",
+            "Isabella Sulesky flied out to cf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mary Doud to rf for Elle Ehrlich.",
+            "Mya Morales struck out swinging (2-2 BKBKS).",
+            "Julia LaRose walked (3-0 BBBB).",
+            "Elle Walasavage grounded into double play ss to 1b (2-2 FBBS); Julia LaRose out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maddy Devine hit by pitch (1-1 KH).",
+            "Stevie Shaak out at first 1b to 2b, SAC, bunt (1-1 BS); Maddy Devine advanced to second.",
+            "Savannah Patrone pinch hit for Grace Landis.",
+            "Savannah Patrone flied out to 2b (2-2 KBFFFB).",
+            "Katelyn Dugery struck out swinging (2-2 SBBSS)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Sydney Perez Katelyn Dugery placed on second (0-0).",
+            "Graysen Trybulski pinch ran for Katelyn Dugery.",
+            "Sydney Perez grounded out to 3b, SAC, bunt (1-0 B); Graysen Trybulski advanced to third.",
+            "Isabella Sulesky grounded out to p, RBI (0-0); Graysen Trybulski scored.",
+            "Mya Morales flied out to rf (3-2 BBSBF)."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "Julia LaRose Mya Morales placed on second (0-0).",
+            "Julia LaRose reached first on an error by 1b (0-0).",
+            "Elle Walasavage struck out looking (0-2 FFK).",
+            "Maddy Devine flied into double play rf to ss (0-1 F); Julia LaRose out on the play.",
+            "Taryn Rainey to c."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/buena-vista/boxscore/14907",
+      "date": "3/8/2026",
+      "opponent": "Buena Vista",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Arielle Bowers singled (0-0).",
+            "Karlee Noe grounded out to 3b (0-0); Arielle Bowers advanced to second.",
+            "Arielle Bowers stole third.",
+            "Rylee Garner reached first on an error by p, RBI (0-0); Arielle Bowers scored.",
+            "Ella Brown grounded into double play ss to 1b (0-0); Rylee Garner out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Hannah Merron reached first on an error by 2b (0-0).",
+            "Maddie Raveling flied out to cf (0-0).",
+            "Avery France lined into double play ss to 1b (0-0); Hannah Merron out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jaylynn Craun singled (0-0).",
+            "Zoey Thayer grounded out to 3b (0-0); Jaylynn Craun advanced to second.",
+            "Arielle Bowers popped up to 3b (0-0).",
+            "Karlee Noe grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Rylee Garner lined out to 1b (0-0).",
+            "Ella Brown struck out swinging (0-0).",
+            "Hannah Merron flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maddie Raveling singled (0-0).",
+            "Maddie Raveling stole second.",
+            "Avery France reached on a fielder's choice (0-0); Maddie Raveling out at third ss to 3b.",
+            "Lindy Nelson pinch hit for Jaylynn Craun.",
+            "Lindy Nelson grounded into double play ss to 1b (0-0); Avery France out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddie Manes to rf for Elle Ehrlich.",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Zoey Thayer lined out to rf (0-0).",
+            "Arielle Bowers grounded out to 2b (0-0).",
+            "Karlee Noe reached first on an error by 1b (0-0).",
+            "Rylee Garner struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kaitlyn Larmann to lf.",
+            "Maddie Manes to dp.",
+            "Hannah Fletcher to 2b.",
+            "Alexa Johnson to rf.",
+            "Taryn Rainey to c for Cae Pellegrini.",
+            "Erin Hunt to lf for Kaitlyn Larmann.",
+            "Ella Brown struck out swinging (0-0).",
+            "Hannah Merron popped up to c (0-0).",
+            "Maddie Raveling struck out looking (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/saint-josephs-maine-/boxscore/14969",
+      "date": "3/8/2026",
+      "opponent": "Saint Josephs Maine ",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kiera Gabric struck out swinging (0-2 KKS).",
+            "Olivia Thomas flied out to c (0-0).",
+            "Chantelle Bouchard struck out looking (2-2 BBSSK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sadie Tirrell struck out looking (2-2 FBBFFK).",
+            "Jayden Sullivan flied out to 2b (1-1 BF).",
+            "Makayla Quintal struck out looking (1-2 KBFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Torrie Webber struck out swinging (1-2 BSSS).",
+            "Breann MacMillan struck out swinging (1-2 SBSS).",
+            "Jaylah Trottier struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kiera Gabric singled through the left side (2-0 BB).",
+            "Olivia Thomas grounded out to 2b (0-2 SF); Kiera Gabric advanced to second.",
+            "Chantelle Bouchard flied out to lf (0-1 S); Kiera Gabric did not advance.",
+            "Sadie Tirrell doubled to right field, RBI (0-1 F); Kiera Gabric scored.",
+            "Jayden Sullivan singled to second base (0-1 K); Sadie Tirrell advanced to third.",
+            "Makayla Quintal struck out swinging (1-2 SFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rebecca Osgood pinch hit for Torrie Webber.",
+            "Rebecca Osgood struck out swinging (2-2 BBSSS).",
+            "Addison French pinch hit for Breann MacMillan.",
+            "Addison French struck out swinging (0-2 KSS).",
+            "Jaylah Trottier struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kiera Gabric flied out to lf (0-0).",
+            "Olivia Thomas grounded out to ss (1-1 SB).",
+            "Chantelle Bouchard fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Marissa Wilbert to c.",
+            "Bella Napolitano-Aberle pinch hit for Sadie Tirrell.",
+            "Bella Napolitano-Aberle struck out swinging (0-2 KKS).",
+            "Jayden Sullivan struck out swinging (0-2 SSS).",
+            "Paige Tremblay pinch hit for Makayla Quintal.",
+            "Paige Tremblay struck out swinging (1-2 KBSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/wentworth/boxscore/15014",
+      "date": "3/14/2026",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lexi Lefkowski struck out looking (2-2 FBFBFFFK).",
+            "Jasmine Feliciano walked (3-2 FFBBFBB).",
+            "Kyla Igawa singled to right field (1-0 B); Jasmine Feliciano advanced to second.",
+            "Lauren Trostel reached on a fielder's choice (2-2 KSFFBB); Kyla Igawa out at second 2b to ss; Jasmine Feliciano advanced to third.",
+            "Abby Delia grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kelsey Medalia grounded out to ss (0-0).",
+            "Jenna Roche lined out to 1b (1-0 B).",
+            "Brianna Miller singled to right center (0-1 K).",
+            "Brianna Miller stole second.",
+            "Quincy Bolduc singled, bunt (2-2 FFBBF); Brianna Miller advanced to third.",
+            "Quincy Bolduc stole second.",
+            "Lexi Lefkowski walked (3-0 BBBB).",
+            "Jasmine Feliciano singled to left field, RBI (2-2 FFBB); Lexi Lefkowski advanced to second; Quincy Bolduc advanced to third; Brianna Miller scored.",
+            "Kyla Igawa singled to left field, 2 RBI (2-1 BKB); Jasmine Feliciano advanced to second; Lexi Lefkowski scored; Quincy Bolduc scored.",
+            "Lauren Trostel grounded out to 3b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Delia struck out swinging (0-2 KSS).",
+            "Kelsey Medalia singled to right center (1-0 B).",
+            "Jenna Roche singled to right field (0-1 F); Kelsey Medalia advanced to second.",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Brianna Miller walked (3-2 KBFBBFB); Jenna Roche advanced to second; Kelsey Medalia advanced to third.",
+            "Quincy Bolduc reached on a fielder's choice, RBI (0-2 FSF); Brianna Miller advanced to second; Jenna Roche out at third ss to 3b; Kelsey Medalia scored.",
+            "Lexi Lefkowski struck out swinging (0-2 SKS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jasmine Feliciano struck out swinging (0-2 SSS).",
+            "Kyla Igawa singled to right center (0-2 KF).",
+            "Lauren Trostel grounded out to ss (0-0); Kyla Igawa advanced to second.",
+            "Abby Delia popped up to 2b (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kelsey Medalia doubled to left center (1-0 B).",
+            "Jenna Roche popped up to p (0-0).",
+            "Brianna Miller flied out to rf (1-1 KB).",
+            "Quincy Bolduc singled to third base (0-1 S); Kelsey Medalia advanced to third.",
+            "Lexi Lefkowski struck out looking (3-2 BBSFBFFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Jasmine Feliciano flied out to rf (1-1 FB).",
+            "Kyla Igawa flied out to rf (1-1 BF).",
+            "Lauren Trostel doubled to left center (2-1 BFB).",
+            "Abby Delia singled to center field, RBI (0-0); Lauren Trostel scored.",
+            "Abby Delia advanced to second on a wild pitch.",
+            "Kelsey Medalia singled up the middle, RBI (3-2 KBBBK); Abby Delia scored.",
+            "Linnea Carlson pinch hit for Jenna Roche.",
+            "Linnea Carlson popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brianna Miller grounded out to ss (1-2 BFK).",
+            "Quincy Bolduc grounded out to p (1-1 BK).",
+            "Lexi Lefkowski lined out to ss (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/wentworth/boxscore/14833",
+      "date": "3/14/2026",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lexi Lefkowski struck out looking (2-2 FBBKK).",
+            "Jasmine Feliciano popped up to 3b (2-2 FKBB).",
+            "Kyla Igawa singled to left field (1-0 B).",
+            "Lauren Trostel struck out swinging (2-2 KSFBBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Delia flied out to rf (0-0).",
+            "Kelsey Medalia flied out to lf (2-1 KBB).",
+            "Kaylee Habib struck out swinging (2-2 BBKKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erin Hunt to dp.",
+            "Cae Pellegrini to 1b for Brooke Boehmer.",
+            "Elle Ehrlich to lf.",
+            "Brianna Miller walked (3-0 BBBB).",
+            "Quincy Bolduc singled to first base (1-2 KBF); Brianna Miller advanced to second.",
+            "Lexi Lefkowski grounded out to 3b (1-0 B); Quincy Bolduc advanced to second; Brianna Miller advanced to third.",
+            "Jasmine Feliciano singled to right field, RBI (2-2 KSFFBFB); Quincy Bolduc advanced to third; Brianna Miller scored.",
+            "Kyla Igawa flied out to cf, sacrifice fly, RBI (2-1 BBF); Quincy Bolduc scored.",
+            "Lauren Trostel doubled to shortstop (0-1 K); Jasmine Feliciano advanced to third.",
+            "Abby Delia singled to second base, RBI (1-2 SBF); Lauren Trostel advanced to third; Jasmine Feliciano scored.",
+            "Kelsey Medalia flied out to rf (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mary Doud to cf for Bells Burdenski.",
+            "Kaylee Habib struck out swinging (2-2 BKFFBS).",
+            "Brianna Miller doubled to left field (2-1 KBB).",
+            "Quincy Bolduc grounded out to 1b unassisted (1-0 B); Brianna Miller advanced to third.",
+            "Lexi Lefkowski walked (3-2 BKBFBFB).",
+            "Jasmine Feliciano singled to right field, RBI (0-2 FF); Lexi Lefkowski advanced to third; Brianna Miller scored.",
+            "Kyla Igawa reached first on an error by lf, 2 RBI (2-0 BB); Jasmine Feliciano scored, unearned; Lexi Lefkowski scored, unearned.",
+            "Lauren Trostel doubled to right field, RBI (1-1 BF); Kyla Igawa scored, unearned.",
+            "Jamie Staub to p for Ragini Kannan.",
+            "Abby Delia grounded out to p (2-2 BBKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Haleigh Borden to 3b for Kaylee Habib.",
+            "Kelsey Medalia lined out to 2b (1-2 FBK).",
+            "Haleigh Borden struck out swinging (0-2 KKS).",
+            "Brianna Miller struck out swinging (1-2 BKFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Quincy Bolduc singled to pitcher (0-1 S).",
+            "Lexi Lefkowski out at first 1b to 2b (1-0 B); Quincy Bolduc advanced to second.",
+            "Jasmine Feliciano grounded out to 3b (1-0 B); Quincy Bolduc advanced to third.",
+            "Kyla Igawa singled to right field, RBI (2-1 BKB); Quincy Bolduc scored.",
+            "Lauren Trostel reached on a fielder's choice (1-2 BSK); Kyla Igawa out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Abby Delia doubled to right center (0-0).",
+            "Kelsey Medalia grounded out to 2b (3-2 BFBBKF); Abby Delia advanced to third.",
+            "Kaylee Habib grounded out to 1b unassisted, RBI (0-1 F); Abby Delia scored.",
+            "Brianna Miller struck out swinging (2-2 KBSBS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/simmons/boxscore/14834",
+      "date": "3/15/2026",
+      "opponent": "Simmons",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Piper Kinney singled to shortstop (1-1 BK).",
+            "Abigail Carvalho out at first 1b to 2b, SAC, bunt (0-0); Piper Kinney advanced to second.",
+            "Zoe Soule walked (3-1 BBBKB).",
+            "Trinity Payne struck out swinging (0-2 KSS).",
+            "Nevaeh Eth struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Teagan Buckley flied out to lf (0-1 K).",
+            "Emma Soule walked (3-1 BKBBB).",
+            "Emery Kreidel-Reimer walked (3-1 BBKBB); Emma Soule advanced to second.",
+            "Emily Deleault reached on a fielder's choice to third base (3-2 BBBKK); Emery Kreidel-Reimer advanced to second; Emma Soule out at third 3b unassisted.",
+            "Piper Kinney lined out to 3b down the lf line (1-2 SFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abigail Carvalho singled to pitcher (1-2 BSS).",
+            "Zoe Soule popped up to 2b down the rf line (2-2 KFBB).",
+            "Trinity Payne fouled out to 1b down the rf line (2-2 BKBK).",
+            "Nevaeh Eth lined out to 3b (2-2 SBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Teagan Buckley flied out to lf (2-2 BBSF).",
+            "Emma Soule grounded out to 3b (0-0).",
+            "Emery Kreidel-Reimer grounded out to 3b (2-2 BFSB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Deleault doubled to left center (0-0).",
+            "Piper Kinney out at first 3b to 2b, SAC, bunt (0-1 F); Emily Deleault advanced to third.",
+            "Abigail Carvalho flied out to cf, sacrifice fly, RBI (0-0); Emily Deleault scored.",
+            "Zoe Soule singled through the left side (0-0).",
+            "Trinity Payne singled through the left side (0-0); Zoe Soule advanced to second.",
+            "Nevaeh Eth struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Teagan Buckley singled up the middle (3-1 BBSB).",
+            "Emma Soule out at first 3b to 2b, SAC, bunt (0-0); Teagan Buckley advanced to second.",
+            "Emery Kreidel-Reimer popped up to ss (2-0 BB).",
+            "Emily Deleault singled down the lf line, RBI (2-2 KBKB); Teagan Buckley scored.",
+            "Piper Kinney fouled out to c (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Dylan Yamamura to c for Alexa Johnson.",
+            "Kaitlyn Larmann to rf.",
+            "Abigail Carvalho flied out to cf to left center (0-0).",
+            "Zoe Soule struck out looking (1-2 BSFK).",
+            "Trinity Payne struck out swinging (1-2 FFFFFFBS)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Maddie Manes to rf.",
+            "Nevaeh Eth Trinity Payne placed on second (0-0).",
+            "Nevaeh Eth singled to right center, RBI (0-1 F); Trinity Payne scored.",
+            "Teagan Buckley singled down the rf line (0-2 FF); Nevaeh Eth advanced to third.",
+            "Emma Soule popped up to 2b (2-2 FBSBFFF).",
+            "Emery Kreidel-Reimer fouled out to rf down the rf line, sacrifice fly, RBI (0-0); Nevaeh Eth scored.",
+            "Emily Deleault flied out to rf (1-1 BK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/simmons/boxscore/15015",
+      "date": "3/15/2026",
+      "opponent": "Simmons",
+      "pitchers": [
+        "Jennings, Madeline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Piper Kinney grounded out to ss (0-1 K).",
+            "Abigail Carvalho struck out swinging (1-2 BKKS).",
+            "Zoe Soule grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Trinity Payne struck out swinging (0-2 KFS).",
+            "Nevaeh Eth struck out looking (0-2 FFK).",
+            "Teagan Buckley doubled down the lf line (2-2 FBBF).",
+            "Emery Kreidel-Reimer popped up to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Isabel McLam lined out to p (0-0).",
+            "Lizzi Sidler flied out to rf (1-0 B).",
+            "Piper Kinney grounded out to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abigail Carvalho struck out swinging (1-2 KSBS).",
+            "Zoe Soule grounded out to 2b (0-0).",
+            "Trinity Payne grounded out to p (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mary Doud to cf.",
+            "Taryn Rainey to c for Kaitlyn Larmann.",
+            "Cae Pellegrini to 1b.",
+            "Alexa Johnson to rf for Bells Burdenski.",
+            "Elle Ehrlich to lf for Dylan Yamamura.",
+            "Maddie Manes to dp.",
+            "Hannah Fletcher to 2b.",
+            "Nevaeh Eth lined out to p (0-0).",
+            "Teagan Buckley grounded out to 1b unassisted (0-0).",
+            "Emery Kreidel-Reimer walked (3-2 BKKBBFFB).",
+            "Isabel McLam struck out swinging (1-2 FBSS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/emory/boxscore/14835",
+      "date": "3/20/2026",
+      "opponent": "Emory",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Staub, Jamie",
+        "Jennings, Madeline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashley Chu struck out swinging (2-2 BBKKS).",
+            "Megan Sutton flied out to 2b (0-1 K).",
+            "Ellie Zerr singled through the left side (2-0 BB).",
+            "Ella Janish walked (3-2 KBSFBFBB); Ellie Zerr advanced to second.",
+            "Ella Janish advanced to second on a wild pitch; Ellie Zerr advanced to third on a wild pitch.",
+            "Lillian Ware walked (3-2 BBBKKB).",
+            "Addison Kwong walked, RBI (3-2 FBBBKB); Lillian Ware advanced to second; Ella Janish advanced to third; Ellie Zerr scored.",
+            "Ella Hoyle homered to left center, 4 RBI (2-1 SBB); Addison Kwong scored; Lillian Ware scored; Ella Janish scored.",
+            "Allie Stevenson singled to right field (1-2 KBK).",
+            "Shea Johnson singled to shortstop (1-2 BKKF); Allie Stevenson advanced to second, advanced to third on an error by ss.",
+            "Shea Johnson stole second.",
+            "Ashley Chu walked (3-2 SBSBBB).",
+            "Megan Sutton popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ellie Zerr singled to center field (0-0).",
+            "Ella Janish popped up to 2b (1-1 BK).",
+            "Lillian Ware doubled to left center, RBI (0-1 S); Ellie Zerr scored.",
+            "Addison Kwong singled to left field, advanced to second on the throw (0-0); Lillian Ware advanced to third.",
+            "Ella Hoyle walked (3-0 BBBB).",
+            "Jamie Staub to p for Ragini Kannan.",
+            "Allie Stevenson walked, RBI (3-1 BBFBB); Ella Hoyle advanced to second; Addison Kwong advanced to third; Lillian Ware scored.",
+            "Shea Johnson lined out to ss (0-2 KS).",
+            "Ashley Chu singled up the middle, RBI (0-1 K); Allie Stevenson advanced to second; Ella Hoyle advanced to third; Addison Kwong scored.",
+            "Zoe Horning singled down the lf line, 2 RBI (0-1 K); Ashley Chu advanced to second; Allie Stevenson scored; Ella Hoyle scored.",
+            "Ellie Zerr reached on a fielder's choice (0-0); Zoe Horning advanced to second; Ashley Chu out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Janish grounded out to 3b (3-1 BBKB).",
+            "Lillian Ware flied out to lf (0-2 KK).",
+            "Addison Kwong flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Hoyle flied out to rf (1-0 B).",
+            "Allie Stevenson grounded out to ss (0-0).",
+            "Shea Johnson singled through the right side (1-2 FFB).",
+            "Ashley Chu grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Jennings to p for Jamie Staub.",
+            "Zoe Horning singled to right field (0-0).",
+            "Ellie Zerr fouled out to 3b (3-1 BBFB).",
+            "Shivani Nangia reached on a fielder's choice to third base (0-0); Zoe Horning out at second 3b to 2b.",
+            "Makaila Hope reached first on a throwing error by 2b (1-1 BK); Shivani Nangia advanced to third.",
+            "Addison Kwong tripled to right center, 2 RBI (2-2 BBKF); Makaila Hope scored, unearned; Shivani Nangia scored, unearned.",
+            "Ella Hoyle singled to second base, RBI (0-0); Addison Kwong scored, unearned.",
+            "Allie Stevenson grounded out to 2b (1-1 BK)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/emory/boxscore/14836",
+      "date": "3/21/2026",
+      "opponent": "Emory",
+      "pitchers": [
+        "Staub, Jamie",
+        "Jennings, Madeline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashley Chu singled to left field (2-0 BB).",
+            "Megan Sutton doubled to center field, RBI (1-1 KB); Ashley Chu scored.",
+            "Ellie Zerr homered to left field, 2 RBI (2-2 BKFBFF); Megan Sutton scored.",
+            "Zoe Horning grounded out to ss (1-2 KKBF).",
+            "Lillian Ware singled to left field (2-2 KBFB).",
+            "Lillian Ware advanced to second on a wild pitch.",
+            "Addison Kwong walked (3-2 BBBKSFB).",
+            "Ella Hoyle doubled to center field, advanced to third on the throw, 2 RBI (0-2 KK); Addison Kwong scored; Lillian Ware scored.",
+            "Allie Stevenson flied out to cf (0-0).",
+            "Shea Johnson reached first on an error by 3b (1-0 B).",
+            "Shea Johnson stole second.",
+            "Ashley Chu singled to catcher (1-1 BF).",
+            "Megan Sutton flied out to rf (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ellie Zerr singled through the left side (0-0).",
+            "Zoe Horning doubled to right center, RBI (1-2 FFBF); Ellie Zerr scored.",
+            "Lillian Ware flied out to cf (0-1 K); Zoe Horning advanced to third.",
+            "Addison Kwong reached first on an error by p, bunt (1-1 FB); Zoe Horning scored, unearned.",
+            "Addison Kwong stole second.",
+            "Ella Hoyle popped up to 2b (3-2 BFFBB).",
+            "Allie Stevenson reached first on an error by cf, advanced to third (0-1 K); Addison Kwong scored, unearned.",
+            "Shea Johnson flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Madeline Jennings to p for Jamie Staub.",
+            "Ashley Chu flied out to lf (1-2 FKBF).",
+            "Megan Sutton grounded out to 2b (2-1 BFB).",
+            "Ellie Zerr singled through the right side (2-0 BB).",
+            "Zoe Horning hit by pitch (2-1 BFH); Ellie Zerr advanced to second.",
+            "Lillian Ware walked (3-0 BBBB); Zoe Horning advanced to second; Ellie Zerr advanced to third.",
+            "Addison Kwong grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mary Doud to rf for Maddie Manes.",
+            "Ella Hoyle walked (3-1 FBBBB).",
+            "Allie Stevenson reached on a fielder's choice (1-0 B); Ella Hoyle out at second ss to 2b.",
+            "Shea Johnson singled to third base (1-2 KSB); Allie Stevenson advanced to second.",
+            "Ashley Chu singled, bunt (0-1 S); Shea Johnson advanced to second; Allie Stevenson advanced to third.",
+            "Megan Sutton reached on a fielder's choice to pitcher (0-2 KKF); Ashley Chu advanced to second; Shea Johnson advanced to third; Allie Stevenson scored on an error by p, unearned.",
+            "Ellie Zerr singled to right center, RBI (1-0 B); Megan Sutton advanced to second; Ashley Chu advanced to third; Shea Johnson scored.",
+            "Zoe Horning singled to center field, 2 RBI (1-0 B); Ellie Zerr advanced to second; Megan Sutton scored; Ashley Chu scored.",
+            "Lillian Ware singled to first base (1-1 KB); Zoe Horning advanced to second; Ellie Zerr advanced to third.",
+            "Addison Kwong struck out swinging (2-2 SBBFFS).",
+            "Ella Hoyle singled to center field, 2 RBI (2-1 BFB); Lillian Ware advanced to third; Zoe Horning scored, unearned; Ellie Zerr scored, unearned.",
+            "Allie Stevenson grounded out to 3b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Rylie Ballog pinch hit for Shea Johnson.",
+            "Rylie Ballog grounded out to ss (0-0).",
+            "Ashley Chu singled to shortstop (0-0).",
+            "Megan Sutton grounded out to 3b (0-0); Ashley Chu advanced to second.",
+            "Ashley Chu stole third.",
+            "Ellie Zerr singled to left center, RBI (1-2 KSB); Ashley Chu scored.",
+            "Shivani Nangia struck out swinging (0-2 SKS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/emory/boxscore/14903",
+      "date": "3/21/2026",
+      "opponent": "Emory",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ashley Chu singled to second base (2-2 BBFK).",
+            "Marisol Gonzalez reached on a fielder's choice (0-0); Ashley Chu advanced to second on a throwing error by 3b.",
+            "Ellie Zerr flied out to rf (1-0 B).",
+            "Alejandra Wittman grounded out to ss (0-0); Marisol Gonzalez advanced to second; Ashley Chu advanced to third.",
+            "Shivani Nangia singled through the right side, RBI (2-1 KBB); Marisol Gonzalez advanced to third; Ashley Chu scored, unearned.",
+            "Shivani Nangia out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Addison Kwong singled through the left side (0-0).",
+            "Ella Hoyle walked (3-0 BBBB); Addison Kwong advanced to second.",
+            "Ella Hoyle advanced to second; Addison Kwong out at third c to 3b, caught stealing.",
+            "Allie Stevenson singled to left field (3-2 BBKFB); Ella Hoyle advanced to third.",
+            "Rylie Ballog flied out to ss (3-2 FBFFFBB).",
+            "Ashley Chu singled up the middle, RBI (0-0); Allie Stevenson advanced to second; Ella Hoyle scored.",
+            "Marisol Gonzalez grounded out to ss (3-1 BBKB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ellie Zerr singled to third base (1-0 B).",
+            "Alejandra Wittman popped up to 2b (1-0 B).",
+            "Shivani Nangia singled to left field (0-0); Ellie Zerr advanced to second.",
+            "Abby Wylie reached on a fielder's choice (2-0 BB); Shivani Nangia advanced to second on an error by ss; Ellie Zerr advanced to third.",
+            "Ella Hoyle singled to third base, RBI (2-1 KBB); Abby Wylie advanced to second; Shivani Nangia advanced to third; Ellie Zerr scored.",
+            "Allie Stevenson singled up the middle, 2 RBI (0-2 KS); Ella Hoyle advanced to second; Abby Wylie scored; Shivani Nangia scored, unearned.",
+            "Rylie Ballog reached on a fielder's choice (0-1 K); Allie Stevenson advanced to second; Ella Hoyle out at third ss to 3b.",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Ashley Chu singled to pitcher (1-0 B); Rylie Ballog advanced to second; Allie Stevenson advanced to third.",
+            "Marisol Gonzalez grounded out to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ellie Zerr grounded out to 2b (1-1 FB).",
+            "Makaila Hope pinch hit for Alejandra Wittman.",
+            "Makaila Hope flied out to rf (0-2 SK).",
+            "Shivani Nangia flied out to lf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Kohler pinch hit for Abby Wylie.",
+            "Olivia Kohler walked (3-2 KBBFFFBFB).",
+            "Ella Hoyle reached on a fielder's choice (0-0); Olivia Kohler out at second 2b to rf to ss.",
+            "Allie Stevenson reached on a fielder's choice (0-0); Ella Hoyle out at second ss to 2b.",
+            "Rylie Ballog grounded out to 3b (1-2 FKFFBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ashley Chu hit by pitch (2-1 BKH).",
+            "Radha Samuel pinch hit for Marisol Gonzalez.",
+            "Ashley Chu advanced to second on a wild pitch.",
+            "Radha Samuel singled, advanced to second on the throw (2-2 BKSB); Ashley Chu advanced to third.",
+            "Ellie Zerr doubled to center field, 2 RBI (0-0); Radha Samuel scored; Ashley Chu scored.",
+            "Ellie Zerr advanced to third on a wild pitch.",
+            "Makaila Hope walked (3-2 KBBBSB).",
+            "Gabriela Oceguera pinch hit for Shivani Nangia.",
+            "Ragini Kannan to p for Jamie Staub.",
+            "Gabriela Oceguera fouled out to 1b, sacrifice fly, RBI (1-1 BK); Makaila Hope advanced to second; Ellie Zerr scored.",
+            "Olivia Kohler flied out to ss (1-2 BSK).",
+            "Ella Hoyle walked (3-0 BBBB).",
+            "Allie Stevenson lined out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Mary Doud to dp.",
+            "Mia Deck to 2b.",
+            "Rylie Ballog singled to pitcher (0-0).",
+            "Ashley Chu singled, bunt (0-0); Rylie Ballog advanced to second.",
+            "Marisol Gonzalez reached first on an error by 2b, SAC, bunt (0-0); Ashley Chu advanced to second; Rylie Ballog advanced to third.",
+            "Ellie Zerr singled up the middle, RBI (3-2 SBKBFB); Marisol Gonzalez advanced to second; Ashley Chu advanced to third; Rylie Ballog scored, unearned.",
+            "Makaila Hope tripled down the rf line, 3 RBI (0-1 K); Ellie Zerr scored; Marisol Gonzalez scored, unearned; Ashley Chu scored.",
+            "Shivani Nangia struck out looking (2-2 SFBBK).",
+            "Olivia Kohler grounded out to ss (0-0).",
+            "Ella Hoyle singled to right field, RBI (0-0); Makaila Hope scored, unearned.",
+            "Allie Stevenson reached on a fielder's choice (1-0 B); Ella Hoyle out at second ss to 2b."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/suffolk/boxscore/14837",
+      "date": "3/25/2026",
+      "opponent": "Suffolk",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jolie Quintana singled to right field (1-1 BF).",
+            "Jolie Quintana advanced to second on a wild pitch.",
+            "Ava Lanza grounded out to 3b (2-0 BB); Jolie Quintana advanced to third.",
+            "Catherine Carignan grounded out to ss, RBI (2-2 BBKF); Jolie Quintana scored.",
+            "Julia Mills singled to right field (1-1 KB).",
+            "Lily Newhall reached on a fielder's choice (0-1 K); Julia Mills out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Claire Basaldua struck out looking (3-2 KBBBKK).",
+            "Roma Braid grounded out to 1b unassisted (1-0 B).",
+            "Kendal Heyman reached first on an error by 2b (1-2 KFB).",
+            "Dana Still popped up to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jolie Quintana singled to left field (1-1 KB).",
+            "Ava Lanza struck out looking (1-2 FBFK).",
+            "Catherine Carignan popped up to lf (2-1 BKB).",
+            "Julia Mills reached on a fielder's choice (0-1 K); Jolie Quintana out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lily Newhall homered, RBI (1-2 KKB).",
+            "Claire Basaldua singled up the middle (3-2 KBFBB).",
+            "Roma Braid reached first on an error by p, SAC (0-1 F); Claire Basaldua advanced to second.",
+            "Roma Braid advanced to second on a wild pitch; Claire Basaldua advanced to third on a wild pitch.",
+            "Kendal Heyman grounded out to 1b unassisted (2-2 FBFB).",
+            "Dana Still singled up the middle, 2 RBI (0-0); Roma Braid scored, unearned; Claire Basaldua scored.",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Dana Still stole second.",
+            "Dana Still out at third c to 3b, caught stealing.",
+            "Jolie Quintana popped up to p (2-2 KBSFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ava Lanza grounded out to 3b (0-0).",
+            "Catherine Carignan flied out to cf (2-1 BFB).",
+            "Julia Mills grounded out to ss (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cae Pellegrini to 1b for Brooke Boehmer.",
+            "Lily Newhall grounded out to ss (0-0).",
+            "Claire Basaldua flied out to lf (2-2 BFKB).",
+            "Roma Braid grounded out to ss (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kendal Heyman struck out swinging (1-2 KKBS).",
+            "Dana Still struck out swinging (3-2 BKFFBBS).",
+            "Jolie Quintana singled to left field (1-1 FB).",
+            "Ava Lanza singled to left field (0-0); Jolie Quintana advanced to second.",
+            "Catherine Carignan lined out to 2b (2-2 KBKB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/suffolk/boxscore/14904",
+      "date": "3/25/2026",
+      "opponent": "Suffolk",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jolie Quintana grounded out to 3b (2-2 KBBF).",
+            "Ava Lanza lined out to lf (1-1 KB).",
+            "Catherine Carignan homered, RBI (0-0).",
+            "Julia Mills walked (3-0 BBBB).",
+            "Julia Mills stole second.",
+            "Lily Newhall singled to center field, RBI (1-2 KKBF); Julia Mills scored.",
+            "Claire Basaldua singled to right field (1-1 KB); Lily Newhall advanced to third.",
+            "Abby Barnaby struck out swinging (1-2 KSBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Roma Braid fouled out to lf (0-1 K).",
+            "Dana Still struck out looking (3-2 SBKBBK).",
+            "Jolie Quintana struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Lanza walked (3-0 BBBB).",
+            "Catherine Carignan reached on a fielder's choice (3-2 KBFBB); Ava Lanza out at second 3b to 2b.",
+            "Julia Mills singled to shortstop (0-1 K); Catherine Carignan advanced to second.",
+            "Julia Mills advanced to second on a passed ball; Catherine Carignan advanced to third on a passed ball.",
+            "Lily Newhall walked (3-2 SBSBBFB).",
+            "Claire Basaldua struck out looking (1-2 KFFBFK).",
+            "Abby Barnaby singled to center field, 2 RBI (2-2 SSBFBF); Lily Newhall advanced to second; Julia Mills scored; Catherine Carignan scored.",
+            "Roma Braid grounded out to 1b unassisted (2-2 KBSBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dana Still popped up to cf (1-1 KB).",
+            "Jolie Quintana grounded out to ss (0-1 S).",
+            "Ava Lanza grounded out to 1b unassisted (3-2 KBBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Catherine Carignan flied out to lf (1-2 KSB).",
+            "Julia Mills singled to right field (2-1 BBS).",
+            "Julia Mills stole second.",
+            "Lily Newhall flied out to rf, sacrifice fly, RBI (2-2 SFBFB); Julia Mills scored.",
+            "Claire Basaldua flied out to rf (3-2 SKBBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Brooke Boehmer to 1b.",
+            "Dylan Yamamura to c for Alexa Johnson.",
+            "Taryn Rainey to dp.",
+            "Abby Barnaby walked (3-2 BBFKFBB).",
+            "Roma Braid singled to third base (0-1 K); Abby Barnaby advanced to second.",
+            "Dana Still popped up to 2b (1-0 B).",
+            "Roma Braid advanced to second on a wild pitch; Abby Barnaby advanced to third on a wild pitch.",
+            "Jolie Quintana singled to pitcher, RBI (1-2 FKB); Roma Braid advanced to third; Abby Barnaby scored.",
+            "Jolie Quintana stole second.",
+            "Ava Lanza singled to shortstop, RBI (2-2 KKBFBFFFFF); Jolie Quintana advanced to third; Roma Braid scored.",
+            "Catherine Carignan doubled to center field, RBI (1-0 B); Ava Lanza advanced to third; Jolie Quintana scored.",
+            "Jamie Staub to p for Ragini Kannan.",
+            "Julia Mills grounded out to 2b, RBI (2-0 BB); Catherine Carignan advanced to third; Ava Lanza scored.",
+            "Lily Newhall grounded out to p (1-0 B)."
           ]
         }
       ],

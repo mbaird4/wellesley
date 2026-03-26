@@ -1,120 +1,120 @@
 {
-  "slug": "nichols",
-  "domain": "nicholsathletics.com",
-  "scrapedAt": "2026-03-25T23:23:26.056Z",
+  "slug": "brandeis",
+  "domain": "brandeisjudges.com",
+  "scrapedAt": "2026-03-26T02:15:10.495Z",
   "year": 2023,
   "pitchingStats": [
     {
-      "name": "Indyk, Chelsea",
-      "w": 9,
-      "l": 6,
-      "era": 2.62,
-      "app": 22,
-      "gs": 15,
-      "cg": 8,
-      "sho": 3,
-      "sv": 2,
-      "ip": 93.2,
-      "h": 88,
-      "r": 44,
-      "er": 35,
-      "bb": 24,
-      "so": 96,
-      "hr": 4,
-      "whip": 1.2,
-      "doubles": 21,
-      "triples": 1,
-      "ab": 361,
-      "bAvg": 0.244,
-      "wp": 7,
-      "hbp": 4,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 9
-    },
-    {
-      "name": "Pedro, Olivia",
-      "w": 12,
-      "l": 8,
-      "era": 2.84,
-      "app": 25,
-      "gs": 22,
-      "cg": 11,
-      "sho": 1,
-      "sv": 1,
-      "ip": 123.1,
-      "h": 134,
-      "r": 69,
-      "er": 50,
+      "name": "Kannan, Ragini",
+      "w": 15,
+      "l": 5,
+      "era": 2.02,
+      "app": 23,
+      "gs": 16,
+      "cg": 14,
+      "sho": 4,
+      "sv": 0,
+      "ip": 128,
+      "h": 114,
+      "r": 50,
+      "er": 37,
       "bb": 19,
-      "so": 50,
-      "hr": 2,
-      "whip": 1.24,
-      "doubles": 24,
+      "so": 132,
+      "hr": 7,
+      "whip": 1.04,
+      "doubles": 12,
+      "triples": 0,
+      "ab": 481,
+      "bAvg": 0.237,
+      "wp": 9,
+      "hbp": 7,
+      "bk": 0,
+      "sfa": 5,
+      "sha": 15
+    },
+    {
+      "name": "Cohen, Alex",
+      "w": 10,
+      "l": 6,
+      "era": 3.11,
+      "app": 19,
+      "gs": 16,
+      "cg": 6,
+      "sho": 3,
+      "sv": 0,
+      "ip": 85.2,
+      "h": 75,
+      "r": 44,
+      "er": 38,
+      "bb": 6,
+      "so": 90,
+      "hr": 5,
+      "whip": 0.95,
+      "doubles": 12,
       "triples": 2,
-      "ab": 511,
-      "bAvg": 0.262,
-      "wp": 11,
+      "ab": 333,
+      "bAvg": 0.225,
+      "wp": 4,
+      "hbp": 12,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 8
+    },
+    {
+      "name": "Penton, Chandra",
+      "w": 0,
+      "l": 1,
+      "era": 3.73,
+      "app": 9,
+      "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 15,
+      "h": 22,
+      "r": 11,
+      "er": 8,
+      "bb": 6,
+      "so": 3,
+      "hr": 0,
+      "whip": 1.87,
+      "doubles": 4,
+      "triples": 0,
+      "ab": 66,
+      "bAvg": 0.333,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Guerci, Rebecca",
+      "w": 0,
+      "l": 1,
+      "era": 5.25,
+      "app": 7,
+      "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 13.1,
+      "h": 25,
+      "r": 16,
+      "er": 10,
+      "bb": 7,
+      "so": 3,
+      "hr": 0,
+      "whip": 2.4,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 62,
+      "bAvg": 0.403,
+      "wp": 4,
       "hbp": 4,
       "bk": 0,
-      "sfa": 8,
-      "sha": 7
-    },
-    {
-      "name": "Ouellette, Alyssa",
-      "w": 0,
-      "l": 4,
-      "era": 3.5,
-      "app": 20,
-      "gs": 1,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 48,
-      "h": 58,
-      "r": 32,
-      "er": 24,
-      "bb": 12,
-      "so": 22,
-      "hr": 1,
-      "whip": 1.46,
-      "doubles": 8,
-      "triples": 0,
-      "ab": 190,
-      "bAvg": 0.305,
-      "wp": 7,
-      "hbp": 3,
-      "bk": 0,
-      "sfa": 4,
-      "sha": 7
-    },
-    {
-      "name": "Martin, Laney",
-      "w": 2,
-      "l": 2,
-      "era": 3.5,
-      "app": 11,
-      "gs": 6,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 32,
-      "h": 29,
-      "r": 19,
-      "er": 16,
-      "bb": 20,
-      "so": 24,
-      "hr": 0,
-      "whip": 1.53,
-      "doubles": 3,
-      "triples": 2,
-      "ab": 127,
-      "bAvg": 0.228,
-      "wp": 5,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 2
+      "sfa": 0,
+      "sha": 3
     }
   ],
   "games": [
@@ -3691,6 +3691,2899 @@
             "C. Marotto reached on a fielder's choice to shortstop; M. Peryer out at second ss to 2b.",
             "C. Nowicki struck out looking.",
             "K. Watts flied out to cf to right center."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/whittier/boxscore/5416",
+      "date": "2/23/2023",
+      "opponent": "Whittier",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monroy homered to center field, RBI.",
+            "E. Adkison homered to right center, RBI.",
+            "M. Flynn walked.",
+            "M. Carrasco popped up to 2b.",
+            "M. Palos hit by pitch; M. Flynn advanced to second.",
+            "L. Brooks grounded out to p, SAC; M. Palos advanced to second; M. Flynn advanced to third.",
+            "L. Perry popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "G. Soto struck out swinging.",
+            "S. Chiala hit by pitch.",
+            "S. Luna pinch hit for K. Monroy.",
+            "S. Luna struck out swinging.",
+            "S. Chiala stole second.",
+            "E. Adkison popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Flynn lined out to 3b.",
+            "M. Carrasco popped up to ss.",
+            "M. Palos flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "L. Brooks struck out swinging.",
+            "L. Perry out on batter's interference.",
+            "G. Soto grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Chiala fouled out to 1b.",
+            "S. Luna flied out to rf.",
+            "E. Adkison lined out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Perez-Ram to c for S. Micale.",
+            "F. Doiron to 2b for E. Ehrlich.",
+            "M. Flynn reached first on an error by 2b.",
+            "B. Peinado pinch ran for M. Flynn.",
+            "B. Peinado stole second.",
+            "M. Carrasco to dp for J. Garvey.",
+            "J. Garvey to p for M. Carrasco.",
+            "J. Garvey struck out swinging.",
+            "M. Palos popped up to 3b.",
+            "L. Brooks struck out swinging."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "O. Butler pinch hit for L. Perry.",
+            "O. Butler struck out swinging.",
+            "S. Ramirez to ss for G. Soto.",
+            "S. Ramirez popped up to 2b.",
+            "B. Bordine pinch hit for S. Chiala.",
+            "B. Bordine struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/whittier/boxscore/5417",
+      "date": "2/23/2023",
+      "opponent": "Whittier",
+      "pitchers": [
+        "Cohen, Alex",
+        "Guerci, Rebecca",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monroy doubled to left field.",
+            "E. Adkison grounded out to 3b.",
+            "M. Flynn popped up to p.",
+            "M. Carrasco grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Signorett homered to left center, RBI.",
+            "H. Wolf singled to right field.",
+            "L. Perry popped up to ss.",
+            "S. Chiala homered to left field, 2 RBI; H. Wolf scored.",
+            "A. Cohen to dp.",
+            "R. Guerci to p for F. Doiron.",
+            "J. Pippin to 2b.",
+            "L. Brooks lined out to 2b.",
+            "K. Monroy grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Adkison singled to center field.",
+            "M. Flynn reached on a fielder's choice; E. Adkison out at second ss to 2b.",
+            "M. Carrasco reached on a fielder's choice; M. Flynn out at second 2b to ss.",
+            "J. Signorett reached first on an error by p; M. Carrasco advanced to second.",
+            "H. Wolf singled to center field, RBI; J. Signorett advanced to second; M. Carrasco scored, unearned.",
+            "L. Perry singled through the left side, RBI; H. Wolf advanced to second, out at third lf to 3b to 2b; J. Signorett scored, unearned."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Chiala grounded out to ss.",
+            "L. Brooks flied out to rf.",
+            "K. Monroy walked.",
+            "K. Monroy advanced to second on a wild pitch.",
+            "E. Adkison singled to left field, RBI; K. Monroy scored.",
+            "M. Flynn grounded out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Penton to p for R. Guerci.",
+            "M. Carrasco fouled out to 1b.",
+            "J. Signorett doubled to left field.",
+            "H. Wolf grounded out to 2b; J. Signorett advanced to third.",
+            "L. Perry grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Micale to c.",
+            "S. Chiala lined out to lf.",
+            "M. Palos pinch hit for L. Brooks.",
+            "M. Palos reached first on an error by ss.",
+            "L. Brooks pinch ran for M. Palos.",
+            "L. Brooks advanced to second on a wild pitch.",
+            "K. Monroy grounded out to 2b; L. Brooks advanced to third.",
+            "E. Adkison lined out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wentworth/boxscore/5420",
+      "date": "03/18/23",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kaitlin Pettenger struck out swinging.",
+            "Briana Beverly struck out swinging.",
+            "Alexandra Pina struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kyla Igawa singled to center field.",
+            "Julia Bollentin struck out swinging.",
+            "Jess Rowe grounded out to p, SAC, bunt; Kyla Igawa advanced to second.",
+            "Erin Hancock flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Katie Kranz struck out swinging.",
+            "Katelin Howe reached first on an error by ss.",
+            "Kaitlin Pettenger grounded out to p, SAC, bunt; Katelin Howe advanced to second.",
+            "Briana Beverly struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alexandra Pina fouled out to lf.",
+            "Kyla Igawa flied out to lf.",
+            "Julia Bollentin struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jess Rowe struck out swinging.",
+            "Erin Hancock struck out looking.",
+            "Katie Kranz walked.",
+            "Katie Kranz advanced to second on a wild pitch.",
+            "Quincy Bolduc pinch ran for Katie Kranz.",
+            "Katelin Howe walked.",
+            "Kaitlin Pettenger struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Jamie Pippin to 2b for Elle Ehrlich.",
+            "Briana Beverly lined out to ss.",
+            "Alexandra Pina grounded out to 3b.",
+            "Kyla Igawa grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Bollentin struck out swinging.",
+            "Jess Rowe struck out swinging.",
+            "Erin Hancock flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wentworth/boxscore/5421",
+      "date": "03/18/23",
+      "opponent": "Wentworth",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Kaitlin Pettenger struck out looking.",
+            "Briana Beverly struck out swinging.",
+            "Alexandra Pina hit by pitch.",
+            "Kyla Igawa grounded out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jess Rowe struck out looking.",
+            "Julia Bollentin struck out swinging.",
+            "Annabelle Hebard struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kayla Richard grounded out to ss.",
+            "Kait Shawney struck out looking.",
+            "Kaitlin Pettenger walked.",
+            "Briana Beverly struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alexandra Pina struck out swinging.",
+            "Kyla Igawa flied out to rf.",
+            "Jess Rowe struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jamie Pippin to 2b for Sophia Micale.",
+            "Katelin Howe pinch hit for Julia Bollentin.",
+            "Katelin Howe singled to left field.",
+            "Annabelle Hebard struck out swinging.",
+            "Kayla Richard struck out looking.",
+            "Kait Shawney grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Fiona Doiron to 1b for Chickie Elbaz.",
+            "Kaitlin Pettenger struck out looking.",
+            "Briana Beverly struck out swinging.",
+            "Alexandra Pina grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kyla Igawa singled to left center.",
+            "Julia Hutchinson pinch hit for Jess Rowe.",
+            "Julia Hutchinson struck out swinging.",
+            "Julia Bollentin singled to center field; Kyla Igawa advanced to second.",
+            "Katie Kranz pinch hit for Annabelle Hebard.",
+            "Quincy Bolduc pinch ran for Kyla Igawa.",
+            "Katie Kranz flied out to rf.",
+            "Kayla Richard struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/eastern-nazarene/boxscore/5422",
+      "date": "3/21/2023",
+      "opponent": "Eastern Nazarene",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Brandt struck out swinging.",
+            "A. Schwenger struck out swinging.",
+            "B. Olaveson struck out looking."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Castro popped up to 2b.",
+            "J. Munoz fouled out to 1b.",
+            "Y. Bowden struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Giddings singled to third base, bunt.",
+            "Mac. Murray struck out looking.",
+            "C. Wernsing struck out swinging; A. Giddings  caught stealing  c to ss, double play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Brandt walked.",
+            "A. Schwenger out at first 1b to 2b, SAC, bunt; T. Brandt advanced to second.",
+            "B. Olaveson grounded out to 3b; T. Brandt advanced to third.",
+            "D. Castro struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Munoz struck out swinging.",
+            "Y. Bowden struck out looking.",
+            "A. Giddings struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. - to c for T. Boyer.",
+            "Mac. Murray struck out swinging.",
+            "C. Wernsing singled to center field.",
+            "T. Brandt singled to left field; C. Wernsing advanced to second.",
+            "A. Schwenger struck out swinging.",
+            "B. Olaveson popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/eastern-nazarene/boxscore/5423",
+      "date": "3/21/2023",
+      "opponent": "Eastern Nazarene",
+      "pitchers": [
+        "Cohen, Alex",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "T. Brandt hit by pitch.",
+            "A. Schwenger out at first 1b to 2b, SAC, bunt; T. Brandt advanced to second.",
+            "B. Olaveson singled to shortstop; T. Brandt advanced to third.",
+            "D. Castro singled to left field, RBI; B. Olaveson advanced to second; T. Brandt scored.",
+            "Y. Bowden out at first p to 2b, SAC, bunt; D. Castro advanced to second; B. Olaveson advanced to third.",
+            "A. Giddings struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Martini struck out looking.",
+            "Mac. Murray struck out swinging.",
+            "D. Maliszews grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Boyer to c for R. Balakrish.",
+            "T. Brandt lined out to cf.",
+            "A. Schwenger struck out swinging.",
+            "B. Olaveson struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "D. Castro reached first on an error by p.",
+            "A. Mieses pinch ran for D. Castro.",
+            "Y. Bowden struck out swinging.",
+            "A. Giddings struck out swinging.",
+            "C. Martini struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Cohen to dp.",
+            "A. Kolb to 2b for C. Elbaz.",
+            "S. Micale to c.",
+            "F. Doiron to 1b for A. -.",
+            "C. Penton to p.",
+            "B. Lee pinch hit for Mac. Murray.",
+            "B. Lee walked.",
+            "D. Maliszews lined out to lf.",
+            "T. Brandt lined out to ss; B. Lee out at second ss to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/carnegie-mellon/boxscore/5424",
+      "date": "3/24/2023",
+      "opponent": "Carnegie Mellon",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monji struck out swinging.",
+            "K. Boucher grounded out to 3b.",
+            "E. Heffernen flied out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "F. Lawrence struck out swinging.",
+            "K. Sagae homered to center field, RBI.",
+            "P. Johnson singled up the middle.",
+            "E. Finger grounded into double play p to 1b to 3b; P. Johnson out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Reese grounded out to 3b.",
+            "L. Eichberge singled to second base.",
+            "L. Eichberge stole second.",
+            "K. Monji grounded out to 3b; L. Eichberge advanced to third.",
+            "K. Boucher fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Heffernen singled, bunt.",
+            "E. Heffernen stole second.",
+            "F. Lawrence singled to center field, advanced to second on the throw; E. Heffernen advanced to third, out at home cf to c.",
+            "K. Sagae struck out looking.",
+            "P. Johnson struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Finger singled to left field.",
+            "H. Pucci pinch ran for E. Finger.",
+            "A. Reese struck out looking.",
+            "L. Eichberge reached on a fielder's choice; H. Pucci out at second ss to 2b.",
+            "L. Eichberge stole second.",
+            "K. Monji singled through the left side; L. Eichberge advanced to third.",
+            "K. Monji stole second.",
+            "K. Boucher walked.",
+            "E. Heffernen grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "F. Lawrence struck out swinging.",
+            "K. Sagae struck out swinging.",
+            "P. Johnson flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/carnegie-mellon/boxscore/5425",
+      "date": "3/24/2023",
+      "opponent": "Carnegie Mellon",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monji grounded out to p.",
+            "K. Boucher struck out looking.",
+            "L. Eichberge flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Sagae doubled to right field.",
+            "F. Lawrence flied out to cf; K. Sagae advanced to third.",
+            "E. Finger flied out to cf, SAC, RBI; K. Sagae scored.",
+            "P. Johnson reached first on an error by p.",
+            "E. Heffernen flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "G. Fujino struck out swinging.",
+            "K. Monji singled up the middle.",
+            "K. Boucher reached on a fielder's choice; K. Monji out at second 3b to ss.",
+            "K. Boucher stole second.",
+            "L. Eichberge popped up to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Sagae flied out to rf.",
+            "F. Lawrence struck out swinging.",
+            "E. Finger grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "P. Johnson flied out to cf.",
+            "E. Heffernen struck out swinging.",
+            "G. Fujino struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/carnegie-mellon/boxscore/5426",
+      "date": "3/25/2023",
+      "opponent": "Carnegie Mellon",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monji struck out swinging.",
+            "K. Boucher flied out to rf.",
+            "L. Eichberge grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Sagae singled up the middle.",
+            "F. Lawrence lined into double play rf to 1b; K. Sagae out on the play.",
+            "E. Finger flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Reese lined out to 3b.",
+            "P. Johnson singled down the rf line.",
+            "E. Heffernen singled down the rf line; P. Johnson advanced to third.",
+            "P. Johnson out at home c to 2b to c to 3b, caught stealing.",
+            "E. Heffernen advanced to third.",
+            "K. Monji reached on a fielder's choice; E. Heffernen out at home 3b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Boucher struck out looking.",
+            "L. Eichberge struck out swinging.",
+            "K. Sagae struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Martin pinch hit for F. Lawrence.",
+            "E. Martin struck out looking.",
+            "E. Finger popped up to p.",
+            "A. Reese flied out to rf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Brenneman grounded out to 3b.",
+            "E. Heffernen struck out swinging.",
+            "K. Monji reached first on an error by 3b.",
+            "K. Boucher flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "T. Boyer to c for S. Micale.",
+            "O. Zandt pinch hit for L. Eichberge.",
+            "O. Zandt struck out swinging.",
+            "K. Sagae popped up to 2b.",
+            "E. Martin struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/carnegie-mellon/boxscore/5427",
+      "date": "3/26/2023",
+      "opponent": "Carnegie Mellon",
+      "pitchers": [
+        "Cohen, Alex",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Monji grounded out to p.",
+            "K. Boucher lined out to ss.",
+            "L. Eichberge struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "K. Sagae struck out swinging.",
+            "E. Finger grounded out to 2b.",
+            "A. Reese struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Brenneman fouled out to 1b.",
+            "F. Lawrence struck out swinging.",
+            "E. Heffernen singled to center field.",
+            "K. Monji singled to center field; E. Heffernen advanced to second.",
+            "K. Boucher homered to left center, 3 RBI; K. Monji scored; E. Heffernen scored.",
+            "L. Eichberge singled to first base.",
+            "K. Sagae grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Finger flied out to cf.",
+            "A. Reese doubled down the rf line.",
+            "K. Brenneman grounded out to 3b; A. Reese advanced to third.",
+            "F. Lawrence struck out looking."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Cohen to dp.",
+            "R. Kannan to p.",
+            "E. Heffernen popped up to ss.",
+            "K. Monji struck out swinging.",
+            "K. Boucher fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Eichberge singled to second base.",
+            "L. Eichberge stole second.",
+            "K. Sagae struck out swinging.",
+            "E. Finger popped up to 2b.",
+            "L. Eichberge out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Reese struck out swinging.",
+            "P. Johnson singled to right field.",
+            "P. Johnson advanced to second on a wild pitch.",
+            "F. Lawrence grounded out to 2b; P. Johnson advanced to third.",
+            "E. Heffernen flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/emory/boxscore/5428",
+      "date": "3/31/2023",
+      "opponent": "Emory",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Chu singled through the left side.",
+            "N. Swift singled to right field; A. Chu advanced to third.",
+            "E. Hoyle doubled down the lf line, 2 RBI; N. Swift scored; A. Chu scored.",
+            "P. Nellis hit by pitch.",
+            "T. Miller fouled out to 1b.",
+            "P. Nellis advanced to second on a wild pitch; E. Hoyle advanced to third.",
+            "K. Lang fouled out to c.",
+            "M. Duford struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "I. Cohen struck out swinging.",
+            "L. Berg popped up to p.",
+            "A. Chu walked.",
+            "N. Swift grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Hoyle singled to left field.",
+            "P. Nellis flied out to lf.",
+            "T. Miller singled to left field; E. Hoyle advanced to second.",
+            "K. Lang singled up the middle; T. Miller advanced to second; E. Hoyle advanced to third.",
+            "M. Duford fouled out to 1b.",
+            "I. Cohen walked, RBI; K. Lang advanced to second; T. Miller advanced to third; E. Hoyle scored.",
+            "L. Berg grounded out to p."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Chu singled to third base.",
+            "A. Chu stole second.",
+            "N. Swift singled to second base, RBI; A. Chu scored.",
+            "E. Hoyle singled to center field; N. Swift advanced to second.",
+            "P. Nellis reached first on a throwing error by 1b; E. Hoyle advanced to second; N. Swift advanced to third.",
+            "T. Miller flied out to rf, SAC, RBI; P. Nellis advanced to second; E. Hoyle advanced to third; N. Swift scored.",
+            "K. Lang struck out swinging.",
+            "M. Duford grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "I. Cohen flied out to cf.",
+            "E. Albert popped up to 3b.",
+            "A. Chu walked.",
+            "A. Chu out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "F. Doiron to 2b for A. Kolb.",
+            "N. Swift flied out to lf.",
+            "E. Hoyle grounded out to 2b.",
+            "P. Nellis hit by pitch.",
+            "T. Miller popped up to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Ehrlich to lf for S. Micale.",
+            "T. Boyer to c for A. -.",
+            "K. Lang flied out to cf.",
+            "M. Duford grounded out to 2b.",
+            "I. Cohen walked.",
+            "E. Albert flied out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/emory/boxscore/5429",
+      "date": "4/1/2023",
+      "opponent": "Emory",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "C. Elbaz  for R. Kannan.",
+            "A. Cohen to p.",
+            "A. Chu reached first on a fielding error by 3b.",
+            "A. Chu stole second.",
+            "N. Swift struck out swinging.",
+            "E. Hoyle flied out to cf.",
+            "P. Nellis popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "T. Miller singled to third base.",
+            "I. Cohen struck out swinging.",
+            "K. Lang walked; T. Miller advanced to second.",
+            "E. Albert struck out looking.",
+            "M. Duford struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Chu popped up to ss.",
+            "N. Swift out at first 1b to 2b.",
+            "E. Hoyle walked.",
+            "P. Nellis hit by pitch; E. Hoyle advanced to second.",
+            "T. Miller lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "I. Cohen struck out looking.",
+            "K. Lang lined out to 2b.",
+            "E. Albert struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Duford struck out looking.",
+            "A. Chu out at first p to 2b.",
+            "N. Swift struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Hoyle singled up the middle.",
+            "P. Nellis popped up to 2b.",
+            "T. Miller struck out swinging; E. Hoyle stole second.",
+            "I. Cohen fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Manes to 1b for J. Pippin.",
+            "E. Ehrlich to lf for C. Elbaz.",
+            "L. Medici to rf for S. Micale.",
+            "K. Lang singled to right field.",
+            "E. Albert struck out swinging.",
+            "M. Duford flied out to cf.",
+            "A. Chu singled to third base; K. Lang advanced to second.",
+            "N. Swift doubled to right field, RBI; A. Chu scored, advanced on a fielding error by rf, unearned; K. Lang scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/emory/boxscore/5430",
+      "date": "4/1/2023",
+      "opponent": "Emory",
+      "pitchers": [
+        "Guerci, Rebecca",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Chu walked.",
+            "T. Miller flied out to rf.",
+            "A. Chu stole second.",
+            "E. Hoyle grounded out to ss; A. Chu advanced to third.",
+            "N. Swift popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Nellis walked.",
+            "P. Nellis advanced to second on a passed ball.",
+            "I. Cohen walked.",
+            "K. Lang singled to pitcher; I. Cohen advanced to second; P. Nellis advanced to third.",
+            "K. Lang advanced to second; I. Cohen advanced to third; P. Nellis scored on a passed ball, unearned.",
+            "E. Albert grounded out to 1b unassisted.",
+            "M. Duford lined out to cf.",
+            "A. Chu grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. - to c for T. Boyer.",
+            "T. Miller hit by pitch.",
+            "E. Hoyle grounded out to 3b; T. Miller advanced to second.",
+            "N. Swift out at first p to 2b, SAC, bunt; T. Miller advanced to third.",
+            "P. Nellis singled up the middle, RBI; T. Miller scored.",
+            "I. Cohen flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Lang singled up the middle.",
+            "K. Lang advanced to second on a wild pitch.",
+            "E. Albert struck out looking.",
+            "M. Duford hit by pitch.",
+            "R. Kannan to p for R. Guerci.",
+            "A. Chu out at first p to 2b; M. Duford advanced to second; K. Lang advanced to third.",
+            "T. Miller flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Hoyle singled down the lf line.",
+            "E. Hoyle advanced to second on a wild pitch.",
+            "N. Swift singled to left field; E. Hoyle advanced to third.",
+            "P. Nellis popped up to ss.",
+            "N. Swift stole second.",
+            "I. Cohen reached first on a fielding error by 3b.",
+            "K. Lang popped up to 2b.",
+            "E. Albert struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Duford struck out swinging.",
+            "A. Chu grounded out to 3b.",
+            "T. Miller flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Elbaz to lf for E. Ehrlich.",
+            "E. Hoyle singled through the left side, advanced to second on a fielding error by lf.",
+            "N. Swift struck out looking.",
+            "P. Nellis flied out to cf.",
+            "I. Cohen grounded out to 3b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/emory/boxscore/5431",
+      "date": "4/2/2023",
+      "opponent": "Emory",
+      "pitchers": [
+        "Cohen, Alex",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Chu grounded out to 3b.",
+            "N. Swift grounded out to p.",
+            "E. Hoyle struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "P. Nellis doubled to right center.",
+            "K. Lang grounded out to 3b; P. Nellis advanced to third.",
+            "T. Miller reached on a fielder's choice to pitcher, RBI; P. Nellis scored.",
+            "M. Duford struck out swinging.",
+            "A. Sekoff doubled through the left side, RBI; T. Miller scored.",
+            "I. Cohen popped up to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Chu singled to left field.",
+            "N. Swift doubled to left field, RBI; A. Chu scored.",
+            "E. Hoyle singled up the middle, RBI; N. Swift scored.",
+            "A. Cohen to dp.",
+            "R. Kannan to p.",
+            "P. Nellis doubled to right center; E. Hoyle advanced to third, out at home cf to ss to c.",
+            "K. Lang flied out to rf.",
+            "T. Miller flied out to cf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "F. Doiron to lf for S. Micale.",
+            "M. Duford singled to center field.",
+            "A. Sekoff out at first 3b to 2b, SAC, bunt; M. Duford advanced to second.",
+            "I. Cohen grounded out to p; M. Duford advanced to third.",
+            "A. Chu reached first on a fielding error by 1b, advanced to second; M. Duford scored, unearned.",
+            "N. Swift grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Pippin to 2b for A. Kolb.",
+            "E. Hoyle singled through the left side.",
+            "P. Nellis flied out to lf.",
+            "K. Lang singled to left field; E. Hoyle advanced to second.",
+            "T. Miller grounded out to 2b; K. Lang advanced to second; E. Hoyle advanced to third.",
+            "M. Duford struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Manes to 1b for R. Balakrish.",
+            "A. Sekoff grounded out to ss.",
+            "I. Cohen grounded out to ss.",
+            "A. Chu grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/tufts/boxscore/5432",
+      "date": "4/5/2023",
+      "opponent": "Tufts",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Jimenez singled to second base.",
+            "M. Adelman reached on a fielder's choice, advanced to second; B. Jimenez out at second 2b to ss.",
+            "M. Adelman advanced to third on a wild pitch.",
+            "K. Perucci singled to right field, RBI; M. Adelman scored.",
+            "J. Steinberg struck out looking.",
+            "R. Moore fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Leimbach singled to right field.",
+            "L. Neumann reached on a fielder's choice; H. Leimbach out at second p to ss.",
+            "E. Jacobson grounded out to 3b; L. Neumann advanced to second.",
+            "K. Yuzefpols singled to right center, RBI; L. Neumann scored.",
+            "B. Jimenez struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Adelman grounded out to ss.",
+            "K. Perucci singled to left field.",
+            "J. Steinberg struck out swinging.",
+            "R. Moore lined out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Boyer to c for J. Pippin.",
+            "H. Leimbach grounded out to rf.",
+            "L. Neumann walked.",
+            "E. Jacobson flied out to cf.",
+            "K. Yuzefpols popped up to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "B. Jimenez singled to left field.",
+            "M. Adelman struck out swinging.",
+            "K. Perucci singled to right center; B. Jimenez advanced to third.",
+            "J. Steinberg flied out to cf, sacrifice fly, RBI; B. Jimenez scored.",
+            "R. Moore doubled to right center, RBI; K. Perucci scored.",
+            "H. Leimbach singled to left field, RBI, advanced to second on the throw; R. Moore scored.",
+            "L. Neumann grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Jacobson to c for S. Dicocco.",
+            "S. Dicocco pinch hit for E. Jacobson.",
+            "S. Dicocco grounded out to p.",
+            "K. Yuzefpols reached first on an error by 3b.",
+            "B. Jimenez singled to center field; K. Yuzefpols advanced to second.",
+            "N. Russo pinch hit for M. Adelman.",
+            "N. Russo reached first on an error by 2b; B. Jimenez advanced to second; K. Yuzefpols advanced to third.",
+            "K. Perucci lined out to rf, sacrifice fly, RBI; B. Jimenez advanced to third; K. Yuzefpols scored, unearned.",
+            "N. Russo stole second.",
+            "J. Steinberg singled up the middle, 2 RBI, advanced to second on the throw; N. Russo scored, unearned; B. Jimenez scored, unearned.",
+            "R. Moore singled through the left side; J. Steinberg advanced to third.",
+            "R. Moore stole second.",
+            "H. Leimbach singled to left field, 2 RBI, out at second lf to 3b to 2b; R. Moore scored, unearned; J. Steinberg scored, unearned."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/cwru/boxscore/5433",
+      "date": "4/7/2023",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Cohen, Alex",
+        "Kannan, Ragini",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gross singled to center field.",
+            "Jagoda singled to third base; Gross advanced to second.",
+            "Riely flied out to rf.",
+            "Jagoda stole second; Gross stole third.",
+            "Tucci struck out swinging.",
+            "Gobeyn hit by pitch.",
+            "Russo struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Berry singled through the right side.",
+            "Landers hit by pitch; Berry advanced to second.",
+            "Rieger out at first 3b to 2b, SAC, bunt; Landers advanced to second; Berry advanced to third.",
+            "Gross singled through the left side, RBI; Landers advanced to third; Berry scored.",
+            "Gross stole second.",
+            "Jagoda singled up the middle, advanced to second on the throw, 2 RBI; Gross scored; Landers scored.",
+            "Riely tripled down the rf line, RBI; Jagoda scored.",
+            "A. Cohen to dp.",
+            "R. Kanna to p.",
+            "Tucci popped up to ss.",
+            "Gobeyn reached first on a fielding error by cf, advanced to second; Riely scored, unearned.",
+            "Russo grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Berry singled to pitcher.",
+            "Landers out at first 1b to 2b, SAC, bunt; Berry advanced to second.",
+            "Rieger walked, advanced to second; Berry advanced to third on a wild pitch.",
+            "Gross singled through the left side, advanced to second, 2 RBI; Rieger scored; Berry scored.",
+            "Jagoda singled to shortstop.",
+            "Jagoda stole second; Gross stole third.",
+            "Riely singled to left field, advanced to second on the throw, RBI; Jagoda advanced to third; Gross scored.",
+            "Tucci out at first p to 2b, SAC, bunt, RBI; Riely advanced to third; Jagoda scored.",
+            "Gobeyn grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Russo doubled to center field.",
+            "Russo advanced to third on a wild pitch.",
+            "Berry singled through the left side, RBI; Russo scored.",
+            "C. Pent to p for R. Kanna.",
+            "Landers popped up to 3b.",
+            "Rieger popped up to 3b.",
+            "Gross grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jagoda singled to shortstop.",
+            "Jagoda stole second.",
+            "Riely singled to right field, advanced to second on the throw, RBI; Jagoda scored.",
+            "Tucci fouled out to rf; Riely advanced to third.",
+            "Gobeyn singled to left field, RBI; Riely scored.",
+            "Manworren pinch ran for Gobeyn.",
+            "Russo singled through the right side; Manworren advanced to second.",
+            "Berry grounded out to p; Russo advanced to second; Manworren advanced to third.",
+            "Nutter pinch hit for Landers.",
+            "Nutter popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Rieger flied out to rf.",
+            "Gross grounded out to 2b.",
+            "Jagoda struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/cwru/boxscore/5434",
+      "date": "4/8/2023",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Penton, Chandra",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gross flied out to lf.",
+            "Jagoda walked.",
+            "Jagoda stole second.",
+            "Riely popped up to 3b.",
+            "Gobeyn doubled to left center, RBI; Jagoda scored.",
+            "Miskey pinch ran for Gobeyn.",
+            "/  for Miskey.",
+            "Russo grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Berry flied out to lf.",
+            "Tucci singled to left field.",
+            "Tucci stole second.",
+            "Landers singled to left field, advanced to second on the throw; Tucci advanced to third.",
+            "R. Kanna to p for C. Pent.",
+            "Rieger singled up the middle, 2 RBI; Landers scored; Tucci scored.",
+            "Gross struck out swinging.",
+            "Rieger stole second, advanced to third on a throwing error by c.",
+            "Jagoda struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riely flied out to lf.",
+            "Gobeyn popped up to ss.",
+            "Russo struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Manes to 1b for J. Pippin.",
+            "Berry singled to shortstop.",
+            "Tucci out at first 3b to 2b, SAC, bunt; Berry advanced to second.",
+            "Landers flied out to lf.",
+            "Rieger popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gross singled up the middle.",
+            "Jagoda grounded out to 3b; Gross advanced to second.",
+            "Riely flied out to rf.",
+            "Gobeyn flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Russo struck out swinging.",
+            "Berry doubled to center field.",
+            "Manworren pinch ran for Berry.",
+            "Tucci struck out swinging.",
+            "Lamm pinch hit for Landers.",
+            "Lamm struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/cwru/boxscore/5435",
+      "date": "4/8/2023",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Guerci, Rebecca"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gross singled to center field.",
+            "Jagoda singled to shortstop; Gross advanced to second.",
+            "Riely out at first 1b to 2b, SAC, bunt; Jagoda advanced to second; Gross advanced to third.",
+            "Gobeyn homered to center field, 3 RBI; Jagoda scored; Gross scored.",
+            "Berry singled up the middle.",
+            "Russo singled up the middle; Berry advanced to second.",
+            "Tucci flied out to cf.",
+            "Landers grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Rieger singled down the lf line.",
+            "Gross reached first on an error by 1b; Rieger advanced to third.",
+            "Gross stole second.",
+            "Jagoda struck out swinging.",
+            "Riely fouled out to lf, sacrifice fly, RBI; Rieger scored, unearned.",
+            "Gobeyn walked.",
+            "Berry grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Russo singled up the middle.",
+            "Russo stole second.",
+            "Tucci reached first on a throwing error by 3b, advanced to second; Russo scored.",
+            "Tucci stole third.",
+            "Landers doubled down the lf line, RBI; Tucci scored, unearned.",
+            "Rieger walked.",
+            "Gross doubled to left field, 2 RBI; Rieger scored; Landers scored.",
+            "Fritscher pinch ran for Gross.",
+            "Jagoda lined out to 3b.",
+            "Riely singled up the middle, RBI; Fritscher scored, unearned.",
+            "Gobeyn flied out to rf.",
+            "Berry lined out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Kolb to 3b.",
+            "R. Guer to p for R. Kanna.",
+            "Russo reached first on an error by 2b.",
+            "Russo stole second.",
+            "Rzeszutko struck out looking.",
+            "Manworren pinch hit for Landers.",
+            "Manworren reached first on an error by 2b; Russo scored, unearned.",
+            "Landers to rf for Manworren.",
+            "Landers stole second.",
+            "Rieger grounded out to 3b; Landers advanced to third.",
+            "Gross flied out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/cwru/boxscore/5436",
+      "date": "4/9/2023",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Cohen, Alex",
+        "Guerci, Rebecca"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gross popped up to 2b.",
+            "Jagoda grounded out to 3b.",
+            "Riely singled to left field.",
+            "Gobeyn popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Berry doubled to left field.",
+            "Manworren pinch ran for Berry.",
+            "Russo walked.",
+            "Tucci singled to third base; Russo advanced to second; Manworren advanced to third.",
+            "Landers walked, RBI; Tucci advanced to second; Russo advanced to third; Manworren scored.",
+            "Rieger reached on a fielder's choice; Landers advanced to second; Tucci out at third ss unassisted, interference.",
+            "Gross singled to right field, RBI; Rieger advanced to second; Landers advanced to third; Russo scored.",
+            "Gross advanced to second; Rieger advanced to third; Landers scored on a wild pitch.",
+            "Jagoda tripled to left field, 2 RBI; Gross scored; Rieger scored.",
+            "A. Cohen to dp.",
+            "A. Kolb to 2b.",
+            "R. Guer to p for F. Doiron.",
+            "Riely reached on a fielder's choice; Jagoda out at home ss to c.",
+            "Gobeyn reached on a fielder's choice; Riely out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Berry singled to right field.",
+            "Russo struck out swinging.",
+            "Tucci singled down the rf line; Berry advanced to second.",
+            "Tucci advanced to second; Berry advanced to third on a wild pitch.",
+            "Landers singled through the left side, advanced to second on the throw, RBI; Tucci advanced to third; Berry scored.",
+            "Rieger reached on a fielder's choice; Landers advanced to third; Tucci out at home ss to c.",
+            "Rieger stole second; Landers scored on a throwing error by c, unearned.",
+            "Gross lined out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jagoda singled to shortstop.",
+            "Riely singled, advanced to second on the throw; Jagoda advanced to second, out at third cf to 3b.",
+            "Riely advanced to third on a wild pitch.",
+            "Gobeyn reached on a fielder's choice; Riely out at home ss to c.",
+            "Berry singled up the middle; Gobeyn advanced to second.",
+            "Lamm pinch ran for Gobeyn.",
+            "Russo grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Nutter walked.",
+            "Tucci pinch ran for Nutter.",
+            "Landers grounded out to c, SAC, bunt; Tucci advanced to second.",
+            "Rieger singled through the left side; Tucci advanced to third.",
+            "Gross singled through the right side, RBI; Rieger advanced to third; Tucci scored."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/endicott/boxscore/5437",
+      "date": "4/11/2023",
+      "opponent": "Endicott",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Watts walked.",
+            "C. Marotto popped up to 1b.",
+            "R. Comtois struck out swinging.",
+            "L. Misiaszek lined out to p."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Shapleigh struck out looking.",
+            "E. DaSilva singled to right field.",
+            "D. Lear struck out swinging.",
+            "L. Joubert struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "C. Nowicki struck out swinging.",
+            "K. Watts doubled to left field.",
+            "C. Marotto hit by pitch.",
+            "R. Comtois flied out to lf.",
+            "L. Misiaszek flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Shapleigh struck out swinging.",
+            "E. DaSilva struck out swinging.",
+            "D. Lear struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Joubert struck out swinging.",
+            "C. Nowicki flied out to lf.",
+            "K. Watts flied out to lf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Marotto flied out to cf.",
+            "R. Comtois flied out to lf.",
+            "L. Misiaszek singled to center field.",
+            "C. Shapleigh singled to right field, RBI; L. Misiaszek scored.",
+            "E. DaSilva flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "D. Lear flied out to lf.",
+            "J. Roche pinch hit for L. Joubert.",
+            "J. Roche grounded out to ss.",
+            "C. Nowicki homered to left field, RBI.",
+            "K. Watts flied out to cf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/endicott/boxscore/5438",
+      "date": "4/11/2023",
+      "opponent": "Endicott",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Watts grounded out to ss.",
+            "C. Nowicki popped up to p.",
+            "R. Comtois singled through the left side.",
+            "L. Misiaszek reached on a fielder's choice; R. Comtois out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Shapleigh flied out to lf.",
+            "E. DaSilva struck out looking.",
+            "D. Lear grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Joubert struck out swinging.",
+            "C. Marotto grounded out to ss.",
+            "K. Watts flied out to rf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Nowicki struck out swinging.",
+            "R. Comtois reached first on an error by 2b.",
+            "L. Misiaszek reached on a fielder's choice; R. Comtois out at second ss unassisted.",
+            "C. Shapleigh grounded out to 1b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. DaSilva struck out swinging.",
+            "D. Lear grounded out to 2b.",
+            "L. Joubert struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Marotto popped up to 2b.",
+            "K. Watts popped up to 2b.",
+            "C. Nowicki fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Comtois singled to right field.",
+            "M. Peryer pinch ran for R. Comtois.",
+            "L. Misiaszek reached on a fielder's choice; M. Peryer out at second ss unassisted.",
+            "C. Shapleigh struck out swinging.",
+            "E. DaSilva reached on a fielder's choice to shortstop; L. Misiaszek advanced to second.",
+            "J. Roche pinch hit for D. Lear.",
+            "J. Roche fouled out to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wellesley/boxscore/5439",
+      "date": "4/12/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Hsu singled to left center.",
+            "E. DeCleene grounded out to p, SAC, bunt; I. Hsu advanced to second.",
+            "A. Delgado singled, RBI; I. Hsu scored.",
+            "E. Gaunce popped up to ss.",
+            "C. Lundin lined out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Theriault struck out looking.",
+            "M. Abernethy singled up the middle.",
+            "J. Vargas grounded out to 3b, SAC, bunt; M. Abernethy advanced to second.",
+            "C. Chung struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "I. Hsu struck out looking.",
+            "E. DeCleene struck out swinging.",
+            "A. Delgado singled up the middle.",
+            "A. Delgado stole second.",
+            "E. Gaunce fouled out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Lundin grounded out to 3b.",
+            "C. Theriault flied out to rf.",
+            "M. Abernethy lined out to p."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Vargas flied out to cf.",
+            "C. Chung grounded out to 3b, bunt.",
+            "I. Hsu struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. DeCleene popped up to 2b.",
+            "A. Delgado singled down the lf line.",
+            "E. Gaunce grounded out to p, SAC, bunt; A. Delgado advanced to second.",
+            "C. Lundin lined out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Theriault grounded out to 3b.",
+            "M. Abernethy struck out swinging.",
+            "J. Vargas hit by pitch.",
+            "L. Young pinch hit for C. Chung.",
+            "L. Young grounded out to ss."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "I. Hsu C. Chung placed on second.",
+            "I. Hsu singled to right field, RBI; C. Chung scored.",
+            "A. Alexander pinch hit for E. DeCleene.",
+            "A. Alexander struck out swinging.",
+            "A. Delgado struck out looking.",
+            "I. Hsu stole second.",
+            "I. Hsu advanced to third on a wild pitch.",
+            "E. Gaunce grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wellesley/boxscore/5440",
+      "date": "4/12/2023",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Cohen, Alex",
+        "Guerci, Rebecca"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "I. Hsu flied out to cf.",
+            "E. DeCleene reached first on a throwing error by 3b.",
+            "A. Delgado singled down the lf line; E. DeCleene advanced to second.",
+            "L. Young flied out to cf; A. Delgado advanced to second; E. DeCleene advanced to third.",
+            "C. Lundin lined out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Abernethy singled through the left side.",
+            "C. Theriault out at first 3b to 2b, SAC, bunt; M. Abernethy advanced to second.",
+            "J. Vargas lined out to 3b.",
+            "C. Chung singled, bunt; M. Abernethy advanced to third.",
+            "I. Hsu struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. DeCleene struck out looking.",
+            "A. Delgado struck out swinging.",
+            "L. Young popped up to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Manes to 1b for R. Balakrish.",
+            "L. Medici to rf.",
+            "C. Lundin flied out to cf.",
+            "M. Abernethy fouled out to c.",
+            "C. Theriault fouled out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Vargas hit by pitch.",
+            "C. Chung singled; J. Vargas advanced to second.",
+            "I. Hsu grounded out to p, SAC, bunt; C. Chung advanced to second; J. Vargas advanced to third.",
+            "E. DeCleene reached on a fielder's choice, bunt, out at second c to ss, RBI; C. Chung scored on the throw; J. Vargas scored.",
+            "A. Delgado flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Young singled to center field.",
+            "C. Lundin grounded out to ss; L. Young advanced to second.",
+            "M. Abernethy flied out to cf.",
+            "C. Theriault flied out to cf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "R. Guerci to p for A. Cohen.",
+            "/  for A. -.",
+            "T. Boyer to c.",
+            "J. Vargas singled to left field.",
+            "C. Chung reached on a fielder's choice; J. Vargas out at second ss to 2b.",
+            "I. Hsu grounded into double play 2b to 1b; C. Chung out on the play."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/nyu/boxscore/5441",
+      "date": "4/14/2023",
+      "opponent": "Nyu",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Lesser popped up to 2b.",
+            "B. Dunning struck out looking.",
+            "S. Burggraf grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Egbert grounded out to ss.",
+            "M. Hand grounded out to 2b.",
+            "C. Blanc grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "H. Becker popped up to 1b.",
+            "E. Aridi flied out to lf.",
+            "S. Leon singled to third base, bunt.",
+            "M. Lesser popped up to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Dunning struck out looking.",
+            "S. Burggraf flied out to cf.",
+            "M. Egbert singled to left field.",
+            "M. Hand grounded out to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Blanc lined out to ss.",
+            "H. Becker grounded out to 3b.",
+            "E. Aridi grounded out to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Leon out at first p to 2b, bunt.",
+            "M. Lesser singled to shortstop, advanced to second on a throwing error by ss.",
+            "C. Hofmann pinch hit for B. Dunning.",
+            "C. Hofmann struck out swinging.",
+            "S. Burggraf flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Werthman struck out swinging.",
+            "M. Hand grounded out to ss.",
+            "C. Blanc singled to center field.",
+            "H. Becker grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/nyu/boxscore/5442",
+      "date": "4/15/2023",
+      "opponent": "Nyu",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Lesser struck out swinging.",
+            "S. Leon grounded out to 3b.",
+            "S. Burggraf flied out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "M. Egbert grounded out to 2b.",
+            "C. Blanc grounded out to p.",
+            "M. Hand homered to center field, RBI.",
+            "E. Aridi popped up to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Candelari grounded out to 1b unassisted.",
+            "B. Dunning struck out swinging.",
+            "M. Lesser doubled to left field.",
+            "S. Leon out at first p to 2b, bunt."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Burggraf grounded out to ss.",
+            "M. Egbert hit by pitch.",
+            "C. Blanc grounded out to p, SAC, bunt; M. Egbert advanced to second.",
+            "M. Hand popped up to ss."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Aridi flied out to lf.",
+            "L. Candelari grounded out to ss.",
+            "B. Dunning struck out swinging."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Manes to 1b for J. Pippin.",
+            "J. Pippin to c.",
+            "M. Lesser hit by pitch.",
+            "S. Leon out at first p to 2b, SAC, bunt; M. Lesser advanced to second.",
+            "S. Burggraf flied out to rf.",
+            "M. Egbert singled to center field, RBI; M. Lesser scored.",
+            "C. Blanc flied out to rf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "M. Hand flied out to cf.",
+            "E. Aridi struck out, out at first c to 1b.",
+            "L. Candelari singled to center field.",
+            "O. hesselle pinch hit for B. Dunning.",
+            "O. hesselle popped up to 1b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/nyu/boxscore/5443",
+      "date": "4/15/2023",
+      "opponent": "Nyu",
+      "pitchers": [
+        "Guerci, Rebecca",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Lesser walked.",
+            "S. Leon singled to catcher, bunt; M. Lesser advanced to second.",
+            "M. Egbert out at first 3b to 2b, SAC, bunt; S. Leon advanced to second; M. Lesser advanced to third.",
+            "M. Hand hit by pitch.",
+            "S. Burggraf singled to left field, 2 RBI; M. Hand advanced to second; S. Leon scored; M. Lesser scored.",
+            "C. Blanc reached on a fielder's choice; S. Burggraf advanced to second; M. Hand out at third 3b unassisted.",
+            "H. Becker grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "O. hesselle grounded out to p.",
+            "E. Aridi grounded out to ss.",
+            "M. Lesser singled to center field.",
+            "S. Leon grounded out to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Egbert hit by pitch.",
+            "M. Hand singled to shortstop; M. Egbert advanced to second.",
+            "R. Kannan to p for R. Guerci.",
+            "S. Burggraf grounded into double play ss to 3b to 1b; M. Hand advanced to second; M. Egbert out on the play.",
+            "C. Blanc grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "H. Becker hit by pitch.",
+            "O. hesselle out at first 3b to 2b, SAC, bunt; H. Becker advanced to second.",
+            "E. Aridi grounded out to 3b.",
+            "M. Lesser grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Leon grounded out to 3b.",
+            "M. Egbert grounded out to ss.",
+            "M. Hand singled to left field.",
+            "S. Burggraf singled to center field; M. Hand advanced to second.",
+            "C. Blanc singled to center field, RBI; S. Burggraf advanced to second; M. Hand scored.",
+            "B. Dunning pinch ran for S. Burggraf.",
+            "H. Becker popped up to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "O. hesselle struck out swinging.",
+            "E. Aridi singled to shortstop.",
+            "M. Lesser struck out swinging.",
+            "S. Leon fouled out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "S. Micale to c for A. Kolb.",
+            "J. Pippin to 2b.",
+            "M. Egbert struck out swinging.",
+            "M. Hand singled to left field.",
+            "M. Lemmon pinch ran for M. Hand.",
+            "S. Burggraf flied out to cf.",
+            "C. Blanc struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/nyu/boxscore/5444",
+      "date": "4/16/2023",
+      "opponent": "Nyu",
+      "pitchers": [
+        "Penton, Chandra",
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Lesser flied out to cf.",
+            "S. Leon walked.",
+            "S. Leon stole second.",
+            "M. Hand walked.",
+            "M. Egbert flied out to cf.",
+            "S. Burggraf singled to left field, RBI; M. Hand advanced to second; S. Leon scored.",
+            "C. Blanc singled to left field, RBI; S. Burggraf advanced to second; M. Hand scored.",
+            "L. Candelari singled to right field; C. Blanc advanced to second; S. Burggraf advanced to third, out at home lf to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "/  for C. Penton.",
+            "A. Cohen to p.",
+            "C. Hofmann singled to center field.",
+            "E. Aridi struck out swinging.",
+            "M. Lesser lined out to lf.",
+            "S. Leon popped up to ss."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "M. Hand struck out swinging.",
+            "M. Egbert lined out to 1b.",
+            "S. Burggraf grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Blanc lined out to cf.",
+            "L. Candelari hit by pitch.",
+            "C. Hofmann struck out swinging.",
+            "E. Aridi popped up to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "S. Micale to c for T. Boyer.",
+            "M. Lesser struck out swinging.",
+            "S. Leon out at first p to 2b.",
+            "M. Hand struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/washington-u-/boxscore/5445",
+      "date": "4/21/2023",
+      "opponent": "Washington U ",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Gould singled to third base.",
+            "M. Baumstark struck out looking.",
+            "N. Pilpil singled to center field; K. Gould advanced to second.",
+            "P. Irwin flied out to cf.",
+            "E. Reardon singled, bunt; N. Pilpil advanced to second; K. Gould advanced to third.",
+            "T. Wong reached on a fielder's choice; E. Reardon advanced to second; N. Pilpil advanced to third; K. Gould out at home p to c."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Kennedy struck out swinging.",
+            "K. Nommensen struck out swinging.",
+            "O. Craycraft flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Gould singled to second base.",
+            "M. Baumstark out at first p to 2b; K. Gould advanced to second.",
+            "N. Pilpil grounded out to ss.",
+            "P. Irwin flied out to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Reardon struck out swinging.",
+            "T. Wong grounded out to 1b unassisted.",
+            "A. Kennedy grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Nommensen struck out looking.",
+            "O. Craycraft struck out looking.",
+            "K. Gould singled to left field.",
+            "M. Baumstark singled to shortstop; K. Gould advanced to second.",
+            "N. Pilpil fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "P. Irwin flied out to cf.",
+            "E. Reardon singled to shortstop.",
+            "T. Wong doubled to left field; E. Reardon advanced to third.",
+            "A. Kennedy grounded out to 2b, RBI; T. Wong advanced to third; E. Reardon scored.",
+            "T. Geluck pinch hit for K. Nommensen.",
+            "T. Geluck grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "T. Boyer to c for J. Pippin.",
+            "O. Craycraft grounded out to c unassisted.",
+            "K. Gould lined out to 2b.",
+            "M. Baumstark walked.",
+            "N. Pilpil flied out to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/washington-u-/boxscore/5446",
+      "date": "4/21/2023",
+      "opponent": "Washington U ",
+      "pitchers": [
+        "Cohen, Alex",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Gould grounded out to 3b.",
+            "M. Baumstark flied out to cf.",
+            "N. Pilpil flied out to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Kennedy doubled to right field.",
+            "E. Reardon singled to shortstop; A. Kennedy advanced to third.",
+            "T. Wong struck out swinging.",
+            "E. Reardon stole second.",
+            "E. Reardon advanced to third on a wild pitch; A. Kennedy scored on a wild pitch.",
+            "P. Irwin struck out swinging.",
+            "T. Geluck singled through the left side, RBI; E. Reardon scored.",
+            "J. Cendana hit by pitch; T. Geluck advanced to second.",
+            "K. Gould singled to pitcher; J. Cendana advanced to second; T. Geluck advanced to third.",
+            "M. Baumstark singled to center field, 3 RBI; K. Gould scored; J. Cendana scored; T. Geluck scored.",
+            "N. Pilpil flied out to cf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Kennedy grounded out to 3b.",
+            "E. Reardon flied out to lf.",
+            "T. Wong grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "P. Irwin hit by pitch.",
+            "T. Geluck flied out to rf.",
+            "J. Cendana doubled to left field; P. Irwin advanced to third.",
+            "K. Gould singled to left field, RBI; J. Cendana advanced to third; P. Irwin scored.",
+            "C. Penton to p for A. Cohen.",
+            "A. - to dp.",
+            "T. Boyer to c.",
+            "M. Baumstark reached on a fielder's choice, RBI; K. Gould advanced to second; J. Cendana scored.",
+            "N. Pilpil grounded out to 2b; M. Baumstark advanced to second; K. Gould advanced to third.",
+            "A. Cohen to dp for C. Penton.",
+            "C. Penton to p for A. -.",
+            "A. Kennedy flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Reardon lined out to ss.",
+            "S. Schneider pinch hit for T. Wong.",
+            "S. Schneider singled, out at second 3b to 2b.",
+            "A. Hanish pinch hit for P. Irwin.",
+            "A. Hanish singled to left field.",
+            "T. Geluck singled to left field; A. Hanish advanced to second.",
+            "J. Cendana flied out to cf."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Gould grounded out to 2b.",
+            "M. Baumstark grounded out to 3b.",
+            "N. Pilpil singled to left field.",
+            "C. Cattoor singled; N. Pilpil advanced to second, advanced to third on an error by 2b.",
+            "E. Reardon singled to center field, RBI; C. Cattoor advanced to second; N. Pilpil scored, unearned.",
+            "S. Schneider doubled down the lf line, RBI; E. Reardon advanced to third; C. Cattoor scored, unearned.",
+            "A. Hanish grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/washington-u-/boxscore/5447",
+      "date": "4/22/2023",
+      "opponent": "Washington U ",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Gould grounded out to p.",
+            "M. Baumstark struck out looking.",
+            "N. Pilpil popped up to rf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Kennedy homered, RBI.",
+            "E. Reardon singled, bunt.",
+            "E. Reardon stole second.",
+            "T. Wong lined out to 3b.",
+            "P. Irwin grounded into double play 1b to 2b to c; E. Reardon out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "T. Geluck struck out swinging.",
+            "J. Cendana lined out to lf.",
+            "K. Gould popped up to lf."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "M. Baumstark singled.",
+            "N. Pilpil fouled out to 1b.",
+            "A. Kennedy singled up the middle; M. Baumstark advanced to second.",
+            "E. Reardon singled, bunt; A. Kennedy advanced to second; M. Baumstark advanced to third.",
+            "T. Wong walked, RBI; E. Reardon advanced to second; A. Kennedy advanced to third; M. Baumstark scored.",
+            "P. Irwin struck out swinging.",
+            "T. Geluck grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Cendana singled through the left side.",
+            "K. Gould grounded into double play ss to 1b; J. Cendana out on the play.",
+            "M. Baumstark lined out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Pilpil homered, RBI.",
+            "A. Kennedy lined out to 2b.",
+            "E. Reardon grounded out to 3b.",
+            "T. Wong grounded out to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "E. Ehrlich to lf for A. Kolb.",
+            "P. Irwin lined out to lf.",
+            "T. Geluck lined out to rf.",
+            "J. Cendana grounded out to ss."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/washington-u-/boxscore/5448",
+      "date": "4/22/2023",
+      "opponent": "Washington U ",
+      "pitchers": [
+        "Penton, Chandra",
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "K. Gould walked.",
+            "K. Gould stole second.",
+            "M. Baumstark popped up to rf.",
+            "N. Pilpil popped up to 3b.",
+            "K. Gould advanced to third on a wild pitch.",
+            "A. Kennedy doubled to left center, RBI; K. Gould scored.",
+            "E. Reardon singled up the middle; A. Kennedy advanced to third.",
+            "T. Wong struck out swinging."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Hanish lined out to cf.",
+            "K. Nommensen grounded out to p.",
+            "O. Craycraft singled to right field.",
+            "K. Gould singled; O. Craycraft advanced to second, advanced to third on an error by 3b.",
+            "K. Gould stole second; O. Craycraft stole home, unearned.",
+            "M. Baumstark fouled out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Cohen to p.",
+            "C. Penton to dp.",
+            "N. Pilpil popped up to ss.",
+            "A. Kennedy singled up the middle.",
+            "E. Reardon walked; A. Kennedy advanced to second.",
+            "E. Talkow pinch ran for A. Kennedy.",
+            "T. Wong hit by pitch; E. Reardon advanced to second; E. Talkow advanced to third.",
+            "A. Hanish struck out looking.",
+            "E. Talkow out at home p to c, caught stealing."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "K. Nommensen fouled out to rf.",
+            "O. Craycraft singled to right center.",
+            "K. Gould grounded out to 2b; O. Craycraft advanced to second.",
+            "M. Baumstark lined out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "T. Geluck popped up to lf.",
+            "A. Kennedy doubled to left field.",
+            "E. Reardon popped up to lf.",
+            "T. Wong singled up the middle, advanced to second on the throw, RBI; A. Kennedy scored.",
+            "P. Irwin lined out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "K. Nommensen struck out swinging.",
+            "O. Craycraft grounded out to 2b.",
+            "K. Gould singled to left center.",
+            "S. Schneider pinch hit for M. Baumstark.",
+            "S. Schneider popped up to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "T. Geluck popped up to rf.",
+            "A. Kennedy singled up the middle.",
+            "B. Capparell pinch ran for A. Kennedy.",
+            "E. Reardon popped up to lf.",
+            "T. Wong popped up to rf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wpi/boxscore/5449",
+      "date": "4/26/2023",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell struck out looking.",
+            "L. Ambrosino struck out swinging.",
+            "D. Lum flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Salvalzo struck out looking.",
+            "J. Diaz flied out to rf.",
+            "K. Case struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "K. Pritchard struck out swinging.",
+            "A. Sheehan out at first 1b to 2b, bunt.",
+            "L. Jordan struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Russell singled to right field.",
+            "S. Russell stole second.",
+            "L. Ambrosino struck out looking.",
+            "D. Lum singled to left field, RBI; S. Russell scored.",
+            "A. Salvalzo reached first on an error by ss; D. Lum advanced to second.",
+            "A. Amaro pinch ran for D. Lum.",
+            "J. Diaz reached on a fielder's choice; A. Salvalzo out at second 2b to ss; A. Amaro advanced to third.",
+            "J. Diaz stole second.",
+            "K. Case flied out to rf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "K. Pritchard struck out looking.",
+            "A. Sheehan grounded out to 3b.",
+            "L. Jordan struck out looking."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "S. Russell lined out to 1b.",
+            "L. Ambrosino struck out swinging.",
+            "D. Lum struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Salvalzo flied out to rf.",
+            "J. Diaz struck out swinging, out at first c to 1b.",
+            "K. Case grounded out to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/wpi/boxscore/5450",
+      "date": "4/26/2023",
+      "opponent": "Wpi",
+      "pitchers": [
+        "Cohen, Alex",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "S. Russell grounded out to 3b.",
+            "L. Ambrosino singled, bunt.",
+            "L. Ambrosino stole second.",
+            "L. Ambrosino advanced to third on a wild pitch.",
+            "D. Lum flied out to rf, sacrifice fly, RBI; L. Ambrosino scored.",
+            "A. Salvalzo flied out to cf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Diaz grounded out to 1b unassisted.",
+            "K. Case singled to shortstop.",
+            "A. Laughlin struck out swinging.",
+            "A. Sheehan singled to third base; K. Case advanced to second.",
+            "L. Jordan popped up to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Russell singled to center field.",
+            "S. Russell stole second.",
+            "L. Ambrosino struck out swinging.",
+            "D. Lum reached first on an error by ss, advanced to second; S. Russell scored, unearned.",
+            "A. Salvalzo flied out to rf.",
+            "J. Diaz singled to center field; D. Lum advanced to third.",
+            "K. Case struck out looking."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Laughlin struck out looking, reached first on a passed ball.",
+            "A. Sheehan reached first on an error by 2b, SAC, bunt; A. Laughlin advanced to second.",
+            "A. Sheehan advanced to second on a wild pitch; A. Laughlin advanced to third on a wild pitch.",
+            "L. Jordan struck out swinging.",
+            "S. Russell reached on a fielder's choice, advanced to second; A. Sheehan advanced to third on an error by p, scored, unearned; A. Laughlin scored, unearned.",
+            "L. Ambrosino singled, RBI, out at second lf to 3b to 2b; S. Russell scored, unearned.",
+            "D. Lum flied out to cf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Cohen to lf.",
+            "R. Kannan to p for E. Ehrlich.",
+            "A. Salvalzo doubled to right field.",
+            "J. Diaz walked.",
+            "A. Amaro pinch ran for J. Diaz.",
+            "K. Case out at first c to 2b, SAC, bunt; A. Amaro advanced to second; A. Salvalzo advanced to third.",
+            "G. Cerbo pinch hit for A. Laughlin.",
+            "G. Cerbo struck out swinging.",
+            "A. Sheehan out at first 1b to 2b, bunt."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "M. Sherwood pinch hit for L. Jordan.",
+            "M. Sherwood walked.",
+            "S. Russell singled, advanced to second on the throw; M. Sherwood advanced to third.",
+            "L. Ambrosino popped up to 2b.",
+            "D. Lum singled to center field, 2 RBI; S. Russell scored; M. Sherwood scored.",
+            "A. Salvalzo fouled out to c.",
+            "J. Diaz struck out looking."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "K. Case popped up to 2b.",
+            "A. Laughlin to dp for G. Cerbo.",
+            "A. Laughlin struck out swinging.",
+            "M. Francisco pinch hit for A. Sheehan.",
+            "M. Francisco struck out looking."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/lesley/boxscore/5451",
+      "date": "4/27/2023",
+      "opponent": "Lesley",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Medina fouled out to 1b.",
+            "T. Eldredge lined out to 2b.",
+            "A. Kieran flied out to lf."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. O'Neill struck out swinging.",
+            "H. Swinamer struck out looking.",
+            "M. Santilli singled to shortstop.",
+            "S. Mecklenbu flied out to rf."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Cole struck out swinging.",
+            "S. Santos struck out swinging.",
+            "M. Medina struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "S. Micale to c for T. Boyer.",
+            "C. Elbaz to rf for L. Medici.",
+            "T. Eldredge struck out swinging.",
+            "A. Kieran grounded out to ss.",
+            "J. O'Neill struck out swinging."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Penton to p for R. Kannan.",
+            "H. Swinamer popped up to 2b.",
+            "M. Santilli struck out swinging, out at first c to 1b.",
+            "S. Mecklenbu popped up to 2b."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/lesley/boxscore/5452",
+      "date": "4/27/2023",
+      "opponent": "Lesley",
+      "pitchers": [
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "M. Medina flied out to cf.",
+            "T. Eldredge reached first on a throwing error by p, bunt, advanced to second.",
+            "A. Kieran grounded out to 3b; T. Eldredge advanced to third.",
+            "J. O'Neill grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "H. Swinamer grounded out to p.",
+            "M. Santilli grounded out to 3b.",
+            "S. Mecklenbu struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "S. Cole struck out swinging.",
+            "S. Santos struck out swinging.",
+            "M. Medina grounded out to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "T. Eldredge struck out looking.",
+            "A. Kieran singled to left center.",
+            "J. O'Neill flied out to rf.",
+            "H. Swinamer grounded out to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Santilli struck out swinging.",
+            "S. Mecklenbu singled to right field.",
+            "S. Cole struck out swinging.",
+            "S. Santos struck out swinging."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/tufts/boxscore/5453",
+      "date": "4/28/2023",
+      "opponent": "Tufts",
+      "pitchers": [
+        "Guerci, Rebecca",
+        "Cohen, Alex"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "B. Jimenez walked.",
+            "M. Adelman singled to right field; B. Jimenez advanced to second.",
+            "K. Perucci popped up to ss.",
+            "J. Steinberg singled to right center, RBI; M. Adelman advanced to third; B. Jimenez scored.",
+            "R. Moore singled to third base, RBI; J. Steinberg advanced to third; M. Adelman scored.",
+            "R. Moore stole second.",
+            "H. Leimbach singled up the middle, 2 RBI; R. Moore scored; J. Steinberg scored.",
+            "N. Russo singled to right field; H. Leimbach advanced to second.",
+            "A. Cohen to p.",
+            "R. Guerci to dp.",
+            "N. Russo advanced to second on a passed ball; H. Leimbach advanced to third.",
+            "K. Slayton flied out to cf, SAC, RBI; H. Leimbach scored, unearned.",
+            "K. Yuzefpols grounded out to ss."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "B. Jimenez lined out to ss.",
+            "M. Adelman flied out to lf.",
+            "K. Perucci grounded out to p."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "J. Steinberg grounded out to 1b unassisted.",
+            "R. Moore flied out to cf.",
+            "H. Leimbach struck out swinging."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "N. Russo reached first on an error by ss.",
+            "K. Slayton struck out swinging.",
+            "K. Yuzefpols reached on a fielder's choice; N. Russo out at second 2b to ss.",
+            "B. Jimenez reached on a fielder's choice; K. Yuzefpols out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "M. Adelman grounded out to 3b.",
+            "K. Perucci struck out swinging.",
+            "J. Steinberg grounded out to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "R. Moore singled to left field.",
+            "H. Leimbach reached on a fielder's choice; R. Moore advanced to second.",
+            "N. Russo struck out swinging.",
+            "K. Slayton flied out to rf.",
+            "K. Yuzefpols flied out to lf."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/umass-dartmouth/boxscore/5456",
+      "date": "5/7/2023",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Major struck out swinging.",
+            "D. Rodas doubled to left field.",
+            "J. Richards popped up to 2b.",
+            "R. Perregaux grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "L. Piessens fouled out to 1b.",
+            "H. Lyons walked.",
+            "L. Chubbuck struck out swinging.",
+            "S. Menz struck out swinging."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "V. Rossetti popped up to ss.",
+            "L. Major struck out swinging.",
+            "D. Rodas fouled out to 1b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "J. Richards singled to second base.",
+            "R. Perregaux singled to shortstop; J. Richards advanced to second.",
+            "L. Piessens reached first on an error by ss, advanced to second on the throw; R. Perregaux advanced to third; J. Richards scored.",
+            "H. Lyons reached first on an error by 3b, SAC, RBI; L. Piessens scored, unearned; R. Perregaux R. Perregaux, unearned.",
+            "H. Lyons advanced to second on a wild pitch.",
+            "H. Lyons advanced to third on a passed ball.",
+            "L. Chubbuck flied out to rf, sacrifice fly, RBI; H. Lyons scored, unearned.",
+            "S. Menz flied out to ss.",
+            "V. Rossetti flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "L. Major singled to right field.",
+            "D. Rodas doubled to center field; L. Major advanced to third.",
+            "J. Richards singled to pitcher, RBI; D. Rodas advanced to third; L. Major scored.",
+            "J. Richards stole second.",
+            "R. Perregaux reached on a fielder's choice; J. Richards advanced to third; D. Rodas out at home ss to c.",
+            "L. Piessens struck out looking.",
+            "H. Lyons popped up to p."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "L. Chubbuck struck out swinging.",
+            "S. Menz struck out swinging.",
+            "V. Rossetti flied out to lf."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "L. Major struck out swinging.",
+            "D. Rodas reached first on an error by rf, advanced to second.",
+            "J. Richards flied out to cf.",
+            "R. Perregaux grounded out to p."
+          ]
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2023/umass-dartmouth/boxscore/5457",
+      "date": "5/7/2023",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Cohen, Alex",
+        "Penton, Chandra"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "L. Major flied out to rf.",
+            "D. Rodas singled to left field.",
+            "J. Richards struck out swinging.",
+            "R. Perregaux singled to third base; D. Rodas advanced to second.",
+            "L. Piessens homered to center field, 3 RBI; R. Perregaux scored; D. Rodas scored.",
+            "H. Lyons popped up to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Walsh flied out to lf.",
+            "K. Shirshac struck out swinging.",
+            "V. Rossetti struck out looking."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "L. Major flied out to ss.",
+            "D. Rodas flied out to lf.",
+            "J. Richards grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "R. Perregaux struck out swinging.",
+            "L. Piessens flied out to cf.",
+            "H. Lyons flied out to lf."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "J. Walsh singled to shortstop.",
+            "R. Turley struck out swinging.",
+            "V. Rossetti flied out to lf.",
+            "L. Major grounded out to 3b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Rodas popped up to 1b.",
+            "J. Richards flied out to lf.",
+            "R. Perregaux popped up to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "C. Penton to p for A. Cohen.",
+            "S. Micale to c.",
+            "A. - to dp.",
+            "L. Piessens walked.",
+            "H. Lyons popped up to 2b.",
+            "J. Walsh flied out to lf.",
+            "L. Tsonis pinch hit for R. Turley.",
+            "L. Tsonis flied out to rf."
           ]
         }
       ],
