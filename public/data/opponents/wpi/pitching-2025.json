@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-11T15:21:52.442Z",
+  "scrapedAt": "2026-03-26T12:33:10.015Z",
   "year": 2025,
   "pitchingStats": [
     {
@@ -174,6 +174,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 26
+        }
+      ],
       "year": 2025
     },
     {
@@ -232,6 +246,20 @@
             "L. Hernandez lined out to 2b.",
             "K. Brown flied out to lf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 5,
+          "h": 2,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 2,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 20
         }
       ],
       "year": 2025
@@ -300,6 +328,20 @@
             "C. Smith struck out swinging.",
             "O. Wascher struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 5,
+          "h": 7,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 8,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 24
         }
       ],
       "year": 2025
@@ -386,6 +428,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 6,
+          "r": 6,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 17
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3,
+          "h": 2,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 12
+        }
+      ],
       "year": 2025
     },
     {
@@ -461,6 +529,32 @@
             "K. Slayton grounded out to 2b; S. Cullen advanced to third.",
             "L. Horita popped up to 3b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3.2,
+          "h": 6,
+          "r": 5,
+          "er": 3,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 20
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 2.1,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 10
         }
       ],
       "year": 2025
@@ -539,6 +633,20 @@
             "E Williams pinch hit for J Bergara.",
             "E Williams struck out looking."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 28
         }
       ],
       "year": 2025
@@ -625,6 +733,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3.2,
+          "h": 6,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 19
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3.1,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 14
+        }
+      ],
       "year": 2025
     },
     {
@@ -699,6 +833,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 7,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 22,
+          "bf": 25
+        }
+      ],
       "year": 2025
     },
     {
@@ -764,6 +912,44 @@
             "Brunelle singled to right field, advanced to second on the throw, RBI; Floyd advanced to third; Ellis scored.",
             "Forneiro homered, 3 RBI; Brunelle scored; Floyd scored."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 14
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 1.2,
+          "h": 6,
+          "r": 6,
+          "er": 6,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 11
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 0,
+          "h": 2,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 2
         }
       ],
       "year": 2025
@@ -847,6 +1033,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 6,
+          "r": 6,
+          "er": 6,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 15,
+          "bf": 17
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 4,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 12
+        }
+      ],
       "year": 2025
     },
     {
@@ -927,6 +1139,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 4,
+          "h": 1,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 15
+        }
+      ],
       "year": 2025
     },
     {
@@ -1005,6 +1243,32 @@
             "E. Lanpher struck out looking.",
             "E. Lapoint grounded out to 3b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 4.1,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 21
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 2.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
         }
       ],
       "year": 2025
@@ -1093,6 +1357,44 @@
             "O. Scarpaci reached first on a fielding error by 3b; M. Feng advanced to second on the error.",
             "D. Benevides grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 1,
+          "h": 3,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 4.1,
+          "h": 7,
+          "r": 7,
+          "er": 7,
+          "bb": 1,
+          "so": 1,
+          "hbp": 2,
+          "ab": 20,
+          "bf": 23
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 1.2,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
         }
       ],
       "year": 2025
@@ -1207,6 +1509,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 3,
+          "h": 5,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3.1,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 1.2,
+          "h": 3,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        }
+      ],
       "year": 2025
     },
     {
@@ -1281,6 +1621,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 4,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 7,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 20
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        }
+      ],
       "year": 2025
     },
     {
@@ -1336,6 +1702,20 @@
             "C. Rosenberg singled to right center.",
             "S. Zannotti grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 3,
+          "ab": 16,
+          "bf": 19
         }
       ],
       "year": 2025
@@ -1428,6 +1808,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5.1,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 5,
+          "so": 6,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 25
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 1.2,
+          "h": 6,
+          "r": 7,
+          "er": 7,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 13
+        }
+      ],
       "year": 2025
     },
     {
@@ -1517,6 +1923,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 3.1,
+          "h": 3,
+          "r": 4,
+          "er": 3,
+          "bb": 5,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 20
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3.2,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 16
+        }
+      ],
       "year": 2025
     },
     {
@@ -1595,6 +2027,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 1,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 8
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3.2,
+          "h": 9,
+          "r": 11,
+          "er": 10,
+          "bb": 4,
+          "so": 0,
+          "hbp": 2,
+          "ab": 19,
+          "bf": 26
+        }
+      ],
       "year": 2025
     },
     {
@@ -1657,6 +2115,32 @@
             "K. Katsetos grounded out to p unassisted.",
             "M. Seyfert popped up to 3b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2.1,
+          "h": 6,
+          "r": 10,
+          "er": 10,
+          "bb": 4,
+          "so": 0,
+          "hbp": 2,
+          "ab": 12,
+          "bf": 19
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 1.2,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 8
         }
       ],
       "year": 2025
@@ -1730,6 +2214,20 @@
             "S. Wicker grounded out to c.",
             "G. Jones lined out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 24
         }
       ],
       "year": 2025
@@ -1829,6 +2327,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5.1,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 22
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2,
+          "h": 1,
+          "r": 3,
+          "er": 2,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 8
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 0.2,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 1,
+          "ab": 3,
+          "bf": 4
+        }
+      ],
       "year": 2025
     },
     {
@@ -1895,6 +2431,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 4.1,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 3,
+          "so": 5,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 21
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 0.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 2
+        }
+      ],
       "year": 2025
     },
     {
@@ -1949,6 +2511,20 @@
             "A. Knutson flied out to cf.",
             "T. Tamai reached on a fielder's choice; L. Hackett out at second ss to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 20
         }
       ],
       "year": 2025
@@ -2043,6 +2619,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 11
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 6,
+          "h": 3,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 22
+        }
+      ],
       "year": 2025
     },
     {
@@ -2126,6 +2728,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 7,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 8,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
+        }
+      ],
       "year": 2025
     },
     {
@@ -2203,6 +2819,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 7,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 25
+        }
+      ],
       "year": 2025
     },
     {
@@ -2259,6 +2889,32 @@
             "A. Rangel walked.",
             "H. Li popped up to 1b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 4,
+          "h": 0,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 4,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 16
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 4
         }
       ],
       "year": 2025
@@ -2357,6 +3013,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 3,
+          "h": 5,
+          "r": 5,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2.1,
+          "h": 8,
+          "r": 6,
+          "er": 6,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 1.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
+        }
+      ],
       "year": 2025
     },
     {
@@ -2413,6 +3107,20 @@
             "R. Mauro popped up to 1b.",
             "H. Wagstaff struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 7,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 22
         }
       ],
       "year": 2025
@@ -2505,6 +3213,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 2,
+          "h": 5,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 12,
+          "bf": 15
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 3,
+          "h": 2,
+          "r": 3,
+          "er": 1,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 14
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 8
+        }
+      ],
       "year": 2025
     },
     {
@@ -2592,6 +3338,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 9,
+          "r": 4,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 35
+        }
+      ],
       "year": 2025
     },
     {
@@ -2671,6 +3431,20 @@
             "O. Garcia pinch hit for D. Walker.",
             "O. Garcia struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 7,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 6,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 30
         }
       ],
       "year": 2025
@@ -2755,6 +3529,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 6,
+          "h": 8,
+          "r": 7,
+          "er": 7,
+          "bb": 7,
+          "so": 3,
+          "hbp": 2,
+          "ab": 26,
+          "bf": 35
+        }
+      ],
       "year": 2025
     },
     {
@@ -2836,6 +3624,20 @@
             "S. Pak singled up the middle; E. Walsh advanced to second.",
             "B. DiCampell struck out looking."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 10,
+          "r": 3,
+          "er": 2,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 32
         }
       ],
       "year": 2025
@@ -2930,6 +3732,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Knopf, Sofia",
+          "ip": 6.1,
+          "h": 12,
+          "r": 7,
+          "er": 6,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 30,
+          "bf": 34
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 0.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
+        }
+      ],
       "year": 2025
     },
     {
@@ -2986,6 +3814,20 @@
             "J. Rohon reached on a fielder's choice to second base; S. Vaidya out at second 2b to ss.",
             "J. Zito grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 19
         }
       ],
       "year": 2025
@@ -3061,6 +3903,20 @@
             "B. Dost singled up the middle.",
             "S. Vaidya struck out looking."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 26
         }
       ],
       "year": 2025
@@ -3146,6 +4002,32 @@
             "E. Boucher struck out swinging.",
             "R. Dolan grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 7,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 4,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 18
         }
       ],
       "year": 2025
@@ -3243,6 +4125,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 11,
+          "r": 5,
+          "er": 5,
+          "bb": 4,
+          "so": 3,
+          "hbp": 1,
+          "ab": 33,
+          "bf": 38
+        },
+        {
+          "name": "Knopf, Sofia",
+          "ip": 0,
+          "h": 2,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 4
+        }
+      ],
       "year": 2025
     },
     {
@@ -3324,6 +4232,20 @@
             "P. Blankenhe flied out to cf.",
             "E. Boucher popped up to 3b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 6,
+          "r": 5,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 29,
+          "bf": 32
         }
       ],
       "year": 2025

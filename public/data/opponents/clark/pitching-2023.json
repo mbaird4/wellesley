@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-11T15:42:10.504Z",
+  "scrapedAt": "2026-03-26T12:53:14.105Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -243,6 +243,56 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barthel, Magdalena",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 2,
+          "h": 6,
+          "r": 6,
+          "er": 5,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 14
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 1.2,
+          "h": 7,
+          "r": 7,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 0.1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 2
+        }
+      ],
       "year": 2023
     },
     {
@@ -344,6 +394,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 2,
+          "h": 7,
+          "r": 5,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 1,
+          "ab": 12,
+          "bf": 17
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 5,
+          "h": 8,
+          "r": 5,
+          "er": 2,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
+        }
+      ],
       "year": 2023
     },
     {
@@ -433,6 +509,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gibson, Kaylee",
+          "ip": 0.2,
+          "h": 0,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 3,
+          "bf": 5
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 5,
+          "h": 9,
+          "r": 6,
+          "er": 4,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
+        }
+      ],
       "year": 2023
     },
     {
@@ -506,6 +608,20 @@
             "K. Bennett grounded out to ss; L. Cottrill advanced to third.",
             "D. Moscarell flied out to lf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 5,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
         }
       ],
       "year": 2023
@@ -600,6 +716,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 4,
+          "h": 7,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 22
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 1,
+          "h": 4,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 8
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 0.2,
+          "h": 4,
+          "r": 6,
+          "er": 4,
+          "bb": 4,
+          "so": 0,
+          "hbp": 1,
+          "ab": 5,
+          "bf": 10
+        }
+      ],
       "year": 2023
     },
     {
@@ -682,6 +836,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 4,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 6,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 26
+        }
+      ],
       "year": 2023
     },
     {
@@ -756,6 +924,32 @@
             "C. Cordova struck out looking.",
             "B. Tucci lined out to cf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 4,
+          "h": 12,
+          "r": 9,
+          "er": 1,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 25
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 4
         }
       ],
       "year": 2023
@@ -858,6 +1052,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 9,
+          "r": 6,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 32
+        }
+      ],
       "year": 2023
     },
     {
@@ -935,6 +1143,20 @@
             "M. Tresch grounded out to c, SAC, bunt; K. Fajardo advanced to third.",
             "E. Rodrigues grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 6,
+          "h": 8,
+          "r": 6,
+          "er": 4,
+          "bb": 0,
+          "so": 0,
+          "hbp": 2,
+          "ab": 24,
+          "bf": 27
         }
       ],
       "year": 2023
@@ -1037,6 +1259,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 4.2,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 23
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 2.1,
+          "h": 5,
+          "r": 4,
+          "er": 3,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 13
+        },
+        {
+          "name": "Gibson, Kaylee",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        }
+      ],
       "year": 2023
     },
     {
@@ -1118,6 +1378,20 @@
             "E. Forget reached first on a fielding error by 2b; S. Wozniak advanced to third.",
             "A. Garcia struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
         }
       ],
       "year": 2023
@@ -1204,6 +1478,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 5,
+          "h": 11,
+          "r": 7,
+          "er": 7,
+          "bb": 4,
+          "so": 1,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 29
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 1,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 4
+        }
+      ],
       "year": 2023
     },
     {
@@ -1273,6 +1573,20 @@
             "E. Bartlett popped up to 1b.",
             "E. Lanpher grounded out to 3b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6,
+          "h": 8,
+          "r": 5,
+          "er": 3,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 27
         }
       ],
       "year": 2023
@@ -1356,6 +1670,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 4.1,
+          "h": 7,
+          "r": 5,
+          "er": 3,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 21,
+          "bf": 25
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 1.2,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 6
+        }
+      ],
       "year": 2023
     },
     {
@@ -1430,6 +1770,20 @@
             "L. Oliveira fouled out to 1b.",
             "J. Ceddia lined out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6,
+          "h": 7,
+          "r": 7,
+          "er": 1,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 31
         }
       ],
       "year": 2023
@@ -1519,6 +1873,32 @@
             "B. O'Connor advanced to third on a wild pitch.",
             "M. Lashua struck out looking."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 4.2,
+          "h": 9,
+          "r": 7,
+          "er": 7,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 25
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 2.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 8
         }
       ],
       "year": 2023
@@ -1619,6 +1999,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 6.1,
+          "h": 8,
+          "r": 8,
+          "er": 3,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 32
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 0.2,
+          "h": 3,
+          "r": 5,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 10
+        }
+      ],
       "year": 2023
     },
     {
@@ -1704,6 +2110,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 1.1,
+          "h": 9,
+          "r": 13,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 18
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 2.2,
+          "h": 9,
+          "r": 5,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 18
+        }
+      ],
       "year": 2023
     },
     {
@@ -1776,6 +2208,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 3,
+          "h": 11,
+          "r": 9,
+          "er": 8,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 21
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 1,
+          "h": 2,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        }
+      ],
       "year": 2023
     },
     {
@@ -1833,6 +2291,20 @@
             "M. Relihan doubled to left field.",
             "R. Spiegel struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 4,
+          "h": 11,
+          "r": 9,
+          "er": 8,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 25
         }
       ],
       "year": 2023
@@ -1925,6 +2397,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 3,
+          "h": 7,
+          "r": 4,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 18
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 2,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 10
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 1,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 5
+        }
+      ],
       "year": 2023
     },
     {
@@ -1996,6 +2506,32 @@
             "A. Brown reached first on an error by ss; E. West-Test advanced to second; C. Steiniger advanced to third; E. Gour scored, unearned.",
             "B. Sulikowsk grounded out to ss, RBI; A. Brown advanced to second; E. West-Test advanced to third; C. Steiniger scored."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 4.1,
+          "h": 10,
+          "r": 7,
+          "er": 5,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 24
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 0.1,
+          "h": 1,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 3,
+          "bf": 5
         }
       ],
       "year": 2023
@@ -2073,6 +2609,32 @@
             "M. Jackson flied out to rf.",
             "A. Silliman grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 4,
+          "h": 11,
+          "r": 10,
+          "er": 6,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
         }
       ],
       "year": 2023
@@ -2161,6 +2723,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 0.2,
+          "h": 6,
+          "r": 7,
+          "er": 3,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 9
+        },
+        {
+          "name": "Buckley, Nicole",
+          "ip": 2.2,
+          "h": 8,
+          "r": 3,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 1,
+          "ab": 14,
+          "bf": 16
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 1.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
+        }
+      ],
       "year": 2023
     },
     {
@@ -2238,6 +2838,20 @@
             "M. Dewey doubled to left center, advanced to third, RBI; N. Beck advanced to third, out at home cf to ss to c; J. Breidenth scored.",
             "S. Serna flied out to cf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6,
+          "h": 11,
+          "r": 9,
+          "er": 4,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 32
         }
       ],
       "year": 2023
@@ -2329,6 +2943,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 5.1,
+          "h": 6,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 1.2,
+          "h": 2,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
+        }
+      ],
       "year": 2023
     },
     {
@@ -2400,6 +3040,32 @@
             "I. Hsu walked.",
             "E. DeCleene fouled out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buckley, Nicole",
+          "ip": 1.2,
+          "h": 8,
+          "r": 7,
+          "er": 6,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 12
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 3.1,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
         }
       ],
       "year": 2023
@@ -2476,6 +3142,32 @@
             "S. Trendell walked.",
             "M. Rice lined into double play 3b to 1b; S. Trendell out on the play."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 3,
+          "h": 5,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 16
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 3,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 11
         }
       ],
       "year": 2023
@@ -2558,6 +3250,20 @@
             "M. Killough hit by pitch.",
             "K. Zenga lined out to p."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 7,
+          "h": 10,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 3,
+          "hbp": 1,
+          "ab": 31,
+          "bf": 32
         }
       ],
       "year": 2023
@@ -2649,6 +3355,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 4.1,
+          "h": 8,
+          "r": 8,
+          "er": 5,
+          "bb": 3,
+          "so": 1,
+          "hbp": 1,
+          "ab": 21,
+          "bf": 27
+        },
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 1.2,
+          "h": 2,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 8
+        }
+      ],
       "year": 2023
     },
     {
@@ -2726,6 +3458,20 @@
             "L. Jordan grounded out to ss.",
             "S. Russell fouled out to c."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 6,
+          "h": 6,
+          "r": 1,
+          "er": 0,
+          "bb": 4,
+          "so": 4,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 28
         }
       ],
       "year": 2023
@@ -2822,6 +3568,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 4,
+          "h": 7,
+          "r": 8,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 23
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 3,
+          "h": 6,
+          "r": 5,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
+        }
+      ],
       "year": 2023
     },
     {
@@ -2916,6 +3688,44 @@
             "J. Shantz flied out to rf.",
             "C. Alaniz flied out to lf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 4.2,
+          "h": 9,
+          "r": 5,
+          "er": 5,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
+        },
+        {
+          "name": "Langus, Keira",
+          "ip": 0.1,
+          "h": 3,
+          "r": 4,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 6
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 9
         }
       ],
       "year": 2023
@@ -3016,6 +3826,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sardilli, Jessica",
+          "ip": 5,
+          "h": 9,
+          "r": 4,
+          "er": 2,
+          "bb": 3,
+          "so": 2,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 28
+        },
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 2,
+          "h": 6,
+          "r": 5,
+          "er": 3,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 14
+        }
+      ],
       "year": 2023
     },
     {
@@ -3103,6 +3939,20 @@
             "N. Sestito grounded out to 3b.",
             "S. Moore grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Langus, Keira",
+          "ip": 7,
+          "h": 12,
+          "r": 4,
+          "er": 2,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 35,
+          "bf": 37
         }
       ],
       "year": 2023

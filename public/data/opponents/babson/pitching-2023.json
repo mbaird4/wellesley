@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-11T15:45:04.791Z",
+  "scrapedAt": "2026-03-26T12:56:03.659Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -224,6 +224,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 15,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 29
+        }
+      ],
       "year": 2023
     },
     {
@@ -322,6 +336,56 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 1.1,
+          "h": 7,
+          "r": 7,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 14
+        },
+        {
+          "name": "Gabler, Andi",
+          "ip": 1,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 2,
+          "h": 2,
+          "r": 3,
+          "er": 1,
+          "bb": 3,
+          "so": 0,
+          "hbp": 1,
+          "ab": 10,
+          "bf": 14
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 1.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 5,
+          "bf": 8
+        }
+      ],
       "year": 2023
     },
     {
@@ -403,6 +467,20 @@
             "H. Russell struck out swinging.",
             "L. Hernandez struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6,
+          "h": 7,
+          "r": 7,
+          "er": 4,
+          "bb": 2,
+          "so": 10,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 31
         }
       ],
       "year": 2023
@@ -488,6 +566,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gabler, Andi",
+          "ip": 4,
+          "h": 8,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 20
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 2,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        }
+      ],
       "year": 2023
     },
     {
@@ -571,6 +675,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 6,
+          "r": 0,
+          "er": 0,
+          "bb": 4,
+          "so": 8,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 31
+        }
+      ],
       "year": 2023
     },
     {
@@ -648,6 +766,20 @@
             "Abigail Miller grounded out to 3b.",
             "Jessie Lloyd popped up to 2b through the right side."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 7,
+          "h": 6,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 29
         }
       ],
       "year": 2023
@@ -743,6 +875,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6.2,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 7,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 30
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 0.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
+        }
+      ],
       "year": 2023
     },
     {
@@ -822,6 +980,32 @@
             "Kori Gargiulo grounded out to 3b.",
             "Nicole Cerasi grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 4.1,
+          "h": 11,
+          "r": 6,
+          "er": 5,
+          "bb": 2,
+          "so": 2,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 28
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 1.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 6,
+          "bf": 7
         }
       ],
       "year": 2023
@@ -913,6 +1097,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 7,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 11,
+          "hbp": 2,
+          "ab": 30,
+          "bf": 33
+        }
+      ],
       "year": 2023
     },
     {
@@ -996,6 +1194,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gabler, Andi",
+          "ip": 3,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 4,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
+        }
+      ],
       "year": 2023
     },
     {
@@ -1075,6 +1299,32 @@
             "S. Motylinsk singled to center field; A. Elliott advanced to second.",
             "H. Fraser grounded out to p."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 5,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 20
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 2,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 11
         }
       ],
       "year": 2023
@@ -1168,6 +1418,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 5.1,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 23
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 2.1,
+          "h": 2,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 9
+        }
+      ],
       "year": 2023
     },
     {
@@ -1249,6 +1525,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 7,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 4,
+          "so": 3,
+          "hbp": 1,
+          "ab": 22,
+          "bf": 27
+        }
+      ],
       "year": 2023
     },
     {
@@ -1328,6 +1618,20 @@
             "S. Bolton pinch hit for B. Nadzan.",
             "S. Bolton struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 8,
+          "r": 5,
+          "er": 5,
+          "bb": 1,
+          "so": 11,
+          "hbp": 3,
+          "ab": 29,
+          "bf": 33
         }
       ],
       "year": 2023
@@ -1435,6 +1739,56 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gabler, Andi",
+          "ip": 0.2,
+          "h": 3,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 8
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 5,
+          "h": 7,
+          "r": 6,
+          "er": 6,
+          "bb": 5,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 27
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 0.1,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 6
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
+        }
+      ],
       "year": 2023
     },
     {
@@ -1497,6 +1851,20 @@
             "Wong stole second.",
             "Cataldo struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 5,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 3,
+          "so": 10,
+          "hbp": 2,
+          "ab": 18,
+          "bf": 23
         }
       ],
       "year": 2023
@@ -1581,6 +1949,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 12,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 27
+        }
+      ],
       "year": 2023
     },
     {
@@ -1644,6 +2026,32 @@
             "M. Razzino pinch hit for J. Walsh.",
             "M. Razzino flied out to rf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 2,
+          "h": 6,
+          "r": 5,
+          "er": 4,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 13
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 2,
+          "h": 4,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 11,
+          "bf": 13
         }
       ],
       "year": 2023
@@ -1719,6 +2127,20 @@
             "M. Urakawa struck out swinging.",
             "E. Nagy struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 15,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
         }
       ],
       "year": 2023
@@ -1808,6 +2230,56 @@
             "E. Nagy advanced to third on a passed ball.",
             "J. Diaz grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 3,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 14
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 0,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 4
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 2,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 12
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 4
         }
       ],
       "year": 2023
@@ -1901,6 +2373,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 8,
+          "h": 9,
+          "r": 1,
+          "er": 1,
+          "bb": 4,
+          "so": 12,
+          "hbp": 0,
+          "ab": 32,
+          "bf": 37
+        }
+      ],
       "year": 2023
     },
     {
@@ -1990,6 +2476,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 2,
+          "h": 3,
+          "r": 4,
+          "er": 2,
+          "bb": 6,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 16
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 5,
+          "h": 5,
+          "r": 3,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 22
+        }
+      ],
       "year": 2023
     },
     {
@@ -2057,6 +2569,20 @@
             "J. Shantz struck out swinging.",
             "C. Alaniz struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 19,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 22
         }
       ],
       "year": 2023
@@ -2148,6 +2674,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 5,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 9,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 19
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 0.2,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 8
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 1.1,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
+        }
+      ],
       "year": 2023
     },
     {
@@ -2220,6 +2784,32 @@
             "Z. Smyth popped up to p.",
             "K. Scotia grounded out to p."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 11,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
         }
       ],
       "year": 2023
@@ -2317,6 +2907,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 2.1,
+          "h": 5,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 15
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 4.2,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 4,
+          "hbp": 2,
+          "ab": 19,
+          "bf": 25
+        }
+      ],
       "year": 2023
     },
     {
@@ -2401,6 +3017,20 @@
             "C. Overton doubled to right center, RBI.",
             "M. Killough struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 8,
+          "h": 2,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 19,
+          "hbp": 2,
+          "ab": 28,
+          "bf": 31
         }
       ],
       "year": 2023
@@ -2491,6 +3121,44 @@
             "C. Rosenberg singled to center field; S. Zannotti advanced to second.",
             "J. Gomez lined into double play rf to 1b; C. Rosenberg out on the play."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 3.2,
+          "h": 6,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 20
+        },
+        {
+          "name": "DeStefano, Alyssa",
+          "ip": 0.1,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 5
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 3,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 11
         }
       ],
       "year": 2023
@@ -2587,6 +3255,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 9,
+          "h": 2,
+          "r": 1,
+          "er": 0,
+          "bb": 2,
+          "so": 13,
+          "hbp": 0,
+          "ab": 31,
+          "bf": 33
+        }
+      ],
       "year": 2023
     },
     {
@@ -2658,6 +3340,32 @@
             "E. Behel walked; I. Shroyer advanced to second.",
             "B. Bartz struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 4,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 16
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 2,
+          "h": 3,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 11
         }
       ],
       "year": 2023
@@ -2737,6 +3445,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 5,
+          "so": 6,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 30
+        }
+      ],
       "year": 2023
     },
     {
@@ -2808,6 +3530,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6,
+          "h": 6,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 26
+        }
+      ],
       "year": 2023
     },
     {
@@ -2874,6 +3610,20 @@
             "E. Gaunce singled to center field.",
             "J. Vargas lined out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 5,
+          "hbp": 1,
+          "ab": 21,
+          "bf": 26
         }
       ],
       "year": 2023
@@ -2961,6 +3711,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 12,
+          "r": 5,
+          "er": 4,
+          "bb": 3,
+          "so": 5,
+          "hbp": 0,
+          "ab": 32,
+          "bf": 36
+        }
+      ],
       "year": 2023
     },
     {
@@ -3035,6 +3799,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 4.1,
+          "h": 8,
+          "r": 9,
+          "er": 6,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 27
+        },
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 0.2,
+          "h": 3,
+          "r": 2,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        }
+      ],
       "year": 2023
     },
     {
@@ -3102,6 +3892,20 @@
             "Chrissy Marotto grounded out to 3b.",
             "Christina Nowicki flied out to rf to right center."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 6,
+          "h": 7,
+          "r": 6,
+          "er": 3,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
         }
       ],
       "year": 2023
@@ -3174,6 +3978,20 @@
             "K. Pendowski grounded out to 2b.",
             "M. Relihan struck out swinging."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 6,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
         }
       ],
       "year": 2023
@@ -3266,6 +4084,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 6.2,
+          "h": 13,
+          "r": 8,
+          "er": 4,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 36,
+          "bf": 38
+        }
+      ],
       "year": 2023
     },
     {
@@ -3351,6 +4183,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Taubenheim, Natasha",
+          "ip": 7,
+          "h": 8,
+          "r": 5,
+          "er": 1,
+          "bb": 2,
+          "so": 6,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 31
+        }
+      ],
       "year": 2023
     },
     {
@@ -3424,6 +4270,20 @@
             "E. Spence struck out looking.",
             "S. Crowley lined out to cf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sestito, Nicole",
+          "ip": 7,
+          "h": 7,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 28
         }
       ],
       "year": 2023
@@ -3519,6 +4379,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 8,
+          "h": 10,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 11,
+          "hbp": 0,
+          "ab": 32,
+          "bf": 36
+        }
+      ],
       "year": 2023
     },
     {
@@ -3590,6 +4464,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 5,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 3,
+          "hbp": 2,
+          "ab": 21,
+          "bf": 23
+        },
+        {
+          "name": "Sestito, Nicole",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
+        }
+      ],
       "year": 2023
     },
     {
@@ -3651,6 +4551,20 @@
             "B. Agan popped up to 2b.",
             "L. Oliveira popped up to p."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 4,
+          "hbp": 1,
+          "ab": 20,
+          "bf": 21
         }
       ],
       "year": 2023
@@ -3723,6 +4637,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 7,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 23
+        }
+      ],
       "year": 2023
     },
     {
@@ -3793,6 +4721,20 @@
             "A. Rainone pinch ran for B. McCann.",
             "A. Olsen singled to left center, advanced to second on the throw, RBI; A. Rainone scored."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "O'Reilly, Moira",
+          "ip": 6.2,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
         }
       ],
       "year": 2023

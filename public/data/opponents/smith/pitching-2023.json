@@ -1,7 +1,7 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-11T15:29:42.554Z",
+  "scrapedAt": "2026-03-26T12:40:34.591Z",
   "year": 2023,
   "pitchingStats": [
     {
@@ -208,6 +208,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 6,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 15,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 22
+        }
+      ],
       "year": 2023
     },
     {
@@ -262,6 +276,20 @@
             "A. Maloof walked; A. McNee advanced to second.",
             "D. Quinones grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 5,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
         }
       ],
       "year": 2023
@@ -362,6 +390,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 2,
+          "h": 2,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 7,
+          "bf": 10
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 5,
+          "h": 5,
+          "r": 5,
+          "er": 3,
+          "bb": 2,
+          "so": 9,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 26
+        }
+      ],
       "year": 2023
     },
     {
@@ -451,6 +505,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2.2,
+          "h": 5,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 14
+        },
+        {
+          "name": "Osmond, Maegan",
+          "ip": 2.1,
+          "h": 5,
+          "r": 6,
+          "er": 3,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 1,
+          "h": 1,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 6
+        }
+      ],
       "year": 2023
     },
     {
@@ -536,6 +628,44 @@
             "E. Gour popped up to rf.",
             "Sulikowski popped up to rf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 2.2,
+          "h": 7,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 17
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 2.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 6,
+          "so": 3,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 14
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 4
         }
       ],
       "year": 2023
@@ -653,6 +783,68 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 1,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 1,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 12
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 2.1,
+          "h": 6,
+          "r": 4,
+          "er": 4,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 13
+        },
+        {
+          "name": "Osmond, Maegan",
+          "ip": 3,
+          "h": 3,
+          "r": 6,
+          "er": 5,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
+        },
+        {
+          "name": "Lavery, Aislinn",
+          "ip": 0,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 3
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 0.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 2
+        }
+      ],
       "year": 2023
     },
     {
@@ -759,6 +951,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 4.2,
+          "h": 3,
+          "r": 5,
+          "er": 3,
+          "bb": 6,
+          "so": 5,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 27
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 2.1,
+          "h": 3,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 10
+        }
+      ],
       "year": 2023
     },
     {
@@ -853,6 +1071,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 1.1,
+          "h": 1,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 8
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2,
+          "h": 3,
+          "r": 5,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 13
+        },
+        {
+          "name": "Osmond, Maegan",
+          "ip": 3.2,
+          "h": 5,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 16
+        }
+      ],
       "year": 2023
     },
     {
@@ -936,6 +1192,32 @@
             "B. Garden grounded out to 3b, RBI; F. Ventura advanced to second; S. Moss scored.",
             "C. Schihl popped up to 1b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 5.2,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 4,
+          "so": 4,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 27
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 1.1,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
         }
       ],
       "year": 2023
@@ -1037,6 +1319,68 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2,
+          "h": 3,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 10
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 0.1,
+          "h": 4,
+          "r": 5,
+          "er": 4,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        },
+        {
+          "name": "Osmond, Maegan",
+          "ip": 2.1,
+          "h": 3,
+          "r": 5,
+          "er": 4,
+          "bb": 4,
+          "so": 2,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 15
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 1,
+          "h": 0,
+          "r": 4,
+          "er": 4,
+          "bb": 4,
+          "so": 1,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 8
+        },
+        {
+          "name": "Lavery, Aislinn",
+          "ip": 0.1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 2
+        }
+      ],
       "year": 2023
     },
     {
@@ -1116,6 +1460,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 6,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 6,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 27
+        }
+      ],
       "year": 2023
     },
     {
@@ -1187,6 +1557,20 @@
             "E. Malanson pinch hit for C. Ciampa.",
             "E. Malanson flied out to rf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 6,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
         }
       ],
       "year": 2023
@@ -1272,6 +1656,20 @@
             "L. Farlow reached first on a fielding error by 2b; M. Dewey advanced to third.",
             "K. Becker grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 7,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 5,
+          "so": 4,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 32
         }
       ],
       "year": 2023
@@ -1367,6 +1765,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 4,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 19
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 0,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 4
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 3,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 14
+        }
+      ],
       "year": 2023
     },
     {
@@ -1438,6 +1874,32 @@
             "H. Townsend hit by pitch.",
             "K. Halvorsen grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 3.1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 2,
+          "ab": 10,
+          "bf": 14
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 1.2,
+          "h": 6,
+          "r": 5,
+          "er": 2,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 13
         }
       ],
       "year": 2023
@@ -1516,6 +1978,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 28
+        }
+      ],
       "year": 2023
     },
     {
@@ -1582,6 +2058,20 @@
             "C. Joslin grounded out to ss.",
             "M. Hennessy flied out to cf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 6,
+          "h": 5,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 24
         }
       ],
       "year": 2023
@@ -1662,6 +2152,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 0.1,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 5
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 5.2,
+          "h": 7,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 24
+        }
+      ],
       "year": 2023
     },
     {
@@ -1738,6 +2254,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 6,
+          "h": 9,
+          "r": 8,
+          "er": 1,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 28,
+          "bf": 31
+        }
+      ],
       "year": 2023
     },
     {
@@ -1809,6 +2339,20 @@
             "K. Glickman doubled to right center; M. Mok advanced to third.",
             "K. McGuigan singled to left center, RBI; K. Glickman advanced to third; M. Mok scored."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 4.1,
+          "h": 13,
+          "r": 9,
+          "er": 5,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
         }
       ],
       "year": 2023
@@ -1906,6 +2450,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 5,
+          "h": 4,
+          "r": 5,
+          "er": 3,
+          "bb": 8,
+          "so": 0,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 28
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 10
+        }
+      ],
       "year": 2023
     },
     {
@@ -1976,6 +2546,20 @@
           "plays": [
             "C. Alaniz to 3b for K. Beals."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 5,
+          "h": 9,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
         }
       ],
       "year": 2023
@@ -2059,6 +2643,44 @@
             "J. Ceddia out at first 1b unassisted, runner left early.",
             "G. DiBacco flied out to lf."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 1.1,
+          "h": 4,
+          "r": 11,
+          "er": 7,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 16
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2.2,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 14
+        },
+        {
+          "name": "Lavery, Aislinn",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
         }
       ],
       "year": 2023
@@ -2152,6 +2774,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 0,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 4
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 7,
+          "h": 12,
+          "r": 5,
+          "er": 3,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 34
+        }
+      ],
       "year": 2023
     },
     {
@@ -2214,6 +2862,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 4,
+          "h": 4,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 16
+        },
+        {
+          "name": "Lavery, Aislinn",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 4
+        }
+      ],
       "year": 2023
     },
     {
@@ -2272,6 +2946,32 @@
             "M. Costello popped up to 2b.",
             "S. Fortini struck out looking."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 3,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 11
+        },
+        {
+          "name": "Osmond, Maegan",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
         }
       ],
       "year": 2023
@@ -2348,6 +3048,32 @@
             "K. Case grounded out to p.",
             "A. Sheehan grounded out to p, bunt."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 6,
+          "h": 7,
+          "r": 4,
+          "er": 2,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 26
         }
       ],
       "year": 2023
@@ -2454,6 +3180,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 4,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 23
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 3.2,
+          "h": 1,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 13
+        }
+      ],
       "year": 2023
     },
     {
@@ -2542,6 +3294,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 4,
+          "h": 10,
+          "r": 6,
+          "er": 6,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 25
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 2,
+          "h": 3,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 7,
+          "bf": 9
+        }
+      ],
       "year": 2023
     },
     {
@@ -2619,6 +3397,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 5.2,
+          "h": 11,
+          "r": 8,
+          "er": 5,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 31
+        }
+      ],
       "year": 2023
     },
     {
@@ -2691,6 +3483,20 @@
             "G. Beaulieu hit by pitch; S. Zannotti advanced to second.",
             "K. Nuehlen grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Helms, Lucy",
+          "ip": 7,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 5,
+          "hbp": 2,
+          "ab": 24,
+          "bf": 26
         }
       ],
       "year": 2023
@@ -2783,6 +3589,44 @@
             "C. Overton stole second.",
             "M. Killough grounded out to 2b."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 2.2,
+          "h": 9,
+          "r": 7,
+          "er": 6,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 0,
+          "h": 1,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 2,
+          "bf": 4
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 4.1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 19
         }
       ],
       "year": 2023
@@ -2887,6 +3731,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Lavery, Aislinn",
+          "ip": 1.2,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 8
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 2.1,
+          "h": 6,
+          "r": 6,
+          "er": 2,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 15
+        },
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 3,
+          "h": 7,
+          "r": 5,
+          "er": 3,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 20
+        }
+      ],
       "year": 2023
     },
     {
@@ -2968,6 +3850,44 @@
             "R. Mauro grounded out to 1b unassisted.",
             "F. Salvati grounded out to ss."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Fletcher, Abigail",
+          "ip": 3.1,
+          "h": 5,
+          "r": 7,
+          "er": 4,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 19
+        },
+        {
+          "name": "Beals, Kaitlen",
+          "ip": 0.2,
+          "h": 1,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 3,
+          "bf": 6
+        },
+        {
+          "name": "Helms, Lucy",
+          "ip": 2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
         }
       ],
       "year": 2023

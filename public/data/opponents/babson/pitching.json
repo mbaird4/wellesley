@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-26T02:07:58.784Z",
+  "scrapedAt": "2026-03-26T12:56:03.659Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -192,6 +192,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 0,
+          "h": 5,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 8
+        },
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 5,
+          "h": 3,
+          "r": 3,
+          "er": 0,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 23
+        }
+      ],
       "year": 2026
     },
     {
@@ -288,6 +314,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 4,
+          "h": 6,
+          "r": 4,
+          "er": 3,
+          "bb": 4,
+          "so": 1,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 22
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 3,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 14
+        }
+      ],
       "year": 2026
     },
     {
@@ -364,6 +416,32 @@
             "Brooke Fraas singled to right field, RBI (0-0); Lauren Babich advanced to third; Gabriella Petroski scored.",
             "Bella Nadzan singled to second base, RBI (0-0); Brooke Fraas advanced to second, advanced to third on a throwing error by 2b, scored on the throw; Lauren Babich scored."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 4,
+          "h": 4,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 18
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 1.2,
+          "h": 3,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 11
         }
       ],
       "year": 2026
@@ -446,6 +524,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 7,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 4,
+          "so": 3,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 29
+        }
+      ],
       "year": 2026
     },
     {
@@ -525,6 +617,20 @@
             "Emily Bessette walked (0-0); Ariana Cray advanced to second.",
             "Avery Couch popped up to 3b (0-0)."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 7,
+          "h": 7,
+          "r": 3,
+          "er": 2,
+          "bb": 3,
+          "so": 8,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 30
         }
       ],
       "year": 2026
@@ -622,6 +728,44 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 5,
+          "h": 7,
+          "r": 2,
+          "er": 2,
+          "bb": 4,
+          "so": 7,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 26
+        },
+        {
+          "name": "Vlacich, Katie",
+          "ip": 1,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 7
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 1,
+          "ab": 2,
+          "bf": 3
+        }
+      ],
       "year": 2026
     },
     {
@@ -699,6 +843,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 1.2,
+          "h": 4,
+          "r": 5,
+          "er": 3,
+          "bb": 6,
+          "so": 2,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 16
+        },
+        {
+          "name": "Vlacich, Katie",
+          "ip": 3,
+          "h": 6,
+          "r": 6,
+          "er": 6,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 17
+        }
+      ],
       "year": 2026
     },
     {
@@ -762,6 +932,20 @@
             "Hannah Lappin advanced to second; Fiona Casey advanced to third on a wild pitch.",
             "Hannah Irons flied out to cf (0-0)."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sealey, Lexi",
+          "ip": 5,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 19
         }
       ],
       "year": 2026
@@ -832,6 +1016,20 @@
             "Katelyn Bladecki pinch hit for Morgan Hewitt.",
             "Katelyn Bladecki struck out looking (0-0)."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 6,
+          "h": 7,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
         }
       ],
       "year": 2026
@@ -932,6 +1130,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 5,
+          "h": 8,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 26
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 2,
+          "h": 3,
+          "r": 2,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 11
+        }
+      ],
       "year": 2026
     },
     {
@@ -1023,6 +1247,32 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 2,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 9
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 5,
+          "h": 12,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 28
+        }
+      ],
       "year": 2026
     },
     {
@@ -1108,6 +1358,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 6,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 27
+        }
+      ],
       "year": 2026
     },
     {
@@ -1179,6 +1443,20 @@
           ]
         }
       ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 6,
+          "h": 11,
+          "r": 6,
+          "er": 4,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
+        }
+      ],
       "year": 2026
     },
     {
@@ -1244,6 +1522,20 @@
             "Sophie Garber singled to center field (1-2 FSB); Misora Hashiramoto advanced to second.",
             "Emily Kennedy flied out to cf (0-0)."
           ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 6,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
         }
       ],
       "year": 2026
