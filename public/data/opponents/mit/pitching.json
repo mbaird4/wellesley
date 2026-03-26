@@ -1,31 +1,31 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-25T02:01:40.599Z",
+  "scrapedAt": "2026-03-26T02:07:44.628Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blackett, Sarah",
-      "w": 5,
+      "w": 6,
       "l": 0,
-      "era": 2.16,
-      "app": 6,
-      "gs": 5,
-      "cg": 3,
-      "sho": 3,
+      "era": 1.78,
+      "app": 7,
+      "gs": 6,
+      "cg": 4,
+      "sho": 4,
       "sv": 0,
-      "ip": 32.1,
-      "h": 30,
+      "ip": 39.1,
+      "h": 34,
       "r": 14,
       "er": 10,
-      "bb": 14,
-      "so": 34,
+      "bb": 16,
+      "so": 38,
       "hr": 2,
-      "whip": 1.36,
-      "doubles": 6,
+      "whip": 1.27,
+      "doubles": 7,
       "triples": 1,
-      "ab": 125,
-      "bAvg": 0.24,
+      "ab": 150,
+      "bAvg": 0.227,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -36,24 +36,24 @@
       "name": "Huang, Sharona",
       "w": 2,
       "l": 1,
-      "era": 2.72,
-      "app": 4,
-      "gs": 4,
-      "cg": 1,
+      "era": 1.96,
+      "app": 5,
+      "gs": 5,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 18,
-      "h": 21,
-      "r": 11,
+      "ip": 25,
+      "h": 25,
+      "r": 12,
       "er": 7,
-      "bb": 8,
-      "so": 3,
+      "bb": 11,
+      "so": 5,
       "hr": 0,
-      "whip": 1.61,
+      "whip": 1.44,
       "doubles": 1,
       "triples": 0,
-      "ab": 74,
-      "bAvg": 0.284,
+      "ab": 100,
+      "bAvg": 0.25,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
@@ -1071,6 +1071,162 @@
             "Kat Xiong pinch ran for Juliana Kiley.",
             "Victoria Ramirez pinch hit for Josephine Kim.",
             "Victoria Ramirez popped up to 3b (3-2 BSFBB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/depauw-university/boxscore/12757",
+      "date": "3/25/2026",
+      "opponent": "Depauw University",
+      "pitchers": [
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Libby Minobe reached first on an error by 3b, bunt (0-0).",
+            "Libby Minobe out at second c to 2b, caught stealing.",
+            "Kelsey Schneider singled to shortstop (3-2 BSFBFB).",
+            "Emily DuMais flied out to lf (1-1 BK).",
+            "Eliza Rammel struck out swinging (2-2 BKKBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella Kuenster singled, bunt (0-1 K).",
+            "Paige Brady struck out swinging (2-2 FBBSS).",
+            "Hanna Coffel fouled out to 3b (0-2 FK).",
+            "Kendall Hynes walked (3-2 BBFBFB); Ella Kuenster advanced to second.",
+            "Mia Speidel flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Libby Minobe lined out to 2b (1-0 B).",
+            "Angelese Cruz to 2b for Emily DuMais.",
+            "Kelsey Schneider grounded out to 3b (0-1 F).",
+            "Angelese Cruz grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Eliza Rammel grounded out to ss (1-2 KFB).",
+            "Ella Kuenster struck out swinging (0-2 KKS).",
+            "Paige Brady struck out looking (3-2 FBSBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hanna Coffel flied out to cf (2-2 FBBK).",
+            "Kendall Hynes singled to second base (0-0).",
+            "Anni Felts pinch ran for Kendall Hynes.",
+            "Mia Speidel reached on a fielder's choice (2-2 BKKB); Anni Felts out at second 3b to 2b.",
+            "Libby Minobe popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kelsey Schneider out at first 3b to 2b, bunt (1-0 B).",
+            "Emily DuMais pinch hit for Angelese Cruz.",
+            "Emily DuMais grounded out to 2b (1-1 BK).",
+            "Eliza Rammel popped up to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ella Kuenster doubled to left field (2-0 BB).",
+            "Paige Brady flied out to cf (1-0 B).",
+            "Hanna Coffel walked (3-1 BBBKB).",
+            "Kendall Hynes grounded out to ss (3-1 BBKB); Hanna Coffel advanced to second; Ella Kuenster advanced to third.",
+            "Mia Speidel grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/st-lawrence-university/boxscore/12758",
+      "date": "3/25/2026",
+      "opponent": "St Lawrence University",
+      "pitchers": [
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maeve Thompson grounded out to 2b (0-0).",
+            "Caelen Jahnle grounded out to ss (0-0).",
+            "Allison Kloft walked (0-0).",
+            "Isabel Moreno struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Marleigh Monroe grounded out to ss (0-0).",
+            "Leah Verschneider lined out to ss (0-0).",
+            "Marina Juan popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Gallas flied out to cf (0-0).",
+            "Emily Wendt grounded out to 2b (0-0).",
+            "Maeve Thompson walked (0-0).",
+            "Caelen Jahnle grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Allison Kloft grounded out to ss (0-0).",
+            "Isabel Moreno walked (0-0).",
+            "Marleigh Monroe reached on a fielder's choice to shortstop (0-0); Isabel Moreno advanced to second on a throwing error by ss.",
+            "Leah Verschneider singled up the middle (0-0); Marleigh Monroe advanced to second; Isabel Moreno advanced to third.",
+            "Marina Juan singled to center field, RBI (0-0); Leah Verschneider advanced to second; Marleigh Monroe advanced to third; Isabel Moreno scored, unearned.",
+            "Abby Gallas struck out swinging (0-0).",
+            "Emily Wendt grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Scarpaci to c for Sienna Wilson.",
+            "Maeve Thompson grounded out to p (0-0).",
+            "Caelen Jahnle singled to center field (0-0).",
+            "Allison Kloft reached on a fielder's choice to second base (0-0); Caelen Jahnle out at second 2b to ss.",
+            "Isabel Moreno reached on a fielder's choice to shortstop (0-0); Allison Kloft out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Marleigh Monroe reached first on a fielding error by 2b (0-0).",
+            "Leah Verschneider grounded into double play 2b to ss to 1b (0-0); Marleigh Monroe out on the play.",
+            "Marina Juan grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Arianna Kumar to ss for Amanda Huang.",
+            "Julia Mattiace to 1b for Ellie Hasegawa.",
+            "Abby Gallas singled through the left side (0-0).",
+            "Quinn Jerome pinch ran for Abby Gallas.",
+            "Emily Wendt grounded out to 3b (0-0); Quinn Jerome advanced to second.",
+            "Maeve Thompson lined out to 1b (0-0).",
+            "Caelen Jahnle grounded out to p (0-0)."
           ]
         }
       ],

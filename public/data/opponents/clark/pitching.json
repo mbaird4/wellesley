@@ -1,64 +1,64 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-25T02:01:53.885Z",
+  "scrapedAt": "2026-03-26T02:07:54.995Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 4,
+      "w": 5,
       "l": 1,
-      "era": 2.65,
-      "app": 5,
-      "gs": 4,
-      "cg": 4,
+      "era": 2.53,
+      "app": 6,
+      "gs": 5,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 31.2,
-      "h": 35,
-      "r": 13,
-      "er": 12,
-      "bb": 9,
-      "so": 48,
+      "ip": 38.2,
+      "h": 42,
+      "r": 15,
+      "er": 14,
+      "bb": 10,
+      "so": 56,
       "hr": 2,
-      "whip": 1.39,
-      "doubles": 5,
-      "triples": 0,
-      "ab": 131,
-      "bAvg": 0.267,
+      "whip": 1.34,
+      "doubles": 8,
+      "triples": 1,
+      "ab": 160,
+      "bAvg": 0.263,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 1
+      "sha": 2
     },
     {
       "name": "Dube, Megan",
-      "w": 2,
+      "w": 3,
       "l": 3,
-      "era": 3.94,
-      "app": 5,
-      "gs": 4,
-      "cg": 4,
+      "era": 3.33,
+      "app": 6,
+      "gs": 5,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 32,
-      "h": 39,
-      "r": 22,
-      "er": 18,
-      "bb": 8,
-      "so": 24,
+      "ip": 40,
+      "h": 45,
+      "r": 23,
+      "er": 19,
+      "bb": 9,
+      "so": 39,
       "hr": 2,
-      "whip": 1.47,
-      "doubles": 8,
-      "triples": 2,
-      "ab": 131,
-      "bAvg": 0.298,
-      "wp": 1,
+      "whip": 1.35,
+      "doubles": 10,
+      "triples": 3,
+      "ab": 159,
+      "bAvg": 0.283,
+      "wp": 2,
       "hbp": 3,
       "bk": 0,
       "sfa": 2,
-      "sha": 3
+      "sha": 5
     },
     {
       "name": "Wagstaff, Hannah",
@@ -916,6 +916,174 @@
             "Carlee Hiddemen doubled to left field, ground-rule, 2 RBI (0-1 K); Eva Warren scored; Hannah Burton scored.",
             "Mikale Lemons walked (3-2 KFBBBB).",
             "Natalie Gale struck out swinging (0-2 SFFFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/regis-college/boxscore/19185",
+      "date": "3/25/2026",
+      "opponent": "Regis College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sydney Grund struck out swinging (2-2 BBKSFS).",
+            "Francesca Licata struck out swinging (1-2 SBKS).",
+            "Lynsey Kay struck out swinging (1-2 FBSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Samantha Kelepouris singled to left center (1-1 FB).",
+            "Kristen Galvin pinch ran for Samantha Kelepouris.",
+            "Mel Rees doubled to left center (0-0); Kristen Galvin advanced to third.",
+            "Madigan Lawler struck out swinging (0-2 SKS).",
+            "Mary DeMerchant struck out looking (3-2 BBKSBK).",
+            "Grace Motto walked (3-2 BBKSBB).",
+            "Megan Arruda struck out swinging (0-2 FKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sydney Grund singled up the middle (1-1 BF).",
+            "Francesca Licata out at first p to 2b, SAC, bunt (1-1 SB); Sydney Grund advanced to second, advanced to third on a throwing error by 2b.",
+            "Lynsey Kay tripled to right field, RBI (2-2 KBFB); Sydney Grund scored.",
+            "Samantha Kelepouris struck out looking (1-2 SKFBFK).",
+            "Mel Rees flied out to lf (2-2 KBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Simpson to dp for Madigan Lawler.",
+            "Avery Simpson struck out swinging (0-0).",
+            "Mary DeMerchant struck out swinging (1-2 KFBS).",
+            "Grace Motto struck out looking (1-2 KBKK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kate Julian struck out looking (2-2 KBSBK).",
+            "Sydney Grund flied out to cf to right center (0-0).",
+            "Francesca Licata popped up to 2b (3-2 KBKBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lynsey Kay doubled to right center (3-2 KFBFBBF).",
+            "Samantha Kelepouris grounded out to 3b, bunt, SAC (1-1 SB); Lynsey Kay advanced to third.",
+            "Mel Rees popped up to lf (0-1 K).",
+            "Avery Simpson struck out swinging (3-2 BSBFBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Gabby Blanchard pinch hit for Mary DeMerchant.",
+            "Gwen Castro to c for Avery Della Piana.",
+            "Gabby Blanchard struck out looking (2-2 BBSFK).",
+            "Grace Motto struck out swinging (0-2 KFFS).",
+            "Kate Julian grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Sydney Grund Kate Julian placed on second (0-0).",
+            "Michaela Edwards pinch ran for Kate Julian.",
+            "Sydney Grund struck out looking (0-0).",
+            "Francesca Licata singled to center field (0-0).",
+            "Lynsey Kay flied out to lf (0-0).",
+            "Francesca Licata advanced to second on a wild pitch; Michaela Edwards advanced to third on a wild pitch.",
+            "Samantha Kelepouris popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/regis-college/boxscore/19186",
+      "date": "3/25/2026",
+      "opponent": "Regis College",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sydney Grund struck out swinging (2-2 KBBSS).",
+            "Francesca Licata flied out to cf up the middle (0-1 K).",
+            "Lynsey Kay singled through the right side (1-2 BFF).",
+            "Samantha Kelepouris doubled to right center (0-1 K); Lynsey Kay advanced to third.",
+            "Mel Rees lined out to ss (0-2 FFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kristen Galvin struck out swinging (1-2 SSBS).",
+            "Madigan Lawler singled, advanced to second (0-1 K).",
+            "Avery Simpson pinch ran for Madigan Lawler.",
+            "Mya Gaspie doubled to left center, RBI (0-1 K); Avery Simpson scored.",
+            "Madi Zancan out at first p to 2b, bunt, SAC (0-0); Mya Gaspie advanced to third.",
+            "Sydney Grund struck out swinging (2-2 KSBFBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Francesca Licata struck out swinging, out at first c to 1b (2-2 BSFFFBFS).",
+            "Lynsey Kay flied out to lf (1-2 SBFF).",
+            "Samantha Kelepouris tripled to left field (2-2 SBFB).",
+            "Mel Rees lined out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kristen Galvin struck out swinging (1-2 KBSS).",
+            "Madigan Lawler fouled out to 1b (2-1 BKB).",
+            "Mya Gaspie flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madi Zancan struck out swinging (0-2 KFFS).",
+            "Sydney Grund walked (3-1 BFBBB).",
+            "Francesca Licata doubled to right center (0-0); Sydney Grund advanced to third.",
+            "Lynsey Kay reached first on an error by ss, RBI (0-0); Sydney Grund scored.",
+            "Samantha Kelepouris flied out to cf (0-1 K); Francesca Licata advanced to third.",
+            "Mel Rees lined out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Michaela Edwards struck out swinging (0-2 KSS).",
+            "Madigan Lawler flied out to lf (1-2 SBK).",
+            "Mya Gaspie struck out looking (0-2 SFFK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Gwen Castro to c for Erin Slavin.",
+            "Madi Zancan singled up the middle (0-0).",
+            "Sydney Grund flied out to lf (3-1 BBBK).",
+            "Francesca Licata flied out to cf to right center (0-1 F).",
+            "Lynsey Kay reached on a fielder's choice (0-0); Madi Zancan advanced to second.",
+            "Samantha Kelepouris reached on a fielder's choice (1-0 B); Lynsey Kay out at second 2b unassisted."
           ]
         }
       ],

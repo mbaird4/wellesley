@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-25T02:01:59.671Z",
+  "scrapedAt": "2026-03-26T02:07:58.784Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -63,53 +63,53 @@
     {
       "name": "Topel, Anna",
       "w": 2,
-      "l": 3,
-      "era": 4.26,
-      "app": 6,
-      "gs": 6,
-      "cg": 1,
+      "l": 4,
+      "era": 4.34,
+      "app": 7,
+      "gs": 7,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 24.2,
-      "h": 31,
-      "r": 18,
-      "er": 15,
-      "bb": 21,
-      "so": 15,
+      "ip": 30.2,
+      "h": 42,
+      "r": 24,
+      "er": 19,
+      "bb": 22,
+      "so": 20,
       "hr": 1,
-      "whip": 2.11,
-      "doubles": 4,
+      "whip": 2.09,
+      "doubles": 6,
       "triples": 0,
-      "ab": 103,
-      "bAvg": 0.301,
+      "ab": 131,
+      "bAvg": 0.321,
       "wp": 1,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 3
+      "sha": 4
     },
     {
       "name": "Vlacich, Katie",
       "w": 0,
-      "l": 2,
-      "era": 12.25,
-      "app": 4,
-      "gs": 2,
-      "cg": 0,
+      "l": 3,
+      "era": 8,
+      "app": 5,
+      "gs": 3,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 8,
-      "h": 17,
-      "r": 16,
-      "er": 14,
-      "bb": 8,
-      "so": 8,
+      "ip": 14,
+      "h": 23,
+      "r": 18,
+      "er": 16,
+      "bb": 9,
+      "so": 13,
       "hr": 1,
-      "whip": 3.13,
-      "doubles": 3,
+      "whip": 2.29,
+      "doubles": 4,
       "triples": 0,
-      "ab": 42,
-      "bAvg": 0.405,
+      "ab": 66,
+      "bAvg": 0.348,
       "wp": 5,
       "hbp": 0,
       "bk": 0,
@@ -1105,6 +1105,144 @@
             "Bailey Hill flied out to cf (2-0 BB).",
             "Gianna Baca pinch hit for Kiley Harris.",
             "Gianna Baca flied out to cf (2-0 BB)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/bates/boxscore/16049",
+      "date": "3/25/2026",
+      "opponent": "Bates",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maya Lee flied out to rf (0-2 SK).",
+            "Ella Maher singled up the middle (2-2 BSSBF).",
+            "Zariya Anderson struck out swinging (1-2 BSKS).",
+            "Isabel Bettencourt walked (3-2 BFBBKB); Ella Maher advanced to second.",
+            "Sienna Pietrasiewicz singled to center field, RBI (2-2 FBBF); Isabel Bettencourt advanced to second; Ella Maher scored.",
+            "Delaney Rankin reached on a fielder's choice to third base (1-1 BK); Sienna Pietrasiewicz advanced to second; Isabel Bettencourt out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophie Garber doubled to left center (1-0 B).",
+            "Maddy Miller out at first 1b to 2b, SAC, bunt (2-0 BB); Sophie Garber advanced to third.",
+            "Emma Yen struck out swinging (1-2 KBSFS).",
+            "Maya Lee singled up the middle, advanced to second on a fielding error by cf, scored, unearned, RBI (0-2 SK); Sophie Garber scored.",
+            "Ella Maher singled to left center (1-1 BF).",
+            "Zariya Anderson singled up the middle (0-0); Ella Maher advanced to second.",
+            "Isabel Bettencourt popped up to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sienna Pietrasiewicz singled up the middle (2-1 FBB).",
+            "Delaney Rankin grounded out to p (0-1 F); Sienna Pietrasiewicz advanced to second.",
+            "Sophie Garber grounded out to p (2-1 BBK); Sienna Pietrasiewicz advanced to third.",
+            "Maddy Miller singled to right field, RBI (3-2 BSFBFFBF); Sienna Pietrasiewicz scored.",
+            "Emma Yen struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maya Lee struck out swinging, out at first c to 1b (2-2 KBFBS).",
+            "Ella Maher popped up to 3b (0-1 S).",
+            "Zariya Anderson grounded out to 2b (2-2 BFFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Isabel Bettencourt grounded out to ss (0-1 F).",
+            "Sienna Pietrasiewicz flied out to rf (0-1 K).",
+            "Delaney Rankin grounded out to p (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sophie Garber popped up to p (2-1 BFB).",
+            "Maddy Miller grounded out to 3b (3-2 KBBKB).",
+            "Emma Yen singled up the middle (2-2 BSKBF).",
+            "Maya Lee singled through the right side, advanced to second on an error by 3b (1-1 KB); Emma Yen advanced to third.",
+            "Ella Maher doubled down the lf line, 2 RBI (1-1 FB); Maya Lee scored, unearned; Emma Yen scored.",
+            "Zariya Anderson struck out swinging (2-2 BFBSFS)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/bates/boxscore/16050",
+      "date": "3/25/2026",
+      "opponent": "Bates",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Maya Lee flied out to rf (1-0 B).",
+            "Ella Maher popped up to 2b (1-1 BF).",
+            "Sienna Pietrasiewicz popped up to ss (3-2 FBBBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Isabel Bettencourt singled to center field (2-0 BB).",
+            "Claire Ballard struck out looking (0-2 SSK).",
+            "Sophie Garber struck out swinging (2-2 SKBBS).",
+            "Emily Kennedy singled to right field (0-2 KK); Isabel Bettencourt advanced to second.",
+            "Maddy Miller doubled to right center, 2 RBI (2-1 BBF); Emily Kennedy scored; Isabel Bettencourt scored.",
+            "Emma Yen grounded out to 3b (0-2 KKF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maya Lee singled to second base (1-2 FBFF).",
+            "Ella Maher singled through the left side (3-2 BFFBB); Maya Lee advanced to second.",
+            "Sienna Pietrasiewicz reached on a fielder's choice to shortstop (0-2 KF); Ella Maher advanced to second; Maya Lee out at third ss to 3b.",
+            "Isabel Bettencourt popped up to 1b (1-2 SKB).",
+            "Claire Ballard struck out looking (0-2 SSK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sophie Garber flied out to cf (1-1 BF).",
+            "Emily Kennedy popped up to 2b (1-2 FKFBF).",
+            "Maddy Miller struck out swinging (2-2 BKBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Yen popped up to 2b (1-1 KB).",
+            "Maya Lee struck out looking (2-2 FKBFBFK).",
+            "Ella Maher grounded out to 3b (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sienna Pietrasiewicz popped up to ss (0-0).",
+            "Isabel Bettencourt fouled out to 1b (0-0).",
+            "Misora Hashiramoto pinch hit for Claire Ballard.",
+            "Misora Hashiramoto walked (3-2 FBBBKB).",
+            "Sophie Garber singled to center field (1-2 FSB); Misora Hashiramoto advanced to second.",
+            "Emily Kennedy flied out to cf (0-0)."
           ]
         }
       ],
