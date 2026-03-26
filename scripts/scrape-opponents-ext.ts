@@ -139,6 +139,19 @@ interface GamedataSerializedGame {
   playByPlay: GamedataPlayByPlayInning[];
 }
 
+interface BoxscorePitcherLine {
+  name: string;
+  ip: number;
+  h: number;
+  r: number;
+  er: number;
+  bb: number;
+  so: number;
+  hbp: number;
+  ab: number;
+  bf: number;
+}
+
 interface GamePitchingData {
   year: number;
   url: string;
@@ -146,6 +159,7 @@ interface GamePitchingData {
   opponent: string;
   pitchers: string[];
   battingInnings: { inning: string; plays: string[] }[];
+  pitcherBoxScore?: BoxscorePitcherLine[];
 }
 
 interface TeamConfig {
@@ -1446,8 +1460,9 @@ function parsePrestoLineup($: cheerio.CheerioAPI, teamAliases: string[]): [numbe
 
 // ── Presto pitchers parsing ──
 
-function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): string[] {
-  const pitchers: string[] = [];
+function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): { names: string[]; boxScore: BoxscorePitcherLine[] } {
+  const names: string[] = [];
+  const boxScore: BoxscorePitcherLine[] = [];
 
   $('table').each((_, table) => {
     const caption = $(table).find('caption').text() || '';
@@ -1464,6 +1479,15 @@ function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): stri
       return;
     }
 
+    // Build column index map from thead
+    const colMap = new Map<string, number>();
+
+    $(table)
+      .find('thead th')
+      .each((idx, th) => {
+        colMap.set($(th).text().trim().toLowerCase(), idx);
+      });
+
     $(table)
       .find('tbody tr')
       .each((_, row) => {
@@ -1475,17 +1499,44 @@ function parsePrestoPitchers($: cheerio.CheerioAPI, teamAliases: string[]): stri
         }
 
         const playerLink = $(row).find('a.player-name, th a, td a').first();
-        const name = playerLink.length > 0 ? playerLink.text().replace(/\s+/g, ' ').trim() : '';
+        const rawName = playerLink.length > 0 ? playerLink.text().replace(/\s+/g, ' ').trim() : '';
 
-        if (name) {
-          pitchers.push(name);
+        if (!rawName) {
+          return;
         }
+
+        const name = rawName.replace(/\s*\([WLS],?\s*[\d-]*\)\s*/g, '').trim();
+        names.push(name);
+
+        const cells = $(row).find('td, th');
+        const cell = (key: string): number => {
+          const idx = colMap.get(key);
+
+          if (idx === undefined) {
+            return 0;
+          }
+
+          return parseFloat($(cells[idx]).text().trim()) || 0;
+        };
+
+        boxScore.push({
+          name,
+          ip: cell('ip'),
+          h: cell('h'),
+          r: cell('r'),
+          er: cell('er'),
+          bb: cell('bb'),
+          so: cell('so'),
+          hbp: cell('hbp'),
+          ab: cell('ab'),
+          bf: cell('bf'),
+        });
       });
 
     return false; // stop after first matching pitching table
   });
 
-  return pitchers;
+  return { names, boxScore };
 }
 
 // ── Presto game date extraction ──
@@ -1944,7 +1995,7 @@ async function scrapeTeamBoxscores(
       if (opts.pitching && allInnings.length > 0) {
         const date = parsePrestoGameDate($, url);
         const opponentBattingInnings = allInnings.filter((inn) => !captionMatchesTeam(inn.teamName, aliases));
-        const pitchers = parsePrestoPitchers($, aliases);
+        const { names: pitchers, boxScore } = parsePrestoPitchers($, aliases);
 
         const battingInnings = opponentBattingInnings.map((inn) => ({
           inning: inn.inning,
@@ -1952,7 +2003,15 @@ async function scrapeTeamBoxscores(
         }));
 
         if (battingInnings.length > 0) {
-          allPitchingGames.push({ year, url, date, opponent, pitchers, battingInnings });
+          allPitchingGames.push({
+            year,
+            url,
+            date,
+            opponent,
+            pitchers,
+            battingInnings,
+            pitcherBoxScore: boxScore.length > 0 ? boxScore : undefined,
+          });
         }
       }
 
@@ -1967,7 +2026,7 @@ async function scrapeTeamBoxscores(
         }));
 
         if (lineup.length > 0 || playByPlay.length > 0) {
-          const pitchers = parsePrestoPitchers($, aliases).map(normalizeName);
+          const pitchers = parsePrestoPitchers($, aliases).names.map(normalizeName);
           gamedataGames.push({ year, url, opponent, pitchers, lineup, playByPlay });
         }
       }
