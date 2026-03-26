@@ -58,6 +58,12 @@
 
           <ws-pitcher-overview [data]="rawStats()" />
 
+          @if (validation(); as v) {
+            @if (v.overallSeverity !== 'ok') {
+              <ws-pitcher-validation-banner [result]="v" />
+            }
+          }
+
           @if (seasonSummary(); as summary) {
             <ws-inning-breakdown
               [byInning]="summary.byInning"
@@ -118,6 +124,12 @@
 
       <div class="flex flex-col gap-3">
         <ws-pitcher-overview [data]="rawStats()" />
+
+        @if (validation(); as v) {
+          @if (v.overallSeverity !== 'ok') {
+            <ws-pitcher-validation-banner [result]="v" />
+          }
+        }
 
         @if (seasonSummary(); as summary) {
           <ws-inning-breakdown

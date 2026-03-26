@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
-import type { PitchCountInningStats, PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitchingData, Roster } from '@ws/core/models';
-import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance } from '@ws/core/processors';
+import type { PitchCountInningStats, PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitcherValidationResult, PitchingData, Roster } from '@ws/core/models';
+import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance, validatePitcherStats } from '@ws/core/processors';
 import { LoadingState, PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
@@ -10,6 +10,7 @@ import { PitchCountBreakdown } from './pitch-count-breakdown';
 import { PitcherGameLogComponent } from './pitcher-game-log';
 import { PitcherOverview } from './pitcher-overview';
 import { PitcherSelector } from './pitcher-selector';
+import { PitcherValidationBanner } from './pitcher-validation-banner';
 
 @Component({
   selector: 'ws-pitcher-analysis',
@@ -23,6 +24,7 @@ import { PitcherSelector } from './pitcher-selector';
     PitcherOverview,
     PitcherScoutingPrintView,
     PitcherSelector,
+    PitcherValidationBanner,
     StickyPlayerHeader,
   ],
   host: { class: 'block' },
@@ -245,7 +247,7 @@ export class PitcherAnalysis {
     const allGameLogs: PitcherGameLog[] = [];
 
     games.forEach((game) => {
-      const plays = trackPitcherPerformance(game.battingInnings, game.pitchers);
+      const plays = trackPitcherPerformance(game.battingInnings, game.pitchers, data.nameAliases);
 
       const logs = computePitcherGameLog(plays, {
         date: game.date,
@@ -280,6 +282,27 @@ export class PitcherAnalysis {
     }
 
     return result;
+  });
+
+  /** Compare raw stats vs computed play-by-play stats (single-year only) */
+  readonly validation = computed<PitcherValidationResult | null>(() => {
+    const data = this.pitchingData();
+    const pitcher = this.effectivePitcher();
+    const year = this.selectedYear();
+    const summary = this.seasonSummary();
+
+    if (!data || !pitcher || year === 'all' || !summary) {
+      return null;
+    }
+
+    const stats = data.pitchingStatsByYear[String(year)];
+    const rawStats = stats?.find((p) => p.name === pitcher);
+
+    if (!rawStats) {
+      return null;
+    }
+
+    return validatePitcherStats(rawStats, summary.totals, summary.games);
   });
 
   selectPitcher(name: string): void {

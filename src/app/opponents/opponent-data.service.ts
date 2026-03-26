@@ -235,11 +235,21 @@ export class OpponentDataService {
 
     const requests = RECENT_YEARS.map((year) => this.softballData.getOpponentPitchingData(dataDir, year).pipe(catchError(() => of(null))));
 
+    const aliasRequest = this.softballData.fetchJson<Record<string, string>>(`data/opponents/${dataDir}/name-aliases.json`).catch(() => ({}));
+
     forkJoin(requests).subscribe({
       next: (results) => {
         const valid = results.filter((r): r is YearPitchingData => r !== null);
-        this.pitchingData.set(mergePitchingYears(valid));
-        this.pitchingLoading.set(false);
+        const merged = mergePitchingYears(valid);
+
+        aliasRequest.then((aliases) => {
+          if (Object.keys(aliases).length > 0) {
+            merged.nameAliases = aliases;
+          }
+
+          this.pitchingData.set(merged);
+          this.pitchingLoading.set(false);
+        });
       },
       error: () => {
         this.pitchingData.set(null);

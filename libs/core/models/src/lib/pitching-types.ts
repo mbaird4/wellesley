@@ -52,6 +52,7 @@ export interface PitchingData {
   scrapedAt: string;
   pitchingStatsByYear: Record<string, PitchingStats[]>;
   games: GamePbP[];
+  nameAliases?: Record<string, string>;
 }
 
 /** Per-year pitching data file shape (pitching.json / pitching-{year}.json) */

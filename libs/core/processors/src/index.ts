@@ -9,6 +9,7 @@ export * from './lib/processing/pitch-count-stats';
 export * from './lib/processing/pitch-sequence-records';
 export * from './lib/processing/pitcher-stats';
 export * from './lib/processing/pitcher-tracking';
+export * from './lib/processing/pitcher-validation';
 export * from './lib/processing/player-lineup-stats';
 export * from './lib/processing/process-game-snapshots';
 export * from './lib/processing/process-games';
