@@ -1,4 +1,4 @@
-import type { PitcherGameLog, PitcherInningStats, PitcherSeasonSummary, PitcherTrackedPlay } from '@ws/core/models';
+import type { PitcherGameLog, PitcherInningStats, PitcherSeasonSummary, PitcherTrackedPlay, PitchingStats } from '@ws/core/models';
 
 /** Parse inning string to sortable number: "1st"→1, "2nd"→2, "3rd"→3, "4th"→4, etc. */
 export function inningToNumber(inning: string): number {
@@ -23,6 +23,8 @@ function emptyInningStats(inning: string): PitcherInningStats {
     walks: 0,
     strikeouts: 0,
     hbp: 0,
+    sf: 0,
+    sh: 0,
   };
 }
 
@@ -80,15 +82,15 @@ function accumulateResult(stats: PitcherInningStats, play: PitcherTrackedPlay): 
       break;
     case 'sac_bunt':
       stats.outs += 1;
-      // Sac bunt is not an AB
+      stats.sh += 1;
       break;
     case 'sac_fly':
       stats.outs += 1;
-      // Sac fly is not an AB
+      stats.sf += 1;
       break;
+    case 'fielders_choice':
+    case 'error':
     case 'reached':
-      stats.ab += 1;
-      break;
     case 'unknown':
       stats.ab += 1;
       break;
@@ -109,6 +111,8 @@ function mergeInningStats(target: PitcherInningStats, source: PitcherInningStats
   target.walks += source.walks;
   target.strikeouts += source.strikeouts;
   target.hbp += source.hbp;
+  target.sf += source.sf;
+  target.sh += source.sh;
 }
 
 /**
@@ -223,6 +227,74 @@ export function computePitcherSeasonSummary(gameLogs: PitcherGameLog[]): Pitcher
 }
 
 /**
+ * Reconcile inherited-runner run misattribution by comparing computed season
+ * totals against raw stats. When two pitchers who share a game have
+ * equal-and-opposite run deltas, the excess is almost certainly from inherited
+ * runners. This adjusts the season totals (not per-inning breakdowns).
+ */
+export function reconcileInheritedRuns(summaries: PitcherSeasonSummary[], rawStats: PitchingStats[]): void {
+  // Build a map of raw runs by pitcher name
+  const rawRunsByPitcher = new Map(rawStats.map((s) => [s.name, s.r]));
+
+  // Compute delta (computed - raw) for each pitcher
+  const deltas = new Map<string, number>();
+
+  summaries.forEach((s) => {
+    const rawRuns = rawRunsByPitcher.get(s.pitcher);
+
+    if (rawRuns !== undefined) {
+      deltas.set(s.pitcher, s.totals.runs - rawRuns);
+    }
+  });
+
+  // Find pitchers who share games (co-appeared in same game log URL)
+  const gamesByPitcher = new Map<string, Set<string>>();
+
+  summaries.forEach((s) => {
+    gamesByPitcher.set(s.pitcher, new Set(s.gameLogs.map((g) => g.url)));
+  });
+
+  // For each pitcher with a positive delta (too many runs), look for
+  // a co-pitcher with a matching negative delta and transfer runs
+  summaries.forEach((overPitcher) => {
+    const overDelta = deltas.get(overPitcher.pitcher) ?? 0;
+
+    if (overDelta <= 0) {
+      return;
+    }
+
+    const overGames = gamesByPitcher.get(overPitcher.pitcher) ?? new Set();
+
+    summaries.forEach((underPitcher) => {
+      if (underPitcher.pitcher === overPitcher.pitcher) {
+        return;
+      }
+
+      const underDelta = deltas.get(underPitcher.pitcher) ?? 0;
+
+      if (underDelta >= 0) {
+        return;
+      }
+
+      // Check that they share at least one game
+      const underGames = gamesByPitcher.get(underPitcher.pitcher) ?? new Set();
+      const shared = Array.from(overGames).some((url) => underGames.has(url));
+
+      if (!shared) {
+        return;
+      }
+
+      // Transfer the smaller of the two absolute deltas
+      const transfer = Math.min(overDelta, Math.abs(underDelta));
+      overPitcher.totals.runs -= transfer;
+      underPitcher.totals.runs += transfer;
+      deltas.set(overPitcher.pitcher, (deltas.get(overPitcher.pitcher) ?? 0) - transfer);
+      deltas.set(underPitcher.pitcher, (deltas.get(underPitcher.pitcher) ?? 0) + transfer);
+    });
+  });
+}
+
+/**
  * Compute batting average against: hits / AB.
  * Returns 0 if AB is 0.
  */
@@ -239,7 +311,7 @@ export function battingAvgAgainst(stats: PitcherInningStats): number {
  * Uses the same linear weights as the batting wOBA calculation.
  */
 export function wobaAgainst(stats: PitcherInningStats): number {
-  const denominator = stats.ab + stats.walks + stats.hbp;
+  const denominator = stats.ab + stats.walks + stats.hbp + stats.sf + stats.sh;
 
   if (denominator === 0) {
     return 0;

@@ -88,6 +88,8 @@ export interface PitcherInningStats {
   walks: number;
   strikeouts: number;
   hbp: number;
+  sf: number;
+  sh: number;
 }
 
 /** One pitcher's performance in one game */

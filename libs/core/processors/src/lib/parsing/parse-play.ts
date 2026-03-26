@@ -12,6 +12,15 @@ export function getPlayerNameFromText(text: string): string | null {
   return match ? match[1] : null;
 }
 
+/**
+ * Check whether lowercased play text contains any plate-appearance verb
+ * (both Sidearm Sports past-tense and GameChanger present-tense formats).
+ * Used by classifyPlay to avoid misclassifying PAs as non-PA events.
+ */
+function containsPaVerb(lower: string): boolean {
+  return lower.includes('singled') || lower.includes('singles') || lower.includes('doubled') || lower.includes('doubles') || lower.includes('tripled') || lower.includes('triples') || lower.includes('homered') || lower.includes('homers') || lower.includes('walked') || /\bwalks\b/.test(lower) || lower.includes('struck out') || lower.includes('strikes out') || lower.includes('grounded') || lower.includes('grounds out') || lower.includes('grounds into') || lower.includes('flied') || lower.includes('flies out') || lower.includes('lined') || lower.includes('lines out') || lower.includes('lines into') || lower.includes('popped') || lower.includes('pops out') || lower.includes('pops up') || lower.includes('pops into') || lower.includes('fouled') || lower.includes('fouls out') || lower.includes('fouls into') || lower.includes('reached') || lower.includes('reaches on') || lower.includes('hit by pitch') || lower.includes('infield fly') || lower.includes('interference');
+}
+
 // --- Play classification ---
 
 export function classifyPlay(text: string): PlayType {
@@ -44,21 +53,21 @@ export function classifyPlay(text: string): PlayType {
 
   // Defensive changes: "J. Colgan to p." or "E. Kulhanek to 1b for S. Wicker."
   if (/\bto\s+(p|c|1b|2b|3b|ss|lf|cf|rf|dh|dp)\b/i.test(lower) && !lower.includes('advanced to')) {
-    if (!lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') && !lower.includes('homered') && !lower.includes('walked') && !lower.includes('struck out') && !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') && !lower.includes('popped') && !lower.includes('fouled') && !lower.includes('reached') && !lower.includes('hit by pitch') && !lower.includes('stole') && !lower.includes('out at') && !lower.includes('infield fly')) {
+    if (!containsPaVerb(lower) && !lower.includes('stole') && !lower.includes('out at')) {
       return 'defensive_change';
     }
   }
 
   // Stolen base / caught stealing — but not if a PA verb is present
   if (/\bstole\s+(second|third|home|2nd|3rd)\b/i.test(lower) || lower.includes('caught stealing')) {
-    if (!lower.includes('walked') && !lower.includes('struck out') && !lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') && !lower.includes('homered') && !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') && !lower.includes('popped') && !lower.includes('reached') && !lower.includes('hit by pitch')) {
+    if (!containsPaVerb(lower)) {
       return 'stolen_base';
     }
   }
 
   // Wild pitch / passed ball — but not if a PA verb is present
   if (lower.includes('wild pitch') || lower.includes('passed ball')) {
-    if (!lower.includes('walked') && !lower.includes('struck out') && !lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') && !lower.includes('homered') && !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') && !lower.includes('popped') && !lower.includes('reached') && !lower.includes('hit by pitch')) {
+    if (!containsPaVerb(lower)) {
       return 'wild_pitch';
     }
   }
@@ -69,7 +78,7 @@ export function classifyPlay(text: string): PlayType {
 
   // Standalone runner events — no PA, but need runner movement processing
   // (defensive indifference, errors, etc.) Route through wild_pitch handler.
-  if (/^[A-Z](?:\.|[a-zA-Z]+)\s+\S+\s+(advanced|scored)\b/.test(text) && !lower.includes('singled') && !lower.includes('doubled') && !lower.includes('tripled') && !lower.includes('homered') && !lower.includes('walked') && !lower.includes('struck out') && !lower.includes('grounded') && !lower.includes('flied') && !lower.includes('lined') && !lower.includes('popped') && !lower.includes('reached') && !lower.includes('hit by pitch')) {
+  if (/^[A-Z](?:\.|[a-zA-Z]+)\s+\S+\s+(advanced|scored)\b/.test(text) && !containsPaVerb(lower)) {
     return 'wild_pitch';
   }
 
@@ -111,10 +120,15 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'sac_bunt' }; // infield default
   }
 
-  // Outs
-  if (lower.includes('struck out')) {
+  // Interference — batter is out, counts as AB
+  if (lower.includes('interference')) {
+    return { result: 'out' };
+  }
+
+  // Outs (both Sidearm past-tense and GameChanger present-tense)
+  if (lower.includes('struck out') || lower.includes('strikes out')) {
     // Dropped third strike — batter reaches first
-    if (lower.includes('reached first')) {
+    if (lower.includes('reached first') || lower.includes('reaches first')) {
       return { result: 'reached' };
     }
 
@@ -125,11 +139,11 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'out' };
   }
 
-  if (/\b(lined|popped|flied) into double play\b/.test(lower)) {
+  if (/\b(lined|popped|flied|fouled|lines|pops|flies|fouls) into double play\b/.test(lower)) {
     return { result: 'out' };
   }
 
-  if (lower.includes('grounded into double play')) {
+  if (lower.includes('grounded into double play') || lower.includes('grounds into double play')) {
     return { result: 'double_play' };
   }
 
@@ -137,27 +151,27 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'out' };
   }
 
-  if (lower.includes('grounded out')) {
+  if (lower.includes('grounded out') || lower.includes('grounds out')) {
     return { result: 'out' };
   }
 
-  if (lower.includes('flied out')) {
+  if (lower.includes('flied out') || lower.includes('flies out')) {
     return { result: 'out' };
   }
 
-  if (lower.includes('lined out')) {
+  if (lower.includes('lined out') || lower.includes('lines out')) {
     return { result: 'out' };
   }
 
-  if (lower.includes('popped up')) {
+  if (lower.includes('popped up') || lower.includes('pops up')) {
     return { result: 'out' };
   }
 
-  if (lower.includes('popped out')) {
+  if (lower.includes('popped out') || lower.includes('pops out')) {
     return { result: 'out' };
   }
 
-  if (lower.includes('fouled out')) {
+  if (lower.includes('fouled out') || lower.includes('fouls out')) {
     return { result: 'out' };
   }
 
@@ -177,15 +191,15 @@ export function parseBatterAction(subEvent: string): {
   // Check if batter was also thrown out on the bases (e.g. "singled, out at second c to p to 1b")
   const batterAlsoOut = /\bout at\b/.test(lower) || lower.includes('out on the play');
 
-  if (lower.includes('homered')) {
+  if (lower.includes('homered') || /\bhomers\b/.test(lower)) {
     return { result: 'homer' };
   }
 
-  if (lower.includes('tripled')) {
+  if (lower.includes('tripled') || /\btriples\b/.test(lower)) {
     return { result: 'triple', batterAlsoOut: batterAlsoOut || undefined };
   }
 
-  if (lower.includes('doubled')) {
+  if (lower.includes('doubled') || /\bdoubles\b/.test(lower)) {
     let advancedTo: 'second' | 'third' | undefined = undefined;
     if (lower.includes('advanced to third')) {
       advancedTo = 'third';
@@ -198,7 +212,7 @@ export function parseBatterAction(subEvent: string): {
     };
   }
 
-  if (lower.includes('singled')) {
+  if (lower.includes('singled') || /\bsingles\b/.test(lower)) {
     let advancedTo: 'first' | 'second' | 'third' | undefined = undefined;
     if (lower.includes('advanced to third')) {
       advancedTo = 'third';
@@ -222,7 +236,7 @@ export function parseBatterAction(subEvent: string): {
   }
 
   // Walks / HBP / reached
-  if (lower.includes('walked')) {
+  if (lower.includes('walked') || /\bwalks\b/.test(lower)) {
     return { result: 'walk' };
   }
 
@@ -230,7 +244,7 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'hbp' };
   }
 
-  if (lower.includes('reached on') || lower.includes('reached first')) {
+  if (lower.includes('reached on') || lower.includes('reached first') || lower.includes('reaches on') || lower.includes('reaches first')) {
     if (lower.includes('error')) {
       return { result: 'error' };
     }

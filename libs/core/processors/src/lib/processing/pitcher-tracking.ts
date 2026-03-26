@@ -75,20 +75,48 @@ export function trackPitcherPerformance(battingInnings: BattingInning[], pitcher
   const reliefQueue = pitchers.slice(1);
   let reliefIdx = 0;
 
+  // Build a lookup of last names for all pitchers (for re-entry detection)
+  const pitcherLastNames = new Map(pitchers.map((p) => [p, aliases?.[p] ?? extractLastName(p)]));
+
   battingInnings.forEach((inning) => {
     inning.plays.forEach((playText) => {
-      // Check if the next relief pitcher's last name appears in this play
-      if (reliefIdx < reliefQueue.length) {
-        const nextRelief = reliefQueue[reliefIdx];
-        const lastName = aliases?.[nextRelief] ?? extractLastName(nextRelief);
+      // Detect pitcher changes from defensive substitution plays
+      if (classifyPlay(playText) === 'defensive_change' && /\bto\s+p\b/i.test(playText)) {
+        // First check the next expected reliever (maintains appearance order)
+        if (reliefIdx < reliefQueue.length) {
+          const nextRelief = reliefQueue[reliefIdx];
+          const lastName = pitcherLastNames.get(nextRelief) ?? '';
 
-        if (lastName && fuzzyLastNameMatch(playText, lastName)) {
-          activePitcher = nextRelief;
-          reliefIdx++;
+          if (lastName && fuzzyLastNameMatch(playText, lastName)) {
+            activePitcher = nextRelief;
+            reliefIdx++;
+
+            return;
+          }
         }
+
+        // Check for re-entry of any known pitcher
+        pitchers.forEach((p) => {
+          if (p === activePitcher) {
+            return;
+          }
+
+          const lastName = pitcherLastNames.get(p) ?? '';
+
+          if (lastName && fuzzyLastNameMatch(playText, lastName)) {
+            activePitcher = p;
+          }
+        });
+
+        return;
       }
 
       const playType = classifyPlay(playText);
+
+      // Note: no fallback for non-"to p" plays. The false-positive rate from matching
+      // pitcher names in field substitutions (e.g. "M. Rice to lf for G. Beaulieu")
+      // far outweighs the benefit. Games without explicit "to p" lines (~4% of
+      // multi-pitcher games, mostly older data) will show discrepancies in validation.
 
       // Only track plate appearances and certain scoring events
       const isPA = playType === 'plate_appearance';

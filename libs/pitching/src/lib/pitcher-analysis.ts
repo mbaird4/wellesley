@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import type { PitchCountInningStats, PitcherGameLog, PitcherOption, PitcherOverviewData, PitcherSeasonSummary, PitcherValidationResult, PitchingData, Roster } from '@ws/core/models';
-import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, trackPitcherPerformance, validatePitcherStats } from '@ws/core/processors';
+import { buildWellesleyPitcherSequences, computePitchCountByInning, computePitcherGameLog, computePitcherSeasonSummary, reconcileInheritedRuns, trackPitcherPerformance, validatePitcherStats } from '@ws/core/processors';
 import { LoadingState, PitcherScoutingPrintView, StickyPlayerHeader } from '@ws/core/ui';
 import { BreakpointService, CURRENT_YEAR } from '@ws/core/util';
 
@@ -260,6 +260,12 @@ export class PitcherAnalysis {
 
     // Compute season summaries for all pitchers
     const summaries = computePitcherSeasonSummary(allGameLogs);
+
+    // Reconcile inherited-runner run misattribution using raw stats
+    if (year !== 'all') {
+      const rawStats = data.pitchingStatsByYear[String(year)] ?? [];
+      reconcileInheritedRuns(summaries, rawStats);
+    }
 
     return summaries.find((s) => s.pitcher === pitcher) ?? null;
   });
