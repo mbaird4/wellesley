@@ -1,59 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-26T12:33:10.015Z",
+  "scrapedAt": "2026-03-27T02:08:48.207Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Merchant, Abby",
+      "name": "Boldebuck, Naomi",
       "w": 4,
       "l": 0,
-      "era": 0.97,
-      "app": 5,
-      "gs": 1,
-      "cg": 1,
-      "sho": 0,
+      "era": 0.89,
+      "app": 6,
+      "gs": 6,
+      "cg": 4,
+      "sho": 2,
       "sv": 0,
-      "ip": 21.2,
-      "h": 17,
-      "r": 3,
-      "er": 3,
-      "bb": 2,
-      "so": 17,
-      "hr": 0,
-      "whip": 0.88,
-      "doubles": 1,
-      "triples": 0,
-      "ab": 78,
-      "bAvg": 0.218,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Boldebuck, Naomi",
-      "w": 3,
-      "l": 0,
-      "era": 1.11,
-      "app": 5,
-      "gs": 5,
-      "cg": 3,
-      "sho": 1,
-      "sv": 0,
-      "ip": 25.1,
+      "ip": 31.1,
       "h": 27,
       "r": 10,
       "er": 4,
-      "bb": 8,
-      "so": 14,
+      "bb": 9,
+      "so": 19,
       "hr": 0,
-      "whip": 1.38,
+      "whip": 1.15,
       "doubles": 0,
       "triples": 0,
-      "ab": 97,
-      "bAvg": 0.278,
+      "ab": 116,
+      "bAvg": 0.233,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -61,27 +33,55 @@
       "sha": 3
     },
     {
+      "name": "Merchant, Abby",
+      "w": 5,
+      "l": 0,
+      "era": 1.05,
+      "app": 6,
+      "gs": 2,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 26.2,
+      "h": 24,
+      "r": 4,
+      "er": 4,
+      "bb": 4,
+      "so": 18,
+      "hr": 0,
+      "whip": 1.05,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 100,
+      "bAvg": 0.24,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
+    },
+    {
       "name": "Barr, Kaitlyn",
       "w": 1,
       "l": 0,
-      "era": 7,
-      "app": 2,
+      "era": 5.25,
+      "app": 3,
       "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 6,
-      "h": 10,
+      "ip": 8,
+      "h": 12,
       "r": 10,
       "er": 6,
       "bb": 6,
       "so": 2,
       "hr": 0,
-      "whip": 2.67,
+      "whip": 2.25,
       "doubles": 2,
       "triples": 0,
-      "ab": 29,
-      "bAvg": 0.345,
+      "ab": 37,
+      "bAvg": 0.324,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -889,6 +889,193 @@
           "hbp": 0,
           "ab": 7,
           "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/worcester-state/boxscore/16632",
+      "date": "3/26/2026",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Gasbarro struck out looking (1-2 FKBFK).",
+            "Olivia Pirrotta struck out swinging (2-2 BSSBS).",
+            "Morgan Keefe struck out swinging (0-2 KFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Amanda Adamuska grounded out to 3b, bunt (0-0).",
+            "Anna Diggins popped up to 2b (3-2 SKFBFBFB).",
+            "Ella Snyder struck out looking (2-2 FBFBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Lapoint lined out to ss (1-0 B).",
+            "Bailey Tammaro reached first on an error by p, bunt (0-0).",
+            "Cali Brouillard grounded out to 3b, bunt (0-0); Bailey Tammaro advanced to second.",
+            "Bella Gasbarro popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Olivia Pirrotta walked (3-2 BFSBFBB).",
+            "Morgan Keefe popped up to 2b (0-0).",
+            "Amanda Adamuska lined out to lf (2-1 BFB).",
+            "Anna Diggins flied out to rf (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella Snyder grounded out to 2b (1-1 FB).",
+            "Emma Lapoint flied out to rf (1-2 KFB).",
+            "Bailey Tammaro flied out to rf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b for Colleen Mayer.",
+            "Destiny Lum to 3b for Mia Francisco.",
+            "Cali Brouillard grounded out to p (1-1 FB).",
+            "Bella Gasbarro flied out to rf (0-2 FF).",
+            "Olivia Pirrotta struck out swinging (3-2 BKKBBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 6,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 20
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/worcester-state/boxscore/16633",
+      "date": "3/26/2026",
+      "opponent": "Worcester State",
+      "pitchers": [
+        "Merchant, Abby",
+        "Barr, Kaitlyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bella Gasbarro flied out to lf (2-2 BKFFBF).",
+            "Carisa Andrews walked (3-2 FBBFBFB).",
+            "Morgan Keefe flied out to cf (2-2 KBFB).",
+            "Amanda Adamuska grounded out to 3b (0-2 FK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Johansson walked (3-2 BKBFBFB).",
+            "Laurel Field flied out to cf (1-2 SBF).",
+            "Emma Lapoint reached on a fielder's choice (0-1 K); Kate Johansson out at second ss to 2b.",
+            "Bailey Tammaro singled to shortstop (2-0 BB); Emma Lapoint advanced to second.",
+            "Cali Brouillard reached on a fielder's choice (1-1 KB); Bailey Tammaro advanced to second; Emma Lapoint out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bella Gasbarro flied out to cf (0-0).",
+            "Carisa Andrews singled, advanced to second on an error by 3b (0-2 SF).",
+            "Morgan Keefe flied out to cf (1-1 KB); Carisa Andrews advanced to third.",
+            "Amanda Adamuska grounded out to p (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kate Johansson grounded out to 2b (0-1 K).",
+            "Laurel Field grounded out to ss (2-1 BBS).",
+            "Emma Lapoint singled to left field (1-2 KKB).",
+            "Bailey Tammaro singled to left field (1-1 KB); Emma Lapoint advanced to second.",
+            "Cali Brouillard popped up to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ali Chalovich to c for Mia Francisco.",
+            "Meg Sherwood to lf for Ariana Kreuzer.",
+            "Bella Gasbarro singled to left field (0-1 S).",
+            "Carisa Andrews singled to shortstop, bunt (0-0); Bella Gasbarro advanced to second.",
+            "Morgan Keefe singled to left field (1-0 B); Carisa Andrews advanced to second; Bella Gasbarro advanced to third.",
+            "Amanda Adamuska reached on a fielder's choice, RBI (0-0); Morgan Keefe advanced to second; Carisa Andrews out at third ss to 3b; Bella Gasbarro scored.",
+            "Camden Heenan pinch hit for Kate Johansson.",
+            "Camden Heenan fouled out to 3b (1-0 B).",
+            "Laurel Field struck out looking (0-2 KKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kaitlyn Barr to p for Abby Merchant.",
+            "Emma Lapoint grounded out to 2b (2-2 BBKK).",
+            "Bailey Tammaro singled up the middle (2-1 BBK).",
+            "Cali Brouillard popped up to rf (0-0).",
+            "Bella Gasbarro singled to shortstop (1-2 KFB); Bailey Tammaro advanced to second.",
+            "Carisa Andrews grounded out to p (0-2 SFF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Suzannah Figler to c for Ali Chalovich.",
+            "Morgan Keefe grounded out to 2b (0-1 K).",
+            "Amanda Adamuska flied out to lf (1-0 B).",
+            "Camden Heenan grounded out to ss (1-2 KSB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 5,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
         }
       ],
       "year": 2026

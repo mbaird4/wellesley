@@ -1,36 +1,36 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-03-26T12:43:11.998Z",
+  "scrapedAt": "2026-03-27T02:09:05.544Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 1,
-      "l": 1,
-      "era": 2.74,
-      "app": 4,
-      "gs": 2,
-      "cg": 2,
+      "l": 2,
+      "era": 3.06,
+      "app": 6,
+      "gs": 3,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 23,
-      "h": 21,
-      "r": 12,
-      "er": 9,
-      "bb": 4,
-      "so": 16,
+      "ip": 32,
+      "h": 38,
+      "r": 20,
+      "er": 14,
+      "bb": 6,
+      "so": 17,
       "hr": 0,
-      "whip": 1.09,
-      "doubles": 2,
+      "whip": 1.38,
+      "doubles": 4,
       "triples": 0,
-      "ab": 87,
-      "bAvg": 0.241,
-      "wp": 0,
+      "ab": 128,
+      "bAvg": 0.297,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
-      "sfa": 1,
-      "sha": 2
+      "sfa": 2,
+      "sha": 3
     },
     {
       "name": "Cronin, Emily",
@@ -63,30 +63,30 @@
     {
       "name": "Peterson, Caroline",
       "w": 0,
-      "l": 5,
-      "era": 6.37,
-      "app": 5,
-      "gs": 5,
+      "l": 6,
+      "era": 5.92,
+      "app": 6,
+      "gs": 6,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 18.2,
-      "h": 20,
-      "r": 23,
-      "er": 17,
-      "bb": 22,
-      "so": 20,
+      "ip": 23.2,
+      "h": 34,
+      "r": 33,
+      "er": 20,
+      "bb": 25,
+      "so": 21,
       "hr": 0,
-      "whip": 2.25,
-      "doubles": 4,
-      "triples": 2,
-      "ab": 75,
-      "bAvg": 0.267,
+      "whip": 2.49,
+      "doubles": 5,
+      "triples": 3,
+      "ab": 104,
+      "bAvg": 0.327,
       "wp": 8,
       "hbp": 1,
       "bk": 0,
       "sfa": 3,
-      "sha": 2
+      "sha": 4
     }
   ],
   "games": [
@@ -928,6 +928,224 @@
           "hbp": 0,
           "ab": 22,
           "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/rhode-island-college/boxscore/11759",
+      "date": "3/26/2026",
+      "opponent": "Rhode Island College",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Noelle Simmons struck out swinging (3-2 FSBBBS).",
+            "Sophia Crudale singled to right field (1-1 BK).",
+            "Joey Meyer out at first p to 2b, SAC (0-0); Sophia Crudale advanced to second.",
+            "Melanie Earley flied out to cf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jillian Guilfoyle singled to left center (1-0 B).",
+            "Lily Bell tripled to right center, RBI (2-2 FKBFB); Jillian Guilfoyle scored.",
+            "Gabrielle Sweeney reached first on a fielding error by 3b, advanced to third (3-2 BBKBK); Lily Bell scored.",
+            "Brianna Bailey singled through the left side, RBI (0-0); Gabrielle Sweeney scored, unearned.",
+            "Sydney Duclos reached on a fielder's choice (1-1 KB); Brianna Bailey out at second 2b to ss.",
+            "Noelle Simmons flied out to rf (1-0 B).",
+            "Sophia Crudale singled to right field (2-2 FBFBF); Sydney Duclos advanced to second.",
+            "Joey Meyer singled to right field, RBI (0-0); Sophia Crudale advanced to third; Sydney Duclos scored, unearned.",
+            "Melanie Earley singled through the left side, RBI (2-0 BB); Joey Meyer advanced to second; Sophia Crudale scored, unearned.",
+            "Jillian Guilfoyle singled to center field, RBI (2-1 KBB); Melanie Earley advanced to second; Joey Meyer scored, unearned.",
+            "Lily Bell lined out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gabrielle Sweeney flied out to cf (0-0).",
+            "Brianna Bailey popped up to ss (0-0).",
+            "Sydney Duclos lined out to 1b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Noelle Simmons flied out to cf (0-0).",
+            "Sophia Crudale singled to right field (2-2 BKBFF).",
+            "Joey Meyer doubled to center field (2-2 KBBF); Sophia Crudale advanced to third.",
+            "Melanie Earley popped up to ss (2-2 BKBKF).",
+            "Jillian Guilfoyle walked (3-0 BBBB).",
+            "Lily Bell flied out to lf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gabrielle Sweeney walked (3-0 BBBB).",
+            "Brianna Bailey singled to third base (0-2 KF); Gabrielle Sweeney advanced to second.",
+            "Sydney Duclos out at first p to 2b, SAC (1-1 BK); Brianna Bailey advanced to second; Gabrielle Sweeney advanced to third.",
+            "Noelle Simmons grounded out to 2b, RBI (0-1 K); Brianna Bailey advanced to third; Gabrielle Sweeney scored.",
+            "Sophia Crudale reached first on an error by cf (1-1 KB); Brianna Bailey scored, unearned.",
+            "Joey Meyer singled to right center (0-0); Sophia Crudale advanced to second.",
+            "Melanie Earley singled to right field, RBI (0-1 K); Joey Meyer advanced to third; Sophia Crudale scored, unearned.",
+            "Jillian Guilfoyle singled to shortstop, RBI (1-1 BK); Melanie Earley advanced to second; Joey Meyer scored, unearned.",
+            "Lily Bell walked (3-2 BSBBKB); Jillian Guilfoyle advanced to second; Melanie Earley advanced to third.",
+            "Gabrielle Sweeney grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Shea Murphy to p for Caroline Peterson.",
+            "Brianna Bailey grounded out to ss (1-1 KB).",
+            "Sydney Duclos singled to right field (0-2 KF).",
+            "Noelle Simmons struck out looking (3-2 KBFBBFK).",
+            "Sophia Crudale flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Joey Meyer grounded out to ss (2-0 BB).",
+            "Melanie Earley grounded out to 3b (1-1 FB).",
+            "Jillian Guilfoyle walked (3-2 BKBFBB).",
+            "Rylie Forcier pinch ran for Jillian Guilfoyle.",
+            "Lily Bell singled to pitcher (0-1 F); Rylie Forcier advanced to second.",
+            "Gabrielle Sweeney grounded out to p (1-1 BK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 5,
+          "h": 14,
+          "r": 10,
+          "er": 3,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 34
+        },
+        {
+          "name": "Murphy, Shea",
+          "ip": 2,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 9
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/rhode-island-college/boxscore/11760",
+      "date": "3/26/2026",
+      "opponent": "Rhode Island College",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Noelle Simmons doubled to right center (0-0).",
+            "Sophia Crudale singled, bunt (0-0); Noelle Simmons advanced to third.",
+            "Sophia Crudale stole second.",
+            "Joey Meyer flied out to rf, sacrifice fly, RBI (0-0); Noelle Simmons scored.",
+            "Melanie Earley singled (0-0); Sophia Crudale advanced to third.",
+            "Melanie Earley stole second.",
+            "Jillian Guilfoyle doubled, 2 RBI (0-0); Melanie Earley scored; Sophia Crudale scored.",
+            "Gabrielle Sweeney grounded out to ss (0-0); Jillian Guilfoyle advanced to third.",
+            "Jillian Donnelly singled, RBI (0-0); Jillian Guilfoyle scored.",
+            "Brianna Bailey flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sydney Duclos reached first on a fielding error by 3b (0-0).",
+            "Noelle Simmons singled to pitcher (0-0); Sydney Duclos advanced to second.",
+            "Sophia Crudale out at first p to 2b, SAC (0-0); Noelle Simmons advanced to second; Sydney Duclos advanced to third.",
+            "Joey Meyer singled to second base, 2 RBI (0-0); Noelle Simmons scored; Sydney Duclos scored, unearned.",
+            "Melanie Earley singled to third base (0-0); Joey Meyer advanced to second.",
+            "Melanie Earley advanced to second on a wild pitch; Joey Meyer advanced to third.",
+            "Jillian Guilfoyle grounded out to p (0-0).",
+            "Gabrielle Sweeney singled to left field, 2 RBI, advanced to second on the throw (0-0); Melanie Earley scored, unearned; Joey Meyer scored, unearned.",
+            "Jillian Donnelly grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Brianna Bailey grounded out p to 2b to 1b (0-0).",
+            "Sydney Duclos walked (0-0).",
+            "Noelle Simmons singled to right field (0-0); Sydney Duclos advanced to second.",
+            "Sophia Crudale reached on a fielder's choice (0-0); Noelle Simmons out at second 2b to ss; Sydney Duclos advanced to third.",
+            "Joey Meyer grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Melanie Earley singled to left field (0-0).",
+            "Jillian Guilfoyle lined into double play ss to 1b (0-0); Melanie Earley out on the play.",
+            "Gabrielle Sweeney singled through the left side (0-0).",
+            "Jillian Donnelly grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brianna Bailey singled to left field (0-0).",
+            "Brianna Bailey out at second c to ss, caught stealing.",
+            "Sydney Duclos singled to center field (0-0).",
+            "Noelle Simmons lined out to 2b (0-0).",
+            "Sophia Crudale reached on a fielder's choice (0-0); Sydney Duclos out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Joey Meyer singled through the right side (0-0).",
+            "Melanie Earley flied out to cf (0-0).",
+            "Jillian Guilfoyle reached on a fielder's choice (0-0); Joey Meyer out at second 1b to ss.",
+            "Gabrielle Sweeney flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Jillian Donnelly popped up to 2b (0-0).",
+            "Brianna Bailey grounded out to ss (0-0).",
+            "Sydney Duclos grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 7,
+          "h": 15,
+          "r": 8,
+          "er": 5,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 36
         }
       ],
       "year": 2026

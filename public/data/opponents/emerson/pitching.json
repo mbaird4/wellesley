@@ -1,35 +1,35 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-26T12:48:32.713Z",
+  "scrapedAt": "2026-03-27T02:09:14.606Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 2,
-      "l": 4,
-      "era": 3.15,
-      "app": 8,
-      "gs": 4,
-      "cg": 2,
+      "l": 5,
+      "era": 2.95,
+      "app": 9,
+      "gs": 5,
+      "cg": 3,
       "sho": 1,
       "sv": 0,
-      "ip": 33.1,
-      "h": 41,
-      "r": 28,
-      "er": 15,
-      "bb": 17,
-      "so": 41,
+      "ip": 40.1,
+      "h": 45,
+      "r": 34,
+      "er": 17,
+      "bb": 20,
+      "so": 53,
       "hr": 0,
-      "whip": 1.74,
+      "whip": 1.61,
       "doubles": 5,
       "triples": 5,
-      "ab": 145,
-      "bAvg": 0.283,
-      "wp": 12,
+      "ab": 172,
+      "bAvg": 0.262,
+      "wp": 15,
       "hbp": 3,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 3,
       "sha": 3
     },
     {
@@ -989,6 +989,106 @@
           "hbp": 0,
           "ab": 19,
           "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/suffolk-university/boxscore/4355",
+      "date": "3/26/2026",
+      "opponent": "Suffolk University",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Jolie Quintana reached first on a throwing error by 3b, advanced to second (0-2 KS).",
+            "Jolie Quintana stole third.",
+            "Ava Lanza struck out, reached first on a throwing error by c (2-2 KFFBFBS); Jolie Quintana did not advance.",
+            "Catherine Carignan flied out to cf, sacrifice fly, RBI (0-0); Jolie Quintana scored, unearned.",
+            "Ava Lanza advanced to second on a wild pitch.",
+            "Julia Mills walked (3-2 BBFSBB); Ava Lanza advanced to third on a wild pitch.",
+            "Julia Mills stole second.",
+            "Lily Newhall struck out, out at first c to 1b (2-2 BBFSS); Julia Mills advanced to third; Ava Lanza scored, unearned.",
+            "Claire Basaldua singled down the rf line, RBI (1-0 B); Julia Mills scored, unearned.",
+            "Sara Butera struck out looking (2-2 BFSBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Roma Braid walked (3-2 BFBBFB).",
+            "Dana Still singled to catcher, bunt (0-0); Roma Braid advanced to second.",
+            "Jolie Quintana singled up the middle (3-2 KBBBSF); Dana Still advanced to second; Roma Braid advanced to third.",
+            "Ava Lanza grounded out to ss, RBI (0-2 FK); Jolie Quintana advanced to second; Dana Still advanced to third; Roma Braid scored.",
+            "Catherine Carignan flied out to rf, sacrifice fly, RBI (1-0 B); Jolie Quintana advanced to third; Dana Still scored.",
+            "Julia Mills grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lily Newhall struck out swinging (1-2 KBFS).",
+            "Claire Basaldua struck out swinging (1-2 KBKS).",
+            "Sara Butera struck out looking (2-2 BFSBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Roma Braid grounded out to ss (0-0).",
+            "Dana Still struck out swinging (1-2 FBKS).",
+            "Jolie Quintana struck out, reached first on a passed ball (2-2 BKBFS).",
+            "Jolie Quintana stole second, advanced to third on a throwing error by c.",
+            "Ava Lanza grounded out to 3b (3-2 KBBSB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Catherine Carignan grounded out to 3b (1-0 B).",
+            "Julia Mills fouled out to 1b (1-0 B).",
+            "Lily Newhall struck out swinging (1-2 FFFFBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Claire Basaldua grounded out to ss (0-0).",
+            "Sara Butera grounded out to 3b (2-1 BBS).",
+            "Roma Braid struck out looking (0-2 FSK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Dana Still singled to left field (0-1 F).",
+            "Jolie Quintana reached on a fielder's choice (0-0); Dana Still out at second ss to 2b.",
+            "Ava Lanza walked (3-0 BBBB); Jolie Quintana advanced to second.",
+            "Charis Fenter pinch hit for Catherine Carignan.",
+            "Charis Fenter struck out swinging (1-2 KBSS).",
+            "Ava Lanza advanced to second; Jolie Quintana advanced to third on a wild pitch.",
+            "Julia Mills struck out, reached first on a throwing error by c (1-2 KBFK); Ava Lanza advanced to third; Jolie Quintana scored, unearned.",
+            "Kendal Heyman pinch hit for Lily Newhall.",
+            "Julia Mills stole second.",
+            "Kendal Heyman grounded out to 1b unassisted (3-1 BFBB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 7,
+          "h": 4,
+          "r": 6,
+          "er": 2,
+          "bb": 3,
+          "so": 12,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 32
         }
       ],
       "year": 2026
