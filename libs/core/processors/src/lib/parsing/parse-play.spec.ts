@@ -63,6 +63,14 @@ describe('getPlayerNameFromText', () => {
   it('A10: returns null for text with no name pattern', () => {
     expect(getPlayerNameFromText('No play.')).toBeNull();
   });
+
+  it('A11: parses apostrophe last name ("Riley O\'Brien")', () => {
+    expect(getPlayerNameFromText("Riley O'Brien reached on a fielder's choice.")).toBe("Riley O'Brien");
+  });
+
+  it('A12: parses abbreviated apostrophe last name ("R. O\'Brien")', () => {
+    expect(getPlayerNameFromText("R. O'Brien singled to cf.")).toBe("R. O'Brien");
+  });
 });
 
 // ============================================================
