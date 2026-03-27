@@ -39,7 +39,7 @@ export type ViewMode = 'split' | 'combined' | 'contact' | 'scouting';
     </div>
 
     @if (showPrintModal()) {
-      <ws-print-options-modal [players]="allPlayerSummaries()" [lineupOrder]="lineupOrder()" [years]="selectedYears()" (confirmed)="onPrintConfirm($event)" (dismissed)="onPrintCancel()" />
+      <ws-print-options-modal [players]="allPlayerSummaries()" [lineupOrder]="lineupOrder()" [cacheKey]="cacheKey()" [years]="selectedYears()" (confirmed)="onPrintConfirm($event)" (dismissed)="onPrintCancel()" />
     }
   `,
 })
@@ -51,6 +51,7 @@ export class SprayPrintOrchestrator {
   readonly printSubtitle = input('');
   readonly selectedYears = input<string[]>([]);
   readonly hasNonDefaultFilters = input(false);
+  readonly cacheKey = input<string>('');
   readonly viewMode = input<ViewMode>('combined');
   readonly dataByYear = input.required<Map<number, SprayDataPoint[]>>();
 

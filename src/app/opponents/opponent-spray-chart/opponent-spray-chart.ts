@@ -9,7 +9,7 @@ import { catchError, forkJoin, of } from 'rxjs';
   selector: 'ws-opponent-spray-chart',
   standalone: true,
   imports: [SprayChartViewer],
-  template: ` <ws-spray-chart-viewer [dataByYear]="dataByYear()" [roster]="roster()" [teamData]="teamData()" [lineupOrder]="lineupOrder()" [loading]="loading()" [error]="error()" [printTitle]="teamName()" emptyMessage="No spray chart data available for this team." /> `,
+  template: ` <ws-spray-chart-viewer [dataByYear]="dataByYear()" [roster]="roster()" [teamData]="teamData()" [lineupOrder]="lineupOrder()" [loading]="loading()" [error]="error()" [printTitle]="teamName()" [printCacheKey]="slug()" emptyMessage="No spray chart data available for this team." /> `,
   host: {
     class: 'block',
   },

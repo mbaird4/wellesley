@@ -171,6 +171,7 @@ export class SprayChartViewer {
   readonly error = input<string | null>(null);
   readonly emptyMessage = input('No spray chart data available.');
   readonly printTitle = input('');
+  readonly printCacheKey = input<string>('');
 
   readonly viewMode = signal<ViewMode>('combined');
   readonly selectedYears = signal<string[]>(SPRAY_YEARS.map(String));

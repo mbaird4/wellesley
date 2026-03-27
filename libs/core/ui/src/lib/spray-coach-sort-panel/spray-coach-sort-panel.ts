@@ -7,6 +7,11 @@ import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-p
 
 export type CoachSortMode = 'lineup' | 'pa' | 'woba' | 'avg' | 'number';
 
+interface CachedSortOrder {
+  mode: CoachSortMode | 'custom';
+  names?: string[];
+}
+
 const BASE_SORT_OPTIONS: ToggleOption[] = [
   { value: 'pa', label: 'PA' },
   { value: 'woba', label: 'wOBA' },
@@ -78,6 +83,7 @@ function fmtAvg(val: number | undefined): string {
 export class SprayCoachSortPanel {
   readonly players = input.required<PrintPlayerSummary[]>();
   readonly lineupOrder = input<Record<string, number>>({});
+  readonly cacheKey = input<string>('');
   readonly orderChange = output<PrintPlayerSummary[]>();
 
   readonly hasLineup = computed(() => Object.keys(this.lineupOrder()).length > 0);
@@ -140,13 +146,23 @@ export class SprayCoachSortPanel {
   });
 
   constructor() {
+    // Initialize order: restore from cache or set defaults
     effect(() => {
-      this.customOrder.set([...this.players()]);
-    });
+      const players = this.players();
+      const key = this.cacheKey();
 
-    // Default to lineup sort when lineup data is available
-    effect(() => {
-      if (this.hasLineup()) {
+      this.customOrder.set([...players]);
+
+      const cached = key ? this.loadCache(key) : null;
+
+      if (cached?.mode === 'custom' && cached.names?.length) {
+        const nameOrder = new Map(cached.names.map((n, i) => [n, i]));
+        const ordered = [...players].sort((a, b) => (nameOrder.get(a.name) ?? Infinity) - (nameOrder.get(b.name) ?? Infinity));
+        this.customOrder.set(ordered);
+        this.sortMode.set('custom');
+      } else if (cached) {
+        this.sortMode.set(cached.mode as CoachSortMode);
+      } else if (this.hasLineup()) {
         this.sortMode.set('lineup');
       }
     });
@@ -158,6 +174,7 @@ export class SprayCoachSortPanel {
 
   onSortChange(value: string | string[]): void {
     this.sortMode.set(value as CoachSortMode);
+    this.saveCache();
   }
 
   onDrop(event: CdkDragDrop<PrintPlayerSummary[]>): void {
@@ -165,5 +182,37 @@ export class SprayCoachSortPanel {
     moveItemInArray(list, event.previousIndex, event.currentIndex);
     this.customOrder.set(list);
     this.sortMode.set('custom');
+    this.saveCache();
+  }
+
+  private loadCache(key: string): CachedSortOrder | null {
+    try {
+      const raw = localStorage.getItem(`ws-print-order:${key}`);
+
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  }
+
+  private saveCache(): void {
+    const key = this.cacheKey();
+
+    if (!key) {
+      return;
+    }
+
+    const mode = this.sortMode();
+    const payload: CachedSortOrder = { mode };
+
+    if (mode === 'custom') {
+      payload.names = this.sortedPlayers().map((p) => p.name);
+    }
+
+    try {
+      localStorage.setItem(`ws-print-order:${key}`, JSON.stringify(payload));
+    } catch {
+      // localStorage full or unavailable
+    }
   }
 }

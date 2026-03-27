@@ -25,6 +25,7 @@ export class PrintOptionsModal {
 
   readonly players = input<PrintPlayerSummary[]>([]);
   readonly lineupOrder = input<Record<string, number>>({});
+  readonly cacheKey = input<string>('');
   readonly years = input<string[]>([]);
 
   readonly dugout = signal(true);
