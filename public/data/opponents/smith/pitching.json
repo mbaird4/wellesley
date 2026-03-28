@@ -1,31 +1,31 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-27T02:09:00.093Z",
+  "scrapedAt": "2026-03-28T02:00:19.286Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
       "w": 3,
       "l": 0,
-      "era": 1.29,
-      "app": 4,
+      "era": 3,
+      "app": 5,
       "gs": 2,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 21.2,
-      "h": 13,
-      "r": 7,
-      "er": 4,
-      "bb": 4,
-      "so": 17,
-      "hr": 1,
-      "whip": 0.78,
-      "doubles": 1,
+      "ip": 25.2,
+      "h": 21,
+      "r": 15,
+      "er": 11,
+      "bb": 7,
+      "so": 19,
+      "hr": 2,
+      "whip": 1.09,
+      "doubles": 3,
       "triples": 0,
-      "ab": 81,
-      "bAvg": 0.16,
+      "ab": 102,
+      "bAvg": 0.206,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -34,26 +34,26 @@
     },
     {
       "name": "Peverly, Violet",
-      "w": 2,
+      "w": 3,
       "l": 3,
-      "era": 4.57,
-      "app": 6,
-      "gs": 5,
-      "cg": 3,
+      "era": 3.86,
+      "app": 7,
+      "gs": 6,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 23,
-      "h": 28,
-      "r": 21,
-      "er": 15,
-      "bb": 16,
-      "so": 28,
+      "ip": 29,
+      "h": 33,
+      "r": 22,
+      "er": 16,
+      "bb": 20,
+      "so": 36,
       "hr": 1,
-      "whip": 1.91,
+      "whip": 1.83,
       "doubles": 3,
       "triples": 2,
-      "ab": 95,
-      "bAvg": 0.295,
+      "ab": 118,
+      "bAvg": 0.28,
       "wp": 2,
       "hbp": 1,
       "bk": 0,
@@ -91,25 +91,25 @@
     {
       "name": "Robinson, Alana",
       "w": 0,
-      "l": 1,
-      "era": 21,
-      "app": 2,
-      "gs": 2,
+      "l": 2,
+      "era": 15.47,
+      "app": 3,
+      "gs": 3,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3.1,
-      "h": 11,
-      "r": 10,
-      "er": 10,
-      "bb": 7,
-      "so": 2,
+      "ip": 6.1,
+      "h": 13,
+      "r": 17,
+      "er": 14,
+      "bb": 12,
+      "so": 4,
       "hr": 0,
-      "whip": 5.4,
-      "doubles": 3,
+      "whip": 3.95,
+      "doubles": 4,
       "triples": 0,
-      "ab": 19,
-      "bAvg": 0.579,
+      "ab": 32,
+      "bAvg": 0.406,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
@@ -1016,6 +1016,214 @@
           "hbp": 1,
           "ab": 22,
           "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/keene-state/boxscore/9659",
+      "date": "3/27/2026",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Robinson, Alana",
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Bailey Gray to p.",
+            "/  for Alana Robinson.",
+            "Anna Gostkowski grounded out to ss (2-1 BKB).",
+            "Kalle Halvorsen doubled to left center (2-1 KBB).",
+            "Elyse Picard homered, 2 RBI (1-0 B); Kalle Halvorsen scored.",
+            "Abby Weiterman flied out to cf (2-0 BB).",
+            "Cainen Avery singled to right field (2-1 BKB).",
+            "Jayme Kiley singled to left center (2-1 BBK); Cainen Avery advanced to second.",
+            "Gianna Garofola walked (3-2 BKBKBB); Jayme Kiley advanced to second; Cainen Avery advanced to third.",
+            "Abbie Monkevicz grounded out to ss (3-2 BFBFFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ashley Connor singled to left center (1-1 BK).",
+            "Anna Gostkowski grounded out to 3b (1-1 KB); Ashley Connor advanced to second on a fielder's choice.",
+            "Kalle Halvorsen flied out to cf (1-2 BFS).",
+            "Elyse Picard struck out swinging (2-2 KBFBFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Weiterman grounded out to ss (2-0 BB).",
+            "Cainen Avery grounded out to 1b unassisted (1-2 BKF).",
+            "Jayme Kiley flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gianna Garofola flied out to lf (1-1 BS).",
+            "Abbie Monkevicz flied out to 2b (0-1 F).",
+            "Ashley Connor struck out swinging (2-2 BSSFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Anna Gostkowski singled to left field (2-1 BSB).",
+            "Anna Gostkowski stole second.",
+            "Kalle Halvorsen walked (3-0 BBBB).",
+            "Elyse Picard walked (3-0 BBBB); Kalle Halvorsen advanced to second; Anna Gostkowski advanced to third.",
+            "Abby Weiterman doubled to left center, 2 RBI (2-2 BBKK); Elyse Picard advanced to third; Kalle Halvorsen scored; Anna Gostkowski scored.",
+            "Cainen Avery reached on a fielder's choice (1-2 SFB).",
+            "Jayme Kiley singled, 2 RBI (2-1 BKB); Cainen Avery advanced to second; Abby Weiterman scored; Elyse Picard scored.",
+            "Alana Robinson to p for Bailey Gray.",
+            "Jayme Kiley advanced to second on a passed ball; Cainen Avery advanced to third on a passed ball.",
+            "Gianna Garofola grounded out to ss, RBI (2-1 BKB); Jayme Kiley advanced to third; Cainen Avery scored.",
+            "Lily Mandel pinch hit for Abbie Monkevicz.",
+            "Lily Mandel walked (3-2 BBKKBB).",
+            "Jaelyn Boretti walked (3-2 KBFFFFBBB); Lily Mandel advanced to second.",
+            "Jaelyn Boretti advanced to second on a passed ball; Lily Mandel advanced to third on a passed ball; Jayme Kiley scored on a passed ball, unearned.",
+            "Anna Gostkowski walked (3-1 BBBSB).",
+            "Kalle Halvorsen struck out swinging (2-2 KBBKS).",
+            "Elyse Picard reached on a fielder's choice, RBI (2-2 KBKFFFB); Anna Gostkowski advanced to second; Jaelyn Boretti advanced to third; Lily Mandel scored, unearned.",
+            "Abby Weiterman doubled down the lf line, 3 RBI (2-1 KBB); Elyse Picard scored; Anna Gostkowski scored; Jaelyn Boretti scored.",
+            "Cainen Avery struck out swinging (2-2 KBKBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Veenstra to c for Anna Gray.",
+            "Jayme Kiley flied out to lf (1-0 B).",
+            "Gianna Garofola grounded out to 3b (3-2 BBBKK).",
+            "Abbie Monkevicz grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Megan Strzegowski grounded out to 3b (3-2 KBFBBF).",
+            "Anna Gostkowski walked (3-2 BBBKKB).",
+            "Kalle Halvorsen grounded out to 3b (1-1 KB); Anna Gostkowski advanced to second.",
+            "Elyse Picard walked (3-2 BFBBKB).",
+            "Abby Weiterman singled, advanced to second on the throw, RBI (3-2 BBKBK); Elyse Picard advanced to third; Anna Gostkowski scored.",
+            "Cainen Avery reached first on an error by rf, advanced to second, 2 RBI (2-1 BFB); Abby Weiterman scored, unearned; Elyse Picard scored, unearned.",
+            "Jayme Kiley lined out to cf (3-2 BBFFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Robinson, Alana",
+          "ip": 3,
+          "h": 2,
+          "r": 7,
+          "er": 4,
+          "bb": 5,
+          "so": 2,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 18
+        },
+        {
+          "name": "Gray, Bailey",
+          "ip": 4,
+          "h": 8,
+          "r": 8,
+          "er": 7,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/keene-state/boxscore/9660",
+      "date": "3/27/2026",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Anna Gostkowski flied out to lf (3-2 BBBSS).",
+            "Kalle Halvorsen struck out swinging (0-2 KSS).",
+            "Elyse Picard grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Weiterman flied out to ss (0-1 F).",
+            "Cainen Avery struck out looking (2-2 KBFBK).",
+            "Jayme Kiley walked (3-0 BBBB).",
+            "Morgan Rodrigues walked (3-0 BBBB); Jayme Kiley advanced to second.",
+            "Marina Gronbach walked (3-1 KBBBB); Morgan Rodrigues advanced to second; Jayme Kiley advanced to third.",
+            "Lily Mandel grounded out to ss (3-2 BBBKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Anna Gostkowski walked (3-0 BBBB).",
+            "Kalle Halvorsen flied out to rf (1-1 FB).",
+            "Anna Gostkowski stole second.",
+            "Elyse Picard grounded out to ss (3-2 BBBKKF); Anna Gostkowski advanced to third.",
+            "Abby Weiterman singled to left field, RBI (2-2 KBFBFF); Anna Gostkowski scored.",
+            "Cainen Avery struck out looking (1-2 KFBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jayme Kiley fouled out to 1b (2-2 BKBF).",
+            "Morgan Rodrigues struck out swinging (1-2 KKBS).",
+            "Marina Gronbach struck out swinging (2-2 BKBKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bailey Gray to lf.",
+            "Lily Mandel singled down the rf line (0-1 K).",
+            "Anna Gostkowski struck out swinging (3-2 BBKBFS).",
+            "Kalle Halvorsen struck out swinging (1-2 SBFS).",
+            "Elyse Picard singled to right center (2-0 BB); Lily Mandel advanced to second.",
+            "Abby Weiterman flied out to rf (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cainen Avery singled to right field (1-1 KB).",
+            "Jayme Kiley reached on a fielder's choice (1-0 B); Cainen Avery out at second ss to 2b.",
+            "Abbie Monkevicz pinch hit for Morgan Rodrigues.",
+            "Abbie Monkevicz singled to center field (3-2 BFBBK); Jayme Kiley advanced to second.",
+            "Marina Gronbach struck out swinging (1-2 KFBS).",
+            "Lily Mandel flied out to 2b (1-1 BK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 6,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 4,
+          "so": 8,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 27
         }
       ],
       "year": 2026

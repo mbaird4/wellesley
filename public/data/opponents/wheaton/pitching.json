@@ -1,64 +1,64 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-03-27T02:08:51.504Z",
+  "scrapedAt": "2026-03-28T02:00:09.402Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 5,
-      "l": 1,
-      "era": 1.05,
-      "app": 6,
-      "gs": 6,
-      "cg": 6,
+      "l": 2,
+      "era": 0.89,
+      "app": 7,
+      "gs": 7,
+      "cg": 7,
       "sho": 3,
       "sv": 0,
-      "ip": 40,
-      "h": 33,
-      "r": 7,
+      "ip": 47.1,
+      "h": 36,
+      "r": 8,
       "er": 6,
       "bb": 4,
-      "so": 25,
+      "so": 32,
       "hr": 2,
-      "whip": 0.93,
+      "whip": 0.85,
       "doubles": 3,
       "triples": 0,
-      "ab": 143,
-      "bAvg": 0.231,
+      "ab": 168,
+      "bAvg": 0.214,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 7
+      "sha": 9
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 3,
+      "w": 4,
       "l": 3,
-      "era": 2.1,
-      "app": 6,
-      "gs": 6,
-      "cg": 4,
+      "era": 2.08,
+      "app": 7,
+      "gs": 7,
+      "cg": 5,
       "sho": 3,
       "sv": 0,
-      "ip": 33.1,
-      "h": 32,
-      "r": 21,
-      "er": 10,
-      "bb": 9,
-      "so": 42,
+      "ip": 40.1,
+      "h": 38,
+      "r": 23,
+      "er": 12,
+      "bb": 10,
+      "so": 51,
       "hr": 1,
-      "whip": 1.23,
-      "doubles": 5,
+      "whip": 1.19,
+      "doubles": 8,
       "triples": 2,
-      "ab": 135,
-      "bAvg": 0.237,
+      "ab": 162,
+      "bAvg": 0.235,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "Dost, Brittany",
@@ -1165,6 +1165,197 @@
           "hbp": 1,
           "ab": 25,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/western-new-england-university/boxscore/10007",
+      "date": "3/27/2026",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Marley Rodriguez grounded out to ss (1-1 KB).",
+            "Angelees Carrasquillo grounded out to 3b (3-2 BSBBFFF).",
+            "Nicolina Salanto struck out swinging (3-2 BBFBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Kane singled to left field (2-1 BBK).",
+            "Katelyn Bailey grounded out to 1b unassisted, SAC, bunt (0-0); Riley Kane advanced to second.",
+            "Riley Kane advanced to third on a throwing error by c.",
+            "Katherine Brooks struck out looking (3-2 BBSBKFFK).",
+            "Evelyn Picone grounded out to 3b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Barnhart flied out to lf (1-1 KB).",
+            "Shea McDaniel walked (3-0 BBBB).",
+            "Marley Rodriguez flied out to cf (0-0).",
+            "Angelees Carrasquillo doubled down the lf line (0-0); Shea McDaniel advanced to third.",
+            "Nicolina Salanto struck out swinging (1-2 SFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Kane doubled to left field (0-2 FS).",
+            "Katelyn Bailey struck out looking (2-2 KBFBK).",
+            "Katherine Brooks struck out swinging (0-2 SSS).",
+            "Evelyn Picone singled to right field, advanced to second on the throw, RBI (1-1 BF); Riley Kane scored.",
+            "Ava Barnhart struck out swinging (1-2 KKBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Shea McDaniel flied out to cf (2-2 FKBFB).",
+            "Marley Rodriguez singled to third base (0-0).",
+            "Angelees Carrasquillo flied out to cf (1-2 BFS).",
+            "Payton McDaniel pinch hit for Nicolina Salanto.",
+            "Payton McDaniel doubled to left center, RBI (1-1 KB); Marley Rodriguez scored.",
+            "Riley Kane popped up to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Miller to lf for Sam Puma.",
+            "Paige Chiaramonte pinch hit for Katelyn Bailey.",
+            "Paige Chiaramonte struck out swinging (3-2 BBFKBS).",
+            "Katherine Brooks reached first on a fielding error by 1b (1-0 B).",
+            "Evelyn Picone struck out swinging (2-2 FFBBFS).",
+            "Ava Barnhart popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley Dolan to c for Alexandra Anquillare.",
+            "Shea McDaniel fouled out to lf (3-2 BBFKB).",
+            "Marley Rodriguez struck out swinging (1-2 KBFS).",
+            "Angelees Carrasquillo lined out to 3b (0-2 FKF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 7,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 9,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/western-new-england-university/boxscore/10008",
+      "date": "3/27/2026",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Marley Rodriguez grounded out to ss (1-1 BF).",
+            "Angelees Carrasquillo grounded out to ss (3-2 SBFBB).",
+            "Payton McDaniel flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Kane singled through the left side (2-2 BBKS).",
+            "Evelyn Picone struck out swinging (1-2 FKBFS).",
+            "Katherine Brooks struck out swinging (1-2 SFBS).",
+            "Regan Parr struck out swinging (2-2 BBSSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Barnhart flied out to lf (2-2 BFFBFFFF).",
+            "Shea McDaniel singled to shortstop (0-0).",
+            "Marley Rodriguez grounded out to p, SAC, bunt (0-0); Shea McDaniel advanced to third.",
+            "Angelees Carrasquillo flied out to lf (0-2 KSF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Payton McDaniel reached first on a fielding error by 1b (1-1 KB).",
+            "Keira Czarkowski pinch ran for Payton McDaniel.",
+            "Riley Kane popped up to 3b, bunt (0-0).",
+            "Evelyn Picone reached on a fielder's choice to shortstop (1-1 BF); Keira Czarkowski out at second ss to 2b.",
+            "Katherine Brooks struck out swinging (1-2 FKBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Regan Parr struck out swinging, reached first on a throwing error by c (1-2 BKSFS).",
+            "Katelyn Bailey pinch ran for Regan Parr.",
+            "Ava Barnhart fouled out to c, bunt (0-0).",
+            "Shea McDaniel reached on a fielder's choice to shortstop (1-1 BK); Katelyn Bailey out at second ss to 2b.",
+            "Marley Rodriguez grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Angelees Carrasquillo out at first p to 2b (0-1 S).",
+            "Payton McDaniel struck out swinging (2-2 BKBKS).",
+            "Riley Kane struck out swinging (2-2 SFBBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Evelyn Picone popped up to ss (1-2 FKB).",
+            "Katherine Brooks flied out to lf (1-0 B).",
+            "Olivia Lugo pinch hit for Regan Parr.",
+            "Olivia Lugo flied out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Riley Dolan to c for Lauren Kelley.",
+            "Ava Barnhart Alyssa Ferriouolo placed on second (0-0).",
+            "Ava Barnhart out at first p to 2b, SAC, bunt (0-0); Alyssa Ferriouolo advanced to third.",
+            "Shea McDaniel singled to left field, RBI (0-1 S); Alyssa Ferriouolo scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 7.1,
+          "h": 3,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 7,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 27
         }
       ],
       "year": 2026
