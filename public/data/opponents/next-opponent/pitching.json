@@ -1,31 +1,31 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-03-27T02:14:12.119Z",
+  "scrapedAt": "2026-03-28T02:05:26.896Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Staub, Jamie",
       "w": 3,
       "l": 1,
-      "era": 3.46,
-      "app": 10,
+      "era": 3.54,
+      "app": 11,
       "gs": 2,
       "cg": 1,
       "sho": 0,
-      "sv": 0,
-      "ip": 30.1,
-      "h": 27,
-      "r": 17,
-      "er": 15,
+      "sv": 1,
+      "ip": 31.2,
+      "h": 28,
+      "r": 18,
+      "er": 16,
       "bb": 8,
       "so": 15,
       "hr": 1,
-      "whip": 1.15,
-      "doubles": 7,
+      "whip": 1.14,
+      "doubles": 8,
       "triples": 0,
-      "ab": 121,
-      "bAvg": 0.223,
+      "ab": 126,
+      "bAvg": 0.222,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Jennings, Madeline",
-      "w": 2,
+      "w": 3,
       "l": 3,
-      "era": 4.77,
-      "app": 9,
-      "gs": 7,
+      "era": 4.2,
+      "app": 10,
+      "gs": 8,
       "cg": 1,
       "sho": 1,
       "sv": 0,
-      "ip": 29.1,
-      "h": 49,
-      "r": 30,
-      "er": 20,
-      "bb": 8,
-      "so": 15,
-      "hr": 1,
-      "whip": 1.94,
+      "ip": 35,
+      "h": 57,
+      "r": 34,
+      "er": 21,
+      "bb": 9,
+      "so": 22,
+      "hr": 2,
+      "whip": 1.89,
       "doubles": 1,
       "triples": 2,
-      "ab": 140,
-      "bAvg": 0.35,
+      "ab": 164,
+      "bAvg": 0.348,
       "wp": 5,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 3
+      "sha": 4
     },
     {
       "name": "Kannan, Ragini",
@@ -2443,6 +2443,116 @@
             "Julia Mills grounded out to 2b, RBI (2-0 BB); Catherine Carignan advanced to third; Ava Lanza scored.",
             "Lily Newhall grounded out to p (1-0 B)."
           ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/nyu/boxscore/14838",
+      "date": "3/27/2026",
+      "opponent": "Nyu",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Siena Kiefer struck out swinging (3-2 KKBBBS).",
+            "Nicole Cicchetti grounded out to ss (1-0 B).",
+            "Emma Sung singled to right field (2-2 SBFB).",
+            "Katie Antonsiewicz hit by pitch (1-0 H); Emma Sung advanced to second.",
+            "Victoria Katilius struck out swinging (2-2 BKKBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sarah Huang flied out to rf (1-1 BF).",
+            "Emily Barbire struck out swinging (1-2 KKBFS).",
+            "Naya Schubel flied out to lf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Keira D'Errico struck out looking (2-2 FFBFFBFFK).",
+            "Siena Kiefer singled through the left side (2-1 BFB).",
+            "Nicole Cicchetti popped up to 1b, bunt (1-1 BF).",
+            "Siena Kiefer stole second.",
+            "Emma Sung singled to second base, RBI (2-2 KBBF); Siena Kiefer scored.",
+            "Katie Antonsiewicz reached on a fielder's choice (0-0); Emma Sung out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Victoria Katilius singled up the middle, out at second 2b to 1b (1-1 BK).",
+            "Sarah Huang struck out swinging (2-2 KKBBFS).",
+            "Emily Barbire singled up the middle (2-2 BBKK).",
+            "Naya Schubel struck out swinging (3-2 BBBKKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taryn Rainey to c for Mary Doud.",
+            "Keira D'Errico singled to third base (0-0).",
+            "Siena Kiefer grounded out to 3b, SAC, bunt (0-0); Keira D'Errico advanced to second.",
+            "Nicole Cicchetti grounded out to 1b unassisted (0-2 FK); Keira D'Errico advanced to third.",
+            "Emma Sung grounded out to 2b (3-2 BKBKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katie Antonsiewicz pinch hit for Monique Kamrowski.",
+            "Katie Antonsiewicz struck out looking (1-2 BFSFK).",
+            "Victoria Katilius singled up the middle (1-0 B).",
+            "Sarah Huang reached first on an error by 2b (0-0); Victoria Katilius advanced to second.",
+            "Emily Barbire flied out to rf (1-2 KSFB).",
+            "Naya Schubel homered to left center, 3 RBI, unearned (2-2 BFBF); Sarah Huang scored, unearned; Victoria Katilius scored, unearned.",
+            "Keira D'Errico walked (3-2 BKBBSB).",
+            "Jamie Staub to p for Madeline Jennings.",
+            "Siena Kiefer fouled out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Nicole Cicchetti lined out to 3b (1-0 B).",
+            "Emma Sung doubled to left center (3-2 KFBBFB).",
+            "Emma Sung stole third.",
+            "Katie Antonsiewicz grounded out to ss, RBI (3-1 FBBB); Emma Sung scored.",
+            "Victoria Katilius popped up to 2b (2-2 BBKK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 5.2,
+          "h": 8,
+          "r": 4,
+          "er": 1,
+          "bb": 1,
+          "so": 7,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 27
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 1.1,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 5
         }
       ],
       "year": 2026
