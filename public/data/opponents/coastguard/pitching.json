@@ -1,31 +1,59 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-28T02:00:39.550Z",
+  "scrapedAt": "2026-03-29T02:11:42.101Z",
   "year": 2026,
   "pitchingStats": [
+    {
+      "name": "Walker, Dana",
+      "w": 5,
+      "l": 2,
+      "era": 0.66,
+      "app": 8,
+      "gs": 7,
+      "cg": 5,
+      "sho": 1,
+      "sv": 1,
+      "ip": 42.1,
+      "h": 40,
+      "r": 19,
+      "er": 4,
+      "bb": 6,
+      "so": 44,
+      "hr": 0,
+      "whip": 1.09,
+      "doubles": 3,
+      "triples": 0,
+      "ab": 175,
+      "bAvg": 0.229,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 3
+    },
     {
       "name": "Lynn, Zoey",
       "w": 2,
       "l": 1,
-      "era": 0.3,
-      "app": 5,
-      "gs": 3,
+      "era": 1.66,
+      "app": 6,
+      "gs": 4,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 23.1,
-      "h": 21,
-      "r": 6,
-      "er": 1,
+      "ip": 25.1,
+      "h": 27,
+      "r": 11,
+      "er": 6,
       "bb": 3,
-      "so": 13,
+      "so": 14,
       "hr": 0,
-      "whip": 1.03,
-      "doubles": 2,
+      "whip": 1.18,
+      "doubles": 4,
       "triples": 0,
-      "ab": 92,
-      "bAvg": 0.228,
+      "ab": 104,
+      "bAvg": 0.26,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -33,55 +61,27 @@
       "sha": 1
     },
     {
-      "name": "Walker, Dana",
-      "w": 4,
-      "l": 2,
-      "era": 0.83,
-      "app": 6,
-      "gs": 6,
-      "cg": 4,
-      "sho": 1,
-      "sv": 0,
-      "ip": 33.2,
-      "h": 33,
-      "r": 16,
-      "er": 4,
-      "bb": 5,
-      "so": 36,
-      "hr": 0,
-      "whip": 1.13,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 140,
-      "bAvg": 0.236,
-      "wp": 1,
-      "hbp": 0,
-      "bk": 0,
-      "sfa": 1,
-      "sha": 2
-    },
-    {
       "name": "Behel, Emma",
-      "w": 0,
+      "w": 1,
       "l": 0,
       "era": 0,
-      "app": 1,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 1,
-      "h": 2,
+      "ip": 4.1,
+      "h": 5,
       "r": 1,
       "er": 0,
       "bb": 0,
-      "so": 2,
+      "so": 3,
       "hr": 0,
-      "whip": 2,
+      "whip": 1.15,
       "doubles": 0,
       "triples": 0,
-      "ab": 5,
-      "bAvg": 0.4,
+      "ab": 19,
+      "bAvg": 0.263,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -1047,6 +1047,228 @@
           "hbp": 1,
           "ab": 27,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/clark-mass-/boxscore/9342",
+      "date": "3/28/2026",
+      "opponent": "Clark Mass ",
+      "pitchers": [
+        "Lynn, Zoey",
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley struck out swinging (1-2 KBFS).",
+            "Avery Dillon lined out to 2b (0-0).",
+            "Megan Dube popped out to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Merry Griffin singled to right field (0-0).",
+            "Erin Slavin singled up the middle (1-0 B); Merry Griffin advanced to second.",
+            "Felicia Salvati singled up the middle (1-0 B); Erin Slavin advanced to second; Merry Griffin advanced to third.",
+            "Gwen Castro reached on a fielder's choice to third base (0-2 SK); Felicia Salvati advanced to second; Erin Slavin advanced to third; Merry Griffin out at home 3b to c.",
+            "Alexis Taudel doubled, 2 RBI (0-0); Gwen Castro advanced to third; Felicia Salvati scored; Erin Slavin scored.",
+            "Gricelda Castro reached on a fielder's choice to shortstop, RBI (2-1 BBK); Alexis Taudel out at third ss to c to 3b; Gwen Castro scored.",
+            "Charlise Quigley grounded out to p (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avery Dillon singled to shortstop (1-0 B).",
+            "Megan Dube doubled to left center, RBI (0-0); Avery Dillon scored.",
+            "Emma Behel to p for Zoey Lynn.",
+            "Abriana Schmutz to cf.",
+            "Zoey Cascio to lf.",
+            "Merry Griffin flied out to rf (1-1 KB); Megan Dube did not advance.",
+            "Erin Slavin grounded out to p (0-0); Megan Dube advanced to third.",
+            "Felicia Salvati singled to shortstop, RBI (1-0 B); Megan Dube scored.",
+            "Felicia Salvati advanced to second on a passed ball.",
+            "Gwen Castro grounded out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abriana Schmutz to lf.",
+            "Hayden Reilly to cf for Zoey Cascio.",
+            "Alexis Taudel flied out to cf (1-0 B).",
+            "Gricelda Castro grounded out to 3b (2-1 FBB).",
+            "Charlise Quigley popped up to 2b (2-2 BKBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avery Dillon lined out to rf (0-0).",
+            "Megan Dube flied out to cf (3-1 BBKB).",
+            "Merry Griffin singled to left center (2-1 BBK).",
+            "Erin Slavin lined out to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madeline Kibler to c for Mack Murnane.",
+            "Felicia Salvati reached first on an error by 3b (3-2 KBBFB).",
+            "Gwen Castro struck out swinging (1-2 KBKS).",
+            "Alexis Taudel singled to left field (1-1 BK); Felicia Salvati advanced to second.",
+            "Dana Walker to p for Emma Behel.",
+            "Alexis Taudel advanced to second on a wild pitch; Felicia Salvati advanced to third.",
+            "Gricelda Castro struck out swinging (3-2 BFBKSB).",
+            "Charlise Quigley walked (3-1 BBBKB).",
+            "Avery Dillon grounded out to 2b (2-2 FFBBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maura Murphy to rf for Olivia Garcia.",
+            "Megan Dube singled to second base (3-1 BBBK).",
+            "Merry Griffin struck out swinging (3-2 BBFKBS).",
+            "Erin Slavin grounded out to 1b unassisted (3-1 KBBB); Megan Dube advanced to second.",
+            "Felicia Salvati struck out looking (0-2 SFK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Lynn, Zoey",
+          "ip": 2,
+          "h": 6,
+          "r": 5,
+          "er": 5,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 12
+        },
+        {
+          "name": "Behel, Emma",
+          "ip": 3.1,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 14
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 1.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/clark-mass-/boxscore/9343",
+      "date": "3/28/2026",
+      "opponent": "Clark Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley singled up the middle (3-2 BKBFB).",
+            "Avery Dillon grounded out to p, bunt, SAC (0-1 F); Charlise Quigley advanced to second.",
+            "Megan Dube reached first on an error by 3b, advanced to second (0-2 FFF); Charlise Quigley scored on the error, unearned.",
+            "Merry Griffin grounded out 1b to 2b to 1b (1-0 B); Megan Dube advanced to third.",
+            "Felicia Salvati fouled out to rf (2-2 BFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gwen Castro grounded out to 1b unassisted (2-2 KKBB).",
+            "Alexis Taudel flied out to rf (2-1 KBB).",
+            "Gricelda Castro grounded out to 2b (1-2 BFKFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emelie Spence struck out swinging (3-2 KFBBBS).",
+            "Charlise Quigley popped up to ss (2-2 KFBBF).",
+            "Avery Dillon grounded out to 2b (3-2 SKBBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Megan Dube grounded out to 2b (1-0 B).",
+            "Merry Griffin grounded out to 1b unassisted (1-1 KB).",
+            "Felicia Salvati singled to right field (1-0 B).",
+            "Gwen Castro struck out swinging, out at first p to 1b (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexis Taudel struck out looking (0-2 KFK).",
+            "Gricelda Castro struck out swinging (1-2 FBFFS).",
+            "Erin Slavin pinch hit for Emelie Spence.",
+            "Erin Slavin singled up the middle (1-2 BFF).",
+            "Charlise Quigley grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avery Dillon grounded out to ss (3-2 FKFBFBB).",
+            "Megan Dube reached first on an error by ss (0-1 K).",
+            "Sydney Lyons pinch ran for Megan Dube.",
+            "Merry Griffin reached first on an error by 2b (0-1 K); Sydney Lyons advanced to second.",
+            "Felicia Salvati singled to third base (2-2 BFFBFF); Merry Griffin advanced to second; Sydney Lyons advanced to third.",
+            "Gwen Castro struck out swinging (2-2 BFKBS).",
+            "Alexis Taudel singled up the middle, RBI (0-1 K); Felicia Salvati advanced to second; Merry Griffin advanced to third; Sydney Lyons scored, unearned.",
+            "Gricelda Castro singled up the middle, RBI (1-0 B); Alexis Taudel advanced to second; Felicia Salvati advanced to third; Merry Griffin scored, unearned.",
+            "Emelie Spence grounded out to 3b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Charlise Quigley reached first on an error by ss (2-2 KBFB).",
+            "Charlise Quigley out at second p to ss, caught stealing.",
+            "Avery Dillon popped up to ss (1-1 BK).",
+            "Sydney Lyons grounded out to p (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 6,
+          "r": 3,
+          "er": 0,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 30
         }
       ],
       "year": 2026
