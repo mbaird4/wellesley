@@ -1,33 +1,33 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-03-29T02:11:36.120Z",
+  "scrapedAt": "2026-03-30T02:14:19.930Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
-      "w": 2,
+      "w": 3,
       "l": 5,
-      "era": 2.95,
-      "app": 9,
-      "gs": 5,
-      "cg": 3,
+      "era": 2.61,
+      "app": 10,
+      "gs": 6,
+      "cg": 4,
       "sho": 1,
       "sv": 0,
-      "ip": 40.1,
-      "h": 45,
-      "r": 34,
-      "er": 17,
-      "bb": 20,
-      "so": 53,
+      "ip": 48.1,
+      "h": 51,
+      "r": 39,
+      "er": 18,
+      "bb": 24,
+      "so": 59,
       "hr": 0,
-      "whip": 1.61,
-      "doubles": 5,
+      "whip": 1.55,
+      "doubles": 6,
       "triples": 5,
-      "ab": 172,
-      "bAvg": 0.262,
-      "wp": 15,
-      "hbp": 3,
+      "ab": 205,
+      "bAvg": 0.249,
+      "wp": 19,
+      "hbp": 4,
       "bk": 0,
       "sfa": 3,
       "sha": 3
@@ -35,26 +35,26 @@
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 3,
-      "era": 5.34,
-      "app": 7,
-      "gs": 5,
-      "cg": 1,
+      "l": 4,
+      "era": 5.45,
+      "app": 8,
+      "gs": 6,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 19.2,
-      "h": 31,
-      "r": 24,
-      "er": 15,
-      "bb": 11,
-      "so": 10,
-      "hr": 1,
+      "ip": 25.2,
+      "h": 39,
+      "r": 30,
+      "er": 20,
+      "bb": 16,
+      "so": 11,
+      "hr": 2,
       "whip": 2.14,
-      "doubles": 3,
-      "triples": 2,
-      "ab": 90,
-      "bAvg": 0.344,
-      "wp": 2,
+      "doubles": 5,
+      "triples": 4,
+      "ab": 117,
+      "bAvg": 0.333,
+      "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
@@ -1086,6 +1086,217 @@
           "er": 2,
           "bb": 3,
           "so": 12,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/4358",
+      "date": "3/29/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen struck out swinging (0-2 KFS).",
+            "Lauren Sundquist struck out swinging (0-2 KKS).",
+            "Ava Ladd grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kayla Nuehlen to c.",
+            "Arianna Kumar flied out to rf (1-0 B).",
+            "Holland Poe struck out swinging (0-2 FFS).",
+            "Julia Mattiace grounded out to 3b (3-2 BBKBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Scarpaci grounded out to ss (2-2 SBSB).",
+            "Maggie Feng singled to shortstop (0-2 FK).",
+            "Maggie Feng stole second.",
+            "Delaney Benevides popped up to 2b (2-2 KKBB).",
+            "Layla Thiessen walked (3-2 BBKBFB).",
+            "Lauren Sundquist reached on a fielder's choice (1-0 B); Layla Thiessen advanced to second; Maggie Feng out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ava Ladd doubled to right field (0-0).",
+            "Arianna Kumar flied out to rf (2-0 BB).",
+            "Holland Poe flied out to lf (1-1 FB).",
+            "Julia Mattiace popped up to 2b (2-2 SKBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Scarpaci grounded out to 3b, bunt (0-0).",
+            "Maggie Feng hit by pitch (1-1 FH).",
+            "Maggie Feng stole second.",
+            "Maggie Feng advanced to third on a wild pitch.",
+            "Delaney Benevides struck out looking (2-2 BSFBK).",
+            "Layla Thiessen flied out to lf (2-2 KSBFFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauren Sundquist reached first on an error by 1b (1-2 KKFB).",
+            "Lauren Sundquist stole second.",
+            "Lauren Sundquist advanced to third on a wild pitch.",
+            "Ava Ladd struck out swinging (1-2 KBSS).",
+            "Arianna Kumar reached first on an error by 3b (0-0); Lauren Sundquist scored, unearned.",
+            "Holland Poe walked (3-2 FBBFBFB); Arianna Kumar advanced to second.",
+            "Nicole Johnston pinch hit for Julia Mattiace.",
+            "Nicole Johnston reached first on an error by 1b (3-2 BSFBBF); Holland Poe advanced to third; Arianna Kumar scored, unearned.",
+            "Olivia Scarpaci singled to third base, RBI (0-2 FK); Nicole Johnston advanced to second; Holland Poe scored, unearned.",
+            "Maggie Feng reached on a fielder's choice (1-2 FBF); Olivia Scarpaci out at second 2b unassisted; Nicole Johnston advanced to third.",
+            "Delaney Benevides flied out to lf (2-0 BB); Maggie Feng stole second."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Layla Thiessen grounded out to 2b (2-2 FBBF).",
+            "Lauren Sundquist struck out swinging, out at first c to 1b (0-2 KSFS).",
+            "Ava Ladd walked (3-0 BBBB).",
+            "Arianna Kumar singled to left field (2-1 BKB); Ava Ladd advanced to second.",
+            "Holland Poe flied out to cf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Julia Mattiace Holland Poe placed on second (0-0).",
+            "Holland Poe advanced to third on a wild pitch.",
+            "Holland Poe scored on a wild pitch.",
+            "Julia Mattiace walked (3-1 BFBBB).",
+            "Sienna Wilson pinch ran for Julia Mattiace.",
+            "Olivia Scarpaci flied out to rf (2-1 BKB).",
+            "Maggie Feng grounded out to ss (0-0); Sienna Wilson advanced to second.",
+            "Delaney Benevides singled to third base (3-1 FBBB); Sienna Wilson advanced to third.",
+            "Delaney Benevides stole second.",
+            "Layla Thiessen singled to left field, RBI (1-1 KB); Delaney Benevides advanced to third; Sienna Wilson scored.",
+            "Layla Thiessen stole second.",
+            "Lauren Sundquist grounded out to 3b (2-2 KBFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 8,
+          "h": 6,
+          "r": 5,
+          "er": 1,
+          "bb": 4,
+          "so": 6,
+          "hbp": 1,
+          "ab": 33,
+          "bf": 38
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/4359",
+      "date": "3/29/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen doubled to left center (2-2 BKFB).",
+            "Layla Thiessen stole third.",
+            "Nicole Johnston singled to first base, RBI (2-0 BB); Layla Thiessen scored.",
+            "Nicole Johnston stole second.",
+            "Ava Ladd walked (3-1 BBBKB).",
+            "Arianna Kumar struck out swinging (1-2 FSBFS).",
+            "Holland Poe flied out to lf (2-0 BB).",
+            "Lauren Sundquist popped up to 2b (3-2 BBKBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Olivia Scarpaci flied out to lf (1-2 BFF).",
+            "Maggie Feng tripled to center field (1-2 SSB).",
+            "Delaney Benevides grounded out to 3b (0-2 KF).",
+            "Layla Thiessen walked (3-0 BBBB).",
+            "Layla Thiessen stole second.",
+            "Nicole Johnston grounded out to 3b (2-2 KBFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Ladd walked (3-2 FBBBSB).",
+            "Ava Ladd advanced to second on a wild pitch.",
+            "Arianna Kumar tripled to right field, RBI (2-2 BFFFFFBF); Ava Ladd scored.",
+            "Holland Poe doubled to center field, RBI (3-2 BBBKF); Arianna Kumar scored.",
+            "Lauren Sundquist walked (3-0 BBBB).",
+            "Olivia Scarpaci singled to left center, RBI (2-1 BFB); Lauren Sundquist advanced to second; Holland Poe scored.",
+            "Maggie Feng flied out to rf (3-2 SBBBFF).",
+            "Olivia Scarpaci stole second; Lauren Sundquist stole third.",
+            "Delaney Benevides popped up to ss (2-2 BSFB).",
+            "Layla Thiessen reached first on an error by 3b (0-0).",
+            "Nicole Johnston flied out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Tessa Burroso to rf for Valentina Luciano.",
+            "Ava Ladd fouled out to rf (0-0).",
+            "Arianna Kumar reached first on an error by 2b (0-0).",
+            "Holland Poe flied out to lf (0-0).",
+            "Lauren Sundquist homered to left center, 2 RBI (1-1 BF); Arianna Kumar scored, unearned.",
+            "Olivia Scarpaci grounded out p to ss to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maggie Feng fouled out to 2b (0-0).",
+            "Delaney Benevides grounded out to 3b (1-2 BFF).",
+            "Layla Thiessen singled to center field (1-0 B).",
+            "Layla Thiessen stole second.",
+            "Layla Thiessen stole third.",
+            "Nicole Johnston grounded out to 2b (3-2 FBBBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ava Ladd walked (3-2 BSBBFFB).",
+            "Arianna Kumar flied out to rf (0-0).",
+            "Holland Poe lined into double play ss (1-0 B); Ava Ladd out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 6,
+          "h": 8,
+          "r": 6,
+          "er": 5,
+          "bb": 5,
+          "so": 1,
           "hbp": 0,
           "ab": 27,
           "bf": 32

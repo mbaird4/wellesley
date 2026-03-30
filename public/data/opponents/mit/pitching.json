@@ -1,37 +1,9 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-03-29T02:11:32.481Z",
+  "scrapedAt": "2026-03-30T02:14:14.138Z",
   "year": 2026,
   "pitchingStats": [
-    {
-      "name": "Blackett, Sarah",
-      "w": 6,
-      "l": 0,
-      "era": 1.78,
-      "app": 7,
-      "gs": 6,
-      "cg": 4,
-      "sho": 4,
-      "sv": 0,
-      "ip": 39.1,
-      "h": 34,
-      "r": 14,
-      "er": 10,
-      "bb": 16,
-      "so": 38,
-      "hr": 2,
-      "whip": 1.27,
-      "doubles": 7,
-      "triples": 1,
-      "ab": 150,
-      "bAvg": 0.227,
-      "wp": 4,
-      "hbp": 2,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
     {
       "name": "Huang, Sharona",
       "w": 2,
@@ -61,27 +33,55 @@
       "sha": 1
     },
     {
+      "name": "Blackett, Sarah",
+      "w": 6,
+      "l": 1,
+      "era": 2.38,
+      "app": 8,
+      "gs": 7,
+      "cg": 4,
+      "sho": 4,
+      "sv": 0,
+      "ip": 47,
+      "h": 41,
+      "r": 21,
+      "er": 16,
+      "bb": 23,
+      "so": 53,
+      "hr": 2,
+      "whip": 1.36,
+      "doubles": 8,
+      "triples": 1,
+      "ab": 177,
+      "bAvg": 0.232,
+      "wp": 4,
+      "hbp": 5,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
+    },
+    {
       "name": "Watson, Emily",
-      "w": 3,
+      "w": 4,
       "l": 0,
-      "era": 5.41,
-      "app": 6,
-      "gs": 3,
-      "cg": 1,
+      "era": 4.3,
+      "app": 8,
+      "gs": 4,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 22,
-      "h": 31,
-      "r": 18,
-      "er": 17,
-      "bb": 14,
-      "so": 7,
+      "ip": 29.1,
+      "h": 33,
+      "r": 19,
+      "er": 18,
+      "bb": 15,
+      "so": 10,
       "hr": 1,
-      "whip": 2.05,
-      "doubles": 6,
+      "whip": 1.64,
+      "doubles": 7,
       "triples": 0,
-      "ab": 89,
-      "bAvg": 0.348,
+      "ab": 113,
+      "bAvg": 0.292,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -1508,6 +1508,218 @@
           "hbp": 0,
           "ab": 26,
           "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/emerson-college/boxscore/12759",
+      "date": "3/29/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Blackett, Sarah",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale walked (3-1 BBKBB).",
+            "Valentina Luciano struck out swinging (1-2 BKSS).",
+            "Riley Caiazza popped up to 2b (0-1 S).",
+            "Avi Kuperman struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kari Sorensen singled to right field (0-0).",
+            "/  for Kayla Nuehlen.",
+            "Kayla Nuehlen pinch ran for Kari Sorensen.",
+            "Casey Yacovelli struck out looking (3-2 SBSBBFK).",
+            "Cal Sheehan singled to left field (1-0 B); Kayla Nuehlen advanced to second.",
+            "Kari Sorensen to dp.",
+            "Riley Fasteau struck out swinging (2-2 BBSSS).",
+            "Aislinn McCoy walked (3-2 SBSBBB); Cal Sheehan advanced to second; Kayla Nuehlen advanced to third.",
+            "Malena Cardinale hit by pitch, RBI (3-0 BBH); Aislinn McCoy advanced to second; Cal Sheehan advanced to third; Kayla Nuehlen scored.",
+            "Valentina Luciano walked, RBI (3-2 BBBKFB); Malena Cardinale advanced to second; Aislinn McCoy advanced to third; Cal Sheehan scored.",
+            "Riley Caiazza hit by pitch, RBI (2-1 KBH); Valentina Luciano advanced to second; Malena Cardinale advanced to third; Aislinn McCoy scored.",
+            "Avi Kuperman struck out swinging (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kayla Nuehlen struck out swinging (0-2 KKS).",
+            "Casey Yacovelli walked (3-1 KBBBB).",
+            "Cal Sheehan struck out looking (2-2 KSBBK).",
+            "Riley Fasteau struck out looking (3-2 KSBBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Aislinn McCoy singled, bunt (0-1 S).",
+            "Malena Cardinale struck out swinging (2-2 KBBFS).",
+            "Aislinn McCoy out at second c to 2b, caught stealing.",
+            "Valentina Luciano struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Caiazza struck out swinging (1-2 KBFFS).",
+            "Avi Kuperman grounded out to 3b (2-2 KKBBF).",
+            "Kayla Nuehlen struck out looking (1-2 KSBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Casey Yacovelli struck out looking (3-2 BBSSBK).",
+            "Cal Sheehan grounded out to 2b (1-2 KBK).",
+            "Riley Fasteau hit by pitch (3-1 BBKH).",
+            "Riley Fasteau picked off, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Mattiace to 1b for Nicole Johnston.",
+            "Aislinn McCoy struck out swinging (0-2 KFS).",
+            "Malena Cardinale singled to right field (1-2 SBS).",
+            "Valentina Luciano struck out swinging (1-2 FBKS).",
+            "Riley Caiazza popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Avi Kuperman Riley Caiazza placed on second (0-0).",
+            "Avi Kuperman doubled to center field, RBI (3-2 KBFBB); Riley Caiazza scored.",
+            "Kayla Nuehlen to c for Kari Sorensen.",
+            "Kari Sorensen to dp for Kayla Nuehlen.",
+            "Kari Sorensen singled to left field, RBI (1-0 B); Avi Kuperman scored.",
+            "Tessa Burroso pinch ran for Kayla Nuehlen.",
+            "Casey Yacovelli out at first 3b to 2b, SAC, bunt (0-0); Kari Sorensen advanced to second.",
+            "Cal Sheehan grounded out to 2b (2-2 FBBF); Kari Sorensen advanced to third.",
+            "Riley Fasteau singled to center field, RBI (1-1 BF); Kari Sorensen scored.",
+            "Aislinn McCoy walked (3-0 BBBB); Riley Fasteau advanced to second.",
+            "Malena Cardinale walked (3-2 KBFBFBFFB); Aislinn McCoy advanced to second; Riley Fasteau advanced to third.",
+            "Valentina Luciano walked, RBI (3-1 FBBBB); Malena Cardinale advanced to second; Aislinn McCoy advanced to third; Riley Fasteau scored.",
+            "Emily Watson to p for Sarah Blackett.",
+            "Riley Caiazza grounded out to p (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blackett, Sarah",
+          "ip": 7.2,
+          "h": 7,
+          "r": 7,
+          "er": 6,
+          "bb": 7,
+          "so": 15,
+          "hbp": 3,
+          "ab": 27,
+          "bf": 38
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 0.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/emerson-college/boxscore/12760",
+      "date": "3/29/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale grounded out to 2b (1-1 BK).",
+            "Valentina Luciano grounded out to ss (1-1 KB).",
+            "Riley Caiazza grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avi Kuperman flied out to cf (2-1 BBF).",
+            "Kari Sorensen grounded out to 3b (0-0).",
+            "Casey Yacovelli struck out swinging (0-2 SFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riley Fasteau flied out to rf (3-1 BBBK).",
+            "Kate Regan struck out swinging (0-2 KSS).",
+            "Aislinn McCoy grounded out to ss (2-2 FBFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Malena Cardinale grounded out 1b to 2b to 1b (1-1 BK).",
+            "Valentina Luciano walked (3-1 BKBBB).",
+            "Riley Caiazza reached first on an error by 2b (0-0); Valentina Luciano advanced to second.",
+            "Avi Kuperman doubled to center field, RBI (0-0); Riley Caiazza advanced to third; Valentina Luciano scored.",
+            "Kari Sorensen grounded into double play 3b to 1b (2-1 BBF); Riley Caiazza out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Casey Yacovelli grounded out to 2b (0-1 S).",
+            "Riley Fasteau grounded out to 3b (0-2 FS).",
+            "Kate Regan grounded out to 3b (0-2 KFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Aislinn McCoy popped up to 2b (0-1 K).",
+            "Malena Cardinale grounded out to 2b (0-1 K).",
+            "Tessa Burroso singled to second base (1-2 KSBF).",
+            "Riley Caiazza grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Avi Kuperman flied out to lf (2-2 KBSFB).",
+            "Kari Sorensen grounded out to 3b (0-0).",
+            "Casey Yacovelli struck out swinging (2-2 SBBFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 7,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 24
         }
       ],
       "year": 2026

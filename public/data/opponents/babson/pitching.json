@@ -1,32 +1,32 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-29T02:11:53.649Z",
+  "scrapedAt": "2026-03-30T02:14:35.881Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Ziccardi, Anna",
-      "w": 2,
+      "w": 3,
       "l": 1,
-      "era": 1.12,
-      "app": 4,
-      "gs": 3,
+      "era": 1.65,
+      "app": 5,
+      "gs": 4,
       "cg": 3,
       "sho": 1,
       "sv": 0,
-      "ip": 25,
-      "h": 20,
-      "r": 8,
-      "er": 4,
+      "ip": 29.2,
+      "h": 30,
+      "r": 12,
+      "er": 7,
       "bb": 11,
-      "so": 18,
+      "so": 20,
       "hr": 1,
-      "whip": 1.24,
-      "doubles": 5,
+      "whip": 1.38,
+      "doubles": 8,
       "triples": 0,
-      "ab": 92,
-      "bAvg": 0.217,
-      "wp": 0,
+      "ab": 116,
+      "bAvg": 0.259,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
@@ -36,24 +36,24 @@
       "name": "Sealey, Lexi",
       "w": 2,
       "l": 0,
-      "era": 3.96,
-      "app": 6,
+      "era": 3.5,
+      "app": 7,
       "gs": 1,
       "cg": 1,
       "sho": 1,
-      "sv": 1,
-      "ip": 17.2,
-      "h": 25,
+      "sv": 2,
+      "ip": 20,
+      "h": 27,
       "r": 12,
       "er": 10,
       "bb": 6,
-      "so": 6,
+      "so": 8,
       "hr": 0,
-      "whip": 1.75,
+      "whip": 1.65,
       "doubles": 0,
       "triples": 1,
-      "ab": 75,
-      "bAvg": 0.333,
+      "ab": 85,
+      "bAvg": 0.318,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
@@ -91,27 +91,27 @@
     {
       "name": "Vlacich, Katie",
       "w": 0,
-      "l": 3,
-      "era": 8,
-      "app": 5,
-      "gs": 3,
-      "cg": 1,
+      "l": 4,
+      "era": 6.2,
+      "app": 6,
+      "gs": 4,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 14,
-      "h": 23,
-      "r": 18,
-      "er": 16,
-      "bb": 9,
-      "so": 13,
+      "ip": 20.1,
+      "h": 29,
+      "r": 21,
+      "er": 18,
+      "bb": 10,
+      "so": 16,
       "hr": 1,
-      "whip": 2.29,
-      "doubles": 4,
+      "whip": 1.92,
+      "doubles": 5,
       "triples": 0,
-      "ab": 66,
-      "bAvg": 0.348,
-      "wp": 5,
-      "hbp": 0,
+      "ab": 94,
+      "bAvg": 0.309,
+      "wp": 6,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -1536,6 +1536,215 @@
           "hbp": 0,
           "ab": 24,
           "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/smith/boxscore/16051",
+      "date": "3/29/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Ziccardi, Anna",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson doubled to right field (1-0 B).",
+            "Sophie Hasegawa out at first c to 2b (2-1 BFB); Ally Knutson advanced to third.",
+            "Violet Peverly flied out to lf (1-2 KFB).",
+            "Riley Veenstra grounded out to 1b unassisted (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray doubled to left field (0-0).",
+            "Taz Tamai singled to right field (1-0 B); Bailey Gray advanced to third.",
+            "Gabbie Chinnis singled to left field, advanced to second on a throwing error by lf, RBI (1-2 KFB); Taz Tamai advanced to third; Bailey Gray scored, unearned.",
+            "Elinor Washington flied out to cf (2-2 KKBB).",
+            "Lily Hackett struck out swinging (2-2 BKBSS).",
+            "Ally Knutson flied out to cf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maddy DeLong to ss for Alexa Young.",
+            "Sophie Hasegawa flied out to cf (1-1 KB).",
+            "Violet Peverly singled to left field (2-1 KBB).",
+            "Riley Veenstra popped up to ss (1-0 B).",
+            "Bailey Gray grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai singled to right field (2-0 BB).",
+            "Gabbie Chinnis flied out to lf (3-2 BBBKK).",
+            "Elinor Washington struck out swinging (3-2 BBBKFS).",
+            "Lily Hackett popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ally Knutson doubled to center field (1-0 B).",
+            "Sophie Hasegawa grounded out to 1b unassisted (2-2 BKBKF); Ally Knutson advanced to third.",
+            "Violet Peverly singled up the middle, RBI (3-2 KBBFBF); Ally Knutson scored.",
+            "Riley Veenstra flied out to lf (0-0).",
+            "Bailey Gray singled to second base (1-0 B); Violet Peverly advanced to second.",
+            "Bailey Gray advanced to second on a wild pitch; Violet Peverly advanced to third.",
+            "Taz Tamai singled to right field, 2 RBI (0-0); Bailey Gray scored; Violet Peverly scored.",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Anna Ziccardi.",
+            "Gabbie Chinnis singled to second base (1-2 FFB); Taz Tamai advanced to second.",
+            "Elinor Washington reached first on a fielding error by 3b (2-1 BFB); Gabbie Chinnis advanced to second; Taz Tamai advanced to third.",
+            "Lily Hackett struck out swinging (2-2 BFBKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ally Knutson lined out to 3b (0-0).",
+            "Sophie Hasegawa grounded out to p (2-1 KBB).",
+            "Violet Peverly struck out looking (0-2 KFK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley Veenstra singled to center field (0-0).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray reached on a fielder's choice (0-0); Anna Gray out at second 2b unassisted.",
+            "Taz Tamai grounded out to 2b (2-2 SSBB); Bailey Gray advanced to second.",
+            "Gabbie Chinnis fouled out to lf (1-2 KBFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 4.2,
+          "h": 10,
+          "r": 4,
+          "er": 3,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 24
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 2.1,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/smith/boxscore/16052",
+      "date": "3/29/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson grounded out to ss (1-1 BF).",
+            "Sophie Hasegawa grounded out to 3b (1-1 BK).",
+            "Violet Peverly grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Veenstra lined out to 2b (2-2 KKBFB).",
+            "Bailey Gray grounded out to ss (0-1 K).",
+            "Taz Tamai lined out to ss (2-2 KKBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gabbie Chinnis out at first c to 2b (2-0 BB).",
+            "Elinor Washington singled to center field (0-0).",
+            "Lucy Allen flied out to rf (0-2 KK).",
+            "Ally Knutson singled up the middle (0-0); Elinor Washington advanced to second.",
+            "Sophie Hasegawa singled, advanced to second on the throw, RBI (1-1 FB); Ally Knutson advanced to third; Elinor Washington scored.",
+            "Violet Peverly struck out swinging (2-2 KKBFFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Veenstra doubled to center field (0-0).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Anna Gray advanced to third on a wild pitch.",
+            "Bailey Gray grounded out to p (1-2 KFFFB).",
+            "Taz Tamai grounded out to ss (2-2 BSBS).",
+            "Gabbie Chinnis walked (3-0 BBBB).",
+            "Gabbie Chinnis stole second.",
+            "Elinor Washington struck out swinging (1-2 BKSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lucy Allen struck out swinging (2-2 BSKBS).",
+            "Ally Knutson singled to left field (3-2 BKBFB).",
+            "Sophie Hasegawa grounded out to 2b (1-2 KKBF); Ally Knutson advanced to second.",
+            "Ally Knutson advanced to third on a passed ball.",
+            "Violet Peverly singled to right field, RBI (2-2 FFBBF); Ally Knutson scored.",
+            "Violet Peverly stole second.",
+            "Riley Veenstra flied out to cf (3-2 BFBFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexa Young to 3b for Anna Ziccardi.",
+            "Bailey Gray flied out to cf (1-1 KB).",
+            "Taz Tamai hit by pitch (1-0 H).",
+            "Gabbie Chinnis reached on a fielder's choice (1-2 KKB); Taz Tamai out at second 3b to 2b.",
+            "Gabbie Chinnis stole second.",
+            "Elinor Washington popped up to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lucy Allen reached first on a fielding error by 3b (2-1 BSB).",
+            "Ally Knutson reached first on a fielding error by ss (0-0); Lucy Allen advanced to second.",
+            "Sophie Hasegawa grounded out to c (0-0); Ally Knutson advanced to second; Lucy Allen advanced to third.",
+            "Violet Peverly reached first on a fielding error by 2b, RBI (1-2 FBF); Ally Knutson advanced to third; Lucy Allen scored, unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 6.1,
+          "h": 6,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 3,
+          "hbp": 1,
+          "ab": 28,
+          "bf": 30
         }
       ],
       "year": 2026

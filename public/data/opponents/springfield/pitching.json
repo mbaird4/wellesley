@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-03-29T02:11:18.562Z",
+  "scrapedAt": "2026-03-30T02:13:56.828Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 5,
+      "w": 6,
       "l": 2,
-      "era": 2.86,
-      "app": 7,
+      "era": 2.57,
+      "app": 8,
       "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 44,
-      "h": 48,
+      "ip": 49,
+      "h": 50,
       "r": 23,
       "er": 18,
       "bb": 12,
-      "so": 24,
+      "so": 32,
       "hr": 2,
-      "whip": 1.36,
+      "whip": 1.27,
       "doubles": 9,
       "triples": 1,
-      "ab": 172,
-      "bAvg": 0.279,
+      "ab": 190,
+      "bAvg": 0.263,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
@@ -34,30 +34,30 @@
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 7,
-      "app": 10,
-      "gs": 9,
-      "cg": 4,
+      "era": 5.97,
+      "app": 12,
+      "gs": 11,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 27,
-      "h": 42,
-      "r": 36,
-      "er": 27,
-      "bb": 13,
-      "so": 15,
+      "ip": 34,
+      "h": 49,
+      "r": 38,
+      "er": 29,
+      "bb": 14,
+      "so": 18,
       "hr": 0,
-      "whip": 2.04,
+      "whip": 1.85,
       "doubles": 7,
       "triples": 4,
-      "ab": 126,
-      "bAvg": 0.333,
+      "ab": 153,
+      "bAvg": 0.32,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 1
     }
   ],
@@ -1196,6 +1196,185 @@
           "hbp": 1,
           "ab": 28,
           "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/salve-regina/boxscore/14829",
+      "date": "3/29/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa to p.",
+            "Julia Rimshnick to dp.",
+            "Lillian Bridges reached first on an error by 3b (0-2 FK).",
+            "Taylor Ferraiolo struck out swinging (1-2 BKFFS).",
+            "Emma Plourde struck out swinging (0-2 SSS).",
+            "Lillian Bridges stole second.",
+            "Emily Cronin grounded out to p (0-1 S)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madeleine Oswald struck out looking (2-2 BKBFK).",
+            "Gracie Keyes struck out looking (0-2 SSK).",
+            "Abby Merck struck out looking (2-2 BBSFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skyla Oliveira grounded out to p (2-2 KKFBB).",
+            "Skylar Wicklund fouled out to ss (1-0 B).",
+            "Lillian Bridges singled down the lf line (0-1 F).",
+            "Taylor Ferraiolo grounded out to ss (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Pecchia to c for Maddie Tse.",
+            "Emma Plourde singled to right field (0-0).",
+            "Emily Cronin struck out swinging (0-2 KSS).",
+            "Madeleine Oswald struck out swinging (1-2 KBFS); Emma Plourde stole second.",
+            "Cami O'Rourke to dp for Gracie Keyes.",
+            "Cami O'Rourke struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kate Katsetos to 1b for Tessa Spingola.",
+            "Sammy Swords to lf for Madison King.",
+            "Victoria Geisser pinch hit for Skyla Oliveira.",
+            "Abby Merck grounded out to ss (1-1 KB).",
+            "Victoria Geisser flied out to cf (0-1 K).",
+            "Skylar Wicklund grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 5,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 8,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 18
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/salve-regina/boxscore/14830",
+      "date": "3/29/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges singled to third base, bunt (0-0).",
+            "Skylar Wicklund grounded out to 3b (1-0 B); Lillian Bridges advanced to second.",
+            "Emma Plourde grounded out to 1b unassisted (0-2 KS); Lillian Bridges advanced to third.",
+            "Emily Cronin grounded out to 3b (1-2 KFBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madeleine Oswald flied out to rf (3-2 KFBBFFB).",
+            "Gracie Keyes flied out to lf (1-1 KB).",
+            "Abby Merck grounded out to p (3-1 BBSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Victoria Geisser grounded out to 3b (0-0).",
+            "Cami O'Rourke singled to right center (1-1 BS).",
+            "Lillian Bridges singled down the lf line (1-1 BF); Cami O'Rourke advanced to second.",
+            "Skylar Wicklund singled down the lf line, advanced to second, RBI (3-2 BBFFB); Lillian Bridges advanced to third; Cami O'Rourke scored.",
+            "Emma Plourde flied out to lf, SAC, RBI (0-1 S); Skylar Wicklund advanced to third; Lillian Bridges scored.",
+            "Emily Cronin walked (3-2 BBSFBFB).",
+            "Madeleine Oswald grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gracie Keyes grounded out to 3b (1-2 KSB).",
+            "Abby Merck singled to center field (0-0).",
+            "Victoria Geisser singled to left field (0-0); Abby Merck advanced to second.",
+            "Cami O'Rourke infield fly to ss (3-2 BSBBF).",
+            "Lillian Bridges grounded out to 3b, bunt (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Skylar Wicklund grounded out to p (0-1 K).",
+            "Emma Plourde grounded out to ss (3-2 SBBBF).",
+            "Emily Cronin singled up the middle (1-0 B).",
+            "Madeleine Oswald struck out swinging (1-2 BKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gracie Keyes popped up to 1b (1-2 SSB).",
+            "Abby Merck lined out to 2b (0-1 S).",
+            "Victoria Geisser struck out swinging (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Aurora Levesque to c for Addy Bohlander.",
+            "Cami O'Rourke struck out swinging (1-2 BKF).",
+            "Lillian Bridges grounded out to 3b (0-2 KF).",
+            "Skylar Wicklund grounded out to 3b (2-0 BB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 7,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 29
         }
       ],
       "year": 2026
