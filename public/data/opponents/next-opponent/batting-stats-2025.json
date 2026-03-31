@@ -1,7 +1,7 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-03-31T17:45:43.633Z",
+  "scrapedAt": "2026-03-31T23:23:32.578Z",
   "year": 2025,
   "teamGames": 39,
   "players": [
@@ -146,41 +146,6 @@
       }
     },
     {
-      "name": "Mary Doud",
-      "jerseyNumber": 8,
-      "classYear": "Sophomore",
-      "position": "OF",
-      "bats": null,
-      "season": {
-        "year": 2025,
-        "name": "Doud, Mary",
-        "avg": 0.208,
-        "ops": 0.595,
-        "gp": 26,
-        "gs": 11,
-        "ab": 24,
-        "r": 6,
-        "h": 5,
-        "doubles": 1,
-        "triples": 0,
-        "hr": 0,
-        "rbi": 3,
-        "tb": 6,
-        "slg": 0.25,
-        "bb": 5,
-        "hbp": 0,
-        "so": 10,
-        "gdp": 0,
-        "obp": 0.345,
-        "sf": 0,
-        "sh": 1,
-        "sb": 3,
-        "sbAtt": 4,
-        "woba": 0.243,
-        "pa": 30
-      }
-    },
-    {
       "name": "Dylan Yamamura",
       "jerseyNumber": 26,
       "classYear": "Sophomore",
@@ -213,6 +178,41 @@
         "sbAtt": 0,
         "woba": 0.242,
         "pa": 31
+      }
+    },
+    {
+      "name": "Mary Doud",
+      "jerseyNumber": 8,
+      "classYear": "Sophomore",
+      "position": "OF",
+      "bats": null,
+      "season": {
+        "year": 2025,
+        "name": "Doud, Mary",
+        "avg": 0.208,
+        "ops": 0.595,
+        "gp": 26,
+        "gs": 11,
+        "ab": 24,
+        "r": 6,
+        "h": 5,
+        "doubles": 1,
+        "triples": 0,
+        "hr": 0,
+        "rbi": 3,
+        "tb": 6,
+        "slg": 0.25,
+        "bb": 5,
+        "hbp": 0,
+        "so": 10,
+        "gdp": 0,
+        "obp": 0.345,
+        "sf": 0,
+        "sh": 1,
+        "sb": 3,
+        "sbAtt": 4,
+        "woba": 0.243,
+        "pa": 30
       }
     },
     {

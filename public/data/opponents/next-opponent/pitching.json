@@ -1,7 +1,7 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-03-31T17:45:48.556Z",
+  "scrapedAt": "2026-03-31T23:23:37.602Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,31 +34,31 @@
     },
     {
       "name": "Jennings, Madeline",
-      "w": 4,
+      "w": 5,
       "l": 3,
-      "era": 4.2,
-      "app": 11,
-      "gs": 9,
-      "cg": 2,
+      "era": 3.72,
+      "app": 12,
+      "gs": 10,
+      "cg": 3,
       "sho": 1,
       "sv": 0,
-      "ip": 40,
-      "h": 65,
-      "r": 37,
-      "er": 24,
+      "ip": 47,
+      "h": 72,
+      "r": 38,
+      "er": 25,
       "bb": 9,
-      "so": 26,
+      "so": 28,
       "hr": 2,
-      "whip": 1.85,
-      "doubles": 2,
+      "whip": 1.72,
+      "doubles": 4,
       "triples": 2,
-      "ab": 186,
-      "bAvg": 0.349,
+      "ab": 213,
+      "bAvg": 0.338,
       "wp": 5,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 4
+      "sha": 5
     },
     {
       "name": "Kannan, Ragini",
@@ -2720,6 +2720,96 @@
           "hbp": 0,
           "ab": 22,
           "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/umass-dartmouth/boxscore/14909",
+      "date": "3/31/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Jennings, Madeline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Raelynn Perregaux grounded out to 2b (1-2 FBF).",
+            "Olivia Silva grounded out to 2b (2-1 BBK).",
+            "Lily Routhier fouled out to 3b (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lena Tsonis singled to right field (2-1 BKB).",
+            "Bre Fontes grounded out to 1b unassisted (1-2 FBF); Lena Tsonis advanced to second.",
+            "Sydney Menz grounded out to ss (0-0); Lena Tsonis advanced to third.",
+            "Edy Crawford grounded out to 2b (3-2 BBSKBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Ali grounded out to 3b (1-0 B).",
+            "Chloe Edwards lined out to 2b (0-1 F).",
+            "Raelynn Perregaux doubled down the lf line (0-0).",
+            "Olivia Silva grounded out to 2b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lily Routhier singled to third base (1-1 FB).",
+            "Lena Tsonis out at first 1b to 2b, SAC, bunt (0-1 F); Lily Routhier advanced to second.",
+            "Bre Fontes doubled down the rf line, RBI (2-2 FBBF); Lily Routhier scored.",
+            "Sydney Menz singled to shortstop (1-2 KBSF); Bre Fontes did not advance.",
+            "Edy Crawford struck out swinging (2-2 SKBBS).",
+            "Olivia Ali struck out looking (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexa Johnson to rf.",
+            "Chloe Edwards singled up the middle (2-0 BB).",
+            "Raelynn Perregaux reached first on a fielding error by rf (0-0); Chloe Edwards advanced to second.",
+            "Olivia Silva grounded into double play 3b to 1b (0-0); Raelynn Perregaux advanced to second; Chloe Edwards out on the play.",
+            "Lily Routhier grounded out to ss (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lena Tsonis grounded out to 3b (1-1 KB).",
+            "Bre Fontes lined out to ss (0-0).",
+            "Sydney Menz popped up to p (1-2 BFKF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Cae Pellegrini to 1b for Brooke Boehmer.",
+            "Edy Crawford lined out to 2b (2-2 BSFB).",
+            "Olivia Ali singled to left field (0-1 K).",
+            "Chloe Edwards lined out to cf (0-0).",
+            "Raelynn Perregaux grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 28
         }
       ],
       "year": 2026
