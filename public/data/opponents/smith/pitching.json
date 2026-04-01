@@ -1,33 +1,33 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-03-31T02:09:37.709Z",
+  "scrapedAt": "2026-04-01T02:26:29.180Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
       "w": 4,
-      "l": 3,
-      "era": 3.5,
-      "app": 8,
-      "gs": 7,
-      "cg": 5,
+      "l": 4,
+      "era": 4.1,
+      "app": 9,
+      "gs": 8,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 36,
-      "h": 40,
-      "r": 24,
-      "er": 18,
-      "bb": 23,
-      "so": 44,
+      "ip": 41,
+      "h": 46,
+      "r": 30,
+      "er": 24,
+      "bb": 24,
+      "so": 46,
       "hr": 1,
-      "whip": 1.75,
+      "whip": 1.71,
       "doubles": 4,
-      "triples": 2,
-      "ab": 146,
-      "bAvg": 0.274,
-      "wp": 2,
-      "hbp": 2,
+      "triples": 3,
+      "ab": 167,
+      "bAvg": 0.275,
+      "wp": 4,
+      "hbp": 4,
       "bk": 0,
       "sfa": 1,
       "sha": 2
@@ -36,26 +36,26 @@
       "name": "Gray, Bailey",
       "w": 3,
       "l": 1,
-      "era": 4.1,
-      "app": 6,
+      "era": 4.91,
+      "app": 7,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 27.1,
-      "h": 27,
-      "r": 21,
-      "er": 16,
-      "bb": 8,
-      "so": 19,
+      "ip": 31.1,
+      "h": 34,
+      "r": 27,
+      "er": 22,
+      "bb": 9,
+      "so": 23,
       "hr": 2,
-      "whip": 1.28,
-      "doubles": 6,
+      "whip": 1.37,
+      "doubles": 9,
       "triples": 0,
-      "ab": 113,
-      "bAvg": 0.239,
+      "ab": 132,
+      "bAvg": 0.258,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 1,
       "sha": 0
@@ -64,26 +64,26 @@
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 5.68,
-      "app": 3,
+      "era": 6.15,
+      "app": 4,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 12.1,
-      "h": 14,
-      "r": 10,
-      "er": 10,
-      "bb": 9,
-      "so": 5,
+      "ip": 13.2,
+      "h": 19,
+      "r": 12,
+      "er": 12,
+      "bb": 10,
+      "so": 6,
       "hr": 1,
-      "whip": 1.86,
+      "whip": 2.12,
       "doubles": 5,
       "triples": 0,
-      "ab": 53,
-      "bAvg": 0.264,
+      "ab": 62,
+      "bAvg": 0.306,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -91,25 +91,25 @@
     {
       "name": "Robinson, Alana",
       "w": 0,
-      "l": 2,
-      "era": 15.47,
-      "app": 3,
-      "gs": 3,
+      "l": 3,
+      "era": 19,
+      "app": 4,
+      "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 6.1,
-      "h": 13,
-      "r": 17,
-      "er": 14,
-      "bb": 12,
+      "ip": 7,
+      "h": 18,
+      "r": 23,
+      "er": 19,
+      "bb": 15,
       "so": 4,
       "hr": 0,
-      "whip": 3.95,
-      "doubles": 4,
+      "whip": 4.71,
+      "doubles": 6,
       "triples": 0,
-      "ab": 32,
-      "bAvg": 0.406,
+      "ab": 40,
+      "bAvg": 0.45,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
@@ -1434,6 +1434,217 @@
           "hbp": 1,
           "ab": 28,
           "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/westfield-state-university/boxscore/9663",
+      "date": "3/31/2026",
+      "opponent": "Westfield State University",
+      "pitchers": [
+        "Robinson, Alana",
+        "Gray, Bailey",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Rylie Camacho singled to right field (0-1 K).",
+            "Sarah Hough doubled to right center, RBI (0-0); Rylie Camacho scored.",
+            "Hannah Wodecki reached first on an error by 3b (0-0).",
+            "Mia Alfonso singled to left field (0-0); Hannah Wodecki advanced to second; Sarah Hough advanced to third.",
+            "Kassidy LaTour doubled to left center, 2 RBI (0-0); Mia Alfonso advanced to third; Hannah Wodecki scored, unearned; Sarah Hough scored.",
+            "Allyssa Slack grounded out to 3b (0-0).",
+            "Caroline O'Donnell walked (3-0 BBBB).",
+            "Reagan Salvatore reached on a fielder's choice (0-0); Caroline O'Donnell advanced to second; Kassidy LaTour advanced to third; Mia Alfonso out at home 3b to c.",
+            "Hannah Reilly singled to left field, RBI (3-2 BBKBF); Reagan Salvatore advanced to second; Caroline O'Donnell advanced to third; Kassidy LaTour scored.",
+            "Rylie Camacho walked, RBI (3-0 BBBB); Hannah Reilly advanced to second; Reagan Salvatore advanced to third; Caroline O'Donnell scored.",
+            "Sarah Hough walked, RBI (3-2 KBBFBB); Rylie Camacho advanced to second; Hannah Reilly advanced to third; Reagan Salvatore scored.",
+            "Gabbie Chinnis to lf.",
+            "Alana Robinson to 3b.",
+            "Bailey Gray to p.",
+            "Hannah Wodecki fouled out to lf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mia Alfonso struck out looking (1-2 BFFK).",
+            "Kassidy LaTour flied out to 2b (1-0 B).",
+            "Allyssa Slack flied out to p (1-2 FSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caroline O'Donnell walked (3-0 BBBB).",
+            "Reagan Salvatore lined out to lf (2-2 FKBB).",
+            "Hannah Reilly flied out to lf (0-0).",
+            "Rylie Camacho struck out swinging (2-2 FBKBFFFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Malaya Sumii to 3b for Alana Robinson.",
+            "Sarah Hough doubled to left field (0-0).",
+            "Hannah Wodecki hit by pitch (2-0 BH).",
+            "Mia Alfonso flied out to rf (1-0 B); Hannah Wodecki advanced to second; Sarah Hough advanced to third.",
+            "Kassidy LaTour singled to center field, RBI (1-2 KBS); Hannah Wodecki advanced to third; Sarah Hough scored.",
+            "Kassidy LaTour stole second.",
+            "Allyssa Slack struck out swinging (0-2 KSS).",
+            "Caroline O'Donnell struck out swinging (1-2 KSFFFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Reagan Salvatore flied out to cf (3-2 SFBFBBF).",
+            "Hannah Reilly doubled to left field (0-0).",
+            "Rylie Camacho singled to center field, advanced to second on the throw, RBI (1-1 BK); Hannah Reilly scored.",
+            "Sarah Hough flied out to 2b (0-0).",
+            "Hannah Wodecki singled to left field, advanced to third on the throw, RBI (3-2 BBSBS); Rylie Camacho scored.",
+            "Mia Alfonso singled to left field, RBI (2-2 BKKFB); Hannah Wodecki scored.",
+            "Kassidy LaTour doubled to right center, RBI (1-2 FSB); Mia Alfonso scored.",
+            "Lindsay Bennett to p for Bailey Gray.",
+            "Allyssa Slack singled to left center, RBI (3-1 BBBS); Kassidy LaTour scored.",
+            "Caroline O'Donnell singled down the lf line (0-1 K); Allyssa Slack advanced to second.",
+            "Reagan Salvatore hit by pitch (1-0 H); Caroline O'Donnell advanced to second; Allyssa Slack advanced to third.",
+            "Hannah Reilly grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gabbie Chinnis to dp.",
+            "Anna Gray to lf for Riley Veenstra.",
+            "Rylie Camacho singled to center field (0-0).",
+            "Sarah Hough grounded out to 3b (0-0); Rylie Camacho advanced to second.",
+            "Hannah Wodecki singled to shortstop (1-0 B); Rylie Camacho advanced to third.",
+            "Mia Alfonso fouled out to 1b (0-0).",
+            "Hannah Wodecki stole second.",
+            "Kassidy LaTour walked (3-0 BBBB).",
+            "Allyssa Slack singled to center field, 2 RBI (0-0); Kassidy LaTour advanced to second; Hannah Wodecki scored; Rylie Camacho scored.",
+            "Caroline O'Donnell struck out swinging (1-2 KBFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Robinson, Alana",
+          "ip": 0.2,
+          "h": 5,
+          "r": 6,
+          "er": 5,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 11
+        },
+        {
+          "name": "Gray, Bailey",
+          "ip": 4,
+          "h": 7,
+          "r": 6,
+          "er": 6,
+          "bb": 1,
+          "so": 4,
+          "hbp": 1,
+          "ab": 19,
+          "bf": 21
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 1.1,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 1,
+          "hbp": 1,
+          "ab": 9,
+          "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/westfield-state-university/boxscore/9664",
+      "date": "3/31/2026",
+      "opponent": "Westfield State University",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Rylie Camacho tripled to right field (2-2 BSBSF).",
+            "Sarah Hough flied out to 2b (0-1 F).",
+            "Hannah Wodecki flied out to p (1-1 KB).",
+            "Mia Alfonso fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kassidy LaTour flied out to rf (3-2 BBKBS).",
+            "Allyssa Slack grounded out to 2b (0-0).",
+            "Caroline O'Donnell lined out to cf (3-2 BBFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gianna Strange hit by pitch (1-1 FH).",
+            "Caelyn (CC) Thayer Caelyn (CC) Thayer grounded out to ss (2-2 KKBB); Gianna Strange advanced to second.",
+            "Gianna Strange advanced to third on a wild pitch.",
+            "Rylie Camacho struck out looking (1-2 FFFBK).",
+            "Sarah Hough singled to center field, RBI (1-1 SB); Gianna Strange scored.",
+            "Hannah Wodecki fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mia Alfonso hit by pitch (3-2 BFBKH).",
+            "Eva Surette pinch ran for Mia Alfonso.",
+            "Kassidy LaTour singled to center field (0-0); Eva Surette advanced to second.",
+            "Allyssa Slack struck out swinging (1-2 BFSS).",
+            "Caroline O'Donnell fouled out to c (0-1 S).",
+            "Gianna Strange walked (3-2 SSBBFBB); Kassidy LaTour advanced to second; Eva Surette advanced to third.",
+            "Caelyn (CC) Thayer Caelyn (CC) Thayer singled to right field, 2 RBI (0-2 FK); Gianna Strange advanced to third; Kassidy LaTour scored; Eva Surette scored.",
+            "Rylie Camacho singled to center field, advanced to second on the throw, RBI (1-2 KBF); Caelyn (CC) Thayer Caelyn (CC) Thayer advanced to third; Gianna Strange scored.",
+            "Rylie Camacho advanced to third on a wild pitch; Caelyn (CC) Thayer Caelyn (CC) Thayer scored on a wild pitch.",
+            "Sarah Hough singled to center field, RBI (0-0); Rylie Camacho scored.",
+            "Hannah Wodecki flied out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Veenstra to c for Anna Gray.",
+            "Mia Alfonso flied out to 2b (0-0).",
+            "Kassidy LaTour flied out to rf (0-0).",
+            "Allyssa Slack fouled out to c (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 5,
+          "h": 6,
+          "r": 6,
+          "er": 6,
+          "bb": 1,
+          "so": 2,
+          "hbp": 2,
+          "ab": 21,
+          "bf": 24
         }
       ],
       "year": 2026

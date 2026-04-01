@@ -1,59 +1,59 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-03-31T02:10:02.925Z",
+  "scrapedAt": "2026-04-01T02:26:56.436Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Ziccardi, Anna",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 1.65,
-      "app": 5,
+      "era": 1.46,
+      "app": 6,
       "gs": 4,
       "cg": 3,
       "sho": 1,
       "sv": 0,
-      "ip": 29.2,
-      "h": 30,
+      "ip": 33.2,
+      "h": 34,
       "r": 12,
       "er": 7,
       "bb": 11,
-      "so": 20,
+      "so": 22,
       "hr": 1,
-      "whip": 1.38,
+      "whip": 1.34,
       "doubles": 8,
       "triples": 0,
-      "ab": 116,
-      "bAvg": 0.259,
+      "ab": 132,
+      "bAvg": 0.258,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 3
     },
     {
       "name": "Sealey, Lexi",
       "w": 2,
       "l": 0,
-      "era": 3.5,
-      "app": 7,
+      "era": 3.33,
+      "app": 8,
       "gs": 1,
       "cg": 1,
       "sho": 1,
-      "sv": 2,
-      "ip": 20,
+      "sv": 3,
+      "ip": 21,
       "h": 27,
       "r": 12,
       "er": 10,
       "bb": 6,
       "so": 8,
       "hr": 0,
-      "whip": 1.65,
+      "whip": 1.57,
       "doubles": 0,
       "triples": 1,
-      "ab": 85,
-      "bAvg": 0.318,
+      "ab": 88,
+      "bAvg": 0.307,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
@@ -64,25 +64,25 @@
       "name": "Topel, Anna",
       "w": 2,
       "l": 4,
-      "era": 4.34,
-      "app": 7,
-      "gs": 7,
+      "era": 4.37,
+      "app": 8,
+      "gs": 8,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 30.2,
-      "h": 42,
-      "r": 24,
-      "er": 19,
-      "bb": 22,
-      "so": 20,
+      "ip": 33.2,
+      "h": 45,
+      "r": 26,
+      "er": 21,
+      "bb": 26,
+      "so": 24,
       "hr": 1,
-      "whip": 2.09,
-      "doubles": 6,
+      "whip": 2.11,
+      "doubles": 7,
       "triples": 0,
-      "ab": 131,
-      "bAvg": 0.321,
-      "wp": 1,
+      "ab": 142,
+      "bAvg": 0.317,
+      "wp": 2,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
@@ -90,26 +90,26 @@
     },
     {
       "name": "Vlacich, Katie",
-      "w": 0,
+      "w": 1,
       "l": 4,
-      "era": 6.2,
-      "app": 6,
-      "gs": 4,
+      "era": 4.78,
+      "app": 7,
+      "gs": 5,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 20.1,
-      "h": 29,
+      "ip": 26.1,
+      "h": 32,
       "r": 21,
       "er": 18,
-      "bb": 10,
-      "so": 16,
+      "bb": 12,
+      "so": 22,
       "hr": 1,
-      "whip": 1.92,
-      "doubles": 5,
+      "whip": 1.67,
+      "doubles": 6,
       "triples": 0,
-      "ab": 94,
-      "bAvg": 0.309,
+      "ab": 115,
+      "bAvg": 0.278,
       "wp": 6,
       "hbp": 1,
       "bk": 0,
@@ -1745,6 +1745,224 @@
           "hbp": 1,
           "ab": 28,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/framingham-state/boxscore/16053",
+      "date": "3/31/2026",
+      "opponent": "Framingham State",
+      "pitchers": [
+        "Topel, Anna",
+        "Ziccardi, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ellie Etemad-Gilbertson struck out looking (2-2 BBFFK).",
+            "Isabella MacDonald lined out to cf (3-2 BBKFB).",
+            "Eliza Carignan struck out swinging (2-2 BKKBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ava Gray struck out swinging (2-2 BKBFFS).",
+            "Jocelyn Pepe grounded out to 2b (0-0).",
+            "Amanda Roche walked (3-1 BBSBB).",
+            "Amanda Roche advanced to second on a passed ball.",
+            "Gianna Paolino walked (3-1 BBBKB).",
+            "Mikayla Yuricheck walked (3-0 BBBB); Gianna Paolino advanced to second; Amanda Roche advanced to third.",
+            "Nina Buda struck out swinging (3-2 KBSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ellie Etemad-Gilbertson singled through the right side (3-2 KBKBB).",
+            "Isabella MacDonald walked (3-1 BBBKB); Ellie Etemad-Gilbertson advanced to second.",
+            "Eliza Carignan lined into double play ss to 2b (1-0 B); Ellie Etemad-Gilbertson out on the play.",
+            "Ava Gray doubled to right field, RBI (0-0); Isabella MacDonald scored.",
+            "Ava Gray advanced to third on a wild pitch.",
+            "Jocelyn Pepe singled to center field, RBI (1-1 SB); Ava Gray scored.",
+            "Amanda Roche grounded out to ss (3-2 BFSBFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Anna Ziccardi to p for Anna Topel.",
+            "Gianna Paolino struck out swinging, out at first c to 1b (1-2 KSBS).",
+            "Mikayla Yuricheck singled up the middle (3-2 KBFBFBF).",
+            "Nina Buda out at first 3b to 2b, SAC (0-0); Mikayla Yuricheck advanced to second.",
+            "Ellie Etemad-Gilbertson grounded out to p (0-2 KFFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Isabella MacDonald grounded out to ss (1-0 B).",
+            "Eliza Carignan singled through the left side (2-1 BBK).",
+            "Ava Gray lined out to cf (1-1 FB).",
+            "Jocelyn Pepe reached first on an error by 2b (1-1 KB); Eliza Carignan advanced to second.",
+            "Amanda Roche grounded out to 2b (3-1 BFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Belle Dicampello to c for Izzy Burgess.",
+            "Peyton Farris to rf for Gianna Paolino.",
+            "Peyton Farris struck out looking (3-2 KBBSBFFK).",
+            "Gianna Paolino to 2b for Mikayla Yuricheck.",
+            "Peyton Farris to p.",
+            "Mikayla Yuricheck to rf for Peyton Farris.",
+            "Gianna Paolino grounded out to 1b unassisted (2-2 FKBBF).",
+            "Kate Brodzinski pinch hit for Nina Buda.",
+            "Kate Brodzinski grounded out to 2b (3-1 BKBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ellie Etemad-Gilbertson grounded out to ss (1-2 KFB).",
+            "Isabella MacDonald singled to right center (1-2 FBKF).",
+            "Eliza Carignan singled through the left side (2-1 BBK); Isabella MacDonald advanced to second.",
+            "Ava Gray lined out to rf (0-1 S).",
+            "Jocelyn Pepe grounded out to ss (1-1 KB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 3,
+          "h": 3,
+          "r": 2,
+          "er": 2,
+          "bb": 4,
+          "so": 4,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 15
+        },
+        {
+          "name": "Ziccardi, Anna",
+          "ip": 4,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/framingham-state/boxscore/16054",
+      "date": "3/31/2026",
+      "opponent": "Framingham State",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ellie Etemad-Gilbertson struck out swinging (2-2 KFFFBFFFBS).",
+            "Isabella MacDonald struck out looking (2-2 KKFFBBFFFFK).",
+            "Eliza Carignan lined out to cf (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ava Gray flied out to lf (3-2 BKFBB).",
+            "Jocelyn Pepe flied out to rf (2-1 FBB).",
+            "Amanda Roche grounded out to 1b unassisted (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Mikayla Yuricheck struck out swinging (2-2 SSBBS).",
+            "Kate Brodzinski grounded out to 2b (1-1 BF).",
+            "Nina Buda struck out swinging (2-2 BSKBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ellie Etemad-Gilbertson grounded out to ss (2-2 BKBFF).",
+            "Isabella MacDonald singled up the middle (0-0).",
+            "Eliza Carignan reached on a fielder's choice (1-1 KB); Isabella MacDonald out at second 2b to ss.",
+            "Ava Gray lined out to rf down the lf line (3-1 FBBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jocelyn Pepe grounded out to 2b (0-0).",
+            "Amanda Roche lined out to rf (2-2 BFBS).",
+            "Mikayla Yuricheck walked (3-2 BBBKSB).",
+            "Kate Brodzinski struck out looking (1-2 BFSK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Belle Dicampello to c for Allie Cubberly.",
+            "Nina Buda to ss for Peyton Farris.",
+            "Peyton Farris to p for Nina Buda.",
+            "Peyton Farris flied out to 1b (3-2 BBBKS).",
+            "Ellie Etemad-Gilbertson walked (3-0 BBBB).",
+            "Isabella MacDonald fouled out to 1b (1-0 B).",
+            "Eliza Carignan struck out swinging (2-2 BFBFFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ava Gray singled up the middle (1-1 BF).",
+            "Jocelyn Pepe doubled to right center (1-0 B); Ava Gray advanced to third.",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Amanda Roche lined out to 2b (2-1 BKB).",
+            "Mikayla Yuricheck grounded out to 1b unassisted (1-1 BK).",
+            "Kate Brodzinski flied out to rf (2-2 FBFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 6,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 6,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 23
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
         }
       ],
       "year": 2026

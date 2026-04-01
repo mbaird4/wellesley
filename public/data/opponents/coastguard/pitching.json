@@ -1,59 +1,59 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-03-31T02:09:54.233Z",
+  "scrapedAt": "2026-04-01T02:26:46.377Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
       "w": 5,
-      "l": 2,
-      "era": 0.66,
-      "app": 8,
-      "gs": 7,
-      "cg": 5,
+      "l": 3,
+      "era": 0.99,
+      "app": 10,
+      "gs": 8,
+      "cg": 6,
       "sho": 1,
       "sv": 1,
-      "ip": 42.1,
-      "h": 40,
-      "r": 19,
-      "er": 4,
-      "bb": 6,
-      "so": 44,
+      "ip": 49.1,
+      "h": 47,
+      "r": 23,
+      "er": 7,
+      "bb": 9,
+      "so": 48,
       "hr": 0,
-      "whip": 1.09,
-      "doubles": 3,
+      "whip": 1.14,
+      "doubles": 4,
       "triples": 0,
-      "ab": 175,
-      "bAvg": 0.229,
+      "ab": 202,
+      "bAvg": 0.233,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 3
+      "sha": 5
     },
     {
       "name": "Lynn, Zoey",
       "w": 2,
-      "l": 1,
-      "era": 1.66,
-      "app": 6,
-      "gs": 4,
+      "l": 2,
+      "era": 2.02,
+      "app": 7,
+      "gs": 5,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 25.1,
-      "h": 27,
-      "r": 11,
-      "er": 6,
+      "ip": 27.2,
+      "h": 33,
+      "r": 14,
+      "er": 8,
       "bb": 3,
-      "so": 14,
+      "so": 15,
       "hr": 0,
-      "whip": 1.18,
+      "whip": 1.3,
       "doubles": 4,
-      "triples": 0,
-      "ab": 104,
-      "bAvg": 0.26,
+      "triples": 1,
+      "ab": 117,
+      "bAvg": 0.282,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -65,23 +65,23 @@
       "w": 1,
       "l": 0,
       "era": 0,
-      "app": 2,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4.1,
-      "h": 5,
+      "ip": 7,
+      "h": 6,
       "r": 1,
       "er": 0,
       "bb": 0,
-      "so": 3,
+      "so": 4,
       "hr": 0,
-      "whip": 1.15,
+      "whip": 0.86,
       "doubles": 0,
       "triples": 0,
-      "ab": 19,
-      "bAvg": 0.263,
+      "ab": 28,
+      "bAvg": 0.214,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -1269,6 +1269,213 @@
           "hbp": 0,
           "ab": 29,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wesleyan-conn-/boxscore/9346",
+      "date": "3/31/2026",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "Lynn, Zoey",
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Molly Lennon flied out to cf (2-2 BKFB).",
+            "Leila Campbell popped up to cf (2-2 BFKBF).",
+            "Cat Palmer flied out to 1b (3-1 BFBBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kelly Baker singled to left field (0-0).",
+            "Naomi Tesoriere flied out to cf (0-0).",
+            "Waverly Smart singled to right field (0-0); Kelly Baker out at second rf to ss.",
+            "R. Cassel-Siskind tripled to right center, RBI (0-0); Waverly Smart scored.",
+            "Ella DeCrescenzo struck out looking (0-2 KSK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sam Chappell grounded out to ss (0-0).",
+            "Molly Lennon reached first on an error by 3b (2-2 KBSFFB).",
+            "Leila Campbell singled to left field (0-0); Molly Lennon advanced to second.",
+            "Cat Palmer singled to left field (0-0); Leila Campbell advanced to second; Molly Lennon advanced to third.",
+            "Kelly Baker singled to center field, 2 RBI (1-0 B); Cat Palmer advanced to second; Leila Campbell scored; Molly Lennon scored, unearned.",
+            "Emma Behel to p for Zoey Lynn.",
+            "Naomi Tesoriere singled to left field (1-0 B); Kelly Baker advanced to second; Cat Palmer advanced to third.",
+            "Waverly Smart popped up to 3b (1-1 KB).",
+            "R. Cassel-Siskind lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mack Murnane to 3b.",
+            "Ella DeCrescenzo grounded out to p (0-0).",
+            "Sam Chappell popped up to 2b (0-0).",
+            "Molly Lennon grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Leila Campbell struck out swinging (2-2 KBFBS).",
+            "Cat Palmer grounded out to 2b (1-0 B).",
+            "Kelly Baker grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dana Walker to p for Sage Svalestad.",
+            "Naomi Tesoriere reached first on an error by 1b (0-1 K).",
+            "Lucia Zaremba pinch ran for Naomi Tesoriere.",
+            "Waverly Smart out at first 3b to 2b, SAC, bunt (0-1 F); Lucia Zaremba advanced to second.",
+            "R. Cassel-Siskind grounded out to 1b unassisted (0-0); Lucia Zaremba advanced to third.",
+            "Jordynn Killion pinch hit for Ella DeCrescenzo.",
+            "Jordynn Killion singled, RBI (3-2 BBFFB); Lucia Zaremba scored, unearned.",
+            "Cameron Maloney doubled to left field (0-1 K); Jordynn Killion advanced to third.",
+            "Molly Lennon grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Lynn, Zoey",
+          "ip": 2.1,
+          "h": 6,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 13
+        },
+        {
+          "name": "Behel, Emma",
+          "ip": 2.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 9
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 1,
+          "h": 2,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wesleyan-conn-/boxscore/9347",
+      "date": "3/31/2026",
+      "opponent": "Wesleyan Conn ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Molly Lennon struck out looking (1-2 BKSFK).",
+            "Katie Foley popped up to ss (2-2 SFBFFBFF).",
+            "Cat Palmer grounded out to 2b (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kelly Baker grounded out to 1b unassisted (2-1 BBK).",
+            "Jordynn Killion walked (3-1 KBBBB).",
+            "Waverly Smart struck out swinging (1-2 BSFFS).",
+            "R. Cassel-Siskind walked (3-0 BBBB); Jordynn Killion advanced to second.",
+            "Whitney Gigante reached on a fielder's choice to shortstop (1-2 KFB); R. Cassel-Siskind advanced to second; Jordynn Killion advanced to third.",
+            "Nicole Celi singled to center field, 2 RBI (2-2 BKBFF); Whitney Gigante advanced to second; R. Cassel-Siskind scored; Jordynn Killion scored.",
+            "Molly Lennon grounded out to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Katie Foley grounded out to 3b (0-1 F).",
+            "Cat Palmer grounded out to ss (1-1 SB).",
+            "Kelly Baker grounded out to 2b (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maura Murphy to rf for Olivia Garcia.",
+            "Madeline Kibler to c for Sage Svalestad.",
+            "Ainsley Hololob to ss for Zoey Lynn.",
+            "Jordynn Killion singled to left field (1-1 BK).",
+            "Waverly Smart out at first 1b to 2b, SAC, bunt (0-0); Jordynn Killion advanced to third.",
+            "R. Cassel-Siskind singled to right field, RBI (3-2 BKBFB); Jordynn Killion scored.",
+            "R. Cassel-Siskind stole second.",
+            "Whitney Gigante grounded out to ss (3-1 BBKB); R. Cassel-Siskind advanced to third.",
+            "Nicole Celi lined out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Molly Lennon singled to center field (2-0 BB).",
+            "Lucia Zaremba pinch hit for Katie Foley.",
+            "Lucia Zaremba singled through the right side (0-0); Molly Lennon advanced to second.",
+            "Malia Apor pinch hit for Cat Palmer.",
+            "Malia Apor lined into double play 1b unassisted (0-0); Lucia Zaremba out on the play.",
+            "Ruby Stewart pinch hit for Kelly Baker.",
+            "Ruby Stewart grounded out to 3b (1-2 FSBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mack Murnane to 3b for Zoey Cascio.",
+            "Jordynn Killion walked (3-1 BBKBB).",
+            "Cameron Maloney pinch hit for Waverly Smart.",
+            "Leila Campbell pinch ran for Jordynn Killion.",
+            "Cameron Maloney struck out looking (0-2 KFK).",
+            "R. Cassel-Siskind reached first on a fielding error by ss (1-0 B); Leila Campbell advanced to second.",
+            "Naomi Tesoriere pinch hit for Whitney Gigante.",
+            "Naomi Tesoriere struck out swinging (3-2 SSBBBS).",
+            "Leila Campbell out at third c to 3b, caught stealing."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 4,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 26
         }
       ],
       "year": 2026

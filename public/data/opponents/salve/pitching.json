@@ -1,59 +1,59 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-03-31T02:09:41.378Z",
+  "scrapedAt": "2026-04-01T02:26:34.160Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
-      "w": 1,
+      "w": 2,
       "l": 3,
-      "era": 3.68,
-      "app": 7,
-      "gs": 4,
-      "cg": 4,
+      "era": 3.26,
+      "app": 8,
+      "gs": 5,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 38,
-      "h": 54,
-      "r": 28,
+      "ip": 43,
+      "h": 57,
+      "r": 29,
       "er": 20,
       "bb": 7,
-      "so": 21,
+      "so": 26,
       "hr": 1,
-      "whip": 1.61,
-      "doubles": 9,
+      "whip": 1.49,
+      "doubles": 10,
       "triples": 0,
-      "ab": 162,
-      "bAvg": 0.333,
+      "ab": 180,
+      "bAvg": 0.317,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
-      "sha": 3
+      "sha": 4
     },
     {
       "name": "Cronin, Emily",
       "w": 0,
       "l": 1,
-      "era": 4.67,
-      "app": 4,
+      "era": 3.73,
+      "app": 5,
       "gs": 1,
       "cg": 1,
       "sho": 0,
-      "sv": 0,
-      "ip": 12,
-      "h": 9,
+      "sv": 1,
+      "ip": 15,
+      "h": 10,
       "r": 11,
       "er": 8,
-      "bb": 13,
-      "so": 11,
+      "bb": 15,
+      "so": 17,
       "hr": 1,
-      "whip": 1.83,
+      "whip": 1.67,
       "doubles": 1,
       "triples": 2,
-      "ab": 43,
-      "bAvg": 0.209,
+      "ab": 53,
+      "bAvg": 0.189,
       "wp": 5,
       "hbp": 5,
       "bk": 0,
@@ -62,31 +62,31 @@
     },
     {
       "name": "Peterson, Caroline",
-      "w": 0,
+      "w": 1,
       "l": 7,
-      "era": 8.08,
-      "app": 7,
-      "gs": 7,
+      "era": 7,
+      "app": 8,
+      "gs": 8,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 26,
+      "ip": 30,
       "h": 42,
-      "r": 43,
+      "r": 44,
       "er": 30,
-      "bb": 31,
-      "so": 25,
+      "bb": 40,
+      "so": 34,
       "hr": 0,
-      "whip": 2.81,
+      "whip": 2.73,
       "doubles": 8,
       "triples": 3,
-      "ab": 118,
-      "bAvg": 0.356,
+      "ab": 129,
+      "bAvg": 0.326,
       "wp": 8,
       "hbp": 1,
       "bk": 0,
       "sfa": 3,
-      "sha": 6
+      "sha": 7
     }
   ],
   "games": [
@@ -1336,6 +1336,194 @@
           "hbp": 0,
           "ab": 34,
           "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/lesley-university/boxscore/11763",
+      "date": "3/31/2026",
+      "opponent": "Lesley University",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Cronin, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Isabella Moscoso walked (3-2 BBSBKB).",
+            "Madison Herbert struck out swinging (1-2 FKBS).",
+            "Leah St. John walked (3-2 KFFBBBFB); Isabella Moscoso advanced to second.",
+            "Marissa De La Rosa walked (3-1 BSBBB); Leah St. John advanced to second; Isabella Moscoso advanced to third.",
+            "Eleni Vrahatis struck out looking (1-2 BSSK).",
+            "Lauren Martin struck out swinging (2-2 SBKBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Milana Rosazza walked (3-0 BBBB).",
+            "Leila Chisholm struck out looking (3-2 KSBBBK).",
+            "Leecy Cruz walked (3-2 KBBKBB); Milana Rosazza advanced to second.",
+            "Isabella Moscoso struck out swinging (0-2 KSS).",
+            "Madison Herbert struck out swinging (2-2 KBSBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Leah St. John flied out to cf (2-2 BSFB).",
+            "Marissa De La Rosa walked (3-0 BBBB).",
+            "Eleni Vrahatis grounded out to c, SAC (0-1 F); Marissa De La Rosa advanced to second.",
+            "Lauren Martin struck out swinging (2-2 BFSBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Milana Rosazza struck out swinging (1-2 SFBS).",
+            "Leila Chisholm struck out swinging (0-2 KSS).",
+            "Leecy Cruz walked (3-2 BBSKBB).",
+            "Leecy Cruz stole second, advanced to third on an error by ss.",
+            "Isabella Moscoso walked (3-2 BFFBBFFB).",
+            "Leecy Cruz scored, unearned.",
+            "Madison Herbert out at first p to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Leah St. John walked (3-0 BBBB).",
+            "Emily Cronin to p.",
+            "Ryann Burke to lf for Caroline Peterson.",
+            "Marissa De La Rosa reached on a fielder's choice (0-0); Leah St. John advanced to second on an error by ss.",
+            "Eleni Vrahatis struck out swinging (0-0).",
+            "Lauren Martin grounded out to 2b (3-2 BFBFBF); Marissa De La Rosa advanced to second; Leah St. John advanced to third.",
+            "Milana Rosazza struck out swinging (1-2 BKKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Leila Chisholm struck out looking (0-2 FSK).",
+            "Leecy Cruz struck out looking (0-2 KSK).",
+            "Isabella Moscoso struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lillian Bridges to cf for Darian DiMuzio.",
+            "Taylor Ferraiolo to ss.",
+            "Madison Herbert walked (3-1 BBBKB).",
+            "Madison Herbert out at second c to 2b.",
+            "Leah St. John walked (3-1 BBBKB).",
+            "Marissa De La Rosa struck out looking (2-2 FBBSK).",
+            "Eleni Vrahatis singled to third base (0-1 S); Leah St. John advanced to second.",
+            "Lauren Martin grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 4,
+          "h": 0,
+          "r": 1,
+          "er": 0,
+          "bb": 9,
+          "so": 9,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 21
+        },
+        {
+          "name": "Cronin, Emily",
+          "ip": 3,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 6,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 12
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/lesley-university/boxscore/11764",
+      "date": "3/31/2026",
+      "opponent": "Lesley University",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Isabella Moscoso popped up to 2b (1-2 KSBFF).",
+            "Eleni Vrahatis grounded out to 3b (0-1 F).",
+            "Leah St. John popped up to ss (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Marissa De La Rosa singled to right field (1-1 BS).",
+            "Milana Rosazza pinch hit for Madison Herbert.",
+            "Milana Rosazza struck out swinging (0-2 KSS).",
+            "Leila Chisholm out at first p to 2b, SAC (0-0); Marissa De La Rosa advanced to second.",
+            "Lauren Martin reached first on a throwing error by 2b, advanced to second (0-0); Marissa De La Rosa scored, unearned.",
+            "Sophie Stanley struck out looking (2-2 SBBFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Victoria Geisser to 3b for Abby Merck.",
+            "Leecy Cruz struck out swinging (0-0).",
+            "Isabella Moscoso popped up to 2b (0-0).",
+            "Eleni Vrahatis doubled to left field (0-0).",
+            "Leah St. John flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Skylar Wicklund to rf for Lillian Bridges.",
+            "Emily Cronin to cf.",
+            "Darian DiMuzio to 2b.",
+            "Marissa De La Rosa grounded out to 3b (0-0).",
+            "Madison Herbert out at first 1b to 2b (0-0).",
+            "Leila Chisholm struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Martin singled (0-0).",
+            "Sophie Stanley grounded out to 3b (0-0); Lauren Martin advanced to second.",
+            "Savannah Gravitt pinch hit for Leecy Cruz.",
+            "Savannah Gravitt struck out swinging (0-0).",
+            "Isabella Moscoso flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 5,
+          "h": 3,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 19
         }
       ],
       "year": 2026

@@ -1,33 +1,33 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-03-31T02:09:26.835Z",
+  "scrapedAt": "2026-04-01T02:26:16.220Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 6,
+      "w": 7,
       "l": 0,
-      "era": 0.83,
-      "app": 7,
-      "gs": 3,
-      "cg": 2,
-      "sho": 1,
+      "era": 0.72,
+      "app": 8,
+      "gs": 4,
+      "cg": 3,
+      "sho": 2,
       "sv": 0,
-      "ip": 33.2,
-      "h": 31,
+      "ip": 38.2,
+      "h": 33,
       "r": 4,
       "er": 4,
-      "bb": 4,
-      "so": 21,
+      "bb": 5,
+      "so": 24,
       "hr": 0,
-      "whip": 1.04,
+      "whip": 0.98,
       "doubles": 2,
       "triples": 0,
-      "ab": 127,
-      "bAvg": 0.244,
+      "ab": 144,
+      "bAvg": 0.229,
       "wp": 0,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 0,
       "sha": 2
@@ -62,28 +62,28 @@
     },
     {
       "name": "Barr, Kaitlyn",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 5.25,
-      "app": 3,
-      "gs": 2,
-      "cg": 0,
+      "era": 4.31,
+      "app": 4,
+      "gs": 3,
+      "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 8,
-      "h": 12,
-      "r": 10,
-      "er": 6,
-      "bb": 6,
-      "so": 2,
+      "ip": 13,
+      "h": 17,
+      "r": 14,
+      "er": 8,
+      "bb": 8,
+      "so": 7,
       "hr": 0,
-      "whip": 2.25,
-      "doubles": 2,
+      "whip": 1.92,
+      "doubles": 3,
       "triples": 0,
-      "ab": 37,
-      "bAvg": 0.324,
-      "wp": 2,
-      "hbp": 2,
+      "ab": 59,
+      "bAvg": 0.288,
+      "wp": 3,
+      "hbp": 3,
       "bk": 0,
       "sfa": 1,
       "sha": 1
@@ -1263,6 +1263,154 @@
           "hbp": 0,
           "ab": 27,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/emmanuel-ma-/boxscore/16636",
+      "date": "3/31/2026",
+      "opponent": "Emmanuel Ma ",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mia Fernandes flied out to cf (2-1 BKB).",
+            "Francesca Pizzarella struck out looking (1-2 BSKK).",
+            "Grace Garon grounded out to p (1-2 KSFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sydney Taylor hit by pitch (2-1 KBH).",
+            "Rylee Smith popped up to ss (1-1 KB).",
+            "Mekayla Poisson grounded out to 1b unassisted (3-2 BSFBFB); Sydney Taylor advanced to second.",
+            "Emely Rodriguez popped up to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caleigh Venuti walked (3-2 BKBBFB).",
+            "Olivia DeMacedo struck out swinging (2-2 FBKBS).",
+            "Mia Fernandes fouled out to lf (0-1 F).",
+            "Francesca Pizzarella reached on a fielder's choice (2-2 KFFBB); Caleigh Venuti out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Grace Garon flied out to cf (1-0 B).",
+            "Sydney Taylor popped up to 2b (0-0).",
+            "Rylee Smith struck out looking (0-2 KFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mekayla Poisson singled, bunt (0-0).",
+            "Emely Rodriguez lined out to cf (2-2 BSKB).",
+            "Caleigh Venuti flied out to lf (1-1 FB).",
+            "Olivia DeMacedo singled to center field (0-0); Mekayla Poisson advanced to second.",
+            "Mia Fernandes reached on a fielder's choice (2-1 BBS); Olivia DeMacedo advanced to second; Mekayla Poisson out at third 3b unassisted."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 5,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/emmanuel-ma-/boxscore/16637",
+      "date": "3/31/2026",
+      "opponent": "Emmanuel Ma ",
+      "pitchers": [
+        "Barr, Kaitlyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mia Fernandes walked (3-0 BBBB).",
+            "Francesca Pizzarella reached first on a throwing error by p (2-1 BKB); Mia Fernandes advanced to second, advanced to third on the error.",
+            "Francesca Pizzarella stole second.",
+            "Grace Garon popped up to ss down the lf line (2-2 KBBF).",
+            "Sydney Taylor hit by pitch (2-0 BH).",
+            "Rylee Smith reached on a fielder's choice, RBI (0-0); Sydney Taylor advanced to second; Francesca Pizzarella out at third ss to 3b; Mia Fernandes scored, unearned.",
+            "Mekayla Poisson grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alexis Martineau struck out looking (2-2 BBSFK).",
+            "Emely Rodriguez struck out swinging (0-2 KKS).",
+            "Olivia DeMacedo struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Mia Fernandes singled down the rf line (2-2 KFBBF).",
+            "Mia Fernandes stole second.",
+            "Francesca Pizzarella walked (3-2 KBKBBFB).",
+            "Grace Garon doubled to right field, 2 RBI (0-0); Francesca Pizzarella scored; Mia Fernandes scored.",
+            "Sydney Taylor struck out looking (0-2 FFK).",
+            "Rylee Smith reached first on a throwing error by ss (1-2 FBKF); Grace Garon advanced to third, scored on the error, unearned.",
+            "Mekayla Poisson grounded out to c unassisted, interference (1-2 FFB); Rylee Smith did not advance.",
+            "Alexis Martineau singled to right field (0-1 F); Rylee Smith advanced to second.",
+            "Alexis Martineau advanced to second on a wild pitch; Rylee Smith advanced to third on a wild pitch.",
+            "Emely Rodriguez grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Olivia DeMacedo flied out to rf (2-2 BFBF).",
+            "Mia Fernandes grounded out to 2b (0-0).",
+            "Francesca Pizzarella singled to left field (2-1 KBB).",
+            "Grace Garon grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sydney Taylor popped up to 3b (1-1 BS).",
+            "Rylee Smith struck out swinging (0-2 KKS).",
+            "Lucy Weineck pinch hit for Mekayla Poisson.",
+            "Lucy Weineck singled to shortstop (2-0 BB).",
+            "Alexis Martineau lined out to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 5,
+          "h": 5,
+          "r": 4,
+          "er": 2,
+          "bb": 2,
+          "so": 5,
+          "hbp": 1,
+          "ab": 22,
+          "bf": 25
         }
       ],
       "year": 2026

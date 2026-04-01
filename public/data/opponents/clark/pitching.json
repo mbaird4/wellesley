@@ -1,31 +1,31 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-03-31T02:09:57.564Z",
+  "scrapedAt": "2026-04-01T02:26:51.923Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 5,
+      "w": 6,
       "l": 2,
-      "era": 2.33,
-      "app": 7,
-      "gs": 6,
-      "cg": 6,
+      "era": 2.29,
+      "app": 8,
+      "gs": 7,
+      "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 45,
-      "h": 50,
-      "r": 19,
-      "er": 15,
+      "ip": 52,
+      "h": 55,
+      "r": 21,
+      "er": 17,
       "bb": 11,
-      "so": 59,
+      "so": 63,
       "hr": 2,
-      "whip": 1.36,
-      "doubles": 8,
+      "whip": 1.27,
+      "doubles": 9,
       "triples": 1,
-      "ab": 186,
-      "bAvg": 0.269,
+      "ab": 212,
+      "bAvg": 0.259,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
@@ -35,27 +35,27 @@
     {
       "name": "Dube, Megan",
       "w": 3,
-      "l": 4,
-      "era": 3.65,
-      "app": 7,
-      "gs": 6,
-      "cg": 6,
+      "l": 5,
+      "era": 3.57,
+      "app": 8,
+      "gs": 7,
+      "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 46,
-      "h": 55,
-      "r": 31,
-      "er": 24,
-      "bb": 11,
-      "so": 47,
+      "ip": 53,
+      "h": 64,
+      "r": 35,
+      "er": 27,
+      "bb": 14,
+      "so": 55,
       "hr": 3,
-      "whip": 1.43,
-      "doubles": 12,
+      "whip": 1.47,
+      "doubles": 14,
       "triples": 4,
-      "ab": 186,
-      "bAvg": 0.296,
+      "ab": 217,
+      "bAvg": 0.295,
       "wp": 2,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 2,
       "sha": 7
@@ -1461,6 +1461,195 @@
           "hbp": 1,
           "ab": 26,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/worcester-state-university/boxscore/19187",
+      "date": "3/31/2026",
+      "opponent": "Worcester State University",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carisa Andrews grounded out to 3b (1-0 B).",
+            "Emma Lapoint flied out to lf (1-1 KB).",
+            "Bella Gasbarro struck out looking (0-2 FSK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Amanda Adamuska singled to shortstop (0-2 KF).",
+            "Morgan Keefe popped up to 1b (1-1 KB).",
+            "Laurel Field struck out looking (1-2 BKFK).",
+            "Anna Diggins grounded out to ss (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Bailey Tammaro flied out to lf (1-0 B).",
+            "Cali Brouillard flied out to lf (1-1 KB).",
+            "Carisa Andrews grounded out to 3b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Lapoint popped up to 2b (0-2 FS).",
+            "Bella Gasbarro popped up to 2b (3-2 FBFBBF).",
+            "Amanda Adamuska singled up the middle (0-0).",
+            "Morgan Keefe lined out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Laurel Field lined out to cf (0-1 F).",
+            "Anna Diggins grounded out to ss (0-2 SFF).",
+            "Bailey Tammaro struck out looking (1-2 SBFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cali Brouillard lined out to cf (0-1 S).",
+            "Carisa Andrews struck out swinging (0-2 KFS).",
+            "Emma Lapoint grounded out to ss (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bella Gasbarro singled to right field (0-0).",
+            "Amanda Adamuska grounded out to 2b (1-2 BFF); Bella Gasbarro advanced to second.",
+            "Morgan Keefe doubled to left field, RBI (1-0 B); Bella Gasbarro scored.",
+            "Mackenzie Roy pinch ran for Morgan Keefe.",
+            "Laurel Field singled to right field, RBI (1-0 B); Mackenzie Roy scored.",
+            "Anna Diggins lined out to cf (1-1 KB).",
+            "Bailey Tammaro popped up to c (1-1 KB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 4,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/worcester-state-university/boxscore/19188",
+      "date": "3/31/2026",
+      "opponent": "Worcester State University",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amanda Adamuska lined out to lf (2-2 BBKS).",
+            "Emma Lapoint reached first on an error by rf, advanced to second (2-2 KFBFB).",
+            "Bella Gasbarro struck out swinging (1-2 FSBS).",
+            "Morgan Keefe popped up to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zoie Stevens struck out swinging (3-2 BBBKKS).",
+            "Laurel Field struck out swinging (1-2 KKBS).",
+            "Mackenzie Roy walked (3-2 BKBFFBB).",
+            "Bailey Tammaro flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Cali Brouillard singled to third base (2-1 BKB).",
+            "Cali Brouillard stole second.",
+            "Amanda Adamuska flied out to cf (1-2 BFF).",
+            "Emma Lapoint out at first 3b to 2b, bunt (0-1 F); Cali Brouillard advanced to third.",
+            "Bella Gasbarro walked (3-1 BBFBB).",
+            "Morgan Keefe doubled to left field, RBI (2-2 BBKK); Bella Gasbarro advanced to third; Cali Brouillard scored.",
+            "Zoie Stevens struck out looking (1-2 KBKFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Laurel Field struck out swinging (3-2 FSBBFBFS).",
+            "Mackenzie Roy struck out looking (2-2 BKSBK).",
+            "Bailey Tammaro walked (3-2 BKSBBB).",
+            "Cali Brouillard doubled to right field, advanced to third on an error by cf, RBI (3-0 BBB); Bailey Tammaro scored, unearned.",
+            "Amanda Adamuska singled to right field, RBI (0-0); Cali Brouillard scored.",
+            "Amanda Adamuska stole second.",
+            "Emma Lapoint hit by pitch (3-2 KFBBBH).",
+            "Bella Gasbarro struck out swinging (3-2 KBBKBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Morgan Keefe fouled out to 1b (3-2 KBKBBF).",
+            "Zoie Stevens singled up the middle (1-2 FSBF).",
+            "Camden Heenan pinch hit for Laurel Field.",
+            "Camden Heenan grounded out to 2b (1-1 FB); Zoie Stevens advanced to second.",
+            "Mackenzie Roy fouled out to 1b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bailey Tammaro singled, bunt (1-1 BK).",
+            "Bailey Tammaro stole second.",
+            "Cali Brouillard flied out to cf (1-1 FB).",
+            "Amanda Adamuska grounded out to p, bunt (0-0); Bailey Tammaro advanced to third.",
+            "Emma Lapoint flied out to rf (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bella Gasbarro flied out to cf (0-0).",
+            "Morgan Keefe singled to shortstop (3-2 KFFBFBB).",
+            "Carisa Andrews pinch ran for Morgan Keefe.",
+            "Carisa Andrews stole second.",
+            "Zoie Stevens singled to left field (1-0 B); Carisa Andrews advanced to third.",
+            "Zoie Stevens stole second.",
+            "Laurel Field struck out swinging (3-2 BBFKBS).",
+            "Mackenzie Roy singled to second base, RBI (1-2 BSFF); Zoie Stevens advanced to third; Carisa Andrews scored.",
+            "Bailey Tammaro lined out to ss (0-1 S)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 7,
+          "h": 9,
+          "r": 4,
+          "er": 3,
+          "bb": 3,
+          "so": 8,
+          "hbp": 1,
+          "ab": 31,
+          "bf": 35
         }
       ],
       "year": 2026
