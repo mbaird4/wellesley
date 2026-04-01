@@ -1,7 +1,7 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-04-01T17:41:08.894Z",
+  "scrapedAt": "2026-04-01T23:26:43.915Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -33,34 +33,6 @@
       "sha": 1
     },
     {
-      "name": "Jennings, Madeline",
-      "w": 5,
-      "l": 3,
-      "era": 3.72,
-      "app": 12,
-      "gs": 10,
-      "cg": 3,
-      "sho": 1,
-      "sv": 0,
-      "ip": 47,
-      "h": 72,
-      "r": 38,
-      "er": 25,
-      "bb": 9,
-      "so": 28,
-      "hr": 2,
-      "whip": 1.72,
-      "doubles": 4,
-      "triples": 2,
-      "ab": 213,
-      "bAvg": 0.338,
-      "wp": 5,
-      "hbp": 2,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 5
-    },
-    {
       "name": "Kannan, Ragini",
       "w": 5,
       "l": 2,
@@ -87,6 +59,34 @@
       "bk": 0,
       "sfa": 5,
       "sha": 7
+    },
+    {
+      "name": "Jennings, Madeline",
+      "w": 5,
+      "l": 4,
+      "era": 4.28,
+      "app": 13,
+      "gs": 11,
+      "cg": 4,
+      "sho": 1,
+      "sv": 0,
+      "ip": 52.1,
+      "h": 82,
+      "r": 46,
+      "er": 32,
+      "bb": 10,
+      "so": 31,
+      "hr": 2,
+      "whip": 1.76,
+      "doubles": 5,
+      "triples": 3,
+      "ab": 236,
+      "bAvg": 0.347,
+      "wp": 5,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 5
     }
   ],
   "games": [
@@ -2913,6 +2913,96 @@
           "hbp": 0,
           "ab": 14,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/wellesley/boxscore/14841",
+      "date": "4/1/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Jennings, Madeline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern lined out to ss (2-2 KBFFB).",
+            "A. Delgado popped up to ss (0-0).",
+            "B. Awad singled through the right side (1-1 BK).",
+            "B. Awad stole second.",
+            "J. Colgan grounded out to p (2-2 BFBF); B. Awad advanced to third."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Kulhanek struck out swinging (2-2 KBBSS).",
+            "N. Nicol grounded out to p (0-0).",
+            "A. Rodriguez grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "D. Borrison tripled to center field (2-2 BFBF).",
+            "G. Jones flied out to lf, sacrifice fly, RBI (0-0); D. Borrison scored.",
+            "A. Mulhern singled to right center (3-2 KBBSBF).",
+            "A. Mulhern out at second c to ss, caught stealing.",
+            "A. Delgado struck out looking (1-2 KKBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taryn Rainey to c for Alexa Johnson.",
+            "B. Awad singled to right center (0-2 FKF).",
+            "J. Colgan hit by pitch (1-0 B); B. Awad advanced to second.",
+            "J. Colgan stole second; B. Awad stole third, scored on an error by ss, unearned.",
+            "E. Kulhanek grounded out to ss (2-0 BB).",
+            "N. Nicol reached on a fielder's choice to shortstop (0-0).",
+            "A. Rodriguez reached on a fielder's choice to shortstop (2-2 BKFB); N. Nicol advanced to second; J. Colgan out at third ss unassisted, interference.",
+            "D. Borrison walked (3-1 KBBBB); A. Rodriguez advanced to second; N. Nicol advanced to third.",
+            "G. Jones singled to right center, 2 RBI (1-2 FBF); D. Borrison advanced to third; A. Rodriguez scored; N. Nicol scored.",
+            "A. Mulhern flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Katie Baydian to 2b.",
+            "A. Delgado singled through the left side (0-1 F).",
+            "B. Awad singled through the left side (0-0); A. Delgado advanced to second.",
+            "J. Colgan singled to left field, advanced to second on the throw, RBI (1-2 KFB); B. Awad advanced to third; A. Delgado scored.",
+            "E. Kulhanek flied out to rf, sacrifice fly, RBI (1-0 B); J. Colgan advanced to third; B. Awad scored.",
+            "N. Nicol flied out to rf, sacrifice fly, RBI (1-0 B); J. Colgan scored.",
+            "A. Rodriguez popped up to 2b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "D. Borrison singled up the middle (1-1 FB).",
+            "J. Polski pinch ran for D. Borrison.",
+            "G. Jones struck out swinging (2-2 KBFBS).",
+            "J. Polski stole second.",
+            "A. Mulhern doubled to left field, advanced to third on the throw, RBI (2-0 BB); J. Polski scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 5.1,
+          "h": 10,
+          "r": 8,
+          "er": 7,
+          "bb": 1,
+          "so": 3,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 28
         }
       ],
       "year": 2026
