@@ -1,36 +1,36 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-03-31T23:23:37.602Z",
+  "scrapedAt": "2026-04-01T02:32:07.253Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Staub, Jamie",
       "w": 3,
-      "l": 1,
-      "era": 3.54,
-      "app": 11,
+      "l": 2,
+      "era": 3.23,
+      "app": 12,
       "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 1,
-      "ip": 31.2,
-      "h": 28,
-      "r": 18,
+      "ip": 34.2,
+      "h": 32,
+      "r": 20,
       "er": 16,
-      "bb": 8,
-      "so": 15,
+      "bb": 10,
+      "so": 17,
       "hr": 1,
-      "whip": 1.14,
+      "whip": 1.21,
       "doubles": 8,
       "triples": 0,
-      "ab": 126,
-      "bAvg": 0.222,
+      "ab": 140,
+      "bAvg": 0.229,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Jennings, Madeline",
@@ -64,26 +64,26 @@
       "name": "Kannan, Ragini",
       "w": 5,
       "l": 2,
-      "era": 4.48,
-      "app": 9,
-      "gs": 7,
+      "era": 4.2,
+      "app": 10,
+      "gs": 8,
       "cg": 4,
       "sho": 1,
       "sv": 0,
-      "ip": 45.1,
-      "h": 48,
-      "r": 38,
+      "ip": 48.1,
+      "h": 54,
+      "r": 41,
       "er": 29,
       "bb": 19,
-      "so": 41,
+      "so": 43,
       "hr": 2,
-      "whip": 1.48,
-      "doubles": 10,
+      "whip": 1.51,
+      "doubles": 11,
       "triples": 1,
-      "ab": 172,
-      "bAvg": 0.279,
+      "ab": 188,
+      "bAvg": 0.287,
       "wp": 2,
-      "hbp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 5,
       "sha": 7
@@ -2810,6 +2810,109 @@
           "hbp": 0,
           "ab": 27,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/umass-dartmouth/boxscore/14840",
+      "date": "3/31/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Olivia Ali singled to left field (3-2 BSKBB).",
+            "Olivia Silva reached on a fielder's choice (3-2 BBBKK); Olivia Ali out at second 2b to ss.",
+            "Raelynn Perregaux popped up to c (0-1 F).",
+            "Bre Fontes reached on a fielder's choice (2-1 KBB); Olivia Silva out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lena Tsonis flied out to cf (2-0 BB).",
+            "Lily Routhier singled through the left side (2-1 BSB).",
+            "Sydney Menz singled to shortstop (1-2 BKKF); Lily Routhier advanced to second.",
+            "Edy Crawford struck out swinging (1-2 FBSS); Sydney Menz advanced to second; Lily Routhier stole third.",
+            "Chloe Edwards flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Ali flied out to lf (3-0 BBB).",
+            "Olivia Silva singled to right center (0-0).",
+            "Raelynn Perregaux reached first on a fielding error by 3b (2-2 BFBKFF); Olivia Silva advanced to second.",
+            "Bre Fontes lined out to rf to right center (1-0 B).",
+            "Lena Tsonis singled to left field, RBI (2-2 KSBBF); Raelynn Perregaux advanced to second; Olivia Silva scored, unearned.",
+            "Lily Routhier hit by pitch (1-0 H); Lena Tsonis advanced to second; Raelynn Perregaux advanced to third.",
+            "Sydney Menz doubled to center field, 2 RBI (0-2 KF); Lily Routhier advanced to third; Lena Tsonis scored, unearned; Raelynn Perregaux scored, unearned.",
+            "Edy Crawford struck out looking (1-2 SSFBFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jamie Staub to p for Ragini Kannan.",
+            "Chloe Edwards popped up to 3b (3-1 BFBB).",
+            "Olivia Ali grounded out to p (0-0).",
+            "Olivia Silva singled up the middle (2-2 KBBK).",
+            "Raelynn Perregaux flied out to cf (2-2 FBBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bre Fontes singled through the left side (1-0 B).",
+            "Lena Tsonis singled to shortstop (1-0 B); Bre Fontes advanced to second.",
+            "Lily Routhier out at first p to 2b, SAC, bunt (1-1 FB); Lena Tsonis advanced to second; Bre Fontes advanced to third.",
+            "Sydney Menz struck out swinging (2-2 KBBFS).",
+            "Edy Crawford walked (3-1 BBBKB).",
+            "Chloe Edwards reached first on a fielding error by 3b (2-2 KSBFBF); Edy Crawford advanced to second; Lena Tsonis advanced to third; Bre Fontes scored, unearned.",
+            "Olivia Ali struck out looking (1-2 SBFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Olivia Silva grounded out to 3b (1-0 B).",
+            "Raelynn Perregaux reached first on a throwing error by ss, advanced to second (0-2 FK).",
+            "Bre Fontes singled to center field, RBI (2-1 BBF); Raelynn Perregaux scored, unearned.",
+            "Lena Tsonis walked (3-2 BKKBFFBFB); Bre Fontes advanced to second.",
+            "Lily Routhier popped up to ss (2-2 BKBK).",
+            "Sydney Menz reached on a fielder's choice (1-2 SSB); Lena Tsonis advanced to second; Bre Fontes out at third 3b unassisted."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Kannan, Ragini",
+          "ip": 3,
+          "h": 6,
+          "r": 3,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 17
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 3,
+          "h": 4,
+          "r": 2,
+          "er": 0,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 17
         }
       ],
       "year": 2026
