@@ -1,60 +1,60 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-03T02:07:16.469Z",
+  "scrapedAt": "2026-04-04T01:59:44.990Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 7,
+      "w": 9,
       "l": 0,
-      "era": 0.72,
-      "app": 8,
-      "gs": 4,
+      "era": 1.03,
+      "app": 10,
+      "gs": 5,
       "cg": 3,
       "sho": 2,
       "sv": 0,
-      "ip": 38.2,
-      "h": 33,
-      "r": 4,
-      "er": 4,
-      "bb": 5,
-      "so": 24,
+      "ip": 47.2,
+      "h": 44,
+      "r": 9,
+      "er": 7,
+      "bb": 8,
+      "so": 31,
       "hr": 0,
-      "whip": 0.98,
-      "doubles": 2,
+      "whip": 1.09,
+      "doubles": 5,
       "triples": 0,
-      "ab": 144,
-      "bAvg": 0.229,
-      "wp": 0,
+      "ab": 181,
+      "bAvg": 0.243,
+      "wp": 1,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 4
     },
     {
       "name": "Boldebuck, Naomi",
       "w": 5,
       "l": 0,
-      "era": 1.28,
-      "app": 7,
-      "gs": 7,
+      "era": 1.86,
+      "app": 8,
+      "gs": 8,
       "cg": 5,
       "sho": 2,
       "sv": 0,
-      "ip": 38.1,
-      "h": 35,
-      "r": 13,
-      "er": 7,
-      "bb": 9,
-      "so": 21,
+      "ip": 41.1,
+      "h": 42,
+      "r": 17,
+      "er": 11,
+      "bb": 14,
+      "so": 23,
       "hr": 0,
-      "whip": 1.15,
-      "doubles": 1,
+      "whip": 1.35,
+      "doubles": 2,
       "triples": 0,
-      "ab": 141,
-      "bAvg": 0.248,
-      "wp": 1,
+      "ab": 157,
+      "bAvg": 0.268,
+      "wp": 2,
       "hbp": 3,
       "bk": 0,
       "sfa": 1,
@@ -64,24 +64,24 @@
       "name": "Barr, Kaitlyn",
       "w": 2,
       "l": 0,
-      "era": 4.31,
-      "app": 4,
+      "era": 3.73,
+      "app": 5,
       "gs": 3,
       "cg": 1,
       "sho": 0,
-      "sv": 0,
-      "ip": 13,
-      "h": 17,
+      "sv": 1,
+      "ip": 15,
+      "h": 20,
       "r": 14,
       "er": 8,
-      "bb": 8,
+      "bb": 9,
       "so": 7,
       "hr": 0,
-      "whip": 1.92,
+      "whip": 1.93,
       "doubles": 3,
       "triples": 0,
-      "ab": 59,
-      "bAvg": 0.288,
+      "ab": 68,
+      "bAvg": 0.294,
       "wp": 3,
       "hbp": 3,
       "bk": 0,
@@ -1411,6 +1411,234 @@
           "hbp": 1,
           "ab": 22,
           "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/wheaton-ma-/boxscore/16640",
+      "date": "4/3/2026",
+      "opponent": "Wheaton Ma ",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand flied out to rf (1-0 B).",
+            "Taylor Barry walked (3-2 BSBBKB).",
+            "Ella Molinari flied out to rf (1-0 B).",
+            "Peyton Blankenheim-Brown popped up to 2b (3-2 BSSBFFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Boucher doubled to left center (2-1 BFB).",
+            "Mady Bryan walked (3-0 BBBB).",
+            "Gabby Reinbold singled to right field (0-2 KS); Mady Bryan advanced to second; Emma Boucher advanced to third.",
+            "Riley Dolan singled down the rf line, RBI (1-2 SFB); Gabby Reinbold advanced to second; Mady Bryan advanced to third; Emma Boucher scored.",
+            "Riley Dolan advanced to second on a wild pitch; Gabby Reinbold advanced to third on a wild pitch; Mady Bryan scored on a wild pitch.",
+            "Julia Miller struck out swinging (1-2 KBFS).",
+            "Amber Arcand walked (3-2 KBSFBBFB).",
+            "Taylor Barry struck out swinging (1-2 SBKS).",
+            "Ella Molinari popped up to 2b, interference (1-2 FSFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Peyton Blankenheim-Brown singled down the lf line (0-0).",
+            "Emma Boucher reached on a fielder's choice (2-0 BB); Peyton Blankenheim-Brown out at second ss to 2b.",
+            "Mady Bryan lined out to cf (2-0 BB).",
+            "Gabby Reinbold walked (3-2 BFBFBB); Emma Boucher advanced to second.",
+            "Riley Dolan popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Stella Kozak to 3b.",
+            "Julia Miller singled to catcher, bunt (1-1 BF).",
+            "Amber Arcand walked (3-1 BSBBB); Julia Miller advanced to second.",
+            "Taylor Barry singled to pitcher, bunt (1-0 B); Amber Arcand advanced to second; Julia Miller advanced to third.",
+            "Ella Molinari singled to right field, 2 RBI (0-1 K); Taylor Barry advanced to third; Amber Arcand scored; Julia Miller scored.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Peyton Blankenheim-Brown lined out to ss (0-0).",
+            "Ella Molinari stole second.",
+            "Emma Boucher struck out swinging (0-2 KSS).",
+            "Mady Bryan flied out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gabby Reinbold struck out swinging (1-2 KBKS).",
+            "Riley Dolan grounded out to ss (1-2 BFF).",
+            "Julia Miller grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amber Arcand grounded out to ss (0-1 K).",
+            "Taylor Barry struck out swinging (2-2 BKBSS).",
+            "Ella Molinari grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ariana Kreuzer to c for Colleen Mayer.",
+            "Peyton Blankenheim-Brown walked (3-0 BBBB).",
+            "Lauren Kelley pinch ran for Peyton Blankenheim-Brown.",
+            "Emma Boucher out at first p to 2b, SAC, bunt (1-0 B); Lauren Kelley advanced to second.",
+            "Mady Bryan fouled out to 1b (0-1 K).",
+            "Gabby Reinbold grounded out to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 5,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 21
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 4,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 13
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/wheaton-ma-/boxscore/16639",
+      "date": "4/3/2026",
+      "opponent": "Wheaton Ma ",
+      "pitchers": [
+        "Merchant, Abby",
+        "Barr, Kaitlyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand singled up the middle (2-2 KFBB).",
+            "Taylor Barry out at first c to 2b, SAC, bunt (2-1 BFB); Amber Arcand advanced to second.",
+            "Ella Molinari lined out to 2b (1-0 B).",
+            "Peyton Blankenheim-Brown doubled to center field, RBI (1-1 BF); Amber Arcand scored.",
+            "Emma Boucher doubled to left center, RBI (0-1 S); Peyton Blankenheim-Brown scored.",
+            "Gabby Reinbold struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Brittany Dost walked (3-1 SBBBB).",
+            "Riley Dolan struck out swinging (0-2 FFFFS).",
+            "Julia Miller popped up to 2b (1-1 FB).",
+            "Amber Arcand singled to right center (2-1 BBK); Brittany Dost advanced to second.",
+            "Taylor Barry singled to right field (0-0); Amber Arcand advanced to second; Brittany Dost advanced to third.",
+            "Ella Molinari struck out swinging (1-2 KBSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Peyton Blankenheim-Brown popped up to ss (0-1 K).",
+            "Emma Boucher grounded out to p (1-1 BF).",
+            "Gabby Reinbold singled to center field (0-0).",
+            "Brittany Dost popped up to cf (3-2 BSFBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Dolan grounded out to 3b (0-0).",
+            "Julia Miller singled up the middle (1-0 B).",
+            "Amber Arcand reached on a fielder's choice (2-2 BFBF); Julia Miller out at second 2b to ss.",
+            "Taylor Barry reached on a fielder's choice (2-2 BSBS); Amber Arcand out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella Molinari doubled down the lf line (1-0 B).",
+            "Ella Molinari advanced to third on a wild pitch.",
+            "Peyton Blankenheim-Brown singled to left field, RBI (3-2 FFBBB); Ella Molinari scored.",
+            "Emma Boucher popped up to 3b (1-2 FBSF); Peyton Blankenheim-Brown did not advance.",
+            "Gabby Reinbold reached first on a fielding error by 1b (0-0); Peyton Blankenheim-Brown advanced to second.",
+            "Brittany Dost struck out swinging (3-2 KSBBFBS).",
+            "Riley Dolan walked (3-0 BBBB); Gabby Reinbold advanced to second; Peyton Blankenheim-Brown advanced to third.",
+            "Julia Miller singled up the middle, RBI (1-1 BK); Riley Dolan advanced to second; Gabby Reinbold advanced to third; Peyton Blankenheim-Brown scored, unearned.",
+            "Amber Arcand singled to right field, RBI (1-0 B); Julia Miller advanced to second; Riley Dolan advanced to third; Gabby Reinbold scored, unearned.",
+            "Taylor Barry popped up to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kaitlyn Barr to p for Abby Merchant.",
+            "Ella Molinari grounded out to ss (0-1 K).",
+            "Peyton Blankenheim-Brown singled to center field (1-0 B).",
+            "Emma Boucher singled up the middle (2-1 SBB); Peyton Blankenheim-Brown advanced to second.",
+            "Lauren Kelley pinch ran for Peyton Blankenheim-Brown.",
+            "Gabby Reinbold walked (3-1 BBKBB); Emma Boucher advanced to second; Lauren Kelley advanced to third.",
+            "Brittany Dost popped up to 3b (1-0 B).",
+            "Riley Dolan grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Miller singled to left center (0-0).",
+            "Amber Arcand flied out to cf (0-1 K).",
+            "Taylor Barry lined out to 1b (0-0).",
+            "Ella Molinari reached on a fielder's choice (1-2 FKB); Julia Miller out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 5,
+          "h": 11,
+          "r": 5,
+          "er": 3,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 29
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 2,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 10
         }
       ],
       "year": 2026

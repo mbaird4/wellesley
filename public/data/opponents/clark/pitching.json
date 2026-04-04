@@ -1,32 +1,32 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-03T02:07:49.116Z",
+  "scrapedAt": "2026-04-04T02:00:32.544Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 6,
-      "l": 2,
-      "era": 2.29,
-      "app": 8,
-      "gs": 7,
-      "cg": 7,
+      "l": 3,
+      "era": 2.61,
+      "app": 9,
+      "gs": 8,
+      "cg": 8,
       "sho": 0,
       "sv": 0,
-      "ip": 52,
-      "h": 55,
-      "r": 21,
-      "er": 17,
-      "bb": 11,
-      "so": 63,
+      "ip": 59,
+      "h": 68,
+      "r": 26,
+      "er": 22,
+      "bb": 12,
+      "so": 67,
       "hr": 2,
-      "whip": 1.27,
-      "doubles": 9,
+      "whip": 1.36,
+      "doubles": 10,
       "triples": 1,
-      "ab": 212,
-      "bAvg": 0.259,
-      "wp": 2,
+      "ab": 246,
+      "bAvg": 0.276,
+      "wp": 4,
       "hbp": 3,
       "bk": 0,
       "sfa": 0,
@@ -35,25 +35,25 @@
     {
       "name": "Dube, Megan",
       "w": 3,
-      "l": 5,
-      "era": 3.57,
-      "app": 8,
-      "gs": 7,
-      "cg": 7,
+      "l": 6,
+      "era": 3.38,
+      "app": 9,
+      "gs": 8,
+      "cg": 8,
       "sho": 0,
       "sv": 0,
-      "ip": 53,
-      "h": 64,
-      "r": 35,
-      "er": 27,
-      "bb": 14,
-      "so": 55,
+      "ip": 60,
+      "h": 73,
+      "r": 39,
+      "er": 29,
+      "bb": 19,
+      "so": 59,
       "hr": 3,
-      "whip": 1.47,
-      "doubles": 14,
+      "whip": 1.53,
+      "doubles": 16,
       "triples": 4,
-      "ab": 217,
-      "bAvg": 0.295,
+      "ab": 246,
+      "bAvg": 0.297,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
@@ -1649,6 +1649,212 @@
           "so": 8,
           "hbp": 1,
           "ab": 31,
+          "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/springfield-college/boxscore/19191",
+      "date": "4/3/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Julia Rimshnick to dp.",
+            "Amelia DeRosa to p.",
+            "Amelia DeRosa walked (3-2 BBFFFBB).",
+            "Amelia DeRosa stole second.",
+            "Brynlee Eckles struck out looking (1-2 FBKK).",
+            "Reilly Hunter singled up the middle (3-1 FBBB); Amelia DeRosa advanced to third.",
+            "Carissa Pecchia singled to center field, RBI (0-0); Reilly Hunter advanced to third; Amelia DeRosa scored.",
+            "Kate Katsetos singled to center field, RBI (0-0); Carissa Pecchia advanced to second; Reilly Hunter scored.",
+            "Kate Katsetos advanced to second; Carissa Pecchia advanced to third on a passed ball.",
+            "Emilia Santiago walked (3-2 BFBFBB).",
+            "Madison King reached on a fielder's choice, RBI (2-0 BB); Emilia Santiago advanced to second; Kate Katsetos out at third ss unassisted; Carissa Pecchia scored, unearned.",
+            "Haley Ball walked (3-2 SBFFBFBB); Madison King advanced to second; Emilia Santiago advanced to third.",
+            "Taylor Falotico grounded out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Amelia DeRosa popped up to ss (0-0).",
+            "Brynlee Eckles doubled to left field (2-1 BBK).",
+            "Reilly Hunter singled to center field, out at second cf to c to 3b to ss (2-1 BFB); Brynlee Eckles advanced to third, out at home cf to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gricelda Castro to ss for Avery Dillon.",
+            "Natalie Kandel to 2b.",
+            "Maddie Tse to lf for Madison King.",
+            "Carissa Pecchia struck out looking (3-2 BBSKBK).",
+            "Kate Katsetos doubled to right center (0-0).",
+            "Emilia Santiago walked (3-2 BFBSBB).",
+            "Maddie Tse struck out swinging (0-2 FKS).",
+            "Haley Ball fouled out to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Falotico popped up to 3b (2-2 KBBF).",
+            "Amelia DeRosa flied out to cf (1-2 BFK).",
+            "Brynlee Eckles struck out swinging (2-2 BBKKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Reilly Hunter lined out to cf (2-0 BB).",
+            "Carissa Pecchia walked (3-2 KBBSBB).",
+            "Ariana Hammer to c for Carissa Pecchia.",
+            "Kate Katsetos reached on a fielder's choice (0-0); Ariana Hammer out at second 2b unassisted.",
+            "Emilia Santiago singled to center field (2-2 BBFK); Kate Katsetos advanced to third.",
+            "Maddie Tse grounded out to ss (3-2 BSBBFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haley Ball flied out to lf (2-1 KBB).",
+            "Taylor Falotico reached first on a throwing error by p, advanced to third (0-0).",
+            "Amelia DeRosa singled to center field, RBI (0-0); Taylor Falotico scored, unearned.",
+            "Brynlee Eckles singled to right field (3-1 BKBB); Amelia DeRosa advanced to second.",
+            "Reilly Hunter flied out to rf (3-1 KBBB).",
+            "Carissa Pecchia flied out to cf (2-1 SBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kate Katsetos flied out to lf (0-0).",
+            "Emilia Santiago grounded out to ss (1-1 BF).",
+            "Maddie Tse grounded out to ss (2-1 FBB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 7,
+          "h": 9,
+          "r": 4,
+          "er": 2,
+          "bb": 5,
+          "so": 4,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 34
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/springfield-college/boxscore/19192",
+      "date": "4/3/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa struck out looking (3-2 BFBKBK).",
+            "Brynlee Eckles fouled out to 1b (1-2 BKS).",
+            "Reilly Hunter struck out swinging (0-2 SKFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Carissa Pecchia grounded out to 3b (3-1 BBFB).",
+            "Kate Katsetos flied out to lf (0-1 K).",
+            "Madison Testo flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sammy Swords popped up to 3b (0-1 S).",
+            "Haley Ball singled up the middle (2-2 BFSBF).",
+            "Haley Ball stole second.",
+            "Taylor Falotico fouled out to 3b (2-2 BKFFB).",
+            "Amelia DeRosa singled through the left side (0-0); Haley Ball advanced to third.",
+            "Brynlee Eckles flied out to rf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Reilly Hunter struck out swinging (2-2 KBKBFFS).",
+            "Carissa Pecchia popped up to 1b (0-0).",
+            "Kate Katsetos singled to center field (0-1 F).",
+            "Madison Testo singled to shortstop (0-1 K); Kate Katsetos advanced to second.",
+            "Sammy Swords walked (3-2 SBBBFB); Madison Testo advanced to second; Kate Katsetos advanced to third.",
+            "Sammy Swords advanced to second on a wild pitch; Madison Testo advanced to third on a wild pitch; Kate Katsetos scored on a wild pitch.",
+            "Haley Ball doubled to left field, 2 RBI (3-2 KBBBF); Sammy Swords scored; Madison Testo scored.",
+            "Taylor Falotico singled to shortstop (2-2 FBBKF); Haley Ball advanced to third on the throw.",
+            "Amelia DeRosa singled up the middle, RBI (0-0); Taylor Falotico advanced to second; Haley Ball scored.",
+            "Brynlee Eckles singled to right field, RBI (0-0); Amelia DeRosa advanced to third; Taylor Falotico scored.",
+            "Reilly Hunter fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Pecchia lined out to lf (0-1 K).",
+            "Kate Katsetos singled to pitcher (0-1 F).",
+            "Kate Katsetos advanced to second on a wild pitch.",
+            "Madison Testo flied out to cf (2-2 KBBF).",
+            "Natalie Kandel to ss for Gricelda Castro.",
+            "Jennifer Albano to cf for Emelie Spence.",
+            "Sammy Swords fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haley Ball singled to left field (1-1 FB).",
+            "Taylor Falotico lined out to ss (0-1 F).",
+            "Haley Ball stole second.",
+            "Amelia DeRosa grounded out to ss (2-2 BBKK); Haley Ball advanced to third.",
+            "Brynlee Eckles popped up to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Megan Dube to dp for Caitriona Andre.",
+            "Christina Vlahakis pinch hit for Reilly Hunter.",
+            "Christina Vlahakis struck out swinging (0-2 KFS).",
+            "Carissa Pecchia lined out to rf (1-2 BKF).",
+            "Kate Katsetos singled up the middle (0-0).",
+            "Madison Testo singled to center field (0-0); Kate Katsetos advanced to second.",
+            "Rachel Powers pinch hit for Sammy Swords.",
+            "Rachel Powers singled to left field (0-0); Madison Testo advanced to second; Kate Katsetos advanced to third.",
+            "Haley Ball grounded out to 2b (0-2 KFFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 13,
+          "r": 5,
+          "er": 5,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 34,
           "bf": 35
         }
       ],

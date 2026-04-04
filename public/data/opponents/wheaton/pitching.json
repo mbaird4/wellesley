@@ -1,64 +1,64 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-03T02:07:20.814Z",
+  "scrapedAt": "2026-04-04T01:59:50.684Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 5,
-      "l": 2,
-      "era": 0.89,
-      "app": 7,
-      "gs": 7,
-      "cg": 7,
+      "l": 3,
+      "era": 1.44,
+      "app": 8,
+      "gs": 8,
+      "cg": 8,
       "sho": 3,
       "sv": 0,
-      "ip": 47.1,
-      "h": 36,
-      "r": 8,
-      "er": 6,
+      "ip": 53.1,
+      "h": 47,
+      "r": 14,
+      "er": 11,
       "bb": 4,
-      "so": 32,
+      "so": 33,
       "hr": 2,
-      "whip": 0.85,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 168,
-      "bAvg": 0.214,
+      "whip": 0.96,
+      "doubles": 9,
+      "triples": 1,
+      "ab": 196,
+      "bAvg": 0.24,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 9
+      "sha": 11
     },
     {
       "name": "De La Rosa, Sofia",
       "w": 4,
-      "l": 3,
-      "era": 2.08,
-      "app": 7,
-      "gs": 7,
-      "cg": 5,
+      "l": 4,
+      "era": 2.53,
+      "app": 8,
+      "gs": 8,
+      "cg": 6,
       "sho": 3,
       "sv": 0,
-      "ip": 40.1,
-      "h": 38,
-      "r": 23,
-      "er": 12,
+      "ip": 47,
+      "h": 49,
+      "r": 28,
+      "er": 17,
       "bb": 10,
-      "so": 51,
-      "hr": 1,
-      "whip": 1.19,
-      "doubles": 8,
-      "triples": 2,
-      "ab": 162,
-      "bAvg": 0.235,
+      "so": 57,
+      "hr": 3,
+      "whip": 1.26,
+      "doubles": 9,
+      "triples": 3,
+      "ab": 190,
+      "bAvg": 0.258,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
-      "sfa": 1,
-      "sha": 3
+      "sfa": 2,
+      "sha": 5
     },
     {
       "name": "Dost, Brittany",
@@ -1356,6 +1356,187 @@
           "hbp": 0,
           "ab": 25,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/10013",
+      "date": "4/3/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour grounded out to 2b (2-2 BSBK).",
+            "Virginia McKinney struck out looking (1-2 BKSK).",
+            "Destiny Lum tripled to right center (1-1 BK).",
+            "Riley O'Brien grounded out to 3b (3-2 BBBSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sandy Fairbairn struck out looking (2-2 SBBSK).",
+            "Emma Nagy singled down the lf line (0-2 KF).",
+            "Ariana Kreuzer struck out swinging (0-2 FKS).",
+            "Meg Sherwood grounded out to 1b unassisted (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elizabeth Jordan grounded out to ss (1-2 BFF).",
+            "Lucy Latour homered, RBI (3-2 BBBKF).",
+            "Virginia McKinney struck out looking (1-2 SBFFK).",
+            "Stella Kozak pinch hit for Destiny Lum.",
+            "Stella Kozak grounded out to 1b unassisted (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley O'Brien struck out swinging (0-2 SSS).",
+            "Sandy Fairbairn singled to first base, bunt (0-1 S).",
+            "Emma Nagy popped up to 2b (1-2 SBK).",
+            "Ariana Kreuzer flied out to rf down the lf line (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Meg Sherwood singled to center field (1-2 FBF).",
+            "Elizabeth Jordan grounded out to 3b, SAC, bunt (0-0); Meg Sherwood advanced to second.",
+            "Lucy Latour lined out to ss (2-2 BKBF).",
+            "Virginia McKinney lined out to cf (2-2 FBSFFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Stella Kozak popped up to 1b (0-1 F).",
+            "Riley O'Brien homered, RBI (1-1 BF).",
+            "Sandy Fairbairn doubled to left center (0-0).",
+            "Emma Nagy struck out swinging (2-2 FFFFFBBS).",
+            "Ariana Kreuzer singled to right center, RBI (2-1 BBK); Sandy Fairbairn scored.",
+            "Colleen Mayer pinch ran for Ariana Kreuzer.",
+            "Meg Sherwood grounded out to ss (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Peyton Blankenheim-Brown to 1b for Lauren Kelley.",
+            "Elizabeth Jordan singled to left center (0-1 F).",
+            "Lucy Latour singled up the middle (1-2 BFF); Elizabeth Jordan advanced to second.",
+            "Virginia McKinney out at first 1b to 2b, SAC, bunt (0-0); Lucy Latour advanced to second; Elizabeth Jordan advanced to third.",
+            "Stella Kozak singled to right field, advanced to second on the throw, RBI (1-0 B); Lucy Latour advanced to third; Elizabeth Jordan scored.",
+            "Riley O'Brien fouled out to rf, sacrifice fly, RBI (0-2 KS); Lucy Latour scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 6.2,
+          "h": 11,
+          "r": 5,
+          "er": 5,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 31
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/10014",
+      "date": "4/3/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour doubled down the lf line (1-2 BSF).",
+            "Virginia McKinney doubled to left field, RBI (1-2 FBS); Lucy Latour scored.",
+            "Riley O'Brien doubled to left field (1-0 B); Virginia McKinney advanced to third.",
+            "Emma Nagy tripled down the rf line, 2 RBI (0-0); Riley O'Brien scored; Virginia McKinney scored.",
+            "Sandy Fairbairn grounded out to 3b (0-0).",
+            "Stella Kozak doubled to left center, RBI (0-0); Emma Nagy scored.",
+            "Ariana Kreuzer popped up to cf (2-2 SFFBB).",
+            "Meg Sherwood lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elizabeth Jordan grounded out to p, bunt (1-0 B).",
+            "Lucy Latour flied out to lf (0-0).",
+            "Virginia McKinney singled to left field (3-2 BKBFBF).",
+            "Virginia McKinney stole second.",
+            "Riley O'Brien grounded out to 3b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nagy popped up to 3b (2-2 BSFB).",
+            "Sandy Fairbairn doubled to left center (0-0).",
+            "Stella Kozak grounded out to ss (1-2 SFB).",
+            "Ariana Kreuzer singled to right center, RBI (1-2 KBF); Sandy Fairbairn scored.",
+            "Meg Sherwood doubled to left field (1-0 B); Ariana Kreuzer advanced to third.",
+            "Elizabeth Jordan grounded out to p, bunt (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lucy Latour popped up to ss (0-1 S).",
+            "Virginia McKinney flied out to rf (1-0 B).",
+            "Riley O'Brien singled down the lf line (0-1 F).",
+            "Emma Nagy struck out swinging (0-2 SFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sandy Fairbairn singled, advanced to second on an error by ss (0-1 F).",
+            "Stella Kozak reached first on a throwing error by c, advanced to second on the error, SAC, bunt, RBI (0-0); Sandy Fairbairn advanced to third, scored on the error, unearned.",
+            "Ariana Kreuzer grounded out to c, SAC, bunt (1-0 B); Stella Kozak advanced to third.",
+            "Meg Sherwood fouled out to c (2-2 FBBSF).",
+            "Elizabeth Jordan grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Lauren Kelley.",
+            "Lucy Latour popped up to cf (1-0 B).",
+            "Virginia McKinney lined out to ss (1-1 BK).",
+            "Riley O'Brien fouled out to 3b (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 6,
+          "h": 11,
+          "r": 6,
+          "er": 5,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
         }
       ],
       "year": 2026

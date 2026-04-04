@@ -1,32 +1,32 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-03T02:07:24.331Z",
+  "scrapedAt": "2026-04-04T01:59:56.743Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 6,
-      "l": 2,
-      "era": 2.57,
-      "app": 8,
+      "w": 7,
+      "l": 3,
+      "era": 2.3,
+      "app": 10,
       "gs": 2,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 49,
-      "h": 50,
-      "r": 23,
-      "er": 18,
-      "bb": 12,
-      "so": 32,
+      "ip": 61,
+      "h": 58,
+      "r": 25,
+      "er": 20,
+      "bb": 14,
+      "so": 55,
       "hr": 2,
-      "whip": 1.27,
-      "doubles": 9,
+      "whip": 1.18,
+      "doubles": 13,
       "triples": 1,
-      "ab": 190,
-      "bAvg": 0.263,
-      "wp": 1,
+      "ab": 235,
+      "bAvg": 0.247,
+      "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 4,
+      "w": 5,
       "l": 1,
-      "era": 5.97,
-      "app": 12,
-      "gs": 11,
-      "cg": 5,
+      "era": 5.12,
+      "app": 15,
+      "gs": 14,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 34,
-      "h": 49,
-      "r": 38,
-      "er": 29,
+      "ip": 41,
+      "h": 56,
+      "r": 39,
+      "er": 30,
       "bb": 14,
-      "so": 18,
+      "so": 21,
       "hr": 0,
-      "whip": 1.85,
-      "doubles": 7,
+      "whip": 1.71,
+      "doubles": 8,
       "triples": 4,
-      "ab": 153,
-      "bAvg": 0.32,
+      "ab": 180,
+      "bAvg": 0.311,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
       "sfa": 3,
-      "sha": 1
+      "sha": 2
     }
   ],
   "games": [
@@ -1375,6 +1375,285 @@
           "hbp": 0,
           "ab": 27,
           "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/western-new-england/boxscore/14845",
+      "date": "4/1/2026",
+      "opponent": "Western New England",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa to p for Julia Rimshnick.",
+            "Marley Rodriguez doubled to right center (0-1 K).",
+            "Angelees Carrasquillo struck out swinging (2-2 SFBBFS).",
+            "Evelyn Picone reached on a fielder's choice to shortstop (1-2 FBKF); Marley Rodriguez out at third 3b unassisted.",
+            "Riley Kane fouled out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Nicolina Salanto popped up to ss (0-0).",
+            "Katelyn Bailey walked (3-1 BBBKB).",
+            "Katherine Brooks struck out swinging (1-2 FFBS).",
+            "Ava Barnhart struck out looking (1-2 KBKFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Shea McDaniel flied out to rf (0-0).",
+            "Marley Rodriguez lined out to 2b (2-2 BBKK).",
+            "Angelees Carrasquillo reached first on an error by ss (3-1 BBFB).",
+            "Evelyn Picone popped up to 3b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Kane singled through the right side (1-0 B).",
+            "Nicolina Salanto fouled out to 3b (3-2 BBFBF).",
+            "Katelyn Bailey flied out to lf (3-2 BBBKF).",
+            "Katherine Brooks struck out swinging (1-2 FSBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ava Barnhart doubled to left center (2-0 BB).",
+            "Ava Barnhart advanced to third on a wild pitch.",
+            "Shea McDaniel walked (3-2 BBKKBB).",
+            "Marley Rodriguez singled through the left side, RBI (2-2 BFSFB); Shea McDaniel advanced to second; Ava Barnhart scored.",
+            "Angelees Carrasquillo reached on a fielder's choice (3-1 BBBK); Marley Rodriguez advanced to second; Shea McDaniel out at third ss to 3b.",
+            "Evelyn Picone grounded out to 2b (3-1 BBBK); Angelees Carrasquillo advanced to second; Marley Rodriguez advanced to third.",
+            "Riley Kane flied out to rf (2-2 KFBBFFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 5,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/clark-university/boxscore/14831",
+      "date": "4/3/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley singled up the middle (0-1 K).",
+            "Avery Dillon struck out swinging (2-2 BBFFS).",
+            "Megan Dube struck out looking (2-2 SBBFK).",
+            "Erin Slavin struck out swinging (2-2 BKBSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Felicia Salvati struck out looking (0-2 FKFK).",
+            "Alexis Taudel struck out swinging (1-2 SBKS).",
+            "Abigail Venis struck out looking (3-2 BSSBBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gwen Castro struck out swinging (2-2 BFBKS).",
+            "Emelie Spence struck out swinging (0-2 FKFS).",
+            "Charlise Quigley struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gricelda Castro struck out swinging (0-2 KSS).",
+            "Megan Dube popped up to p (0-2 FFF).",
+            "Erin Slavin struck out swinging (2-2 BBFKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Pecchia to c for Ariana Hammer.",
+            "Felicia Salvati doubled to left field (0-0).",
+            "Alexis Taudel struck out swinging (0-2 SFS).",
+            "Abigail Venis struck out swinging (3-2 FBSBBFS).",
+            "Gwen Castro struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emelie Spence singled to catcher, bunt (0-0).",
+            "Charlise Quigley struck out swinging (1-2 BFFS); Emelie Spence stole second.",
+            "Gricelda Castro doubled to center field, RBI (1-2 KFB); Emelie Spence scored.",
+            "Megan Dube flied out to lf (0-1 F); Gricelda Castro advanced to third.",
+            "Erin Slavin struck out swinging (2-2 SSBBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Felicia Salvati struck out swinging (0-2 SSS).",
+            "Madison Dillon to rf for Alexis Taudel.",
+            "Madison Dillon struck out swinging (0-2 SKS).",
+            "Caitriona Andre to 3b for Abigail Venis.",
+            "Caitriona Andre struck out swinging (1-2 SBFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 19,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/clark-university/boxscore/14832",
+      "date": "4/3/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley grounded out to 3b (0-1 S).",
+            "Gricelda Castro grounded out to 3b (0-0).",
+            "Megan Dube doubled to right center, advanced to third on a throwing error by cf (2-2 KKBBFF).",
+            "Erin Slavin struck out swinging (3-2 BBKBSFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Felicia Salvati fouled out to 3b (1-2 BFS).",
+            "Alexis Taudel singled up the middle (1-2 KBSF).",
+            "Abigail Venis reached on a fielder's choice (0-1 S); Alexis Taudel out at second 3b to ss to 2b.",
+            "Gwen Castro lined out to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emelie Spence singled through the right side (2-2 BFSBF).",
+            "Charlise Quigley out at first 3b to 2b, bunt, SAC (1-1 BF); Emelie Spence advanced to second.",
+            "Gricelda Castro popped up to 2b (3-2 BFBFB).",
+            "Megan Dube struck out swinging (2-2 BBFFFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Erin Slavin singled to right field (0-1 S).",
+            "Felicia Salvati singled to right field (0-1 K); Erin Slavin advanced to second.",
+            "Alexis Taudel grounded out to 3b (0-2 FF); Felicia Salvati advanced to second; Erin Slavin advanced to third.",
+            "Abigail Venis grounded out to 2b, RBI (1-0 B); Felicia Salvati advanced to third; Erin Slavin scored.",
+            "Gwen Castro lined out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jennifer Albano lined out to ss (1-1 KB).",
+            "Charlise Quigley struck out swinging, out at first c to 1b (1-2 KSBS).",
+            "Natalie Kandel grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Dube singled to left field (0-2 FS).",
+            "Caitriona Andre pinch ran for Megan Dube.",
+            "Erin Slavin grounded out to 1b unassisted (1-1 FB); Caitriona Andre advanced to second.",
+            "Felicia Salvati flied out to lf (0-0).",
+            "Alexis Taudel flied out to cf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Reilly Hunter to ss for Christina Vlahakis.",
+            "Sammy Swords to lf for Rachel Powers.",
+            "Abigail Venis grounded out to ss (0-0).",
+            "Gwen Castro singled to center field (1-2 BFKF).",
+            "Jennifer Albano flied out to rf (0-1 S).",
+            "Charlise Quigley flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 28
         }
       ],
       "year": 2026

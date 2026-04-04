@@ -1,60 +1,60 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-03T02:07:28.734Z",
+  "scrapedAt": "2026-04-04T02:00:03.665Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
-      "w": 4,
+      "w": 5,
       "l": 4,
-      "era": 4.1,
-      "app": 9,
-      "gs": 8,
-      "cg": 6,
+      "era": 3.57,
+      "app": 10,
+      "gs": 9,
+      "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 41,
-      "h": 46,
-      "r": 30,
+      "ip": 47,
+      "h": 51,
+      "r": 32,
       "er": 24,
-      "bb": 24,
-      "so": 46,
+      "bb": 26,
+      "so": 54,
       "hr": 1,
-      "whip": 1.71,
-      "doubles": 4,
+      "whip": 1.64,
+      "doubles": 6,
       "triples": 3,
-      "ab": 167,
-      "bAvg": 0.275,
+      "ab": 190,
+      "bAvg": 0.268,
       "wp": 4,
       "hbp": 4,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 2
     },
     {
       "name": "Gray, Bailey",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 4.91,
-      "app": 7,
-      "gs": 3,
-      "cg": 2,
+      "era": 4.2,
+      "app": 8,
+      "gs": 4,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 31.1,
-      "h": 34,
-      "r": 27,
-      "er": 22,
-      "bb": 9,
-      "so": 23,
+      "ip": 38.1,
+      "h": 42,
+      "r": 29,
+      "er": 23,
+      "bb": 10,
+      "so": 28,
       "hr": 2,
-      "whip": 1.37,
-      "doubles": 9,
+      "whip": 1.36,
+      "doubles": 10,
       "triples": 0,
-      "ab": 132,
-      "bAvg": 0.258,
-      "wp": 0,
+      "ab": 161,
+      "bAvg": 0.261,
+      "wp": 1,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
@@ -1645,6 +1645,183 @@
           "hbp": 2,
           "ab": 21,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/emerson-college/boxscore/9665",
+      "date": "4/3/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale grounded out to 3b (2-2 BKBF).",
+            "Valentina Luciano struck out looking (0-2 FKFK).",
+            "Riley Caiazza grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avi Kuperman doubled to left field (0-0).",
+            "Kari Sorensen popped up to 2b (3-2 KBBFFFB).",
+            "Cal Sheehan flied out to lf (1-2 KFB).",
+            "Casey Yacovelli struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riley Fasteau struck out swinging (1-2 SSBS).",
+            "Aislinn McCoy struck out swinging (1-2 KFBS).",
+            "Malena Cardinale popped up to ss (2-2 BBKS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Veenstra to c for Anna Gray.",
+            "Valentina Luciano reached first on a throwing error by 3b (0-0).",
+            "Riley Caiazza doubled to right center (0-0); Valentina Luciano advanced to third.",
+            "Avi Kuperman flied out to cf, sacrifice fly, RBI (0-2 KF); Riley Caiazza advanced to third; Valentina Luciano scored, unearned.",
+            "Kari Sorensen grounded out to ss (0-0).",
+            "Cal Sheehan singled to center field, RBI (0-0); Riley Caiazza scored, unearned.",
+            "Casey Yacovelli singled to right field (1-0 B); Cal Sheehan advanced to second.",
+            "Riley Fasteau grounded out to p (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Aislinn McCoy walked (3-2 FBFFBBB).",
+            "Malena Cardinale singled up the middle (0-2 KK); Aislinn McCoy advanced to second.",
+            "Tessa Burroso pinch hit for Valentina Luciano.",
+            "Tessa Burroso struck out swinging (2-2 KBBFS).",
+            "Riley Caiazza struck out swinging (2-2 FFBFBS).",
+            "Avi Kuperman struck out swinging (1-2 KBKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sophie Hasegawa to ss for Ava Lansbury.",
+            "Kari Sorensen flied out to cf (0-1 F).",
+            "Kate Regan struck out looking (2-2 BBSSK).",
+            "Casey Yacovelli walked (3-2 SBBBSB).",
+            "Riley Fasteau reached on a fielder's choice (2-2 KBBS); Casey Yacovelli out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 6,
+          "h": 5,
+          "r": 2,
+          "er": 0,
+          "bb": 2,
+          "so": 8,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/emerson-college/boxscore/9666",
+      "date": "4/3/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale reached first on a fielding error by 1b (1-0 B).",
+            "Valentina Luciano grounded out to 2b (3-2 BBFFFBFFF); Malena Cardinale advanced to second.",
+            "Riley Caiazza singled up the middle, RBI (1-1 BF); Malena Cardinale scored, unearned.",
+            "Avi Kuperman singled up the middle (3-2 FBBKB); Riley Caiazza advanced to second.",
+            "Kari Sorensen reached on a fielder's choice (2-0 BB); Avi Kuperman advanced to second; Riley Caiazza out at third 3b unassisted.",
+            "Cal Sheehan struck out swinging (2-2 KBSFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Casey Yacovelli flied out to lf (1-2 BSK).",
+            "Aislinn McCoy struck out looking (2-2 SSBBK).",
+            "Tessa Burroso singled to second base (1-1 BS).",
+            "Tessa Burroso advanced to second on a wild pitch.",
+            "Malena Cardinale struck out swinging (2-2 BKBFFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano singled down the lf line (2-1 BKB).",
+            "Riley Caiazza walked (3-1 BBFBB); Valentina Luciano advanced to second.",
+            "Avi Kuperman grounded out to 2b (0-0); Riley Caiazza advanced to second; Valentina Luciano advanced to third.",
+            "Kari Sorensen singled to center field, RBI (0-0); Riley Caiazza advanced to third; Valentina Luciano scored.",
+            "Cal Sheehan struck out looking (2-2 BSFBFK).",
+            "Casey Yacovelli fouled out to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Aislinn McCoy out at first 3b to 2b, bunt (0-0).",
+            "Tessa Burroso grounded out to 2b (1-1 BF).",
+            "Malena Cardinale grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Valentina Luciano struck out looking (1-2 BSSK).",
+            "Riley Caiazza doubled to right field (0-2 FFF).",
+            "Avi Kuperman grounded out to p (1-2 BFS); Riley Caiazza advanced to third.",
+            "Kari Sorensen flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cal Sheehan grounded out to ss (0-0).",
+            "Casey Yacovelli popped up to p (0-1 F).",
+            "Aislinn McCoy grounded out to 1b unassisted (0-1 S)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley Veenstra to dp for Anna Gray.",
+            "Taz Tamai to lf for Lucy Allen.",
+            "Tessa Burroso singled to right field (0-1 K).",
+            "Malena Cardinale lined into double play p to 1b (2-2 KBBKFFF); Tessa Burroso out on the play.",
+            "Valentina Luciano singled to second base (1-1 FB).",
+            "Riley Caiazza grounded out to 2b (1-1 SB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 7,
+          "h": 8,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 30
         }
       ],
       "year": 2026

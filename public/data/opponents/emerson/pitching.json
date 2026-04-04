@@ -1,32 +1,32 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-04-03T02:07:40.133Z",
+  "scrapedAt": "2026-04-04T02:00:23.348Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 3,
-      "l": 5,
-      "era": 2.61,
-      "app": 10,
-      "gs": 6,
+      "l": 6,
+      "era": 2.77,
+      "app": 11,
+      "gs": 7,
       "cg": 4,
       "sho": 1,
       "sv": 0,
-      "ip": 48.1,
-      "h": 51,
-      "r": 39,
-      "er": 18,
-      "bb": 24,
-      "so": 59,
+      "ip": 53,
+      "h": 57,
+      "r": 46,
+      "er": 21,
+      "bb": 28,
+      "so": 64,
       "hr": 0,
-      "whip": 1.55,
-      "doubles": 6,
+      "whip": 1.6,
+      "doubles": 8,
       "triples": 5,
-      "ab": 205,
-      "bAvg": 0.249,
-      "wp": 19,
+      "ab": 226,
+      "bAvg": 0.252,
+      "wp": 22,
       "hbp": 4,
       "bk": 0,
       "sfa": 3,
@@ -35,29 +35,29 @@
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 4,
-      "era": 5.18,
-      "app": 8,
-      "gs": 6,
-      "cg": 2,
+      "l": 5,
+      "era": 5.35,
+      "app": 10,
+      "gs": 7,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 25.2,
-      "h": 39,
-      "r": 30,
-      "er": 19,
-      "bb": 16,
-      "so": 11,
+      "ip": 34,
+      "h": 54,
+      "r": 37,
+      "er": 26,
+      "bb": 18,
+      "so": 12,
       "hr": 2,
-      "whip": 2.14,
-      "doubles": 5,
+      "whip": 2.12,
+      "doubles": 7,
       "triples": 4,
-      "ab": 117,
-      "bAvg": 0.333,
-      "wp": 3,
+      "ab": 156,
+      "bAvg": 0.346,
+      "wp": 4,
       "hbp": 0,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 1
     }
   ],
@@ -1300,6 +1300,213 @@
           "hbp": 0,
           "ab": 27,
           "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/smith-college/boxscore/4286",
+      "date": "4/3/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson struck out swinging (2-2 BFFBFS).",
+            "Gabbie Chinnis struck out, out at first c to 1b (2-2 BBKKS).",
+            "Violet Peverly fouled out to 1b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Veenstra grounded out to 3b (1-1 KB).",
+            "Taz Tamai struck out, out at first c to 1b (1-2 BKKFS).",
+            "Bailey Gray struck out swinging (2-2 BBFFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sophie Hasegawa grounded out to ss (1-1 BK).",
+            "Elinor Washington singled through the left side (0-0).",
+            "Elinor Washington stole second.",
+            "Lily Hackett doubled to right center, RBI (0-2 SK); Elinor Washington scored.",
+            "Ally Knutson grounded out to 2b (2-2 FBSB); Lily Hackett advanced to third.",
+            "Lily Hackett scored on a wild pitch.",
+            "Gabbie Chinnis struck out looking (3-2 BBFBKK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Violet Peverly grounded out to 3b (1-0 B).",
+            "Riley Veenstra walked (3-2 KBBSBB).",
+            "Taz Tamai walked (3-2 BFKBFBB); Riley Veenstra advanced to second.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray reached on a fielder's choice (0-0); Taz Tamai advanced to second; Anna Gray out at third ss to 3b.",
+            "Sophie Hasegawa reached first on a fielding error by ss (1-0 B); Bailey Gray advanced to second; Taz Tamai scored, unearned.",
+            "Elinor Washington doubled to left field, 2 RBI (0-0); Sophie Hasegawa scored, unearned; Bailey Gray scored, unearned.",
+            "Lily Hackett singled up the middle, advanced to second on a throwing error by cf (0-0); Elinor Washington scored, unearned.",
+            "Lily Hackett advanced to third on a wild pitch.",
+            "Ally Knutson walked (3-0 BBBB).",
+            "Ally Knutson stole second.",
+            "Gabbie Chinnis popped up to ss (2-2 KFBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Violet Peverly grounded out to 3b (2-1 BBK).",
+            "Riley Veenstra singled through the right side (3-2 BBBSS).",
+            "Taz Tamai grounded out to 2b (3-2 BFBBBS); Riley Veenstra advanced to second.",
+            "Riley Veenstra advanced to third on a wild pitch.",
+            "Bailey Gray singled to center field, RBI (2-2 BFFBFFF); Riley Veenstra scored.",
+            "Sophie Hasegawa walked (3-1 BBBKB); Bailey Gray advanced to second.",
+            "Kate Regan to p for Cal Sheehan.",
+            "Elinor Washington struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Tessa Burroso to rf.",
+            "Lily Hackett singled up the middle (1-0 B).",
+            "Ally Knutson singled to left field (2-1 KBB); Lily Hackett advanced to second.",
+            "Gabbie Chinnis grounded out to 2b (2-2 BKKB); Ally Knutson advanced to second; Lily Hackett advanced to third.",
+            "Violet Peverly flied out to cf, sacrifice fly, RBI (0-0); Lily Hackett scored.",
+            "Riley Veenstra singled down the rf line, RBI (0-2 KS); Ally Knutson scored.",
+            "Riley Veenstra advanced to second on a wild pitch.",
+            "Taz Tamai walked (3-1 BKBBB).",
+            "Bailey Gray doubled to center field, 2 RBI (0-0); Taz Tamai scored; Riley Veenstra scored.",
+            "Ava Lansbury pinch hit for Sophie Hasegawa.",
+            "Ava Lansbury flied out to rf (3-2 BBFBFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 4.2,
+          "h": 6,
+          "r": 7,
+          "er": 3,
+          "bb": 4,
+          "so": 5,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 25
+        },
+        {
+          "name": "Regan, Kate",
+          "ip": 1.1,
+          "h": 4,
+          "r": 4,
+          "er": 4,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 9
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/smith-college/boxscore/4287",
+      "date": "4/3/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson singled through the left side (1-1 FB).",
+            "Gabbie Chinnis doubled to center field, RBI (1-1 FB); Ally Knutson scored.",
+            "Violet Peverly flied out to rf (1-2 KBK).",
+            "Riley Veenstra singled to right field (0-0); Gabbie Chinnis advanced to third.",
+            "Bailey Gray singled through the left side, RBI (0-0); Riley Veenstra advanced to second; Gabbie Chinnis scored.",
+            "Taz Tamai flied out to lf (0-0).",
+            "Sophie Hasegawa singled up the middle (0-0); Bailey Gray advanced to second; Riley Veenstra advanced to third.",
+            "Elinor Washington flied out to cf (3-2 BBSFBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lily Hackett grounded out to ss (1-0 B).",
+            "Ally Knutson flied out to cf (3-1 BFBB).",
+            "Gabbie Chinnis fouled out to c (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Violet Peverly grounded out to ss (1-0 B).",
+            "Riley Veenstra grounded out to 2b (3-2 BBBKK).",
+            "Bailey Gray singled to center field (0-0).",
+            "Taz Tamai grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sophie Hasegawa grounded out to 1b unassisted (2-2 KFBFB).",
+            "Elinor Washington flied out to lf (2-1 BKB).",
+            "Lily Hackett popped up to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ally Knutson walked (3-0 BBBB).",
+            "Gabbie Chinnis reached on a fielder's choice (2-2 KFBBF); Ally Knutson out at second ss to 2b.",
+            "Violet Peverly singled up the middle (1-2 FBFFF); Gabbie Chinnis advanced to second.",
+            "Riley Veenstra flied out to rf (0-1 K).",
+            "Bailey Gray fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Taz Tamai grounded out to 1b unassisted (2-1 BBK).",
+            "Sophie Hasegawa singled through the right side (0-1 K).",
+            "Elinor Washington fouled out to 2b (0-1 F).",
+            "Lily Hackett flied out to rf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ally Knutson singled to center field (1-0 B).",
+            "Gabbie Chinnis lined out to ss (3-2 BBFFB); Ally Knutson advanced to second on a throwing error by ss.",
+            "Violet Peverly grounded out to 2b (0-0); Ally Knutson advanced to third.",
+            "Riley Veenstra singled, advanced to second on a fielding error by rf, RBI (0-0); Ally Knutson scored.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray singled to shortstop (0-0); Anna Gray advanced to third.",
+            "Lucy Allen pinch hit for Taz Tamai.",
+            "Lucy Allen flied out to rf (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 7,
+          "h": 11,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 32,
+          "bf": 33
         }
       ],
       "year": 2026

@@ -1,92 +1,92 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-03T02:07:36.830Z",
+  "scrapedAt": "2026-04-04T02:00:15.691Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 2,
+      "w": 3,
       "l": 1,
-      "era": 1.96,
-      "app": 5,
-      "gs": 5,
+      "era": 2.41,
+      "app": 6,
+      "gs": 6,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 25,
-      "h": 25,
-      "r": 12,
-      "er": 7,
-      "bb": 11,
-      "so": 5,
+      "ip": 29,
+      "h": 30,
+      "r": 16,
+      "er": 10,
+      "bb": 15,
+      "so": 6,
       "hr": 0,
-      "whip": 1.44,
-      "doubles": 1,
+      "whip": 1.55,
+      "doubles": 2,
       "triples": 0,
-      "ab": 100,
-      "bAvg": 0.25,
+      "ab": 113,
+      "bAvg": 0.265,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 1
+      "sha": 5
     },
     {
       "name": "Blackett, Sarah",
       "w": 6,
       "l": 1,
-      "era": 2.38,
-      "app": 8,
+      "era": 2.43,
+      "app": 9,
       "gs": 7,
       "cg": 4,
       "sho": 4,
       "sv": 0,
-      "ip": 47,
-      "h": 41,
-      "r": 21,
-      "er": 16,
-      "bb": 23,
-      "so": 53,
+      "ip": 49,
+      "h": 43,
+      "r": 22,
+      "er": 17,
+      "bb": 25,
+      "so": 57,
       "hr": 2,
-      "whip": 1.36,
-      "doubles": 8,
+      "whip": 1.39,
+      "doubles": 9,
       "triples": 1,
-      "ab": 177,
+      "ab": 185,
       "bAvg": 0.232,
-      "wp": 4,
-      "hbp": 5,
+      "wp": 6,
+      "hbp": 6,
       "bk": 0,
       "sfa": 0,
       "sha": 3
     },
     {
       "name": "Watson, Emily",
-      "w": 4,
+      "w": 5,
       "l": 0,
-      "era": 4.3,
-      "app": 8,
-      "gs": 4,
+      "era": 3.67,
+      "app": 10,
+      "gs": 5,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 29.1,
-      "h": 33,
+      "ip": 34.1,
+      "h": 36,
       "r": 19,
       "er": 18,
       "bb": 15,
       "so": 10,
       "hr": 1,
-      "whip": 1.64,
-      "doubles": 7,
+      "whip": 1.49,
+      "doubles": 8,
       "triples": 0,
-      "ab": 113,
-      "bAvg": 0.292,
+      "ab": 129,
+      "bAvg": 0.279,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
-      "sha": 4
+      "sha": 5
     },
     {
       "name": "Johnston, Nicole",
@@ -1720,6 +1720,200 @@
           "hbp": 0,
           "ab": 23,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/salve-regina/boxscore/12761",
+      "date": "4/3/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Skylar Wicklund walked (0-0).",
+            "Taylor Ferraiolo out at first p to 2b, SAC (0-0); Skylar Wicklund advanced to second.",
+            "Emma Plourde walked (0-0).",
+            "Emily Cronin popped up to 2b (0-0).",
+            "Gracie Keyes grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madeleine Oswald doubled to right center (0-0).",
+            "Abby Merck fouled out to rf (0-0).",
+            "Ryann Burke grounded out to ss (0-0); Madeleine Oswald advanced to third.",
+            "Skyla Oliveira singled to third base, RBI (0-0); Madeleine Oswald scored.",
+            "Skyla Oliveira out at second c to 2b, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skylar Wicklund walked (0-0).",
+            "Taylor Ferraiolo out at first 3b to 2b, SAC (0-0); Skylar Wicklund advanced to second.",
+            "Emma Plourde grounded out to 2b (0-0).",
+            "Emily Cronin reached first on an error by 1b (0-0); Skylar Wicklund scored, unearned.",
+            "Madi Allard pinch ran for Emily Cronin.",
+            "Gracie Keyes singled to center field (0-0); Madi Allard advanced to second.",
+            "Madeleine Oswald grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Holland Poe to rf for Pearl Mitchell.",
+            "Amanda Huang to 2b for Maggie Feng.",
+            "Abby Merck walked (0-0).",
+            "Ryann Burke singled to left field (0-0); Abby Merck advanced to second.",
+            "Skyla Oliveira out at first p to 2b, SAC (0-0); Ryann Burke advanced to second; Abby Merck advanced to third.",
+            "Victoria Geisser pinch hit for Skylar Wicklund.",
+            "Victoria Geisser singled to right center, 2 RBI (0-0); Ryann Burke scored; Abby Merck scored.",
+            "Skylar Wicklund to rf for Victoria Geisser.",
+            "Taylor Ferraiolo out at first p to 2b, SAC (0-0); Skylar Wicklund advanced to second.",
+            "Emma Plourde struck out swinging, out at first c to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Watson to p for Sharona Huang.",
+            "Emily Cronin grounded out to ss (0-0).",
+            "Gracie Keyes popped up to 3b (0-0).",
+            "Madeleine Oswald grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abby Merck singled to right field (0-0).",
+            "Ryann Burke out at first c to 2b, SAC (0-0); Abby Merck advanced to second.",
+            "Skyla Oliveira grounded out to ss (0-0); Abby Merck advanced to third.",
+            "Skylar Wicklund grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 4,
+          "h": 5,
+          "r": 4,
+          "er": 3,
+          "bb": 4,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 21
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/salve-regina/boxscore/12762",
+      "date": "4/3/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Watson, Emily",
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Taylor Ferraiolo flied out to cf (0-0).",
+            "Emma Plourde flied out to rf (0-0).",
+            "Emily Cronin doubled to left center (0-0).",
+            "Gracie Keyes popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madeleine Oswald singled to shortstop (0-0).",
+            "Abby Merck flied out to cf (0-0).",
+            "Ryann Burke lined into double play 2b to 1b (0-0); Madeleine Oswald out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Cami O'Rourke flied out to cf (0-0).",
+            "Skyla Oliveira flied out to lf (0-0).",
+            "Taylor Ferraiolo lined out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sarah Blackett to p for Emily Watson.",
+            "Emma Plourde singled to third base (0-0).",
+            "Emma Plourde advanced to second on a wild pitch.",
+            "Emily Cronin doubled to right center, RBI (0-0); Emma Plourde scored.",
+            "Madi Allard pinch ran for Emily Cronin.",
+            "Victoria Geisser pinch hit for Gracie Keyes.",
+            "Victoria Geisser struck out looking (0-0).",
+            "Madeleine Oswald walked (0-0).",
+            "Abby Merck struck out looking (0-0).",
+            "Ryann Burke walked (0-0); Madeleine Oswald advanced to second; Madi Allard advanced to third.",
+            "Cami O'Rourke struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Holland Poe to rf for Ellie Hasegawa.",
+            "Julia Mattiace to 1b for Kaaya Mehta.",
+            "Skyla Oliveira fouled out to 3b (0-0).",
+            "Taylor Ferraiolo grounded out to p (0-0).",
+            "Emma Plourde hit by pitch (0-0).",
+            "Emma Plourde advanced to second on a wild pitch.",
+            "Emily Cronin struck out swinging (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 3,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 10
+        },
+        {
+          "name": "Blackett, Sarah",
+          "ip": 2,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 4,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 11
         }
       ],
       "year": 2026

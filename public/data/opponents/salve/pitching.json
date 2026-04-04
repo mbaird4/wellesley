@@ -1,36 +1,64 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-03T02:07:32.849Z",
+  "scrapedAt": "2026-04-04T02:00:10.476Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 3,
-      "era": 3.26,
-      "app": 8,
-      "gs": 5,
-      "cg": 5,
+      "l": 4,
+      "era": 4.4,
+      "app": 10,
+      "gs": 6,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 43,
-      "h": 57,
-      "r": 29,
-      "er": 20,
-      "bb": 7,
+      "ip": 49.1,
+      "h": 71,
+      "r": 41,
+      "er": 31,
+      "bb": 8,
       "so": 26,
       "hr": 1,
-      "whip": 1.49,
-      "doubles": 10,
-      "triples": 0,
-      "ab": 180,
-      "bAvg": 0.317,
+      "whip": 1.6,
+      "doubles": 13,
+      "triples": 2,
+      "ab": 212,
+      "bAvg": 0.335,
       "wp": 1,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 4,
       "sha": 4
+    },
+    {
+      "name": "Peterson, Caroline",
+      "w": 1,
+      "l": 8,
+      "era": 8.28,
+      "app": 9,
+      "gs": 9,
+      "cg": 2,
+      "sho": 0,
+      "sv": 0,
+      "ip": 34.2,
+      "h": 55,
+      "r": 55,
+      "er": 41,
+      "bb": 44,
+      "so": 34,
+      "hr": 0,
+      "whip": 2.86,
+      "doubles": 12,
+      "triples": 3,
+      "ab": 152,
+      "bAvg": 0.362,
+      "wp": 11,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 4,
+      "sha": 8
     },
     {
       "name": "Cronin, Emily",
@@ -59,34 +87,6 @@
       "bk": 0,
       "sfa": 1,
       "sha": 0
-    },
-    {
-      "name": "Peterson, Caroline",
-      "w": 1,
-      "l": 7,
-      "era": 7,
-      "app": 8,
-      "gs": 8,
-      "cg": 2,
-      "sho": 0,
-      "sv": 0,
-      "ip": 30,
-      "h": 42,
-      "r": 44,
-      "er": 30,
-      "bb": 40,
-      "so": 34,
-      "hr": 0,
-      "whip": 2.73,
-      "doubles": 8,
-      "triples": 3,
-      "ab": 129,
-      "bAvg": 0.326,
-      "wp": 8,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 3,
-      "sha": 7
     }
   ],
   "games": [
@@ -1524,6 +1524,205 @@
           "hbp": 0,
           "ab": 18,
           "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/11765",
+      "date": "4/3/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen singled, bunt (2-2 KBBFFFF).",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides grounded out to 3b (1-1 BK); Layla Thiessen advanced to third.",
+            "Ava Ladd walked (3-2 FBSBBFFB).",
+            "Ava Ladd advanced to second on a throwing error by c; Layla Thiessen scored, unearned.",
+            "Arianna Kumar singled to left field, advanced to second (2-2 BKBFF); Ava Ladd advanced to third.",
+            "Lauren Sundquist tripled to right field, 2 RBI (1-0 B); Arianna Kumar scored; Ava Ladd scored.",
+            "Holland Poe reached first on a fielding error by 1b, RBI (0-0); Lauren Sundquist scored.",
+            "Julia Mattiace doubled to right field (0-0); Holland Poe advanced to third.",
+            "Olivia Scarpaci popped up to ss (0-0).",
+            "Maggie Feng flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Layla Thiessen grounded out to p (0-0).",
+            "Delaney Benevides singled, bunt (0-0).",
+            "Delaney Benevides stole second.",
+            "Ava Ladd flied out to cf (0-0).",
+            "Arianna Kumar singled up the middle, RBI (0-0); Delaney Benevides scored.",
+            "Lauren Sundquist singled up the middle (0-0); Arianna Kumar advanced to second.",
+            "Holland Poe tripled to center field, 2 RBI (0-0); Lauren Sundquist scored; Arianna Kumar scored.",
+            "Julia Mattiace doubled to center field, RBI (0-0); Holland Poe scored.",
+            "Olivia Scarpaci hit by pitch (0-0).",
+            "Maggie Feng flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Layla Thiessen singled up the middle (0-0).",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides flied out to lf (0-0).",
+            "Ava Ladd singled through the left side, RBI, advanced to third (0-0); Layla Thiessen scored.",
+            "Arianna Kumar flied out to cf, sacrifice fly, RBI (0-0); Ava Ladd scored.",
+            "Lauren Sundquist flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emily Cronin to cf for Madi Allard.",
+            "Pearl Mitchell pinch hit for Holland Poe.",
+            "Pearl Mitchell grounded out to 2b (0-0).",
+            "Julia Mattiace grounded out to 3b (0-0).",
+            "Olivia Scarpaci grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Amanda Huang singled to second base (0-0).",
+            "Amanda Huang stole second.",
+            "Layla Thiessen grounded out to ss (0-0); Amanda Huang advanced to third.",
+            "Delaney Benevides reached on a fielder's choice (0-0); Amanda Huang out at home ss to c.",
+            "Ava Ladd flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Arianna Kumar singled to center field (0-0).",
+            "Lauren Sundquist doubled down the lf line, RBI (0-0); Arianna Kumar scored.",
+            "Holland Poe flied out to rf (0-0); Lauren Sundquist advanced to third.",
+            "Julia Mattiace flied out to rf, sacrifice fly, RBI (0-0); Lauren Sundquist scored.",
+            "Olivia Scarpaci flied out to lf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 6,
+          "h": 14,
+          "r": 12,
+          "er": 11,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 31,
+          "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/11766",
+      "date": "4/3/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen singled through the left side (0-0).",
+            "Delaney Benevides grounded out to c, SAC (0-0); Layla Thiessen advanced to third.",
+            "Ava Ladd grounded out to 3b (0-0).",
+            "Arianna Kumar singled to shortstop, RBI (0-0); Layla Thiessen scored.",
+            "Lauren Sundquist walked (0-0); Arianna Kumar advanced to second.",
+            "Holland Poe singled through the right side, RBI (0-0); Lauren Sundquist advanced to third; Arianna Kumar scored.",
+            "Holland Poe out at second c to ss to 1b, caught stealing; Lauren Sundquist scored."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia Mattiace lined out to rf (0-0).",
+            "Maggie Feng flied out to cf (0-0).",
+            "Nicole Johnston grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Layla Thiessen doubled to left center (0-0).",
+            "Delaney Benevides doubled up the middle, RBI (0-0); Layla Thiessen scored.",
+            "Delaney Benevides advanced to third on a wild pitch.",
+            "Ava Ladd flied out to lf, sacrifice fly, RBI (0-0); Delaney Benevides scored.",
+            "Arianna Kumar doubled to right center (0-0).",
+            "Lauren Sundquist singled to center field, RBI (0-0); Arianna Kumar scored.",
+            "Holland Poe singled to left field (0-0); Lauren Sundquist advanced to second.",
+            "Julia Mattiace reached on a fielder's choice, RBI (0-0); Holland Poe out at second 2b to ss; Lauren Sundquist scored.",
+            "Maggie Feng flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Nicole Johnston flied out to cf (0-0).",
+            "Layla Thiessen walked (0-0).",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides singled, bunt (0-0); Layla Thiessen advanced to third.",
+            "Delaney Benevides advanced to second; Layla Thiessen out at home c to 2b to c, caught stealing.",
+            "Ava Ladd singled to second base, RBI (0-0); Delaney Benevides scored.",
+            "Arianna Kumar singled to right field, advanced to third (0-0); Ava Ladd scored.",
+            "Lauren Sundquist grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Cronin to cf for Madi Allard.",
+            "Holland Poe singled to right field (0-0).",
+            "Ellie Hasegawa pinch ran for Holland Poe.",
+            "Kaaya Mehta pinch hit for Julia Mattiace.",
+            "Kaaya Mehta doubled to center field, RBI (0-0); Ellie Hasegawa scored.",
+            "Maggie Feng flied out to cf (0-0).",
+            "Nicole Johnston popped up to 3b (0-0).",
+            "Layla Thiessen walked (0-0); Kaaya Mehta advanced to third on a wild pitch.",
+            "Layla Thiessen stole second, advanced to third; Kaaya Mehta scored on a wild pitch.",
+            "Delaney Benevides walked (0-0).",
+            "Shea Murphy to p for Caroline Peterson.",
+            "Ava Ladd flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 4.2,
+          "h": 13,
+          "r": 11,
+          "er": 11,
+          "bb": 4,
+          "so": 0,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 29
+        },
+        {
+          "name": "Murphy, Shea",
+          "ip": 0.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
         }
       ],
       "year": 2026
