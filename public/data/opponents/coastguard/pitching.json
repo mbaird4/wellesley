@@ -1,36 +1,36 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-04T02:00:28.031Z",
+  "scrapedAt": "2026-04-05T02:13:59.568Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 5,
+      "w": 6,
       "l": 3,
-      "era": 0.99,
-      "app": 10,
-      "gs": 8,
-      "cg": 6,
-      "sho": 1,
+      "era": 0.86,
+      "app": 12,
+      "gs": 9,
+      "cg": 7,
+      "sho": 2,
       "sv": 1,
-      "ip": 49.1,
-      "h": 47,
+      "ip": 57,
+      "h": 48,
       "r": 23,
       "er": 7,
-      "bb": 9,
-      "so": 48,
+      "bb": 11,
+      "so": 53,
       "hr": 0,
-      "whip": 1.14,
+      "whip": 1.04,
       "doubles": 4,
       "triples": 0,
-      "ab": 202,
-      "bAvg": 0.233,
+      "ab": 227,
+      "bAvg": 0.211,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "Lynn, Zoey",
@@ -62,26 +62,26 @@
     },
     {
       "name": "Behel, Emma",
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "era": 0,
-      "app": 3,
-      "gs": 0,
+      "era": 0.68,
+      "app": 4,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 6,
-      "r": 1,
-      "er": 0,
-      "bb": 0,
-      "so": 4,
+      "ip": 10.1,
+      "h": 10,
+      "r": 2,
+      "er": 1,
+      "bb": 1,
+      "so": 5,
       "hr": 0,
-      "whip": 0.86,
-      "doubles": 0,
+      "whip": 1.06,
+      "doubles": 1,
       "triples": 0,
-      "ab": 28,
-      "bAvg": 0.214,
+      "ab": 42,
+      "bAvg": 0.238,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -1476,6 +1476,173 @@
           "hbp": 0,
           "ab": 22,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/salve-regina/boxscore/9350",
+      "date": "4/4/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Cronin grounded out to p (0-1 K).",
+            "Gracie Keyes singled to shortstop (1-0 B).",
+            "Emma Plourde doubled to right center (2-0 BB); Gracie Keyes advanced to third.",
+            "Madeleine Oswald grounded out to p, RBI (0-0); Emma Plourde advanced to third on the throw; Gracie Keyes scored on the throw.",
+            "Abby Merck grounded out to 3b (2-2 KBKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Victoria Geisser flied out to lf (2-1 KBB).",
+            "Ryann Burke lined out to p (1-2 BKF).",
+            "Skyla Oliveira struck out looking (1-2 KFBFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Ferraiolo grounded out to p (0-2 FK).",
+            "Emily Cronin popped up to 2b (1-0 B).",
+            "Gracie Keyes lined out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Behel to p for Sage Svalestad.",
+            "Mack Murnane to 3b.",
+            "Madeline Kibler to c for Olivia Garcia.",
+            "Emma Plourde walked (3-1 KBBBB).",
+            "Madeleine Oswald grounded out to p (1-1 BK); Emma Plourde advanced to second.",
+            "Abby Merck singled to center field (0-0); Emma Plourde advanced to third.",
+            "Abby Merck advanced to second.",
+            "Victoria Geisser singled to catcher (0-0).",
+            "Dana Walker to p for Emma Behel.",
+            "Ryann Burke reached on a fielder's choice to pitcher (2-2 BKBS); Victoria Geisser advanced to second; Abby Merck advanced to third; Emma Plourde out at home p to c.",
+            "Skyla Oliveira grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Ferraiolo grounded out to p (0-2 FFF).",
+            "Emily Cronin grounded out to 1b unassisted (1-0 B).",
+            "Gracie Keyes grounded out to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Plourde grounded out to 1b unassisted (3-2 BBSFFB).",
+            "Madeleine Oswald grounded out to ss (0-1 S).",
+            "Abby Merck reached first on an error by 2b (2-2 BFSB).",
+            "Victoria Geisser grounded out to p (2-1 BBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 3.1,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 2.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 9
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/salve-regina/boxscore/9351",
+      "date": "4/4/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges singled to third base, bunt (0-1 S).",
+            "Taylor Ferraiolo grounded out to 3b, bunt, SAC (1-0 B); Lillian Bridges advanced to second.",
+            "Emma Plourde struck out swinging (1-2 BSFS).",
+            "Emily Cronin grounded out to p (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gracie Keyes struck out looking (0-2 SSK).",
+            "Abby Merck grounded out to 2b (2-2 BKBFF).",
+            "Ryann Burke struck out looking (0-2 KFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skyla Oliveira grounded out to 2b (1-2 SKB).",
+            "Skylar Wicklund walked (3-2 BBSBSB).",
+            "Skylar Wicklund stole second.",
+            "Lillian Bridges reached first on an error by 3b, bunt (1-1 SB); Skylar Wicklund advanced to third.",
+            "Taylor Ferraiolo grounded out to p (0-0); Lillian Bridges advanced to second.",
+            "Emma Plourde grounded out to 2b (2-2 SSBFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emily Cronin flied out to rf (2-0 BB).",
+            "Gracie Keyes grounded out to ss (0-1 K).",
+            "Abby Merck struck out looking (1-2 BKFFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ryann Burke grounded out to 1b unassisted (0-0).",
+            "Skyla Oliveira walked (3-1 BBBKB).",
+            "Skylar Wicklund grounded out to p (1-2 SFB); Skyla Oliveira advanced to second.",
+            "Lillian Bridges struck out swinging (0-2 KFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 5,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 19
         }
       ],
       "year": 2026

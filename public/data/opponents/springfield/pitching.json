@@ -1,64 +1,64 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-04T01:59:56.743Z",
+  "scrapedAt": "2026-04-05T02:13:30.866Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 7,
+      "w": 8,
       "l": 3,
-      "era": 2.3,
-      "app": 10,
-      "gs": 2,
-      "cg": 1,
+      "era": 2.1,
+      "app": 11,
+      "gs": 3,
+      "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 61,
-      "h": 58,
-      "r": 25,
-      "er": 20,
-      "bb": 14,
-      "so": 55,
+      "ip": 70,
+      "h": 66,
+      "r": 27,
+      "er": 21,
+      "bb": 17,
+      "so": 59,
       "hr": 2,
-      "whip": 1.18,
-      "doubles": 13,
+      "whip": 1.19,
+      "doubles": 15,
       "triples": 1,
-      "ab": 235,
-      "bAvg": 0.247,
-      "wp": 2,
+      "ab": 266,
+      "bAvg": 0.248,
+      "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 2,
-      "sha": 1
+      "sha": 4
     },
     {
       "name": "Rimshnick, Julia",
       "w": 5,
-      "l": 1,
-      "era": 5.12,
-      "app": 15,
-      "gs": 14,
-      "cg": 6,
+      "l": 2,
+      "era": 6.13,
+      "app": 16,
+      "gs": 15,
+      "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 41,
-      "h": 56,
-      "r": 39,
-      "er": 30,
+      "ip": 48,
+      "h": 76,
+      "r": 52,
+      "er": 42,
       "bb": 14,
-      "so": 21,
-      "hr": 0,
-      "whip": 1.71,
-      "doubles": 8,
-      "triples": 4,
-      "ab": 180,
-      "bAvg": 0.311,
+      "so": 26,
+      "hr": 1,
+      "whip": 1.88,
+      "doubles": 10,
+      "triples": 6,
+      "ab": 221,
+      "bAvg": 0.344,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
       "sfa": 3,
-      "sha": 2
+      "sha": 3
     }
   ],
   "games": [
@@ -1654,6 +1654,228 @@
           "hbp": 0,
           "ab": 27,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/wellesley/boxscore/14833",
+      "date": "4/4/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern singled up the middle (1-1 KB).",
+            "N. Nicol struck out looking (1-2 FBFK).",
+            "A. Mulhern out at second c to ss, caught stealing.",
+            "B. Awad grounded out to 3b (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan singled up the middle (1-2 KBF).",
+            "B. Mellady walked (3-0 BBBB); J. Colgan advanced to second.",
+            "E. Gaunce out at first 3b to 2b, SAC, bunt (1-1 BF); B. Mellady advanced to second; J. Colgan advanced to third.",
+            "A. Rodriguez popped up to 3b (1-2 BSS).",
+            "G. Jones struck out swinging (1-2 FBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado singled to right center (0-0).",
+            "A. Mulhern flied out to lf (3-2 BBFBK).",
+            "N. Nicol singled, bunt (0-0); A. Delgado advanced to second, out at third c to ss.",
+            "B. Awad doubled down the lf line, RBI (3-1 BBBK); N. Nicol scored.",
+            "J. Colgan grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Mellady walked (3-0 BBBB).",
+            "E. Gaunce out at first p to 2b, SAC, bunt (0-0); B. Mellady advanced to second.",
+            "A. Rodriguez grounded out to p (0-2 FF); B. Mellady advanced to third.",
+            "G. Jones flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Delgado singled through the right side (2-1 BFB).",
+            "A. Delgado stole second.",
+            "A. Mulhern flied out to rf (1-2 FSFBF).",
+            "N. Nicol flied out to cf (2-1 BBF).",
+            "B. Awad walked (3-1 BBFBB).",
+            "J. Colgan grounded out to 1b unassisted (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Carissa Pecchia to c for Maddie Tse.",
+            "B. Mellady grounded out to p (2-1 KBB).",
+            "E. Gaunce doubled to left center (3-1 FBBB).",
+            "E. Kulhanek pinch hit for A. Rodriguez.",
+            "E. Kulhanek struck out swinging, reached first on a wild pitch (0-2 KKS).",
+            "G. Jones infield fly to ss (3-2 BBKKB).",
+            "A. Delgado fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Sammy Swords to lf.",
+            "A. Mulhern flied out to rf (1-2 FFBFF).",
+            "N. Nicol grounded out to p (0-1 K).",
+            "B. Awad fouled out to lf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "J. Colgan B. Awad placed on second (0-0).",
+            "J. Colgan flied out to lf (1-1 BF).",
+            "B. Mellady lined into double play rf (3-1 FBBB); B. Awad out on the play."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "Kate Katsetos to 1b for Addy Bohlander.",
+            "E. Gaunce B. Mellady placed on second (0-0).",
+            "E. Gaunce out at first p to 2b, SAC, bunt (0-0); B. Mellady advanced to third.",
+            "A. Rodriguez singled to left field, RBI, advanced to second (1-0 B); B. Mellady scored, team unearned.",
+            "G. Jones reached on a fielder's choice to shortstop (0-0); A. Rodriguez out at third ss to 3b.",
+            "J. Polski pinch ran for G. Jones.",
+            "A. Delgado reached first on an error by 2b (0-1 F); J. Polski advanced to second.",
+            "A. Mulhern struck out looking (0-2 FFK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 9,
+          "h": 8,
+          "r": 2,
+          "er": 1,
+          "bb": 3,
+          "so": 4,
+          "hbp": 0,
+          "ab": 31,
+          "bf": 37
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/wellesley/boxscore/14834",
+      "date": "4/4/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern grounded out to 3b (1-1 BF).",
+            "A. Delgado struck out looking (3-2 KBBFBFK).",
+            "B. Awad singled down the lf line (0-1 K).",
+            "B. Awad stole second.",
+            "J. Colgan struck out looking (1-2 FBFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Gaunce singled (0-0).",
+            "S. Wicker singled through the left side (0-0); E. Gaunce advanced to second.",
+            "E. Kulhanek out at first 1b to 2b, SAC, bunt (1-0 B); S. Wicker advanced to second; E. Gaunce advanced to third.",
+            "G. Jones grounded out to 3b, RBI (2-1 BBF); S. Wicker advanced to third; E. Gaunce scored.",
+            "N. Nicol struck out looking (0-2 KKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Mulhern singled up the middle (1-1 BK).",
+            "A. Delgado popped up to c, bunt (0-1 F).",
+            "A. Mulhern out at second c to ss, caught stealing.",
+            "B. Awad singled up the middle (1-1 BK).",
+            "J. Colgan grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "E. Gaunce grounded out to p (2-2 FBBF).",
+            "S. Wicker singled to shortstop (2-0 BB).",
+            "E. Kulhanek singled up the middle (0-1 K); S. Wicker advanced to second.",
+            "J. Polski pinch ran for S. Wicker.",
+            "G. Jones reached on a fielder's choice to shortstop (0-1 F); E. Kulhanek advanced to second; J. Polski out at third ss to 3b.",
+            "N. Nicol singled to left field, advanced to third, RBI (0-0); G. Jones scored, unearned; E. Kulhanek advanced to third, scored on an error by lf.",
+            "A. Mulhern fouled out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Delgado singled through the right side (1-0 B).",
+            "B. Awad singled to center field (0-0); A. Delgado advanced to second.",
+            "J. Colgan tripled to center field, 2 RBI (0-0); B. Awad scored; A. Delgado scored.",
+            "E. Gaunce doubled to center field, RBI (0-0); J. Colgan scored.",
+            "S. Wicker flied out to 2b (0-0).",
+            "E. Kulhanek homered to left center, 2 RBI (1-0 B); E. Gaunce scored.",
+            "G. Jones singled up the middle (2-0 BB).",
+            "N. Nicol grounded out to p (0-2 FF); G. Jones advanced to third.",
+            "A. Mulhern singled to right center, RBI (0-0); G. Jones scored.",
+            "A. Delgado singled up the middle (0-0); A. Mulhern advanced to second.",
+            "B. Awad reached first on an error by ss (2-1 KBB); A. Delgado advanced to second; A. Mulhern advanced to third.",
+            "J. Colgan flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gaunce struck out swinging, out at first c to 1b (0-2 FKS).",
+            "S. Wicker flied out to cf (0-0).",
+            "E. Kulhanek flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taylor Falotico to rf for Emilia Santiago.",
+            "G. Jones struck out swinging (1-2 BKKS).",
+            "N. Nicol tripled to right center (0-0).",
+            "A. Mulhern reached on a fielder's choice to pitcher, RBI (0-0); N. Nicol scored.",
+            "A. Delgado doubled to left center (0-0); A. Mulhern advanced to third.",
+            "B. Awad singled up the middle, 2 RBI (0-1 K); A. Delgado scored; A. Mulhern scored.",
+            "J. Colgan grounded out to 1b unassisted (0-0); B. Awad advanced to second.",
+            "E. Gaunce singled to right field, RBI (0-1 K); B. Awad scored.",
+            "S. Wicker fouled out to 3b (2-1 KBB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 20,
+          "r": 13,
+          "er": 12,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 41,
+          "bf": 42
         }
       ],
       "year": 2026

@@ -1,87 +1,87 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-04T02:00:03.665Z",
+  "scrapedAt": "2026-04-05T02:13:34.588Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
       "w": 5,
-      "l": 4,
-      "era": 3.57,
-      "app": 10,
-      "gs": 9,
+      "l": 5,
+      "era": 3.66,
+      "app": 11,
+      "gs": 10,
       "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 47,
-      "h": 51,
-      "r": 32,
-      "er": 24,
-      "bb": 26,
-      "so": 54,
+      "ip": 51.2,
+      "h": 56,
+      "r": 37,
+      "er": 27,
+      "bb": 29,
+      "so": 58,
       "hr": 1,
-      "whip": 1.64,
+      "whip": 1.65,
       "doubles": 6,
       "triples": 3,
-      "ab": 190,
-      "bAvg": 0.268,
+      "ab": 207,
+      "bAvg": 0.271,
       "wp": 4,
       "hbp": 4,
       "bk": 0,
       "sfa": 2,
-      "sha": 2
+      "sha": 4
     },
     {
       "name": "Gray, Bailey",
       "w": 4,
-      "l": 1,
-      "era": 4.2,
-      "app": 8,
-      "gs": 4,
-      "cg": 3,
+      "l": 2,
+      "era": 4.11,
+      "app": 9,
+      "gs": 5,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 38.1,
-      "h": 42,
-      "r": 29,
-      "er": 23,
-      "bb": 10,
-      "so": 28,
+      "ip": 44.1,
+      "h": 49,
+      "r": 32,
+      "er": 26,
+      "bb": 11,
+      "so": 35,
       "hr": 2,
-      "whip": 1.36,
-      "doubles": 10,
-      "triples": 0,
-      "ab": 161,
-      "bAvg": 0.261,
+      "whip": 1.35,
+      "doubles": 12,
+      "triples": 1,
+      "ab": 184,
+      "bAvg": 0.266,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
-      "sha": 0
+      "sha": 2
     },
     {
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 6.15,
-      "app": 4,
+      "era": 5.6,
+      "app": 5,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 13.2,
-      "h": 19,
+      "ip": 15,
+      "h": 21,
       "r": 12,
       "er": 12,
       "bb": 10,
-      "so": 6,
+      "so": 7,
       "hr": 1,
-      "whip": 2.12,
+      "whip": 2.07,
       "doubles": 5,
       "triples": 0,
-      "ab": 62,
-      "bAvg": 0.306,
+      "ab": 68,
+      "bAvg": 0.309,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
@@ -1822,6 +1822,192 @@
           "hbp": 0,
           "ab": 29,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/9667",
+      "date": "4/4/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand grounded out to 2b (3-2 BKFBB).",
+            "Taylor Barry walked (3-1 FBBBB).",
+            "Ella Molinari struck out swinging (3-2 BFBFBS).",
+            "Peyton Blankenheim-Brown struck out looking (1-2 BFFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Boucher lined out to lf (2-1 BBF).",
+            "Mady Bryan fouled out to lf (2-1 BBK).",
+            "Gabby Reinbold struck out swinging (3-2 BKFBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riley Dolan grounded out to ss (1-1 FB).",
+            "Julia Miller struck out swinging (2-2 KBBSS).",
+            "Amber Arcand grounded out to p (3-2 KBBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Barry singled to shortstop (2-2 SBBF).",
+            "Ella Molinari singled to pitcher, bunt (0-0); Taylor Barry advanced to second.",
+            "Peyton Blankenheim-Brown grounded out to p, SAC, bunt (0-0); Ella Molinari advanced to second; Taylor Barry advanced to third.",
+            "Emma Boucher lined out to 2b (1-2 BKFF); Taylor Barry out at home 2b to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mady Bryan singled to center field (0-0).",
+            "Gabby Reinbold popped up to 1b (2-1 FBB).",
+            "Riley Dolan grounded out to 3b, SAC, bunt (0-0); Mady Bryan advanced to second.",
+            "Julia Miller walked (3-2 BFFBFBB).",
+            "Amber Arcand walked (3-2 BFBKBB); Julia Miller advanced to second; Mady Bryan advanced to third.",
+            "Taylor Barry singled through the left side, RBI, RBI (3-2 BFBBK); Amber Arcand advanced to second; Julia Miller scored; Mady Bryan scored.",
+            "Ella Molinari singled to right field, RBI (0-0); Taylor Barry advanced to third; Amber Arcand scored.",
+            "Ella Molinari advanced to second.",
+            "Peyton Blankenheim-Brown reached first on an error by 3b (3-2 BBFFB); Ella Molinari scored, unearned; Taylor Barry scored, unearned.",
+            "Lindsay Bennett to p for Lucy Allen.",
+            "Violet Peverly to 1b.",
+            "Emma Boucher grounded out to 1b unassisted (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexandra Anquillare to cf for Gabby Reinbold.",
+            "Kathryn Copperthite to c for Riley Dolan.",
+            "Mady Bryan singled up the middle (3-2 BBSSB).",
+            "Alexandra Anquillare grounded out to 3b (0-1 S); Mady Bryan advanced to second.",
+            "Kathryn Copperthite struck out swinging (0-2 FFS).",
+            "Julia Miller singled to shortstop (2-2 FSBB); Mady Bryan advanced to third.",
+            "Julia Miller stole second.",
+            "Amber Arcand grounded out to ss (1-1 KB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 4.2,
+          "h": 5,
+          "r": 5,
+          "er": 3,
+          "bb": 3,
+          "so": 4,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 22
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 1.1,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/9668",
+      "date": "4/4/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand walked (3-1 BBBKB).",
+            "Lexi Falcioni fouled out to 3b, bunt (0-1 K).",
+            "Ella Molinari tripled, RBI (1-0 B); Amber Arcand scored.",
+            "Peyton Blankenheim-Brown singled through the left side, RBI (1-2 KFBF); Ella Molinari scored.",
+            "Emma Boucher singled down the lf line (1-0 B); Peyton Blankenheim-Brown advanced to second.",
+            "Mady Bryan grounded out to 3b (3-1 BBKB); Emma Boucher advanced to second; Peyton Blankenheim-Brown advanced to third.",
+            "Brittany Dost fouled out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gabby Reinbold singled down the lf line (2-1 KBB).",
+            "Julia Miller grounded out to 3b, SAC, bunt (0-0); Gabby Reinbold advanced to second.",
+            "Amber Arcand grounded out to 2b (0-1 K); Gabby Reinbold advanced to third.",
+            "Lexi Falcioni struck out swinging (3-2 SBBFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Molinari doubled down the lf line (0-0).",
+            "Peyton Blankenheim-Brown struck out swinging (1-2 SFBS).",
+            "Emma Boucher grounded out to ss (1-2 FKBF).",
+            "Mady Bryan popped up to 2b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brittany Dost struck out swinging (1-2 BKSS).",
+            "Gabby Reinbold popped up to ss (2-2 SBBK).",
+            "Julia Miller struck out looking (1-2 BFFFFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily Hackett to 2b for Malaya Sumii.",
+            "Taylor Barry pinch hit for Amber Arcand.",
+            "Taylor Barry doubled to left field (2-2 FFBB).",
+            "Lexi Falcioni grounded out to 3b, SAC, bunt (0-0); Taylor Barry advanced to third.",
+            "Ella Molinari singled to right center, RBI (2-2 BKBS); Taylor Barry scored.",
+            "Ella Molinari stole second.",
+            "Peyton Blankenheim-Brown struck out swinging (3-2 KSBBFBFFS).",
+            "Emma Boucher grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mady Bryan flied out to rf (2-2 BSSFB).",
+            "Brittany Dost struck out swinging (1-2 FKBS).",
+            "Gabby Reinbold struck out swinging (1-2 KKBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 6,
+          "h": 7,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 7,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 26
         }
       ],
       "year": 2026

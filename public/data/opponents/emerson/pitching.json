@@ -1,59 +1,59 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-04-04T02:00:23.348Z",
+  "scrapedAt": "2026-04-05T02:13:53.849Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 3,
-      "l": 6,
-      "era": 2.77,
-      "app": 11,
-      "gs": 7,
+      "l": 7,
+      "era": 3.38,
+      "app": 13,
+      "gs": 8,
       "cg": 4,
       "sho": 1,
       "sv": 0,
-      "ip": 53,
-      "h": 57,
-      "r": 46,
-      "er": 21,
-      "bb": 28,
-      "so": 64,
-      "hr": 0,
-      "whip": 1.6,
-      "doubles": 8,
-      "triples": 5,
-      "ab": 226,
-      "bAvg": 0.252,
-      "wp": 22,
+      "ip": 58,
+      "h": 69,
+      "r": 57,
+      "er": 28,
+      "bb": 29,
+      "so": 66,
+      "hr": 1,
+      "whip": 1.69,
+      "doubles": 10,
+      "triples": 8,
+      "ab": 254,
+      "bAvg": 0.272,
+      "wp": 23,
       "hbp": 4,
       "bk": 0,
-      "sfa": 3,
+      "sfa": 4,
       "sha": 3
     },
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 5,
-      "era": 5.35,
-      "app": 10,
-      "gs": 7,
+      "l": 6,
+      "era": 6.16,
+      "app": 12,
+      "gs": 8,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 34,
-      "h": 54,
-      "r": 37,
-      "er": 26,
-      "bb": 18,
-      "so": 12,
-      "hr": 2,
-      "whip": 2.12,
-      "doubles": 7,
+      "ip": 38.2,
+      "h": 62,
+      "r": 45,
+      "er": 34,
+      "bb": 21,
+      "so": 14,
+      "hr": 3,
+      "whip": 2.15,
+      "doubles": 10,
       "triples": 4,
-      "ab": 156,
-      "bAvg": 0.346,
+      "ab": 178,
+      "bAvg": 0.348,
       "wp": 4,
       "hbp": 0,
       "bk": 0,
@@ -1507,6 +1507,202 @@
           "hbp": 0,
           "ab": 32,
           "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/4288",
+      "date": "4/4/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Sheehan, Caleigh",
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour flied out to lf (1-2 BSKF).",
+            "Virginia McKinney reached first on a fielding error by rf, advanced to second (1-1 KB).",
+            "Meg Sherwood flied out to rf (0-2 FF).",
+            "Riley O'Brien grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sandy Fairbairn grounded out to ss (0-0).",
+            "Emma Nagy doubled to left field (1-2 BKSFF).",
+            "Ariana Kreuzer grounded out to 2b (3-1 BBFB); Emma Nagy advanced to third.",
+            "Stella Kozak popped up to ss (3-2 FBKBBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elizabeth Jordan struck out swinging (2-2 KBFFFFBS).",
+            "Lucy Latour grounded out to 1b unassisted (2-2 BKFB).",
+            "Virginia McKinney grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Meg Sherwood singled to left center (0-1 F).",
+            "Meg Sherwood stole second.",
+            "Riley O'Brien doubled to left center, RBI (1-2 KFFBF); Meg Sherwood scored.",
+            "Sandy Fairbairn tripled down the rf line, RBI (0-0); Riley O'Brien scored.",
+            "Emma Nagy singled down the lf line, out at second lf to ss, RBI (2-0 BB); Sandy Fairbairn scored.",
+            "Ariana Kreuzer grounded out to 1b unassisted (1-2 SBKF).",
+            "Stella Kozak singled to right field (1-0 B).",
+            "Elizabeth Jordan singled to catcher (0-1 F); Stella Kozak advanced to second, out at third c to 3b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lucy Latour tripled down the rf line (1-2 SKFB).",
+            "Virginia McKinney flied out to cf, sacrifice fly, RBI (0-1 F); Lucy Latour scored.",
+            "Meg Sherwood singled to right center (0-0).",
+            "Riley O'Brien reached first on a fielding error by lf (0-2 FS); Meg Sherwood advanced to second.",
+            "Sandy Fairbairn reached first on a fielding error by 3b (2-0 BB); Riley O'Brien advanced to second; Meg Sherwood advanced to third.",
+            "Kate Regan to p for Cal Sheehan.",
+            "Emma Nagy homered to left field, team unearned, 4 RBI (3-0 BBB); Sandy Fairbairn scored, unearned; Riley O'Brien scored, unearned; Meg Sherwood scored, unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 4.1,
+          "h": 9,
+          "r": 7,
+          "er": 4,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        },
+        {
+          "name": "Regan, Kate",
+          "ip": 0,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/4289",
+      "date": "4/4/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour flied out to cf (3-2 BKBSB).",
+            "Virginia McKinney grounded out to ss (0-1 S).",
+            "Meg Sherwood flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley O'Brien flied out to cf (3-0 BBB).",
+            "Sandy Fairbairn flied out to rf (0-0).",
+            "Emma Nagy doubled to center field (2-1 BBS).",
+            "Ali Chalovich singled to left field, RBI (2-1 KBB); Emma Nagy scored.",
+            "Grace Grant struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Stella Kozak flied out to rf (1-0 B).",
+            "Lucy Latour doubled to right center (1-0 B).",
+            "Virginia McKinney grounded out to 2b (0-1 K); Lucy Latour advanced to third.",
+            "Meg Sherwood singled through the left side, RBI (0-1 F); Lucy Latour scored.",
+            "Riley O'Brien flied out to rf (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sandy Fairbairn flied out to rf (2-2 FFBB).",
+            "Emma Nagy walked (3-0 BBBB).",
+            "Ali Chalovich fouled out to c (1-1 KB).",
+            "Grace Grant struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Stella Kozak grounded out to ss (0-0).",
+            "Lucy Latour walked (3-0 BBBB).",
+            "Lucy Latour stole second.",
+            "Virginia McKinney walked (3-0 BBBB).",
+            "Meg Sherwood popped up to p (0-0).",
+            "Riley O'Brien singled to left field, RBI (0-0); Virginia McKinney advanced to second; Lucy Latour scored.",
+            "Virginia McKinney stole third.",
+            "Sandy Fairbairn singled to shortstop, RBI (1-2 KFBFF); Riley O'Brien advanced to second; Virginia McKinney scored.",
+            "Suzannah Figler pinch ran for Riley O'Brien.",
+            "Emma Nagy doubled to left center, 2 RBI (0-2 FF); Sandy Fairbairn scored; Suzannah Figler scored.",
+            "Cal Sheehan to p.",
+            "/  for Kate Regan.",
+            "Ali Chalovich singled to third base, RBI (2-2 BBKFFFF); Emma Nagy scored.",
+            "Mia Francisco pinch ran for Ali Chalovich.",
+            "Samantha Jeng pinch hit for Grace Grant.",
+            "Samantha Jeng grounded out to 2b (2-2 BFKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Stella Kozak tripled to left field (0-0).",
+            "Stella Kozak scored on a wild pitch.",
+            "Lucy Latour walked (3-1 BBKBB).",
+            "Virginia McKinney reached first on a throwing error by 3b, advanced to third (0-0); Lucy Latour scored.",
+            "Meg Sherwood struck out swinging (0-2 KSS).",
+            "Riley O'Brien homered to left field, 2 RBI (3-0 BBB); Virginia McKinney scored, unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 4.2,
+          "h": 7,
+          "r": 7,
+          "er": 7,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 24
+        },
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 0.2,
+          "h": 3,
+          "r": 4,
+          "er": 3,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
         }
       ],
       "year": 2026

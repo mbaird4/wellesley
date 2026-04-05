@@ -1,59 +1,59 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-04T01:59:44.990Z",
+  "scrapedAt": "2026-04-05T02:13:20.192Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 9,
+      "w": 10,
       "l": 0,
-      "era": 1.03,
-      "app": 10,
-      "gs": 5,
-      "cg": 3,
+      "era": 1.17,
+      "app": 11,
+      "gs": 6,
+      "cg": 4,
       "sho": 2,
       "sv": 0,
-      "ip": 47.2,
-      "h": 44,
-      "r": 9,
-      "er": 7,
-      "bb": 8,
-      "so": 31,
+      "ip": 53.2,
+      "h": 50,
+      "r": 11,
+      "er": 9,
+      "bb": 9,
+      "so": 35,
       "hr": 0,
-      "whip": 1.09,
+      "whip": 1.1,
       "doubles": 5,
       "triples": 0,
-      "ab": 181,
-      "bAvg": 0.243,
+      "ab": 203,
+      "bAvg": 0.246,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 4
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 5,
+      "w": 6,
       "l": 0,
-      "era": 1.86,
-      "app": 8,
-      "gs": 8,
-      "cg": 5,
-      "sho": 2,
+      "era": 1.66,
+      "app": 9,
+      "gs": 9,
+      "cg": 6,
+      "sho": 3,
       "sv": 0,
-      "ip": 41.1,
-      "h": 42,
+      "ip": 46.1,
+      "h": 45,
       "r": 17,
       "er": 11,
       "bb": 14,
-      "so": 23,
+      "so": 26,
       "hr": 0,
-      "whip": 1.35,
+      "whip": 1.27,
       "doubles": 2,
       "triples": 0,
-      "ab": 157,
-      "bAvg": 0.268,
+      "ab": 175,
+      "bAvg": 0.257,
       "wp": 2,
       "hbp": 3,
       "bk": 0,
@@ -1639,6 +1639,157 @@
           "hbp": 0,
           "ab": 9,
           "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/emerson/boxscore/16642",
+      "date": "4/4/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale grounded out to 2b (0-1 K).",
+            "Valentina Luciano grounded out to 2b (2-1 BBK).",
+            "Riley Caiazza grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avi Kuperman popped up to 2b (0-2 KSFF).",
+            "Kari Sorensen lined out to ss (1-1 BF).",
+            "Cal Sheehan lined out to rf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Casey Yacovelli popped up to 2b (1-2 BSS).",
+            "Riley Fasteau struck out looking (1-2 SKBFFK).",
+            "Aislinn McCoy popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Malena Cardinale singled up the middle (1-0 B).",
+            "Valentina Luciano struck out looking (2-2 KBFBK).",
+            "Riley Caiazza reached on a fielder's choice (3-2 BBBSF); Malena Cardinale out at second 2b to ss.",
+            "Avi Kuperman reached on a fielder's choice (0-2 FFF); Riley Caiazza out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kari Sorensen singled to center field (1-1 FB).",
+            "Cal Sheehan flied out to cf (0-2 FK).",
+            "Casey Yacovelli struck out swinging (1-2 BSKS).",
+            "Riley Fasteau singled to catcher (0-0); Kari Sorensen advanced to second.",
+            "Aislinn McCoy reached on a fielder's choice (0-0); Riley Fasteau out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 18
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/emerson/boxscore/16641",
+      "date": "4/4/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale singled to left field (1-1 KB).",
+            "Riley Caiazza flied out to lf (0-0).",
+            "Avi Kuperman struck out swinging (2-2 BFKBS).",
+            "Malena Cardinale stole second.",
+            "Kari Sorensen walked (3-2 SSBBBFFB).",
+            "Cal Sheehan grounded out to 3b (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Casey Yacovelli grounded out to 2b (0-2 KS).",
+            "Riley Fasteau struck out swinging (1-2 BFSS).",
+            "Aislinn McCoy grounded out to 2b (2-2 FFBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano grounded out to 2b (1-0 B).",
+            "Malena Cardinale flied out to cf (0-0).",
+            "Riley Caiazza flied out to rf (3-0 BBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avi Kuperman flied out to rf (0-2 FF).",
+            "Kari Sorensen popped up to 2b (0-0).",
+            "Cal Sheehan grounded out to 3b (1-2 FKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Casey Yacovelli struck out swinging (1-2 FSBS).",
+            "Riley Fasteau struck out looking (1-2 SKBFFK).",
+            "Aislinn McCoy singled to shortstop (0-0).",
+            "Valentina Luciano flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b for Suzannah Figler.",
+            "Ali Chalovich to c for Mia Francisco.",
+            "Samantha Jeng to dp.",
+            "Malena Cardinale singled to shortstop (1-1 BK).",
+            "Riley Caiazza singled through the left side (0-0); Malena Cardinale advanced to second.",
+            "Avi Kuperman singled to third base (0-2 FKF); Riley Caiazza advanced to second; Malena Cardinale advanced to third.",
+            "Kari Sorensen singled through the left side, RBI (1-0 B); Avi Kuperman advanced to second; Riley Caiazza advanced to third; Malena Cardinale scored.",
+            "Cal Sheehan flied out to rf, sacrifice fly, RBI (1-0 B); Riley Caiazza scored.",
+            "Casey Yacovelli lined into double play cf to 2b (0-2 SSFF); Avi Kuperman out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 6,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
         }
       ],
       "year": 2026

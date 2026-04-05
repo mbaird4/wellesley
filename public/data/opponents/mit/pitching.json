@@ -1,31 +1,31 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-04T02:00:15.691Z",
+  "scrapedAt": "2026-04-05T02:13:47.237Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 3,
+      "w": 4,
       "l": 1,
-      "era": 2.41,
-      "app": 6,
-      "gs": 6,
+      "era": 2.92,
+      "app": 8,
+      "gs": 7,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 29,
-      "h": 30,
-      "r": 16,
-      "er": 10,
-      "bb": 15,
+      "ip": 36,
+      "h": 36,
+      "r": 21,
+      "er": 15,
+      "bb": 18,
       "so": 6,
       "hr": 0,
-      "whip": 1.55,
-      "doubles": 2,
+      "whip": 1.5,
+      "doubles": 4,
       "triples": 0,
-      "ab": 113,
-      "bAvg": 0.265,
+      "ab": 140,
+      "bAvg": 0.257,
       "wp": 2,
       "hbp": 0,
       "bk": 0,
@@ -34,28 +34,28 @@
     },
     {
       "name": "Blackett, Sarah",
-      "w": 6,
+      "w": 7,
       "l": 1,
-      "era": 2.43,
-      "app": 9,
+      "era": 2.98,
+      "app": 10,
       "gs": 7,
       "cg": 4,
       "sho": 4,
       "sv": 0,
-      "ip": 49,
-      "h": 43,
-      "r": 22,
-      "er": 17,
-      "bb": 25,
-      "so": 57,
-      "hr": 2,
-      "whip": 1.39,
-      "doubles": 9,
+      "ip": 54,
+      "h": 52,
+      "r": 28,
+      "er": 23,
+      "bb": 27,
+      "so": 64,
+      "hr": 3,
+      "whip": 1.46,
+      "doubles": 10,
       "triples": 1,
-      "ab": 185,
-      "bAvg": 0.232,
+      "ab": 210,
+      "bAvg": 0.248,
       "wp": 6,
-      "hbp": 6,
+      "hbp": 7,
       "bk": 0,
       "sfa": 0,
       "sha": 3
@@ -64,24 +64,24 @@
       "name": "Watson, Emily",
       "w": 5,
       "l": 0,
-      "era": 3.67,
-      "app": 10,
-      "gs": 5,
+      "era": 5.01,
+      "app": 12,
+      "gs": 6,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 34.1,
-      "h": 36,
-      "r": 19,
-      "er": 18,
+      "ip": 36.1,
+      "h": 49,
+      "r": 27,
+      "er": 26,
       "bb": 15,
       "so": 10,
       "hr": 1,
-      "whip": 1.49,
-      "doubles": 8,
+      "whip": 1.76,
+      "doubles": 15,
       "triples": 0,
-      "ab": 129,
-      "bAvg": 0.279,
+      "ab": 149,
+      "bAvg": 0.329,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -1914,6 +1914,252 @@
           "hbp": 1,
           "ab": 8,
           "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/babson-college/boxscore/12763",
+      "date": "4/4/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily",
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh grounded out to 2b (1-1 KB).",
+            "Maddy DeLong flied out to rf (0-0).",
+            "Lexi Sealy grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Belle Dicampello walked (3-0 BBBB).",
+            "Sophia Pak singled down the lf line (2-2 BBKF); Belle Dicampello advanced to second.",
+            "Charlotte Raymond walked (3-1 BKBBB); Sophia Pak advanced to second; Belle Dicampello advanced to third.",
+            "Devin McCall walked, RBI (3-0 BBBB); Charlotte Raymond advanced to second; Sophia Pak advanced to third; Belle Dicampello scored.",
+            "Emily Watson to p for Sharona Huang.",
+            "Charly Landow infield fly to 1b (2-2 FBBKF).",
+            "Izzy Burgess doubled to left center, 2 RBI (3-2 BBFBF); Devin McCall advanced to third; Charlotte Raymond scored; Sophia Pak scored.",
+            "Emily Walsh popped up to 2b (3-2 KBBBK).",
+            "Maddy DeLong doubled to left field, 2 RBI (0-1 F); Izzy Burgess scored; Devin McCall scored.",
+            "Lexi Sealy doubled to right center, RBI (2-0 BB); Maddy DeLong scored.",
+            "Belle Dicampello flied out to cf (3-2 BBBKFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sophia Pak singled through the left side (1-1 BK).",
+            "Charlotte Raymond singled up the middle (1-1 KB); Sophia Pak advanced to second.",
+            "Sarah Blackett to p for Emily Watson.",
+            "Devin McCall struck out swinging (0-2 KFFS).",
+            "Charly Landow struck out looking (2-2 KSBBK).",
+            "Izzy Burgess struck out looking (0-2 SKK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emily Walsh grounded out to 2b (1-2 FFBF).",
+            "Maddy DeLong reached first on a throwing error by p, bunt (1-1 BF).",
+            "Lexi Sealy flied out to lf (2-1 BBK).",
+            "Belle Dicampello reached on a fielder's choice (1-1 BF); Maddy DeLong out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sophia Pak singled down the lf line (3-1 BBKB).",
+            "Charlotte Raymond singled to pitcher (3-2 BKBSBF); Sophia Pak advanced to second.",
+            "Devin McCall fouled out to 1b (0-1 K).",
+            "Charly Landow singled to center field, RBI (0-1 F); Charlotte Raymond advanced to second; Sophia Pak scored.",
+            "Izzy Burgess flied out to lf (2-1 BFB).",
+            "Emily Walsh walked (3-0 BBBB); Charly Landow advanced to second; Charlotte Raymond advanced to third.",
+            "Maddy DeLong struck out swinging (2-2 FBBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Mattiace to 1b for Sienna Wilson.",
+            "Lexi Sealy flied out to lf (0-1 F).",
+            "Belle Dicampello singled through the left side (0-1 F).",
+            "Allie Cubberly pinch ran for Belle Dicampello.",
+            "Sophia Pak struck out looking (3-2 BBBKKFFK).",
+            "Charlotte Raymond singled to center field (0-1 S); Allie Cubberly advanced to second.",
+            "Samantha Skivo pinch hit for Devin McCall.",
+            "Samantha Skivo hit by pitch (1-2 KFH); Charlotte Raymond advanced to second; Allie Cubberly advanced to third.",
+            "Charly Landow singled up the middle, RBI (0-1 F); Samantha Skivo advanced to second; Charlotte Raymond advanced to third; Allie Cubberly scored.",
+            "Izzy Burgess struck out swinging (2-2 BBSSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emily Walsh flied out to cf (1-0 B).",
+            "Maddy DeLong singled to first base, bunt (0-1 K).",
+            "Lexi Sealy flied out to lf (1-0 B).",
+            "Belle Dicampello doubled to left center, RBI (0-0); Maddy DeLong scored.",
+            "Sophia Pak walked (3-2 KKBFBFBFB).",
+            "Charlotte Raymond homered to left field, 3 RBI (1-1 KB); Sophia Pak scored; Belle Dicampello scored.",
+            "Devin McCall struck out swinging (2-2 BSBFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 1,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 7
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 1,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 8
+        },
+        {
+          "name": "Blackett, Sarah",
+          "ip": 5,
+          "h": 9,
+          "r": 6,
+          "er": 6,
+          "bb": 2,
+          "so": 7,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/babson-college/boxscore/12764",
+      "date": "4/4/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Watson, Emily",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh grounded out to ss (0-2 KK).",
+            "Maddy DeLong flied out to cf (1-1 BF).",
+            "Lexi Sealy doubled to right field (1-0 B).",
+            "Belle Dicampello singled to third base, RBI (0-0); Lexi Sealy scored.",
+            "Sophia Pak singled to left field (1-1 BK); Belle Dicampello advanced to second.",
+            "Charlotte Raymond reached first on a fielding error by 1b, assist by 3b (2-2 BKFFB); Sophia Pak advanced to second; Belle Dicampello advanced to third.",
+            "Charly Landow flied out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Izzy Burgess doubled to left center (0-0).",
+            "Devin McCall singled to left field (0-1 F); Izzy Burgess advanced to third.",
+            "Emily Walsh singled to pitcher (3-1 BBBK); Devin McCall advanced to second.",
+            "Maddy DeLong doubled to left center, 2 RBI (1-1 FB); Emily Walsh advanced to third; Devin McCall scored; Izzy Burgess scored.",
+            "Lexi Sealy doubled to center field, 2 RBI (0-0); Maddy DeLong scored; Emily Walsh scored.",
+            "Sharona Huang to p for Emily Watson.",
+            "Belle Dicampello grounded out to 2b (0-1 K); Lexi Sealy advanced to third.",
+            "Sophia Pak grounded out to 1b unassisted (1-1 BK).",
+            "Charlotte Raymond singled through the left side, RBI (0-1 K); Lexi Sealy scored.",
+            "Charly Landow grounded out to ss (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Izzy Burgess singled through the right side (1-0 B).",
+            "Devin McCall grounded out to p (0-0); Izzy Burgess advanced to second.",
+            "Emily Walsh grounded out to 2b (3-1 BBKB); Izzy Burgess advanced to third.",
+            "Maddy DeLong grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lexi Sealy grounded out to 1b unassisted (0-1 K).",
+            "Belle Dicampello doubled to left center (0-0).",
+            "Kay Laliberty pinch ran for Belle Dicampello.",
+            "Sophia Pak grounded out to p (2-1 KBB); Kay Laliberty advanced to third.",
+            "Charlotte Raymond singled to third base, RBI (3-2 KBKFFBB); Kay Laliberty scored.",
+            "Charly Landow grounded out to 3b (3-2 FBBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Izzy Burgess flied out to lf (1-0 B).",
+            "Devin McCall flied out to lf (1-2 BKFF).",
+            "Emily Walsh grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddy DeLong popped up to 2b (3-2 BKBFB).",
+            "Lexi Sealy grounded out to 3b (1-2 KKB).",
+            "Belle Dicampello grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Holland Poe to rf for Amanda Huang.",
+            "Sophia Pak grounded out to p (1-1 KB).",
+            "Charlotte Raymond grounded out to ss (1-0 B).",
+            "Charly Landow doubled down the rf line (0-0).",
+            "Nicole Petrillo pinch ran for Charly Landow.",
+            "Izzy Burgess grounded out to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 1,
+          "h": 8,
+          "r": 6,
+          "er": 6,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 12
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 6,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 23
         }
       ],
       "year": 2026

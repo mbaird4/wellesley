@@ -1,64 +1,64 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-04T01:59:50.684Z",
+  "scrapedAt": "2026-04-05T02:13:25.605Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 5,
+      "w": 6,
       "l": 3,
-      "era": 1.44,
-      "app": 8,
-      "gs": 8,
-      "cg": 8,
+      "era": 1.28,
+      "app": 9,
+      "gs": 9,
+      "cg": 9,
       "sho": 3,
       "sv": 0,
-      "ip": 53.1,
-      "h": 47,
-      "r": 14,
+      "ip": 60.1,
+      "h": 50,
+      "r": 16,
       "er": 11,
       "bb": 4,
-      "so": 33,
+      "so": 40,
       "hr": 2,
-      "whip": 0.96,
+      "whip": 0.9,
       "doubles": 9,
-      "triples": 1,
-      "ab": 196,
-      "bAvg": 0.24,
+      "triples": 2,
+      "ab": 221,
+      "bAvg": 0.226,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 11
+      "sha": 12
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 4,
+      "w": 5,
       "l": 4,
-      "era": 2.53,
-      "app": 8,
-      "gs": 8,
-      "cg": 6,
+      "era": 2.33,
+      "app": 9,
+      "gs": 9,
+      "cg": 7,
       "sho": 3,
       "sv": 0,
-      "ip": 47,
-      "h": 49,
-      "r": 28,
-      "er": 17,
-      "bb": 10,
-      "so": 57,
+      "ip": 54,
+      "h": 56,
+      "r": 29,
+      "er": 18,
+      "bb": 12,
+      "so": 64,
       "hr": 3,
       "whip": 1.26,
-      "doubles": 9,
+      "doubles": 10,
       "triples": 3,
-      "ab": 190,
-      "bAvg": 0.258,
+      "ab": 216,
+      "bAvg": 0.259,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 2,
-      "sha": 5
+      "sha": 7
     },
     {
       "name": "Dost, Brittany",
@@ -1537,6 +1537,191 @@
           "hbp": 0,
           "ab": 28,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/smith-college/boxscore/10015",
+      "date": "4/4/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson lined out to 3b (2-0 BB).",
+            "Gabbie Chinnis singled down the lf line (1-1 KB).",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly grounded out to 2b (0-2 KK); Gabbie Chinnis advanced to third.",
+            "Riley Veenstra singled to left center, RBI (0-0); Gabbie Chinnis scored.",
+            "Bailey Gray grounded out to 3b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Taz Tamai walked (3-2 BBBKKB).",
+            "Sophie Hasegawa popped up to 1b, bunt (0-0).",
+            "Ava Lansbury struck out swinging (1-2 BFKS).",
+            "Lily Hackett struck out swinging (2-2 BKSBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ally Knutson doubled to left field (0-2 FFF).",
+            "Gabbie Chinnis walked (3-0 BBBB).",
+            "Violet Peverly grounded out to c, SAC, bunt (1-1 BF); Gabbie Chinnis advanced to second; Ally Knutson advanced to third.",
+            "Riley Veenstra struck out swinging (2-2 BBKKS).",
+            "Bailey Gray flied out to rf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai struck out swinging (2-2 KBFFBS).",
+            "Sophie Hasegawa struck out looking (2-2 KBBFK).",
+            "Ava Lansbury struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily Hackett singled up the middle (3-2 BSBSB).",
+            "Ally Knutson singled down the lf line (1-0 B); Lily Hackett advanced to second.",
+            "Gabbie Chinnis grounded out to 3b, SAC, bunt (0-0); Ally Knutson advanced to second; Lily Hackett advanced to third.",
+            "Violet Peverly popped up to 1b (0-1 F).",
+            "Riley Veenstra flied out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bailey Gray singled down the lf line (1-0 B).",
+            "Taz Tamai flied out to lf (2-2 FBSB).",
+            "Sophie Hasegawa grounded out to 1b unassisted (1-0 B); Bailey Gray advanced to second.",
+            "Ava Lansbury struck out swinging (1-2 BKKS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Gabby Reinbold to cf for Alexandra Anquillare.",
+            "Riley Dolan to c for Kathryn Copperthite.",
+            "Lily Hackett grounded out to p (0-0).",
+            "Ally Knutson popped up to 2b (0-0).",
+            "Gabbie Chinnis singled up the middle (2-2 KBBK).",
+            "Violet Peverly flied out to cf (2-2 FBBK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 7,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/smith-college/boxscore/10016",
+      "date": "4/4/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson struck out looking (0-2 KKK).",
+            "Gabbie Chinnis singled to pitcher, bunt (0-0).",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly struck out swinging (0-2 KKFS).",
+            "Riley Veenstra flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray flied out to 2b (0-1 K).",
+            "Taz Tamai struck out swinging (1-2 KBKS).",
+            "Sophie Hasegawa struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elinor Washington struck out looking (1-2 SSBFK).",
+            "Lily Hackett struck out swinging (0-2 SKS).",
+            "Ally Knutson flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gabbie Chinnis popped up to ss (2-1 BBK).",
+            "Violet Peverly tripled to center field (1-0 B).",
+            "Riley Veenstra reached first on an error by lf, advanced to second (0-1 S); Violet Peverly scored, unearned.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray reached on a fielder's choice (0-1 K); Anna Gray out at third cf to 3b.",
+            "Taz Tamai lined out to ss (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sophie Hasegawa singled through the left side (2-2 KFBB).",
+            "Elinor Washington grounded out to p, SAC, bunt (0-0); Sophie Hasegawa advanced to second.",
+            "Malaya Sumii pinch hit for Lily Hackett.",
+            "Riley Veenstra pinch ran for Anna Gray.",
+            "Malaya Sumii struck out looking (1-2 KBKK).",
+            "Riley Veenstra to dp.",
+            "Ally Knutson reached first on an error by 2b (1-1 FB); Sophie Hasegawa scored, unearned.",
+            "Gabbie Chinnis flied out to cf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amber Arcand to rf for Taylor Barry.",
+            "Violet Peverly grounded out to 2b (1-2 KBF).",
+            "Riley Veenstra flied out to cf (2-2 FBFB).",
+            "Bailey Gray grounded out to 3b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taz Tamai flied out to rf (1-1 KB).",
+            "Sophie Hasegawa lined out to ss (1-1 BK).",
+            "Elinor Washington popped up to 1b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 7,
+          "h": 3,
+          "r": 2,
+          "er": 0,
+          "bb": 0,
+          "so": 7,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 26
         }
       ],
       "year": 2026
