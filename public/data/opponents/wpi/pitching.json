@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-05T02:13:20.192Z",
+  "scrapedAt": "2026-04-06T02:14:18.128Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -1790,6 +1790,704 @@
           "hbp": 0,
           "ab": 22,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/montclair-state-university/boxscore/16840",
+      "date": "3/10/2026",
+      "opponent": "Montclair State University",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Liz Mullen singled to third base (2-0 BB).",
+            "Sophia Alonso out at first 3b to 2b, SAC, bunt (0-0); Liz Mullen advanced to second.",
+            "Carlee Iannone grounded out to 2b (1-2 KBF); Liz Mullen advanced to third.",
+            "Jordyn Hester singled to second base, RBI (0-2 KK); Liz Mullen scored.",
+            "Katie Brunner hit by pitch (2-1 KBH); Jordyn Hester advanced to second.",
+            "Jayla Vasquez struck out looking (1-2 KFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Molly Colligan flied out to cf (2-2 SFBB).",
+            "Ashley Palmieri singled to right center (0-0).",
+            "Ashley Palmieri stole second.",
+            "Zoe Turner reached first on a fielding error by ss (2-2 BKSB); Ashley Palmieri advanced to third.",
+            "Zoe Turner stole second.",
+            "Liz Mullen walked (3-1 BKBBB).",
+            "Sophia Alonso reached on a fielder's choice, RBI (1-2 KKBF); Liz Mullen advanced to second; Zoe Turner out at third ss to 3b; Ashley Palmieri scored, unearned.",
+            "Carlee Iannone flied out to cf (2-2 FFFFFBFFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Jordyn Hester struck out swinging (1-2 BFFS).",
+            "Katie Brunner popped up to ss (1-2 KKBF).",
+            "Jayla Vasquez struck out looking (1-2 BKSK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma DePeppo pinch hit for Molly Colligan.",
+            "Emma DePeppo lined out to 3b (1-2 BSS).",
+            "Ashley Palmieri singled up the middle (1-0 B).",
+            "Zoe Turner singled, bunt (0-0); Ashley Palmieri advanced to second.",
+            "Liz Mullen flied out to cf (2-1 FBB).",
+            "Ashley Palmieri out at second c to 3b to 2b, picked off."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ariana Kreuzer to c for Samantha Jeng.",
+            "Leah Monschein flied out to cf (0-2 FK).",
+            "Carlee Iannone singled through the right side (2-2 SBBF).",
+            "Jordyn Hester grounded into double play 3b to 2b to 1b (2-0 BB); Carlee Iannone out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katie Brunner popped up to ss (0-0).",
+            "Juliana Casillas flied out to rf (2-2 BKFB).",
+            "Molly Colligan struck out looking (0-2 FFK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Colleen Mayer to lf for Elizabeth Jordan.",
+            "Ashley Palmieri singled through the left side (1-0 B).",
+            "Zoe Turner struck out swinging (0-2 FFS).",
+            "Liz Mullen popped up to 1b (0-2 KS).",
+            "Sophia Alonso to cf for Leah Monschein.",
+            "Sophia Alonso reached on a fielder's choice (0-1 K); Ashley Palmieri out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 7,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 5,
+          "hbp": 1,
+          "ab": 26,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/montclair-state-university/boxscore/16841",
+      "date": "3/10/2026",
+      "opponent": "Montclair State University",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Liz Mullen popped up to p, bunt (0-1 F).",
+            "Sophia Alonso lined out to 3b (1-1 BF).",
+            "Carlee Iannone grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Marialys Ricourt struck out swinging (2-2 BKBKS).",
+            "Dylan Boles struck out looking (0-2 KFK).",
+            "Juliana Casillas struck out swinging (2-2 SSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Molly Colligan struck out looking (2-2 FBBFK).",
+            "Ashley Palmieri struck out swinging (0-2 KFS).",
+            "Zoe Turner singled, bunt (0-0).",
+            "Zoe Turner stole second.",
+            "Liz Mullen popped up to 1b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich to c for Suzannah Figler.",
+            "Sophia Alonso singled through the left side (0-0).",
+            "Sophia Alonso out at second c to ss, caught stealing.",
+            "Carlee Iannone grounded out to 3b (2-1 BKB).",
+            "Marialys Ricourt grounded out to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Dylan Boles flied out to cf (1-0 B).",
+            "Juliana Casillas grounded out to 3b (2-2 KFBB).",
+            "Jayla Vasquez pinch hit for Molly Colligan.",
+            "Jayla Vasquez popped up to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Destiny Lum to 3b for Colleen Mayer.",
+            "Ashley Palmieri singled through the left side (1-0 B).",
+            "Zoe Turner out at first 3b to 2b, SAC, bunt (0-0); Ashley Palmieri advanced to second.",
+            "Liz Mullen reached on a fielder's choice (1-2 KBFF); Ashley Palmieri out at third 3b to ss to 3b to ss.",
+            "Sophia Alonso singled down the lf line (0-0); Liz Mullen advanced to second.",
+            "Carlee Iannone singled to right center, 2 RBI (2-2 KBBKF); Sophia Alonso scored; Liz Mullen scored.",
+            "Emma DePeppo pinch ran for Carlee Iannone.",
+            "Jordyn Hester to dp for Marialys Ricourt.",
+            "Jordyn Hester flied out to lf (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Dylan Boles grounded out to 3b (3-2 KBFFBBF).",
+            "Juliana Casillas fouled out to c (0-1 K).",
+            "Callie Kozeniewski struck out swinging (2-2 BBKSS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/aurora-university/boxscore/16842",
+      "date": "3/11/2026",
+      "opponent": "Aurora University",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Aubrey Ortiz grounded out to 2b (0-0).",
+            "Mia Rivera doubled down the lf line (0-0).",
+            "Nina Richards fouled out to 3b (0-0).",
+            "Stephani Debise grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Angie Delgado singled up the middle (0-0).",
+            "Lily Komperda singled to left field (0-0); Angie Delgado advanced to second.",
+            "Lily Komperda advanced to second on a wild pitch; Angie Delgado advanced to third on a wild pitch.",
+            "Carly Clemens walked (0-0).",
+            "Kelsey Oviatt flied out to cf, sacrifice fly, RBI (0-0); Angie Delgado scored.",
+            "Tristin Woods singled to first base (0-0); Carly Clemens advanced to second; Lily Komperda advanced to third.",
+            "Aubrey Ortiz flied out to ss (0-0).",
+            "Mia Rivera walked, RBI (0-0); Tristin Woods advanced to second; Carly Clemens advanced to third; Lily Komperda scored.",
+            "Nina Richards hit by pitch, RBI (0-0); Mia Rivera advanced to second; Tristin Woods advanced to third; Carly Clemens scored.",
+            "Stephani Debise grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Angie Delgado reached first on an error by 2b (0-0).",
+            "Lily Komperda fouled out to 1b (0-0).",
+            "Carly Clemens flied out to 1b (0-0).",
+            "Angie Delgado advanced to second on a passed ball.",
+            "Erin Young pinch ran for Angie Delgado.",
+            "Erin Young stole third.",
+            "Kelsey Oviatt walked (0-0).",
+            "Tristin Woods grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Merchant to p for Kaitlyn Barr.",
+            "Mia Francisco to 2b for Riley O'Brien.",
+            "Aubrey Ortiz grounded out to 2b (0-0).",
+            "Mia Rivera singled to second base (0-0).",
+            "Nina Richards reached first on a fielding error by p (0-0); Mia Rivera advanced to second.",
+            "Stephani Debise flied out to lf (0-0).",
+            "Nina Richards stole second; Mia Rivera stole third.",
+            "Tyler Frost pinch ran for Nina Richards.",
+            "Angie Delgado flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Reese Pozen pinch hit for Lily Komperda.",
+            "Elizabeth Jordan to lf for Ava Laughlin.",
+            "Reese Pozen flied out to 1b (0-0).",
+            "Holly Smith singled to left field (0-0).",
+            "Kayla Korey singled to center field (0-0); Holly Smith advanced to second.",
+            "Alyssa Gale lined out to rf (0-0).",
+            "Mia Malczyk singled to center field, advanced to second, RBI (0-0); Kayla Korey advanced to third; Holly Smith scored.",
+            "Mia Rivera popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 3,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 18
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 2,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/western-new-england-university/boxscore/16844",
+      "date": "3/13/2026",
+      "opponent": "Western New England University",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Marley Rodriguez walked (0-0).",
+            "Ava Barnhart hit by pitch (0-0); Marley Rodriguez advanced to second.",
+            "Payton McDaniel reached on a fielder's choice (0-0); Ava Barnhart advanced to second; Marley Rodriguez out at third ss unassisted, interference.",
+            "Nicolina Salanto lined into double play 1b (0-0); Payton McDaniel out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Katelyn Bailey reached first on a throwing error by 3b, advanced to second (0-0).",
+            "Evelyn Picone reached first on an error by 3b (0-0); Katelyn Bailey advanced to third.",
+            "Brianna Cardona walked (0-0); Evelyn Picone advanced to second.",
+            "Alyssa Ferriouolo hit by pitch, RBI (0-0); Brianna Cardona advanced to second; Evelyn Picone advanced to third; Katelyn Bailey scored, unearned.",
+            "Shea McDaniel singled to second base, 2 RBI (0-0); Alyssa Ferriouolo advanced to third; Brianna Cardona scored; Evelyn Picone scored, unearned.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Marley Rodriguez reached on a fielder's choice (0-0); Shea McDaniel out at second ss to 2b.",
+            "Ava Barnhart singled to right field, RBI (0-0); Marley Rodriguez advanced to second, out at third rf to 3b; Alyssa Ferriouolo scored, unearned.",
+            "Ava Barnhart advanced to second on the throw.",
+            "Payton McDaniel singled down the lf line (0-0); Ava Barnhart advanced to third, out at home rf to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Nicolina Salanto walked (0-0).",
+            "Katelyn Bailey fouled out to 3b, bunt (0-0).",
+            "Evelyn Picone flied out to cf (0-0).",
+            "Brianna Cardona struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alyssa Ferriouolo grounded out to 3b (0-0).",
+            "Shea McDaniel grounded out to 3b (0-0).",
+            "Marley Rodriguez doubled down the lf line (0-0).",
+            "Ava Barnhart popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Payton McDaniel struck out looking (0-0).",
+            "Nicolina Salanto popped up to 2b (0-0).",
+            "Katelyn Bailey singled through the left side, out at second lf to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ariana Kreuzer pinch ran for Suzannah Figler.",
+            "Ariana Kreuzer to c.",
+            "Evelyn Picone popped up to ss (0-0).",
+            "Riley Kane grounded out to ss (0-0).",
+            "Alyssa Ferriouolo singled to shortstop (0-0).",
+            "Shea McDaniel struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Marley Rodriguez grounded out to 2b (0-0).",
+            "Ava Barnhart hit by pitch (0-0).",
+            "Angelees Carrasquillo pinch ran for Ava Barnhart.",
+            "Payton McDaniel popped up to ss (0-0).",
+            "Nicolina Salanto grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 1,
+          "h": 1,
+          "r": 4,
+          "er": 1,
+          "bb": 2,
+          "so": 0,
+          "hbp": 2,
+          "ab": 5,
+          "bf": 9
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 6,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 1,
+          "ab": 20,
+          "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/nichols-college/boxscore/16845",
+      "date": "3/13/2026",
+      "opponent": "Nichols College",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sydney Hicks lined out to 1b (0-0).",
+            "Samantha Lombardi struck out looking (0-0).",
+            "Ava Slavinsky lined out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Allie Silliman flied out to rf (0-0).",
+            "Sydney Manzione grounded out to 3b (0-0).",
+            "Kyla Felicani singled to right field (0-0).",
+            "Bailey Littlefield singled through the right side (0-0); Kyla Felicani advanced to second.",
+            "Riley Chartier flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emily Iannuccilli reached first on a fielding error by 2b (0-0).",
+            "Sydney Hicks singled to right field, out at second rf to 3b to ss (0-0); Emily Iannuccilli advanced to third.",
+            "Samantha Lombardi flied out to cf, sacrifice fly, RBI (0-0); Emily Iannuccilli scored, unearned.",
+            "Ava Slavinsky singled to right field (0-0).",
+            "Allie Silliman flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sydney Manzione walked (0-0).",
+            "Kyla Felicani singled to center field (0-0); Sydney Manzione advanced to second.",
+            "Sarah Dupre pinch ran for Kyla Felicani.",
+            "Bailey Littlefield lined out to rf (0-0).",
+            "Riley Chartier struck out looking (0-0).",
+            "Emily Iannuccilli grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sydney Hicks singled to shortstop (0-0).",
+            "Sydney Hicks stole second.",
+            "Samantha Lombardi flied out to rf (0-0); Sydney Hicks advanced to third.",
+            "Sydney Hicks scored on a wild pitch.",
+            "Ava Slavinsky grounded out to 3b (0-0).",
+            "Allie Silliman singled through the left side (0-0).",
+            "Sydney Manzione reached on a fielder's choice (0-0); Allie Silliman out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kyla Felicani lined out to 3b (0-0).",
+            "Bailey Littlefield singled to first base (0-0).",
+            "Riley Chartier singled to center field (0-0); Bailey Littlefield advanced to second.",
+            "Emily Iannuccilli grounded out to 2b (0-0); Riley Chartier advanced to second; Bailey Littlefield advanced to third.",
+            "Madison Scribner pinch hit for Sydney Hicks.",
+            "Madison Scribner reached first on a fielding error by ss (0-0); Riley Chartier advanced to third; Bailey Littlefield scored, unearned.",
+            "Samantha Lombardi singled (0-0); Madison Scribner out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Destiny Lum to 3b for Suzannah Figler.",
+            "Emma Nagy to 1b for Ava Laughlin.",
+            "Ava Slavinsky lined out to 1b (0-0).",
+            "Allie Silliman flied out to rf (0-0).",
+            "Sydney Manzione grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 10,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/loras-college/boxscore/16847",
+      "date": "3/14/2026",
+      "opponent": "Loras College",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Katherine Svigelj singled to shortstop (1-0 B).",
+            "Ava Franklin struck out swinging (1-2 SFBFS).",
+            "Kaili Henning flied out to rf (0-2 FK).",
+            "Katherine Svigelj out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Dana Skorich grounded out to ss (0-0).",
+            "Kiya Steger flied out to cf (2-1 FBB).",
+            "Abigail Cortez grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gillian Jones singled to center field (0-1 K).",
+            "Alyson Krogman out at first 3b to 2b, SAC (0-0); Gillian Jones advanced to second.",
+            "Ellie Baker singled, bunt (0-0); Gillian Jones advanced to third.",
+            "Katherine Svigelj struck out looking (0-2 FFK).",
+            "Ava Franklin flied out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kaili Henning singled through the left side (3-2 FBBBF).",
+            "Dana Skorich reached on a fielder's choice (2-1 BBK); Kaili Henning out at second ss to 2b.",
+            "Kiya Steger flied out to 2b (0-0).",
+            "Abigail Cortez popped up to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gillian Jones popped up to 3b (1-2 KFFB).",
+            "Alyson Krogman struck out looking (0-2 KKK).",
+            "Ellie Baker struck out looking (2-2 BKBKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katherine Svigelj struck out swinging (1-2 FFBS).",
+            "Ava Franklin lined out to rf (3-2 KKBBB).",
+            "Kaili Henning singled to center field (0-2 FK).",
+            "Dana Skorich singled to shortstop (0-0); Kaili Henning advanced to second.",
+            "Colleen Mayer to lf for Elizabeth Jordan.",
+            "Keely Pilcher pinch ran for Dana Skorich.",
+            "Kiya Steger lined out to lf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley O'Brien to 2b for Stella Kozak.",
+            "Abigail Cortez grounded out to ss (0-1 K).",
+            "Gillian Jones singled to shortstop (1-0 B).",
+            "Alyson Krogman singled to right field (0-2 FF); Gillian Jones advanced to second.",
+            "Ellie Baker lined out to 3b (1-2 BFFF).",
+            "Katherine Svigelj struck out swinging (1-2 FFBFFS)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Destiny Lum to 3b for Suzannah Figler.",
+            "Ava Franklin Katherine Svigelj placed on second (0-0).",
+            "Ava Franklin reached on a fielder's choice (0-1 K); Katherine Svigelj out at third 2b to 3b.",
+            "Kaili Henning fouled out to c (0-0).",
+            "Dana Skorich grounded out to ss (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 8,
+          "h": 8,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 31
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/alverno-college/boxscore/16848",
+      "date": "3/14/2026",
+      "opponent": "Alverno College",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Giselle Moreno reached first on an error by p (1-0 B).",
+            "Giselle Moreno advanced to second on a wild pitch.",
+            "Nadya Hudson walked (3-0 BBBB).",
+            "Alyssa Hubli fouled out to 1b (1-1 KB).",
+            "Gianna Medrano grounded into double play p to ss to 1b (0-0); Nadya Hudson out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emily Anguiano grounded out to ss (2-1 BFB).",
+            "Mac Gardner walked (3-0 BBBB).",
+            "Bailey Gardner struck out swinging (1-2 FFBS).",
+            "Jaycee Reyes hit by pitch (2-1 BFH); Mac Gardner advanced to second.",
+            "Hailie Eschbach struck out looking (0-2 FFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Samantha Jeng to ss for Sandy Fairbairn.",
+            "Stella Kozak to 3b for Destiny Lum.",
+            "Grace Grant to 1b.",
+            "Mia Francisco to 2b for Riley O'Brien.",
+            "Colleen Mayer to cf for Meg Sherwood.",
+            "Giselle Moreno grounded out to ss (0-0).",
+            "Nadya Hudson doubled to right field (2-2 BKBS).",
+            "Alyssa Hubli flied out to rf (1-0 B); Nadya Hudson advanced to third.",
+            "Gianna Medrano walked (3-0 BBBB).",
+            "Emily Anguiano grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mac Gardner singled to third base (0-0).",
+            "Bailey Gardner singled to third base, bunt (0-0); Mac Gardner advanced to second.",
+            "Jaycee Reyes reached first on a throwing error by p, SAC, bunt, advanced to second on the error (0-0); Bailey Gardner advanced to third on the error; Mac Gardner scored on the error, unearned.",
+            "Hailie Eschbach singled up the middle, advanced to second on the throw, RBI (1-0 B); Jaycee Reyes advanced to third; Bailey Gardner scored.",
+            "Giselle Moreno reached on a fielder's choice to pitcher (0-0).",
+            "Nadya Hudson singled to center field, advanced to second on the throw, 2 RBI (0-1 F); Giselle Moreno advanced to third on the throw; Hailie Eschbach scored; Jaycee Reyes scored, unearned.",
+            "Alyssa Hubli singled to left field, RBI (1-0 B); Nadya Hudson advanced to third; Giselle Moreno scored.",
+            "Abby Merchant to p for Kaitlyn Barr.",
+            "Gianna Medrano popped up to 2b (0-1 K).",
+            "Emily Anguiano grounded out to 3b (0-1 K); Alyssa Hubli advanced to second.",
+            "Mac Gardner singled to right field, 2 RBI (0-1 S); Alyssa Hubli scored, unearned; Nadya Hudson scored, unearned.",
+            "Bailey Gardner fouled out to 3b (2-2 BKKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lucy Latour to rf.",
+            "Jaycee Reyes flied out to lf (0-0).",
+            "Hailie Eschbach grounded out to ss (0-0).",
+            "Giselle Moreno grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 3,
+          "h": 6,
+          "r": 7,
+          "er": 3,
+          "bb": 3,
+          "so": 2,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 21
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
         }
       ],
       "year": 2026
