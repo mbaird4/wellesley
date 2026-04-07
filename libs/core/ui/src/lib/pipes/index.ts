@@ -10,5 +10,6 @@ export * from './format-stat.pipe';
 export * from './format-woba.pipe';
 export * from './is-empty.pipe';
 export * from './last-updated.pipe';
+export * from './opponent-name.pipe';
 export * from './outlier-class.pipe';
 export * from './season-wobas.pipe';
