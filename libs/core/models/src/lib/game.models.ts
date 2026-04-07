@@ -21,6 +21,7 @@ export interface GameState {
 
 export interface GameData {
   url?: string; // boxscore URL for linking
+  date?: string; // game date from boxscore (e.g. "3/17/2026")
   opponent?: string; // opponent name parsed from URL
   lineup: Map<number, string[]>; // slot -> array of normalized names
   playByPlay: PlayByPlayInning[];

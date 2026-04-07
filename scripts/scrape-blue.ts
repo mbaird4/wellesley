@@ -27,6 +27,7 @@ interface PlayByPlayInning {
 
 interface SerializedGameData {
   url: string;
+  date: string;
   opponent: string;
   lineup: [number, string[]][];
   playByPlay: PlayByPlayInning[];
@@ -400,12 +401,11 @@ function parsePlayByPlay($: cheerio.CheerioAPI): PlayByPlayInning[] {
 function extractGameData($: cheerio.CheerioAPI, url: string): SerializedGameData {
   const lineup = parseLineup($);
   const playByPlay = parsePlayByPlay($);
-
-  const opponentMatch = url.match(/stats\/\d{4}\/([^/]+)\//);
-  const opponent = opponentMatch ? opponentMatch[1].replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()) : 'Unknown';
+  const { date, opponent } = parseGameInfo($, url);
 
   return {
     url,
+    date,
     opponent,
     lineup: Array.from(lineup.entries()),
     playByPlay,

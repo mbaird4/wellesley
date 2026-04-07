@@ -129,6 +129,7 @@ export class SoftballDataService {
     const parsed = await this.fetchJson<
       Array<{
         url?: string;
+        date?: string;
         opponent?: string;
         lineup: [number, string[]][];
         playByPlay: PlayByPlayInning[];
