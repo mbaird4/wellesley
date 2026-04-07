@@ -130,15 +130,16 @@ export function computeVsWellesleyStats(games: GamePbP[], opponentNames: string[
       .filter((play) => play.isPlateAppearance && play.batterName)
       .forEach((play) => {
         const name = play.batterName!;
+        const key = name.toLowerCase();
         const pitcher = play.activePitcher;
         pitcherSet.add(pitcher);
 
-        // Overall stats
-        if (!overallMap.has(name)) {
-          overallMap.set(name, emptyBatterStats(name));
+        // Overall stats (case-insensitive key, first-seen spelling for display)
+        if (!overallMap.has(key)) {
+          overallMap.set(key, emptyBatterStats(name));
         }
 
-        accumulatePlay(overallMap.get(name)!, play.batterResult, play.playText);
+        accumulatePlay(overallMap.get(key)!, play.batterResult, play.playText);
 
         // By-pitcher stats
         if (!byPitcherMap.has(pitcher)) {
@@ -147,11 +148,11 @@ export function computeVsWellesleyStats(games: GamePbP[], opponentNames: string[
 
         const pitcherBatters = byPitcherMap.get(pitcher)!;
 
-        if (!pitcherBatters.has(name)) {
-          pitcherBatters.set(name, emptyBatterStats(name));
+        if (!pitcherBatters.has(key)) {
+          pitcherBatters.set(key, emptyBatterStats(name));
         }
 
-        accumulatePlay(pitcherBatters.get(name)!, play.batterResult, play.playText);
+        accumulatePlay(pitcherBatters.get(key)!, play.batterResult, play.playText);
       });
   });
 

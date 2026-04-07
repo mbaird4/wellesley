@@ -3,12 +3,14 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { mergeBattingYears, mergePitchingYears, RosterService, SoftballDataService } from '@ws/core/data';
 import { type DisplayRow, type PitchingData, type PlayerTier, type Roster, type SortDir, type SortKey, type Team, type TeamEntry, toJerseyMap, type VsWellesleyData, type YearBattingData, type YearData, type YearPitchingData } from '@ws/core/models';
-import { calculateWoba, computeVsWellesleyStats } from '@ws/core/processors';
+import { calculateWoba, computeVsWellesleyStats, normalizePlayerName } from '@ws/core/processors';
 import { RECENT_YEARS } from '@ws/core/util';
 import { forkJoin, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
 import { ALL_OPPONENT_TEAMS, NEXT_OPPONENT_DATA_PATH, SLUG_TO_OPPONENT_NAMES } from './teams';
+
+const WELLESLEY_NAMES = ['Wellesley', 'Wellesley College'];
 
 @Injectable()
 export class OpponentDataService {
@@ -34,7 +36,70 @@ export class OpponentDataService {
   readonly vsWellesleyData = signal<VsWellesleyData | null>(null);
   readonly vsWellesleyLoading = signal(false);
   readonly wellesleyRosterNames = this.rosterService.wellesleyRosterNames;
+  readonly wellesleyRosterAbbrevNames = this.rosterService.wellesleyRosterAbbrevNames;
+  readonly wellesleyAbbrevJerseyMap = this.rosterService.wellesleyAbbrevJerseyMap;
   readonly wellesleyPitcherOrder = signal<string[]>([]);
+
+  /** Abbreviated names ("F. Last") derived from teamData players for PBP name matching. */
+  readonly opponentAbbrevNames = computed(() => {
+    const team = this.teamData();
+
+    if (!team) {
+      return new Set<string>();
+    }
+
+    return new Set(team.players.map((p) => normalizePlayerName(p.name)));
+  });
+
+  /** Abbreviated name → jersey map for opponent players. */
+  readonly opponentAbbrevJerseyMap = computed<Record<string, number>>(() => {
+    const team = this.teamData();
+
+    if (!team) {
+      return {};
+    }
+
+    const map: Record<string, number> = {};
+    team.players.forEach((p) => {
+      if (p.jerseyNumber !== null) {
+        map[normalizePlayerName(p.name)] = p.jerseyNumber;
+      }
+    });
+
+    return map;
+  });
+
+  /** Wellesley batters vs opponent pitchers, computed from opponent pitching PBP data. */
+  readonly offenseData = computed<VsWellesleyData | null>(() => {
+    const pd = this.pitchingData();
+
+    if (!pd?.games.length) {
+      return null;
+    }
+
+    return computeVsWellesleyStats(pd.games, WELLESLEY_NAMES);
+  });
+
+  /** Opponent pitcher order by career BF from opponent pitching stats. */
+  readonly opponentPitcherOrder = computed<string[]>(() => {
+    const pd = this.pitchingData();
+
+    if (!pd) {
+      return [];
+    }
+
+    const bfByPitcher = new Map<string, number>();
+    Object.values(pd.pitchingStatsByYear).forEach((stats) => {
+      stats.forEach((s) => {
+        const bf = s.ab + s.bb + s.hbp + s.sfa + s.sha;
+        bfByPitcher.set(s.name, (bfByPitcher.get(s.name) ?? 0) + bf);
+      });
+    });
+
+    return Array.from(bfByPitcher.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([name]) => name);
+  });
 
   readonly nextOpponentName = signal<string>('');
 

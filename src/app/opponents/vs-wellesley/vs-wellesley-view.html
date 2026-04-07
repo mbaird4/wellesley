@@ -1,43 +1,82 @@
-@if (loading()) {
+@if (loading() || (mode() === 'offense' && pitchingLoading())) {
   <ws-loading-state />
 }
 
-@if (data(); as d) {
+@if (activeData(); as d) {
   @if (d.overall.length === 0) {
     <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-      No games vs Wellesley found for {{ teamName() }}.
+      @if (mode() === 'defense') {
+        No games vs Wellesley found for {{ teamName() }}.
+      } @else {
+        No Wellesley batting data found against {{ teamName() }} pitchers.
+      }
     </div>
   } @else {
-    <div class="flex flex-col gap-1">
+    <div class="flex flex-wrap items-end gap-4">
+      @if (hasOffenseData()) {
+        <ng-container *ngTemplateOutlet="modeToggle" />
+      }
       <span class="text-content-dim text-sm">
-        {{ d.games.length }} {{ d.games.length === 1 ? 'game' : 'games' }} ({{
+        {{ gameCount() }} {{ gameCount() === 1 ? 'game' : 'games' }} ({{
           gameDates()
         }})
       </span>
     </div>
 
-    <div class="flex flex-wrap gap-1.5">
-      @for (pitcher of filteredPitchers(); track pitcher) {
-        <button
-          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors"
-          [class]="
-            activePitcher() === pitcher
-              ? 'bg-brand-bg text-brand-text'
-              : 'bg-surface-elevated text-content-muted hover:text-content-bright'
-          "
-          (click)="selectedPitcher.set(pitcher)"
-        >
-          {{ pitcher }}
-        </button>
+    @if (filteredPitchers().length > 0) {
+      <div class="flex flex-wrap gap-1.5">
+        @for (pitcher of filteredPitchers(); track pitcher) {
+          <button
+            class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors"
+            [class]="
+              activePitcher() === pitcher
+                ? 'bg-brand-bg text-brand-text'
+                : 'bg-surface-elevated text-content-muted hover:text-content-bright'
+            "
+            (click)="selectedPitcher.set(pitcher)"
+          >
+            {{ pitcher }}
+          </button>
+        }
+      </div>
+    }
+
+    @if (displayStats().length > 0) {
+      <ws-vs-wellesley-table
+        [stats]="displayStats()"
+        [jerseyMap]="resolvedJerseyMap()"
+      />
+    } @else {
+      <div
+        class="py-section px-card text-content-dim text-center text-[1.05rem]"
+      >
+        No current roster players found in the matchup data.
+      </div>
+    }
+  }
+} @else if (!loading() && !(mode() === 'offense' && pitchingLoading())) {
+  <div class="flex flex-col gap-4">
+    @if (hasOffenseData()) {
+      <ng-container *ngTemplateOutlet="modeToggle" />
+    }
+    <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
+      @if (mode() === 'defense') {
+        No vs Wellesley data available for {{ teamName() }}.
+      } @else {
+        No pitching data available for {{ teamName() }}.
       }
     </div>
-
-    <ws-vs-wellesley-table [stats]="displayStats()" />
-  }
-}
-
-@if (!data() && !loading()) {
-  <div class="py-section px-card text-content-dim text-center text-[1.05rem]">
-    No vs Wellesley data available for {{ teamName() }}.
   </div>
 }
+
+<ng-template #modeToggle>
+  <div class="flex flex-col gap-1">
+    <span class="text-content-dim text-xs font-medium">View</span>
+    <ws-button-toggle
+      [options]="modeOptions"
+      [value]="mode()"
+      mode="single"
+      (valueChange)="onModeChange($event)"
+    />
+  </div>
+</ng-template>

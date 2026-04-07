@@ -5,6 +5,7 @@ import { BreakpointService } from '@ws/core/util';
 
 interface DisplayRow {
   name: string;
+  jersey: number | null;
   pa: number;
   avg: string;
   obp: string;
@@ -59,7 +60,7 @@ function fmtAvg(num: number, den: number): string {
   return (num / den).toFixed(3).replace(/^0/, '');
 }
 
-function toDisplayRow(b: BatterVsStats, isTotals: boolean): DisplayRow {
+function toDisplayRow(b: BatterVsStats, isTotals: boolean, jersey: number | null): DisplayRow {
   const hits = b.singles + b.doubles + b.triples + b.hr;
   const ab = b.totalPA - b.walks - b.hbp - b.sacFlies - b.sacBunts;
   const onBase = hits + b.walks + b.hbp;
@@ -67,6 +68,7 @@ function toDisplayRow(b: BatterVsStats, isTotals: boolean): DisplayRow {
 
   return {
     name: b.batterName,
+    jersey,
     pa: b.totalPA,
     avg: fmtAvg(hits, ab),
     obp: fmtAvg(onBase, b.totalPA - b.sacBunts),
@@ -102,12 +104,19 @@ function toDisplayRow(b: BatterVsStats, isTotals: boolean): DisplayRow {
 export class VsWellesleyTable {
   readonly bp = inject(BreakpointService);
   readonly stats = input.required<BatterVsStats[]>();
+  readonly jerseyMap = input<Record<string, number>>({});
 
   readonly reachingCols = REACHING_COLS;
   readonly outCols = OUT_COLS;
   readonly miscCols = MISC_COLS;
 
-  readonly rows = computed<DisplayRow[]>(() => this.stats().map((b) => toDisplayRow(b, false)));
+  readonly rows = computed<DisplayRow[]>(() => {
+    const jm = this.jerseyMap();
+
+    return this.stats()
+      .map((b) => toDisplayRow(b, false, jm[b.batterName] ?? null))
+      .sort((a, b) => (a.jersey ?? Infinity) - (b.jersey ?? Infinity));
+  });
 
   readonly totals = computed<DisplayRow | null>(() => {
     const rows = this.stats();
@@ -159,6 +168,6 @@ export class VsWellesleyTable {
       }
     );
 
-    return toDisplayRow(sum, true);
+    return toDisplayRow(sum, true, null);
   });
 }

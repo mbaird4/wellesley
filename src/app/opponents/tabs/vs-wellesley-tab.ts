@@ -8,7 +8,7 @@ import { VsWellesleyView } from '../vs-wellesley/vs-wellesley-view';
   standalone: true,
   imports: [VsWellesleyView],
   host: { class: 'block' },
-  template: ` <ws-vs-wellesley-view [data]="data.vsWellesleyData()" [loading]="data.vsWellesleyLoading()" [teamName]="data.selectedTeamName()" [wellesleyRosterNames]="data.wellesleyRosterNames()" [pitcherOrder]="data.wellesleyPitcherOrder()" /> `,
+  template: ` <ws-vs-wellesley-view [defenseData]="data.vsWellesleyData()" [offenseData]="data.offenseData()" [loading]="data.vsWellesleyLoading()" [pitchingLoading]="data.pitchingLoading()" [teamName]="data.selectedTeamName()" [wellesleyRosterNames]="data.wellesleyRosterNames()" [wellesleyAbbrevNames]="data.wellesleyRosterAbbrevNames()" [opponentAbbrevNames]="data.opponentAbbrevNames()" [opponentRosterNames]="data.rosterNames()" [opponentJerseyMap]="data.opponentAbbrevJerseyMap()" [wellesleyJerseyMap]="data.wellesleyAbbrevJerseyMap()" [wellesleyPitcherOrder]="data.wellesleyPitcherOrder()" [opponentPitcherOrder]="data.opponentPitcherOrder()" /> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VsWellesleyTab {
@@ -20,6 +20,7 @@ export class VsWellesleyTab {
 
       if (slug) {
         this.data.loadVsWellesley(slug);
+        this.data.loadPitching(this.data.dataDir());
       }
     });
   }
