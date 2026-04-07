@@ -49,12 +49,20 @@ export const appRoutes: Route[] = [
             loadComponent: () => import('./opponents/tabs/stats-tab').then((m) => m.StatsTab),
           },
           {
+            path: 'approach',
+            loadComponent: () => import('./opponents/tabs/approach-tab').then((m) => m.ApproachTab),
+          },
+          {
             path: 'report',
             loadComponent: () => import('./opponents/tabs/report-tab').then((m) => m.ReportTab),
           },
         ],
       },
     ],
+  },
+  {
+    path: 'approach',
+    loadComponent: () => import('./approach/outlet-approach').then((m) => m.OutletApproach),
   },
   {
     path: 'pitching',

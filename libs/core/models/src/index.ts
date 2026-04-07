@@ -16,5 +16,6 @@ export * from './lib/scoring.models';
 export * from './lib/season-stats.models';
 export * from './lib/snapshot.models';
 export * from './lib/spray.models';
+export * from './lib/swing-stats.models';
 export * from './lib/vs-wellesley.models';
 export * from './lib/woba.models';

@@ -30,7 +30,7 @@ function mergeInto(target: PitchCountInningStats, source: PitchCountInningStats)
   target.sequences.push(...source.sequences);
 }
 
-function computePitchCount(pitches: PitchCode[]): number {
+export function computePitchCount(pitches: PitchCode[]): number {
   const count = pitches.length;
 
   if (count === 0) {

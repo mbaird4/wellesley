@@ -29,5 +29,6 @@ export class OpponentDetail {
     { path: 'woba', label: 'wOBA', mobileLabel: 'wOBA Stats' },
     { path: 'vs-wellesley', label: 'vs Wellesley', mobileLabel: 'vs Blue' },
     { path: 'stats', label: 'Season Stats', mobileLabel: 'Stats' },
+    { path: 'approach', label: 'Approach', mobileLabel: 'Approach' },
   ];
 }

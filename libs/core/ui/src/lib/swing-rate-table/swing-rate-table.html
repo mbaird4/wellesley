@@ -1,0 +1,26 @@
+<table class="stats-table w-full">
+  <thead>
+    <tr>
+      <th class="cursor-pointer text-left select-none" (click)="sortBy('name')">
+        Player
+      </th>
+      <th class="cursor-pointer select-none" (click)="sortBy('pa')">PA</th>
+      <th class="cursor-pointer select-none" (click)="sortBy('swings')">
+        Swings
+      </th>
+      <th class="cursor-pointer select-none" (click)="sortBy('rate')">
+        Swing %
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (row of sortedStats(); track row.batterName) {
+      <tr>
+        <td class="text-left">{{ row.batterName }}</td>
+        <td>{{ row.totalPAs }}</td>
+        <td>{{ row.swingCount }}</td>
+        <td>{{ row.swingRate | percent: '1.0-0' }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

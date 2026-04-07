@@ -2,6 +2,7 @@ export * from './lib/metric-display';
 export * from './lib/parsing/parse-pitch-sequence';
 export * from './lib/parsing/parse-play';
 export * from './lib/processing/base-runner-stats';
+export * from './lib/processing/batter-swing-stats';
 export * from './lib/processing/clutch-stats';
 export * from './lib/processing/handedness-splits';
 export * from './lib/processing/outlier-stats';

@@ -1,0 +1,10 @@
+@if (loading()) {
+  <ws-loading-state />
+} @else if (error(); as err) {
+  <ws-error-banner [message]="err" />
+} @else if (stats().length === 0) {
+  <ws-empty-state message="No pitch sequence data available" />
+} @else {
+  <h2 class="mb-4">1st Pitch Swing Rate</h2>
+  <ws-swing-rate-table [stats]="stats()" />
+}

@@ -31,5 +31,6 @@ export * from './lib/spray-view-split/spray-view-split';
 export * from './lib/spray-year-panel/spray-year-panel';
 export * from './lib/stat-card/stat-card';
 export * from './lib/sticky-player-header/sticky-player-header';
+export * from './lib/swing-rate-table/swing-rate-table';
 export * from './lib/woba-badge/woba-badge';
 export * from './lib/woba-legend/woba-legend';
