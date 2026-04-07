@@ -1,7 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
-import type { BatterSwingStats } from '@ws/core/models';
-import { buildWellesleyPitcherSequences, computeBatterSwingStats } from '@ws/core/processors';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { SoftballDataService } from '@ws/core/data';
+import type { BatterSwingStats, GameData } from '@ws/core/models';
+import { buildOpponentPitcherSequences, computeBatterSwingStats } from '@ws/core/processors';
 import { EmptyState, LoadingState, SwingRateTable } from '@ws/core/ui';
+import { CURRENT_YEAR } from '@ws/core/util';
 
 import { OpponentDataService } from '../opponent-data.service';
 
@@ -19,26 +21,65 @@ import { OpponentDataService } from '../opponent-data.service';
 })
 export class ApproachTab {
   readonly data = inject(OpponentDataService);
+  private readonly softballData = inject(SoftballDataService);
+
+  readonly loading = signal(false);
+  readonly games = signal<GameData[]>([]);
 
   readonly stats = computed<BatterSwingStats[]>(() => {
-    const pd = this.data.pitchingData();
+    const gameData = this.games();
+    const team = this.data.teamData();
 
-    if (!pd?.games.length) {
+    if (!gameData.length || !team) {
       return [];
     }
 
-    const records = buildWellesleyPitcherSequences(pd.games);
+    const records = buildOpponentPitcherSequences(gameData);
+    const allStats = computeBatterSwingStats(records);
+    const rosterNames = new Set(team.players.map((p) => p.name));
 
-    return computeBatterSwingStats(records);
+    return allStats.filter((s) => rosterNames.has(s.batterName));
+  });
+
+  readonly jerseyMap = computed<Record<string, number>>(() => {
+    const team = this.data.teamData();
+
+    if (!team) {
+      return {};
+    }
+
+    const map: Record<string, number> = {};
+    team.players.forEach((p) => {
+      if (p.jerseyNumber !== null) {
+        map[p.name] = p.jerseyNumber;
+      }
+    });
+
+    return map;
   });
 
   constructor() {
     effect(() => {
-      const slug = this.data.slug();
+      const dir = this.data.dataDir();
 
-      if (slug) {
-        this.data.loadPitching(this.data.dataDir());
+      if (dir) {
+        this.loadGameData(dir);
       }
+    });
+  }
+
+  private loadGameData(dataDir: string): void {
+    this.loading.set(true);
+
+    this.softballData.getOpponentGameData(dataDir, CURRENT_YEAR).subscribe({
+      next: (games) => {
+        this.games.set(games);
+        this.loading.set(false);
+      },
+      error: () => {
+        this.games.set([]);
+        this.loading.set(false);
+      },
     });
   }
 }

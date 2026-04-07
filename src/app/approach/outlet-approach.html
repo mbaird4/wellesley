@@ -6,5 +6,9 @@
   <ws-empty-state message="No pitch sequence data available" />
 } @else {
   <h2 class="mb-4">1st Pitch Swing Rate</h2>
-  <ws-swing-rate-table [stats]="stats()" />
+  <ws-swing-rate-table
+    [stats]="stats()"
+    [jerseyMap]="rosterService.wellesleyAbbrevJerseyMap()"
+    [totalGames]="totalGames()"
+  />
 }

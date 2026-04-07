@@ -1,8 +1,12 @@
-@if (data.pitchingLoading()) {
+@if (loading() || data.loading()) {
   <ws-loading-state />
 } @else if (stats().length === 0) {
   <ws-empty-state message="No pitch sequence data available" />
 } @else {
   <h3 class="mb-4">1st Pitch Swing Rate</h3>
-  <ws-swing-rate-table [stats]="stats()" />
+  <ws-swing-rate-table
+    [stats]="stats()"
+    [jerseyMap]="jerseyMap()"
+    [totalGames]="games().length"
+  />
 }
