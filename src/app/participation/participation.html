@@ -1,0 +1,116 @@
+@if (loading()) {
+  <ws-loading-state />
+} @else if (error(); as err) {
+  <ws-error-banner [message]="err" />
+} @else if (rows().length === 0) {
+  <ws-empty-state message="No roster data available" />
+} @else {
+  <div class="overflow-x-auto rounded-xl">
+    <table class="stats-table participation-table mb-0! w-full">
+      <thead>
+        <tr>
+          <th
+            class="sticky-col hover:text-content-bright cursor-pointer select-none"
+            [class]="sortKey() === 'jersey' ? SORTED_HEADER : ''"
+            (click)="sortBy('jersey')"
+          >
+            #
+          </th>
+          <th
+            class="sticky-col-name hover:text-content-bright cursor-pointer select-none"
+            [class]="sortKey() === 'name' ? SORTED_HEADER : ''"
+            (click)="sortBy('name')"
+          >
+            Name
+          </th>
+          <th
+            class="meta-col hover:text-content-bright cursor-pointer select-none"
+            [class]="sortKey() === 'class' ? SORTED_HEADER : ''"
+            (click)="sortBy('class')"
+          >
+            Yr
+          </th>
+          <th class="meta-col">ID</th>
+          <th class="meta-col">Elig Used</th>
+          <th class="meta-col meta-col-notes">Notes</th>
+          <th class="meta-col">Fall</th>
+          @for (col of gameColumns(); track $index) {
+            <th class="game-col">
+              <div class="flex flex-col items-center justify-center">
+                <span class="text-content-dim game-col-label">
+                  {{ col.date }}
+                </span>
+                <span class="game-col-label">
+                  {{ col.label | opponentName
+                  }}{{ col.suffix ? ' ' + col.suffix : '' }}
+                </span>
+              </div>
+            </th>
+          }
+          <th
+            class="sticky-end hover:text-content-bright cursor-pointer select-none"
+            [class]="sortKey() === 'gp' ? SORTED_HEADER : ''"
+            (click)="sortBy('gp')"
+          >
+            GP (total {{ gameColumns().length }})
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of sortedRows(); track row.name) {
+          <tr>
+            <td
+              class="sticky-col text-content-dim text-xs"
+              [class]="sortKey() === 'jersey' ? SORTED_COL : ''"
+            >
+              {{ row.jersey }}
+            </td>
+            <td
+              class="sticky-col-name"
+              [class]="sortKey() === 'name' ? SORTED_COL : ''"
+            >
+              {{ row.displayName }}
+            </td>
+            <td
+              class="meta-col text-content-dim text-xs"
+              [class]="sortKey() === 'class' ? SORTED_COL : ''"
+            >
+              {{ row.classYear }}
+            </td>
+            <td class="meta-col text-content-dim text-xs">
+              {{ row.coachId ?? '' }}
+            </td>
+            <td class="meta-col">
+              @if (row.eligibilityUsed === true) {
+                <span class="text-emerald-400">✓</span>
+              }
+            </td>
+            <td
+              class="meta-col meta-col-notes text-content-dim text-left text-xs"
+            >
+              {{ row.notes }}
+            </td>
+            <td class="meta-col">
+              @if (row.fallTournament === true) {
+                <span class="text-emerald-400">✓</span>
+              }
+            </td>
+            @for (played of row.participated; track $index) {
+              <td class="game-cell">
+                @if (played) {
+                  <span class="text-emerald-400">✓</span>
+                }
+              </td>
+            }
+            <td
+              class="sticky-end font-semibold"
+              [class]="sortKey() === 'gp' ? SORTED_COL : ''"
+            >
+              {{ row.gamesPlayed }}
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

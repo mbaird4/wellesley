@@ -68,6 +68,10 @@ export const appRoutes: Route[] = [
     path: 'clutch',
     loadComponent: () => import('./clutch/clutch').then((m) => m.Clutch),
   },
+  {
+    path: 'participation',
+    loadComponent: () => import('./participation/participation').then((m) => m.Participation),
+  },
 
   { path: '**', redirectTo: '' },
 ];

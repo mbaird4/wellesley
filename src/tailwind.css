@@ -23,8 +23,8 @@
   --color-brand-light: #1a3fd4;
   --color-brand-lighter: #5b7ae6;
   --color-brand-text: #8ba4f0;
-  --color-brand-bg: rgba(0, 24, 168, 0.25);
-  --color-brand-bg-subtle: rgba(0, 24, 168, 0.1);
+  --color-brand-bg: color-mix(in srgb, rgb(0, 24, 168) 25%, #0f1117);
+  --color-brand-bg-subtle: color-mix(in srgb, rgb(0, 24, 168) 10%, #0f1117);
   --color-brand-glow: rgba(0, 24, 168, 0.35);
   --color-brand-glow-strong: rgba(0, 24, 168, 0.5);
 
@@ -674,6 +674,60 @@
 
     &:last-child {
       @apply rounded-r-[5px];
+    }
+  }
+
+  /* ── Participation chart ── */
+  .participation-table {
+    @apply overflow-visible! rounded-none! border-none! whitespace-nowrap;
+
+    th,
+    td {
+      @apply px-2 py-1.5 text-center text-[0.9rem];
+    }
+
+    .sticky-col {
+      @apply bg-surface-sticky sticky left-0 z-1 whitespace-nowrap;
+    }
+
+    .sticky-col-name {
+      @apply bg-surface-sticky text-content-bright sticky left-12 z-1 min-w-28 text-left font-medium;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      box-shadow: -4px 0 0 var(--color-surface-sticky);
+    }
+
+    thead .sticky-col,
+    thead .sticky-col-name,
+    thead .sticky-end {
+      @apply bg-surface-sticky-header z-2;
+    }
+
+    thead .sticky-col-name {
+      box-shadow: -4px 0 0 var(--color-surface-sticky-header);
+    }
+
+    .meta-col {
+      @apply text-center;
+    }
+
+    .meta-col-notes {
+      @apply max-w-40 truncate;
+    }
+
+    .game-col {
+      @apply min-w-10;
+    }
+
+    .game-col-label {
+      @apply block text-[0.65rem] leading-tight whitespace-nowrap;
+    }
+
+    .game-cell {
+      @apply min-w-10;
+    }
+
+    .sticky-end {
+      @apply bg-surface-sticky border-line-hover sticky right-0 z-1 border-l;
     }
   }
 

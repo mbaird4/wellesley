@@ -5,6 +5,7 @@ export * from './lib/game.models';
 export * from './lib/lineup-position.models';
 export * from './lib/metric-tier.models';
 export * from './lib/opponent.models';
+export * from './lib/participation.models';
 export * from './lib/pitch-count.models';
 export * from './lib/pitch-sequence.models';
 export * from './lib/pitching.models';
