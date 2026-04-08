@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-07T02:10:43.513Z",
+  "scrapedAt": "2026-04-08T02:12:10.217Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,58 +35,30 @@
     {
       "name": "Sealey, Lexi",
       "w": 2,
-      "l": 0,
-      "era": 3.41,
-      "app": 10,
-      "gs": 1,
-      "cg": 1,
+      "l": 1,
+      "era": 2.94,
+      "app": 12,
+      "gs": 2,
+      "cg": 2,
       "sho": 1,
       "sv": 3,
-      "ip": 24.2,
-      "h": 33,
-      "r": 14,
-      "er": 12,
-      "bb": 8,
-      "so": 10,
+      "ip": 33.1,
+      "h": 44,
+      "r": 19,
+      "er": 14,
+      "bb": 12,
+      "so": 11,
       "hr": 0,
-      "whip": 1.66,
-      "doubles": 1,
-      "triples": 1,
-      "ab": 105,
-      "bAvg": 0.314,
-      "wp": 3,
-      "hbp": 3,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
-    {
-      "name": "Vlacich, Katie",
-      "w": 1,
-      "l": 5,
-      "era": 4.93,
-      "app": 8,
-      "gs": 6,
-      "cg": 2,
-      "sho": 0,
-      "sv": 0,
-      "ip": 32.2,
-      "h": 41,
-      "r": 29,
-      "er": 23,
-      "bb": 15,
-      "so": 23,
-      "hr": 2,
-      "whip": 1.71,
-      "doubles": 7,
-      "triples": 1,
+      "whip": 1.68,
+      "doubles": 4,
+      "triples": 2,
       "ab": 142,
-      "bAvg": 0.289,
-      "wp": 8,
-      "hbp": 1,
+      "bAvg": 0.31,
+      "wp": 5,
+      "hbp": 4,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 4
     },
     {
       "name": "Topel, Anna",
@@ -115,6 +87,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 4
+    },
+    {
+      "name": "Vlacich, Katie",
+      "w": 1,
+      "l": 6,
+      "era": 6.03,
+      "app": 9,
+      "gs": 7,
+      "cg": 2,
+      "sho": 0,
+      "sv": 0,
+      "ip": 36,
+      "h": 51,
+      "r": 38,
+      "er": 31,
+      "bb": 16,
+      "so": 25,
+      "hr": 3,
+      "whip": 1.86,
+      "doubles": 8,
+      "triples": 2,
+      "ab": 163,
+      "bAvg": 0.313,
+      "wp": 11,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
     }
   ],
   "games": [
@@ -2219,6 +2219,218 @@
           "hbp": 0,
           "ab": 3,
           "bf": 3
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/umass-boston/boxscore/16057",
+      "date": "4/7/2026",
+      "opponent": "Umass Boston",
+      "pitchers": [
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sofie Richland popped up to p (0-0).",
+            "Mary Matthews grounded out to ss (1-0 B).",
+            "Lauren Miner walked (3-1 BBBKB).",
+            "Lauren Miner advanced to second on a wild pitch.",
+            "Hayley Krockta grounded out to ss (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mya Perron grounded out to ss (0-1 K).",
+            "Liv Wentworth grounded out to ss (1-1 KB).",
+            "Amaya Rodriguez grounded out to 2b (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kayla Murphy grounded out to ss (1-2 FBK).",
+            "Ella Delisle doubled to left field (0-0).",
+            "Sofie Richland doubled, bunt (0-0); Ella Delisle advanced to third.",
+            "Mary Matthews reached on a fielder's choice (0-0); Sofie Richland advanced to third; Ella Delisle out at home 2b to c.",
+            "Mary Matthews stole second.",
+            "Lauren Miner walked (3-2 KSBFFBBB).",
+            "Hayley Krockta flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mya Perron grounded out to 1b unassisted (0-0).",
+            "Liv Wentworth tripled to center field (0-1 K).",
+            "Amaya Rodriguez singled through the right side, RBI (2-0 BB); Liv Wentworth scored.",
+            "Kayla Murphy grounded out to p (2-2 BBKF); Amaya Rodriguez advanced to second.",
+            "Ella Delisle singled through the left side (0-0); Amaya Rodriguez advanced to third.",
+            "Ella Delisle stole second.",
+            "Sofie Richland grounded out to p (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mary Matthews lined out to rf (2-1 FBB).",
+            "Lauren Miner singled to shortstop (0-1 F).",
+            "Hayley Krockta walked (3-1 FBBBB); Lauren Miner advanced to second.",
+            "Marin Prest pinch ran for Hayley Krockta.",
+            "Mya Perron singled to shortstop (2-1 BBK); Marin Prest advanced to second; Lauren Miner out at third ss unassisted, interference.",
+            "Liv Wentworth grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amaya Rodriguez singled through the right side (0-0).",
+            "Kayla Murphy reached on a fielder's choice (1-2 KFB); Amaya Rodriguez advanced to second on an error by 2b, assist by 3b.",
+            "Ella Delisle reached first on a throwing error by 3b, SAC (1-0 B); Kayla Murphy advanced to second; Amaya Rodriguez advanced to third.",
+            "Sofie Richland reached on a fielder's choice (0-0); Ella Delisle advanced to second; Kayla Murphy advanced to third; Amaya Rodriguez out at home p to c.",
+            "Mary Matthews doubled to right center, 2 RBI (0-0); Sofie Richland advanced to third; Ella Delisle scored, unearned; Kayla Murphy scored, unearned.",
+            "Lauren Miner reached on a fielder's choice (2-2 SBSB); Sofie Richland out at home ss to c to 3b.",
+            "Hayley Krockta reached on a fielder's choice (1-2 FKB); Lauren Miner advanced to second; Mary Matthews out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Mya Perron hit by pitch (2-2 KFBH).",
+            "Liv Wentworth grounded out to ss (0-0); Mya Perron advanced to second.",
+            "Amaya Rodriguez singled through the right side (0-0); Mya Perron advanced to third.",
+            "Avery Weinstein pinch hit for Kayla Murphy.",
+            "Amaya Rodriguez advanced to second on a passed ball.",
+            "Avery Weinstein grounded out to p (2-1 BBK).",
+            "Ella Delisle reached first on a fielding error by ss (3-2 KFBBB); Amaya Rodriguez advanced to third; Mya Perron scored, unearned.",
+            "Cosette Zito pinch ran for Ella Delisle.",
+            "Sofie Richland popped up to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sealey, Lexi",
+          "ip": 7,
+          "h": 10,
+          "r": 4,
+          "er": 1,
+          "bb": 3,
+          "so": 0,
+          "hbp": 1,
+          "ab": 32,
+          "bf": 37
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/umass-boston/boxscore/16058",
+      "date": "4/7/2026",
+      "opponent": "Umass Boston",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Sofie Richland hit by pitch (1-2 KKH).",
+            "Mary Matthews singled up the middle (2-2 KBKB); Sofie Richland advanced to second.",
+            "Lauren Miner singled, bunt (1-1 SB); Mary Matthews advanced to second; Sofie Richland advanced to third.",
+            "Hayley Krockta struck out swinging (0-2 KFS).",
+            "Mya Perron reached on a fielder's choice (0-1 K); Lauren Miner advanced to second; Mary Matthews advanced to third; Sofie Richland out at home 2b to c.",
+            "Mya Perron advanced to second; Lauren Miner advanced to third; Mary Matthews scored on a wild pitch.",
+            "Liv Wentworth lined out to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Izzy Levasseur struck out swinging (1-2 FFFFFBS).",
+            "Kayla Murphy grounded out to p (2-1 BBF).",
+            "Ella Delisle doubled to center field (0-2 FS).",
+            "Sofie Richland singled, bunt (0-0); Ella Delisle advanced to third.",
+            "Mary Matthews singled through the right side, advanced to second on the throw, RBI (0-2 FS); Sofie Richland advanced to third; Ella Delisle scored.",
+            "Lauren Miner homered to right field, 3 RBI (0-0); Mary Matthews scored; Sofie Richland scored.",
+            "Hayley Krockta flied out to rf (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Allie Cubberly to 2b for Charly Landow.",
+            "Mya Perron popped up to ss (0-0).",
+            "Liv Wentworth singled through the left side (1-1 BK).",
+            "Liv Wentworth advanced to second on a wild pitch.",
+            "Izzy Levasseur singled up the middle, RBI (0-2 FFFFF); Liv Wentworth scored.",
+            "Gracie Granger pinch hit for Kayla Murphy.",
+            "Gracie Granger walked (3-1 BBKBB); Izzy Levasseur advanced to second.",
+            "Gracie Granger advanced to second on the throw; Izzy Levasseur stole third.",
+            "Ella Delisle grounded out to 3b (1-2 FSBF).",
+            "Sofie Richland flied out to lf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mary Matthews grounded out to ss (0-1 F).",
+            "Lauren Miner reached first on a fielding error by 1b (3-1 BBBK).",
+            "Lauren Miner stole second.",
+            "Hayley Krockta singled down the lf line, RBI (3-2 FBFBB); Lauren Miner scored, unearned.",
+            "Hayley Krockta advanced to second on a wild pitch.",
+            "Mya Perron tripled to right field, RBI (1-1 KB); Hayley Krockta scored.",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Mya Perron scored on a wild pitch.",
+            "Liv Wentworth flied out to rf (1-2 SFFB).",
+            "Izzy Levasseur grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maddy DeLong to ss for Nicole Petrillo.",
+            "Gracie Granger walked (3-1 BFBBB).",
+            "Gracie Granger stole second.",
+            "Marin Prest pinch hit for Ella Delisle.",
+            "Marin Prest out at first c to 2b, SAC (0-0); Gracie Granger advanced to third.",
+            "Molly Wilson pinch hit for Sofie Richland.",
+            "Molly Wilson struck out looking (2-2 SBFBK).",
+            "Mary Matthews singled to right field, RBI (0-0); Gracie Granger scored.",
+            "Mary Matthews stole second.",
+            "Lauren Miner grounded out to ss (1-1 BF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 3.1,
+          "h": 10,
+          "r": 9,
+          "er": 8,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 21,
+          "bf": 23
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 1.2,
+          "h": 1,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 7
         }
       ],
       "year": 2026

@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-07T02:10:14.494Z",
+  "scrapedAt": "2026-04-08T02:11:01.681Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 8,
+      "w": 9,
       "l": 3,
-      "era": 2.1,
-      "app": 11,
+      "era": 1.96,
+      "app": 12,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 70,
-      "h": 66,
+      "ip": 75,
+      "h": 70,
       "r": 27,
       "er": 21,
-      "bb": 17,
-      "so": 59,
+      "bb": 20,
+      "so": 63,
       "hr": 2,
-      "whip": 1.19,
+      "whip": 1.2,
       "doubles": 15,
       "triples": 1,
-      "ab": 266,
-      "bAvg": 0.248,
+      "ab": 285,
+      "bAvg": 0.246,
       "wp": 3,
       "hbp": 0,
       "bk": 0,
@@ -36,24 +36,24 @@
       "name": "Rimshnick, Julia",
       "w": 5,
       "l": 2,
-      "era": 6.13,
-      "app": 16,
-      "gs": 15,
+      "era": 5.88,
+      "app": 17,
+      "gs": 16,
       "cg": 7,
       "sho": 0,
-      "sv": 0,
-      "ip": 48,
+      "sv": 1,
+      "ip": 50,
       "h": 76,
       "r": 52,
       "er": 42,
       "bb": 14,
-      "so": 26,
+      "so": 28,
       "hr": 1,
-      "whip": 1.88,
+      "whip": 1.8,
       "doubles": 10,
       "triples": 6,
-      "ab": 221,
-      "bAvg": 0.344,
+      "ab": 227,
+      "bAvg": 0.335,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -1876,6 +1876,113 @@
           "hbp": 0,
           "ab": 41,
           "bf": 42
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/keene-state/boxscore/15015",
+      "date": "4/7/2026",
+      "opponent": "Keene State",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa to p.",
+            "/  for Julia Rimshnick.",
+            "Anna Gostkowski singled up the middle (1-2 KFB).",
+            "Kalle Halvorsen struck out swinging (3-2 BFBBFFF).",
+            "Anna Gostkowski stole second.",
+            "Elyse Picard popped up to rf (1-1 BS).",
+            "Abby Weiterman flied out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gianna Garofola grounded out to 3b (3-2 BKBKBFFF).",
+            "Jayme Kiley fouled out to 1b (2-2 KKBFFB).",
+            "Cainen Avery walked (3-1 FBBBB).",
+            "Abbie Monkevicz singled through the left side (2-2 SBKFB); Cainen Avery advanced to second.",
+            "Ashley Connor reached on a fielder's choice (2-2 BKBFF); Abbie Monkevicz out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Anna Gostkowski struck out swinging (2-2 BKFFFBFK).",
+            "Kalle Halvorsen walked (3-1 BBBKB).",
+            "Elyse Picard grounded out to 3b (0-2 KKF); Kalle Halvorsen advanced to second.",
+            "Abby Weiterman singled to center field (2-2 BKKBF); Kalle Halvorsen advanced to third.",
+            "Gianna Garofola flied out to cf (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jayme Kiley singled to center field (3-1 BBBK).",
+            "Cainen Avery flied out to rf (0-2 FFF).",
+            "Abbie Monkevicz reached on a fielder's choice (1-1 KB); Jayme Kiley out at second p to ss.",
+            "Ashley Connor walked (3-2 BFBKBB); Abbie Monkevicz advanced to second.",
+            "Anna Gostkowski struck out looking (1-2 KBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kalle Halvorsen struck out looking (1-2 KSBK).",
+            "Elyse Picard flied out to cf (0-0).",
+            "Abby Weiterman flied out to cf (3-2 BFBBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amelia DeRosa to dp.",
+            "Julia Rimshnick to p.",
+            "Gianna Garofola struck out looking (0-2 KKK).",
+            "Jayme Kiley flied out to lf (0-0).",
+            "Cainen Avery grounded out to 3b (3-1 BFBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Haley Ball to cf for Tessa Spingola.",
+            "Lily Mandel flied out to cf (0-2 KS).",
+            "Olivia Souers grounded out to p (0-1 K).",
+            "Anna Gostkowski struck out swinging (1-2 KBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        },
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 5,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 4,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 22
         }
       ],
       "year": 2026
