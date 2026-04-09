@@ -1,31 +1,31 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-08T02:11:35.022Z",
+  "scrapedAt": "2026-04-09T02:04:15.500Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
-      "w": 5,
+      "w": 6,
       "l": 5,
-      "era": 3.66,
-      "app": 11,
-      "gs": 10,
-      "cg": 7,
+      "era": 3.22,
+      "app": 12,
+      "gs": 11,
+      "cg": 8,
       "sho": 0,
       "sv": 0,
-      "ip": 51.2,
-      "h": 56,
-      "r": 37,
+      "ip": 58.2,
+      "h": 63,
+      "r": 38,
       "er": 27,
       "bb": 29,
-      "so": 58,
+      "so": 61,
       "hr": 1,
-      "whip": 1.65,
-      "doubles": 6,
+      "whip": 1.57,
+      "doubles": 7,
       "triples": 3,
-      "ab": 207,
-      "bAvg": 0.271,
+      "ab": 234,
+      "bAvg": 0.269,
       "wp": 4,
       "hbp": 4,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Gray, Bailey",
-      "w": 4,
+      "w": 5,
       "l": 2,
-      "era": 4.11,
-      "app": 9,
-      "gs": 5,
-      "cg": 4,
+      "era": 3.89,
+      "app": 10,
+      "gs": 6,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 44.1,
-      "h": 49,
-      "r": 32,
-      "er": 26,
-      "bb": 11,
-      "so": 35,
+      "ip": 50.1,
+      "h": 55,
+      "r": 34,
+      "er": 28,
+      "bb": 14,
+      "so": 37,
       "hr": 2,
-      "whip": 1.35,
+      "whip": 1.37,
       "doubles": 12,
-      "triples": 1,
-      "ab": 184,
-      "bAvg": 0.266,
-      "wp": 1,
+      "triples": 2,
+      "ab": 206,
+      "bAvg": 0.267,
+      "wp": 2,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
-      "sha": 2
+      "sha": 4
     },
     {
       "name": "Bennett, Lindsay",
@@ -2008,6 +2008,191 @@
           "hbp": 0,
           "ab": 23,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/amherst-college/boxscore/9669",
+      "date": "4/8/2026",
+      "opponent": "Amherst College",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz struck out looking (2-2 BBKFK).",
+            "May Mishima singled through the right side (1-2 BFFFF).",
+            "May Mishima stole second, advanced to third on a throwing error by c.",
+            "Lulu Leppard singled to third base, bunt, advanced to second on a throwing error by 3b, RBI (1-0 B); May Mishima scored, unearned.",
+            "Abby Moravek flied out to cf (3-2 BBKBS).",
+            "Dylan Briggs popped up to ss (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Heidi Li struck out swinging (3-2 BFBSBS).",
+            "Brooke Wild grounded out to 3b (0-0).",
+            "Abby Rebhan doubled to center field (2-1 BFB).",
+            "Laura Daniels flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Samantha Portz grounded out to p (0-1 F).",
+            "May Mishima singled to left field (2-2 BKBK).",
+            "May Mishima out at second c to ss, caught stealing.",
+            "Lulu Leppard grounded out to 1b unassisted (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Moravek flied out to rf (0-0).",
+            "Dylan Briggs lined out to 2b (2-2 KFFBB).",
+            "Heidi Li flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brooke Wild grounded out to 2b (0-0).",
+            "Abby Rebhan grounded out to 2b (0-0).",
+            "Laura Daniels singled to center field (0-1 F).",
+            "Samantha Portz grounded out to 2b (3-1 BFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "May Mishima grounded out to 2b (2-2 KKBBF).",
+            "Lulu Leppard flied out to cf (1-1 KB).",
+            "Annie Katuska singled up the middle (3-1 SBBB).",
+            "Emma Nordstrom pinch hit for Dylan Briggs.",
+            "Emma Nordstrom singled to center field (0-0); Annie Katuska advanced to second.",
+            "Jayla Adkins pinch hit for Heidi Li.",
+            "Jayla Adkins fouled out to 1b (3-2 KBBBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lily Hackett to 2b for Alana Robinson.",
+            "Riley Veenstra to c for Maya Patankar.",
+            "Brooke Wild flied out to rf (2-2 KBKBF).",
+            "Abby Rebhan popped up to 2b (2-0 BB).",
+            "Laura Daniels struck out looking (2-2 FFBFBFK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 7,
+          "h": 7,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/amherst-college/boxscore/9670",
+      "date": "4/8/2026",
+      "opponent": "Amherst College",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauren Ro grounded out to 3b (0-1 F).",
+            "May Mishima grounded out to ss (3-2 BKBFB).",
+            "Lulu Leppard singled through the right side (1-2 KKB).",
+            "Abby Rebhan grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Nordstrom singled up the middle (1-1 KB).",
+            "Julia O'Connell out at first 3b to 2b, SAC, bunt (0-0); Emma Nordstrom advanced to second.",
+            "Dylan Briggs singled to center field (0-0).",
+            "Annie Katuska flied out to cf (2-2 BSBS).",
+            "Abby Moravek flied out to rf (3-2 BBSBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauren Ro singled to shortstop (0-2 KFF).",
+            "May Mishima grounded out to 3b, SAC, bunt (0-0); Lauren Ro advanced to second.",
+            "Lulu Leppard reached first on a fielding error by 2b (3-1 BBBK); Lauren Ro advanced to third.",
+            "Lulu Leppard stole second.",
+            "Abby Rebhan flied out to cf (2-2 BFBF).",
+            "Emma Nordstrom flied out to cf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Malaya Sumii to 3b.",
+            "Anna Gray to lf for Taz Tamai.",
+            "Julia O'Connell walked (3-1 BSBBB).",
+            "Dylan Briggs struck out swinging (1-2 KFBFS).",
+            "Julia O'Connell stole second.",
+            "Annie Katuska flied out to rf (2-1 BSB).",
+            "Abby Rebhan to 1b for Gwen Religa.",
+            "Gwen Religa to p for Abby Moravek.",
+            "Julia O'Connell advanced to third on a wild pitch.",
+            "Gwen Religa walked (0-0).",
+            "Lauren Ro grounded out to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "May Mishima flied out to rf (0-2 KS).",
+            "Lulu Leppard tripled to center field (1-0 B).",
+            "Abby Rebhan walked (3-1 BBBKB).",
+            "Emma Nordstrom lined out to 2b (1-2 BFFF).",
+            "Abby Rebhan stole second.",
+            "Julia O'Connell singled to shortstop, out at second p to 1b to ss to 1b, RBI (3-2 BKSBFB); Abby Rebhan scored; Lulu Leppard scored."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dylan Briggs grounded out to ss (2-2 FFBB).",
+            "Annie Katuska lined out to rf (1-2 BFFFFF).",
+            "Jayla Adkins pinch hit for Gwen Religa.",
+            "Gwen Religa pinch hit for Jayla Adkins.",
+            "Gwen Religa struck out swinging (2-2 KBKFBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 6,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 27
         }
       ],
       "year": 2026

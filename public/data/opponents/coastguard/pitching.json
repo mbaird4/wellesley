@@ -1,36 +1,36 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-08T02:12:01.660Z",
+  "scrapedAt": "2026-04-09T02:04:37.216Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
       "w": 6,
-      "l": 3,
-      "era": 0.86,
-      "app": 12,
-      "gs": 9,
+      "l": 5,
+      "era": 1.2,
+      "app": 14,
+      "gs": 10,
       "cg": 7,
       "sho": 2,
       "sv": 1,
-      "ip": 57,
-      "h": 48,
-      "r": 23,
-      "er": 7,
-      "bb": 11,
-      "so": 53,
+      "ip": 64.1,
+      "h": 55,
+      "r": 30,
+      "er": 11,
+      "bb": 15,
+      "so": 58,
       "hr": 0,
-      "whip": 1.04,
-      "doubles": 4,
+      "whip": 1.09,
+      "doubles": 6,
       "triples": 0,
-      "ab": 227,
-      "bAvg": 0.211,
-      "wp": 2,
+      "ab": 256,
+      "bAvg": 0.215,
+      "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 6
+      "sha": 8
     },
     {
       "name": "Lynn, Zoey",
@@ -64,29 +64,29 @@
       "name": "Behel, Emma",
       "w": 2,
       "l": 0,
-      "era": 0.68,
-      "app": 4,
-      "gs": 1,
+      "era": 0.89,
+      "app": 6,
+      "gs": 2,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 10.1,
-      "h": 10,
-      "r": 2,
-      "er": 1,
-      "bb": 1,
-      "so": 5,
+      "ip": 15.2,
+      "h": 14,
+      "r": 3,
+      "er": 2,
+      "bb": 4,
+      "so": 6,
       "hr": 0,
-      "whip": 1.06,
-      "doubles": 1,
+      "whip": 1.15,
+      "doubles": 2,
       "triples": 0,
-      "ab": 42,
-      "bAvg": 0.238,
+      "ab": 60,
+      "bAvg": 0.233,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     },
     {
       "name": "Reilly, Hayden",
@@ -1643,6 +1643,222 @@
           "hbp": 0,
           "ab": 16,
           "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wellesley/boxscore/9348",
+      "date": "4/8/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to rf (1-0 B).",
+            "A. Delgado flied out to lf (2-2 BFBFFF).",
+            "B. Awad grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan grounded out to ss (0-0).",
+            "E. Gaunce grounded out to p (0-1 K).",
+            "E. Kulhanek walked (3-0 BBBB).",
+            "E. Kulhanek out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Rodriguez grounded out to ss (1-0 B).",
+            "J. Polski fouled out to 3b (0-1 K).",
+            "N. Nicol grounded out to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Mulhern singled to shortstop (0-0).",
+            "A. Delgado singled, bunt (1-0 B); A. Mulhern advanced to second.",
+            "Dana Walker to p for Emma Behel.",
+            "B. Awad grounded out to p (0-0); A. Delgado advanced to second; A. Mulhern advanced to third.",
+            "J. Colgan grounded out to ss (0-2 KFF).",
+            "E. Gaunce grounded out to 2b (2-2 BFBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "E. Kulhanek struck out looking (3-2 BBBKFK).",
+            "B. Mellady pinch hit for A. Rodriguez.",
+            "B. Mellady walked (3-2 BSBBKB).",
+            "J. Polski out at first 1b to 2b, SAC, bunt (0-0); B. Mellady advanced to second.",
+            "N. Nicol grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Mulhern grounded out to 2b (1-0 B).",
+            "A. Delgado struck out looking (3-2 BFFBBK).",
+            "B. Awad grounded out to 3b (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "J. Colgan grounded out to ss (1-2 BKFFFFFF).",
+            "E. Gaunce singled through the right side (0-0).",
+            "E. Kulhanek doubled to center field (0-0); E. Gaunce advanced to third.",
+            "B. Mellady grounded out to ss, RBI (2-2 BFFB); E. Kulhanek advanced to third; E. Gaunce scored.",
+            "D. Borrison pinch hit for J. Polski.",
+            "E. Kulhanek scored on a wild pitch."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 3,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 11
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 3.2,
+          "h": 2,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 14
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wellesley/boxscore/9349",
+      "date": "4/8/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Walker, Dana",
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern reached first on an error by 2b (0-0).",
+            "A. Delgado out at first 3b to 2b, SAC, bunt (1-1 BF); A. Mulhern advanced to second.",
+            "B. Awad grounded out to 3b (1-0 B); A. Mulhern advanced to third.",
+            "D. Borrison singled to right field, RBI (2-2 FKBBF); A. Mulhern scored, unearned.",
+            "E. Gaunce grounded out to 3b (3-2 BBFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Kulhanek reached first on an error by 2b (3-1 KBBB).",
+            "B. Mellady flied out to rf (0-0).",
+            "E. Kulhanek advanced to second on a passed ball.",
+            "G. Jones reached on a fielder's choice to shortstop (1-2 BFK); E. Kulhanek out at third ss to 3b.",
+            "N. Nicol walked (3-2 KKBBFBB); G. Jones advanced to second.",
+            "A. Mulhern walked (3-1 BBBKB); N. Nicol advanced to second; G. Jones advanced to third.",
+            "A. Delgado singled to right field, advanced to second, 2 RBI (0-0); A. Mulhern advanced to third; N. Nicol scored, unearned; G. Jones scored, unearned.",
+            "B. Awad grounded out to ss (2-2 KBKB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauren Ragonese to 2b.",
+            "D. Borrison doubled to right center (3-2 BKFBB).",
+            "J. Polski pinch ran for D. Borrison.",
+            "E. Gaunce struck out looking (0-2 FFK).",
+            "E. Kulhanek walked (3-0 BBBB).",
+            "B. Mellady singled to right field, RBI (2-2 FFFBBF); E. Kulhanek advanced to third; J. Polski scored.",
+            "B. Mellady stole second.",
+            "G. Jones struck out looking, out at first c unassisted (2-2 FBFBFK).",
+            "N. Nicol struck out swinging (2-2 BFBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Zoey Lynn to 1b for Ella Stolarzyk.",
+            "A. Mulhern popped up to p (1-1 BF).",
+            "A. Delgado grounded out p to ss to 1b (3-1 BFBB).",
+            "B. Awad singled to center field (1-0 B).",
+            "Emma Behel to p for Dana Walker.",
+            "B. Awad stole second.",
+            "B. Awad stole third.",
+            "D. Borrison walked (3-2 KBBBKFB).",
+            "D. Borrison stole second.",
+            "E. Gaunce doubled to center field, 2 RBI (2-2 FBBF); D. Borrison scored; B. Awad scored.",
+            "E. Kulhanek flied out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sage Svalestad to lf.",
+            "Abby Steele to c.",
+            "B. Mellady popped up to 2b (2-2 SBKB).",
+            "T. Claybrook pinch hit for G. Jones.",
+            "T. Claybrook grounded out to 2b (2-1 BBK).",
+            "C. Lundin pinch hit for N. Nicol.",
+            "C. Lundin grounded out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Mulhern struck out swinging (2-2 FBBFS).",
+            "A. Delgado singled to shortstop (2-0 BB).",
+            "B. Awad out at first 3b to 2b, SAC, bunt (1-0 B); A. Delgado advanced to second.",
+            "D. Borrison walked (3-0 BBBB).",
+            "E. Gaunce flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 3.2,
+          "h": 5,
+          "r": 5,
+          "er": 2,
+          "bb": 3,
+          "so": 3,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 21
+        },
+        {
+          "name": "Behel, Emma",
+          "ip": 2.1,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 8,
+          "bf": 11
         }
       ],
       "year": 2026

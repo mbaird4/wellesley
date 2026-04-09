@@ -1,33 +1,33 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-08T02:11:39.493Z",
+  "scrapedAt": "2026-04-09T02:04:23.710Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 5,
-      "era": 4.97,
-      "app": 12,
-      "gs": 7,
-      "cg": 7,
+      "l": 6,
+      "era": 5.61,
+      "app": 13,
+      "gs": 8,
+      "cg": 8,
       "sho": 0,
       "sv": 0,
-      "ip": 56.1,
-      "h": 86,
-      "r": 50,
-      "er": 40,
+      "ip": 62.1,
+      "h": 101,
+      "r": 60,
+      "er": 50,
       "bb": 9,
-      "so": 30,
-      "hr": 2,
-      "whip": 1.69,
-      "doubles": 14,
+      "so": 32,
+      "hr": 3,
+      "whip": 1.76,
+      "doubles": 19,
       "triples": 3,
-      "ab": 245,
-      "bAvg": 0.351,
+      "ab": 278,
+      "bAvg": 0.363,
       "wp": 2,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 4,
       "sha": 7
@@ -35,30 +35,30 @@
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 9,
-      "era": 9.27,
-      "app": 10,
-      "gs": 10,
-      "cg": 2,
+      "l": 10,
+      "era": 8.63,
+      "app": 11,
+      "gs": 11,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 37,
-      "h": 61,
-      "r": 63,
-      "er": 49,
-      "bb": 50,
-      "so": 37,
+      "ip": 43,
+      "h": 67,
+      "r": 67,
+      "er": 53,
+      "bb": 54,
+      "so": 40,
       "hr": 2,
-      "whip": 3,
-      "doubles": 14,
+      "whip": 2.81,
+      "doubles": 17,
       "triples": 4,
-      "ab": 164,
-      "bAvg": 0.372,
-      "wp": 12,
+      "ab": 186,
+      "bAvg": 0.36,
+      "wp": 14,
       "hbp": 1,
       "bk": 0,
-      "sfa": 4,
-      "sha": 8
+      "sfa": 5,
+      "sha": 10
     },
     {
       "name": "Cronin, Emily",
@@ -1899,6 +1899,188 @@
           "hbp": 0,
           "ab": 20,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/umass-dartmouth/boxscore/11769",
+      "date": "4/8/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Taylor Ferraiolo to rf.",
+            "Cami O'Rourke to 2b for Skylar Wicklund.",
+            "Raelynn Perregaux reached first on an error by 3b (3-2 KBBBF).",
+            "Olivia Silva popped up to 3b (2-2 KKBB).",
+            "Olivia Ali reached on a fielder's choice (1-1 FB); Raelynn Perregaux out at second ss to 2b.",
+            "Bre Fontes singled to second base (2-1 BBF); Olivia Ali advanced to second.",
+            "Sydney Menz flied out to cf (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lily Routhier walked (3-2 BFSBBB).",
+            "Lena Tsonis out at first c to 2b, bunt, SAC (1-1 KB); Lily Routhier advanced to second.",
+            "Nina O'Neil grounded out to 2b (1-1 BK); Lily Routhier advanced to third.",
+            "Chloe Edwards struck out looking (3-2 BFBBKK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Raelynn Perregaux walked (3-0 BBBB).",
+            "Raelynn Perregaux stole second.",
+            "Olivia Silva flied out to cf, SAC (2-1 BKB); Raelynn Perregaux advanced to third.",
+            "Raelynn Perregaux scored on a wild pitch.",
+            "Olivia Ali walked (0-0).",
+            "Bre Fontes flied out to rf (0-1 K); Olivia Ali advanced to second.",
+            "Sydney Menz doubled to left field, RBI (0-2 SK); Olivia Ali scored.",
+            "Lily Routhier doubled to left field, RBI (0-0); Sydney Menz scored.",
+            "Lily Routhier out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lena Tsonis grounded out to p (1-0 B).",
+            "Nina O'Neil reached first on an error by ss (0-1 K).",
+            "Chloe Edwards out at first p to 2b, bunt, SAC (2-1 KBB); Nina O'Neil advanced to second.",
+            "Nina O'Neil advanced to third on a wild pitch.",
+            "Raelynn Perregaux struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Silva grounded out to ss (0-0).",
+            "Olivia Ali singled up the middle (2-2 KKBBF).",
+            "Bre Fontes flied out to rf (1-0 B).",
+            "Sydney Menz doubled to left center, RBI (0-1 K); Olivia Ali scored.",
+            "Lily Routhier struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lena Tsonis walked (3-1 KBBBB).",
+            "Lena Tsonis out at second c to p to ss, caught stealing.",
+            "Nina O'Neil reached first on an error by rf (0-0).",
+            "Chloe Edwards popped up to p (0-1 K).",
+            "Raelynn Perregaux singled up the middle (0-1 K); Nina O'Neil advanced to second.",
+            "Olivia Silva lined out to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 6,
+          "h": 6,
+          "r": 4,
+          "er": 4,
+          "bb": 4,
+          "so": 3,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/umass-dartmouth/boxscore/11770",
+      "date": "4/8/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Raelynn Perregaux singled up the middle (3-2 BBBKF).",
+            "Olivia Ali singled to shortstop (1-0 B); Raelynn Perregaux advanced to second.",
+            "Olivia Silva popped up to 2b (0-2 KF).",
+            "Bre Fontes grounded out to p (3-2 BBKBKF); Olivia Ali advanced to second; Raelynn Perregaux advanced to third.",
+            "Sydney Menz popped up to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lily Routhier reached first on an error by ss (2-0 BB).",
+            "Lena Tsonis grounded into double play ss to 1b (1-1 KB); Lily Routhier out on the play.",
+            "Nina O'Neil grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Chloe Edwards grounded out to 3b (0-0).",
+            "Raelynn Perregaux popped up to 2b (1-1 FB).",
+            "Olivia Ali doubled to left field (0-0).",
+            "Olivia Ali stole third.",
+            "Olivia Silva grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Bre Fontes singled up the middle (1-0 B).",
+            "Sydney Menz singled to shortstop (1-0 B); Bre Fontes advanced to second.",
+            "Lily Routhier flied out to cf (0-0).",
+            "Lena Tsonis homered to right field, 3 RBI (0-0); Sydney Menz scored; Bre Fontes scored.",
+            "Nina O'Neil singled to right field (0-0).",
+            "Chloe Edwards reached on a fielder's choice (2-2 KBBK); Nina O'Neil out at second 2b to ss.",
+            "Raelynn Perregaux doubled to left field, RBI (0-0); Chloe Edwards scored.",
+            "Olivia Ali doubled to left field, RBI (0-1 K); Raelynn Perregaux scored.",
+            "Olivia Silva singled up the middle, RBI (0-0); Olivia Ali scored.",
+            "Bre Fontes struck out looking (1-2 KBKFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sydney Menz hit by pitch (1-1 FH).",
+            "Lily Routhier struck out swinging (0-2 KFFS); Sydney Menz advanced to second.",
+            "Lena Tsonis singled to right center, RBI (3-2 BKBBK); Sydney Menz scored.",
+            "Nina O'Neil grounded out to 3b (1-1 BF); Lena Tsonis advanced to second.",
+            "Chloe Edwards doubled to center field, RBI (0-0); Lena Tsonis scored.",
+            "Chloe Edwards advanced to third on a passed ball.",
+            "Raelynn Perregaux grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Olivia Ali flied out to cf (0-0).",
+            "Olivia Silva grounded out to ss (0-1 K).",
+            "Bre Fontes singled up the middle (1-1 FB).",
+            "Sydney Menz singled to left field, advanced to second on the throw (0-0); Bre Fontes advanced to third.",
+            "Lily Routhier doubled to left center, 2 RBI (1-1 FB); Sydney Menz scored; Bre Fontes scored.",
+            "Lena Tsonis grounded out to 3b (1-1 KB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 6,
+          "h": 15,
+          "r": 10,
+          "er": 10,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 33,
+          "bf": 34
         }
       ],
       "year": 2026
