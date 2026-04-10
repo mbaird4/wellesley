@@ -1,7 +1,7 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-09T02:04:56.716Z",
+  "scrapedAt": "2026-04-10T02:25:40.137Z",
   "year": 2026,
   "hitting": {
     "players": [
@@ -648,6 +648,20 @@
   "fielding": {
     "players": [
       {
+        "name": "Sundquist, Lauren",
+        "jerseyNumber": 8,
+        "tc": 82,
+        "po": 80,
+        "a": 2,
+        "e": 0,
+        "fldPct": 1,
+        "dp": 2,
+        "sba": 2,
+        "csb": 0,
+        "pb": 0,
+        "ci": 0
+      },
+      {
         "name": "Poe, Holland",
         "jerseyNumber": 10,
         "tc": 29,
@@ -685,20 +699,6 @@
         "fldPct": 1,
         "dp": 0,
         "sba": 0,
-        "csb": 0,
-        "pb": 0,
-        "ci": 0
-      },
-      {
-        "name": "Sundquist, Lauren",
-        "jerseyNumber": 8,
-        "tc": 84,
-        "po": 81,
-        "a": 2,
-        "e": 1,
-        "fldPct": 0.988,
-        "dp": 2,
-        "sba": 2,
         "csb": 0,
         "pb": 0,
         "ci": 0
@@ -746,20 +746,6 @@
         "ci": 0
       },
       {
-        "name": "Mattiace, Julia",
-        "jerseyNumber": 18,
-        "tc": 76,
-        "po": 73,
-        "a": 1,
-        "e": 2,
-        "fldPct": 0.974,
-        "dp": 4,
-        "sba": 0,
-        "csb": 0,
-        "pb": 0,
-        "ci": 0
-      },
-      {
         "name": "Thiessen, Layla",
         "jerseyNumber": 1,
         "tc": 33,
@@ -768,6 +754,20 @@
         "e": 1,
         "fldPct": 0.97,
         "dp": 0,
+        "sba": 0,
+        "csb": 0,
+        "pb": 0,
+        "ci": 0
+      },
+      {
+        "name": "Mattiace, Julia",
+        "jerseyNumber": 18,
+        "tc": 78,
+        "po": 74,
+        "a": 1,
+        "e": 3,
+        "fldPct": 0.962,
+        "dp": 4,
         "sba": 0,
         "csb": 0,
         "pb": 0,
