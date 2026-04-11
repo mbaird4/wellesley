@@ -1,58 +1,58 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-10T02:25:28.669Z",
+  "scrapedAt": "2026-04-11T02:04:37.800Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 6,
+      "w": 7,
       "l": 3,
-      "era": 2.61,
-      "app": 9,
-      "gs": 8,
-      "cg": 8,
+      "era": 2.55,
+      "app": 10,
+      "gs": 9,
+      "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 59,
-      "h": 68,
-      "r": 26,
-      "er": 22,
-      "bb": 12,
-      "so": 67,
+      "ip": 66,
+      "h": 75,
+      "r": 29,
+      "er": 24,
+      "bb": 13,
+      "so": 69,
       "hr": 2,
-      "whip": 1.36,
+      "whip": 1.33,
       "doubles": 10,
       "triples": 1,
-      "ab": 246,
-      "bAvg": 0.276,
+      "ab": 273,
+      "bAvg": 0.275,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
       "sfa": 0,
-      "sha": 2
+      "sha": 4
     },
     {
       "name": "Dube, Megan",
       "w": 3,
-      "l": 6,
-      "era": 3.38,
-      "app": 9,
-      "gs": 8,
-      "cg": 8,
+      "l": 7,
+      "era": 3.5,
+      "app": 10,
+      "gs": 9,
+      "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 60,
-      "h": 73,
-      "r": 39,
-      "er": 29,
-      "bb": 19,
-      "so": 59,
+      "ip": 66,
+      "h": 81,
+      "r": 47,
+      "er": 33,
+      "bb": 22,
+      "so": 60,
       "hr": 3,
-      "whip": 1.53,
-      "doubles": 16,
+      "whip": 1.56,
+      "doubles": 19,
       "triples": 4,
-      "ab": 246,
+      "ab": 273,
       "bAvg": 0.297,
       "wp": 2,
       "hbp": 4,
@@ -1856,6 +1856,188 @@
           "hbp": 0,
           "ab": 34,
           "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/wellesley-college/boxscore/19195",
+      "date": "4/10/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to rf (2-0 BB).",
+            "A. Delgado fouled out to 1b (1-0 B).",
+            "B. Awad flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "D. Borrison flied out to rf (3-2 SBBKFBF).",
+            "E. Kulhanek struck out swinging (1-2 KBSS).",
+            "S. Wicker flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "E. Gaunce flied out to cf (1-0 B).",
+            "A. Rodriguez flied out to cf (2-2 BFBK).",
+            "N. Nicol singled, bunt (0-1 S).",
+            "A. Mulhern singled to pitcher (3-2 BBKBF); N. Nicol advanced to second.",
+            "A. Delgado singled to left center, RBI (1-2 KBK); A. Mulhern advanced to second; N. Nicol scored.",
+            "B. Awad singled to center field, RBI (0-0); A. Delgado advanced to third; A. Mulhern scored.",
+            "B. Awad stole second.",
+            "D. Borrison struck out swinging (1-2 FKFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Della Piana to c for Caitriona Andre.",
+            "E. Kulhanek grounded out to p (2-1 BKB).",
+            "S. Wicker flied out to lf (2-2 KFFBFFBF).",
+            "E. Gaunce fouled out to 1b (1-2 BFKFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Rodriguez singled to second base (1-1 FB).",
+            "N. Nicol singled, bunt (0-0); A. Rodriguez advanced to second.",
+            "A. Mulhern flied out to rf (2-2 BBFF).",
+            "A. Delgado walked (3-2 FBBFBB); N. Nicol advanced to second; A. Rodriguez advanced to third.",
+            "B. Awad reached on a fielder's choice to second base (1-1 FB); A. Delgado advanced to second; N. Nicol advanced to third; A. Rodriguez out at home 2b to c.",
+            "D. Borrison lined out to ss (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Kulhanek reached first on an error by ss (1-2 KBF).",
+            "B. Mellady out at first 1b to 2b, SAC, bunt (1-0 B); E. Kulhanek advanced to second.",
+            "E. Gaunce singled to left field, out at second cf to ss to 2b, RBI (1-0 B); E. Kulhanek scored, unearned.",
+            "A. Rodriguez flied out to lf (2-2 BKFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "N. Nicol reached first on an error by ss (0-1 F).",
+            "A. Mulhern out at first 3b to 2b, SAC, bunt (0-0); N. Nicol advanced to second.",
+            "A. Delgado fouled out to ss (0-0).",
+            "B. Awad flied out to rf (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 7,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/wellesley-college/boxscore/19196",
+      "date": "4/10/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to lf (3-2 BBBSK).",
+            "A. Delgado flied out to cf (0-1 F).",
+            "B. Awad flied out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan singled through the right side (0-0).",
+            "E. Gaunce popped up to 3b, bunt (0-1 F).",
+            "S. Wicker flied out to rf (0-1 S).",
+            "A. Rodriguez walked (3-1 BFBBB); J. Colgan advanced to second.",
+            "D. Borrison fouled out to 2b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol grounded out to p (0-1 F).",
+            "A. Mulhern struck out looking (3-2 FBFBFFBFK).",
+            "A. Delgado lined out to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Awad grounded out to 3b (0-1 S).",
+            "J. Colgan walked (3-1 BBBKB).",
+            "E. Gaunce singled through the left side (0-1 K); J. Colgan advanced to second.",
+            "S. Wicker doubled to right center, out at third rf to 1b to c to 3b, 2 RBI (1-2 KFB); E. Gaunce scored; J. Colgan scored.",
+            "A. Rodriguez flied out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Borrison flied out to rf (1-2 FKB).",
+            "N. Nicol flied out to cf (3-1 BSBB).",
+            "A. Mulhern walked (3-2 FFBBBB).",
+            "A. Mulhern stole second.",
+            "A. Delgado singled up the middle, RBI (1-1 BK); A. Mulhern scored.",
+            "A. Delgado stole second.",
+            "B. Awad grounded out to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "J. Colgan singled up the middle (1-0 B).",
+            "E. Gaunce flied out to 2b (3-2 FFBFFBB).",
+            "S. Wicker doubled to left center, RBI (2-2 BKBK); J. Colgan scored.",
+            "S. Wicker to 2b for J. Polski.",
+            "J. Polski to dp for S. Wicker.",
+            "A. Rodriguez singled up the middle (1-0 B).",
+            "D. Borrison reached on a fielder's choice to second base (2-2 KBFB); A. Rodriguez advanced to second; J. Polski advanced to third.",
+            "N. Nicol reached on a fielder's choice to third base (0-1 K); D. Borrison advanced to second; A. Rodriguez advanced to third; J. Polski out at home 3b to c.",
+            "G. Jones pinch ran for D. Borrison.",
+            "A. Mulhern reached first on an error by 3b (2-1 FBB); N. Nicol advanced to second; G. Jones advanced to third; A. Rodriguez scored, unearned.",
+            "A. Delgado doubled to right center, 3 RBI (2-1 BFB); A. Mulhern scored, unearned; N. Nicol scored, unearned; G. Jones scored, unearned.",
+            "B. Awad flied out to rf (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 6,
+          "h": 8,
+          "r": 8,
+          "er": 4,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 30
         }
       ],
       "year": 2026

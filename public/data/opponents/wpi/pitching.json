@@ -1,64 +1,64 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-10T02:24:08.885Z",
+  "scrapedAt": "2026-04-11T02:03:54.869Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 11,
+      "w": 12,
       "l": 0,
-      "era": 1.55,
-      "app": 12,
-      "gs": 7,
-      "cg": 4,
+      "era": 1.39,
+      "app": 13,
+      "gs": 8,
+      "cg": 5,
       "sho": 2,
       "sv": 0,
-      "ip": 58.2,
-      "h": 58,
-      "r": 15,
+      "ip": 65.2,
+      "h": 66,
+      "r": 17,
       "er": 13,
-      "bb": 11,
-      "so": 40,
+      "bb": 12,
+      "so": 43,
       "hr": 0,
-      "whip": 1.18,
+      "whip": 1.19,
       "doubles": 6,
       "triples": 0,
-      "ab": 224,
-      "bAvg": 0.259,
+      "ab": 253,
+      "bAvg": 0.261,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
       "sfa": 1,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "Boldebuck, Naomi",
       "w": 7,
-      "l": 0,
-      "era": 1.84,
-      "app": 11,
-      "gs": 10,
-      "cg": 7,
+      "l": 1,
+      "era": 2.01,
+      "app": 12,
+      "gs": 11,
+      "cg": 8,
       "sho": 3,
       "sv": 0,
-      "ip": 53.1,
-      "h": 52,
-      "r": 20,
-      "er": 14,
-      "bb": 17,
-      "so": 34,
+      "ip": 59.1,
+      "h": 61,
+      "r": 23,
+      "er": 17,
+      "bb": 20,
+      "so": 37,
       "hr": 1,
-      "whip": 1.29,
-      "doubles": 3,
-      "triples": 0,
-      "ab": 203,
-      "bAvg": 0.256,
+      "whip": 1.37,
+      "doubles": 5,
+      "triples": 1,
+      "ab": 229,
+      "bAvg": 0.266,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
       "sfa": 1,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "Barr, Kaitlyn",
@@ -2677,6 +2677,186 @@
           "hbp": 0,
           "ab": 8,
           "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/babson/boxscore/16644",
+      "date": "4/10/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh singled down the lf line (1-2 BKFF).",
+            "Maddy DeLong out at first c to 2b, SAC, bunt (2-1 BBF); Emily Walsh advanced to third.",
+            "Lexi Sealy singled up the middle, RBI (3-2 BKBBF); Emily Walsh scored.",
+            "Belle Dicampello singled to right field (0-0); Lexi Sealy advanced to second.",
+            "Charlotte Raymond grounded out to 3b (1-0 B); Belle Dicampello advanced to second; Lexi Sealy advanced to third.",
+            "Izzy Burgess popped up to ss (3-2 BBFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Devin McCall flied out to rf (1-0 B).",
+            "Samantha Skivo doubled to center field (0-0).",
+            "Charly Landow flied out to rf (2-2 SBBK).",
+            "Emily Walsh singled to right field (2-1 FBB); Samantha Skivo advanced to third.",
+            "Maddy DeLong struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lexi Sealy grounded out to 2b (0-1 F).",
+            "Belle Dicampello flied out to rf (2-2 FSBB).",
+            "Charlotte Raymond flied out to cf (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Izzy Burgess flied out to lf (0-0).",
+            "Devin McCall fouled out to 3b (2-0 BB).",
+            "Samantha Skivo popped up to 2b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charly Landow singled to right field (1-0 B).",
+            "Emily Walsh tripled down the rf line, RBI (0-0); Charly Landow scored.",
+            "Maddy DeLong doubled to catcher, bunt (0-0); Emily Walsh scored on a fielding error by cf, assist by c, unearned.",
+            "Lexi Sealy walked (3-1 FBBBB).",
+            "Belle Dicampello reached on a fielder's choice (3-2 BFSBFFFFB); Lexi Sealy out at second 2b to ss; Maddy DeLong advanced to third.",
+            "Charlotte Raymond popped up to 3b (1-0 B).",
+            "Izzy Burgess reached on a fielder's choice (2-2 KFFBB); Belle Dicampello advanced to second; Maddy DeLong out at home 3b unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b for Grace Grant.",
+            "Devin McCall singled up the middle (2-2 KBBK).",
+            "Nicole Petrillo pinch ran for Devin McCall.",
+            "Samantha Skivo struck out swinging (3-2 BBBKKFS).",
+            "Charly Landow struck out looking (2-2 SKBFBFK).",
+            "Emily Walsh walked (3-1 BBBFB); Nicole Petrillo advanced to second.",
+            "Maddy DeLong walked (3-2 BSBBKB); Emily Walsh advanced to second; Nicole Petrillo advanced to third.",
+            "Lexi Sealy reached on a fielder's choice (0-1 F); Maddy DeLong out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 6,
+          "h": 9,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 3,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/babson/boxscore/16645",
+      "date": "4/10/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh struck out swinging (2-2 KFBBFS).",
+            "Maddy DeLong grounded out to p (3-2 FSFFFBBFB).",
+            "Lexi Sealy popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Belle Dicampello singled to shortstop (2-1 SBB).",
+            "Charlotte Raymond singled to right field (1-2 KBK); Belle Dicampello advanced to second.",
+            "Devin McCall grounded out to 1b unassisted, SAC, bunt (0-1 F); Charlotte Raymond advanced to second; Belle Dicampello advanced to third.",
+            "Samantha Skivo struck out looking (2-2 BBKFK).",
+            "Bella Marchetti struck out swinging (1-2 KFFBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Charly Landow singled to right field (1-0 B).",
+            "Emily Walsh popped up to ss (0-1 F).",
+            "Maddy DeLong flied out to cf (0-1 S).",
+            "Lexi Sealy singled to right center (1-1 BF); Charly Landow advanced to second.",
+            "Belle Dicampello flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich to c for Mia Francisco.",
+            "Charlotte Raymond singled down the lf line (1-1 KB).",
+            "Devin McCall walked (3-1 BKBBB); Charlotte Raymond advanced to second.",
+            "Samantha Skivo flied out to cf (1-0 B).",
+            "Izzy Burgess infield fly to 3b (0-0).",
+            "Charly Landow flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Walsh popped up to 2b (0-0).",
+            "Maddy DeLong reached first on a fielding error by ss (2-0 BB).",
+            "Lexi Sealy reached on a fielder's choice (0-0); Maddy DeLong out at second p to ss.",
+            "Belle Dicampello singled to right center (0-0); Lexi Sealy advanced to third.",
+            "Charlotte Raymond singled to center field, RBI (1-1 KB); Belle Dicampello advanced to second; Lexi Sealy scored, unearned.",
+            "Devin McCall singled up the middle, RBI (1-0 B); Charlotte Raymond advanced to second; Belle Dicampello scored, unearned.",
+            "Nicole Petrillo pinch ran for Charlotte Raymond.",
+            "Samantha Skivo reached on a fielder's choice (1-1 FB); Devin McCall out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Izzy Burgess lined out to lf (1-1 BK).",
+            "Charly Landow grounded out to 3b (1-1 BK).",
+            "Emily Walsh grounded out to 1b unassisted (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maddy DeLong flied out to rf (0-1 S).",
+            "Lexi Sealy popped up to ss (0-0).",
+            "Belle Dicampello lined out to rf (2-2 BKBK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 8,
+          "r": 2,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 31
         }
       ],
       "year": 2026

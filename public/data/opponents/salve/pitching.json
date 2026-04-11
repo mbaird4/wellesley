@@ -1,35 +1,35 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-10T02:24:41.053Z",
+  "scrapedAt": "2026-04-11T02:04:18.050Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 6,
-      "era": 5.61,
-      "app": 13,
-      "gs": 8,
-      "cg": 8,
+      "l": 8,
+      "era": 5.68,
+      "app": 15,
+      "gs": 10,
+      "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 62.1,
-      "h": 101,
-      "r": 60,
-      "er": 50,
-      "bb": 9,
-      "so": 32,
+      "ip": 74,
+      "h": 119,
+      "r": 70,
+      "er": 60,
+      "bb": 15,
+      "so": 37,
       "hr": 3,
-      "whip": 1.76,
-      "doubles": 19,
+      "whip": 1.81,
+      "doubles": 27,
       "triples": 3,
-      "ab": 278,
-      "bAvg": 0.363,
-      "wp": 2,
-      "hbp": 2,
+      "ab": 330,
+      "bAvg": 0.361,
+      "wp": 3,
+      "hbp": 3,
       "bk": 0,
-      "sfa": 4,
+      "sfa": 5,
       "sha": 7
     },
     {
@@ -86,6 +86,34 @@
       "hbp": 5,
       "bk": 0,
       "sfa": 1,
+      "sha": 0
+    },
+    {
+      "name": "Geisser, Victoria",
+      "w": 0,
+      "l": 0,
+      "era": 99,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 0,
+      "h": 1,
+      "r": 2,
+      "er": 2,
+      "bb": 3,
+      "so": 0,
+      "hr": 0,
+      "whip": 0,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 1,
+      "bAvg": 1,
+      "wp": 0,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
       "sha": 0
     }
   ],
@@ -2081,6 +2109,207 @@
           "hbp": 1,
           "ab": 33,
           "bf": 34
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/smith-college/boxscore/11771",
+      "date": "4/10/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Murphy, Shea",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson doubled to left center (2-0 BB).",
+            "Ally Knutson stole third.",
+            "Gabbie Chinnis singled to left field, RBI (2-2 BBSS); Ally Knutson scored.",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly flied out to rf (3-2 BSBSB).",
+            "Riley Veenstra flied out to cf (0-0).",
+            "Bailey Gray flied out to rf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophie Hasegawa walked (3-0 BBBB).",
+            "Taz Tamai out at first p to 2b (1-0 B); Sophie Hasegawa advanced to second.",
+            "Elinor Washington flied out to 2b (3-2 BBFFBF).",
+            "Lily Hackett struck out swinging (2-2 KSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ally Knutson singled to shortstop (1-0 B).",
+            "Gabbie Chinnis lined out to lf (1-2 KFB).",
+            "Ally Knutson advanced to second on a wild pitch.",
+            "Violet Peverly walked (3-0 BBBB).",
+            "Riley Veenstra struck out looking (2-2 KBBSK).",
+            "Bailey Gray flied out to 2b (2-1 BSB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sophie Hasegawa struck out swinging (1-2 KBSS).",
+            "Taz Tamai lined out to cf (2-2 BFBS).",
+            "Elinor Washington doubled to center field (2-2 BBSF).",
+            "Lily Hackett grounded out to ss (2-2 KBSB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Victoria Geisser to p for Shea Murphy.",
+            "Ally Knutson walked (3-0 BBBB).",
+            "Gabbie Chinnis singled to right center (3-1 KBBB); Ally Knutson advanced to third.",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly walked (3-1 BBKBB).",
+            "Riley Veenstra walked, RBI (3-1 BKBBB); Violet Peverly advanced to second; Gabbie Chinnis advanced to third; Ally Knutson scored.",
+            "Shea Murphy to p for Victoria Geisser.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray singled to center field, RBI (2-1 BBS); Anna Gray advanced to second; Violet Peverly advanced to third; Gabbie Chinnis scored.",
+            "Sophie Hasegawa reached on a fielder's choice (1-0 B); Bailey Gray advanced to second; Anna Gray advanced to third; Violet Peverly out at home 3b to c.",
+            "Taz Tamai struck out looking (0-2 KFK).",
+            "Elinor Washington lined out to cf (3-2 BSBFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Malaya Sumii pinch hit for Lily Hackett.",
+            "Malaya Sumii flied out to 2b (2-1 BBF).",
+            "Ally Knutson grounded out to 1b unassisted (0-0).",
+            "Gabbie Chinnis struck out swinging (1-2 KBKFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 6,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 0,
+          "h": 1,
+          "r": 2,
+          "er": 2,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 4
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/smith-college/boxscore/11772",
+      "date": "4/10/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson doubled to right center (0-0).",
+            "Gabbie Chinnis grounded out to ss (3-2 KBBBF); Ally Knutson advanced to third.",
+            "Violet Peverly doubled down the lf line, RBI (1-2 BFF); Ally Knutson scored.",
+            "Riley Veenstra fouled out to 1b (0-0).",
+            "Bailey Gray flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Skylar Wicklund to rf for Ryann Burke.",
+            "Sophie Hasegawa walked (3-1 BKBBB).",
+            "Taz Tamai out at first c to 2b (0-1 K); Sophie Hasegawa advanced to second.",
+            "Elinor Washington hit by pitch (1-1 FH).",
+            "Lily Hackett flied out to rf (2-2 BFBK).",
+            "Ally Knutson flied out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gabbie Chinnis flied out to p (1-1 FB).",
+            "Violet Peverly singled to right center (0-0).",
+            "Riley Veenstra doubled to left field (0-0); Violet Peverly advanced to third.",
+            "Bailey Gray fouled out to 1b (0-0).",
+            "Sophie Hasegawa grounded out to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai walked (3-2 BFBFBB).",
+            "Elinor Washington grounded out to 3b (0-0); Taz Tamai advanced to third on the throw.",
+            "Lily Hackett grounded out to p (0-1 F).",
+            "Ally Knutson singled to center field, RBI (2-0 BB); Taz Tamai scored.",
+            "Ally Knutson stole second.",
+            "Gabbie Chinnis walked (3-2 BBSSB).",
+            "Violet Peverly singled to shortstop, RBI (0-2 KFF); Gabbie Chinnis advanced to second; Ally Knutson scored.",
+            "Riley Veenstra singled down the lf line, RBI (2-2 KFBB); Violet Peverly advanced to third; Gabbie Chinnis scored.",
+            "Bailey Gray flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sophie Hasegawa flied out to rf (1-1 FB).",
+            "Taz Tamai singled to right field (2-2 BBFFFF).",
+            "Elinor Washington flied out to ss (2-2 BBKS).",
+            "Lucy Allen pinch hit for Lily Hackett.",
+            "Lucy Allen lined out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Skyla Oliveira to ss for Cami O'Rourke.",
+            "Ally Knutson doubled to left center (0-0).",
+            "Gabbie Chinnis grounded out to 1b unassisted (1-1 BF); Ally Knutson advanced to third.",
+            "Violet Peverly doubled to left center, RBI (2-1 FBB); Ally Knutson scored.",
+            "Riley Veenstra singled to center field (0-0); Violet Peverly advanced to third.",
+            "Alana Robinson pinch hit for Bailey Gray.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Alana Robinson flied out to lf, SAC, RBI (2-2 BBSS); Violet Peverly scored.",
+            "Sophie Hasegawa walked (3-2 BKFBFBB); Anna Gray advanced to second.",
+            "Taz Tamai doubled to left center, 2 RBI (3-1 BFBB); Sophie Hasegawa scored; Anna Gray scored.",
+            "Elinor Washington singled to right field, RBI (0-0); Taz Tamai scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 5.2,
+          "h": 13,
+          "r": 9,
+          "er": 9,
+          "bb": 4,
+          "so": 0,
+          "hbp": 1,
+          "ab": 29,
+          "bf": 35
         }
       ],
       "year": 2026

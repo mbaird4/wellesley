@@ -1,36 +1,64 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-10T02:25:25.291Z",
+  "scrapedAt": "2026-04-11T02:04:31.729Z",
   "year": 2026,
   "pitchingStats": [
     {
+      "name": "Behel, Emma",
+      "w": 2,
+      "l": 0,
+      "era": 1.33,
+      "app": 7,
+      "gs": 3,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 21,
+      "h": 20,
+      "r": 6,
+      "er": 4,
+      "bb": 5,
+      "so": 7,
+      "hr": 1,
+      "whip": 1.19,
+      "doubles": 2,
+      "triples": 0,
+      "ab": 82,
+      "bAvg": 0.244,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 2
+    },
+    {
       "name": "Walker, Dana",
-      "w": 6,
+      "w": 8,
       "l": 5,
-      "era": 1.2,
-      "app": 14,
-      "gs": 10,
-      "cg": 7,
+      "era": 1.34,
+      "app": 16,
+      "gs": 11,
+      "cg": 8,
       "sho": 2,
       "sv": 1,
-      "ip": 64.1,
-      "h": 55,
-      "r": 30,
-      "er": 11,
-      "bb": 15,
-      "so": 58,
+      "ip": 73,
+      "h": 62,
+      "r": 34,
+      "er": 14,
+      "bb": 19,
+      "so": 66,
       "hr": 0,
-      "whip": 1.09,
-      "doubles": 6,
+      "whip": 1.11,
+      "doubles": 8,
       "triples": 0,
-      "ab": 256,
-      "bAvg": 0.215,
+      "ab": 292,
+      "bAvg": 0.212,
       "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 8
+      "sha": 10
     },
     {
       "name": "Lynn, Zoey",
@@ -54,34 +82,6 @@
       "triples": 1,
       "ab": 117,
       "bAvg": 0.282,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
-    },
-    {
-      "name": "Behel, Emma",
-      "w": 2,
-      "l": 0,
-      "era": 0.89,
-      "app": 6,
-      "gs": 2,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 15.2,
-      "h": 14,
-      "r": 3,
-      "er": 2,
-      "bb": 4,
-      "so": 6,
-      "hr": 0,
-      "whip": 1.15,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 60,
-      "bAvg": 0.233,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -1859,6 +1859,217 @@
           "hbp": 0,
           "ab": 8,
           "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wheaton-mass-/boxscore/9354",
+      "date": "4/10/2026",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand grounded out to ss (1-1 BK).",
+            "Taylor Barry struck out swinging (2-2 BFBKS).",
+            "Ella Molinari singled through the right side (2-1 BBF).",
+            "Peyton Blankenheim-Brown popped up to ss (2-2 BKBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Boucher grounded out to 3b (0-1 K).",
+            "Mady Bryan popped up to ss (2-1 BBK).",
+            "Gabby Reinbold flied out to lf (3-2 BBFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riley Dolan flied out to cf (2-1 BBK).",
+            "Julia Miller reached first on an error by 2b (0-0).",
+            "Amber Arcand out at first p to 2b, SAC, bunt (1-1 BK); Julia Miller scored on an error by 2b.",
+            "Taylor Barry walked (3-1 BFBBB).",
+            "Ella Molinari singled to shortstop (0-0); Taylor Barry advanced to second.",
+            "Taylor Barry stole third.",
+            "Peyton Blankenheim-Brown popped up to 2b (2-1 SBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Boucher grounded out to p (0-1 F).",
+            "Mady Bryan grounded out to p (1-2 KKB).",
+            "Gabby Reinbold grounded out to 1b unassisted (1-2 SKBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bridget Bartz to 2b for Sage Svalestad.",
+            "Lauren Ragonese to dp.",
+            "Riley Dolan popped up to ss (1-0 B).",
+            "Julia Miller grounded out to 3b, bunt (0-0).",
+            "Amber Arcand singled to shortstop (1-2 KFFBF).",
+            "Taylor Barry singled up the middle (1-1 BS); Amber Arcand advanced to second.",
+            "Ella Molinari reached first on an error by rf (0-1 F); Taylor Barry out at second rf to 1b to ss; Amber Arcand scored on the error, unearned."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Peyton Blankenheim-Brown homered to left center, RBI (0-0).",
+            "Emma Boucher flied out to lf (1-0 B).",
+            "Mady Bryan singled to left field (0-0).",
+            "Lauren Kelley pinch ran for Mady Bryan.",
+            "Dana Walker to p for Emma Behel.",
+            "Gabby Reinbold out at first p to 2b, bunt, SAC (0-1 K); Lauren Kelley advanced to second.",
+            "Riley Dolan struck out looking (1-2 BFFK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Miller reached first on an error by ss (2-2 SBSB).",
+            "Amber Arcand out at first p to 2b, bunt, SAC (1-1 BF); Julia Miller advanced to second.",
+            "Taylor Barry struck out swinging (2-2 BKBFS).",
+            "Ella Molinari grounded out to p (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 5.1,
+          "h": 6,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 24
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 1.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 4,
+          "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wheaton-mass-/boxscore/9355",
+      "date": "4/10/2026",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand grounded out to 1b unassisted (1-2 BKS).",
+            "Taylor Barry struck out looking (2-2 BSFBK).",
+            "Ella Molinari singled up the middle (3-2 BBKBS).",
+            "Peyton Blankenheim-Brown reached first on an error by 2b (0-0); Ella Molinari advanced to second.",
+            "Emma Boucher flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mady Bryan grounded out to 2b (0-1 K).",
+            "Riley Dolan doubled down the rf line (2-2 BBSSF).",
+            "Gabby Reinbold grounded out to 1b unassisted (0-1 F).",
+            "Julia Miller struck out swinging (1-2 FFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Amber Arcand reached first on an error by 2b (0-1 K).",
+            "Taylor Barry struck out swinging (0-2 FFS).",
+            "Ella Molinari reached first on an error by 2b (0-0); Amber Arcand advanced to second.",
+            "Peyton Blankenheim-Brown lined into double play 1b (0-0); Ella Molinari out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Madeline Kibler to c for Olivia Garcia.",
+            "Sage Svalestad to 2b for Caitlynn Gibson.",
+            "Emma Boucher walked (3-0 BBBB).",
+            "Mady Bryan walked (3-0 BBBB); Emma Boucher advanced to second.",
+            "Riley Dolan singled down the rf line (0-2 KK); Mady Bryan advanced to second; Emma Boucher advanced to third.",
+            "Gabby Reinbold struck out looking (0-2 FFK).",
+            "Julia Miller lined out to ss (3-1 BFBB).",
+            "Amber Arcand grounded out to 2b (1-2 FBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Barry grounded out to 2b (0-0).",
+            "Ella Molinari reached first on an error by 2b (1-0 B).",
+            "Peyton Blankenheim-Brown reached on a fielder's choice to shortstop (0-0); Ella Molinari out at second ss unassisted.",
+            "Emma Boucher reached first on an error by 2b (0-0); Peyton Blankenheim-Brown advanced to second.",
+            "Mady Bryan reached on a fielder's choice to shortstop (3-2 FFBBBF); Emma Boucher out at second ss unassisted."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abby Steele to 2b for Sage Svalestad.",
+            "Riley Dolan doubled to right field (1-1 KB).",
+            "Madi Miller pinch hit for Gabby Reinbold.",
+            "Madi Miller grounded out to p (3-2 BBSBF); Riley Dolan advanced to third.",
+            "Julia Miller singled up the middle, RBI (2-1 FBB); Riley Dolan scored.",
+            "Julia Miller advanced to second on a passed ball.",
+            "Amber Arcand grounded out to 2b (1-1 BS); Julia Miller advanced to third.",
+            "Taylor Barry walked (3-2 FBSBFBB).",
+            "Ella Molinari singled down the rf line, RBI (2-2 BFKB); Taylor Barry advanced to third; Julia Miller scored, unearned.",
+            "Peyton Blankenheim-Brown walked (3-0 BBBB); Ella Molinari advanced to second.",
+            "Lauren Kelley pinch ran for Peyton Blankenheim-Brown.",
+            "Emma Boucher singled to center field, 2 RBI (0-1 K); Lauren Kelley advanced to second; Ella Molinari scored; Taylor Barry scored.",
+            "Mady Bryan fouled out to lf (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Zoey Lynn to 1b for Ella Stolarzyk.",
+            "Riley Dolan struck out swinging (1-2 KBSFFS).",
+            "Gabby Reinbold struck out swinging (0-2 FFS).",
+            "Julia Miller grounded out to 3b (1-2 SBFFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 7,
+          "r": 4,
+          "er": 3,
+          "bb": 4,
+          "so": 6,
+          "hbp": 0,
+          "ab": 32,
+          "bf": 36
         }
       ],
       "year": 2026

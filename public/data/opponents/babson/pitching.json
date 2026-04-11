@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-10T02:25:32.456Z",
+  "scrapedAt": "2026-04-11T02:04:42.742Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -36,84 +36,84 @@
       "name": "Sealey, Lexi",
       "w": 2,
       "l": 1,
-      "era": 2.94,
-      "app": 12,
+      "era": 3,
+      "app": 13,
       "gs": 2,
       "cg": 2,
       "sho": 1,
       "sv": 3,
-      "ip": 33.1,
-      "h": 44,
-      "r": 19,
-      "er": 14,
-      "bb": 12,
-      "so": 11,
+      "ip": 37.1,
+      "h": 54,
+      "r": 22,
+      "er": 16,
+      "bb": 14,
+      "so": 12,
       "hr": 0,
-      "whip": 1.68,
-      "doubles": 4,
+      "whip": 1.82,
+      "doubles": 7,
       "triples": 2,
-      "ab": 142,
-      "bAvg": 0.31,
+      "ab": 163,
+      "bAvg": 0.331,
       "wp": 5,
       "hbp": 4,
       "bk": 0,
       "sfa": 0,
-      "sha": 4
+      "sha": 5
     },
     {
       "name": "Topel, Anna",
-      "w": 2,
+      "w": 3,
       "l": 4,
-      "era": 5.1,
-      "app": 9,
-      "gs": 9,
-      "cg": 2,
+      "era": 4.59,
+      "app": 10,
+      "gs": 10,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 35.2,
-      "h": 52,
-      "r": 31,
-      "er": 26,
+      "ip": 42.2,
+      "h": 60,
+      "r": 33,
+      "er": 28,
       "bb": 26,
-      "so": 27,
+      "so": 28,
       "hr": 1,
-      "whip": 2.19,
+      "whip": 2.02,
       "doubles": 10,
-      "triples": 1,
-      "ab": 156,
-      "bAvg": 0.333,
+      "triples": 2,
+      "ab": 182,
+      "bAvg": 0.33,
       "wp": 3,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
-      "sfa": 0,
-      "sha": 4
+      "sfa": 1,
+      "sha": 5
     },
     {
       "name": "Vlacich, Katie",
       "w": 1,
-      "l": 6,
-      "era": 6.03,
-      "app": 9,
-      "gs": 7,
+      "l": 7,
+      "era": 6.28,
+      "app": 10,
+      "gs": 8,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 36,
-      "h": 51,
-      "r": 38,
-      "er": 31,
-      "bb": 16,
-      "so": 25,
-      "hr": 3,
-      "whip": 1.86,
-      "doubles": 8,
+      "ip": 39,
+      "h": 56,
+      "r": 42,
+      "er": 35,
+      "bb": 18,
+      "so": 28,
+      "hr": 4,
+      "whip": 1.9,
+      "doubles": 10,
       "triples": 2,
-      "ab": 163,
-      "bAvg": 0.313,
+      "ab": 176,
+      "bAvg": 0.318,
       "wp": 11,
       "hbp": 2,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 2
     }
   ],
@@ -2431,6 +2431,227 @@
           "hbp": 0,
           "ab": 5,
           "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-22-wpi/boxscore/16059",
+      "date": "4/10/2026",
+      "opponent": " 22 Wpi",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour popped up to ss (2-2 KSBB).",
+            "Virginia McKinney tripled to center field (0-1 F).",
+            "Sandy Fairbairn singled to center field, RBI (0-0); Virginia McKinney scored.",
+            "Sandy Fairbairn stole second.",
+            "Riley O'Brien reached on a fielder's choice to pitcher, advanced to second on the throw (3-1 KBBB); Sandy Fairbairn advanced to third.",
+            "Emma Nagy flied out to rf, sacrifice fly, RBI (2-2 FSBB); Riley O'Brien advanced to third; Sandy Fairbairn scored.",
+            "Stella Kozak lined out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ariana Kreuzer singled through the right side (1-0 B).",
+            "Elizabeth Jordan grounded out to 1b unassisted, SAC, bunt (0-0); Ariana Kreuzer advanced to second.",
+            "Ariana Kreuzer out at third p to ss.",
+            "Meg Sherwood singled to right field (1-1 BK).",
+            "Meg Sherwood stole second.",
+            "Lucy Latour hit by pitch (3-2 BBBKSH).",
+            "Virginia McKinney flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sandy Fairbairn popped up to 2b (2-0 BB).",
+            "Riley O'Brien grounded out to p (0-2 FK).",
+            "Emma Nagy lined out to 2b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Stella Kozak grounded out to 3b (1-0 B).",
+            "Ariana Kreuzer flied out to cf (0-1 K).",
+            "Elizabeth Jordan singled to pitcher (3-1 BBBK).",
+            "Elizabeth Jordan out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Meg Sherwood struck out swinging (1-2 BFSS).",
+            "Lucy Latour grounded out to 1b unassisted (3-1 BBFB).",
+            "Virginia McKinney grounded out to p (1-2 FKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sandy Fairbairn singled to third base (1-2 KKFB).",
+            "Riley O'Brien reached on a fielder's choice (1-0 B); Sandy Fairbairn out at second ss to 2b.",
+            "Grace Grant pinch ran for Riley O'Brien.",
+            "Emma Nagy reached on a fielder's choice (3-2 BSBBF); Grace Grant out at second 2b to ss.",
+            "Stella Kozak singled through the left side (0-0); Emma Nagy advanced to second.",
+            "Ariana Kreuzer reached on a fielder's choice (2-2 SBSB); Stella Kozak advanced to second; Emma Nagy out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Devin McCall to 3b for Nicole Petrillo.",
+            "Ali Chalovich pinch hit for Elizabeth Jordan.",
+            "Ali Chalovich popped up to 2b (1-2 BKS).",
+            "Meg Sherwood flied out to cf (0-0).",
+            "Lucy Latour singled up the middle (1-1 BF).",
+            "Virginia McKinney grounded out to ss (0-2 KFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 7,
+          "h": 8,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 26,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-22-wpi/boxscore/16060",
+      "date": "4/10/2026",
+      "opponent": " 22 Wpi",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour grounded out to 2b (0-1 K).",
+            "Virginia McKinney doubled to center field (0-1 K).",
+            "Sandy Fairbairn struck out swinging (3-2 BBFFBS).",
+            "Virginia McKinney advanced to third on a passed ball.",
+            "Riley O'Brien struck out swinging (3-2 BSBBSFFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Nagy homered to center field, inside the park, RBI (2-1 BSB).",
+            "Emily Walsh to cf.",
+            "Bella Marchetti to lf for Izzy Burgess.",
+            "Stella Kozak flied out to cf (1-0 B).",
+            "Ali Chalovich grounded out to 3b (1-1 BK).",
+            "Elizabeth Jordan popped up to ss (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Meg Sherwood singled to center field (3-2 FBBBK).",
+            "Lucy Latour walked (3-2 BBFBFB); Meg Sherwood advanced to second.",
+            "Virginia McKinney reached on a fielder's choice (0-0); Lucy Latour out at second p to ss; Meg Sherwood advanced to third.",
+            "Sandy Fairbairn lined out to cf, sacrifice fly, RBI (0-0); Meg Sherwood scored.",
+            "Virginia McKinney stole second.",
+            "Riley O'Brien struck out swinging (1-2 BFFFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Izzy Burgess to lf for Bella Marchetti.",
+            "Emma Nagy doubled to center field (3-2 FBBFBF).",
+            "Stella Kozak singled through the left side (0-0); Emma Nagy advanced to third.",
+            "Stella Kozak stole second.",
+            "Ali Chalovich walked (3-2 KBBFFBB).",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Ariana Kreuzer pinch hit for Elizabeth Jordan.",
+            "Ariana Kreuzer singled to left field, RBI (2-2 BKFB); Ali Chalovich advanced to second; Stella Kozak advanced to third, out at home lf to ss to c; Emma Nagy scored.",
+            "Mia Francisco pinch ran for Ali Chalovich.",
+            "Elizabeth Jordan pinch ran for Ariana Kreuzer.",
+            "Meg Sherwood struck out swinging (1-2 KBSS).",
+            "Lucy Latour doubled down the rf line, RBI (0-0); Elizabeth Jordan advanced to third; Mia Francisco scored.",
+            "Virginia McKinney walked (3-0 BBBB).",
+            "Sandy Fairbairn grounded out to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley O'Brien popped up to 2b (0-0).",
+            "Emma Nagy singled to center field (2-2 FSBB).",
+            "Stella Kozak grounded out to c (0-0); Emma Nagy advanced to second.",
+            "Ali Chalovich walked (3-2 BBKKBB).",
+            "Elizabeth Jordan to dp.",
+            "Elizabeth Jordan singled down the lf line (1-2 KFB); Ali Chalovich advanced to second; Emma Nagy advanced to third.",
+            "Meg Sherwood grounded out to p (2-2 FBKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lucy Latour doubled to center field (1-1 BK).",
+            "Virginia McKinney singled up the middle, advanced to second on the throw, RBI (3-1 FBBB); Lucy Latour scored.",
+            "Sandy Fairbairn reached first on a fielding error by 1b, SAC, bunt (1-0 B); Virginia McKinney advanced to third.",
+            "Riley O'Brien singled to third base, RBI (0-1 K); Sandy Fairbairn advanced to second; Virginia McKinney scored.",
+            "Emma Nagy flied out to lf (0-0).",
+            "Stella Kozak popped up to 1b (3-1 BBKB).",
+            "Ali Chalovich doubled to left field, RBI (3-2 FKBFBB); Riley O'Brien advanced to third; Sandy Fairbairn scored, unearned.",
+            "Elizabeth Jordan grounded out to p (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Meg Sherwood singled to left field (0-0).",
+            "Lucy Latour lined out to lf (1-1 BK).",
+            "Virginia McKinney singled up the middle (0-1 F); Meg Sherwood advanced to second.",
+            "Sandy Fairbairn flied out to cf (0-0).",
+            "Riley O'Brien grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 3,
+          "h": 5,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 16
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 4,
+          "h": 10,
+          "r": 3,
+          "er": 2,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 24
         }
       ],
       "year": 2026

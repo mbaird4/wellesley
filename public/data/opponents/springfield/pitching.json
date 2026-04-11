@@ -1,63 +1,63 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-10T02:24:32.847Z",
+  "scrapedAt": "2026-04-11T02:04:07.747Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
       "w": 9,
-      "l": 3,
-      "era": 1.96,
-      "app": 12,
-      "gs": 3,
-      "cg": 2,
+      "l": 4,
+      "era": 2.16,
+      "app": 13,
+      "gs": 4,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 75,
-      "h": 70,
-      "r": 27,
-      "er": 21,
-      "bb": 20,
-      "so": 63,
+      "ip": 81,
+      "h": 79,
+      "r": 31,
+      "er": 25,
+      "bb": 24,
+      "so": 66,
       "hr": 2,
-      "whip": 1.2,
-      "doubles": 15,
+      "whip": 1.27,
+      "doubles": 16,
       "triples": 1,
-      "ab": 285,
-      "bAvg": 0.246,
+      "ab": 309,
+      "bAvg": 0.256,
       "wp": 3,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 2,
-      "sha": 4
+      "sha": 5
     },
     {
       "name": "Rimshnick, Julia",
       "w": 5,
-      "l": 2,
-      "era": 5.88,
-      "app": 17,
-      "gs": 16,
-      "cg": 7,
+      "l": 3,
+      "era": 5.58,
+      "app": 18,
+      "gs": 17,
+      "cg": 8,
       "sho": 0,
       "sv": 1,
-      "ip": 50,
-      "h": 76,
-      "r": 52,
-      "er": 42,
-      "bb": 14,
-      "so": 28,
+      "ip": 57.2,
+      "h": 90,
+      "r": 59,
+      "er": 46,
+      "bb": 16,
+      "so": 30,
       "hr": 1,
-      "whip": 1.8,
-      "doubles": 10,
-      "triples": 6,
-      "ab": 227,
-      "bAvg": 0.335,
+      "whip": 1.84,
+      "doubles": 12,
+      "triples": 8,
+      "ab": 264,
+      "bAvg": 0.341,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
-      "sfa": 3,
+      "sfa": 4,
       "sha": 3
     }
   ],
@@ -1983,6 +1983,212 @@
           "hbp": 0,
           "ab": 19,
           "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/mit/boxscore/14835",
+      "date": "4/10/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen walked (3-2 BBKFBB).",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides walked (3-0 BBBB).",
+            "Ava Ladd flied out to cf (1-0 B); Layla Thiessen advanced to third.",
+            "Delaney Benevides stole second.",
+            "Arianna Kumar flied out to cf (1-1 KB).",
+            "Lauren Sundquist singled to right field, 2 RBI (1-1 BF); Delaney Benevides scored; Layla Thiessen scored.",
+            "Lauren Sundquist stole second.",
+            "Lauren Sundquist stole third.",
+            "Holland Poe singled to center field, RBI (1-2 KBS); Lauren Sundquist scored.",
+            "Julia Mattiace walked (3-1 SBBBB); Holland Poe advanced to second.",
+            "Olivia Scarpaci singled to center field, RBI (0-2 SF); Julia Mattiace advanced to second; Holland Poe scored.",
+            "Maggie Feng singled to center field (0-0); Olivia Scarpaci advanced to second; Julia Mattiace advanced to third.",
+            "Layla Thiessen flied out to lf (3-2 BKSBFFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Delaney Benevides struck out swinging (2-2 BBKSS).",
+            "Ava Ladd walked (3-0 BBBB).",
+            "Arianna Kumar flied out to rf (1-0 B).",
+            "Ava Ladd stole second.",
+            "Lauren Sundquist grounded out to ss (2-2 SKBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Holland Poe singled to center field (0-0).",
+            "Julia Mattiace grounded into double play p to ss to 1b (1-1 BK); Holland Poe out on the play.",
+            "Olivia Scarpaci singled to center field (0-0).",
+            "Maggie Feng struck out swinging (1-2 KBSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Layla Thiessen singled to third base (0-0).",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides out at first c to 2b, SAC, bunt (1-0 B); Layla Thiessen advanced to third.",
+            "Ava Ladd reached on a fielder's choice (1-2 BFSF); Layla Thiessen out at home ss to c.",
+            "Ava Ladd stole second.",
+            "Arianna Kumar lined out to lf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Sundquist flied out to rf (1-1 BK).",
+            "Holland Poe popped up to 2b (1-1 FB).",
+            "Julia Mattiace grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Olivia Scarpaci doubled to left field (1-1 BF).",
+            "Maggie Feng singled, bunt (0-0); Olivia Scarpaci advanced to third.",
+            "Maggie Feng stole second.",
+            "Layla Thiessen hit by pitch (3-2 KBFBH).",
+            "Delaney Benevides struck out looking (2-2 SKBBK).",
+            "Ava Ladd grounded into double play p to c to 1b (3-1 SBBB); Olivia Scarpaci out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 6,
+          "h": 9,
+          "r": 4,
+          "er": 4,
+          "bb": 4,
+          "so": 3,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/mit/boxscore/14836",
+      "date": "4/10/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen grounded out to ss (2-2 BBKF).",
+            "Delaney Benevides singled to third base, bunt (0-0).",
+            "Ava Ladd doubled to center field, RBI (1-1 BK); Delaney Benevides scored.",
+            "Arianna Kumar flied out to rf (2-1 KBB).",
+            "Lauren Sundquist singled to shortstop (1-1 BK); Ava Ladd advanced to third.",
+            "Lauren Sundquist stole second; Ava Ladd out at third c to ss to 3b, picked off."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Holland Poe singled to center field (1-1 FB).",
+            "Olivia Scarpaci reached on a fielder's choice (1-1 KB); Holland Poe out at second ss to 2b.",
+            "Julia Mattiace struck out looking (0-2 FFK).",
+            "Maggie Feng walked (3-0 BBBB); Olivia Scarpaci advanced to second.",
+            "Layla Thiessen grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Delaney Benevides struck out swinging (0-2 FFFFS).",
+            "Ava Ladd reached first on an error by ss (1-1 BF).",
+            "Arianna Kumar reached on a fielder's choice (1-0 B); Ava Ladd out at second 3b to 2b.",
+            "Lauren Sundquist flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Holland Poe tripled down the rf line (0-0).",
+            "Olivia Scarpaci grounded out to 1b unassisted (0-0).",
+            "Julia Mattiace doubled to center field, RBI (1-2 FBK); Holland Poe scored.",
+            "Sienna Wilson pinch ran for Julia Mattiace.",
+            "Maggie Feng singled to right field (0-1 F); Sienna Wilson advanced to third.",
+            "Layla Thiessen flied out to lf, SAC, RBI (1-0 B); Maggie Feng advanced to second; Sienna Wilson scored.",
+            "Delaney Benevides reached first on an error by p (1-2 SFH); Maggie Feng advanced to third.",
+            "Delaney Benevides stole second.",
+            "Ava Ladd reached first on an error by p (2-2 BKBF); Delaney Benevides scored, unearned; Maggie Feng scored, unearned.",
+            "Arianna Kumar flied out to rf (3-2 KBBBKF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Pecchia to dp for Addy Bohlander.",
+            "Lauren Sundquist singled to center field (2-1 BBK).",
+            "Holland Poe flied out to cf (0-0).",
+            "Olivia Scarpaci popped up to ss (0-0).",
+            "Julia Mattiace singled to right field (0-0); Lauren Sundquist advanced to third.",
+            "Maggie Feng reached on a fielder's choice (2-2 BBKK); Julia Mattiace out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Layla Thiessen walked (3-0 BBBB).",
+            "Delaney Benevides reached on a fielder's choice (2-2 KBBK); Layla Thiessen out at second ss to 2b.",
+            "Delaney Benevides out at second c to ss, caught stealing.",
+            "Ava Ladd tripled to right center (0-1 K).",
+            "Arianna Kumar flied out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lauren Sundquist flied out to rf (1-1 KB).",
+            "Holland Poe grounded out to p (2-1 SBB).",
+            "Olivia Scarpaci popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Julia Mattiace Olivia Scarpaci placed on second (0-0).",
+            "Amanda Huang pinch ran for Olivia Scarpaci.",
+            "Amanda Huang advanced to third on a passed ball.",
+            "Julia Mattiace singled to left field, RBI (0-1 S); Amanda Huang scored, unearned.",
+            "Maggie Feng singled to center field (0-2 FF); Julia Mattiace advanced to second.",
+            "Layla Thiessen reached on a fielder's choice (0-2 FF); Maggie Feng advanced to second; Julia Mattiace out at third 3b unassisted.",
+            "Delaney Benevides singled to third base (2-2 FFFBB); Layla Thiessen advanced to second; Maggie Feng advanced to third.",
+            "Ava Ladd reached on a fielder's choice (3-1 BBFB); Delaney Benevides advanced to second; Layla Thiessen advanced to third; Maggie Feng out at home 2b to c.",
+            "Arianna Kumar singled to center field, RBI (2-1 FBB); Ava Ladd advanced to second; Delaney Benevides advanced to third; Layla Thiessen scored, team unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7.2,
+          "h": 14,
+          "r": 7,
+          "er": 4,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 37,
+          "bf": 40
         }
       ],
       "year": 2026

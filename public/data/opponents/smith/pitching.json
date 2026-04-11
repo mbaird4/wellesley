@@ -1,32 +1,32 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-10T02:24:36.126Z",
+  "scrapedAt": "2026-04-11T02:04:11.627Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
-      "w": 6,
+      "w": 7,
       "l": 5,
-      "era": 3.22,
-      "app": 12,
-      "gs": 11,
-      "cg": 8,
+      "era": 2.98,
+      "app": 13,
+      "gs": 12,
+      "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 58.2,
-      "h": 63,
-      "r": 38,
-      "er": 27,
-      "bb": 29,
-      "so": 61,
+      "ip": 65.2,
+      "h": 66,
+      "r": 39,
+      "er": 28,
+      "bb": 32,
+      "so": 67,
       "hr": 1,
-      "whip": 1.57,
+      "whip": 1.49,
       "doubles": 7,
       "triples": 3,
-      "ab": 234,
-      "bAvg": 0.269,
-      "wp": 4,
+      "ab": 258,
+      "bAvg": 0.256,
+      "wp": 5,
       "hbp": 4,
       "bk": 0,
       "sfa": 2,
@@ -34,26 +34,26 @@
     },
     {
       "name": "Gray, Bailey",
-      "w": 5,
+      "w": 6,
       "l": 2,
-      "era": 3.89,
-      "app": 10,
-      "gs": 6,
-      "cg": 5,
+      "era": 3.6,
+      "app": 11,
+      "gs": 7,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 50.1,
-      "h": 55,
-      "r": 34,
-      "er": 28,
-      "bb": 14,
-      "so": 37,
+      "ip": 56.1,
+      "h": 62,
+      "r": 35,
+      "er": 29,
+      "bb": 16,
+      "so": 41,
       "hr": 2,
-      "whip": 1.37,
-      "doubles": 12,
+      "whip": 1.38,
+      "doubles": 13,
       "triples": 2,
-      "ab": 206,
-      "bAvg": 0.267,
+      "ab": 231,
+      "bAvg": 0.268,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -2192,6 +2192,188 @@
           "so": 2,
           "hbp": 0,
           "ab": 22,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/salve-regina/boxscore/9671",
+      "date": "4/10/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Peverly, Violet"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to 3b (0-0).",
+            "Taylor Ferraiolo grounded out to p (1-1 FB).",
+            "Emma Plourde struck out swinging (2-2 BBKSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gracie Keyes walked (3-2 BSSBBB).",
+            "Emily Cronin struck out swinging (1-2 FSBS).",
+            "Madeleine Oswald flied out to 2b (2-2 BFBF).",
+            "Abby Merck singled to center field (1-1 BK); Gracie Keyes advanced to second.",
+            "Skylar Wicklund grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skyla Oliveira struck out swinging (3-2 KBKBBS).",
+            "Lillian Bridges grounded out to 3b (0-1 S).",
+            "Taylor Ferraiolo flied out to ss (1-2 BSF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Plourde walked (3-1 SBBBH).",
+            "Gracie Keyes fouled out to 3b (0-0).",
+            "Emily Cronin struck out swinging (1-2 BFSS).",
+            "Madeleine Oswald lined out to ss (0-1 S)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abby Merck singled to center field (1-0 B).",
+            "Skylar Wicklund grounded out to p (0-0); Abby Merck advanced to second.",
+            "Skyla Oliveira struck out looking (3-2 KKBBBK).",
+            "Lillian Bridges grounded out to ss (1-2 BSFFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Veenstra to c for Violet Peverly.",
+            "Violet Peverly to p for Anna Gray.",
+            "Taylor Ferraiolo singled to center field (1-1 FB).",
+            "Taylor Ferraiolo stole second.",
+            "Emma Plourde grounded out to 3b (2-0 BB); Taylor Ferraiolo advanced to third.",
+            "Taylor Ferraiolo scored on a wild pitch.",
+            "Gracie Keyes flied out to 2b (2-2 FBBFF).",
+            "Emily Cronin grounded out to 2b (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lily Hackett to 2b for Malaya Sumii.",
+            "Madeleine Oswald walked (3-0 BBBB).",
+            "Madi Allard pinch ran for Madeleine Oswald.",
+            "Madi Allard out at second c to ss, caught stealing.",
+            "Abby Merck flied out to 2b (1-2 BKKF).",
+            "Skylar Wicklund reached first on an error by ss (3-2 KFBBBFF).",
+            "Skyla Oliveira struck out swinging (1-2 BSSS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 7,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 3,
+          "so": 6,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/salve-regina/boxscore/9672",
+      "date": "4/10/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to ss (2-2 BSSB).",
+            "Taylor Ferraiolo struck out swinging (2-2 BSBSS).",
+            "Victoria Geisser flied out to cf (3-2 BBFSFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gracie Keyes singled to right field (0-0).",
+            "Emily Cronin singled to center field (1-0 B); Gracie Keyes advanced to second.",
+            "Madeleine Oswald flied out to ss (1-2 FSB).",
+            "Abby Merck singled to right field (1-2 KSB); Emily Cronin advanced to second; Gracie Keyes advanced to third.",
+            "Ryann Burke pinch hit for Skylar Wicklund.",
+            "Ryann Burke reached on a fielder's choice (1-0 B); Abby Merck advanced to second; Emily Cronin advanced to third; Gracie Keyes out at home p to c.",
+            "Skyla Oliveira struck out swinging (2-2 BKSBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lillian Bridges grounded out to p (1-1 FB).",
+            "Taylor Ferraiolo singled to third base (0-0).",
+            "Victoria Geisser flied out to rf (2-1 BBS).",
+            "Taylor Ferraiolo stole second.",
+            "Gracie Keyes singled to left center, RBI (2-1 BBF); Taylor Ferraiolo scored.",
+            "Emily Cronin singled down the rf line (3-1 BBFB); Gracie Keyes advanced to third.",
+            "Emily Cronin stole second.",
+            "Madeleine Oswald flied out to cf (3-2 BSBBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Merck walked (3-1 FBBBB).",
+            "Skylar Wicklund struck out looking (0-2 KFK).",
+            "Skyla Oliveira reached first on an error by 1b (0-0); Abby Merck advanced to third on the error.",
+            "Lillian Bridges struck out swinging (0-2 FFFS).",
+            "Skyla Oliveira out at second 1b to 2b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Ferraiolo grounded out to 1b unassisted (0-0).",
+            "Victoria Geisser grounded out to 3b (2-2 KBSB).",
+            "Gracie Keyes doubled to left center (1-0 B).",
+            "Emily Cronin walked (3-0 BBBB).",
+            "Madeleine Oswald lined out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lily Hackett to 2b for Lucy Allen.",
+            "Abby Merck grounded out to 2b (1-0 B).",
+            "Skylar Wicklund flied out to cf (0-1 F).",
+            "Cami O'Rourke pinch hit for Skyla Oliveira.",
+            "Cami O'Rourke flied out to cf (1-1 SB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 6,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 25,
           "bf": 27
         }
       ],

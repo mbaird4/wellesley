@@ -1,33 +1,33 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-10T02:24:19.778Z",
+  "scrapedAt": "2026-04-11T02:04:00.932Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 6,
-      "l": 3,
-      "era": 1.28,
-      "app": 9,
-      "gs": 9,
-      "cg": 9,
+      "l": 4,
+      "era": 1.69,
+      "app": 10,
+      "gs": 10,
+      "cg": 10,
       "sho": 3,
       "sv": 0,
-      "ip": 60.1,
-      "h": 50,
-      "r": 16,
-      "er": 11,
-      "bb": 4,
-      "so": 40,
-      "hr": 2,
-      "whip": 0.9,
-      "doubles": 9,
+      "ip": 66.1,
+      "h": 56,
+      "r": 21,
+      "er": 16,
+      "bb": 5,
+      "so": 45,
+      "hr": 3,
+      "whip": 0.92,
+      "doubles": 11,
       "triples": 2,
-      "ab": 221,
-      "bAvg": 0.226,
+      "ab": 246,
+      "bAvg": 0.228,
       "wp": 0,
-      "hbp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 2,
       "sha": 12
@@ -35,30 +35,30 @@
     {
       "name": "De La Rosa, Sofia",
       "w": 5,
-      "l": 4,
-      "era": 2.33,
-      "app": 9,
-      "gs": 9,
-      "cg": 7,
+      "l": 5,
+      "era": 2.54,
+      "app": 10,
+      "gs": 10,
+      "cg": 8,
       "sho": 3,
       "sv": 0,
-      "ip": 54,
-      "h": 56,
-      "r": 29,
-      "er": 18,
+      "ip": 60.2,
+      "h": 65,
+      "r": 33,
+      "er": 22,
       "bb": 12,
-      "so": 64,
+      "so": 69,
       "hr": 3,
-      "whip": 1.26,
-      "doubles": 10,
+      "whip": 1.27,
+      "doubles": 12,
       "triples": 3,
-      "ab": 216,
-      "bAvg": 0.259,
-      "wp": 0,
-      "hbp": 1,
+      "ab": 243,
+      "bAvg": 0.267,
+      "wp": 1,
+      "hbp": 2,
       "bk": 0,
-      "sfa": 2,
-      "sha": 7
+      "sfa": 3,
+      "sha": 8
     },
     {
       "name": "Dost, Brittany",
@@ -1722,6 +1722,186 @@
           "hbp": 0,
           "ab": 25,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/10020",
+      "date": "4/10/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz singled through the left side (2-0 BB).",
+            "Hayden Reilly popped up to c, bunt (0-0).",
+            "Maura Murphy flied out to cf (0-0).",
+            "Mack Murnane popped up to 2b (1-2 SSBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bridget Bartz popped up to 1b (3-1 BBFB).",
+            "Emma Behel lined out to lf (0-0).",
+            "Zoey Lynn hit by pitch (1-1 KH).",
+            "Zoey Cascio struck out swinging (3-2 BSSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Madeline Kibler grounded out to 3b (0-0).",
+            "Abriana Schmutz grounded out to 3b, bunt (1-1 BK).",
+            "Hayden Reilly singled up the middle (0-0).",
+            "Maura Murphy doubled to right center, RBI (0-0); Hayden Reilly scored.",
+            "Mack Murnane struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Bridget Bartz singled up the middle (3-2 BBKFB).",
+            "Sage Svalestad pinch ran for Bridget Bartz.",
+            "Emma Behel grounded out to 3b, SAC (0-1 S); Sage Svalestad advanced to second.",
+            "Zoey Lynn singled up the middle, advanced to second on an error by cf, RBI (2-2 SBFB); Sage Svalestad scored.",
+            "Lauren Ragonese pinch hit for Zoey Cascio.",
+            "Lauren Ragonese struck out swinging (2-2 BKBKS).",
+            "Madeline Kibler flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abriana Schmutz doubled to left field (0-0).",
+            "Hayden Reilly flied out to lf (3-2 BBBKKF).",
+            "Maura Murphy flied out to rf, sacrifice fly (0-2 FFFF); Abriana Schmutz advanced to third.",
+            "Abriana Schmutz scored on a wild pitch.",
+            "Mack Murnane singled through the left side (2-2 FBSBFF).",
+            "Bridget Bartz struck out swinging (3-2 BKFBBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dana Walker grounded out p to ss to 1b (0-2 FS).",
+            "Zoey Lynn grounded out to 2b (3-2 BBKSFB).",
+            "Lauren Ragonese struck out swinging (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Madeline Kibler popped up to c (2-1 BSB).",
+            "Abriana Schmutz singled to first base (0-1 S).",
+            "Hayden Reilly reached on a fielder's choice to second base (1-0 B); Abriana Schmutz out at second 2b to ss.",
+            "Maura Murphy singled to center field, advanced to second on the throw, RBI (1-1 FB); Hayden Reilly scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 6.2,
+          "h": 9,
+          "r": 4,
+          "er": 4,
+          "bb": 0,
+          "so": 5,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/10021",
+      "date": "4/10/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to 2b (1-1 BF).",
+            "Hayden Reilly lined out to 1b (2-1 BFB).",
+            "Maura Murphy popped up to 2b (2-2 BBFFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mack Murnane flied out to lf (0-0).",
+            "Bridget Bartz reached first on an error by 3b, advanced to second (1-2 BFKF).",
+            "Zoey Lynn struck out swinging (1-2 SSBS).",
+            "Caitlynn Gibson struck out looking (0-2 FSK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ainsley Hololob grounded out to ss (0-0).",
+            "Madeline Kibler doubled to left center (1-2 SBS).",
+            "Olivia Garcia pinch ran for Madeline Kibler.",
+            "Abriana Schmutz doubled to left field, RBI (1-2 BSSFF); Olivia Garcia scored.",
+            "Hayden Reilly singled to left field, advanced to second on the throw, RBI (0-2 KFF); Abriana Schmutz scored.",
+            "Maura Murphy singled through the left side, RBI (1-1 BS); Hayden Reilly scored.",
+            "Mack Murnane struck out swinging (1-2 BKFFS).",
+            "Bridget Bartz out at first ss to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Zoey Lynn grounded out to 3b (1-1 BK).",
+            "Sage Svalestad struck out swinging (2-2 BBSSS).",
+            "Ainsley Hololob grounded out to 1b unassisted (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Kibler flied out to lf (2-2 KBBSF).",
+            "Abriana Schmutz hit by pitch (3-2 BFBFFBH).",
+            "Abriana Schmutz stole second.",
+            "Hayden Reilly homered to left field, 2 RBI (3-2 FFBFFBFFB); Abriana Schmutz scored.",
+            "Maura Murphy reached first on an error by ss (0-0).",
+            "Mack Murnane fouled out to lf (0-1 F); Maura Murphy out at second lf to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Peyton Blankenheim-Brown to p for Lauren Kelley.",
+            "Gabby Reinbold to cf for Madi Miller.",
+            "Bridget Bartz grounded out to ss (0-2 FF).",
+            "Zoey Lynn walked (3-2 BSKBFBB).",
+            "Ella Stolarzyk pinch ran for Zoey Lynn.",
+            "Abby Steele struck out swinging (2-2 BFSBS).",
+            "Ainsley Hololob singled to shortstop (1-1 SB); Ella Stolarzyk advanced to second.",
+            "Madeline Kibler popped up to p (1-1 KB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 6,
+          "h": 6,
+          "r": 5,
+          "er": 5,
+          "bb": 1,
+          "so": 5,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 27
         }
       ],
       "year": 2026
