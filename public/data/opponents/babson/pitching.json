@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-11T02:04:42.742Z",
+  "scrapedAt": "2026-04-12T02:26:38.743Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -62,58 +62,58 @@
     },
     {
       "name": "Topel, Anna",
-      "w": 3,
+      "w": 4,
       "l": 4,
-      "era": 4.59,
-      "app": 10,
-      "gs": 10,
-      "cg": 3,
+      "era": 4.06,
+      "app": 11,
+      "gs": 11,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 42.2,
-      "h": 60,
-      "r": 33,
-      "er": 28,
+      "ip": 51.2,
+      "h": 75,
+      "r": 43,
+      "er": 30,
       "bb": 26,
-      "so": 28,
+      "so": 34,
       "hr": 1,
-      "whip": 2.02,
-      "doubles": 10,
+      "whip": 1.95,
+      "doubles": 11,
       "triples": 2,
-      "ab": 182,
-      "bAvg": 0.33,
+      "ab": 228,
+      "bAvg": 0.329,
       "wp": 3,
       "hbp": 2,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 5
     },
     {
       "name": "Vlacich, Katie",
-      "w": 1,
+      "w": 2,
       "l": 7,
-      "era": 6.28,
-      "app": 10,
-      "gs": 8,
-      "cg": 2,
+      "era": 5.93,
+      "app": 11,
+      "gs": 9,
+      "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 39,
-      "h": 56,
-      "r": 42,
-      "er": 35,
-      "bb": 18,
-      "so": 28,
+      "ip": 46,
+      "h": 67,
+      "r": 47,
+      "er": 39,
+      "bb": 19,
+      "so": 35,
       "hr": 4,
-      "whip": 1.9,
-      "doubles": 10,
+      "whip": 1.87,
+      "doubles": 13,
       "triples": 2,
-      "ab": 176,
-      "bAvg": 0.318,
-      "wp": 11,
+      "ab": 207,
+      "bAvg": 0.324,
+      "wp": 12,
       "hbp": 2,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 2
     }
   ],
@@ -2652,6 +2652,226 @@
           "hbp": 0,
           "ab": 21,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/emerson/boxscore/16061",
+      "date": "4/11/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale reached first on a throwing error by ss (3-2 KKFBBB).",
+            "Aislinn McCoy singled to third base, bunt (0-0); Malena Cardinale advanced to second.",
+            "Riley Caiazza reached on a fielder's choice (2-2 FFBB); Aislinn McCoy advanced to second on an error by ss, assist by 2b; Malena Cardinale advanced to third.",
+            "Avi Kuperman singled up the middle, 2 RBI (1-2 SSB); Riley Caiazza advanced to third; Aislinn McCoy scored, unearned; Malena Cardinale scored, unearned.",
+            "Kari Sorensen struck out swinging (0-2 FFS).",
+            "Cal Sheehan reached first on an error by 2b (0-0); Avi Kuperman advanced to third; Riley Caiazza scored, unearned.",
+            "Casey Yacovelli flied out to cf, sacrifice fly, RBI (0-0); Avi Kuperman scored, unearned.",
+            "Riley Fasteau struck out swinging (0-2 KSFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Valentina Luciano grounded out to 2b (1-1 SB).",
+            "Malena Cardinale singled to left field (2-0 BB).",
+            "Aislinn McCoy struck out looking (1-2 FBFK).",
+            "Riley Caiazza flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avi Kuperman singled up the middle (3-1 BBBK).",
+            "Kari Sorensen singled to left field (0-1 K); Avi Kuperman advanced to second.",
+            "Cal Sheehan popped up to 2b (0-0).",
+            "Casey Yacovelli struck out swinging (0-2 SKS).",
+            "Riley Fasteau popped up to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Valentina Luciano grounded out to ss (2-2 KFBB).",
+            "Malena Cardinale grounded out to p (1-2 KBSF).",
+            "Aislinn McCoy popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Caiazza singled to third base (0-0).",
+            "Avi Kuperman reached first on an error by 3b, advanced to second on an error by rf, scored (0-0); Riley Caiazza scored, unearned.",
+            "Kari Sorensen singled up the middle (0-0).",
+            "Cal Sheehan reached on a fielder's choice (2-1 BFB); Kari Sorensen out at second p to ss.",
+            "Casey Yacovelli struck out swinging (0-2 SKS).",
+            "Riley Fasteau grounded out to 3b (2-2 FFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Belle Dicampello to c for Nicole Petrillo.",
+            "Valentina Luciano singled through the left side (1-1 FB).",
+            "Malena Cardinale grounded out to 3b (1-1 BF); Valentina Luciano advanced to second.",
+            "Aislinn McCoy singled (3-2 BKKBB); Valentina Luciano advanced to third.",
+            "Aislinn McCoy stole second.",
+            "Riley Caiazza reached on a fielder's choice (2-2 BKBFF); Aislinn McCoy advanced to third; Valentina Luciano out at home 2b to c.",
+            "Avi Kuperman singled to right center, RBI (0-1 K); Riley Caiazza advanced to third; Aislinn McCoy scored.",
+            "Avi Kuperman stole second.",
+            "Kari Sorensen grounded out to ss (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Cal Sheehan fouled out to 1b (2-2 KBFB).",
+            "Casey Yacovelli popped up to 2b (0-2 FK).",
+            "Riley Fasteau singled up the middle (2-1 BFB).",
+            "Valentina Luciano singled to center field (3-2 BBBKF); Riley Fasteau advanced to second.",
+            "Malena Cardinale grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Lexi Sealy to 1b for Allie Cubberly.",
+            "Aislinn McCoy Malena Cardinale placed on second (0-0).",
+            "Aislinn McCoy grounded out to p (1-2 KFB); Malena Cardinale advanced to third on the throw, scored on an error by 3b, unearned.",
+            "Riley Caiazza grounded out to 1b unassisted (0-0).",
+            "Avi Kuperman reached first on an error by lf, advanced to second (1-1 FB).",
+            "Kari Sorensen doubled to left center, RBI (0-0); Avi Kuperman scored, unearned.",
+            "Cal Sheehan grounded out to 2b (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "Casey Yacovelli Cal Sheehan placed on second (0-0).",
+            "Casey Yacovelli struck out looking (1-2 FBSK).",
+            "Riley Fasteau singled to third base (0-0).",
+            "Valentina Luciano grounded out to 1b unassisted (0-0); Riley Fasteau advanced to second; Cal Sheehan advanced to third.",
+            "Malena Cardinale singled to center field, RBI (0-1 F); Riley Fasteau advanced to third; Cal Sheehan scored.",
+            "Aislinn McCoy flied out to rf (2-0 BB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 9,
+          "h": 15,
+          "r": 10,
+          "er": 2,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 46,
+          "bf": 47
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/emerson/boxscore/16062",
+      "date": "4/11/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale grounded out to p (2-1 BKB).",
+            "Aislinn McCoy grounded out to 3b, bunt (0-0).",
+            "Riley Caiazza fouled out to rf (3-2 KFBBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avi Kuperman walked (3-2 KBFBFBFB).",
+            "Kari Sorensen flied out to rf (1-0 B).",
+            "Cal Sheehan struck out looking (2-2 BBFKK).",
+            "Casey Yacovelli singled to right field, RBI (1-0 B); Avi Kuperman scored.",
+            "Elizabeth Miehlich struck out swinging (1-2 BSSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano singled down the lf line, advanced to third (3-2 KBFBFFBF).",
+            "Malena Cardinale flied out to cf, sacrifice fly, RBI (2-2 BFFBF); Valentina Luciano scored.",
+            "Aislinn McCoy struck out looking (1-2 FBKFK).",
+            "Riley Caiazza grounded out to ss (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avi Kuperman doubled down the lf line (0-0).",
+            "Avi Kuperman advanced to third on a passed ball.",
+            "Kari Sorensen singled to center field, RBI (3-2 BFFFFBB); Avi Kuperman scored, unearned.",
+            "Cal Sheehan popped up to ss (0-0).",
+            "Casey Yacovelli struck out looking (2-2 KFBFBK).",
+            "Elizabeth Miehlich grounded out to 1b unassisted (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Valentina Luciano singled up the middle (0-1 F).",
+            "Malena Cardinale reached on a fielder's choice (2-2 FBKB); Valentina Luciano out at second ss to 2b.",
+            "Malena Cardinale advanced to second on a wild pitch.",
+            "Aislinn McCoy singled up the middle (2-0 BB); Malena Cardinale advanced to third.",
+            "Riley Caiazza doubled to right center, RBI (0-1 K); Aislinn McCoy advanced to third; Malena Cardinale scored.",
+            "Avi Kuperman struck out swinging (0-2 KFS).",
+            "Kari Sorensen popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Belle Dicampello to c for Nicole Petrillo.",
+            "Izzy Burgess to lf for Allie Cubberly.",
+            "Cal Sheehan grounded out to ss (0-0).",
+            "Casey Yacovelli struck out swinging (3-2 SBKBBFS).",
+            "Elizabeth Miehlich struck out swinging (1-2 SBSS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Valentina Luciano doubled to right center (1-0 B).",
+            "Malena Cardinale grounded out to 3b (0-2 FF); Valentina Luciano advanced to third.",
+            "Aislinn McCoy singled to third base (0-0).",
+            "Riley Caiazza singled to left field, RBI (1-2 FFBF); Aislinn McCoy advanced to second; Valentina Luciano scored.",
+            "Avi Kuperman singled to center field (0-2 FFF); Riley Caiazza advanced to second; Aislinn McCoy advanced to third.",
+            "Kari Sorensen flied out to cf (0-0).",
+            "Cal Sheehan grounded out to 2b (2-2 FBBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 7,
+          "h": 11,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 7,
+          "hbp": 0,
+          "ab": 31,
+          "bf": 33
         }
       ],
       "year": 2026

@@ -1,59 +1,59 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-11T02:04:37.800Z",
+  "scrapedAt": "2026-04-12T02:26:34.001Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 7,
-      "l": 3,
-      "era": 2.55,
-      "app": 10,
-      "gs": 9,
-      "cg": 9,
+      "l": 4,
+      "era": 2.68,
+      "app": 11,
+      "gs": 10,
+      "cg": 10,
       "sho": 0,
       "sv": 0,
-      "ip": 66,
-      "h": 75,
-      "r": 29,
-      "er": 24,
-      "bb": 13,
-      "so": 69,
+      "ip": 73,
+      "h": 83,
+      "r": 33,
+      "er": 28,
+      "bb": 15,
+      "so": 71,
       "hr": 2,
-      "whip": 1.33,
+      "whip": 1.34,
       "doubles": 10,
       "triples": 1,
-      "ab": 273,
-      "bAvg": 0.275,
+      "ab": 300,
+      "bAvg": 0.277,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 2,
       "sha": 4
     },
     {
       "name": "Dube, Megan",
       "w": 3,
-      "l": 7,
-      "era": 3.5,
-      "app": 10,
-      "gs": 9,
-      "cg": 9,
+      "l": 8,
+      "era": 3.45,
+      "app": 11,
+      "gs": 10,
+      "cg": 10,
       "sho": 0,
       "sv": 0,
-      "ip": 66,
-      "h": 81,
-      "r": 47,
-      "er": 33,
-      "bb": 22,
-      "so": 60,
-      "hr": 3,
+      "ip": 73,
+      "h": 90,
+      "r": 53,
+      "er": 36,
+      "bb": 24,
+      "so": 64,
+      "hr": 4,
       "whip": 1.56,
-      "doubles": 19,
+      "doubles": 21,
       "triples": 4,
-      "ab": 273,
-      "bAvg": 0.297,
+      "ab": 306,
+      "bAvg": 0.294,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
@@ -2038,6 +2038,206 @@
           "hbp": 0,
           "ab": 27,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/19197",
+      "date": "4/11/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen lined out to p (1-2 KBS).",
+            "Delaney Benevides singled to left field (2-1 BBF).",
+            "Delaney Benevides stole second.",
+            "Delaney Benevides stole third.",
+            "Ava Ladd flied out to cf, sacrifice fly, RBI (0-2 KKF); Delaney Benevides scored.",
+            "Arianna Kumar singled through the left side (0-1 K).",
+            "Lauren Sundquist flied out to rf (1-1 SB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Holland Poe grounded out to 2b (0-0).",
+            "Julia Mattiace lined out to cf (1-1 KB).",
+            "Olivia Scarpaci popped up to ss (0-2 FK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maggie Feng singled to first base (1-0 B).",
+            "Maggie Feng stole second.",
+            "Layla Thiessen flied out to cf (3-2 SFBFFFBBFF).",
+            "Delaney Benevides struck out swinging (0-2 SFFS).",
+            "Ava Ladd lined out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Arianna Kumar singled to shortstop (1-1 KB).",
+            "Lauren Sundquist singled through the right side (1-2 KKB); Arianna Kumar advanced to second.",
+            "Holland Poe singled to shortstop (0-1 S); Lauren Sundquist advanced to second; Arianna Kumar advanced to third.",
+            "Julia Mattiace flied out to rf, sacrifice fly, 2 RBI (1-1 FB); Holland Poe advanced to second; Lauren Sundquist scored; Arianna Kumar scored.",
+            "Olivia Scarpaci fouled out to c (0-1 S).",
+            "Maggie Feng flied out to lf (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Layla Thiessen flied out to lf (1-0 B).",
+            "Delaney Benevides singled to center field (0-2 FF).",
+            "Ava Ladd flied out to cf (0-0).",
+            "Arianna Kumar lined out to rf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauren Sundquist walked (3-1 BBFBB).",
+            "Lauren Sundquist stole second.",
+            "Holland Poe lined out to cf (1-0 B).",
+            "Julia Mattiace flied out to cf (2-2 FBBK).",
+            "Olivia Scarpaci struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maggie Feng walked (3-2 BBKFBFFB).",
+            "Layla Thiessen lined out to cf (2-2 FBFBFF).",
+            "Maggie Feng stole second.",
+            "Delaney Benevides grounded out to p (1-0 B); Maggie Feng advanced to third.",
+            "Ava Ladd singled through the left side, RBI (0-2 FK); Maggie Feng scored.",
+            "Arianna Kumar grounded out to 3b (1-1 BF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 31
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/massachusetts-institute-of-technology/boxscore/19198",
+      "date": "4/11/2026",
+      "opponent": "Massachusetts Institute Of Technology",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen grounded out to p (2-1 BKB).",
+            "Delaney Benevides singled to third base, bunt (0-0).",
+            "Delaney Benevides stole second.",
+            "Ava Ladd homered to left center, 2 RBI (3-1 BBBK); Delaney Benevides scored.",
+            "Arianna Kumar struck out swinging (2-2 FFBBS).",
+            "Lauren Sundquist flied out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Holland Poe flied out to cf (0-0).",
+            "Julia Mattiace flied out to cf (0-0).",
+            "Olivia Scarpaci doubled to left center (2-2 BKFB).",
+            "Maggie Feng singled up the middle, RBI (2-1 BBF); Olivia Scarpaci scored.",
+            "Maggie Feng stole second.",
+            "Layla Thiessen lined out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Megan Dube to p for Caitriona Andre.",
+            "Delaney Benevides singled to shortstop (1-2 FFBF).",
+            "Ava Ladd grounded out to ss (0-0); Delaney Benevides advanced to second.",
+            "Arianna Kumar lined out to cf (0-0); Delaney Benevides advanced to third.",
+            "Lauren Sundquist walked (3-1 BBKBB).",
+            "Holland Poe grounded out to 1b unassisted (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Julia Mattiace struck out looking (3-2 BBKFFBK).",
+            "Olivia Scarpaci flied out to cf (2-2 KFBB).",
+            "Maggie Feng struck out looking (2-2 BBFFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Amanda Huang pinch hit for Layla Thiessen.",
+            "Amanda Huang singled to pitcher (0-2 KFFF).",
+            "Delaney Benevides singled to pitcher, bunt (0-0); Amanda Huang advanced to second.",
+            "Ava Ladd flied out to lf (0-0); Amanda Huang advanced to third.",
+            "Delaney Benevides stole second.",
+            "Arianna Kumar grounded out to 3b (2-2 BBFK).",
+            "Lauren Sundquist lined out to rf (2-2 KBBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Pearl Mitchell pinch hit for Holland Poe.",
+            "Pearl Mitchell struck out swinging (0-2 SSS).",
+            "Julia Mattiace flied out to rf (0-0).",
+            "Olivia Scarpaci doubled to right center (1-0 B).",
+            "Maggie Feng reached first on a fielding error by ss (2-2 BBSK); Olivia Scarpaci advanced to third.",
+            "Maggie Feng stole second.",
+            "Layla Thiessen singled to center field, 2 RBI (3-1 BBKB); Maggie Feng scored, unearned; Olivia Scarpaci scored, unearned.",
+            "Layla Thiessen stole second.",
+            "Delaney Benevides popped up to 1b (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ava Ladd reached first on a fielding error by ss (2-0 BB).",
+            "Ava Ladd stole second.",
+            "Arianna Kumar walked (3-1 SBBBB).",
+            "Lauren Sundquist reached first on a fielding error by cf (0-0); Arianna Kumar advanced to second; Ava Ladd scored, unearned.",
+            "Holland Poe grounded out to 2b (0-1 K); Lauren Sundquist advanced to second; Arianna Kumar advanced to third.",
+            "Julia Mattiace grounded out to 3b (1-2 KBK).",
+            "Olivia Scarpaci fouled out to 3b (0-2 SF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 7,
+          "h": 9,
+          "r": 6,
+          "er": 3,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 35
         }
       ],
       "year": 2026

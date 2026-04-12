@@ -1,60 +1,60 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-11T02:04:07.747Z",
+  "scrapedAt": "2026-04-12T02:26:02.559Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 9,
+      "w": 10,
       "l": 4,
-      "era": 2.16,
-      "app": 13,
-      "gs": 4,
-      "cg": 3,
+      "era": 2.07,
+      "app": 14,
+      "gs": 5,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 81,
-      "h": 79,
-      "r": 31,
-      "er": 25,
+      "ip": 88,
+      "h": 87,
+      "r": 32,
+      "er": 26,
       "bb": 24,
-      "so": 66,
+      "so": 75,
       "hr": 2,
-      "whip": 1.27,
-      "doubles": 16,
+      "whip": 1.26,
+      "doubles": 17,
       "triples": 1,
-      "ab": 309,
-      "bAvg": 0.256,
+      "ab": 337,
+      "bAvg": 0.258,
       "wp": 3,
       "hbp": 1,
       "bk": 0,
       "sfa": 2,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "Rimshnick, Julia",
       "w": 5,
-      "l": 3,
-      "era": 5.58,
-      "app": 18,
-      "gs": 17,
-      "cg": 8,
+      "l": 4,
+      "era": 5.5,
+      "app": 19,
+      "gs": 18,
+      "cg": 9,
       "sho": 0,
       "sv": 1,
-      "ip": 57.2,
-      "h": 90,
-      "r": 59,
-      "er": 46,
-      "bb": 16,
-      "so": 30,
+      "ip": 63.2,
+      "h": 97,
+      "r": 63,
+      "er": 50,
+      "bb": 17,
+      "so": 33,
       "hr": 1,
-      "whip": 1.84,
-      "doubles": 12,
+      "whip": 1.79,
+      "doubles": 13,
       "triples": 8,
-      "ab": 264,
-      "bAvg": 0.341,
-      "wp": 4,
+      "ab": 290,
+      "bAvg": 0.334,
+      "wp": 5,
       "hbp": 2,
       "bk": 0,
       "sfa": 4,
@@ -2189,6 +2189,185 @@
           "hbp": 0,
           "ab": 37,
           "bf": 40
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/14837",
+      "date": "4/11/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Taylor Barry flied out to rf (0-0).",
+            "Amber Arcand struck out swinging (0-2 KFS).",
+            "Ella Molinari singled to left field (1-1 FB).",
+            "Peyton Blankenheim-Brown doubled to center field, RBI (2-2 FFBB); Ella Molinari scored.",
+            "Emma Boucher struck out swinging (2-2 BBSFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mady Bryan struck out swinging (2-2 BBFKS).",
+            "Riley Dolan singled down the lf line (0-0).",
+            "Gabby Reinbold struck out swinging (0-2 SFS).",
+            "Julia Miller grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Barry struck out looking (2-2 BBFFK).",
+            "Amber Arcand singled to right field (2-1 KBB).",
+            "Ella Molinari struck out looking (2-2 BFKBK).",
+            "Peyton Blankenheim-Brown flied out to cf (1-2 BKFFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Boucher singled to left field (0-1 K).",
+            "Mady Bryan flied out to rf (3-2 FBFBBF).",
+            "Riley Dolan flied out to rf (2-0 BB).",
+            "Gabby Reinbold struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Julia Miller grounded out to ss (0-1 F).",
+            "Taylor Barry struck out looking (0-2 FKK).",
+            "Amber Arcand grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Molinari singled up the middle (0-0).",
+            "Peyton Blankenheim-Brown reached on a fielder's choice (1-0 B); Ella Molinari out at second ss to 2b.",
+            "Lauren Kelley pinch ran for Peyton Blankenheim-Brown.",
+            "Emma Boucher singled to center field (0-0); Lauren Kelley advanced to second.",
+            "Mady Bryan struck out swinging (2-2 BKFBFS).",
+            "Riley Dolan grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Madi Miller pinch hit for Gabby Reinbold.",
+            "Madi Miller singled to center field (0-0).",
+            "Gabby Reinbold pinch ran for Madi Miller.",
+            "Julia Miller grounded out to p, SAC, bunt (0-0); Gabby Reinbold advanced to second.",
+            "Taylor Barry flied out to cf (0-0).",
+            "Amber Arcand flied out to rf (1-2 KBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 8,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 9,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/14838",
+      "date": "4/11/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand flied out to cf (0-0).",
+            "Taylor Barry singled to third base (0-0).",
+            "Ella Molinari singled down the lf line, RBI (0-0); Taylor Barry scored.",
+            "Ella Molinari stole second.",
+            "Ella Molinari advanced to third on a wild pitch.",
+            "Peyton Blankenheim-Brown grounded out to 2b, RBI (0-0); Ella Molinari scored.",
+            "Emma Boucher singled up the middle (0-0).",
+            "Madi Miller singled, RBI (0-0); Emma Boucher scored on the throw.",
+            "Gabby Reinbold flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Dolan struck out looking (0-0).",
+            "Julia Miller walked (0-0).",
+            "Amber Arcand reached on a fielder's choice (0-0); Julia Miller out at second 3b to ss.",
+            "Taylor Barry reached on a fielder's choice (0-0); Amber Arcand advanced to second.",
+            "Ella Molinari doubled, RBI (0-0); Taylor Barry advanced to third; Amber Arcand scored.",
+            "Peyton Blankenheim-Brown fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Boucher popped up to 2b (0-0).",
+            "Madi Miller struck out looking (0-0).",
+            "Gabby Reinbold flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Dolan fouled out to c (0-0).",
+            "Julia Miller lined out to 3b (0-0).",
+            "Amber Arcand grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Brynlee Eckles to lf for Emilia Santiago.",
+            "Taylor Barry grounded out to ss (0-0).",
+            "Ella Molinari struck out swinging (0-0).",
+            "Peyton Blankenheim-Brown grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Boucher flied out to lf (0-0).",
+            "Madi Miller grounded out to 1b unassisted (0-0).",
+            "Mady Bryan pinch hit for Gabby Reinbold.",
+            "Mady Bryan singled through the left side (0-0).",
+            "Riley Dolan singled down the rf line (0-0); Mady Bryan advanced to second.",
+            "Gabby Reinbold pinch ran for Mady Bryan.",
+            "Julia Miller lined out to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 6,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
         }
       ],
       "year": 2026

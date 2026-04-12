@@ -1,31 +1,31 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-11T02:04:00.932Z",
+  "scrapedAt": "2026-04-12T02:25:56.700Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 6,
+      "w": 7,
       "l": 4,
-      "era": 1.69,
-      "app": 10,
-      "gs": 10,
-      "cg": 10,
+      "era": 1.62,
+      "app": 11,
+      "gs": 11,
+      "cg": 11,
       "sho": 3,
       "sv": 0,
-      "ip": 66.1,
-      "h": 56,
-      "r": 21,
-      "er": 16,
+      "ip": 73.1,
+      "h": 68,
+      "r": 24,
+      "er": 17,
       "bb": 5,
-      "so": 45,
+      "so": 47,
       "hr": 3,
-      "whip": 0.92,
-      "doubles": 11,
+      "whip": 1,
+      "doubles": 13,
       "triples": 2,
-      "ab": 246,
-      "bAvg": 0.228,
+      "ab": 279,
+      "bAvg": 0.244,
       "wp": 0,
       "hbp": 3,
       "bk": 0,
@@ -35,25 +35,25 @@
     {
       "name": "De La Rosa, Sofia",
       "w": 5,
-      "l": 5,
-      "era": 2.54,
-      "app": 10,
-      "gs": 10,
-      "cg": 8,
+      "l": 6,
+      "era": 2.59,
+      "app": 11,
+      "gs": 11,
+      "cg": 9,
       "sho": 3,
       "sv": 0,
-      "ip": 60.2,
-      "h": 65,
-      "r": 33,
-      "er": 22,
-      "bb": 12,
-      "so": 69,
+      "ip": 67.2,
+      "h": 76,
+      "r": 36,
+      "er": 25,
+      "bb": 13,
+      "so": 73,
       "hr": 3,
-      "whip": 1.27,
+      "whip": 1.32,
       "doubles": 12,
       "triples": 3,
-      "ab": 243,
-      "bAvg": 0.267,
+      "ab": 273,
+      "bAvg": 0.278,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
@@ -1902,6 +1902,193 @@
           "hbp": 1,
           "ab": 25,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/springfield-college/boxscore/10022",
+      "date": "4/11/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa lined out to ss (1-0 B).",
+            "Madison Testo singled up the middle (1-2 KBF).",
+            "Reilly Hunter flied out to rf (0-0); Madison Testo advanced to second.",
+            "Carissa Pecchia struck out swinging (3-2 KKFBBBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Katsetos grounded out to 2b (0-0).",
+            "Emilia Santiago struck out swinging (1-2 BKFS).",
+            "Rachel Powers struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Haley Ball singled to second base (2-0 BB).",
+            "Taylor Falotico popped up to p, bunt (1-0 B); Haley Ball out at second p to 1b.",
+            "Amelia DeRosa singled to left field (1-1 BF).",
+            "Madison Testo flied out to lf (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Reilly Hunter singled to left field (3-2 SBBFBFFFF).",
+            "Carissa Pecchia flied out to cf (3-2 SBBBF).",
+            "Kate Katsetos singled through the left side (2-1 BKB); Reilly Hunter advanced to second.",
+            "Emilia Santiago singled through the right side (0-1 K); Kate Katsetos advanced to second; Reilly Hunter out at third rf to 1b to c to 3b.",
+            "Rachel Powers popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Haley Ball singled to shortstop (1-0 B).",
+            "Taylor Falotico singled to pitcher (0-0); Haley Ball advanced to second.",
+            "Amelia DeRosa singled down the lf line, RBI, advanced to second on the throw (0-2 KF); Taylor Falotico advanced to third; Haley Ball scored.",
+            "Madison Testo singled to first base, RBI (0-1 F); Amelia DeRosa advanced to third; Taylor Falotico scored.",
+            "Reilly Hunter fouled out to 1b (1-0 B).",
+            "Carissa Pecchia grounded out to 2b, RBI (0-0); Madison Testo advanced to second on a fielder's choice, advanced to third; Amelia DeRosa scored.",
+            "Kate Katsetos flied out to lf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emilia Santiago popped up to 2b (0-1 K).",
+            "Rachel Powers grounded out to p (2-2 BKBFF).",
+            "Haley Ball singled down the lf line (2-1 BBK).",
+            "Taylor Falotico walked (3-2 KBFBBB); Haley Ball advanced to second.",
+            "Amelia DeRosa reached on a fielder's choice (0-0); Taylor Falotico advanced to second; Haley Ball out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Peyton Blankenheim-Brown to 1b.",
+            "Madison Testo grounded out to ss (2-2 KKBB).",
+            "Reilly Hunter struck out swinging (1-2 KSBFS).",
+            "Carissa Pecchia grounded out to 2b (2-2 SBBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 7,
+          "h": 11,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 31
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/springfield-college/boxscore/10023",
+      "date": "4/11/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa singled to right center (3-2 BSBSB).",
+            "Madison Testo singled down the lf line (1-2 FBF); Amelia DeRosa advanced to second.",
+            "Reilly Hunter reached on a fielder's choice (1-0 B); Madison Testo advanced to second; Amelia DeRosa out at third ss to 3b.",
+            "Carissa Pecchia reached on a fielder's choice to shortstop (1-0 B); Reilly Hunter advanced to second; Madison Testo out at third ss to 3b.",
+            "Kate Katsetos singled to center field, RBI (2-1 BBK); Carissa Pecchia advanced to third; Reilly Hunter scored.",
+            "Rachel Powers flied out to rf (1-2 BKFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Brynlee Eckles singled up the middle (0-0).",
+            "Haley Ball grounded out to 3b (0-0); Brynlee Eckles advanced to second.",
+            "Taylor Falotico doubled down the lf line (0-0); Brynlee Eckles advanced to third.",
+            "Amelia DeRosa flied out to cf (0-0).",
+            "Madison Testo struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Reilly Hunter singled to center field (0-0).",
+            "Carissa Pecchia grounded into double play ss to 2b to 1b (0-0); Reilly Hunter out on the play.",
+            "Kate Katsetos lined out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Rachel Powers flied out to cf (0-0).",
+            "Brynlee Eckles popped up to 2b (0-0).",
+            "Haley Ball flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Falotico flied out to lf (0-0).",
+            "Amelia DeRosa reached first on a throwing error by p (0-0).",
+            "Madison Testo doubled to left center (0-0); Amelia DeRosa advanced to third.",
+            "Reilly Hunter singled to third base (0-0); Madison Testo did not advance; Amelia DeRosa did not advance.",
+            "Carissa Pecchia reached on a fielder's choice to third base (0-0); Reilly Hunter advanced to second; Madison Testo advanced to third; Amelia DeRosa out at home 3b to c.",
+            "Kate Katsetos singled to center field, 2 RBI (0-0); Carissa Pecchia advanced to second; Reilly Hunter scored, unearned; Madison Testo scored, unearned.",
+            "Rachel Powers singled to third base (0-0); Kate Katsetos advanced to second; Carissa Pecchia advanced to third.",
+            "Emilia Santiago pinch hit for Brynlee Eckles.",
+            "Emilia Santiago popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haley Ball struck out swinging (0-0).",
+            "Taylor Falotico singled to shortstop (0-0).",
+            "Amelia DeRosa singled up the middle (0-0); Taylor Falotico advanced to second.",
+            "Madison Testo fouled out to 3b (0-0).",
+            "Reilly Hunter flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Gabby Reinbold to cf.",
+            "Carissa Pecchia flied out to cf (0-0).",
+            "Kate Katsetos flied out to lf (0-0).",
+            "Rachel Powers grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 7,
+          "h": 12,
+          "r": 3,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 33
         }
       ],
       "year": 2026

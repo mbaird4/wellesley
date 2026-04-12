@@ -1,59 +1,31 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-11T02:04:31.729Z",
+  "scrapedAt": "2026-04-12T02:26:28.983Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Behel, Emma",
-      "w": 2,
-      "l": 0,
-      "era": 1.33,
-      "app": 7,
-      "gs": 3,
-      "cg": 0,
-      "sho": 0,
-      "sv": 0,
-      "ip": 21,
-      "h": 20,
-      "r": 6,
-      "er": 4,
-      "bb": 5,
-      "so": 7,
-      "hr": 1,
-      "whip": 1.19,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 82,
-      "bAvg": 0.244,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 2
-    },
-    {
       "name": "Walker, Dana",
       "w": 8,
-      "l": 5,
-      "era": 1.34,
-      "app": 16,
-      "gs": 11,
-      "cg": 8,
+      "l": 6,
+      "era": 1.42,
+      "app": 17,
+      "gs": 12,
+      "cg": 9,
       "sho": 2,
       "sv": 1,
-      "ip": 73,
-      "h": 62,
-      "r": 34,
-      "er": 14,
-      "bb": 19,
-      "so": 66,
+      "ip": 79,
+      "h": 68,
+      "r": 38,
+      "er": 16,
+      "bb": 20,
+      "so": 69,
       "hr": 0,
       "whip": 1.11,
-      "doubles": 8,
+      "doubles": 9,
       "triples": 0,
-      "ab": 292,
-      "bAvg": 0.212,
+      "ab": 317,
+      "bAvg": 0.215,
       "wp": 3,
       "hbp": 0,
       "bk": 0,
@@ -87,6 +59,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 1
+    },
+    {
+      "name": "Behel, Emma",
+      "w": 2,
+      "l": 1,
+      "era": 3.37,
+      "app": 8,
+      "gs": 4,
+      "cg": 1,
+      "sho": 0,
+      "sv": 0,
+      "ip": 27,
+      "h": 34,
+      "r": 16,
+      "er": 13,
+      "bb": 7,
+      "so": 8,
+      "hr": 1,
+      "whip": 1.52,
+      "doubles": 7,
+      "triples": 0,
+      "ab": 113,
+      "bAvg": 0.301,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     },
     {
       "name": "Reilly, Hayden",
@@ -2070,6 +2070,194 @@
           "hbp": 0,
           "ab": 32,
           "bf": 36
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/-22-wpi/boxscore/9356",
+      "date": "4/11/2026",
+      "opponent": " 22 Wpi",
+      "pitchers": [
+        "Behel, Emma"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour singled to right field (2-1 KBB).",
+            "Virginia McKinney grounded out to 3b, SAC, bunt (1-0 B); Lucy Latour advanced to second.",
+            "Sandy Fairbairn singled up the middle, RBI (0-0); Lucy Latour scored.",
+            "Riley O'Brien singled to left center (0-0); Sandy Fairbairn advanced to second.",
+            "Emma Nagy singled to left center, RBI (1-2 KKB); Riley O'Brien advanced to second; Sandy Fairbairn scored.",
+            "Stella Kozak singled to third base, bunt (1-1 FB); Emma Nagy advanced to second; Riley O'Brien advanced to third.",
+            "Ariana Kreuzer infield fly to 2b (1-1 BF).",
+            "Ali Chalovich pinch hit for Elizabeth Jordan.",
+            "Ali Chalovich walked, RBI (3-1 BBBKB); Stella Kozak advanced to second; Emma Nagy advanced to third; Riley O'Brien scored.",
+            "Meg Sherwood singled up the middle, 2 RBI (0-1 K); Ali Chalovich advanced to second; Stella Kozak scored; Emma Nagy scored.",
+            "Lucy Latour grounded out to 2b (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Behel to p for Sage Svalestad.",
+            "Virginia McKinney grounded out to p, bunt (1-1 KB).",
+            "Sandy Fairbairn grounded out to 3b (1-0 B).",
+            "Riley O'Brien popped up to lf (2-2 KBKB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nagy flied out to lf (2-0 BB).",
+            "Stella Kozak singled to left center (0-0).",
+            "Ariana Kreuzer doubled, advanced to third, RBI (0-0); Stella Kozak scored.",
+            "Ali Chalovich grounded out to p (3-2 BBBKK).",
+            "Meg Sherwood singled up the middle, RBI (0-0); Ariana Kreuzer scored.",
+            "Meg Sherwood stole second.",
+            "Lucy Latour flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Virginia McKinney flied out to rf (1-0 B).",
+            "Sandy Fairbairn popped up to cf (2-0 BB).",
+            "Riley O'Brien flied out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoey Lynn to 1b for Ella Stolarzyk.",
+            "Madeline Kibler to c for Caitlynn Gibson.",
+            "Emma Nagy grounded out to 3b (0-1 K).",
+            "Stella Kozak singled to right field (1-0 B).",
+            "Stella Kozak stole second.",
+            "Ariana Kreuzer walked (3-1 BFBBB).",
+            "Elizabeth Jordan pinch hit for Ali Chalovich.",
+            "Ariana Kreuzer stole second; Stella Kozak stole third.",
+            "Elizabeth Jordan lined out to 2b (2-1 BBF).",
+            "Meg Sherwood grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lucy Latour doubled to left center (1-0 B).",
+            "Lucy Latour stole third.",
+            "Virginia McKinney struck out swinging (3-2 FBBKBS).",
+            "Sandy Fairbairn doubled to right field, RBI (1-0 B); Lucy Latour scored.",
+            "Sandy Fairbairn advanced to third on a passed ball.",
+            "Riley O'Brien doubled to left field, RBI (2-2 BFFB); Sandy Fairbairn scored.",
+            "Mia Francisco pinch ran for Riley O'Brien.",
+            "Emma Nagy flied out to lf (0-0).",
+            "Stella Kozak doubled to center field, RBI (0-0); Mia Francisco scored.",
+            "Stella Kozak advanced to third on a passed ball.",
+            "Ariana Kreuzer popped up to 2b (3-0 BBB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 6,
+          "h": 14,
+          "r": 10,
+          "er": 10,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 31,
+          "bf": 34
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/-22-wpi/boxscore/9357",
+      "date": "4/11/2026",
+      "opponent": " 22 Wpi",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour grounded out to 2b (1-0 B).",
+            "Virginia McKinney singled down the rf line (2-1 BBK).",
+            "Virginia McKinney stole second, advanced to third on a throwing error by c.",
+            "Sandy Fairbairn struck out swinging (2-2 BBSFS).",
+            "Riley O'Brien struck out swinging (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Nagy grounded out to 2b (2-2 FBBF).",
+            "Stella Kozak grounded out to 3b (2-2 KKBFBF).",
+            "Ali Chalovich flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elizabeth Jordan grounded out to ss (1-1 BK).",
+            "Meg Sherwood grounded out to 2b (1-1 BS).",
+            "Lucy Latour grounded out to 2b (1-2 FBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Virginia McKinney singled to third base (1-0 B).",
+            "Sandy Fairbairn reached first on a throwing error by 3b, advanced to second (0-0); Virginia McKinney advanced to third.",
+            "Riley O'Brien grounded out to 3b (1-1 BF).",
+            "Emma Nagy singled up the middle, 2 RBI (0-1 F); Sandy Fairbairn scored, unearned; Virginia McKinney scored.",
+            "Stella Kozak reached on a fielder's choice (0-2 FSF); Emma Nagy out at second ss to 2b.",
+            "Stella Kozak stole second.",
+            "Ali Chalovich singled to center field, RBI (1-2 BKKF); Stella Kozak scored, unearned.",
+            "Elizabeth Jordan grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Meg Sherwood walked (3-2 FBBFBB).",
+            "Lucy Latour reached on a fielder's choice (2-2 BKSB); Meg Sherwood out at second 2b to ss.",
+            "Lucy Latour stole second.",
+            "Virginia McKinney struck out swinging (1-2 FKBS).",
+            "Sandy Fairbairn grounded out to 2b (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien singled through the left side (1-0 B).",
+            "Mia Francisco pinch ran for Riley O'Brien.",
+            "Emma Nagy flied out to cf (1-2 KBK).",
+            "Stella Kozak grounded out to 3b (2-2 KBKFFBF); Mia Francisco advanced to second on a fielder's choice.",
+            "Ali Chalovich doubled to right field, RBI (0-1 K); Mia Francisco scored.",
+            "Colleen Mayer pinch ran for Ali Chalovich.",
+            "Samantha Jeng pinch hit for Elizabeth Jordan.",
+            "Samantha Jeng grounded out to 1b unassisted (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 6,
+          "r": 4,
+          "er": 2,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 26
         }
       ],
       "year": 2026

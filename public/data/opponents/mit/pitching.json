@@ -1,36 +1,36 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-11T02:04:23.301Z",
+  "scrapedAt": "2026-04-12T02:26:17.886Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 6,
+      "w": 7,
       "l": 1,
-      "era": 2.38,
-      "app": 10,
-      "gs": 9,
-      "cg": 4,
-      "sho": 0,
+      "era": 2.09,
+      "app": 11,
+      "gs": 10,
+      "cg": 5,
+      "sho": 1,
       "sv": 0,
-      "ip": 50,
-      "h": 51,
+      "ip": 57,
+      "h": 55,
       "r": 23,
       "er": 17,
       "bb": 21,
-      "so": 11,
+      "so": 16,
       "hr": 0,
-      "whip": 1.44,
-      "doubles": 5,
+      "whip": 1.33,
+      "doubles": 7,
       "triples": 1,
-      "ab": 195,
-      "bAvg": 0.262,
-      "wp": 2,
+      "ab": 218,
+      "bAvg": 0.252,
+      "wp": 3,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
-      "sha": 5
+      "sha": 6
     },
     {
       "name": "Blackett, Sarah",
@@ -62,26 +62,26 @@
     },
     {
       "name": "Watson, Emily",
-      "w": 7,
+      "w": 8,
       "l": 0,
-      "era": 4.23,
-      "app": 14,
-      "gs": 7,
-      "cg": 3,
+      "era": 3.81,
+      "app": 15,
+      "gs": 8,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 46.1,
-      "h": 56,
-      "r": 30,
-      "er": 28,
-      "bb": 22,
-      "so": 12,
+      "ip": 53.1,
+      "h": 60,
+      "r": 31,
+      "er": 29,
+      "bb": 23,
+      "so": 14,
       "hr": 1,
-      "whip": 1.68,
-      "doubles": 17,
+      "whip": 1.56,
+      "doubles": 18,
       "triples": 1,
-      "ab": 183,
-      "bAvg": 0.306,
+      "ab": 208,
+      "bAvg": 0.288,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
@@ -2565,6 +2565,185 @@
           "hbp": 0,
           "ab": 9,
           "bf": 12
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/clark-university/boxscore/12770",
+      "date": "4/11/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley grounded out to 3b (1-2 BFF).",
+            "Avery Dillon doubled to left center (0-0).",
+            "Merry Griffin lined out to cf (3-2 SFBFBFFFBF).",
+            "Megan Dube grounded out to ss (0-2 KFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Della Piana popped up to ss (1-2 FFFBF).",
+            "Felicia Salvati flied out to lf (1-2 BKF).",
+            "Abigail Venis grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Karilyn Perez-Guerrero flied out to cf (0-0).",
+            "Emelie Spence struck out swinging (1-2 KSBS).",
+            "Charlise Quigley lined out to rf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Dillon popped up to 3b (2-2 BBFK).",
+            "Merry Griffin flied out to cf (1-0 B).",
+            "Megan Dube lined out to lf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avery Della Piana grounded out to ss (0-0).",
+            "Felicia Salvati lined out to lf (2-2 BKFB).",
+            "Abigail Venis popped up to 2b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Karilyn Perez-Guerrero lined out to ss (2-2 FBFFB).",
+            "Emelie Spence singled to second base, bunt (0-0).",
+            "Charlise Quigley flied out to lf (0-2 KF).",
+            "Avery Dillon singled through the left side (0-1 K); Emelie Spence advanced to second.",
+            "Emelie Spence stole third.",
+            "Merry Griffin flied out to rf (2-2 BKBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Megan Dube singled to center field (2-2 KBFB).",
+            "Jennifer Albano to dp for Megan Dube.",
+            "Avery Della Piana walked (3-1 BBBFB); Jennifer Albano advanced to second.",
+            "Sydney Lyons to c for Avery Della Piana.",
+            "Felicia Salvati fouled out to 3b (1-1 BK).",
+            "Erin Slavin to ss for Abigail Venis.",
+            "Erin Slavin flied out to rf (2-2 KSBB); Sydney Lyons advanced to second; Jennifer Albano scored.",
+            "Karilyn Perez-Guerrero struck out swinging (1-2 KBFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 7,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/clark-university/boxscore/12771",
+      "date": "4/11/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Charlise Quigley struck out swinging (2-2 SSFBBS).",
+            "Avery Dillon grounded out to p (0-0).",
+            "Merry Griffin grounded out to p (2-2 KBBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Dube doubled to left center (1-1 BF).",
+            "Caitriona Andre pinch ran for Megan Dube.",
+            "Avery Della Piana struck out looking (0-2 KFK).",
+            "Erin Slavin singled to right field (1-0 B); Caitriona Andre advanced to third.",
+            "Felicia Salvati grounded out to 3b (3-2 BKBBFFF); Erin Slavin advanced to second; Caitriona Andre out at home 3b to 1b to c."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Karilyn Perez-Guerrero struck out swinging (1-2 BKSS).",
+            "Emelie Spence grounded out to 2b (1-2 KSB).",
+            "Charlise Quigley grounded out to ss (3-2 KBFFBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Dillon grounded out to 2b (0-1 K).",
+            "Merry Griffin grounded out to p (2-2 BKBK).",
+            "Megan Dube doubled down the lf line (2-0 BB).",
+            "Megan Dube stole third.",
+            "Avery Della Piana grounded out to 3b (3-2 BBBKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Layla Thiessen to lf for Amanda Huang.",
+            "Erin Slavin singled to right field (1-0 B).",
+            "Felicia Salvati out at first 3b to 2b, SAC, bunt (0-0); Erin Slavin advanced to second.",
+            "Erin Slavin advanced to third on a wild pitch.",
+            "Karilyn Perez-Guerrero struck out swinging (1-2 BKKS).",
+            "Emelie Spence grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Holland Poe to rf for Pearl Mitchell.",
+            "Charlise Quigley struck out swinging (2-2 BKBFFS).",
+            "Avery Dillon grounded out p to 2b to 1b (0-1 K).",
+            "Merry Griffin grounded out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Megan Dube grounded out to ss (2-2 KBFB).",
+            "Avery Della Piana grounded out to p (3-1 BBBK).",
+            "Erin Slavin popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 7,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 24
         }
       ],
       "year": 2026
