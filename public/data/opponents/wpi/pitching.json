@@ -1,31 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-14T02:24:55.483Z",
+  "scrapedAt": "2026-04-15T02:13:57.646Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 13,
+      "w": 15,
       "l": 0,
-      "era": 1.73,
-      "app": 14,
+      "era": 1.64,
+      "app": 16,
       "gs": 9,
       "cg": 6,
       "sho": 2,
       "sv": 0,
-      "ip": 72.2,
-      "h": 78,
+      "ip": 77,
+      "h": 82,
       "r": 22,
       "er": 18,
-      "bb": 13,
-      "so": 48,
+      "bb": 14,
+      "so": 51,
       "hr": 0,
       "whip": 1.25,
-      "doubles": 9,
+      "doubles": 10,
       "triples": 1,
-      "ab": 285,
-      "bAvg": 0.274,
+      "ab": 300,
+      "bAvg": 0.273,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -36,54 +36,54 @@
       "name": "Boldebuck, Naomi",
       "w": 8,
       "l": 1,
-      "era": 1.9,
-      "app": 13,
-      "gs": 12,
+      "era": 2.07,
+      "app": 14,
+      "gs": 13,
       "cg": 9,
       "sho": 3,
       "sv": 0,
-      "ip": 66.1,
-      "h": 66,
-      "r": 24,
-      "er": 18,
-      "bb": 20,
+      "ip": 67.2,
+      "h": 70,
+      "r": 27,
+      "er": 20,
+      "bb": 21,
       "so": 41,
       "hr": 1,
-      "whip": 1.3,
-      "doubles": 6,
+      "whip": 1.34,
+      "doubles": 7,
       "triples": 1,
-      "ab": 255,
-      "bAvg": 0.259,
+      "ab": 262,
+      "bAvg": 0.267,
       "wp": 4,
-      "hbp": 4,
+      "hbp": 5,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 6
     },
     {
       "name": "Barr, Kaitlyn",
       "w": 2,
       "l": 0,
-      "era": 3.73,
-      "app": 5,
-      "gs": 3,
+      "era": 3.94,
+      "app": 6,
+      "gs": 4,
       "cg": 1,
       "sho": 0,
       "sv": 1,
-      "ip": 15,
-      "h": 20,
-      "r": 14,
-      "er": 8,
+      "ip": 21.1,
+      "h": 29,
+      "r": 20,
+      "er": 12,
       "bb": 9,
-      "so": 7,
-      "hr": 0,
-      "whip": 1.93,
-      "doubles": 3,
+      "so": 8,
+      "hr": 1,
+      "whip": 1.78,
+      "doubles": 4,
       "triples": 0,
-      "ab": 68,
-      "bAvg": 0.294,
-      "wp": 3,
-      "hbp": 3,
+      "ab": 96,
+      "bAvg": 0.302,
+      "wp": 4,
+      "hbp": 4,
       "bk": 0,
       "sfa": 1,
       "sha": 1
@@ -3052,6 +3052,212 @@
           "hbp": 1,
           "ab": 26,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/hartford/boxscore/16630",
+      "date": "4/14/2026",
+      "opponent": "Hartford",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Zobel to p.",
+            "Alina Weaver to dp.",
+            "Alina Weaver hit by pitch (1-0 H).",
+            "Katrina Baran singled to shortstop (2-1 BKB); Alina Weaver advanced to second.",
+            "Alyssa Edwards reached on a fielder's choice, advanced to third on the error (2-2 BSSFB); Katrina Baran advanced to second, scored on a throwing error by 3b; Alina Weaver out at third 3b unassisted.",
+            "Adelie Beebe flied out to rf, sacrifice fly, RBI (3-1 KBBB); Alyssa Edwards scored, unearned.",
+            "Gia Miccio doubled to left field, RBI (1-2 BFFF).",
+            "Gia Miccio advanced to third on a passed ball.",
+            "Anita Farkash popped up to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lucy Lembo flied out to rf (3-1 BFBB).",
+            "Ella Zobel walked (3-2 BFBBFB).",
+            "Eryn Coyle singled to center field (1-0 B); Ella Zobel advanced to second.",
+            "Alina Weaver singled to left center, advanced to second on the throw, RBI (3-2 BSBFFB); Eryn Coyle advanced to third; Ella Zobel scored.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Katrina Baran fouled out to 3b (3-2 BBBKFF).",
+            "Alyssa Edwards walked (3-2 SBBBSB).",
+            "Adelie Beebe lined out to 3b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gia Miccio flied out to rf (1-2 FBF).",
+            "Anita Farkash doubled to right center (1-2 FBS).",
+            "Lucy Lembo popped up to 1b (3-2 BBBSK).",
+            "Ella Zobel grounded out to 3b (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Eryn Coyle singled to shortstop, advanced to second on a throwing error by ss (0-0).",
+            "Alina Weaver grounded out to ss (0-0); Eryn Coyle did not advance.",
+            "Katrina Baran singled to second base (0-1 F); Eryn Coyle advanced to third.",
+            "Katrina Baran stole second.",
+            "Alyssa Edwards struck out swinging (2-2 BKBFS).",
+            "Adelie Beebe popped up to 1b (2-2 BKFBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Virginia McKinney to dp.",
+            "Gia Miccio singled to center field (1-0 B).",
+            "Gia Miccio out at second c to 2b, caught stealing.",
+            "Priya Bedard struck out swinging (1-2 KBKFS).",
+            "Lucy Lembo popped up to 2b (1-2 KKB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 1.1,
+          "h": 4,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 7,
+          "bf": 10
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 3.2,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/hartford/boxscore/16631",
+      "date": "4/14/2026",
+      "opponent": "Hartford",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Alina Weaver singled to shortstop (3-1 BBKB).",
+            "Katrina Baran singled to right center (1-0 B); Alina Weaver advanced to second.",
+            "Gia Miccio reached on a fielder's choice (0-2 FF); Katrina Baran out at second ss to 2b; Alina Weaver advanced to third on a fielder's choice.",
+            "Adelie Beebe singled, bunt, RBI (0-1 K); Gia Miccio advanced to second; Alina Weaver scored.",
+            "Anita Farkash singled to right field, RBI (0-1 K); Adelie Beebe advanced to third; Gia Miccio scored.",
+            "Ariana Hernandez reached on a fielder's choice (3-2 KFBBBF); Anita Farkash advanced to second on a fielder's choice; Adelie Beebe out at home 3b to c.",
+            "Lauren Ackerman struck out swinging (3-2 BBBKFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Taylor Fitch reached first on a throwing error by p, bunt, advanced to second on the error (0-0).",
+            "Taylor Fitch advanced to third on a wild pitch.",
+            "Sydney Matz grounded out to 2b (2-1 BFB).",
+            "Alina Weaver hit by pitch (1-0 H).",
+            "Alina Weaver stole second; Taylor Fitch stole home, unearned.",
+            "Katrina Baran grounded out to 2b (1-1 BF); Alina Weaver advanced to third.",
+            "Gia Miccio doubled to left field, RBI (0-1 F); Alina Weaver scored, unearned.",
+            "Gia Miccio stole third.",
+            "Adelie Beebe grounded out to 3b (3-2 BFKBFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Anita Farkash homered, RBI (0-1 K).",
+            "Ariana Hernandez popped up to 2b (3-1 BKBB).",
+            "Lauren Ackerman popped up to ss (3-2 BBKFB).",
+            "Taylor Fitch grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sydney Matz grounded out to 2b (2-2 BBKFFFF).",
+            "Alina Weaver grounded out to c (1-1 BF).",
+            "Katrina Baran grounded out to 3b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gia Miccio fouled out to c (3-2 BBBKF).",
+            "Adelie Beebe lined out to 3b (1-1 KB).",
+            "Anita Farkash lined out to 2b (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ariana Hernandez popped up to 1b (3-2 SBFBFBF).",
+            "Holly Myers pinch hit for Lauren Ackerman.",
+            "Holly Myers fouled out to rf (1-2 BKF).",
+            "Gillian Ulrich grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Virginia McKinney to cf for Ariana Kreuzer.",
+            "Sydney Matz singled to right field (0-0).",
+            "Alina Weaver singled to shortstop (0-1 F); Sydney Matz advanced to second.",
+            "Alina Weaver advanced to second; Sydney Matz out at second c to 2b to ss, picked off.",
+            "Katrina Baran singled to right center, advanced to second on the throw, RBI (2-0 BB); Alina Weaver advanced to third, scored on the throw.",
+            "Abby Merchant to p for Kaitlyn Barr.",
+            "Gia Miccio struck out swinging (1-2 KFBFS).",
+            "Katrina Baran out at second ss unassisted, runner left early."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 6.1,
+          "h": 9,
+          "r": 6,
+          "er": 4,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 28,
+          "bf": 29
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 0.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
         }
       ],
       "year": 2026

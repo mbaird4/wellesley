@@ -1,63 +1,63 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-14T02:25:09.625Z",
+  "scrapedAt": "2026-04-15T02:14:13.805Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 9,
-      "era": 5.62,
-      "app": 16,
-      "gs": 11,
-      "cg": 10,
+      "l": 10,
+      "era": 5.65,
+      "app": 17,
+      "gs": 12,
+      "cg": 11,
       "sho": 0,
       "sv": 0,
-      "ip": 81,
-      "h": 132,
-      "r": 76,
-      "er": 65,
-      "bb": 15,
-      "so": 37,
+      "ip": 88,
+      "h": 142,
+      "r": 83,
+      "er": 71,
+      "bb": 18,
+      "so": 42,
       "hr": 3,
-      "whip": 1.81,
-      "doubles": 31,
+      "whip": 1.82,
+      "doubles": 33,
       "triples": 3,
-      "ab": 364,
-      "bAvg": 0.363,
+      "ab": 393,
+      "bAvg": 0.361,
       "wp": 3,
-      "hbp": 3,
+      "hbp": 5,
       "bk": 0,
-      "sfa": 5,
+      "sfa": 6,
       "sha": 7
     },
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 11,
-      "era": 8.12,
-      "app": 12,
-      "gs": 12,
+      "l": 12,
+      "era": 8.26,
+      "app": 13,
+      "gs": 13,
       "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 50,
-      "h": 79,
-      "r": 76,
-      "er": 58,
-      "bb": 56,
+      "ip": 51.2,
+      "h": 80,
+      "r": 81,
+      "er": 61,
+      "bb": 64,
       "so": 41,
       "hr": 2,
-      "whip": 2.7,
+      "whip": 2.79,
       "doubles": 19,
       "triples": 5,
-      "ab": 215,
-      "bAvg": 0.367,
-      "wp": 15,
+      "ab": 221,
+      "bAvg": 0.362,
+      "wp": 16,
       "hbp": 3,
       "bk": 0,
-      "sfa": 5,
+      "sfa": 6,
       "sha": 13
     },
     {
@@ -92,24 +92,24 @@
       "name": "Geisser, Victoria",
       "w": 0,
       "l": 0,
-      "era": 99,
-      "app": 1,
+      "era": 10.5,
+      "app": 2,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 0,
-      "h": 1,
-      "r": 2,
-      "er": 2,
-      "bb": 3,
+      "ip": 3.1,
+      "h": 8,
+      "r": 7,
+      "er": 5,
+      "bb": 6,
       "so": 0,
       "hr": 0,
-      "whip": 0,
+      "whip": 4.2,
       "doubles": 0,
-      "triples": 0,
-      "ab": 1,
-      "bAvg": 1,
+      "triples": 1,
+      "ab": 17,
+      "bAvg": 0.471,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -2522,6 +2522,220 @@
           "hbp": 2,
           "ab": 29,
           "bf": 36
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/university-of-southern-maine/boxscore/12021",
+      "date": "4/14/2026",
+      "opponent": "University Of Southern Maine",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Aislin Davis walked (0-0).",
+            "Emily Wheeler grounded out to 1b unassisted (0-0); Aislin Davis advanced to second.",
+            "Olivia Levasseur reached first on an error by 2b (0-0); Aislin Davis advanced to third.",
+            "Olivia Levasseur stole second.",
+            "Mackenzie Renner flied out to lf, sacrifice fly, RBI (0-0); Aislin Davis scored, unearned.",
+            "Kristina Yebba walked (0-0).",
+            "Kristina Yebba advanced to second on a wild pitch; Olivia Levasseur advanced to third.",
+            "Ella Bezanson walked (0-0).",
+            "Taylor Takatsu walked, RBI (0-0); Ella Bezanson advanced to second; Kristina Yebba advanced to third; Olivia Levasseur scored, unearned.",
+            "Gwen Christie popped up to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Hannah Garcia walked (0-0).",
+            "Caitlyn Lemay pinch ran for Hannah Garcia.",
+            "Aislin Davis singled, bunt (0-0); Caitlyn Lemay advanced to second.",
+            "Emily Wheeler walked (0-0); Aislin Davis advanced to second; Caitlyn Lemay advanced to third.",
+            "Olivia Levasseur grounded out to 2b, RBI (0-0); Emily Wheeler advanced to second; Aislin Davis advanced to third; Caitlyn Lemay scored.",
+            "Mackenzie Renner popped up to p (0-0).",
+            "Kristina Yebba walked (0-0).",
+            "Ella Bezanson walked, RBI (0-0); Kristina Yebba advanced to second; Emily Wheeler advanced to third; Aislin Davis scored.",
+            "Victoria Geisser to p for Caroline Peterson.",
+            "Taylor Takatsu walked, RBI (0-0); Ella Bezanson advanced to second; Kristina Yebba advanced to third; Emily Wheeler scored.",
+            "Gwen Christie popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caitlyn Lemay singled to shortstop (0-0).",
+            "Aislin Davis singled to center field (0-0); Caitlyn Lemay advanced to third.",
+            "Aislin Davis advanced to third; Caitlyn Lemay scored on an error by ss.",
+            "Aislin Davis scored on an error by 3b.",
+            "Emily Wheeler singled to first base (0-0).",
+            "Olivia Levasseur flied out to cf (0-0).",
+            "Mackenzie Renner popped up to ss (0-0).",
+            "Kristina Yebba walked (0-0); Emily Wheeler advanced to second.",
+            "Ella Bezanson flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Takatsu singled through the right side (0-0).",
+            "Brianna Grenier pinch hit for Gwen Christie.",
+            "Alana Delisle pinch ran for Taylor Takatsu.",
+            "Brianna Grenier flied out to cf (0-0).",
+            "Hannah Garcia pinch hit for Caitlyn Lemay.",
+            "Hannah Garcia singled to left center (0-0); Alana Delisle advanced to second.",
+            "Aislin Davis singled to pitcher, advanced to second, advanced to third on a throwing error by p (0-0); Hannah Garcia scored, unearned; Alana Delisle scored, unearned.",
+            "Emily Wheeler popped up to ss (0-0).",
+            "Olivia Levasseur grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Skyla Oliveira to ss for Cami O'Rourke.",
+            "Brielle Foote pinch hit for Mackenzie Renner.",
+            "Brielle Foote walked (0-0).",
+            "Kristina Yebba grounded out to 3b (0-0); Brielle Foote advanced to second.",
+            "Ella Bezanson tripled to right field, RBI (0-0); Brielle Foote scored.",
+            "Ella Bezanson out at home rf to 2b to c.",
+            "Alana Delisle popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 1.2,
+          "h": 1,
+          "r": 5,
+          "er": 3,
+          "bb": 8,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 15
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 3.1,
+          "h": 7,
+          "r": 5,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/university-of-southern-maine/boxscore/12022",
+      "date": "4/14/2026",
+      "opponent": "University Of Southern Maine",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Aislin Davis grounded out to 3b (0-0).",
+            "Emily Wheeler grounded out to p (0-0).",
+            "Olivia Levasseur struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mackenzie Renner grounded out to 1b unassisted (0-0).",
+            "Kristina Yebba singled to second base (0-0).",
+            "Ella Bezanson grounded out to 2b (0-0); Kristina Yebba advanced to second.",
+            "Taylor Takatsu grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Hannah Garcia singled to shortstop (0-0).",
+            "Alana Delisle pinch ran for Hannah Garcia.",
+            "Gwen Christie struck out swinging (0-0).",
+            "Aislin Davis singled to pitcher (0-0); Alana Delisle advanced to second.",
+            "Emily Wheeler singled to right field (0-0); Aislin Davis advanced to second; Alana Delisle advanced to third.",
+            "Olivia Levasseur doubled to left center, 3 RBI (0-0); Emily Wheeler scored; Aislin Davis scored; Alana Delisle scored.",
+            "Mackenzie Renner popped up to 2b (0-0).",
+            "Kristina Yebba singled to shortstop, advanced to second (0-0); Olivia Levasseur advanced to third, scored on a throwing error by ss, unearned.",
+            "Ella Bezanson grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Takatsu walked (0-0).",
+            "Alana Delisle singled to right field (0-0); Taylor Takatsu advanced to third.",
+            "Brianna Grenier pinch hit for Gwen Christie.",
+            "Alana Delisle out at second c to 2b, caught stealing; Taylor Takatsu scored.",
+            "Brianna Grenier grounded out to 3b (0-0).",
+            "Aislin Davis grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Plourde to 1b.",
+            "Madeleine Oswald to dp.",
+            "Emily Wheeler grounded out to 1b unassisted (0-0).",
+            "Olivia Levasseur flied out to lf (0-0).",
+            "Mackenzie Renner walked (0-0).",
+            "Kristina Yebba struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Bezanson singled to second base (0-0).",
+            "Taylor Takatsu reached on a fielder's choice (0-0); Ella Bezanson out at second ss to 2b.",
+            "Hannah Garcia to dp for Alana Delisle.",
+            "Ava Gerrish pinch hit for Brianna Grenier.",
+            "Hannah Garcia walked (0-0); Taylor Takatsu advanced to second.",
+            "Ava Gerrish struck out swinging (0-0).",
+            "Kendall Migliorini pinch hit for Aislin Davis.",
+            "Kendall Migliorini struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emily Wheeler singled up the middle (0-0).",
+            "Olivia Levasseur doubled to right center, RBI (0-0); Emily Wheeler scored.",
+            "Brielle Foote hit by pitch (0-0).",
+            "Kristina Yebba flied out to cf (0-0).",
+            "Adeline Khazadian pinch hit for Ella Bezanson.",
+            "Adeline Khazadian hit by pitch (0-0); Brielle Foote advanced to second; Olivia Levasseur advanced to third.",
+            "Caitlyn Lemay flied out to rf, sacrifice fly, RBI (0-0); Brielle Foote advanced to third; Olivia Levasseur scored.",
+            "Madison Brown pinch hit for Hannah Garcia.",
+            "Madison Brown flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 7,
+          "h": 10,
+          "r": 7,
+          "er": 6,
+          "bb": 3,
+          "so": 5,
+          "hbp": 2,
+          "ab": 29,
+          "bf": 35
         }
       ],
       "year": 2026

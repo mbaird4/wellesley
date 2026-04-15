@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-14T02:25:28.595Z",
+  "scrapedAt": "2026-04-15T02:14:38.874Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -36,24 +36,24 @@
       "name": "Sealey, Lexi",
       "w": 2,
       "l": 1,
-      "era": 3,
-      "app": 13,
+      "era": 2.78,
+      "app": 14,
       "gs": 2,
       "cg": 2,
       "sho": 1,
       "sv": 3,
-      "ip": 37.1,
-      "h": 54,
-      "r": 22,
+      "ip": 40.1,
+      "h": 57,
+      "r": 24,
       "er": 16,
-      "bb": 14,
-      "so": 12,
+      "bb": 15,
+      "so": 14,
       "hr": 0,
-      "whip": 1.82,
-      "doubles": 7,
+      "whip": 1.79,
+      "doubles": 8,
       "triples": 2,
-      "ab": 163,
-      "bAvg": 0.331,
+      "ab": 176,
+      "bAvg": 0.324,
       "wp": 5,
       "hbp": 4,
       "bk": 0,
@@ -91,26 +91,26 @@
     {
       "name": "Vlacich, Katie",
       "w": 2,
-      "l": 7,
-      "era": 5.93,
-      "app": 11,
-      "gs": 9,
+      "l": 8,
+      "era": 6.44,
+      "app": 12,
+      "gs": 10,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 46,
-      "h": 67,
-      "r": 47,
-      "er": 39,
+      "ip": 50,
+      "h": 77,
+      "r": 54,
+      "er": 46,
       "bb": 19,
       "so": 35,
-      "hr": 4,
-      "whip": 1.87,
-      "doubles": 13,
+      "hr": 6,
+      "whip": 1.92,
+      "doubles": 18,
       "triples": 2,
-      "ab": 207,
-      "bAvg": 0.324,
-      "wp": 12,
+      "ab": 229,
+      "bAvg": 0.336,
+      "wp": 13,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
@@ -2872,6 +2872,122 @@
           "hbp": 0,
           "ab": 31,
           "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-12-tufts/boxscore/16063",
+      "date": "4/14/2026",
+      "opponent": " 12 Tufts",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauryn Horita grounded out to 2b (2-2 KBSB).",
+            "Heaven Oliva grounded out to 3b (0-0).",
+            "Paige Murphy doubled to left center (0-1 K).",
+            "Kaitlyn Perucci doubled to left center, RBI (1-0 B); Paige Murphy scored.",
+            "Haley Leimbach doubled to left field, RBI (0-1 K); Kaitlyn Perucci scored.",
+            "Cat Kawabe doubled to left center, RBI (1-2 KBS); Haley Leimbach scored.",
+            "Mack Seibel flied out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella McHugh singled to shortstop (1-0 B).",
+            "Ella Malin reached on a fielder's choice (0-0); Ella McHugh out at second ss to 2b.",
+            "Lauryn Horita flied out to ss (2-1 BKB).",
+            "Heaven Oliva flied out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Paige Murphy flied out to cf to right center (3-2 FBBKB).",
+            "Kaitlyn Perucci grounded out to ss (0-0).",
+            "Haley Leimbach flied out to cf to right center (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cat Kawabe doubled (2-1 FBB).",
+            "Mack Seibel grounded out to 2b (0-1 K); Cat Kawabe advanced to third.",
+            "Ella McHugh singled, RBI (1-0 B); Cat Kawabe scored.",
+            "Ella McHugh stole second.",
+            "Ella Malin grounded out to 2b (2-1 KBB); Ella McHugh advanced to third.",
+            "Lauryn Horita flied out to cf (1-2 KKB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Heaven Oliva homered to left field, RBI (0-0).",
+            "Paige Murphy singled to left field (3-2 BFBBK).",
+            "Paige Murphy advanced to second on a wild pitch.",
+            "Kaitlyn Perucci homered to left center, 2 RBI (3-2 BKSBB); Paige Murphy scored.",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Haley Leimbach struck out looking (1-2 KKBK).",
+            "Cat Kawabe singled (0-0).",
+            "Cat Kawabe advanced to second on a passed ball.",
+            "Mack Seibel walked (3-1 BBBKB).",
+            "Taylor Hurst pinch ran for Mack Seibel.",
+            "Ella McHugh grounded out to p (0-0); Taylor Hurst advanced to second; Cat Kawabe advanced to third.",
+            "Ella Malin grounded out to 2b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauryn Horita reached first on an error by 2b (0-0).",
+            "Heaven Oliva struck out swinging (3-2 BBBKKS).",
+            "Paige Murphy grounded into double play ss to 1b (3-0 BBB); Lauryn Horita out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Belle Dicampello to c for Nicole Petrillo.",
+            "Kaitlyn Perucci singled, out at second lf to 2b (1-0 B).",
+            "Haley Leimbach doubled (1-1 BK).",
+            "Cat Kawabe reached first on an error by p (2-1 BKB).",
+            "Mack Seibel grounded out to 3b (1-0 B); Cat Kawabe advanced to second; Haley Leimbach advanced to third.",
+            "Ella McHugh reached first on an error by ss (1-0 B); Cat Kawabe scored, unearned; Haley Leimbach scored, unearned.",
+            "Ella Malin grounded out to 1b unassisted (2-1 BBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 4,
+          "h": 10,
+          "r": 7,
+          "er": 7,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 22
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 3,
+          "h": 3,
+          "r": 2,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 14
         }
       ],
       "year": 2026

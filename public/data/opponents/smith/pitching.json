@@ -1,33 +1,33 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-14T02:25:06.196Z",
+  "scrapedAt": "2026-04-15T02:14:08.778Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
       "w": 7,
-      "l": 5,
-      "era": 2.98,
-      "app": 13,
-      "gs": 12,
+      "l": 6,
+      "era": 3.36,
+      "app": 14,
+      "gs": 13,
       "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 65.2,
-      "h": 66,
-      "r": 39,
-      "er": 28,
-      "bb": 32,
-      "so": 67,
-      "hr": 1,
-      "whip": 1.49,
-      "doubles": 7,
+      "ip": 68.2,
+      "h": 74,
+      "r": 45,
+      "er": 33,
+      "bb": 33,
+      "so": 70,
+      "hr": 2,
+      "whip": 1.56,
+      "doubles": 9,
       "triples": 3,
-      "ab": 258,
-      "bAvg": 0.256,
+      "ab": 276,
+      "bAvg": 0.268,
       "wp": 5,
-      "hbp": 4,
+      "hbp": 5,
       "bk": 0,
       "sfa": 2,
       "sha": 4
@@ -64,24 +64,24 @@
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 5.6,
-      "app": 5,
+      "era": 5.53,
+      "app": 6,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 15,
-      "h": 21,
-      "r": 12,
-      "er": 12,
+      "ip": 19,
+      "h": 25,
+      "r": 16,
+      "er": 15,
       "bb": 10,
-      "so": 7,
-      "hr": 1,
-      "whip": 2.07,
+      "so": 9,
+      "hr": 2,
+      "whip": 1.84,
       "doubles": 5,
       "triples": 0,
-      "ab": 68,
-      "bAvg": 0.309,
+      "ab": 84,
+      "bAvg": 0.298,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
@@ -2375,6 +2375,120 @@
           "hbp": 0,
           "ab": 25,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/williams-college/boxscore/9673",
+      "date": "4/14/2026",
+      "opponent": "Williams College",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Miya Fujimoto struck out swinging (3-2 BFBKBS).",
+            "Haley Barrett flied out to lf (2-0 BB).",
+            "Justine Dunaway flied out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Katie Blanch homered to left field, RBI (1-0 B).",
+            "Emily Borrazzo hit by pitch (2-2 BKKH).",
+            "Aprill Medrano grounded out to p (1-2 KBF); Emily Borrazzo advanced to second.",
+            "Lauren Davis flied out to ss (0-1 S).",
+            "Annabella Rychetsky flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ayane Rokugawa grounded out to 3b (0-0).",
+            "Miya Fujimoto struck out looking (1-2 FKBS).",
+            "Haley Barrett singled to left center (2-1 FBB).",
+            "Justine Dunaway doubled to center field, RBI (1-0 B); Haley Barrett scored.",
+            "Katie Blanch doubled to right center, RBI (1-1 BF); Justine Dunaway scored.",
+            "Emily Borrazzo struck out looking (2-2 BKBSK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Aprill Medrano singled to center field (3-2 FBFBB).",
+            "Lauren Davis reached first on an error by ss (1-1 FB); Aprill Medrano advanced to second.",
+            "Annabella Rychetsky singled to left field (0-0); Lauren Davis advanced to second; Aprill Medrano advanced to third.",
+            "Ayane Rokugawa singled to left field, 2 RBI (1-0 B); Annabella Rychetsky advanced to second; Lauren Davis scored, unearned; Aprill Medrano scored.",
+            "Miya Fujimoto walked (3-1 BBFBB); Ayane Rokugawa advanced to second; Annabella Rychetsky advanced to third.",
+            "Haley Barrett singled to left center, RBI (2-2 BSBS); Miya Fujimoto advanced to second; Ayane Rokugawa advanced to third; Annabella Rychetsky scored.",
+            "Violet Peverly to 1b.",
+            "Lindsay Bennett to p for Lucy Allen.",
+            "Justine Dunaway reached on a fielder's choice (0-1 K); Haley Barrett advanced to second; Miya Fujimoto advanced to third; Ayane Rokugawa out at home ss to c.",
+            "Katie Blanch flied out to lf (0-0); Miya Fujimoto out at third 3b unassisted, runner left early."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Borrazzo struck out swinging (0-2 FSS).",
+            "Aprill Medrano singled to center field (0-1 K).",
+            "Lauren Davis grounded out to ss (1-0 B); Aprill Medrano advanced to second.",
+            "Annabella Rychetsky grounded out to 3b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ayane Rokugawa struck out swinging (1-2 KBSS).",
+            "Miya Fujimoto reached first on an error by 3b (0-0).",
+            "Haley Barrett singled to third base (0-1 K); Miya Fujimoto advanced to second.",
+            "Justine Dunaway singled to left center, RBI (0-0); Haley Barrett advanced to third; Miya Fujimoto scored, unearned.",
+            "Katie Blanch homered, 3 RBI (0-0); Justine Dunaway scored; Haley Barrett scored.",
+            "Louisa Coughlin pinch hit for Emily Borrazzo.",
+            "Louisa Coughlin flied out to 2b (0-0).",
+            "Aprill Medrano grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lauren Davis reached first on an error by 1b (0-0).",
+            "Annabella Rychetsky grounded out to 2b (0-0); Lauren Davis advanced to second.",
+            "Cassidy Chew pinch hit for Ayane Rokugawa.",
+            "Cassidy Chew flied out to rf (2-1 KBB).",
+            "Lauren Davis out at third ss unassisted, interference."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 3,
+          "h": 8,
+          "r": 6,
+          "er": 5,
+          "bb": 1,
+          "so": 3,
+          "hbp": 1,
+          "ab": 18,
+          "bf": 20
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 4,
+          "h": 4,
+          "r": 4,
+          "er": 3,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 16
         }
       ],
       "year": 2026
