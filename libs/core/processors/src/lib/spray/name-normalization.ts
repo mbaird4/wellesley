@@ -181,11 +181,13 @@ export function normalizePlayerNames(names: string[]): Map<string, string> {
  */
 export function buildCanonicalNameMap(names: string[], rosterJerseyMap: Record<string, number>): Map<string, string> {
   const jerseyToFirstName = new Map<number, string>();
+  const jerseyToLastName = new Map<number, string>();
   const entries: { first: string; last: string; jersey: number }[] = [];
 
   Object.entries(rosterJerseyMap).forEach(([key, jersey]) => {
     const { first, last } = parseRosterKey(key);
     jerseyToFirstName.set(jersey, first);
+    jerseyToLastName.set(jersey, last);
     entries.push({ first, last, jersey });
   });
 
@@ -211,20 +213,27 @@ export function buildCanonicalNameMap(names: string[], rosterJerseyMap: Record<s
     byJersey.set(jersey, group);
   });
 
+  const titleCase = (s: string) => s.replace(/\b\w/g, (c) => c.toUpperCase());
   const canonMap = new Map<string, string>();
 
   byJersey.forEach((group, jersey) => {
-    if (group.length <= 1) {
-      return;
-    }
-
     // Prefer the name whose initial matches the roster's first name
     const rosterFirst = jerseyToFirstName.get(jersey) ?? '';
     const rosterInitial = rosterFirst[0]?.toUpperCase() ?? '';
+    const rosterLast = jerseyToLastName.get(jersey) ?? '';
+
+    // Include the roster's canonical "F. Last" as a candidate so single-variant
+    // truncated spray names (e.g. "K. Copperthi") get expanded via the roster.
+    const rosterCanonical = rosterLast ? `${rosterInitial}. ${titleCase(rosterLast)}` : '';
+    const candidates = rosterCanonical && !group.includes(rosterCanonical) ? [...group, rosterCanonical] : group;
+
+    if (candidates.length <= 1) {
+      return;
+    }
 
     // Among names with the correct initial, pick the longest (handles truncated last names)
-    const correctInitial = group.filter((n) => n[0] === rosterInitial);
-    const canonical = correctInitial.length > 0 ? correctInitial.reduce((a, b) => (b.length > a.length ? b : a)) : group.reduce((a, b) => (b.length > a.length ? b : a));
+    const correctInitial = candidates.filter((n) => n[0] === rosterInitial);
+    const canonical = correctInitial.length > 0 ? correctInitial.reduce((a, b) => (b.length > a.length ? b : a)) : candidates.reduce((a, b) => (b.length > a.length ? b : a));
 
     group.forEach((name) => {
       if (name !== canonical) {
