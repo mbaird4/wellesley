@@ -64,7 +64,7 @@ function toDisplayRow(b: BatterVsStats, isTotals: boolean, jersey: number | null
   const hits = b.singles + b.doubles + b.triples + b.hr;
   const ab = b.totalPA - b.walks - b.hbp - b.sacFlies - b.sacBunts;
   const onBase = hits + b.walks + b.hbp;
-  const outs = b.strikeouts + b.groundouts + b.flyouts + b.lineouts + b.popups + b.foulouts;
+  const outs = b.strikeouts + b.groundouts + b.flyouts + b.lineouts + b.popups + b.foulouts + b.otherouts;
 
   return {
     name: b.batterName,
@@ -141,6 +141,7 @@ export class VsWellesleyTable {
         lineouts: acc.lineouts + row.lineouts,
         popups: acc.popups + row.popups,
         foulouts: acc.foulouts + row.foulouts,
+        otherouts: acc.otherouts + row.otherouts,
         doublePlays: acc.doublePlays + row.doublePlays,
         sacBunts: acc.sacBunts + row.sacBunts,
         sacFlies: acc.sacFlies + row.sacFlies,
@@ -161,6 +162,7 @@ export class VsWellesleyTable {
         lineouts: 0,
         popups: 0,
         foulouts: 0,
+        otherouts: 0,
         doublePlays: 0,
         sacBunts: 0,
         sacFlies: 0,

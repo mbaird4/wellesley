@@ -138,16 +138,23 @@ describe('mergeBattingYears', () => {
     expect(team.players[0].name).toBe('High wOBA');
   });
 
-  // BUG FLAG: exact-string grouping splits a player when casing differs across years.
-  // The grouping key should be a normalized form (e.g., lowercased + punctuation stripped)
-  // so "Grace DiBacco" in 2024 and "Grace Dibacco" in 2025 merge to one player.
-  it('BUG: splits a player into two entries when casing of the name differs across years', () => {
+  it('merges casing variants of the same name (e.g. "DiBacco" and "Dibacco") into one player', () => {
     const y2024 = yearData(2024, [yearPlayer({ name: 'Grace DiBacco', season: season({ year: 2024, ab: 80, h: 25 }) })]);
     const y2025 = yearData(2025, [yearPlayer({ name: 'Grace Dibacco', season: season({ year: 2025, ab: 100, h: 30 }) })]);
     const team = mergeBattingYears([y2024, y2025]);
 
-    // Current (buggy) behavior produces two rows; flip expectation after fix.
-    expect(team.players.filter((p) => /dibacco/i.test(p.name))).toHaveLength(2);
+    const dibaccos = team.players.filter((p) => /dibacco/i.test(p.name));
+    expect(dibaccos).toHaveLength(1);
+    expect(dibaccos[0].seasons).toHaveLength(2);
+    expect(dibaccos[0].career.ab).toBe(180);
+  });
+
+  it('prefers the most recent year spelling as the display name', () => {
+    const y2024 = yearData(2024, [yearPlayer({ name: 'Grace DiBacco' })]);
+    const y2025 = yearData(2025, [yearPlayer({ name: 'Grace Dibacco' })]);
+    const team = mergeBattingYears([y2024, y2025]);
+
+    expect(team.players[0].name).toBe('Grace Dibacco');
   });
 });
 

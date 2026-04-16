@@ -1,5 +1,5 @@
 /** Granular out types derived from play text */
-export type OutType = 'strikeout' | 'groundout' | 'flyout' | 'lineout' | 'popup' | 'foulout';
+export type OutType = 'strikeout' | 'groundout' | 'flyout' | 'lineout' | 'popup' | 'foulout' | 'other';
 
 export interface BatterVsStats {
   batterName: string;
@@ -19,6 +19,8 @@ export interface BatterVsStats {
   lineouts: number;
   popups: number;
   foulouts: number;
+  /** Outs whose granular type couldn't be inferred from play text. */
+  otherouts: number;
   doublePlays: number;
   // Sacrifices
   sacBunts: number;

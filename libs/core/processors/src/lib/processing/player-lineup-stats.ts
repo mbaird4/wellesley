@@ -4,6 +4,11 @@ import { parseBatterAction } from '../parsing/parse-play';
 import { calculateWoba } from '../woba/woba';
 import { accumFromResult, emptyAccum } from './clutch-stats';
 
+/** Canonical grouping key for a play-text batter name ("G. DiBacco" and "G. Dibacco" collide). */
+function canonicalBatterKey(name: string): string {
+  return name.toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
+}
+
 /**
  * Computes per-player batting stats broken down by lineup position (1-9).
  * Iterates all PA snapshots, accumulates stats per player per slot,
@@ -13,6 +18,7 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
   const playerMap = new Map<
     string,
     {
+      displayName: string;
       bySlot: Map<number, { accum: PbpBattingAccum; rbi: number }>;
       overall: { accum: PbpBattingAccum; rbi: number };
     }
@@ -23,6 +29,7 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
     .filter((snap) => snap.isPlateAppearance && snap.batterName !== null && snap.lineupSlot !== null)
     .forEach((snap) => {
       const name = snap.batterName!;
+      const key = canonicalBatterKey(name);
       const slot = snap.lineupSlot!;
 
       const subEvents = snap.playText
@@ -32,14 +39,19 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
       const result = parseBatterAction(subEvents[0]).result;
       const rbi = snap.scoringPlays.length;
 
-      if (!playerMap.has(name)) {
-        playerMap.set(name, {
+      if (!playerMap.has(key)) {
+        playerMap.set(key, {
+          displayName: name,
           bySlot: new Map(),
           overall: { accum: emptyAccum(), rbi: 0 },
         });
       }
 
-      const player = playerMap.get(name)!;
+      const player = playerMap.get(key)!;
+      // Prefer the longer spelling so truncated variants lose to full names.
+      if (name.length > player.displayName.length) {
+        player.displayName = name;
+      }
 
       accumFromResult(result, player.overall.accum);
       player.overall.rbi += rbi;
@@ -53,8 +65,8 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
       slotData.rbi += rbi;
     });
 
-  return Array.from(playerMap.entries())
-    .map(([name, data]) => {
+  return Array.from(playerMap.values())
+    .map((data) => {
       const overallWoba = calculateWoba(data.overall.accum);
       const overallAvg = data.overall.accum.ab > 0 ? data.overall.accum.h / data.overall.accum.ab : 0;
 
@@ -74,7 +86,7 @@ export function computePlayerLineupStats(games: GameWithSnapshots[]): PlayerLine
       });
 
       return {
-        name,
+        name: data.displayName,
         overallStats: data.overall.accum,
         overallWoba,
         overallAvg,

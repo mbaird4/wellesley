@@ -26,6 +26,11 @@ function displayNameToRosterKey(name: string): string {
   return `${last}, ${first}`.toLowerCase().replace(/\./g, '');
 }
 
+/** Canonical grouping key: lowercased, no periods, whitespace-collapsed. */
+function canonicalPlayerKey(name: string): string {
+  return name.toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
+}
+
 /**
  * Merge multiple per-year batting data files into the combined Team shape.
  * Career stats are computed client-side from the loaded per-year seasons.
@@ -47,10 +52,12 @@ export function mergeBattingYears(years: YearBattingData[], roster?: Roster | nu
     teamGamesByYear[String(y.year)] = y.teamGames;
   });
 
-  // Group players by name across years
+  // Group players by canonical name key across years so casing/period variations
+  // (e.g. "Grace DiBacco" vs "Grace Dibacco") merge into one player.
   const playerMap = new Map<
     string,
     {
+      displayName: string;
       seasons: SeasonStats[];
       jerseyNumber: number | null;
       classYear: string;
@@ -61,17 +68,20 @@ export function mergeBattingYears(years: YearBattingData[], roster?: Roster | nu
 
   sorted.forEach((yearData) => {
     yearData.players.forEach((p) => {
-      const existing = playerMap.get(p.name);
+      const key = canonicalPlayerKey(p.name);
+      const existing = playerMap.get(key);
 
       if (existing) {
         existing.seasons.push(p.season);
-        // Update roster info from most recent year
+        // Use most recent year's spelling + roster info
+        existing.displayName = p.name;
         existing.jerseyNumber = p.jerseyNumber;
         existing.classYear = p.classYear;
         existing.position = p.position;
         existing.bats = p.bats;
       } else {
-        playerMap.set(p.name, {
+        playerMap.set(key, {
+          displayName: p.name,
           seasons: [p.season],
           jerseyNumber: p.jerseyNumber,
           classYear: p.classYear,
@@ -84,12 +94,13 @@ export function mergeBattingYears(years: YearBattingData[], roster?: Roster | nu
 
   // Add roster players missing from batting data
   if (roster) {
-    const existingKeys = new Set(Array.from(playerMap.keys()).map(displayNameToRosterKey));
+    const existingRosterKeys = new Set(Array.from(playerMap.values()).map((v) => displayNameToRosterKey(v.displayName)));
 
     Object.entries(roster).forEach(([rosterKey, entry]) => {
-      if (!existingKeys.has(rosterKey)) {
+      if (!existingRosterKeys.has(rosterKey)) {
         const displayName = rosterKeyToDisplayName(rosterKey);
-        playerMap.set(displayName, {
+        playerMap.set(canonicalPlayerKey(displayName), {
+          displayName,
           seasons: [],
           jerseyNumber: entry.jersey,
           classYear: entry.classYear,
@@ -101,8 +112,8 @@ export function mergeBattingYears(years: YearBattingData[], roster?: Roster | nu
   }
 
   // Build players with computed career stats
-  const players: RosterPlayer[] = Array.from(playerMap.entries()).map(([name, data]) => ({
-    name,
+  const players: RosterPlayer[] = Array.from(playerMap.values()).map((data) => ({
+    name: data.displayName,
     jerseyNumber: data.jerseyNumber,
     classYear: data.classYear,
     position: data.position,

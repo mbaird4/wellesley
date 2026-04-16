@@ -6,6 +6,11 @@ import { classifyBaseSituation } from './base-runner-stats';
 
 const RISP_SITUATIONS = new Set(['second', 'third', 'first_second', 'first_third', 'second_third', 'loaded']);
 
+/** Canonical grouping key for a play-text batter name ("G. DiBacco" and "G. Dibacco" collide). */
+function canonicalBatterKey(name: string): string {
+  return name.toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
+}
+
 export function emptyAccum(): PbpBattingAccum {
   return { pa: 0, ab: 0, h: 0, doubles: 0, triples: 0, hr: 0, bb: 0, hbp: 0, sf: 0, sh: 0 };
 }
@@ -177,10 +182,12 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
   // Collect all clutch events
   const allEvents = games.flatMap((game) => computeClutchEvents(game.snapshots, game.opponent, game.url));
 
-  // Build per-player stat accumulators from ALL PA snapshots
+  // Build per-player stat accumulators (keyed by canonical name) from ALL PA snapshots.
+  // Display names track the longest spelling seen so truncated variants collapse into full names.
   const playerAccums = new Map<
     string,
     {
+      displayName: string;
       runnersOn: PbpBattingAccum;
       basesEmpty: PbpBattingAccum;
       risp: PbpBattingAccum;
@@ -194,6 +201,7 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
     .filter((snap) => snap.isPlateAppearance && snap.batterName !== null)
     .forEach((snap) => {
       const name = snap.batterName!;
+      const key = canonicalBatterKey(name);
       const situation = classifyBaseSituation(snap.basesBefore);
       const subEvents = snap.playText
         .replace(/\.$/, '')
@@ -201,8 +209,9 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
         .map((s) => s.trim());
       const result = parseBatterAction(subEvents[0]).result;
 
-      if (!playerAccums.has(name)) {
-        playerAccums.set(name, {
+      if (!playerAccums.has(key)) {
+        playerAccums.set(key, {
+          displayName: name,
           runnersOn: emptyAccum(),
           basesEmpty: emptyAccum(),
           risp: emptyAccum(),
@@ -210,7 +219,11 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
         });
       }
 
-      const accums = playerAccums.get(name)!;
+      const accums = playerAccums.get(key)!;
+
+      if (name.length > accums.displayName.length) {
+        accums.displayName = name;
+      }
 
       // Overall
       accumFromResult(result, accums.overall);
@@ -227,17 +240,19 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
       }
     });
 
-  // Group clutch events by player
+  // Group clutch events by canonical player key
   const eventsByPlayer = new Map<string, ClutchEvent[]>();
   allEvents.forEach((event) => {
-    const existing = eventsByPlayer.get(event.batterName) ?? [];
+    const key = canonicalBatterKey(event.batterName);
+    const existing = eventsByPlayer.get(key) ?? [];
     existing.push(event);
-    eventsByPlayer.set(event.batterName, existing);
+    eventsByPlayer.set(key, existing);
   });
 
   // Build player summaries
-  const players: PlayerClutchSummary[] = Array.from(eventsByPlayer.entries()).map(([name, events]) => {
-    const accums = playerAccums.get(name) ?? {
+  const players: PlayerClutchSummary[] = Array.from(eventsByPlayer.entries()).map(([key, events]) => {
+    const accums = playerAccums.get(key) ?? {
+      displayName: events[0]?.batterName ?? key,
       runnersOn: emptyAccum(),
       basesEmpty: emptyAccum(),
       risp: emptyAccum(),
@@ -285,7 +300,7 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
     }));
 
     return {
-      name,
+      name: accums.displayName,
       runnersOnWoba,
       basesEmptyWoba,
       rispWoba,

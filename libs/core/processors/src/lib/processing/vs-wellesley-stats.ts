@@ -2,6 +2,16 @@ import type { BatterVsStats, GamePbP, OutType, VsWellesleyData } from '@ws/core/
 
 import { trackPitcherPerformance } from './pitcher-tracking';
 
+const OUT_TYPE_FIELDS: Record<OutType, keyof BatterVsStats & ('strikeouts' | 'groundouts' | 'flyouts' | 'lineouts' | 'popups' | 'foulouts' | 'otherouts')> = {
+  strikeout: 'strikeouts',
+  groundout: 'groundouts',
+  flyout: 'flyouts',
+  lineout: 'lineouts',
+  popup: 'popups',
+  foulout: 'foulouts',
+  other: 'otherouts',
+};
+
 /** Classify an out into a granular type from the play text */
 function classifyOutType(playText: string): OutType {
   const text = playText.toLowerCase();
@@ -30,8 +40,7 @@ function classifyOutType(playText: string): OutType {
     return 'foulout';
   }
 
-  // Safest default for unrecognized out patterns
-  return 'groundout';
+  return 'other';
 }
 
 /** Create empty batter stats for a given name */
@@ -51,6 +60,7 @@ function emptyBatterStats(batterName: string): BatterVsStats {
     lineouts: 0,
     popups: 0,
     foulouts: 0,
+    otherouts: 0,
     doublePlays: 0,
     sacBunts: 0,
     sacFlies: 0,
@@ -87,7 +97,7 @@ function accumulatePlay(stats: BatterVsStats, result: string, playText: string):
       break;
     case 'out': {
       const outType = classifyOutType(playText);
-      stats[`${outType}s`] += 1;
+      stats[OUT_TYPE_FIELDS[outType]] += 1;
       break;
     }
 

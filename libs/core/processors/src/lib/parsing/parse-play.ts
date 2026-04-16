@@ -121,7 +121,12 @@ export function parseBatterAction(subEvent: string): {
     return { result: 'sac_bunt' }; // infield default
   }
 
-  // Interference — batter is out, counts as AB
+  // Catcher's interference is defensive — batter is awarded first base (reached).
+  // Other interference (batter's, runner's) is offensive → batter is out.
+  if (lower.includes("catcher's interference")) {
+    return { result: 'reached' };
+  }
+
   if (lower.includes('interference')) {
     return { result: 'out' };
   }

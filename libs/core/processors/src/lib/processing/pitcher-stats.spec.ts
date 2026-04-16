@@ -203,6 +203,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 0,
             strikeouts: 1,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
           {
             inning: '2nd',
@@ -218,6 +220,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 0,
             strikeouts: 2,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
         ],
         totals: {
@@ -234,6 +238,8 @@ describe('computePitcherSeasonSummary', () => {
           walks: 0,
           strikeouts: 3,
           hbp: 0,
+          sf: 0,
+          sh: 0,
         },
       },
       {
@@ -256,6 +262,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 1,
             strikeouts: 0,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
         ],
         totals: {
@@ -272,6 +280,8 @@ describe('computePitcherSeasonSummary', () => {
           walks: 1,
           strikeouts: 0,
           hbp: 0,
+          sf: 0,
+          sh: 0,
         },
       },
     ];
@@ -314,6 +324,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 0,
             strikeouts: 0,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
         ],
         totals: {
@@ -330,6 +342,8 @@ describe('computePitcherSeasonSummary', () => {
           walks: 0,
           strikeouts: 0,
           hbp: 0,
+          sf: 0,
+          sh: 0,
         },
       },
       {
@@ -352,6 +366,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 0,
             strikeouts: 0,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
         ],
         totals: {
@@ -368,6 +384,8 @@ describe('computePitcherSeasonSummary', () => {
           walks: 0,
           strikeouts: 0,
           hbp: 0,
+          sf: 0,
+          sh: 0,
         },
       },
       {
@@ -390,6 +408,8 @@ describe('computePitcherSeasonSummary', () => {
             walks: 0,
             strikeouts: 0,
             hbp: 0,
+            sf: 0,
+            sh: 0,
           },
         ],
         totals: {
@@ -406,6 +426,8 @@ describe('computePitcherSeasonSummary', () => {
           walks: 0,
           strikeouts: 0,
           hbp: 0,
+          sf: 0,
+          sh: 0,
         },
       },
     ];
@@ -437,6 +459,8 @@ describe('battingAvgAgainst', () => {
       walks: 1,
       strikeouts: 2,
       hbp: 1,
+      sf: 0,
+      sh: 0,
     };
 
     expect(battingAvgAgainst(stats)).toBeCloseTo(0.375, 3);
@@ -457,6 +481,8 @@ describe('battingAvgAgainst', () => {
       walks: 1,
       strikeouts: 0,
       hbp: 1,
+      sf: 0,
+      sh: 0,
     };
 
     expect(battingAvgAgainst(stats)).toBe(0);
