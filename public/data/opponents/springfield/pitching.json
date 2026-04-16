@@ -1,61 +1,61 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-15T02:14:05.596Z",
+  "scrapedAt": "2026-04-16T02:29:51.944Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 10,
+      "w": 11,
       "l": 4,
-      "era": 2.07,
-      "app": 14,
-      "gs": 5,
-      "cg": 4,
+      "era": 2.21,
+      "app": 15,
+      "gs": 6,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 88,
-      "h": 87,
-      "r": 32,
-      "er": 26,
-      "bb": 24,
-      "so": 75,
+      "ip": 95,
+      "h": 98,
+      "r": 37,
+      "er": 30,
+      "bb": 25,
+      "so": 81,
       "hr": 2,
-      "whip": 1.26,
+      "whip": 1.29,
       "doubles": 17,
-      "triples": 1,
-      "ab": 337,
-      "bAvg": 0.258,
-      "wp": 3,
-      "hbp": 1,
+      "triples": 2,
+      "ab": 369,
+      "bAvg": 0.266,
+      "wp": 4,
+      "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 6
+      "sha": 7
     },
     {
       "name": "Rimshnick, Julia",
       "w": 5,
-      "l": 4,
-      "era": 5.5,
-      "app": 19,
-      "gs": 18,
-      "cg": 9,
+      "l": 5,
+      "era": 5.55,
+      "app": 20,
+      "gs": 19,
+      "cg": 10,
       "sho": 0,
       "sv": 1,
-      "ip": 63.2,
-      "h": 97,
-      "r": 63,
-      "er": 50,
-      "bb": 17,
-      "so": 33,
+      "ip": 70.2,
+      "h": 106,
+      "r": 69,
+      "er": 56,
+      "bb": 18,
+      "so": 35,
       "hr": 1,
-      "whip": 1.79,
-      "doubles": 13,
-      "triples": 8,
-      "ab": 290,
-      "bAvg": 0.334,
+      "whip": 1.75,
+      "doubles": 16,
+      "triples": 10,
+      "ab": 320,
+      "bAvg": 0.331,
       "wp": 5,
-      "hbp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 4,
       "sha": 3
@@ -2368,6 +2368,198 @@
           "hbp": 0,
           "ab": 26,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/amherst/boxscore/14839",
+      "date": "4/15/2026",
+      "opponent": "Amherst",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz singled up the middle (1-2 KBK).",
+            "Brooke Wild struck out swinging (0-2 FFFK).",
+            "Lulu Leppard grounded out to 2b (0-0); Samantha Portz advanced to second.",
+            "Abby Moravek flied out to lf (1-2 KFFFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jayla Adkins flied out to lf (1-2 FBSF).",
+            "Dylan Briggs grounded out to 1b unassisted (0-1 F).",
+            "Olivia Aitkin lined out to ss (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nordstrom singled to center field (2-0 BB).",
+            "Abby Rebhan singled up the middle (1-2 BKF); Emma Nordstrom advanced to second.",
+            "Samantha Portz out at first p to 2b, SAC, bunt (0-1 K); Abby Rebhan advanced to second; Emma Nordstrom advanced to third.",
+            "Brooke Wild singled up the middle, advanced to second, RBI (0-0); Abby Rebhan advanced to third; Emma Nordstrom scored.",
+            "Lulu Leppard reached on a fielder's choice (1-0 B); Brooke Wild advanced to third; Abby Rebhan out at home 2b to c.",
+            "Abby Moravek reached on a fielder's choice (0-0); Lulu Leppard out at second c unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jayla Adkins struck out swinging (1-2 KBFK).",
+            "Dylan Briggs walked (3-2 SBFFBBB).",
+            "Olivia Aitkin popped up to 2b (1-0 B).",
+            "Emma Nordstrom flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Pecchia to c for Ariana Hammer.",
+            "Abby Rebhan grounded out to 2b (0-2 FKF).",
+            "Samantha Portz hit by pitch (2-2 BFFH).",
+            "Samantha Portz advanced to second on a wild pitch.",
+            "Brooke Wild reached first on an error by ss, advanced to second (2-0 BB); Samantha Portz advanced to third.",
+            "Lulu Leppard tripled to right center, 2 RBI (3-1 BBKB); Brooke Wild scored, unearned; Samantha Portz scored.",
+            "Abby Moravek struck out looking (1-2 SKBK).",
+            "Jayla Adkins struck out looking (2-2 KBBFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dylan Briggs grounded out to 3b (0-1 K).",
+            "Olivia Aitkin singled to right center (1-1 BF).",
+            "Emma Nordstrom singled through the left side, advanced to second (0-0); Olivia Aitkin advanced to third.",
+            "Abby Rebhan singled to right field, RBI (0-0); Emma Nordstrom advanced to third; Olivia Aitkin scored.",
+            "Samantha Portz reached on a fielder's choice, RBI (0-2 FK); Abby Rebhan out at second ss to 2b; Emma Nordstrom scored.",
+            "Brooke Wild struck out looking (0-2 FKK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lulu Leppard singled to center field (0-1 K).",
+            "Abby Moravek reached on a fielder's choice (2-2 FBFB); Lulu Leppard out at second p to ss.",
+            "Laura Daniels pinch hit for Jayla Adkins.",
+            "Laura Daniels singled through the left side (0-1 S); Abby Moravek advanced to second.",
+            "Heidi Li pinch ran for Abby Moravek.",
+            "Dylan Briggs singled to center field (0-0); Laura Daniels advanced to second; Heidi Li advanced to third.",
+            "Olivia Aitkin struck out swinging (0-2 KK).",
+            "Emma Nordstrom grounded out to 2b (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 11,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 6,
+          "hbp": 1,
+          "ab": 32,
+          "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/amherst/boxscore/14840",
+      "date": "4/15/2026",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz popped up to ss (0-1 S).",
+            "Brooke Wild flied out to rf (0-2 FK).",
+            "Lulu Leppard walked (3-0 BBBB).",
+            "Emma Nordstrom singled through the left side (0-2 KF); Lulu Leppard advanced to second.",
+            "Laura Daniels flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia O'Connell out at first 1b to 2b, bunt (2-1 BSB).",
+            "May Mishima singled down the lf line (0-0).",
+            "Dylan Briggs popped up to 2b (0-0).",
+            "Anna Promozic hit by pitch (2-2 KSBH); May Mishima advanced to second.",
+            "Samantha Portz tripled down the rf line, 2 RBI (1-1 BK); Anna Promozic scored; May Mishima scored.",
+            "Brooke Wild flied out to cf (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lulu Leppard popped up to ss (0-1 K).",
+            "Emma Nordstrom grounded out to ss (1-2 FKB).",
+            "Laura Daniels doubled to left center (1-0 B).",
+            "Julia O'Connell singled up the middle, RBI (2-2 KKFFFBBF); Laura Daniels scored.",
+            "May Mishima singled to left field (1-1 BK); Julia O'Connell advanced to second.",
+            "Dylan Briggs doubled down the lf line, 2 RBI (2-1 KBB); May Mishima scored; Julia O'Connell scored.",
+            "Anna Promozic doubled to left field, RBI (2-1 BBF); Dylan Briggs scored.",
+            "Samantha Portz grounded out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brooke Wild grounded out to p (0-2 FSF).",
+            "Lulu Leppard tripled to center field (0-0).",
+            "Emma Nordstrom grounded out to 3b (2-2 KBFB).",
+            "Laura Daniels popped up to 2b (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Julia O'Connell struck out swinging (2-2 BKSBS).",
+            "May Mishima lined out to 2b (1-2 KBK).",
+            "Dylan Briggs popped up to 2b (2-2 KBBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Aurora Levesque to c for Addy Bohlander.",
+            "Anna Promozic flied out to lf (1-2 BFF).",
+            "Samantha Portz fouled out to lf (0-1 F).",
+            "Brooke Wild flied out to cf (2-2 BBKF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lulu Leppard flied out to lf (1-1 KB).",
+            "Emma Nordstrom grounded out to 2b (0-0).",
+            "Laura Daniels struck out swinging, out at first c to 1b (1-2 KFBFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 9,
+          "r": 6,
+          "er": 6,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 30,
+          "bf": 32
         }
       ],
       "year": 2026

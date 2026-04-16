@@ -1,31 +1,31 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-15T02:14:34.052Z",
+  "scrapedAt": "2026-04-16T02:30:21.311Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 7,
-      "l": 4,
-      "era": 2.68,
-      "app": 11,
-      "gs": 10,
-      "cg": 10,
+      "l": 5,
+      "era": 2.57,
+      "app": 12,
+      "gs": 11,
+      "cg": 11,
       "sho": 0,
       "sv": 0,
-      "ip": 73,
-      "h": 83,
-      "r": 33,
-      "er": 28,
-      "bb": 15,
-      "so": 71,
+      "ip": 79,
+      "h": 86,
+      "r": 34,
+      "er": 29,
+      "bb": 18,
+      "so": 80,
       "hr": 2,
-      "whip": 1.34,
-      "doubles": 10,
+      "whip": 1.32,
+      "doubles": 11,
       "triples": 1,
-      "ab": 300,
-      "bAvg": 0.277,
+      "ab": 322,
+      "bAvg": 0.267,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Dube, Megan",
-      "w": 3,
+      "w": 4,
       "l": 8,
-      "era": 3.45,
-      "app": 11,
-      "gs": 10,
-      "cg": 10,
+      "era": 3.28,
+      "app": 12,
+      "gs": 11,
+      "cg": 11,
       "sho": 0,
       "sv": 0,
-      "ip": 73,
-      "h": 90,
-      "r": 53,
-      "er": 36,
-      "bb": 24,
-      "so": 64,
+      "ip": 81,
+      "h": 98,
+      "r": 56,
+      "er": 38,
+      "bb": 25,
+      "so": 71,
       "hr": 4,
-      "whip": 1.56,
-      "doubles": 21,
+      "whip": 1.52,
+      "doubles": 23,
       "triples": 4,
-      "ab": 306,
-      "bAvg": 0.294,
+      "ab": 336,
+      "bAvg": 0.292,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
       "sfa": 2,
-      "sha": 7
+      "sha": 9
     },
     {
       "name": "Wagstaff, Hannah",
@@ -2238,6 +2238,198 @@
           "hbp": 0,
           "ab": 33,
           "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/framingham-state-university/boxscore/19193",
+      "date": "4/15/2026",
+      "opponent": "Framingham State University",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Isabella MacDonald reached first on an error by rf, advanced to second on the throw (0-0).",
+            "Mikayla Yuricheck popped up to 3b (0-0).",
+            "Eliza Carignan walked (0-0).",
+            "Ava Gray struck out swinging (0-0).",
+            "Amanda Roche flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jocelyn Pepe struck out swinging (0-0).",
+            "Gianna Paolino walked (0-0).",
+            "Nina Buda walked (0-0); Gianna Paolino advanced to second.",
+            "Riley Eagan struck out swinging (0-0).",
+            "Isabella MacDonald singled to right field, RBI (0-0); Nina Buda advanced to third; Gianna Paolino scored.",
+            "Isabella MacDonald stole second.",
+            "Mikayla Yuricheck struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Eliza Carignan flied out to lf (0-0).",
+            "Ava Gray flied out to cf (0-0).",
+            "Amanda Roche flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Jocelyn Pepe flied out to rf (0-0).",
+            "Gianna Paolino struck out swinging (0-0).",
+            "Nina Buda struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avery Della Piana to c for Jennifer Albano.",
+            "Alexis Taudel to rf for Erin Slavin.",
+            "Ellie Etemad-Gilbertson pinch hit for Riley Eagan.",
+            "Gianna Paolino to rf.",
+            "Ellie Etemad-Gilbertson singled to left field (0-0).",
+            "Isabella MacDonald doubled to left field (0-0); Ellie Etemad-Gilbertson advanced to third.",
+            "Kate Brodzinski pinch hit for Mikayla Yuricheck.",
+            "Kate Brodzinski struck out swinging (0-0).",
+            "Eliza Carignan popped up to 1b (0-0).",
+            "Ava Gray popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amanda Roche struck out swinging (0-0).",
+            "Jocelyn Pepe fouled out to rf (0-0).",
+            "Gianna Paolino struck out swinging (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 3,
+          "so": 9,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/framingham-state-university/boxscore/19194",
+      "date": "4/15/2026",
+      "opponent": "Framingham State University",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ellie Etemad-Gilbertson singled to shortstop (0-0).",
+            "Isabella MacDonald struck out swinging (0-0).",
+            "Eliza Carignan doubled, RBI, advanced to third on the throw (0-0); Ellie Etemad-Gilbertson scored.",
+            "Ava Gray lined out to lf (0-0).",
+            "Audrey Gauthier struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Brodzinski grounded out to ss (0-0).",
+            "Maddie Blette struck out looking (0-0).",
+            "Nina Buda struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Riley Eagan walked (0-0).",
+            "Mikayla Yuricheck pinch ran for Riley Eagan.",
+            "Ellie Etemad-Gilbertson out at first 3b to 2b, bunt, SAC (0-0); Mikayla Yuricheck advanced to second.",
+            "Isabella MacDonald singled to center field, RBI (0-0); Mikayla Yuricheck scored.",
+            "Eliza Carignan popped up to ss (0-0).",
+            "Ava Gray grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Audrey Gauthier fouled out to c (0-0).",
+            "Kate Brodzinski singled (0-0).",
+            "Maddie Blette lined out to rf (0-0).",
+            "Nina Buda struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mikayla Yuricheck struck out swinging (0-0).",
+            "Ellie Etemad-Gilbertson singled (0-0).",
+            "Isabella MacDonald fouled out to 1b (0-0).",
+            "Eliza Carignan flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Merry Griffin to 3b for Caitriona Andre.",
+            "Ava Gray flied out to rf (0-0).",
+            "Audrey Gauthier flied out to cf (0-0).",
+            "Kate Brodzinski popped up to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Charlise Quigley to lf for Madison Dillon.",
+            "Maddie Blette grounded out to p (0-0).",
+            "Jocelyn Pepe pinch hit for Nina Buda.",
+            "Jocelyn Pepe singled to right field (0-0).",
+            "Nina Buda pinch ran for Jocelyn Pepe.",
+            "Mikayla Yuricheck out at first 3b to 2b, bunt, SAC (0-0); Nina Buda advanced to second.",
+            "Ellie Etemad-Gilbertson singled to pitcher (0-0); Nina Buda advanced to third.",
+            "Isabella MacDonald flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Megan Dube to p for Jennifer Albano.",
+            "Eliza Carignan Isabella MacDonald placed on second (0-0).",
+            "Eliza Carignan doubled to center field, RBI (0-0); Isabella MacDonald scored.",
+            "Ava Gray grounded out to 2b (0-0); Eliza Carignan advanced to third.",
+            "Audrey Gauthier popped up to 1b (0-0).",
+            "Amanda Roche pinch hit for Gianna Paolino.",
+            "Amanda Roche struck out looking (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 8,
+          "h": 8,
+          "r": 3,
+          "er": 2,
+          "bb": 1,
+          "so": 7,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 33
         }
       ],
       "year": 2026

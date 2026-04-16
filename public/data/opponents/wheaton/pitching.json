@@ -1,31 +1,31 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-15T02:14:02.198Z",
+  "scrapedAt": "2026-04-16T02:29:44.875Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 7,
+      "w": 8,
       "l": 4,
-      "era": 1.62,
-      "app": 11,
-      "gs": 11,
+      "era": 1.58,
+      "app": 12,
+      "gs": 12,
       "cg": 11,
       "sho": 3,
       "sv": 0,
-      "ip": 73.1,
-      "h": 68,
+      "ip": 75.1,
+      "h": 69,
       "r": 24,
       "er": 17,
       "bb": 5,
-      "so": 47,
+      "so": 49,
       "hr": 3,
-      "whip": 1,
+      "whip": 0.98,
       "doubles": 13,
       "triples": 2,
-      "ab": 279,
-      "bAvg": 0.244,
+      "ab": 286,
+      "bAvg": 0.241,
       "wp": 0,
       "hbp": 3,
       "bk": 0,
@@ -36,24 +36,24 @@
       "name": "De La Rosa, Sofia",
       "w": 5,
       "l": 6,
-      "era": 2.59,
-      "app": 11,
+      "era": 2.51,
+      "app": 12,
       "gs": 11,
       "cg": 9,
       "sho": 3,
       "sv": 0,
-      "ip": 67.2,
+      "ip": 69.2,
       "h": 76,
       "r": 36,
       "er": 25,
-      "bb": 13,
-      "so": 73,
+      "bb": 14,
+      "so": 77,
       "hr": 3,
-      "whip": 1.32,
+      "whip": 1.29,
       "doubles": 12,
       "triples": 3,
-      "ab": 273,
-      "bAvg": 0.278,
+      "ab": 279,
+      "bAvg": 0.272,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "Dost, Brittany",
       "w": 0,
       "l": 0,
-      "era": 10.5,
-      "app": 2,
+      "era": 4.94,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2.2,
-      "h": 6,
+      "ip": 5.2,
+      "h": 11,
       "r": 4,
       "er": 4,
-      "bb": 2,
+      "bb": 3,
       "so": 2,
       "hr": 0,
-      "whip": 3,
-      "doubles": 1,
+      "whip": 2.47,
+      "doubles": 2,
       "triples": 0,
-      "ab": 14,
-      "bAvg": 0.429,
+      "ab": 28,
+      "bAvg": 0.393,
       "wp": 0,
       "hbp": 0,
       "bk": 0,
@@ -2089,6 +2089,130 @@
           "hbp": 0,
           "ab": 33,
           "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/roger-williams-university/boxscore/10011",
+      "date": "4/15/2026",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton",
+        "Dost, Brittany",
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hailey Williams singled to shortstop (0-0).",
+            "Madison Tucholski grounded out to p (0-1 K); Hailey Williams advanced to second.",
+            "Shannon Starratt popped up to 3b (0-1 K).",
+            "Madison Moran struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Skye Merrow struck out swinging (0-2 KKS).",
+            "Adrianna Amaral flied out to cf (0-2 FS).",
+            "Grace Forsythe grounded out to ss (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Peyton Blankenheim-Brown to 1b.",
+            "Brittany Dost to p.",
+            "Calysa Moody singled down the lf line (0-0).",
+            "Andie Moreira grounded out to 3b (2-2 BSFB); Calysa Moody advanced to second.",
+            "Hailey Williams reached on a fielder's choice to shortstop (1-0 B); Calysa Moody out at third ss to 3b.",
+            "Madison Tucholski popped up to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Shannon Starratt fouled out to c (2-0 BB).",
+            "Madison Moran doubled to left center (1-0 B).",
+            "Skye Merrow flied out to cf (2-0 BB).",
+            "Adrianna Amaral walked (3-0 BBBB).",
+            "Grace Forsythe singled to left field (0-0); Adrianna Amaral advanced to second; Madison Moran advanced to third.",
+            "Calysa Moody flied out to lf (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maggie Caron to 2b for Taylor Barry.",
+            "Andie Moreira singled to shortstop (0-0).",
+            "Hailey Williams singled to center field (1-0 B); Andie Moreira advanced to second.",
+            "Madison Tucholski reached first on an error by ss (0-0); Hailey Williams advanced to second; Andie Moreira advanced to third.",
+            "McKenzie Foley popped up to ss (2-2 BBSFF).",
+            "Madison Moran lined into double play 3b (0-2 FFFF); Andie Moreira out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lexi Falcioni to ss for Ella Molinari.",
+            "Madi Miller to c for Riley Dolan.",
+            "Sofia DeLaRosa to p for Brittany Dost.",
+            "Skye Merrow struck out swinging (1-2 BSKS).",
+            "Adrianna Amaral walked (3-1 BSBBB).",
+            "Alexia Tsonis pinch ran for Adrianna Amaral.",
+            "Grace Forsythe struck out swinging (2-2 FBFFBS).",
+            "Calysa Moody struck out swinging (2-2 BFSBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kathryn Copperthite to 1b for Peyton Blankenheim-Brown.",
+            "Alexandra Anquillare to rf.",
+            "Andie Moreira flied out to rf (2-1 KBB).",
+            "Hailey Williams flied out to cf (2-2 BFBF).",
+            "Madison Tucholski struck out swinging (2-2 BKBSFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        },
+        {
+          "name": "Dost, Brittany",
+          "ip": 3,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
         }
       ],
       "year": 2026
