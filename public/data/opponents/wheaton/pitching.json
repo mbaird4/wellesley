@@ -1,64 +1,64 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-17T02:26:01.174Z",
+  "scrapedAt": "2026-04-18T02:08:56.543Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 8,
-      "l": 4,
-      "era": 1.58,
-      "app": 12,
-      "gs": 12,
-      "cg": 11,
+      "l": 5,
+      "era": 1.45,
+      "app": 13,
+      "gs": 13,
+      "cg": 12,
       "sho": 3,
       "sv": 0,
-      "ip": 75.1,
-      "h": 69,
-      "r": 24,
+      "ip": 82.1,
+      "h": 73,
+      "r": 26,
       "er": 17,
-      "bb": 5,
-      "so": 49,
+      "bb": 6,
+      "so": 50,
       "hr": 3,
-      "whip": 0.98,
-      "doubles": 13,
+      "whip": 0.96,
+      "doubles": 15,
       "triples": 2,
-      "ab": 285,
-      "bAvg": 0.242,
+      "ab": 307,
+      "bAvg": 0.238,
       "wp": 0,
       "hbp": 3,
       "bk": 0,
-      "sfa": 2,
-      "sha": 13
+      "sfa": 3,
+      "sha": 15
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 5,
+      "w": 6,
       "l": 6,
-      "era": 2.51,
-      "app": 12,
-      "gs": 11,
-      "cg": 9,
+      "era": 2.74,
+      "app": 13,
+      "gs": 12,
+      "cg": 10,
       "sho": 3,
       "sv": 0,
-      "ip": 69.2,
-      "h": 76,
-      "r": 36,
-      "er": 25,
-      "bb": 14,
-      "so": 77,
+      "ip": 76.2,
+      "h": 85,
+      "r": 41,
+      "er": 30,
+      "bb": 19,
+      "so": 84,
       "hr": 3,
-      "whip": 1.29,
-      "doubles": 12,
-      "triples": 3,
-      "ab": 279,
-      "bAvg": 0.272,
+      "whip": 1.36,
+      "doubles": 15,
+      "triples": 4,
+      "ab": 308,
+      "bAvg": 0.276,
       "wp": 1,
       "hbp": 2,
       "bk": 0,
-      "sfa": 3,
-      "sha": 8
+      "sfa": 4,
+      "sha": 9
     },
     {
       "name": "Dost, Brittany",
@@ -2213,6 +2213,192 @@
           "hbp": 0,
           "ab": 6,
           "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/babson-college/boxscore/10025",
+      "date": "4/17/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh walked (3-1 BKBBB).",
+            "Maddy DeLong out at first p to 2b, SAC, bunt (0-0); Emily Walsh advanced to second.",
+            "Lexi Sealy flied out to lf (1-2 KBFF).",
+            "Belle Dicampello singled to center field, RBI (3-1 BKBB); Emily Walsh scored.",
+            "Charlotte Raymond struck out swinging (1-2 BKSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophia Pak popped up to ss (0-1 K).",
+            "Devin McCall walked (3-0 BBBB).",
+            "Samantha Skivo walked (3-2 BKBBKFFB); Devin McCall advanced to second.",
+            "Charly Landow struck out swinging (3-2 BBBKFS).",
+            "Emily Walsh flied out to lf (0-2 SK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Maddy DeLong flied out to rf (1-0 B).",
+            "Lexi Sealy doubled to left center (1-1 KB).",
+            "Belle Dicampello grounded out to 3b (0-0).",
+            "Charlotte Raymond walked (3-2 BKFBBB).",
+            "Sophia Pak singled through the left side, RBI (3-2 KBFBB); Charlotte Raymond advanced to second; Lexi Sealy scored.",
+            "Devin McCall walked (3-2 BKBFBB); Sophia Pak advanced to second; Charlotte Raymond advanced to third.",
+            "Samantha Skivo struck out swinging (1-2 KBSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charly Landow singled up the middle (1-2 KFBF).",
+            "Emily Walsh grounded out to 2b (1-2 FBFF); Charly Landow advanced to second.",
+            "Maddy DeLong flied out to lf (3-1 BBKB).",
+            "Lexi Sealy doubled to right center, RBI (1-1 KB); Charly Landow scored.",
+            "Belle Dicampello popped up to 2b (2-2 BBFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charlotte Raymond doubled to center field (2-2 BBFK).",
+            "Sophia Pak struck out looking (1-2 BKFK).",
+            "Devin McCall struck out swinging (1-2 BKSFFS).",
+            "Samantha Skivo grounded out to 1b unassisted (1-2 BKF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Miller to lf.",
+            "Charly Landow singled up the middle (2-2 BFBF).",
+            "Izzy Burgess pinch ran for Charly Landow.",
+            "Izzy Burgess advanced to second on a passed ball.",
+            "Emily Walsh tripled down the rf line, RBI (3-1 FBBB); Izzy Burgess scored.",
+            "Maddy DeLong reached on a fielder's choice to third base (3-2 BKBBF).",
+            "Lexi Sealy flied out to lf, sacrifice fly, RBI (0-1 F); Maddy DeLong advanced to second; Emily Walsh scored.",
+            "Belle Dicampello singled to right center (1-0 B); Maddy DeLong advanced to third.",
+            "Charlotte Raymond struck out looking (2-2 KBBKK).",
+            "Sophia Pak grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Devin McCall flied out to rf (1-2 BFFF).",
+            "Samantha Skivo flied out to cf (0-1 F).",
+            "Charly Landow struck out swinging (2-2 BFFBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 7,
+          "h": 9,
+          "r": 5,
+          "er": 5,
+          "bb": 5,
+          "so": 7,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 36
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/babson-college/boxscore/10024",
+      "date": "4/17/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh doubled to left center (1-0 B).",
+            "Maddy DeLong out at first p to 2b, SAC, bunt (0-0); Emily Walsh advanced to third.",
+            "Lexi Sealy popped up to ss (1-0 B).",
+            "Belle Dicampello flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Charlotte Raymond struck out swinging (0-2 KFFFS).",
+            "Sophia Pak walked (3-2 BKBSBFB).",
+            "Devin McCall grounded out to p (1-2 KFB); Sophia Pak advanced to second.",
+            "Samantha Skivo grounded out to 1b unassisted (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Charly Landow singled up the middle (0-1 K).",
+            "Emily Walsh reached first on a muffed throw by 1b, assist by 2b, advanced to second (3-2 BKKFBB); Charly Landow scored, unearned.",
+            "Maddy DeLong out at first c to 2b, SAC, bunt (0-1 K); Emily Walsh advanced to third.",
+            "Lexi Sealy flied out to lf, sacrifice fly, RBI (0-0); Emily Walsh scored, unearned.",
+            "Belle Dicampello doubled to center field (1-0 B).",
+            "Charlotte Raymond lined out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sophia Pak lined out to ss (2-2 KBBFFFF).",
+            "Devin McCall flied out to lf (0-1 K).",
+            "Samantha Skivo flied out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charly Landow lined out to 1b (0-0).",
+            "Emily Walsh lined out to 2b (0-0).",
+            "Maddy DeLong popped up to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lexi Sealy popped up to 3b (0-0).",
+            "Belle Dicampello flied out to rf (3-2 BFBFB).",
+            "Charlotte Raymond popped up to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Gabby Reinbold to cf.",
+            "Sophia Pak popped up to ss (0-2 KS).",
+            "Devin McCall popped up to 2b (2-0 BB).",
+            "Samantha Skivo singled, out at second rf to ss (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 7,
+          "h": 4,
+          "r": 2,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 26
         }
       ],
       "year": 2026

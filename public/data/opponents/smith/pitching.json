@@ -1,32 +1,32 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-17T02:26:09.697Z",
+  "scrapedAt": "2026-04-18T02:09:06.038Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Peverly, Violet",
       "w": 7,
-      "l": 6,
-      "era": 3.36,
-      "app": 14,
-      "gs": 13,
+      "l": 7,
+      "era": 3.52,
+      "app": 15,
+      "gs": 14,
       "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 68.2,
-      "h": 74,
-      "r": 45,
-      "er": 33,
-      "bb": 33,
-      "so": 70,
+      "ip": 71.2,
+      "h": 80,
+      "r": 48,
+      "er": 36,
+      "bb": 37,
+      "so": 72,
       "hr": 2,
-      "whip": 1.56,
-      "doubles": 9,
+      "whip": 1.63,
+      "doubles": 12,
       "triples": 3,
-      "ab": 276,
-      "bAvg": 0.268,
-      "wp": 5,
+      "ab": 291,
+      "bAvg": 0.275,
+      "wp": 6,
       "hbp": 5,
       "bk": 0,
       "sfa": 2,
@@ -35,25 +35,25 @@
     {
       "name": "Gray, Bailey",
       "w": 6,
-      "l": 2,
-      "era": 3.6,
-      "app": 11,
-      "gs": 7,
-      "cg": 6,
+      "l": 3,
+      "era": 3.71,
+      "app": 12,
+      "gs": 8,
+      "cg": 7,
       "sho": 0,
       "sv": 0,
-      "ip": 56.1,
-      "h": 62,
-      "r": 35,
-      "er": 29,
-      "bb": 16,
-      "so": 41,
+      "ip": 62.1,
+      "h": 70,
+      "r": 39,
+      "er": 33,
+      "bb": 18,
+      "so": 43,
       "hr": 2,
-      "whip": 1.38,
-      "doubles": 13,
+      "whip": 1.41,
+      "doubles": 15,
       "triples": 2,
-      "ab": 231,
-      "bAvg": 0.268,
+      "ab": 256,
+      "bAvg": 0.273,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 5.53,
-      "app": 6,
+      "era": 4.77,
+      "app": 7,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 19,
-      "h": 25,
+      "ip": 22,
+      "h": 26,
       "r": 16,
       "er": 15,
-      "bb": 10,
-      "so": 9,
+      "bb": 11,
+      "so": 10,
       "hr": 2,
-      "whip": 1.84,
+      "whip": 1.68,
       "doubles": 5,
       "triples": 0,
-      "ab": 84,
-      "bAvg": 0.298,
+      "ab": 95,
+      "bAvg": 0.274,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
@@ -2489,6 +2489,193 @@
           "hbp": 0,
           "ab": 16,
           "bf": 16
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/springfield-college/boxscore/9674",
+      "date": "4/17/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amelia DeRosa walked (3-0 BBBB).",
+            "Reilly Hunter singled to pitcher (2-2 BKFB); Amelia DeRosa advanced to second.",
+            "Madison Testo walked (3-0 BBBB); Reilly Hunter advanced to second; Amelia DeRosa advanced to third.",
+            "Kate Katsetos lined out to ss (2-1 BKB).",
+            "Carissa Pecchia grounded into double play 3b to c to 1b (0-1 K); Amelia DeRosa out on the play."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emilia Santiago grounded out to 3b (0-2 KK).",
+            "Haley Ball walked (3-1 BSBBB).",
+            "Brynlee Eckles popped up to 2b (2-1 BBK).",
+            "Taylor Falotico reached first on an error by p, advanced to second (3-1 BBBK); Haley Ball advanced to third.",
+            "Amelia DeRosa struck out swinging (2-2 BBKFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Reilly Hunter flied out to cf (3-1 BFBB).",
+            "Madison Testo doubled to left center (0-0).",
+            "Kate Katsetos doubled to left center, RBI (2-0 BB); Madison Testo scored.",
+            "Carissa Pecchia doubled through the left side, RBI (0-0); Kate Katsetos scored.",
+            "Emilia Santiago singled to right field (0-1 F); Carissa Pecchia advanced to third.",
+            "Haley Ball singled to left field, RBI (3-1 KBBB); Emilia Santiago advanced to second; Carissa Pecchia scored.",
+            "Haley Ball advanced to second on a wild pitch; Emilia Santiago advanced to third on a wild pitch.",
+            "Brynlee Eckles struck out swinging (2-2 KFBFBS).",
+            "Taylor Falotico walked (3-1 BBBKB).",
+            "Amelia DeRosa reached on a fielder's choice (1-2 SBFF); Taylor Falotico out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Violet Peverly to 1b.",
+            "Lindsay Bennett to p for Lucy Allen.",
+            "Reilly Hunter walked (3-2 SFBBBFB).",
+            "Reilly Hunter stole second.",
+            "Madison Testo popped up to ss (2-1 KBB).",
+            "Kate Katsetos flied out to cf (1-2 FSB).",
+            "Carissa Pecchia struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emilia Santiago grounded out to 3b (1-0 B).",
+            "Haley Ball grounded out to 2b (3-2 BSSBB).",
+            "Brynlee Eckles singled through the left side (3-2 BBBKF).",
+            "Taylor Falotico grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Amelia DeRosa grounded out to 2b (1-0 B).",
+            "Reilly Hunter reached first on an error by 3b (0-0).",
+            "Tessa Spingola pinch hit for Madison Testo.",
+            "Tessa Spingola grounded out to 3b (1-0 B); Reilly Hunter advanced to second.",
+            "Kate Katsetos grounded out to 1b unassisted (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 3,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 4,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 19
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 3,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 12
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/springfield-college/boxscore/9675",
+      "date": "4/17/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reilly Hunter grounded out to 3b (1-0 B).",
+            "Amelia DeRosa grounded out to ss (0-1 K).",
+            "Madison Testo grounded out to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Katsetos singled to left center (2-2 BBFK).",
+            "Carissa Pecchia walked (3-0 BBBB); Kate Katsetos advanced to second.",
+            "Brynlee Eckles popped up to c (0-0).",
+            "Haley Ball reached on a fielder's choice (2-1 BFB); Carissa Pecchia advanced to second; Kate Katsetos out at third ss to 3b.",
+            "Sammy Swords flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Falotico singled through the left side (1-2 FBF).",
+            "Reilly Hunter flied out to lf (1-2 SFFB).",
+            "Amelia DeRosa singled to shortstop (0-0); Taylor Falotico advanced to second.",
+            "Madison Testo struck out swinging (1-2 KKBFFS).",
+            "Kate Katsetos lined out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Pecchia flied out to rf (3-2 KKFBBB).",
+            "Brynlee Eckles singled to catcher (3-2 KBBKB).",
+            "Haley Ball grounded out to p (0-2 KF); Brynlee Eckles advanced to second.",
+            "Sammy Swords doubled to right center, RBI (3-2 FBFBBF); Brynlee Eckles scored.",
+            "Taylor Falotico walked (3-2 BKBFBFB).",
+            "Reilly Hunter singled to right field, RBI (0-0); Taylor Falotico advanced to third; Sammy Swords scored.",
+            "Amelia DeRosa doubled to left field, 2 RBI (2-2 KBBK); Reilly Hunter scored; Taylor Falotico scored.",
+            "Madison Testo grounded out to 1b unassisted (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Kate Katsetos grounded out to p (2-0 BB).",
+            "Carissa Pecchia grounded out to 3b (0-0).",
+            "Brynlee Eckles popped out to 1b (1-2 BKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haley Ball struck out looking (3-2 BBSFBK).",
+            "Sammy Swords flied out to rf (2-2 KBFB).",
+            "Taylor Falotico singled to pitcher (1-0 B).",
+            "Taylor Falotico out at second c to ss, caught stealing."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 6,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 27
         }
       ],
       "year": 2026

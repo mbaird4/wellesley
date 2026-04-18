@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-17T02:26:34.561Z",
+  "scrapedAt": "2026-04-18T02:09:32.783Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,26 +35,26 @@
     {
       "name": "Sealey, Lexi",
       "w": 2,
-      "l": 1,
-      "era": 2.78,
-      "app": 14,
+      "l": 2,
+      "era": 2.56,
+      "app": 15,
       "gs": 2,
       "cg": 2,
       "sho": 1,
       "sv": 3,
-      "ip": 40.1,
-      "h": 57,
-      "r": 24,
+      "ip": 43.2,
+      "h": 59,
+      "r": 26,
       "er": 16,
-      "bb": 15,
-      "so": 14,
+      "bb": 17,
+      "so": 15,
       "hr": 0,
-      "whip": 1.79,
-      "doubles": 8,
+      "whip": 1.74,
+      "doubles": 9,
       "triples": 2,
-      "ab": 176,
-      "bAvg": 0.324,
-      "wp": 5,
+      "ab": 188,
+      "bAvg": 0.314,
+      "wp": 6,
       "hbp": 4,
       "bk": 0,
       "sfa": 0,
@@ -64,25 +64,25 @@
       "name": "Topel, Anna",
       "w": 4,
       "l": 4,
-      "era": 4.06,
-      "app": 11,
-      "gs": 11,
+      "era": 4.33,
+      "app": 12,
+      "gs": 12,
       "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 51.2,
-      "h": 75,
-      "r": 43,
-      "er": 30,
-      "bb": 26,
-      "so": 34,
+      "ip": 55,
+      "h": 81,
+      "r": 47,
+      "er": 34,
+      "bb": 32,
+      "so": 37,
       "hr": 1,
-      "whip": 1.95,
-      "doubles": 11,
+      "whip": 2.05,
+      "doubles": 13,
       "triples": 2,
-      "ab": 228,
-      "bAvg": 0.329,
-      "wp": 3,
+      "ab": 244,
+      "bAvg": 0.332,
+      "wp": 5,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
@@ -90,31 +90,31 @@
     },
     {
       "name": "Vlacich, Katie",
-      "w": 2,
+      "w": 3,
       "l": 8,
-      "era": 6.44,
-      "app": 12,
-      "gs": 10,
-      "cg": 3,
+      "era": 5.77,
+      "app": 13,
+      "gs": 11,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 50,
-      "h": 77,
-      "r": 54,
-      "er": 46,
-      "bb": 19,
-      "so": 35,
+      "ip": 57,
+      "h": 82,
+      "r": 55,
+      "er": 47,
+      "bb": 23,
+      "so": 39,
       "hr": 6,
-      "whip": 1.92,
+      "whip": 1.84,
       "doubles": 18,
       "triples": 2,
-      "ab": 229,
-      "bAvg": 0.336,
+      "ab": 253,
+      "bAvg": 0.324,
       "wp": 13,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 2
+      "sha": 4
     }
   ],
   "games": [
@@ -2988,6 +2988,219 @@
           "hbp": 0,
           "ab": 13,
           "bf": 14
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wheaton/boxscore/16064",
+      "date": "4/17/2026",
+      "opponent": "Wheaton",
+      "pitchers": [
+        "Topel, Anna",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari flied out to lf (1-0 B).",
+            "Taylor Barry walked (3-2 BFBKBB).",
+            "Taylor Barry stole second.",
+            "Peyton Blankenheim-Brown flied out to cf (3-2 BBBKF).",
+            "Mady Bryan singled to left field (2-0 BB); Taylor Barry advanced to third.",
+            "Emma Boucher walked (3-0 BBBB); Mady Bryan advanced to second.",
+            "Gabby Reinbold singled to center field, 2 RBI (3-2 BKBSB); Emma Boucher advanced to second; Mady Bryan scored; Taylor Barry scored.",
+            "Amber Arcand singled to right center, RBI (2-1 KBB); Gabby Reinbold advanced to second; Emma Boucher scored.",
+            "Amber Arcand advanced to second on a wild pitch; Gabby Reinbold advanced to third on a wild pitch.",
+            "Julia Miller grounded out to p (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Dolan singled to pitcher (1-0 B).",
+            "Ella Molinari reached on a fielder's choice to third base (2-2 KFBB); Riley Dolan out at second 3b to 2b.",
+            "Ella Molinari stole second.",
+            "Taylor Barry grounded out to ss (3-2 FBBFB); Ella Molinari advanced to third.",
+            "Peyton Blankenheim-Brown struck out swinging (2-2 BFBKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Mady Bryan flied out to cf (1-0 B).",
+            "Emma Boucher walked (3-1 BFBBB).",
+            "Gabby Reinbold walked (3-2 KFBBBB); Emma Boucher advanced to second.",
+            "Amber Arcand doubled to left center, RBI (2-0 BB); Gabby Reinbold advanced to third; Emma Boucher scored.",
+            "Julia Miller struck out swinging (2-2 FBFBS).",
+            "Riley Dolan popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Molinari doubled down the lf line (0-0).",
+            "Taylor Barry struck out swinging (3-2 SFBBBFS).",
+            "Peyton Blankenheim-Brown walked (3-0 BBBB).",
+            "Peyton Blankenheim-Brown advanced to second on a wild pitch; Ella Molinari advanced to third on a wild pitch.",
+            "Mady Bryan walked (3-2 KBBBKB).",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Anna Topel.",
+            "Emma Boucher lined into double play p to 3b (0-2 KF); Ella Molinari out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gabby Reinbold flied out to cf (3-2 KBBBK).",
+            "Amber Arcand grounded out to 2b (1-2 KBF).",
+            "Madi Miller pinch hit for Julia Miller.",
+            "Madi Miller reached first on an error by ss (0-0).",
+            "Julia Miller pinch ran for Madi Miller.",
+            "Riley Dolan flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Charly Landow to 2b for Izzy Burgess.",
+            "Ella Molinari doubled to left center (2-2 BKBK).",
+            "Taylor Barry lined into double play 2b to ss (1-0 B); Ella Molinari out on the play.",
+            "Peyton Blankenheim-Brown flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Mady Bryan grounded out to p (1-1 BK).",
+            "Emma Boucher singled down the lf line (0-0).",
+            "Emma Boucher advanced to second on a wild pitch.",
+            "Gabby Reinbold walked (3-1 BFBBB).",
+            "Amber Arcand walked (3-1 BBSBB); Gabby Reinbold advanced to second; Emma Boucher advanced to third.",
+            "Julia Miller struck out swinging (2-2 KBFBS).",
+            "Riley Dolan reached first on a throwing error by ss (1-0 B); Amber Arcand advanced to third; Gabby Reinbold scored, unearned; Emma Boucher scored, unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 3.1,
+          "h": 6,
+          "r": 4,
+          "er": 4,
+          "bb": 6,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 22
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 3.1,
+          "h": 2,
+          "r": 2,
+          "er": 0,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 12,
+          "bf": 14
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wheaton/boxscore/16065",
+      "date": "4/17/2026",
+      "opponent": "Wheaton",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari popped up to 2b (0-0).",
+            "Taylor Barry walked (3-0 BBBB).",
+            "Peyton Blankenheim-Brown struck out looking (0-2 KFK).",
+            "Taylor Barry stole second.",
+            "Mady Bryan fouled out to c (3-2 FFBBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Boucher singled through the left side (1-0 B).",
+            "Gabby Reinbold out at first p to 2b, SAC, bunt (0-0); Emma Boucher advanced to second.",
+            "Amber Arcand singled to center field, RBI (0-1 K); Emma Boucher scored.",
+            "Julia Miller out at first 3b to 2b, SAC, bunt (1-0 B); Amber Arcand advanced to second.",
+            "Riley Dolan flied out to cf (3-1 BBSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Molinari walked (3-2 BFBBFB).",
+            "Taylor Barry struck out swinging (1-2 SKBS).",
+            "Peyton Blankenheim-Brown flied out to lf (0-2 SFF).",
+            "Mady Bryan grounded out 1b to 2b to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Boucher flied out to lf (0-0).",
+            "Gabby Reinbold struck out swinging (1-2 BSFS).",
+            "Amber Arcand singled to right field (3-2 BBBKK).",
+            "Julia Miller singled to left field (1-2 KSFFB); Amber Arcand advanced to second.",
+            "Riley Dolan struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella Molinari flied out to rf (1-0 B).",
+            "Taylor Barry grounded out to ss (1-1 KB).",
+            "Peyton Blankenheim-Brown singled to catcher (2-2 BSBF).",
+            "Mady Bryan flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Boucher grounded out p to ss to 1b (2-1 KBB).",
+            "Madi Miller pinch hit for Gabby Reinbold.",
+            "Madi Miller walked (3-2 KSBBBB).",
+            "Gabby Reinbold pinch ran for Madi Miller.",
+            "Amber Arcand reached on a fielder's choice to pitcher (1-2 KBK); Gabby Reinbold out at second p to ss.",
+            "Julia Miller grounded out to 1b unassisted (3-1 BFBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lexi Falcioni pinch hit for Riley Dolan.",
+            "Lexi Falcioni grounded out to 2b (0-1 F).",
+            "Ella Molinari grounded out to 2b (2-2 KBBF).",
+            "Taylor Barry walked (3-1 BFBBB).",
+            "Peyton Blankenheim-Brown fouled out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 7,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 4,
+          "so": 4,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 30
         }
       ],
       "year": 2026

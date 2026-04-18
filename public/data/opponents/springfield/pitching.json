@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-17T02:26:04.960Z",
+  "scrapedAt": "2026-04-18T02:09:01.437Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 11,
+      "w": 12,
       "l": 4,
-      "era": 2.21,
-      "app": 15,
-      "gs": 6,
-      "cg": 5,
-      "sho": 0,
+      "era": 2.06,
+      "app": 16,
+      "gs": 7,
+      "cg": 6,
+      "sho": 1,
       "sv": 0,
-      "ip": 95,
-      "h": 98,
+      "ip": 102,
+      "h": 102,
       "r": 37,
       "er": 30,
       "bb": 25,
-      "so": 81,
+      "so": 87,
       "hr": 2,
-      "whip": 1.29,
-      "doubles": 17,
+      "whip": 1.25,
+      "doubles": 18,
       "triples": 2,
-      "ab": 369,
-      "bAvg": 0.266,
+      "ab": 393,
+      "bAvg": 0.26,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 5,
+      "w": 6,
       "l": 5,
-      "era": 5.55,
-      "app": 20,
-      "gs": 19,
-      "cg": 10,
+      "era": 5.14,
+      "app": 21,
+      "gs": 20,
+      "cg": 11,
       "sho": 0,
       "sv": 1,
-      "ip": 70.2,
-      "h": 106,
-      "r": 69,
-      "er": 56,
-      "bb": 18,
-      "so": 35,
+      "ip": 77.2,
+      "h": 114,
+      "r": 70,
+      "er": 57,
+      "bb": 19,
+      "so": 41,
       "hr": 1,
-      "whip": 1.75,
-      "doubles": 16,
+      "whip": 1.71,
+      "doubles": 17,
       "triples": 10,
-      "ab": 320,
-      "bAvg": 0.331,
+      "ab": 348,
+      "bAvg": 0.328,
       "wp": 5,
       "hbp": 3,
       "bk": 0,
       "sfa": 4,
-      "sha": 3
+      "sha": 4
     }
   ],
   "games": [
@@ -2560,6 +2560,186 @@
           "hbp": 1,
           "ab": 30,
           "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/smith/boxscore/14841",
+      "date": "4/17/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson fouled out to lf (2-2 BFSBF).",
+            "Gabbie Chinnis struck out swinging (0-2 KKS).",
+            "Violet Peverly doubled to right center (1-0 B).",
+            "Riley Veenstra flied out to lf (3-2 BKBBSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray flied out to rf (1-1 FB).",
+            "Taz Tamai grounded out to 2b (2-1 KBB).",
+            "Sophie Hasegawa struck out looking (0-2 KSK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elinor Washington struck out swinging (3-2 KBBFFFBS).",
+            "Lily Hackett flied out to rf (0-1 S).",
+            "Ally Knutson singled up the middle (1-2 FFB).",
+            "Ally Knutson out at second c to 2b, caught stealing."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gabbie Chinnis flied out to lf (1-2 BFF).",
+            "Violet Peverly popped up to 2b (2-2 BBFF).",
+            "Riley Veenstra struck out swinging (1-2 KBKFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bailey Gray flied out to cf (0-0).",
+            "Taz Tamai singled through the right side (2-2 BSKFB).",
+            "Sophie Hasegawa flied out to rf (2-2 FBSBFF).",
+            "Elinor Washington struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lily Hackett grounded out to ss (1-1 BS).",
+            "Ally Knutson grounded out to ss (0-0).",
+            "Gabbie Chinnis struck out swinging (1-2 BKKS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Violet Peverly flied out to cf (0-0).",
+            "Riley Veenstra flied out to cf (2-2 FBFBF).",
+            "Bailey Gray singled to right field (0-0).",
+            "Taz Tamai grounded out to ss (2-1 BFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/smith/boxscore/14842",
+      "date": "4/17/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ally Knutson doubled to left center (0-0).",
+            "Gabbie Chinnis struck out swinging (2-2 FBBFS).",
+            "Violet Peverly struck out swinging (1-2 KFBS); Ally Knutson advanced to third.",
+            "Riley Veenstra struck out looking (2-2 BKKBFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray popped up to 3b (1-1 KB).",
+            "Taz Tamai singled to left field (0-2 SK).",
+            "Sophie Hasegawa struck out swinging (2-2 FFBBFS).",
+            "Elinor Washington grounded out ss to 3b to 1b (0-2 KSF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lily Hackett flied out to cf (1-1 KB).",
+            "Ally Knutson lined out to cf (1-2 FBS).",
+            "Gabbie Chinnis singled to third base (1-1 BF).",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly grounded out to 2b (3-1 BBSB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Veenstra singled to center field (3-1 BKBB).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray out at first p to 2b, SAC (0-0); Anna Gray advanced to second.",
+            "Taz Tamai flied out to lf (2-0 BB).",
+            "Sophie Hasegawa singled to center field, RBI (2-2 BBKF); Anna Gray scored.",
+            "Elinor Washington lined out to lf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily Hackett lined out to 1b (1-2 KFB).",
+            "Ally Knutson singled to right center (0-1 F).",
+            "Gabbie Chinnis struck out swinging (1-2 SBSS).",
+            "Violet Peverly singled to center field (2-1 BKB); Ally Knutson advanced to second.",
+            "Riley Veenstra to dp for Anna Gray.",
+            "Riley Veenstra flied out to 2b (2-1 BBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bailey Gray walked (3-2 FBFBFBB).",
+            "Taz Tamai grounded out to 2b (1-1 BK); Bailey Gray advanced to second.",
+            "Sophie Hasegawa grounded out to ss (0-1 F); Bailey Gray advanced to third.",
+            "Elinor Washington struck out swinging (0-2 SKFFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Alana Robinson pinch hit for Lily Hackett.",
+            "Alana Robinson singled through the right side (3-2 SBKBFBF).",
+            "Lily Hackett pinch ran for Alana Robinson.",
+            "Ally Knutson flied out to rf (1-1 SB).",
+            "Gabbie Chinnis reached on a fielder's choice (1-2 BFF); Lily Hackett out at second 2b unassisted.",
+            "Violet Peverly out at first ss to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 8,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 6,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
         }
       ],
       "year": 2026
