@@ -1,64 +1,64 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-18T02:09:01.437Z",
+  "scrapedAt": "2026-04-19T02:30:42.221Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 12,
+      "w": 13,
       "l": 4,
-      "era": 2.06,
-      "app": 16,
-      "gs": 7,
-      "cg": 6,
-      "sho": 1,
+      "era": 1.96,
+      "app": 17,
+      "gs": 8,
+      "cg": 7,
+      "sho": 2,
       "sv": 0,
-      "ip": 102,
-      "h": 102,
+      "ip": 107,
+      "h": 105,
       "r": 37,
       "er": 30,
-      "bb": 25,
-      "so": 87,
+      "bb": 26,
+      "so": 91,
       "hr": 2,
-      "whip": 1.25,
+      "whip": 1.22,
       "doubles": 18,
       "triples": 2,
-      "ab": 393,
-      "bAvg": 0.26,
+      "ab": 410,
+      "bAvg": 0.256,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 7
+      "sha": 8
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 6,
+      "w": 7,
       "l": 5,
-      "era": 5.14,
-      "app": 21,
-      "gs": 20,
-      "cg": 11,
+      "era": 4.82,
+      "app": 22,
+      "gs": 21,
+      "cg": 12,
       "sho": 0,
       "sv": 1,
-      "ip": 77.2,
-      "h": 114,
-      "r": 70,
-      "er": 57,
-      "bb": 19,
-      "so": 41,
+      "ip": 85.2,
+      "h": 120,
+      "r": 72,
+      "er": 59,
+      "bb": 20,
+      "so": 45,
       "hr": 1,
-      "whip": 1.71,
-      "doubles": 17,
+      "whip": 1.63,
+      "doubles": 18,
       "triples": 10,
-      "ab": 348,
-      "bAvg": 0.328,
+      "ab": 376,
+      "bAvg": 0.319,
       "wp": 5,
       "hbp": 3,
       "bk": 0,
       "sfa": 4,
-      "sha": 4
+      "sha": 5
     }
   ],
   "games": [
@@ -2737,6 +2737,176 @@
           "er": 1,
           "bb": 1,
           "so": 6,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/emerson/boxscore/14843",
+      "date": "4/18/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale flied out to rf (0-2 FK).",
+            "Aislinn McCoy singled to first base (1-1 BF).",
+            "Aislinn McCoy stole second.",
+            "Riley Caiazza walked (3-2 KBBBKFB).",
+            "Avi Kuperman flied out to cf (0-0); Aislinn McCoy advanced to third.",
+            "Kari Sorensen popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Cal Sheehan grounded out to ss (0-1 K).",
+            "Casey Yacovelli struck out looking (3-2 BBKKBFFK).",
+            "Riley Fasteau grounded out to 3b (2-2 BKSBFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano singled to first base (2-2 BBFS).",
+            "Malena Cardinale singled through the left side (0-1 K); Valentina Luciano advanced to second.",
+            "Aislinn McCoy out at first p to 2b, SAC, bunt (0-1 S); Malena Cardinale advanced to second; Valentina Luciano advanced to third.",
+            "Riley Caiazza struck out swinging (1-2 KBKFS).",
+            "Avi Kuperman grounded out to ss (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Pecchia to c for Maddie Tse.",
+            "Kari Sorensen struck out swinging (1-2 KBSS).",
+            "Kate Regan struck out swinging (2-2 BBSFS).",
+            "Casey Yacovelli flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Amelia DeRosa to p for Tessa Spingola.",
+            "Riley Fasteau grounded out to 2b (0-0).",
+            "Valentina Luciano flied out to lf (0-0).",
+            "Malena Cardinale fouled out to 3b (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 5,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/emerson/boxscore/14844",
+      "date": "4/18/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale grounded out to 3b (1-2 KBF).",
+            "Aislinn McCoy grounded out to ss (1-2 KKB).",
+            "Riley Caiazza walked (3-2 BBKFBB).",
+            "Avi Kuperman singled up the middle (0-1 K); Riley Caiazza advanced to second.",
+            "Kari Sorensen flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Cal Sheehan doubled to left center (1-1 BK).",
+            "Casey Yacovelli struck out swinging (1-2 KFBS).",
+            "Riley Fasteau grounded into double play ss to 1b to 3b (0-0); Cal Sheehan out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano singled to second base (1-0 B).",
+            "Malena Cardinale grounded out to 2b (0-1 K); Valentina Luciano advanced to second.",
+            "Aislinn McCoy singled up the middle (1-1 FB); Valentina Luciano advanced to third.",
+            "Riley Caiazza singled to right field, RBI (1-1 BK); Aislinn McCoy advanced to second; Valentina Luciano scored.",
+            "Avi Kuperman flied out to cf (0-2 KKFFF); Aislinn McCoy advanced to third.",
+            "Riley Caiazza stole second; Aislinn McCoy stole home.",
+            "Kari Sorensen fouled out to rf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cal Sheehan grounded out to ss (0-1 F).",
+            "Casey Yacovelli lined out to 3b (1-1 BK).",
+            "Riley Fasteau flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Valentina Luciano grounded out to 1b unassisted (1-0 B).",
+            "Malena Cardinale fouled out to rf (0-1 F).",
+            "Aislinn McCoy struck out swinging (2-2 BKSBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madison Testo to c for Maddie Tse.",
+            "Riley Caiazza grounded out to ss (2-1 BFB).",
+            "Avi Kuperman grounded out to p (0-2 FK).",
+            "Kari Sorensen singled through the left side (3-2 KFBBFB).",
+            "Cal Sheehan flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Casey Yacovelli fouled out to 1b (0-0).",
+            "Riley Fasteau lined out to 1b (2-2 BBFS).",
+            "Valentina Luciano flied out to rf (3-2 BFBBF)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Malena Cardinale Valentina Luciano placed on second (0-0).",
+            "Malena Cardinale out at first 3b to 2b, SAC, bunt (0-0); Valentina Luciano advanced to third.",
+            "Aislinn McCoy struck out swinging (1-2 BKFS).",
+            "Riley Caiazza struck out swinging (0-2 FKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 8,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 4,
           "hbp": 0,
           "ab": 28,
           "bf": 30

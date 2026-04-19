@@ -1,32 +1,32 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-18T02:09:22.724Z",
+  "scrapedAt": "2026-04-19T02:31:12.496Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 8,
+      "w": 10,
       "l": 6,
-      "era": 1.42,
-      "app": 17,
-      "gs": 12,
-      "cg": 9,
-      "sho": 2,
+      "era": 1.31,
+      "app": 19,
+      "gs": 13,
+      "cg": 10,
+      "sho": 3,
       "sv": 1,
-      "ip": 79,
-      "h": 68,
-      "r": 38,
-      "er": 16,
-      "bb": 20,
-      "so": 69,
+      "ip": 91,
+      "h": 75,
+      "r": 39,
+      "er": 17,
+      "bb": 23,
+      "so": 76,
       "hr": 0,
-      "whip": 1.11,
-      "doubles": 9,
+      "whip": 1.08,
+      "doubles": 11,
       "triples": 0,
-      "ab": 317,
-      "bAvg": 0.215,
-      "wp": 3,
+      "ab": 361,
+      "bAvg": 0.208,
+      "wp": 4,
       "hbp": 0,
       "bk": 0,
       "sfa": 1,
@@ -64,24 +64,24 @@
       "name": "Behel, Emma",
       "w": 2,
       "l": 1,
-      "era": 3.37,
-      "app": 8,
-      "gs": 4,
+      "era": 3.14,
+      "app": 9,
+      "gs": 5,
       "cg": 1,
       "sho": 0,
       "sv": 0,
-      "ip": 27,
-      "h": 34,
+      "ip": 29,
+      "h": 38,
       "r": 16,
       "er": 13,
-      "bb": 7,
-      "so": 8,
+      "bb": 10,
+      "so": 9,
       "hr": 1,
-      "whip": 1.52,
+      "whip": 1.66,
       "doubles": 7,
       "triples": 0,
-      "ab": 113,
-      "bAvg": 0.301,
+      "ab": 123,
+      "bAvg": 0.309,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -2258,6 +2258,212 @@
           "hbp": 0,
           "ab": 25,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/babson/boxscore/9360",
+      "date": "4/18/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh singled down the lf line (1-0 B).",
+            "Maddy DeLong lined into double play 1b (0-2 SK); Emily Walsh out on the play.",
+            "Lexi Sealy grounded out to p (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Belle Dicampello grounded out to 2b (0-0).",
+            "Charlotte Raymond doubled to right center (1-1 BK).",
+            "Sophia Pak reached on a fielder's choice (2-1 BKB); Charlotte Raymond out at third p to ss.",
+            "Devin McCall grounded out to 3b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Samantha Skivo grounded out to p (0-1 K).",
+            "Charly Landow grounded out to p (2-2 BFBF).",
+            "Emily Walsh grounded out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddy DeLong grounded out to 2b (1-1 BK).",
+            "Lexi Sealy walked (3-2 BBBKFB).",
+            "Belle Dicampello reached first on a fielding error by ss (0-1 F); Lexi Sealy advanced to second.",
+            "Charlotte Raymond struck out swinging (3-2 BBBKSS).",
+            "Sophia Pak grounded out to 3b (2-2 BKFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Devin McCall lined out to ss (1-2 KBS).",
+            "Samantha Skivo reached first on a throwing error by ss (1-2 BKK).",
+            "Nicole Petrillo pinch ran for Samantha Skivo.",
+            "Charly Landow reached on a fielder's choice (0-1 K); Nicole Petrillo out at second ss to 2b.",
+            "Emily Walsh lined out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bridget Bartz to 2b for Olivia Garcia.",
+            "Dana Walker to p for Caitlynn Gibson.",
+            "Madeline Kibler to c for Ella Stolarzyk.",
+            "Maddy DeLong grounded out to 2b (1-2 KFB).",
+            "Lexi Sealy flied out to lf (0-0).",
+            "Belle Dicampello singled to right field (0-2 KF).",
+            "Charlotte Raymond reached first on a fielding error by 2b (0-1 K); Belle Dicampello advanced to second.",
+            "Izzy Burgess pinch hit for Sophia Pak.",
+            "Izzy Burgess fouled out to lf (3-2 KFBBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ruby Madia pinch hit for Devin McCall.",
+            "Ruby Madia struck out swinging (0-2 KSS).",
+            "Samantha Skivo grounded out to 2b (3-2 BBFKBF).",
+            "Charly Landow struck out looking (2-2 BKFFBFK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/babson/boxscore/9361",
+      "date": "4/18/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Behel, Emma",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh lined out to ss (1-2 BFFF).",
+            "Maddy DeLong struck out swinging (2-2 BFKBFS).",
+            "Lexi Sealy walked (3-0 BBBB).",
+            "Belle Dicampello singled to center field (1-2 KFFB); Lexi Sealy advanced to second.",
+            "Charlotte Raymond walked (3-2 BBKKBB); Belle Dicampello advanced to second; Lexi Sealy advanced to third.",
+            "Devin McCall grounded out to 2b (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Izzy Burgess flied out to cf (1-0 B).",
+            "Charly Landow singled to right field (0-0).",
+            "Bella Marchetti reached on a fielder's choice (3-2 BFBFB); Charly Landow out at second 2b to ss.",
+            "Emily Walsh singled through the right side, advanced to second on a throwing error by rf (0-0); Bella Marchetti advanced to third.",
+            "Maddy DeLong grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lexi Sealy singled through the right side (0-0).",
+            "Lexi Sealy advanced to second on a passed ball.",
+            "Belle Dicampello walked (3-1 BBKBB).",
+            "Dana Walker to p for Emma Behel.",
+            "Charlotte Raymond reached on a fielder's choice (1-0 B); Belle Dicampello advanced to second; Lexi Sealy out at third ss to 3b.",
+            "Devin McCall grounded out to 1b unassisted (2-2 BFKBF); Charlotte Raymond advanced to second; Belle Dicampello advanced to third.",
+            "Izzy Burgess struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Abby Steele to c.",
+            "Charly Landow singled through the right side (0-1 F).",
+            "Charly Landow advanced to second on a wild pitch.",
+            "Bella Marchetti walked (3-2 SBFBBB).",
+            "Emily Walsh doubled up the middle, RBI (3-2 BBFFFFFB); Bella Marchetti advanced to third; Charly Landow scored.",
+            "Maddy DeLong struck out swinging (1-2 KFBFFS).",
+            "Lexi Sealy grounded out to p (1-1 BF).",
+            "Belle Dicampello grounded out to p (1-2 KSB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bridget Bartz to 2b for Olivia Garcia.",
+            "Charlotte Raymond grounded out to 3b (1-1 KB).",
+            "Devin McCall struck out swinging (0-2 KSFFFFFS).",
+            "Izzy Burgess struck out looking (1-2 FKBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Charly Landow singled up the middle (0-0).",
+            "Nicole Petrillo pinch ran for Charly Landow.",
+            "Bella Marchetti reached on a fielder's choice (1-0 B); Nicole Petrillo out at second ss to 2b.",
+            "Emily Walsh grounded out to p (1-0 B); Bella Marchetti advanced to second.",
+            "Maddy DeLong singled down the rf line (0-2 FK); Bella Marchetti advanced to third.",
+            "Lexi Sealy lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Belle Dicampello walked (3-0 BBBB).",
+            "Charlotte Raymond lined out to lf (1-1 KB).",
+            "Samantha Skivo pinch hit for Devin McCall.",
+            "Samantha Skivo lined into double play p to 1b (1-1 BK); Belle Dicampello out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 2,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 13
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 5,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 20
         }
       ],
       "year": 2026

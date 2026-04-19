@@ -1,32 +1,32 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-18T02:09:09.697Z",
+  "scrapedAt": "2026-04-19T02:30:56.260Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 10,
-      "era": 5.65,
-      "app": 17,
-      "gs": 12,
-      "cg": 11,
+      "l": 11,
+      "era": 6.09,
+      "app": 18,
+      "gs": 13,
+      "cg": 12,
       "sho": 0,
       "sv": 0,
-      "ip": 88,
-      "h": 142,
-      "r": 83,
-      "er": 71,
-      "bb": 18,
-      "so": 42,
-      "hr": 3,
-      "whip": 1.82,
-      "doubles": 33,
+      "ip": 92,
+      "h": 154,
+      "r": 94,
+      "er": 80,
+      "bb": 19,
+      "so": 43,
+      "hr": 5,
+      "whip": 1.88,
+      "doubles": 35,
       "triples": 3,
-      "ab": 393,
-      "bAvg": 0.361,
-      "wp": 3,
+      "ab": 417,
+      "bAvg": 0.369,
+      "wp": 5,
       "hbp": 5,
       "bk": 0,
       "sfa": 6,
@@ -35,29 +35,29 @@
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 12,
-      "era": 8.26,
-      "app": 13,
-      "gs": 13,
-      "cg": 4,
+      "l": 13,
+      "era": 8.8,
+      "app": 14,
+      "gs": 14,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 51.2,
-      "h": 80,
-      "r": 81,
-      "er": 61,
-      "bb": 64,
+      "ip": 55.2,
+      "h": 89,
+      "r": 91,
+      "er": 70,
+      "bb": 69,
       "so": 41,
       "hr": 2,
-      "whip": 2.79,
-      "doubles": 19,
-      "triples": 5,
-      "ab": 221,
-      "bAvg": 0.362,
-      "wp": 16,
+      "whip": 2.84,
+      "doubles": 20,
+      "triples": 6,
+      "ab": 242,
+      "bAvg": 0.368,
+      "wp": 21,
       "hbp": 3,
       "bk": 0,
-      "sfa": 6,
+      "sfa": 7,
       "sha": 13
     },
     {
@@ -2736,6 +2736,173 @@
           "hbp": 2,
           "ab": 29,
           "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/11777",
+      "date": "4/18/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour singled up the middle (2-0 BB).",
+            "Lucy Latour stole second.",
+            "Virginia McKinney reached first on an error by 3b (3-1 BBKB); Lucy Latour advanced to third on the error.",
+            "Virginia McKinney stole second.",
+            "Sandy Fairbairn doubled to right field, 2 RBI (1-0 B); Virginia McKinney advanced to third, scored, unearned; Lucy Latour scored.",
+            "Sandy Fairbairn advanced to third on a wild pitch.",
+            "Emma Nagy singled to left field, RBI (1-2 KKB); Sandy Fairbairn scored.",
+            "Emma Nagy advanced to second on a passed ball.",
+            "Ali Chalovich struck out swinging (2-2 FBKBS).",
+            "Emma Nagy advanced to third on a wild pitch.",
+            "Stella Kozak reached first on a muffed throw by 1b, assist by ss (2-0 BB); Emma Nagy scored on the error, unearned.",
+            "Stella Kozak stole second.",
+            "Stella Kozak out at third c to 3b, caught stealing.",
+            "Mia Francisco grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Meg Sherwood singled to second base (1-0 B).",
+            "Elizabeth Jordan singled to third base, bunt (0-0); Meg Sherwood advanced to second, advanced to third.",
+            "Elizabeth Jordan stole second.",
+            "Lucy Latour singled to right field, 2 RBI (2-1 BBK); Elizabeth Jordan scored; Meg Sherwood scored.",
+            "Lucy Latour out at second c to ss, caught stealing.",
+            "Virginia McKinney walked (3-1 BFBBB).",
+            "Sandy Fairbairn flied out to cf (0-0).",
+            "Virginia McKinney stole second.",
+            "Emma Nagy singled to left field, RBI (0-1 K); Virginia McKinney scored.",
+            "Ali Chalovich popped up to 2b (2-2 FBKFFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Stella Kozak singled to shortstop, advanced to second on a throwing error by ss (0-0).",
+            "Stella Kozak advanced to third on a passed ball.",
+            "Mia Francisco flied out to lf (1-0 B).",
+            "Meg Sherwood doubled to right center, RBI (0-0); Stella Kozak scored.",
+            "Meg Sherwood stole third.",
+            "Elizabeth Jordan grounded out to 3b (2-1 BFB).",
+            "Lucy Latour singled up the middle, RBI (2-2 BKBKF); Meg Sherwood scored.",
+            "Virginia McKinney grounded out to 3b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sandy Fairbairn grounded out to 3b (3-0 BBB).",
+            "Emma Nagy homered, RBI (2-1 KBB).",
+            "Ali Chalovich homered, RBI (1-0 B).",
+            "Stella Kozak flied out to 2b (0-1 S).",
+            "Mia Francisco grounded out to 2b (1-2 BKSFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 4,
+          "h": 12,
+          "r": 11,
+          "er": 9,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/11778",
+      "date": "4/18/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Cami O'Rourke to 2b for Skyla Oliveira.",
+            "Taylor Ferraiolo to ss.",
+            "Lucy Latour walked (3-2 BBFFFFBFB).",
+            "Virginia McKinney singled to left field (0-2 FK); Lucy Latour advanced to second.",
+            "Sandy Fairbairn popped up to ss (0-0).",
+            "Virginia McKinney advanced to second on a wild pitch; Lucy Latour advanced to third on a wild pitch.",
+            "Emma Nagy flied out to cf, sacrifice fly, RBI (1-2 BSK); Virginia McKinney advanced to third; Lucy Latour scored.",
+            "Stella Kozak walked (3-2 BFFBFBB).",
+            "Stella Kozak stole second; Virginia McKinney stole home.",
+            "Ariana Kreuzer singled up the middle, RBI (1-2 KKB); Stella Kozak scored.",
+            "Mia Francisco walked (3-0 BBBB); Ariana Kreuzer advanced to second.",
+            "Mia Francisco advanced to second on a wild pitch; Ariana Kreuzer advanced to third on a wild pitch.",
+            "Meg Sherwood fouled out to 1b (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Gracie Keyes to 1b.",
+            "Emma Plourde to c.",
+            "Elizabeth Jordan singled down the lf line (1-2 BFF).",
+            "Elizabeth Jordan stole second.",
+            "Lucy Latour grounded out to 2b (1-0 B); Elizabeth Jordan advanced to third.",
+            "Virginia McKinney doubled to left field, RBI (0-0); Elizabeth Jordan scored.",
+            "Sandy Fairbairn popped up to 2b (0-1 F).",
+            "Virginia McKinney advanced to third on a wild pitch.",
+            "Emma Nagy singled down the lf line, RBI (1-1 BK); Virginia McKinney scored.",
+            "Emma Nagy advanced to second on a wild pitch.",
+            "Stella Kozak flied out to rf (2-2 FBBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ariana Kreuzer singled to left field (1-1 KB).",
+            "Colleen Mayer pinch ran for Ariana Kreuzer.",
+            "Mia Francisco singled to shortstop (2-0 BB); Colleen Mayer advanced to second.",
+            "Meg Sherwood flied out to lf (1-0 B).",
+            "Elizabeth Jordan grounded out to p (2-2 BFFB); Mia Francisco advanced to second; Colleen Mayer advanced to third.",
+            "Lucy Latour walked (3-1 BBBKB).",
+            "Virginia McKinney singled to center field, 2 RBI (1-0 B); Lucy Latour advanced to second; Mia Francisco scored; Colleen Mayer scored.",
+            "Sandy Fairbairn tripled to right field, 2 RBI (1-1 BS); Virginia McKinney scored; Lucy Latour scored.",
+            "Emma Nagy flied out to cf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Grace Grant pinch hit for Stella Kozak.",
+            "Grace Grant walked (3-1 BBKBB).",
+            "Ariana Kreuzer flied out to rf (0-0).",
+            "Mia Francisco reached on a fielder's choice (2-1 BBS); Grace Grant advanced to second on a fielding error by ss.",
+            "Meg Sherwood flied out to rf (0-0); Grace Grant advanced to third on the throw.",
+            "Mia Francisco advanced to second on a wild pitch; Grace Grant scored on a wild pitch, unearned.",
+            "Elizabeth Jordan grounded out to p (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 4,
+          "h": 9,
+          "r": 10,
+          "er": 9,
+          "bb": 5,
+          "so": 0,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 27
         }
       ],
       "year": 2026

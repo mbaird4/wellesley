@@ -1,31 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-18T02:08:48.790Z",
+  "scrapedAt": "2026-04-19T02:30:31.045Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 16,
+      "w": 17,
       "l": 0,
-      "era": 1.58,
-      "app": 17,
-      "gs": 10,
-      "cg": 7,
-      "sho": 2,
+      "era": 1.49,
+      "app": 18,
+      "gs": 11,
+      "cg": 8,
+      "sho": 3,
       "sv": 0,
-      "ip": 84,
-      "h": 90,
+      "ip": 89,
+      "h": 94,
       "r": 23,
       "er": 19,
       "bb": 14,
-      "so": 57,
+      "so": 59,
       "hr": 0,
-      "whip": 1.24,
+      "whip": 1.21,
       "doubles": 12,
       "triples": 1,
-      "ab": 328,
-      "bAvg": 0.274,
+      "ab": 347,
+      "bAvg": 0.271,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 8,
+      "w": 9,
       "l": 2,
-      "era": 2.16,
-      "app": 15,
-      "gs": 14,
-      "cg": 10,
+      "era": 2.11,
+      "app": 16,
+      "gs": 15,
+      "cg": 11,
       "sho": 3,
       "sv": 0,
-      "ip": 74.2,
-      "h": 79,
-      "r": 32,
-      "er": 23,
+      "ip": 79.2,
+      "h": 84,
+      "r": 34,
+      "er": 24,
       "bb": 26,
-      "so": 42,
+      "so": 46,
       "hr": 1,
-      "whip": 1.41,
-      "doubles": 7,
+      "whip": 1.38,
+      "doubles": 8,
       "triples": 1,
-      "ab": 287,
-      "bAvg": 0.275,
+      "ab": 307,
+      "bAvg": 0.274,
       "wp": 5,
       "hbp": 5,
       "bk": 0,
       "sfa": 3,
-      "sha": 10
+      "sha": 11
     },
     {
       "name": "Barr, Kaitlyn",
@@ -3454,6 +3454,153 @@
           "hbp": 0,
           "ab": 28,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/salve-regina/boxscore/16650",
+      "date": "4/18/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Stella Kozak to 3b for Destiny Lum.",
+            "Lillian Bridges grounded out to c, bunt (1-2 BKF).",
+            "Abby Merck struck out looking (0-2 FKK).",
+            "Gracie Keyes singled to right field (0-1 F).",
+            "Gracie Keyes advanced to second on a passed ball.",
+            "Emily Cronin doubled down the rf line, RBI (1-2 FFB); Gracie Keyes scored.",
+            "Emma Plourde grounded out to 2b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ryann Burke singled to right field (0-0).",
+            "Cami O'Rourke struck out swinging (1-2 KFBS).",
+            "Skyla Oliveira struck out looking (0-2 FFFK).",
+            "Taylor Ferraiolo grounded out to 3b (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lillian Bridges singled to pitcher, bunt (0-0).",
+            "Abby Merck out at first 1b to 2b, SAC, bunt (0-0); Lillian Bridges advanced to second.",
+            "Gracie Keyes reached first on a fielding error by 3b (1-0 B); Lillian Bridges did not advance.",
+            "Emily Cronin singled to right field (1-2 BKFF); Gracie Keyes advanced to second; Lillian Bridges advanced to third.",
+            "Emma Plourde reached on a fielder's choice, RBI (0-2 FF); Emily Cronin out at second ss to 2b; Gracie Keyes advanced to third; Lillian Bridges scored, unearned.",
+            "Ryann Burke grounded out to ss (1-2 FBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Victoria Geisser pinch hit for Cami O'Rourke.",
+            "Victoria Geisser popped up to ss (2-2 KBBS).",
+            "Skyla Oliveira flied out to rf (0-1 F).",
+            "Taylor Ferraiolo grounded out to c (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lillian Bridges grounded out to ss (2-2 KBBFFF).",
+            "Abby Merck struck out swinging (1-2 KSBS).",
+            "Gracie Keyes grounded out to 2b (1-2 FFFFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 5,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 4,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 21
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/salve-regina/boxscore/16651",
+      "date": "4/18/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to ss (0-1 K).",
+            "Abby Merck singled to right field (1-1 BK).",
+            "Gracie Keyes lined out to 3b (0-1 F).",
+            "Emily Cronin popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Plourde singled to center field (3-2 KBBBF).",
+            "Ryann Burke reached on a fielder's choice (0-1 K); Emma Plourde out at second ss to 2b.",
+            "Victoria Geisser flied out to lf (1-2 SSB).",
+            "Cami O'Rourke grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Ferraiolo flied out to rf (0-0).",
+            "Lillian Bridges grounded out to p (0-1 K).",
+            "Abby Merck grounded out to ss (0-2 FKF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ariana Kreuzer to c for Colleen Mayer.",
+            "Gracie Keyes singled down the lf line (1-1 FB).",
+            "Emily Cronin popped up to cf (1-0 B).",
+            "Emma Plourde grounded out to 3b (2-1 BKB); Gracie Keyes advanced to second.",
+            "Ryann Burke singled to left field (0-1 K); Gracie Keyes advanced to third.",
+            "Ryann Burke stole second.",
+            "Victoria Geisser struck out swinging (1-2 SSBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Stella Kozak to 3b for Grace Grant.",
+            "Cami O'Rourke grounded out to 2b (3-2 KFBBB).",
+            "Madi Allard pinch hit for Taylor Ferraiolo.",
+            "Madi Allard struck out swinging (0-2 KKS).",
+            "Lillian Bridges grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 5,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 19
         }
       ],
       "year": 2026

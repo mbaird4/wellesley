@@ -1,7 +1,7 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-18T02:09:28.081Z",
+  "scrapedAt": "2026-04-19T02:31:20.478Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -35,55 +35,55 @@
     {
       "name": "Dube, Megan",
       "w": 4,
-      "l": 8,
-      "era": 3.28,
-      "app": 12,
-      "gs": 11,
-      "cg": 11,
+      "l": 9,
+      "era": 3.38,
+      "app": 13,
+      "gs": 12,
+      "cg": 12,
       "sho": 0,
       "sv": 0,
-      "ip": 81,
-      "h": 98,
-      "r": 56,
-      "er": 38,
-      "bb": 25,
-      "so": 71,
+      "ip": 87,
+      "h": 106,
+      "r": 60,
+      "er": 42,
+      "bb": 27,
+      "so": 74,
       "hr": 4,
-      "whip": 1.52,
-      "doubles": 23,
+      "whip": 1.53,
+      "doubles": 25,
       "triples": 4,
-      "ab": 336,
-      "bAvg": 0.292,
+      "ab": 360,
+      "bAvg": 0.294,
       "wp": 2,
-      "hbp": 4,
+      "hbp": 5,
       "bk": 0,
-      "sfa": 2,
-      "sha": 9
+      "sfa": 3,
+      "sha": 10
     },
     {
       "name": "Wagstaff, Hannah",
       "w": 1,
-      "l": 0,
-      "era": 0,
-      "app": 2,
-      "gs": 2,
-      "cg": 1,
+      "l": 1,
+      "era": 1.91,
+      "app": 3,
+      "gs": 3,
+      "cg": 2,
       "sho": 1,
       "sv": 0,
-      "ip": 5,
-      "h": 3,
-      "r": 0,
-      "er": 0,
-      "bb": 0,
-      "so": 2,
+      "ip": 11,
+      "h": 13,
+      "r": 3,
+      "er": 3,
+      "bb": 2,
+      "so": 3,
       "hr": 0,
-      "whip": 0.6,
-      "doubles": 0,
+      "whip": 1.36,
+      "doubles": 2,
       "triples": 0,
-      "ab": 19,
-      "bAvg": 0.158,
+      "ab": 46,
+      "bAvg": 0.283,
       "wp": 0,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -2430,6 +2430,187 @@
           "hbp": 0,
           "ab": 30,
           "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/smith-college/boxscore/19202",
+      "date": "4/18/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis singled down the rf line (1-1 BF).",
+            "Ally Knutson fouled out to lf (0-0).",
+            "Gabbie Chinnis stole second.",
+            "Violet Peverly flied out to lf (1-1 BF).",
+            "Riley Veenstra flied out to rf (3-1 BSBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray flied out to 1b (1-0 B).",
+            "Sophie Hasegawa hit by pitch (3-2 KBFBH).",
+            "Sophie Hasegawa stole second.",
+            "Taz Tamai struck out swinging (2-2 BBSS).",
+            "Alana Robinson struck out looking (2-2 KBSBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elinor Washington doubled to right center (0-1 F).",
+            "Gabbie Chinnis singled to pitcher (0-0); Elinor Washington advanced to third.",
+            "Gabbie Chinnis stole second.",
+            "Ally Knutson doubled to left center, 2 RBI (0-0); Gabbie Chinnis scored; Elinor Washington scored.",
+            "Violet Peverly singled down the lf line, advanced to second on the throw, RBI (3-2 BFFBBF); Ally Knutson scored.",
+            "Riley Veenstra grounded out to 2b (1-1 BK); Violet Peverly advanced to third on a fielder's choice.",
+            "Bailey Gray flied out to cf, sacrifice fly, RBI (0-1 K); Violet Peverly scored.",
+            "Sophie Hasegawa grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai flied out to cf (1-0 B).",
+            "Alana Robinson struck out swinging (2-2 BBKKFS).",
+            "Elinor Washington walked (3-1 BKBBB).",
+            "Gabbie Chinnis singled to second base (1-1 BF); Elinor Washington advanced to second.",
+            "Ally Knutson fouled out to lf (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Violet Peverly lined out to cf (2-2 FBFB).",
+            "Riley Veenstra singled to left field (1-0 B).",
+            "Maya Patankar pinch ran for Riley Veenstra.",
+            "Bailey Gray singled to center field (1-1 FB); Maya Patankar advanced to second.",
+            "Sophie Hasegawa out at first p to 2b, SAC (0-0); Bailey Gray advanced to second; Maya Patankar advanced to third.",
+            "Taz Tamai walked (3-2 KKBBFFBB).",
+            "Alana Robinson flied out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Felicia Salvati to 1b for Jennifer Albano.",
+            "Avery Della Piana to c for Caitriona Andre.",
+            "Elinor Washington flied out to 1b (3-1 BBBK).",
+            "Gabbie Chinnis flied out to rf (0-0).",
+            "Ally Knutson grounded out to 1b unassisted (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 6,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/smith-college/boxscore/19203",
+      "date": "4/18/2026",
+      "opponent": "Smith College",
+      "pitchers": [
+        "Wagstaff, Hannah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis grounded out to 1b unassisted (3-1 BBBK).",
+            "Ally Knutson singled to shortstop (2-1 BKB).",
+            "Violet Peverly grounded out to 1b unassisted (0-1 S); Ally Knutson advanced to second.",
+            "Riley Veenstra lined out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray grounded out to ss (0-0).",
+            "Sophie Hasegawa grounded out to ss (1-0 B).",
+            "Elinor Washington doubled to left center (1-0 B).",
+            "Taz Tamai singled to shortstop (1-1 BK); Elinor Washington advanced to third.",
+            "Taz Tamai stole second.",
+            "Lily Hackett grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gabbie Chinnis out at first p to 2b (1-1 BF).",
+            "Ally Knutson singled to shortstop (0-0).",
+            "Ally Knutson stole second.",
+            "Violet Peverly hit by pitch (2-2 BFFH).",
+            "Riley Veenstra singled down the rf line (1-2 FKB); Violet Peverly advanced to second; Ally Knutson advanced to third.",
+            "Bailey Gray reached on a fielder's choice (1-1 FB); Riley Veenstra advanced to second; Violet Peverly advanced to third; Ally Knutson out at home p to c.",
+            "Sophie Hasegawa singled to center field, 2 RBI (0-1 K); Bailey Gray advanced to second; Riley Veenstra scored; Violet Peverly scored.",
+            "Elinor Washington reached on a fielder's choice (0-2 FF); Sophie Hasegawa advanced to second; Bailey Gray out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai flied out to cf (0-0).",
+            "Lily Hackett walked (3-2 BBBKFB).",
+            "Gabbie Chinnis lined out to lf (0-0).",
+            "Ally Knutson grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Violet Peverly singled to left field (0-0).",
+            "Violet Peverly stole second.",
+            "Riley Veenstra walked (3-1 BBBKB).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray grounded out to ss (1-0 B); Violet Peverly out at third ss unassisted.",
+            "Sophie Hasegawa singled to right field, RBI (1-1 KB); Anna Gray scored.",
+            "Elinor Washington singled to left field (0-1 F); Sophie Hasegawa advanced to second.",
+            "Malaya Sumii pinch hit for Taz Tamai.",
+            "Malaya Sumii struck out swinging (1-2 KFBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avery Della Piana to c for Caitriona Andre.",
+            "Lily Hackett grounded out to 3b (0-0).",
+            "Gabbie Chinnis flied out to 3b (1-2 KBFFF).",
+            "Ally Knutson doubled to right center (0-0).",
+            "Violet Peverly lined out to cf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Wagstaff, Hannah",
+          "ip": 6,
+          "h": 10,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 30
         }
       ],
       "year": 2026

@@ -1,59 +1,31 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-18T02:09:06.038Z",
+  "scrapedAt": "2026-04-19T02:30:47.333Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Peverly, Violet",
-      "w": 7,
-      "l": 7,
-      "era": 3.52,
-      "app": 15,
-      "gs": 14,
-      "cg": 9,
-      "sho": 0,
-      "sv": 0,
-      "ip": 71.2,
-      "h": 80,
-      "r": 48,
-      "er": 36,
-      "bb": 37,
-      "so": 72,
-      "hr": 2,
-      "whip": 1.63,
-      "doubles": 12,
-      "triples": 3,
-      "ab": 291,
-      "bAvg": 0.275,
-      "wp": 6,
-      "hbp": 5,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 4
-    },
-    {
       "name": "Gray, Bailey",
-      "w": 6,
+      "w": 7,
       "l": 3,
-      "era": 3.71,
-      "app": 12,
-      "gs": 8,
-      "cg": 7,
-      "sho": 0,
+      "era": 3.33,
+      "app": 13,
+      "gs": 9,
+      "cg": 8,
+      "sho": 1,
       "sv": 0,
-      "ip": 62.1,
-      "h": 70,
+      "ip": 69.1,
+      "h": 76,
       "r": 39,
       "er": 33,
-      "bb": 18,
-      "so": 43,
+      "bb": 19,
+      "so": 44,
       "hr": 2,
-      "whip": 1.41,
+      "whip": 1.37,
       "doubles": 15,
       "triples": 2,
-      "ab": 256,
-      "bAvg": 0.273,
+      "ab": 283,
+      "bAvg": 0.269,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -61,27 +33,55 @@
       "sha": 4
     },
     {
+      "name": "Peverly, Violet",
+      "w": 8,
+      "l": 7,
+      "era": 3.53,
+      "app": 16,
+      "gs": 15,
+      "cg": 9,
+      "sho": 0,
+      "sv": 0,
+      "ip": 77.1,
+      "h": 85,
+      "r": 51,
+      "er": 39,
+      "bb": 40,
+      "so": 79,
+      "hr": 2,
+      "whip": 1.62,
+      "doubles": 13,
+      "triples": 3,
+      "ab": 314,
+      "bAvg": 0.271,
+      "wp": 6,
+      "hbp": 5,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 5
+    },
+    {
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 4.77,
-      "app": 7,
+      "era": 4.5,
+      "app": 8,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 22,
-      "h": 26,
+      "ip": 23.1,
+      "h": 27,
       "r": 16,
       "er": 15,
-      "bb": 11,
-      "so": 10,
+      "bb": 12,
+      "so": 12,
       "hr": 2,
-      "whip": 1.68,
+      "whip": 1.67,
       "doubles": 5,
       "triples": 0,
-      "ab": 95,
-      "bAvg": 0.274,
+      "ab": 101,
+      "bAvg": 0.267,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
@@ -2676,6 +2676,214 @@
           "hbp": 0,
           "ab": 25,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/clark-university/boxscore/9676",
+      "date": "4/18/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Erin Slavin flied out to lf (1-0 B).",
+            "Merry Griffin walked (3-0 BBBB).",
+            "Megan Dube reached first on an error by ss (1-1 BF); Merry Griffin advanced to second.",
+            "Felicia Salvati struck out swinging (0-2 KSFS).",
+            "Avery Della Piana struck out looking (1-2 FBKK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Dillon flied out to p (1-0 B).",
+            "Charlise Quigley walked (3-2 BKFFBFBB).",
+            "Gricelda Castro struck out swinging (2-2 KBBFS).",
+            "Emelie Spence grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erin Slavin grounded out to ss (1-1 KB).",
+            "Merry Griffin flied out to 2b (2-2 KSBB).",
+            "Megan Dube flied out to 2b (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Felicia Salvati lined out to 1b (2-1 KBB).",
+            "Avery Della Piana reached first on an error by 3b (2-2 KBBK).",
+            "Avery Dillon singled to right center (2-2 FBSB); Avery Della Piana advanced to second.",
+            "Charlise Quigley grounded out to 3b, SAC (1-0 B); Avery Dillon advanced to second; Avery Della Piana advanced to third.",
+            "Gricelda Castro struck out swinging (2-2 KFBFBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emelie Spence struck out swinging (2-2 FBKBS).",
+            "Erin Slavin flied out to rf (2-0 BB).",
+            "Merry Griffin struck out looking (0-2 FKK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Veenstra to c for Maya Patankar.",
+            "Megan Dube grounded out to 3b (2-0 BB).",
+            "Felicia Salvati singled down the lf line (2-2 BFBF).",
+            "Jennifer Albano pinch ran for Felicia Salvati.",
+            "Avery Della Piana singled to center field (2-1 BBK); Jennifer Albano advanced to second.",
+            "Caitriona Andre pinch ran for Avery Della Piana.",
+            "Avery Dillon walked (3-2 FFBFBBB); Caitriona Andre advanced to second; Jennifer Albano advanced to third.",
+            "Charlise Quigley struck out swinging (0-2 KKFS).",
+            "Gricelda Castro doubled to left center, 3 RBI (1-0 B); Avery Dillon scored; Caitriona Andre scored; Jennifer Albano scored.",
+            "Emelie Spence singled to third base (2-0 BB); Gricelda Castro advanced to third.",
+            "Violet Peverly to 1b.",
+            "Lindsay Bennett to p for Alana Robinson.",
+            "Emelie Spence stole second.",
+            "Erin Slavin grounded out to p (1-2 KBS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Merry Griffin singled to right field (1-1 BS).",
+            "Natalie Kandel pinch ran for Merry Griffin.",
+            "Megan Dube struck out looking (0-2 KFK).",
+            "Felicia Salvati walked (3-2 BBBKFB); Natalie Kandel advanced to second.",
+            "Avery Della Piana reached first on an error by 1b (0-2 KF); Felicia Salvati advanced to second; Natalie Kandel advanced to third.",
+            "Avery Dillon reached on a fielder's choice (0-0); Avery Della Piana advanced to second; Felicia Salvati advanced to third; Natalie Kandel out at home p to c.",
+            "Charlise Quigley struck out swinging (0-2 KFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 5.2,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 7,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 27
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 1.1,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/clark-university/boxscore/9677",
+      "date": "4/18/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Erin Slavin flied out to p (2-2 BBSK).",
+            "Merry Griffin singled to left field (2-2 BSFFFB).",
+            "Avery Della Piana reached first on an error by 2b (1-2 BFK); Merry Griffin advanced to second.",
+            "Megan Dube flied out to cf (0-2 KS).",
+            "Felicia Salvati flied out to cf (2-2 SBBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Madison Dillon walked (3-2 BFFFBBFB).",
+            "Avery Dillon fouled out to c (0-1 K).",
+            "Charlise Quigley lined out to 2b (0-0).",
+            "Emelie Spence flied out to p (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erin Slavin struck out swinging (0-2 KSS).",
+            "Merry Griffin lined out to 1b (2-2 BSKB).",
+            "Avery Della Piana flied out to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Megan Dube singled down the lf line (0-2 KF).",
+            "Jennifer Albano pinch ran for Megan Dube.",
+            "Felicia Salvati out at first 3b to 2b (0-1 F); Jennifer Albano advanced to second.",
+            "Madison Dillon grounded out to ss (3-1 BBKB); Jennifer Albano advanced to third on the throw.",
+            "Avery Dillon lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charlise Quigley flied out to lf (1-1 KB).",
+            "Emelie Spence singled to left center (1-2 KFBF).",
+            "Erin Slavin grounded out to ss (0-1 K); Emelie Spence advanced to second.",
+            "Merry Griffin grounded out to p (0-2 FK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Veenstra pinch ran for Anna Gray.",
+            "Taz Tamai to lf for Malaya Sumii.",
+            "Megan Dube to dp for Jennifer Albano.",
+            "Avery Della Piana singled to right center (1-0 B).",
+            "Caitriona Andre pinch ran for Avery Della Piana.",
+            "Megan Dube flied out to 2b (0-0).",
+            "Felicia Salvati flied out to 2b (1-2 FFB).",
+            "Madison Dillon flied out to p (3-2 BSBBSF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Avery Dillon singled to left field (1-0 B).",
+            "Charlise Quigley lined out to rf (0-2 KF).",
+            "Emelie Spence lined out to cf (0-1 K).",
+            "Erin Slavin singled to right center (3-1 BBBK); Avery Dillon advanced to second.",
+            "Erin Slavin out at second 2b to ss."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 7,
+          "h": 6,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 28
         }
       ],
       "year": 2026
