@@ -1,58 +1,58 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-21T02:26:54.678Z",
+  "scrapedAt": "2026-04-22T02:24:31.131Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 17,
+      "w": 18,
       "l": 0,
-      "era": 1.49,
-      "app": 18,
-      "gs": 11,
-      "cg": 8,
-      "sho": 3,
+      "era": 1.39,
+      "app": 19,
+      "gs": 12,
+      "cg": 9,
+      "sho": 4,
       "sv": 0,
-      "ip": 89,
-      "h": 94,
+      "ip": 96,
+      "h": 99,
       "r": 23,
       "er": 19,
-      "bb": 14,
-      "so": 59,
+      "bb": 16,
+      "so": 62,
       "hr": 0,
-      "whip": 1.21,
-      "doubles": 12,
+      "whip": 1.2,
+      "doubles": 14,
       "triples": 1,
-      "ab": 347,
-      "bAvg": 0.271,
+      "ab": 372,
+      "bAvg": 0.266,
       "wp": 1,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 1,
       "sha": 8
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 9,
+      "w": 10,
       "l": 2,
-      "era": 2.11,
-      "app": 16,
-      "gs": 15,
-      "cg": 11,
+      "era": 2.07,
+      "app": 17,
+      "gs": 16,
+      "cg": 12,
       "sho": 3,
       "sv": 0,
-      "ip": 79.2,
-      "h": 84,
-      "r": 34,
-      "er": 24,
-      "bb": 26,
-      "so": 46,
+      "ip": 84.2,
+      "h": 90,
+      "r": 35,
+      "er": 25,
+      "bb": 28,
+      "so": 49,
       "hr": 1,
-      "whip": 1.38,
+      "whip": 1.39,
       "doubles": 8,
       "triples": 1,
-      "ab": 307,
+      "ab": 328,
       "bAvg": 0.274,
       "wp": 5,
       "hbp": 5,
@@ -3601,6 +3601,173 @@
           "hbp": 0,
           "ab": 19,
           "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/amherst/boxscore/16652",
+      "date": "4/21/2026",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz struck out swinging (1-2 KBSS).",
+            "May Mishima singled up the middle (0-0).",
+            "Lulu Leppard singled to center field (1-0 B); May Mishima advanced to second.",
+            "Abby Moravek reached on a fielder's choice (1-1 FB); Lulu Leppard advanced to second; May Mishima advanced to third.",
+            "Emma Nordstrom walked, RBI (3-1 BBBKB); Abby Moravek advanced to second; Lulu Leppard advanced to third; May Mishima scored.",
+            "Brooke Wild reached on a fielder's choice (0-2 FF); Emma Nordstrom advanced to second; Abby Moravek advanced to third; Lulu Leppard out at home 3b to c.",
+            "Dylan Briggs grounded out to 3b (2-2 BBKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Jenna Holmes flied out to cf (0-0).",
+            "Annie Katuska grounded out to 2b (1-1 BK).",
+            "Samantha Portz walked (3-1 FBBBB).",
+            "May Mishima singled to right field (1-0 B); Samantha Portz advanced to second.",
+            "Lulu Leppard singled to second base (1-2 KSB); May Mishima out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Moravek popped up to 2b (3-2 SBFBFFB).",
+            "Emma Nordstrom singled up the middle (1-0 B).",
+            "Brooke Wild flied out to rf (0-2 KSF).",
+            "Dylan Briggs singled to left field (2-1 KBB); Emma Nordstrom advanced to second.",
+            "Jenna Holmes struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Anna Promozic grounded out to ss (3-1 BBBK).",
+            "Samantha Portz grounded out to ss (0-1 F).",
+            "May Mishima grounded out to p (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lulu Leppard grounded out to 2b (1-1 KB).",
+            "Abby Moravek struck out looking (0-2 KFFK).",
+            "Narina Girotra flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 6,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/amherst/boxscore/16653",
+      "date": "4/21/2026",
+      "opponent": "Amherst",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Samantha Portz lined out to rf (2-2 KBBFFF).",
+            "May Mishima grounded out to p (0-2 KS).",
+            "Lulu Leppard grounded out to 2b (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Abby Rebhan grounded out to 1b unassisted (1-2 KFB).",
+            "Dylan Briggs walked (3-2 FBBFFBB).",
+            "Laura Daniels doubled to center field (0-0); Dylan Briggs advanced to third.",
+            "Heidi Li lined into double play ss to 3b (0-0); Dylan Briggs out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Anna Promozic struck out swinging (1-2 KKBS).",
+            "Annie Katuska struck out looking (1-2 KSBFK).",
+            "Samantha Portz hit by pitch (1-1 KH).",
+            "May Mishima flied out to lf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich to c for Colleen Mayer.",
+            "Lulu Leppard singled up the middle (1-2 FSB).",
+            "Abby Rebhan fouled out to c (0-0).",
+            "Dylan Briggs popped up to 2b (1-2 FBF).",
+            "Lulu Leppard stole second.",
+            "Laura Daniels flied out to lf (2-2 BSFFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Heidi Li popped up to ss (0-0).",
+            "Anna Promozic grounded out to 1b unassisted (2-2 BKFB).",
+            "Annie Katuska doubled to left center (1-0 B).",
+            "Samantha Portz walked (3-2 BBBKFB).",
+            "May Mishima flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lulu Leppard singled up the middle (0-1 S).",
+            "Abby Rebhan fouled out to 1b (0-1 F).",
+            "Dylan Briggs reached on a fielder's choice (1-2 FFBFFF); Lulu Leppard out at second ss to 2b.",
+            "Laura Daniels popped up to p (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Riley O'Brien to 2b for Samantha Jeng.",
+            "Emma Nordstrom pinch hit for Heidi Li.",
+            "Emma Nordstrom singled to right field (0-2 KS).",
+            "Heidi Li pinch ran for Emma Nordstrom.",
+            "Abby Moravek pinch hit for Anna Promozic.",
+            "Abby Moravek flied out to cf (1-0 B).",
+            "Annie Katuska struck out swinging (1-2 BFFS).",
+            "Samantha Portz grounded out to 2b (2-2 BKFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 28
         }
       ],
       "year": 2026
