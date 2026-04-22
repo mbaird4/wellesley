@@ -1,61 +1,61 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-04-22T17:49:38.693Z",
+  "scrapedAt": "2026-04-22T23:37:03.223Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Staub, Jamie",
       "w": 6,
       "l": 2,
-      "era": 3.94,
-      "app": 18,
+      "era": 3.82,
+      "app": 19,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 1,
-      "ip": 58.2,
-      "h": 60,
-      "r": 37,
-      "er": 33,
+      "ip": 62.1,
+      "h": 65,
+      "r": 39,
+      "er": 34,
       "bb": 14,
-      "so": 27,
+      "so": 28,
       "hr": 5,
-      "whip": 1.26,
-      "doubles": 16,
+      "whip": 1.27,
+      "doubles": 18,
       "triples": 0,
-      "ab": 236,
-      "bAvg": 0.254,
+      "ab": 250,
+      "bAvg": 0.26,
       "wp": 5,
-      "hbp": 4,
+      "hbp": 5,
       "bk": 0,
       "sfa": 1,
-      "sha": 3
+      "sha": 5
     },
     {
       "name": "Kannan, Ragini",
       "w": 6,
-      "l": 6,
-      "era": 4.47,
-      "app": 17,
-      "gs": 13,
+      "l": 7,
+      "era": 4.46,
+      "app": 18,
+      "gs": 14,
       "cg": 6,
       "sho": 2,
       "sv": 0,
-      "ip": 78.1,
-      "h": 91,
-      "r": 64,
-      "er": 50,
-      "bb": 28,
-      "so": 66,
+      "ip": 81.2,
+      "h": 96,
+      "r": 66,
+      "er": 52,
+      "bb": 31,
+      "so": 69,
       "hr": 7,
-      "whip": 1.52,
+      "whip": 1.56,
       "doubles": 17,
       "triples": 1,
-      "ab": 310,
+      "ab": 326,
       "bAvg": 0.294,
       "wp": 6,
-      "hbp": 7,
+      "hbp": 8,
       "bk": 0,
       "sfa": 6,
       "sha": 12
@@ -4122,6 +4122,121 @@
           "hbp": 1,
           "ab": 13,
           "bf": 16
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/tufts/boxscore/14850",
+      "date": "4/22/2026",
+      "opponent": "Tufts",
+      "pitchers": [
+        "Kannan, Ragini",
+        "Staub, Jamie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauryn Horita hit by pitch (0-2 KK).",
+            "Heaven Oliva walked (3-0 BBBB); Lauryn Horita advanced to second.",
+            "Paige Murphy singled to right field (0-0); Heaven Oliva advanced to second; Lauryn Horita advanced to third.",
+            "Kaitlyn Perucci reached on a fielder's choice (3-2 BFKBFB); Paige Murphy advanced to second; Heaven Oliva advanced to third; Lauryn Horita out at home ss to c.",
+            "Haley Leimbach walked, RBI (3-0 BBBB); Kaitlyn Perucci advanced to second; Paige Murphy advanced to third; Heaven Oliva scored.",
+            "Cat Kawabe struck out swinging (1-2 KBKS).",
+            "Mack Seibel popped up to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella McHugh struck out looking (1-2 FBFFK).",
+            "Ella Malin grounded out to ss (1-0 B).",
+            "Lauryn Horita struck out swinging (3-2 KBBFBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Heaven Oliva singled to third base (0-0).",
+            "Paige Murphy singled to left field (2-2 KBKBF); Heaven Oliva advanced to second.",
+            "Kaitlyn Perucci reached on a fielder's choice (0-0); Paige Murphy advanced to second; Heaven Oliva out at third 3b unassisted.",
+            "Haley Leimbach reached on a fielder's choice to pitcher (2-2 BFFB); Kaitlyn Perucci advanced to second; Paige Murphy advanced to third.",
+            "Cat Kawabe fouled out to 1b (1-1 SB).",
+            "Mack Seibel walked, RBI (3-2 FBBFFBB); Haley Leimbach advanced to second; Kaitlyn Perucci advanced to third; Paige Murphy scored.",
+            "Ella McHugh reached on a fielder's choice (1-1 FB); Mack Seibel out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Malin singled to right field (2-2 BFFB).",
+            "Lauryn Horita singled to shortstop (0-0); Ella Malin advanced to second.",
+            "Heaven Oliva grounded out to p (2-2 BBKS); Lauryn Horita advanced to second; Ella Malin advanced to third.",
+            "Jamie Staub to p for Ragini Kannan.",
+            "Bells Burdenski to cf for Maddie Manes.",
+            "Mary Doud to rf.",
+            "Paige Murphy popped up to rf (2-2 BKBF).",
+            "Kaitlyn Perucci popped up to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Haley Leimbach doubled to center field (1-0 B).",
+            "Cat Kawabe out at first p to 2b, SAC (1-1 FB); Haley Leimbach advanced to third.",
+            "Mack Seibel hit by pitch (1-1 KB).",
+            "Emma Wingate pinch ran for Mack Seibel.",
+            "Emma Wingate stole second.",
+            "Ella McHugh struck out swinging (1-2 KFBS).",
+            "Ella Malin reached first on an error by 3b, advanced to second, RBI (0-0); Emma Wingate advanced to third; Haley Leimbach scored, unearned.",
+            "Lauryn Horita popped up to rf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Heaven Oliva flied out to lf (2-2 KBFB).",
+            "Paige Murphy grounded out to 3b (0-0).",
+            "Kaitlyn Perucci doubled to left field (1-1 BF).",
+            "Haley Leimbach grounded out to ss (2-2 KKBBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Cat Kawabe singled to right field (0-0).",
+            "Mack Seibel singled, bunt (0-1 F); Cat Kawabe advanced to second.",
+            "Ella McHugh out at first 1b to 2b, SAC (1-0 B); Mack Seibel advanced to second; Cat Kawabe advanced to third.",
+            "Ella Malin singled to right field, RBI (0-0); Mack Seibel advanced to third; Cat Kawabe scored.",
+            "Lauryn Horita lined into double play ss to 1b (0-0); Ella Malin out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Kannan, Ragini",
+          "ip": 3.1,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 3,
+          "so": 3,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 20
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 3.2,
+          "h": 5,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 14,
+          "bf": 17
         }
       ],
       "year": 2026
