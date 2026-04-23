@@ -1,32 +1,32 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-04-22T23:37:03.223Z",
+  "scrapedAt": "2026-04-23T02:33:45.887Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Staub, Jamie",
       "w": 6,
       "l": 2,
-      "era": 3.82,
-      "app": 19,
+      "era": 4.36,
+      "app": 20,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 1,
-      "ip": 62.1,
-      "h": 65,
-      "r": 39,
-      "er": 34,
+      "ip": 62.2,
+      "h": 70,
+      "r": 44,
+      "er": 39,
       "bb": 14,
       "so": 28,
-      "hr": 5,
-      "whip": 1.27,
+      "hr": 6,
+      "whip": 1.34,
       "doubles": 18,
       "triples": 0,
-      "ab": 250,
-      "bAvg": 0.26,
-      "wp": 5,
+      "ab": 257,
+      "bAvg": 0.272,
+      "wp": 6,
       "hbp": 5,
       "bk": 0,
       "sfa": 1,
@@ -36,26 +36,26 @@
       "name": "Kannan, Ragini",
       "w": 6,
       "l": 7,
-      "era": 4.46,
-      "app": 18,
+      "era": 4.65,
+      "app": 19,
       "gs": 14,
       "cg": 6,
       "sho": 2,
       "sv": 0,
-      "ip": 81.2,
-      "h": 96,
-      "r": 66,
-      "er": 52,
+      "ip": 84.1,
+      "h": 103,
+      "r": 70,
+      "er": 56,
       "bb": 31,
-      "so": 69,
-      "hr": 7,
-      "whip": 1.56,
-      "doubles": 17,
+      "so": 72,
+      "hr": 8,
+      "whip": 1.59,
+      "doubles": 19,
       "triples": 1,
-      "ab": 326,
-      "bAvg": 0.294,
-      "wp": 6,
-      "hbp": 8,
+      "ab": 341,
+      "bAvg": 0.302,
+      "wp": 7,
+      "hbp": 9,
       "bk": 0,
       "sfa": 6,
       "sha": 12
@@ -63,25 +63,25 @@
     {
       "name": "Jennings, Madeline",
       "w": 6,
-      "l": 6,
-      "era": 4.85,
-      "app": 18,
-      "gs": 16,
+      "l": 7,
+      "era": 4.96,
+      "app": 19,
+      "gs": 17,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 69.1,
-      "h": 112,
-      "r": 65,
-      "er": 48,
-      "bb": 15,
-      "so": 43,
-      "hr": 5,
-      "whip": 1.83,
-      "doubles": 6,
+      "ip": 73.1,
+      "h": 121,
+      "r": 70,
+      "er": 52,
+      "bb": 16,
+      "so": 46,
+      "hr": 7,
+      "whip": 1.87,
+      "doubles": 7,
       "triples": 3,
-      "ab": 315,
-      "bAvg": 0.356,
+      "ab": 337,
+      "bAvg": 0.359,
       "wp": 8,
       "hbp": 3,
       "bk": 0,
@@ -4237,6 +4237,146 @@
           "hbp": 1,
           "ab": 14,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/tufts/boxscore/14916",
+      "date": "4/22/2026",
+      "opponent": "Tufts",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauryn Horita grounded out to p (2-1 BSB).",
+            "Heaven Oliva singled to left field (0-0).",
+            "Paige Murphy walked (3-1 BBBKB); Heaven Oliva advanced to second.",
+            "Kaitlyn Perucci singled to center field (3-2 FSBBB); Paige Murphy advanced to second; Heaven Oliva advanced to third.",
+            "Haley Leimbach struck out swinging (0-2 KKS).",
+            "Cat Kawabe grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mack Seibel struck out swinging (2-2 KSBBS).",
+            "Ella McHugh grounded out to 3b (0-0).",
+            "Ella Malin grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauryn Horita grounded out to 3b (1-2 BFK).",
+            "Heaven Oliva homered, RBI (2-1 BFB).",
+            "Paige Murphy homered, RBI (0-0).",
+            "Kaitlyn Perucci singled through the left side (0-1 K).",
+            "Haley Leimbach struck out swinging (1-2 FSBS).",
+            "Kaitlyn Perucci stole second.",
+            "Cat Kawabe doubled through the right side, RBI (3-2 BBFFB); Kaitlyn Perucci scored.",
+            "Mack Seibel reached first on an error by ss (0-0); Cat Kawabe advanced to third.",
+            "Ella McHugh singled through the left side, RBI (0-0); Mack Seibel advanced to second; Cat Kawabe scored, unearned.",
+            "Ella Malin flied out to lf (3-2 BKKFBFFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lauryn Horita singled to center field (0-1 K).",
+            "Heaven Oliva grounded out to p (1-0 B); Lauryn Horita advanced to second.",
+            "Paige Murphy singled to right field (0-0); Lauryn Horita advanced to third.",
+            "Paige Murphy stole second.",
+            "Kaitlyn Perucci grounded out to 2b, RBI (1-1 BK); Paige Murphy advanced to third; Lauryn Horita scored.",
+            "Haley Leimbach grounded out to 3b (3-2 BKBFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jamie Staub to p for Madeline Jennings.",
+            "Cat Kawabe singled through the right side (1-2 KBF).",
+            "Cat Kawabe advanced to second on a wild pitch.",
+            "Mack Seibel popped up to p (2-2 FBKFFBFF).",
+            "Ella McHugh singled through the left side, RBI (0-0); Cat Kawabe scored.",
+            "Ella McHugh stole second.",
+            "Ella Malin singled to shortstop (0-2 KK).",
+            "Lauryn Horita singled to center field, RBI (1-2 BKFF); Ella Malin advanced to second; Ella McHugh scored.",
+            "Heaven Oliva homered, 3 RBI (1-0 B); Lauryn Horita scored; Ella Malin scored.",
+            "Paige Murphy reached first on an error by ss (0-1 K).",
+            "Ragini Kannan to p for Jamie Staub.",
+            "Paige Murphy advanced to second on a wild pitch.",
+            "Kaitlyn Perucci grounded out to ss (1-2 BFK).",
+            "Haley Leimbach grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cat Kawabe struck out swinging (1-2 KBSS).",
+            "Mack Seibel singled to right field (3-2 SBBBF).",
+            "Emma Wingate pinch ran for Mack Seibel.",
+            "Ella McHugh struck out looking (0-2 KSK).",
+            "Ella Malin doubled through the left side, RBI (2-0 BB); Emma Wingate scored.",
+            "Lauryn Horita hit by pitch (2-2 BKFFFH).",
+            "Heaven Oliva popped up to 2b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Paige Murphy homered, RBI (2-0 BB).",
+            "Kaitlyn Perucci flied out to lf (1-2 FBF).",
+            "Haley Leimbach flied out to rf (0-0).",
+            "Cat Kawabe doubled to left center (0-2 FKF).",
+            "Mack Seibel singled to center field, RBI (1-1 BF); Cat Kawabe scored.",
+            "Ella McHugh singled to center field (0-1 F); Mack Seibel advanced to second.",
+            "Ella Malin singled, RBI (0-2 KF); Ella McHugh advanced to third; Mack Seibel scored.",
+            "Lauryn Horita struck out swinging (1-2 FFBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 4,
+          "h": 9,
+          "r": 5,
+          "er": 4,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 0.1,
+          "h": 5,
+          "r": 5,
+          "er": 5,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        },
+        {
+          "name": "Kannan, Ragini",
+          "ip": 2.2,
+          "h": 7,
+          "r": 4,
+          "er": 4,
+          "bb": 0,
+          "so": 3,
+          "hbp": 1,
+          "ab": 15,
+          "bf": 16
         }
       ],
       "year": 2026

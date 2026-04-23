@@ -1,7 +1,7 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-04-22T23:36:57.839Z",
+  "scrapedAt": "2026-04-23T02:33:41.719Z",
   "year": 2025,
   "teamGames": 39,
   "players": [
@@ -41,41 +41,6 @@
       }
     },
     {
-      "name": "Bells Burdenski",
-      "jerseyNumber": 33,
-      "classYear": "Senior",
-      "position": "IF",
-      "bats": null,
-      "season": {
-        "year": 2025,
-        "name": "Burdenski, Bells",
-        "avg": 0.218,
-        "ops": 0.7,
-        "gp": 38,
-        "gs": 38,
-        "ab": 101,
-        "r": 19,
-        "h": 22,
-        "doubles": 6,
-        "triples": 1,
-        "hr": 2,
-        "rbi": 19,
-        "tb": 36,
-        "slg": 0.356,
-        "bb": 19,
-        "hbp": 1,
-        "so": 28,
-        "gdp": 0,
-        "obp": 0.344,
-        "sf": 1,
-        "sh": 1,
-        "sb": 2,
-        "sbAtt": 2,
-        "woba": 0.289,
-        "pa": 123
-      }
-    },
-    {
       "name": "Brooke Boehmer",
       "jerseyNumber": 14,
       "classYear": "Junior",
@@ -108,6 +73,41 @@
         "sbAtt": 4,
         "woba": 0.392,
         "pa": 136
+      }
+    },
+    {
+      "name": "Bells Burdenski",
+      "jerseyNumber": 33,
+      "classYear": "Senior",
+      "position": "IF",
+      "bats": null,
+      "season": {
+        "year": 2025,
+        "name": "Burdenski, Bells",
+        "avg": 0.218,
+        "ops": 0.7,
+        "gp": 38,
+        "gs": 38,
+        "ab": 101,
+        "r": 19,
+        "h": 22,
+        "doubles": 6,
+        "triples": 1,
+        "hr": 2,
+        "rbi": 19,
+        "tb": 36,
+        "slg": 0.356,
+        "bb": 19,
+        "hbp": 1,
+        "so": 28,
+        "gdp": 0,
+        "obp": 0.344,
+        "sf": 1,
+        "sh": 1,
+        "sb": 2,
+        "sbAtt": 2,
+        "woba": 0.289,
+        "pa": 123
       }
     },
     {
