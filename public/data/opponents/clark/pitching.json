@@ -1,31 +1,31 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-22T02:25:04.114Z",
+  "scrapedAt": "2026-04-23T02:28:54.996Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
-      "w": 7,
+      "w": 8,
       "l": 5,
-      "era": 2.57,
-      "app": 12,
-      "gs": 11,
-      "cg": 11,
+      "era": 2.77,
+      "app": 13,
+      "gs": 12,
+      "cg": 12,
       "sho": 0,
       "sv": 0,
-      "ip": 79,
-      "h": 86,
-      "r": 34,
-      "er": 29,
-      "bb": 18,
-      "so": 80,
+      "ip": 86,
+      "h": 101,
+      "r": 40,
+      "er": 34,
+      "bb": 19,
+      "so": 88,
       "hr": 2,
-      "whip": 1.32,
-      "doubles": 11,
-      "triples": 1,
-      "ab": 322,
-      "bAvg": 0.267,
+      "whip": 1.4,
+      "doubles": 16,
+      "triples": 2,
+      "ab": 356,
+      "bAvg": 0.284,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
@@ -34,26 +34,26 @@
     },
     {
       "name": "Dube, Megan",
-      "w": 4,
+      "w": 5,
       "l": 9,
-      "era": 3.38,
-      "app": 13,
-      "gs": 12,
-      "cg": 12,
+      "era": 3.2,
+      "app": 14,
+      "gs": 13,
+      "cg": 13,
       "sho": 0,
       "sv": 0,
-      "ip": 87,
-      "h": 106,
-      "r": 60,
-      "er": 42,
+      "ip": 94,
+      "h": 112,
+      "r": 61,
+      "er": 43,
       "bb": 27,
-      "so": 74,
+      "so": 80,
       "hr": 4,
-      "whip": 1.53,
-      "doubles": 25,
+      "whip": 1.48,
+      "doubles": 27,
       "triples": 4,
-      "ab": 360,
-      "bAvg": 0.294,
+      "ab": 387,
+      "bAvg": 0.289,
       "wp": 2,
       "hbp": 5,
       "bk": 0,
@@ -2611,6 +2611,197 @@
           "hbp": 1,
           "ab": 27,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/salve-regina/boxscore/19199",
+      "date": "4/22/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges singled, bunt (0-0).",
+            "Lillian Bridges stole second.",
+            "Abby Merck struck out looking (0-0).",
+            "Gracie Keyes struck out swinging (0-0).",
+            "Emily Cronin doubled to right field, RBI (0-0); Lillian Bridges scored.",
+            "Emma Plourde doubled to right center, RBI (0-0); Emily Cronin scored.",
+            "Ryann Burke struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Darian DiMuzio struck out swinging (0-0).",
+            "Skyla Oliveira struck out looking (0-0).",
+            "Taylor Ferraiolo singled to pitcher (0-0).",
+            "Taylor Ferraiolo stole second.",
+            "Lillian Bridges doubled down the lf line, RBI (0-0); Taylor Ferraiolo scored.",
+            "Lillian Bridges out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Merck reached first on an error by 2b (0-0).",
+            "Gracie Keyes reached on a fielder's choice (0-0); Abby Merck out at second lf to 2b.",
+            "Emily Cronin tripled to left field, RBI (0-0); Gracie Keyes scored, unearned.",
+            "Emma Plourde singled through the left side, RBI (0-0); Emily Cronin scored.",
+            "Ryann Burke struck out swinging (0-0).",
+            "Victoria Geisser struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gricelda Castro to 2b for Erin Slavin.",
+            "Skyla Oliveira grounded out to 2b (0-0).",
+            "Taylor Ferraiolo grounded out to 2b (0-0).",
+            "Lillian Bridges singled, advanced to second on a throwing error by ss (0-0).",
+            "Abby Merck flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gracie Keyes flied out to lf (0-0).",
+            "Emily Cronin walked (0-0).",
+            "Emma Plourde doubled to left center, RBI (0-0); Emily Cronin scored.",
+            "Emma Plourde out at third cf to ss to c to 3b.",
+            "Ryann Burke singled to left center (0-0).",
+            "Victoria Geisser fouled out to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Skyla Oliveira doubled to left center (0-0).",
+            "Taylor Ferraiolo singled up the middle (0-0).",
+            "Skyla Oliveira out at third ss to 2b.",
+            "Lillian Bridges singled up the middle (0-0); Taylor Ferraiolo advanced to second.",
+            "Abby Merck struck out swinging (0-0).",
+            "Gracie Keyes fouled out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emily Cronin singled up the middle (0-0).",
+            "Emma Plourde singled to left field (0-0); Emily Cronin advanced to second.",
+            "Ryann Burke grounded out to p (0-0); Emma Plourde advanced to second; Emily Cronin advanced to third.",
+            "Victoria Geisser lined out to 3b (0-0).",
+            "Skyla Oliveira flied out to lf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 7,
+          "h": 15,
+          "r": 6,
+          "er": 5,
+          "bb": 1,
+          "so": 8,
+          "hbp": 0,
+          "ab": 34,
+          "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/salve-regina/boxscore/19200",
+      "date": "4/22/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to p (0-0).",
+            "Taylor Ferraiolo lined out to p (0-0).",
+            "Emily Cronin doubled down the rf line (0-0).",
+            "Emma Plourde singled to right field, RBI (0-0); Emily Cronin scored.",
+            "Gracie Keyes grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ryann Burke grounded out to p (0-0).",
+            "Abby Merck fouled out to 1b (0-0).",
+            "Skyla Oliveira grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skylar Wicklund struck out looking (0-0).",
+            "Lillian Bridges singled to left field (0-0).",
+            "Taylor Ferraiolo singled, bunt (0-0); Lillian Bridges advanced to second.",
+            "Emily Cronin fouled out to 1b (0-0).",
+            "Emma Plourde grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gracie Keyes lined out to lf (0-0).",
+            "Ryann Burke singled up the middle (0-0).",
+            "Abby Merck reached on a fielder's choice (0-0); Ryann Burke out at second ss to 2b.",
+            "Skyla Oliveira struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Skylar Wicklund grounded out to 3b (0-0).",
+            "Lillian Bridges struck out looking (0-0).",
+            "Taylor Ferraiolo fouled out to c (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emily Cronin struck out looking (0-0).",
+            "Emma Plourde flied out to cf (0-0).",
+            "Gracie Keyes doubled to left field (0-0).",
+            "Ryann Burke grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Erin Slavin to dp.",
+            "Merry Griffin to 3b for Jennifer Albano.",
+            "Alexis Taudel to rf for Madison Dillon.",
+            "Abby Merck struck out swinging (0-0).",
+            "Skyla Oliveira fouled out to 1b (0-0).",
+            "Skylar Wicklund struck out swinging (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 7,
+          "h": 6,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 27
         }
       ],
       "year": 2026

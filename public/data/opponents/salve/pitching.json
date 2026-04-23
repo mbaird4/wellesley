@@ -1,64 +1,64 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-22T02:24:48.166Z",
+  "scrapedAt": "2026-04-23T02:28:36.319Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 11,
-      "era": 6.09,
-      "app": 18,
-      "gs": 13,
-      "cg": 12,
+      "l": 12,
+      "era": 5.94,
+      "app": 19,
+      "gs": 14,
+      "cg": 13,
       "sho": 0,
       "sv": 0,
-      "ip": 92,
-      "h": 154,
-      "r": 94,
-      "er": 80,
-      "bb": 19,
-      "so": 43,
+      "ip": 99,
+      "h": 162,
+      "r": 98,
+      "er": 84,
+      "bb": 22,
+      "so": 48,
       "hr": 5,
-      "whip": 1.88,
-      "doubles": 35,
+      "whip": 1.86,
+      "doubles": 36,
       "triples": 3,
-      "ab": 417,
-      "bAvg": 0.369,
+      "ab": 442,
+      "bAvg": 0.367,
       "wp": 5,
       "hbp": 5,
       "bk": 0,
-      "sfa": 6,
-      "sha": 7
+      "sfa": 7,
+      "sha": 8
     },
     {
       "name": "Peterson, Caroline",
       "w": 1,
       "l": 13,
-      "era": 8.8,
-      "app": 14,
-      "gs": 14,
+      "era": 8.98,
+      "app": 15,
+      "gs": 15,
       "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 55.2,
-      "h": 89,
-      "r": 91,
-      "er": 70,
-      "bb": 69,
-      "so": 41,
+      "ip": 57.2,
+      "h": 90,
+      "r": 95,
+      "er": 74,
+      "bb": 75,
+      "so": 42,
       "hr": 2,
-      "whip": 2.84,
-      "doubles": 20,
+      "whip": 2.86,
+      "doubles": 21,
       "triples": 6,
-      "ab": 242,
-      "bAvg": 0.368,
-      "wp": 21,
+      "ab": 247,
+      "bAvg": 0.364,
+      "wp": 23,
       "hbp": 3,
       "bk": 0,
-      "sfa": 7,
-      "sha": 13
+      "sfa": 8,
+      "sha": 14
     },
     {
       "name": "Cronin, Emily",
@@ -91,30 +91,30 @@
     {
       "name": "Geisser, Victoria",
       "w": 0,
-      "l": 0,
-      "era": 10.5,
-      "app": 2,
+      "l": 1,
+      "era": 7.56,
+      "app": 3,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 3.1,
-      "h": 8,
-      "r": 7,
-      "er": 5,
-      "bb": 6,
-      "so": 0,
+      "ip": 8.1,
+      "h": 14,
+      "r": 12,
+      "er": 9,
+      "bb": 11,
+      "so": 3,
       "hr": 0,
-      "whip": 4.2,
-      "doubles": 0,
+      "whip": 3,
+      "doubles": 1,
       "triples": 1,
-      "ab": 17,
-      "bAvg": 0.471,
-      "wp": 0,
+      "ab": 33,
+      "bAvg": 0.424,
+      "wp": 1,
       "hbp": 0,
       "bk": 0,
-      "sfa": 0,
-      "sha": 0
+      "sfa": 2,
+      "sha": 1
     }
   ],
   "games": [
@@ -2903,6 +2903,221 @@
           "hbp": 0,
           "ab": 21,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/clark-university/boxscore/11775",
+      "date": "4/22/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence walked (0-0).",
+            "Erin Slavin out at first 3b to 2b, SAC (0-0); Emelie Spence advanced to third.",
+            "Felicia Salvati flied out to cf, sacrifice fly, RBI (0-0); Emelie Spence scored.",
+            "Megan Dube walked (0-0).",
+            "Merry Griffin walked (0-0); Megan Dube advanced to second.",
+            "Avery Della Piana popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Alexis Taudel flied out to cf (0-0).",
+            "Avery Dillon doubled to left center (0-0).",
+            "Charlise Quigley flied out to rf (0-0).",
+            "Avery Dillon advanced to third on a wild pitch.",
+            "Emelie Spence struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Erin Slavin walked (0-0).",
+            "Felicia Salvati walked (0-0); Erin Slavin advanced to second.",
+            "Felicia Salvati advanced to second on a wild pitch; Erin Slavin advanced to third.",
+            "Megan Dube walked (0-0).",
+            "Victoria Geisser to p for Darian DiMuzio.",
+            "/  for Caroline Peterson.",
+            "Megan Dube advanced to second on a wild pitch; Felicia Salvati advanced to third; Erin Slavin scored.",
+            "Merry Griffin singled through the right side, 2 RBI (0-0); Megan Dube scored; Felicia Salvati scored.",
+            "Avery Della Piana singled to pitcher (0-0); Merry Griffin advanced to second.",
+            "Alexis Taudel struck out swinging (0-0).",
+            "Avery Dillon grounded into double play 3b to 1b (0-0); Avery Della Piana advanced to second; Merry Griffin out on the play."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charlise Quigley walked (0-0).",
+            "Emelie Spence reached on a fielder's choice (0-0); Charlise Quigley out at second p to ss.",
+            "Emelie Spence stole second.",
+            "Erin Slavin singled to right field (0-0); Emelie Spence advanced to third.",
+            "Erin Slavin stole second.",
+            "Felicia Salvati walked (0-0).",
+            "Megan Dube doubled to left center, 2 RBI (0-0); Felicia Salvati advanced to third; Erin Slavin scored; Emelie Spence scored.",
+            "Merry Griffin flied out to rf, sacrifice fly, RBI (0-0); Megan Dube advanced to third; Felicia Salvati scored.",
+            "Avery Della Piana singled through the left side, RBI (0-0); Megan Dube scored.",
+            "Alexis Taudel singled to center field (0-0); Avery Della Piana advanced to second.",
+            "Avery Dillon struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charlise Quigley grounded out to ss (0-0).",
+            "Emelie Spence grounded out to 3b (0-0).",
+            "Gricelda Castro walked (0-0).",
+            "Felicia Salvati struck out looking, out at first c to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Dube walked (0-0).",
+            "Jennifer Albano pinch ran for Megan Dube.",
+            "Merry Griffin out at first c to 2b, SAC (0-0); Jennifer Albano advanced to second, advanced to third on a muffed throw by 1b.",
+            "Avery Della Piana flied out to rf, sacrifice fly, RBI (0-0); Jennifer Albano scored, unearned.",
+            "Alexis Taudel grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Avery Dillon grounded out to ss (0-0).",
+            "Charlise Quigley walked (0-0).",
+            "Emelie Spence lined into double play 3b to 1b (0-0); Charlise Quigley out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 2,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 6,
+          "so": 1,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 13
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 5,
+          "h": 6,
+          "r": 5,
+          "er": 4,
+          "bb": 5,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/clark-university/boxscore/11776",
+      "date": "4/22/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence struck out swinging (0-0).",
+            "Erin Slavin flied out to cf (0-0).",
+            "Felicia Salvati grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Dube grounded out to p (0-0).",
+            "Merry Griffin grounded out to p (0-0).",
+            "Avery Della Piana grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alexis Taudel singled to left field (0-0).",
+            "Alexis Taudel out at second lf to 2b.",
+            "Charlise Quigley flied out to cf (0-0).",
+            "Gricelda Castro struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emelie Spence singled, bunt, advanced to second on a throwing error by 3b (0-0).",
+            "Erin Slavin struck out swinging (0-0).",
+            "Felicia Salvati struck out swinging (0-0).",
+            "Megan Dube singled to third base (0-0); Emelie Spence advanced to third.",
+            "Merry Griffin walked (0-0); Megan Dube advanced to second.",
+            "Avery Della Piana struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexis Taudel lined out to ss (0-0).",
+            "Charlise Quigley singled, advanced to second on an error by cf (0-0).",
+            "Gricelda Castro grounded out to 1b unassisted (0-0); Charlise Quigley advanced to third.",
+            "Emelie Spence grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Erin Slavin doubled to center field (0-0).",
+            "Sydney Lyons pinch ran for Erin Slavin.",
+            "Felicia Salvati grounded out to c unassisted (0-0).",
+            "Sydney Lyons out at third c to 3b.",
+            "Megan Dube grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Merry Griffin singled to right field (0-0).",
+            "Jennifer Albano pinch ran for Merry Griffin.",
+            "Avery Della Piana out at first 3b to 2b, SAC (0-0); Jennifer Albano advanced to second.",
+            "Alexis Taudel walked (0-0).",
+            "Madison Dillon pinch ran for Alexis Taudel.",
+            "Charlise Quigley walked (0-0); Madison Dillon advanced to second; Jennifer Albano advanced to third.",
+            "Gricelda Castro flied out to cf, sacrifice fly, RBI (0-0); Charlise Quigley advanced to second; Madison Dillon advanced to third; Jennifer Albano scored.",
+            "Emelie Spence singled to left center, 2 RBI (0-0); Charlise Quigley scored; Madison Dillon scored.",
+            "Erin Slavin pinch hit for Sydney Lyons.",
+            "Emelie Spence advanced to second.",
+            "Erin Slavin singled to right field, RBI (0-0); Emelie Spence scored.",
+            "Felicia Salvati grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 7,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 5,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 30
         }
       ],
       "year": 2026

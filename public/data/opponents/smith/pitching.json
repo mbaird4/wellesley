@@ -1,35 +1,35 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-22T02:24:44.752Z",
+  "scrapedAt": "2026-04-23T02:28:30.846Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
       "w": 7,
-      "l": 3,
-      "era": 3.33,
-      "app": 13,
-      "gs": 9,
+      "l": 4,
+      "era": 3.34,
+      "app": 14,
+      "gs": 10,
       "cg": 8,
       "sho": 1,
       "sv": 0,
-      "ip": 69.1,
-      "h": 76,
-      "r": 39,
-      "er": 33,
-      "bb": 19,
-      "so": 44,
+      "ip": 73.1,
+      "h": 79,
+      "r": 41,
+      "er": 35,
+      "bb": 20,
+      "so": 46,
       "hr": 2,
-      "whip": 1.37,
+      "whip": 1.35,
       "doubles": 15,
       "triples": 2,
-      "ab": 283,
-      "bAvg": 0.269,
+      "ab": 297,
+      "bAvg": 0.266,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 4
     },
     {
@@ -92,25 +92,25 @@
       "name": "Robinson, Alana",
       "w": 0,
       "l": 3,
-      "era": 19,
-      "app": 4,
+      "era": 14.78,
+      "app": 5,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 7,
-      "h": 18,
+      "ip": 9,
+      "h": 19,
       "r": 23,
       "er": 19,
-      "bb": 15,
-      "so": 4,
+      "bb": 17,
+      "so": 6,
       "hr": 0,
-      "whip": 4.71,
+      "whip": 4,
       "doubles": 6,
       "triples": 0,
-      "ab": 40,
-      "bAvg": 0.45,
-      "wp": 1,
+      "ab": 46,
+      "bAvg": 0.413,
+      "wp": 3,
       "hbp": 2,
       "bk": 0,
       "sfa": 0,
@@ -2884,6 +2884,107 @@
           "hbp": 0,
           "ab": 27,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/williams-college/boxscore/9678",
+      "date": "4/22/2026",
+      "opponent": "Williams College",
+      "pitchers": [
+        "Gray, Bailey",
+        "Robinson, Alana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Miya Fujimoto struck out swinging (2-2 SBSFBS).",
+            "Sidney Miller struck out looking (1-2 FBKK).",
+            "Katie Blanch grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Justine Dunaway flied out to rf (2-1 BKB).",
+            "Haley Barrett grounded out to 3b (2-2 SFBFBF).",
+            "Emily Borrazzo popped up to ss (1-2 KFFFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauren Davis grounded out to 2b (1-2 FFFB).",
+            "Ayane Rokugawa flied out to rf (1-0 B).",
+            "Aleks Albert grounded out to 3b (1-2 FKFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Miya Fujimoto walked (3-1 FBBBB).",
+            "Miya Fujimoto advanced to second on a passed ball.",
+            "Sidney Miller singled up the middle (1-2 BSF); Miya Fujimoto advanced to third.",
+            "Sidney Miller stole second, advanced to third; Miya Fujimoto scored on an error by c.",
+            "Katie Blanch flied out to rf, sacrifice fly, RBI (0-1 F); Sidney Miller scored.",
+            "Justine Dunaway grounded out to 3b (0-0).",
+            "Haley Barrett singled up the middle (0-2 KF).",
+            "Emily Borrazzo singled to right field (0-0); Haley Barrett advanced to third.",
+            "Lauren Davis popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bailey Gray to lf.",
+            "Alana Robinson to p for Taz Tamai.",
+            "Ayane Rokugawa grounded out to p (2-0 BB).",
+            "Aleks Albert singled to right field (3-1 BBKB).",
+            "Aleks Albert advanced to second on a wild pitch.",
+            "Aleks Albert advanced to third on a wild pitch.",
+            "Miya Fujimoto struck out swinging (0-0).",
+            "Annabella Rychetsky pinch hit for Sidney Miller.",
+            "Annabella Rychetsky struck out swinging, out at first p to 1b (1-2 KSBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Katie Blanch grounded out to p (0-1 F).",
+            "Justine Dunaway grounded out to 3b (0-0).",
+            "Cassidy Chew pinch hit for Haley Barrett.",
+            "Cassidy Chew walked (3-2 BBKSBB).",
+            "Emily Borrazzo walked (3-0 BBBB); Cassidy Chew advanced to second.",
+            "Cassidy Chew out at third c to 3b to 2b, caught stealing."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 4,
+          "h": 3,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
+        },
+        {
+          "name": "Robinson, Alana",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 8
         }
       ],
       "year": 2026

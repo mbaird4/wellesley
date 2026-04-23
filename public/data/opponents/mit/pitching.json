@@ -1,33 +1,33 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-22T02:24:51.799Z",
+  "scrapedAt": "2026-04-23T02:28:41.262Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 7,
+      "w": 9,
       "l": 1,
-      "era": 2.09,
-      "app": 11,
-      "gs": 10,
+      "era": 2.02,
+      "app": 13,
+      "gs": 11,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 57,
-      "h": 55,
-      "r": 23,
-      "er": 17,
-      "bb": 21,
-      "so": 16,
+      "ip": 66,
+      "h": 64,
+      "r": 26,
+      "er": 19,
+      "bb": 22,
+      "so": 20,
       "hr": 0,
-      "whip": 1.33,
+      "whip": 1.3,
       "doubles": 7,
       "triples": 1,
-      "ab": 218,
-      "bAvg": 0.252,
-      "wp": 3,
-      "hbp": 0,
+      "ab": 252,
+      "bAvg": 0.254,
+      "wp": 4,
+      "hbp": 1,
       "bk": 0,
       "sfa": 1,
       "sha": 6
@@ -64,29 +64,29 @@
       "name": "Watson, Emily",
       "w": 8,
       "l": 0,
-      "era": 3.81,
-      "app": 15,
-      "gs": 8,
+      "era": 3.66,
+      "app": 17,
+      "gs": 9,
       "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 53.1,
-      "h": 60,
-      "r": 31,
-      "er": 29,
-      "bb": 23,
-      "so": 14,
+      "ip": 59.1,
+      "h": 66,
+      "r": 33,
+      "er": 31,
+      "bb": 28,
+      "so": 16,
       "hr": 1,
-      "whip": 1.56,
-      "doubles": 18,
-      "triples": 1,
-      "ab": 208,
+      "whip": 1.58,
+      "doubles": 19,
+      "triples": 2,
+      "ab": 229,
       "bAvg": 0.288,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
       "sfa": 2,
-      "sha": 7
+      "sha": 10
     },
     {
       "name": "Johnston, Nicole",
@@ -2744,6 +2744,230 @@
           "hbp": 0,
           "ab": 23,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/wellesley-college/boxscore/12772",
+      "date": "4/22/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Watson, Emily",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern walked (3-0 BBBB).",
+            "A. Delgado out at first p to 2b, SAC, bunt (0-0); A. Mulhern advanced to second.",
+            "B. Awad tripled to right center, RBI (0-0); A. Mulhern scored.",
+            "E. Gaunce struck out looking (1-2 BFFFK).",
+            "J. Colgan walked (3-1 BBFBB).",
+            "S. Wicker flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Rodriguez singled through the left side (0-0).",
+            "D. Borrison out at first p to 2b, SAC, bunt (0-0); A. Rodriguez advanced to second.",
+            "N. Nicol doubled to left field, RBI (2-2 BBSF); A. Rodriguez scored.",
+            "A. Mulhern fouled out to lf (1-0 B).",
+            "A. Delgado grounded out to 3b (1-2 FBFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "B. Awad flied out to cf (0-0).",
+            "E. Gaunce popped up to 3b (0-0).",
+            "J. Colgan singled to pitcher (2-1 FBB).",
+            "S. Wicker flied out to lf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Rodriguez singled to right center (2-0 BB).",
+            "D. Borrison flied out to lf (2-2 BBKKFF).",
+            "N. Nicol grounded out to p, SAC, bunt (0-1 K); A. Rodriguez advanced to second.",
+            "A. Mulhern walked (3-2 BBFKBB).",
+            "A. Delgado struck out looking (3-2 FFBFBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sharona Huang to p for Emily Watson.",
+            "B. Awad grounded out to 3b (0-1 S).",
+            "E. Gaunce lined out to 3b (3-2 FBBSBFF).",
+            "J. Colgan walked (3-1 BFBBB).",
+            "S. Wicker singled, out at second ss to 1b to 3b to 2b (3-2 BBBKF); J. Colgan advanced to second."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Rodriguez popped up to 2b (0-1 F).",
+            "D. Borrison grounded out to c (0-0).",
+            "N. Nicol struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "A. Mulhern grounded out to 3b (1-0 B).",
+            "A. Delgado singled to shortstop (1-2 BKS).",
+            "B. Awad reached on a fielder's choice (3-2 BBBKF); A. Delgado out at second 3b to 2b.",
+            "B. Awad stole second.",
+            "E. Gaunce grounded out to 1b unassisted (1-2 SKFFB)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "J. Colgan E. Gaunce placed on second (0-0).",
+            "J. Colgan grounded out to ss (3-2 BFBBF).",
+            "L. Seyller lined out to cf (0-2 FF).",
+            "C. Lundin pinch hit for A. Rodriguez.",
+            "C. Lundin grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "D. Borrison A. Rodriguez placed on second (0-0).",
+            "D. Borrison struck out swinging (2-2 BFFBS).",
+            "N. Nicol fouled out to rf (0-0); A. Rodriguez advanced to third.",
+            "A. Mulhern singled up the middle, RBI (2-2 BKFB); A. Rodriguez scored.",
+            "A. Delgado grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 4,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 20
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 5,
+          "h": 3,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 18
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/wellesley-college/boxscore/12773",
+      "date": "4/22/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out swinging (1-2 SKFBS).",
+            "A. Delgado grounded out to 3b (2-0 BB).",
+            "B. Awad grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan grounded out to 2b (1-1 FB).",
+            "E. Gaunce singled up the middle (2-0 BB).",
+            "A. Rodriguez hit by pitch (1-0 H); E. Gaunce advanced to second.",
+            "A. Rodriguez advanced to second on a wild pitch; E. Gaunce advanced to third on a wild pitch.",
+            "G. Jones struck out looking (2-2 SSBBK).",
+            "B. Mellady singled to third base, RBI (3-1 BFBB); A. Rodriguez advanced to third; E. Gaunce scored.",
+            "N. Nicol singled to right field, RBI (0-0); B. Mellady advanced to third; A. Rodriguez scored.",
+            "A. Mulhern flied out to rf (1-2 BFK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado flied out to lf (0-0).",
+            "B. Awad singled to shortstop (3-1 BBFB).",
+            "J. Colgan grounded out to 2b (1-0 B); B. Awad advanced to second.",
+            "E. Gaunce flied out to rf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Rodriguez grounded out to 2b (2-0 BB).",
+            "G. Jones singled through the left side (0-0).",
+            "B. Mellady singled up the middle (1-0 B); G. Jones advanced to second.",
+            "B. Mellady out at second c to 1b, caught stealing, picked off.",
+            "N. Nicol grounded out to ss (3-2 BBBKKF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Watson to p for Sharona Huang.",
+            "A. Mulhern walked (3-1 BKBBB).",
+            "A. Delgado lined out to 3b (0-0).",
+            "B. Awad reached on a fielder's choice (3-1 BBBK); A. Mulhern out at second 3b to 2b.",
+            "J. Colgan grounded out to ss (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gaunce singled down the lf line (1-0 B).",
+            "A. Rodriguez flied out to lf (0-1 F).",
+            "G. Jones walked (3-1 BBBKB); E. Gaunce advanced to second.",
+            "B. Mellady fouled out to 3b (0-1 K).",
+            "N. Nicol flied out to cf (0-2 FF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 4,
+          "h": 6,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 18
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 9
         }
       ],
       "year": 2026
