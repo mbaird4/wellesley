@@ -1,63 +1,63 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-04-24T02:29:10.473Z",
+  "scrapedAt": "2026-04-25T02:11:09.686Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
-      "w": 3,
+      "w": 4,
       "l": 10,
-      "era": 3.93,
-      "app": 17,
+      "era": 3.71,
+      "app": 19,
       "gs": 10,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 76.2,
-      "h": 100,
-      "r": 80,
-      "er": 43,
-      "bb": 45,
-      "so": 88,
+      "ip": 85,
+      "h": 104,
+      "r": 85,
+      "er": 45,
+      "bb": 53,
+      "so": 95,
       "hr": 1,
-      "whip": 1.89,
+      "whip": 1.85,
       "doubles": 13,
       "triples": 8,
-      "ab": 339,
-      "bAvg": 0.295,
+      "ab": 368,
+      "bAvg": 0.283,
       "wp": 28,
-      "hbp": 5,
+      "hbp": 7,
       "bk": 0,
       "sfa": 5,
-      "sha": 3
+      "sha": 6
     },
     {
       "name": "Regan, Kate",
       "w": 0,
-      "l": 7,
-      "era": 6.14,
-      "app": 15,
-      "gs": 10,
+      "l": 8,
+      "era": 7.04,
+      "app": 17,
+      "gs": 12,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 49,
-      "h": 79,
-      "r": 55,
-      "er": 43,
-      "bb": 26,
+      "ip": 53.2,
+      "h": 93,
+      "r": 66,
+      "er": 54,
+      "bb": 29,
       "so": 14,
       "hr": 4,
-      "whip": 2.14,
-      "doubles": 14,
-      "triples": 4,
-      "ab": 224,
-      "bAvg": 0.353,
+      "whip": 2.27,
+      "doubles": 19,
+      "triples": 5,
+      "ab": 251,
+      "bAvg": 0.371,
       "wp": 5,
       "hbp": 0,
       "bk": 0,
-      "sfa": 5,
+      "sfa": 6,
       "sha": 1
     }
   ],
@@ -2174,6 +2174,237 @@
           "hbp": 0,
           "ab": 12,
           "bf": 16
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/clark-university/boxscore/4297",
+      "date": "4/24/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Cal Sheehan to p.",
+            "Kate Regan to dp.",
+            "Emelie Spence struck out swinging (1-2 BKFFS).",
+            "Gricelda Castro struck out looking (0-2 KFK).",
+            "Merry Griffin grounded out to p (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Dube hit by pitch (1-0 H).",
+            "Felicia Salvati grounded out to p, SAC, bunt (0-0); Megan Dube advanced to second.",
+            "Avery Della Piana singled to right field, RBI (1-0 B); Megan Dube scored.",
+            "Madison Dillon reached first on a fielding error by lf (1-1 BF); Avery Della Piana advanced to second.",
+            "Avery Dillon grounded out to 2b (3-0 BBB); Madison Dillon advanced to second; Avery Della Piana advanced to third.",
+            "Charlise Quigley struck out swinging (1-2 KKBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emelie Spence grounded out to ss (2-2 SBBF).",
+            "Gricelda Castro reached first on a throwing error by 3b, out at second rf to ss (1-1 FB).",
+            "Merry Griffin walked (3-2 BBKBKB).",
+            "Megan Dube struck out swinging, out at first c to 1b (1-2 BFSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kari Sorensen to dp.",
+            "Avi Kuperman to 2b.",
+            "Kate Regan to rf.",
+            "Felicia Salvati walked (3-1 BBBKB).",
+            "Avery Della Piana grounded out to 2b (2-0 BB); Felicia Salvati advanced to second.",
+            "Madison Dillon grounded out to 2b (3-2 BSBBS); Felicia Salvati advanced to third.",
+            "Avery Dillon walked (3-0 BBBB).",
+            "Charlise Quigley grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emelie Spence walked (3-1 BBFBB).",
+            "Gricelda Castro grounded out to ss (0-0); Emelie Spence advanced to second.",
+            "Merry Griffin grounded out to 1b unassisted (1-2 KKFBF); Emelie Spence advanced to third.",
+            "Erin Slavin pinch hit for Megan Dube.",
+            "Erin Slavin grounded out to 2b (2-2 KFBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Felicia Salvati walked (3-1 BBKBB).",
+            "Avery Della Piana singled up the middle (2-1 BKB); Felicia Salvati advanced to second.",
+            "Madison Dillon grounded out to 3b, SAC, bunt (1-0 B); Avery Della Piana advanced to second; Felicia Salvati advanced to third.",
+            "Avery Dillon singled through the right side, RBI (3-1 FBBB); Avery Della Piana advanced to third; Felicia Salvati scored.",
+            "Avery Dillon stole second.",
+            "Charlise Quigley grounded out to p (3-1 BBBK).",
+            "Emelie Spence reached first on a fielding error by ss (3-2 BBKSFBF); Avery Dillon advanced to third; Avery Della Piana scored, unearned.",
+            "Emelie Spence stole second.",
+            "Gricelda Castro walked (3-2 BBKBKB).",
+            "Merry Griffin struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Erin Slavin hit by pitch (2-1 BFH).",
+            "Felicia Salvati struck out looking (0-2 KFK).",
+            "Avery Della Piana reached first on a fielding error by ss (0-1 K); Erin Slavin advanced to second.",
+            "Sydney Lyons pinch ran for Avery Della Piana.",
+            "Madison Dillon reached on a fielder's choice (1-0 B); Sydney Lyons out at second ss to 2b; Erin Slavin advanced to third.",
+            "Avery Dillon singled to center field, advanced to second, 2 RBI (1-1 BF); Madison Dillon scored, unearned; Erin Slavin scored, unearned.",
+            "Charlise Quigley grounded out to 3b (1-2 SBFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 0,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 0,
+          "bf": 0
+        },
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 7,
+          "h": 4,
+          "r": 5,
+          "er": 2,
+          "bb": 6,
+          "so": 6,
+          "hbp": 2,
+          "ab": 26,
+          "bf": 36
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/clark-university/boxscore/4298",
+      "date": "4/24/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence grounded out to 3b, bunt (1-1 KB).",
+            "Erin Slavin flied out to rf (0-1 F).",
+            "Merry Griffin singled up the middle (1-0 B).",
+            "Megan Dube walked (3-1 BFBBB); Merry Griffin advanced to second.",
+            "Avery Della Piana reached on a fielder's choice (2-1 BKB); Megan Dube advanced to second; Merry Griffin out at third ss to 3b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Felicia Salvati lined out to 3b (1-1 KB).",
+            "Madison Dillon doubled to left field (0-1 F).",
+            "Avery Dillon singled to right field (0-0); Madison Dillon advanced to third.",
+            "Avery Dillon stole second.",
+            "Gricelda Castro popped up to ss (1-0 B).",
+            "Emelie Spence tripled down the lf line, 2 RBI (1-0 B); Avery Dillon scored; Madison Dillon scored.",
+            "Erin Slavin doubled to right center, RBI (1-1 BK); Emelie Spence scored.",
+            "Merry Griffin singled to center field, RBI (2-1 KBB); Erin Slavin scored.",
+            "Merry Griffin advanced to second on a passed ball.",
+            "Megan Dube flied out to cf (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avery Della Piana singled to right center (1-0 B).",
+            "Felicia Salvati singled to third base, bunt (1-0 B); Avery Della Piana advanced to second.",
+            "Madison Dillon popped up to 2b (1-0 B).",
+            "Avery Dillon doubled to right center, RBI (0-1 F); Felicia Salvati advanced to third; Avery Della Piana scored.",
+            "Gricelda Castro flied out to cf, sacrifice fly, RBI (0-0); Felicia Salvati scored.",
+            "Emelie Spence walked (3-0 BBBB).",
+            "Erin Slavin doubled down the lf line, 2 RBI (0-0); Emelie Spence scored; Avery Dillon scored.",
+            "Merry Griffin singled down the rf line, RBI (2-0 BB); Erin Slavin scored.",
+            "Megan Dube doubled down the lf line, RBI (2-2 KBKFBF); Merry Griffin scored.",
+            "Avery Della Piana grounded out to 2b (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Felicia Salvati grounded out to 3b (1-0 B).",
+            "Madison Dillon grounded out to 2b (0-0).",
+            "Avery Dillon flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gricelda Castro singled to shortstop (2-0 BB).",
+            "Emelie Spence singled to catcher, bunt (0-0); Gricelda Castro advanced to second.",
+            "Erin Slavin flied out to rf (0-0); Gricelda Castro advanced to third.",
+            "Merry Griffin reached on a fielder's choice, RBI (0-1 F); Emelie Spence out at second rf to ss; Gricelda Castro scored.",
+            "Megan Dube walked (3-1 BFBBB); Merry Griffin advanced to second.",
+            "Avi Kuperman to rf.",
+            "Cal Sheehan to p.",
+            "Riley Caiazza to 2b.",
+            "Kate Regan to dp.",
+            "Jennifer Albano pinch ran for Megan Dube.",
+            "Avery Della Piana grounded out to 2b (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Felicia Salvati walked (3-1 BKBBB).",
+            "Caitriona Andre pinch ran for Felicia Salvati.",
+            "Madison Dillon grounded out to 3b, SAC, bunt (0-0); Caitriona Andre advanced to second.",
+            "Avery Dillon grounded out to p (2-0 BB).",
+            "Gricelda Castro walked (3-2 BBKBFB).",
+            "Emelie Spence struck out swinging (2-2 BKFBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 4.2,
+          "h": 14,
+          "r": 11,
+          "er": 11,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 31
+        },
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 1.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 6
         }
       ],
       "year": 2026

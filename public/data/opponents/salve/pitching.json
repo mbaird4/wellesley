@@ -1,31 +1,31 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-24T02:29:02.246Z",
+  "scrapedAt": "2026-04-25T02:10:51.771Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 12,
-      "era": 5.94,
-      "app": 19,
-      "gs": 14,
-      "cg": 13,
+      "l": 13,
+      "era": 6.33,
+      "app": 20,
+      "gs": 15,
+      "cg": 14,
       "sho": 0,
       "sv": 0,
-      "ip": 99,
-      "h": 162,
-      "r": 98,
-      "er": 84,
-      "bb": 22,
-      "so": 48,
+      "ip": 104,
+      "h": 174,
+      "r": 109,
+      "er": 94,
+      "bb": 26,
+      "so": 52,
       "hr": 5,
-      "whip": 1.86,
-      "doubles": 36,
-      "triples": 3,
-      "ab": 442,
-      "bAvg": 0.367,
+      "whip": 1.92,
+      "doubles": 42,
+      "triples": 4,
+      "ab": 470,
+      "bAvg": 0.37,
       "wp": 5,
       "hbp": 5,
       "bk": 0,
@@ -35,29 +35,29 @@
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 13,
-      "era": 8.98,
-      "app": 15,
-      "gs": 15,
+      "l": 14,
+      "era": 9.35,
+      "app": 16,
+      "gs": 16,
       "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 57.2,
-      "h": 90,
-      "r": 95,
-      "er": 74,
-      "bb": 75,
+      "ip": 60.2,
+      "h": 98,
+      "r": 102,
+      "er": 81,
+      "bb": 78,
       "so": 42,
       "hr": 2,
-      "whip": 2.86,
-      "doubles": 21,
-      "triples": 6,
-      "ab": 247,
-      "bAvg": 0.364,
-      "wp": 23,
-      "hbp": 3,
+      "whip": 2.9,
+      "doubles": 23,
+      "triples": 7,
+      "ab": 264,
+      "bAvg": 0.371,
+      "wp": 24,
+      "hbp": 4,
       "bk": 0,
-      "sfa": 8,
+      "sfa": 9,
       "sha": 14
     },
     {
@@ -92,28 +92,28 @@
       "name": "Geisser, Victoria",
       "w": 0,
       "l": 1,
-      "era": 7.56,
-      "app": 3,
+      "era": 6.77,
+      "app": 4,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 8.1,
-      "h": 14,
-      "r": 12,
-      "er": 9,
+      "ip": 10.1,
+      "h": 18,
+      "r": 14,
+      "er": 10,
       "bb": 11,
-      "so": 3,
+      "so": 5,
       "hr": 0,
-      "whip": 3,
+      "whip": 2.81,
       "doubles": 1,
       "triples": 1,
-      "ab": 33,
-      "bAvg": 0.424,
+      "ab": 42,
+      "bAvg": 0.429,
       "wp": 1,
       "hbp": 0,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 1
     }
   ],
@@ -3118,6 +3118,193 @@
           "hbp": 0,
           "ab": 25,
           "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/babson-college/boxscore/11779",
+      "date": "4/24/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh walked (0-0).",
+            "Maddy DeLong reached on a fielder's choice (0-0); Emily Walsh out at second 1b to ss.",
+            "Lexi Sealy singled up the middle (0-0); Maddy DeLong advanced to second.",
+            "Belle Dicampello walked (0-0); Lexi Sealy advanced to second; Maddy DeLong advanced to third.",
+            "Charlotte Raymond singled to left center, 2 RBI (0-0); Belle Dicampello advanced to second; Lexi Sealy scored; Maddy DeLong scored.",
+            "Devin McCall struck out swinging (0-0).",
+            "Samantha Skivo singled to right center, RBI (0-0); Charlotte Raymond advanced to third; Belle Dicampello scored.",
+            "Ruby Madia walked (0-0); Samantha Skivo advanced to second.",
+            "Charly Landow grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emily Walsh doubled to center field (0-0).",
+            "Maddy DeLong struck out swinging (0-0).",
+            "Lexi Sealy reached first on an error by 2b, advanced to second (0-0); Emily Walsh scored, unearned.",
+            "Belle Dicampello flied out to cf (0-0).",
+            "Charlotte Raymond flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Devin McCall grounded out to ss (0-0).",
+            "Samantha Skivo walked (0-0).",
+            "Ruby Madia tripled to right center, RBI (0-0); Samantha Skivo scored.",
+            "Charly Landow grounded out to p (0-0).",
+            "Emily Walsh lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddy DeLong grounded out to 1b unassisted (0-0).",
+            "Lexi Sealy flied out to lf (0-0).",
+            "Belle Dicampello struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charlotte Raymond grounded out to ss (0-0).",
+            "Devin McCall doubled to right field (0-0).",
+            "Samantha Skivo singled through the left side (0-0); Devin McCall advanced to third.",
+            "Ruby Madia singled to shortstop, RBI (0-0); Samantha Skivo advanced to second; Devin McCall scored.",
+            "Charly Landow doubled to right field, RBI (0-0); Ruby Madia advanced to third; Samantha Skivo scored.",
+            "Emily Walsh doubled to right center, 2 RBI (0-0); Charly Landow scored; Ruby Madia scored.",
+            "Maddy DeLong struck out swinging (0-0).",
+            "Lexi Sealy doubled to right center, RBI (0-0); Emily Walsh scored.",
+            "Belle Dicampello doubled to right center, RBI (0-0); Lexi Sealy scored.",
+            "Charlotte Raymond popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 5,
+          "h": 12,
+          "r": 11,
+          "er": 10,
+          "bb": 4,
+          "so": 4,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/babson-college/boxscore/11780",
+      "date": "4/24/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh walked (0-0).",
+            "Izzy Burgess pinch ran for Emily Walsh.",
+            "Maddy DeLong walked (0-0); Izzy Burgess advanced to second.",
+            "Maddy DeLong advanced to second on a wild pitch; Izzy Burgess advanced to third.",
+            "Lexi Sealy doubled down the lf line, RBI (0-0); Maddy DeLong advanced to third; Izzy Burgess scored.",
+            "Belle Dicampello walked (0-0).",
+            "Charlotte Raymond reached on a fielder's choice, RBI (0-0); Belle Dicampello advanced to second; Lexi Sealy advanced to third; Maddy DeLong scored.",
+            "Samantha Skivo flied out to cf, sacrifice fly, RBI (0-0); Belle Dicampello advanced to third; Lexi Sealy scored.",
+            "Ruby Madia lined out to 2b (0-0).",
+            "Allie Cubberly singled to pitcher, RBI (0-0); Charlotte Raymond advanced to third; Belle Dicampello scored.",
+            "Kay Laliberty hit by pitch (0-0); Allie Cubberly advanced to second.",
+            "Izzy Burgess flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maddy DeLong singled up the middle (0-0).",
+            "Maddy DeLong stole second.",
+            "Lexi Sealy doubled to right field, RBI (0-0); Maddy DeLong scored.",
+            "Belle Dicampello grounded out to 1b unassisted (0-0); Lexi Sealy advanced to third.",
+            "Charlotte Raymond popped up to 1b (0-0).",
+            "Samantha Skivo flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ruby Madia tripled to right center (0-0).",
+            "Allie Cubberly singled to right center, RBI (0-0); Ruby Madia scored.",
+            "Kay Laliberty singled up the middle (0-0); Allie Cubberly advanced to second.",
+            "Izzy Burgess flied out to lf (0-0).",
+            "Maddy DeLong flied out to rf (0-0); Allie Cubberly advanced to third.",
+            "Lexi Sealy singled through the right side, RBI (0-0); Kay Laliberty advanced to second; Allie Cubberly scored.",
+            "Belle Dicampello reached on a fielder's choice (0-0); Lexi Sealy out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Victoria Geisser to p for Caroline Peterson.",
+            "Charlotte Raymond singled to center field (0-0).",
+            "Samantha Skivo singled to left center (0-0); Charlotte Raymond advanced to second.",
+            "Samantha Skivo advanced to second; Charlotte Raymond advanced to third on a passed ball.",
+            "Ruby Madia flied out to cf, sacrifice fly, RBI (0-0); Charlotte Raymond scored, unearned.",
+            "Allie Cubberly struck out swinging (0-0).",
+            "Kay Laliberty singled to right field, RBI (0-0); Samantha Skivo scored.",
+            "Izzy Burgess singled to pitcher (0-0); Kay Laliberty advanced to second.",
+            "Nicole Petrillo pinch hit for Maddy DeLong.",
+            "Nicole Petrillo fouled out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Cami O'Rourke to 2b for Lillian Bridges.",
+            "Taylor Ferraiolo to lf.",
+            "Mia Hansen pinch hit for Lexi Sealy.",
+            "Mia Hansen out at first 1b to 2b (0-0).",
+            "Alexa Young grounded out to p (0-0).",
+            "Bella Marchetti pinch hit for Charlotte Raymond.",
+            "Bella Marchetti struck out looking (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 3,
+          "h": 8,
+          "r": 7,
+          "er": 7,
+          "bb": 3,
+          "so": 0,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 22
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 2,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 10
         }
       ],
       "year": 2026

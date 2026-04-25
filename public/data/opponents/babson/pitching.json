@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-24T02:29:22.901Z",
+  "scrapedAt": "2026-04-25T02:11:33.528Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,30 +34,30 @@
     },
     {
       "name": "Sealey, Lexi",
-      "w": 2,
+      "w": 3,
       "l": 2,
-      "era": 2.8,
-      "app": 16,
-      "gs": 2,
-      "cg": 2,
+      "era": 2.94,
+      "app": 17,
+      "gs": 3,
+      "cg": 3,
       "sho": 1,
       "sv": 3,
-      "ip": 45,
-      "h": 62,
-      "r": 28,
-      "er": 18,
-      "bb": 17,
-      "so": 15,
+      "ip": 50,
+      "h": 66,
+      "r": 31,
+      "er": 21,
+      "bb": 21,
+      "so": 17,
       "hr": 0,
-      "whip": 1.76,
-      "doubles": 10,
+      "whip": 1.74,
+      "doubles": 11,
       "triples": 2,
-      "ab": 196,
-      "bAvg": 0.316,
-      "wp": 6,
+      "ab": 214,
+      "bAvg": 0.308,
+      "wp": 7,
       "hbp": 4,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 5
     },
     {
@@ -90,26 +90,26 @@
     },
     {
       "name": "Vlacich, Katie",
-      "w": 3,
+      "w": 4,
       "l": 9,
-      "era": 5.59,
-      "app": 14,
-      "gs": 12,
-      "cg": 4,
-      "sho": 0,
+      "era": 5.17,
+      "app": 15,
+      "gs": 13,
+      "cg": 5,
+      "sho": 1,
       "sv": 0,
-      "ip": 62.2,
-      "h": 91,
+      "ip": 67.2,
+      "h": 93,
       "r": 58,
       "er": 50,
       "bb": 26,
-      "so": 42,
+      "so": 47,
       "hr": 7,
-      "whip": 1.87,
+      "whip": 1.76,
       "doubles": 20,
       "triples": 2,
-      "ab": 279,
-      "bAvg": 0.326,
+      "ab": 296,
+      "bAvg": 0.314,
       "wp": 14,
       "hbp": 2,
       "bk": 0,
@@ -3418,6 +3418,154 @@
           "hbp": 0,
           "ab": 8,
           "bf": 8
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/salve-regina/boxscore/16069",
+      "date": "4/24/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges walked (0-0).",
+            "Abby Merck reached on a fielder's choice (0-0); Lillian Bridges out at second ss to 2b.",
+            "Emily Cronin singled to first base (0-0); Abby Merck advanced to second.",
+            "Emma Plourde doubled to left center, RBI (0-0); Emily Cronin advanced to third; Abby Merck scored.",
+            "Gracie Keyes flied out to lf, sacrifice fly, RBI (0-0); Emily Cronin scored.",
+            "Ryann Burke singled to right field, RBI (0-0); Emma Plourde scored.",
+            "Victoria Geisser walked (0-0); Ryann Burke advanced to second.",
+            "Victoria Geisser advanced to second on a wild pitch; Ryann Burke advanced to third.",
+            "Skyla Oliveira walked (0-0).",
+            "Taylor Ferraiolo fouled out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lillian Bridges lined out to lf (0-0).",
+            "Abby Merck grounded out to 1b unassisted (0-0).",
+            "Emily Cronin flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Plourde grounded out to p (0-0).",
+            "Gracie Keyes singled to left center (0-0).",
+            "Ryann Burke fouled out to 1b (0-0).",
+            "Victoria Geisser walked (0-0); Gracie Keyes advanced to second.",
+            "Skyla Oliveira grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Ferraiolo popped up to p (0-0).",
+            "Lillian Bridges lined out to lf (0-0).",
+            "Abby Merck struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emily Cronin flied out to cf (0-0).",
+            "Emma Plourde struck out swinging (0-0).",
+            "Gracie Keyes flied out to lf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sealey, Lexi",
+          "ip": 5,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 4,
+          "so": 2,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/salve-regina/boxscore/16070",
+      "date": "4/24/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Izzy Burgess to cf.",
+            "Lillian Bridges struck out swinging (0-0).",
+            "Abby Merck struck out swinging (0-0).",
+            "Emily Cronin flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Plourde struck out swinging (0-0).",
+            "Gracie Keyes popped up to 1b (0-0).",
+            "Ryann Burke singled to right center, advanced to second on an error by cf (0-0).",
+            "Madeleine Oswald flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skyla Oliveira grounded out to ss (0-0).",
+            "Taylor Ferraiolo grounded out to 3b (0-0).",
+            "Lillian Bridges grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddy DeLong pinch hit for Nicole Petrillo.",
+            "Alexa Young to c for Belle Dicampello.",
+            "Maddy DeLong to ss.",
+            "Abby Merck struck out swinging (0-0).",
+            "Emily Cronin flied out to rf (0-0).",
+            "Emma Plourde struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lexi Sealy to 1b for Mia Hansen.",
+            "Charlotte Raymond to lf for Bella Marchetti.",
+            "Gracie Keyes flied out to lf (0-0).",
+            "Ryann Burke singled to right center (0-0).",
+            "Skylar Wicklund pinch ran for Ryann Burke.",
+            "Madeleine Oswald flied out to rf (0-0).",
+            "Skyla Oliveira grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 5,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 17
         }
       ],
       "year": 2026

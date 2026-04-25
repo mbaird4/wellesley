@@ -1,92 +1,92 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-24T02:29:07.014Z",
+  "scrapedAt": "2026-04-25T02:10:57.241Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 9,
+      "w": 10,
       "l": 1,
-      "era": 2.02,
-      "app": 13,
-      "gs": 11,
+      "era": 1.97,
+      "app": 14,
+      "gs": 12,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 66,
-      "h": 64,
-      "r": 26,
-      "er": 19,
+      "ip": 71,
+      "h": 68,
+      "r": 28,
+      "er": 20,
       "bb": 22,
-      "so": 20,
+      "so": 23,
       "hr": 0,
-      "whip": 1.3,
+      "whip": 1.27,
       "doubles": 7,
       "triples": 1,
-      "ab": 252,
-      "bAvg": 0.254,
-      "wp": 4,
+      "ab": 275,
+      "bAvg": 0.247,
+      "wp": 5,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
       "sha": 6
     },
     {
-      "name": "Blackett, Sarah",
-      "w": 7,
-      "l": 1,
-      "era": 3.2,
-      "app": 11,
-      "gs": 8,
-      "cg": 4,
-      "sho": 4,
-      "sv": 0,
-      "ip": 59,
-      "h": 60,
-      "r": 32,
-      "er": 27,
-      "bb": 31,
-      "so": 68,
-      "hr": 3,
-      "whip": 1.54,
-      "doubles": 12,
-      "triples": 1,
-      "ab": 233,
-      "bAvg": 0.258,
-      "wp": 7,
-      "hbp": 7,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 3
-    },
-    {
       "name": "Watson, Emily",
       "w": 8,
-      "l": 0,
-      "era": 3.66,
-      "app": 17,
-      "gs": 9,
-      "cg": 4,
+      "l": 1,
+      "era": 3.43,
+      "app": 18,
+      "gs": 10,
+      "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 59.1,
-      "h": 66,
-      "r": 33,
-      "er": 31,
-      "bb": 28,
-      "so": 16,
+      "ip": 65.1,
+      "h": 72,
+      "r": 34,
+      "er": 32,
+      "bb": 29,
+      "so": 20,
       "hr": 1,
-      "whip": 1.58,
-      "doubles": 19,
+      "whip": 1.55,
+      "doubles": 21,
       "triples": 2,
-      "ab": 229,
-      "bAvg": 0.288,
+      "ab": 252,
+      "bAvg": 0.286,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
       "sfa": 2,
-      "sha": 10
+      "sha": 11
+    },
+    {
+      "name": "Blackett, Sarah",
+      "w": 7,
+      "l": 1,
+      "era": 3.44,
+      "app": 12,
+      "gs": 8,
+      "cg": 4,
+      "sho": 4,
+      "sv": 0,
+      "ip": 61,
+      "h": 61,
+      "r": 35,
+      "er": 30,
+      "bb": 33,
+      "so": 68,
+      "hr": 4,
+      "whip": 1.54,
+      "doubles": 12,
+      "triples": 1,
+      "ab": 240,
+      "bAvg": 0.254,
+      "wp": 7,
+      "hbp": 7,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 4
     },
     {
       "name": "Johnston, Nicole",
@@ -2968,6 +2968,201 @@
           "hbp": 0,
           "ab": 7,
           "bf": 9
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/12776",
+      "date": "4/24/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari singled to center field (0-1 K).",
+            "Taylor Barry out at first p to 2b, SAC, bunt (0-0); Ella Molinari advanced to second.",
+            "Peyton Blankenheim-Brown struck out swinging (2-2 KBSFBS).",
+            "Mady Bryan doubled to center field, RBI (0-1 K); Ella Molinari scored.",
+            "Emma Boucher grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Amber Arcand singled to right field (0-1 K).",
+            "Gabby Reinbold struck out swinging (1-2 FFBS).",
+            "Lexi Falcioni flied out to lf (0-0).",
+            "Riley Dolan singled to left field (1-0 B); Amber Arcand advanced to second.",
+            "Ella Molinari reached on a fielder's choice to third base (1-1 BF); Riley Dolan advanced to second; Amber Arcand out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Taylor Barry flied out to cf (1-0 B).",
+            "Peyton Blankenheim-Brown doubled down the lf line (0-0).",
+            "Mady Bryan singled through the left side (1-0 B); Peyton Blankenheim-Brown advanced to third.",
+            "Emma Boucher struck out swinging (0-2 SSS).",
+            "Amber Arcand flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Gabby Reinbold fouled out to 3b (0-0).",
+            "Lexi Falcioni walked (3-2 FFFBBFFBB).",
+            "Riley Dolan flied out to lf (0-0).",
+            "Ella Molinari struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Barry grounded out to 3b (2-2 BKFB).",
+            "Peyton Blankenheim-Brown popped up to 2b (1-2 FFFBFFF).",
+            "Mady Bryan grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Emma Boucher grounded out to p (3-2 BFBBFFFF).",
+            "Amber Arcand reached first on an error by 2b (0-2 KF).",
+            "Madi Miller pinch hit for Gabby Reinbold.",
+            "Madi Miller lined into double play ss to 1b (2-1 BKB); Amber Arcand out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 6,
+          "h": 6,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/12777",
+      "date": "4/24/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Huang, Sharona",
+        "Blackett, Sarah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lauren Sundquist to 1b.",
+            "Kaaya Mehta to dp.",
+            "Maggie Feng to 2b for Pearl Mitchell.",
+            "Ella Molinari grounded out to 3b (1-2 BFF).",
+            "Taylor Barry reached first on a throwing error by p (0-0).",
+            "Taylor Barry stole second.",
+            "Peyton Blankenheim-Brown struck out looking (2-2 SBBSK).",
+            "Mady Bryan flied out to rf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Boucher lined out to 3b (0-2 KF).",
+            "Amber Arcand struck out swinging (2-2 BKSBS).",
+            "Lexi Falcioni grounded out to p (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Julia Miller flied out to lf (0-0).",
+            "Riley Dolan popped up to ss (0-1 F).",
+            "Ella Molinari singled to center field (1-0 B).",
+            "Taylor Barry grounded out to 2b (2-2 SBSB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Peyton Blankenheim-Brown grounded out to p (3-2 SBBFB).",
+            "Mady Bryan singled to center field (1-0 B).",
+            "Emma Boucher struck out swinging (0-2 FSS).",
+            "Amber Arcand reached first on an error by 2b (3-2 BBKBS); Mady Bryan advanced to second.",
+            "Lexi Falcioni reached first on an error by ss (0-0); Amber Arcand advanced to second; Mady Bryan advanced to third.",
+            "Lexi Falcioni advanced to second; Amber Arcand advanced to third; Mady Bryan scored on a wild pitch, unearned.",
+            "Julia Miller singled up the middle, RBI (2-1 BBF); Lexi Falcioni advanced to third; Amber Arcand scored.",
+            "Riley Dolan grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella Molinari flied out to cf (1-1 BF).",
+            "Taylor Barry singled to shortstop (1-0 B).",
+            "Peyton Blankenheim-Brown flied out to rf (2-0 BB).",
+            "Mady Bryan reached first on an error by 3b (1-1 BK); Taylor Barry advanced to second.",
+            "Emma Boucher grounded out to 3b (2-2 KFBFBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sarah Blackett to p for Sharona Huang.",
+            "Amber Arcand reached first on an error by 3b (1-0 B).",
+            "Lexi Falcioni grounded out to 3b, SAC, bunt (0-1 F); Amber Arcand advanced to second.",
+            "Julia Miller walked (3-2 BBSKBB).",
+            "Madi Miller pinch hit for Riley Dolan.",
+            "Madi Miller flied out to lf (1-0 B).",
+            "Ella Molinari homered to center field, 3 RBI (0-1 F); Julia Miller scored; Amber Arcand scored.",
+            "Taylor Barry popped up to ss (2-2 SSBFB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Peyton Blankenheim-Brown grounded out to ss (1-2 KFB).",
+            "Mady Bryan walked (3-2 FBBFBB).",
+            "Alexandra Anquillare pinch hit for Emma Boucher.",
+            "Alexandra Anquillare reached on a fielder's choice to shortstop (3-2 BBFSB); Mady Bryan out at second ss to 2b.",
+            "Amber Arcand grounded out to ss (2-0 BB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 5,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 23
+        },
+        {
+          "name": "Blackett, Sarah",
+          "ip": 2,
+          "h": 1,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 10
         }
       ],
       "year": 2026

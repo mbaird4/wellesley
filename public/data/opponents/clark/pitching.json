@@ -1,60 +1,60 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-24T02:29:19.370Z",
+  "scrapedAt": "2026-04-25T02:11:19.156Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 8,
-      "l": 5,
-      "era": 2.77,
-      "app": 13,
-      "gs": 12,
+      "l": 6,
+      "era": 2.95,
+      "app": 14,
+      "gs": 13,
       "cg": 12,
       "sho": 0,
       "sv": 0,
-      "ip": 86,
-      "h": 101,
-      "r": 40,
-      "er": 34,
-      "bb": 19,
-      "so": 88,
-      "hr": 2,
-      "whip": 1.4,
-      "doubles": 16,
+      "ip": 92.2,
+      "h": 111,
+      "r": 45,
+      "er": 39,
+      "bb": 20,
+      "so": 93,
+      "hr": 3,
+      "whip": 1.41,
+      "doubles": 19,
       "triples": 2,
-      "ab": 356,
-      "bAvg": 0.284,
+      "ab": 385,
+      "bAvg": 0.288,
       "wp": 4,
       "hbp": 3,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 4
     },
     {
       "name": "Dube, Megan",
-      "w": 5,
+      "w": 6,
       "l": 9,
-      "era": 3.2,
-      "app": 14,
-      "gs": 13,
-      "cg": 13,
+      "era": 3.33,
+      "app": 15,
+      "gs": 14,
+      "cg": 14,
       "sho": 0,
       "sv": 0,
-      "ip": 94,
-      "h": 112,
-      "r": 61,
-      "er": 43,
-      "bb": 27,
-      "so": 80,
+      "ip": 101,
+      "h": 125,
+      "r": 67,
+      "er": 48,
+      "bb": 29,
+      "so": 83,
       "hr": 4,
-      "whip": 1.48,
-      "doubles": 27,
+      "whip": 1.52,
+      "doubles": 29,
       "triples": 4,
-      "ab": 387,
-      "bAvg": 0.289,
-      "wp": 2,
+      "ab": 422,
+      "bAvg": 0.296,
+      "wp": 3,
       "hbp": 5,
       "bk": 0,
       "sfa": 3,
@@ -64,29 +64,29 @@
       "name": "Wagstaff, Hannah",
       "w": 1,
       "l": 1,
-      "era": 1.91,
-      "app": 3,
+      "era": 2.47,
+      "app": 4,
       "gs": 3,
       "cg": 2,
       "sho": 1,
       "sv": 0,
-      "ip": 11,
-      "h": 13,
-      "r": 3,
-      "er": 3,
-      "bb": 2,
+      "ip": 11.1,
+      "h": 16,
+      "r": 6,
+      "er": 4,
+      "bb": 3,
       "so": 3,
       "hr": 0,
-      "whip": 1.36,
+      "whip": 1.68,
       "doubles": 2,
       "triples": 0,
-      "ab": 46,
-      "bAvg": 0.283,
+      "ab": 51,
+      "bAvg": 0.314,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -2802,6 +2802,222 @@
           "hbp": 0,
           "ab": 27,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/emerson-college/boxscore/19206",
+      "date": "4/24/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Buzzeo, Brooke",
+        "Wagstaff, Hannah"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale flied out to rf (1-1 KB).",
+            "Aislinn McCoy fouled out to 2b (1-2 SBF).",
+            "Kari Sorensen doubled to right center (0-1 F).",
+            "Avi Kuperman doubled to left center, RBI (2-0 BB); Kari Sorensen scored.",
+            "Cal Sheehan doubled to center field, RBI (1-0 B); Avi Kuperman scored.",
+            "Casey Yacovelli struck out looking (1-2 BSSK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Fasteau grounded out to 2b (0-2 FS).",
+            "Kayla Nuehlen singled to shortstop (1-2 BFF).",
+            "Valentina Luciano singled to second base (1-0 B); Kayla Nuehlen advanced to second.",
+            "Malena Cardinale flied out to lf (0-1 F).",
+            "Aislinn McCoy walked (3-0 BBBB); Valentina Luciano advanced to second; Kayla Nuehlen advanced to third.",
+            "Kari Sorensen popped up to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avi Kuperman flied out to rf (0-0).",
+            "Cal Sheehan fouled out to 2b (1-0 B).",
+            "Casey Yacovelli homered to left center, RBI (2-2 FFBFB).",
+            "Riley Fasteau flied out to rf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kayla Nuehlen singled to shortstop (0-1 S).",
+            "Valentina Luciano singled to shortstop (2-0 BB); Kayla Nuehlen advanced to second.",
+            "Malena Cardinale singled to center field (2-1 SBB); Valentina Luciano advanced to second; Kayla Nuehlen advanced to third.",
+            "Aislinn McCoy struck out swinging (1-2 FKBS).",
+            "Kari Sorensen singled to center field, RBI (0-0); Malena Cardinale advanced to second; Valentina Luciano advanced to third; Kayla Nuehlen scored.",
+            "Avi Kuperman flied out to rf, sacrifice fly, RBI (1-0 B); Kari Sorensen out at second rf to 3b to c to 2b; Malena Cardinale advanced to third; Valentina Luciano scored."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hannah Wagstaff to p for Brooke Buzzeo.",
+            "Cal Sheehan singled to left field (3-2 BBBKSFF).",
+            "Casey Yacovelli walked (3-1 BFBBB); Cal Sheehan advanced to second.",
+            "Riley Fasteau reached first on a fielding error by 2b, SAC, bunt (0-0); Casey Yacovelli advanced to second; Cal Sheehan advanced to third.",
+            "Kayla Nuehlen reached on a fielder's choice (2-2 BFKB); Riley Fasteau advanced to second; Casey Yacovelli advanced to third; Cal Sheehan out at home 3b to c.",
+            "Valentina Luciano reached first on a fielding error by p (0-0); Kayla Nuehlen advanced to second; Riley Fasteau advanced to third; Casey Yacovelli scored.",
+            "Malena Cardinale singled to center field, RBI (1-1 BK); Valentina Luciano advanced to second; Kayla Nuehlen advanced to third; Riley Fasteau scored, unearned.",
+            "Aislinn McCoy singled to center field, RBI (2-0 BB); Malena Cardinale advanced to second; Valentina Luciano advanced to third; Kayla Nuehlen scored, unearned.",
+            "Elizabeth Miehlich pinch hit for Kari Sorensen.",
+            "Brooke Buzzeo to p for Hannah Wagstaff.",
+            "Elizabeth Miehlich struck out swinging (1-2 KBSS).",
+            "Avi Kuperman popped up to 1b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Cal Sheehan flied out to rf (1-1 BF).",
+            "Casey Yacovelli reached first on a fielding error by 3b (0-2 FFF).",
+            "Riley Fasteau flied out to cf (1-1 BK).",
+            "Kayla Nuehlen struck out looking (0-2 SFK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Erin Slavin to dp.",
+            "Valentina Luciano struck out looking (1-2 SBKK).",
+            "Malena Cardinale popped up to ss (1-0 B).",
+            "Aislinn McCoy lined out to rf (2-0 BB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6.2,
+          "h": 10,
+          "r": 5,
+          "er": 5,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 31
+        },
+        {
+          "name": "Wagstaff, Hannah",
+          "ip": 0.1,
+          "h": 3,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/emerson-college/boxscore/19207",
+      "date": "4/24/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Malena Cardinale singled down the lf line (1-0 B).",
+            "Malena Cardinale advanced to second on a wild pitch.",
+            "Aislinn McCoy singled to center field, advanced to second on a fielding error by cf, RBI (3-2 KBBFFFBF); Malena Cardinale scored.",
+            "Avi Kuperman flied out to cf (3-2 BBBKF).",
+            "Casey Yacovelli struck out swinging (2-2 BKBFS).",
+            "Cal Sheehan singled to left field, RBI (3-2 KBBBK); Aislinn McCoy scored, unearned.",
+            "Riley Fasteau singled up the middle (1-0 B); Cal Sheehan advanced to second.",
+            "Kayla Nuehlen popped up to ss (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Caiazza to dp for Kari Sorensen.",
+            "Riley Caiazza doubled to right center (3-2 BKBKB).",
+            "Valentina Luciano flied out to lf (0-2 FK).",
+            "Malena Cardinale singled through the left side, RBI (0-2 KFF); Riley Caiazza scored.",
+            "Aislinn McCoy flied out to rf (3-2 KKFBBFB).",
+            "Avi Kuperman reached on a fielder's choice (0-2 KK); Malena Cardinale out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Casey Yacovelli grounded out to 3b (0-0).",
+            "Cal Sheehan singled through the left side (2-0 BB).",
+            "Riley Fasteau doubled to left field (1-0 B); Cal Sheehan advanced to third.",
+            "Kayla Nuehlen struck out swinging (2-2 BBKSFS).",
+            "Riley Caiazza singled to second base, 2 RBI (0-1 K); Riley Fasteau scored; Cal Sheehan scored.",
+            "Valentina Luciano reached on a fielder's choice (0-0); Riley Caiazza out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Malena Cardinale flied out to cf (3-2 KBFBB).",
+            "Aislinn McCoy singled up the middle (1-1 KB).",
+            "Avi Kuperman reached on a fielder's choice (1-1 BK); Aislinn McCoy advanced to second on a fielding error by ss.",
+            "Casey Yacovelli flied out to cf (3-2 BKBBS).",
+            "Cal Sheehan lined out to p (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Fasteau singled to left field (0-0).",
+            "Kayla Nuehlen popped up to 2b (0-1 K).",
+            "Riley Caiazza struck out looking (1-2 KBFFK).",
+            "Valentina Luciano flied out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Dube to p for Jennifer Albano.",
+            "Malena Cardinale walked (3-2 KFBBBFB).",
+            "Aislinn McCoy lined out to rf (2-1 BKB).",
+            "Avi Kuperman reached on a fielder's choice (3-2 KBKBB); Malena Cardinale out at second 3b to 2b.",
+            "Casey Yacovelli walked (3-2 BFBFBFB); Avi Kuperman advanced to second.",
+            "Cal Sheehan singled to right field, RBI (2-2 KBBF); Casey Yacovelli advanced to third; Avi Kuperman scored.",
+            "Riley Fasteau popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Felicia Salvati to 1b for Caitriona Andre.",
+            "Kayla Nuehlen grounded out to ss (1-2 KBK).",
+            "Riley Caiazza singled down the lf line (0-0).",
+            "Valentina Luciano reached on a fielder's choice (0-0); Riley Caiazza out at second ss to 2b.",
+            "Malena Cardinale out at first 1b to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 7,
+          "h": 13,
+          "r": 6,
+          "er": 5,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 35,
+          "bf": 37
         }
       ],
       "year": 2026

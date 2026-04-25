@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-04-24T02:28:54.197Z",
+  "scrapedAt": "2026-04-25T02:10:40.943Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
       "w": 13,
       "l": 4,
-      "era": 1.96,
-      "app": 17,
-      "gs": 8,
-      "cg": 7,
-      "sho": 2,
+      "era": 1.84,
+      "app": 18,
+      "gs": 9,
+      "cg": 8,
+      "sho": 3,
       "sv": 0,
-      "ip": 107,
-      "h": 105,
+      "ip": 114,
+      "h": 109,
       "r": 37,
       "er": 30,
       "bb": 26,
-      "so": 91,
+      "so": 101,
       "hr": 2,
-      "whip": 1.22,
+      "whip": 1.18,
       "doubles": 18,
-      "triples": 2,
-      "ab": 410,
-      "bAvg": 0.256,
+      "triples": 3,
+      "ab": 435,
+      "bAvg": 0.251,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -34,31 +34,31 @@
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 7,
+      "w": 8,
       "l": 5,
-      "era": 4.82,
-      "app": 22,
-      "gs": 21,
-      "cg": 12,
+      "era": 4.61,
+      "app": 23,
+      "gs": 22,
+      "cg": 13,
       "sho": 0,
       "sv": 1,
-      "ip": 85.2,
-      "h": 120,
-      "r": 72,
-      "er": 59,
+      "ip": 92.2,
+      "h": 128,
+      "r": 74,
+      "er": 61,
       "bb": 20,
-      "so": 45,
+      "so": 48,
       "hr": 1,
-      "whip": 1.63,
-      "doubles": 18,
-      "triples": 10,
-      "ab": 376,
-      "bAvg": 0.319,
+      "whip": 1.6,
+      "doubles": 20,
+      "triples": 11,
+      "ab": 404,
+      "bAvg": 0.317,
       "wp": 5,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 4,
-      "sha": 5
+      "sha": 6
     }
   ],
   "games": [
@@ -2908,6 +2908,188 @@
           "bb": 1,
           "so": 4,
           "hbp": 0,
+          "ab": 28,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/coast-guard/boxscore/14847",
+      "date": "4/24/2026",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to p (1-2 KKFB).",
+            "Hayden Reilly struck out looking (0-2 KSK).",
+            "Maura Murphy struck out swinging (0-2 FFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bridget Bartz lined out to 2b (0-0).",
+            "Mack Murnane struck out swinging (0-2 SSS).",
+            "Zoey Lynn reached first on a dropped fly by 3b (0-0).",
+            "Emma Behel struck out swinging (1-2 SFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Dana Walker tripled to right field (0-0).",
+            "Madeline Kibler flied into double play 1b to c to 3b (1-0 B); Dana Walker out on the play.",
+            "Abriana Schmutz singled to second base (0-0).",
+            "Hayden Reilly struck out swinging (0-2 SKS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maura Murphy grounded out to 3b (0-1 F).",
+            "Bridget Bartz struck out swinging (2-2 BFBSFS).",
+            "Mack Murnane flied out to cf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoey Lynn grounded out to ss (1-2 FBS).",
+            "Emma Behel struck out swinging (1-2 SSBS).",
+            "Dana Walker flied out to cf (0-2 SSFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madeline Kibler popped up to 2b (0-0).",
+            "Abriana Schmutz flied out to lf (0-1 K).",
+            "Hayden Reilly flied out to rf (1-2 FSB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maura Murphy singled up the middle (0-1 K).",
+            "Ella Stolarzyk pinch hit for Bridget Bartz.",
+            "Ella Stolarzyk struck out looking (1-2 FBFK).",
+            "Mack Murnane struck out swinging (1-2 KSBS).",
+            "Zoey Lynn singled through the right side (1-0 B); Maura Murphy advanced to second.",
+            "Emma Behel struck out swinging (2-2 FBFBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 4,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 10,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/coast-guard/boxscore/14848",
+      "date": "4/24/2026",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz doubled to left field (0-0).",
+            "Hayden Reilly singled to shortstop (0-2 SKF).",
+            "Maura Murphy out at first p to 2b, SAC, bunt (0-0); Hayden Reilly advanced to second; Abriana Schmutz advanced to third.",
+            "Ella Stolarzyk reached on a fielder's choice (1-2 BKF); Hayden Reilly advanced to third; Abriana Schmutz out at home ss to c.",
+            "Bridget Bartz struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zoey Lynn struck out looking (1-2 BFFK).",
+            "Mack Murnane fouled out to 1b (0-1 K).",
+            "Dana Walker grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Steele lined out to lf (0-0).",
+            "Abriana Schmutz singled up the middle (1-1 KB).",
+            "Hayden Reilly reached on a fielder's choice to shortstop (0-1 F); Abriana Schmutz out at second ss to 2b.",
+            "Maura Murphy grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Stolarzyk singled to shortstop, advanced to second on a throwing error by ss (0-1 F).",
+            "Bridget Bartz flied out to rf (0-0).",
+            "Zoey Lynn flied out to rf (0-0).",
+            "Lauren Ragonese pinch hit for Mack Murnane.",
+            "Lauren Ragonese singled up the middle, advanced to second on the throw, RBI (1-2 KSFB); Ella Stolarzyk scored.",
+            "Dana Walker tripled down the lf line, RBI (0-2 KSF); Lauren Ragonese scored.",
+            "Abby Steele hit by pitch (3-1 BKBH).",
+            "Abriana Schmutz grounded out to 2b (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maddie Tse to dp.",
+            "Brynlee Eckles to 2b for Tessa Spingola.",
+            "Hayden Reilly grounded out to p (0-0).",
+            "Zoey Cascio flied out to rf (0-1 K).",
+            "Ella Stolarzyk singled to pitcher (0-0).",
+            "Caitlynn Gibson pinch hit for Bridget Bartz.",
+            "Caitlynn Gibson reached on a fielder's choice to shortstop (0-0); Ella Stolarzyk out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Carissa Pecchia to dp for Maddie Tse.",
+            "Zoey Lynn grounded out to ss (0-0).",
+            "Mack Murnane flied out to rf (1-2 BSF).",
+            "Dana Walker doubled to left field (3-2 BBFKB).",
+            "Olivia Garcia pinch ran for Dana Walker.",
+            "Abby Steele popped up to 2b (2-1 SBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Abriana Schmutz grounded out to 2b (1-1 BK).",
+            "Hayden Reilly flied out to cf (1-0 B).",
+            "Zoey Cascio struck out swinging (3-2 BBFBFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 7,
+          "h": 8,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 3,
+          "hbp": 1,
           "ab": 28,
           "bf": 30
         }

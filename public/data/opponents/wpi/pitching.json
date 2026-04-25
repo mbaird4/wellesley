@@ -1,64 +1,64 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-24T02:28:44.471Z",
+  "scrapedAt": "2026-04-25T02:10:27.293Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 18,
+      "w": 19,
       "l": 0,
-      "era": 1.39,
-      "app": 19,
-      "gs": 12,
-      "cg": 9,
+      "era": 1.36,
+      "app": 20,
+      "gs": 13,
+      "cg": 10,
       "sho": 4,
       "sv": 0,
-      "ip": 96,
-      "h": 99,
-      "r": 23,
-      "er": 19,
+      "ip": 103,
+      "h": 107,
+      "r": 25,
+      "er": 20,
       "bb": 16,
-      "so": 62,
+      "so": 65,
       "hr": 0,
-      "whip": 1.2,
+      "whip": 1.19,
       "doubles": 14,
       "triples": 1,
-      "ab": 372,
-      "bAvg": 0.266,
+      "ab": 400,
+      "bAvg": 0.268,
       "wp": 1,
       "hbp": 4,
       "bk": 0,
       "sfa": 1,
-      "sha": 8
+      "sha": 9
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 10,
+      "w": 11,
       "l": 2,
-      "era": 2.07,
-      "app": 17,
-      "gs": 16,
-      "cg": 12,
+      "era": 1.99,
+      "app": 18,
+      "gs": 17,
+      "cg": 13,
       "sho": 3,
       "sv": 0,
-      "ip": 84.2,
-      "h": 90,
-      "r": 35,
-      "er": 25,
-      "bb": 28,
-      "so": 49,
+      "ip": 91.2,
+      "h": 94,
+      "r": 38,
+      "er": 26,
+      "bb": 29,
+      "so": 54,
       "hr": 1,
-      "whip": 1.39,
+      "whip": 1.34,
       "doubles": 8,
       "triples": 1,
-      "ab": 328,
-      "bAvg": 0.274,
+      "ab": 351,
+      "bAvg": 0.268,
       "wp": 5,
-      "hbp": 5,
+      "hbp": 6,
       "bk": 0,
-      "sfa": 3,
-      "sha": 11
+      "sfa": 4,
+      "sha": 13
     },
     {
       "name": "Barr, Kaitlyn",
@@ -3768,6 +3768,189 @@
           "hbp": 1,
           "ab": 25,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/smith/boxscore/16654",
+      "date": "4/24/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis reached first on an error by ss (1-1 SB).",
+            "Gabbie Chinnis stole second.",
+            "Ally Knutson reached first on an error by ss (0-0); Gabbie Chinnis advanced to third.",
+            "Ally Knutson stole second.",
+            "Violet Peverly reached first on an error by ss, 2 RBI (0-0); Ally Knutson scored, unearned; Gabbie Chinnis scored, unearned.",
+            "Riley Veenstra singled to left field (0-2 SFF); Violet Peverly out at second lf to 2b.",
+            "Bailey Gray flied out to rf (1-1 BS).",
+            "Sophie Hasegawa struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Samantha Jeng to ss for Sandy Fairbairn.",
+            "Elinor Washington struck out swinging (1-2 BSSS).",
+            "Taz Tamai walked (3-1 KBBBB).",
+            "Lily Hackett struck out swinging (3-2 BBSBSS).",
+            "Gabbie Chinnis grounded out to 1b unassisted (0-2 SFF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ally Knutson hit by pitch (1-0 H).",
+            "Violet Peverly out at first p to 2b, SAC (0-0); Ally Knutson advanced to second.",
+            "Riley Veenstra singled to center field (0-0); Ally Knutson advanced to third.",
+            "Bailey Gray flied out to rf, sacrifice fly, RBI (0-2 FF); Ally Knutson scored.",
+            "Sophie Hasegawa reached on a fielder's choice (3-2 FBBBK); Riley Veenstra out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elinor Washington singled to center field (0-1 F).",
+            "Taz Tamai out at first 3b to 2b, SAC (0-0); Elinor Washington advanced to second.",
+            "Lily Hackett struck out swinging (3-2 SBBKBS).",
+            "Gabbie Chinnis lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ally Knutson flied out to lf (0-0).",
+            "Violet Peverly lined out to 2b (1-2 FFFFBF).",
+            "Riley Veenstra flied out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bailey Gray flied out to 2b (0-0).",
+            "Sophie Hasegawa singled to right center (1-2 BKK).",
+            "Elinor Washington lined out to 3b (1-2 FFB); Sophie Hasegawa out at second 3b to 1b."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taz Tamai grounded out to ss (3-1 BBBK).",
+            "Alana Robinson pinch hit for Lily Hackett.",
+            "Alana Robinson struck out swinging (0-2 KS).",
+            "Gabbie Chinnis grounded out to ss (1-2 KBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 4,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 5,
+          "hbp": 1,
+          "ab": 23,
+          "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/smith/boxscore/16655",
+      "date": "4/24/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis flied out to cf (0-0).",
+            "Ally Knutson grounded out to 2b (0-1 K).",
+            "Violet Peverly lined out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Veenstra flied out to lf (0-0).",
+            "Bailey Gray singled to shortstop (0-0).",
+            "Sophie Hasegawa singled to left field (2-2 BSSB); Bailey Gray advanced to second.",
+            "Taz Tamai lined out to 1b (2-1 BKB); Sophie Hasegawa out at second 1b unassisted."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elinor Washington flied out to cf (0-1 S).",
+            "Lily Hackett flied out to ss (2-2 BFBFF).",
+            "Gabbie Chinnis grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ally Knutson singled to shortstop (1-1 FB).",
+            "Violet Peverly reached first on an error by cf, advanced to second (3-1 BBFB); Ally Knutson advanced to third.",
+            "Riley Veenstra singled to left field, RBI (0-0); Violet Peverly advanced to third; Ally Knutson scored.",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray lined out to cf, SAC, RBI (1-1 BS); Violet Peverly scored, unearned.",
+            "Sophie Hasegawa grounded out to 3b (2-2 BFFB); Anna Gray advanced to second.",
+            "Taz Tamai struck out swinging (1-2 BSKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elinor Washington fouled out to 1b (0-1 K).",
+            "Lily Hackett struck out looking (1-2 BKFFK).",
+            "Gabbie Chinnis grounded out to p (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ally Knutson grounded out to 2b (0-0).",
+            "Violet Peverly singled down the rf line (2-2 BKKB).",
+            "Riley Veenstra struck out swinging (0-2 KFS).",
+            "Bailey Gray singled to third base (0-0); Violet Peverly advanced to second.",
+            "Sophie Hasegawa reached on a fielder's choice (0-0); Bailey Gray out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taz Tamai singled to second base (1-0 B).",
+            "Elinor Washington flied out to 1b (0-0).",
+            "Malaya Sumii pinch hit for Lily Hackett.",
+            "Malaya Sumii flied out to 2b (1-2 KKB).",
+            "Gabbie Chinnis singled to left center (0-0); Taz Tamai advanced to second.",
+            "Ally Knutson grounded out to 1b unassisted (1-2 FFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 8,
+          "r": 2,
+          "er": 1,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 29
         }
       ],
       "year": 2026

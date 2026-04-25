@@ -1,115 +1,115 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-04-24T02:28:58.246Z",
+  "scrapedAt": "2026-04-25T02:10:46.474Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
       "w": 7,
-      "l": 4,
-      "era": 3.34,
-      "app": 14,
-      "gs": 10,
+      "l": 5,
+      "era": 3.21,
+      "app": 15,
+      "gs": 11,
       "cg": 8,
       "sho": 1,
       "sv": 0,
-      "ip": 73.1,
-      "h": 79,
-      "r": 41,
+      "ip": 76.1,
+      "h": 84,
+      "r": 44,
       "er": 35,
       "bb": 20,
       "so": 46,
       "hr": 2,
-      "whip": 1.35,
-      "doubles": 15,
+      "whip": 1.36,
+      "doubles": 17,
       "triples": 2,
-      "ab": 297,
-      "bAvg": 0.266,
+      "ab": 311,
+      "bAvg": 0.27,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 4
     },
     {
       "name": "Peverly, Violet",
       "w": 8,
-      "l": 7,
-      "era": 3.53,
-      "app": 16,
-      "gs": 15,
+      "l": 8,
+      "era": 3.51,
+      "app": 17,
+      "gs": 16,
       "cg": 9,
       "sho": 0,
       "sv": 0,
-      "ip": 77.1,
-      "h": 85,
-      "r": 51,
-      "er": 39,
-      "bb": 40,
-      "so": 79,
+      "ip": 83.2,
+      "h": 92,
+      "r": 57,
+      "er": 42,
+      "bb": 42,
+      "so": 84,
       "hr": 2,
-      "whip": 1.62,
-      "doubles": 13,
+      "whip": 1.6,
+      "doubles": 15,
       "triples": 3,
-      "ab": 314,
-      "bAvg": 0.271,
+      "ab": 338,
+      "bAvg": 0.272,
       "wp": 6,
       "hbp": 5,
       "bk": 0,
-      "sfa": 2,
-      "sha": 5
+      "sfa": 3,
+      "sha": 6
     },
     {
       "name": "Bennett, Lindsay",
       "w": 0,
       "l": 0,
-      "era": 4.5,
-      "app": 8,
+      "era": 4.38,
+      "app": 9,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 23.1,
+      "ip": 24,
       "h": 27,
       "r": 16,
       "er": 15,
       "bb": 12,
       "so": 12,
       "hr": 2,
-      "whip": 1.67,
+      "whip": 1.63,
       "doubles": 5,
       "triples": 0,
-      "ab": 101,
-      "bAvg": 0.267,
+      "ab": 103,
+      "bAvg": 0.262,
       "wp": 0,
       "hbp": 2,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 0
     },
     {
       "name": "Robinson, Alana",
       "w": 0,
       "l": 3,
-      "era": 14.78,
-      "app": 5,
+      "era": 12.38,
+      "app": 6,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 9,
-      "h": 19,
-      "r": 23,
-      "er": 19,
-      "bb": 17,
-      "so": 6,
+      "ip": 13,
+      "h": 27,
+      "r": 28,
+      "er": 23,
+      "bb": 19,
+      "so": 9,
       "hr": 0,
-      "whip": 4,
+      "whip": 3.54,
       "doubles": 6,
       "triples": 0,
-      "ab": 46,
-      "bAvg": 0.413,
+      "ab": 67,
+      "bAvg": 0.403,
       "wp": 2,
       "hbp": 2,
       "bk": 0,
@@ -2985,6 +2985,239 @@
           "hbp": 0,
           "ab": 6,
           "bf": 8
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/9680",
+      "date": "4/24/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Peverly, Violet",
+        "Bennett, Lindsay"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour walked (3-2 BFBBKB).",
+            "Lucy Latour stole second.",
+            "Virginia McKinney singled to center field (3-2 BKKFBFBFFF); Lucy Latour advanced to third.",
+            "Virginia McKinney stole second.",
+            "Sandy Fairbairn flied out to lf, sacrifice fly, RBI (1-2 BKS); Virginia McKinney advanced to third; Lucy Latour scored.",
+            "Emma Nagy struck out looking (0-2 KFK).",
+            "Riley O'Brien struck out swinging (2-2 SBSBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Stella Kozak struck out looking (0-2 KKK).",
+            "Ariana Kreuzer flied out to 2b (0-2 FK).",
+            "Elizabeth Jordan reached first on an error by 1b, advanced to second on the error (0-0).",
+            "Meg Sherwood doubled to right center, RBI (0-1 F); Elizabeth Jordan scored, unearned.",
+            "Lucy Latour struck out swinging (2-2 BFFBFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Virginia McKinney flied out to cf (0-0).",
+            "Samantha Jeng grounded out to 3b (0-1 K).",
+            "Emma Nagy lined out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley O'Brien singled to center field (2-2 BFFBF).",
+            "Stella Kozak out on batter's interference (0-0).",
+            "Ariana Kreuzer flied out to p (0-0); Riley O'Brien out at second p to 1b."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elizabeth Jordan walked (3-2 BBFBFFB).",
+            "Meg Sherwood out at first p to 2b, SAC (0-0); Elizabeth Jordan advanced to second.",
+            "Lucy Latour singled to right center, RBI (2-2 KBFB); Elizabeth Jordan scored.",
+            "Virginia McKinney singled to right field (0-0); Lucy Latour advanced to second.",
+            "Virginia McKinney advanced to third; Lucy Latour stole third, scored on an error by ss, unearned.",
+            "Samantha Jeng struck out swinging (3-2 BBBSFS).",
+            "Emma Nagy flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien flied out to lf (0-1 K).",
+            "Stella Kozak flied out to cf (1-0 B).",
+            "Ariana Kreuzer grounded out to ss (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Elizabeth Jordan singled to third base (0-0).",
+            "Meg Sherwood flied out to cf (0-0).",
+            "Lucy Latour doubled to right center, RBI (3-1 KBBB); Elizabeth Jordan scored.",
+            "Violet Peverly to 1b.",
+            "Lindsay Bennett to p for Lucy Allen.",
+            "Virginia McKinney flied out to lf, sacrifice fly (1-0 B); Lucy Latour advanced to third.",
+            "Samantha Jeng reached first on an error by ss, RBI (0-2 FKF); Lucy Latour scored, unearned.",
+            "Samantha Jeng stole second.",
+            "Emma Nagy grounded out to 2b (1-2 BFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 6.1,
+          "h": 7,
+          "r": 6,
+          "er": 3,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 28
+        },
+        {
+          "name": "Bennett, Lindsay",
+          "ip": 0.2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 2,
+          "bf": 3
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/9681",
+      "date": "4/24/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Gray, Bailey",
+        "Robinson, Alana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour singled to left center (0-2 FF).",
+            "Virginia McKinney reached first on an error by cf, RBI (0-1 F); Lucy Latour scored, unearned.",
+            "Emma Nagy singled to left field (3-0 BBB); Virginia McKinney advanced to third.",
+            "Riley O'Brien singled to left field, RBI (0-0); Emma Nagy advanced to second; Virginia McKinney scored, unearned.",
+            "Ali Chalovich grounded out to p (3-2 BBSBF); Riley O'Brien advanced to second on the throw; Emma Nagy advanced to third on the throw.",
+            "Meg Sherwood flied out to p (2-2 FSBB).",
+            "Stella Kozak out at first p to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elizabeth Jordan flied out to cf (1-2 BSS).",
+            "Samantha Jeng grounded out to ss (2-2 KKBBF).",
+            "Lucy Latour doubled to left center (1-2 KBF).",
+            "Lucy Latour stole third.",
+            "Virginia McKinney grounded out to 1b unassisted (2-2 BFFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nagy doubled to left center (0-0).",
+            "Riley O'Brien grounded out to ss (0-1 K); Emma Nagy advanced to third.",
+            "Ali Chalovich flied out to cf, SAC, RBI (0-0); Emma Nagy scored.",
+            "Meg Sherwood lined out to lf (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Veenstra to c.",
+            "Bailey Gray to dp.",
+            "Alana Robinson to p for Ava Lansbury.",
+            "Stella Kozak grounded out to 3b (1-2 FFB).",
+            "Elizabeth Jordan grounded out to 3b (3-2 BKBKB).",
+            "Samantha Jeng struck out looking (2-2 BKBFK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Veenstra to c for Anna Gray.",
+            "Lucy Latour walked (3-0 BBBB).",
+            "Virginia McKinney grounded out to ss (1-0 B); Lucy Latour advanced to second.",
+            "Emma Nagy singled to right field, RBI (0-1 K); Lucy Latour scored.",
+            "Riley O'Brien singled to center field (0-2 KFF); Emma Nagy advanced to second.",
+            "Ali Chalovich grounded out to ss (2-2 BKFFB); Riley O'Brien advanced to second; Emma Nagy advanced to third.",
+            "Meg Sherwood singled to third base, advanced to second on the throw, RBI (2-2 BKBS); Riley O'Brien advanced to third; Emma Nagy scored.",
+            "Stella Kozak flied out to rf (2-1 BBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Elizabeth Jordan singled to pitcher, advanced to second on an error by p, advanced to third (1-1 BF).",
+            "Samantha Jeng singled to right field, RBI (1-2 KKB); Elizabeth Jordan scored.",
+            "Samantha Jeng stole second.",
+            "Lucy Latour flied out to ss (2-2 BFKB).",
+            "Samantha Jeng stole third.",
+            "Virginia McKinney reached on a fielder's choice (0-1 K); Samantha Jeng out at home ss to c.",
+            "Virginia McKinney stole second, advanced to third on an error by c.",
+            "Emma Nagy walked, advanced to second on the throw, RBI (0-0); Virginia McKinney scored.",
+            "Riley O'Brien flied out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ali Chalovich singled to left field (2-0 BB).",
+            "Colleen Mayer pinch ran for Ali Chalovich.",
+            "Meg Sherwood singled to left field (0-2 FFF); Colleen Mayer advanced to second.",
+            "Stella Kozak struck out looking (0-2 FFFK).",
+            "Elizabeth Jordan singled to shortstop (0-0); Meg Sherwood advanced to second; Colleen Mayer advanced to third.",
+            "Grace Grant pinch hit for Samantha Jeng.",
+            "Grace Grant struck out looking (2-2 BKBFFK).",
+            "Lucy Latour reached first on an error by 3b, RBI (0-0); Elizabeth Jordan advanced to second; Meg Sherwood advanced to third; Colleen Mayer scored, unearned.",
+            "Ali Chalovich to c for Colleen Mayer.",
+            "Samantha Jeng to ss for Grace Grant.",
+            "Virginia McKinney reached on a fielder's choice (2-0 BB); Lucy Latour advanced to second; Elizabeth Jordan out at third ss to 3b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 3,
+          "h": 5,
+          "r": 3,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 15
+        },
+        {
+          "name": "Robinson, Alana",
+          "ip": 4,
+          "h": 8,
+          "r": 5,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 23
         }
       ],
       "year": 2026
