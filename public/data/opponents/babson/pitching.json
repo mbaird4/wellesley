@@ -1,7 +1,7 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-25T02:11:33.528Z",
+  "scrapedAt": "2026-04-26T02:34:07.433Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -62,59 +62,59 @@
     },
     {
       "name": "Topel, Anna",
-      "w": 4,
+      "w": 5,
       "l": 5,
-      "era": 4.06,
-      "app": 13,
-      "gs": 13,
-      "cg": 5,
+      "era": 3.75,
+      "app": 14,
+      "gs": 14,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 62,
-      "h": 85,
-      "r": 51,
-      "er": 36,
-      "bb": 37,
-      "so": 39,
+      "ip": 69,
+      "h": 90,
+      "r": 52,
+      "er": 37,
+      "bb": 40,
+      "so": 40,
       "hr": 2,
-      "whip": 1.97,
-      "doubles": 13,
+      "whip": 1.88,
+      "doubles": 15,
       "triples": 2,
-      "ab": 272,
-      "bAvg": 0.313,
+      "ab": 296,
+      "bAvg": 0.304,
       "wp": 6,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 6
+      "sha": 8
     },
     {
       "name": "Vlacich, Katie",
-      "w": 4,
+      "w": 5,
       "l": 9,
-      "era": 5.17,
-      "app": 15,
-      "gs": 13,
-      "cg": 5,
-      "sho": 1,
+      "era": 4.69,
+      "app": 16,
+      "gs": 14,
+      "cg": 6,
+      "sho": 2,
       "sv": 0,
-      "ip": 67.2,
-      "h": 93,
+      "ip": 74.2,
+      "h": 96,
       "r": 58,
       "er": 50,
-      "bb": 26,
-      "so": 47,
+      "bb": 30,
+      "so": 52,
       "hr": 7,
-      "whip": 1.76,
+      "whip": 1.69,
       "doubles": 20,
       "triples": 2,
-      "ab": 296,
-      "bAvg": 0.314,
+      "ab": 316,
+      "bAvg": 0.304,
       "wp": 14,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 4
+      "sha": 6
     }
   ],
   "games": [
@@ -3566,6 +3566,191 @@
           "hbp": 0,
           "ab": 17,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/clark/boxscore/16071",
+      "date": "4/25/2026",
+      "opponent": "Clark",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence walked (3-0 BBBB).",
+            "Emelie Spence out at second c to ss, caught stealing.",
+            "Erin Slavin popped up to 2b (3-1 SBBB).",
+            "Merry Griffin doubled to left center (1-1 FB).",
+            "Megan Dube flied out to cf (2-2 KKBFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Della Piana struck out looking (0-2 KKK).",
+            "Felicia Salvati flied out to lf (2-1 FBB).",
+            "Alexis Taudel popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avery Dillon reached first on a fielding error by ss (1-0 B).",
+            "Gricelda Castro lined out to p, SAC, bunt (0-0).",
+            "Emelie Spence grounded out to ss (1-2 KSB); Avery Dillon advanced to second.",
+            "Erin Slavin lined out to rf (1-2 BFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Merry Griffin popped up to 2b (2-2 KBBF).",
+            "Megan Dube singled to left field (1-2 FFB).",
+            "Avery Della Piana lined out to cf (1-0 B).",
+            "Megan Dube advanced to second on a passed ball.",
+            "Felicia Salvati grounded out to ss (2-2 KBFBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexis Taudel singled to right field (0-0).",
+            "Jennifer Albano to rf for Alexis Taudel.",
+            "Avery Dillon out at first p to 2b, SAC, bunt (0-0); Jennifer Albano advanced to third.",
+            "Kay Laliberty to 2b for Charly Landow.",
+            "Gricelda Castro walked (3-1 BSBBB).",
+            "Gricelda Castro stole second.",
+            "Emelie Spence reached on a fielder's choice (2-2 KFBB); Gricelda Castro advanced to third; Jennifer Albano out at home 1b to c.",
+            "Emelie Spence stole second.",
+            "Erin Slavin grounded out to 1b unassisted (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Merry Griffin grounded out to 2b (0-0).",
+            "Megan Dube walked (3-1 BBKBB).",
+            "Sydney Lyons pinch ran for Megan Dube.",
+            "Avery Della Piana flied out to cf (2-1 BKB).",
+            "Felicia Salvati popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Alexis Taudel grounded out to ss (3-2 SKFBBFB).",
+            "Avery Dillon doubled to left center (0-1 K).",
+            "Gricelda Castro fouled out to 1b (0-0).",
+            "Emelie Spence singled to center field, advanced to second on the throw, RBI (2-1 BBK); Avery Dillon scored.",
+            "Erin Slavin grounded out to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 7,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/clark/boxscore/16072",
+      "date": "4/25/2026",
+      "opponent": "Clark",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence walked (3-2 KBBSBB).",
+            "Avery Dillon out at first 3b to 2b, SAC, bunt (0-0); Emelie Spence advanced to second, out at third 3b to 2b to c.",
+            "Merry Griffin singled up the middle (1-2 KBK).",
+            "Megan Dube popped up to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Della Piana walked (3-2 BKKBBB).",
+            "Felicia Salvati out at first p to 2b, SAC, bunt (0-1 K); Avery Della Piana advanced to second.",
+            "Madison Dillon struck out swinging (1-2 BSSS).",
+            "Charlise Quigley struck out swinging (3-2 BBKFFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gricelda Castro out at first p to 2b, bunt (1-0 B).",
+            "Emelie Spence struck out swinging (3-2 KSBFBBS).",
+            "Avery Dillon popped up to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Merry Griffin walked (3-2 BBSKBB).",
+            "Megan Dube reached on a fielder's choice (2-1 KBB); Merry Griffin out at second 3b to 2b.",
+            "Avery Della Piana grounded into double play 2b to ss to 1b (3-2 BBKBK); Megan Dube out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Felicia Salvati lined out to 3b (0-0).",
+            "Madison Dillon struck out looking (0-2 FFFK).",
+            "Charlise Quigley lined out to lf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gricelda Castro popped up to 2b (0-1 K).",
+            "Emelie Spence grounded out to ss (1-2 BFFFF).",
+            "Avery Dillon singled to right field (0-0).",
+            "Merry Griffin grounded out to 1b unassisted (3-2 FBKBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Megan Dube singled through the left side (3-1 BKBB).",
+            "Caitriona Andre to dp for Megan Dube.",
+            "Avery Della Piana walked (3-1 BKBBB); Caitriona Andre advanced to second.",
+            "Jennifer Albano to c for Avery Della Piana.",
+            "Felicia Salvati flied out to cf (0-1 S).",
+            "Alexis Taudel flied out to cf (1-2 FKB).",
+            "Erin Slavin to lf for Charlise Quigley.",
+            "Erin Slavin struck out swinging (2-2 KSBBFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 4,
+          "so": 5,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 26
         }
       ],
       "year": 2026

@@ -1,33 +1,33 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-25T02:11:14.523Z",
+  "scrapedAt": "2026-04-26T02:33:57.584Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 10,
+      "w": 11,
       "l": 7,
-      "era": 1.37,
-      "app": 20,
-      "gs": 14,
-      "cg": 11,
+      "era": 1.43,
+      "app": 21,
+      "gs": 15,
+      "cg": 12,
       "sho": 3,
       "sv": 1,
-      "ip": 97,
-      "h": 85,
-      "r": 45,
-      "er": 19,
-      "bb": 26,
-      "so": 83,
+      "ip": 103,
+      "h": 93,
+      "r": 47,
+      "er": 21,
+      "bb": 28,
+      "so": 86,
       "hr": 0,
-      "whip": 1.14,
+      "whip": 1.17,
       "doubles": 12,
       "triples": 0,
-      "ab": 390,
-      "bAvg": 0.218,
-      "wp": 5,
-      "hbp": 0,
+      "ab": 414,
+      "bAvg": 0.225,
+      "wp": 6,
+      "hbp": 1,
       "bk": 0,
       "sfa": 1,
       "sha": 10
@@ -36,24 +36,24 @@
       "name": "Lynn, Zoey",
       "w": 2,
       "l": 2,
-      "era": 2.02,
-      "app": 7,
+      "era": 2.08,
+      "app": 8,
       "gs": 5,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 27.2,
-      "h": 33,
-      "r": 14,
-      "er": 8,
+      "ip": 30.1,
+      "h": 36,
+      "r": 15,
+      "er": 9,
       "bb": 3,
       "so": 15,
       "hr": 0,
-      "whip": 1.3,
-      "doubles": 4,
+      "whip": 1.29,
+      "doubles": 5,
       "triples": 1,
-      "ab": 117,
-      "bAvg": 0.282,
+      "ab": 128,
+      "bAvg": 0.281,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -63,30 +63,30 @@
     {
       "name": "Behel, Emma",
       "w": 2,
-      "l": 2,
-      "era": 3.6,
-      "app": 10,
-      "gs": 6,
+      "l": 3,
+      "era": 4.45,
+      "app": 11,
+      "gs": 7,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 35,
-      "h": 46,
-      "r": 21,
-      "er": 18,
-      "bb": 12,
-      "so": 14,
-      "hr": 1,
-      "whip": 1.66,
-      "doubles": 7,
+      "ip": 39.1,
+      "h": 54,
+      "r": 31,
+      "er": 25,
+      "bb": 13,
+      "so": 16,
+      "hr": 2,
+      "whip": 1.7,
+      "doubles": 8,
       "triples": 1,
-      "ab": 149,
-      "bAvg": 0.309,
+      "ab": 172,
+      "bAvg": 0.314,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
-      "sfa": 1,
-      "sha": 3
+      "sfa": 2,
+      "sha": 4
     },
     {
       "name": "Reilly, Hayden",
@@ -2643,6 +2643,208 @@
           "hbp": 0,
           "ab": 29,
           "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/smith/boxscore/9366",
+      "date": "4/25/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Behel, Emma",
+        "Lynn, Zoey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis flied out to cf (1-1 BK).",
+            "Ally Knutson reached first on an error by 2b (1-0 B).",
+            "Violet Peverly grounded out to 3b (1-1 KB); Ally Knutson advanced to second.",
+            "Riley Veenstra struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray flied out to cf (2-1 BKB).",
+            "Sophie Hasegawa struck out swinging (2-2 KKBBS).",
+            "Taz Tamai lined out to ss (3-2 KKBBB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elinor Washington singled to right field (1-2 KBF).",
+            "Lily Hackett out at first 3b to 2b, bunt, SAC (0-1 K); Elinor Washington advanced to second.",
+            "Gabbie Chinnis singled up the middle, advanced to second on the throw (1-1 KB); Elinor Washington advanced to third.",
+            "Ally Knutson reached on a fielder's choice to second base, RBI (1-1 BF); Gabbie Chinnis scored; Elinor Washington scored.",
+            "Violet Peverly singled to third base (0-0); Ally Knutson advanced to second.",
+            "Riley Veenstra reached on a fielder's choice to second base (2-0 BB); Violet Peverly out at second 2b to ss; Ally Knutson advanced to third.",
+            "Bailey Gray doubled to left center, RBI (1-0 B); Riley Veenstra advanced to third; Ally Knutson scored.",
+            "Sophie Hasegawa reached first on an error by 3b (0-0); Bailey Gray scored on the error, unearned; Riley Veenstra scored, unearned.",
+            "Taz Tamai flied out to lf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elinor Washington popped out to 1b (1-0 B).",
+            "Lily Hackett reached first on an error by cf, out at second rf to ss (3-2 BSSBBF).",
+            "Gabbie Chinnis grounded out to 1b unassisted (3-2 BBKBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ally Knutson singled to center field (0-0).",
+            "Violet Peverly homered to left field, 2 RBI (1-0 B); Ally Knutson scored.",
+            "Riley Veenstra walked (3-0 BBBB).",
+            "Anna Gray pinch ran for Riley Veenstra.",
+            "Bailey Gray singled to right field (0-0); Anna Gray advanced to third.",
+            "Sophie Hasegawa flied out to rf, sacrifice fly, RBI (2-2 BKBF); Bailey Gray advanced to second on the throw; Anna Gray scored.",
+            "Taz Tamai singled to right field (1-0 B); Bailey Gray advanced to third.",
+            "Elinor Washington reached first on an error by cf (1-1 BK); Taz Tamai advanced to second; Bailey Gray scored.",
+            "Zoey Lynn to p.",
+            "Olivia Garcia to 1b for Emma Behel.",
+            "Lily Hackett singled to left field (3-2 KKBBB); Elinor Washington advanced to second; Taz Tamai advanced to third.",
+            "Gabbie Chinnis grounded out to 2b, RBI (2-2 BFFB); Lily Hackett advanced to second; Elinor Washington advanced to third; Taz Tamai scored, unearned.",
+            "Ally Knutson lined out to 1b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lauren Ragonese to 2b.",
+            "Violet Peverly popped up to 2b (0-1 K).",
+            "Riley Veenstra grounded out to p (0-1 K).",
+            "Bailey Gray grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Sophie Hasegawa grounded out to ss (0-0).",
+            "Taz Tamai doubled to left center (1-1 KB).",
+            "Elinor Washington singled up the middle, advanced to second on the throw, RBI (0-1 F); Taz Tamai scored.",
+            "Lily Hackett flied out to rf (0-1 K).",
+            "Gabbie Chinnis lined out to 3b (1-2 BKF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 4.1,
+          "h": 8,
+          "r": 10,
+          "er": 7,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 26
+        },
+        {
+          "name": "Lynn, Zoey",
+          "ip": 2.2,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/smith/boxscore/9367",
+      "date": "4/25/2026",
+      "opponent": "Smith",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Gabbie Chinnis singled to shortstop (1-0 B).",
+            "Gabbie Chinnis stole second.",
+            "Ally Knutson struck out swinging, out at first c to 1b (0-2 KFS).",
+            "Violet Peverly grounded out to 2b (1-1 KB); Gabbie Chinnis advanced to third.",
+            "Riley Veenstra flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Bailey Gray flied out to rf (0-0).",
+            "Sophie Hasegawa walked (3-2 BKBBFFB).",
+            "Sophie Hasegawa stole second.",
+            "Taz Tamai struck out swinging (3-2 FBSBFBS).",
+            "Elinor Washington grounded out to ss (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lily Hackett singled through the right side (0-1 K).",
+            "Lily Hackett advanced to second on a wild pitch.",
+            "Gabbie Chinnis lined out to ss (0-2 SK).",
+            "Ally Knutson singled up the middle, advanced to second on the throw, RBI (0-1 F); Lily Hackett scored.",
+            "Violet Peverly grounded out to p (0-0); Ally Knutson advanced to third.",
+            "Riley Veenstra singled to center field, RBI (0-0); Ally Knutson scored.",
+            "Bailey Gray singled up the middle (1-2 FFB); Riley Veenstra advanced to second.",
+            "Sophie Hasegawa lined out to 1b (0-2 KFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taz Tamai walked (3-1 BBBKB).",
+            "Elinor Washington grounded out to p (1-2 BSFF); Taz Tamai advanced to second.",
+            "Lily Hackett grounded out to p (0-0); Taz Tamai advanced to third.",
+            "Gabbie Chinnis popped up to ss (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoey Lynn to 1b for Sage Svalestad.",
+            "Ally Knutson popped out to 3b (2-0 BB).",
+            "Violet Peverly singled up the middle (1-1 KB).",
+            "Riley Veenstra lined into double play 3b (1-2 KBF); Violet Peverly out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dana Walker to p for Olivia Garcia.",
+            "Madeline Kibler to c for Abby Steele.",
+            "Bailey Gray singled up the middle (1-0 B).",
+            "Sophie Hasegawa hit by pitch (2-2 KSFFBH); Bailey Gray advanced to second.",
+            "Taz Tamai struck out looking (0-2 KSK).",
+            "Elinor Washington singled to right field (0-2 KF); Sophie Hasegawa out at second rf to ss; Bailey Gray advanced to third.",
+            "Lily Hackett grounded out to p (0-2 KS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 8,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 3,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 27
         }
       ],
       "year": 2026

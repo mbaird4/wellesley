@@ -1,64 +1,64 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-04-25T02:10:27.293Z",
+  "scrapedAt": "2026-04-26T02:33:14.961Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 19,
+      "w": 20,
       "l": 0,
-      "era": 1.36,
-      "app": 20,
-      "gs": 13,
-      "cg": 10,
+      "era": 1.72,
+      "app": 21,
+      "gs": 14,
+      "cg": 11,
       "sho": 4,
       "sv": 0,
-      "ip": 103,
-      "h": 107,
-      "r": 25,
-      "er": 20,
+      "ip": 110,
+      "h": 122,
+      "r": 32,
+      "er": 27,
       "bb": 16,
-      "so": 65,
+      "so": 66,
       "hr": 0,
-      "whip": 1.19,
-      "doubles": 14,
-      "triples": 1,
-      "ab": 400,
-      "bAvg": 0.268,
-      "wp": 1,
+      "whip": 1.25,
+      "doubles": 15,
+      "triples": 2,
+      "ab": 433,
+      "bAvg": 0.282,
+      "wp": 2,
       "hbp": 4,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 9
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 11,
+      "w": 12,
       "l": 2,
-      "era": 1.99,
-      "app": 18,
-      "gs": 17,
-      "cg": 13,
+      "era": 2.01,
+      "app": 19,
+      "gs": 18,
+      "cg": 14,
       "sho": 3,
       "sv": 0,
-      "ip": 91.2,
-      "h": 94,
-      "r": 38,
-      "er": 26,
+      "ip": 97.2,
+      "h": 106,
+      "r": 42,
+      "er": 28,
       "bb": 29,
-      "so": 54,
+      "so": 57,
       "hr": 1,
-      "whip": 1.34,
-      "doubles": 8,
-      "triples": 1,
-      "ab": 351,
-      "bAvg": 0.268,
+      "whip": 1.38,
+      "doubles": 9,
+      "triples": 2,
+      "ab": 380,
+      "bAvg": 0.279,
       "wp": 5,
       "hbp": 6,
       "bk": 0,
       "sfa": 4,
-      "sha": 13
+      "sha": 14
     },
     {
       "name": "Barr, Kaitlyn",
@@ -3951,6 +3951,193 @@
           "hbp": 0,
           "ab": 28,
           "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/mit/boxscore/16656",
+      "date": "4/25/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen struck out swinging (1-2 BKFFFS).",
+            "Delaney Benevides lined out to 3b (1-2 SBF).",
+            "Ava Ladd struck out looking (1-2 KSBFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Arianna Kumar grounded out to 2b (0-0).",
+            "Lauren Sundquist popped up to ss (1-0 B).",
+            "Holland Poe singled to center field (0-0).",
+            "Kaaya Mehta grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Scarpaci grounded out to 2b (1-0 B).",
+            "Maggie Feng grounded out to 3b (0-0).",
+            "Layla Thiessen singled to center field (0-0).",
+            "Delaney Benevides grounded out to 3b (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich to c for Colleen Mayer.",
+            "Ava Ladd singled to center field (0-0).",
+            "Arianna Kumar flied out to rf (2-2 KBKFB).",
+            "Lauren Sundquist flied out to rf (0-0).",
+            "Holland Poe tripled down the rf line, RBI (2-1 BFB); Ava Ladd scored.",
+            "Kaaya Mehta reached first on an error by 2b (0-2 KK); Holland Poe scored, unearned.",
+            "Olivia Scarpaci doubled to center field, RBI (2-1 BBK); Kaaya Mehta scored, unearned.",
+            "Maggie Feng struck out looking (1-2 KKBK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Layla Thiessen singled to center field (0-0).",
+            "Delaney Benevides grounded out to p, SAC, bunt (1-1 BF); Layla Thiessen advanced to second.",
+            "Ava Ladd grounded out to 2b (0-1 K); Layla Thiessen advanced to third.",
+            "Arianna Kumar singled to right field, RBI (2-2 FKBB); Layla Thiessen scored.",
+            "Lauren Sundquist singled to left field (0-0); Arianna Kumar advanced to second.",
+            "Holland Poe singled to shortstop (2-1 BFB); Lauren Sundquist advanced to second; Arianna Kumar advanced to third.",
+            "Kaaya Mehta lined out to ss (0-2 FF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Olivia Scarpaci flied out to rf (1-0 B).",
+            "Maggie Feng singled to right center (2-1 FBB).",
+            "Layla Thiessen singled to left field (1-1 BF); Maggie Feng advanced to second.",
+            "Delaney Benevides singled to shortstop (0-1 F); Layla Thiessen advanced to second; Maggie Feng advanced to third.",
+            "Ava Ladd reached on a fielder's choice (1-0 B); Delaney Benevides out at second 1b to 2b; Maggie Feng out at home p to c."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 6,
+          "h": 12,
+          "r": 4,
+          "er": 2,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 29,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/mit/boxscore/16657",
+      "date": "4/25/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen popped up to 3b (1-1 BK).",
+            "Delaney Benevides flied out to lf (1-0 B).",
+            "Ava Ladd popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Arianna Kumar struck out looking (0-2 KFK).",
+            "Lauren Sundquist singled to left field (2-0 BB).",
+            "Lauren Sundquist stole second.",
+            "Holland Poe tripled down the rf line, RBI (2-2 BFBF); Lauren Sundquist scored.",
+            "Kaaya Mehta singled to right field, RBI (0-1 K); Holland Poe scored.",
+            "Olivia Scarpaci grounded out to 2b (1-0 B); Kaaya Mehta advanced to second.",
+            "Maggie Feng grounded out to 3b (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Layla Thiessen grounded out to 3b (0-0).",
+            "Delaney Benevides grounded out to ss (0-0).",
+            "Ava Ladd singled, bunt (0-0).",
+            "Arianna Kumar lined out to 2b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley O'Brien to 2b for Grace Grant.",
+            "Lauren Sundquist singled to left field (0-0).",
+            "Holland Poe singled to center field (1-0 B); Lauren Sundquist advanced to second.",
+            "Kaaya Mehta singled to left field, RBI (0-1 K); Holland Poe advanced to second; Lauren Sundquist scored.",
+            "Olivia Scarpaci singled to left field (0-0); Kaaya Mehta advanced to second; Holland Poe advanced to third.",
+            "Sienna Wilson pinch ran for Kaaya Mehta.",
+            "Maggie Feng flied out to cf, SAC, RBI (0-0); Holland Poe scored.",
+            "Sienna Wilson out at third c to 3b, caught stealing.",
+            "Layla Thiessen singled to third base (3-1 BBFB); Olivia Scarpaci advanced to second.",
+            "Delaney Benevides singled to shortstop (0-0); Layla Thiessen advanced to second; Olivia Scarpaci advanced to third.",
+            "Ava Ladd singled to shortstop, RBI (3-2 BBBKF); Delaney Benevides advanced to second; Layla Thiessen advanced to third, out at home ss to 1b; Olivia Scarpaci scored."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Arianna Kumar singled to right center (1-1 BK).",
+            "Lauren Sundquist flied out to cf (2-2 KKBBFFF).",
+            "Holland Poe doubled to right field (1-0 B); Arianna Kumar advanced to third.",
+            "Kaaya Mehta pinch hit for Sienna Wilson.",
+            "Kaaya Mehta to dp.",
+            "Kaaya Mehta grounded out to 1b unassisted, RBI (0-2 KF); Holland Poe advanced to third; Arianna Kumar scored.",
+            "Olivia Scarpaci singled to shortstop, RBI (0-0); Holland Poe scored.",
+            "Maggie Feng flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Layla Thiessen grounded out to 1b unassisted (0-1 K).",
+            "Delaney Benevides grounded out to 3b (0-1 S).",
+            "Ava Ladd grounded out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Arianna Kumar singled to right field (0-0).",
+            "Lauren Sundquist reached on a fielder's choice (1-1 KB); Arianna Kumar out at second 2b to ss.",
+            "Lauren Sundquist advanced to second on a wild pitch.",
+            "Holland Poe grounded out to 2b (3-1 KBBB); Lauren Sundquist advanced to third.",
+            "Kaaya Mehta lined out to p (0-2 KF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 15,
+          "r": 7,
+          "er": 7,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 34
         }
       ],
       "year": 2026

@@ -1,32 +1,32 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-25T02:10:35.198Z",
+  "scrapedAt": "2026-04-26T02:33:20.289Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 8,
+      "w": 9,
       "l": 7,
-      "era": 1.5,
-      "app": 15,
-      "gs": 15,
-      "cg": 13,
+      "era": 1.49,
+      "app": 16,
+      "gs": 16,
+      "cg": 14,
       "sho": 3,
       "sv": 0,
-      "ip": 93.1,
-      "h": 86,
-      "r": 31,
-      "er": 20,
+      "ip": 98.1,
+      "h": 90,
+      "r": 32,
+      "er": 21,
       "bb": 6,
-      "so": 53,
+      "so": 55,
       "hr": 4,
-      "whip": 0.99,
+      "whip": 0.98,
       "doubles": 18,
       "triples": 2,
-      "ab": 350,
-      "bAvg": 0.246,
-      "wp": 0,
+      "ab": 369,
+      "bAvg": 0.244,
+      "wp": 1,
       "hbp": 3,
       "bk": 0,
       "sfa": 4,
@@ -34,26 +34,26 @@
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 7,
+      "w": 8,
       "l": 7,
-      "era": 2.62,
-      "app": 16,
-      "gs": 14,
+      "era": 2.71,
+      "app": 17,
+      "gs": 15,
       "cg": 12,
       "sho": 4,
       "sv": 0,
-      "ip": 93.2,
-      "h": 100,
-      "r": 47,
-      "er": 35,
-      "bb": 23,
-      "so": 93,
+      "ip": 98.1,
+      "h": 106,
+      "r": 50,
+      "er": 38,
+      "bb": 24,
+      "so": 96,
       "hr": 3,
-      "whip": 1.31,
-      "doubles": 20,
+      "whip": 1.32,
+      "doubles": 22,
       "triples": 4,
-      "ab": 370,
-      "bAvg": 0.27,
+      "ab": 390,
+      "bAvg": 0.272,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -64,26 +64,26 @@
       "name": "Dost, Brittany",
       "w": 0,
       "l": 0,
-      "era": 6.68,
-      "app": 4,
+      "era": 5.07,
+      "app": 5,
       "gs": 0,
       "cg": 0,
       "sho": 0,
-      "sv": 0,
-      "ip": 7.1,
-      "h": 16,
-      "r": 8,
+      "sv": 1,
+      "ip": 9.2,
+      "h": 21,
+      "r": 9,
       "er": 7,
       "bb": 4,
-      "so": 5,
+      "so": 7,
       "hr": 0,
-      "whip": 2.73,
-      "doubles": 2,
+      "whip": 2.59,
+      "doubles": 4,
       "triples": 0,
-      "ab": 38,
-      "bAvg": 0.421,
+      "ab": 50,
+      "bAvg": 0.42,
       "wp": 0,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -2835,6 +2835,186 @@
           "hbp": 0,
           "ab": 6,
           "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/salve-regina/boxscore/10030",
+      "date": "4/25/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "De La Rosa, Sofia",
+        "Dost, Brittany"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to p (1-2 FFB).",
+            "Taylor Ferraiolo popped up to 3b (0-0).",
+            "Emily Cronin struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Emma Plourde struck out swinging (1-2 BSFFS).",
+            "Gracie Keyes flied out to lf (2-0 BB).",
+            "Ryann Burke struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Merck popped up to 2b (0-0).",
+            "Skyla Oliveira walked (3-1 BBKBB).",
+            "Skylar Wicklund singled to third base (0-0); Skyla Oliveira advanced to second.",
+            "Lillian Bridges singled to pitcher (3-1 BFBB); Skylar Wicklund advanced to second; Skyla Oliveira advanced to third.",
+            "Taylor Ferraiolo reached on a fielder's choice (0-0); Lillian Bridges advanced to second; Skylar Wicklund advanced to third; Skyla Oliveira out at home p to c.",
+            "Emily Cronin grounded out to 2b (1-2 FFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Plourde doubled to right center (1-2 BFK).",
+            "Gracie Keyes grounded out to ss (2-2 FKBB).",
+            "Ryann Burke fouled out to 2b (0-0).",
+            "Abby Merck flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Skyla Oliveira grounded out to 1b unassisted (0-1 F).",
+            "Skylar Wicklund singled down the lf line (3-1 BFBBB).",
+            "Lillian Bridges singled, advanced to second on a throwing error by 3b (0-0); Skylar Wicklund advanced to third.",
+            "Taylor Ferraiolo grounded out to 1b unassisted, RBI (1-2 BFSFFFFFF); Lillian Bridges advanced to third; Skylar Wicklund scored.",
+            "Emily Cronin doubled to left field, RBI (1-0 B); Lillian Bridges scored.",
+            "Brittany Dost to p for Sofia DeLaRosa.",
+            "Emma Plourde singled to center field, RBI (2-0 BB); Emily Cronin scored.",
+            "Gracie Keyes popped up to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ryann Burke grounded out p to ss to 1b (2-1 KBB).",
+            "Abby Merck singled to center field (0-1 K).",
+            "Skyla Oliveira hit by pitch (1-2 KKH); Abby Merck advanced to second.",
+            "Skylar Wicklund struck out looking (1-2 SFBFK).",
+            "Lillian Bridges grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lexi Falcioni to ss for Madi Miller.",
+            "Taylor Ferraiolo struck out swinging (1-2 FBFS).",
+            "Emily Cronin doubled to right field (3-1 BFBB).",
+            "Emma Plourde grounded out to ss (1-0 B); Emily Cronin scored, advanced on a throwing error by 1b, unearned.",
+            "Gracie Keyes singled to right field (0-0).",
+            "Ryann Burke doubled to right center (0-0); Gracie Keyes advanced to third.",
+            "Cami O'Rourke pinch ran for Ryann Burke.",
+            "Abby Merck grounded out to 1b unassisted (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 4.2,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 21
+        },
+        {
+          "name": "Dost, Brittany",
+          "ip": 2.1,
+          "h": 5,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 1,
+          "ab": 12,
+          "bf": 13
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/salve-regina/boxscore/10031",
+      "date": "4/25/2026",
+      "opponent": "Salve Regina",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lillian Bridges grounded out to p (0-2 FF).",
+            "Emma Plourde singled to pitcher (0-1 K).",
+            "Emily Cronin flied out to cf (2-0 BB).",
+            "Gracie Keyes fouled out to 3b (0-2 SFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ryann Burke flied out to rf (1-1 FB).",
+            "Abby Merck singled (3-2 BBFBF).",
+            "Skyla Oliveira flied out to cf (2-2 FFBFBF).",
+            "Taylor Ferraiolo grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Skylar Wicklund grounded out to 2b (0-2 KFFF).",
+            "Lillian Bridges grounded out to p (0-2 FKFF).",
+            "Emma Plourde struck out swinging (0-2 KKFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emily Cronin singled to center field (0-0).",
+            "Gracie Keyes grounded out to 3b (0-0); Emily Cronin advanced to second.",
+            "Emily Cronin advanced to third on a wild pitch.",
+            "Ryann Burke singled through the left side, RBI (1-2 KFB); Emily Cronin scored.",
+            "Abby Merck flied out to rf (0-1 S).",
+            "Skyla Oliveira struck out swinging (1-2 FFBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Ferraiolo popped up to 2b (1-0 B).",
+            "Skylar Wicklund grounded out to ss (0-1 S).",
+            "Lillian Bridges grounded out to p (0-1 F)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 5,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 19
         }
       ],
       "year": 2026

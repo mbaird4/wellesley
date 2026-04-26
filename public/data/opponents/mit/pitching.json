@@ -1,32 +1,32 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-04-25T02:10:57.241Z",
+  "scrapedAt": "2026-04-26T02:33:45.878Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
       "w": 10,
-      "l": 1,
-      "era": 1.97,
-      "app": 14,
-      "gs": 12,
+      "l": 2,
+      "era": 3.03,
+      "app": 16,
+      "gs": 13,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 71,
-      "h": 68,
-      "r": 28,
-      "er": 20,
-      "bb": 22,
-      "so": 23,
-      "hr": 0,
-      "whip": 1.27,
-      "doubles": 7,
-      "triples": 1,
-      "ab": 275,
-      "bAvg": 0.247,
-      "wp": 5,
+      "ip": 78.2,
+      "h": 87,
+      "r": 42,
+      "er": 34,
+      "bb": 24,
+      "so": 25,
+      "hr": 1,
+      "whip": 1.41,
+      "doubles": 12,
+      "triples": 2,
+      "ab": 315,
+      "bAvg": 0.276,
+      "wp": 6,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
@@ -36,57 +36,57 @@
       "name": "Watson, Emily",
       "w": 8,
       "l": 1,
-      "era": 3.43,
-      "app": 18,
+      "era": 3.71,
+      "app": 19,
       "gs": 10,
       "cg": 5,
       "sho": 0,
       "sv": 0,
-      "ip": 65.1,
-      "h": 72,
-      "r": 34,
-      "er": 32,
+      "ip": 68,
+      "h": 78,
+      "r": 38,
+      "er": 36,
       "bb": 29,
-      "so": 20,
-      "hr": 1,
-      "whip": 1.55,
+      "so": 21,
+      "hr": 4,
+      "whip": 1.57,
       "doubles": 21,
       "triples": 2,
-      "ab": 252,
-      "bAvg": 0.286,
+      "ab": 265,
+      "bAvg": 0.294,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
-      "sfa": 2,
+      "sfa": 3,
       "sha": 11
     },
     {
       "name": "Blackett, Sarah",
       "w": 7,
-      "l": 1,
-      "era": 3.44,
-      "app": 12,
-      "gs": 8,
+      "l": 2,
+      "era": 3.96,
+      "app": 13,
+      "gs": 9,
       "cg": 4,
       "sho": 4,
       "sv": 0,
-      "ip": 61,
-      "h": 61,
-      "r": 35,
-      "er": 30,
-      "bb": 33,
-      "so": 68,
-      "hr": 4,
-      "whip": 1.54,
-      "doubles": 12,
+      "ip": 63.2,
+      "h": 69,
+      "r": 41,
+      "er": 36,
+      "bb": 37,
+      "so": 70,
+      "hr": 5,
+      "whip": 1.66,
+      "doubles": 13,
       "triples": 1,
-      "ab": 240,
-      "bAvg": 0.254,
+      "ab": 255,
+      "bAvg": 0.271,
       "wp": 7,
       "hbp": 7,
       "bk": 0,
       "sfa": 0,
-      "sha": 4
+      "sha": 5
     },
     {
       "name": "Johnston, Nicole",
@@ -3163,6 +3163,231 @@
           "hbp": 0,
           "ab": 7,
           "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/12778",
+      "date": "4/25/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour doubled to right field (2-1 BFB).",
+            "Virginia McKinney flied out to rf (0-1 F).",
+            "Sandy Fairbairn singled to left field, advanced to second on the throw, RBI (2-1 FBB); Lucy Latour scored.",
+            "Emma Nagy struck out swinging (1-2 KKBS).",
+            "Riley O'Brien singled to left field, RBI (2-2 FFFBB); Sandy Fairbairn scored.",
+            "Ali Chalovich homered to center field, 2 RBI (0-1 S); Riley O'Brien scored.",
+            "Stella Kozak singled to shortstop (0-0).",
+            "Elizabeth Jordan grounded out to p, bunt (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Meg Sherwood struck out looking (2-2 SBBFFFK).",
+            "Lucy Latour popped up to 2b (0-0).",
+            "Virginia McKinney singled to center field (1-0 B).",
+            "Virginia McKinney stole second.",
+            "Virginia McKinney out at third c to 3b, caught stealing."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sandy Fairbairn flied out to cf (3-2 BBFBK).",
+            "Emma Nagy grounded out to 3b (0-0).",
+            "Riley O'Brien flied out to rf (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich walked (3-1 BBBKB).",
+            "Colleen Mayer pinch ran for Ali Chalovich.",
+            "Stella Kozak doubled to left center (0-0); Colleen Mayer advanced to third.",
+            "Elizabeth Jordan singled, RBI (0-0); Stella Kozak advanced to third, out at home 2b to c; Colleen Mayer scored.",
+            "Meg Sherwood walked (3-2 BFBBKB); Elizabeth Jordan advanced to second.",
+            "Lucy Latour singled to center field (2-1 BBK); Meg Sherwood advanced to second; Elizabeth Jordan advanced to third.",
+            "Virginia McKinney singled to right field, RBI (2-2 KBFFBF); Lucy Latour advanced to second; Meg Sherwood advanced to third; Elizabeth Jordan scored.",
+            "Sandy Fairbairn tripled to center field, 3 RBI (2-1 BBK); Virginia McKinney scored; Lucy Latour scored; Meg Sherwood scored.",
+            "Emily Watson to p for Sharona Huang.",
+            "Emma Nagy grounded out to ss, RBI (1-1 BF); Sandy Fairbairn scored.",
+            "Riley O'Brien flied out to rf (1-2 BKF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ali Chalovich singled down the lf line (1-2 KSFB).",
+            "Stella Kozak singled to center field (1-1 FB); Ali Chalovich advanced to second.",
+            "Elizabeth Jordan singled to left field (1-2 FBF); Stella Kozak advanced to second; Ali Chalovich advanced to third.",
+            "Meg Sherwood flied out to rf (1-1 FB).",
+            "Lucy Latour flied out to lf, SAC, RBI (0-0); Ali Chalovich scored.",
+            "Virginia McKinney reached on a fielder's choice (2-2 KBBKFF); Elizabeth Jordan advanced to second; Stella Kozak out at third 3b unassisted, interference."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sandy Fairbairn homered to left field, RBI (1-0 B).",
+            "Emma Nagy homered to left center, RBI (2-1 BSB).",
+            "Riley O'Brien struck out swinging (2-2 KFFBBS).",
+            "Ali Chalovich homered to left field, RBI (0-1 K).",
+            "Stella Kozak popped up to 2b (1-0 B).",
+            "Elizabeth Jordan grounded out to 2b (1-1 BF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 3.1,
+          "h": 11,
+          "r": 10,
+          "er": 10,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 21
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 2.2,
+          "h": 6,
+          "r": 4,
+          "er": 4,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 14
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/12779",
+      "date": "4/25/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Blackett, Sarah",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour singled to right field (0-0).",
+            "Virginia McKinney out at first 3b to 2b, SAC, bunt (0-0); Lucy Latour advanced to second.",
+            "Sandy Fairbairn walked (3-2 BBSBKB).",
+            "Emma Nagy popped up to 2b (1-2 KBF).",
+            "Riley O'Brien singled down the lf line, RBI (0-0); Sandy Fairbairn advanced to second; Lucy Latour scored.",
+            "Ali Chalovich flied out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Stella Kozak singled to center field (1-2 FFB).",
+            "Elizabeth Jordan walked (3-1 BBBKB); Stella Kozak advanced to second.",
+            "Meg Sherwood struck out swinging (1-2 KBFS).",
+            "Lucy Latour flied out to lf (0-0).",
+            "Virginia McKinney walked (3-1 BFBBB); Elizabeth Jordan advanced to second; Stella Kozak advanced to third.",
+            "Sandy Fairbairn flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nagy homered to left field, RBI (0-2 FK).",
+            "Riley O'Brien flied out to lf (3-2 BBFBFFF).",
+            "Ali Chalovich singled to center field (1-1 BK).",
+            "Stella Kozak walked (3-0 BBBB); Ali Chalovich advanced to second.",
+            "Elizabeth Jordan singled to left field (1-1 BF); Stella Kozak advanced to second; Ali Chalovich advanced to third.",
+            "Meg Sherwood struck out swinging (1-2 FBSS).",
+            "Lucy Latour singled to left field, RBI (2-0 BB); Elizabeth Jordan advanced to second; Stella Kozak advanced to third; Ali Chalovich scored.",
+            "Virginia McKinney doubled to left field, 3 RBI (3-2 BBKFFFFB); Lucy Latour scored; Elizabeth Jordan scored; Stella Kozak scored.",
+            "Sharona Huang to p for Sarah Blackett.",
+            "Sandy Fairbairn grounded out to ss (3-2 BKBBFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Nagy doubled to left center (0-1 K).",
+            "Riley O'Brien singled to center field, RBI (0-0); Emma Nagy scored.",
+            "Grace Grant pinch ran for Riley O'Brien.",
+            "Ali Chalovich grounded out to 3b (3-2 BBBKF); Grace Grant advanced to second.",
+            "Stella Kozak fouled out to 3b (0-2 FK).",
+            "Grace Grant stole third.",
+            "Elizabeth Jordan grounded out to ss (3-1 FBBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Meg Sherwood flied out to lf (2-2 FBSB).",
+            "Lucy Latour singled to right field (0-0).",
+            "Virginia McKinney grounded out to 3b (0-1 K); Lucy Latour advanced to second.",
+            "Sandy Fairbairn singled to center field, advanced to second on the throw, RBI (0-0); Lucy Latour scored.",
+            "Emma Nagy singled to left field, advanced to second on the throw, RBI (2-0 BB); Sandy Fairbairn scored.",
+            "Emma Nagy advanced to third on a wild pitch.",
+            "Riley O'Brien grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ali Chalovich flied out to cf (1-2 BFK).",
+            "Stella Kozak singled to shortstop (1-0 B).",
+            "Elizabeth Jordan grounded out to ss (0-2 KFF); Stella Kozak advanced to second.",
+            "Meg Sherwood grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lucy Latour doubled, advanced to third on an error by cf (2-2 KBFB).",
+            "Virginia McKinney flied out to rf (0-0).",
+            "Sandy Fairbairn doubled to right center, RBI (0-0); Lucy Latour scored.",
+            "Emma Nagy grounded out to 3b (1-2 BFK).",
+            "Riley O'Brien flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blackett, Sarah",
+          "ip": 2.2,
+          "h": 8,
+          "r": 6,
+          "er": 6,
+          "bb": 4,
+          "so": 2,
+          "hbp": 0,
+          "ab": 15,
+          "bf": 20
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 4.1,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 21
         }
       ],
       "year": 2026

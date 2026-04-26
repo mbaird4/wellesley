@@ -1,33 +1,33 @@
 {
   "slug": "clark",
   "domain": "clarkathletics.com",
-  "scrapedAt": "2026-04-25T02:11:19.156Z",
+  "scrapedAt": "2026-04-26T02:34:02.373Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Buzzeo, Brooke",
       "w": 8,
-      "l": 6,
-      "era": 2.95,
-      "app": 14,
-      "gs": 13,
-      "cg": 12,
+      "l": 7,
+      "era": 3.19,
+      "app": 15,
+      "gs": 14,
+      "cg": 13,
       "sho": 0,
       "sv": 0,
-      "ip": 92.2,
-      "h": 111,
-      "r": 45,
-      "er": 39,
+      "ip": 98.2,
+      "h": 120,
+      "r": 51,
+      "er": 45,
       "bb": 20,
-      "so": 93,
-      "hr": 3,
-      "whip": 1.41,
-      "doubles": 19,
+      "so": 98,
+      "hr": 4,
+      "whip": 1.42,
+      "doubles": 22,
       "triples": 2,
-      "ab": 385,
-      "bAvg": 0.288,
+      "ab": 412,
+      "bAvg": 0.291,
       "wp": 4,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 3,
       "sha": 4
@@ -35,30 +35,30 @@
     {
       "name": "Dube, Megan",
       "w": 6,
-      "l": 9,
-      "era": 3.33,
-      "app": 15,
-      "gs": 14,
-      "cg": 14,
+      "l": 10,
+      "era": 3.34,
+      "app": 16,
+      "gs": 15,
+      "cg": 15,
       "sho": 0,
       "sv": 0,
-      "ip": 101,
-      "h": 125,
-      "r": 67,
-      "er": 48,
-      "bb": 29,
-      "so": 83,
+      "ip": 107,
+      "h": 131,
+      "r": 70,
+      "er": 51,
+      "bb": 30,
+      "so": 86,
       "hr": 4,
-      "whip": 1.52,
-      "doubles": 29,
+      "whip": 1.5,
+      "doubles": 30,
       "triples": 4,
-      "ab": 422,
-      "bAvg": 0.296,
+      "ab": 445,
+      "bAvg": 0.294,
       "wp": 3,
       "hbp": 5,
       "bk": 0,
       "sfa": 3,
-      "sha": 10
+      "sha": 11
     },
     {
       "name": "Wagstaff, Hannah",
@@ -3018,6 +3018,174 @@
           "hbp": 0,
           "ab": 35,
           "bf": 37
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/babson-college/boxscore/19208",
+      "date": "4/25/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Dube, Megan"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh walked (3-2 BFKBBB).",
+            "Maddy DeLong out at first 1b to 2b, SAC, bunt (1-1 KB); Emily Walsh advanced to second.",
+            "Lexi Sealy lined out to 2b (1-1 FB).",
+            "Charlotte Raymond flied out to lf (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Samantha Skivo flied out to rf (3-2 FBBKB).",
+            "Ruby Madia struck out swinging (3-2 KKBBBS).",
+            "Allie Cubberly fouled out to 1b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alexa Young flied out to rf (1-2 KKB).",
+            "Charly Landow popped up to ss (2-2 KBBF).",
+            "Emily Walsh lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maddy DeLong singled to third base (2-2 BBKFF).",
+            "Lexi Sealy singled to right field (0-0); Maddy DeLong advanced to second.",
+            "Charlotte Raymond doubled to left field, RBI (0-2 FF); Lexi Sealy advanced to third; Maddy DeLong scored.",
+            "Samantha Skivo flied out to rf (1-2 KFB).",
+            "Ruby Madia singled up the middle, 2 RBI (0-1 K); Charlotte Raymond scored; Lexi Sealy scored.",
+            "Allie Cubberly struck out swinging (3-2 BBBKKFS).",
+            "Alexa Young fouled out to lf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Alexis Taudel to rf for Jennifer Albano.",
+            "Kay Laliberty fouled out to 3b (2-1 BBS).",
+            "Emily Walsh lined out to cf (1-0 B).",
+            "Maddy DeLong grounded out to 3b (1-2 KBSFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Megan Dube to p for Sydney Lyons.",
+            "Lexi Sealy flied out to lf (2-2 KBKFBF).",
+            "Charlotte Raymond singled to shortstop (0-1 K).",
+            "Samantha Skivo singled to center field (1-2 FKB); Charlotte Raymond advanced to second.",
+            "Ruby Madia fouled out to 1b (1-2 KFB).",
+            "Allie Cubberly struck out swinging (3-2 BBBKKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Dube, Megan",
+          "ip": 6,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://clarkathletics.com/sports/softball/stats/2026/babson-college/boxscore/19209",
+      "date": "4/25/2026",
+      "opponent": "Babson College",
+      "pitchers": [
+        "Buzzeo, Brooke"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh fouled out to 3b (2-2 BFFB).",
+            "Maddy DeLong singled to center field (1-2 FSB).",
+            "Maddy DeLong stole second.",
+            "Lexi Sealy flied out to lf (1-0 B).",
+            "Charlotte Raymond popped up to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Samantha Skivo struck out looking (0-2 KKK).",
+            "Ruby Madia grounded out to 3b (0-0).",
+            "Devin McCall struck out swinging (2-2 FFBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alexa Young struck out swinging (1-2 FBFS).",
+            "Kay Laliberty lined out to 2b (0-1 F).",
+            "Emily Walsh doubled to center field (0-0).",
+            "Maddy DeLong singled up the middle, RBI (3-2 BSBFBF); Emily Walsh scored.",
+            "Lexi Sealy singled to right field (1-1 KB); Maddy DeLong advanced to second.",
+            "Charlotte Raymond homered to left field, 3 RBI (0-0); Lexi Sealy scored; Maddy DeLong scored.",
+            "Samantha Skivo lined out to rf (2-2 BFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ruby Madia popped up to 1b (0-2 KKF).",
+            "Devin McCall hit by pitch (2-2 SBKH).",
+            "Alexa Young doubled to left center (0-1 K); Devin McCall advanced to third.",
+            "Kay Laliberty singled to right field, advanced to second, RBI (3-2 BFBFB); Alexa Young advanced to third; Devin McCall scored.",
+            "Emily Walsh singled through the right side, RBI (0-0); Kay Laliberty advanced to third; Alexa Young scored.",
+            "Emily Walsh stole second.",
+            "Maddy DeLong struck out swinging (3-2 BBKBKS).",
+            "Lexi Sealy grounded out to 2b (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Charlotte Raymond doubled to left center (0-1 K).",
+            "Samantha Skivo reached first on a throwing error by ss (1-2 BKKF); Charlotte Raymond out at third ss to 1b to 3b.",
+            "Ruby Madia fouled out to 1b (2-1 BBK).",
+            "Devin McCall struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexis Taudel to rf for Madison Dillon.",
+            "Alexa Young fouled out to 1b (0-1 K).",
+            "Kay Laliberty grounded out to 3b (2-2 BBFK).",
+            "Emily Walsh fouled out to ss (2-2 KBBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Buzzeo, Brooke",
+          "ip": 6,
+          "h": 9,
+          "r": 6,
+          "er": 6,
+          "bb": 0,
+          "so": 5,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 28
         }
       ],
       "year": 2026

@@ -1,64 +1,64 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-25T02:10:51.771Z",
+  "scrapedAt": "2026-04-26T02:33:38.968Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 13,
-      "era": 6.33,
-      "app": 20,
-      "gs": 15,
+      "l": 14,
+      "era": 6.47,
+      "app": 21,
+      "gs": 16,
       "cg": 14,
       "sho": 0,
       "sv": 0,
-      "ip": 104,
-      "h": 174,
-      "r": 109,
-      "er": 94,
-      "bb": 26,
+      "ip": 106,
+      "h": 178,
+      "r": 113,
+      "er": 98,
+      "bb": 28,
       "so": 52,
-      "hr": 5,
-      "whip": 1.92,
+      "hr": 6,
+      "whip": 1.94,
       "doubles": 42,
       "triples": 4,
-      "ab": 470,
-      "bAvg": 0.37,
+      "ab": 479,
+      "bAvg": 0.372,
       "wp": 5,
       "hbp": 5,
       "bk": 0,
-      "sfa": 7,
-      "sha": 8
+      "sfa": 8,
+      "sha": 9
     },
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 14,
-      "era": 9.35,
-      "app": 16,
-      "gs": 16,
-      "cg": 5,
+      "l": 15,
+      "era": 8.59,
+      "app": 17,
+      "gs": 17,
+      "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 60.2,
-      "h": 98,
-      "r": 102,
-      "er": 81,
-      "bb": 78,
-      "so": 42,
-      "hr": 2,
-      "whip": 2.9,
-      "doubles": 23,
+      "ip": 67.2,
+      "h": 106,
+      "r": 107,
+      "er": 83,
+      "bb": 82,
+      "so": 44,
+      "hr": 3,
+      "whip": 2.78,
+      "doubles": 24,
       "triples": 7,
-      "ab": 264,
-      "bAvg": 0.371,
-      "wp": 24,
-      "hbp": 4,
+      "ab": 291,
+      "bAvg": 0.364,
+      "wp": 25,
+      "hbp": 5,
       "bk": 0,
-      "sfa": 9,
-      "sha": 14
+      "sfa": 10,
+      "sha": 16
     },
     {
       "name": "Cronin, Emily",
@@ -92,25 +92,25 @@
       "name": "Geisser, Victoria",
       "w": 0,
       "l": 1,
-      "era": 6.77,
-      "app": 4,
+      "era": 7.88,
+      "app": 5,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 10.1,
-      "h": 18,
-      "r": 14,
-      "er": 10,
-      "bb": 11,
-      "so": 5,
+      "ip": 13.1,
+      "h": 22,
+      "r": 19,
+      "er": 15,
+      "bb": 15,
+      "so": 6,
       "hr": 0,
-      "whip": 2.81,
+      "whip": 2.78,
       "doubles": 1,
       "triples": 1,
-      "ab": 42,
-      "bAvg": 0.429,
-      "wp": 1,
+      "ab": 55,
+      "bAvg": 0.4,
+      "wp": 2,
       "hbp": 0,
       "bk": 0,
       "sfa": 3,
@@ -3305,6 +3305,203 @@
           "hbp": 0,
           "ab": 9,
           "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/wheaton-college/boxscore/11781",
+      "date": "4/25/2026",
+      "opponent": "Wheaton College",
+      "pitchers": [
+        "Peterson, Caroline"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari hit by pitch (2-2 KFBH).",
+            "Taylor Barry singled, bunt (0-0); Ella Molinari advanced to second.",
+            "Peyton Blankenheim-Brown struck out swinging (1-2 FBFS).",
+            "Mady Bryan struck out swinging (2-2 BKBFS).",
+            "Emma Boucher walked (3-2 BFFBFFBFFB); Taylor Barry advanced to second; Ella Molinari advanced to third.",
+            "Amber Arcand flied out to rf (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lexi Falcioni fouled out to rf (1-1 BF).",
+            "Julia Miller grounded out to 1b unassisted (0-0).",
+            "Riley Dolan flied out to 2b (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Molinari homered to left center, RBI (0-0).",
+            "Taylor Barry reached first on a throwing error by 3b (0-0).",
+            "Peyton Blankenheim-Brown out at first 3b to 2b, SAC (0-0); Taylor Barry advanced to third.",
+            "Mady Bryan singled to shortstop, RBI (0-2 KK); Taylor Barry scored, unearned.",
+            "Mady Bryan advanced to second on a wild pitch.",
+            "Emma Boucher walked (3-1 BBBFB).",
+            "Amber Arcand singled to pitcher (1-2 BKF); Emma Boucher advanced to second; Mady Bryan advanced to third.",
+            "Lexi Falcioni flied out to rf, sacrifice fly, RBI (2-1 BBF); Emma Boucher advanced to third; Mady Bryan scored.",
+            "Amber Arcand stole second.",
+            "Julia Miller singled, 2 RBI (0-2 KF); Amber Arcand scored, unearned; Emma Boucher scored, unearned.",
+            "Julia Miller advanced to second.",
+            "Riley Dolan grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Molinari doubled to left field (0-0).",
+            "Taylor Barry flied out to lf (0-2 FF); Ella Molinari advanced to third.",
+            "Peyton Blankenheim-Brown popped up to 2b (0-0).",
+            "Mady Bryan flied out to cf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Boucher singled to left field (1-1 BF).",
+            "Amber Arcand reached on a fielder's choice (0-2 KF); Emma Boucher out at second 2b to ss.",
+            "Lexi Falcioni popped up to 2b (0-0).",
+            "Julia Miller singled to left center (0-0); Amber Arcand advanced to second.",
+            "Riley Dolan grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Molinari walked (3-1 BBBKB).",
+            "Taylor Barry out at first p to 2b, SAC (0-0); Ella Molinari advanced to second.",
+            "Peyton Blankenheim-Brown flied out to rf (0-0); Ella Molinari advanced to third.",
+            "Mady Bryan grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Emma Boucher walked (3-0 BBBB).",
+            "Amber Arcand flied out to rf (1-2 SSFBF).",
+            "Madi Miller pinch hit for Lexi Falcioni.",
+            "Madi Miller grounded out to ss (0-1 K); Emma Boucher advanced to second.",
+            "Julia Miller popped up to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 7,
+          "h": 8,
+          "r": 5,
+          "er": 2,
+          "bb": 4,
+          "so": 2,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 35
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/wheaton-college/boxscore/11782",
+      "date": "4/25/2026",
+      "opponent": "Wheaton College",
+      "pitchers": [
+        "Murphy, Shea",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari homered to right field, RBI (3-2 KBFFFBBFFF).",
+            "Amber Arcand singled to second base (2-2 KBBF).",
+            "Peyton Blankenheim-Brown reached first on an error by 2b (0-0); Amber Arcand advanced to second.",
+            "Madi Miller reached on a fielder's choice (2-1 BBS); Peyton Blankenheim-Brown advanced to second; Amber Arcand out at third 3b to ss.",
+            "Emma Boucher popped up to p (0-2 KF).",
+            "Lexi Falcioni popped up to 1b (1-2 BFK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maggie Caron singled to right field (2-2 BFFB).",
+            "Riley Dolan out at first p to 2b, SAC (0-0); Maggie Caron advanced to second.",
+            "Julia Miller walked (3-2 BKBFBFB).",
+            "Ella Molinari walked (3-2 BBBKFB); Julia Miller advanced to second; Maggie Caron advanced to third.",
+            "Amber Arcand singled through the right side, 2 RBI (0-0); Ella Molinari advanced to third; Julia Miller scored; Maggie Caron scored.",
+            "Amber Arcand advanced to second.",
+            "Peyton Blankenheim-Brown flied out to rf, sacrifice fly, RBI (0-1 K); Amber Arcand advanced to third; Ella Molinari scored.",
+            "Madi Miller grounded out to 1b unassisted (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Victoria Geisser to p for Shea Murphy.",
+            "Emma Boucher flied out to cf (1-1 KB).",
+            "Lexi Falcioni struck out swinging, out at first c to 1b (1-2 BFFK).",
+            "Maggie Caron popped up to ss (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Riley Dolan grounded out to ss (2-1 KBB).",
+            "Julia Miller grounded out to 2b (1-2 BKF).",
+            "Ella Molinari singled to right field (3-2 BKFBFB).",
+            "Amber Arcand walked (3-0 BBBB); Ella Molinari advanced to second.",
+            "Amber Arcand advanced to second on a wild pitch; Ella Molinari advanced to third.",
+            "Peyton Blankenheim-Brown singled through the left side, 2 RBI (3-2 BFBKB); Amber Arcand scored; Ella Molinari scored.",
+            "Madi Miller popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Boucher grounded out to 3b (2-1 BBK).",
+            "Kathryn Copperthite pinch hit for Lexi Falcioni.",
+            "Kathryn Copperthite walked (3-0 BBBB).",
+            "Lexi Falcioni to ss for Kathryn Copperthite.",
+            "Maggie Caron walked (3-2 BBKFFBB); Lexi Falcioni advanced to second.",
+            "Riley Dolan singled to right field (0-1 K); Maggie Caron advanced to second; Lexi Falcioni advanced to third.",
+            "Julia Miller singled to left field, RBI (0-0); Riley Dolan advanced to second; Maggie Caron advanced to third; Lexi Falcioni scored.",
+            "Ella Molinari walked, RBI (3-0 BBBB); Julia Miller advanced to second; Riley Dolan advanced to third; Maggie Caron scored.",
+            "Amber Arcand grounded out to 2b, RBI (0-2 KF); Ella Molinari advanced to second; Julia Miller advanced to third; Riley Dolan scored.",
+            "Peyton Blankenheim-Brown flied out to cf (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 2,
+          "h": 4,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 13
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 3,
+          "h": 4,
+          "r": 5,
+          "er": 5,
+          "bb": 4,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 17
         }
       ],
       "year": 2026
