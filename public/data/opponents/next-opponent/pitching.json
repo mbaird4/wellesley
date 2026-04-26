@@ -1,87 +1,87 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-04-25T02:24:38.344Z",
+  "scrapedAt": "2026-04-26T02:39:36.057Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Staub, Jamie",
       "w": 6,
       "l": 2,
-      "era": 4.36,
-      "app": 20,
+      "era": 4.44,
+      "app": 21,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 1,
-      "ip": 62.2,
-      "h": 70,
-      "r": 44,
-      "er": 39,
+      "ip": 64.2,
+      "h": 74,
+      "r": 46,
+      "er": 41,
       "bb": 14,
       "so": 28,
-      "hr": 6,
-      "whip": 1.34,
-      "doubles": 18,
+      "hr": 7,
+      "whip": 1.36,
+      "doubles": 19,
       "triples": 0,
-      "ab": 257,
-      "bAvg": 0.272,
-      "wp": 6,
+      "ab": 266,
+      "bAvg": 0.278,
+      "wp": 7,
       "hbp": 5,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 5
     },
     {
       "name": "Kannan, Ragini",
-      "w": 6,
+      "w": 8,
       "l": 7,
-      "era": 4.65,
-      "app": 19,
-      "gs": 14,
-      "cg": 6,
+      "era": 4.5,
+      "app": 21,
+      "gs": 15,
+      "cg": 7,
       "sho": 2,
       "sv": 0,
-      "ip": 84.1,
-      "h": 103,
-      "r": 70,
-      "er": 56,
-      "bb": 31,
-      "so": 72,
-      "hr": 8,
-      "whip": 1.59,
-      "doubles": 19,
+      "ip": 93.1,
+      "h": 111,
+      "r": 74,
+      "er": 60,
+      "bb": 33,
+      "so": 79,
+      "hr": 9,
+      "whip": 1.54,
+      "doubles": 21,
       "triples": 1,
-      "ab": 341,
-      "bAvg": 0.302,
-      "wp": 7,
-      "hbp": 9,
+      "ab": 374,
+      "bAvg": 0.297,
+      "wp": 8,
+      "hbp": 10,
       "bk": 0,
       "sfa": 6,
-      "sha": 12
+      "sha": 14
     },
     {
       "name": "Jennings, Madeline",
       "w": 6,
       "l": 7,
-      "era": 4.96,
-      "app": 19,
-      "gs": 17,
+      "era": 5.11,
+      "app": 20,
+      "gs": 18,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 73.1,
-      "h": 121,
-      "r": 70,
-      "er": 52,
+      "ip": 75.1,
+      "h": 125,
+      "r": 73,
+      "er": 55,
       "bb": 16,
-      "so": 46,
-      "hr": 7,
+      "so": 47,
+      "hr": 8,
       "whip": 1.87,
       "doubles": 7,
       "triples": 3,
-      "ab": 337,
-      "bAvg": 0.359,
+      "ab": 347,
+      "bAvg": 0.36,
       "wp": 8,
       "hbp": 3,
       "bk": 0,
@@ -4377,6 +4377,220 @@
           "hbp": 1,
           "ab": 15,
           "bf": 16
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/cwru/boxscore/14849",
+      "date": "4/24/2026",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Potts struck out swinging (2-2 BBKSS).",
+            "Ching walked (3-1 BKBBB).",
+            "Berry reached on a fielding error by 3b (1-2 KSB); Ching advanced to second.",
+            "Zusi struck out looking (2-2 BFFBFFK).",
+            "Coonan walked (3-0 BBBB); Berry advanced to second; Ching advanced to third.",
+            "Miller, A. lined out to 2b (0-2 FK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Steffes singled to left field (1-2 FBF).",
+            "Ejercito pinch ran for Steffes.",
+            "Ejercito stole second.",
+            "Becker grounded out to 2b, SAC, bunt (2-1 KBB); Ejercito advanced to third.",
+            "Durham singled to pitcher, bunt (0-0).",
+            "Durham stole second.",
+            "Potts singled through the left side, 2 RBI (2-1 BBS); Durham scored; Ejercito scored.",
+            "Potts stole second.",
+            "Potts advanced to third on a wild pitch.",
+            "Ching hit by pitch (3-2 BBKFFFB).",
+            "Ching stole second.",
+            "Berry lined into double play 2b unassisted (3-2 BFBFFB); Ching out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Zusi grounded out to 3b (0-0).",
+            "Coonan struck out looking (2-2 BKKBFFK).",
+            "Miller, A. popped up to 1b (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Steffes struck out swinging (1-2 KFBFS).",
+            "Becker flied out to rf (1-1 BS).",
+            "Durham struck out swinging (1-2 SFBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Potts homered to right field, RBI (3-2 FBKBFB).",
+            "Ching flied out to rf (3-2 KBFFBFFFB).",
+            "Berry popped up to ss (2-2 BBFKF).",
+            "Zusi grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Coonan lined out to 2b (1-0 B).",
+            "Miller, A. doubled to left field (2-1 BKB).",
+            "Steffes out at first 3b to 2b, SAC, bunt (0-1 F); Miller, A. advanced to third.",
+            "Becker flied out to rf (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Durham grounded out to p (1-0 B).",
+            "Potts singled down the lf line (3-2 BKBBFF).",
+            "Ching flied out to rf (0-1 K).",
+            "Berry singled to right field (1-1 KB); Potts advanced to third.",
+            "Fritscher pinch ran for Berry.",
+            "Zusi doubled to right center, RBI (3-1 BSBB); Fritscher advanced to third; Potts scored.",
+            "Howard pinch ran for Zusi.",
+            "Coonan struck out swinging (2-2 BSBKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Kannan, Ragini",
+          "ip": 7,
+          "h": 8,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 6,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/cwru/boxscore/14848",
+      "date": "4/25/2026",
+      "opponent": "Cwru",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Potts fouled out to lf (1-1 BS).",
+            "Ching struck out swinging (3-2 BBBKFS).",
+            "Berry out at first p to 2b to 1b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zusi homered to center field, RBI (2-1 BFB).",
+            "Coonan grounded out to ss (3-2 FSBBFBF).",
+            "Miller, A. grounded out to p (2-1 BKB).",
+            "Fritscher grounded out to ss (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Becker singled up the middle (3-2 SBBSB).",
+            "Durham singled to third base (1-0 B); Becker advanced to second, advanced to third on a throwing error by 3b.",
+            "Durham stole second.",
+            "Potts singled up the middle, 2 RBI (2-0 BB); Durham scored; Becker scored.",
+            "Jamie Staub to p for Madeline Jen.",
+            "Potts advanced to second on a wild pitch.",
+            "Ching popped up to 2b (3-2 BKFBFFBF).",
+            "Berry grounded out to 2b (0-2 FKF); Potts advanced to third.",
+            "Zusi lined out to rf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Coonan fouled out to 1b (1-1 BS).",
+            "Miller, A. singled up the middle (2-0 BB).",
+            "Fritscher doubled to left center (1-0 B); Miller, A. advanced to third.",
+            "Becker flied out to rf, SF, RBI (3-1 BKBB); Miller, A. scored.",
+            "Williams pinch hit for Durham.",
+            "Williams grounded out to 3b (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Potts homered to center field, RBI (2-2 BFBK).",
+            "Ching singled up the middle (1-2 KBF).",
+            "Ragini Kanna to p for Jamie Staub.",
+            "Berry fouled out to 3b, bunt (1-1 BS).",
+            "Zusi flied out to lf (3-2 BFBKB).",
+            "Coonan flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dylan Yamamu to c.",
+            "Miller, A. lined out to p (3-2 BFFBFB).",
+            "Fritscher pinch hit for Tuma.",
+            "Fritscher grounded out to 2b (2-2 BBKFFF).",
+            "Becker struck out swinging (2-2 FKBBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 2,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 10
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 2,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 10
+        },
+        {
+          "name": "Kannan, Ragini",
+          "ip": 2,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
         }
       ],
       "year": 2026
