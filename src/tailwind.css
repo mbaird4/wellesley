@@ -10,6 +10,9 @@
   .print-preview & {
     @slot;
   }
+  .pdf-capture-host & {
+    @slot;
+  }
 }
 
 @theme {
@@ -152,7 +155,8 @@
     }
   }
 
-  .print-preview {
+  .print-preview,
+  .pdf-capture-host {
     --color-line: rgba(0, 0, 0, 0.15);
     --color-line-hover: rgba(0, 0, 0, 0.2);
     --color-line-medium: rgba(0, 0, 0, 0.25);
@@ -916,6 +920,17 @@
     @apply mx-auto rounded-lg border-2 border-dashed border-amber-400 bg-white p-4;
     /* Match actual print page width: 8.5in - 2×0.3in margins */
     width: 7.9in;
+  }
+
+  /* Off-screen host for PDF capture: keeps content laid out for html2canvas
+     but invisible to the user. Same width as a print page. */
+  .pdf-capture-host {
+    position: fixed;
+    top: 0;
+    left: -100000px;
+    width: 7.9in;
+    background: white;
+    pointer-events: none;
   }
 
   /* ── CDK Drag & Drop ── */

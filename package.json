@@ -36,6 +36,8 @@
     "@angular/router": "~21.1.0",
     "axios": "^1.13.5",
     "cheerio": "^1.2.0",
+    "html2canvas-pro": "^2.0.2",
+    "jspdf": "^4.2.1",
     "rxjs": "~7.8.0"
   },
   "devDependencies": {

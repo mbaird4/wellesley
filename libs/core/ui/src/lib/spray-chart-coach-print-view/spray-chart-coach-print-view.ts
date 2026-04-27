@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import type { SprayCallout, SprayChartSummary, SprayDataPoint, SprayTrend, Team } from '@ws/core/models';
 import { buildCallouts, computeSprayZones, detectSprayTrends } from '@ws/core/processors';
-import { range } from '@ws/core/util';
 
 import type { PrintPlayerSummary } from '../spray-chart-print-view/spray-chart-print-view';
 import { aggregateStats, CURRENT_YEAR, SPRAY_YEARS } from '../spray-chart-viewer/spray-chart-viewer';
@@ -76,8 +75,6 @@ export class SprayChartCoachPrintView {
 
     return `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
   });
-
-  readonly noteLines = range(6);
 
   readonly rows = computed<CoachRow[]>(() => {
     const map = this.dataByYear();

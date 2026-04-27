@@ -19,7 +19,7 @@
   <!-- Header -->
   <div class="flex flex-col gap-1">
     <h3 class="text-content-heading m-0 text-lg font-semibold tracking-tight">
-      Print Options
+      Download Report
     </h3>
     <p class="text-content-dim m-0 text-sm">
       Choose which reports to generate
@@ -28,6 +28,38 @@
       </span>
     </p>
   </div>
+
+  <!-- Mode toggle -->
+  <div class="border-line bg-surface-elevated flex gap-1 rounded-lg border p-1">
+    <button
+      class="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-md border-none px-3 py-2 text-sm font-medium transition-all duration-150"
+      [class]="
+        mode() === 'download'
+          ? 'bg-brand-light text-white shadow-[0_2px_8px_var(--color-brand-glow)]'
+          : 'text-content-muted hover:text-content-bright bg-transparent'
+      "
+      (click)="setMode('download')"
+    >
+      <i class="fa-solid fa-download"></i>
+      Download PDF
+    </button>
+    <button
+      class="flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-md border-none px-3 py-2 text-sm font-medium transition-all duration-150"
+      [class]="
+        mode() === 'drive'
+          ? 'bg-brand-light text-white shadow-[0_2px_8px_var(--color-brand-glow)]'
+          : 'text-content-muted hover:text-content-bright bg-transparent'
+      "
+      (click)="setMode('drive')"
+    >
+      <i class="fa-brands fa-google-drive"></i>
+      Save to Drive
+    </button>
+  </div>
+
+  @if (actionHint()) {
+    <p class="text-content-dim m-0 -mt-2 text-xs">{{ actionHint() }}</p>
+  }
 
   <!-- Options -->
   <div class="flex flex-col gap-2">
@@ -148,15 +180,15 @@
     <button
       class="cursor-pointer rounded-lg border-none px-5 py-2 text-sm font-semibold text-white transition-all duration-150 disabled:opacity-40 disabled:saturate-0"
       [class]="
-        !dugout() && !coach() && !quickRef()
+        nothingSelected()
           ? 'bg-brand-light/50'
           : 'bg-brand-light hover:bg-brand-lighter shadow-[0_2px_12px_var(--color-brand-glow)]'
       "
-      [disabled]="!dugout() && !coach() && !quickRef()"
-      (click)="onPrint()"
+      [disabled]="nothingSelected()"
+      (click)="onConfirm()"
     >
-      <i class="fa-solid fa-print mr-1.5"></i>
-      Print
+      <i class="fa-solid mr-1.5" [class]="actionIcon()"></i>
+      {{ actionLabel() }}
     </button>
   </div>
 </div>

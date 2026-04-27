@@ -7,7 +7,7 @@
     {{ emptyMessage() }}
   </div>
 } @else {
-  <!-- Print orchestrator (visible in print, or when preview toggled in dev) -->
+  <!-- PDF export orchestrator (renders the export modal + hidden capture targets) -->
   @if (teamData() && (viewMode() === 'combined' || viewMode() === 'scouting')) {
     <ws-spray-print-orchestrator
       #printOrch
@@ -17,11 +17,9 @@
       [printTitle]="printTitle()"
       [printSubtitle]="printSubtitle()"
       [selectedYears]="selectedYears()"
-      [hasNonDefaultFilters]="hasNonDefaultFilters()"
       [cacheKey]="printCacheKey()"
       [viewMode]="viewMode()"
       [dataByYear]="dataByYear()"
-      (filtersReset)="onFiltersReset()"
     />
   }
 
@@ -49,15 +47,15 @@
       teamData() && (viewMode() === 'combined' || viewMode() === 'scouting')
     ) {
       <button
-        class="border-line-strong bg-surface-elevated text-content-muted cursor-pointer rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors hover:text-white print:hidden"
+        class="border-line-strong bg-surface-elevated text-content-muted cursor-pointer rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors hover:text-white"
         (click)="printOrch()?.onPrint()"
       >
-        <i class="fa-solid fa-print"></i>
-        Print
+        <i class="fa-solid fa-download"></i>
+        Download
       </button>
       @if (printOrch()?.isDev) {
         <button
-          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors print:hidden"
+          class="cursor-pointer rounded-lg border-none px-3 py-1.5 text-sm font-medium transition-colors"
           [class]="
             printOrch()?.printPreview()
               ? 'bg-amber-600 text-white'

@@ -1,5 +1,6 @@
 export * from './lib/base-href';
 export * from './lib/breakpoint.service';
+export * from './lib/google-config';
 export * from './lib/opponent-shorthands';
 export * from './lib/range';
 export * from './lib/season-years';

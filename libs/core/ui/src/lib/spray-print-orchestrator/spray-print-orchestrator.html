@@ -1,0 +1,72 @@
+<div [class]="captureWrapperClass()">
+  @if (printPreview()) {
+    <button
+      class="absolute top-0 right-0 text-2xl text-[black]"
+      (click)="printPreview.set(false)"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  }
+  @if (printDugout()) {
+    <div #dugoutRef>
+      <ws-spray-chart-print-view
+        [players]="printPlayers()"
+        [title]="printTitle()"
+        [subtitle]="printSubtitle()"
+        [teamData]="teamData()"
+      />
+    </div>
+  }
+  @if (printCoach()) {
+    <div #coachRef>
+      <ws-spray-chart-coach-print-view
+        [players]="printPlayers()"
+        [title]="printTitle()"
+        [subtitle]="printSubtitle()"
+        [years]="selectedYears()"
+        [viewMode]="viewMode()"
+        [dataByYear]="dataByYear()"
+        [teamData]="teamData()"
+        [needsPageBreak]="printDugout() && !pdfCapturing()"
+      />
+    </div>
+  }
+  @if (printQuickRef()) {
+    <div #quickRefRef>
+      <ws-spray-packet-quick-ref
+        [players]="printPlayers()"
+        [title]="printTitle()"
+      />
+    </div>
+  }
+</div>
+
+@if (busyMessage()) {
+  <div
+    class="bg-surface-card border-line-strong fixed top-1/2 left-1/2 z-[100] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 rounded-2xl border p-6 shadow-2xl"
+  >
+    <i class="fa-solid fa-spinner fa-spin text-brand-text text-2xl"></i>
+    <span class="text-content-bright text-sm font-medium">
+      {{ busyMessage() }}
+    </span>
+  </div>
+}
+
+@if (uploadResults().length > 0) {
+  <ws-drive-upload-toast
+    [files]="uploadResults()"
+    [folderName]="uploadFolderName()"
+    (dismissed)="dismissUploadToast()"
+  />
+}
+
+@if (showPrintModal()) {
+  <ws-print-options-modal
+    [players]="allPlayerSummaries()"
+    [lineupOrder]="lineupOrder()"
+    [cacheKey]="cacheKey()"
+    [years]="selectedYears()"
+    (confirmed)="onPrintConfirm($event)"
+    (dismissed)="onPrintCancel()"
+  />
+}

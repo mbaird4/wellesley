@@ -448,15 +448,4 @@ export class SprayChartViewer {
   onZoneHover(zone: SprayZone | null): void {
     this.highlightZone.set(zone);
   }
-
-  onFiltersReset(): void {
-    this.filters.set({
-      playerName: this.filters().playerName,
-      outcomes: [...ALL_OUTCOMES],
-      contactTypes: [...ALL_CONTACT_TYPES],
-      contactQualities: [...ALL_CONTACT_QUALITIES],
-      outCount: [...ALL_OUT_COUNTS],
-      risp: null,
-    });
-  }
 }
