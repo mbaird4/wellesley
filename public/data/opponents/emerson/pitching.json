@@ -1,64 +1,64 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-04-26T02:33:52.790Z",
+  "scrapedAt": "2026-04-27T02:35:35.241Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 5,
-      "l": 10,
-      "era": 3.7,
-      "app": 21,
-      "gs": 11,
-      "cg": 6,
+      "l": 11,
+      "era": 3.58,
+      "app": 23,
+      "gs": 12,
+      "cg": 7,
       "sho": 1,
-      "sv": 0,
-      "ip": 92.2,
-      "h": 112,
-      "r": 89,
-      "er": 49,
+      "sv": 1,
+      "ip": 99.2,
+      "h": 117,
+      "r": 93,
+      "er": 51,
       "bb": 55,
-      "so": 105,
+      "so": 116,
       "hr": 1,
-      "whip": 1.8,
-      "doubles": 15,
+      "whip": 1.73,
+      "doubles": 16,
       "triples": 8,
-      "ab": 398,
-      "bAvg": 0.281,
-      "wp": 28,
-      "hbp": 10,
+      "ab": 423,
+      "bAvg": 0.277,
+      "wp": 29,
+      "hbp": 11,
       "bk": 0,
       "sfa": 5,
-      "sha": 8
+      "sha": 12
     },
     {
       "name": "Regan, Kate",
-      "w": 0,
+      "w": 1,
       "l": 9,
-      "era": 7.12,
-      "app": 18,
-      "gs": 13,
+      "era": 6.58,
+      "app": 19,
+      "gs": 14,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 60,
-      "h": 108,
-      "r": 79,
-      "er": 61,
-      "bb": 31,
-      "so": 17,
+      "ip": 66,
+      "h": 112,
+      "r": 81,
+      "er": 62,
+      "bb": 32,
+      "so": 18,
       "hr": 4,
-      "whip": 2.32,
-      "doubles": 21,
+      "whip": 2.18,
+      "doubles": 23,
       "triples": 7,
-      "ab": 288,
-      "bAvg": 0.375,
+      "ab": 312,
+      "bAvg": 0.359,
       "wp": 5,
       "hbp": 0,
       "bk": 0,
       "sfa": 6,
-      "sha": 1
+      "sha": 2
     }
   ],
   "games": [
@@ -2633,6 +2633,199 @@
           "hbp": 0,
           "ab": 2,
           "bf": 3
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/4367",
+      "date": "4/26/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz struck out swinging (0-2 FSS).",
+            "Hayden Reilly struck out swinging, reached first on a throwing error by c (0-2 KKS).",
+            "Ella Stolarzyk struck out swinging (1-2 BFKS).",
+            "Zoey Lynn grounded out to 2b (0-2 SS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maura Murphy struck out swinging, reached first on a passed ball (0-2 KKS).",
+            "Mack Murnane grounded out to 3b, bunt, SAC (0-1 F); Maura Murphy advanced to second.",
+            "Bridget Bartz flied out to cf (0-1 F).",
+            "Dana Walker reached first on an error by 1b, assist by c (0-2 SFFF); Maura Murphy scored on the error, unearned.",
+            "Madeline Kibler struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abriana Schmutz singled to shortstop (0-0).",
+            "Abriana Schmutz advanced to second on an error by c.",
+            "Abriana Schmutz stole third.",
+            "Hayden Reilly singled up the middle, RBI (2-0 BB); Abriana Schmutz scored.",
+            "Ella Stolarzyk grounded out to p, bunt, SAC (0-0); Hayden Reilly advanced to second.",
+            "Hayden Reilly advanced to third on a passed ball.",
+            "Zoey Lynn doubled down the lf line, RBI (1-0 B); Hayden Reilly scored.",
+            "Maura Murphy struck out swinging (0-2 FSS).",
+            "Mack Murnane struck out swinging, out at first c to 1b (1-2 BKSS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Bridget Bartz grounded out to 3b (3-2 KBFBBF).",
+            "Dana Walker struck out swinging (1-2 KSFFFFBS).",
+            "Madeline Kibler popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abriana Schmutz singled through the left side (1-0 B).",
+            "Hayden Reilly struck out looking (0-2 SSK).",
+            "Ella Stolarzyk grounded out to p, bunt, SAC (0-0); Abriana Schmutz advanced to second.",
+            "Zoey Lynn struck out swinging (0-2 SFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maura Murphy flied out to cf (1-1 BF).",
+            "Mack Murnane singled to catcher (0-2 SKF).",
+            "Bridget Bartz grounded into double play p to ss to 1b (0-1 K); Mack Murnane out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 6,
+          "h": 5,
+          "r": 3,
+          "er": 2,
+          "bb": 0,
+          "so": 10,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/4368",
+      "date": "4/26/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "Regan, Kate",
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to ss (1-0 B).",
+            "Ella Stolarzyk flied out to cf (2-0 BB).",
+            "Hayden Reilly doubled down the lf line (3-2 BBFBFF).",
+            "Bridget Bartz struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zoey Lynn singled up the middle (0-2 FF).",
+            "Olivia Garcia pinch ran for Zoey Lynn.",
+            "Mack Murnane flied out to lf (2-2 FBBF).",
+            "Maura Murphy reached first on an error by ss, advanced to second (1-0 B); Olivia Garcia advanced to third on the error.",
+            "Emma Behel grounded out to ss, RBI (1-1 BK); Olivia Garcia scored, unearned.",
+            "Abby Steele grounded out p to 2b to 1b (1-1 BF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abriana Schmutz walked (3-2 BFBBKB).",
+            "Ella Stolarzyk grounded out to p, bunt, SAC (0-0); Abriana Schmutz advanced to third.",
+            "Hayden Reilly reached on a fielder's choice to catcher, bunt, RBI (0-1 F); Abriana Schmutz scored.",
+            "Bridget Bartz popped up to ss (1-1 SB).",
+            "Zoey Lynn reached on a fielder's choice to shortstop (1-0 B); Hayden Reilly out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mack Murnane grounded out to ss (1-0 B).",
+            "Maura Murphy flied out to cf (0-0).",
+            "Emma Behel grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abby Steele flied out to lf (1-0 B).",
+            "Abriana Schmutz grounded out to p (3-1 FBBB).",
+            "Ella Stolarzyk doubled to left center (1-1 BK).",
+            "Hayden Reilly reached first on an error by ss (0-0); Ella Stolarzyk advanced to third.",
+            "Bridget Bartz popped up to 2b (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zoey Lynn popped up to 2b (0-0).",
+            "Mack Murnane flied out to cf (1-0 B).",
+            "Maura Murphy flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Zoey Cascio pinch hit for Emma Behel.",
+            "Zoey Cascio singled up the middle (2-2 FFFBB).",
+            "Sage Svalestad pinch ran for Zoey Cascio.",
+            "Cal Sheehan to p.",
+            "/  for Kate Regan.",
+            "Abby Steele grounded out to 3b, bunt, SAC (0-1 K); Sage Svalestad advanced to second.",
+            "Abriana Schmutz reached first on an error by 3b (2-1 BKB); Sage Svalestad advanced to third, out at home 1b to c.",
+            "Abriana Schmutz advanced to second on a wild pitch.",
+            "Dana Walker reached first on an error by cf, advanced to second (1-2 SBFF); Abriana Schmutz scored on the error, unearned.",
+            "Hayden Reilly hit by pitch (1-0 H).",
+            "Bridget Bartz struck out swinging (1-2 KBKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 6,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 26
+        },
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 1,
+          "h": 0,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 3,
+          "bf": 5
         }
       ],
       "year": 2026

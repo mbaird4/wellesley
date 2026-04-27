@@ -1,31 +1,31 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-04-26T02:33:57.584Z",
+  "scrapedAt": "2026-04-27T02:35:40.632Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 11,
+      "w": 12,
       "l": 7,
-      "era": 1.43,
-      "app": 21,
-      "gs": 15,
-      "cg": 12,
+      "era": 1.45,
+      "app": 23,
+      "gs": 16,
+      "cg": 13,
       "sho": 3,
       "sv": 1,
-      "ip": 103,
-      "h": 93,
-      "r": 47,
-      "er": 21,
-      "bb": 28,
-      "so": 86,
+      "ip": 111,
+      "h": 97,
+      "r": 49,
+      "er": 23,
+      "bb": 30,
+      "so": 92,
       "hr": 0,
-      "whip": 1.17,
-      "doubles": 12,
+      "whip": 1.14,
+      "doubles": 13,
       "triples": 0,
-      "ab": 414,
-      "bAvg": 0.225,
+      "ab": 443,
+      "bAvg": 0.219,
       "wp": 6,
       "hbp": 1,
       "bk": 0,
@@ -36,24 +36,24 @@
       "name": "Lynn, Zoey",
       "w": 2,
       "l": 2,
-      "era": 2.08,
-      "app": 8,
+      "era": 1.93,
+      "app": 9,
       "gs": 5,
       "cg": 3,
       "sho": 0,
       "sv": 0,
-      "ip": 30.1,
-      "h": 36,
+      "ip": 32.2,
+      "h": 39,
       "r": 15,
       "er": 9,
       "bb": 3,
-      "so": 15,
+      "so": 16,
       "hr": 0,
       "whip": 1.29,
       "doubles": 5,
       "triples": 1,
-      "ab": 128,
-      "bAvg": 0.281,
+      "ab": 137,
+      "bAvg": 0.285,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -63,25 +63,25 @@
     {
       "name": "Behel, Emma",
       "w": 2,
-      "l": 3,
-      "era": 4.45,
-      "app": 11,
-      "gs": 7,
+      "l": 4,
+      "era": 4.72,
+      "app": 12,
+      "gs": 8,
       "cg": 2,
       "sho": 0,
       "sv": 0,
-      "ip": 39.1,
-      "h": 54,
-      "r": 31,
-      "er": 25,
-      "bb": 13,
-      "so": 16,
+      "ip": 43,
+      "h": 60,
+      "r": 36,
+      "er": 29,
+      "bb": 15,
+      "so": 19,
       "hr": 2,
-      "whip": 1.7,
+      "whip": 1.74,
       "doubles": 8,
       "triples": 1,
-      "ab": 172,
-      "bAvg": 0.314,
+      "ab": 190,
+      "bAvg": 0.316,
       "wp": 0,
       "hbp": 1,
       "bk": 0,
@@ -2845,6 +2845,223 @@
           "hbp": 1,
           "ab": 24,
           "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/emerson/boxscore/9358",
+      "date": "4/26/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano singled through the left side (1-2 KFB).",
+            "Aislinn McCoy singled through the right side (1-0 B); Valentina Luciano advanced to second.",
+            "Avi Kuperman reached on a fielder's choice to third base (1-1 BK); Aislinn McCoy advanced to second; Valentina Luciano out at third 3b unassisted.",
+            "Casey Yacovelli doubled to left field, 2 RBI (1-1 FB); Avi Kuperman scored; Aislinn McCoy scored.",
+            "Cal Sheehan grounded out to ss (1-0 B).",
+            "Riley Fasteau struck out looking (3-2 BFFBFBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kayla Nuehlen grounded out to p (2-2 KFBBF).",
+            "Elizabeth Miehlich struck out swinging (2-2 SKBBS).",
+            "Bri Frongillo struck out swinging (1-2 KKBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano grounded out to 3b (0-2 FF).",
+            "Aislinn McCoy struck out looking (1-2 BFKK).",
+            "Avi Kuperman reached first on an error by p (1-0 B).",
+            "Casey Yacovelli reached on a fielder's choice to shortstop (0-1 K); Avi Kuperman out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cal Sheehan walked (3-2 BKBKFBB).",
+            "Riley Fasteau reached on a fielder's choice to pitcher (0-0); Cal Sheehan out at second p to ss.",
+            "Kayla Nuehlen reached on a fielder's choice to second base (1-2 BFKFFF); Riley Fasteau out at second 2b to ss.",
+            "Elizabeth Miehlich struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abby Steele to c for Madeline Kibler.",
+            "Bri Frongillo grounded out to p (0-2 SK).",
+            "Valentina Luciano grounded out to p (0-1 K).",
+            "Aislinn McCoy struck out swinging (1-2 KKBFS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Avi Kuperman flied out to cf (2-1 BKB).",
+            "Casey Yacovelli singled to third base (3-2 BFBBK).",
+            "Cal Sheehan grounded out to 2b (2-2 KBBK); Casey Yacovelli advanced to second.",
+            "Riley Fasteau grounded out to 1b unassisted (2-2 FBKBF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kayla Nuehlen popped up to 1b (0-0).",
+            "Elizabeth Miehlich grounded out to 1b unassisted (1-0 B).",
+            "Bri Frongillo grounded out to 2b (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 6,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/emerson/boxscore/9359",
+      "date": "4/26/2026",
+      "opponent": "Emerson",
+      "pitchers": [
+        "Behel, Emma",
+        "Lynn, Zoey",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano singled to shortstop (2-2 BKKB).",
+            "Aislinn McCoy singled through the right side (2-1 BBF); Valentina Luciano advanced to second.",
+            "Avi Kuperman walked (3-0 BBBB); Aislinn McCoy advanced to second; Valentina Luciano advanced to third.",
+            "Casey Yacovelli reached first on an error by ss, RBI (0-1 K); Avi Kuperman advanced to second; Aislinn McCoy scored on the error, unearned; Valentina Luciano scored.",
+            "Cal Sheehan struck out swinging (1-2 BKKS).",
+            "Riley Fasteau popped up to ss (0-0).",
+            "Kayla Nuehlen flied out to rf (2-2 BKBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elizabeth Miehlich flied out to rf (1-0 B).",
+            "Bri Frongillo struck out looking (3-2 BBKBKK).",
+            "Valentina Luciano grounded out to ss (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Zoey Lynn to 1b for Olivia Garcia.",
+            "Aislinn McCoy walked (3-2 KSBBBB).",
+            "Avi Kuperman grounded out to 3b (0-1 F); Aislinn McCoy advanced to second.",
+            "Casey Yacovelli struck out swinging (2-2 BBFFS).",
+            "Cal Sheehan singled to center field, RBI (0-0); Aislinn McCoy scored.",
+            "Riley Fasteau grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kayla Nuehlen flied out to lf (3-0 BBB).",
+            "Elizabeth Miehlich singled through the right side (2-0 BB).",
+            "Bri Frongillo grounded out to 3b (0-0); Elizabeth Miehlich advanced to second.",
+            "Valentina Luciano singled up the middle, RBI (1-0 B); Elizabeth Miehlich scored.",
+            "Valentina Luciano stole second.",
+            "Aislinn McCoy singled up the middle, RBI (0-2 KF); Valentina Luciano scored.",
+            "Zoey Lynn to p.",
+            "Emma Behel to 1b.",
+            "Ella Stolarzyk to 1b.",
+            "Emma Behel to dp.",
+            "Aislinn McCoy out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avi Kuperman singled, advanced to second on an error by lf (1-1 KB).",
+            "Casey Yacovelli flied out to lf (1-0 B).",
+            "Cal Sheehan singled to third base (2-2 KBBF).",
+            "Riley Fasteau grounded out to 1b unassisted (0-2 FF); Cal Sheehan advanced to second; Avi Kuperman advanced to third.",
+            "Kayla Nuehlen grounded out to 1b unassisted (2-2 KBFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Elizabeth Miehlich popped up to 2b (0-1 K).",
+            "Bri Frongillo grounded out to ss (2-0 BB).",
+            "Valentina Luciano singled to second base (1-2 KKB).",
+            "Aislinn McCoy struck out swinging (2-2 BBFFS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Zoey Lynn to 1b.",
+            "Emma Behel to dp for Dana Walker.",
+            "Dana Walker to p for Ella Stolarzyk.",
+            "Avi Kuperman grounded out to p (2-1 BBK).",
+            "Casey Yacovelli walked (3-2 FFBFBBB).",
+            "Cal Sheehan flied out to rf (0-0).",
+            "Riley Fasteau grounded out to 1b unassisted (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 3.2,
+          "h": 6,
+          "r": 5,
+          "er": 4,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 20
+        },
+        {
+          "name": "Lynn, Zoey",
+          "ip": 2.1,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 9
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 4
         }
       ],
       "year": 2026
