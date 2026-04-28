@@ -30,6 +30,17 @@ jobs:
 
       - run: npm ci
 
+      - name: Write google-config.prod.ts from secrets
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          cat > libs/core/util/src/lib/google-config.prod.ts <<EOF
+          export const GOOGLE_CLIENT_ID = '${GOOGLE_CLIENT_ID}';
+          export const GOOGLE_API_KEY = '${GOOGLE_API_KEY}';
+          export const GOOGLE_DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive.file';
+          EOF
+
       - run: npx nx run wellesley:tailwind:build
       - run: npx nx build wellesley --base-href /wellesley/
         env:

@@ -37,6 +37,9 @@ testem.log
 # Environment
 .env
 
+# Local production config (CI writes from secrets; dev copy from .example)
+libs/core/util/src/lib/google-config.prod.ts
+
 # System Files
 .DS_Store
 Thumbs.db

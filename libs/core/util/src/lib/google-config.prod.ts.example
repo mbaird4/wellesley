@@ -1,0 +1,8 @@
+// Template for libs/core/util/src/lib/google-config.prod.ts (gitignored).
+// Copy to google-config.prod.ts and fill in real values for local prod builds.
+// In CI, .github/workflows/deploy.yml writes this file from repository secrets.
+
+export const GOOGLE_CLIENT_ID = 'YOUR_OAUTH_CLIENT_ID.apps.googleusercontent.com';
+export const GOOGLE_API_KEY = 'YOUR_API_KEY';
+
+export const GOOGLE_DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive.file';
