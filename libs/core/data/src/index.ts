@@ -1,5 +1,6 @@
 export * from './lib/data-context.service';
 export * from './lib/merge-years';
+export * from './lib/name-corrections';
 export * from './lib/roster.service';
 export * from './lib/softball-data.service';
 export * from './lib/softball-processor.service';

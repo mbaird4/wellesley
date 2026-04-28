@@ -6,6 +6,9 @@ import { from } from 'rxjs';
 
 import { DataContextService } from './data-context.service';
 import { resolveGameData, resolveYearBattingData } from './data-resolve';
+import { applyCorrectionsToGames, buildCorrections, type NameCorrectionsFile } from './name-corrections';
+
+const WELLESLEY_KEY = 'wellesley';
 
 export type { GameData, PlayByPlayInning };
 
@@ -37,7 +40,7 @@ export class SoftballDataService {
   getOpponentGameData(dataDir: string, year: number): Observable<GameData[]> {
     const file = year === CURRENT_YEAR ? `data/opponents/${dataDir}/gamedata.json` : `data/opponents/${dataDir}/gamedata-${year}.json`;
 
-    return from(this.fetchGameJson(file));
+    return from(this.fetchAndCorrectGames(file, dataDir, year));
   }
 
   getOpponentRoster(dataDir: string): Observable<Roster> {
@@ -88,7 +91,7 @@ export class SoftballDataService {
     let cached = this.gameDataCache.get(year);
 
     if (!cached) {
-      cached = this.fetchGameJson(dataPath('gamedata', year)).then((games) => {
+      cached = this.fetchAndCorrectGames(dataPath('gamedata', year), WELLESLEY_KEY, year).then((games) => {
         if (!this.context.isVerified() && RESOLVE_YEARS.includes(year)) {
           return resolveGameData(games, year);
         }
@@ -99,6 +102,22 @@ export class SoftballDataService {
     }
 
     return cached;
+  }
+
+  /** Fetch gamedata + apply known-typo corrections. Corrections file is re-fetched each call (no cache). */
+  private async fetchAndCorrectGames(file: string, teamKey: string, year: number): Promise<GameData[]> {
+    const [games, corrections] = await Promise.all([this.fetchGameJson(file), this.fetchCorrections()]);
+    const built = buildCorrections(corrections[teamKey]?.[String(year)]);
+
+    return applyCorrectionsToGames(games, built);
+  }
+
+  private async fetchCorrections(): Promise<NameCorrectionsFile> {
+    try {
+      return await this.fetchJson<NameCorrectionsFile>('data/name-corrections.json');
+    } catch {
+      return {};
+    }
   }
 
   private async fetchResolvedBattingData(year: number): Promise<YearBattingData> {
