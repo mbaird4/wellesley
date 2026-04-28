@@ -114,6 +114,7 @@ export function computePlayerCumulativeWobas(boxscores: BoxscoreData[]): PlayerC
       acc.games.push({
         date: box.date,
         opponent: box.opponent,
+        gameUrl: box.url,
         gameWoba,
         cumulativeWoba,
         tier: getWobaTier(cumulativeWoba),

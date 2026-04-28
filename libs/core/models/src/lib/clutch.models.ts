@@ -59,6 +59,10 @@ export interface PlayerClutchSummary {
   basesEmptyStats: PbpBattingAccum;
   rispStats: PbpBattingAccum;
   overallStats: PbpBattingAccum;
+  basesEmptyProductive: number;
+  basesEmptyTotal: number;
+  overallProductive: number;
+  overallProductiveTotal: number;
 }
 
 /** Per-game clutch breakdown for a single player */
@@ -78,14 +82,3 @@ export interface ClutchSummary {
 }
 
 export type BattingMetric = 'woba' | 'avg';
-
-export interface TeamSummary {
-  totalEvents: number;
-  totalRunnersDrivenIn: number;
-  totalRunnersOn: number;
-  conversionRate: string;
-  elevators: number;
-  droppers: number;
-  topClutchName: string;
-  topClutchDelta: string;
-}

@@ -6,6 +6,7 @@ import { BoxscoreUrlPipe, StatCard } from '@ws/core/ui';
 import { BaserunningSection } from '../baserunning-section/baserunning-section';
 import { PlayTypeChart } from '../play-type-chart/play-type-chart';
 import { RunDistribution } from '../run-distribution/run-distribution';
+import { RunnerConversionSection } from '../runner-conversion-section/runner-conversion-section';
 import { ScenarioHeatmap } from '../scenario-heatmap/scenario-heatmap';
 import { ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
 
@@ -18,6 +19,7 @@ import { ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
     BaserunningSection,
     PlayTypeChart,
     RunDistribution,
+    RunnerConversionSection,
     ScoringLeaderboard,
     ScenarioHeatmap,
     StatCard,

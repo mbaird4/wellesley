@@ -1,18 +1,26 @@
-import { ChangeDetectionStrategy, Component, computed, effect, input, output, signal } from '@angular/core';
-import type { BattingMetric, PlayerClutchSummary } from '@ws/core/models';
-import { ExpandablePanel, MetricToggle, SortButtons } from '@ws/core/ui';
+import { ChangeDetectionStrategy, Component, computed, input, linkedSignal, output, signal } from '@angular/core';
+import type { PlayerClutchSummary } from '@ws/core/models';
+import { ExpandablePanel, SortButtons } from '@ws/core/ui';
 
 import type { DisplayCard } from './clutch-card.utils';
-import { buildContactBreakdown, buildDeltaArrow, buildDeltaLabel, buildDeltaPillClass, buildHeadline, buildRunnerLine, calcAvg, confidenceWeightedDelta, formatValue, getSituationValue, getValues, SITUATION_LABELS, valueColor } from './clutch-card.utils';
+import { battingAverageFromEvents, buildContactBreakdown, buildRunnerLine, calcAvg, deltaArrow, deltaHeadline, deltaLabel, deltaPillClass, eventsForSituation, productiveRate, rateTierClass, rispDriveIn, SITUATION_LABELS } from './clutch-card.utils';
 
-type SortKey = 'delta' | 'robValue' | 'drivenIn' | 'name';
+type SortKey = 'delta' | 'productive' | 'drivenIn' | 'name' | 'number';
+type DisplayMetric = 'avg' | 'productive';
+
+const DEFAULT_HIDDEN_LAST_NAMES = [];
+
+function isDefaultHidden(playerName: string): boolean {
+  const lower = playerName.toLowerCase();
+
+  return DEFAULT_HIDDEN_LAST_NAMES.some((last) => lower.includes(last));
+}
 
 @Component({
   selector: 'ws-clutch-player-table',
   standalone: true,
   imports: [
     ExpandablePanel,
-    MetricToggle,
     SortButtons,
   ],
   host: { class: 'flex flex-col gap-3' },
@@ -25,89 +33,193 @@ export class ClutchPlayerTable {
   readonly situationFilter = input('runners-on');
   readonly selectedPlayer = input<string | null>(null);
   readonly playerSelected = output<PlayerClutchSummary>();
-  readonly metricChanged = output<BattingMetric>();
 
-  readonly metric = signal<BattingMetric>('avg');
   readonly sort = signal<SortKey>('delta');
-  readonly showInfo = signal(false);
-  constructor() {
-    effect(() => {
-      this.metricChanged.emit(this.metric());
+  readonly metric = signal<DisplayMetric>('productive');
+  readonly showFilter = signal(false);
+  readonly excludedPlayers = linkedSignal<PlayerClutchSummary[], ReadonlySet<string>>({
+    source: this.players,
+    computation: (players) => new Set(players.filter((p) => isDefaultHidden(p.name)).map((p) => p.name)),
+  });
+
+  readonly playerFilterOptions = computed(() => {
+    const excluded = this.excludedPlayers();
+    const jerseys = this.jerseyMap();
+
+    return [...this.players()]
+      .map((p) => ({
+        name: p.name,
+        jersey: jerseys[p.name] ?? null,
+        included: !excluded.has(p.name),
+      }))
+      .sort((a, b) => a.jersey - b.jersey);
+  });
+
+  togglePlayer(name: string): void {
+    this.excludedPlayers.update((set) => {
+      const next = new Set(set);
+
+      if (next.has(name)) {
+        next.delete(name);
+      } else {
+        next.add(name);
+      }
+
+      return next;
     });
   }
 
+  hidePlayer(name: string): void {
+    this.excludedPlayers.update((set) => {
+      const next = new Set(set);
+      next.add(name);
+
+      return next;
+    });
+  }
+
+  selectAllPlayers(): void {
+    this.excludedPlayers.set(new Set());
+  }
+
+  clearAllPlayers(): void {
+    this.excludedPlayers.set(new Set(this.players().map((p) => p.name)));
+  }
+
   readonly sortOptions = [
-    { key: 'delta' as SortKey, label: 'Clutch Factor' },
-    { key: 'robValue' as SortKey, label: 'ROB Value' },
-    { key: 'drivenIn' as SortKey, label: 'Driven In' },
+    {
+      key: 'delta' as SortKey,
+      label: 'Pressure Lift',
+      description: 'Productive-rate with runners on minus productive-rate with bases empty. Positive = batter elevates under pressure; negative = production drops. Strips out generally-good hitters from genuinely-clutch ones.',
+    },
+    {
+      key: 'productive' as SortKey,
+      label: 'Reliability',
+      description: "Share of PAs with runners on where the team's situation didn't get worse — batter reached safely, OR an out happened but a runner advanced or scored. GIDPs and any play that retires a runner count against you.",
+    },
+    {
+      key: 'drivenIn' as SortKey,
+      label: 'Driven In %',
+      description: 'Of runners who started on 2nd or 3rd while she was at bat, what share she drove home. Players with no scoring-position opportunities sort last.',
+    },
     { key: 'name' as SortKey, label: 'Name' },
+    { key: 'number' as SortKey, label: 'Jersey #' },
   ];
 
   readonly cards = computed<DisplayCard[]>(() => {
-    const players = [...this.players()];
+    const excluded = this.excludedPlayers();
+    const players = this.players().filter((p) => !excluded.has(p.name));
     const key = this.sort();
-    const m = this.metric();
+    const situation = this.situationFilter();
+    const jerseys = this.jerseyMap();
+    const metric = this.metric();
 
     const withValues = players.map((p) => {
-      const v = getValues(p, m);
+      const situationEvents = eventsForSituation(p, situation);
 
-      return { player: p, ...v };
+      let robRate: number;
+      let robTotal: number;
+      let robCount: string;
+      let emptyRate: number;
+      let emptyTotal: number;
+      let emptyCount: string;
+
+      if (metric === 'avg') {
+        const robBa = battingAverageFromEvents(situationEvents);
+        const emptyBa = { rate: p.basesEmptyStats.ab > 0 ? p.basesEmptyStats.h / p.basesEmptyStats.ab : 0, hits: p.basesEmptyStats.h, ab: p.basesEmptyStats.ab };
+        robRate = robBa.rate;
+        robTotal = robBa.ab;
+        robCount = robBa.ab > 0 ? `${robBa.hits} / ${robBa.ab} AB` : 'no AB';
+        emptyRate = emptyBa.rate;
+        emptyTotal = emptyBa.ab;
+        emptyCount = emptyBa.ab > 0 ? `${emptyBa.hits} / ${emptyBa.ab} AB` : 'no AB';
+      } else {
+        const robProd = productiveRate(situationEvents);
+        robRate = robProd.rate;
+        robTotal = robProd.total;
+        robCount = robProd.total > 0 ? `${robProd.productive} / ${robProd.total}` : 'no PAs';
+        emptyTotal = p.basesEmptyTotal;
+        emptyRate = emptyTotal > 0 ? p.basesEmptyProductive / emptyTotal : 0;
+        emptyCount = emptyTotal > 0 ? `${p.basesEmptyProductive} / ${emptyTotal}` : 'no PAs';
+      }
+
+      const delta = robRate - emptyRate;
+
+      return { player: p, robRate, robTotal, robCount, emptyRate, emptyTotal, emptyCount, delta };
     });
+
+    const compareDriveIn = (a: PlayerClutchSummary, b: PlayerClutchSummary): number => {
+      const aRisp = rispDriveIn(a);
+      const bRisp = rispDriveIn(b);
+
+      if (aRisp.opportunities === 0 && bRisp.opportunities === 0) {
+        return 0;
+      }
+
+      if (aRisp.opportunities === 0) {
+        return 1;
+      }
+
+      if (bRisp.opportunities === 0) {
+        return -1;
+      }
+
+      return bRisp.rate - aRisp.rate;
+    };
 
     withValues.sort((a, b) => {
       switch (key) {
-        case 'delta': {
-          const aWeighted = confidenceWeightedDelta(a.delta, a.robPa, a.emptyPa);
-          const bWeighted = confidenceWeightedDelta(b.delta, b.robPa, b.emptyPa);
-
-          return bWeighted - aWeighted;
-        }
-
-        case 'robValue':
-          return b.rob - a.rob;
+        case 'delta':
+          return b.delta - a.delta;
+        case 'productive':
+          return b.robRate - a.robRate;
         case 'drivenIn':
-          return b.player.runnersDrivenIn - a.player.runnersDrivenIn;
+          return compareDriveIn(a.player, b.player);
         case 'name':
           return a.player.name.localeCompare(b.player.name);
+        case 'number':
+          return jerseys[a.player.name] - jerseys[b.player.name];
         default:
           return 0;
       }
     });
 
-    const situation = this.situationFilter();
+    return withValues.map(({ player: p, robRate, robTotal, robCount, emptyRate, emptyTotal, emptyCount, delta }) => {
+      const formatRate = (rate: number, total: number): string => {
+        if (total === 0) {
+          return '—';
+        }
 
-    const jerseys = this.jerseyMap();
+        if (metric === 'productive') {
+          return `${Math.round(rate * 100)}%`;
+        }
 
-    return withValues.map(({ player: p, rob, empty, delta, robPa, emptyPa }) => {
-      const overallVal = m === 'avg' ? calcAvg(p.overallStats) : p.overallWoba;
-      const overallPa = m === 'avg' ? p.overallStats.ab : p.overallStats.pa;
+        return rate.toFixed(3).replace(/^0/, '');
+      };
 
-      const sv = getSituationValue(p, situation, m);
-      const situationStats = [
-        {
-          label: SITUATION_LABELS[situation] ?? situation,
-          formatted: formatValue(sv.value, sv.pa, m),
-          color: valueColor(sv.value, sv.pa, m),
-        },
-      ];
+      const overallRate = metric === 'avg' ? calcAvg(p.overallStats) : p.overallProductiveTotal > 0 ? p.overallProductive / p.overallProductiveTotal : 0;
+      const overallTotal = metric === 'avg' ? p.overallStats.ab : p.overallProductiveTotal;
 
       return {
         player: p,
         jersey: jerseys[p.name] ?? null,
-        headline: buildHeadline(delta, robPa, emptyPa, m, situation),
-        deltaLabel: buildDeltaLabel(delta, robPa, emptyPa, m),
-        deltaArrow: buildDeltaArrow(delta, robPa, emptyPa, m),
-        deltaPillClass: buildDeltaPillClass(delta, robPa, emptyPa, m),
-        emptyFormatted: formatValue(empty, emptyPa, m),
-        emptyColor: valueColor(empty, emptyPa, m),
-        situationStats,
+        headline: deltaHeadline(delta, robTotal, emptyTotal),
+        robProductiveLabel: formatRate(robRate, robTotal),
+        emptyProductiveLabel: formatRate(emptyRate, emptyTotal),
+        robProductiveCount: robCount,
+        emptyProductiveCount: emptyCount,
+        deltaLabel: deltaLabel(delta, robTotal, emptyTotal, metric === 'productive' ? 'pct' : 'avg'),
+        deltaArrow: deltaArrow(delta, robTotal, emptyTotal),
+        deltaPillClass: deltaPillClass(delta, robTotal, emptyTotal),
+        emptyTierClass: rateTierClass(emptyRate, emptyTotal, metric),
+        robTierClass: rateTierClass(robRate, robTotal, metric),
         contactBreakdown: buildContactBreakdown(p.events),
-        overallFormatted: formatValue(overallVal, overallPa, m),
-        overallColor: valueColor(overallVal, overallPa, m),
-        overallTooltip: `Overall ${m === 'avg' ? 'batting average' : 'wOBA'} across all situations`,
+        overallFormatted: formatRate(overallRate, overallTotal),
+        overallColor: '',
+        overallTooltip: metric === 'avg' ? 'Season batting average (all situations)' : 'Season productive-AB rate (all situations)',
         runnerLine: buildRunnerLine(p),
-        robValue: rob,
-        delta,
+        robValue: robRate,
+        situationLabel: SITUATION_LABELS[situation] ?? situation,
       };
     });
   });

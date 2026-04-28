@@ -11,7 +11,10 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@ws/stats-core": ["libs/stats-core/src/index.ts"]
+      "@ws/stats-core": ["libs/stats-core/src/index.ts"],
+      "@ws/core/models": ["libs/core/models/src/index.ts"],
+      "@ws/core/processors": ["libs/core/processors/src/index.ts"],
+      "@ws/core/util": ["libs/core/util/src/index.ts"]
     }
   },
   "include": ["scripts/**/*.ts"]

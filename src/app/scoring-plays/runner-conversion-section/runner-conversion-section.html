@@ -1,0 +1,71 @@
+@if (sortedConversions().length > 0) {
+  <div
+    class="bg-surface-card border-line p-card flex flex-col gap-3 rounded-xl border"
+  >
+    <h3 class="mb-0">Runner Conversion by Situation</h3>
+    <div class="flex flex-col gap-1">
+      <!-- Header row -->
+      <div class="flex items-center gap-3 py-1.5">
+        <button
+          class="text-content-dim hover:text-content-muted w-28 shrink-0 cursor-pointer border-none bg-transparent text-right text-xs font-semibold tracking-widest uppercase transition-colors"
+          (click)="sort('situation')"
+        >
+          Situation
+        </button>
+        <div class="mr-4 min-w-0 flex-1"></div>
+        <button
+          class="text-content-dim hover:text-content-muted w-16 cursor-pointer border-none bg-transparent text-right text-xs font-semibold tracking-widest uppercase transition-colors"
+          (click)="sort('runners')"
+        >
+          Runners
+        </button>
+        <button
+          class="text-content-dim hover:text-content-muted border-line w-16 cursor-pointer border-y-0 border-r-0 border-l border-solid bg-transparent pl-3 text-right text-xs font-semibold tracking-widest uppercase transition-colors"
+          (click)="sort('scored')"
+        >
+          Scored
+        </button>
+        <button
+          class="text-content-dim hover:text-content-muted border-line w-16 cursor-pointer border-y-0 border-r-0 border-l border-solid bg-transparent pl-3 text-right text-xs font-semibold tracking-widest uppercase transition-colors"
+          (click)="sort('rate')"
+        >
+          Rate
+        </button>
+      </div>
+
+      <!-- Data rows -->
+      @for (row of sortedConversions(); track row.situation) {
+        <div class="flex items-center gap-3">
+          <span
+            class="text-content-secondary w-28 shrink-0 text-right text-sm font-medium"
+          >
+            {{ row.label }}
+          </span>
+
+          <div
+            class="bg-surface-sunken relative mr-4 flex h-6 min-w-0 flex-1 items-center overflow-hidden rounded-md"
+          >
+            <div
+              class="bg-chart-bar absolute inset-y-0 left-0 rounded-md transition-all duration-300"
+              [style.width.%]="row.barWidthPct"
+            ></div>
+          </div>
+
+          <span class="text-content-muted w-16 text-right text-sm tabular-nums">
+            {{ row.totalRunners }}
+          </span>
+          <span
+            class="text-content-muted border-line w-16 border-y-0 border-r-0 border-l border-solid pl-3 text-right text-sm tabular-nums"
+          >
+            {{ row.runnersScored }}
+          </span>
+          <span
+            class="text-content-bright border-line w-16 border-y-0 border-r-0 border-l border-solid pl-3 text-right text-sm font-semibold tabular-nums"
+          >
+            {{ row.rate * 100 | number: '1.1-1' }}%
+          </span>
+        </div>
+      }
+    </div>
+  </div>
+}

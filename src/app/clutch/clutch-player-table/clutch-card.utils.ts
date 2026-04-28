@@ -1,6 +1,6 @@
 import type { ClutchEvent, PbpBattingAccum, PlayerClutchSummary } from '@ws/core/models';
 import type { BattingMetric } from '@ws/core/models';
-import { accumFromResult, calculateWoba, emptyAccum, formatWoba, wobaColorStyle } from '@ws/core/processors';
+import { accumFromResult, calculateWoba, emptyAccum, formatWoba, isProductive, wobaColorStyle } from '@ws/core/processors';
 
 export interface SituationStat {
   label: string;
@@ -17,19 +17,141 @@ export interface DisplayCard {
   player: PlayerClutchSummary;
   jersey: number | null;
   headline: string;
+  robProductiveLabel: string;
+  emptyProductiveLabel: string;
+  emptyProductiveCount: string;
+  robProductiveCount: string;
+  emptyTierClass: string;
+  robTierClass: string;
   deltaLabel: string;
   deltaArrow: string;
   deltaPillClass: string;
-  emptyFormatted: string;
-  emptyColor: string;
-  situationStats: SituationStat[];
   contactBreakdown: ContactItem[];
   overallFormatted: string;
   overallColor: string;
   overallTooltip: string;
   runnerLine: string;
   robValue: number;
-  delta: number;
+  situationLabel: string;
+}
+
+export function productiveRate(events: ClutchEvent[]): { rate: number; productive: number; total: number } {
+  const eligible = events.filter((e) => e.batterResult !== 'error' && e.batterResult !== 'hbp');
+  const productive = eligible.filter(isProductive).length;
+
+  return { rate: eligible.length > 0 ? productive / eligible.length : 0, productive, total: eligible.length };
+}
+
+export function battingAverageFromEvents(events: ClutchEvent[]): { rate: number; hits: number; ab: number } {
+  const accum = emptyAccum();
+  events.forEach((e) => accumFromResult(e.batterResult, accum));
+
+  return { rate: accum.ab > 0 ? accum.h / accum.ab : 0, hits: accum.h, ab: accum.ab };
+}
+
+export function rateTierClass(rate: number, total: number, metric: 'avg' | 'productive'): string {
+  if (total === 0) {
+    return 'text-content-dim';
+  }
+
+  const thresholds = metric === 'avg' ? { good: 0.3, mid: 0.225 } : { good: 0.55, mid: 0.4 };
+
+  if (rate >= thresholds.good) {
+    return 'text-emerald-400';
+  }
+
+  if (rate >= thresholds.mid) {
+    return 'text-yellow-400';
+  }
+
+  return 'text-red-400';
+}
+
+const DELTA_BIG = 0.1;
+const DELTA_SMALL = 0.04;
+
+export function deltaPillClass(delta: number, robTotal: number, emptyTotal: number): string {
+  if (robTotal === 0 || emptyTotal === 0) {
+    return 'bg-white/5 text-content-dim';
+  }
+
+  if (delta > DELTA_SMALL) {
+    return 'bg-emerald-500/15 text-emerald-400';
+  }
+
+  if (delta < -DELTA_SMALL) {
+    return 'bg-red-500/15 text-red-400';
+  }
+
+  return 'bg-white/5 text-content-secondary';
+}
+
+export function deltaArrow(delta: number, robTotal: number, emptyTotal: number): string {
+  if (robTotal === 0 || emptyTotal === 0) {
+    return '';
+  }
+
+  if (delta > DELTA_SMALL) {
+    return 'fa-arrow-up';
+  }
+
+  if (delta < -DELTA_SMALL) {
+    return 'fa-arrow-down';
+  }
+
+  return 'fa-minus';
+}
+
+export function deltaLabel(delta: number, robTotal: number, emptyTotal: number, format: 'avg' | 'pct' = 'avg'): string {
+  if (robTotal === 0 || emptyTotal === 0) {
+    return '—';
+  }
+
+  const sign = delta >= 0 ? '+' : '-';
+
+  if (format === 'pct') {
+    return `${sign}${Math.round(Math.abs(delta) * 100)}pp`;
+  }
+
+  const formatted = Math.abs(delta).toFixed(3).replace(/^0/, '');
+
+  return `${sign}${formatted}`;
+}
+
+export function deltaHeadline(delta: number, robTotal: number, emptyTotal: number): string {
+  if (robTotal === 0) {
+    return 'No PAs with runners on yet';
+  }
+
+  if (emptyTotal === 0) {
+    return 'No bases-empty PAs to compare against';
+  }
+
+  const abs = Math.abs(delta);
+
+  if (abs < DELTA_SMALL) {
+    return 'Performs about the same with runners on';
+  }
+
+  const magnitude = abs >= DELTA_BIG ? 'dramatically' : 'noticeably';
+
+  if (delta > 0) {
+    return `Elevates ${magnitude} with runners on`;
+  }
+
+  return `Production drops ${magnitude} with runners on`;
+}
+
+export function eventsForSituation(p: PlayerClutchSummary, situation: string): ClutchEvent[] {
+  if (situation === 'loaded') {
+    return p.events.filter((e) => e.baseSituation === 'loaded');
+  }
+
+  if (situation === 'risp') {
+    return p.events.filter((e) => e.baseSituation === 'second' || e.baseSituation === 'third' || e.baseSituation === 'first_second' || e.baseSituation === 'first_third' || e.baseSituation === 'second_third' || e.baseSituation === 'loaded');
+  }
+
+  return p.events;
 }
 
 export const SITUATION_LABELS: Record<string, string> = {
@@ -89,51 +211,37 @@ export function getValues(p: PlayerClutchSummary, metric: BattingMetric): { rob:
   };
 }
 
-/** PA threshold for full confidence in delta. Below this, delta is scaled toward 0. */
-const PA_CONFIDENCE_THRESHOLD = 15;
+export function rispDriveIn(p: PlayerClutchSummary): { scored: number; opportunities: number; rate: number } {
+  let opportunities = 0;
+  let scored = 0;
 
-export function confidenceWeightedDelta(delta: number, robPa: number, emptyPa: number): number {
-  const minPa = Math.min(robPa, emptyPa);
+  p.events.forEach((e) => {
+    e.runnersOn.forEach((r) => {
+      if (r.baseBefore === 'second' || r.baseBefore === 'third') {
+        opportunities += 1;
 
-  return delta * Math.min(1, minPa / PA_CONFIDENCE_THRESHOLD);
-}
+        if (r.outcome === 'scored') {
+          scored += 1;
+        }
+      }
+    });
+  });
 
-const SITUATION_CONTEXT: Record<string, string> = {
-  'runners-on': 'with runners on base',
-  risp: 'with RISP',
-  loaded: 'with bases loaded',
-};
-
-export function buildHeadline(delta: number, robPa: number, emptyPa: number, metric: BattingMetric, situation: string): string {
-  const context = SITUATION_CONTEXT[situation] ?? 'with runners on base';
-
-  if (robPa === 0 || emptyPa === 0) {
-    return 'Not enough data to compare';
-  }
-
-  const threshold = metric === 'avg' ? 0.01 : 0.015;
-  const absDelta = Math.abs(delta);
-
-  if (absDelta < threshold) {
-    return `Hits about the same ${context}`;
-  }
-
-  const bigThreshold = metric === 'avg' ? 0.06 : 0.08;
-  const midThreshold = metric === 'avg' ? 0.03 : 0.04;
-  const magnitude = absDelta >= bigThreshold ? 'dramatically' : absDelta >= midThreshold ? 'significantly' : 'slightly';
-
-  if (delta > 0) {
-    return `Elevates ${magnitude} ${context}`;
-  }
-
-  return `Production drops ${magnitude} ${context}`;
+  return { scored, opportunities, rate: opportunities > 0 ? scored / opportunities : 0 };
 }
 
 export function buildRunnerLine(p: PlayerClutchSummary): string {
   const parts: string[] = [];
+  const advancedOrScored = p.runnersAdvanced + p.runnersDrivenIn;
 
-  if (p.runnersDrivenIn > 0) {
-    parts.push(`Drove in ${p.runnersDrivenIn} of ${p.totalRunnersOn} runners`);
+  if (p.totalRunnersOn > 0) {
+    parts.push(`Advanced ${advancedOrScored} of ${p.totalRunnersOn} runners`);
+  }
+
+  const risp = rispDriveIn(p);
+
+  if (risp.opportunities > 0) {
+    parts.push(`Drove in ${risp.scored} of ${risp.opportunities} in scoring position`);
   }
 
   if (p.runnersStranded > 0) {
@@ -181,53 +289,6 @@ export function formatValue(value: number, pa: number, metric: BattingMetric): s
   }
 
   return metric === 'avg' ? formatAvg(value) : formatWoba(value);
-}
-
-export function buildDeltaLabel(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
-  if (robPa === 0 || emptyPa === 0) {
-    return '-';
-  }
-
-  const sign = delta >= 0 ? '+' : '';
-  const formatted = metric === 'avg' ? formatAvg(Math.abs(delta)) : formatWoba(Math.abs(delta));
-
-  return `${sign}${formatted}`;
-}
-
-export function buildDeltaPillClass(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
-  if (robPa === 0 || emptyPa === 0) {
-    return 'bg-white/5 text-content-dim';
-  }
-
-  const threshold = metric === 'avg' ? 0.015 : 0.02;
-
-  if (delta > threshold) {
-    return 'bg-emerald-500/15 text-emerald-400';
-  }
-
-  if (delta < -threshold) {
-    return 'bg-red-500/15 text-red-400';
-  }
-
-  return 'bg-white/5 text-content-secondary';
-}
-
-export function buildDeltaArrow(delta: number, robPa: number, emptyPa: number, metric: BattingMetric): string {
-  if (robPa === 0 || emptyPa === 0) {
-    return '';
-  }
-
-  const threshold = metric === 'avg' ? 0.015 : 0.02;
-
-  if (delta > threshold) {
-    return 'fa-arrow-up';
-  }
-
-  if (delta < -threshold) {
-    return 'fa-arrow-down';
-  }
-
-  return 'fa-minus';
 }
 
 export function buildContactBreakdown(events: ClutchEvent[]): ContactItem[] {

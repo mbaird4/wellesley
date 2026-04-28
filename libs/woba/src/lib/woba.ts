@@ -1,13 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, signal } from '@angular/core';
 import { RosterService, SoftballDataService } from '@ws/core/data';
 import type { PlayerCumulativeWoba, PlayerWoba } from '@ws/core/models';
 import { computePlayerCumulativeWobas, computePlayerSeasonWobas, formatWoba, getWobaTier, tierClass, wobaGradientStyle } from '@ws/core/processors';
-import { ButtonToggle, EmptyState, ErrorBanner, FormatWobaPipe, LastUpdatedPipe, LoadingState, type ToggleOption, WobaLegend } from '@ws/core/ui';
+import { ButtonToggle, EmptyState, ErrorBanner, FormatWobaPipe, LastUpdatedPipe, LoadingState, SlideToggle, type ToggleOption, WobaLegend } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
 export interface TeamGameColumn {
+  gameUrl: string;
   date: string;
+  /** Display label — same as date, with " (G2)", " (G3)" etc. when there are multiple games on the same day */
+  dateLabel: string;
   opponent: string;
 }
 
@@ -34,6 +37,7 @@ export interface TeamPlayerRow {
     FormatWobaPipe,
     LastUpdatedPipe,
     LoadingState,
+    SlideToggle,
     WobaLegend,
   ],
   host: {
@@ -59,6 +63,8 @@ export class Woba {
   }));
 
   activeTab: 'players' | 'team' = 'team';
+
+  readonly applyMinPa = signal(false);
 
   playerWobas: PlayerWoba[] = [];
   cumulativeWobas: PlayerCumulativeWoba[] = [];
@@ -124,7 +130,7 @@ export class Woba {
   }
 
   get minPa(): number {
-    return this.teamGames * 2;
+    return this.applyMinPa() ? this.teamGames * 2 : 0;
   }
 
   get qualifiedPlayers(): PlayerWoba[] {
@@ -179,37 +185,51 @@ export class Woba {
   }
 
   private buildTeamGrid(): void {
-    // Build unique ordered game list from cumulative data
-    const gameKeys = new Map<string, TeamGameColumn>();
+    // Build unique ordered game list keyed by gameUrl so doubleheaders stay separated.
+    const gameKeys = new Map<string, { gameUrl: string; date: string; opponent: string }>();
     this.cumulativeWobas.forEach((player) => {
       player.games.forEach((g) => {
-        const key = `${g.date}|${g.opponent}`;
-
-        if (!gameKeys.has(key)) {
-          gameKeys.set(key, { date: g.date, opponent: g.opponent });
+        if (!gameKeys.has(g.gameUrl)) {
+          gameKeys.set(g.gameUrl, { gameUrl: g.gameUrl, date: g.date, opponent: g.opponent });
         }
       });
     });
 
-    this.teamGameColumns = Array.from(gameKeys.values()).sort((a, b) => {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    const sortedGames = Array.from(gameKeys.values()).sort((a, b) => {
+      const dt = new Date(a.date).getTime() - new Date(b.date).getTime();
+
+      return dt !== 0 ? dt : a.gameUrl.localeCompare(b.gameUrl);
     });
 
-    // Build a lookup: player -> game key -> { gameWoba, cumulativeWoba }
-    this.teamPlayerRows = this.cumulativeWobas.map((player) => {
-      const gameMap = new Map(player.games.map((g) => [`${g.date}|${g.opponent}`, { gameWoba: g.gameWoba, cumulativeWoba: g.cumulativeWoba }]));
+    // Tag duplicate-date games with a (G2)/(G3) suffix so doubleheaders are visually distinct.
+    const dateCounts = new Map<string, number>();
+    sortedGames.forEach((g) => {
+      dateCounts.set(g.date, (dateCounts.get(g.date) ?? 0) + 1);
+    });
+    const dateRunningIdx = new Map<string, number>();
 
+    this.teamGameColumns = sortedGames.map((g) => {
+      const total = dateCounts.get(g.date) ?? 1;
+      const idx = (dateRunningIdx.get(g.date) ?? 0) + 1;
+      dateRunningIdx.set(g.date, idx);
+
+      return {
+        gameUrl: g.gameUrl,
+        date: g.date,
+        dateLabel: total > 1 ? `${g.date} (G${idx})` : g.date,
+        opponent: g.opponent,
+      };
+    });
+
+    this.teamPlayerRows = this.cumulativeWobas.map((player) => {
+      const gameMap = new Map(player.games.map((g) => [g.gameUrl, { gameWoba: g.gameWoba, cumulativeWoba: g.cumulativeWoba }]));
       const seasonPlayer = this.playerWobas.find((p) => p.name.toLowerCase() === player.name.toLowerCase());
 
       return {
         name: player.name,
         seasonWoba: seasonPlayer?.woba ?? 0,
         seasonTier: seasonPlayer?.tier ?? 'below_average',
-        games: this.teamGameColumns.map((col) => {
-          const key = `${col.date}|${col.opponent}`;
-
-          return gameMap.get(key) ?? null;
-        }),
+        games: this.teamGameColumns.map((col) => gameMap.get(col.gameUrl) ?? null),
       };
     });
     this.applySortTeamGrid();

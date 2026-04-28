@@ -11,6 +11,35 @@ function canonicalBatterKey(name: string): string {
   return name.toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
 }
 
+const SAFE_BATTER_RESULTS = new Set(['single', 'bunt_single', 'double', 'triple', 'homer', 'walk', 'hbp', 'fielders_choice', 'error', 'reached']);
+
+/**
+ * A PA is "productive" when the team's situation didn't get worse:
+ * batter reached safely, OR batter was out but a runner advanced/scored
+ * (sac fly, sac bunt, productive grounder), AND no runner was retired.
+ */
+export function isProductive(event: ClutchEvent): boolean {
+  if (event.batterResult === 'double_play') {
+    return false;
+  }
+
+  const anyRunnerOut = event.runnersOn.some((r) => r.outcome === 'out');
+
+  if (anyRunnerOut) {
+    return false;
+  }
+
+  if (SAFE_BATTER_RESULTS.has(event.batterResult)) {
+    return true;
+  }
+
+  if (event.batterResult === 'sac_fly' || event.batterResult === 'sac_bunt') {
+    return true;
+  }
+
+  return event.runnersScored > 0 || event.runnersAdvanced > 0;
+}
+
 export function emptyAccum(): PbpBattingAccum {
   return { pa: 0, ab: 0, h: 0, doubles: 0, triples: 0, hr: 0, bb: 0, hbp: 0, sf: 0, sh: 0 };
 }
@@ -78,10 +107,6 @@ export function computeClutchEvents(snapshots: PlaySnapshot[], opponent: string,
     }
 
     const situation = classifyBaseSituation(snap.basesBefore);
-
-    if (situation === 'empty') {
-      return;
-    }
 
     const subEvents = snap.playText
       .replace(/\.$/, '')
@@ -250,14 +275,17 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
   });
 
   // Build player summaries
-  const players: PlayerClutchSummary[] = Array.from(eventsByPlayer.entries()).map(([key, events]) => {
+  const players: PlayerClutchSummary[] = Array.from(eventsByPlayer.entries()).map(([key, allPlayerEvents]) => {
     const accums = playerAccums.get(key) ?? {
-      displayName: events[0]?.batterName ?? key,
+      displayName: allPlayerEvents[0]?.batterName ?? key,
       runnersOn: emptyAccum(),
       basesEmpty: emptyAccum(),
       risp: emptyAccum(),
       overall: emptyAccum(),
     };
+
+    const events = allPlayerEvents.filter((e) => e.baseSituation !== 'empty');
+    const emptyEvents = allPlayerEvents.filter((e) => e.baseSituation === 'empty');
 
     const runnersOnWoba = calculateWoba(accums.runnersOn);
     const basesEmptyWoba = calculateWoba(accums.basesEmpty);
@@ -268,6 +296,11 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
     const runnersDrivenIn = events.reduce((sum, e) => sum + e.runnersScored, 0);
     const runnersAdvanced = events.reduce((sum, e) => sum + e.runnersAdvanced, 0);
     const runnersStranded = events.reduce((sum, e) => sum + e.runnersStranded, 0);
+
+    const eligibleEmpty = emptyEvents.filter((e) => e.batterResult !== 'error' && e.batterResult !== 'hbp');
+    const eligibleAll = allPlayerEvents.filter((e) => e.batterResult !== 'error' && e.batterResult !== 'hbp');
+    const basesEmptyProductive = eligibleEmpty.filter(isProductive).length;
+    const overallProductive = eligibleAll.filter(isProductive).length;
 
     // By outs breakdown
     const byOuts = [0, 1, 2].map((outs) => {
@@ -318,6 +351,10 @@ export function computeClutchSummary(games: GameWithSnapshots[]): ClutchSummary 
       basesEmptyStats: accums.basesEmpty,
       rispStats: accums.risp,
       overallStats: accums.overall,
+      basesEmptyProductive,
+      basesEmptyTotal: eligibleEmpty.length,
+      overallProductive,
+      overallProductiveTotal: eligibleAll.length,
     };
   });
 
@@ -390,5 +427,9 @@ export function rebuildPlayerFromEvents(name: string, events: ClutchEvent[], ori
     basesEmptyStats: originalPlayer.basesEmptyStats,
     rispStats,
     overallStats: originalPlayer.overallStats,
+    basesEmptyProductive: originalPlayer.basesEmptyProductive,
+    basesEmptyTotal: originalPlayer.basesEmptyTotal,
+    overallProductive: originalPlayer.overallProductive,
+    overallProductiveTotal: originalPlayer.overallProductiveTotal,
   };
 }

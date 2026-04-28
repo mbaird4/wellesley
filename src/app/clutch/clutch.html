@@ -45,21 +45,12 @@
     />
 
     @if (activeTab() === 'clutch') {
-      @if (teamSummary()) {
-        <ws-clutch-team-summary
-          [summary]="teamSummary()!"
-          [metric]="metric()"
-          [filterContext]="filterContext()"
-        />
-      }
-
       <ws-clutch-player-table
         [players]="filteredPlayers()"
         [jerseyMap]="rosterService.wellesleyAbbrevJerseyMap()"
         [situationFilter]="situationFilter()"
         [selectedPlayer]="selectedPlayerName()"
         (playerSelected)="selectPlayer($event)"
-        (metricChanged)="metric.set($event)"
       />
 
       @if (selectedPlayer()) {

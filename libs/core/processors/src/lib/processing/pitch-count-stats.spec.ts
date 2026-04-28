@@ -114,12 +114,47 @@ describe('computePitchCountByInning', () => {
     expect(Array.from(byInning.keys())).toEqual(['1st', '2nd', '3rd']);
   });
 
-  it('accumulates totals across innings', () => {
+  it('accumulates totals across innings (BIP counts as a strike)', () => {
     const records = [record({ pitcherName: 'J. Pitcher', inning: '1st', pitches: ['S'] }), record({ pitcherName: 'J. Pitcher', inning: '2nd', pitches: ['B', 'K', 'S'] })];
     const { totals } = computePitchCountByInning(records, 'J. Pitcher');
 
     expect(totals.pasWithSequence).toBe(2);
     expect(totals.balls).toBe(1);
-    expect(totals.strikes).toBe(3);
+    // 1st: S + implicit BIP = 2 strikes. 2nd: K + S + implicit BIP = 3 strikes. Total = 5.
+    expect(totals.strikes).toBe(5);
+  });
+
+  it('counts a first-pitch ball-in-play as a first-pitch strike', () => {
+    // Empty pitches = AB ended on the very first pitch (BIP).
+    const records = [record({ pitcherName: 'J. Pitcher', inning: '1st', pitches: [] })];
+    const { totals } = computePitchCountByInning(records, 'J. Pitcher');
+
+    expect(totals.firstPitchCount).toBe(1);
+    expect(totals.firstPitchStrikes).toBe(1);
+    expect(totals.firstPitchSwingMiss).toBe(0);
+    expect(totals.firstTwoPitchesCount).toBe(1);
+    expect(totals.firstTwoPitchesStrike).toBe(1);
+  });
+
+  it('counts a second-pitch ball-in-play toward 1st-2-pitch strikes', () => {
+    // ['B'] then implicit BIP on pitch 2 — 1st-pitch is a ball, 2nd-pitch is a strike (BIP).
+    const records = [record({ pitcherName: 'J. Pitcher', inning: '1st', pitches: ['B'] })];
+    const { totals } = computePitchCountByInning(records, 'J. Pitcher');
+
+    expect(totals.firstPitchCount).toBe(1);
+    expect(totals.firstPitchStrikes).toBe(0);
+    expect(totals.firstTwoPitchesCount).toBe(1);
+    expect(totals.firstTwoPitchesStrike).toBe(1);
+  });
+
+  it('does NOT count an HBP as a strike', () => {
+    // ['H'] = HBP on first pitch. Not a strike.
+    const records = [record({ pitcherName: 'J. Pitcher', inning: '1st', pitches: ['H'] })];
+    const { totals } = computePitchCountByInning(records, 'J. Pitcher');
+
+    expect(totals.firstPitchCount).toBe(1);
+    expect(totals.firstPitchStrikes).toBe(0);
+    expect(totals.firstTwoPitchesStrike).toBe(0);
+    expect(totals.strikes).toBe(0);
   });
 });

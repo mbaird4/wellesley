@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RosterService, SoftballStatsService } from '@ws/core/data';
-import type { BattingMetric, ClutchSummary, PbpBattingAccum, PlayerClutchSummary, TeamSummary } from '@ws/core/models';
-import { formatWoba, rebuildPlayerFromEvents } from '@ws/core/processors';
+import type { ClutchSummary, PlayerClutchSummary } from '@ws/core/models';
+import { rebuildPlayerFromEvents } from '@ws/core/processors';
 import { EmptyState, ErrorBanner, LoadingState, SeasonPicker } from '@ws/core/ui';
 import { ALL_SEASON_YEARS, CURRENT_YEAR } from '@ws/core/util';
 
@@ -9,17 +9,8 @@ import { ClutchFilters } from './clutch-filters/clutch-filters';
 import { ClutchGameLog } from './clutch-game-log/clutch-game-log';
 import { ClutchPlayerTable } from './clutch-player-table/clutch-player-table';
 import { ClutchStranded } from './clutch-stranded/clutch-stranded';
-import { ClutchTeamSummary } from './clutch-team-summary/clutch-team-summary';
 
 type ClutchTab = 'clutch' | 'stranded';
-
-function calcAvg(stats: PbpBattingAccum): number {
-  return stats.ab > 0 ? stats.h / stats.ab : 0;
-}
-
-function formatAvgValue(value: number): string {
-  return value.toFixed(3).replace(/^0/, '');
-}
 
 const RISP_SITUATIONS = new Set(['second', 'third', 'first_second', 'first_third', 'second_third', 'loaded']);
 
@@ -51,7 +42,6 @@ function inningBucket(inning: string): 'early' | 'middle' | 'late' {
     ClutchGameLog,
     ClutchPlayerTable,
     ClutchStranded,
-    ClutchTeamSummary,
     EmptyState,
     ErrorBanner,
     LoadingState,
@@ -72,7 +62,6 @@ export class Clutch {
   readonly clutchData = signal<ClutchSummary | null>(null);
   readonly selectedPlayerName = signal<string | null>(null);
   readonly activeTab = signal<ClutchTab>('clutch');
-  readonly metric = signal<BattingMetric>('woba');
 
   readonly availableYears = ALL_SEASON_YEARS;
 
@@ -162,44 +151,6 @@ export class Clutch {
         return rebuildPlayerFromEvents(player.name, filtered, player);
       })
       .filter((p): p is PlayerClutchSummary => p !== null);
-  });
-
-  readonly teamSummary = computed<TeamSummary | null>(() => {
-    const players = this.filteredPlayers();
-
-    if (players.length === 0) {
-      return null;
-    }
-
-    const m = this.metric();
-    const totalEvents = players.reduce((sum, p) => sum + p.runnersOnPa, 0);
-    const totalRunnersDrivenIn = players.reduce((sum, p) => sum + p.runnersDrivenIn, 0);
-    const totalRunnersOn = players.reduce((sum, p) => sum + p.totalRunnersOn, 0);
-    const conversionRate = totalRunnersOn > 0 ? ((totalRunnersDrivenIn / totalRunnersOn) * 100).toFixed(0) : '0';
-
-    const threshold = m === 'avg' ? 0.015 : 0.02;
-    const withEnoughPa = players.filter((p) => p.runnersOnPa >= 5 && p.basesEmptyStats.pa >= 5);
-
-    const getDelta = (p: PlayerClutchSummary): number => (m === 'avg' ? calcAvg(p.runnersOnStats) - calcAvg(p.basesEmptyStats) : p.wobaDelta);
-
-    const elevators = withEnoughPa.filter((p) => getDelta(p) > threshold).length;
-    const droppers = withEnoughPa.filter((p) => getDelta(p) < -threshold).length;
-
-    const sorted = [...withEnoughPa].sort((a, b) => getDelta(b) - getDelta(a));
-    const top = sorted[0];
-    const topDelta = top ? getDelta(top) : 0;
-    const fmt = m === 'avg' ? formatAvgValue : formatWoba;
-
-    return {
-      totalEvents,
-      totalRunnersDrivenIn,
-      totalRunnersOn,
-      conversionRate,
-      elevators,
-      droppers,
-      topClutchName: top?.name ?? '-',
-      topClutchDelta: top ? `+${fmt(topDelta)}` : '-',
-    };
   });
 
   readonly selectedPlayer = computed(() => {

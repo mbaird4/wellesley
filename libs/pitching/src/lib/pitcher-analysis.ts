@@ -291,6 +291,34 @@ export class PitcherAnalysis {
     return result;
   });
 
+  /** Pitch-count totals per pitcher for the current year — used by the print view for 1st K% and 1-2 K%. */
+  readonly pitchCountByPitcher = computed<Map<string, PitchCountInningStats>>(() => {
+    const data = this.pitchingData();
+
+    if (!data) {
+      return new Map();
+    }
+
+    const currentYearGames = data.games.filter((g) => g.year === CURRENT_YEAR);
+    const records = buildWellesleyPitcherSequences(currentYearGames);
+    const allNames = new Set<string>();
+
+    Object.values(data.pitchingStatsByYear).forEach((stats) => {
+      stats.forEach((s) => allNames.add(s.name));
+    });
+
+    const result = new Map<string, PitchCountInningStats>();
+    allNames.forEach((name) => {
+      const { totals } = computePitchCountByInning(records, name);
+
+      if (totals.pasWithSequence > 0) {
+        result.set(name, totals);
+      }
+    });
+
+    return result;
+  });
+
   /** Compare raw stats vs computed play-by-play stats (single-year only) */
   readonly validation = computed<PitcherValidationResult | null>(() => {
     const data = this.pitchingData();

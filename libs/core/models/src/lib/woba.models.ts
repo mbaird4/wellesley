@@ -58,6 +58,8 @@ export interface PlayerCumulativeWoba {
   games: {
     date: string;
     opponent: string;
+    /** Unique per-game identifier (boxscore URL). Distinguishes doubleheaders on the same date. */
+    gameUrl: string;
     gameWoba: number;
     cumulativeWoba: number;
     tier: WobaTier;

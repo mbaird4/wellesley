@@ -25,21 +25,30 @@
 }
 @if (playerWobas.length > 0 && !loading) {
   <div class="mt-6">
-    <div class="tabs">
-      <button
-        class="tab"
-        [class.active]="activeTab === 'team'"
-        (click)="activeTab = 'team'"
-      >
-        Team
-      </button>
-      <button
-        class="tab"
-        [class.active]="activeTab === 'players'"
-        (click)="activeTab = 'players'"
-      >
-        Players
-      </button>
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div class="tabs">
+        <button
+          class="tab"
+          [class.active]="activeTab === 'team'"
+          (click)="activeTab = 'team'"
+        >
+          Team
+        </button>
+        <button
+          class="tab"
+          [class.active]="activeTab === 'players'"
+          (click)="activeTab = 'players'"
+        >
+          Players
+        </button>
+      </div>
+      <span class="text-content-dim flex items-center gap-1.5 text-sm">
+        <ws-slide-toggle
+          [checked]="applyMinPa()"
+          (checkedChange)="applyMinPa.set($event)"
+        />
+        Min PA filter
+      </span>
     </div>
 
     @if (activeTab === 'players') {
@@ -269,12 +278,12 @@
                   </span>
                 }
               </th>
-              @for (col of teamGameColumns; track $index) {
+              @for (col of teamGameColumns; track col.gameUrl) {
                 <th class="px-1.5 py-1 leading-tight">
                   <div
                     class="text-content-secondary text-center text-sm font-semibold"
                   >
-                    {{ col.date }}
+                    {{ col.dateLabel }}
                   </div>
                 </th>
               }

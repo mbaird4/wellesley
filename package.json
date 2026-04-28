@@ -20,6 +20,7 @@
     "generate-scouting-pdf": "ts-node --project tsconfig.scripts.json scripts/generate-scouting-pdf.ts",
     "send-scouting-email": "ts-node --project tsconfig.scripts.json scripts/send-scouting-email.ts",
     "scouting-report": "bash scripts/scouting-report.sh",
+    "dump-clutch-pas": "TS_NODE_PROJECT=tsconfig.scripts.json ts-node -r tsconfig-paths/register scripts/dump-clutch-pas.ts",
     "format": "prettier --write .",
     "lint": "prettier --write . && nx run-many -t lint --fix"
   },

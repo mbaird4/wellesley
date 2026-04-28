@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { PitchingData, PitchingStats, Roster } from '@ws/core/models';
+import type { PitchCountInningStats, PitchingData, PitchingStats, Roster } from '@ws/core/models';
 import { range } from '@ws/core/util';
 
 const CARDS_PER_PAGE = 3;
@@ -13,6 +13,14 @@ const STAT_DEFS: { key: keyof PitchingStats; label: string }[] = [
   { key: 'hbp', label: 'HBP' },
   { key: 'wp', label: 'WP' },
 ];
+
+function fmtPct(numerator: number, denominator: number): string {
+  if (denominator === 0) {
+    return '___';
+  }
+
+  return `${Math.round((numerator / denominator) * 100)}%`;
+}
 
 interface StatDisplay {
   label: string;
@@ -54,6 +62,7 @@ export class PitcherScoutingPrintView {
   readonly pitchingData = input<PitchingData | null>(null);
   readonly roster = input<Roster | null>(null);
   readonly rosterNames = input<Set<string>>(new Set());
+  readonly pitchCountByPitcher = input<Map<string, PitchCountInningStats>>(new Map());
   readonly title = input('');
 
   readonly pitchTypes = PITCH_TYPES;
@@ -73,6 +82,7 @@ export class PitcherScoutingPrintView {
     const data = this.pitchingData();
     const roster = this.roster();
     const rosterNames = this.rosterNames();
+    const pitchCountMap = this.pitchCountByPitcher();
 
     if (!data || rosterNames.size === 0) {
       return [];
@@ -102,11 +112,24 @@ export class PitcherScoutingPrintView {
       const prev = prevStats.find((p) => p.name === name) ?? null;
       const curr = currStats.find((p) => p.name === name) ?? null;
 
-      const stats = STAT_DEFS.map((def) => ({
+      const stats: StatDisplay[] = STAT_DEFS.map((def) => ({
         label: def.label,
         prevValue: formatStatValue(prev, def.key),
         currValue: formatStatValue(curr, def.key),
       }));
+
+      // Pitch-count derived stats (current year only — pre-2026 has no sequences)
+      const pc = pitchCountMap.get(name);
+      stats.push({
+        label: '1st K%',
+        prevValue: '___',
+        currValue: pc ? fmtPct(pc.firstPitchStrikes, pc.firstPitchCount) : '___',
+      });
+      stats.push({
+        label: '1-2 K%',
+        prevValue: '___',
+        currValue: pc ? fmtPct(pc.firstTwoPitchesStrike, pc.firstTwoPitchesCount) : '___',
+      });
 
       return {
         name,

@@ -1,28 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
-import type { RunnerConversionRow, StolenBaseSummary } from '@ws/core/models';
-import { SITUATION_LABELS, StatCard } from '@ws/core/ui';
-
-type SortKey = 'situation' | 'runners' | 'scored' | 'rate';
-
-const SITUATION_ORDER: Record<string, number> = {
-  first: 0,
-  second: 1,
-  third: 2,
-  first_second: 3,
-  first_third: 4,
-  second_third: 5,
-  loaded: 6,
-};
-
-interface ConversionDisplayRow {
-  label: string;
-  situation: string;
-  totalRunners: number;
-  runnersScored: number;
-  rate: number;
-  barWidthPct: number;
-}
+import type { StolenBaseSummary } from '@ws/core/models';
+import { StatCard } from '@ws/core/ui';
 
 @Component({
   selector: 'ws-baserunning-section',
@@ -37,10 +16,7 @@ interface ConversionDisplayRow {
 })
 export class BaserunningSection {
   readonly stolenBaseSummary = input<StolenBaseSummary | null>(null);
-  readonly runnerConversions = input<RunnerConversionRow[]>([]);
 
-  readonly sortKey = signal<SortKey>('situation');
-  readonly sortAsc = signal(true);
   readonly stolenBasesExpanded = signal(false);
 
   toggleStolenBases(): void {
@@ -56,54 +32,4 @@ export class BaserunningSection {
 
     return sb.byBase.filter((row) => row.total > 0);
   });
-
-  readonly sortedConversions = computed<ConversionDisplayRow[]>(() => {
-    const rows = this.runnerConversions();
-    const key = this.sortKey();
-    const asc = this.sortAsc();
-
-    const withRate = rows
-      .filter((r) => r.totalRunners > 0)
-      .map((r) => ({
-        label: SITUATION_LABELS[r.situation] || r.situation,
-        situation: r.situation,
-        totalRunners: r.totalRunners,
-        runnersScored: r.runnersScored,
-        rate: r.runnersScored / r.totalRunners,
-        barWidthPct: 0,
-      }));
-
-    const maxRate = withRate.length > 0 ? Math.max(...withRate.map((r) => r.rate)) : 1;
-
-    withRate.forEach((r) => {
-      r.barWidthPct = (r.rate / maxRate) * 100;
-    });
-
-    const mult = asc ? 1 : -1;
-    withRate.sort((a, b) => {
-      switch (key) {
-        case 'situation':
-          return mult * ((SITUATION_ORDER[a.situation] ?? 99) - (SITUATION_ORDER[b.situation] ?? 99));
-        case 'runners':
-          return mult * (a.totalRunners - b.totalRunners);
-        case 'scored':
-          return mult * (a.runnersScored - b.runnersScored);
-        case 'rate':
-          return mult * (a.rate - b.rate);
-        default:
-          return 0;
-      }
-    });
-
-    return withRate;
-  });
-
-  sort(key: SortKey): void {
-    if (this.sortKey() === key) {
-      this.sortAsc.update((v) => !v);
-    } else {
-      this.sortKey.set(key);
-      this.sortAsc.set(key === 'situation');
-    }
-  }
 }

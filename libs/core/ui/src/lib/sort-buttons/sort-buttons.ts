@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, input, model } from '@angular/core'
 export interface SortOption<T extends string = string> {
   key: T;
   label: string;
+  description?: string;
 }
 
 @Component({

@@ -14,14 +14,18 @@
 }
 @if (results.length > 0 && !loading) {
   <div class="stagger-children mt-6">
+    @if (playerLineupStats.length > 0) {
+      <ws-player-lineup-table [players]="playerLineupStats" />
+    }
+
     <h2>Season Totals</h2>
     <table class="stats-table">
       <thead>
         <tr>
           <th>Lineup Slot</th>
-          <th>0-Out PAs</th>
-          <th>1-Out PAs</th>
-          <th>2-Out PAs</th>
+          <th class="normal-case">0-Out PAs</th>
+          <th class="normal-case">1-Out PAs</th>
+          <th class="normal-case">2-Out PAs</th>
           <th>Total</th>
         </tr>
       </thead>
@@ -45,10 +49,6 @@
         {{ totalPlateAppearances }}
       </span>
     </div>
-
-    @if (playerLineupStats.length > 0) {
-      <ws-player-lineup-table [players]="playerLineupStats" />
-    }
 
     @if (baseRunnerStats.length > 0) {
       <ws-base-runner-table

@@ -4,6 +4,25 @@ import { inningToNumber } from './pitcher-stats';
 
 const STRIKE_CODES: Set<PitchCode> = new Set(['K', 'S', 'F']);
 
+// Marker for an implicit ball-in-play that ended the AB but isn't recorded in the pitch sequence.
+type EffectivePitch = PitchCode | 'BIP';
+
+function isStrikeForCount(p: EffectivePitch): boolean {
+  // Per scoring convention: only balls (B) and HBP (H) are NOT strikes for pitch-count %s.
+  // K, S, F (recorded strikes) and BIP (ball put in play) all count as strikes.
+  return p !== 'B' && p !== 'H';
+}
+
+function effectivePitches(pitches: PitchCode[]): EffectivePitch[] {
+  const total = computePitchCount(pitches);
+
+  if (total > pitches.length) {
+    return [...pitches, 'BIP'];
+  }
+
+  return [...pitches];
+}
+
 function emptyStats(inning: string): PitchCountInningStats {
   return {
     inning,
@@ -86,29 +105,31 @@ export function computePitchCountByInning(records: PitchSequenceRecord[], pitche
       const stats = byInning.get(r.inning)!;
       const seqStr = pitches?.join('');
 
+      const effective = effectivePitches(pitches);
+
       stats.pasWithSequence += 1;
       stats.totalPitches += computePitchCount(pitches);
       stats.balls += pitches.filter((p) => p === 'B').length;
-      stats.strikes += pitches.filter((p) => STRIKE_CODES.has(p)).length;
+      stats.strikes += effective.filter(isStrikeForCount).length;
       stats.sequences.push(seqStr);
 
-      if (pitches.length >= 1) {
+      if (effective.length >= 1) {
         stats.firstPitchCount += 1;
 
-        if (STRIKE_CODES.has(pitches[0])) {
+        if (isStrikeForCount(effective[0])) {
           stats.firstPitchStrikes += 1;
         }
 
-        if (pitches[0] === 'S') {
+        if (effective[0] === 'S') {
           stats.firstPitchSwingMiss += 1;
         }
       }
 
-      if (pitches.length >= 1) {
-        const firstTwo = pitches.slice(0, 2);
+      if (effective.length >= 1) {
+        const firstTwo = effective.slice(0, 2);
         stats.firstTwoPitchesCount += 1;
 
-        if (firstTwo.some((p) => STRIKE_CODES.has(p))) {
+        if (firstTwo.some(isStrikeForCount)) {
           stats.firstTwoPitchesStrike += 1;
         }
 
