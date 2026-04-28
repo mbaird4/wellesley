@@ -44,10 +44,7 @@ export interface PitchCountRow {
 @Component({
   selector: 'ws-pitch-count-breakdown',
   standalone: true,
-  imports: [
-    ExpandablePanel,
-    SlideToggle,
-  ],
+  imports: [ExpandablePanel, SlideToggle],
   host: { class: 'bg-surface-card overflow-hidden rounded-xl' },
   templateUrl: './pitch-count-breakdown.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

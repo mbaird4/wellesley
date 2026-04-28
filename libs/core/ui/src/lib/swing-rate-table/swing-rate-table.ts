@@ -16,10 +16,7 @@ type SortDir = 'asc' | 'desc';
 @Component({
   selector: 'ws-swing-rate-table',
   standalone: true,
-  imports: [
-    NgTemplateOutlet,
-    PercentPipe,
-  ],
+  imports: [NgTemplateOutlet, PercentPipe],
   host: { class: 'block overflow-x-auto rounded-xl' },
   templateUrl: './swing-rate-table.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

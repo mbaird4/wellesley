@@ -23,10 +23,7 @@ const INNING_OPTIONS: ToggleOption[] = [
 @Component({
   selector: 'ws-clutch-filters',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    SlideToggle,
-  ],
+  imports: [ButtonToggle, SlideToggle],
   host: { class: 'flex flex-wrap items-center gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-filters.html',

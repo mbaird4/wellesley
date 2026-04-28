@@ -69,13 +69,7 @@ function fmtAvg(val: number | undefined): string {
 @Component({
   selector: 'ws-spray-coach-sort-panel',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    CdkDropList,
-    CdkDrag,
-    CdkDragPlaceholder,
-    CdkDragPreview,
-  ],
+  imports: [ButtonToggle, CdkDropList, CdkDrag, CdkDragPlaceholder, CdkDragPreview],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-3' },
   templateUrl: './spray-coach-sort-panel.html',

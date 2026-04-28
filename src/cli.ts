@@ -109,8 +109,9 @@ async function main() {
       if (game.playByPlay.length > 0) {
         games.push(game);
       }
-    } catch (err: any) {
-      console.error(`  Error: ${err.message}`);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      console.error(`  Error: ${message}`);
     }
   }
 

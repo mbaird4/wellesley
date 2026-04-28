@@ -8,12 +8,7 @@ import { CURRENT_YEAR } from '@ws/core/util';
 @Component({
   selector: 'ws-outlet-approach',
   standalone: true,
-  imports: [
-    EmptyState,
-    ErrorBanner,
-    LoadingState,
-    SwingRateTable,
-  ],
+  imports: [EmptyState, ErrorBanner, LoadingState, SwingRateTable],
   host: { class: 'block stats-section' },
   templateUrl: './outlet-approach.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

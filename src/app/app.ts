@@ -7,10 +7,7 @@ import { DataContextService } from '@ws/core/data';
 const PASSWORD_HASH = '0d3e8d6bfcf410ae73561671871f8b258d64529620c2dad88b5c46dbe4790af6';
 
 @Component({
-  imports: [
-    RouterModule,
-    FormsModule,
-  ],
+  imports: [RouterModule, FormsModule],
   selector: 'ws-root',
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

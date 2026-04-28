@@ -13,17 +13,7 @@ import { ScoringLeaderboard } from '../scoring-leaderboard/scoring-leaderboard';
 @Component({
   selector: 'ws-summary-tab',
   standalone: true,
-  imports: [
-    DecimalPipe,
-    BoxscoreUrlPipe,
-    BaserunningSection,
-    PlayTypeChart,
-    RunDistribution,
-    RunnerConversionSection,
-    ScoringLeaderboard,
-    ScenarioHeatmap,
-    StatCard,
-  ],
+  imports: [DecimalPipe, BoxscoreUrlPipe, BaserunningSection, PlayTypeChart, RunDistribution, RunnerConversionSection, ScoringLeaderboard, ScenarioHeatmap, StatCard],
   host: { class: 'flex flex-col gap-6' },
   templateUrl: './summary-tab.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

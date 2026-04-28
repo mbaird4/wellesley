@@ -11,13 +11,7 @@ import { SprayPlayerNav } from '../spray-player-nav/spray-player-nav';
 @Component({
   selector: 'ws-spray-view-combined',
   standalone: true,
-  imports: [
-    NgTemplateOutlet,
-    SprayField,
-    SprayLegend,
-    SprayPlayerHero,
-    SprayPlayerNav,
-  ],
+  imports: [NgTemplateOutlet, SprayField, SprayLegend, SprayPlayerHero, SprayPlayerNav],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-3' },
   template: `

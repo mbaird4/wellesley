@@ -37,16 +37,7 @@ function inningBucket(inning: string): 'early' | 'middle' | 'late' {
 @Component({
   selector: 'ws-clutch',
   standalone: true,
-  imports: [
-    ClutchFilters,
-    ClutchGameLog,
-    ClutchPlayerTable,
-    ClutchStranded,
-    EmptyState,
-    ErrorBanner,
-    LoadingState,
-    SeasonPicker,
-  ],
+  imports: [ClutchFilters, ClutchGameLog, ClutchPlayerTable, ClutchStranded, EmptyState, ErrorBanner, LoadingState, SeasonPicker],
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch.html',

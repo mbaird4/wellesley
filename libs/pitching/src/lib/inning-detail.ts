@@ -224,10 +224,7 @@ function buildTotalsView(totals: PitcherInningStats): InningsTotalsRow {
 @Component({
   selector: 'ws-inning-detail',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    PitcherInningsTable,
-  ],
+  imports: [ButtonToggle, PitcherInningsTable],
   host: { class: 'block' },
   templateUrl: './inning-detail.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

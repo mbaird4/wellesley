@@ -10,10 +10,7 @@ import { catchError } from 'rxjs/operators';
 @Component({
   selector: 'ws-pitching',
   standalone: true,
-  imports: [
-    LastUpdatedPipe,
-    PitcherAnalysis,
-  ],
+  imports: [LastUpdatedPipe, PitcherAnalysis],
   host: { class: 'block stats-section' },
   templateUrl: './pitching.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

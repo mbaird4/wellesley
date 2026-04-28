@@ -29,17 +29,7 @@ export interface TeamPlayerRow {
 @Component({
   selector: 'ws-woba',
   standalone: true,
-  imports: [
-    CommonModule,
-    ButtonToggle,
-    EmptyState,
-    ErrorBanner,
-    FormatWobaPipe,
-    LastUpdatedPipe,
-    LoadingState,
-    SlideToggle,
-    WobaLegend,
-  ],
+  imports: [CommonModule, ButtonToggle, EmptyState, ErrorBanner, FormatWobaPipe, LastUpdatedPipe, LoadingState, SlideToggle, WobaLegend],
   host: {
     class: 'block stats-section',
   },

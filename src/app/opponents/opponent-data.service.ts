@@ -198,7 +198,7 @@ export class OpponentDataService {
       // so early-season players aren't penalized by accumulated historical games
       const latestSeason = sortedSeasons[sortedSeasons.length - 1] as (typeof sortedSeasons)[number] | undefined;
       const latestTeamGames = latestSeason ? (gpByYear[String(latestSeason.year)] ?? 0) : 0;
-      const paPerGame = latestTeamGames > 0 ? latestSeason!.pa / latestTeamGames : 0;
+      const paPerGame = latestSeason && latestTeamGames > 0 ? latestSeason.pa / latestTeamGames : 0;
       const tier: PlayerTier = paPerGame >= 2 ? 'regular' : 'reserve';
 
       return {

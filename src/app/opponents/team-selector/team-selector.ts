@@ -5,10 +5,7 @@ import type { TeamEntry } from '@ws/core/models';
 @Component({
   selector: 'ws-team-selector',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-  ],
+  imports: [RouterLink, RouterLinkActive],
   host: { class: 'block' },
   templateUrl: './team-selector.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

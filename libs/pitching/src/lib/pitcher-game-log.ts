@@ -61,10 +61,7 @@ function extractYear(dateStr: string): number {
 @Component({
   selector: 'ws-pitcher-game-log',
   standalone: true,
-  imports: [
-    SlideToggle,
-    PitcherInningsTable,
-  ],
+  imports: [SlideToggle, PitcherInningsTable],
   host: { class: 'block' },
   templateUrl: './pitcher-game-log.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

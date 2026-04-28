@@ -10,11 +10,7 @@ import { OpponentDataService } from '../opponent-data.service';
 @Component({
   selector: 'ws-approach-tab',
   standalone: true,
-  imports: [
-    EmptyState,
-    LoadingState,
-    SwingRateTable,
-  ],
+  imports: [EmptyState, LoadingState, SwingRateTable],
   host: { class: 'block' },
   templateUrl: './approach-tab.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -126,7 +126,8 @@ export default [
         { argsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/no-explicit-any': 'warn',
-      '@nx/workspace-decorator-newlines': 'error',
+      // Disabled: conflicts with Prettier (printWidth: 9999 for .ts keeps imports single-line)
+      '@nx/workspace-decorator-newlines': 'off',
     },
   },
   // Disable no-console for scripts and CLI

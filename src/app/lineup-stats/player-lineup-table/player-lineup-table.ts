@@ -138,7 +138,6 @@ export class PlayerLineupTable {
       });
 
       tagMinMax(cells);
-      console.log(p.name, p);
 
       return {
         player: p,

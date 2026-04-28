@@ -6,10 +6,7 @@ import { StatCard } from '@ws/core/ui';
 @Component({
   selector: 'ws-baserunning-section',
   standalone: true,
-  imports: [
-    DecimalPipe,
-    StatCard,
-  ],
+  imports: [DecimalPipe, StatCard],
   templateUrl: './baserunning-section.html',
   host: { class: 'flex flex-col gap-6' },
   changeDetection: ChangeDetectionStrategy.OnPush,

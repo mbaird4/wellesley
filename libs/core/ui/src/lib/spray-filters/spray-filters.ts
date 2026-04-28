@@ -104,10 +104,7 @@ export function computeEffectiveFilters(f: SprayFilterState): SprayFilterOptions
 @Component({
   selector: 'ws-spray-filters',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    SlideToggle,
-  ],
+  imports: [ButtonToggle, SlideToggle],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-wrap gap-4 items-end' },
   templateUrl: './spray-filters.html',

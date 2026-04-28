@@ -33,10 +33,7 @@ const OUTLIER_LEGEND: { level: OutlierLevel; label: string }[] = [
 @Component({
   selector: 'ws-base-runner-table',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    OutlierClassPipe,
-  ],
+  imports: [ButtonToggle, OutlierClassPipe],
   templateUrl: './base-runner-table.html',
   host: { class: 'block' },
   changeDetection: ChangeDetectionStrategy.OnPush,

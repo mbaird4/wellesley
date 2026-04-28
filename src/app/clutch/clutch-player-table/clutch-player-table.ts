@@ -19,10 +19,7 @@ function isDefaultHidden(playerName: string): boolean {
 @Component({
   selector: 'ws-clutch-player-table',
   standalone: true,
-  imports: [
-    ExpandablePanel,
-    SortButtons,
-  ],
+  imports: [ExpandablePanel, SortButtons],
   host: { class: 'flex flex-col gap-3' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-player-table.html',

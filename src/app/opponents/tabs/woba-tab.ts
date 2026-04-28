@@ -9,13 +9,7 @@ import { PlayerTable } from '../player-table/player-table';
 @Component({
   selector: 'ws-woba-tab',
   standalone: true,
-  imports: [
-    ErrorBanner,
-    LoadingState,
-    PlayerCardList,
-    PlayerTable,
-    WobaLegend,
-  ],
+  imports: [ErrorBanner, LoadingState, PlayerCardList, PlayerTable, WobaLegend],
   host: { class: 'flex flex-col gap-4' },
   templateUrl: './woba-tab.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

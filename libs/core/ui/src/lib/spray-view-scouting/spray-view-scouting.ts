@@ -13,11 +13,7 @@ const LAST_YEAR = CURRENT_YEAR - 1;
 @Component({
   selector: 'ws-spray-view-scouting',
   standalone: true,
-  imports: [
-    NgTemplateOutlet,
-    SprayPlayerNav,
-    SprayYearPanel,
-  ],
+  imports: [NgTemplateOutlet, SprayPlayerNav, SprayYearPanel],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-3' },
   template: `

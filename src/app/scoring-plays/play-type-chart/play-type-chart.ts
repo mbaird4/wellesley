@@ -41,10 +41,7 @@ const DEFAULT_BAR_COLOR = 'bg-chart-muted';
 @Component({
   selector: 'ws-play-type-chart',
   standalone: true,
-  imports: [
-    DecimalPipe,
-    FormatPlayTypePipe,
-  ],
+  imports: [DecimalPipe, FormatPlayTypePipe],
   host: { class: 'flex flex-col gap-1.5' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './play-type-chart.html',

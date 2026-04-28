@@ -12,13 +12,7 @@ interface DisplayGame {
 @Component({
   selector: 'ws-by-game-tab',
   standalone: true,
-  imports: [
-    BoxscoreUrlPipe,
-    BuntRelatedPipe,
-    EmptyState,
-    FormatPlayTypePipe,
-    FormatSituationPipe,
-  ],
+  imports: [BoxscoreUrlPipe, BuntRelatedPipe, EmptyState, FormatPlayTypePipe, FormatSituationPipe],
   host: { class: 'flex flex-col' },
   templateUrl: './by-game-tab.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

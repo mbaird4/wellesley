@@ -15,10 +15,7 @@ function fmtStat(value: number): string {
 @Component({
   selector: 'ws-inning-breakdown',
   standalone: true,
-  imports: [
-    SlideToggle,
-    PitcherInningsTable,
-  ],
+  imports: [SlideToggle, PitcherInningsTable],
   host: { class: 'bg-surface-card overflow-hidden rounded-xl' },
   templateUrl: './inning-breakdown.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

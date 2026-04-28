@@ -19,13 +19,7 @@ export type ViewMode = 'split' | 'combined' | 'contact' | 'scouting';
 @Component({
   selector: 'ws-spray-print-orchestrator',
   standalone: true,
-  imports: [
-    DriveUploadToast,
-    PrintOptionsModal,
-    SprayChartCoachPrintView,
-    SprayChartPrintView,
-    SprayPacketQuickRef,
-  ],
+  imports: [DriveUploadToast, PrintOptionsModal, SprayChartCoachPrintView, SprayChartPrintView, SprayPacketQuickRef],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'contents' },
   templateUrl: './spray-print-orchestrator.html',

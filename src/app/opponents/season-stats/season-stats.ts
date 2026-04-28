@@ -11,10 +11,7 @@ export type StatsCategory = 'hitting' | 'pitching' | 'fielding';
 @Component({
   selector: 'ws-season-stats',
   standalone: true,
-  imports: [
-    LoadingState,
-    StatsTable,
-  ],
+  imports: [LoadingState, StatsTable],
   host: { class: 'flex flex-col gap-3' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './season-stats.html',

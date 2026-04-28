@@ -78,12 +78,7 @@ function isPitcherOnRoster(pitcherName: string, rosterNames: Set<string>): boole
 @Component({
   selector: 'ws-vs-wellesley-view',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    LoadingState,
-    NgTemplateOutlet,
-    VsWellesleyTable,
-  ],
+  imports: [ButtonToggle, LoadingState, NgTemplateOutlet, VsWellesleyTable],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './vs-wellesley-view.html',

@@ -8,10 +8,7 @@ import { SprayTrendBadge } from '../spray-trend-badge/spray-trend-badge';
 @Component({
   selector: 'ws-spray-player-hero',
   standalone: true,
-  imports: [
-    FormatStatPipe,
-    SprayTrendBadge,
-  ],
+  imports: [FormatStatPipe, SprayTrendBadge],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-1 items-center' },
   template: `

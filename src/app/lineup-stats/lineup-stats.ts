@@ -10,16 +10,7 @@ import { PlayerLineupTable } from './player-lineup-table/player-lineup-table';
 @Component({
   selector: 'ws-lineup-stats',
   standalone: true,
-  imports: [
-    BaseRunnerTable,
-    CommonModule,
-    EmptyState,
-    ErrorBanner,
-    GameViewer,
-    LoadingState,
-    PlayerLineupTable,
-    SeasonPicker,
-  ],
+  imports: [BaseRunnerTable, CommonModule, EmptyState, ErrorBanner, GameViewer, LoadingState, PlayerLineupTable, SeasonPicker],
   templateUrl: './lineup-stats.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

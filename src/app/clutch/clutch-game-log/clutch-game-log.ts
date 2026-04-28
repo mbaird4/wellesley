@@ -7,10 +7,7 @@ import { ClutchEventRow } from '../clutch-event-row/clutch-event-row';
 @Component({
   selector: 'ws-clutch-game-log',
   standalone: true,
-  imports: [
-    BoxscoreUrlPipe,
-    ClutchEventRow,
-  ],
+  imports: [BoxscoreUrlPipe, ClutchEventRow],
   host: { class: 'flex flex-col gap-2' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-game-log.html',

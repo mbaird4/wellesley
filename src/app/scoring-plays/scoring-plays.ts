@@ -17,15 +17,7 @@ const SITUATION_ORDER: BaseSituation[] = ['empty', 'first', 'second', 'third', '
 @Component({
   selector: 'ws-scoring-plays',
   standalone: true,
-  imports: [
-    ByGameTab,
-    ByPlayerTab,
-    EmptyState,
-    ErrorBanner,
-    LoadingState,
-    SeasonPicker,
-    SummaryTab,
-  ],
+  imports: [ByGameTab, ByPlayerTab, EmptyState, ErrorBanner, LoadingState, SeasonPicker, SummaryTab],
   templateUrl: './scoring-plays.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

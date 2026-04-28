@@ -5,13 +5,7 @@ import { Diamond, FormatPlayTypePipe, FormatRunnerOutcomePipe, FormatSituationPi
 @Component({
   selector: 'ws-clutch-event-row',
   standalone: true,
-  imports: [
-    Diamond,
-    FormatPlayTypePipe,
-    FormatRunnerOutcomePipe,
-    FormatSituationPipe,
-    RunnerOutcomeClassPipe,
-  ],
+  imports: [Diamond, FormatPlayTypePipe, FormatRunnerOutcomePipe, FormatSituationPipe, RunnerOutcomeClassPipe],
   host: { class: 'flex flex-col gap-2 py-2' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './clutch-event-row.html',

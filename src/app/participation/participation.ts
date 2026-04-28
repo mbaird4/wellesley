@@ -47,12 +47,7 @@ interface ParticipationRow {
 @Component({
   selector: 'ws-participation',
   standalone: true,
-  imports: [
-    EmptyState,
-    ErrorBanner,
-    LoadingState,
-    OpponentNamePipe,
-  ],
+  imports: [EmptyState, ErrorBanner, LoadingState, OpponentNamePipe],
   templateUrl: './participation.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

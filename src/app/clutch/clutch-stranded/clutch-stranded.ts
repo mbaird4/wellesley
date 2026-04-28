@@ -84,10 +84,7 @@ function computeStrandedRow(player: PlayerClutchSummary): StrandedRow {
 @Component({
   selector: 'ws-clutch-stranded',
   standalone: true,
-  imports: [
-    SortButtons,
-    StatCard,
-  ],
+  imports: [SortButtons, StatCard],
   host: { class: 'flex flex-col gap-4' },
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: 'clutch-stranded.html',
@@ -148,15 +145,15 @@ export class ClutchStranded {
     players.forEach((player) => {
       player.events.forEach((event) => {
         const inningKey = `${event.url}|${event.inning}`;
-        let runners = inningRunners.get(inningKey);
+        const existing = inningRunners.get(inningKey);
+        const runners = existing ?? new Map<string, { baseBefore: 'first' | 'second' | 'third'; outcome: string }>();
 
-        if (!runners) {
-          runners = new Map();
+        if (!existing) {
           inningRunners.set(inningKey, runners);
         }
 
         event.runnersOn.forEach((r) => {
-          runners!.set(r.name, { baseBefore: r.baseBefore, outcome: r.outcome });
+          runners.set(r.name, { baseBefore: r.baseBefore, outcome: r.outcome });
         });
       });
     });

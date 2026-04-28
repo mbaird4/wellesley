@@ -14,11 +14,7 @@ interface ContactPanel {
 @Component({
   selector: 'ws-spray-view-contact',
   standalone: true,
-  imports: [
-    NgTemplateOutlet,
-    SprayPlayerNav,
-    SprayYearPanel,
-  ],
+  imports: [NgTemplateOutlet, SprayPlayerNav, SprayYearPanel],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex flex-col gap-3' },
   template: `

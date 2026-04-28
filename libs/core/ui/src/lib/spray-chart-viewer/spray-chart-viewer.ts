@@ -143,17 +143,7 @@ export function aggregateStats(
 @Component({
   selector: 'ws-spray-chart-viewer',
   standalone: true,
-  imports: [
-    ButtonToggle,
-    ErrorBanner,
-    LoadingState,
-    SprayFilters,
-    SprayPrintOrchestrator,
-    SprayViewCombined,
-    SprayViewContact,
-    SprayViewScouting,
-    SprayViewSplit,
-  ],
+  imports: [ButtonToggle, ErrorBanner, LoadingState, SprayFilters, SprayPrintOrchestrator, SprayViewCombined, SprayViewContact, SprayViewScouting, SprayViewSplit],
   templateUrl: './spray-chart-viewer.html',
   host: {
     class: 'flex flex-col gap-3 print:block print:overflow-visible stagger-children',

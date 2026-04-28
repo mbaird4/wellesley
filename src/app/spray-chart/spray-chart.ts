@@ -8,10 +8,7 @@ import { catchError, forkJoin, of } from 'rxjs';
 @Component({
   selector: 'ws-spray-chart',
   standalone: true,
-  imports: [
-    LastUpdatedPipe,
-    SprayChartViewer,
-  ],
+  imports: [LastUpdatedPipe, SprayChartViewer],
   templateUrl: './spray-chart.html',
   host: { class: 'block stats-section' },
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -8,12 +8,7 @@ import { OpponentDataService } from '../opponent-data.service';
 @Component({
   selector: 'ws-opponent-detail',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    LastUpdatedPipe,
-  ],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, LastUpdatedPipe],
   providers: [OpponentDataService],
   host: { class: 'stagger-children flex min-w-0 flex-1 flex-col print:block' },
   templateUrl: './opponent-detail.html',
