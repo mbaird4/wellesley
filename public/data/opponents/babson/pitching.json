@@ -1,59 +1,31 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-04-28T02:43:31.162Z",
+  "scrapedAt": "2026-04-29T02:43:15.457Z",
   "year": 2026,
   "pitchingStats": [
     {
-      "name": "Ziccardi, Anna",
-      "w": 4,
-      "l": 2,
-      "era": 1.77,
-      "app": 7,
-      "gs": 4,
-      "cg": 3,
-      "sho": 1,
-      "sv": 0,
-      "ip": 35.2,
-      "h": 39,
-      "r": 18,
-      "er": 9,
-      "bb": 12,
-      "so": 23,
-      "hr": 1,
-      "whip": 1.43,
-      "doubles": 9,
-      "triples": 0,
-      "ab": 143,
-      "bAvg": 0.273,
-      "wp": 1,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 3
-    },
-    {
       "name": "Sealey, Lexi",
       "w": 3,
-      "l": 2,
-      "era": 2.94,
-      "app": 17,
+      "l": 3,
+      "era": 3.48,
+      "app": 18,
       "gs": 3,
       "cg": 3,
       "sho": 1,
       "sv": 3,
-      "ip": 50,
-      "h": 66,
-      "r": 31,
-      "er": 21,
-      "bb": 21,
-      "so": 17,
+      "ip": 54.1,
+      "h": 74,
+      "r": 38,
+      "er": 27,
+      "bb": 23,
+      "so": 19,
       "hr": 0,
-      "whip": 1.74,
-      "doubles": 11,
+      "whip": 1.79,
+      "doubles": 14,
       "triples": 2,
-      "ab": 214,
-      "bAvg": 0.308,
+      "ab": 237,
+      "bAvg": 0.312,
       "wp": 7,
       "hbp": 4,
       "bk": 0,
@@ -92,29 +64,57 @@
       "name": "Vlacich, Katie",
       "w": 5,
       "l": 9,
-      "era": 4.69,
-      "app": 16,
-      "gs": 14,
+      "era": 4.89,
+      "app": 17,
+      "gs": 15,
       "cg": 6,
       "sho": 2,
       "sv": 0,
-      "ip": 74.2,
-      "h": 96,
-      "r": 58,
-      "er": 50,
-      "bb": 30,
-      "so": 52,
-      "hr": 7,
-      "whip": 1.69,
+      "ip": 77.1,
+      "h": 97,
+      "r": 62,
+      "er": 54,
+      "bb": 33,
+      "so": 53,
+      "hr": 8,
+      "whip": 1.68,
       "doubles": 20,
       "triples": 2,
-      "ab": 316,
-      "bAvg": 0.304,
+      "ab": 324,
+      "bAvg": 0.299,
       "wp": 14,
-      "hbp": 2,
+      "hbp": 3,
       "bk": 0,
       "sfa": 2,
       "sha": 6
+    },
+    {
+      "name": "Ziccardi, Anna",
+      "w": 4,
+      "l": 2,
+      "era": 1.77,
+      "app": 7,
+      "gs": 4,
+      "cg": 3,
+      "sho": 1,
+      "sv": 0,
+      "ip": 35.2,
+      "h": 39,
+      "r": 18,
+      "er": 9,
+      "bb": 12,
+      "so": 23,
+      "hr": 1,
+      "whip": 1.43,
+      "doubles": 9,
+      "triples": 0,
+      "ab": 143,
+      "bAvg": 0.273,
+      "wp": 1,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 3
     }
   ],
   "games": [
@@ -3751,6 +3751,123 @@
           "hbp": 0,
           "ab": 20,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/endicott/boxscore/16068",
+      "date": "4/28/2026",
+      "opponent": "Endicott",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lexi Sealy to p.",
+            "Katie Vlacich to dp.",
+            "Mia Mitchell reached first on a muffed throw by 1b, assist by 2b, advanced to second on the error (2-1 BKB).",
+            "Abby McClaflin grounded out to 3b (3-2 BKFBFBF).",
+            "Kylyn McLaren singled through the right side, RBI (2-1 BBK); Mia Mitchell scored, unearned.",
+            "Maddie Beeley popped up to 2b (0-2 KK).",
+            "Ella Tower grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elyse Saccoccio grounded out to 2b (0-0).",
+            "Catherine Seay singled up the middle (1-2 KFBF).",
+            "Emma Caracciolo struck out looking (3-2 KBBBFK).",
+            "Caroline Cummings walked (3-1 FBBBB); Catherine Seay advanced to second.",
+            "Mia Mitchell walked (3-2 KBBBKB); Caroline Cummings advanced to second; Catherine Seay advanced to third.",
+            "Abby McClaflin popped up to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kylyn McLaren doubled down the lf line (0-2 KK).",
+            "Maddie Beeley flied out to cf (0-0); Kylyn McLaren advanced to third.",
+            "Ella Tower singled to right center, RBI (2-2 KBFFBF); Kylyn McLaren scored.",
+            "Elyse Saccoccio struck out looking (1-2 KFBK).",
+            "Ella Tower stole second.",
+            "Catherine Seay popped up to 3b (2-2 SBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Caracciolo fouled out to lf (0-2 KFFF).",
+            "Caroline Cummings grounded out to p, bunt (0-0).",
+            "Mia Mitchell grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Abby McClaflin singled to right center (3-2 KBBFBFF).",
+            "Kylyn McLaren reached on a fielder's choice to third base (0-0); Abby McClaflin advanced to second.",
+            "Maddie Beeley singled to right center (0-1 K); Kylyn McLaren advanced to second; Abby McClaflin advanced to third.",
+            "Ella Tower fouled out to c (1-2 FBF).",
+            "Elyse Saccoccio doubled down the lf line, 2 RBI (0-1 F); Maddie Beeley advanced to third; Kylyn McLaren scored; Abby McClaflin scored.",
+            "Catherine Seay doubled to center field, 2 RBI (0-0); Elyse Saccoccio scored; Maddie Beeley scored.",
+            "Lexi Sealy to dp.",
+            "Katie Vlacich to p.",
+            "Emma Caracciolo walked (3-0 BBBB); Catherine Seay advanced to third on a passed ball.",
+            "Caroline Cummings walked (3-1 BBKBB); Emma Caracciolo advanced to second.",
+            "Mia Mitchell walked, RBI (3-1 BBKBB); Caroline Cummings advanced to second; Emma Caracciolo advanced to third; Catherine Seay scored.",
+            "Abby McClaflin homered to left center, 4 RBI (1-2 KBF); Mia Mitchell scored; Caroline Cummings scored; Emma Caracciolo scored.",
+            "Kylyn McLaren fouled out to 3b (0-0).",
+            "Maddie Beeley flied out to rf (1-2 BKSF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Tower hit by pitch (1-0 H).",
+            "Elyse Saccoccio grounded into double play 2b to ss to 1b (0-1 K); Ella Tower out on the play.",
+            "Catherine Seay struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Maddy DeLong to ss for Bella Marchetti.",
+            "Vania Moniz pinch hit for Emma Caracciolo.",
+            "Vania Moniz grounded out to ss (0-1 K).",
+            "Caroline Cummings flied out to lf (0-0).",
+            "Mia Mitchell grounded out to 3b (2-2 BFBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 2.2,
+          "h": 1,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 1,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 12
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 4.1,
+          "h": 8,
+          "r": 7,
+          "er": 6,
+          "bb": 2,
+          "so": 2,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 25
         }
       ],
       "year": 2026

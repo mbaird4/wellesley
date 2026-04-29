@@ -1,32 +1,32 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-04-28T02:43:11.080Z",
+  "scrapedAt": "2026-04-29T02:42:48.926Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
       "w": 2,
-      "l": 14,
-      "era": 6.47,
-      "app": 21,
-      "gs": 16,
+      "l": 15,
+      "era": 6.62,
+      "app": 22,
+      "gs": 17,
       "cg": 14,
       "sho": 0,
       "sv": 0,
-      "ip": 106,
-      "h": 178,
-      "r": 113,
-      "er": 98,
-      "bb": 28,
-      "so": 52,
-      "hr": 6,
-      "whip": 1.94,
-      "doubles": 42,
-      "triples": 4,
-      "ab": 479,
-      "bAvg": 0.372,
-      "wp": 5,
+      "ip": 111,
+      "h": 187,
+      "r": 121,
+      "er": 105,
+      "bb": 30,
+      "so": 55,
+      "hr": 7,
+      "whip": 1.95,
+      "doubles": 44,
+      "triples": 6,
+      "ab": 505,
+      "bAvg": 0.37,
+      "wp": 6,
       "hbp": 5,
       "bk": 0,
       "sfa": 8,
@@ -35,30 +35,30 @@
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 15,
-      "era": 8.59,
-      "app": 17,
-      "gs": 17,
+      "l": 16,
+      "era": 8.46,
+      "app": 18,
+      "gs": 18,
       "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 67.2,
-      "h": 106,
-      "r": 107,
-      "er": 83,
-      "bb": 82,
-      "so": 44,
+      "ip": 73.2,
+      "h": 117,
+      "r": 114,
+      "er": 89,
+      "bb": 86,
+      "so": 51,
       "hr": 3,
-      "whip": 2.78,
-      "doubles": 24,
+      "whip": 2.76,
+      "doubles": 28,
       "triples": 7,
-      "ab": 291,
-      "bAvg": 0.364,
-      "wp": 25,
+      "ab": 316,
+      "bAvg": 0.37,
+      "wp": 27,
       "hbp": 5,
       "bk": 0,
-      "sfa": 10,
-      "sha": 16
+      "sfa": 12,
+      "sha": 17
     },
     {
       "name": "Cronin, Emily",
@@ -92,28 +92,28 @@
       "name": "Geisser, Victoria",
       "w": 0,
       "l": 1,
-      "era": 7.88,
-      "app": 5,
+      "era": 8.14,
+      "app": 7,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 13.1,
-      "h": 22,
-      "r": 19,
-      "er": 15,
-      "bb": 15,
-      "so": 6,
+      "ip": 16.1,
+      "h": 31,
+      "r": 23,
+      "er": 19,
+      "bb": 17,
+      "so": 9,
       "hr": 0,
-      "whip": 2.78,
+      "whip": 2.94,
       "doubles": 1,
-      "triples": 1,
-      "ab": 55,
-      "bAvg": 0.4,
-      "wp": 2,
+      "triples": 2,
+      "ab": 71,
+      "bAvg": 0.437,
+      "wp": 4,
       "hbp": 0,
       "bk": 0,
-      "sfa": 3,
+      "sfa": 4,
       "sha": 1
     }
   ],
@@ -3502,6 +3502,255 @@
           "hbp": 0,
           "ab": 13,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/roger-williams-university/boxscore/12023",
+      "date": "4/28/2026",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hailey Williams singled to left field (0-0).",
+            "Hailey Williams advanced to second on a passed ball.",
+            "Lucy Maurao struck out swinging (0-0).",
+            "Shannon Starratt doubled to center field, RBI (0-0); Hailey Williams scored.",
+            "Shannon Starratt advanced to third on a wild pitch.",
+            "Madison Moran walked (0-0).",
+            "Madison Moran stole second.",
+            "McKenzie Foley struck out swinging (0-0).",
+            "Adrianna Amaral struck out looking (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kayleigh O'Connor walked (0-0).",
+            "Kayleigh O'Connor advanced to second on an error by ss.",
+            "Skye Merrow flied out to cf, sacrifice fly, RBI (0-0); Kayleigh O'Connor scored, unearned.",
+            "Calysa Moody popped up to p (0-0).",
+            "Hailey Williams popped up to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lucy Maurao struck out swinging (0-0).",
+            "Shannon Starratt flied out to rf (0-0).",
+            "Madison Moran walked (0-0).",
+            "McKenzie Foley singled to left field (0-0); Madison Moran advanced to second.",
+            "Adrianna Amaral flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kayleigh O'Connor lined out to rf (0-0).",
+            "Skye Merrow singled up the middle (0-0).",
+            "Andie Moreira pinch ran for Skye Merrow.",
+            "Calysa Moody out at first 3b to 2b, SAC (0-0); Andie Moreira advanced to third.",
+            "Hailey Williams struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lucy Maurao singled to center field (0-0).",
+            "Lucy Maurao stole second.",
+            "Shannon Starratt grounded out to ss (0-0).",
+            "Madison Moran walked (0-0); Lucy Maurao advanced to third on a wild pitch.",
+            "Madison Moran stole second.",
+            "McKenzie Foley flied out to rf, sacrifice fly, RBI (0-0); Madison Moran advanced to third; Lucy Maurao scored.",
+            "Adrianna Amaral struck out swinging (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Kayleigh O'Connor doubled to right center (0-0).",
+            "Skye Merrow singled to center field (0-0); Kayleigh O'Connor advanced to third.",
+            "Skye Merrow out at second c to ss, caught stealing.",
+            "Calysa Moody struck out swinging (0-0).",
+            "Hailey Williams flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lucy Maurao singled to third base (0-0).",
+            "Shannon Starratt doubled to left center, RBI (0-0); Lucy Maurao scored.",
+            "Madison Moran doubled to right center, RBI (0-0); Shannon Starratt scored.",
+            "McKenzie Foley singled to left field, RBI (0-0); Madison Moran scored.",
+            "Victoria Geisser to p for Caroline Peterson.",
+            "Adrianna Amaral struck out swinging (0-0).",
+            "Kayleigh O'Connor tripled to left center, RBI (0-0); McKenzie Foley scored.",
+            "Skye Merrow singled through the left side, RBI (0-0); Kayleigh O'Connor scored.",
+            "Alexia Tsonis pinch hit for Calysa Moody.",
+            "Alexia Tsonis struck out looking (0-0).",
+            "Hailey Williams singled to shortstop (0-0); Skye Merrow advanced to second.",
+            "Lucy Maurao singled to right field (0-0); Hailey Williams advanced to second; Skye Merrow advanced to third.",
+            "Skye Merrow out at home 2b to c to 3b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 6,
+          "h": 11,
+          "r": 7,
+          "er": 6,
+          "bb": 4,
+          "so": 7,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 32
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 1,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/roger-williams-university/boxscore/12024",
+      "date": "4/28/2026",
+      "opponent": "Roger Williams University",
+      "pitchers": [
+        "Murphy, Shea",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Hailey Williams tripled to right field (0-0).",
+            "Lucy Maurao singled through the left side, RBI (0-0); Hailey Williams scored.",
+            "Lucy Maurao advanced to second on a passed ball.",
+            "Shannon Starratt struck out swinging (0-0).",
+            "Madison Tucholski flied out to rf (0-0); Lucy Maurao advanced to third.",
+            "Keira Quadros grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Skylar Wicklund to rf for Emily Cronin.",
+            "McKenzie Foley flied out to rf (0-0).",
+            "Andie Moreira grounded out to 2b (0-0).",
+            "Grace Forsythe grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Alexia Tsonis struck out swinging (0-0).",
+            "Hailey Williams popped up to 2b (0-0).",
+            "Lucy Maurao lined out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Shannon Starratt popped up to 2b (0-0).",
+            "Madison Tucholski walked (0-0).",
+            "Keira Quadros flied out to rf (0-0).",
+            "McKenzie Foley reached first on an error by ss (0-0); Madison Tucholski advanced to third.",
+            "McKenzie Foley stole second.",
+            "Andie Moreira walked (0-0).",
+            "Grace Forsythe struck out swinging, reached first on a wild pitch (0-0); Andie Moreira advanced to second; McKenzie Foley advanced to third; Madison Tucholski scored, unearned.",
+            "Alexia Tsonis grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Hailey Williams doubled to left field (0-0).",
+            "Lucy Maurao singled to third base (0-0); Hailey Williams advanced to third.",
+            "Shannon Starratt homered to left field, 3 RBI (0-0); Lucy Maurao scored; Hailey Williams scored.",
+            "Madison Tucholski flied out to lf (0-0).",
+            "Keira Quadros flied out to cf (0-0).",
+            "McKenzie Foley tripled to right center (0-0).",
+            "Andie Moreira lined out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Grace Forsythe singled to left field (0-0).",
+            "Madison Moran pinch hit for Alexia Tsonis.",
+            "Madison Moran doubled to left center, RBI (0-0); Grace Forsythe scored.",
+            "Caroline Peterson to rf for Skylar Wicklund.",
+            "Hailey Williams singled to left field, RBI, advanced to second (0-0); Madison Moran scored.",
+            "Victoria Geisser to p.",
+            "Abby Merck to 3b for Shea Murphy.",
+            "Lucy Maurao grounded out to ss (0-0); Hailey Williams advanced to third.",
+            "Shannon Starratt walked (0-0).",
+            "Madison Tucholski singled through the left side, RBI (0-0); Shannon Starratt advanced to second; Hailey Williams scored.",
+            "Sophia Bruno singled to left field, RBI (0-0); Madison Tucholski advanced to second; Shannon Starratt scored.",
+            "McKenzie Foley fouled out to 3b (0-0).",
+            "Andie Moreira singled to third base (0-0); Sophia Bruno advanced to second; Madison Tucholski advanced to third.",
+            "Andie Moreira advanced to second on a wild pitch; Sophia Bruno advanced to third; Madison Tucholski scored.",
+            "Grace Forsythe walked (0-0).",
+            "Luci Walters pinch hit for Madison Moran.",
+            "Luci Walters flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Hailey Williams singled up the middle (0-0).",
+            "Lucy Maurao singled to shortstop (0-0); Hailey Williams advanced to second.",
+            "Shannon Starratt flied out to lf (0-0); Hailey Williams advanced to third.",
+            "Madison Tucholski flied out to cf, sacrifice fly, RBI (0-0); Hailey Williams scored.",
+            "Kelly McKenna pinch hit for Sophia Bruno.",
+            "Caroline Peterson to dp.",
+            "Emma Plourde to rf.",
+            "Lucy Maurao advanced to second on a wild pitch.",
+            "Kelly McKenna struck out looking (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 5,
+          "h": 9,
+          "r": 8,
+          "er": 7,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 28
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 2,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 13
         }
       ],
       "year": 2026
