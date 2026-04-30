@@ -1,36 +1,36 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-04-29T02:42:32.465Z",
+  "scrapedAt": "2026-04-30T02:44:02.427Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
       "w": 9,
       "l": 7,
-      "era": 1.49,
-      "app": 16,
-      "gs": 16,
+      "era": 1.53,
+      "app": 17,
+      "gs": 17,
       "cg": 14,
       "sho": 3,
       "sv": 0,
-      "ip": 98.1,
-      "h": 90,
-      "r": 32,
-      "er": 21,
-      "bb": 6,
-      "so": 55,
+      "ip": 100.1,
+      "h": 93,
+      "r": 33,
+      "er": 22,
+      "bb": 7,
+      "so": 57,
       "hr": 4,
-      "whip": 0.98,
-      "doubles": 18,
+      "whip": 1,
+      "doubles": 19,
       "triples": 2,
-      "ab": 369,
-      "bAvg": 0.244,
+      "ab": 377,
+      "bAvg": 0.247,
       "wp": 1,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 4,
-      "sha": 18
+      "sha": 19
     },
     {
       "name": "De La Rosa, Sofia",
@@ -61,28 +61,56 @@
       "sha": 12
     },
     {
-      "name": "Dost, Brittany",
+      "name": "Gray, Lucy",
       "w": 0,
       "l": 0,
-      "era": 5.07,
-      "app": 5,
+      "era": 0,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 2,
+      "h": 3,
+      "r": 3,
+      "er": 0,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 2.5,
+      "doubles": 0,
+      "triples": 0,
+      "ab": 10,
+      "bAvg": 0.3,
+      "wp": 2,
+      "hbp": 0,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 0
+    },
+    {
+      "name": "Dost, Brittany",
+      "w": 0,
+      "l": 1,
+      "era": 9.39,
+      "app": 6,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 1,
-      "ip": 9.2,
-      "h": 21,
-      "r": 9,
-      "er": 7,
-      "bb": 4,
+      "ip": 12.2,
+      "h": 31,
+      "r": 19,
+      "er": 17,
+      "bb": 8,
       "so": 7,
       "hr": 0,
-      "whip": 2.59,
-      "doubles": 4,
+      "whip": 3.08,
+      "doubles": 5,
       "triples": 0,
-      "ab": 50,
-      "bAvg": 0.42,
-      "wp": 0,
+      "ab": 69,
+      "bAvg": 0.449,
+      "wp": 1,
       "hbp": 1,
       "bk": 0,
       "sfa": 0,
@@ -3015,6 +3043,156 @@
           "hbp": 0,
           "ab": 19,
           "bf": 19
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/umass-dartmouth/boxscore/10017",
+      "date": "4/29/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton",
+        "Gray, Lucy",
+        "Dost, Brittany"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Raelynn Perregaux flied out to lf (2-1 BKB).",
+            "Olivia Ali walked (3-0 BBBB).",
+            "Olivia Silva fouled out to 1b (2-2 KKFBB).",
+            "Bre Fontes struck out swinging (0-2 FKFFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lena Tsonis doubled down the lf line (2-2 KSFBB).",
+            "Lily Routhier out at first 1b to 2b, SAC, bunt (0-0); Lena Tsonis advanced to third.",
+            "Emma Talpey singled to center field, RBI, advanced to second on the throw (1-2 SBF); Lena Tsonis scored.",
+            "Sydney Menz hit by pitch (1-2 KKH).",
+            "Chloe Edwards singled, bunt (0-0); Sydney Menz advanced to second; Emma Talpey advanced to third.",
+            "Raelynn Perregaux popped up to ss (1-2 FSB).",
+            "Olivia Ali struck out swinging (2-2 SBBSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Peyton Blankenheim-Brown to dp.",
+            "Madi Miller to c for Riley Dolan.",
+            "Lucy Gray to p.",
+            "Olivia Silva singled down the lf line (3-2 BKBFB).",
+            "Bre Fontes reached first on an error by 1b, advanced to second on the throw (0-1 F); Olivia Silva advanced to third.",
+            "Lena Tsonis reached first on an error by ss (1-1 KB); Bre Fontes advanced to third; Olivia Silva scored, unearned.",
+            "Lena Tsonis advanced to second on a wild pitch, advanced to third on the throw; Bre Fontes scored on a wild pitch, unearned.",
+            "Lily Routhier grounded out to 3b, RBI (0-0); Lena Tsonis scored, unearned.",
+            "Emma Talpey walked (3-0 BBBB).",
+            "Sydney Menz walked (3-1 BBBKB); Emma Talpey stole second.",
+            "Chloe Edwards reached on a fielder's choice, advanced to second on a throwing error by 3b (1-1 BF); Sydney Menz advanced to third, out at home 1b to c; Emma Talpey out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Raelynn Perregaux flied out to lf (0-1 K).",
+            "Olivia Ali singled to shortstop (0-2 KS).",
+            "Olivia Silva singled to center field (0-0); Olivia Ali advanced to second.",
+            "Bre Fontes flied out to lf (1-1 KB).",
+            "Olivia Silva advanced to second on a wild pitch; Olivia Ali advanced to third on a wild pitch.",
+            "Lena Tsonis flied out to rf (3-1 BBFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gabby Reinbold to cf for Ella Molinari.",
+            "Brittany Dost to p for Lucy Gray.",
+            "Lily Routhier singled to center field (1-2 KBFF).",
+            "Emma Talpey grounded out to 3b (1-2 KFB); Lily Routhier advanced to second.",
+            "Sydney Menz grounded out to 2b (1-1 KB); Lily Routhier advanced to third.",
+            "Lily Routhier scored on a wild pitch.",
+            "Chloe Edwards walked (3-2 FBBFBB).",
+            "Raelynn Perregaux flied out to lf (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Alexandra Anquillare to rf for Amber Arcand.",
+            "Emma Boucher to c.",
+            "Madi Miller to 3b.",
+            "Sam Puma to 1b for Kathryn Copperthite.",
+            "Olivia Ali walked (3-2 BBBKFB).",
+            "Olivia Ali stole second.",
+            "Olivia Silva doubled to right center, RBI (3-2 BKBBF); Olivia Ali scored.",
+            "Bre Fontes singled through the right side (0-0); Olivia Silva advanced to third.",
+            "Bre Fontes stole second.",
+            "Lena Tsonis singled, 2 RBI (2-1 BFB); Bre Fontes scored; Olivia Silva scored.",
+            "Lily Routhier reached on a fielder's choice to shortstop (1-2 FKB); Lena Tsonis out at second ss unassisted.",
+            "Emma Talpey singled to shortstop (0-0); Lily Routhier advanced to second.",
+            "Sydney Menz singled to right field, RBI (0-0); Emma Talpey advanced to third; Lily Routhier scored.",
+            "Sydney Menz stole second.",
+            "Chloe Edwards singled to center field, RBI (3-2 KBKBB); Sydney Menz advanced to third; Emma Talpey scored.",
+            "Nina O'Neil pinch hit for Raelynn Perregaux.",
+            "Nina O'Neil grounded out to p, RBI (0-1 K); Chloe Edwards advanced to second; Sydney Menz scored.",
+            "Olivia Ali grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Taylor Barry to 2b for Maggie Caron.",
+            "Julia Miller to lf for Alli Wisnouskas.",
+            "Olivia Silva singled to shortstop (1-1 KB).",
+            "Bre Fontes walked (3-2 BFBKFBB); Olivia Silva advanced to second.",
+            "Lena Tsonis reached on a fielder's choice to third base (1-2 KSB); Bre Fontes advanced to second; Olivia Silva out at third 3b unassisted.",
+            "Lily Routhier walked (3-2 BSFBFFBB); Lena Tsonis advanced to second; Bre Fontes advanced to third.",
+            "Emma Talpey singled through the left side, RBI (2-2 BFFFB); Lily Routhier advanced to second; Lena Tsonis advanced to third; Bre Fontes scored.",
+            "Sydney Menz popped up to ss (0-2 KFFF).",
+            "Chloe Edwards singled to right field, 2 RBI, advanced to second on the throw (0-2 KF); Emma Talpey advanced to third; Lily Routhier scored; Lena Tsonis scored.",
+            "Nina O'Neil grounded out to 1b unassisted (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 2,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 11
+        },
+        {
+          "name": "Gray, Lucy",
+          "ip": 2,
+          "h": 3,
+          "r": 3,
+          "er": 0,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 12
+        },
+        {
+          "name": "Dost, Brittany",
+          "ip": 3,
+          "h": 10,
+          "r": 10,
+          "er": 10,
+          "bb": 4,
+          "so": 0,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 23
         }
       ],
       "year": 2026
