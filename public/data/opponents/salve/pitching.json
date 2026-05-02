@@ -1,31 +1,31 @@
 {
   "slug": "salve",
   "domain": "salveathletics.com",
-  "scrapedAt": "2026-05-01T02:50:58.759Z",
+  "scrapedAt": "2026-05-02T02:32:39.068Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Murphy, Shea",
-      "w": 2,
+      "w": 3,
       "l": 15,
-      "era": 6.62,
-      "app": 22,
-      "gs": 17,
-      "cg": 14,
+      "era": 6.29,
+      "app": 23,
+      "gs": 18,
+      "cg": 15,
       "sho": 0,
       "sv": 0,
-      "ip": 111,
-      "h": 187,
-      "r": 121,
-      "er": 105,
-      "bb": 30,
-      "so": 55,
+      "ip": 118,
+      "h": 193,
+      "r": 122,
+      "er": 106,
+      "bb": 31,
+      "so": 60,
       "hr": 7,
-      "whip": 1.95,
-      "doubles": 44,
+      "whip": 1.9,
+      "doubles": 45,
       "triples": 6,
-      "ab": 505,
-      "bAvg": 0.37,
+      "ab": 533,
+      "bAvg": 0.362,
       "wp": 6,
       "hbp": 5,
       "bk": 0,
@@ -35,25 +35,25 @@
     {
       "name": "Peterson, Caroline",
       "w": 1,
-      "l": 16,
-      "era": 8.46,
-      "app": 18,
-      "gs": 18,
+      "l": 17,
+      "era": 8.57,
+      "app": 19,
+      "gs": 19,
       "cg": 6,
       "sho": 0,
       "sv": 0,
-      "ip": 73.2,
-      "h": 117,
-      "r": 114,
-      "er": 89,
-      "bb": 86,
-      "so": 51,
+      "ip": 74.1,
+      "h": 124,
+      "r": 125,
+      "er": 91,
+      "bb": 89,
+      "so": 53,
       "hr": 3,
-      "whip": 2.76,
-      "doubles": 28,
-      "triples": 7,
-      "ab": 316,
-      "bAvg": 0.37,
+      "whip": 2.87,
+      "doubles": 29,
+      "triples": 8,
+      "ab": 326,
+      "bAvg": 0.38,
       "wp": 27,
       "hbp": 5,
       "bk": 0,
@@ -92,26 +92,26 @@
       "name": "Geisser, Victoria",
       "w": 0,
       "l": 1,
-      "era": 8.14,
-      "app": 7,
+      "era": 8.19,
+      "app": 8,
       "gs": 0,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 16.1,
-      "h": 31,
-      "r": 23,
-      "er": 19,
-      "bb": 17,
-      "so": 9,
+      "ip": 19.2,
+      "h": 38,
+      "r": 28,
+      "er": 23,
+      "bb": 22,
+      "so": 11,
       "hr": 0,
-      "whip": 2.94,
+      "whip": 3.05,
       "doubles": 1,
       "triples": 2,
-      "ab": 71,
-      "bAvg": 0.437,
-      "wp": 4,
-      "hbp": 0,
+      "ab": 88,
+      "bAvg": 0.432,
+      "wp": 6,
+      "hbp": 1,
       "bk": 0,
       "sfa": 4,
       "sha": 1
@@ -3751,6 +3751,193 @@
           "hbp": 0,
           "ab": 10,
           "bf": 13
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/emerson-college/boxscore/11783",
+      "date": "5/1/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Peterson, Caroline",
+        "Geisser, Victoria"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano singled up the middle (1-1 KB).",
+            "Valentina Luciano advanced to second on a passed ball.",
+            "Aislinn McCoy struck out swinging (2-2 BKBKS).",
+            "Avi Kuperman walked (3-0 BBBB).",
+            "Casey Yacovelli reached first on a dropped fly by lf (2-2 BFSFBF); Avi Kuperman advanced to second; Valentina Luciano advanced to third.",
+            "Kari Sorensen singled to left field, RBI (1-2 FBF); Casey Yacovelli advanced to second; Avi Kuperman advanced to third; Valentina Luciano scored.",
+            "Cal Sheehan singled to right center, RBI (0-1 K); Kari Sorensen advanced to second; Casey Yacovelli advanced to third; Avi Kuperman scored.",
+            "Riley Fasteau singled to right field, RBI (0-1 F); Cal Sheehan advanced to second; Kari Sorensen advanced to third; Casey Yacovelli scored, unearned.",
+            "Kayla Nuehlen struck out swinging (1-2 KFBS).",
+            "Bri Frongillo walked, RBI (3-1 BBKBB); Riley Fasteau advanced to second; Cal Sheehan advanced to third; Kari Sorensen scored, unearned.",
+            "Valentina Luciano walked, RBI (3-2 BBFFBB); Bri Frongillo advanced to second; Riley Fasteau advanced to third; Cal Sheehan scored, unearned.",
+            "Aislinn McCoy tripled to center field, 3 RBI (1-2 SBKF); Valentina Luciano scored, unearned; Bri Frongillo scored, unearned; Riley Fasteau scored, unearned.",
+            "Avi Kuperman singled through the left side, RBI (0-2 KK); Aislinn McCoy scored, unearned.",
+            "Casey Yacovelli doubled to center field, RBI (1-0 B); Avi Kuperman scored, unearned.",
+            "Victoria Geisser to p for Caroline Peterson.",
+            "Casey Yacovelli advanced to third on a wild pitch.",
+            "Kari Sorensen walked (3-2 BBBKFB).",
+            "Cal Sheehan singled to left field, RBI (1-0 B); Kari Sorensen advanced to second; Casey Yacovelli scored, unearned.",
+            "Riley Fasteau singled to pitcher, advanced to second on the error (1-1 FB); Cal Sheehan advanced to third; Kari Sorensen advanced to third, scored on a throwing error by p, unearned, on the throw.",
+            "Kayla Nuehlen walked (3-1 BBFBB).",
+            "Bri Frongillo singled to right field, RBI (0-1 K); Kayla Nuehlen advanced to second; Riley Fasteau advanced to third; Cal Sheehan scored, team unearned.",
+            "Valentina Luciano reached on a fielder's choice (0-0); Bri Frongillo out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Aislinn McCoy singled through the left side (1-0 B).",
+            "Avi Kuperman reached on a fielder's choice (0-1 K); Aislinn McCoy out at second 3b to 2b.",
+            "Casey Yacovelli struck out swinging (0-2 FKS).",
+            "Kari Sorensen grounded out to 3b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Cal Sheehan grounded out to ss (2-1 BBF).",
+            "Riley Fasteau singled to shortstop (2-0 BB).",
+            "Kayla Nuehlen hit by pitch (1-0 H); Riley Fasteau advanced to second.",
+            "Bri Frongillo walked (3-2 BBFBBFF); Kayla Nuehlen advanced to second; Riley Fasteau advanced to third.",
+            "Valentina Luciano grounded out to ss, RBI (1-0 B); Bri Frongillo advanced to second; Kayla Nuehlen advanced to third; Riley Fasteau scored.",
+            "Aislinn McCoy struck out swinging (1-2 BKKS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avi Kuperman walked (3-1 BBBKB).",
+            "Casey Yacovelli singled to third base (1-0 B); Avi Kuperman advanced to second.",
+            "Kari Sorensen singled to left field (3-2 KSFBBBF); Casey Yacovelli advanced to second; Avi Kuperman advanced to third.",
+            "Kari Sorensen advanced to second; Casey Yacovelli advanced to third; Avi Kuperman scored on a wild pitch.",
+            "Cal Sheehan fouled out to rf (2-0 BB).",
+            "Riley Fasteau grounded out to ss, RBI (0-0); Kari Sorensen advanced to third; Casey Yacovelli scored.",
+            "Kayla Nuehlen walked (3-1 BFBBB).",
+            "Bri Frongillo flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peterson, Caroline",
+          "ip": 0.2,
+          "h": 7,
+          "r": 11,
+          "er": 2,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 13
+        },
+        {
+          "name": "Geisser, Victoria",
+          "ip": 3.1,
+          "h": 7,
+          "r": 5,
+          "er": 4,
+          "bb": 5,
+          "so": 2,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://salveathletics.com/sports/softball/stats/2026/emerson-college/boxscore/11784",
+      "date": "5/1/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Murphy, Shea"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano walked (3-0 BBBB).",
+            "Aislinn McCoy struck out looking (0-2 FFFK); Valentina Luciano stole second.",
+            "Avi Kuperman struck out swinging (1-2 BKFFS).",
+            "Casey Yacovelli popped up to ss (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kari Sorensen singled up the middle (1-1 KB).",
+            "Cal Sheehan struck out swinging (0-2 KSS).",
+            "Riley Fasteau grounded out to 2b (0-2 FF); Kari Sorensen advanced to second.",
+            "Kayla Nuehlen singled to right field (2-1 SBB); Kari Sorensen advanced to third.",
+            "Bri Frongillo popped up to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano grounded out to 3b (0-2 FK).",
+            "Aislinn McCoy singled through the left side (1-1 BK).",
+            "Avi Kuperman flied out to rf (0-1 F).",
+            "Casey Yacovelli fouled out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kari Sorensen singled through the left side (0-0).",
+            "Cal Sheehan reached on a fielder's choice (0-2 FF); Kari Sorensen advanced to second on a throwing error by 3b.",
+            "Riley Fasteau grounded out to 2b (0-2 KF); Cal Sheehan advanced to second; Kari Sorensen advanced to third.",
+            "Kayla Nuehlen flied out to rf (2-1 KBB).",
+            "Bri Frongillo popped up to 2b (2-2 KBFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Valentina Luciano grounded out to ss (0-1 F).",
+            "Aislinn McCoy struck out looking (0-2 FKFK).",
+            "Avi Kuperman grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Casey Yacovelli singled to left field (1-0 B).",
+            "Kari Sorensen flied out to cf (0-0).",
+            "Cal Sheehan doubled to left field, RBI (1-0 B); Casey Yacovelli scored.",
+            "Riley Fasteau struck out looking (0-2 FFK).",
+            "Kayla Nuehlen grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bri Frongillo grounded out to p (0-2 KF).",
+            "Valentina Luciano grounded out to p (1-2 KFB).",
+            "Aislinn McCoy flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Murphy, Shea",
+          "ip": 7,
+          "h": 6,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 28,
+          "bf": 29
         }
       ],
       "year": 2026

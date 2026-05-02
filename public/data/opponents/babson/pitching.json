@@ -1,9 +1,37 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-05-01T02:51:19.586Z",
+  "scrapedAt": "2026-05-02T02:33:01.524Z",
   "year": 2026,
   "pitchingStats": [
+    {
+      "name": "Topel, Anna",
+      "w": 6,
+      "l": 5,
+      "era": 3.41,
+      "app": 15,
+      "gs": 15,
+      "cg": 7,
+      "sho": 1,
+      "sv": 0,
+      "ip": 76,
+      "h": 97,
+      "r": 52,
+      "er": 37,
+      "bb": 41,
+      "so": 45,
+      "hr": 2,
+      "whip": 1.82,
+      "doubles": 15,
+      "triples": 2,
+      "ab": 323,
+      "bAvg": 0.3,
+      "wp": 6,
+      "hbp": 2,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 9
+    },
     {
       "name": "Sealey, Lexi",
       "w": 3,
@@ -33,56 +61,28 @@
       "sha": 5
     },
     {
-      "name": "Topel, Anna",
-      "w": 5,
-      "l": 5,
-      "era": 3.75,
-      "app": 14,
-      "gs": 14,
-      "cg": 6,
-      "sho": 0,
-      "sv": 0,
-      "ip": 69,
-      "h": 90,
-      "r": 52,
-      "er": 37,
-      "bb": 40,
-      "so": 40,
-      "hr": 2,
-      "whip": 1.88,
-      "doubles": 15,
-      "triples": 2,
-      "ab": 296,
-      "bAvg": 0.304,
-      "wp": 6,
-      "hbp": 2,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 8
-    },
-    {
       "name": "Vlacich, Katie",
-      "w": 5,
+      "w": 6,
       "l": 9,
-      "era": 4.89,
-      "app": 17,
-      "gs": 15,
-      "cg": 6,
+      "era": 4.9,
+      "app": 18,
+      "gs": 16,
+      "cg": 7,
       "sho": 2,
       "sv": 0,
-      "ip": 77.1,
-      "h": 97,
-      "r": 62,
-      "er": 54,
-      "bb": 33,
-      "so": 53,
+      "ip": 84.1,
+      "h": 109,
+      "r": 67,
+      "er": 59,
+      "bb": 35,
+      "so": 54,
       "hr": 8,
-      "whip": 1.68,
-      "doubles": 20,
+      "whip": 1.71,
+      "doubles": 23,
       "triples": 2,
-      "ab": 324,
-      "bAvg": 0.299,
-      "wp": 14,
+      "ab": 357,
+      "bAvg": 0.305,
+      "wp": 16,
       "hbp": 3,
       "bk": 0,
       "sfa": 2,
@@ -3868,6 +3868,200 @@
           "hbp": 0,
           "ab": 23,
           "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wellesley/boxscore/16073",
+      "date": "5/1/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern singled to right field (0-2 KF).",
+            "A. Delgado out at first c to 2b, SAC, bunt (0-1 F); A. Mulhern advanced to second.",
+            "B. Awad struck out swinging (2-2 BFBKS).",
+            "C. Lundin walked (3-2 FBBBSFFB).",
+            "J. Colgan grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "E. Gaunce reached first on a fielding error by p (1-0 B).",
+            "A. Rodriguez singled to left field (0-2 FFF); E. Gaunce advanced to second.",
+            "B. Mellady infield fly to ss (1-2 KKB).",
+            "N. Nicol struck out looking (2-2 KSBBK).",
+            "A. Mulhern flied out to cf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "A. Delgado flied out to lf to left center (0-0).",
+            "B. Awad struck out swinging (1-2 KBFS).",
+            "C. Lundin singled to left field (2-0 BB).",
+            "J. Colgan singled through the right side (0-0); C. Lundin advanced to second.",
+            "E. Gaunce grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Rodriguez grounded out to 2b (0-0).",
+            "B. Mellady grounded out to 2b (0-0).",
+            "N. Nicol struck out swinging (2-2 KFBBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Mulhern singled to left field (1-2 KFB).",
+            "A. Delgado reached on a fielder's choice (0-1 K); A. Mulhern out at second 3b to 2b.",
+            "B. Awad lined out to rf (0-0).",
+            "C. Lundin singled to right field (2-1 BFB); A. Delgado advanced to second.",
+            "J. Polski lined out to 2b (1-2 FKB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gaunce flied out to lf (0-0).",
+            "A. Rodriguez singled to right field (1-0 B).",
+            "B. Mellady grounded into double play p to ss to 1b (0-0); A. Rodriguez out on the play."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Devin McCall to 3b for Ruby Madia.",
+            "S. Wicker pinch hit for N. Nicol.",
+            "S. Wicker grounded out to ss (1-0 B).",
+            "A. Mulhern struck out swinging (0-2 KFFFS).",
+            "A. Delgado grounded out to 1b unassisted (1-1 FB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 7,
+          "h": 7,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 5,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wellesley/boxscore/16074",
+      "date": "5/1/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "Vlacich, Katie"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to cf (1-1 KB).",
+            "A. Delgado flied out to lf (0-0).",
+            "B. Awad singled to shortstop (1-0 B).",
+            "B. Awad stole second.",
+            "C. Lundin lined out to 1b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Rodriguez lined out to cf (0-0).",
+            "S. Wicker doubled to left center (3-2 FBFFBB).",
+            "E. Gaunce grounded out to ss (1-1 KB); S. Wicker advanced to third.",
+            "G. Jones flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol popped up to 2b (0-0).",
+            "A. Mulhern flied out to rf (1-0 B).",
+            "A. Delgado singled to third base (1-1 BF).",
+            "A. Delgado stole second.",
+            "B. Awad singled to right field, RBI (1-1 KB); A. Delgado scored.",
+            "C. Lundin grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Alexa Young to c for Belle Dicampello.",
+            "A. Rodriguez popped up to 3b (1-0 B).",
+            "B. Mellady singled to right field (2-1 KBB).",
+            "E. Gaunce walked (3-0 BBBB); B. Mellady advanced to second.",
+            "E. Gaunce advanced to second; B. Mellady advanced to third on a wild pitch.",
+            "G. Jones walked (3-2 KBSFBBFB).",
+            "N. Nicol reached on a fielder's choice, RBI (3-2 BBBKK); G. Jones out at second 2b to ss; E. Gaunce advanced to third; B. Mellady scored.",
+            "A. Mulhern lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "A. Delgado lined out to cf (0-0).",
+            "B. Awad lined out to 3b (0-0).",
+            "C. Lundin singled down the lf line (2-0 BB).",
+            "A. Rodriguez singled up the middle (0-0); C. Lundin advanced to second.",
+            "J. Polski pinch ran for C. Lundin.",
+            "B. Mellady grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "E. Gaunce lined out to 3b (3-2 BSBFBFF).",
+            "G. Jones singled to second base (2-1 BBF).",
+            "N. Nicol struck out looking (0-2 SKK).",
+            "G. Jones stole second.",
+            "G. Jones advanced to third on a wild pitch.",
+            "A. Mulhern singled to pitcher, RBI (2-2 FFBB); G. Jones scored.",
+            "A. Delgado grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "B. Awad doubled down the lf line (0-1 K).",
+            "J. Polski reached on a fielder's choice (2-1 KBB); B. Awad out at third p to 3b.",
+            "T. Claybrook pinch ran for J. Polski.",
+            "A. Rodriguez doubled to left center (0-1 K); T. Claybrook advanced to third.",
+            "B. Mellady singled up the middle, RBI (1-0 B); A. Rodriguez advanced to third; T. Claybrook scored.",
+            "E. Gaunce grounded out to 3b, RBI (0-0); B. Mellady advanced to second; A. Rodriguez scored.",
+            "G. Jones popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 7,
+          "h": 12,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 1,
+          "hbp": 0,
+          "ab": 33,
+          "bf": 35
         }
       ],
       "year": 2026

@@ -1,31 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-01T02:50:38.654Z",
+  "scrapedAt": "2026-05-02T02:32:19.535Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 20,
+      "w": 21,
       "l": 0,
-      "era": 1.72,
-      "app": 21,
+      "era": 1.63,
+      "app": 22,
       "gs": 14,
       "cg": 11,
       "sho": 4,
       "sv": 0,
-      "ip": 110,
-      "h": 122,
-      "r": 32,
+      "ip": 116,
+      "h": 126,
+      "r": 33,
       "er": 27,
-      "bb": 16,
-      "so": 66,
+      "bb": 18,
+      "so": 71,
       "hr": 0,
-      "whip": 1.25,
-      "doubles": 15,
+      "whip": 1.24,
+      "doubles": 16,
       "triples": 2,
-      "ab": 433,
-      "bAvg": 0.282,
+      "ab": 453,
+      "bAvg": 0.278,
       "wp": 2,
       "hbp": 4,
       "bk": 0,
@@ -36,28 +36,28 @@
       "name": "Boldebuck, Naomi",
       "w": 12,
       "l": 2,
-      "era": 2.01,
-      "app": 19,
-      "gs": 18,
+      "era": 2.23,
+      "app": 20,
+      "gs": 19,
       "cg": 14,
       "sho": 3,
       "sv": 0,
-      "ip": 97.2,
-      "h": 106,
-      "r": 42,
-      "er": 28,
-      "bb": 29,
+      "ip": 100.2,
+      "h": 113,
+      "r": 47,
+      "er": 32,
+      "bb": 32,
       "so": 57,
       "hr": 1,
-      "whip": 1.38,
-      "doubles": 9,
+      "whip": 1.44,
+      "doubles": 11,
       "triples": 2,
-      "ab": 380,
-      "bAvg": 0.279,
+      "ab": 396,
+      "bAvg": 0.285,
       "wp": 5,
       "hbp": 6,
       "bk": 0,
-      "sfa": 4,
+      "sfa": 5,
       "sha": 14
     },
     {
@@ -4138,6 +4138,252 @@
           "hbp": 0,
           "ab": 33,
           "bf": 34
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/springfield/boxscore/16658",
+      "date": "5/1/2026",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reilly Hunter popped up to cf (2-1 BKB).",
+            "Amelia DeRosa grounded out to 3b (3-2 BBFKB).",
+            "Carissa Pecchia lined out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Katsetos singled up the middle (0-0).",
+            "Madison Testo singled to left field (2-2 SBKFBF); Kate Katsetos advanced to second.",
+            "Emilia Santiago doubled to right field, RBI (1-2 FFFBF); Madison Testo advanced to third; Kate Katsetos scored.",
+            "Haley Ball flied out to lf, sacrifice fly, RBI (3-1 BBFB); Madison Testo scored.",
+            "Brynlee Eckles doubled down the rf line, RBI (1-0 B); Emilia Santiago scored.",
+            "Taylor Falotico singled to shortstop (2-2 FFBFB); Brynlee Eckles did not advance.",
+            "Reilly Hunter reached on a fielder's choice (1-2 BKK); Taylor Falotico out at second 2b to ss; Brynlee Eckles advanced to third.",
+            "Amelia DeRosa reached first on an error by 2b (1-2 FFFB); Reilly Hunter advanced to second, advanced to third on the error; Brynlee Eckles scored, unearned.",
+            "Carissa Pecchia lined out to 2b (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Kate Katsetos grounded out to 1b unassisted (1-1 BK).",
+            "Madison Testo singled to left field (0-0).",
+            "Emilia Santiago reached on a fielder's choice (2-1 BBF); Madison Testo out at second ss to 2b.",
+            "Haley Ball singled to left center (0-0); Emilia Santiago advanced to second.",
+            "Brynlee Eckles grounded out to p (2-2 BKFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Taylor Falotico walked (3-0 BBBB).",
+            "Reilly Hunter walked (3-0 BBBB); Taylor Falotico advanced to second.",
+            "Amelia DeRosa walked (3-0 BBBB); Reilly Hunter advanced to second; Taylor Falotico advanced to third.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Carissa Pecchia walked, RBI (3-1 BSBBB); Amelia DeRosa advanced to second; Reilly Hunter advanced to third; Taylor Falotico scored.",
+            "Reilly Hunter out at home 3b unassisted, interference.",
+            "Kate Katsetos reached on a fielder's choice (0-0); Carissa Pecchia out at second ss to 2b; Amelia DeRosa advanced to third.",
+            "Madison Testo grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Stella Kozak to 3b for Destiny Lum.",
+            "Emilia Santiago singled to center field (1-1 KB).",
+            "Haley Ball doubled to right center (1-1 SB); Emilia Santiago advanced to third.",
+            "Brynlee Eckles struck out looking (2-2 BKBFK).",
+            "Taylor Falotico struck out looking (1-2 BFFK).",
+            "Reilly Hunter flied out to rf (2-1 BSB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ariana Kreuzer to c for Grace Grant.",
+            "Amelia DeRosa walked (3-0 BBBB).",
+            "Carissa Pecchia grounded into double play p to ss to 1b (0-0); Amelia DeRosa out on the play.",
+            "Kate Katsetos struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Madison Testo flied out to lf (1-1 BK).",
+            "Emilia Santiago flied out to cf (1-1 KB).",
+            "Haley Ball flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Ali Chalovich to c for Colleen Mayer.",
+            "Brynlee Eckles Haley Ball placed on second (0-0).",
+            "Brynlee Eckles popped up to 3b (1-0 B).",
+            "Taylor Falotico singled to pitcher (0-1 K); Haley Ball advanced to third.",
+            "Reilly Hunter struck out swinging (2-2 FBSBS).",
+            "Amelia DeRosa singled to right field, RBI (1-0 B); Taylor Falotico advanced to second; Haley Ball scored.",
+            "Carissa Pecchia grounded out to 3b (2-2 BKBSF)."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "Kate Katsetos Carissa Pecchia placed on second (0-0).",
+            "Maddie Tse pinch ran for Carissa Pecchia.",
+            "Kate Katsetos flied out to lf (1-2 KFB).",
+            "Madison Testo reached on a fielder's choice (2-2 FFBBF); Maddie Tse out at third ss to 3b.",
+            "Emilia Santiago struck out swinging (3-2 BFBKBS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 7,
+          "r": 5,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 20
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 6,
+          "h": 4,
+          "r": 1,
+          "er": 0,
+          "bb": 2,
+          "so": 5,
+          "hbp": 0,
+          "ab": 20,
+          "bf": 22
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/springfield/boxscore/16659",
+      "date": "5/1/2026",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Barr, Kaitlyn",
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ali Chalovich to c for Ariana Kreuzer.",
+            "Reilly Hunter grounded out to ss (1-2 BKFFF).",
+            "Amelia DeRosa homered to center field, RBI (2-2 FBFFB).",
+            "Carissa Pecchia singled to right center (0-0).",
+            "Kate Katsetos lined out to cf (3-2 BBBKF).",
+            "Madison Testo flied out to lf (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Brynlee Eckles singled through the left side (0-0).",
+            "Haley Ball reached on a fielder's choice (1-0 B); Brynlee Eckles out at second 2b to ss.",
+            "Sammy Swords flied out to rf (1-0 B).",
+            "Taylor Falotico singled to third base (1-0 B); Haley Ball advanced to second.",
+            "Reilly Hunter grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Amelia DeRosa doubled down the lf line (1-1 BK).",
+            "Carissa Pecchia grounded out to 3b (1-1 BF).",
+            "Kate Katsetos popped up to 3b (2-0 BB).",
+            "Madison Testo singled to center field, RBI (1-0 B); Amelia DeRosa scored.",
+            "Brynlee Eckles reached on a fielder's choice (0-0); Madison Testo out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Haley Ball singled to right field (1-0 B).",
+            "Sammy Swords homered to center field, 2 RBI (2-1 FBB); Haley Ball scored.",
+            "Taylor Falotico grounded out to p (0-2 KF).",
+            "Reilly Hunter singled to right field (0-0).",
+            "Amelia DeRosa flied out to lf (2-2 BFBF).",
+            "Carissa Pecchia walked (3-1 BBFBB); Reilly Hunter advanced to second.",
+            "Kate Katsetos grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Naomi Boldebuck to p for Kaitlyn Barr.",
+            "Madison Testo grounded out to p (3-2 BSFBB).",
+            "Brynlee Eckles grounded out to 2b (0-1 K).",
+            "Haley Ball singled to center field (1-0 B).",
+            "Sammy Swords reached on a fielder's choice (0-2 KS); Haley Ball out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b for Destiny Lum.",
+            "Taylor Falotico singled to left field (1-0 B).",
+            "Reilly Hunter homered, 2 RBI (1-1 BK); Taylor Falotico scored.",
+            "Amelia DeRosa grounded out to 2b (2-1 BBF).",
+            "Carissa Pecchia popped up to ss (2-0 BB).",
+            "Kate Katsetos singled to shortstop (0-0).",
+            "Madison Testo grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brynlee Eckles walked (3-2 BBFBFFB).",
+            "Haley Ball hit by pitch (1-0 H); Brynlee Eckles advanced to second.",
+            "Sammy Swords flied out to rf (1-0 B); Brynlee Eckles advanced to third.",
+            "Taylor Falotico grounded out to 3b (2-0 BB); Haley Ball advanced to second.",
+            "Reilly Hunter lined out to cf (1-2 FBFFF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 4,
+          "h": 9,
+          "r": 4,
+          "er": 4,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 22
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 13,
+          "bf": 15
         }
       ],
       "year": 2026

@@ -1,59 +1,59 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-05-01T02:50:45.253Z",
+  "scrapedAt": "2026-05-02T02:32:24.212Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 9,
+      "w": 10,
       "l": 7,
-      "era": 1.53,
-      "app": 17,
-      "gs": 17,
-      "cg": 14,
+      "era": 1.45,
+      "app": 18,
+      "gs": 18,
+      "cg": 15,
       "sho": 3,
       "sv": 0,
-      "ip": 100.1,
-      "h": 93,
-      "r": 33,
+      "ip": 106.1,
+      "h": 97,
+      "r": 35,
       "er": 22,
-      "bb": 7,
-      "so": 57,
+      "bb": 8,
+      "so": 59,
       "hr": 4,
-      "whip": 1,
+      "whip": 0.99,
       "doubles": 19,
       "triples": 2,
-      "ab": 377,
-      "bAvg": 0.247,
+      "ab": 398,
+      "bAvg": 0.244,
       "wp": 1,
       "hbp": 4,
       "bk": 0,
       "sfa": 4,
-      "sha": 19
+      "sha": 20
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 8,
+      "w": 9,
       "l": 7,
-      "era": 2.71,
-      "app": 17,
-      "gs": 15,
-      "cg": 12,
-      "sho": 4,
+      "era": 2.53,
+      "app": 18,
+      "gs": 16,
+      "cg": 13,
+      "sho": 5,
       "sv": 0,
-      "ip": 98.1,
-      "h": 106,
+      "ip": 105.1,
+      "h": 108,
       "r": 50,
       "er": 38,
-      "bb": 24,
-      "so": 96,
+      "bb": 25,
+      "so": 104,
       "hr": 3,
-      "whip": 1.32,
-      "doubles": 22,
+      "whip": 1.26,
+      "doubles": 23,
       "triples": 4,
-      "ab": 390,
-      "bAvg": 0.272,
+      "ab": 412,
+      "bAvg": 0.262,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -3192,6 +3192,172 @@
           "so": 0,
           "hbp": 0,
           "ab": 19,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/clark-university/boxscore/10032",
+      "date": "5/1/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence struck out swinging (1-2 BKFFS).",
+            "Avery Dillon grounded out to 1b unassisted (1-1 BS).",
+            "Merry Griffin lined out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Megan Dube doubled to left center (0-1 S).",
+            "Erin Slavin struck out swinging (1-2 SSBS).",
+            "Avery Della Piana walked (3-2 BKFBFBB).",
+            "Felicia Salvati lined out to lf (0-2 FS).",
+            "Alexis Taudel struck out swinging (2-2 SSBBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gricelda Castro struck out looking (1-2 BKFK).",
+            "Emelie Spence grounded out to 2b (1-0 B).",
+            "Avery Dillon grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Merry Griffin lined out to rf (0-0).",
+            "Megan Dube struck out swinging (2-2 KBFFBFS).",
+            "Erin Slavin struck out looking (1-2 BKSK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avery Della Piana struck out swinging (2-2 BFBKS).",
+            "Felicia Salvati grounded out to 3b (0-0).",
+            "Alexis Taudel struck out swinging (1-2 FFBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Taylor Barry to 2b for Madi Miller.",
+            "Gricelda Castro popped up to ss (0-1 F).",
+            "Emelie Spence singled to third base, bunt, out at second 3b to rf to 2b (0-0).",
+            "Avery Dillon grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Merry Griffin grounded out to 1b unassisted (0-2 KF).",
+            "Megan Dube grounded out to 3b (2-2 SBSB).",
+            "Erin Slavin flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 7,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 8,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/clark-university/boxscore/10033",
+      "date": "5/1/2026",
+      "opponent": "Clark University",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence singled through the left side (1-2 BKKF).",
+            "Avery Dillon out at first 3b to 2b, SAC, bunt (0-0); Emelie Spence advanced to second.",
+            "Merry Griffin grounded out to ss (0-2 KKF); Emelie Spence advanced to third.",
+            "Megan Dube fouled out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Felicia Salvati struck out swinging (1-2 BKKFS).",
+            "Madison Dillon struck out swinging (1-2 SFFFFFFBFS).",
+            "Avery Della Piana grounded out to 2b (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gricelda Castro grounded out to ss (0-1 F).",
+            "Jennifer Albano flied out to lf (0-0).",
+            "Emelie Spence flied out to lf (2-2 BFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Dillon flied out to lf (0-0).",
+            "Merry Griffin grounded out to ss (0-0).",
+            "Megan Dube flied out to lf (2-2 KBFFFBF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Gabby Reinbold to lf for Julia Miller.",
+            "Felicia Salvati walked (3-1 SBBBB).",
+            "Madison Dillon flied out to cf (0-0).",
+            "Avery Della Piana fouled out to 1b (0-0).",
+            "Gricelda Castro reached first on a fielding error by ss (0-0); Felicia Salvati advanced to second.",
+            "Jennifer Albano singled to second base (2-1 BKB); Gricelda Castro advanced to second; Felicia Salvati advanced to third.",
+            "Emelie Spence singled to center field, 2 RBI (3-1 BBKB); Jennifer Albano advanced to third; Gricelda Castro scored, unearned; Felicia Salvati scored, unearned.",
+            "Emelie Spence out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley Dolan to c for Alexandra Anquillare.",
+            "Avery Dillon singled to right center (1-2 BKF).",
+            "Caitriona Andre pinch hit for Merry Griffin.",
+            "Caitriona Andre fouled out to 2b (1-0 B).",
+            "Megan Dube grounded out to 3b (0-0); Avery Dillon advanced to second.",
+            "Felicia Salvati grounded out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 6,
+          "h": 4,
+          "r": 2,
+          "er": 0,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 21,
           "bf": 23
         }
       ],
