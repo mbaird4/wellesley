@@ -1,59 +1,59 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-02T02:32:43.977Z",
+  "scrapedAt": "2026-05-03T02:43:13.053Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 11,
+      "w": 13,
       "l": 3,
-      "era": 2.88,
-      "app": 18,
-      "gs": 13,
-      "cg": 5,
-      "sho": 1,
+      "era": 2.74,
+      "app": 20,
+      "gs": 15,
+      "cg": 6,
+      "sho": 2,
       "sv": 0,
-      "ip": 85,
-      "h": 93,
-      "r": 44,
-      "er": 35,
-      "bb": 25,
-      "so": 27,
+      "ip": 94.2,
+      "h": 105,
+      "r": 49,
+      "er": 37,
+      "bb": 26,
+      "so": 28,
       "hr": 1,
-      "whip": 1.39,
-      "doubles": 12,
+      "whip": 1.38,
+      "doubles": 13,
       "triples": 2,
-      "ab": 342,
-      "bAvg": 0.272,
+      "ab": 380,
+      "bAvg": 0.276,
       "wp": 6,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 6
+      "sha": 7
     },
     {
       "name": "Watson, Emily",
       "w": 10,
       "l": 1,
-      "era": 3.37,
-      "app": 21,
+      "era": 3.53,
+      "app": 22,
       "gs": 12,
       "cg": 7,
       "sho": 1,
       "sv": 0,
-      "ip": 81,
-      "h": 93,
-      "r": 41,
-      "er": 39,
-      "bb": 30,
+      "ip": 85.1,
+      "h": 99,
+      "r": 45,
+      "er": 43,
+      "bb": 32,
       "so": 23,
-      "hr": 5,
-      "whip": 1.52,
-      "doubles": 22,
+      "hr": 6,
+      "whip": 1.54,
+      "doubles": 25,
       "triples": 2,
-      "ab": 317,
-      "bAvg": 0.293,
+      "ab": 335,
+      "bAvg": 0.296,
       "wp": 2,
       "hbp": 7,
       "bk": 0,
@@ -3584,6 +3584,207 @@
           "hbp": 0,
           "ab": 18,
           "bf": 18
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/12782",
+      "date": "5/2/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to p (2-1 BFB).",
+            "Hayden Reilly singled to center field (3-1 BSBB).",
+            "Hayden Reilly stole second.",
+            "Ella Stolarzyk grounded out to 2b (2-1 BBF); Hayden Reilly advanced to third.",
+            "Dana Walker grounded out to ss (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maura Murphy grounded out to 2b (2-1 BBF).",
+            "Zoey Lynn singled (2-2 SFBB).",
+            "Mack Murnane walked (3-1 BBFBB); Zoey Lynn advanced to second.",
+            "Olivia Garcia pinch ran for Zoey Lynn.",
+            "Emma Behel singled to center field (3-0 BBB); Mack Murnane advanced to second; Olivia Garcia advanced to third.",
+            "Madeline Kibler singled to right field, RBI (2-2 BBKFF); Emma Behel advanced to second; Mack Murnane advanced to third; Olivia Garcia scored.",
+            "Abriana Schmutz reached on catcher's interference (2-2 BKBK); Madeline Kibler advanced to second; Emma Behel advanced to third; Mack Murnane scored, unearned.",
+            "Hayden Reilly singled to pitcher, RBI (1-2 BFFF); Abriana Schmutz advanced to second; Madeline Kibler advanced to third; Emma Behel scored.",
+            "Ella Stolarzyk reached on a fielder's choice (0-0); Hayden Reilly advanced to second; Abriana Schmutz advanced to third; Madeline Kibler out at home 3b to c.",
+            "Dana Walker singled to center field, 2 RBI (1-0 B); Ella Stolarzyk advanced to third, out at home cf to ss to 1b; Hayden Reilly scored, unearned; Abriana Schmutz scored, unearned."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emily Watson to p for Sharona Huang.",
+            "Maura Murphy walked (3-2 FSBFFBFBB).",
+            "Zoey Lynn grounded out to p (2-2 BKFBFFF); Maura Murphy advanced to second.",
+            "Mack Murnane popped up to 3b (0-2 FF).",
+            "Emma Behel grounded out to 2b (3-1 FBBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Madeline Kibler singled to center field (2-2 BBSSF).",
+            "Abriana Schmutz walked (3-0 BBBB); Madeline Kibler advanced to second.",
+            "Hayden Reilly popped up to ss (1-1 FB).",
+            "Ella Stolarzyk popped up to ss (2-2 BKFB).",
+            "Dana Walker doubled, advanced to third on the throw, out at home lf to 3b to c to 3b, 2 RBI (1-1 BS); Abriana Schmutz scored; Madeline Kibler scored."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maura Murphy singled to left field (2-2 FBBF).",
+            "Zoey Lynn popped up to 2b (0-0).",
+            "Mack Murnane popped up to 2b (1-2 BFFF).",
+            "Emma Behel fouled out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madeline Kibler popped up to 2b (0-2 SF).",
+            "Abriana Schmutz popped up to ss (1-1 BF).",
+            "Hayden Reilly homered to left field, RBI (1-1 FB).",
+            "Ella Stolarzyk flied out to cf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Dana Walker doubled to center field (3-2 BFBFFBF).",
+            "Abby Steele pinch ran for Dana Walker.",
+            "Maura Murphy flied out to cf (3-2 BFFBBF).",
+            "Zoey Lynn doubled, ground-rule, RBI (0-0); Abby Steele scored.",
+            "Sharona Huang to p for Emily Watson.",
+            "Mack Murnane singled to center field (0-1 K); Zoey Lynn advanced to third.",
+            "Lauren Ragonese grounded out to 3b (0-0); Mack Murnane advanced to second.",
+            "Madeline Kibler grounded out to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 2.2,
+          "h": 7,
+          "r": 5,
+          "er": 2,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 4.1,
+          "h": 6,
+          "r": 4,
+          "er": 4,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 20
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/united-states-coast-guard-academy/boxscore/12783",
+      "date": "5/2/2026",
+      "opponent": "United States Coast Guard Academy",
+      "pitchers": [
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to p (0-0).",
+            "Hayden Reilly grounded out to ss (2-0 BB).",
+            "Dana Walker singled to shortstop (0-0).",
+            "Maura Murphy grounded out to ss (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zoey Lynn grounded out to 3b (1-1 FB).",
+            "Mack Murnane grounded out to rf (1-0 B).",
+            "Bridget Bartz struck out swinging (1-2 KBFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lauren Ragonese singled to left field (0-0).",
+            "Madeline Kibler out at first 1b to 2b, SAC, bunt (1-1 FB); Lauren Ragonese advanced to second.",
+            "Abriana Schmutz grounded out to ss (0-1 S); Lauren Ragonese advanced to third.",
+            "Hayden Reilly grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dana Walker grounded out to p (0-0).",
+            "Maura Murphy lined out to 2b (0-0).",
+            "Zoey Lynn grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Olivia Scarpaci to c for Pearl Mitchell.",
+            "Mack Murnane doubled to right center (3-2 BBBSF).",
+            "Bridget Bartz singled to third base, out at second cf to 3b to ss (0-1 S); Mack Murnane advanced to third.",
+            "Lauren Ragonese grounded out to 3b (2-0 BB).",
+            "Madeline Kibler grounded out to 2b (3-1 KBBB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Abriana Schmutz grounded out to p (3-2 SSBBFB).",
+            "Hayden Reilly singled to shortstop (1-0 B).",
+            "Dana Walker flied out to rf (0-0).",
+            "Maura Murphy grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Zoey Lynn reached first on an error by ss (1-0 B).",
+            "Caitlynn Gibson pinch ran for Zoey Lynn.",
+            "Mack Murnane grounded into double play ss to 2b to 1b (2-2 BFSB); Caitlynn Gibson out on the play.",
+            "Bridget Bartz grounded out to c (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 7,
+          "h": 5,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
         }
       ],
       "year": 2026

@@ -1,64 +1,64 @@
 {
   "slug": "smith",
   "domain": "gosmithbears.com",
-  "scrapedAt": "2026-05-02T02:32:33.454Z",
+  "scrapedAt": "2026-05-03T02:43:01.291Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Gray, Bailey",
       "w": 7,
-      "l": 7,
-      "era": 3.09,
-      "app": 17,
-      "gs": 13,
-      "cg": 9,
+      "l": 8,
+      "era": 2.97,
+      "app": 18,
+      "gs": 14,
+      "cg": 10,
       "sho": 1,
       "sv": 0,
-      "ip": 88.1,
-      "h": 98,
-      "r": 56,
-      "er": 39,
+      "ip": 94.1,
+      "h": 103,
+      "r": 57,
+      "er": 40,
       "bb": 21,
-      "so": 51,
+      "so": 53,
       "hr": 3,
-      "whip": 1.35,
-      "doubles": 21,
+      "whip": 1.31,
+      "doubles": 23,
       "triples": 2,
-      "ab": 367,
-      "bAvg": 0.267,
+      "ab": 388,
+      "bAvg": 0.265,
       "wp": 3,
       "hbp": 3,
       "bk": 0,
       "sfa": 3,
-      "sha": 4
+      "sha": 6
     },
     {
       "name": "Peverly, Violet",
       "w": 9,
-      "l": 9,
-      "era": 3.7,
-      "app": 19,
-      "gs": 18,
+      "l": 10,
+      "era": 3.92,
+      "app": 20,
+      "gs": 19,
       "cg": 10,
       "sho": 0,
       "sv": 0,
-      "ip": 94.2,
-      "h": 111,
-      "r": 68,
-      "er": 50,
+      "ip": 98.1,
+      "h": 120,
+      "r": 73,
+      "er": 55,
       "bb": 45,
       "so": 93,
       "hr": 6,
-      "whip": 1.65,
-      "doubles": 18,
+      "whip": 1.68,
+      "doubles": 19,
       "triples": 3,
-      "ab": 390,
-      "bAvg": 0.285,
+      "ab": 409,
+      "bAvg": 0.293,
       "wp": 7,
       "hbp": 5,
       "bk": 0,
       "sfa": 3,
-      "sha": 6
+      "sha": 7
     },
     {
       "name": "Bennett, Lindsay",
@@ -92,29 +92,29 @@
       "name": "Robinson, Alana",
       "w": 0,
       "l": 3,
-      "era": 11.67,
-      "app": 7,
+      "era": 10.5,
+      "app": 8,
       "gs": 4,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 15,
-      "h": 30,
-      "r": 31,
-      "er": 25,
-      "bb": 21,
+      "ip": 17.1,
+      "h": 32,
+      "r": 32,
+      "er": 26,
+      "bb": 23,
       "so": 9,
       "hr": 1,
-      "whip": 3.4,
+      "whip": 3.17,
       "doubles": 6,
-      "triples": 0,
-      "ab": 76,
-      "bAvg": 0.395,
+      "triples": 1,
+      "ab": 83,
+      "bAvg": 0.386,
       "wp": 2,
-      "hbp": 3,
+      "hbp": 4,
       "bk": 0,
       "sfa": 0,
-      "sha": 0
+      "sha": 1
     }
   ],
   "games": [
@@ -3626,6 +3626,191 @@
           "hbp": 0,
           "ab": 32,
           "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/wellesley-college/boxscore/9687",
+      "date": "5/2/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Peverly, Violet",
+        "Robinson, Alana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern popped up to 3b (1-0 B).",
+            "A. Delgado singled to center field (0-2 KFF).",
+            "B. Awad flied out to cf (2-1 BFB).",
+            "A. Delgado stole second.",
+            "C. Lundin flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan grounded out to 2b (0-0).",
+            "A. Rodriguez flied out to ss (1-0 B).",
+            "E. Gaunce singled to right center (1-1 BS).",
+            "D. Borrison popped up to 2b (2-1 BSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol doubled to center field (2-1 BBS).",
+            "A. Mulhern out at first 1b to 2b, SAC, bunt (1-1 BF); N. Nicol advanced to third.",
+            "A. Delgado popped up to ss (2-2 FBFBF).",
+            "B. Awad singled to left center, RBI (3-1 BBFB); N. Nicol scored.",
+            "B. Awad stole second.",
+            "C. Lundin singled through the right side, RBI (2-1 BBK); B. Awad scored.",
+            "J. Colgan flied out to lf (3-1 BBFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "A. Rodriguez flied out to lf (0-0).",
+            "E. Gaunce singled to shortstop (2-0 BB).",
+            "D. Borrison singled up the middle (2-2 BFBF); E. Gaunce advanced to second.",
+            "N. Nicol infield fly to ss (0-0).",
+            "A. Mulhern singled up the middle, advanced to second on the throw, RBI (0-0); D. Borrison advanced to third; E. Gaunce scored.",
+            "A. Delgado singled up the middle, 2 RBI (3-2 BBFFBFF); A. Mulhern scored; D. Borrison scored.",
+            "Alana Robinson to p for Violet Peverly.",
+            "B. Awad grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "C. Lundin hit by pitch (1-0 B).",
+            "C. Lundin to 2b for J. Polski.",
+            "J. Polski to dp for C. Lundin.",
+            "J. Polski stole second.",
+            "J. Colgan singled up the middle, advanced to second on the throw (1-0 B); J. Polski advanced to third, out at home cf to c to 3b.",
+            "A. Rodriguez grounded out to 3b (1-1 KB).",
+            "E. Gaunce tripled down the lf line, RBI (2-1 BFB); J. Colgan scored.",
+            "D. Borrison flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "N. Nicol flied out to lf (0-2 SS).",
+            "A. Mulhern walked (3-2 BKBFBFFFB).",
+            "A. Delgado grounded out to 2b, SAC (1-1 BF); A. Mulhern advanced to second.",
+            "B. Awad walked (3-1 BBKBB).",
+            "C. Lundin pinch hit for J. Polski.",
+            "C. Lundin grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Peverly, Violet",
+          "ip": 3.2,
+          "h": 9,
+          "r": 5,
+          "er": 5,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 20
+        },
+        {
+          "name": "Robinson, Alana",
+          "ip": 2.1,
+          "h": 2,
+          "r": 1,
+          "er": 1,
+          "bb": 2,
+          "so": 0,
+          "hbp": 1,
+          "ab": 7,
+          "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://gosmithbears.com/sports/softball/stats/2026/wellesley-college/boxscore/9688",
+      "date": "5/2/2026",
+      "opponent": "Wellesley College",
+      "pitchers": [
+        "Gray, Bailey"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to cf (0-2 KF).",
+            "A. Delgado singled to right center (0-2 SFFF).",
+            "B. Awad out at first 1b to 2b, SAC, bunt (0-0); A. Delgado advanced to second.",
+            "C. Lundin grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "A. Rodriguez singled to right center (0-1 K).",
+            "E. Gaunce grounded out to p, SAC, bunt (0-1 F); A. Rodriguez advanced to second.",
+            "D. Borrison struck out swinging (2-2 SSBBS).",
+            "G. Jones grounded out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol flied out to ss (0-0).",
+            "A. Mulhern grounded out to 2b (0-0).",
+            "A. Delgado grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Awad doubled to right field (0-0).",
+            "C. Lundin flied out to cf (0-0).",
+            "A. Rodriguez grounded out to ss (0-0); B. Awad advanced to third.",
+            "E. Gaunce singled to left field, RBI (1-2 FBF); B. Awad scored.",
+            "D. Borrison struck out swinging (0-2 KSS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "G. Jones flied out to rf (1-0 B).",
+            "N. Nicol flied out to lf (2-2 FFBB).",
+            "A. Mulhern flied out to cf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Delgado flied out to lf (0-0).",
+            "B. Awad flied out to rf (2-2 BFKB).",
+            "C. Lundin doubled to left field (0-0).",
+            "J. Polski pinch ran for C. Lundin.",
+            "A. Rodriguez flied out to cf (1-2 SFFFFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Gray, Bailey",
+          "ip": 6,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 23
         }
       ],
       "year": 2026

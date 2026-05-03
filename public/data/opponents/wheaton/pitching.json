@@ -1,59 +1,59 @@
 {
   "slug": "wheaton",
   "domain": "wheatoncollegelyons.com",
-  "scrapedAt": "2026-05-02T02:32:24.212Z",
+  "scrapedAt": "2026-05-03T02:42:48.916Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Blankenheim-Brown, Peyton",
-      "w": 10,
+      "w": 11,
       "l": 7,
-      "era": 1.45,
-      "app": 18,
-      "gs": 18,
-      "cg": 15,
-      "sho": 3,
+      "era": 1.36,
+      "app": 19,
+      "gs": 19,
+      "cg": 16,
+      "sho": 4,
       "sv": 0,
-      "ip": 106.1,
-      "h": 97,
+      "ip": 113.1,
+      "h": 103,
       "r": 35,
       "er": 22,
       "bb": 8,
-      "so": 59,
+      "so": 65,
       "hr": 4,
-      "whip": 0.99,
+      "whip": 0.98,
       "doubles": 19,
       "triples": 2,
-      "ab": 398,
-      "bAvg": 0.244,
+      "ab": 425,
+      "bAvg": 0.242,
       "wp": 1,
-      "hbp": 4,
+      "hbp": 5,
       "bk": 0,
       "sfa": 4,
-      "sha": 20
+      "sha": 21
     },
     {
       "name": "De La Rosa, Sofia",
-      "w": 9,
+      "w": 10,
       "l": 7,
-      "era": 2.53,
-      "app": 18,
-      "gs": 16,
-      "cg": 13,
+      "era": 2.47,
+      "app": 19,
+      "gs": 17,
+      "cg": 14,
       "sho": 5,
       "sv": 0,
-      "ip": 105.1,
-      "h": 108,
-      "r": 50,
-      "er": 38,
+      "ip": 110.1,
+      "h": 115,
+      "r": 51,
+      "er": 39,
       "bb": 25,
-      "so": 104,
+      "so": 109,
       "hr": 3,
-      "whip": 1.26,
-      "doubles": 23,
+      "whip": 1.27,
+      "doubles": 25,
       "triples": 4,
-      "ab": 412,
-      "bAvg": 0.262,
+      "ab": 433,
+      "bAvg": 0.266,
       "wp": 1,
       "hbp": 3,
       "bk": 0,
@@ -3359,6 +3359,172 @@
           "hbp": 0,
           "ab": 21,
           "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/emerson-college/boxscore/10034",
+      "date": "5/2/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "Blankenheim-Brown, Peyton"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano singled through the right side, advanced to second on an error by rf (1-0 B).",
+            "Aislinn McCoy out at first 3b to 2b, SAC, bunt (0-1 F); Valentina Luciano advanced to third.",
+            "Avi Kuperman struck out swinging (0-2 KKFS).",
+            "Casey Yacovelli flied out to lf (0-1 S)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kari Sorensen reached first on an error by ss (1-2 KSFFB).",
+            "Cal Sheehan flied out to lf (0-0).",
+            "Riley Fasteau singled to left field (2-2 FBFFB); Kari Sorensen advanced to second.",
+            "Kayla Nuehlen popped up to 2b (0-2 SSFFF).",
+            "Bri Frongillo hit by pitch (2-2 BSKH); Riley Fasteau advanced to second; Kari Sorensen advanced to third.",
+            "Valentina Luciano struck out swinging (0-2 KFFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Aislinn McCoy flied out to cf (0-1 F).",
+            "Avi Kuperman singled to center field (0-0).",
+            "Casey Yacovelli struck out swinging (0-2 SKS).",
+            "Kari Sorensen flied out to rf (1-2 BFFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Cal Sheehan flied out to lf (1-0 B).",
+            "Riley Fasteau singled to right center (2-2 FBFFB).",
+            "Kayla Nuehlen singled to center field (2-0 BB); Riley Fasteau advanced to second.",
+            "Bri Frongillo struck out looking (1-2 KBSK).",
+            "Valentina Luciano reached on a fielder's choice to third base (0-1 S); Kayla Nuehlen advanced to second; Riley Fasteau out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Aislinn McCoy flied out to cf (0-0).",
+            "Avi Kuperman flied out to cf (0-2 KFF).",
+            "Casey Yacovelli flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Gabby Reinbold to cf.",
+            "Brittany Dost to 1b.",
+            "Kari Sorensen flied out to lf (1-1 FB).",
+            "Cal Sheehan struck out swinging (1-2 BKFFS).",
+            "Riley Fasteau flied out to rf (0-2 SFF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kayla Nuehlen singled to left center (0-1 F).",
+            "Elizabeth Miehlich pinch ran for Kayla Nuehlen.",
+            "Bri Frongillo fouled out to 1b (1-2 FKFBFF).",
+            "Valentina Luciano flied out to lf (1-0 B).",
+            "Aislinn McCoy struck out swinging, out at first c to 1b (2-2 FFFBBFFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blankenheim-Brown, Peyton",
+          "ip": 7,
+          "h": 6,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://wheatoncollegelyons.com/sports/softball/stats/2026/emerson-college/boxscore/10035",
+      "date": "5/2/2026",
+      "opponent": "Emerson College",
+      "pitchers": [
+        "De La Rosa, Sofia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Valentina Luciano singled down the lf line (3-0 BBB).",
+            "Aislinn McCoy struck out looking (1-2 BFSK).",
+            "Valentina Luciano stole second, advanced to third on a throwing error by c.",
+            "Avi Kuperman struck out swinging (1-2 KBKS).",
+            "Casey Yacovelli struck out swinging (0-2 SSS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kari Sorensen doubled to right center (1-0 B).",
+            "Cal Sheehan struck out swinging (2-2 BKSBS).",
+            "Kayla Nuehlen singled down the rf line, RBI (1-1 FB); Kari Sorensen scored.",
+            "Elizabeth Miehlich struck out swinging (2-2 SSBBS).",
+            "Bri Frongillo grounded out to p (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Valentina Luciano singled to shortstop (2-2 FBBK).",
+            "Valentina Luciano out at second c to 2b, caught stealing.",
+            "Aislinn McCoy doubled to left field (2-2 KBSFB).",
+            "Avi Kuperman flied out to lf (1-2 FBF).",
+            "Casey Yacovelli fouled out to c (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kari Sorensen singled to center field (2-2 SFFBB).",
+            "Cal Sheehan singled through the left side (3-2 SKFBFFFFFFBB); Kari Sorensen advanced to second.",
+            "Kayla Nuehlen grounded out to ss (3-0 BBB); Cal Sheehan advanced to second; Kari Sorensen advanced to third.",
+            "Elizabeth Miehlich popped up to 2b (0-1 K).",
+            "Bri Frongillo flied out to cf (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley Dolan to c for Madi Miller.",
+            "Valentina Luciano grounded out to 2b (0-1 F).",
+            "Aislinn McCoy flied out to cf (2-0 BB).",
+            "Avi Kuperman flied out to cf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "De La Rosa, Sofia",
+          "ip": 5,
+          "h": 7,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 5,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 21
         }
       ],
       "year": 2026

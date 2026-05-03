@@ -1,64 +1,64 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-02T02:32:19.535Z",
+  "scrapedAt": "2026-05-03T02:42:43.347Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 21,
+      "w": 22,
       "l": 0,
-      "era": 1.63,
-      "app": 22,
-      "gs": 14,
-      "cg": 11,
+      "era": 1.93,
+      "app": 23,
+      "gs": 15,
+      "cg": 12,
       "sho": 4,
       "sv": 0,
-      "ip": 116,
-      "h": 126,
-      "r": 33,
-      "er": 27,
-      "bb": 18,
-      "so": 71,
+      "ip": 123,
+      "h": 137,
+      "r": 40,
+      "er": 34,
+      "bb": 25,
+      "so": 76,
       "hr": 0,
-      "whip": 1.24,
-      "doubles": 16,
-      "triples": 2,
-      "ab": 453,
-      "bAvg": 0.278,
-      "wp": 2,
-      "hbp": 4,
+      "whip": 1.32,
+      "doubles": 17,
+      "triples": 3,
+      "ab": 482,
+      "bAvg": 0.284,
+      "wp": 3,
+      "hbp": 5,
       "bk": 0,
       "sfa": 2,
-      "sha": 9
+      "sha": 11
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 12,
+      "w": 13,
       "l": 2,
-      "era": 2.23,
-      "app": 20,
-      "gs": 19,
-      "cg": 14,
+      "era": 2.28,
+      "app": 21,
+      "gs": 20,
+      "cg": 15,
       "sho": 3,
       "sv": 0,
-      "ip": 100.2,
-      "h": 113,
-      "r": 47,
-      "er": 32,
-      "bb": 32,
-      "so": 57,
+      "ip": 107.2,
+      "h": 120,
+      "r": 50,
+      "er": 35,
+      "bb": 38,
+      "so": 62,
       "hr": 1,
-      "whip": 1.44,
-      "doubles": 11,
+      "whip": 1.47,
+      "doubles": 12,
       "triples": 2,
-      "ab": 396,
+      "ab": 421,
       "bAvg": 0.285,
       "wp": 5,
-      "hbp": 6,
+      "hbp": 7,
       "bk": 0,
       "sfa": 5,
-      "sha": 14
+      "sha": 15
     },
     {
       "name": "Barr, Kaitlyn",
@@ -4384,6 +4384,204 @@
           "hbp": 1,
           "ab": 13,
           "bf": 15
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/clark/boxscore/16660",
+      "date": "5/2/2026",
+      "opponent": "Clark",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence hit by pitch (3-0 BBH).",
+            "Caitriona Andre out at first 1b to 2b, SAC, bunt (0-0); Emelie Spence advanced to second.",
+            "Merry Griffin walked (3-2 KFBBBB).",
+            "Madison Dillon doubled down the rf line, 2 RBI (2-0 BB); Merry Griffin scored; Emelie Spence scored.",
+            "Felicia Salvati grounded out to 3b (3-2 FBBKFFB).",
+            "Erin Slavin walked (3-2 BSSBFFFBB).",
+            "Avery Della Piana grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Avery Dillon walked (3-2 SFBBBFB).",
+            "Sydney Lyons singled to first base, bunt (0-0); Avery Dillon advanced to second.",
+            "Emelie Spence struck out swinging (2-2 BKFFFBS).",
+            "Caitriona Andre struck out swinging (1-2 KBSS); Sydney Lyons picked off, out at first c to 1b."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Merry Griffin lined out to rf (1-2 BFF).",
+            "Madison Dillon singled to center field (3-1 BBFB).",
+            "Felicia Salvati fouled out to rf (2-2 BSBK).",
+            "Erin Slavin reached on a fielder's choice (2-2 KBFFB); Madison Dillon out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Avery Della Piana grounded out to p (3-1 BBKB).",
+            "Avery Dillon grounded out to 3b (1-0 B).",
+            "Sydney Lyons singled to right field (1-1 BF).",
+            "Emelie Spence singled to left field (1-1 FB); Sydney Lyons advanced to second.",
+            "Caitriona Andre struck out looking (0-2 KKK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Merry Griffin walked (3-0 BBBB).",
+            "Madison Dillon walked (3-2 BBBKKFB); Merry Griffin advanced to second.",
+            "Felicia Salvati flied out to cf (1-0 B); Merry Griffin advanced to third.",
+            "Madison Dillon out at second c to 2b, caught stealing.",
+            "Erin Slavin walked (3-1 BBBFB).",
+            "Avery Della Piana singled up the middle, RBI (2-1 BKB); Erin Slavin advanced to second; Merry Griffin scored.",
+            "Avery Dillon reached on a fielder's choice (2-1 BFB); Avery Della Piana out at second ss to 2b."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sydney Lyons lined out to 1b (0-1 K).",
+            "Emelie Spence grounded out to 2b (1-1 BF).",
+            "Caitriona Andre struck out looking (1-2 FBSK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Merry Griffin grounded out to 2b (1-1 FB).",
+            "Madison Dillon singled to shortstop (2-2 BFBKF).",
+            "Felicia Salvati struck out swinging (1-2 BFFS).",
+            "Erin Slavin flied out to rf (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 7,
+          "r": 3,
+          "er": 3,
+          "bb": 6,
+          "so": 5,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 33
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/clark/boxscore/16661",
+      "date": "5/2/2026",
+      "opponent": "Clark",
+      "pitchers": [
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emelie Spence walked (3-0 BBBB).",
+            "Merry Griffin struck out looking (1-2 KFBK).",
+            "Megan Dube grounded out to p (1-2 FFB); Emelie Spence advanced to second.",
+            "Madison Dillon singled to left field, RBI (1-2 KFFB); Emelie Spence scored.",
+            "Avery Della Piana singled to right center (0-2 KK); Madison Dillon advanced to third.",
+            "Felicia Salvati singled to left field, RBI (1-0 B); Avery Della Piana advanced to second; Madison Dillon scored.",
+            "Avery Dillon flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Erin Slavin singled to first base (2-1 KBB).",
+            "Charlise Quigley out at first p to 2b, SAC, bunt (0-0); Erin Slavin advanced to second.",
+            "Emelie Spence singled to shortstop (0-0); Erin Slavin advanced to third.",
+            "Merry Griffin struck out swinging (1-2 BSFS).",
+            "Megan Dube hit by pitch (1-2 FKFH); Emelie Spence advanced to second.",
+            "Madison Dillon grounded out to 1b unassisted (0-2 KS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avery Della Piana walked (3-1 BBKBB).",
+            "Felicia Salvati singled to second base, bunt (0-0); Avery Della Piana advanced to second.",
+            "Jennifer Albano pinch ran for Avery Della Piana.",
+            "Avery Dillon flied out to lf (1-1 FB).",
+            "Felicia Salvati advanced to second; Jennifer Albano advanced to third on a wild pitch.",
+            "Erin Slavin walked (3-2 BBFBFFB).",
+            "Charlise Quigley tripled to right center, 2 RBI (2-2 BBKK); Erin Slavin advanced to third, out at home rf to 2b to c; Felicia Salvati scored; Jennifer Albano scored.",
+            "Emelie Spence walked (3-1 BBBKB).",
+            "Emelie Spence stole second; Charlise Quigley stole home.",
+            "Merry Griffin struck out swinging (1-2 KBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Megan Dube flied out to rf (0-0).",
+            "Madison Dillon grounded out to p (0-1 K).",
+            "Avery Della Piana walked (3-1 BBBKB).",
+            "Felicia Salvati lined out to 1b (1-2 BSF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Avery Dillon singled to center field (1-0 B).",
+            "Erin Slavin out at first p to 2b, SAC, bunt (0-1 F); Avery Dillon advanced to second.",
+            "Charlise Quigley walked (3-0 BBBB).",
+            "Emelie Spence singled to center field (2-1 KBB); Charlise Quigley advanced to second; Avery Dillon advanced to third.",
+            "Merry Griffin grounded out to ss, RBI (3-2 BFBBF); Emelie Spence advanced to second; Charlise Quigley advanced to third; Avery Dillon scored.",
+            "Megan Dube lined out to p (0-2 KK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Madison Dillon grounded out to 3b (1-2 KSB).",
+            "Avery Della Piana struck out looking (2-2 FBBKK).",
+            "Felicia Salvati doubled to left field (0-1 K).",
+            "Avery Dillon singled to left center, RBI (1-1 FB); Felicia Salvati scored.",
+            "Erin Slavin lined out to rf (1-2 SBKF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Stella Kozak to 3b for Destiny Lum.",
+            "Suzannah Figler to c for Ariana Kreuzer.",
+            "Charlise Quigley flied out to lf (0-0).",
+            "Emelie Spence grounded out to 2b (0-1 S).",
+            "Merry Griffin walked (3-0 BBBB).",
+            "Megan Dube struck out swinging, out at first c to 1b (1-2 FBKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 7,
+          "h": 11,
+          "r": 7,
+          "er": 7,
+          "bb": 7,
+          "so": 5,
+          "hbp": 1,
+          "ab": 29,
+          "bf": 39
         }
       ],
       "year": 2026

@@ -1,31 +1,31 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-05-02T02:32:28.743Z",
+  "scrapedAt": "2026-05-03T02:42:53.543Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 14,
+      "w": 15,
       "l": 5,
-      "era": 2,
-      "app": 20,
-      "gs": 11,
-      "cg": 10,
-      "sho": 3,
+      "era": 1.93,
+      "app": 21,
+      "gs": 12,
+      "cg": 11,
+      "sho": 4,
       "sv": 0,
-      "ip": 129.1,
-      "h": 126,
+      "ip": 134.1,
+      "h": 128,
       "r": 46,
       "er": 37,
-      "bb": 28,
-      "so": 113,
+      "bb": 31,
+      "so": 117,
       "hr": 4,
-      "whip": 1.19,
+      "whip": 1.18,
       "doubles": 22,
       "triples": 4,
-      "ab": 496,
-      "bAvg": 0.254,
+      "ab": 513,
+      "bAvg": 0.25,
       "wp": 4,
       "hbp": 2,
       "bk": 0,
@@ -34,56 +34,56 @@
     },
     {
       "name": "Rimshnick, Julia",
-      "w": 8,
+      "w": 9,
       "l": 7,
-      "era": 5.06,
-      "app": 25,
+      "era": 5.01,
+      "app": 26,
       "gs": 24,
       "cg": 14,
       "sho": 0,
       "sv": 1,
-      "ip": 103.2,
-      "h": 147,
-      "r": 89,
-      "er": 75,
+      "ip": 107.2,
+      "h": 151,
+      "r": 91,
+      "er": 77,
       "bb": 26,
-      "so": 53,
+      "so": 55,
       "hr": 3,
-      "whip": 1.67,
-      "doubles": 23,
+      "whip": 1.64,
+      "doubles": 24,
       "triples": 12,
-      "ab": 455,
-      "bAvg": 0.323,
-      "wp": 5,
+      "ab": 471,
+      "bAvg": 0.321,
+      "wp": 6,
       "hbp": 4,
       "bk": 0,
       "sfa": 4,
-      "sha": 7
+      "sha": 8
     },
     {
       "name": "McCauliffe, Lily",
       "w": 0,
       "l": 0,
       "era": 0,
-      "app": 1,
-      "gs": 0,
+      "app": 2,
+      "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 2,
-      "h": 4,
+      "ip": 4,
+      "h": 6,
       "r": 0,
       "er": 0,
       "bb": 1,
-      "so": 1,
+      "so": 2,
       "hr": 0,
-      "whip": 2.5,
-      "doubles": 1,
+      "whip": 1.75,
+      "doubles": 2,
       "triples": 0,
-      "ab": 10,
-      "bAvg": 0.4,
+      "ab": 18,
+      "bAvg": 0.333,
       "wp": 0,
-      "hbp": 0,
+      "hbp": 1,
       "bk": 0,
       "sfa": 0,
       "sha": 0
@@ -3534,6 +3534,175 @@
           "hbp": 0,
           "ab": 28,
           "bf": 31
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/babson/boxscore/14854",
+      "date": "5/2/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh flied out to lf (0-1 K).",
+            "Maddy DeLong singled to right field (3-2 BKBSB).",
+            "Lexi Sealy walked (3-1 BBBKB); Maddy DeLong advanced to second.",
+            "Belle Dicampello reached on a fielder's choice (0-0); Lexi Sealy advanced to second; Maddy DeLong out at third ss to 3b.",
+            "Charlotte Raymond struck out swinging (1-2 BFKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophia Pak flied out to lf (2-1 BBK).",
+            "Samantha Skivo grounded out to p (1-0 B).",
+            "Devin McCall walked (3-0 BBBB).",
+            "Allie Cubberly flied out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emily Walsh walked (3-2 BKFBFBB).",
+            "Maddy DeLong lined out to lf (3-2 BBBKK).",
+            "Lexi Sealy fouled out to 1b (0-1 K).",
+            "Belle Dicampello struck out swinging (1-2 KFFBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charlotte Raymond flied out to cf (2-1 BFB).",
+            "Sophia Pak grounded out to ss (3-1 BBBK).",
+            "Samantha Skivo singled through the left side (0-1 S).",
+            "Devin McCall lined out to rf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Carissa Pecchia to c for Rachel Powers.",
+            "Allie Cubberly struck out swinging (0-2 KSS).",
+            "Emily Walsh grounded out to p (0-1 K).",
+            "Maddy DeLong struck out swinging (0-2 KKS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 5,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 3,
+          "so": 4,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 20
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/babson/boxscore/14855",
+      "date": "5/2/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "McCauliffe, Lily",
+        "Rimshnick, Julia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh struck out swinging (2-2 BBKFS).",
+            "Maddy DeLong grounded out to 2b (1-1 BK).",
+            "Lexi Sealy doubled to left center (0-0).",
+            "Belle Dicampello grounded out to 2b (2-2 BBKS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Charlotte Raymond lined out to cf (3-2 BKFBB).",
+            "Sophia Pak singled to left field (2-2 KBKB).",
+            "Samantha Skivo hit by pitch (1-2 KSH); Sophia Pak advanced to second.",
+            "Devin McCall grounded out to p (1-2 BKFF); Samantha Skivo advanced to second; Sophia Pak advanced to third.",
+            "Allie Cubberly grounded out to 3b (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Julia Rimshnick to p for Lily McCauliffe.",
+            "Emily Walsh reached first on an error by 1b (2-2 BBKF).",
+            "Maddy DeLong out at first 3b to 2b, SAC, bunt (0-0); Emily Walsh advanced to second.",
+            "Lexi Sealy grounded out to 2b (0-0); Emily Walsh advanced to third.",
+            "Belle Dicampello flied out to rf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Charlotte Raymond flied out to cf (1-2 KSB).",
+            "Sophia Pak singled to left field (2-2 KBBF).",
+            "Samantha Skivo singled through the left side (2-1 KBB); Sophia Pak advanced to second.",
+            "Devin McCall reached on a fielder's choice (1-2 BKKFF); Samantha Skivo advanced to second; Sophia Pak out at third 3b unassisted.",
+            "Allie Cubberly doubled to left center, 2 RBI (3-2 FFBFBFBF); Devin McCall scored; Samantha Skivo scored.",
+            "Emily Walsh flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Maddy DeLong struck out swinging (0-2 FFS).",
+            "Lexi Sealy flied out to rf (1-0 B).",
+            "Belle Dicampello singled to right center (1-0 B).",
+            "Izzy Burgess pinch ran for Belle Dicampello.",
+            "Izzy Burgess advanced to second on a wild pitch.",
+            "Charlotte Raymond struck out swinging (1-2 KFBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Carissa Pecchia to dp for Maddie Tse.",
+            "Sophia Pak grounded out to 2b (1-1 BK).",
+            "Samantha Skivo lined out to lf (0-0).",
+            "Devin McCall grounded out to ss (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "McCauliffe, Lily",
+          "ip": 2,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 8,
+          "bf": 9
+        },
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 4,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
         }
       ],
       "year": 2026

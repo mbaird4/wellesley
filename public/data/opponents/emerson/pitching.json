@@ -1,59 +1,59 @@
 {
   "slug": "emerson",
   "domain": "emersonlions.com",
-  "scrapedAt": "2026-05-02T02:32:49.321Z",
+  "scrapedAt": "2026-05-03T02:43:18.566Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sheehan, Caleigh",
       "w": 6,
-      "l": 11,
-      "era": 3.51,
-      "app": 25,
-      "gs": 13,
-      "cg": 8,
+      "l": 12,
+      "era": 3.57,
+      "app": 26,
+      "gs": 14,
+      "cg": 9,
       "sho": 1,
       "sv": 1,
-      "ip": 105.2,
-      "h": 122,
-      "r": 99,
-      "er": 53,
-      "bb": 57,
-      "so": 124,
+      "ip": 111.2,
+      "h": 126,
+      "r": 103,
+      "er": 57,
+      "bb": 62,
+      "so": 130,
       "hr": 2,
-      "whip": 1.69,
+      "whip": 1.68,
       "doubles": 18,
       "triples": 8,
-      "ab": 452,
-      "bAvg": 0.27,
-      "wp": 30,
-      "hbp": 12,
+      "ab": 473,
+      "bAvg": 0.266,
+      "wp": 32,
+      "hbp": 14,
       "bk": 0,
       "sfa": 5,
-      "sha": 12
+      "sha": 14
     },
     {
       "name": "Regan, Kate",
       "w": 1,
-      "l": 10,
-      "era": 6.32,
-      "app": 20,
-      "gs": 15,
-      "cg": 3,
+      "l": 11,
+      "era": 6.3,
+      "app": 21,
+      "gs": 16,
+      "cg": 4,
       "sho": 0,
       "sv": 0,
-      "ip": 72,
-      "h": 119,
-      "r": 84,
-      "er": 65,
-      "bb": 33,
+      "ip": 76.2,
+      "h": 128,
+      "r": 93,
+      "er": 69,
+      "bb": 36,
       "so": 18,
       "hr": 5,
-      "whip": 2.11,
-      "doubles": 25,
-      "triples": 7,
-      "ab": 337,
-      "bAvg": 0.353,
+      "whip": 2.14,
+      "doubles": 30,
+      "triples": 8,
+      "ab": 362,
+      "bAvg": 0.354,
       "wp": 5,
       "hbp": 0,
       "bk": 0,
@@ -3011,6 +3011,179 @@
           "hbp": 0,
           "ab": 6,
           "bf": 6
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/4303",
+      "date": "5/2/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Sheehan, Caleigh"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Ella Molinari singled through the left side (3-0 BBB).",
+            "Amber Arcand singled to pitcher, advanced to second on an error by 3b (0-0); Ella Molinari advanced to third.",
+            "Peyton Blankenheim-Brown struck out swinging, reached first on an error by c (2-2 KBBFS).",
+            "Mady Bryan reached on a fielder's choice to shortstop, RBI (3-1 KBBB); Peyton Blankenheim-Brown advanced to second; Amber Arcand out at third ss to 3b; Ella Molinari scored.",
+            "Emma Boucher reached on a fielder's choice to third base (0-1 K); Mady Bryan advanced to second; Peyton Blankenheim-Brown out at third 3b unassisted.",
+            "Lexi Falcioni grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maggie Caron singled up the middle (3-1 BBBK).",
+            "Julia Miller grounded out to 3b, SAC, bunt (0-1 F); Maggie Caron advanced to second, out at third 3b to 1b to 3b to ss to 3b.",
+            "Riley Dolan lined out to 1b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ella Molinari walked (3-1 KBBBB).",
+            "Ella Molinari stole second.",
+            "Amber Arcand struck out swinging (0-2 KKS).",
+            "Ella Molinari advanced to third on a wild pitch.",
+            "Peyton Blankenheim-Brown grounded out to ss (2-1 BBF).",
+            "Mady Bryan walked (3-2 BBFBKB).",
+            "Emma Boucher grounded out to p (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Lexi Falcioni struck out looking (2-2 BFFBK).",
+            "Maggie Caron hit by pitch (3-2 FBFBH).",
+            "Julia Miller struck out swinging (0-2 FFFS); Maggie Caron stole second.",
+            "Riley Dolan grounded out to ss (0-1 F)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Ella Molinari walked (3-2 BBFBFFFB).",
+            "Ella Molinari stole second.",
+            "Amber Arcand struck out swinging (0-2 KKS).",
+            "Peyton Blankenheim-Brown reached on a fielder's choice to third base (0-0).",
+            "Gabby Reinbold pinch ran for Ella Molinari.",
+            "/  for Brittany Dost.",
+            "Brittany Dost pinch hit for Mady Bryan.",
+            "Brittany Dost walked (3-2 KBBFBB); Peyton Blankenheim-Brown advanced to second; Gabby Reinbold advanced to third.",
+            "Emma Boucher singled to left field, RBI (3-2 BKFBFFBFFFFFFF); Brittany Dost advanced to second; Peyton Blankenheim-Brown advanced to third; Gabby Reinbold scored.",
+            "Lexi Falcioni grounded out to ss, RBI (1-2 FBSF); Emma Boucher advanced to second; Brittany Dost advanced to third; Peyton Blankenheim-Brown scored.",
+            "Maggie Caron struck out swinging (1-2 KKBS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Miller walked (3-1 BBSBB).",
+            "Riley Dolan grounded out to p, SAC, bunt (0-0); Julia Miller advanced to second, advanced to third on the throw.",
+            "Gabby Reinbold hit by pitch (1-1 KH).",
+            "Gabby Reinbold advanced to second; Julia Miller scored on a wild pitch.",
+            "Amber Arcand grounded out to 3b (1-2 FFB); Gabby Reinbold did not advance.",
+            "Peyton Blankenheim-Brown grounded out to ss (2-0 BB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Sheehan, Caleigh",
+          "ip": 6,
+          "h": 4,
+          "r": 4,
+          "er": 4,
+          "bb": 5,
+          "so": 6,
+          "hbp": 2,
+          "ab": 21,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://emersonlions.com/sports/softball/stats/2026/wheaton-college-mass-/boxscore/4304",
+      "date": "5/2/2026",
+      "opponent": "Wheaton College Mass ",
+      "pitchers": [
+        "Regan, Kate"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand reached first on an error by 2b (2-2 KBFB).",
+            "Taylor Barry doubled to left center (0-0); Amber Arcand advanced to third.",
+            "Peyton Blankenheim-Brown lined out to 2b (0-0).",
+            "Emma Boucher walked (3-1 BFBBB).",
+            "Lexi Falcioni tripled to right center, 3 RBI (0-0); Emma Boucher scored; Taylor Barry scored; Amber Arcand scored, unearned.",
+            "Maggie Caron grounded out to 1b unassisted, RBI (0-0); Lexi Falcioni scored, unearned.",
+            "Gabby Reinbold flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley Dolan grounded out to 3b (1-1 SB).",
+            "Julia Miller grounded out to p (1-1 KB).",
+            "Amber Arcand walked (3-1 BBKBB).",
+            "Taylor Barry grounded out to 3b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Peyton Blankenheim-Brown doubled to left field (0-1 F).",
+            "Emma Boucher doubled to center field (1-0 B); Peyton Blankenheim-Brown advanced to third.",
+            "Lexi Falcioni reached first on an error by ss, RBI (0-0); Emma Boucher scored, unearned; Peyton Blankenheim-Brown scored.",
+            "Maggie Caron reached on a fielder's choice (3-2 BFBBK); Lexi Falcioni out at second 2b to ss.",
+            "Maggie Caron out at second c to 2b, caught stealing.",
+            "Gabby Reinbold grounded out to ss (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Madi Miller pinch hit for Riley Dolan.",
+            "Madi Miller grounded out to p (1-1 KB).",
+            "Julia Miller doubled to right center (2-2 FKBFB).",
+            "Amber Arcand grounded out to ss (2-2 BBFF); Julia Miller did not advance.",
+            "Taylor Barry singled up the middle, RBI, advanced to second on the throw (1-1 KB); Julia Miller scored.",
+            "Peyton Blankenheim-Brown grounded out to ss (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Emma Boucher grounded out to 3b (0-0).",
+            "Lexi Falcioni doubled to right center (0-0).",
+            "Brittany Dost pinch hit for Maggie Caron.",
+            "Brittany Dost reached first on a throwing error by ss (2-1 BBF); Lexi Falcioni scored, unearned.",
+            "Gabby Reinbold lined out to 3b (0-0).",
+            "Riley Dolan walked (3-1 BBKBB); Brittany Dost advanced to second.",
+            "Julia Miller singled to left field (0-1 F); Riley Dolan advanced to second; Brittany Dost advanced to third.",
+            "Amber Arcand singled up the middle, RBI (0-2 FF); Julia Miller advanced to second; Riley Dolan advanced to third; Brittany Dost scored, unearned."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Regan, Kate",
+          "ip": 4.2,
+          "h": 9,
+          "r": 9,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 28
         }
       ],
       "year": 2026
