@@ -1,31 +1,31 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-05-04T02:40:37.806Z",
+  "scrapedAt": "2026-05-05T02:34:36.344Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 12,
+      "w": 13,
       "l": 9,
-      "era": 1.36,
-      "app": 25,
-      "gs": 17,
-      "cg": 14,
+      "era": 1.28,
+      "app": 26,
+      "gs": 18,
+      "cg": 15,
       "sho": 3,
       "sv": 1,
-      "ip": 118.2,
-      "h": 103,
-      "r": 51,
+      "ip": 125.2,
+      "h": 107,
+      "r": 52,
       "er": 23,
       "bb": 31,
-      "so": 99,
+      "so": 106,
       "hr": 0,
-      "whip": 1.13,
+      "whip": 1.1,
       "doubles": 15,
       "triples": 0,
-      "ab": 472,
-      "bAvg": 0.218,
+      "ab": 498,
+      "bAvg": 0.215,
       "wp": 6,
       "hbp": 1,
       "bk": 0,
@@ -3281,6 +3281,97 @@
           "hbp": 0,
           "ab": 22,
           "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/wheaton-mass-/boxscore/9518",
+      "date": "5/4/2026",
+      "opponent": "Wheaton Mass ",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Amber Arcand grounded out to 2b (2-1 BKB).",
+            "Taylor Barry struck out looking (1-2 KFBK).",
+            "Peyton Blankenheim-Brown grounded out to p (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mady Bryan singled up the middle (0-0).",
+            "Emma Boucher struck out swinging (1-2 KBFS).",
+            "Lexi Falcioni grounded out to 2b (3-1 BBFB); Mady Bryan advanced to second.",
+            "Gabby Reinbold singled to right field, RBI (0-0); Mady Bryan scored on an error by rf, unearned.",
+            "Riley Dolan grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Julia Miller grounded out to ss (2-2 SFBFFBF).",
+            "Amber Arcand struck out swinging (2-2 BKBFS).",
+            "Taylor Barry fouled out to 1b (3-1 BBFB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Peyton Blankenheim-Brown singled through the left side (0-0).",
+            "Mady Bryan singled up the middle, advanced to second on the throw (1-1 BF); Peyton Blankenheim-Brown advanced to third.",
+            "Emma Boucher reached first on an error by p (0-1 F).",
+            "Lexi Falcioni struck out swinging (1-2 BFFS).",
+            "Gabby Reinbold lined out to 3b (2-1 BSB).",
+            "Riley Dolan grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Ragonese to dp for Emma Behel.",
+            "Madeline Kibler to c for Zoey Cascio.",
+            "Julia Miller struck out swinging (2-2 FBBFS).",
+            "Amber Arcand struck out looking (0-2 KFK).",
+            "Taylor Barry grounded out to p (3-2 BFKBFBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bridget Bartz to 2b.",
+            "Dana Walker to p for Olivia Garcia.",
+            "Peyton Blankenheim-Brown grounded out to 3b (1-0 B).",
+            "Mady Bryan struck out swinging (1-2 SBKFS).",
+            "Emma Boucher grounded out to 3b (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Madi Miller pinch hit for Riley Dolan.",
+            "Lexi Falcioni grounded out to 2b (1-2 KFB).",
+            "Gabby Reinbold fouled out to rf (0-1 F).",
+            "Madi Miller grounded out to 2b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 4,
+          "r": 1,
+          "er": 0,
+          "bb": 0,
+          "so": 7,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 26
         }
       ],
       "year": 2026
