@@ -1,32 +1,32 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-05-05T02:34:12.126Z",
+  "scrapedAt": "2026-05-06T02:38:38.432Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 15,
+      "w": 16,
       "l": 5,
-      "era": 1.93,
-      "app": 21,
-      "gs": 12,
-      "cg": 11,
-      "sho": 4,
+      "era": 1.83,
+      "app": 22,
+      "gs": 13,
+      "cg": 12,
+      "sho": 5,
       "sv": 0,
-      "ip": 134.1,
-      "h": 128,
+      "ip": 141.1,
+      "h": 137,
       "r": 46,
       "er": 37,
       "bb": 31,
-      "so": 117,
+      "so": 123,
       "hr": 4,
-      "whip": 1.18,
-      "doubles": 22,
+      "whip": 1.19,
+      "doubles": 23,
       "triples": 4,
-      "ab": 513,
-      "bAvg": 0.25,
-      "wp": 4,
+      "ab": 543,
+      "bAvg": 0.252,
+      "wp": 5,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
@@ -35,25 +35,25 @@
     {
       "name": "Rimshnick, Julia",
       "w": 9,
-      "l": 7,
+      "l": 8,
       "era": 5.01,
-      "app": 26,
-      "gs": 24,
+      "app": 27,
+      "gs": 25,
       "cg": 14,
       "sho": 0,
       "sv": 1,
-      "ip": 107.2,
-      "h": 151,
-      "r": 91,
-      "er": 77,
+      "ip": 111.2,
+      "h": 160,
+      "r": 97,
+      "er": 80,
       "bb": 26,
-      "so": 55,
+      "so": 58,
       "hr": 3,
-      "whip": 1.64,
-      "doubles": 24,
-      "triples": 12,
-      "ab": 471,
-      "bAvg": 0.321,
+      "whip": 1.67,
+      "doubles": 27,
+      "triples": 14,
+      "ab": 493,
+      "bAvg": 0.325,
       "wp": 6,
       "hbp": 4,
       "bk": 0,
@@ -64,28 +64,28 @@
       "name": "McCauliffe, Lily",
       "w": 0,
       "l": 0,
-      "era": 0,
-      "app": 2,
+      "era": 4.94,
+      "app": 3,
       "gs": 1,
       "cg": 0,
       "sho": 0,
       "sv": 0,
-      "ip": 4,
-      "h": 6,
-      "r": 0,
-      "er": 0,
-      "bb": 1,
-      "so": 2,
+      "ip": 5.2,
+      "h": 11,
+      "r": 4,
+      "er": 4,
+      "bb": 4,
+      "so": 3,
       "hr": 0,
-      "whip": 1.75,
-      "doubles": 2,
-      "triples": 0,
-      "ab": 18,
-      "bAvg": 0.333,
-      "wp": 0,
+      "whip": 2.65,
+      "doubles": 3,
+      "triples": 1,
+      "ab": 27,
+      "bAvg": 0.407,
+      "wp": 1,
       "hbp": 1,
       "bk": 0,
-      "sfa": 0,
+      "sfa": 1,
       "sha": 0
     }
   ],
@@ -3703,6 +3703,211 @@
           "hbp": 0,
           "ab": 16,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/coast-guard/boxscore/15035",
+      "date": "5/5/2026",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to 3b (1-2 KBF).",
+            "Hayden Reilly singled to center field (2-2 FBFB).",
+            "Maura Murphy grounded out to 2b (1-1 BS); Hayden Reilly advanced to second.",
+            "Dana Walker grounded out to ss (1-2 FBSFF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ella Stolarzyk singled to right center (1-1 FB).",
+            "Zoey Lynn struck out swinging (0-2 SSS).",
+            "Mack Murnane doubled down the lf line (1-1 KB); Ella Stolarzyk advanced to third.",
+            "Bridget Bartz struck out swinging, reached first on a wild pitch (1-2 KKBS).",
+            "Madeline Kibler struck out swinging (3-2 BKBKFBFFFS).",
+            "Abriana Schmutz struck out swinging (0-2 KFS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Hayden Reilly singled up the middle (0-0).",
+            "Hayden Reilly out at second c to ss, caught stealing.",
+            "Maura Murphy popped up to 2b (0-2 FS).",
+            "Dana Walker flied out to cf (1-2 SBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Stolarzyk grounded out to ss (0-2 FS).",
+            "Zoey Lynn singled up the middle (2-2 SBFBF).",
+            "Olivia Garcia pinch ran for Zoey Lynn.",
+            "Mack Murnane flied out to cf (1-2 KSBF).",
+            "Bridget Bartz flied out to rf (3-1 BKBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Ragonese pinch ran for Madeline Kibler.",
+            "Lauren Ragonese fouled out to 2b (0-2 KFFF).",
+            "Abriana Schmutz grounded out to p (1-1 BK).",
+            "Hayden Reilly singled through the left side (1-2 SSB).",
+            "Maura Murphy struck out swinging (0-2 FSS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dana Walker singled up the middle (0-2 KF).",
+            "Caitlynn Gibson pinch ran for Dana Walker.",
+            "Emma Behel pinch hit for Ella Stolarzyk.",
+            "Caitlynn Gibson stole second.",
+            "Emma Behel grounded out to p (1-2 FFFFB); Caitlynn Gibson advanced to third.",
+            "Zoey Lynn popped up to ss (0-0).",
+            "Mack Murnane grounded out to ss (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Bridget Bartz struck out swinging, out at first c to 1b (2-2 KBBKS).",
+            "Abby Steele pinch hit for Madeline Kibler.",
+            "Abby Steele grounded out to 3b (0-1 K).",
+            "Abriana Schmutz singled to left field (0-1 K).",
+            "Hayden Reilly singled to shortstop (2-2 BBKF); Abriana Schmutz advanced to second.",
+            "Maura Murphy reached on a fielder's choice to third base (0-1 S); Hayden Reilly advanced to second; Abriana Schmutz out at third 3b unassisted."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 9,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 6,
+          "hbp": 0,
+          "ab": 30,
+          "bf": 30
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/-25-mit/boxscore/15036",
+      "date": "5/5/2026",
+      "opponent": " 25 Mit",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "McCauliffe, Lily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen grounded out to p (2-1 BFB).",
+            "Ava Ladd flied out to cf (1-0 B).",
+            "Arianna Kumar singled up the middle (2-0 BB).",
+            "Holland Poe grounded out to 2b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Sundquist doubled down the lf line (1-0 B).",
+            "Julia Mattiace struck out swinging (1-2 FBKS).",
+            "Olivia Scarpaci popped up to 2b (1-0 B).",
+            "Maggie Feng singled up the middle, RBI (0-2 KKF); Lauren Sundquist scored.",
+            "Maggie Feng stole second.",
+            "Delaney Benevides singled to left field, advanced to second on an error by lf (2-2 BKSB); Maggie Feng scored, unearned.",
+            "Layla Thiessen flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Ava Ladd fouled out to rf (2-2 BKBF).",
+            "Arianna Kumar struck out swinging (2-2 FBFBS).",
+            "Holland Poe doubled to left center (0-0).",
+            "Lauren Sundquist tripled to right center, RBI (1-1 FB); Holland Poe scored.",
+            "Julia Mattiace doubled to right center, RBI (1-0 B); Lauren Sundquist scored.",
+            "Olivia Scarpaci struck out swinging (3-2 BFBSBFS)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Maggie Feng reached first on a fielding error by 3b, advanced to second (1-1 FB).",
+            "Delaney Benevides grounded out to ss (0-0).",
+            "Layla Thiessen tripled to left center, RBI (1-1 BS); Maggie Feng scored, unearned.",
+            "Ava Ladd grounded out to ss, RBI (1-1 FB); Layla Thiessen scored, unearned.",
+            "Arianna Kumar singled to center field (0-1 K).",
+            "Holland Poe lined out to rf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lily McCauliffe to p for Julia Rimshnick.",
+            "Lauren Sundquist grounded out to 3b (2-2 KBKB).",
+            "Julia Mattiace doubled down the lf line (0-1 K).",
+            "Amanda Huang pinch ran for Julia Mattiace.",
+            "Olivia Scarpaci struck out looking (2-2 BKBFFK).",
+            "Maggie Feng walked (3-1 BBFBB).",
+            "Delaney Benevides reached on a fielder's choice to third base (0-1 F); Maggie Feng advanced to second; Amanda Huang out at third 3b to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Haley Ball to cf for Emilia Santiago.",
+            "Layla Thiessen walked (3-2 KKBBBB).",
+            "Ava Ladd singled up the middle (0-1 F); Layla Thiessen advanced to second.",
+            "Arianna Kumar flied out to rf (1-1 KB); Layla Thiessen advanced to third.",
+            "Holland Poe flied out to rf, sacrifice fly, RBI (1-0 B); Ava Ladd advanced to second on a throwing error by lf; Layla Thiessen scored.",
+            "Ava Ladd advanced to third on a wild pitch.",
+            "Lauren Sundquist singled to shortstop, RBI (1-0 B); Ava Ladd scored.",
+            "Julia Mattiace tripled down the rf line, RBI (1-2 BKK); Lauren Sundquist scored.",
+            "Olivia Scarpaci walked (3-0 BBBB).",
+            "Maggie Feng singled to center field, RBI (1-0 B); Olivia Scarpaci advanced to second; Julia Mattiace scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 4,
+          "h": 9,
+          "r": 6,
+          "er": 3,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 22
+        },
+        {
+          "name": "McCauliffe, Lily",
+          "ip": 1.2,
+          "h": 5,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 9,
+          "bf": 13
         }
       ],
       "year": 2026

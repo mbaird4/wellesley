@@ -1,33 +1,33 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-05T02:34:02.654Z",
+  "scrapedAt": "2026-05-06T02:38:28.296Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
-      "w": 22,
+      "w": 23,
       "l": 0,
-      "era": 1.93,
-      "app": 23,
+      "era": 1.89,
+      "app": 24,
       "gs": 15,
       "cg": 12,
       "sho": 4,
       "sv": 0,
-      "ip": 123,
-      "h": 137,
+      "ip": 125.2,
+      "h": 138,
       "r": 40,
       "er": 34,
-      "bb": 25,
+      "bb": 26,
       "so": 76,
       "hr": 0,
-      "whip": 1.32,
+      "whip": 1.31,
       "doubles": 17,
       "triples": 3,
-      "ab": 482,
-      "bAvg": 0.284,
+      "ab": 491,
+      "bAvg": 0.281,
       "wp": 3,
-      "hbp": 5,
+      "hbp": 6,
       "bk": 0,
       "sfa": 2,
       "sha": 11
@@ -36,25 +36,25 @@
       "name": "Boldebuck, Naomi",
       "w": 14,
       "l": 2,
-      "era": 2.34,
-      "app": 22,
-      "gs": 20,
+      "era": 2.56,
+      "app": 23,
+      "gs": 21,
       "cg": 15,
       "sho": 3,
       "sv": 0,
-      "ip": 110.2,
-      "h": 124,
-      "r": 52,
-      "er": 37,
-      "bb": 39,
+      "ip": 115,
+      "h": 133,
+      "r": 57,
+      "er": 42,
+      "bb": 43,
       "so": 62,
-      "hr": 2,
-      "whip": 1.47,
-      "doubles": 12,
+      "hr": 3,
+      "whip": 1.53,
+      "doubles": 13,
       "triples": 2,
-      "ab": 434,
-      "bAvg": 0.286,
-      "wp": 5,
+      "ab": 455,
+      "bAvg": 0.292,
+      "wp": 6,
       "hbp": 8,
       "bk": 0,
       "sfa": 5,
@@ -4582,6 +4582,120 @@
           "hbp": 1,
           "ab": 29,
           "bf": 39
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/babson/boxscore/16664",
+      "date": "5/5/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh flied out to lf (2-2 KSBB).",
+            "Maddy DeLong walked (3-2 FKBFBBFFFFB).",
+            "Lexi Sealy reached on a fielder's choice (1-1 BF); Maddy DeLong out at second 2b to ss.",
+            "Belle Dicampello singled up the middle (2-1 BFB); Lexi Sealy advanced to second.",
+            "Charlotte Raymond flied out to cf (2-2 KBBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophia Pak singled to shortstop (2-1 KBB).",
+            "Samantha Skivo singled to left field (1-1 FB); Sophia Pak advanced to second.",
+            "Devin McCall reached on a fielder's choice (1-2 BKS); Samantha Skivo out at second ss unassisted; Sophia Pak advanced to third.",
+            "Allie Cubberly singled to third base, RBI (3-1 BBBK); Devin McCall advanced to second; Sophia Pak scored.",
+            "Emily Walsh reached on a fielder's choice (3-2 KBFBB); Allie Cubberly out at second ss to 2b; Devin McCall advanced to third.",
+            "Maddy DeLong flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lexi Sealy singled to second base (2-1 BSB).",
+            "Belle Dicampello grounded out to p (1-2 BKS); Lexi Sealy advanced to second.",
+            "Charlotte Raymond homered, 2 RBI (0-0); Lexi Sealy scored.",
+            "Sophia Pak walked (3-2 BBBKFFB).",
+            "Samantha Skivo reached on a fielder's choice (0-2 FK); Sophia Pak out at second 2b to ss.",
+            "Samantha Skivo advanced to second on a wild pitch.",
+            "Devin McCall walked (3-1 BBBKB).",
+            "Allie Cubberly grounded out to p (2-1 FBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emily Walsh popped up to lf (0-2 FF).",
+            "Maddy DeLong singled to left field (0-0).",
+            "Lexi Sealy popped into double play p to 1b (1-1 BK); Maddy DeLong out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Belle Dicampello walked (3-1 BBBKB).",
+            "Izzy Burgess pinch ran for Belle Dicampello.",
+            "Charlotte Raymond singled to shortstop (1-1 KB); Izzy Burgess advanced to second.",
+            "Sophia Pak reached on a fielder's choice (3-2 BBBKK); Charlotte Raymond out at second 2b unassisted; Izzy Burgess advanced to third.",
+            "Samantha Skivo doubled down the lf line, RBI (0-1 K); Sophia Pak advanced to third; Izzy Burgess scored.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Devin McCall hit by pitch (2-2 KKBH).",
+            "Allie Cubberly popped up to cf, RBI (1-0 B); Samantha Skivo advanced to third; Sophia Pak scored.",
+            "Emily Walsh grounded out to 1b unassisted (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Riley O'Brien to 2b for Colleen Mayer.",
+            "Destiny Lum to dp.",
+            "Maddy DeLong grounded out to ss (2-1 BBK).",
+            "Lexi Sealy flied out to cf (1-0 B).",
+            "Belle Dicampello grounded out to ss (3-1 SBBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Charlotte Raymond singled to left field (1-2 KBS).",
+            "Sophia Pak lined out to ss (1-2 KSB).",
+            "Samantha Skivo reached on a fielder's choice (1-1 FB); Charlotte Raymond out at second 2b to ss.",
+            "Devin McCall walked (3-2 KFBFBFBFB); Samantha Skivo advanced to second.",
+            "Allie Cubberly reached on a fielder's choice (1-0 B); Devin McCall out at second ss to 2b."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 4.1,
+          "h": 9,
+          "r": 5,
+          "er": 5,
+          "bb": 4,
+          "so": 0,
+          "hbp": 0,
+          "ab": 21,
+          "bf": 25
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 2.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 9,
+          "bf": 11
         }
       ],
       "year": 2026

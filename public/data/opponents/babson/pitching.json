@@ -1,37 +1,9 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-05-05T02:34:44.195Z",
+  "scrapedAt": "2026-05-06T02:39:17.282Z",
   "year": 2026,
   "pitchingStats": [
-    {
-      "name": "Topel, Anna",
-      "w": 6,
-      "l": 6,
-      "era": 3.73,
-      "app": 16,
-      "gs": 16,
-      "cg": 8,
-      "sho": 1,
-      "sv": 0,
-      "ip": 80.2,
-      "h": 102,
-      "r": 60,
-      "er": 43,
-      "bb": 51,
-      "so": 45,
-      "hr": 3,
-      "whip": 1.9,
-      "doubles": 15,
-      "triples": 2,
-      "ab": 343,
-      "bAvg": 0.297,
-      "wp": 6,
-      "hbp": 2,
-      "bk": 0,
-      "sfa": 2,
-      "sha": 9
-    },
     {
       "name": "Sealey, Lexi",
       "w": 3,
@@ -59,6 +31,34 @@
       "bk": 0,
       "sfa": 1,
       "sha": 5
+    },
+    {
+      "name": "Topel, Anna",
+      "w": 6,
+      "l": 7,
+      "era": 3.96,
+      "app": 17,
+      "gs": 17,
+      "cg": 9,
+      "sho": 1,
+      "sv": 0,
+      "ip": 86.2,
+      "h": 111,
+      "r": 66,
+      "er": 49,
+      "bb": 54,
+      "so": 49,
+      "hr": 5,
+      "whip": 1.9,
+      "doubles": 16,
+      "triples": 2,
+      "ab": 368,
+      "bAvg": 0.302,
+      "wp": 7,
+      "hbp": 3,
+      "bk": 0,
+      "sfa": 2,
+      "sha": 9
     },
     {
       "name": "Vlacich, Katie",
@@ -115,6 +115,34 @@
       "bk": 0,
       "sfa": 0,
       "sha": 3
+    },
+    {
+      "name": "McCall, Devin",
+      "w": 0,
+      "l": 0,
+      "era": 12,
+      "app": 1,
+      "gs": 0,
+      "cg": 0,
+      "sho": 0,
+      "sv": 0,
+      "ip": 2.1,
+      "h": 5,
+      "r": 4,
+      "er": 4,
+      "bb": 2,
+      "so": 0,
+      "hr": 0,
+      "whip": 3,
+      "doubles": 1,
+      "triples": 0,
+      "ab": 10,
+      "bAvg": 0.5,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 0
     }
   ],
   "games": [
@@ -4260,6 +4288,175 @@
           "hbp": 1,
           "ab": 13,
           "bf": 17
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/wellesley/boxscore/16170",
+      "date": "5/5/2026",
+      "opponent": "Wellesley",
+      "pitchers": [],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern struck out looking, reached first on a wild pitch (1-2 KFBK).",
+            "A. Delgado out at first p to 2b, SAC, bunt (0-0); A. Mulhern advanced to second.",
+            "B. Awad grounded out to 3b (0-1 K); A. Mulhern advanced to third.",
+            "C. Lundin struck out swinging (1-2 SKBS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "J. Colgan popped up to lf (1-1 FB).",
+            "A. Rodriguez doubled down the lf line (0-2 KK).",
+            "E. Gaunce struck out swinging (1-2 KKBS).",
+            "B. Mellady popped up to 1b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol struck out swinging (3-2 SBBBKS).",
+            "A. Mulhern flied out to cf (1-0 B).",
+            "A. Delgado fouled out to 1b (0-1 F)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "B. Awad singled to shortstop (1-1 KB).",
+            "C. Lundin doubled to left field (0-1 F); B. Awad advanced to third.",
+            "G. Jones walked (3-2 BBBKKFB).",
+            "A. Rodriguez doubled to left center, RBI (1-0 B); G. Jones advanced to third; C. Lundin out at third cf to 3b; B. Awad scored.",
+            "E. Gaunce struck out swinging (1-2 FSBS).",
+            "B. Mellady reached first on a throwing error by c, advanced to second (2-1 BBK); A. Rodriguez scored, unearned; G. Jones scored, unearned.",
+            "N. Nicol flied out to lf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Belle Dicampello to c for Izzy Burgess.",
+            "A. Mulhern singled to right field (3-1 BBBK).",
+            "A. Mulhern stole second.",
+            "A. Delgado popped up to 1b (3-2 KFFBBB).",
+            "A. Mulhern advanced to third on a wild pitch.",
+            "B. Awad popped into double play 2b to c (1-0 B); A. Mulhern out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "C. Lundin singled through the right side (0-1 K).",
+            "T. Claybrook pinch ran for C. Lundin.",
+            "G. Jones grounded out to 3b (2-2 BBFF); T. Claybrook advanced to second.",
+            "T. Claybrook advanced to third on a wild pitch.",
+            "A. Rodriguez grounded out to 3b (2-1 BBF); T. Claybrook did not advance.",
+            "E. Gaunce grounded out to 1b unassisted (2-1 BKB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Nicole Petrillo to 1b.",
+            "D. Borrison pinch hit for B. Mellady.",
+            "D. Borrison struck out looking (2-2 BFBFK).",
+            "M. Abernethy pinch hit for N. Nicol.",
+            "M. Abernethy popped up to ss (1-0 B).",
+            "A. Mulhern flied out to cf (1-1 BF)."
+          ]
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/-12-wpi/boxscore/16191",
+      "date": "5/5/2026",
+      "opponent": " 12 Wpi",
+      "pitchers": [
+        "Topel, Anna"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour singled up the middle (0-0).",
+            "Virginia McKinney doubled to left center, RBI (1-1 BF); Lucy Latour scored.",
+            "Sandy Fairbairn struck out swinging (2-2 BSBFFS).",
+            "Emma Nagy singled to shortstop (2-1 KBB); Virginia McKinney advanced to third.",
+            "Riley O'Brien grounded out to ss, RBI (0-2 KS); Emma Nagy advanced to second; Virginia McKinney scored.",
+            "Ali Chalovich singled to left field, RBI (3-2 BKBFFFB); Emma Nagy scored.",
+            "Stella Kozak walked (3-0 BBBB); Ali Chalovich advanced to second.",
+            "Elizabeth Jordan walked (3-0 BBBB); Stella Kozak advanced to second; Ali Chalovich advanced to third.",
+            "Meg Sherwood struck out swinging (0-2 SFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lucy Latour popped up to ss (0-1 F).",
+            "Virginia McKinney singled to left field (0-0).",
+            "Sandy Fairbairn grounded into double play ss to 1b (1-0 B); Virginia McKinney out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Emma Nagy homered, RBI (3-1 BBBK).",
+            "Riley O'Brien grounded out to 2b (1-2 BSF).",
+            "Ali Chalovich popped up to lf (3-2 KBBFBF).",
+            "Stella Kozak popped up to lf (2-1 SBB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elizabeth Jordan struck out swinging (2-2 KBBSS).",
+            "Meg Sherwood flied out to rf (2-0 BB).",
+            "Lucy Latour grounded out to 2b (2-2 FBFFFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Belle Dicampello to c for Izzy Burgess.",
+            "Virginia McKinney singled to pitcher (1-1 KB).",
+            "Sandy Fairbairn homered, 2 RBI (0-0); Virginia McKinney scored.",
+            "Emma Nagy flied out to cf (0-0).",
+            "Riley O'Brien singled to left field (0-0).",
+            "Colleen Mayer pinch ran for Riley O'Brien.",
+            "Colleen Mayer stole second.",
+            "Ali Chalovich struck out swinging (2-2 BKFBS).",
+            "Colleen Mayer advanced to third on a wild pitch.",
+            "Stella Kozak walked (3-0 BBBB).",
+            "Destiny Lum pinch hit for Elizabeth Jordan.",
+            "Destiny Lum flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Meg Sherwood flied out to cf (0-1 S).",
+            "Lucy Latour hit by pitch (1-0 H).",
+            "Virginia McKinney grounded into double play ss to 1b (1-0 B); Lucy Latour out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Topel, Anna",
+          "ip": 6,
+          "h": 9,
+          "r": 6,
+          "er": 6,
+          "bb": 3,
+          "so": 4,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 29
         }
       ],
       "year": 2026

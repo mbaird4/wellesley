@@ -1,31 +1,31 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-05-05T02:34:36.344Z",
+  "scrapedAt": "2026-05-06T02:39:04.985Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
       "w": 13,
-      "l": 9,
-      "era": 1.28,
-      "app": 26,
-      "gs": 18,
-      "cg": 15,
+      "l": 10,
+      "era": 1.22,
+      "app": 27,
+      "gs": 19,
+      "cg": 16,
       "sho": 3,
       "sv": 1,
-      "ip": 125.2,
-      "h": 107,
-      "r": 52,
+      "ip": 131.2,
+      "h": 111,
+      "r": 53,
       "er": 23,
-      "bb": 31,
-      "so": 106,
+      "bb": 32,
+      "so": 109,
       "hr": 0,
-      "whip": 1.1,
+      "whip": 1.09,
       "doubles": 15,
       "triples": 0,
-      "ab": 498,
-      "bAvg": 0.215,
+      "ab": 521,
+      "bAvg": 0.213,
       "wp": 6,
       "hbp": 1,
       "bk": 0,
@@ -3372,6 +3372,308 @@
           "hbp": 0,
           "ab": 26,
           "bf": 26
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/mit/boxscore/9368",
+      "date": "5/2/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Behel, Emma",
+        "Lynn, Zoey",
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen singled to pitcher (2-2 SBBS).",
+            "Layla Thiessen stole second.",
+            "Ava Ladd singled to center field, advanced to second on the throw, RBI (3-2 SBBBF); Layla Thiessen scored.",
+            "Arianna Kumar walked (3-2 FBSBBB).",
+            "Lauren Sundquist doubled to center field, RBI (2-1 KBB); Arianna Kumar advanced to third; Ava Ladd scored.",
+            "Holland Poe walked (3-0 BBBB).",
+            "Olivia Scarpaci reached on a fielder's choice (0-0); Holland Poe advanced to second; Lauren Sundquist advanced to third; Arianna Kumar out at home 3b to c.",
+            "Julia Mattiace flied out to cf, SAC, RBI (2-2 BKSB); Holland Poe advanced to third; Lauren Sundquist scored.",
+            "Maggie Feng walked (3-1 BBBKB); Olivia Scarpaci advanced to second.",
+            "Delaney Benevides reached on a fielder's choice (0-2 KFFFF); Maggie Feng advanced to second; Olivia Scarpaci out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Zoey Lynn to 1b for Olivia Garcia.",
+            "Layla Thiessen singled to center field (2-2 BBKF).",
+            "Layla Thiessen stole second.",
+            "Ava Ladd flied out to cf (2-0 BB).",
+            "Layla Thiessen stole third.",
+            "Arianna Kumar singled to center field, RBI (2-1 KBB); Layla Thiessen scored.",
+            "Lauren Sundquist singled to center field (0-0); Arianna Kumar advanced to second.",
+            "Holland Poe singled to first base (1-1 SB); Lauren Sundquist advanced to second; Arianna Kumar advanced to third.",
+            "Olivia Scarpaci singled to third base, RBI (0-0); Holland Poe advanced to second; Lauren Sundquist advanced to third; Arianna Kumar scored.",
+            "Julia Mattiace singled to left field, RBI (3-2 KBKBB); Olivia Scarpaci advanced to second; Holland Poe advanced to third; Lauren Sundquist scored.",
+            "Maggie Feng lined into double play 2b (0-0); Julia Mattiace out on the play."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Delaney Benevides grounded out to p (3-2 FFBBBF).",
+            "Layla Thiessen lined out to 3b (0-0).",
+            "Ava Ladd walked (3-0 BBBB).",
+            "Arianna Kumar grounded out to ss (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ella Stolarzyk to 1b.",
+            "Zoey Lynn to p.",
+            "Emma Behel to dp.",
+            "Lauren Sundquist grounded out to 3b (1-1 KB).",
+            "Holland Poe flied out to cf (0-0).",
+            "Olivia Scarpaci grounded out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Julia Mattiace grounded out to c (1-0 B).",
+            "Maggie Feng flied out to rf (0-1 F).",
+            "Delaney Benevides doubled to center field (0-0).",
+            "Layla Thiessen singled to center field, advanced to second on the throw, RBI (0-1 K); Delaney Benevides scored.",
+            "Ava Ladd doubled to center field, RBI (0-0); Layla Thiessen scored.",
+            "Arianna Kumar singled to center field, RBI (1-1 BK); Ava Ladd scored.",
+            "Lauren Sundquist grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ella Stolarzyk to dp.",
+            "Dana Walker to p.",
+            "Zoey Lynn to 1b.",
+            "Lauren Ragonese to lf for Emma Behel.",
+            "Ainsley Hololob to ss.",
+            "Holland Poe singled to left field (3-1 BBBK).",
+            "Olivia Scarpaci popped up to ss (2-2 SBFB); Holland Poe out at second ss to 1b.",
+            "Julia Mattiace grounded out to 3b (1-1 BS)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Dana Walker to p for Abby Steele.",
+            "Maggie Feng grounded out to ss (0-2 FK).",
+            "Delaney Benevides singled to shortstop (2-1 BFB).",
+            "Delaney Benevides stole second.",
+            "Layla Thiessen grounded out to 3b (1-0 B); Delaney Benevides advanced to third.",
+            "Ava Ladd singled to right field, RBI (0-0); Delaney Benevides scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Behel, Emma",
+          "ip": 3,
+          "h": 9,
+          "r": 6,
+          "er": 6,
+          "bb": 4,
+          "so": 0,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 21
+        },
+        {
+          "name": "Lynn, Zoey",
+          "ip": 2,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 10
+        },
+        {
+          "name": "Walker, Dana",
+          "ip": 1.2,
+          "h": 3,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 7,
+          "bf": 7
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/mit/boxscore/9369",
+      "date": "5/2/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen grounded out to p (1-0 B).",
+            "Ava Ladd grounded out to 2b (2-2 FBKFB).",
+            "Arianna Kumar reached first on an error by 2b (2-1 BBF).",
+            "Lauren Sundquist walked (3-2 BSFFFBBB); Arianna Kumar advanced to second.",
+            "Holland Poe struck out swinging (1-2 KKBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maggie Feng lined out to 1b (1-1 KB).",
+            "Kaaya Mehta struck out swinging (0-2 KKFFS).",
+            "Olivia Scarpaci grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Delaney Benevides struck out swinging (1-2 SKBS).",
+            "Layla Thiessen singled to left center (3-2 BBBKF).",
+            "Layla Thiessen stole second.",
+            "Ava Ladd doubled to right center, RBI (1-0 B); Layla Thiessen scored.",
+            "Arianna Kumar grounded out to 2b (1-1 FB).",
+            "Lauren Sundquist grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Holland Poe grounded out to 2b (1-0 B).",
+            "Maggie Feng doubled to left center (0-2 KFFF).",
+            "Kaaya Mehta grounded out to 2b (0-0); Maggie Feng advanced to third.",
+            "Pearl Mitchell pinch hit for Olivia Scarpaci.",
+            "Pearl Mitchell struck out swinging (0-2 SKS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Delaney Benevides struck out swinging (0-2 FFFS).",
+            "Layla Thiessen struck out swinging (0-2 SKS).",
+            "Ava Ladd grounded out to 2b (1-2 KFB)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Arianna Kumar struck out swinging (0-2 FKFS).",
+            "Lauren Sundquist singled to right field (0-1 K).",
+            "Holland Poe flied out to lf (0-0).",
+            "Lauren Sundquist out at second c to ss, caught stealing."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 4,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 7,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/springfield/boxscore/9519",
+      "date": "5/5/2026",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reilly Hunter grounded out to 2b (2-2 KFBB).",
+            "Amelia DeRosa struck out swinging (0-2 KKS).",
+            "Carissa Pecchia fouled out to rf (3-2 BKBKB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Katsetos reached first on a fielding error by ss (1-1 KB).",
+            "Madison Testo singled down the lf line (0-1 F); Kate Katsetos advanced to second.",
+            "Emilia Santiago singled to third base, bunt (0-0); Madison Testo advanced to second; Kate Katsetos advanced to third.",
+            "Haley Ball lined out to 3b (0-0).",
+            "Brynlee Eckles singled to pitcher, RBI (3-2 KBBFB); Emilia Santiago advanced to second; Madison Testo advanced to third; Kate Katsetos scored, unearned.",
+            "Taylor Falotico struck out swinging (0-2 KSS).",
+            "Reilly Hunter grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Amelia DeRosa grounded out to 3b (1-0 B).",
+            "Carissa Pecchia grounded out to p (1-2 BFF).",
+            "Kate Katsetos grounded out to ss (3-2 BKBKBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Zoey Lynn to 1b for Olivia Garcia.",
+            "Madison Testo lined out to ss (2-1 FBB).",
+            "Emilia Santiago walked (3-1 BBBKB).",
+            "Haley Ball struck out looking (0-2 FFK).",
+            "Brynlee Eckles grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Kibler to c for Lauren Ragonese.",
+            "Taylor Falotico singled to shortstop (3-2 KSBFFBFB).",
+            "Reilly Hunter reached on a fielder's choice to pitcher (0-0); Taylor Falotico advanced to second on a throwing error by p.",
+            "Amelia DeRosa reached on a fielder's choice to shortstop (0-1 K); Reilly Hunter advanced to second; Taylor Falotico out at third ss unassisted, interference.",
+            "Carissa Pecchia lined into double play 2b to ss (1-1 FB); Reilly Hunter out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Dana Walker to p for Caitlynn Gibson.",
+            "Emma Behel to dp.",
+            "Kate Katsetos grounded out to ss (3-1 BBBK).",
+            "Madison Testo lined out to ss (0-1 F).",
+            "Emilia Santiago grounded out to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 4,
+          "r": 1,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 23,
+          "bf": 24
         }
       ],
       "year": 2026

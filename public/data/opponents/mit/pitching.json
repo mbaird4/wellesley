@@ -1,32 +1,32 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-05T02:34:27.441Z",
+  "scrapedAt": "2026-05-06T02:38:52.088Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 13,
+      "w": 14,
       "l": 3,
-      "era": 2.74,
-      "app": 20,
-      "gs": 15,
-      "cg": 6,
+      "era": 2.57,
+      "app": 21,
+      "gs": 16,
+      "cg": 7,
       "sho": 2,
       "sv": 0,
-      "ip": 94.2,
-      "h": 105,
-      "r": 49,
+      "ip": 100.2,
+      "h": 111,
+      "r": 51,
       "er": 37,
-      "bb": 26,
-      "so": 28,
+      "bb": 29,
+      "so": 29,
       "hr": 1,
-      "whip": 1.38,
+      "whip": 1.39,
       "doubles": 13,
       "triples": 2,
-      "ab": 380,
+      "ab": 402,
       "bAvg": 0.276,
-      "wp": 6,
+      "wp": 7,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
@@ -3784,6 +3784,89 @@
           "so": 1,
           "hbp": 0,
           "ab": 24,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/springfield-college/boxscore/12785",
+      "date": "5/5/2026",
+      "opponent": "Springfield College",
+      "pitchers": [
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reilly Hunter grounded out to 2b (1-1 KB).",
+            "Amelia DeRosa singled to right center (0-1 K).",
+            "Carissa Pecchia singled up the middle (0-0); Amelia DeRosa advanced to second.",
+            "Kate Katsetos reached on a fielder's choice to pitcher (1-0 B); Carissa Pecchia advanced to second; Amelia DeRosa out at third p to 3b.",
+            "Madison Testo walked (3-1 BBFBB); Kate Katsetos advanced to second; Carissa Pecchia advanced to third.",
+            "Brynlee Eckles flied out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Haley Ball singled to shortstop (1-2 BKS).",
+            "Sammy Swords grounded into double play 2b to ss to 1b (0-0); Haley Ball out on the play.",
+            "Taylor Falotico grounded out to 1b unassisted (0-1 S)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Reilly Hunter grounded out to 3b (0-0).",
+            "Amelia DeRosa grounded out to ss (1-0 B).",
+            "Carissa Pecchia lined out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Kate Katsetos grounded out to 2b (2-1 BBF).",
+            "Madison Testo flied out to cf (3-2 BBFBF).",
+            "Brynlee Eckles popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Haley Ball struck out swinging (1-2 BKSS).",
+            "Sammy Swords singled to right field (0-1 K).",
+            "Taylor Falotico singled, bunt, advanced to second on an error by 3b (0-0); Sammy Swords advanced to third on a throwing error by rf.",
+            "Reilly Hunter walked (3-1 BBBKB).",
+            "Reilly Hunter advanced to second on a wild pitch; Taylor Falotico advanced to third on a wild pitch; Sammy Swords out at home c to 3b.",
+            "Amelia DeRosa singled up the middle, 2 RBI (2-0 BB); Reilly Hunter scored, unearned; Taylor Falotico scored, unearned.",
+            "Carissa Pecchia grounded out to ss (2-2 BFBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Mattiace to 1b for Amanda Huang.",
+            "Kate Katsetos grounded out to 2b (1-0 B).",
+            "Madison Testo flied out to lf (1-2 KFB).",
+            "Brynlee Eckles walked (3-1 BBBKB).",
+            "Emilia Santiago pinch hit for Haley Ball.",
+            "Emilia Santiago grounded out to p (1-1 BK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 6,
+          "h": 6,
+          "r": 2,
+          "er": 0,
+          "bb": 3,
+          "so": 1,
+          "hbp": 0,
+          "ab": 22,
           "bf": 25
         }
       ],
