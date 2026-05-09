@@ -1,32 +1,32 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-05-08T02:50:48.333Z",
+  "scrapedAt": "2026-05-09T02:45:00.342Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Kannan, Ragini",
-      "w": 8,
+      "w": 9,
       "l": 7,
-      "era": 4.53,
-      "app": 22,
-      "gs": 15,
-      "cg": 7,
+      "era": 4.32,
+      "app": 24,
+      "gs": 16,
+      "cg": 8,
       "sho": 2,
       "sv": 0,
-      "ip": 94.1,
-      "h": 112,
-      "r": 75,
-      "er": 61,
-      "bb": 34,
-      "so": 79,
-      "hr": 9,
-      "whip": 1.55,
-      "doubles": 21,
+      "ip": 102,
+      "h": 118,
+      "r": 77,
+      "er": 63,
+      "bb": 35,
+      "so": 83,
+      "hr": 10,
+      "whip": 1.5,
+      "doubles": 23,
       "triples": 1,
-      "ab": 377,
-      "bAvg": 0.297,
-      "wp": 9,
+      "ab": 406,
+      "bAvg": 0.291,
+      "wp": 10,
       "hbp": 10,
       "bk": 0,
       "sfa": 7,
@@ -36,26 +36,26 @@
       "name": "Staub, Jamie",
       "w": 6,
       "l": 2,
-      "era": 4.7,
-      "app": 22,
+      "era": 4.64,
+      "app": 23,
       "gs": 3,
       "cg": 2,
       "sho": 0,
       "sv": 1,
-      "ip": 67,
-      "h": 76,
-      "r": 50,
-      "er": 45,
-      "bb": 18,
+      "ip": 69.1,
+      "h": 80,
+      "r": 53,
+      "er": 46,
+      "bb": 19,
       "so": 28,
       "hr": 7,
-      "whip": 1.4,
-      "doubles": 20,
+      "whip": 1.43,
+      "doubles": 21,
       "triples": 0,
-      "ab": 275,
-      "bAvg": 0.276,
-      "wp": 9,
-      "hbp": 9,
+      "ab": 287,
+      "bAvg": 0.279,
+      "wp": 10,
+      "hbp": 10,
       "bk": 0,
       "sfa": 2,
       "sha": 5
@@ -63,24 +63,24 @@
     {
       "name": "Jennings, Madeline",
       "w": 6,
-      "l": 8,
-      "era": 5.16,
-      "app": 21,
-      "gs": 19,
+      "l": 9,
+      "era": 4.99,
+      "app": 22,
+      "gs": 20,
       "cg": 5,
       "sho": 1,
       "sv": 0,
-      "ip": 76,
-      "h": 127,
-      "r": 79,
-      "er": 56,
-      "bb": 18,
-      "so": 47,
+      "ip": 80,
+      "h": 135,
+      "r": 84,
+      "er": 57,
+      "bb": 19,
+      "so": 49,
       "hr": 9,
-      "whip": 1.91,
+      "whip": 1.93,
       "doubles": 7,
       "triples": 3,
-      "ab": 354,
+      "ab": 376,
       "bAvg": 0.359,
       "wp": 10,
       "hbp": 3,
@@ -4711,6 +4711,234 @@
           "hbp": 0,
           "ab": 3,
           "bf": 5
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/chicago/boxscore/14851",
+      "date": "5/8/2026",
+      "opponent": "Chicago",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madeline Murphy struck out swinging (0-2 KSS).",
+            "Natalie Antin popped up to ss (3-1 BKBB).",
+            "Audrey Hui lined out to cf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Olivia Cataldo struck out swinging (3-2 BSBBFS).",
+            "Matilda Nelson doubled to right center (3-2 SKBBFFFB).",
+            "Mia Bocian walked (3-2 BFFBFFFBB).",
+            "Hannah Schwager struck out looking (1-2 KBSK).",
+            "Anna Jensen struck out swinging (1-2 KBSS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sedona Ding flied out to lf (0-1 K).",
+            "Madeline Murphy singled up the middle (2-1 SBB).",
+            "Madeline Murphy advanced to second on a wild pitch.",
+            "Natalie Antin homered to right field, 2 RBI (2-0 BB); Madeline Murphy scored.",
+            "Audrey Hui singled down the rf line (1-0 B).",
+            "Olivia Cataldo flied out to lf (1-0 B).",
+            "Matilda Nelson grounded out to p (3-2 BFBFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Mia Bocian singled to shortstop, advanced to second on a throwing error by ss (3-2 KBFBFB).",
+            "Ashlee Boodoo pinch ran for Mia Bocian.",
+            "Hannah Schwager fouled out to 3b (0-0).",
+            "Brianna Leech pinch hit for Anna Jensen.",
+            "Brianna Leech reached on a fielder's choice (3-2 BKFBB); Ashlee Boodoo out at third ss unassisted, interference.",
+            "Sedona Ding lined out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Murphy flied out to 2b (0-0).",
+            "Natalie Antin flied out to cf (0-0).",
+            "Audrey Hui grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Mary Doud to rf.",
+            "Olivia Cataldo popped up to ss (3-2 BSBBFF).",
+            "Matilda Nelson grounded out to ss (1-0 B).",
+            "Mia Bocian flied out to cf (2-2 BBKF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Hannah Fletcher to 2b for Katie Baydian.",
+            "Dylan Yamamura to c for Taryn Rainey.",
+            "Nanako Schroth pinch hit for Hannah Schwager.",
+            "Nanako Schroth grounded out to 3b (2-2 KSBBF).",
+            "Brianna Leech flied out to cf (0-0).",
+            "Sedona Ding grounded out to p (3-2 BBFFB)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Kannan, Ragini",
+          "ip": 7,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 1,
+          "so": 4,
+          "hbp": 0,
+          "ab": 26,
+          "bf": 27
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/chicago/boxscore/14917",
+      "date": "5/8/2026",
+      "opponent": "Chicago",
+      "pitchers": [
+        "Jennings, Madeline",
+        "Staub, Jamie",
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madeline Murphy singled through the left side (2-2 FBFFB).",
+            "Natalie Antin singled through the left side (2-1 BBK); Madeline Murphy advanced to second.",
+            "Audrey Hui reached on a fielder's choice to second base (3-2 BBBKSF); Natalie Antin advanced to second on an error by ss; Madeline Murphy advanced to third.",
+            "Olivia Cataldo struck out swinging (3-2 BBKBFS).",
+            "Matilda Nelson reached on a fielder's choice (0-0); Audrey Hui advanced to second; Natalie Antin advanced to third; Madeline Murphy out at home ss to c.",
+            "Eleanor Johnson singled to shortstop, 2 RBI (2-2 BBFFF); Matilda Nelson advanced to third; Audrey Hui scored, unearned; Natalie Antin scored, unearned.",
+            "Eleanor Johnson out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Brianna Leech struck out swinging (1-2 KBFS).",
+            "Nanako Schroth lined out to 2b (1-1 BF).",
+            "Melana Badea reached first on an error by 2b (0-0).",
+            "Madeline Murphy singled up the middle (1-0 B); Melana Badea advanced to second.",
+            "Natalie Antin flied out to lf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Audrey Hui grounded out to ss (3-1 BBBK).",
+            "Olivia Cataldo singled through the right side (0-0).",
+            "Matilda Nelson grounded out to p (0-0); Olivia Cataldo advanced to second.",
+            "Eleanor Johnson flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Brianna Leech fouled out to 3b (1-1 KB).",
+            "Nanako Schroth singled down the lf line (0-0).",
+            "Lakyn Wilkinson pinch ran for Nanako Schroth.",
+            "Lakyn Wilkinson stole second.",
+            "Melana Badea singled through the right side, RBI (2-1 KBB); Lakyn Wilkinson scored.",
+            "Melana Badea stole second.",
+            "Madeline Murphy reached first on an error by ss (2-1 BBK).",
+            "Natalie Antin flied out to lf (0-0).",
+            "Audrey Hui walked (3-1 BBBKB); Madeline Murphy advanced to second; Melana Badea advanced to third.",
+            "Olivia Cataldo singled, advanced to second, 2 RBI (0-0); Audrey Hui advanced to third; Madeline Murphy scored, unearned; Melana Badea scored, unearned.",
+            "Matilda Nelson flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Jamie Staub to p for Madeline Jennings.",
+            "Eleanor Johnson hit by pitch (2-0 BH).",
+            "Eleanor Johnson advanced to second on a wild pitch.",
+            "Brianna Leech singled to right center (3-2 BKBKB); Eleanor Johnson advanced to third.",
+            "Varsha Swaminathan pinch ran for Brianna Leech.",
+            "Nanako Schroth fouled out to 1b (0-1 K).",
+            "Melana Badea walked (3-0 BBBB); Varsha Swaminathan advanced to second.",
+            "Madeline Murphy lined out to p (2-2 BKKB).",
+            "Natalie Antin popped up to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Audrey Hui grounded out to 3b (1-1 FB).",
+            "Olivia Cataldo doubled to left center (2-2 KKBB).",
+            "Matilda Nelson grounded out to 3b (2-0 BB).",
+            "Eleanor Johnson flied out to cf (2-2 BFBKF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Brianna Leech singled to left field (0-1 K).",
+            "Nanako Schroth flied out to rf (0-0).",
+            "Melana Badea reached first on an error by 1b (0-0); Brianna Leech advanced to second.",
+            "Madeline Murphy singled, advanced to second on the throw, RBI (1-1 FB); Melana Badea advanced to third; Brianna Leech scored.",
+            "Ragini Kannan to p for Jamie Staub.",
+            "Natalie Antin grounded out to 2b (2-0 BB).",
+            "Audrey Hui doubled down the lf line, 2 RBI (1-2 BSS); Madeline Murphy scored, unearned; Melana Badea scored, unearned.",
+            "Olivia Cataldo flied out to cf (3-2 BBSBK)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Jennings, Madeline",
+          "ip": 4,
+          "h": 8,
+          "r": 5,
+          "er": 1,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 23
+        },
+        {
+          "name": "Staub, Jamie",
+          "ip": 2.1,
+          "h": 4,
+          "r": 3,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 12,
+          "bf": 14
+        },
+        {
+          "name": "Kannan, Ragini",
+          "ip": 0.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 3
         }
       ],
       "year": 2026
