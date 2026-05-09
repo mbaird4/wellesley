@@ -1,31 +1,31 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-08T02:45:31.693Z",
+  "scrapedAt": "2026-05-09T02:39:45.578Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
       "w": 23,
       "l": 0,
-      "era": 1.89,
-      "app": 24,
+      "era": 2,
+      "app": 25,
       "gs": 15,
       "cg": 12,
       "sho": 4,
       "sv": 0,
-      "ip": 125.2,
-      "h": 138,
-      "r": 40,
-      "er": 34,
-      "bb": 26,
-      "so": 76,
+      "ip": 129.1,
+      "h": 145,
+      "r": 43,
+      "er": 37,
+      "bb": 27,
+      "so": 78,
       "hr": 0,
-      "whip": 1.31,
-      "doubles": 17,
+      "whip": 1.33,
+      "doubles": 19,
       "triples": 3,
-      "ab": 491,
-      "bAvg": 0.281,
+      "ab": 508,
+      "bAvg": 0.285,
       "wp": 3,
       "hbp": 6,
       "bk": 0,
@@ -35,27 +35,27 @@
     {
       "name": "Boldebuck, Naomi",
       "w": 14,
-      "l": 2,
-      "era": 2.56,
-      "app": 23,
-      "gs": 21,
+      "l": 3,
+      "era": 2.78,
+      "app": 24,
+      "gs": 22,
       "cg": 15,
       "sho": 3,
       "sv": 0,
-      "ip": 115,
-      "h": 133,
-      "r": 57,
-      "er": 42,
-      "bb": 43,
-      "so": 62,
+      "ip": 118.1,
+      "h": 140,
+      "r": 62,
+      "er": 47,
+      "bb": 45,
+      "so": 63,
       "hr": 3,
-      "whip": 1.53,
-      "doubles": 13,
+      "whip": 1.56,
+      "doubles": 15,
       "triples": 2,
-      "ab": 455,
-      "bAvg": 0.292,
-      "wp": 6,
-      "hbp": 8,
+      "ab": 472,
+      "bAvg": 0.297,
+      "wp": 7,
+      "hbp": 9,
       "bk": 0,
       "sfa": 5,
       "sha": 15
@@ -4696,6 +4696,120 @@
           "hbp": 1,
           "ab": 9,
           "bf": 11
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/mit/boxscore/16665",
+      "date": "5/8/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Boldebuck, Naomi",
+        "Merchant, Abby"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen singled to third base (2-2 KBBK).",
+            "Ava Ladd reached on a fielder's choice (2-2 BSSFFB); Layla Thiessen out at second 3b to 2b.",
+            "Arianna Kumar reached on a fielder's choice (0-1 S); Ava Ladd out at second 2b to ss.",
+            "Holland Poe flied out to lf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Sundquist struck out looking (0-2 KKK).",
+            "Olivia Scarpaci singled to center field (2-2 BFSB).",
+            "Julia Mattiace doubled to right field (1-2 FSB); Olivia Scarpaci advanced to third.",
+            "Maggie Feng flied out to cf, RBI (1-0 B); Julia Mattiace advanced to third; Olivia Scarpaci scored.",
+            "Delaney Benevides singled down the lf line, RBI (1-1 BF); Julia Mattiace scored.",
+            "Layla Thiessen hit by pitch (3-1 BBBKH); Delaney Benevides advanced to second.",
+            "Layla Thiessen advanced to second on a wild pitch; Delaney Benevides advanced to third.",
+            "Ava Ladd walked (3-2 FBBBFB).",
+            "Arianna Kumar grounded out to p (2-2 SBKBF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Holland Poe lined out to ss (2-1 BFB).",
+            "Lauren Sundquist grounded out to 2b (2-0 BB).",
+            "Olivia Scarpaci popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Julia Mattiace walked (3-2 KBSBBB).",
+            "Maggie Feng singled up the middle (0-2 FK); Julia Mattiace advanced to second.",
+            "Delaney Benevides singled to pitcher, bunt (2-0 BB); Maggie Feng advanced to second; Julia Mattiace advanced to third.",
+            "Layla Thiessen grounded out to 1b unassisted, RBI (0-0); Delaney Benevides advanced to second; Maggie Feng advanced to third; Julia Mattiace scored.",
+            "Ava Ladd doubled to right center, 2 RBI (1-2 FBK); Delaney Benevides scored; Maggie Feng scored.",
+            "Abby Merchant to p for Naomi Boldebuck.",
+            "Arianna Kumar fouled out to c (1-1 FB).",
+            "Holland Poe flied out to rf (3-1 FBBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Lauren Sundquist doubled to right field (0-1 F).",
+            "Olivia Scarpaci struck out swinging (2-2 BFFBS).",
+            "Julia Mattiace grounded out to 3b (2-1 BKB).",
+            "Maggie Feng popped up to p (0-0)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Delaney Benevides singled to second base (1-0 B).",
+            "Layla Thiessen singled to right field (3-1 BBBK); Delaney Benevides advanced to second.",
+            "Ava Ladd flied out to lf (0-0).",
+            "Arianna Kumar doubled to left field, RBI (3-2 FKFBBB); Layla Thiessen advanced to third; Delaney Benevides scored.",
+            "Holland Poe walked (3-1 BBBKB).",
+            "Lauren Sundquist singled up the middle, advanced to second on the throw, 2 RBI (0-1 K); Holland Poe advanced to third; Arianna Kumar scored; Layla Thiessen scored.",
+            "Olivia Scarpaci struck out swinging (2-2 SFBFFBS).",
+            "Julia Mattiace flied out to cf (3-2 KBBBFFF)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Meg Sherwood to lf.",
+            "Maggie Feng flied out to rf (0-0).",
+            "Delaney Benevides singled to shortstop (0-0).",
+            "Layla Thiessen singled to pitcher (1-1 SB); Delaney Benevides advanced to second.",
+            "Ava Ladd grounded into double play 3b to 1b (0-0); Delaney Benevides out on the play."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 3.1,
+          "h": 7,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 17,
+          "bf": 20
+        },
+        {
+          "name": "Merchant, Abby",
+          "ip": 3.2,
+          "h": 7,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 2,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 18
         }
       ],
       "year": 2026

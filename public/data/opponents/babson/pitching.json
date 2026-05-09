@@ -1,31 +1,31 @@
 {
   "slug": "babson",
   "domain": "babsonathletics.com",
-  "scrapedAt": "2026-05-08T02:46:09.151Z",
+  "scrapedAt": "2026-05-09T02:40:24.664Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Sealey, Lexi",
       "w": 3,
       "l": 3,
-      "era": 3.93,
-      "app": 19,
+      "era": 3.71,
+      "app": 20,
       "gs": 3,
       "cg": 3,
       "sho": 1,
       "sv": 3,
-      "ip": 57,
-      "h": 80,
+      "ip": 60.1,
+      "h": 82,
       "r": 43,
       "er": 32,
       "bb": 26,
-      "so": 21,
+      "so": 22,
       "hr": 0,
-      "whip": 1.86,
+      "whip": 1.79,
       "doubles": 14,
       "triples": 2,
-      "ab": 250,
-      "bAvg": 0.32,
+      "ab": 263,
+      "bAvg": 0.312,
       "wp": 8,
       "hbp": 5,
       "bk": 0,
@@ -63,25 +63,25 @@
     {
       "name": "Vlacich, Katie",
       "w": 7,
-      "l": 10,
-      "era": 4.82,
-      "app": 20,
-      "gs": 18,
+      "l": 11,
+      "era": 5,
+      "app": 21,
+      "gs": 19,
       "cg": 8,
       "sho": 2,
       "sv": 0,
-      "ip": 94.1,
-      "h": 118,
-      "r": 75,
-      "er": 65,
-      "bb": 43,
-      "so": 61,
+      "ip": 98,
+      "h": 124,
+      "r": 80,
+      "er": 70,
+      "bb": 46,
+      "so": 63,
       "hr": 8,
-      "whip": 1.71,
-      "doubles": 27,
+      "whip": 1.73,
+      "doubles": 28,
       "triples": 2,
-      "ab": 396,
-      "bAvg": 0.298,
+      "ab": 413,
+      "bAvg": 0.3,
       "wp": 22,
       "hbp": 3,
       "bk": 0,
@@ -4429,6 +4429,119 @@
           "hbp": 1,
           "ab": 25,
           "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://babsonathletics.com/sports/softball/stats/2026/coast-guard/boxscore/16171",
+      "date": "5/8/2026",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Vlacich, Katie",
+        "Sealey, Lexi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz lined out to lf (0-0).",
+            "Hayden Reilly popped up to 1b (3-2 BFKBB).",
+            "Dana Walker struck out swinging (1-2 SBFS)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Maura Murphy flied out to rf (0-1 F).",
+            "Zoey Lynn singled to right field (1-0 B).",
+            "Mack Murnane struck out looking (0-2 SFK).",
+            "Bridget Bartz walked (3-0 BBBB); Zoey Lynn advanced to second.",
+            "Ella Stolarzyk walked (3-2 BBKFBB); Bridget Bartz advanced to second; Zoey Lynn advanced to third.",
+            "Madeline Kibler walked, RBI (3-2 BBBKKB); Ella Stolarzyk advanced to second; Bridget Bartz advanced to third; Zoey Lynn scored.",
+            "Abriana Schmutz grounded out to ss (3-2 BKBFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Hayden Reilly singled to left field (1-0 B).",
+            "Dana Walker flied out to lf (1-1 BF); Hayden Reilly advanced to second.",
+            "Maura Murphy flied out to rf (1-0 B).",
+            "Zoey Lynn singled through the left side, RBI (1-0 B); Hayden Reilly scored.",
+            "Mack Murnane flied out to lf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Bridget Bartz flied out to cf (0-2 FS).",
+            "Ella Stolarzyk singled to pitcher (2-1 BBF).",
+            "Madeline Kibler singled through the left side (2-2 FBBFF); Ella Stolarzyk advanced to second.",
+            "Abriana Schmutz reached on a fielder's choice (0-2 FF); Madeline Kibler advanced to second; Ella Stolarzyk out at third p to 3b.",
+            "Sage Svalestad pinch ran for Madeline Kibler.",
+            "Hayden Reilly doubled down the lf line, advanced to third, 2 RBI (2-1 BFB); Abriana Schmutz scored; Sage Svalestad scored.",
+            "Lexi Sealy to p.",
+            "Ruby Madia to 1b for Katie Vlacich.",
+            "Dana Walker singled to shortstop, RBI (2-0 BB); Hayden Reilly scored.",
+            "Olivia Garcia pinch ran for Dana Walker.",
+            "Maura Murphy struck out swinging (2-2 BSSBS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Zoey Lynn reached first on an error by ss (1-0 B).",
+            "Mack Murnane reached on a fielder's choice (0-0); Zoey Lynn out at second ss to 2b.",
+            "Bridget Bartz reached on a fielder's choice (3-2 FBBBK); Mack Murnane out at second ss to 2b.",
+            "Caitlynn Gibson pinch hit for Ella Stolarzyk.",
+            "Caitlynn Gibson reached on a fielder's choice (2-1 BSB); Bridget Bartz out at second 2b to ss."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Samantha Skivo to dp for Bella Marchetti.",
+            "Madeline Kibler popped up to ss (1-2 SKBF).",
+            "Abriana Schmutz grounded out to 2b (0-2 FF).",
+            "Hayden Reilly singled to right center (1-2 FBK).",
+            "Dana Walker lined out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Lexi Sealy to p for Kay Laliberty.",
+            "Maura Murphy grounded out to ss (1-1 BF).",
+            "Zoey Lynn grounded out to ss (2-2 FKFBB).",
+            "Mack Murnane flied out to lf (1-2 FKBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Vlacich, Katie",
+          "ip": 3.2,
+          "h": 6,
+          "r": 5,
+          "er": 5,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 17,
+          "bf": 20
+        },
+        {
+          "name": "Sealey, Lexi",
+          "ip": 3.1,
+          "h": 2,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 13
         }
       ],
       "year": 2026

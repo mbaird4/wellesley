@@ -1,64 +1,36 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-05-08T02:46:01.351Z",
+  "scrapedAt": "2026-05-09T02:40:15.648Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
-      "w": 13,
+      "w": 15,
       "l": 10,
-      "era": 1.22,
-      "app": 27,
-      "gs": 19,
-      "cg": 16,
+      "era": 1.25,
+      "app": 29,
+      "gs": 21,
+      "cg": 18,
       "sho": 3,
       "sv": 1,
-      "ip": 131.2,
-      "h": 111,
-      "r": 53,
-      "er": 23,
-      "bb": 32,
-      "so": 109,
+      "ip": 145.2,
+      "h": 121,
+      "r": 56,
+      "er": 26,
+      "bb": 35,
+      "so": 119,
       "hr": 0,
-      "whip": 1.09,
-      "doubles": 15,
+      "whip": 1.07,
+      "doubles": 17,
       "triples": 0,
-      "ab": 521,
-      "bAvg": 0.213,
-      "wp": 6,
+      "ab": 573,
+      "bAvg": 0.211,
+      "wp": 8,
       "hbp": 1,
       "bk": 0,
       "sfa": 1,
-      "sha": 10
-    },
-    {
-      "name": "Lynn, Zoey",
-      "w": 2,
-      "l": 2,
-      "era": 2.42,
-      "app": 10,
-      "gs": 5,
-      "cg": 3,
-      "sho": 0,
-      "sv": 0,
-      "ip": 34.2,
-      "h": 43,
-      "r": 18,
-      "er": 12,
-      "bb": 3,
-      "so": 16,
-      "hr": 0,
-      "whip": 1.33,
-      "doubles": 7,
-      "triples": 1,
-      "ab": 147,
-      "bAvg": 0.293,
-      "wp": 0,
-      "hbp": 1,
-      "bk": 0,
-      "sfa": 0,
-      "sha": 1
+      "sha": 12
     },
     {
       "name": "Behel, Emma",
@@ -87,6 +59,34 @@
       "bk": 0,
       "sfa": 3,
       "sha": 4
+    },
+    {
+      "name": "Lynn, Zoey",
+      "w": 2,
+      "l": 2,
+      "era": 2.42,
+      "app": 10,
+      "gs": 5,
+      "cg": 3,
+      "sho": 0,
+      "sv": 0,
+      "ip": 34.2,
+      "h": 43,
+      "r": 18,
+      "er": 12,
+      "bb": 3,
+      "so": 16,
+      "hr": 0,
+      "whip": 1.33,
+      "doubles": 7,
+      "triples": 1,
+      "ab": 147,
+      "bAvg": 0.293,
+      "wp": 0,
+      "hbp": 1,
+      "bk": 0,
+      "sfa": 0,
+      "sha": 1
     },
     {
       "name": "Reilly, Hayden",
@@ -3674,6 +3674,194 @@
           "hbp": 0,
           "ab": 23,
           "bf": 24
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/babson/boxscore/9521",
+      "date": "5/8/2026",
+      "opponent": "Babson",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Emily Walsh walked (3-2 BFFBBFB).",
+            "Maddy DeLong out at first 3b to 2b, SAC, bunt (0-0); Emily Walsh advanced to second.",
+            "Lexi Sealy singled to left field, advanced to second, RBI (1-1 KB); Emily Walsh scored.",
+            "Belle Dicampello grounded out to p (0-2 KF).",
+            "Charlotte Raymond grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sophia Pak grounded out to ss (0-1 K).",
+            "Samantha Skivo grounded out to 1b unassisted (2-2 BKBF).",
+            "Devin McCall struck out swinging (3-2 KBBFFFFBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Allie Cubberly grounded out to 1b unassisted (1-0 B).",
+            "Emily Walsh grounded out to ss (3-1 BBFB).",
+            "Maddy DeLong struck out looking (0-2 SFK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dana Walker to p for Olivia Garcia.",
+            "Madeline Kibler to c for Sage Svalestad.",
+            "Lexi Sealy flied out to lf (0-0).",
+            "Belle Dicampello grounded out to 1b unassisted (0-1 F).",
+            "Charlotte Raymond flied out to cf (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Sophia Pak grounded out to 3b (1-1 BK).",
+            "Samantha Skivo walked (3-1 BBBKB).",
+            "Devin McCall singled through the left side (1-2 KKFB); Samantha Skivo advanced to second.",
+            "Bella Marchetti pinch ran for Samantha Skivo.",
+            "Allie Cubberly doubled to left field, RBI (2-1 BBK); Devin McCall advanced to third; Bella Marchetti scored.",
+            "Emily Walsh popped up to ss (2-2 BBFF).",
+            "Maddy DeLong struck out looking (2-2 KBFFBFFK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lexi Sealy doubled down the lf line (1-0 B).",
+            "Kay Laliberty pinch ran for Lexi Sealy.",
+            "Belle Dicampello singled to pitcher (0-0); Kay Laliberty advanced to third.",
+            "Charlotte Raymond reached on a fielder's choice (0-0); Belle Dicampello out at second ss to 2b.",
+            "Sophia Pak grounded out to 3b (2-1 BKB); Charlotte Raymond advanced to second.",
+            "Samantha Skivo grounded out to 2b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Devin McCall grounded out to 1b unassisted (2-2 BKFFBF).",
+            "Allie Cubberly grounded out to 3b (2-2 KFBFBF).",
+            "Emily Walsh flied out to cf (0-1 K)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 5,
+          "r": 2,
+          "er": 2,
+          "bb": 2,
+          "so": 3,
+          "hbp": 0,
+          "ab": 25,
+          "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/springfield/boxscore/9522",
+      "date": "5/8/2026",
+      "opponent": "Springfield",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Reilly Hunter grounded out to ss (0-0).",
+            "Amelia DeRosa grounded out to 3b (3-1 BBFB).",
+            "Carissa Pecchia grounded out to 3b (3-2 BBKBSF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kate Katsetos walked (3-2 KKBBBFFB).",
+            "Madison Testo singled through the left side (0-0); Kate Katsetos advanced to second.",
+            "Madison Testo advanced to second on a wild pitch; Kate Katsetos advanced to third on a wild pitch.",
+            "Brynlee Eckles struck out looking (1-2 FBFK).",
+            "Haley Ball struck out swinging (2-2 BKKBS).",
+            "Madison Testo advanced to third on a wild pitch; Kate Katsetos scored on a wild pitch.",
+            "Sammy Swords grounded out to p (3-2 BKBSB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Steele to c.",
+            "Taylor Falotico grounded out to 3b (3-2 BBKBFF).",
+            "Reilly Hunter reached first on a dropped fly by rf, advanced to second (0-1 K).",
+            "Amelia DeRosa struck out looking (0-2 KFFK).",
+            "Carissa Pecchia grounded out to p (1-2 KKBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dana Walker to p for Olivia Garcia.",
+            "Kate Katsetos lined out to 3b (0-0).",
+            "Madison Testo grounded out to 2b (1-2 FFBF).",
+            "Brynlee Eckles reached first on a fielding error by ss (2-2 FFBB).",
+            "Haley Ball singled to third base (1-1 BK); Brynlee Eckles advanced to second.",
+            "Sammy Swords struck out swinging (0-2 KKFS)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Taylor Falotico struck out swinging (0-2 KKS).",
+            "Reilly Hunter singled up the middle (3-1 BFBB).",
+            "Amelia DeRosa grounded out to p (0-1 F); Reilly Hunter advanced to second.",
+            "Carissa Pecchia flied out to cf (3-2 KBFBBFF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zoey Lynn to 1b for Sage Svalestad.",
+            "Kate Katsetos singled up the middle (0-0).",
+            "Madison Testo flied out to cf (1-1 BF).",
+            "Brynlee Eckles out at first 3b to 2b, SAC, bunt (0-0); Kate Katsetos advanced to second.",
+            "Rachel Powers pinch ran for Kate Katsetos.",
+            "Haley Ball fouled out to 3b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Aurora Levesque pinch hit for Sammy Swords.",
+            "Aurora Levesque struck out swinging (2-2 BSFBFS).",
+            "Taylor Falotico struck out swinging (1-2 KKBFFS).",
+            "Reilly Hunter singled up the middle (2-2 KBBF).",
+            "Amelia DeRosa grounded out to 3b (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 7,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 1,
+          "so": 7,
+          "hbp": 0,
+          "ab": 27,
+          "bf": 29
         }
       ],
       "year": 2026

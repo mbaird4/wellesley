@@ -1,64 +1,64 @@
 {
   "slug": "springfield",
   "domain": "springfieldcollegepride.com",
-  "scrapedAt": "2026-05-08T02:45:40.687Z",
+  "scrapedAt": "2026-05-09T02:39:54.154Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "DeRosa, Amelia",
-      "w": 16,
+      "w": 17,
       "l": 5,
-      "era": 1.83,
-      "app": 22,
-      "gs": 13,
-      "cg": 12,
-      "sho": 5,
+      "era": 1.73,
+      "app": 24,
+      "gs": 14,
+      "cg": 13,
+      "sho": 6,
       "sv": 0,
-      "ip": 141.1,
-      "h": 137,
+      "ip": 150,
+      "h": 141,
       "r": 46,
       "er": 37,
-      "bb": 31,
-      "so": 123,
+      "bb": 32,
+      "so": 128,
       "hr": 4,
-      "whip": 1.19,
-      "doubles": 23,
+      "whip": 1.15,
+      "doubles": 24,
       "triples": 4,
-      "ab": 543,
-      "bAvg": 0.252,
+      "ab": 572,
+      "bAvg": 0.247,
       "wp": 5,
       "hbp": 2,
       "bk": 0,
       "sfa": 2,
-      "sha": 8
+      "sha": 9
     },
     {
       "name": "Rimshnick, Julia",
       "w": 9,
-      "l": 8,
-      "era": 5.01,
-      "app": 27,
-      "gs": 25,
+      "l": 9,
+      "era": 4.91,
+      "app": 28,
+      "gs": 26,
       "cg": 14,
       "sho": 0,
       "sv": 1,
-      "ip": 111.2,
-      "h": 160,
-      "r": 97,
-      "er": 80,
-      "bb": 26,
-      "so": 58,
+      "ip": 117,
+      "h": 164,
+      "r": 99,
+      "er": 82,
+      "bb": 29,
+      "so": 61,
       "hr": 3,
-      "whip": 1.67,
+      "whip": 1.65,
       "doubles": 27,
       "triples": 14,
-      "ab": 493,
-      "bAvg": 0.325,
+      "ab": 511,
+      "bAvg": 0.321,
       "wp": 6,
       "hbp": 4,
       "bk": 0,
       "sfa": 4,
-      "sha": 8
+      "sha": 10
     },
     {
       "name": "McCauliffe, Lily",
@@ -3908,6 +3908,205 @@
           "hbp": 0,
           "ab": 9,
           "bf": 13
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/wellesley/boxscore/15037",
+      "date": "5/8/2026",
+      "opponent": "Wellesley",
+      "pitchers": [
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "A. Mulhern flied out to rf (0-0).",
+            "A. Delgado flied out to rf (1-1 BK).",
+            "B. Awad grounded out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "C. Lundin flied out to lf (1-0 B).",
+            "A. Rodriguez singled up the middle, advanced to second on a throwing error by cf (1-0 B).",
+            "E. Gaunce singled to right field, advanced to second on the throw (2-2 BSKBF); A. Rodriguez advanced to third.",
+            "D. Borrison struck out swinging (2-2 SBFBS).",
+            "G. Jones grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "N. Nicol singled through the left side (0-1 K).",
+            "N. Nicol stole second.",
+            "A. Mulhern flied out to rf (2-1 FBB).",
+            "A. Delgado grounded out to 2b (0-2 SFF); N. Nicol advanced to third.",
+            "B. Awad struck out looking (2-2 KFBBK)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "C. Lundin grounded out to 2b (0-0).",
+            "A. Rodriguez popped up to p (0-0).",
+            "E. Gaunce grounded out to 1b unassisted (1-2 BFFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "D. Borrison flied out to rf (1-0 B).",
+            "G. Jones lined out to rf (2-0 BB).",
+            "N. Nicol fouled out to 1b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "A. Mulhern grounded out to 3b (1-0 B).",
+            "A. Delgado flied out to cf (0-2 KK).",
+            "B. Awad grounded out to ss (3-1 KBBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Carissa Pecchia to dp for Sammy Swords.",
+            "Sammy Swords to lf.",
+            "C. Lundin walked (3-2 BKKBBB).",
+            "J. Polski pinch ran for C. Lundin.",
+            "A. Rodriguez struck out swinging (0-2 FFFS).",
+            "E. Gaunce grounded out to 3b (0-0); J. Polski advanced to second.",
+            "D. Borrison flied out to rf (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 7,
+          "h": 3,
+          "r": 0,
+          "er": 0,
+          "bb": 1,
+          "so": 3,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 25
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://springfieldcollegepride.com/sports/softball/stats/2026/coast-guard/boxscore/15038",
+      "date": "5/8/2026",
+      "opponent": "Coast Guard",
+      "pitchers": [
+        "Rimshnick, Julia",
+        "DeRosa, Amelia"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Abriana Schmutz grounded out to p (3-2 BKBBFF).",
+            "Hayden Reilly flied out to rf (1-0 B).",
+            "Dana Walker singled through the left side (3-1 BBBK).",
+            "Maura Murphy walked (3-2 BFBBKB); Dana Walker advanced to second.",
+            "Zoey Lynn flied out to rf (3-2 KBBFFBF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Mack Murnane struck out swinging (2-2 KBSBS).",
+            "Bridget Bartz lined out to 2b (1-0 B).",
+            "Ella Stolarzyk grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Abby Steele pinch hit for Madeline Kibler.",
+            "Abby Steele grounded out to ss (2-1 BKB).",
+            "Abriana Schmutz grounded out to ss (2-1 KBB).",
+            "Hayden Reilly grounded out to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Dana Walker singled to right center (0-0).",
+            "Maura Murphy out at first 3b to 2b, SAC, bunt (0-0); Dana Walker advanced to second.",
+            "Olivia Garcia pinch ran for Dana Walker.",
+            "Zoey Lynn walked (3-0 BBBB).",
+            "Mack Murnane grounded into double play 2b to ss to 1b (0-0); Zoey Lynn out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Bridget Bartz reached first on a fielding error by ss (1-2 KBFF).",
+            "Emma Behel pinch hit for Ella Stolarzyk.",
+            "Emma Behel reached on a fielder's choice to shortstop (1-2 SBFF); Bridget Bartz out at second ss to 2b.",
+            "Ella Stolarzyk to dp for Emma Behel.",
+            "Abby Steele struck out looking (2-2 BSSFBFK).",
+            "Abriana Schmutz struck out swinging (0-2 KKS)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Hayden Reilly walked (3-0 BBBB).",
+            "Dana Walker singled up the middle (0-0); Hayden Reilly advanced to second.",
+            "Maura Murphy out at first 3b to 2b, SAC, bunt (0-0); Dana Walker advanced to second; Hayden Reilly advanced to third.",
+            "Zoey Lynn singled up the middle, 2 RBI (0-0); Dana Walker scored; Hayden Reilly scored.",
+            "Amelia DeRosa to p.",
+            "Emilia Santiago to 3b for Julia Rimshnick.",
+            "Sage Svalestad pinch ran for Zoey Lynn.",
+            "Mack Murnane struck out looking (3-2 FKBBBK).",
+            "Bridget Bartz reached on a fielder's choice to second base (2-2 KSBBF); Sage Svalestad out at second 2b unassisted."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Kate Katsetos to 1b for Rachel Powers.",
+            "Ella Stolarzyk doubled to center field (0-2 KS).",
+            "Abby Steele out at first 3b to 2b, SAC, bunt (0-1 F); Ella Stolarzyk advanced to third.",
+            "Abriana Schmutz struck out swinging (2-2 KKBBFS).",
+            "Hayden Reilly grounded out to ss (1-1 BS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Rimshnick, Julia",
+          "ip": 5.1,
+          "h": 4,
+          "r": 2,
+          "er": 2,
+          "bb": 3,
+          "so": 3,
+          "hbp": 0,
+          "ab": 18,
+          "bf": 23
+        },
+        {
+          "name": "DeRosa, Amelia",
+          "ip": 1.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 2,
+          "hbp": 0,
+          "ab": 5,
+          "bf": 6
         }
       ],
       "year": 2026
