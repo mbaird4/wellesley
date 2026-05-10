@@ -1,32 +1,32 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-09T02:40:05.905Z",
+  "scrapedAt": "2026-05-10T02:45:19.449Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
       "w": 15,
-      "l": 3,
-      "era": 2.59,
-      "app": 22,
+      "l": 4,
+      "era": 2.54,
+      "app": 23,
       "gs": 17,
       "cg": 7,
       "sho": 2,
       "sv": 0,
-      "ip": 105.1,
-      "h": 115,
-      "r": 53,
-      "er": 39,
-      "bb": 33,
+      "ip": 110.1,
+      "h": 119,
+      "r": 55,
+      "er": 40,
+      "bb": 34,
       "so": 29,
       "hr": 1,
-      "whip": 1.41,
+      "whip": 1.39,
       "doubles": 15,
       "triples": 3,
-      "ab": 416,
-      "bAvg": 0.276,
-      "wp": 7,
+      "ab": 435,
+      "bAvg": 0.274,
+      "wp": 8,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
@@ -36,26 +36,26 @@
       "name": "Watson, Emily",
       "w": 10,
       "l": 1,
-      "era": 3.53,
-      "app": 22,
-      "gs": 12,
+      "era": 3.73,
+      "app": 23,
+      "gs": 13,
       "cg": 7,
       "sho": 1,
       "sv": 0,
-      "ip": 85.1,
-      "h": 99,
-      "r": 45,
-      "er": 43,
-      "bb": 32,
-      "so": 23,
-      "hr": 6,
-      "whip": 1.54,
+      "ip": 90,
+      "h": 102,
+      "r": 50,
+      "er": 48,
+      "bb": 34,
+      "so": 24,
+      "hr": 8,
+      "whip": 1.51,
       "doubles": 25,
       "triples": 2,
-      "ab": 335,
-      "bAvg": 0.296,
+      "ab": 351,
+      "bAvg": 0.291,
       "wp": 2,
-      "hbp": 7,
+      "hbp": 8,
       "bk": 0,
       "sfa": 3,
       "sha": 12
@@ -3977,6 +3977,141 @@
           "hbp": 0,
           "ab": 10,
           "bf": 12
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/12786",
+      "date": "5/9/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Watson, Emily",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour hit by pitch (2-0 BH).",
+            "Virginia McKinney reached on a fielder's choice (2-0 BB); Lucy Latour out at second 3b to 2b.",
+            "Sandy Fairbairn homered to left field, 2 RBI (1-2 FFBF); Virginia McKinney scored.",
+            "Emma Nagy flied out to cf (3-2 BBFFFBF).",
+            "Ali Chalovich flied out to rf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Riley O'Brien popped up to 3b (2-1 BBS).",
+            "Stella Kozak popped up to ss (0-1 F).",
+            "Meg Sherwood lined out to ss (1-2 SFB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Elizabeth Jordan flied out to rf (1-0 B).",
+            "Lucy Latour popped up to ss (0-1 F).",
+            "Virginia McKinney grounded out to ss (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Sandy Fairbairn walked (3-0 BBBB).",
+            "Emma Nagy struck out looking (1-2 FBFK).",
+            "Ali Chalovich lined into double play 3b (1-1 KB); Sandy Fairbairn out on the play."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Riley O'Brien popped up to 3b (1-0 B).",
+            "Stella Kozak walked (3-2 BFBKBB).",
+            "Meg Sherwood flied out to lf (0-1 K).",
+            "Elizabeth Jordan singled to left field (0-1 K); Stella Kozak advanced to second.",
+            "Lucy Latour homered to right field, 3 RBI (0-1 F); Elizabeth Jordan scored; Stella Kozak scored.",
+            "Sharona Huang to p for Emily Watson.",
+            "Virginia McKinney grounded out to ss (1-2 SBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sandy Fairbairn grounded out to ss (2-0 BB).",
+            "Emma Nagy lined out to 3b (1-1 FB).",
+            "Ali Chalovich walked (3-2 FBBBKB).",
+            "Grace Grant pinch ran for Ali Chalovich.",
+            "Riley O'Brien flied out to lf (3-1 BBBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Mattiace to 1b for Amanda Huang.",
+            "Stella Kozak grounded out to p (1-1 BF).",
+            "Meg Sherwood grounded out to p (0-1 F).",
+            "Elizabeth Jordan grounded out to 1b unassisted (0-1 K)."
+          ]
+        },
+        {
+          "inning": "8th",
+          "plays": [
+            "Lucy Latour grounded out to 2b (0-1 K).",
+            "Virginia McKinney grounded out to ss (0-0).",
+            "Sandy Fairbairn grounded out to ss (2-1 BBF)."
+          ]
+        },
+        {
+          "inning": "9th",
+          "plays": [
+            "Emma Nagy grounded out to p (0-2 KK).",
+            "Ali Chalovich lined out to 3b (1-0 B).",
+            "Riley O'Brien singled to right field (0-1 K).",
+            "Colleen Mayer pinch ran for Riley O'Brien.",
+            "Destiny Lum pinch hit for Stella Kozak.",
+            "Destiny Lum singled to left center (2-2 SSBBF); Colleen Mayer advanced to third.",
+            "Stella Kozak pinch ran for Destiny Lum.",
+            "Meg Sherwood popped up to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "10th",
+          "plays": [
+            "Elizabeth Jordan Meg Sherwood placed on second (0-0).",
+            "Elizabeth Jordan grounded out to 3b (0-2 FF); Meg Sherwood advanced to third.",
+            "Lucy Latour singled up the middle, RBI (0-1 K); Meg Sherwood scored, unearned.",
+            "Virginia McKinney flied out to rf (0-0).",
+            "Lucy Latour advanced to second on a wild pitch.",
+            "Sandy Fairbairn singled to center field, RBI (3-1 BBFB); Lucy Latour scored."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 4.2,
+          "h": 3,
+          "r": 5,
+          "er": 5,
+          "bb": 2,
+          "so": 1,
+          "hbp": 1,
+          "ab": 16,
+          "bf": 19
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 5,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 19,
+          "bf": 20
         }
       ],
       "year": 2026

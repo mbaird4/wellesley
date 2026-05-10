@@ -1,33 +1,33 @@
 {
   "slug": "coastguard",
   "domain": "coastguardathletics.com",
-  "scrapedAt": "2026-05-09T02:40:15.648Z",
+  "scrapedAt": "2026-05-10T02:45:27.697Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Walker, Dana",
       "w": 15,
-      "l": 10,
+      "l": 11,
       "era": 1.25,
-      "app": 29,
-      "gs": 21,
-      "cg": 18,
+      "app": 30,
+      "gs": 22,
+      "cg": 19,
       "sho": 3,
       "sv": 1,
-      "ip": 145.2,
-      "h": 121,
-      "r": 56,
-      "er": 26,
-      "bb": 35,
-      "so": 119,
+      "ip": 151.2,
+      "h": 128,
+      "r": 60,
+      "er": 27,
+      "bb": 38,
+      "so": 122,
       "hr": 0,
-      "whip": 1.07,
-      "doubles": 17,
+      "whip": 1.09,
+      "doubles": 19,
       "triples": 0,
-      "ab": 573,
-      "bAvg": 0.211,
+      "ab": 600,
+      "bAvg": 0.213,
       "wp": 8,
-      "hbp": 1,
+      "hbp": 2,
       "bk": 0,
       "sfa": 1,
       "sha": 12
@@ -3862,6 +3862,97 @@
           "hbp": 0,
           "ab": 27,
           "bf": 29
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://coastguardathletics.com/sports/softball/stats/2026/-12-wpi/boxscore/9545",
+      "date": "5/9/2026",
+      "opponent": " 12 Wpi",
+      "pitchers": [
+        "Walker, Dana"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour grounded out to p (2-1 BFB).",
+            "Virginia McKinney struck out looking (2-2 KBBSK).",
+            "Sandy Fairbairn singled up the middle (0-0).",
+            "Sandy Fairbairn stole second.",
+            "Emma Nagy walked (3-1 BBBKB).",
+            "Riley O'Brien grounded out to p (2-2 BBKF)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ali Chalovich singled down the rf line (2-1 BKB).",
+            "Stella Kozak grounded out to 3b (1-1 FB); Ali Chalovich advanced to second.",
+            "Elizabeth Jordan grounded out to 3b (1-0 B); Ali Chalovich advanced to third.",
+            "Meg Sherwood grounded out to 2b (0-2 SF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Lucy Latour walked (3-1 BBBKB).",
+            "Virginia McKinney reached on a fielder's choice (0-0); Lucy Latour out at second 2b to ss.",
+            "Sandy Fairbairn flied out to rf (0-0).",
+            "Emma Nagy singled up the middle (0-0); Virginia McKinney advanced to third.",
+            "Emma Nagy stole second.",
+            "Riley O'Brien hit by pitch (3-0 BBH).",
+            "Ali Chalovich flied out to cf (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Stella Kozak grounded out to 3b (3-2 BFKBFB).",
+            "Elizabeth Jordan struck out looking (1-2 KBKK).",
+            "Meg Sherwood doubled to right center (0-1 F).",
+            "Lucy Latour walked (3-0 BBBB).",
+            "Virginia McKinney reached first on a throwing error by 3b, advanced to second on the throw (3-2 BFBFB); Lucy Latour scored, unearned; Meg Sherwood scored, unearned.",
+            "Sandy Fairbairn reached on a fielder's choice to shortstop (1-2 BFS); Virginia McKinney did not advance.",
+            "Emma Nagy reached on a fielder's choice (0-0); Sandy Fairbairn advanced to second; Virginia McKinney out at third 3b unassisted."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Madeline Kibler to c for Caitlynn Gibson.",
+            "Riley O'Brien struck out swinging (2-2 BFFBS).",
+            "Ali Chalovich flied out to rf (0-1 K).",
+            "Stella Kozak grounded out to p (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Zoey Lynn to 1b for Olivia Garcia.",
+            "Elizabeth Jordan singled to left field (1-0 B).",
+            "Meg Sherwood popped up to 1b (0-1 F).",
+            "Elizabeth Jordan advanced to second on a passed ball.",
+            "Lucy Latour singled up the middle, RBI (2-1 BFB); Elizabeth Jordan scored, unearned.",
+            "Virginia McKinney grounded out to 2b (0-2 FF); Lucy Latour advanced to second on a fielder's choice.",
+            "Sandy Fairbairn doubled to right center, RBI (0-0); Lucy Latour scored.",
+            "Emma Nagy flied out to rf (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Walker, Dana",
+          "ip": 6,
+          "h": 7,
+          "r": 4,
+          "er": 1,
+          "bb": 3,
+          "so": 3,
+          "hbp": 1,
+          "ab": 27,
+          "bf": 31
         }
       ],
       "year": 2026
