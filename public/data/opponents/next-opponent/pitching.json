@@ -1,36 +1,36 @@
 {
   "slug": "brandeis",
   "domain": "brandeisjudges.com",
-  "scrapedAt": "2026-05-09T02:45:00.342Z",
+  "scrapedAt": "2026-05-10T02:51:24.405Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Kannan, Ragini",
       "w": 9,
-      "l": 7,
-      "era": 4.32,
-      "app": 24,
-      "gs": 16,
-      "cg": 8,
+      "l": 8,
+      "era": 4.11,
+      "app": 25,
+      "gs": 17,
+      "cg": 9,
       "sho": 2,
       "sv": 0,
-      "ip": 102,
-      "h": 118,
-      "r": 77,
-      "er": 63,
+      "ip": 109,
+      "h": 123,
+      "r": 78,
+      "er": 64,
       "bb": 35,
-      "so": 83,
+      "so": 86,
       "hr": 10,
-      "whip": 1.5,
+      "whip": 1.45,
       "doubles": 23,
       "triples": 1,
-      "ab": 406,
-      "bAvg": 0.291,
+      "ab": 431,
+      "bAvg": 0.285,
       "wp": 10,
-      "hbp": 10,
+      "hbp": 11,
       "bk": 0,
       "sfa": 7,
-      "sha": 14
+      "sha": 15
     },
     {
       "name": "Staub, Jamie",
@@ -4939,6 +4939,99 @@
           "hbp": 0,
           "ab": 3,
           "bf": 3
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://brandeisjudges.com/sports/softball/stats/2026/chicago/boxscore/14852",
+      "date": "5/9/2026",
+      "opponent": "Chicago",
+      "pitchers": [
+        "Kannan, Ragini"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Madeline Murphy fouled out to 1b (1-2 SFFB).",
+            "Natalie Antin flied out to lf (1-0 B).",
+            "Audrey Hui popped up to 3b (0-0)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Olivia Cataldo singled through the left side (3-1 FBBB).",
+            "Matilda Nelson hit by pitch (1-1 FH); Olivia Cataldo advanced to second.",
+            "Eleanor Johnson grounded out to 3b, SAC, bunt (0-0); Matilda Nelson advanced to second; Olivia Cataldo advanced to third.",
+            "Anna Jensen singled to center field, RBI (3-2 KBSBB); Olivia Cataldo scored.",
+            "Mia Bocian flied out to lf (1-2 KFB).",
+            "Melana Badea lined out to ss (0-0)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Madeline Murphy grounded out to 3b (0-0).",
+            "Natalie Antin popped up to 2b (2-2 KBBF).",
+            "Audrey Hui singled up the middle (1-0 B).",
+            "Olivia Cataldo popped up to ss (3-2 FBFFBBFFF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Matilda Nelson singled to third base (2-2 KBFB).",
+            "Ashlee Boodoo pinch ran for Matilda Nelson.",
+            "Eleanor Johnson flied out to rf (0-0).",
+            "Ashlee Boodoo stole second.",
+            "Anna Jensen popped up to 2b (3-1 BBBK).",
+            "Mia Bocian popped up to 2b (1-1 FB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Melana Badea struck out swinging (2-2 SSBFFFBS).",
+            "Madeline Murphy lined out to lf (1-2 KKB).",
+            "Natalie Antin grounded out to ss (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Audrey Hui flied out to cf (1-2 FFB).",
+            "Olivia Cataldo popped up to 2b (0-0).",
+            "Matilda Nelson popped up to 3b (2-1 KBB)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Eleanor Johnson singled to right center (2-1 KBB).",
+            "Brianna Leech pinch hit for Anna Jensen.",
+            "Sedona Ding pinch ran for Eleanor Johnson.",
+            "Sedona Ding stole second.",
+            "Brianna Leech struck out looking (1-2 BSKK).",
+            "Mia Bocian flied out to cf (1-1 FB).",
+            "Nicole Wong pinch hit for Melana Badea.",
+            "Nicole Wong struck out swinging (0-2 KFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Kannan, Ragini",
+          "ip": 7,
+          "h": 5,
+          "r": 1,
+          "er": 1,
+          "bb": 0,
+          "so": 3,
+          "hbp": 1,
+          "ab": 25,
+          "bf": 27
         }
       ],
       "year": 2026
