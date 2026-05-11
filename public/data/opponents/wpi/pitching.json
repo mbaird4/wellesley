@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-10T02:44:57.012Z",
+  "scrapedAt": "2026-05-11T02:54:23.449Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,31 +34,31 @@
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 14,
+      "w": 15,
       "l": 3,
-      "era": 2.78,
-      "app": 24,
-      "gs": 22,
-      "cg": 15,
+      "era": 2.79,
+      "app": 25,
+      "gs": 23,
+      "cg": 16,
       "sho": 3,
       "sv": 0,
-      "ip": 118.1,
-      "h": 140,
-      "r": 62,
-      "er": 47,
-      "bb": 45,
-      "so": 63,
-      "hr": 3,
-      "whip": 1.56,
-      "doubles": 15,
+      "ip": 125.1,
+      "h": 145,
+      "r": 65,
+      "er": 50,
+      "bb": 48,
+      "so": 65,
+      "hr": 4,
+      "whip": 1.54,
+      "doubles": 16,
       "triples": 2,
-      "ab": 472,
-      "bAvg": 0.297,
+      "ab": 496,
+      "bAvg": 0.292,
       "wp": 7,
       "hbp": 9,
       "bk": 0,
       "sfa": 5,
-      "sha": 15
+      "sha": 16
     },
     {
       "name": "Barr, Kaitlyn",
@@ -5048,6 +5048,98 @@
           "hbp": 2,
           "ab": 28,
           "bf": 32
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/mit/boxscore/16667",
+      "date": "5/10/2026",
+      "opponent": "Mit",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Layla Thiessen walked (3-1 BBKBB).",
+            "Ava Ladd grounded out to 3b (1-1 BK); Layla Thiessen advanced to second.",
+            "Arianna Kumar singled, out at second lf to 3b to 2b (0-1 K); Layla Thiessen advanced to third.",
+            "Holland Poe grounded out to 3b (1-2 FFB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Lauren Sundquist singled to left center (2-0 BB).",
+            "Julia Mattiace walked (3-2 BBBKFB); Lauren Sundquist advanced to second.",
+            "Maggie Feng out at first p to 2b, SAC, bunt (0-0); Julia Mattiace advanced to second; Lauren Sundquist advanced to third.",
+            "Olivia Scarpaci reached on a fielder's choice (2-2 BBSFF); Julia Mattiace advanced to third; Lauren Sundquist out at home 3b to c.",
+            "Delaney Benevides struck out swinging (1-2 FSBS)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Layla Thiessen lined out to 1b (3-1 BBFB).",
+            "Ava Ladd grounded out to ss (1-1 KB).",
+            "Arianna Kumar flied out to rf (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Holland Poe flied out to lf (1-0 B).",
+            "Lauren Sundquist popped up to 2b (1-0 B).",
+            "Julia Mattiace doubled to right center (2-2 BFBK).",
+            "Maggie Feng singled to right center, RBI (1-2 KBF); Julia Mattiace scored.",
+            "Olivia Scarpaci homered, 2 RBI (0-0); Maggie Feng scored.",
+            "Delaney Benevides grounded out to 3b (2-2 BBFF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Layla Thiessen grounded out to c unassisted, interference (1-2 BKKF).",
+            "Ava Ladd flied out to cf (3-2 FBSBB).",
+            "Arianna Kumar flied out to rf (2-1 BBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Ali Chalovich to c for Grace Grant.",
+            "Destiny Lum to dp.",
+            "Holland Poe grounded out to 2b (3-0 BBB).",
+            "Lauren Sundquist struck out swinging (0-2 KFS).",
+            "Julia Mattiace grounded out to 2b (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Virginia McKinney to cf for Samantha Jeng.",
+            "Riley O'Brien to 2b for Mia Francisco.",
+            "Maggie Feng grounded out to 3b (3-2 BBBKFF).",
+            "Olivia Scarpaci popped up to ss (0-0).",
+            "Delaney Benevides walked (3-1 BFBBB).",
+            "Layla Thiessen lined out to 3b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 7,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 2,
+          "hbp": 0,
+          "ab": 24,
+          "bf": 28
         }
       ],
       "year": 2026

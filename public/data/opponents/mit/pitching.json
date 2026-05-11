@@ -1,64 +1,36 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-10T02:45:19.449Z",
+  "scrapedAt": "2026-05-11T02:54:45.266Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 15,
-      "l": 4,
-      "era": 2.54,
-      "app": 23,
-      "gs": 17,
+      "w": 16,
+      "l": 5,
+      "era": 2.82,
+      "app": 24,
+      "gs": 18,
       "cg": 7,
       "sho": 2,
       "sv": 0,
-      "ip": 110.1,
-      "h": 119,
-      "r": 55,
-      "er": 40,
+      "ip": 114.1,
+      "h": 127,
+      "r": 62,
+      "er": 46,
       "bb": 34,
       "so": 29,
       "hr": 1,
-      "whip": 1.39,
-      "doubles": 15,
+      "whip": 1.41,
+      "doubles": 20,
       "triples": 3,
-      "ab": 435,
-      "bAvg": 0.274,
+      "ab": 457,
+      "bAvg": 0.278,
       "wp": 8,
       "hbp": 2,
       "bk": 0,
       "sfa": 1,
       "sha": 8
-    },
-    {
-      "name": "Watson, Emily",
-      "w": 10,
-      "l": 1,
-      "era": 3.73,
-      "app": 23,
-      "gs": 13,
-      "cg": 7,
-      "sho": 1,
-      "sv": 0,
-      "ip": 90,
-      "h": 102,
-      "r": 50,
-      "er": 48,
-      "bb": 34,
-      "so": 24,
-      "hr": 8,
-      "whip": 1.51,
-      "doubles": 25,
-      "triples": 2,
-      "ab": 351,
-      "bAvg": 0.291,
-      "wp": 2,
-      "hbp": 8,
-      "bk": 0,
-      "sfa": 3,
-      "sha": 12
     },
     {
       "name": "Blackett, Sarah",
@@ -87,6 +59,34 @@
       "bk": 0,
       "sfa": 1,
       "sha": 6
+    },
+    {
+      "name": "Watson, Emily",
+      "w": 10,
+      "l": 1,
+      "era": 3.88,
+      "app": 24,
+      "gs": 13,
+      "cg": 7,
+      "sho": 1,
+      "sv": 0,
+      "ip": 92,
+      "h": 107,
+      "r": 53,
+      "er": 51,
+      "bb": 35,
+      "so": 24,
+      "hr": 9,
+      "whip": 1.54,
+      "doubles": 26,
+      "triples": 2,
+      "ab": 362,
+      "bAvg": 0.296,
+      "wp": 2,
+      "hbp": 9,
+      "bk": 0,
+      "sfa": 3,
+      "sha": 12
     },
     {
       "name": "Johnston, Nicole",
@@ -4112,6 +4112,116 @@
           "hbp": 0,
           "ab": 19,
           "bf": 20
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/worcester-polytechnic-institute/boxscore/12909",
+      "date": "5/10/2026",
+      "opponent": "Worcester Polytechnic Institute",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Lucy Latour reached first on a fielding error by lf, advanced to second (1-1 BK).",
+            "Virginia McKinney grounded out to 3b (2-0 BB); Lucy Latour advanced to third.",
+            "Sandy Fairbairn reached on a fielder's choice, advanced to second on a throwing error by ss, RBI (0-0); Lucy Latour scored, unearned.",
+            "Emma Nagy grounded out to 3b (1-1 BF).",
+            "Riley O'Brien grounded out to 2b (1-2 KBK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Ali Chalovich popped up to ss (3-2 BBFBKF).",
+            "Stella Kozak doubled to left field (0-0).",
+            "Meg Sherwood singled to center field, RBI (0-1 K); Stella Kozak scored.",
+            "Elizabeth Jordan singled to first base (0-0); Meg Sherwood advanced to second.",
+            "Lucy Latour reached on a fielder's choice (0-1 K); Elizabeth Jordan out at second 2b to ss; Meg Sherwood advanced to third.",
+            "Lucy Latour stole second.",
+            "Virginia McKinney grounded out to ss (3-2 BBKBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Sandy Fairbairn flied out to cf (0-1 F).",
+            "Emma Nagy popped up to 2b (0-0).",
+            "Riley O'Brien grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich flied out to cf (1-1 BF).",
+            "Stella Kozak grounded out to ss (1-1 BF).",
+            "Meg Sherwood lined out to p (2-1 BFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Elizabeth Jordan doubled to left center (2-1 BKB).",
+            "Lucy Latour doubled to left field, RBI (0-1 K); Elizabeth Jordan scored.",
+            "Virginia McKinney doubled to center field, RBI (0-1 S); Lucy Latour scored.",
+            "Sandy Fairbairn singled to right field (0-0); Virginia McKinney advanced to third.",
+            "Sandy Fairbairn stole second.",
+            "Emma Nagy doubled to left field, 2 RBI (3-0 BBB); Sandy Fairbairn scored; Virginia McKinney scored.",
+            "Emily Watson to p for Sharona Huang.",
+            "Riley O'Brien grounded out to ss (0-0); Emma Nagy advanced to third.",
+            "Ali Chalovich singled through the left side, RBI (0-0); Emma Nagy scored.",
+            "Grace Grant pinch ran for Ali Chalovich.",
+            "Stella Kozak hit by pitch (1-0 H); Grace Grant advanced to second.",
+            "Meg Sherwood fouled out to 1b (0-2 SF).",
+            "Destiny Lum pinch hit for Elizabeth Jordan.",
+            "Destiny Lum flied out to cf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Lucy Latour flied out to lf (2-2 BFSBFF).",
+            "Virginia McKinney singled through the left side (2-2 KBBFF).",
+            "Samantha Jeng pinch ran for Virginia McKinney.",
+            "Sandy Fairbairn homered, 2 RBI (1-2 FBF); Samantha Jeng scored.",
+            "Emma Nagy singled down the lf line (2-2 BFBK).",
+            "Riley O'Brien doubled to left center, RBI (1-2 BKF); Emma Nagy scored.",
+            "Mia Francisco pinch ran for Riley O'Brien.",
+            "Ali Chalovich walked (3-0 BBBB).",
+            "Stella Kozak flied out to lf (0-2 SF).",
+            "Meg Sherwood popped up to ss (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 4,
+          "h": 8,
+          "r": 7,
+          "er": 6,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 22,
+          "bf": 22
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 2,
+          "h": 5,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 1,
+          "ab": 11,
+          "bf": 13
         }
       ],
       "year": 2026
