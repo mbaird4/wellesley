@@ -1,31 +1,31 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-15T02:56:34.421Z",
+  "scrapedAt": "2026-05-16T02:43:22.617Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
-      "w": 16,
+      "w": 17,
       "l": 5,
-      "era": 2.74,
-      "app": 25,
+      "era": 2.64,
+      "app": 26,
       "gs": 18,
       "cg": 7,
       "sho": 2,
       "sv": 1,
-      "ip": 117.1,
-      "h": 128,
+      "ip": 122,
+      "h": 129,
       "r": 62,
       "er": 46,
-      "bb": 34,
-      "so": 32,
+      "bb": 36,
+      "so": 36,
       "hr": 1,
-      "whip": 1.38,
+      "whip": 1.35,
       "doubles": 20,
       "triples": 3,
-      "ab": 467,
-      "bAvg": 0.274,
+      "ab": 481,
+      "bAvg": 0.268,
       "wp": 9,
       "hbp": 2,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "Watson, Emily",
       "w": 11,
       "l": 1,
-      "era": 3.86,
-      "app": 25,
-      "gs": 14,
+      "era": 3.99,
+      "app": 26,
+      "gs": 15,
       "cg": 7,
       "sho": 1,
       "sv": 0,
-      "ip": 96,
-      "h": 112,
-      "r": 55,
-      "er": 53,
+      "ip": 98.1,
+      "h": 116,
+      "r": 58,
+      "er": 56,
       "bb": 38,
-      "so": 26,
-      "hr": 9,
-      "whip": 1.56,
+      "so": 27,
+      "hr": 10,
+      "whip": 1.57,
       "doubles": 27,
       "triples": 3,
-      "ab": 378,
-      "bAvg": 0.296,
+      "ab": 389,
+      "bAvg": 0.298,
       "wp": 2,
       "hbp": 9,
       "bk": 0,
@@ -4328,6 +4328,111 @@
           "hbp": 0,
           "ab": 10,
           "bf": 10
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/endicott-college/boxscore/12912",
+      "date": "5/15/2026",
+      "opponent": "Endicott College",
+      "pitchers": [
+        "Watson, Emily",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mia Mitchell singled to center field (1-0 B).",
+            "Abby McClaflin popped up to ss (2-2 KBFFFFBF).",
+            "Kylyn McLaren popped up to c (1-2 KSBFF).",
+            "Maddie Beeley homered to left field, 2 RBI (0-1 F); Mia Mitchell scored.",
+            "Ella Tower flied out to cf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Elyse Saccoccio struck out swinging (3-2 BKBBKS).",
+            "Catherine Seay lined out to cf (3-2 BBBKF).",
+            "Vania Moniz flied out to rf (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caroline Cummings grounded out to 1b unassisted (0-1 F).",
+            "Mia Mitchell singled to right field (0-2 KF).",
+            "Abby McClaflin singled to left field (1-2 KBK); Mia Mitchell advanced to second.",
+            "Alexa Gillis pinch ran for Abby McClaflin.",
+            "Sharona Huang to p for Emily Watson.",
+            "Kylyn McLaren walked (3-0 BBBB); Alexa Gillis advanced to second; Mia Mitchell advanced to third.",
+            "Maddie Beeley reached on a fielder's choice to shortstop, RBI (0-2 KSFFF); Kylyn McLaren out at second ss to 2b; Alexa Gillis advanced to third; Mia Mitchell scored.",
+            "Ella Tower grounded out to 3b (3-1 BBKB)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Elyse Saccoccio grounded out to ss (0-1 K).",
+            "Catherine Seay walked (3-1 BBBKB).",
+            "Vania Moniz struck out swinging (0-2 KSFS).",
+            "Caroline Cummings out at first c to 2b, bunt (1-0 B)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Mia Mitchell grounded out to p (0-2 FKF).",
+            "Abby McClaflin popped up to ss (1-2 BSK).",
+            "Kylyn McLaren grounded out to 3b (1-2 SBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Maddie Beeley singled through the left side (1-1 BF).",
+            "Ella Tower struck out swinging (2-2 KKFBBS).",
+            "Elyse Saccoccio reached on a fielder's choice to third base (2-0 BB); Maddie Beeley out at second 3b to 2b.",
+            "Elyse Saccoccio out at second c to ss, caught stealing."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Ava Kelley pinch hit for Catherine Seay.",
+            "Ava Kelley grounded out to 3b (0-1 F).",
+            "Vania Moniz struck out swinging (1-2 KSBS).",
+            "Kyla Story pinch hit for Caroline Cummings.",
+            "Kyla Story struck out swinging (0-2 KSFS)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Watson, Emily",
+          "ip": 2.1,
+          "h": 4,
+          "r": 3,
+          "er": 3,
+          "bb": 0,
+          "so": 1,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 11
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 4.2,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 2,
+          "so": 4,
+          "hbp": 0,
+          "ab": 14,
+          "bf": 16
         }
       ],
       "year": 2026

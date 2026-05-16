@@ -1,7 +1,7 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-15T02:56:05.151Z",
+  "scrapedAt": "2026-05-16T02:42:59.487Z",
   "year": 2026,
   "pitchingStats": [
     {
@@ -34,26 +34,26 @@
     },
     {
       "name": "Boldebuck, Naomi",
-      "w": 15,
+      "w": 16,
       "l": 3,
-      "era": 2.79,
-      "app": 25,
-      "gs": 23,
-      "cg": 16,
-      "sho": 3,
+      "era": 2.69,
+      "app": 26,
+      "gs": 24,
+      "cg": 17,
+      "sho": 4,
       "sv": 0,
-      "ip": 125.1,
-      "h": 145,
+      "ip": 130.1,
+      "h": 146,
       "r": 65,
       "er": 50,
       "bb": 48,
-      "so": 65,
+      "so": 68,
       "hr": 4,
-      "whip": 1.54,
+      "whip": 1.49,
       "doubles": 16,
       "triples": 2,
-      "ab": 496,
-      "bAvg": 0.292,
+      "ab": 512,
+      "bAvg": 0.285,
       "wp": 7,
       "hbp": 9,
       "bk": 0,
@@ -5140,6 +5140,73 @@
           "hbp": 0,
           "ab": 24,
           "bf": 28
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/albertus-magnus/boxscore/16668",
+      "date": "5/15/2026",
+      "opponent": "Albertus Magnus",
+      "pitchers": [
+        "Boldebuck, Naomi"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Mikaela Schwippert struck out looking (0-2 KFFK).",
+            "Isabelle Smith flied out to rf (1-0 B).",
+            "Amelia Boulli grounded out to c (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Reilly Austin singled up the middle (0-0).",
+            "Karla Carangelo fouled out to rf (2-0 BB); Reilly Austin advanced to second.",
+            "Amelia Ovalles struck out swinging (0-2 FKS).",
+            "Izzy Barreiro grounded out to 2b (0-1 K)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Gina Solow grounded out to 1b unassisted (2-1 FBB).",
+            "Gianna Carrano struck out looking (3-2 BBKFBK).",
+            "Mikaela Schwippert grounded out to 2b (0-0)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Ali Chalovich to c for Suzannah Figler.",
+            "Isabelle Smith flied out to cf (0-0).",
+            "Amelia Boulli grounded out to 2b (3-2 BFKBFBFF).",
+            "Reilly Austin lined out to 3b (2-0 BB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Karla Carangelo flied out to rf (0-0).",
+            "Amelia Ovalles flied out to rf (0-2 KF).",
+            "Izzy Barreiro grounded out to p (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 5,
+          "h": 1,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 3,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 16
         }
       ],
       "year": 2026
