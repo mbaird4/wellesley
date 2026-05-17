@@ -1,92 +1,92 @@
 {
   "slug": "mit",
   "domain": "mitathletics.com",
-  "scrapedAt": "2026-05-16T02:43:22.617Z",
+  "scrapedAt": "2026-05-17T02:52:12.753Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Huang, Sharona",
       "w": 17,
       "l": 5,
-      "era": 2.64,
-      "app": 26,
-      "gs": 18,
+      "era": 2.99,
+      "app": 28,
+      "gs": 19,
       "cg": 7,
       "sho": 2,
       "sv": 1,
-      "ip": 122,
-      "h": 129,
-      "r": 62,
-      "er": 46,
-      "bb": 36,
+      "ip": 124,
+      "h": 137,
+      "r": 69,
+      "er": 53,
+      "bb": 41,
       "so": 36,
       "hr": 1,
-      "whip": 1.35,
-      "doubles": 20,
+      "whip": 1.44,
+      "doubles": 22,
       "triples": 3,
-      "ab": 481,
-      "bAvg": 0.268,
-      "wp": 9,
+      "ab": 494,
+      "bAvg": 0.277,
+      "wp": 10,
       "hbp": 2,
       "bk": 0,
-      "sfa": 1,
+      "sfa": 2,
       "sha": 8
-    },
-    {
-      "name": "Blackett, Sarah",
-      "w": 7,
-      "l": 2,
-      "era": 3.85,
-      "app": 16,
-      "gs": 11,
-      "cg": 4,
-      "sho": 4,
-      "sv": 1,
-      "ip": 72.2,
-      "h": 83,
-      "r": 51,
-      "er": 40,
-      "bb": 39,
-      "so": 74,
-      "hr": 8,
-      "whip": 1.68,
-      "doubles": 15,
-      "triples": 1,
-      "ab": 297,
-      "bAvg": 0.279,
-      "wp": 7,
-      "hbp": 7,
-      "bk": 0,
-      "sfa": 1,
-      "sha": 6
     },
     {
       "name": "Watson, Emily",
       "w": 11,
-      "l": 1,
-      "era": 3.99,
-      "app": 26,
+      "l": 2,
+      "era": 4.02,
+      "app": 28,
       "gs": 15,
       "cg": 7,
       "sho": 1,
       "sv": 0,
-      "ip": 98.1,
-      "h": 116,
-      "r": 58,
-      "er": 56,
-      "bb": 38,
-      "so": 27,
+      "ip": 108,
+      "h": 129,
+      "r": 65,
+      "er": 62,
+      "bb": 39,
+      "so": 29,
       "hr": 10,
-      "whip": 1.57,
-      "doubles": 27,
-      "triples": 3,
-      "ab": 389,
-      "bAvg": 0.298,
+      "whip": 1.56,
+      "doubles": 30,
+      "triples": 4,
+      "ab": 429,
+      "bAvg": 0.301,
       "wp": 2,
-      "hbp": 9,
+      "hbp": 10,
       "bk": 0,
-      "sfa": 3,
+      "sfa": 5,
       "sha": 13
+    },
+    {
+      "name": "Blackett, Sarah",
+      "w": 7,
+      "l": 3,
+      "era": 4.07,
+      "app": 17,
+      "gs": 12,
+      "cg": 4,
+      "sho": 4,
+      "sv": 1,
+      "ip": 74,
+      "h": 86,
+      "r": 54,
+      "er": 43,
+      "bb": 42,
+      "so": 74,
+      "hr": 8,
+      "whip": 1.73,
+      "doubles": 15,
+      "triples": 1,
+      "ab": 303,
+      "bAvg": 0.284,
+      "wp": 7,
+      "hbp": 7,
+      "bk": 0,
+      "sfa": 1,
+      "sha": 7
     },
     {
       "name": "Johnston, Nicole",
@@ -4433,6 +4433,247 @@
           "hbp": 0,
           "ab": 14,
           "bf": 16
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/colby-college/boxscore/12913",
+      "date": "5/16/2026",
+      "opponent": "Colby College",
+      "pitchers": [
+        "Blackett, Sarah",
+        "Watson, Emily",
+        "Huang, Sharona"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carissa Cassidy grounded out to ss (1-1 BK).",
+            "Emma Burnham walked (3-1 BKBBB).",
+            "Juliana Kiley fouled out to 3b (0-0).",
+            "Victoria Ramirez singled up the middle (1-1 FB); Emma Burnham advanced to second.",
+            "Caroline DeSimone singled to third base (1-2 SBF); Victoria Ramirez advanced to second; Emma Burnham advanced to third.",
+            "Avery Lyman walked, RBI (3-1 BKBBB); Caroline DeSimone advanced to second; Victoria Ramirez advanced to third; Emma Burnham scored.",
+            "Kathryne Clay flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Kelsey Sullivan walked (3-1 SBBBB).",
+            "Julia Berry out at first p to 2b, SAC, bunt (1-1 KB); Kelsey Sullivan advanced to second.",
+            "Carissa Cassidy singled up the middle, advanced to second on the throw, RBI (1-1 FB); Kelsey Sullivan scored.",
+            "Emily Watson to p for Sarah Blackett.",
+            "Emma Burnham singled to right center (1-2 KFB); Carissa Cassidy advanced to third.",
+            "Emma Burnham stole second.",
+            "Juliana Kiley doubled to left field, 2 RBI (1-2 KBF); Emma Burnham scored; Carissa Cassidy scored.",
+            "Victoria Ramirez fouled out to 3b (0-0).",
+            "Caroline DeSimone fouled out to c (0-2 KF)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Avery Lyman doubled to right field (2-1 FBB).",
+            "Kathryne Clay popped up to 2b (0-0).",
+            "Kelsey Sullivan popped up to ss (2-2 BFKB).",
+            "Julia Berry walked (3-2 BBBKKFB).",
+            "Carissa Cassidy lined out to rf (0-1 K)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Emma Burnham grounded out to 3b (1-0 B).",
+            "Juliana Kiley flied out to rf (0-0).",
+            "Victoria Ramirez flied out to cf (0-0)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Caroline DeSimone reached first on a fielding error by 3b (0-0).",
+            "Caroline DeSimone stole second.",
+            "Avery Lyman doubled to left field, RBI (1-1 FB); Caroline DeSimone scored, unearned.",
+            "Kathryne Clay flied out to lf (1-2 KBF).",
+            "Kelsey Sullivan struck out swinging (1-2 KBSFS).",
+            "Julia Berry fouled out to 2b (3-2 BBFBK)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Sharona Huang to p for Emily Watson.",
+            "Carissa Cassidy singled through the right side (1-1 BK).",
+            "Carissa Cassidy stole second.",
+            "Emma Burnham doubled through the left side, RBI (2-2 FBBF); Carissa Cassidy scored.",
+            "Juliana Kiley singled to right field (0-1 K); Emma Burnham advanced to third.",
+            "Josephine Kim pinch ran for Juliana Kiley.",
+            "Victoria Ramirez walked (3-0 BBBB); Josephine Kim advanced to second.",
+            "Kat Xiong pinch ran for Victoria Ramirez.",
+            "Caroline DeSimone flied out to rf, sacrifice fly, RBI (0-1 K); Josephine Kim advanced to third; Emma Burnham scored.",
+            "Avery Lyman singled up the middle, RBI (1-0 B); Kat Xiong advanced to second; Josephine Kim scored.",
+            "Kathryne Clay grounded out to 2b (3-1 BBBK); Avery Lyman advanced to second; Kat Xiong advanced to third.",
+            "Sophia Hammel pinch hit for Kelsey Sullivan.",
+            "Sophia Hammel grounded out to 3b (1-0 B)."
+          ]
+        },
+        {
+          "inning": "7th",
+          "plays": [
+            "Julia Berry grounded out to ss (1-2 KKB).",
+            "Carissa Cassidy grounded out to 1b unassisted (2-0 BB).",
+            "Emma Burnham walked (3-1 KBBBB).",
+            "Emma Burnham advanced to second on a wild pitch.",
+            "Juliana Kiley walked (3-0 BBBB).",
+            "Victoria Ramirez singled through the left side, advanced to second on the error, RBI (1-2 BKF); Juliana Kiley advanced to second, advanced to third on a throwing error by lf; Emma Burnham scored.",
+            "Caroline DeSimone popped up to 2b (0-0)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Blackett, Sarah",
+          "ip": 1.1,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 6,
+          "bf": 10
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 3.2,
+          "h": 4,
+          "r": 2,
+          "er": 1,
+          "bb": 1,
+          "so": 1,
+          "hbp": 0,
+          "ab": 16,
+          "bf": 17
+        },
+        {
+          "name": "Huang, Sharona",
+          "ip": 2,
+          "h": 5,
+          "r": 4,
+          "er": 4,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 10,
+          "bf": 14
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://mitathletics.com/sports/softball/stats/2026/colby-college/boxscore/12914",
+      "date": "5/16/2026",
+      "opponent": "Colby College",
+      "pitchers": [
+        "Huang, Sharona",
+        "Watson, Emily"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Carissa Cassidy walked (3-1 BBBKB).",
+            "Emma Burnham doubled to center field, RBI (1-2 KFFB); Carissa Cassidy scored.",
+            "Juliana Kiley walked (3-0 BBBB).",
+            "Victoria Ramirez singled up the middle, RBI (0-2 FF); Juliana Kiley advanced to second; Emma Burnham scored.",
+            "Caroline DeSimone singled through the left side (2-2 KSBFB); Victoria Ramirez advanced to second; Juliana Kiley advanced to third.",
+            "Emily Watson to p for Sharona Huang.",
+            "Avery Lyman reached on a fielder's choice to shortstop (0-0); Caroline DeSimone advanced to second; Victoria Ramirez advanced to third; Juliana Kiley out at home ss to c.",
+            "Kathryne Clay flied out to lf, sacrifice fly, RBI (2-1 KBB); Victoria Ramirez scored.",
+            "Kelsey Sullivan flied out to lf (1-1 BK)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Julia Berry singled to center field (0-0).",
+            "Julia Berry stole second.",
+            "Carissa Cassidy singled to catcher, bunt (0-1 K); Julia Berry advanced to third.",
+            "Emma Burnham fouled out to 1b (0-1 F).",
+            "Carissa Cassidy out at second c to ss, caught stealing.",
+            "Juliana Kiley singled to left field, RBI (2-1 BBK); Julia Berry scored.",
+            "Victoria Ramirez flied out to lf (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Caroline DeSimone grounded out to 3b (1-1 KB).",
+            "Avery Lyman singled to left field (1-0 B).",
+            "Kathryne Clay singled to center field (0-1 K); Avery Lyman advanced to second.",
+            "Kelsey Sullivan infield fly to p (2-2 FBSB); Kathryne Clay advanced to second; Avery Lyman advanced to third.",
+            "Julia Berry flied out to cf (1-2 KKFBF)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Carissa Cassidy flied out to lf (2-2 KFFBB).",
+            "Emma Burnham popped up to ss (1-0 B).",
+            "Juliana Kiley lined out to ss (1-2 BKF)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Victoria Ramirez hit by pitch (1-0 H).",
+            "Caroline DeSimone singled to third base, bunt (0-0); Victoria Ramirez advanced to second.",
+            "Kat Xiong pinch ran for Victoria Ramirez.",
+            "Avery Lyman singled to left field (1-0 B); Caroline DeSimone advanced to second; Kat Xiong advanced to third.",
+            "Kathryne Clay singled to left field, RBI (1-2 BKF); Avery Lyman advanced to second; Caroline DeSimone advanced to third; Kat Xiong scored.",
+            "Kelsey Sullivan struck out looking (3-2 SBKBFFFFBFK).",
+            "Julia Berry flied out to lf, sacrifice fly, RBI (2-1 FBB); Caroline DeSimone scored.",
+            "Carissa Cassidy tripled to left center, 2 RBI (0-1 F); Kathryne Clay scored; Avery Lyman scored.",
+            "Emma Burnham popped up to 3b (3-2 BFSBBF)."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Julia Mattiace to 1b for Kaaya Mehta.",
+            "Juliana Kiley flied out to lf (0-1 K).",
+            "Victoria Ramirez flied out to lf (0-0).",
+            "Caroline DeSimone fouled out to c (1-2 FBF)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Huang, Sharona",
+          "ip": 0,
+          "h": 3,
+          "r": 3,
+          "er": 3,
+          "bb": 2,
+          "so": 0,
+          "hbp": 0,
+          "ab": 3,
+          "bf": 5
+        },
+        {
+          "name": "Watson, Emily",
+          "ip": 6,
+          "h": 9,
+          "r": 5,
+          "er": 5,
+          "bb": 0,
+          "so": 1,
+          "hbp": 1,
+          "ab": 24,
+          "bf": 27
         }
       ],
       "year": 2026
