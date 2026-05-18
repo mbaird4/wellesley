@@ -1,59 +1,59 @@
 {
   "slug": "wpi",
   "domain": "athletics.wpi.edu",
-  "scrapedAt": "2026-05-17T02:51:47.782Z",
+  "scrapedAt": "2026-05-18T03:28:58.184Z",
   "year": 2026,
   "pitchingStats": [
     {
       "name": "Merchant, Abby",
       "w": 25,
-      "l": 0,
-      "era": 2.05,
-      "app": 28,
-      "gs": 18,
+      "l": 1,
+      "era": 2.15,
+      "app": 29,
+      "gs": 19,
       "cg": 13,
       "sho": 4,
       "sv": 0,
-      "ip": 143.1,
-      "h": 163,
-      "r": 49,
-      "er": 42,
-      "bb": 30,
+      "ip": 146.1,
+      "h": 169,
+      "r": 52,
+      "er": 45,
+      "bb": 31,
       "so": 88,
       "hr": 1,
-      "whip": 1.35,
-      "doubles": 25,
+      "whip": 1.37,
+      "doubles": 26,
       "triples": 3,
-      "ab": 567,
-      "bAvg": 0.287,
-      "wp": 4,
+      "ab": 578,
+      "bAvg": 0.292,
+      "wp": 5,
       "hbp": 7,
       "bk": 0,
       "sfa": 3,
-      "sha": 12
+      "sha": 13
     },
     {
       "name": "Boldebuck, Naomi",
       "w": 16,
       "l": 4,
-      "era": 2.88,
-      "app": 27,
+      "era": 3.07,
+      "app": 28,
       "gs": 25,
       "cg": 18,
       "sho": 4,
       "sv": 0,
-      "ip": 136.1,
-      "h": 152,
-      "r": 71,
-      "er": 56,
-      "bb": 52,
+      "ip": 139,
+      "h": 158,
+      "r": 76,
+      "er": 61,
+      "bb": 55,
       "so": 69,
-      "hr": 4,
-      "whip": 1.5,
+      "hr": 5,
+      "whip": 1.53,
       "doubles": 17,
       "triples": 2,
-      "ab": 532,
-      "bAvg": 0.286,
+      "ab": 545,
+      "bAvg": 0.29,
       "wp": 7,
       "hbp": 10,
       "bk": 0,
@@ -64,24 +64,24 @@
       "name": "Barr, Kaitlyn",
       "w": 3,
       "l": 0,
-      "era": 3.36,
-      "app": 9,
+      "era": 3.33,
+      "app": 10,
       "gs": 5,
       "cg": 1,
       "sho": 0,
       "sv": 1,
-      "ip": 33.1,
+      "ip": 33.2,
       "h": 45,
       "r": 26,
       "er": 16,
       "bb": 12,
       "so": 10,
       "hr": 3,
-      "whip": 1.71,
+      "whip": 1.69,
       "doubles": 6,
       "triples": 0,
-      "ab": 149,
-      "bAvg": 0.302,
+      "ab": 150,
+      "bAvg": 0.3,
       "wp": 4,
       "hbp": 6,
       "bk": 0,
@@ -5386,6 +5386,124 @@
           "hbp": 0,
           "ab": 4,
           "bf": 5
+        }
+      ],
+      "year": 2026
+    },
+    {
+      "url": "https://athletics.wpi.edu/sports/softball/stats/2026/umass-dartmouth/boxscore/16858",
+      "date": "5/17/2026",
+      "opponent": "Umass Dartmouth",
+      "pitchers": [
+        "Merchant, Abby",
+        "Boldebuck, Naomi",
+        "Barr, Kaitlyn"
+      ],
+      "battingInnings": [
+        {
+          "inning": "1st",
+          "plays": [
+            "Raelynn Perregaux singled down the lf line (2-2 BFBK).",
+            "Olivia Ali singled to first base, bunt (2-1 BBF); Raelynn Perregaux advanced to second.",
+            "Olivia Silva singled through the left side, RBI (1-0 B); Olivia Ali advanced to third; Raelynn Perregaux scored.",
+            "Olivia Silva out at second c to 2b to 1b, caught stealing.",
+            "Bre Fontes grounded out to ss, RBI (2-1 KBB); Olivia Ali scored.",
+            "Lena Tsonis walked (3-2 KSBBBB).",
+            "Emma Talpey popped up to ss (1-1 KB)."
+          ]
+        },
+        {
+          "inning": "2nd",
+          "plays": [
+            "Sydney Menz doubled down the lf line (1-0 B).",
+            "Lily Routhier out at first 3b to 2b, SAC, bunt (0-0); Sydney Menz advanced to third.",
+            "Chloe Edwards singled to third base, bunt (0-1 K).",
+            "Chloe Edwards advanced to second, out at third c to 3b, caught stealing; Sydney Menz scored on a wild pitch.",
+            "Raelynn Perregaux grounded out to ss (2-2 BFBK)."
+          ]
+        },
+        {
+          "inning": "3rd",
+          "plays": [
+            "Olivia Ali singled through the right side (2-1 BKB).",
+            "Olivia Silva lined into double play 1b (1-2 KBK); Olivia Ali out on the play.",
+            "Bre Fontes flied out to rf (1-0 B)."
+          ]
+        },
+        {
+          "inning": "4th",
+          "plays": [
+            "Stella Kozak to 3b.",
+            "Naomi Boldebuck to p for Abby Merchant.",
+            "Lena Tsonis flied out to rf (2-2 FBBS).",
+            "Emma Talpey grounded out to 3b (2-2 FKBB).",
+            "Sydney Menz walked (3-0 BBBB).",
+            "Sydney Menz stole second.",
+            "Lily Routhier grounded out to ss (2-2 KFBFB)."
+          ]
+        },
+        {
+          "inning": "5th",
+          "plays": [
+            "Chloe Edwards popped up to 2b (0-0).",
+            "Raelynn Perregaux walked (3-0 BBBB).",
+            "Ali Chalovich to c for Ariana Kreuzer.",
+            "Olivia Ali singled to left field (3-2 BBFSBF); Raelynn Perregaux advanced to second.",
+            "Olivia Silva grounded into double play 3b to 1b (0-2 KKF); Raelynn Perregaux out on the play."
+          ]
+        },
+        {
+          "inning": "6th",
+          "plays": [
+            "Bre Fontes grounded out to 2b (1-2 KSFB).",
+            "Lena Tsonis singled to left center (0-0).",
+            "Emma Talpey singled to third base, bunt (1-1 FB); Lena Tsonis advanced to second.",
+            "Sydney Menz singled to right field (1-2 KBK); Emma Talpey advanced to second; Lena Tsonis advanced to third.",
+            "Lily Routhier flied out to rf, RBI (0-0); Sydney Menz advanced to second; Emma Talpey advanced to third; Lena Tsonis scored.",
+            "Chloe Edwards singled down the lf line, 2 RBI (1-0 B); Sydney Menz scored; Emma Talpey scored.",
+            "Raelynn Perregaux homered, 2 RBI (0-0); Chloe Edwards scored.",
+            "Olivia Ali walked (3-0 BBBB).",
+            "Kaitlyn Barr to p for Naomi Boldebuck.",
+            "Olivia Silva flied out to lf (1-0 B)."
+          ]
+        }
+      ],
+      "pitcherBoxScore": [
+        {
+          "name": "Merchant, Abby",
+          "ip": 3,
+          "h": 6,
+          "r": 3,
+          "er": 3,
+          "bb": 1,
+          "so": 0,
+          "hbp": 0,
+          "ab": 11,
+          "bf": 13
+        },
+        {
+          "name": "Boldebuck, Naomi",
+          "ip": 2.2,
+          "h": 6,
+          "r": 5,
+          "er": 5,
+          "bb": 3,
+          "so": 0,
+          "hbp": 0,
+          "ab": 13,
+          "bf": 16
+        },
+        {
+          "name": "Barr, Kaitlyn",
+          "ip": 0.1,
+          "h": 0,
+          "r": 0,
+          "er": 0,
+          "bb": 0,
+          "so": 0,
+          "hbp": 0,
+          "ab": 1,
+          "bf": 1
         }
       ],
       "year": 2026
